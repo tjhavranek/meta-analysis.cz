@@ -8,7 +8,7 @@ headline: "Národní banka má udržovat stabilitu, ale ona si to vykládá jako
 byline: "Tomáš Havránek"
 interviewer: "Jana Klímová"
 same_recording: "penize-a-vliv-cnb-musi-delat-vic"
-body_note: "Díl podcastu Peníze a vliv moderátorky Jany Klímové, který skládá dohromady tři samostatně natočené rozhovory — s Josefem Bernardem, Janem Rafajem a Tomášem Havránkem; nešlo o společnou debatu. Níže stojí ta část dílu, která patří Tomáši Havránkovi, tak jak ji přepsal a vydal sám iROZHLAS — přepis je tedy stanice, ne stroje, a jména mluvčích jsou její. Český rozhlas o tomtéž vysílání vydal dvě stránky pod dvěma titulky; druhá je v archivu vedena zvlášť jako „ČNB musí dělat víc“. Že jde o jedno a totéž vysílání, potvrzuje porovnání tohoto přepisu se zvukovým záznamem druhé stránky: ze 44 odstavců jich 43 v nahrávce sedí. Pro srovnání, u dvou skutečně různých rozhovorů na stejné téma nesedí takto ani jeden."
+body_note: "Díl podcastu Peníze a vliv moderátorky Jany Klímové, který skládá dohromady tři samostatně natočené rozhovory — s Josefem Bernardem, Janem Rafajem a Tomášem Havránkem; nešlo o společnou debatu. Níže stojí ta část dílu, která patří Tomáši Havránkovi, tak jak ji přepsal a vydal sám iROZHLAS — přepis je tedy stanice, ne stroje, a jména mluvčích jsou její. Český rozhlas o tomtéž vysílání vydal dvě stránky pod dvěma titulky; druhá je v archivu vedena zvlášť jako „ČNB musí dělat víc“. Že jde o jedno a totéž vysílání, potvrzuje porovnání tohoto přepisu se zvukovým záznamem druhé stránky: ze 44 odstavců jich 43 v nahrávce sedí. Pro srovnání, u dvou skutečně různých rozhovorů na stejné téma nesedí takto ani jeden. Na jednom místě stanice v přepisu vynechala zápor: v nahrávce zazní „to inflace neovlivní“, v přepisu stálo „ovlivní“. Opraveno podle nahrávky."
 transcript: "publisher"
 ---
 
@@ -76,7 +76,7 @@ Ale situace se zas tak moc neliší od ostatních zemí, takže to není primár
 
 Říkám, že za inflaci převážně může národní banka. V zemi, která má vlastní měnu, tak většina kolegů se tom shodne na tom, že to tak je. Ale i podle novějších teorií, jako je třeba fiskální teorie, může mít vliv hospodaření vlády. Ale dlouhodobé. Čili ani ne tak covidové schodky nebo současné schodky, ale dlouhodobá neudržitelnost státních financí, která teď vychází najevo, když se podíváte na projekce Národní rozpočtové rady. A tam je ten hlavní problém.
 
-Nějaké úpravy daní, nějaké drobné transfery moc dlouhodobě inflaci ovlivní. Ale co ji může opravdu ovlivnit je sestupná tendence našich veřejných financí v příštích dekádách, která opravdu vypadá tristně.
+Nějaké úpravy daní, nějaké drobné transfery moc dlouhodobě inflaci neovlivní. Ale co ji může opravdu ovlivnit je sestupná tendence našich veřejných financí v příštích dekádách, která opravdu vypadá tristně.
 
 **Jana Klímová:** A jak by s tím vláda mohla bojovat? Vláda teď chystá různé změny. Je to jeden z důvodů, který naštval opozici - že chce zvyšovat daně a jak říká Andrej Babiš, chystá brutální utahování opasků. Byl byste příznivcem nějakých zásahů v daňové oblasti? A třeba pokud jde o DPH, o kterém se teď velmi diskutuje - že by měly být místo tří sazeb jenom dvě, kdy hrozí zdražení některých věcí, které jsou v té nejnižší sazbě.
 

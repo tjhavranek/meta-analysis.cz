@@ -8,7 +8,7 @@ headline: "Inflaci můžeme kdykoliv zrušit, centrální banky včetně té če
 byline: "Tomáš Havránek"
 interviewer: "Martin Veselovský"
 same_recording: "dvtv-zemetreseni-v-cnb"
-body_note: "Rozhovor pro DVTV, ptá se Martin Veselovský. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, je určeno podle hlasu; vzorky obou mluvčích pocházejí z této nahrávky, z míst, kde je mluvčí jistý z obsahu. Dvě věty, které přepis přiřadil nesprávně, vrátila na místo kontrola opřená o mluvnickou osobu a o to, co na ně odpovídá. Opraveno bylo 62 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Rozhovor je rychlý a moderátor často vstupuje krátkými poznámkami; u těch nelze mluvčího vždy určit. Na jednom místě v nahrávce zřejmě chybí zápor, takže věta o dlouhodobém dopadu říká opak toho, co z okolního výkladu plyne — ponecháno tak, jak přepis zachytil. Dvě opravy zůstaly neprovedené, protože by dosazovaly slova, která v nahrávce nezazněla. Text prošel lehkou úpravou, jaká je u publikovaných přepisů obvyklá: odstraněna zjevná přeřeknutí a opakování slov. Čísla, zápory ani míra opatrnosti ve formulacích se přitom neměnily a nic nebylo doplněno. Mluvená řeč obsahuje nedokončené věty — nejde o psaný text."
+body_note: "Rozhovor pro DVTV, ptá se Martin Veselovský. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, je určeno podle hlasu; vzorky obou mluvčích pocházejí z této nahrávky, z míst, kde je mluvčí jistý z obsahu. Dvě věty, které přepis přiřadil nesprávně, vrátila na místo kontrola opřená o mluvnickou osobu a o to, co na ně odpovídá. Opraveno bylo 62 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Rozhovor je rychlý a moderátor často vstupuje krátkými poznámkami; u těch nelze mluvčího vždy určit. Dvě opravy zůstaly neprovedené, protože by dosazovaly slova, která v nahrávce nezazněla. Text prošel lehkou úpravou, jaká je u publikovaných přepisů obvyklá: odstraněna zjevná přeřeknutí a opakování slov. Čísla, zápory ani míra opatrnosti ve formulacích se přitom neměnily a nic nebylo doplněno. Při závěrečné kontrole byla místa, kde první model přeslechl číslo, zápor nebo vynechal část věty, opravena podle toho, co v nahrávce slyší druhý, nezávislý model (Whisper large-v3). Mluvená řeč obsahuje nedokončené věty — nejde o psaný text."
 ---
 **Martin Veselovský:** Hostem DVTV ekonom a bývalý poradce viceguvernéra České národní banky Tomáš Havránek. Dobrý den. Dobrý den. V reakci na jmenování Aleše Michla novým guvernérem České národní banky začala oslabovat koruna.
 
@@ -30,7 +30,7 @@ Ta inflace bude potřeba s ní bojovat. Aleš Michl, tak jak ho znám, dělal js
 
 Ale možná je teda už potom jmenování v červenci. A on... Samozřejmě je to možné, že nechá shořet korunu. Ale nejde mi to úplně k tomu, jak ho znám, že by tohle takhle by se chtěl zapsat do dějin.
 
-Vlastně člověk, který Rašín tu naši korunu vlastně postavil silnou a on by ji spálil. Tohle on nebude chtít. Když se nás toho podlečen byl, tak to byl největší jestřáb. Aleš Michl.
+Vlastně člověk, který Rašín tu naši korunu vlastně postavil silnou a on by ji spálil. Tohle on nebude chtít. … Tak to byl největší jestřáb. Aleš Michl.
 
 Pár měsíců. Pak se překlopil, to už jsem u toho nebyl, nevím proč.
 
@@ -42,13 +42,13 @@ Ale děje se to v řádu desítek milionů euro a ne v řádu stovek milionů eu
 
 **Martin Veselovský:** Co by tedy on jako guvernéra nebo jakákoliv rada České národní banky musela dělat, aby, jak jste říkal, došlo prostě k demolici koruny nebo ke spálení koruny?
 
-**Tomáš Havránek:** chovat se tak, aby velká část toho aparátu, který tam je velice kvalitní, v sekci měnové zejména, odešel. Čili vlastně potom ty podklady by nebyly zdaleka tak kvalitní, což by se projevilo i na mezinárodním renomé té centrální banky, bylo by to vidět navenek. Pokud by komunikoval s brklé, takovým tím stylem, který není úplně, řekněme, konzervativní, a pokud by ty sazby snižoval nějak významně, to by znamenalo spálení koruny.
+**Tomáš Havránek:** chovat se tak, aby velká část toho aparátu, který tam je velice kvalitní, v sekci měnové zejména, odešel. Čili vlastně potom ty podklady by nebyly zdaleka tak kvalitní, což by se projevilo i na mezinárodním renomé té centrální banky, bylo by to vidět navenek. Pokud by komunikoval zbrkle, takovým tím stylem, který není úplně, řekněme, konzervativní, a pokud by ty sazby snižoval nějak významně, to by znamenalo spálení koruny.
 
 **Martin Veselovský:** Z jakého důvodu si myslíte, že Česká národní banka teď nedělá to, co byste naznačili jako určitou cestu protiinflační, to znamená vlastně ty rezervy, které v minulém desetiletí, devizové rezervy, byly nahromaděny.
 
 **Tomáš Havránek:** že asi o řád víc by to mělo. Přesně tak. Když byla inflace před osmi lety u nuly, hrozila deflace, tak se intervenoval masivně, proti koruně, aby se oslabila a ta deflace se vlastně zvrátila. Teď máme inflaci na sedm násobku inflačního cíle, čili bych čekal podobně silnou reakci.
 
-Oni zvyšují sazby, ale historicky vždycky centrální banky zvyšovaly sazby rychleji, než rostla inflace. A to z toho důvodu, aby rostly i ty reálné sazby, čili po odečtení inflace. To dneska se neděje, ale ono to ani nejde. a to z toho důvodu, že jsme všichni, nebo většina z nás, většina ekonomik, řekněme, je hodně zadlužená, ale jenom ekonomik i domácnosti a firmy.
+Oni zvyšují sazby, ale historicky vždycky centrální banky zvyšovaly sazby rychleji, než rostla inflace. A to z toho důvodu, aby rostly i ty reálné sazby, čili po odečtení inflace. To dneska se neděje, ale ono to ani nejde. a to z toho důvodu, že jsme všichni, nebo většina z nás, většina ekonomik, řekněme, je hodně zadlužená, i domácnosti a firmy.
 
 A dvouciferné sazby dnes by znamenaly bankrot řady subjektů v té zemi. To prostě není možné. Příkladem extrémně je eurozóna, která vlastně nemůže proti inflaci dělat nic z toho důvodu, že při zvýšení sazeb i na ty naše úrovně, kolem těch 5-6%, mi prostě znamenaly bankrot řady jižních států v čele s Itálií. Takže to není možné.
 
@@ -88,7 +88,7 @@ Takhle to na světě vždycky bylo v 80. letech ve Spojených státech. Takový 
 
 Vy tu pořád ještě nevíte.
 
-**Tomáš Havránek:** Nevím, ale mám samozřejmě nějaké jako takové nápady, když projím s lidma s ČNB. Co mi říkají, tak jedna ta teorie je, že třeba pan guvernér se netají tím, že si myslí, že ty minulé intervence byly nelegální. Že podle zákona ČNB se měla banka poradit s vládou o změně toho kurzového, řekněme, režimu.
+**Tomáš Havránek:** Nevím, ale mám samozřejmě nějaké jako takové nápady, když projím s lidma z ČNB. Co mi říkají, tak jedna ta teorie je, že třeba pan guvernér se netají tím, že si myslí, že ty minulé intervence byly nelegální. Že podle zákona ČNB se měla banka poradit s vládou o změně toho kurzového, řekněme, režimu.
 
 Ale ta situace je dneska jiná, aby bychom... Nebo my... ČNB by nestavila nějakou hladinu, na kterou chce korunu posílit. To nejde kvůli spekulantům, kteří by ji mohli porazit.
 
@@ -106,7 +106,7 @@ Mají inflaci asi dvě a půl procenta maximálně. I my máme vlastní energii.
 
 Aspoň ne v takové míře. Ano. Ale dlouhodobě, co je ta hlavní věc, je posilující měna, která pomáhá ty inflační tlaky tlumit. a zároveň to, že ta centrální banka ji nevadí, když inflace je na nule.
 
-Všechny ostatní centrální banky kolem švýcarská vlastně jakmile inflace klesne k nule, oni začínají něco dělat, uvolňovat tu měnovou politiku, aby inflaci dosáhly. U nás to byly intervence například proti koruně. Švýcarsko taky intervenuje, aby ta deflace nebyla nějak velká, ale nulová inflace jim nevadí. To mě na mé pravidlo mají takové, že mezi nulou a dvojkou je to pro ně v pořádku.
+Všechny ostatní centrální banky kromě švýcarské vlastně jakmile inflace klesne k nule, oni začínají něco dělat, uvolňovat tu měnovou politiku, aby inflaci dosáhly. U nás to byly intervence například proti koruně. Švýcarsko taky intervenuje, aby ta deflace nebyla nějak velká, ale nulová inflace jim nevadí. Pravidlo mají takové, že mezi nulou a dvojkou je to pro ně v pořádku.
 
 Čili tohle je jasný krok, který by rozhodně pomohl do budoucna vlastně, protože základní problém našeho systému, toho inflačního cílování, který máme tady, je ten, že nám dává nejistotu ohledně budoucí hodnoty peněz. My vůbec nevíme, jakou hodnotu bude mít koruna za 20 let třeba. A v takovém režimu je hrozně těžké spořit na důchod nebo pro děti. Děti máte, jak jsem si o vás načetl na Wikipedii.
 
@@ -116,9 +116,9 @@ A tohle bohužel naše centrální banka nedělá.
 
 **Martin Veselovský:** Dobře, to chápu. Ale na druhou stranu, když už jste uváděl Švýcarsko jako příklad nějaké lepší praxe, tak je ale něco z toho, co a jak oni dělají, převzatelné pro nás? A nebo jsme prostě v jiné situaci, v jiné výchozí situaci?
 
-**Tomáš Havránek:** ale zrušit inflaci můžeme udělat kdykoliv. Samozřejmě má to nějaké krátkodobé náklady v tom krocení té inflace, ale my jste jí musíme krotit ze 14% na 2 nebo na 0.
+**Tomáš Havránek:** ale zrušit inflaci můžeme udělat kdykoliv. Samozřejmě má to nějaké krátkodobé náklady v tom krocení té inflace, ale my ji stejně musíme krotit ze 14% na 2 nebo na 0.
 
-**Martin Veselovský:** zvlášť, když se díváme na dvouciferné číslo, poměrně odvážné tvrzení.
+**Martin Veselovský:** Ten rozdíl už je minimální. Tak to zrušit inflaci můžeme kdykoliv, zvlášť, když se díváme na dvouciferné číslo, poměrně odvážné tvrzení.
 
 **Tomáš Havránek:** Dlouhodobě. Dlouhodobě. Dlouhodobě centrální banka má plnou kontrolu nad inflací. Ne na tou letošní nebo příští rok, ale v horizontu deseti let.
 
@@ -132,7 +132,7 @@ Tak jestli prostě nezbytně musel přijít a Česká národní banka akorát m�
 
 **Martin Veselovský:** v našem rozhovoru jako neúplně dobrou praxi České národní banky. Tak co to znamená, že minimálně částečným viníkem té současné inflačního stavu je Česká národní banka?
 
-**Tomáš Havránek:** Centrální banka je ten, kdo ve finále odpovídá za tu inflaci. Samozřejmě nemůže za válku, ale ta inflace byla nebo cifrná před tou válkou. Nemůže za COVID, ale znamená to selhání. Ale to selhání není naše tuzemské.
+**Tomáš Havránek:** Centrální banka je ten, kdo ve finále odpovídá za tu inflaci. Samozřejmě nemůže za válku, ale ta inflace byla dvouciferná před tou válkou. Nemůže za COVID, ale znamená to selhání. Ale to selhání není naše tuzemské.
 
 To selhání obecně jako všech centrálních bank, většiny z nich, kromě toho Švýcarska možná. A já, jak vy jste naznačil nebo správně řekli, já často kritizuju vedení ČNB možná neúplně korektně v tom, že opravdu v tom mezinárodním srovnání oni si vedou dobře. Zvyšovali sazby, podle mě to není úplně ten nejefektivnější způsob, ale aspoň něco dělali to brzo. Bohužel nepovedlo se jim to celkově.
 
@@ -162,9 +162,9 @@ Ten obrázek jednak komunikační, jednak nepoužili kurz. A to možná přispě
 
 **Tomáš Havránek:** Teď je to velmi těžké právě kvůli té změně v centrální bance. Samozřejmě ty globální faktory to nějak neovlivní a ty je i těžké predikovat. Těch 90% budeme dovážet vlastně těch inflace asi dále. Ale záleží na tom kurzu měny.
 
-Opravdu, to je jediná věc, která může rychle inflaci ovlivnit. Ne, že by úplně slazal na nulu hned, ale může ji rychle ovlivnit jako jediná věc. A to záleží na Aleši Michlovi, jak se k tomu postaví v těch dalších měsících. A já věřím tomu, že znova, že bude chtít, aby si na něj historie pamatovala jako na, když se ne jako Rašína.
+Opravdu, to je jediná věc, která může rychle inflaci ovlivnit. Ne, že by úplně slazal na nulu hned, ale může ji rychle ovlivnit jako jediná věc. A to záleží na Aleši Michlovi, jak se k tomu postaví v těch dalších měsících. A já věřím tomu, že znova, že bude chtít, aby si na něj historie pamatovala jako na, když ne jako Rašína.
 
-I když ta krize je taková, že opravdu to je velká výzva pro člověka, jo. A věřím, že Aleš najde tu odvahu na to s tou inflací bojovat opravdu tak, aby ukázal, že je nezávislý komkoliv mimo tu centrální banku. A že tohle povede k posílení koruny. Že klidně nakonec může zvyšovat úrokové sazby.
+I když ta krize je taková, že opravdu to je velká výzva pro člověka, jo. A věřím, že Aleš najde tu odvahu na to s tou inflací bojovat opravdu tak, aby ukázal, že je nezávislý na komkoliv mimo tu centrální banku. A že tohle povede k posílení koruny. Že klidně nakonec může zvyšovat úrokové sazby.
 
 Vůbec bych se tomu nedivil. Aby ukázal, že je nezávislý. Dávalo by to velký smysl na podzim.
 

@@ -179,7 +179,7 @@ V té dané kapitoly. V tom celkovém státním rozpočtu, kdybychom to zavedli 
 
 Vy neberete peníze tam, kde jsou potřeba. Vy odstřednete něco, co vlastně by i pro ty ředitele to bylo lepší, kdyby nemuseli kupovat ty nesmysly ke konci roku často. Jo, 2%. 40 miliard tady, nějakých 150 miliard, řekněme, z ČNB dlouhodobě, to už je to skoro 200.
 
-a to EET, kdyby udělalo 30 miliard, tak už byste byla na dvou třetinách jaksi toho rozpočtového schotu. A vlastně, kromě EET, ty dvě další opatření nikoho moc nebolí a přinesou hodně peněz.
+A to EET, kdyby udělalo 30 miliard, tak už byste byla na dvou třetinách jaksi toho rozpočtového schotu. A vlastně, kromě EET, ty dvě další opatření nikoho moc nebolí a přinesou hodně peněz.
 
 **Petra Jaroměřská:** Jestli tomu rozumím správně, tak vy tady kritizujete nějaké bezhlavé utrácení ke konci roku jednotlivých rozpočtových kapitola. Opravdu je to 40 miliard?
 

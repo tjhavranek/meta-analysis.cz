@@ -348,15 +348,15 @@ Pivo. Oni znají pivo.
 
 **Moderátor:** v bitcoinový komunitě, tak jako Česká republika, je velmoc. V velmoc jsme tím hodně známí. Máme tady hodně projektů a vynálezů, které tady v České republice vznikly v rámci bitcoinů.
 
-**Tomáš Havránek:** co se řekne Havel. Takže Václav Havel je asi taková jako pozitivní, kromě toho, že máme hezký hlavní město a hezký třeba ženy, možná, když možná je Slovenka, takže já musím tady nesouhlasit. Jo, tak jako to je skoro to jedno to samé, že? No, to taky nesouhlasilo.
+**Tomáš Havránek:** co se řekne Havel. Takže Václav Havel je asi taková jako pozitivní, kromě toho, že máme hezký hlavní město a hezký třeba ženy, možná, když možná je Slovenka, takže já musím tady nesouhlasit. Jo, tak jako to je skoro to jedno to samé, že? No, to by taky nesouhlasilo.
 
-Dobře. Tak se omlouvám. Nejde, no. Musíš vystřednout o tomu.
+Dobře. Tak se omlouvám. Nejde, no.
 
-Nejdělám si. Jasně. Ale rozumíš, jako Václav Havel je v podstatě taková jediná aktivní, pozitivní jaksi věc, kterou tahleta země přispěla do nějakého globálního povědomí. Kdybychom neměli inflaci jako první zemi na světě, což můžeš velmi dobře odůvodnit vědecky, prakticky, i zvládnit nějaký upravní interpretace i ústavy, tak přispěješ něčím, co bude velice populární, pozitivní a co všichni potom budou znát.
+Jasně. Ale rozumíš, jako Václav Havel je v podstatě taková jediná aktivní, pozitivní jaksi věc, kterou tahleta země přispěla do nějakého globálního povědomí. Kdybychom neměli inflaci jako první zemi na světě, což můžeš velmi dobře odůvodnit vědecky, prakticky, i z hlediska nějaké právní interpretace ústavy, tak přispěješ něčím, co bude velice populární, pozitivní a co všichni potom budou znát.
 
 Minimálně lidi, co jsou aspoň trošku jako gramotný po světě. Takže ne pivo, ale to, že máme právě stabilní měnu, stabilní hodnotu peněz. A není to nemožný. Takže já říkám, že dobře, je to těžký, ten můj projekt je z velký části, je to zrušený inflaci CZ jako edukativní a na zamišlení.
 
-Nečekám, že teď přijde guvernér řekl, nejo, Zrušme inflaci. Proč jsi mi to neřekl předtím? Proč jsi mi to neřekl? Já jsem mu to říkal, ale...
+Nečekám, že teď přijde guvernér a řekne: jo, Zrušme inflaci. Proč jsi mi to neřekl předtím? Proč jsi mi to neřekl? Já jsem mu to říkal, ale...
 
 No a jaká byla reakce? No... V krátkosti. V krátkosti reakce nebyla v podstatě žádná, ale na co třeba reakce byla, když jsme se bavili o investování devizových rezerv.
 
@@ -402,11 +402,7 @@ Potom i příklady, jako třeba Japonsko, který si často udává jako odstraš
 
 Čili to máš jasný důkaz nebo minimálně protipříklad toho, že ta deflace ti nutně musí škodit. Podobně Švýcarsko. Švýcarsko je polovinu času deflaci za posledních patnáct let, tuším. Vyvíjí se líp než ostatní země, jo.
 
-To není důkaz, že by ta deflace ti pomohla, samozřejmě, ale je to protipříklad toho, že ti vždycky musíš škodit. A tak dále. A těch příkladů je řada. Amerika v posledním, tuším, pár dekádách 19.
-
-století taky měla deflaci dlouhodobou, která ty ekonomice nijak moc neškodila, jo. Takže když jsem to všechno jako načetl, tak můj osobní názor je, řada kolegů by s tím třeba možná úplně nesouhlasila, je, že ta mírná deflace, není žádná vědecká evidence, která by ti jasně řekla, že mírná deflace ty ekonomice škodí. Proč se toho centrální banky bojí, je ze zvyku. Ze zvyku, protože se všichni mají v hlavě velkou depresi 30.
-
-let minulého století, čili skoro před sto lety, kde jsi měl opravdu největší ekonomickou krizi v moderních dějinách a taky jsi měl největší deflace v moderních dějinách, více méně. Ty věci byly současně. Takže ta asociace jední špatný věci s deflací ti dává do hlavy obavu z toho, že ta deflace třeba způsobila tu deflaci, tu depresi, tu velkou krizi. Tohle není pravda.
+To není důkaz, že by ta deflace ti pomohla, samozřejmě, ale je to protipříklad toho, že ti vždycky musíš škodit. A tak dále. A těch příkladů je řada. Amerika v posledním, tuším, pár dekádách 19. století taky měla deflaci dlouhodobou, která ty ekonomice nijak moc neškodila, jo. Takže když jsem to všechno jako načetl, tak můj osobní názor je, řada kolegů by s tím třeba možná úplně nesouhlasila, je, že ta mírná deflace, není žádná vědecká evidence, která by ti jasně řekla, že mírná deflace ty ekonomice škodí. Proč se toho centrální banky bojí, je ze zvyku. Ze zvyku, protože se všichni mají v hlavě velkou depresi 30. let minulého století, čili skoro před sto lety, kde jsi měl opravdu největší ekonomickou krizi v moderních dějinách a taky jsi měl největší deflace v moderních dějinách, více méně. Ty věci byly současně. Takže ta asociace jední špatný věci s deflací ti dává do hlavy obavu z toho, že ta deflace třeba způsobila tu deflaci, tu depresi, tu velkou krizi. Tohle není pravda.
 
 Ta deflace byla spíš průvodní efekt té krize, respektive způsobili sami ty centrální banky vlastně s úplně špatnou politikou. A je pak pravda, že v druhým kroku ta deflace za stů krizi prohloubila. Ale není to tak, že by se dostala inflace na minus dva a najednou se to začalo všechno sypat a pak se ta deflace ještě prohlubovala. Ne, to byla kombinace faktorů, kde rozhodně ta deflace nebyla první ani primární.
 
@@ -466,10 +462,4 @@ Což ti tu spirálu vlastně úplně ještě odbourává i z tohohle jednoduchý
 
 **Moderátor:** já bych sem pomalučku přešel na Hero, na bonusovou verzi, kde se spolu pobavíme o bitcoinu, na to se hodně těším a chtěl bych sem probrat, my jsme to tady nakousli na začátku, pobavíme se o euro, jak to bude, jestli bychom ho měli přímo, kte měli, jestli bude, nebude, co si o to myslíš a ještě bych se s tebou chtěl pobavit o CBDC, jak je to tady v České republice, jak je na to, jak je na to, má názor Česká národní banka a jestli se tady něco chystá nebo ne. Takže děkujeme všem posluchačům, který doposlouchali až teď a rozhovor pokračuje
 
-**Tomáš Havránek:** že kvůli hotovosti probíhá spousta zločinů, podobně jako třeba přes bitcoin, to je pravda. Opravdu jo,
-
-**Moderátor:** tak onětí prostě nedáj, protože ty jsi tady dělal nějaký transakce s kryptoměram a ty jsi automaticky hoznaný do seznamu jako gambler.
-
-**Tomáš Havránek:** na prostý kontroly nad tou společností, ze který potom už není úniku, když si nemůžeš koupit vlastně nic, ani by o tom někdo věděl. Ten náš systém naštěstí není schopen nic takového vytvořit, jo, protože díky tomu, že ten bitcoin vlastně je takový jako unikový ventil, který nikdy nejsi schopen úplně zabrzdit ani v té Číně. Takže jenom to zavedení bitcoinu by ti nezaručilo omezenou peněžní nabídku v té normální definici, co jsou peníze. Je to teorie her,
-
-**Moderátor:** asi by bylo dobrý nějakej ten bitcoin mít, jo, prostě, když toho dám, stejně jak si říkal, když dá banka jedno procento z těch tří bilionů do zlata, tak jí to prostě neublíží. Co se stane prostě obyčejnému člověku, který dá, má sto tisíc na účtu a prostě vezme tu blbou tisícovku a prostě koupíš si za to ten bitcoin. Prostě nic ho to neto, on má jenom, dlouhodobě má jenom ten upside, že na tom prostě jako vydělá a čím víc si ten člověk o tom čte, zajímá se o to,
+*[Přeskočeno: znělka a upoutávka na pořad.]*

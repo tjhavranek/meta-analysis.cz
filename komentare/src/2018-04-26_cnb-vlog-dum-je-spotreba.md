@@ -6,7 +6,7 @@ url: "https://www.cnb.cz/cs/o_cnb/vlog-cnb/Nejcitovanejsi-cesky-ekonom-Dum-je-pr
 date: "2018-04-26"
 headline: "Nejcitovanější český ekonom: Dům je pro mě spotřeba"
 byline: "Tomáš Havránek"
-body_note: "Rozhovor pro vlog České národní banky, natočený v době, kdy Tomáš Havránek působil jako poradce bankovní rady. Ptá se redaktorka ČNB, kterou pořad nejmenuje. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, je určeno podle hlasu; vzorky obou mluvčích pocházejí z této nahrávky. Opraveno bylo 14 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Dvě místa zůstala tak, jak je přepis zachytil: jméno tazatelky (oslovuje ji zkráceně) a jedno slovo, u kterého připadají v úvahu dvě různá čtení. Dvě otázky redaktorky přepis vynechal a jednu odpověď Tomáše Havránka kvůli tomu vedl pod jejím jménem; obě otázky jsou doplněny a odpověď vrácena jemu. Text prošel lehkou úpravou, jaká je u publikovaných přepisů obvyklá: odstraněna zjevná přeřeknutí a opakování slov. Čísla, zápory ani míra opatrnosti ve formulacích se přitom neměnily a nic nebylo doplněno. Mluvená řeč obsahuje nedokončené věty — nejde o psaný text."
+body_note: "Rozhovor pro vlog České národní banky, natočený v době, kdy Tomáš Havránek působil jako poradce bankovní rady. Ptá se redaktorka ČNB, kterou pořad nejmenuje. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, je určeno podle hlasu; vzorky obou mluvčích pocházejí z této nahrávky. Opraveno bylo 14 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Dvě místa zůstala tak, jak je přepis zachytil: jméno tazatelky (oslovuje ji zkráceně) a jedno slovo, u kterého připadají v úvahu dvě různá čtení. Dvě otázky redaktorky přepis vynechal a jednu odpověď Tomáše Havránka kvůli tomu vedl pod jejím jménem; obě otázky jsou doplněny a odpověď vrácena jemu. Text prošel lehkou úpravou, jaká je u publikovaných přepisů obvyklá: odstraněna zjevná přeřeknutí a opakování slov. Čísla, zápory ani míra opatrnosti ve formulacích se přitom neměnily a nic nebylo doplněno. Při závěrečné kontrole byla místa, kde první model přeslechl číslo, zápor nebo vynechal část věty, opravena podle toho, co v nahrávce slyší druhý, nezávislý model (Whisper large-v3). Mluvená řeč obsahuje nedokončené věty — nejde o psaný text."
 ---
 **Redaktorka ČNB:** Celosvětově nejcitovanější český ekonom pracuje už od roku 2009 v České národní bance. Je jím poradce bankovní rady Tomáš Havránek. Tomáši, informaci o vašem prvenství přinesla největší světová databáze ekonomického výzkumu Ideas. Co to ale znamená?
 
@@ -16,7 +16,7 @@ Kdo a kde vás cituje a k čemu je to vlastně dobré?
 
 **Redaktorka ČNB:** Ale zpátky tedy tomu Žebříčku, proč se ta kvalita výzkumu tímto způsobem vlastně měří?
 
-**Tomáš Havránek:** U výzkum stojí peníze, jak víte, samozřejmě jako všechny ostatní činnosti. Tak chcete vidět, jaké to má výsledky. U výzkumu se ty výsledky měří asi nejsnáze pomocí počtu citací, které ukazují, jak ten daný projekt je užitečný pro ostatní lidi, jak akademiky, tak praktiky.
+**Tomáš Havránek:** Výzkum stojí peníze, jak víte, samozřejmě jako všechny ostatní činnosti. Tak chcete vidět, jaké to má výsledky. U výzkumu se ty výsledky měří asi nejsnáze pomocí počtu citací, které ukazují, jak ten daný projekt je užitečný pro ostatní lidi, jak akademiky, tak praktiky.
 
 A i to využití v praxi totiž většinou vede přes akademické publikace, protože jinak nemůžete dost dobře zajistit, že ten daný projekt vám obstojí v mezinárodních standardech.
 
@@ -40,13 +40,13 @@ Ale i pro tu cenovou stabilitu je důležité v krizi nějak zvednout náladu li
 
 **Redaktorka ČNB:** Je dnes podle vás ekonomie spíše exaktní, tedy na matematice založenou vědou, anebo spíše vědou společenskou?
 
-**Tomáš Havránek:** Ekonomie určitě má jak exaktní prvky, je to grózní prvky z matematiky, tak humanitní prvky, třeba z psychologie. A dohromady to je společenská věda, jako čistě sociální věda, která ale vám nedá nějaký všelék na všechny problémy společnosti, dokonce ani ekonomiky. Protože i taková ryze ekonomická událost, důležitá ekonomická událost, jako byla na průmyslová revoluce, tak vlastně nemá ekonomické vysvětlení,
+**Tomáš Havránek:** Ekonomie určitě má jak exaktní prvky z matematiky, tak humanitní prvky, třeba z psychologie. A dohromady to je společenská věda, jako čistě sociální věda, která ale vám nedá nějaký všelék na všechny problémy společnosti, dokonce ani ekonomiky. Protože i taková ryze ekonomická událost, důležitá ekonomická událost, jako byla průmyslová revoluce, tak vlastně nemá ekonomické vysvětlení,
 
 **Redaktorka ČNB:** S viceguvernérem Mojmírem Hamplem, jehož jste mimochodem poradcem, jste publikovali několik textů na téma zahrnutí ceny nemovitostí do inflace. Mě by zajímalo, proč je zrovna tohle téma pro vás důležité?
 
 **Tomáš Havránek:** Tak mimo jiné, protože teď stavíme dům s manželkou a to děláme proto, abychom v něm potom žili s našimi čtyřmi dětmi. A ne proto, abychom ho prodali během několik let. Takže pro nás to je spotřeba, ten dům. Ty peníze, které vložíme, jsou spotřeba.
 
-A jako takové by podle ní nebyt určitou váhu v indexu spotřebitelských cen. Že to je ten index, jehož stabilitu centrální banka ČNB zajišťuje.
+A jako takové by podle něj měly mít určitou váhu v indexu spotřebitelských cen. Že to je ten index, jehož stabilitu centrální banka ČNB zajišťuje.
 
 **Redaktorka ČNB:** Ta realita taková tedy není. V současnosti ty ceny nemovitostí vůbec do inflace zahrnuty nejsou?
 
@@ -76,6 +76,6 @@ A jako takové by podle ní nebyt určitou váhu v indexu spotřebitelských cen
 
 **Tomáš Havránek:** Nemáme. A já myslím, že by to nebylo ani zdravé. Pracovat večer, se snažím tomu vždycky vyhnout. Takže občas se tomu nevyhnete z toho důvodu, že se něco musí dodělat velice rychle.
 
-Díky tomu, že máme čtyři děti, tak toho času během dne taky není moc. Ale obecně se tomu snažíme vyhnout. Takže ekonomie není tématem našich večerních komunizací.
+Díky tomu, že máme čtyři děti, tak toho času během dne taky není moc. Ale obecně se tomu snažíme vyhnout. Takže ekonomie není tématem našich večerních komunikací.
 
 **Redaktorka ČNB:** Musím přiznat, že takovou odpověď jsem tak trochu očekávala. Já vám děkuji Tomáši za rozhovor.

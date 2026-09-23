@@ -31,11 +31,11 @@ Ne úplně primárně, tak ta ekonomika by rostla rychleji, kde by ty dálnice b
 
 **Václav Moravec:** … obrátím na Tomáše Havránka, který psal o nutnosti těch gigantických investic, které by byly zapotřebí. Je těch 150 miliard korun. Pro rok příští, které jsou ve státním fondu dopravní infrastruktury i na výstavbu nových dálnic a silnic rychlostních, je to dostatečná částka ta gigantická investice, protože vy jste v březnu říkal, není podstatné, jak velký bude schodek, pokud půjdou
 
-**Tomáš Havránek:** … investice se nám, tím, když se nám vrátí, tak de facto potom vlastně ten dluh sníží. Takže to není úplně tolik. To samotné číslo za letyho šínek není tak důležité. Ale já mám návrh, jak ty peníze sehnat.
+**Tomáš Havránek:** … investice se nám, tím, když se nám vrátí, tak de facto potom vlastně ten dluh sníží. Takže to není úplně tolik. To samotné číslo není tak důležité. Ale já mám návrh, jak ty peníze sehnat.
 
 My tady máme jako země balík 3 bilionů korun, 3 tisíce miliard které má ČNB. A vlastně ona je nechce. Ono s těmi nic moc nedělá. Ty peníze nevydělávají.
 
-A kdybychom je investovali třeba po vzoru Singapuru, který tohle udělal desetiletý zpátky a de facto si koupil podíl na globálním technickém pokroku, tak nám to ročně vydělá minimálně těch 100 miliard, co pan ministr potřebuje navíc. Vlastně do toho SV. Teď mluvíte o devizových rezervách. Devizových rezervách.
+A kdybychom je investovali třeba po vzoru Singapuru, který tohle udělal desetiletí zpátky a de facto si koupil podíl na globálním technickém pokroku, tak nám to ročně vydělá minimálně těch 100 miliard, co pan ministr potřebuje navíc.
 
 A teď, jenom bych to dát jako rozvedl. Samozřejmě ta ČNB se tohoto uvědomuje a ta investice by byla velký krok. Ona se necítí mít autoritu na to, aby to sama udělala. I když znova ona ty rezervy nepotřebuje vlastně nechce.
 
@@ -51,7 +51,11 @@ Ne jenom s vládou, ale i s opozicí. Čili když si třeba vy, pan Stínový pr
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Tomáš Havránek:** To nestojí vůbec nic. Ty peníze už tady jsou, 130 miliard eur, čili to je úplně jiná jak to byť částka i proporčně, než, jak jste mluvil o tom, pane Proslančevi, to je tři tisíce miliard, to je opravdu obrovský balík. A tam se nedá pustit se všechno, pane profesore. No je, to ne, že to můžete vzít a poslat do dálnice, ale investovat to jako Singapur, který dlouhodobě z toho financuje metra, financuje z toho silnice, železnice.
+**Tomáš Havránek:** To nestojí vůbec nic. Ty peníze už tady jsou, 130 miliard eur, čili to je úplně jiná jak to byť částka i proporčně, než, jak jste mluvil o tom, pane poslanče, to je tři tisíce miliard, to je opravdu obrovský balík.
+
+*[Přeskočeno: část pořadu s jinými hosty.]*
+
+**Tomáš Havránek:** To ne, že to můžete vzít a poslat do dálnice, ale investovat to jako Singapur, který dlouhodobě z toho financuje metra, financuje z toho silnice, železnice.
 
 A funguje to velmi, velmi dobře. Čili aspoň trochu vykročit tím směrem nám vydělá tolik peněz, že to jako zastíní všechny ty ostatní řešení
 
@@ -81,9 +85,9 @@ Polský dálniční průměr na jeden rok v poslední dekádě byl 280, kdežto 
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Tomáš Havránek:** … nejdružší řešení je finanční. No tak navážete odměny více na dokončené úseky dálnic a případně teda železnic, jestli se dočkáme někdy vrtratí. A já bych tady znovu pochválil pana Mátla, protože o sebelepší zákon vám nepomůže stavit dálnic, když nemáte lidi, kteří jsou schopni vyjet z Prahy, třeba do Litomyšle nebo do Šumperka a ty problémy osobně řešit a jednat s těma lidma, s kterým třetím níkou nejednal. A to pan Mátl dělá a proto teď k těm zpožděním nedochází u dálnic minimálně.
+**Tomáš Havránek:** … nejjednodušší řešení je finanční. No tak navážete odměny více na dokončené úseky dálnic a případně teda železnic, jestli se dočkáme někdy VRT. A já bych tady znovu pochválil pana Mátla, protože o sebelepší zákon vám nepomůže stavit dálnic, když nemáte lidi, kteří jsou schopni vyjet z Prahy, třeba do Litomyšle nebo do Šumperka a ty problémy osobně řešit a jednat s těma lidma, s kterým třetím níkou nejednal. A to pan Mátl dělá a proto teď k těm zpožděním nedochází u dálnic minimálně.
 
-Mě trochu třeba mrzí, že přivaděče k dálnici nejsou plně v kompetenci ŘSD, že některé jsou v režii krajů a ne všechny kraje umí stavět vlastně stavby na zelené louce. Konkrétně Pardubický kraj v tom úplně se nevyznamenává, takže ve finále celá polovina kraje bude bez přístupů D35, Česká Třebová nebo Letohrad, jak jsme se bohli předtím. Čili já bych osobně klidně tohle břemenosti krajů odňal a když se osvědčil pan Mátl a ŘSD, některá má zkušenosti s tím už. Taky to nebylo těžké, nebylo to snadné, a už se to
+Mě trochu třeba mrzí, že přivaděče k dálnici nejsou plně v kompetenci ŘSD, že některé jsou v režii krajů a ne všechny kraje umí stavět vlastně stavby na zelené louce. Konkrétně Pardubický kraj v tom úplně se nevyznamenává, takže ve finále celá polovina kraje bude bez přístupů D35, Česká Třebová nebo Letohrad, jak jsme se bavili předtím. Čili já bych osobně klidně tohle břemenosti krajů odňal a když se osvědčil pan Mátl a ŘSD, některá má zkušenosti s tím už. Taky to nebylo snadné, a už se to
 
 **Václav Moravec:** … příklad D52, protože ať se podíváme k řidičům kolem Brna a těm, kteří chtějí z Brna jet do Vídně co nejrychleji, tak marně čekali a čekají řidiči na dokončení té dálnice D52 s Brnem kolem Mikulova k hranicím s Rakouskem Ředitelství silnic a dálnic v úterý. Podalo žádost na Ministerstvu životního prostředí o vydání nového stanoviska EIA, které posoudí vliv stavby na okolní přírodu. Hotová je od roku 1996 pouze část od Rajhradu do Pohořelic. Dál směrem k Mikulovu zůstala trasa jen na papíře.
 
@@ -91,7 +95,7 @@ Silničářům chybí postavit úseky od Pohořelic po Nové Mlýny, přes Nové
 
 Je možné na příkladu D52 vlastně ukázat, že i ŘSD
 
-**Tomáš Havránek:** ŘSD není dokonalá instituce. Já jenom chci říct, že se opravdu velice zlepšila v té svojí efektivitě, v tom, jak funguje. A znovu děkuji vám obyma, že jste pana Mátla podpořili v té jeho funkci a já bych ty jeho kompetence rozšířil.
+**Tomáš Havránek:** ŘSD není dokonalá instituce. Já jenom chci říct, že se opravdu velice zlepšila v té svojí efektivitě, v tom, jak funguje. A znovu děkuji vám oběma, že jste pana Mátla podpořili v té jeho funkci a já bych ty jeho kompetence rozšířil.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
@@ -105,13 +109,13 @@ Tak prostě tohle je výsledek toho, který je nejoptimální pro tu zemi, konkr
 
 **Tomáš Havránek:** … každopádně to ukazuje na obecnější problém, že mi tady ta lávka stála kolik 300 milionů. 300 milionů. A to, aby jsme se rozuměli, to teda není tak jako lávka, to je skutečně jako... My jsme ji viděli.
 
-Ty věci mají konkrétní náklady, ale ty benefity často nejsou úplně jasně spočítané, nebo my se na to hrajeme někdy, ale je to často zvlášené na vodě. Ty rychlovlaky jsou malinko podobný případ, k těmu se asi dostaneme, to budou bilionové částky pravděpodobně a tam opravdu je velmi důležité to podrobně odůvodnit, kde budou ty biliony těch výnosů, protože ty náklady jsou naprosto jasné, takže tohle mi malinko chybí podrobnější cost-benefit analýza nákladů a výnosů a jaksi
+Ty věci mají konkrétní náklady, ale ty benefity často nejsou úplně jasně spočítané, nebo my se na to hrajeme někdy, ale je to často psané na vodě. Ty rychlovlaky jsou malinko podobný případ, k těmu se asi dostaneme, to budou bilionové částky pravděpodobně a tam opravdu je velmi důležité to podrobně odůvodnit, kde budou ty biliony těch výnosů, protože ty náklady jsou naprosto jasné, takže tohle mi malinko chybí podrobnější cost-benefit analýza nákladů a výnosů a jaksi
 
 **Václav Moravec:** Vysokorychlostních tratí budu překládat pro diváky.
 
 … uvažujeme, o tom, že by ty tratě vysokorychlostní byly zprovozněny pro rychlost 200 až 250 kilometrů za hodinu. Nikoli tedy 300 až 350, jako je tomu
 
-**Tomáš Havránek:** No, já si osobně nemyslím, že nikdy se svezují
+**Tomáš Havránek:** No, já si osobně nemyslím, že nikdy se svezu
 
 **Václav Moravec:** Pane profesore, vy myslíte, že už budete mrtví a vy se nesvezete rychlovlakem, ani když vám bude 80.
 
@@ -119,6 +123,6 @@ Ty věci mají konkrétní náklady, ale ty benefity často nejsou úplně jasn�
 
 Ale zase, to nedostatečné odůvodnění těch nákladů je tam evidentní. A zahraniční příklady ukazují. My vidíme ty hezké příklady, kde to funguje. Ale pak máte spoustu příkladů, kde to nefunguje.
 
-Dráha z San Francisco do Los Angeles měla už dávno stát. rád nestojí, nejezdí ještě ani kousek. Vlastně to nefunguje. Stojí čtyřnásobek toho původního projektu a pořád se to ještě počítá.
+Dráha z San Francisco do Los Angeles měla už dávno stát. Nestojí, nejezdí ještě ani kousek. Vlastně to nefunguje. Stojí čtyřnásobek toho původního projektu a pořád se to ještě počítá.
 
 A těch příkladů celá řada. Málokdy ex post vyhodnocení efektivity u rychlodráh ukazují, jestli to vyplatí. Čili já bych měl hrozně rád rychlovlak metro z Prahy do Litomyšle.

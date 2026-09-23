@@ -165,9 +165,9 @@ Ale to je ta odpovědnost toho rodiče, aby řešil věci, který řešit může
 
 Já vím o jednom. Tak to možná řekněte vy, abych to... Pokračujte, pokračujte, a já si to najdu zatím na Instagramu, to možná nemusíme ani, ale já jsem mu to říkal, podívej, jak hraje skvěle, tenhle ten pán, kluk, a přitom vlastně má tu cukrovku, tak vidíš, jo,
 
-**Jan Hrušovský:** když on může na týhle ty úrovni chytat, se mi to byl Goleman. Tak tím pádem myslíte asi toho samého, co já,
+**Jan Hrušovský:** když on může na týhle ty úrovni chytat, to byl gólman. Tak tím pádem myslíte asi toho samého, co já,
 
-**Tomáš Havránek:** Já jsem myslel někoho jinýho, ale to je to skvělé. Goleman... Dobrej Goleman. Tak vlastně vidíš, že to jde, jo.
+**Tomáš Havránek:** Já jsem myslel někoho jinýho, ale to je to skvělé. Gólman… Dobrej gólman. Tak vlastně vidíš, že to jde, jo.
 
 A mimochodem florbal je super sport, protože vlastně v sobě spojuje tu dynamiku fotbalu i hokeje, a zároveň není profesionální. Takže ty děti nemají to lákadlo, že jednou budou vydělávat jako miliardy a budou jako Ronaldo, věc je jen koníček a i ty nejlepší nejlepší hráči florbalu v Čechách mají nějakou skutečnou práci. Ale prostě sport by měl být podle mého názoru hlavně něco, co děláte jako bokem a není to vaše primární kariéra. Nebo není to jediná věc, kterou v životě profesionálně děláte.
 

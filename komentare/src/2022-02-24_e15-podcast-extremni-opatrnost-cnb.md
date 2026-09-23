@@ -10,7 +10,7 @@ body_note: "Díl podcastu E15cast, ptal se Nikita Poljakov. Text je strojový p�
 ---
 **Nikita Poljakov:** A teď už tu vítám ekonoma, akademika Tomáše Havránka. Tomáši, krásný den.
 
-**Tomáš Havránek:** Dobrý den, Nikito, děkuji moc za pozvání a zdravím si to myšle.
+**Tomáš Havránek:** Dobrý den, Nikito, děkuji moc za pozvání a zdravím z Litomyšle.
 
 **Nikita Poljakov:** Dnešní téma je debata ohledně situace kolem České národní banky.
 
@@ -18,7 +18,7 @@ Vy jste ve svých komentářích v minulých týdnech a měsících napsal, že 
 
 **Tomáš Havránek:** No, protože podle mě by to pomohlo posílit její důvěryhodnost, a to jak vlastně dovnitř republiky, tak i navenek, z hlediska kurzu koruny. A čili to inflační cílování, jak jste říkal, jak vlastně víme dobře, je to taková všeobecná mantra, používají to skoro všechny centrální banky vyspělých zemí. A určitě, když se to zavádělo před 30 lety na Zélandu, v Kanadě, tak to byl velký průlom. Ono pomohlo to inflaci snížit, pomohlo to vlastně zvýšit důvěru v tu nízkou inflaci v centrální banky obecně.
 
-A fungovalo to velice dobře, jo. V té době vlastně nebyl žádný průšvih. Ten průšvih, který šil až teď, kdy ta inflace globálně, jo, ale částečně z globálních, částečně z lokálních příčin v těch různých zemích, stoupá tak silně, že to vlastně popírá tu původní mantru toho, že ta inflace je, ty očekávání v té ekonomické antirice inflační jsou dobře ukotvená, že to vlastně funguje. Tohle se nemělo nikdy stát, jo, v té doktríně inflačního cílování.
+A fungovalo to velice dobře, jo. V té době vlastně nebyl žádný průšvih. Ten průšvih, který přišel až teď, kdy ta inflace globálně, jo, ale částečně z globálních, částečně z lokálních příčin v těch různých zemích, stoupá tak silně, že to vlastně popírá tu původní mantru toho, že ta inflace je, ty očekávání v té ekonomické antirice inflační jsou dobře ukotvená, že to vlastně funguje. Tohle se nemělo nikdy stát, jo, v té doktríně inflačního cílování.
 
 Čili tohle ukazuje na, když už ne na selhání, tak velké problémy toho frameworku, jo, toho vlastně nastavení. A ukazuje to na potřebu nějakého zamyšlení se nad tím, jestli tohle je opravdu to nejlepší, to jsme schopni vygenerovat pro lidi, pro tu ekonomiku. A jak jste zmiňoval, nikdy to dobře, tak ten audit nebo revizi provedly už i ostatní centrální banky, FED, ECB, Bank of Canada například. Čili není důvod, abychom v takovéhle situaci, kdy opravdu došlo možná k selhání té současné politiky, neměli zamyslet nad tím, jestli bychom to měli dělat lépe.
 
@@ -30,7 +30,7 @@ A fungovalo to velice dobře, jo. V té době vlastně nebyl žádný průšvih.
 
 Tohle je právě to, co FED změnil. Americká centrální banka tohle v té své revizi změnila. Mě cílí průměrnou inflaci, že za nějaké období tuším. Přesně tak, jo.
 
-Čili tohle vám vlastně pomůže odstranit část nejistoty ohledně dloucího vývoje ceny peněz. To vám umožní lépe spořit, protože víte, s čím máte počítat, jo. Čili mě to dává velký smysl. To je jedna rovina.
+Čili tohle vám vlastně pomůže odstranit část nejistoty ohledně dlouhodobého vývoje ceny peněz. To vám umožní lépe spořit, protože víte, s čím máte počítat, jo. Čili mě to dává velký smysl. To je jedna rovina.
 
 Ta druhá rovina je teda v průměru, co máte cílovat. 2% je tady nějaký úzus. Když se podíváte, ale na stránky těch bank, třeba ČNB, tak nikdo z nich ho nijak není schopen odůvodnit. Tam vždycky jedna věta, takhle to děláme, takhle to dělají ostatní.
 
@@ -40,13 +40,13 @@ A vědecká literatura od roku 1990, kdy vlastně začalo to cílování inflace
 
 **Tomáš Havránek:** To se může stát, já tomu nevěřím, samozřejmě se to stát může, i kdyby polovina té inflace, jenom polovina byla domácí, tak jako pořád velká část odpovědnosti nakonec jde za centrální bankou ve finále, ač musíme ji pochválit za to, co dělá. Málokterá banka takhle bojuje proti inflaci jako ČNB. Podle mě ale to dělá špatným nástrojem, čili zvyšování sazeb. Rozhodně bylo rozumné do nějaké míry 3-4 % na nějakou zdravou dlouhodobou hladinu.
 
-Ale ve chvíli, kdy máte inflaci 10, tak vy jste ji nejste schopni doručit kladnou inflaci, kladné úroky, kladné inflace. Čili to byste museli někam na 11. To není možný. A nerozumím tomu, proč není používán ten druhý nástroj.
+Ale ve chvíli, kdy máte inflaci 10, tak vy stejně nejste schopni doručit kladné úroky. Čili to byste museli někam na 11. To není možný. A nerozumím tomu, proč není používán ten druhý nástroj.
 
 To znamená devizové rezervy, kterých máme hrozně hodně. A vznikly právě intervenováním proti koruně. Kdybychom to mohli obrátit a vlastně je umazat části. Čili by to nebyly nové intervence, ale de facto vlastně neutralizace těch minulých.
 
 A to působí velice rychle. Rychle posílíte korunu a to se potom rychle přemístí do těch cen dováženého zboží. Čili kdybychom tohle udělali v září, řekněme, tak dneska se nebavíme o dvouciferné inflaci.
 
-**Nikita Poljakov:** Častče nebyl se k rozpouštění rezerv staví agresivněji, proaktivněji. Někteří členové mluví, pojďme rozpouštět, pojďme investovat, pojďme vlastně nedržet devizový rezervy na účtech. Guvernér zároveň říká, že už nezdrží asi kolem 10%, možná víc. Já se teď omlouvám, nepamatuju si, fakcích, že tak konzervativní systém je to vlastně nějaký novum, který není úplně potřeba dělat.
+**Nikita Poljakov:** Častče nebyl se k rozpouštění rezerv staví agresivněji, proaktivněji. Někteří členové mluví, pojďme rozpouštět, pojďme investovat, pojďme vlastně nedržet devizový rezervy na účtech. Guvernér zároveň říká, že už nezdrží asi kolem 10%, možná víc. Já se teď omlouvám, nepamatuju si, v akciích, že tak konzervativní systém je to vlastně nějaký novum, který není úplně potřeba dělat.
 
 Česká národní banka není od toho, aby generovala nějaké vysoké zisky. Jak vy vnímáte tady ten pohled, že vlastně nebýt agresivní, nevymýšlet nový nápady v složitých dobách?
 
@@ -54,11 +54,11 @@ A to působí velice rychle. Rychle posílíte korunu a to se potom rychle přem
 
 My jsme ty rezervy nepoužili v žádné krizi, ať to byla finanční krize, covidová krize. nepoužíváme je k posílení koruny, když inflace je dvojciferná, nebo bude velice brzo dvojciferná. Aktuálně už asi je v únoru. A nepoužíváme je ani k tomu, aby vydělávaly.
 
-Oni nám, když to jako zvogalizují, oni nám hnijí na běžném účtu, většina z nich. A k ničemu se nepoužívají. Takže teda k čemu je máme? Buď je prodejme, posílíme korunu, neutralizujeme ty intervence, nebo je investujme a vydělají nám něco.
+Oni nám, když to jako zvulgarizuju, oni nám hnijí na běžném účtu, většina z nich. A k ničemu se nepoužívají. Takže teda k čemu je máme? Buď je prodejme, posílíme korunu, neutralizujeme ty intervence, nebo je investujme a vydělají nám něco.
 
 Ale to, že vlastně teď nám de facto, oni nejenže nevydělávají, oni hrubě prodělávají, protože my platíme na reposazby bankám, 4,5%, čili ty ztráty ČNB budou v letošním roce naprosto enormní. Ale je to nutné, je nutné ty sazby zvyšovat. Ale proč teda, když máme na straně aktiv takový balík, neuděláme s ním aspoň něco užitečného. Necháme to hnít.
 
-**Nikita Poljakov:** Pojďme si ještě na chvilku krátit k cílování inflace. Tady je odvážná myšlenka, vy jste ji teď zmínil. To znamená, vlastně, že se podíváme na x let dozadu, na průměrnou inflaci, dostaneme se někam k nule. Nulová inflace, vy si ji dovedete představit jako cíl?
+**Nikita Poljakov:** Pojďme si ještě na chvilku vrátit k cílování inflace. Tady je odvážná myšlenka, vy jste ji teď zmínil. To znamená, vlastně, že se podíváme na x let dozadu, na průměrnou inflaci, dostaneme se někam k nule. Nulová inflace, vy si ji dovedete představit jako cíl?
 
 To znamená, že tady měříme něco jiného. To je jako vy jste v jednom článku psal, pojďme se zaměřit na stabilitu růstu spotřebitelských cen, ne na to, jaký číslo vlastně procentuálně stojí na tom inflačním štítku. Dovedete si představit společnost, která to tak má?
 
@@ -68,11 +68,11 @@ Ten cíl mají vlastně od 0 do 2%. Čili když je to nula, tak to nevadí. De j
 
 A ta země z toho přitom jako nevidíte, že by to tu ekonomiku nijak poškozovalo. Vyvíjí se minimálně stejně tak dobře jako Německo třeba nebo Švédsko, které mají ale úplně jinou tu měnovou politiku. Mají vyšší inflaci. Z tohohle pohledu to rozhodně je reálná věc.
 
-Neříkám, že to je jako příklad typický, že v Švédsko je hodně zvláštní, ale zároveň to není nemožný. A teď máte stovky studií, které fakt, jak jsem říkal, odhadují tu optimální inflaci. A průměr je nula. Čili z hlediska vědeckého výzkumu to není něco, co by bylo mimo.
+Neříkám, že to je jako příklad typický, je hodně zvláštní, ale zároveň to není nemožný. A teď máte stovky studií, které fakt, jak jsem říkal, odhadují tu optimální inflaci. A průměr je nula. Čili z hlediska vědeckého výzkumu to není něco, co by bylo mimo.
 
 To je něco, co byste mohli odůvodnit snadno. A hlavně je to velice intuitivní pro běžnýho člověka. Čili z hlediska důvěryhodnosti té banky, by to bylo mnohem lepší, protože bychom všichni věděli, proč ta banka dělá to, co dělá, aby nám doručila cenovou stabilitu. Dvouprocentní inflace není cenová stabilita.
 
-Vy můžete si udělat model, kde vám to vyjde jako optimální inflace. Ale nikdy nemůžete zdůvodnit, že to se rovná cenové stabilitě. Jasně, inflace se měří asi špatně, nezohledňuje prostě technický pot. Jasně, spoustu věcí.
+Vy můžete si udělat model, kde vám to vyjde jako optimální inflace. Ale nikdy nemůžete zdůvodnit, že to se rovná cenové stabilitě. Jasně, inflace se měří asi špatně, nezohledňuje prostě technický pokrok. Jasně, spoustu věcí.
 
 Ale to je jeden procentní bod maximálně, ne dva, to se nedá odůvodnit,
 
@@ -94,7 +94,7 @@ Pojďme se o tom aspoň bavit v rámci toho auditu.
 
 **Tomáš Havránek:** A nicméně, já si fakt myslím, že ta definice nebo ta redefinice by nemusela být tak velká. To je jako vlastně drobná kalibrace. A často argument pro inflační cíle je, takhle to dělají v zahraničí v Americe v ECB. No jo, jenže tyhle ty velké centrální banky jednak mají obrovskou setrvačnost.
 
-Ty si, že ani to cílování inflace nezavedly jako první, že jo. To zavedly první na Zélandu a v Kanadě. Až hodně dlouho potom, nějakých 15 let, to zavedl Ben Bernanke ve Fedu v Americe. A navíc tyhle banky ani nemají cenovou stabilitu jako hlavní kolo.
+Ty si, že ani to cílování inflace nezavedly jako první, že jo. To zavedly první na Zélandu a v Kanadě. Až hodně dlouho potom, nějakých 15 let, to zavedl Ben Bernanke ve Fedu v Americe. A navíc tyhle banky ani nemají cenovou stabilitu jako hlavní úkol.
 
 v Americe je to k tomu ještě, jak inflaci máte zaměstnanost, dneska klima, nerovnost. A hlavní úkol ECB není cenová stabilita, ale udržet eurozónu pohromadě, že jo. Takže ona nemůže zvýšit sazby. Prostě nejde, protože by vám Itálie brzy krachla.
 

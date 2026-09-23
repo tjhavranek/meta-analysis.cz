@@ -8,11 +8,11 @@ headline: "Události, komentáře: ČNB zvýšila základní úrokovou sazbu na 
 byline: "Tomáš Havránek"
 body_note: "Rozhovor v Událostech, komentářích na ČT ve večer, kdy ČNB zvedla základní sazbu na 7 %. Pořad má více témat; zde je jen ta část, na kterou odkazuje záznam. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, vychází z titulků České televize, které značí střídání mluvčích. Titulky ale přicházejí o jednu až dvě vteřiny později než řeč (změřeno), a tak se u přechodů mezi otázkou a odpovědí dorovnávají podle slov. Že hostem je skutečně Tomáš Havránek, potvrzuje jednak titulek na obrazovce, který se v titulcích přepisuje, jednak porovnání hlasu s hlasovým vzorkem z pořadů, kde ho Česká televize jmenuje. Opraveno bylo 10 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Moderátora tohoto pořadu titulky nejmenují, proto je označen jen jako moderátor. Text prošel lehkou úpravou, jaká je u publikovaných přepisů obvyklá: odstraněna zjevná přeřeknutí a opakování slov. Čísla, zápory ani míra opatrnosti ve formulacích se přitom neměnily a nic nebylo doplněno. Mluvená řeč obsahuje nedokončené věty — nejde o psaný text."
 ---
-**Moderátor:** Pojďme k tomu, jak zvyšovala Česká národní banka základní úrokovou sazbu. Loni v černu začala s jejím zvedáním od čtvrtprocentního bodu na půl procenta. V říjnu pak přišlo první razantní zvýšení, ve kterém centrální bankéři pokračovali. Dnes, jak už jsme říkali, dosáhla reposazba až na sedm procent.
+**Moderátor:** Pojďme k tomu, jak zvyšovala Česká národní banka základní úrokovou sazbu. Loni v červnu začala s jejím zvedáním od čtvrtprocentního bodu na půl procenta. V říjnu pak přišlo první razantní zvýšení, ve kterém centrální bankéři pokračovali. Dnes, jak už jsme říkali, dosáhla reposazba až na sedm procent.
 
 S tím, jak roste základní úroková sazba, rostou i úrokové sazby u hypoték a navyšují se tedy jejich splátky. Křivka znázorňuje zvyšování za poslední rok, tedy od června 21. Průměrné sazby hypotéčních úvěrů se navýšily až na současných 5,1 procenta. I když ten pomírně zpomalilo, sazby stále rostly.
 
-Hostem je Tomáš Havránek z Institutu ekonomických studií Fakulty sociálních věd Karlovy univerzdy. Pane profesor Havránku, dobrý večer.
+Hostem je Tomáš Havránek z Institutu ekonomických studií Fakulty sociálních věd Karlovy univerzity. Pane profesor Havránku, dobrý večer.
 
 **Tomáš Havránek:** Dobrý večer, děkuji za pozvání.
 
@@ -46,17 +46,17 @@ Ta hodnota toho dluhu se snižuje, tou inflací, a pak to zaplatí ti, kteří v
 
 **Moderátor:** Snižování dluhu by znamenalo utahování opasku, taková poučka z počátku 90. let. Tohle utahování opasku probíhá
 
-**Tomáš Havránek:** … u těch domácností, které spoří a ta inflace jako dáň, která jim bere hodnotu těch úspor a vlastně přerozděluje je k těm dlužníkům, to, že stát a lidi, co mají hypotéku
+**Tomáš Havránek:** … u těch domácností, které spoří a ta inflace jako daň, která jim bere hodnotu těch úspor a vlastně přerozděluje je k těm dlužníkům, to, že stát a lidi, co mají hypotéku
 
 **Moderátor:** … a mají zafixovanou nějakou delší dobu. To všechno jsou pro ty lidi velmi nepříjemné věci, nepříjemné situace, ale jedna věc nebo jedno téma, o kterém se mám pocit politici trošku zdráhají mluvit napříč politickým spektrem a to je případné zvyšování daní. Podle některých expertů se tomu nevyhneme.
 
 Kde stojíte v této otázce vy?
 
-**Tomáš Havránek:** No ty daně už rostou tou inflací. Ta inflace je vlastně dáň na úspory, jak jsme se o tom bavili. Takže tady vidíme vlastně rekordní zvýšení daní pro všechny, kteří mají velké úspory, kteří celý život šetřili, tak teď během pár let jim ta inflace sežere třetinu těch úspor, velmi snadno.
+**Tomáš Havránek:** No ty daně už rostou tou inflací. Ta inflace je vlastně daň na úspory, jak jsme se o tom bavili. Takže tady vidíme vlastně rekordní zvýšení daní pro všechny, kteří mají velké úspory, kteří celý život šetřili, tak teď během pár let jim ta inflace sežere třetinu těch úspor, velmi snadno.
 
 Ale i nějaké další zvyšování daní pravděpodobně bude nutné, ale tohle vlastně samo o sobě už je enormní, enormní daňová zátěž.
 
-**Moderátor:** Vy jste sám také řekl, že Česká Národní banka by měla investovat třeba do nákupu akcí, trošku riskovat, když to nadnesu chovat se trošku tržně,
+**Moderátor:** Vy jste sám také řekl, že Česká Národní banka by měla investovat třeba do nákupu akcií, trošku riskovat, když to nadnesu chovat se trošku tržně,
 
 **Tomáš Havránek:** No, když to neudělá, tak ona jistě ztratí spoustu peněz tím, že vlastně teď ona má při počtu jsou 3 biliony korun, ještě víc, a musí platit našim bankám, které si potom ty rezervy v korunách ukládají u Národní banky 7% dneska. Čili ty rezervy jsou strašně nákladné a aby neprodělávaly, tak se musí investovat tak, jako to dělá třeba Singapur nebo fondy soukromých
 
@@ -70,4 +70,4 @@ Ale i nějaké další zvyšování daní pravděpodobně bude nutné, ale tohle
 
 … měsících, pokud si to vůbec troufnete.
 
-**Tomáš Havránek:** Tak to já si troufnu, ta inflace nepochybně se přiblíží 20% někdy na přelomu, řekněme, léta pod zimu. A ten růst ekonomiky bude asi poměrně blízký nula, já si nemyslím, že budeme přímo v recesi, že by to HDP klesalo, ale
+**Tomáš Havránek:** Tak to já si troufnu, ta inflace nepochybně se přiblíží 20% někdy na přelomu, řekněme, léta a podzimu. A ten růst ekonomiky bude asi poměrně blízký nula, já si nemyslím, že budeme přímo v recesi, že by to HDP klesalo, ale
