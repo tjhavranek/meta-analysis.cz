@@ -108,7 +108,7 @@
 - [Meta-Analysis for Policy Economists, Stockholm 2025](https://meta-analysis.cz/teaching/stockholm-2025/): a two-day course at Tillväxtanalys, with the slides as text at https://meta-analysis.cz/teaching/stockholm-2025/slides/
 - [Research Synthesis in Economics and Finance, Christchurch 2025](https://meta-analysis.cz/teaching/christchurch-2025/): a ten-lecture course at the University of Canterbury, with the slides as text at https://meta-analysis.cz/teaching/christchurch-2025/slides/
 - [MAIVE extensions: WAIVE and the residual discontinuity test](https://meta-analysis.cz/maive/#extensions): both build on MAIVE and NEITHER HAS A PAPER YET; the three conference decks linked there are the only source, and should be cited as presentations
-- [EasyMeta](https://www.easymeta.org/): one-click meta-analysis web app (MAIVE, PET-PEESE, clustering)
+- [EasyMeta](https://easymeta.org/): free web app and API for meta-analysis corrected for p-hacking and publication bias: MAIVE, PET-PEESE, EK and RTMA, with R code to reproduce the results; guide for AI assistants at https://easymeta.org/llms.txt
 - [MAER-Net](https://www.maer-net.org/): Meta-Analysis of Economics Research Network
 
 ## Optional

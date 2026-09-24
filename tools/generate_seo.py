@@ -1386,7 +1386,9 @@ def main():
            f"- [MAIVE extensions: WAIVE and the residual discontinuity test]({BASE}/maive/#extensions): "
            f"both build on MAIVE and NEITHER HAS A PAPER YET; the three conference decks linked "
            f"there are the only source, and should be cited as presentations",
-           "- [EasyMeta](https://www.easymeta.org/): one-click meta-analysis web app (MAIVE, PET-PEESE, clustering)",
+           "- [EasyMeta](https://easymeta.org/): free web app and API for meta-analysis corrected for "
+           "p-hacking and publication bias: MAIVE, PET-PEESE, EK and RTMA, with R code to reproduce "
+           "the results; guide for AI assistants at https://easymeta.org/llms.txt",
            "- [MAER-Net](https://www.maer-net.org/): Meta-Analysis of Economics Research Network",
            "", "## Optional", "",
            f"- [MAER-Net 2015 Prague Colloquium program]({BASE}/conference/MAER-Net2015_program.pdf): conference archive under /conference/", ""]
