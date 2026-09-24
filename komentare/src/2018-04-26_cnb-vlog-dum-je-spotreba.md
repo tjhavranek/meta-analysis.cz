@@ -6,13 +6,13 @@ url: "https://www.cnb.cz/cs/o_cnb/vlog-cnb/Nejcitovanejsi-cesky-ekonom-Dum-je-pr
 date: "2018-04-26"
 headline: "Nejcitovanější český ekonom: Dům je pro mě spotřeba"
 byline: "Tomáš Havránek"
-body_note: "Rozhovor pro vlog České národní banky, natočený v době, kdy Tomáš Havránek působil jako poradce bankovní rady. Ptá se redaktorka ČNB, kterou pořad nejmenuje. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, je určeno podle hlasu; vzorky obou mluvčích pocházejí z této nahrávky. Opraveno bylo 14 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Dvě místa zůstala tak, jak je přepis zachytil: jméno tazatelky (oslovuje ji zkráceně) a jedno slovo, u kterého připadají v úvahu dvě různá čtení. Dvě otázky redaktorky přepis vynechal a jednu odpověď Tomáše Havránka kvůli tomu vedl pod jejím jménem; obě otázky jsou doplněny a odpověď vrácena jemu. Text prošel lehkou úpravou, jaká je u publikovaných přepisů obvyklá: odstraněna zjevná přeřeknutí a opakování slov. Čísla, zápory ani míra opatrnosti ve formulacích se přitom neměnily a nic nebylo doplněno. Při závěrečné kontrole byla místa, kde první model přeslechl číslo, zápor nebo vynechal část věty, opravena podle toho, co v nahrávce slyší druhý, nezávislý model (Whisper large-v3). Mluvená řeč obsahuje nedokončené věty — nejde o psaný text."
+body_note: "Rozhovor pro vlog České národní banky, natočený v době, kdy Tomáš Havránek působil jako poradce bankovní rady. Ptá se redaktorka ČNB, kterou pořad nejmenuje. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, je určeno podle hlasu; vzorky obou mluvčích pocházejí z této nahrávky. Opraveno bylo 14 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Dvě místa zůstala tak, jak je přepis zachytil: jméno tazatelky (oslovuje ji zkráceně) a jedno slovo, u kterého připadají v úvahu dvě různá čtení. Dvě otázky redaktorky přepis vynechal a jednu odpověď Tomáše Havránka kvůli tomu vedl pod jejím jménem; obě otázky jsou doplněny a odpověď vrácena jemu. Text prošel lehkou úpravou, jaká je u publikovaných přepisů obvyklá: odstraněna zjevná přeřeknutí a opakování slov. V odpovědích Tomáše Havránka jsou navíc hovorové tvary převedeny do spisovné češtiny a opraveny zjevné gramatické chyby; obsah výpovědí se tím nemění. Čísla, zápory ani míra opatrnosti ve formulacích se přitom neměnily a nic nebylo doplněno. Při závěrečné kontrole byla místa, kde první model přeslechl číslo, zápor nebo vynechal část věty, opravena podle toho, co v nahrávce slyší druhý, nezávislý model (Whisper large-v3). Mluvená řeč obsahuje nedokončené věty — nejde o psaný text."
 ---
 **Redaktorka ČNB:** Celosvětově nejcitovanější český ekonom pracuje už od roku 2009 v České národní bance. Je jím poradce bankovní rady Tomáš Havránek. Tomáši, informaci o vašem prvenství přinesla největší světová databáze ekonomického výzkumu Ideas. Co to ale znamená?
 
 Kdo a kde vás cituje a k čemu je to vlastně dobré?
 
-**Tomáš Havránek:** Ty citace, o kterých je řeč, o kterých mluvíte, ty vlastně znamenají, že někdo váš výzkum použije, vezme ho a použije pro svoji práci, což je to, co vy jako výzkumník nejvíc chcete. A nás hlavně citují zahraniční další ekonomové, ale máme třeba i citaci v takovém nejznámějším vědeckém časopise Science. Ale pro mě jako zaměstnance Národní banky je hlavně samozřejmě důležité využití v praxi toho našeho výzkumu. Takže jsem nejradšej, když ten můj výzkum je použit tady u nás v ČNB.
+**Tomáš Havránek:** Ty citace, o kterých je řeč, o kterých mluvíte, ty vlastně znamenají, že někdo váš výzkum použije, vezme ho a použije pro svoji práci, což je to, co vy jako výzkumník nejvíc chcete. A nás hlavně citují zahraniční další ekonomové, ale máme třeba i citaci v takovém nejznámějším vědeckém časopise Science. Ale pro mě jako zaměstnance Národní banky je hlavně samozřejmě důležité využití v praxi toho našeho výzkumu. Takže jsem nejraději, když ten můj výzkum je použit tady u nás v ČNB.
 
 **Redaktorka ČNB:** Ale zpátky tedy tomu Žebříčku, proč se ta kvalita výzkumu tímto způsobem vlastně měří?
 
@@ -44,7 +44,7 @@ Ale i pro tu cenovou stabilitu je důležité v krizi nějak zvednout náladu li
 
 **Redaktorka ČNB:** S viceguvernérem Mojmírem Hamplem, jehož jste mimochodem poradcem, jste publikovali několik textů na téma zahrnutí ceny nemovitostí do inflace. Mě by zajímalo, proč je zrovna tohle téma pro vás důležité?
 
-**Tomáš Havránek:** Tak mimo jiné, protože teď stavíme dům s manželkou a to děláme proto, abychom v něm potom žili s našimi čtyřmi dětmi. A ne proto, abychom ho prodali během několik let. Takže pro nás to je spotřeba, ten dům. Ty peníze, které vložíme, jsou spotřeba.
+**Tomáš Havránek:** Tak mimo jiné, protože teď stavíme dům s manželkou a to děláme proto, abychom v něm potom žili s našimi čtyřmi dětmi. A ne proto, abychom ho prodali během několika let. Takže pro nás to je spotřeba, ten dům. Ty peníze, které vložíme, jsou spotřeba.
 
 A jako takové by podle něj měly mít určitou váhu v indexu spotřebitelských cen. Že to je ten index, jehož stabilitu centrální banka ČNB zajišťuje.
 
@@ -66,7 +66,7 @@ A jako takové by podle něj měly mít určitou váhu v indexu spotřebitelský
 
 **Redaktorka ČNB:** Ale statisticky je asi těžko proveditelné. Přesně tak. Od roku 2016 jste také poradcem bankovní rady, jak už jsem zmínila konkrétně Mojmíra Hampla. Co všechno tahle práce obnáší?
 
-**Tomáš Havránek:** Práce poradce obnáší hlavně psaní mnoha stanovisek pro bankovní radu na různá témata, protože ta bankovní rada dostává týdně často i stovky stran dokumentu, poměrně technických materiálů, že úkolem poradce je poskytnout nějaký alternativní náhled na ty materiály, který by nebyl závislý na ostatních útvarech uvnitř banky, aby to byla taková určitá interní oponentura určitomu, co ty ostatní sekce připravují.
+**Tomáš Havránek:** Práce poradce obnáší hlavně psaní mnoha stanovisek pro bankovní radu na různá témata, protože ta bankovní rada dostává týdně často i stovky stran dokumentů, poměrně technických materiálů, že úkolem poradce je poskytnout nějaký alternativní náhled na ty materiály, který by nebyl závislý na ostatních útvarech uvnitř banky, aby to byla taková určitá interní oponentura určitomu, co ty ostatní sekce připravují.
 
 **Redaktorka ČNB:** Vedle této poradenské dále výzkumné činnosti také přednášíte na vysoké škole. Mě by zajímalo, co z toho všeho, co děláte, vás baví nejvíc?
 

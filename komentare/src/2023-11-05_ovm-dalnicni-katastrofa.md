@@ -7,11 +7,11 @@ date: "2023-11-05"
 headline: "Otázky Václava Moravce: Dálniční katastrofa"
 byline: "Tomáš Havránek"
 interviewer: "Václav Moravec"
-body_note: "Nedělní diskusní pořad Otázky Václava Moravce na ČT, 5. listopadu 2023; kromě Tomáše Havránka v něm byli ministr dopravy Martin Kupka a exministr Karel Havlíček. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, vychází ze dvou nezávislých zdrojů: z titulků České televize, které značí střídání mluvčích, a z porovnání hlasu s hlasovým vzorkem pořízeným z pořadů, kde Česká televize autora jmenuje. Oba zdroje se shodly na 92 % úseků; tam, kde se neshodly, text nevydáváme jako něčí slova. Zde jsou autorovy odpovědi a otázky, které mu byly položeny; pasáže s ostatními hosty tu nejsou a najdete je v původním záznamu. Místo, kde je něco vynecháno, je v textu označeno. Opraveno bylo 53 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Titulky České televize nejsou doslovné — na stejných úsecích obsahují 76 % vyřčených slov — proto text pochází z nahrávky, nikoli z nich. Text prošel lehkou úpravou, jaká je u publikovaných přepisů obvyklá: odstraněna zjevná přeřeknutí a opakování slov. Čísla, zápory ani míra opatrnosti ve formulacích se přitom neměnily a nic nebylo doplněno. Mluvená řeč obsahuje nedokončené věty — nejde o psaný text."
+body_note: "Nedělní diskusní pořad Otázky Václava Moravce na ČT, 5. listopadu 2023; kromě Tomáše Havránka v něm byli ministr dopravy Martin Kupka a exministr Karel Havlíček. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, vychází ze dvou nezávislých zdrojů: z titulků České televize, které značí střídání mluvčích, a z porovnání hlasu s hlasovým vzorkem pořízeným z pořadů, kde Česká televize autora jmenuje. Oba zdroje se shodly na 92 % úseků; tam, kde se neshodly, text nevydáváme jako něčí slova. Zde jsou autorovy odpovědi a otázky, které mu byly položeny; pasáže s ostatními hosty tu nejsou a najdete je v původním záznamu. Místo, kde je něco vynecháno, je v textu označeno. Opraveno bylo 53 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Titulky České televize nejsou doslovné — na stejných úsecích obsahují 76 % vyřčených slov — proto text pochází z nahrávky, nikoli z nich. Text prošel lehkou úpravou, jaká je u publikovaných přepisů obvyklá: odstraněna zjevná přeřeknutí a opakování slov. V odpovědích Tomáše Havránka jsou navíc hovorové tvary převedeny do spisovné češtiny a opraveny zjevné gramatické chyby; obsah výpovědí se tím nemění. Čísla, zápory ani míra opatrnosti ve formulacích se přitom neměnily a nic nebylo doplněno. Mluvená řeč obsahuje nedokončené věty — nejde o psaný text."
 ---
 **Václav Moravec:** … tutu ekonomických studií Fakulty sociálních věd Univerzity Karlovy a výzkumníka z Centra inovací metavýzkumu Stanfordovy univerzity, profesora Tomáše Havránka. I vám přeji hezký dobrý den.
 
-**Tomáš Havránek:** Dobrý den, rád jsem přejezdl Litomyšle po nové dálnici.
+**Tomáš Havránek:** Dobrý den, rád jsem přijel z Litomyšle po nové dálnici.
 
 **Václav Moravec:** Ale když jsme u vás, pane profesore, máte spočítané, o kolik by se zvýšil potenciál tuzemské ekonomiky, pokud by Česká republika dokončila síť silnic a dálnic, i k vám do Litomyšle, že byste jel z Prahy po D11
 
@@ -23,9 +23,9 @@ body_note: "Nedělní diskusní pořad Otázky Václava Moravce na ČT, 5. listo
 
 **Václav Moravec:** Vy jste letos 4. března v textu pro Seznam Zprávy napsal, že Česká republika má stále, cituji, gigantický prostor výdělečně investovat do infrastruktury, přičemž ovoce budoucích příjmů u nás visí nízko. Konec citátu. Co máte na mysli tím gigantickým prostorem?
 
-**Tomáš Havránek:** Tím, že, jak jste zmínil vy na začátku, tak ta naše síť, ať už teda dálnic nebo železnic, není hotová. Zdaleka není hotová tak jako v západních zemích, kde už není ten prostor takový dále investovat, aby to vynášelo, podobně jako třeba dokončení dálnice D35, které hodně pomůže celému východu republiky. Takže to je to ovoce, které opravdu stačí dostavět páteřní síť dálnic a to HDP se k těm zvýší víc, než by udělala podobná investice třeba ve Francii nebo v Německu nebo v Polsku, kde už ta síť je nebo brzo bude mnohem hustší a jaksi kompletnější.
+**Tomáš Havránek:** Tím, že, jak jste zmínil vy na začátku, tak ta naše síť, ať už tedy dálnic nebo železnic, není hotová. Zdaleka není hotová tak jako v západních zemích, kde už není ten prostor takový dále investovat, aby to vynášelo, podobně jako třeba dokončení dálnice D35, které hodně pomůže celému východu republiky. Takže to je to ovoce, které opravdu stačí dostavět páteřní síť dálnic a to HDP se k těm zvýší víc, než by udělala podobná investice třeba ve Francii nebo v Německu nebo v Polsku, kde už ta síť je nebo brzy bude mnohem hustší a kompletnější.
 
-Ne úplně primárně, tak ta ekonomika by rostla rychleji, kde by ty dálnice byly dokončené. Ale já bych jenom možná malinko zmínil, že to, že nejsme na předcovidové úrovni ohledně HDP, je trošku takový statistický klam, protože díky zrušení EET nebo zastavení a pak zrušení EET nám to HDP opticky kleslo, jak se část ekonomiky přesunula do šeda, z bílé do šeda. Takže kdybychom tohleto, řekněme, o to opravili, tu statistiku, tak to udělá nějaké 2-3% body a nebudeme na tom tak špatně zdaleka.
+Ne úplně primárně, tak ta ekonomika by rostla rychleji, kde by ty dálnice byly dokončené. Ale já bych jenom možná malinko zmínil, že to, že nejsme na předcovidové úrovni ohledně HDP, je trošku takový statistický klam, protože díky zrušení EET nebo zastavení a pak zrušení EET nám to HDP opticky kleslo, jak se část ekonomiky přesunula do šeda, z bílé do šeda. Takže kdybychom toto, řekněme, o to opravili, tu statistiku, tak to udělá nějaké 2-3% body a nebudeme na tom tak špatně zdaleka.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
@@ -33,13 +33,13 @@ Ne úplně primárně, tak ta ekonomika by rostla rychleji, kde by ty dálnice b
 
 **Tomáš Havránek:** … investice se nám, tím, když se nám vrátí, tak de facto potom vlastně ten dluh sníží. Takže to není úplně tolik. To samotné číslo není tak důležité. Ale já mám návrh, jak ty peníze sehnat.
 
-My tady máme jako země balík 3 bilionů korun, 3 tisíce miliard které má ČNB. A vlastně ona je nechce. Ono s těmi nic moc nedělá. Ty peníze nevydělávají.
+My tady máme jako země balík 3 bilionů korun, 3 tisíce miliard které má ČNB. A vlastně ona je nechce. Ona s nimi nic moc nedělá. Ty peníze nevydělávají.
 
 A kdybychom je investovali třeba po vzoru Singapuru, který tohle udělal desetiletí zpátky a de facto si koupil podíl na globálním technickém pokroku, tak nám to ročně vydělá minimálně těch 100 miliard, co pan ministr potřebuje navíc.
 
-A teď, jenom bych to dát jako rozvedl. Samozřejmě ta ČNB se tohoto uvědomuje a ta investice by byla velký krok. Ona se necítí mít autoritu na to, aby to sama udělala. I když znova ona ty rezervy nepotřebuje vlastně nechce.
+A teď, jenom bych to rozvedl. Samozřejmě ta ČNB si tohle uvědomuje a ta investice by byla velký krok. Ona se necítí mít autoritu na to, aby to sama udělala. I když znovu ona ty rezervy nepotřebuje, vlastně nechce.
 
-Ty vznikly jako vedlejší produkt intervencí proti koruně. Tady nebyl nikdy plán nashromáždit 3 biliony. Ty peníze tam teď leží v eurech, teda v dolarech. 131 miliard eur to je.
+Ty vznikly jako vedlejší produkt intervencí proti koruně. Tady nebyl nikdy plán nashromáždit 3 biliony. Ty peníze tam teď leží v eurech, tedy v dolarech. 131 miliard eur to je.
 
 A nevydělávají nám. A ničemu by neuškodilo ty peníze vzít větší část z nich, investovat je do globálního technického pokroku, jako Singapur, jako to Norsko. A vydělávat ročně
 
@@ -57,7 +57,7 @@ Ne jenom s vládou, ale i s opozicí. Čili když si třeba vy, pan Stínový pr
 
 **Tomáš Havránek:** To ne, že to můžete vzít a poslat do dálnice, ale investovat to jako Singapur, který dlouhodobě z toho financuje metra, financuje z toho silnice, železnice.
 
-A funguje to velmi, velmi dobře. Čili aspoň trochu vykročit tím směrem nám vydělá tolik peněz, že to jako zastíní všechny ty ostatní řešení
+A funguje to velmi, velmi dobře. Čili aspoň trochu vykročit tím směrem nám vydělá tolik peněz, že to jako zastíní všechna ta ostatní řešení
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
@@ -81,11 +81,11 @@ Polský dálniční průměr na jeden rok v poslední dekádě byl 280, kdežto 
 
 **Václav Moravec:** Teď, když jsou u sedmi procent, tak je to ekonomický nesmysl.
 
-**Tomáš Havránek:** No, je to samozřejmě mnohem dražší, teď se jako vlastně zalokovat sazby na 50 let na sedmi procentech, řekněme, nebo i pěti. Proč tohle řešení nebylo využívané dřív vlastně...
+**Tomáš Havránek:** Je to samozřejmě mnohem dražší, teď se jako vlastně zalokovat sazby na 50 let na sedmi procentech, řekněme, nebo i pěti. Proč tohle řešení nebylo využívané dřív...
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Tomáš Havránek:** … nejjednodušší řešení je finanční. No tak navážete odměny více na dokončené úseky dálnic a případně teda železnic, jestli se dočkáme někdy VRT. A já bych tady znovu pochválil pana Mátla, protože o sebelepší zákon vám nepomůže stavit dálnic, když nemáte lidi, kteří jsou schopni vyjet z Prahy, třeba do Litomyšle nebo do Šumperka a ty problémy osobně řešit a jednat s těma lidma, s kterým třetím níkou nejednal. A to pan Mátl dělá a proto teď k těm zpožděním nedochází u dálnic minimálně.
+**Tomáš Havránek:** … nejjednodušší řešení je finanční. Tak navážete odměny více na dokončené úseky dálnic a případně tedy železnic, jestli se dočkáme někdy VRT. A já bych tady znovu pochválil pana Mátla, protože sebelepší zákon vám nepomůže stavět dálnice, když nemáte lidi, kteří jsou schopni vyjet z Prahy, třeba do Litomyšle nebo do Šumperka a ty problémy osobně řešit a jednat s těmi lidmi, s kterým třetím níkou nejednal. A to pan Mátl dělá a proto teď k těm zpožděním nedochází u dálnic minimálně.
 
 Mě trochu třeba mrzí, že přivaděče k dálnici nejsou plně v kompetenci ŘSD, že některé jsou v režii krajů a ne všechny kraje umí stavět vlastně stavby na zelené louce. Konkrétně Pardubický kraj v tom úplně se nevyznamenává, takže ve finále celá polovina kraje bude bez přístupů D35, Česká Třebová nebo Letohrad, jak jsme se bavili předtím. Čili já bych osobně klidně tohle břemenosti krajů odňal a když se osvědčil pan Mátl a ŘSD, některá má zkušenosti s tím už. Taky to nebylo snadné, a už se to
 
@@ -101,21 +101,21 @@ Je možné na příkladu D52 vlastně ukázat, že i ŘSD
 
 **Tomáš Havránek:** Chápu, no vy jste říkal, že stát pomáhá finančně. To třeba je pravda u toho Pardubického kraje, kde kraj dostal peníze za ty přivaděče. A pak zjistil, že to neumí postavit. Tak za ty peníze opravil současnou silnici, která vůbec střede města, kolem památky UNESCO, kolem škol a říká tomu přivaděč.
 
-Tak prostě tohle je výsledek toho, který je nejoptimální pro tu zemi, konkrétně pro celou polovinu toho kraje. Takže tohleto mě osobně vadí, když tam žiju a připadá mi to neřešitelné na té krajské úrovni.
+Tak tohle je výsledek toho, který je nejoptimální pro tu zemi, konkrétně pro celou polovinu toho kraje. Takže toto mně osobně vadí, když tam žiju a připadá mi to neřešitelné na té krajské úrovni.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
 **Václav Moravec:** … té nekoncepčnosti, že jedno zastupitelstvo řekne, ano, my to budeme financovat provoz lávky a zastupitelé a primátor ze stejné strany pak řeknou se, že doce ne, my nechceme tu lávku přebírat, protože nebudeme
 
-**Tomáš Havránek:** … každopádně to ukazuje na obecnější problém, že mi tady ta lávka stála kolik 300 milionů. 300 milionů. A to, aby jsme se rozuměli, to teda není tak jako lávka, to je skutečně jako... My jsme ji viděli.
+**Tomáš Havránek:** … každopádně to ukazuje na obecnější problém, že mi tady ta lávka stála kolik 300 milionů. 300 milionů. A to, abychom se rozuměli, to tedy není tak jako lávka, to je skutečně jako... My jsme ji viděli.
 
-Ty věci mají konkrétní náklady, ale ty benefity často nejsou úplně jasně spočítané, nebo my se na to hrajeme někdy, ale je to často psané na vodě. Ty rychlovlaky jsou malinko podobný případ, k těmu se asi dostaneme, to budou bilionové částky pravděpodobně a tam opravdu je velmi důležité to podrobně odůvodnit, kde budou ty biliony těch výnosů, protože ty náklady jsou naprosto jasné, takže tohle mi malinko chybí podrobnější cost-benefit analýza nákladů a výnosů a jaksi
+Ty věci mají konkrétní náklady, ale ty benefity často nejsou úplně jasně spočítané, nebo my se na to hrajeme někdy, ale je to často psané na vodě. Ty rychlovlaky jsou malinko podobný případ, k tomu se asi dostaneme, to budou bilionové částky pravděpodobně a tam opravdu je velmi důležité to podrobně odůvodnit, kde budou ty biliony těch výnosů, protože ty náklady jsou naprosto jasné, takže tohle mi malinko chybí podrobnější cost-benefit analýza nákladů a výnosů a
 
 **Václav Moravec:** Vysokorychlostních tratí budu překládat pro diváky.
 
 … uvažujeme, o tom, že by ty tratě vysokorychlostní byly zprovozněny pro rychlost 200 až 250 kilometrů za hodinu. Nikoli tedy 300 až 350, jako je tomu
 
-**Tomáš Havránek:** No, já si osobně nemyslím, že nikdy se svezu
+**Tomáš Havránek:** Já si osobně nemyslím, že nikdy se svezu
 
 **Václav Moravec:** Pane profesore, vy myslíte, že už budete mrtví a vy se nesvezete rychlovlakem, ani když vám bude 80.
 
@@ -123,6 +123,6 @@ Ty věci mají konkrétní náklady, ale ty benefity často nejsou úplně jasn�
 
 Ale zase, to nedostatečné odůvodnění těch nákladů je tam evidentní. A zahraniční příklady ukazují. My vidíme ty hezké příklady, kde to funguje. Ale pak máte spoustu příkladů, kde to nefunguje.
 
-Dráha z San Francisco do Los Angeles měla už dávno stát. Nestojí, nejezdí ještě ani kousek. Vlastně to nefunguje. Stojí čtyřnásobek toho původního projektu a pořád se to ještě počítá.
+Dráha ze San Franciska do Los Angeles měla už dávno stát. Nestojí, nejezdí ještě ani kousek. Vlastně to nefunguje. Stojí čtyřnásobek toho původního projektu a pořád se to ještě počítá.
 
-A těch příkladů celá řada. Málokdy ex post vyhodnocení efektivity u rychlodráh ukazují, jestli to vyplatí. Čili já bych měl hrozně rád rychlovlak metro z Prahy do Litomyšle.
+A těch příkladů celá řada. Málokdy ex post vyhodnocení efektivity u rychlodráh ukazují, jestli se to vyplatí. Čili já bych měl velmi rád rychlovlak metro z Prahy do Litomyšle.
