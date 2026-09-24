@@ -29,7 +29,7 @@
   "author_manuscript": "the author's own version, as sent to the outlet",
   "publisher_excerpt": "only the outlet's free teaser; the original is paywalled",
   "link_only": "audio or video; no text is stored, the record links to the source",
-  "machine_transcript": "audio or video; the text is a machine transcript of it, checked against the recording",
+  "machine_transcript": "audio or video; the text is a machine transcript of it, checked against the recording and lightly tidied into standard Czech (fillers and false starts removed; numbers, negations and hedges unchanged), so it is still speech",
   "publisher_transcript": "audio or video; the text is the transcript the broadcaster itself published, with the speakers as it named them",
   "correspondence": "a letter or memo the author sent — to a public body, to colleagues, to students — never published anywhere. The date is the day it was sent, and is exact",
   "unpublished_manuscript": "written for the outlet and submitted, but never printed; the date is the issue it was written for, not a publication date"
@@ -45,18 +45,18 @@
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 2286804,
-   "sha256": "1aba45df6419208cf65f55a8a6dcaf5362bc8db0439c8220d0b150829d1a5ad8"
+   "bytes": 2283593,
+   "sha256": "c42372d41a4e766ce034d37d107aced61120df62f30026b51e15dafdf41c37b1"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 2307950,
-   "sha256": "fb239dbb8b881e25ab4dedefe83ce7f35006cfcfd1ab1c0f15e183245cb8291f"
+   "bytes": 2304739,
+   "sha256": "7a42b882263d680a29c13825e12bbbaa1affc9a8c0a4febbbccb249afad693c3"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
-   "bytes": 2051816,
-   "sha256": "907ef2900425b780446c3ea6f691c5994999d18be5293bc56baad437eb68ffac"
+   "bytes": 2048605,
+   "sha256": "979b4cc87ad9a99308aea5df18fc7e23e16f5f0c452b464b38f1d23c05f7b448"
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
@@ -65,8 +65,8 @@
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 2240679,
-   "sha256": "5205b4249bb358c375073d48f31c29a636d762b2ef10d6c51d85af6b254fa486"
+   "bytes": 2237468,
+   "sha256": "b0cbebc5a75f1fdcd6ed431d530cbb1afa1dac523c261c09a8b7b6be1321d409"
   }
  },
  "generated_from": [

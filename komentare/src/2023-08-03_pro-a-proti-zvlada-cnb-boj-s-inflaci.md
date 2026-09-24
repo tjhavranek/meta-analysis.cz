@@ -27,7 +27,7 @@ Začněme od vás, pane Singře. Zvládá Česká národní banka dlouhodobě bo
 
 **Lukáš Matoška:** Pane Havránku, váš pohled?
 
-**Tomáš Havránek:** Já bych byl trochu kritičtější, protože ta inflace u nás je vysoká v mezinárodním srovnání ne rok nebo dva, ale už opravdu delší dobu několik let. A protože za dlouhodobě vysokou inflaci vždy odpovídá národní banka té dané země, tak bych skoro řekl, že to slovo selhání tady na místě i v tom středně až dlouhodobém horizontu.
+**Tomáš Havránek:** Já bych byl trochu kritičtější, protože ta inflace u nás je vysoká v mezinárodním srovnání ne rok nebo dva, ale už opravdu delší dobu několik let. A protože za dlouhodobě vysokou inflaci vždy odpovídá národní banka té dané země, tak bych skoro řekl, že to slovo selhání je tady na místě i v tom středně až dlouhodobém horizontu.
 
 **Lukáš Matoška:** Pánové, na úvod vám děkuju.
 
@@ -39,7 +39,7 @@ Pane Havránku, co by tedy Česká Národní banka podle vás měla dělat zása
 
 **Tomáš Havránek:** Ano, opak inflace.
 
-Ale proti vysoké inflaci už my tak agresivně nebojujeme. To znamená, že když, pokud bychom se i shodli na tom, že dvouprocentní cíl inflace, o který se ta banka snaží, je správný, tak ona ho v budoucnosti nesplní. Protože my vidíme, že vlastně máme záklopku na inflaci zespodu na té nule, ale shora ta záklopka není. To znamená, že pokud člověk aspoň trošku rozumně uvažuje a sleduje to chování centrální banky, tak musí vidět, že v průměru ta inflace bude větší než dva, díky tomuhle omezení zdola.
+Ale proti vysoké inflaci už my tak agresivně nebojujeme. To znamená, že pokud bychom se i shodli na tom, že dvouprocentní cíl inflace, o který se ta banka snaží, je správný, tak ona ho v budoucnosti nesplní. Protože my vidíme, že vlastně máme záklopku na inflaci zespodu na té nule, ale shora ta záklopka není. To znamená, že pokud člověk aspoň trošku rozumně uvažuje a sleduje to chování centrální banky, tak musí vidět, že v průměru ta inflace bude větší než dva, díky tomuhle omezení zdola.
 
 A tím pádem neočekává, že inflace bude dva, tím pádem vlastně padá základní podmínka pro to, aby inflační cílování na dvojce fungovalo.
 
@@ -73,9 +73,9 @@ Prosím, promiňte, že vás přerušuju,
 
 pane Singře, k tomu cíli se hned dostaneme. Já bych byl rád, aby ta naše debata byla přehledná, takže vezmeme jednu otázku po druhé. Teď se vracíme k vám do studia, pane Havránku, a zajímalo by mě, jestli vás teď ta argumentace, kterou jste slyšel od bývalého guvernéra České národní banky přesvědčila, jestli náhodou jste tam neslyšel vysvětlení, proč si centrální banka počíná přísněji v obdobích deflace, tedy v období, kdy ceny jdou dolů, než v období inflace, tedy v období, kdy jdou ceny naopak nahoru.
 
-**Tomáš Havránek:** Se vší úctou úplně ne, protože máte inflační cíl, budeme se bavit o tom, jestli jste správný nebo ne, ale máte ho ve výši 2%. A jakmile se dostanete, a ten má být symetrický, na tom se asi shodneme, a v situaci, kdy vám hrozí inflace o 2% body nižší, čili k nule, nebo nějaká mírná deflace, tak vy reagujete velmi agresivně, což je v pořádku. V pohodě je to, co jste udělali vlastně před desetiletím, co jsme my společně tehdy udělali, ale mělo by to být symetrické v situaci, kdy inflaci máte vysokou, dobře třeba ne čtyři, ale určitě deset. Čili ty 2 biliony korun, které se tehdy vytvořily, se měly v předchozích dvou letech zase skartovat, odbourat, abychom pomohli tu inflaci snížit rychleji, protože posilování kurzu působí mnohem rychleji a efektivněji pro snižování inflace.
+**Tomáš Havránek:** Se vší úctou úplně ne, protože máte inflační cíl, budeme se bavit o tom, jestli je správný, nebo ne, ale máte ho ve výši 2%. A jakmile se dostanete, a ten má být symetrický, na tom se asi shodneme, a v situaci, kdy vám hrozí inflace o 2% body nižší, čili k nule, nebo nějaká mírná deflace, tak vy reagujete velmi agresivně, což je v pořádku. V pohodě je to, co jste udělali vlastně před desetiletím, co jsme my společně tehdy udělali, ale mělo by to být symetrické v situaci, kdy inflaci máte vysokou, dobře třeba ne čtyři, ale určitě deset. Čili ty 2 biliony korun, které se tehdy vytvořily, se měly v předchozích dvou letech zase skartovat, odbourat, abychom pomohli tu inflaci snížit rychleji, protože posilování kurzu působí mnohem rychleji a efektivněji pro snižování inflace.
 
-Čili to je ten problém symetrie, který mi nikdo nevysvětlil, proč se takhle ČNB nechovala a úplně jsem to v té odpovědi pana Singera ani neviděl.
+Čili to je ten problém symetrie. Nikdo mi nevysvětlil, proč se takhle ČNB nechovala a úplně jsem to v té odpovědi pana Singera ani neviděl.
 
 **Lukáš Matoška:** Pane Singře, dokázal byste to panu Havránkovi vysvětlit?
 
@@ -83,7 +83,7 @@ pane Singře, k tomu cíli se hned dostaneme. Já bych byl rád, aby ta naše de
 
 **Lukáš Matoška:** k které už jsme se tady v dnešní debatě dotkli. A sice, jestli je správný ten dvouprocentní inflační cíl České národní banky, tedy přesvědčení našich centrálních bankéřů, že ideální situace bude taková, kdy znovu inflace bude kolem těch dvou procent. Pane Havránku, pokud vím, takhle uvažují centrální bankéři skoro všude po světě. To se všichni pletou?
 
-**Tomáš Havránek:** Skoro všude, tak třeba ve Švýcarsku, de facto ta cenová stabilita, kterou já tady, ne že bych je vymyslel, to je jenom tady ukládám do českého kontextu nápady chytřejších lidí, jako John Cochrane, jeden z největších ekonomů v současnosti, nebo koneckonců Paul Volcker, bývalý šéf americké centrální banky, kteří taky něco takového považovali za ideální, profesoři Agarwal, Kimball a tak dále. Ale jednak tady máte tu vědeckou evidenci, která trvá, kterou jsem zmínil, a trvá nějakou dobu, než se propíše do praxe centrálních bank. To znamená, že ekonomikám prospívá, když ta inflace je kolem nuly. To implikuje ta vědecká evidence, kterou jsem zmínil.
+**Tomáš Havránek:** Skoro všude, tak třeba ve Švýcarsku, de facto ta cenová stabilita, kterou já tady, ne že bych je vymyslel, jenom tady ukládám do českého kontextu nápady chytřejších lidí, jako John Cochrane, jeden z největších ekonomů v současnosti, nebo koneckonců Paul Volcker, bývalý šéf americké centrální banky, kteří taky něco takového považovali za ideální, profesoři Agarwal, Kimball a tak dále. Ale jednak tady máte tu vědeckou evidenci, kterou jsem zmínil, a trvá nějakou dobu, než se propíše do praxe centrálních bank. To znamená, že ekonomikám prospívá, když ta inflace je kolem nuly. To implikuje ta vědecká evidence, kterou jsem zmínil.
 
 A já musím říct, že když se zavádělo inflační cílování na Zélandu poprvé před 30 lety, tak vlastně základ toho inflačního cílování jsou racionální očekávání. A ta se také prvně v ekonomii objevila zhruba 30 let předtím. Čili trvá nějakou dobu, než se ta věda propíše do praxe centrálních bank a zlomit tu zavedenou praxi, i když třeba není úplně optimální, trvá nějakou dobu. Nějakou dobu to potrvá i u nás.
 
@@ -111,15 +111,15 @@ Pane Havránku, tak není ekonomická realita jiná než vaše ekonomické model
 
 Ale já bych souhlasil vlastně s tím, co říkal pan Singer, skoro úplně. Samozřejmě ne všichni jsme racionální, ale pan Singer taky ví, že v ekonomii je konsenzus, že nějaké průměrné finanční rozhodování se dá dobře aproximovat racionálním očekáváním. Ale to není tak podstatné. Podstatné je, že ta změna k cenové stabilitě z 2%, to není žádná radikální změna.
 
-To jsou dvě parametrické změny. Jedna změna je drobné snížení cíle z dvojky na nulu, což ČNB snižovala v posledních desetiletích ten cíl, tuším, z šestky v několika krocích na dvojku. Takže by to nebylo nijak bezprecedentně radikální. To je jedna věc.
+To jsou dvě parametrické změny. Jedna změna je drobné snížení cíle z dvojky na nulu, a ČNB v posledních desetiletích ten cíl snižovala, tuším, z šestky v několika krocích na dvojku. Takže by to nebylo nijak bezprecedentně radikální. To je jedna věc.
 
 A druhá věc je, že zároveň by opravovala svoje chyby plnění toho cíle.
 
 **Lukáš Matoška:** Co tím myslíte?
 
-**Tomáš Havránek:** To znamená, že když máte pan Singer změn deflaci, když máte deflaci najednou 4%, tak ta banka v příštím roce, aby se dostala na nulu v průměru, tak by usilovala o 4% inflace zhruba. Takže všichni bychom, a to je mechanismus, který v ekonomické teorii i praxi pomáhá tlumit ty deflační spirály, které právě zmínil pan Singer, to znamená, čím větší je deflace, tím víc musí potom šlápnout centrální banka na plyn, aby té ekonomice pomohla.
+**Tomáš Havránek:** To znamená, že když máte pan Singer změn deflaci, když máte deflaci najednou 4%, tak ta banka v příštím roce, aby se dostala na nulu v průměru, tak by usilovala o 4% inflace zhruba. A to je mechanismus, který v ekonomické teorii i praxi pomáhá tlumit ty deflační spirály, které právě zmínil pan Singer, to znamená, čím větší je deflace, tím víc musí potom šlápnout centrální banka na plyn, aby té ekonomice pomohla.
 
-To v tom současném režimu takhle není. Když máte deflaci 20%, tak ta banka se v příštím roce bude snažit o plus 2%, ne o plus 20%. Čili to je deflační spirála nebo její možnost, která je nějaká teoretická, je další argument pro cenovou stabilitu, pro tento režim opravování minulých chyb, který já navrhuji,
+To v tom současném režimu takhle není. Když máte deflaci 20%, tak ta banka se v příštím roce bude snažit o plus 2%, ne o plus 20%. Čili deflační spirála nebo její možnost, která je nějaká teoretická, je další argument pro cenovou stabilitu, pro tento režim opravování minulých chyb, který já navrhuji,
 
 **Lukáš Matoška:** nebylo by na místě, aby, tak jak to popsal pan Havránek, centrální banka opravovala svoje chyby, tak, aby skutečně jsme tady měli cenovou stabilitu?
 
@@ -133,9 +133,9 @@ Vzpomínám, že naše centrální banka se na začátku snaží a by zvětila, 
 
 **Lukáš Matoška:** u otázky, nakolik ta vaše představa, pane Havránku, je prosaditelná v praxi.
 
-**Tomáš Havránek:** Pan Singer mluvil správně o srozumitelnosti a je to přesně naopak. Tohle je mnohem srozumitelnější než ten současný režim, kdy vy jste to zažil sám, pane Singře, když jste musel vysvětlovat během intervencí, proč vlastně se snažíme o 2% plus, když inflace je na nule. Cenová stabilita, to, že máte ceny v průměru stabilní, je tak intuitivní základní věc, že je mnohem snazší to lidem vysvětlit, že když máte nějakou dobu inflaci, taky pak nějakou dobu rozpouštíte mírnou deflací. A naopak, samozřejmě, jak jsem se zmínil, mělo by to být symetrické, to znamená, že když máte cíl na nule, vy ho podstřelujete, máte tady nějakou deflaci, tak zase potom by byla inflace.
+**Tomáš Havránek:** Pan Singer mluvil správně o srozumitelnosti a je to přesně naopak. Tohle je mnohem srozumitelnější než ten současný režim, kdy vy jste to zažil sám, pane Singře, když jste musel vysvětlovat během intervencí, proč vlastně se snažíme o 2% plus, když inflace je na nule. Cenová stabilita, to, že máte ceny v průměru stabilní, je tak intuitivní základní věc, že je mnohem snazší to lidem vysvětlit, že když máte nějakou dobu inflaci, tak ji pak taky nějakou dobu rozpouštíte mírnou deflací. A naopak, samozřejmě, jak jsem se zmínil, mělo by to být symetrické, to znamená, že když máte cíl na nule, vy ho podstřelujete, máte tady nějakou deflaci, tak zase potom by byla inflace.
 
-Já si nemyslím, že tohle byl problém vysvětlit, naopak by to pomohlo pochopit lidem to, co a proč vlastně centrální banka dělá. Že to dělá proto, aby hodnota peněz byla konstantní. Abychom se na ní mohli spolehnout, jako se můžeme spolehnout, že metr má 100 centimetrů, a ne 98 nebo 95 podle toho, jak se nám to zrovna povede. A nesnažíme se metr zmenšovat o 2 cm ročně.
+Já si nemyslím, že by byl problém tohle vysvětlit, naopak by to lidem pomohlo pochopit to, co a proč vlastně centrální banka dělá. Že to dělá proto, aby hodnota peněz byla konstantní. Abychom se na ní mohli spolehnout, jako se můžeme spolehnout, že metr má 100 centimetrů, a ne 98 nebo 95 podle toho, jak se nám to zrovna povede. A nesnažíme se metr zmenšovat o 2 cm ročně.
 
 A podobně i ta hodnota peněz je základní měrná jednotka v naší společnosti, která je možná i důležitější než ten metr. Čili nechme ji konstantní, zjednodušme to pro všechny, ať se můžeme bavit o něčem důležitějším, než jsou peníze a inflace, jako je třeba klimatická změna, nebo ne úplně dobrý výkon naší ekonomiky.
 

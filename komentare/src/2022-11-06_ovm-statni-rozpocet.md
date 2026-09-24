@@ -17,13 +17,13 @@ body_note: "Nedělní diskusní pořad Otázky Václava Moravce na ČT, 6. listo
 
 **Tomáš Havránek:** Možná to nebylo jenom o té jedné firmě. Obecně mi to možná dává docela smysl, protože ty zisky tady konkrétně tohohle podniku opravdu nepocházejí z území této země, jsou zahraniční. A je velmi snadné potom opravdu to sídlo přesunout. Čili tohle se dalo anticipovat.
 
-A mně by dával smysl ten návrh schválit pana poslance Havránka. Takže jenom dávám tedy tu poznámku,
+A mně by dávalo smysl ten návrh pana poslance Havránka schválit. Takže jenom dávám tedy tu poznámku,
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
 **Václav Moravec:** … si činit problémy a možnost rychlé nápravy takové situace bude omezená. Struktura navržené daně, vztahuje se to právě k bankovnímu sektoru, postup při definování, kdo je poplatníkem a postup při stanovení základu daně jsou dosti složité a nabízí se otázka, zda by nemohlo být zvoleno řešení jednodušší, napsala Centrální banka kromě jiného ve stanovisku, které jsme viděli. Vám přijde způsob tvorby té daně
 
-**Tomáš Havránek:** Ta myšlenka mně dávala původně velký smysl, jako asi řadě z nás. Když máte mimořádné výdaje, hledáte mimořádné příjmy u těch, kteří na tom vydělávají na té situaci. Ale když se potom do těch detailů podíváme, je to velmi těžké implementovat, aby to dávalo smysl. Což myslím, že vidí už skoro všichni, ale už to museli dotáhnout nějak do konce.
+**Tomáš Havránek:** Ta myšlenka mně dávala původně velký smysl, jako asi řadě z nás. Když máte mimořádné výdaje, hledáte mimořádné příjmy u těch, kteří na té situaci vydělávají. Ale když se potom do těch detailů podíváme, je to velmi těžké implementovat, aby to dávalo smysl. Což myslím, že vidí už skoro všichni, ale už to museli dotáhnout nějak do konce.
 
 Já se obávám, že zisky z té daně budou mnohem, mnohem menší, než jaké vláda uvažuje.
 
@@ -31,7 +31,7 @@ Já se obávám, že zisky z té daně budou mnohem, mnohem menší, než jaké 
 
 **Tomáš Havránek:** Bohužel. Třeba i u bank je vůbec otázka, jestli nějaké mimořádné zisky budou mít v příštích letech. Protože třeba hypotéky vlastně nové jsou na mnohaletých minimech. To je jeden z hlavních biznesů těch komerčních bank.
 
-Čili plus ta optimalizace, nejenom u bank, ale u všech ostatních firem, kterých se týká. Čili ty zisky budou, bohužel, kdyby se to týkalo i letošního roku, tak by ta situace byla jiná. Čili kdyby ta daň platila i za zpětně vlastně za rok
+Čili plus ta optimalizace, nejenom u bank, ale u všech ostatních firem, kterých se týká. Čili ty zisky budou, bohužel, kdyby se to týkalo i letošního roku, tak by ta situace byla jiná. Čili kdyby ta daň platila vlastně i zpětně za rok
 
 **Václav Moravec:** 22. A my kdybyste měl tu pravomoc rozhodovací, vy byste pro takový
 
@@ -45,13 +45,13 @@ Já se obávám, že zisky z té daně budou mnohem, mnohem menší, než jaké 
 
 **Tomáš Havránek:** … zmiňoval, ale když už tam mimořádná daň je, tak nějaká ta hranice se udělat musí. Samozřejmě za sebe, moje interpretace je taky taková, že tady dlouhodobě vnímáme, že náš bankovní sektor je hodně ziskový, je hodně regulovaný, tím pádem hodně ziskový. Ty zisky jdou do ciziny. Přesně tak.
 
-Čili možná, že i tahle motivace tam byla. Podle mě tohle by konkrétně šlo asi dělat lépe a to třeba tak, že snížíte regulace těch bank trochu méně ziskové, tím pádem vlastně ty odvody dividend nebudou takové. Já samozřejmě jsem ty banky kritizoval, jak asi víte, kvůli nedokonalému přenosu úrokových sazeb na spořicí účty. To už je dnes mnohem lepší, ale ty spořáky už jsou za 6,5, se dají sehnat, čili
+Čili možná, že i tahle motivace tam byla. Podle mě tohle by konkrétně šlo asi dělat lépe a to třeba tak, že snížíte regulace těch bank trochu méně ziskové, tím pádem vlastně ty odvody dividend nebudou takové. Já samozřejmě jsem ty banky kritizoval, jak asi víte, kvůli nedokonalému přenosu úrokových sazeb na spořicí účty. To už je dnes mnohem lepší, ale spořáky za 6,5 už se dají sehnat, čili
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
 **Václav Moravec:** Ano, proto to považuji i ze mě jako vstředatele. Že to, co načnarážil Tomáš Havránek, aby dali víc na spořící účty, víc na úrocích a jeli těmi šesti sen, že budou optimalizovat, aby snížili tu svoji vstupenku, to znamená, že Zbyněk Stanjura nevybere ani těch 12 miliard, jako raduje bankovní asociace, protože to vnímáte jako část upřed tou takzvaně optimalizací.
 
-**Tomáš Havránek:** Přesně tak. Za mě osobně ty banky už teď není třeba danit víc, protože opravdu tuto daň si už tam vidím. Přenos, sazeb, zrepoč nebo na ty spořicí účty. Čili za mě tu svoji kritiku vlastně stahuji a už bych tu další daň nezaváděl.
+**Tomáš Havránek:** Přesně tak. Za mě osobně ty banky už teď není třeba danit víc, protože opravdu tuto daň si už tam vidím. Přenos sazeb na ty spořicí účty. Čili za mě tu svoji kritiku vlastně stahuji a už bych tu další daň nezaváděl.
 
 **Václav Moravec:** Včetně tedy této daně z mimořádných zisků. Ale dobrá zpráva to může být, že když už ta daň u velké šestky byla zavedena, takže nám budou lépe úročit vklady, protože jim je jedno, jestli to odvedou státu anebo jestli budou spokojení klienti.
 
@@ -63,7 +63,7 @@ Já se obávám, že zisky z té daně budou mnohem, mnohem menší, než jaké 
 
 **Tomáš Havránek:** To bych neřekl, dám jednu pozitivní poznámku po tom všem negativním, co jsme společně řekli. Ten letošní rozpočet vlastně reálně je přebytkový. A proč? Protože máte tak velkou inflaci, že vám umazává ten dluh, který už existuje, rychleji, než ta vláda stačí vytvářet nový.
 
-Což tedy tady ta pozitivita už končí, ale reálně opravdu ten přebyt...
+Tady tedy ta pozitivita už končí, ale reálně opravdu ten přebyt...
 
 **Václav Moravec:** No to se na to díváte jenom z pohledu státního rozpočtu, protože inflace 18%, když se podíváte na vaše příjmy.
 
@@ -127,19 +127,19 @@ Takže to bude těžká věc. Já osobně čekám, že bude vybráno jenom něko
 
 **Tomáš Havránek:** Může, když bude mít velké štěstí a třeba například, kdyby Národní banka najednou byla extra zisková díky výnosům z rezerv a odváděla zisky do státního rozpočtu. To je běžné třeba ve Spojených státech. Stát se to může.
 
-Spíš tomu moc nevěřím, ale možnost tomu určitě je.
+Spíš tomu moc nevěřím, ale ta možnost tu určitě je.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
 **Václav Moravec:** … nezaměstnanosti, proto, abych ty lidi motivoval, aby si práci hledali velmi rychle, aby ta podpora nebyla třeba tak dlouhá z hlediska toho časovosti, anebo případně, aby ta míra podpory se snižovala rychle. Marian Jurečka dodal, že snížení podpory v nezaměstnanosti plánuje jako ministr práce a sociálních věcí zavést v první polovině příštího roku. Přijde vám šťastné, že se začíná nejrazantněji
 
-**Tomáš Havránek:** Tak můžeme být rádi, že aspoň něco se použije, ale ta hlavní věc jsou samozřejmě důchody. Na té stránce výdajové, to je vlastně tři čtvrtiny výdajů rozpočtu jsou nějaké mandatorní nebo kvazimandatorní výdaje a ten důchodový systém, jak jsme už tady naznačili, ten se změnit musí, jinak ten rozpočet dlouhodobě bude opravdu zkrachovalý. Čili a nebudou stačit nějaké parametrické změny. Samozřejmě, když půjdeme do důchodu všichni v 90 letech, tak tím se to vyřeší, ale bude třeba nějak reagovat na to, že ten průběžný systém byl vyvinut v situaci, kde lidé měli čtyři, pět dětí za Bismarcka a tohle dlouhodobě fungovat nemůže v situaci, kdy máte...
+**Tomáš Havránek:** Tak můžeme být rádi, že aspoň něco se použije, ale ta hlavní věc jsou samozřejmě důchody. Na té stránce výdajové, jsou vlastně tři čtvrtiny výdajů rozpočtu nějaké mandatorní nebo kvazimandatorní výdaje a ten důchodový systém, jak jsme už tady naznačili, ten se změnit musí, jinak ten rozpočet dlouhodobě bude opravdu zkrachovalý. Čili a nebudou stačit nějaké parametrické změny. Samozřejmě, když půjdeme do důchodu všichni v 90 letech, tak tím se to vyřeší, ale bude třeba nějak reagovat na to, že ten průběžný systém byl vyvinut v situaci, kde lidé měli čtyři, pět dětí za Bismarcka a tohle dlouhodobě fungovat nemůže v situaci, kdy máte...
 
 Byl 70 let. Byl, takže se ho málo kdo dožil. Dnes vlastně máte porodnost hluboce pod dvěma, možná ne už tak hluboce u nás, ale stále to nemůže fungovat, čili to narazí do té demografické zdi a my musíme jednak motivovat lidi mít třeba víc dětí?
 
 **Vít Samek:** To se teď v posledních dvou letech nám počet narozených dětí roste,
 
-**Tomáš Havránek:** Ano, to je trochu demografický zázrak, ale pořád to nestačí. Já vím, ale ono... A ten druhý pilíř musí být mnohem větší motivace kupovat akcie už v mladém věku od 20 let o vlastně prvního zaměstnání. To naše...
+**Tomáš Havránek:** Ano, to je trochu demografický zázrak, ale pořád to nestačí. Já vím, ale ono... A ten druhý pilíř musí být mnohem větší motivace kupovat akcie už v mladém věku od 20 let, vlastně od prvního zaměstnání. To naše...
 
 Náš systém připojištění penzijního není úplně šťastný v tom, že tam máme ty transformované fondy, které vlastně garantují neprodělek, nominálně, reálně garantují prodělek všem, kdo se jich účastní každý rok. Takže tam je potřeba to celé změnit a více motivovat opravdu jednoduchý nákup akcií v mládí, postupný prodej ve stáří s menšími poplatky, jak to dnes na trhu jde, ale ty penzijní fondy pořád mají poplatky relativně vysoké. Tam by možná jsou zatlačit na to, aby ta státní podpora byla vázána
 

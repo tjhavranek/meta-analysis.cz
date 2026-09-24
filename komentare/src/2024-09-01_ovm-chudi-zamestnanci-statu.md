@@ -22,7 +22,7 @@ Loni byl 288,5 miliardy. Teď vidíme, ty nejvyšší schodky státního rozpoč
 
 **Tomáš Havránek:** Je možné mluvit o tom, že ten rozpočet je z mého pohledu asi maximum možného ohledně úspor, nebo maximum rozumně možného ve volebním roce. Vezměme v úvahu, že skoro polovina toho schodku jsou náklady na placení úroků státního dluhu. Čili to není něco, co by najednou vlastně rozhodnutím teď vlády vzniklo, ale co se tady dlouhodobě kumulovalo za několik vlád. A teď je to tolik peněz, protože úroky jsou vyšší než byly třeba za minulých vlád nebo v těch letech, co jste zmiňoval.
 
-Čili ten schodek je vlastně mnohem menší, takhle než se zdá. Čímž nechci říkat, že to je všechno dokonalé. Ale rozhodně těžko bych hledal teď úspory. Pak se můžeme bavit o tom, kde najít peníze navíc.
+Čili ten schodek je vlastně mnohem menší, než se zdá. Čímž nechci říkat, že to je všechno dokonalé. Ale rozhodně těžko bych hledal teď úspory. Pak se můžeme bavit o tom, kde najít peníze navíc.
 
 Spíš v té stránce příjmové. Tam bych měl konkrétní nápady. Ale ohledně...
 
@@ -30,9 +30,9 @@ Spíš v té stránce příjmové. Tam bych měl konkrétní nápady. Ale ohledn
 
 Účetní zoufalství lidí, kteří vůbec netuší, jak systémové změny by měly do fiskální politiky promítat. Konec citátu. Vy byste nazval ten rozpočet účetním zoufalstvím?
 
-**Tomáš Havránek:** Ne. Nenazval. Já bych to nazval tak, jak jsem to nazval, čili maximum rozumně možného pro volební rok. Mně se zdá, že jako všichni bychom chtěli šetřit, ale kde, která konkrétně, když chceme zaplatit nějak státní zaměstnance, tak aby měl kdo vařit ve školních jídelnách, rozumně, a děti to jedly.
+**Tomáš Havránek:** Ne. Nenazval. Já bych to nazval tak, jak jsem to nazval, čili maximum rozumně možného pro volební rok. Mně se zdá, že všichni bychom chtěli šetřit, ale kde konkrétně, když chceme zaplatit nějak státní zaměstnance, tak aby měl kdo vařit ve školních jídelnách, rozumně, a děti to jedly.
 
-Kde ty peníze seženeme, když zrušíme dříve, než plánujeme windfall tax? Já to nevím. Můžeme si zase bavit o těch možnostech, které tam jsou na vyšší příjem někde jinde.
+Kde ty peníze seženeme, když zrušíme windfall tax dříve, než plánujeme? Já to nevím. Můžeme se zase bavit o těch možnostech, které tam jsou na vyšší příjem někde jinde.
 
 **Václav Moravec:** Vy byste navyšoval, je nějaký příjem, který vláda nechává, dejme tomu stranou, i když bude ten volební rok 2025? Vidíte vy příjmy, které zbytečně leží na chodníku a přitom by je bylo možné zvednout?
 
@@ -46,13 +46,13 @@ A že by mohly být v nějakém fondu. A když jsem se na to opakovaně doptáva
 
 **Tomáš Havránek:** Zákony jsou úplně v pořádku, to je dlouhodobá věc. Když vám budou dlouhodobě tyhle aktiva vydělávat, budete brát dividendy ze zahraničí, vlastně dorovnávat ten odliv zisku, co teď tady vidíme na druhou stranu. A z toho časem ne hned, protože potrvá, než ta Národní banka bude zisková, můžete financovat částečně úroky, které teď platíme 100 miliard ročně na státní dluh. K tomu nemusíte měnit zákon, je potřeba jenom vůle vedení Národní banky.
 
-A to se děje. Čili navyšujeme postupně, já bych to dělal rychleji, ale je třeba pochválit aspoň to, že jsme se z 8%, před lety, kdy jsem o tom začal mluvit, zainvestovaných peněz na výnos dostali na 22% zhruba. Čili ten trend tam je jasný a když budeme pokračovat v tom dále, tak za pár let se dostaneme do situace, kdy opravdu nám tyhle peníze budou pomáhat výrazně splácet úroky na náš státní dluh a to nám pak umožní financovat jiné věci ze státního rozpočtu.
+A to se děje. Čili navyšujeme postupně, já bych to dělal rychleji, ale je třeba pochválit aspoň to, že jsme se z 8% peněz zainvestovaných na výnos před lety, kdy jsem o tom začal mluvit, dostali na 22% zhruba. Čili ten trend tam je jasný a když budeme pokračovat v tom dále, tak za pár let se dostaneme do situace, kdy opravdu nám tyhle peníze budou pomáhat výrazně splácet úroky na náš státní dluh a to nám pak umožní financovat jiné věci ze státního rozpočtu.
 
 **Václav Moravec:** A ten druhý nebo třetí možnost navýšení příjmu státního rozpočtu vedle toho vašeho oblíbeného tématu?
 
-**Tomáš Havránek:** Jasně, tak v řadě zemí zahraničí funguje něco, čemu se říká carry over, rozpočtový carry over. A teď, co to znamená? Ti z nás, kteří pracovali v nějakých státních a veřejných institucích, tak často vidí na konci roku, jak se masivně nebo relativně masivně utrácí, abyste vyčerpali svůj rozpočet.
+**Tomáš Havránek:** Jasně, tak v řadě zemí v zahraničí funguje něco, čemu se říká carry over, rozpočtový carry over. A teď, co to znamená? Ti z nás, kteří pracovali v nějakých státních a veřejných institucích, tak často vidí na konci roku, jak se masivně nebo relativně masivně utrácí, abyste vyčerpali svůj rozpočet.
 
-Není to jenom ve státním sektoru i v korporátu, ale v té veřejné sféře je to poměrně silné. Protože vy víte, use it or lose it. Když to použijete, tak to vyčerpáte, když ne, tak vám to na konci roku seberou. Nejenom, že vám to seberou.
+Není to jenom ve státním sektoru, je to i v korporátu, ale v té veřejné sféře je to poměrně silné. Protože vy víte, use it or lose it. Když to použijete, tak to vyčerpáte, když ne, tak vám to na konci roku seberou. Nejenom, že vám to seberou.
 
 … pro příští rok. Vám sníží ten další rozpočet. A ten carry over, který funguje třeba ve Spojených státech, to má ministerstvo obrany, tuším. Má to Victoria, stát v Austrálii, mají to Velká Británie.
 
@@ -70,17 +70,17 @@ Tak podle odhadů, které jsou, na ta opatření třeba se zavedly, že byste si
 
 **Tomáš Havránek:** My bychom všichni rádi viděli efektivnější státní správu, ale zase, jak konkrétně to docílit, není vůbec zřejmé. Mám jeden nápad. Osobně mám velmi dobré zkušenosti také s úředníky. Třeba, když jsem dával daňové přiznání před pár lety, to bylo ještě školkovné, tak jsem vyplňoval za děti školkovné, než jsme ho zrušili.
 
-Odevzdal jsem to a pak mi volala paní z finančního úřadu, kdy to myšli, že to mám chybu. Já jsem se už děsil toho, co jsem tam provedl. Ona mi chtěla poradit, že jsem si mohl přiznat víc z toho se daňové slevy na děti. Já jsem to špatně pochopil.
+Odevzdal jsem to a pak mi volala paní z finančního úřadu, a já myslel, že tam mám chybu. Já jsem se už děsil toho, co jsem tam provedl. Ona mi chtěla poradit, že jsem si mohl přiznat víc té daňové slevy na děti. Já jsem to špatně pochopil.
 
-A já jsem byl v šoku, že berňák vám někdy může chtít i pomoct. A já bych rád takové lidi sám jako klient, jako občan odměnil, ale vlastně teď nemám systém, jak to udělat. Žádná zpětná vazba, nějaké dotazníky spokojenosti. Není, pravda? Tak já o tom aspoň nevím, tak možná pan ministr mi to řekne. Třeba v Singapuru je výborný systém hodnocení státní správy, dotazníky, tedy hodnocení jak od klientů, občanů, tak je tam důsledná 360 uvnitř odboru, aby tohoto člověk, abychám mohl říct té paní, nebo aby ta paní mohla být do chovější odměny. Kvůli tomu, že se dobře chová, že dělá dobrou reklamu, že dělá tu práci, že ji to baví evidentně.
+A já jsem byl v šoku, že berňák vám někdy může chtít i pomoct. A já bych rád takové lidi sám jako klient, jako občan odměnil, ale vlastně teď nemám systém, jak to udělat. Žádná zpětná vazba, nějaké dotazníky spokojenosti. Není, pravda? Tak já o tom aspoň nevím, tak možná pan ministr mi to řekne. Třeba v Singapuru je výborný systém hodnocení státní správy, dotazníky, tedy hodnocení jak od klientů, občanů, tak je tam důsledná 360 uvnitř odboru, abych mohl říct té paní, nebo aby ta paní mohla být do chovější odměny. Kvůli tomu, že se dobře chová, že dělá dobrou reklamu, že dělá tu práci, že ji to baví evidentně.
 
 Což ne vždycky je ta moje zkušenost s úředníky.
 
 **Václav Moravec:** A těch 76 tisíc úředníků, když Mariana Jurečka, jemu se nelíbila ta první tabulka, nebo ten první graf vývoj počtu zaměstnanců státu, do kterého jsou započítány, jak jsem zmiňoval, tam jsou bezpečnostní složky, učitelé, zdravotníci a podobně, kde jsme na těch zhruba půl milionu, půl milionu státních zaměstnancích, že jo, 488 tisíc, nebo 489 tisíc zaměstnanců. To odpovídá České republice a službám, které si jako daňoví poplatníci platíme?
 
-**Tomáš Havránek:** To odpovídá, já myslím, že odpovídá. Samozřejmě bylo by lepší, kdyby to bylo efektivnější. Nějaká forma těch dotazníků jako v Singapuru by určitě pomohla. Ono těch lidí, co platíme ze státních peněz, je mnohem víc, je asi milion, možná i víc, jak milion.
+**Tomáš Havránek:** To odpovídá, já myslím, že odpovídá. Samozřejmě bylo by lepší, kdyby to bylo efektivnější. Nějaká forma těch dotazníků jako v Singapuru by určitě pomohla. Ono těch lidí, co platíme ze státních peněz, je mnohem víc, je asi milion, možná i víc než milion.
 
-Nepřímo. Ostatně, jako já na univerzitě taky mám, sice ne v těch tabulkách, o kterých se bavíme, ale také jsem placený ze státního rozpočtu převážně. Já nevidím velký prostor k masivnímu propouštění, protože to sice jako se snadno říká, že ti úředníci točí na židly nebo státní zaměstnanci, ale... Kdybychom to lépe zdigitalizovali stát jako celek, tak...
+Nepřímo. Ostatně, jako já na univerzitě taky mám, sice ne v těch tabulkách, o kterých se bavíme, ale také jsem placený ze státního rozpočtu převážně. Já nevidím velký prostor k masivnímu propouštění, protože se to sice snadno říká, že se ti úředníci točí na židlích nebo státní zaměstnanci, ale... Kdybychom lépe zdigitalizovali stát jako celek, tak...
 
 Takhle jako mírné úspory konkrétně asi v tom... To je od Mariana Jurečky 10%. A dostaneme se k té super dávce a tomu zjednodušení, to je prima. Ale nevidím tady velký prostor opravdu propouštět bez třeba těch podkladů v těch dotaznících a nějakého dlouhodobého hodnocení, ze kterých uvidíte, koho ta práce baví, kdo to chce dělat, kdo chce pomáhat klientům, občanům a kdo to dělá proto, že to na něj v životě nějak zbylo a možná by měl s tím životem dělat něco jiného.
 
@@ -114,14 +114,14 @@ Opravdu dvojcifrným tempem přes 10%. Přitom to, co se vyrobí v té ekonomice
 
 A tohle se nutně, to je základní ekonomický princip, musí vyrovnat v příštích letech. Čili my budeme vidět svižný růst průměrných platů, reálných platů po odečtení inflace. V soukromé sféře podle prognózy ČNB to je na příští rok asi 7%. A teď, za ty poslední roky nám ty reálné platy očištěné o inflaci ve státní správě, nebo v té veřejné, klesaly ještě rychleji.
 
-V řadě profesí to bylo opravdu jako výrazně rychleji. I přes 20%. A teď stůj, co stůj, pokud chcete, aby někdo tyhle práce vykonával v té státní veřejné sféře, tak vy je musíte zaplatit tak, aby to bylo aspoň trošku kompetitivní, i když chcete šetřit jinak. Jako bez toho vám ty řady služe budou postupně kolabovat a nebudou tam kvalitní lidi.
+V řadě profesí to bylo opravdu jako výrazně rychleji. I přes 20%. A teď stůj, co stůj, pokud chcete, aby někdo tyhle práce vykonával v té státní veřejné sféře, tak vy je musíte zaplatit tak, aby to bylo aspoň trošku kompetitivní, i když chcete šetřit jinak. Bez toho vám řada služeb bude postupně kolabovat a nebudou tam kvalitní lidi.
 
-Protože i ty, co to baví, tak potřebují nějakou mzdu, ze které rozumně vyžijí a nemusí si potom žádat o dávku na bydlení, na kterou tedy brzy budeme mít asi nárok všichni. Jak to vypadá, k tomu se ještě asi dostaneme. Ale takže u těchto profesí, jak tady pan předseda jmenoval, jak jste vy vyčíslovali, bude opravdu nutný nárůst, tedy je výrazně vyšší než nějakých třeba 5%, o kterém se mluví, i když ten celkový objem prostředků je ještě menší. Tam rozhodně nějakých 7% bude potřeba.
+Protože i ty, co to baví, tak potřebují nějakou mzdu, ze které rozumně vyžijí a nemusí si potom žádat o dávku na bydlení, na kterou tedy brzy budeme mít asi nárok všichni. Jak to vypadá, k tomu se ještě asi dostaneme. Ale takže u těchto profesí, jak tady pan předseda jmenoval, jak jste vy vyčíslovali, bude opravdu nutný nárůst výrazně vyšší než nějakých třeba 5%, o kterých se mluví, i když ten celkový objem prostředků je ještě menší. Tam rozhodně nějakých 7% bude potřeba.
 
 Tady bych podpořil pana předsedu. Myslím, že to je nějaká věc, která je evidentní. Že nemůžete do nekonečna rozvírat ty nůžky na stejné pozici mezi platy v té veřejné sféře a v té soukromé.
 
 **Václav Moravec:** Protože stát asi nemá ty zdroje?
 
-**Tomáš Havránek:** Ale tak stát se snaží šetřit, což vláda dělá jako co může, balancuje různé věci. Ale tady jsme už opravdu v situaci, kdy ten poměr na některých pozicích platu ve veřejné sféře a v soukromé je vlastně na historických minimech. Nebo blížíme se nějakému období 2014. Podle studie IDEA, kterou jsem nedávno četl.
+**Tomáš Havránek:** Ale tak stát se snaží šetřit, což vláda dělá, jak může, balancuje různé věci. Ale tady jsme už opravdu v situaci, kdy ten poměr na některých pozicích platu ve veřejné sféře a v soukromé je vlastně na historických minimech. Nebo blížíme se nějakému období 2014. Podle studie IDEA, kterou jsem nedávno četl.
 
 A právě nejméně berou často ti lidé, kteří jsou nejvíc v kontaktu s lidmi. Proto jsem navrhoval ty dotazníky, že by část zvýšení platu mohla jít na bonusy právě tímto způsobem. Pro ty nejlepší z nich.

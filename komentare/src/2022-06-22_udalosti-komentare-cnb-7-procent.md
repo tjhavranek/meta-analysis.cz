@@ -20,7 +20,7 @@ Hostem je Tomáš Havránek z Institutu ekonomických studií Fakulty sociální
 
 **Tomáš Havránek:** To se čekat dalo,
 
-… vlastně to ani jinak být nemohlo, protože už to čekaly i finanční trhy. Kdyby to zvýšení bylo menší než na sedm procentních bodů, tak by potom koruna nutně oslabila, protože by úložky v korunách byly by méně výnosné.
+… vlastně to ani jinak být nemohlo, protože už to čekaly i finanční trhy. Kdyby to zvýšení bylo menší než na sedm procentních bodů, tak by potom koruna nutně oslabila, protože by úložky v korunách byly méně výnosné.
 
 **Moderátor:** A tím pádem by potom i Národní banka
 
@@ -30,35 +30,35 @@ Hostem je Tomáš Havránek z Institutu ekonomických studií Fakulty sociální
 
 15-16% nebo víc?
 
-**Tomáš Havránek:** To je standardní ekonomická poučka, že pokud vám roste inflace nějakým tempem, tak abyste ji zkrotil, tak musíte ty sazby zvyšovat rychleji, než tak ta inflace roste. Což ale dnes není možné právě kvůli tomu zadlužení nejenom vlády, ale i domácností a firem.
+**Tomáš Havránek:** To je standardní ekonomická poučka, že pokud vám roste inflace nějakým tempem, tak abyste ji zkrotili, musíte ty sazby zvyšovat rychleji, než ta inflace roste. Což ale dnes není možné právě kvůli tomu zadlužení nejenom vlády, ale i domácností a firem.
 
 **Moderátor:** Dokáže si představit další zvyšování úrokových sazeb během léta a podzimu?
 
-**Tomáš Havránek:** Podle mě to je naprosto vyloučené. Díky tomu vlastně nějaké nové složení té bankovní rady, ale právě i kvůli tomu, co ta naše ekonomika je ještě možná snést.
+**Tomáš Havránek:** Podle mě to je naprosto vyloučené. Vlastně díky novému složení té bankovní rady, ale právě i kvůli tomu, co ta naše ekonomika je ještě možná snést.
 
 **Moderátor:** Vy znáte velmi dobře budoucího guvernéra Aleše Michla. Je jisté, že růst sazeb se po jeho nástupu zastaví? Dá se to očekávat?
 
 **Tomáš Havránek:** Podle mě je to zcela jisté. Už i z toho důvodu, že ta ekonomika vyšší sazby neustojí. Když jsme mluvili tady o té situaci domácností, tak samozřejmě musíme zmínit
 
-… to zadlužení se zvyšuje, ale zase ta inflace pomáhá k tomu, že ta reálná hodnota toho zadlužení se vlastně snižuje. Že opticky nám zadlužení roste, ale ta reálná hodnota klesá díky tomu, že inflace ho umazává. Takže de facto paradoxně na konci roku to naše zadlužení v poměru k HDP bude menší, než bylo pravděpodobně na začátku roku. A tak to je u všech z nás, kteří mají nějaký dluh.
+… to zadlužení se zvyšuje, ale zase ta inflace pomáhá k tomu, že se ta reálná hodnota toho zadlužení vlastně snižuje. Opticky nám zadlužení roste, ale ta reálná hodnota klesá díky tomu, že inflace ho umazává. Takže de facto paradoxně na konci roku to naše zadlužení v poměru k HDP bude menší, než bylo pravděpodobně na začátku roku. A tak to je u všech z nás, kteří mají nějaký dluh.
 
 Ta hodnota toho dluhu se snižuje, tou inflací, a pak to zaplatí ti, kteří vlastně mají víc úspor, než mají dluhu.
 
 **Moderátor:** Snižování dluhu by znamenalo utahování opasku, taková poučka z počátku 90. let. Tohle utahování opasku probíhá
 
-**Tomáš Havránek:** … u těch domácností, které spoří a ta inflace jako daň, která jim bere hodnotu těch úspor a vlastně přerozděluje je k těm dlužníkům, to, že stát a lidé, kteří mají hypotéku
+**Tomáš Havránek:** … u těch domácností, které spoří a ta inflace je jako daň, která jim bere hodnotu těch úspor a vlastně přerozděluje je k těm dlužníkům, to je stát a lidé, kteří mají hypotéku
 
 **Moderátor:** … a mají zafixovanou nějakou delší dobu. To všechno jsou pro ty lidi velmi nepříjemné věci, nepříjemné situace, ale jedna věc nebo jedno téma, o kterém se mám pocit politici trošku zdráhají mluvit napříč politickým spektrem a to je případné zvyšování daní. Podle některých expertů se tomu nevyhneme.
 
 Kde stojíte v této otázce vy?
 
-**Tomáš Havránek:** Ty daně už rostou tou inflací. Ta inflace je vlastně daň na úspory, jak jsme se o tom bavili. Takže tady vidíme rekordní zvýšení daní pro všechny, kteří mají velké úspory, kteří celý život šetřili, tak teď během pár let jim ta inflace sežere třetinu těch úspor, velmi snadno.
+**Tomáš Havránek:** Ty daně už rostou tou inflací. Ta inflace je vlastně daň na úspory, jak jsme se o tom bavili. Takže tady vidíme rekordní zvýšení daní pro všechny, kteří mají velké úspory, kteří celý život šetřili, a teď jim během pár let ta inflace sežere třetinu těch úspor, velmi snadno.
 
 Ale i nějaké další zvyšování daní pravděpodobně bude nutné, ale tohle vlastně samo o sobě už je enormní, enormní daňová zátěž.
 
 **Moderátor:** Vy jste sám také řekl, že Česká Národní banka by měla investovat třeba do nákupu akcií, trošku riskovat, když to nadnesu chovat se trošku tržně,
 
-**Tomáš Havránek:** Když to neudělá, tak ona jistě ztratí spoustu peněz tím, že vlastně teď ona má při počtu jsou 3 biliony korun, ještě víc, a musí platit našim bankám, které si potom ty rezervy v korunách ukládají u Národní banky 7% dnes. Čili ty rezervy jsou velmi nákladné a aby neprodělávaly, tak se musí investovat tak, jako to dělá třeba Singapur nebo fondy soukromých
+**Tomáš Havránek:** Když to neudělá, tak ona jistě ztratí spoustu peněz tím, že vlastně teď ona má v přepočtu 3 biliony korun, ještě víc, a musí platit našim bankám, které si potom ty rezervy v korunách ukládají u Národní banky 7% dnes. Čili ty rezervy jsou velmi nákladné a aby neprodělávaly, tak se musí investovat tak, jako to dělá třeba Singapur nebo fondy soukromých
 
 … univerzit, aby dlouhodobě vydělávaly.
 

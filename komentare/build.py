@@ -1682,7 +1682,7 @@ def write_machine_readable(items, social=()):
             "author_manuscript": "the author's own version, as sent to the outlet",
             "publisher_excerpt": "only the outlet's free teaser; the original is paywalled",
             "link_only": "audio or video; no text is stored, the record links to the source",
-            "machine_transcript": "audio or video; the text is a machine transcript of it, checked against the recording",
+            "machine_transcript": "audio or video; the text is a machine transcript of it, checked against the recording and lightly tidied into standard Czech (fillers and false starts removed; numbers, negations and hedges unchanged), so it is still speech",
             "publisher_transcript": "audio or video; the text is the transcript the broadcaster itself published, with the speakers as it named them",
             "correspondence": "a letter or memo the author sent — to a public body, to "
                                   "colleagues, to students — never published anywhere. The date "
