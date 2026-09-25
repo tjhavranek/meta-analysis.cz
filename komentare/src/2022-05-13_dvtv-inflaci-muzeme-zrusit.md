@@ -26,7 +26,7 @@ Ta inflace bude potřeba s ní bojovat. Aleš Michl, tak jak ho znám, dělal js
 
 **Martin Veselovský:** Jenom pokud tedy popisujete vlastně vývoj koruny nebo tu reakci trochu jako předčasnou, tak ale musím k tomu říct, že Aleš Michl po už svém jmenování guvernérem řekl, že na prvním zasedání bankovní rady v srpnu navrhne ponechání úrokových sazeb bez změny. Takže nevím, jestli vlastně jako neoznamuje dopředu, že bude spíš tou holubičí povahou. Oznamuje, ale... No tak je otázka, jestli ta reakce trochu nebyla opravdu předčasná.
 
-**Tomáš Havránek:** Já si myslím, že to může být jinak, než jak teď to vypadá každopádně. V situaci, kdy tu odpovědnost bude mít na 100%, bude mít většinu v radě, kterou nejspíš mu prezident dopřeje pravděpodobně. Ještě tři členy je potřeba jmenovat. Přesně tak a vleto potom další dva.
+**Tomáš Havránek:** Já si myslím, že to může být jinak, než jak to teď vypadá. Každopádně v situaci, kdy tu odpovědnost bude mít na 100%, bude mít většinu v radě, kterou mu nejspíš prezident dopřeje pravděpodobně. Ještě tři členy je potřeba jmenovat. Přesně tak, a v létě potom další dva.
 
 Ale možná je tedy už potom jmenování v červenci. Samozřejmě je to možné, že nechá shořet korunu. Ale nejde mi to úplně k tomu, jak ho znám, že by se takhle chtěl zapsat do dějin.
 
@@ -162,7 +162,7 @@ Ten obrázek jednak komunikační, jednak nepoužili kurz. A to možná přispě
 
 **Tomáš Havránek:** Teď je to velmi těžké právě kvůli té změně v centrální bance. Samozřejmě ty globální faktory to nějak neovlivní a ty je i těžké predikovat. Těch 90% inflace budeme vlastně asi dále dovážet. Ale záleží na tom kurzu měny.
 
-Opravdu, to je jediná věc, která může rychle inflaci ovlivnit. Ne, že by úplně slazal na nulu hned, ale může ji rychle ovlivnit jako jediná věc. A to záleží na Aleši Michlovi, jak se k tomu postaví v těch dalších měsících. A já věřím tomu, znovu, že bude chtít, aby si na něj historie pamatovala jako na, když ne jako Rašína.
+Opravdu, to je jediná věc, která může rychle inflaci ovlivnit. Ne že by úplně slezla na nulu hned, ale může ji rychle ovlivnit jako jediná věc. A to záleží na Aleši Michlovi, jak se k tomu postaví v těch dalších měsících. A já věřím tomu, znovu, že bude chtít, aby si na něj historie pamatovala, když ne jako na Rašína.
 
 I když ta krize je taková, že opravdu to je velká výzva pro člověka. A věřím, že Aleš najde tu odvahu na to s tou inflací bojovat opravdu tak, aby ukázal, že je nezávislý na komkoliv mimo tu centrální banku. A že tohle povede k posílení koruny. Že klidně nakonec může zvyšovat úrokové sazby.
 

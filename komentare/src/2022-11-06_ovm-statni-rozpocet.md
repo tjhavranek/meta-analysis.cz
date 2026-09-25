@@ -43,7 +43,7 @@ Já se obávám, že zisky z té daně budou mnohem, mnohem menší, než jaké 
 
 **Václav Moravec:** … lépe systémově, jak naznačoval Jiří Rusnok, když vy byste dával Ačko a teď ukazuju na rozpor mezi kroky ministerstva financí a doporučením centrální banky, která psala o hranici 3 miliard?
 
-**Tomáš Havránek:** … zmiňoval, ale když už tam mimořádná daň je, tak nějaká ta hranice se udělat musí. Samozřejmě za sebe, moje interpretace je taky taková, že tady dlouhodobě vnímáme, že náš bankovní sektor je hodně ziskový, je hodně regulovaný, tím pádem hodně ziskový. Ty zisky jdou do ciziny. Přesně tak.
+**Tomáš Havránek:** … zmiňoval, ale když už tam mimořádná daň je, tak nějaká ta hranice se udělat musí. Samozřejmě mluvím za sebe, moje interpretace je taky taková, že tady dlouhodobě vnímáme, že náš bankovní sektor je hodně ziskový, je hodně regulovaný, tím pádem hodně ziskový. Ty zisky jdou do ciziny. Přesně tak.
 
 Čili možná, že i tahle motivace tam byla. Podle mě tohle by konkrétně šlo asi dělat lépe a to třeba tak, že snížíte regulace těch bank, budou trochu méně ziskové, tím pádem vlastně ty odvody dividend nebudou takové. Já jsem samozřejmě ty banky kritizoval, jak asi víte, kvůli nedokonalému přenosu úrokových sazeb z ČNB na spořicí účty. To už je dnes mnohem lepší, ale spořáky za 6,5 už se dají sehnat, čili
 

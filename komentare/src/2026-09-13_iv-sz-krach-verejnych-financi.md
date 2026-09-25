@@ -20,7 +20,7 @@ Vítejte ve studiu.
 
 **Tomáš Havránek:** My bychom asi všichni chtěli, aby ten schodek byl nižší. Samozřejmě vy víte, že já bych chtěl, aby třeba i inflace byla nulová, ale asi mi to nebude úplně dáno. K tomu se dostaneme. Když to srovnáme s tím, řekněme, že by volby dopadly jinak.
 
-A zůstala tady ta vláda, která vládla předtím a rozpočet sestavoval pan Stanjura, jak by to asi vypadalo. Tak ten hlavní rozdíl je, nebo jeden z těch rozdílů je, že tato vláda mírně snižuje daně. Že vlastně místo toho, abychom my platili, řekněme, za ty obnovitelné zdroje, tak část toho si ta vláda bere. Oproti tomu zase zavádí EET, což je trochu zvýšení daní, nějaké drobné úlevy pro osobe, čili dohromady pár miliard dolů.
+A zůstala tady ta vláda, která vládla předtím a rozpočet sestavoval pan Stanjura, jak by to asi vypadalo. Tak ten hlavní rozdíl je, nebo jeden z těch rozdílů je, že tato vláda mírně snižuje daně. Že vlastně místo toho, abychom my platili, řekněme, za ty obnovitelné zdroje, tak část toho si ta vláda bere. Oproti tomu zase zavádí EET, což je trochu zvýšení daní, nějaké drobné úlevy pro OSVČ, čili dohromady pár miliard dolů.
 
 Potom bere peníze z obrany a dává je do zdravotnictví, víceméně nějakých 20 miliard, zhruba. A potom navíc na dluh, dá se říct, dá něco státním zaměstnancům a důchodcům, plus ještě investuje do dopravy nějakých 30 miliard. Čili když uděláte toto porovnání, co by bylo, kdyby ta vláda byla jiná, tak ten schodek by byl téměř jistě dost nižší, ale ten rozdíl by byl třeba 40-50 miliard pravděpodobně tak realisticky. Čili tohle není úplně zásadní číslo, nevidíme to rádi, ale jak vidíte, ta trajektorie je teď horší, ale není zase tak strašně horší oproti tomu, co by bylo jinak.
 

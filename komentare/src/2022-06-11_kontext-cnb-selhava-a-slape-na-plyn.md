@@ -89,7 +89,7 @@ Tady se ukazuje, že naprosto selhal ten základní režim měnové politiky, č
 
 Ten oheň se sám neuhasí, je potřeba s ním bojovat, i když to třeba bude bolet poměrně hodně. Takže to je ten základní problém. My tady vidíme, že ta centrální banka nepoužívá všechny nástroje, které má. Nepoužívá zejména možnost posílit korunu.
 
-Což není nic nestandardního, není to nic radikálního. Bylo by to jenom vlastně obrácení těch intervencí, které byly dříve proti koruně v řádu desítek miliard eur. Tak tady by byly naopak pro korunu. My bychom umazali ty tehdejší devizové intervence proti koruně.
+Což není nic nestandardního, není to nic radikálního. Bylo by to jenom vlastně obrácení těch intervencí, které byly dříve proti koruně v řádu desítek miliard eur. Tak teď by byly naopak pro korunu. My bychom umazali ty tehdejší devizové intervence proti koruně.
 
 A výsledkem by bylo posílení koruny, které by pomohlo inflaci snížit jak mechanicky, že máme najednou levnější benzín z dovozu, v přepočtu na koruny máme levnější elektřinu. Ale také by to bylo psychologicky daleko lepší než zvyšování úrokových sazeb, protože to je něco, co je pozitivní. Vy to vidíte hned na své peněžence, že máte levnější nákup. A je to něco, co zvýší vaši důvěru v to, že když máte silnou korunu, tak dlouhodobě nemůže být vysoká inflace.
 
@@ -107,7 +107,7 @@ Protože to je důsledek toho selhání centrální banky. Nepochybně, že ta i
 
 **Tomáš Havránek:** Ano, to říkám, protože když posílíte korunu, tak se vám téměř ze dne na den zlevní věci jako třeba benzín. To v té inflaci vidíte okamžitě. Ten řád je dny, týdny, maximálně blízké měsíce. Když zvýšíte úrokové sazby, tak podle vědecké literatury ten maximální efekt přijde za dva a půl roku.
 
-Za dva a půl roku my absolutně nevíme, jaká bude situace, jestli bude potřeba nějaké zpřísňování, té měnové politiky, snižování inflace, nebo naopak, řekněme, tlumení, nějaké recese, která bude spojená s deflací. Takže samozřejmě to je standardní nástroj, ty sazby, ale působí velmi pomalu. A v takovéhle krizi, když máte nástroj jiný, který působí rychleji, z definice, který je navíc psychologicky pozitivní, i populární, všichni budou rozumět tomu, co děláte a proč, tak já nevidím důvod, proč k tomu nesáhnout. Opravdu nerozumím tomu a nikdo mi to nevysvětlil.
+Za dva a půl roku my absolutně nevíme, jaká bude situace, jestli bude potřeba nějaké zpřísňování té měnové politiky, snižování inflace, nebo naopak, řekněme, tlumení nějaké recese, která bude spojená s deflací. Takže samozřejmě to je standardní nástroj, ty sazby, ale působí velmi pomalu. A v takovéhle krizi, když máte nástroj jiný, který působí rychleji, z definice, který je navíc psychologicky pozitivní, i populární, všichni budou rozumět tomu, co děláte a proč, tak já nevidím důvod, proč k tomu nesáhnout. Opravdu nerozumím tomu a nikdo mi to nevysvětlil.
 
 **Marek Zavřel:** Jak by podle vás ten poměr té manipulace s úrokovými sazbami a manipulace s devizovými rezervami by měla vypadat? Měla by převládat vlastně ten odprodej těch devizových rezerv, podle vás?
 

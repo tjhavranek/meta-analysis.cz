@@ -16,7 +16,7 @@ body_note: "Díl podcastu E15cast, ptal se Nikita Poljakov. Text je strojový p�
 
 Vy jste ve svých komentářích v minulých týdnech a měsících napsal, že Česká národní banka v tom stavu, ve kterém teď je, a teďko není z hlediska toho, zda dělají svoji práci dobře nebo ne, ale z hlediska toho, na co targetují, zaměřují svoje priority, to znamená ten inflační cíl, že je to trošičku outdated, že to je zastaralý a že by potřebovala audit. A ten audit svých politik, takovou revizi provedly velké malé centrální banky, a vy jste psal, že už se to stalo v cizině. Proč by si zrovna teď Česká národní banka takový audit zasloužila?
 
-**Tomáš Havránek:** Protože podle mě by to pomohlo posílit její důvěryhodnost, a to jak vlastně dovnitř republiky, tak i navenek, z hlediska kurzu koruny. A čili to inflační cílování, jak jste říkal, jak víme dobře, je to taková všeobecná mantra, používají to skoro všechny centrální banky vyspělých zemí. A určitě, když se to zavádělo před 30 lety na Zélandu, v Kanadě, tak to byl velký průlom. Ono pomohlo to inflaci snížit, pomohlo to zvýšit důvěru v tu nízkou inflaci a v centrální banky obecně.
+**Tomáš Havránek:** Protože podle mě by to pomohlo posílit její důvěryhodnost, a to jak vlastně dovnitř republiky, tak i navenek, z hlediska kurzu koruny. A čili to inflační cílování, jak jste říkal, jak víme dobře, je to taková všeobecná mantra, používají to skoro všechny centrální banky vyspělých zemí. A určitě, když se to zavádělo před 30 lety na Zélandu, v Kanadě, tak to byl velký průlom. Pomohlo to inflaci snížit, pomohlo to zvýšit důvěru v tu nízkou inflaci a v centrální banky obecně.
 
 A fungovalo to velice dobře. V té době vlastně nebyl žádný průšvih. Ten průšvih přišel až teď, kdy ta inflace, částečně z globálních, částečně z lokálních příčin v těch různých zemích, stoupá tak silně, že to popírá tu původní mantru toho, že ta inflační očekávání v té ekonomice jsou dobře ukotvená, že to funguje. Tohle se nemělo nikdy stát, v té doktríně inflačního cílování.
 
@@ -70,7 +70,7 @@ A přitom nevidíte, že by to tu ekonomiku nijak poškozovalo. Vyvíjí se mini
 
 Neříkám, že to je typický příklad, je hodně zvláštní, ale zároveň to není nemožné. A teď máte stovky studií, které opravdu, jak jsem říkal, odhadují tu optimální inflaci. A průměr je nula. Čili z hlediska vědeckého výzkumu to není něco, co by bylo mimo.
 
-To je něco, co byste mohli odůvodnit snadno. A hlavně je to velice intuitivní pro běžného člověka. Čili z hlediska důvěryhodnosti té banky, by to bylo mnohem lepší, protože bychom všichni věděli, proč ta banka dělá to, co dělá, aby nám doručila cenovou stabilitu. Dvouprocentní inflace není cenová stabilita.
+To je něco, co byste mohli odůvodnit snadno. A hlavně je to velice intuitivní pro běžného člověka. Čili z hlediska důvěryhodnosti té banky by to bylo mnohem lepší, protože bychom všichni věděli, proč ta banka dělá to, co dělá, aby nám doručila cenovou stabilitu. Dvouprocentní inflace není cenová stabilita.
 
 Vy si můžete udělat model, kde vám to vyjde jako optimální inflace. Ale nikdy nemůžete zdůvodnit, že to se rovná cenové stabilitě. Jasně, inflace se měří asi špatně, nezohledňuje technický pokrok. Jasně, spoustu věcí.
 

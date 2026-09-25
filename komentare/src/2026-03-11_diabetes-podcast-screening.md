@@ -31,7 +31,7 @@ Tak vlastně takhle to bylo, čili přes paní doktorku.
 
 **Tomáš Havránek:** Ten výzkum potřebuje, aby se toho někdo účastnil, tak to byla jedna věc, asi ta druhotná. A potom ano, ten klid, nebo spíš ta představa, kdyby to nebylo v pořádku, tak je prima znát to dopředu, kdyby se s tím dalo něco dělat, což, jak se teď ukazuje, se dá. Čili ze zpětného pohledu by byla chyba nenechat se otestovat, protože když to neuděláme, tak sice si ušetříme, těch, jakoby několik let, řekněme, starostí, dostaneme se třeba k tomu, jak to jsou velký starosti pro ty rodiče, nebo ne. Ale vy to nevíte, když se nenecháte testovat.
 
-A pak se to projeví někdy, třeba u Filípka by to mohlo být ve dvanácti letech, kdy zjistíte najednou vlastně šokově, že ten problém je. A v tom momentu, dobře, tak předtím jste měli několik let úplně v klidu, ale už jste dost možná promeškali dobu, kdy se dnes těm dětem dá nějak pomoct. To znamená oddálit ten nástup situace, kdy si musí píchat inzulín a ta nemoc samotná propukne v tom plném stádiu. Takže jsem rád. Samozřejmě na začátku, když se to člověk dozví, což nevím, jak to bylo u vás, jestli si to pamatujete třeba, já cukrovku nemám, moje sestřenice má diabetes, takže já vím, jak to je, a i náš Filípek, tím, že jsme spolu poměrně často s Bárou, tak víme, že ten život člověka, co má diabetes, je normální, jenom tam máte nějakou tu krabičku, často zapípá, hlídáte si, co máte jíst, ale víme, že se s tím dá žít.
+A pak se to projeví někdy, třeba u Filípka by to mohlo být ve dvanácti letech, kdy zjistíte najednou vlastně šokově, že ten problém je. A v tom momentu, dobře, tak předtím jste měli několik let úplně v klidu, ale už jste dost možná promeškali dobu, kdy se dnes těm dětem dá nějak pomoct. To znamená oddálit ten nástup situace, kdy si musí píchat inzulín a ta nemoc samotná propukne v tom plném stádiu. Takže jsem rád. Samozřejmě na začátku, když se to člověk dozví, což nevím, jak to bylo u vás, jestli si to pamatujete třeba, já cukrovku nemám, moje sestřenice má diabetes, takže já vím, jak to je, a i náš Filípek, tím, že jsme spolu poměrně často s Bárou, tak víme, že ten život člověka, co má diabetes, je normální, jenom tam máte nějakou tu krabičku, občas to zapípá, hlídáte si, co máte jíst, ale víme, že se s tím dá žít.
 
 Bára byla ředitelka mateřské školy, teď je zástupkyně, takže má, myslím, velmi hezký život a není to něco, na čem má smysl se nějak trápit, zejména, když s tím nemůžete nic dělat, čili v momentu, kdy vám ten test vyjde pozitivní a máte to potvrzení tím druhým testem, že ty protilátky tam opravdu jsou, to znamená, že vy víte, že ta nemoc u vás jednou propukne, nebo ten rodič to ví, to dítě si to možná úplně nedovede představit v těch, řekněme, devíti letech, tak v tom momentu nemá smysl být nějak smutný, nebo si zoufat, nebo se vztekat, ale jediná smysluplná reakce je to přijmout a zajímat se o to, jak tedy můžeme pomoct a jak se na to nachystat tak, aby to bylo co možná nejlepší.
 
@@ -141,7 +141,7 @@ Tak já vlastně nevím, co je pro ten systém jako lepší, že jo.
 
 Ano, takže ta firma, která to vyvinula, jejíž jméno jsem zapomněl. Sanofi, francouzská firma. Tak to nebude jediný lék. Budou lepší léky, cena půjde rapidně dolů a téměř jistě brzy přijde situace, kdy se vám to vyplatí i čistě ekonomicky, čistě z hlediska toho cashflow pojišťoven.
 
-I kdyby se to nevyplatilo, tak ty pojišťovny tady nejsou proto, aby úplně, jsou to vlastně veřejné, řekněme, státní firmy, jejichž úkolem není maximalizovat zisk. Oni tady jsou z nějakého důvodu, aby fungovalo veřejné zdravotnictví. A nedovedu si představit situaci, ve které vy tady máte šanci pomoct tisícům ročně, jako tisícům dětí, velmi významně. Máte i lék, co funguje, a nebudeme ho hradit.
+I kdyby se to nevyplatilo, tak ty pojišťovny tady nejsou proto, aby úplně, jsou to vlastně veřejné, řekněme, státní firmy, jejichž úkolem není maximalizovat zisk. Ony tady jsou z nějakého důvodu, aby fungovalo veřejné zdravotnictví. A nedovedu si představit situaci, ve které vy tady máte šanci pomoct tisícům ročně, jako tisícům dětí, velmi významně. Máte tady lék, který funguje, a nebudeme ho hradit.
 
 Takže to si myslím, že není politicky udržitelná věc, takže nevěřím tomu, že by takové riziko tady bylo. Takže já čekám, že ten lék bude velmi brzy dostupný všem v této zemi.
 
@@ -151,9 +151,9 @@ Každopádně, když se tady u toho ještě podíváme na to, řekněme trošku,
 
 Že prostě by ho hrozně chtěli kontrolovat, jo, furt by ho sledovali, jestli se už neblížej ty příznaky. A vlastně, blbě by se jim vyrovnávalo s tím, že v jejich dítěti je něco jako časovaná bomba. Tak jak se na tohle díváte vy třeba na ten přístup těch druhých, kteří řeknou jako, ne, my to radši nechceme vědět. My chceme mít ten klid a až to přijde, tak to prostě přijde.
 
-**Tomáš Havránek:** Tak to by dávalo smysl v situaci, kdyby jste s tím nemohli nic dělat. To znamená, jak to bylo ještě před pár lety, kdy já jsem o tom léku nevěděl, tak to moje rozhodování by takové možná mohlo být tehdy, že vlastně lepší je nevědět a až to přijde, a potom to budeme nějak řešit. Ale ta situace se teď dramaticky mění, jak jsme se o tom bavili těch posledních pár minut. Takže tahle kalkulace potom je dost jako sobecká ze strany toho rodiče, když vy byste mohl pomoct a neuděláte to jenom proto, abyste měli jako nějak psychický klid, se lepší investovat tedy do vlastního duševního zdraví.
+**Tomáš Havránek:** Tak to by dávalo smysl v situaci, kdybyste s tím nemohli nic dělat. To znamená, jak to bylo ještě před pár lety, kdy já jsem o tom léku nevěděl, tak to moje rozhodování by takové možná mohlo být tehdy, že vlastně lepší je nevědět a až to přijde, tak to potom budeme nějak řešit. Ale ta situace se teď dramaticky mění, jak jsme se o tom bavili těch posledních pár minut. Takže tahle kalkulace potom je dost jako sobecká ze strany toho rodiče, když vy byste mohl pomoct a neuděláte to jenom proto, abyste měli jako nějaký psychický klid, že je tedy lepší investovat do vlastního duševního zdraví.
 
-Tak já nevím, čtěte Marka Aurelia. Když s něčím nemůžu nic dělat, tak nemá smysl se ohledně toho nějak trápit a v tom Motole vám udělají ty testy a řeknou vám, ten problém přijde v tu a tu dobu, anebo příští rok na 99% se nic dít nebude, tak máte klid. Takže samozřejmě to je těžké pro toho rodiče. Ty děti, nevím jak to vnímají oni, já se s Filípkem o tom bavím, ale on nedokáže si to podle mě dost dobře představit, takže nevím.
+Tak já nevím, čtěte Marka Aurelia. Když s něčím nemůžu nic dělat, tak nemá smysl se ohledně toho nějak trápit a v tom Motole vám udělají ty testy a řeknou vám, ten problém přijde v tu a tu dobu, anebo příští rok na 99% se nic dít nebude, tak máte klid. Takže samozřejmě to je těžké pro toho rodiče. Ty děti, nevím, jak to vnímají oni, já se s Filípkem o tom bavím, ale on si to podle mě nedokáže dost dobře představit, takže nevím.
 
 Ale to je ta odpovědnost toho rodiče, aby řešil věci, které řešit může, které má pod kontrolou, a tohle pod kontrolou má, může tím pomoct. A když ten screening udělá, s drtivou pravděpodobností to stejně vyjde negativní. A když to vyjde pozitivní, tak může mít vlastně, ne asi úplně radost, ale měl by mít ze sebe dobrý pocit, protože to pomohl včas zachytit.
 
@@ -175,7 +175,7 @@ Ale detaily mu neříkám, protože mi to přijde zbytečné asi ohledně té ko
 
 **Jan Hrušovský:** potom z diabetes. stát takový té pozitivní motivace. Ukázat mu, že opravdu na světě jsou i ostatní diabetici, kteří prostě dokážou dělat cokoliv prakticky,
 
-**Tomáš Havránek:** že je to v ničem neomezuje. A teď budu malinko spekulovat, ale tím, že když máte diabetes, tak musíte dodržovat nějaký režim. Když to nebudete dělat, tak to vaše tělo nebude fungovat. A ta disciplína, kterou vy musíte mít, abyste nějak mohl žít normálně, tak je dobrá do života.
+**Tomáš Havránek:** že je to v ničem neomezuje. A teď budu malinko spekulovat, ale tím, že když máte diabetes, tak musíte dodržovat nějaký režim. Když to nebudete dělat, tak to vaše tělo nebude fungovat. A ta disciplína, kterou vy musíte mít, abyste nějak mohli žít normálně, tak je dobrá do života.
 
 Ta disciplína je dobrá. To, že vy musíte udělat nějakou věc v danou dobu, a ne to odložit. Takže možná, a já nejsem psycholog, nevím, jestli to, co říkám, je nějak vědecky podložené, ale čekal bych, že tohle bude mít v dospívání dobrý vliv. Podobně jako sport má dobrý vliv, ten florbal sám o sobě, ty tři tréninky týdně.
 
@@ -201,7 +201,7 @@ A uvidíme, až samozřejmě přijde na to, že ten inzulin potřebuje, tak je z
 
 **Tomáš Havránek:** Ne. Já mám pocit, že je na to ještě brzy. Nevím, k čemu by to teď bylo v situaci, kdy si on nemusí hlídat stravu.
 
-By to způsobilo jenom, už jenom to, že o tom mluvíte mě. Ne, já zahořeně vím, že to, jaká ta praxe je. Ale mám pocit, že na to je ještě čas pro ty děti. A i vlastně pro nás, jako rodiče.
+By to způsobilo jenom, už jenom to, že o tom mluvíte mě. Ne, já zahořeně vím, jaká ta praxe je. Ale mám pocit, že na to je ještě čas pro ty děti. A i vlastně pro nás, jako rodiče.
 
 Je to tak, v tom prvním stádiu diabetes je toho času dost a člověk má v životě spoustu jiných věcí k řešení, které jsou akutní teď, než řešit to, co bude za dva roky. Takže já myslím, že moudře to kolegové nechávají na pozdější konzultace.
 

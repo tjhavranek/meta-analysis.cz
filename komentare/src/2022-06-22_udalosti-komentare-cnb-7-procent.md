@@ -58,7 +58,7 @@ Ale i nějaké další zvyšování daní pravděpodobně bude nutné, ale tohle
 
 **Moderátor:** Vy jste sám také řekl, že Česká Národní banka by měla investovat třeba do nákupu akcií, trošku riskovat, když to nadnesu chovat se trošku tržně,
 
-**Tomáš Havránek:** Když to neudělá, tak ona jistě ztratí spoustu peněz tím, že vlastně teď ona má v přepočtu 3 biliony korun, ještě víc, a musí platit našim bankám, které si potom ty rezervy v korunách ukládají u Národní banky 7% dnes. Čili ty rezervy jsou velmi nákladné a aby neprodělávaly, tak se musí investovat tak, jako to dělá třeba Singapur nebo fondy soukromých
+**Tomáš Havránek:** Když to neudělá, tak ona jistě ztratí spoustu peněz tím, že vlastně teď ona má v devizových rezervách, tedy v eurech a v dolarech, v přepočtu 3 biliony korun, ještě víc, a musí platit našim bankám, které si potom ty rezervy v korunách ukládají u Národní banky dnes za 7%. Čili ty rezervy jsou velmi nákladné a aby neprodělávaly, tak se musí investovat tak, jako to dělá třeba Singapur nebo fondy soukromých
 
 … univerzit, aby dlouhodobě vydělávaly.
 

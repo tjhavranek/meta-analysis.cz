@@ -31,7 +31,7 @@ Zase se část z té bílé překlopila na šedou.
 
 **Petra Jaroměřská:** To znamená, teď po zavedení elektronické evidence tržeb můžeme čekat, že ten další rok ta ekonomika se zvětší podle tedy těch čísel. Můžeme to samozřejmě odhadovat, jaký ten dopad ve skutečnosti bude, ale lze tam odhadovat další růst HDP. Podle vás?
 
-**Tomáš Havránek:** Určitě dojde k něčemu podobnému, nevím přesně, do jaké míry to EET se liší, ta nová verze, ale určitě dojde k tomu obělení, jestli to bude jedno, dvě, tři procenta, nejsem schopen říct, ale opravdu dojde účetně, formálně, ne k růstu ekonomiky, která by byla dana tím, že jsme produktivnější, ale že se toho vykáže víc, stát toho víc zdaní, tak to vykázané HDP by mělo být větší, pokud nějak ČSÚ nezmění tu metodiku, což samozřejmě může, protože viděl, že tam to dvojí počítání bylo, takže možná na to zareaguje. Ale vybereme víc na daních, zase se můžeme přít, kolik přesně, ale...
+**Tomáš Havránek:** Určitě dojde k něčemu podobnému, nevím přesně, do jaké míry se to EET liší, ta nová verze, ale určitě dojde k tomu obělení, jestli to bude jedno, dvě, tři procenta, nejsem schopen říct, ale opravdu dojde účetně, formálně, ne k růstu ekonomiky, která by byla dána tím, že jsme produktivnější, ale že se toho vykáže víc, stát toho víc zdaní, tak to vykázané HDP by mělo být větší, pokud nějak ČSÚ nezmění tu metodiku, což samozřejmě může, protože viděl, že tam to dvojí počítání bylo, takže možná na to zareaguje. Ale vybereme víc na daních, zase se můžeme přít, kolik přesně, ale...
 
 **Petra Jaroměřská:** Vy máte nějaký odhad, kolik by se dalo díky EET na daních víc vybrat?
 
@@ -45,7 +45,7 @@ Zase se část z té bílé překlopila na šedou.
 
 **Petra Jaroměřská:** Ano. Vybírá stát tedy dostatečně daně, vy jste v minulosti to kritizoval, tak jaká je současnost?
 
-**Tomáš Havránek:** Tak současnost je taková, že po tom zavedení EET se mi zdá, že bychom mohli říct, že stát bude vybírat daně relativně efektivně. Já bych osobně tu, řekněme, ve finanční situaci, fiskální situaci státního rozpočtu řešil trošku ještě jinak. To EET je věc, která je mírně kontroverzní, ale ne zas tak moc. Já myslím, že za to bychom měli tu vládu pochválit, když chceme mít veřejné finance stabilizované.
+**Tomáš Havránek:** Tak současnost je taková, že po tom zavedení EET se mi zdá, že bychom mohli říct, že stát bude vybírat daně relativně efektivně. Já bych osobně, řekněme, ve finanční situaci, fiskální situaci státního rozpočtu řešil trošku ještě jinak. To EET je věc, která je mírně kontroverzní, ale ne zas tak moc. Já myslím, že za to bychom měli tu vládu pochválit, když chceme mít veřejné finance stabilizované.
 
 Tak tohle je věc, která je užitečná.
 
@@ -67,7 +67,7 @@ Máme v majetku v zahraničních měnách. Eura, dolary převážně. A tyhle pe
 
 Ta eura se jí hromadila a teď co s tím? Není žádný plán je nějak využít, trošku, ale v případě nějakých velkých problémů, ale viděli jsme, že ani během války na Ukrajině, ani během covidu, to využití bylo velice, velice malé. Že bychom prodávali ta eura, abychom posílili korunu. Takže ta eura máme, nevíme, co s tím.
 
-Tak já bych navrhl je investovat, aby dlouhodobě vydělávali. Tak jak to dělá třeba Singapur, jak to dělá Norsko, se svým fondem bohatství. Ty peníze vznikly trošku jinak tady než v Norsku. V Norsku jsou to výnosy z prodeje ropy, ale třeba v Singapuru je to úplně stejný mechanismus.
+Tak já bych navrhl je investovat, aby dlouhodobě vydělávaly. Tak jak to dělá třeba Singapur, jak to dělá Norsko, se svým fondem bohatství. Ty peníze vznikly trošku jinak tady než v Norsku. V Norsku jsou to výnosy z prodeje ropy, ale třeba v Singapuru je to úplně stejný mechanismus.
 
 To znamená, že oni měli najednou příliš mnoho těch devizových rezerv, tak se rozhodli investovat je na dlouho. Jak přesně by to fungovalo? Koupili byste globální akcie, čili podíly na globálních firmách a tím pádem se podílíte na technickém pokroku, který vede k tomu, že ty firmy pak mají zisk a na dividendách je vyplácí. Ta Národní banka to už trochu dělá, ale málo, velmi málo a pozdě.
 
@@ -97,7 +97,7 @@ A já jsem, je to i moje chyba, já jsem u toho tehdy byl, a sice jsem něco k t
 
 **Petra Jaroměřská:** nedávná slova guvernéra České národní banky, o tom, že neváhá zdrtit ekonomiku s případným zvýšením sazeb, tak, aby zabránil inflaci.
 
-**Tomáš Havránek:** Já ho znám poměrně dlouho, dělal jsem mu poradce několik měsíců, než jsem odešel z Národní banky. A to jsou výroky, které přesně Kalešovy mi sedí, takže nemám vlastně, mě to nějak nepřekvapuje. Jenom bych připomněl, že když tady posledně byla inflace dvojciferná, tak Aleš Michl nebyl z těch, kdo by chtěli drtit ekonomiku. Buď bude nekonzistentní a udělá to. Já bych spíš čekal, že já nevím, co bych čekal,
+**Tomáš Havránek:** Já ho znám poměrně dlouho, dělal jsem mu poradce několik měsíců, než jsem odešel z Národní banky. A to jsou výroky, které mi k Alešovi přesně sedí, takže nemám vlastně, mě to nějak nepřekvapuje. Jenom bych připomněl, že když tady posledně byla inflace dvojciferná, tak Aleš Michl nebyl z těch, kdo by chtěli drtit ekonomiku vysokými sazbami. Takže buď bude nekonzistentní a udělá to. Já bych spíš čekal, že... Já vlastně nevím, co bych čekal,
 
 **Petra Jaroměřská:** Shodou okolností my natáčíme ve středu. Zítra rozhoduje bankovní rada centrální banky o zvýšení úrokových sazeb, případně ponechání je na současné úrovni. Na co byste si vsadil? Je teď čas na to, ty sazby zvýšit?
 
@@ -119,7 +119,7 @@ Dlouhodobě, a k tomu se možná dostaneme, co vyřeší státní dluh dlouhodob
 
 **Tomáš Havránek:** proč by to pan premiér chtěl dělat. Protože my to vidíme třeba například u Spojených států, kde když prezident, v tom případě, který tu zemi řídí, vyzve centrální banku, aby snížila sazby, tak ona samozřejmě to udělat nechce. I kdyby třeba si sama vyhodnotila, že je to dobré, tak to nemůže udělat. Aby to nevypadalo, že je pod...
 
-Takže vlastně, když to pan premiér takhle to svoje přání vysloví, tak tím tu cestu uzavře. Takže to poráží samo sebe. Čili jestli ten cíl je sazby zvýšit, ale nevím proč, to by nepomohlo asi jak ani vládě, ani firmám. Samozřejmě by to mohlo pomoct proti inflaci, ale jestli...
+Takže vlastně, když to pan premiér takhle to svoje přání vysloví, tak tím tu cestu uzavře. Takže to poráží samo sebe. Čili jestli ten cíl je sazby zvýšit, ale nevím proč, to by nepomohlo asi ani vládě, ani firmám. Samozřejmě by to mohlo pomoct proti inflaci, ale jestli...
 
 Já jako nerozumím té logice za tímto vyjádřením, abych se přiznal,
 
@@ -163,7 +163,7 @@ Ta druhá věc, co bych udělal, je to, čemu se říká rozpočtový carryover.
 
 Protože když to neutratíte, tak se stane co? Co byste řekla, když jsem ředitel odboru a neutratím svůj rozpočet na konci roku. Tak se to převede do dalšího? To by bylo dobrý, to bylo skvělý.
 
-Většinou se to nepřevede, většinou mi řekne můj šéf, že ty peníze asi nepotřebuješ, takže za prvé na příští rok ti ten rozpočet snížíme a za druhé ti to nepřevedu. Samozřejmě, my máme něco jako nároky z nerealizovaných výdajů NNV, kde to převést lze, ale nemáte garantované, že když to převedete, příští rok na to peníze budou, abyste to mohla použít. Nebo že se vám nesníží ten rozpočet do příštího roku. Takže příklady jsem chtěl z Černoborače dávat nebudu.
+Většinou se to nepřevede, většinou mi řekne můj šéf, že ty peníze asi nepotřebuješ, takže za prvé na příští rok ti ten rozpočet snížíme a za druhé ti to nepřevedu. Samozřejmě, my máme něco jako nároky z nerealizovaných výdajů NNV, kde to převést lze, ale nemáte garantované, že když to převedete, příští rok na to peníze budou, abyste to mohla použít. Nebo že se vám nesníží ten rozpočet do příštího roku. Takže příklady z ČNB radši dávat nebudu.
 
 Každý, kdo tohle zažil, tak ví, jak se zbytečně
 
@@ -193,7 +193,7 @@ Z hlediska třeba destrukce, důchodové reformy, tak ta věc není zdaleka tak 
 
 **Tomáš Havránek:** Pokud vláda zavede třeba EET, tak to je krok ke snížení zadlužení. A já říkám, kdyby se k tomu přidaly ještě další věci, co nikoho nebolí, to znamená trošku nějaká větší komunikace s ČNB ohledně toho, jak dlouhodobě ty rezervy investovat, tak tohle více než vyváží téměř cokoliv špatného, co ta vláda je schopná udělat jinak. To znamená rozdat peníze z vrtulníku svým voličkům třeba. Takže to je jedna věc.
 
-Druhá věc je, že my nejsme zdaleka jediná země, která má fiskální problémy nebo bude mít. A ten problém, který je globální nebo ve vyspělých zemích, ale víceméně vlastně všude, se ještě zvýraznil tím, jak nám klesá porodnost v posledních několika letech po covidu, ale teď se to opravdu velmi urychlilo. A tohle samozřejmě nevám naprosto rozbourá důchodový systém, ale nejenom to, ta celá společnost bude tím, jak už nám teď dnes klesá globální populace pravděpodobně, všude na světě vám klesá porodnost, ale už i globální celá ta taková ta rubrika, ta tkaň společnosti se bude rozpadat do velké míry. To je ta špatná zpráva, ta dobrá je, aspoň pro někoho, já třeba často jezdím do Kalifornie, mám kamarády v Silicon Valley, takže mi říkají, jak skvělá věc je umělá inteligence, nejenom to, co známe, ale to, co do budoucna bude, čili oni vidí explozi v ekonomickém růstu, v produktivitě, roboti, kteří se o nás budou starat, což nejsem si jist, nakolik ty scénáře jsou reálné, ale podle toho, co vím, je opravdu velmi pravděpodobné, že se nám budoucí růst nějak zvýší v souvislosti právě s tou umělou inteligencí, která je tou technologií, která umí sama generovat myšlenky, nápady a nic takového jsme tady ještě neměli.
+Druhá věc je, že my nejsme zdaleka jediná země, která má fiskální problémy nebo bude mít. A ten problém, který je globální nebo ve vyspělých zemích, ale víceméně vlastně všude, se ještě zvýraznil tím, jak nám klesá porodnost v posledních několika letech po covidu, ale teď se to opravdu velmi urychlilo. A tohle samozřejmě nevám naprosto rozbourá důchodový systém, ale nejenom to, ta celá společnost bude tím, jak už nám teď dnes klesá globální populace pravděpodobně, všude na světě vám klesá porodnost, ale už i globální populace zřejmě klesá, tak celá ta taková ta rubrika, ta tkáň společnosti se bude rozpadat do velké míry. To je ta špatná zpráva, ta dobrá je, aspoň pro někoho, já třeba často jezdím do Kalifornie, mám kamarády v Silicon Valley, takže mi říkají, jak skvělá věc je umělá inteligence, nejenom to, co známe, ale to, co do budoucna bude, čili oni vidí explozi v ekonomickém růstu, v produktivitě, roboti, kteří se o nás budou starat. Nejsem si jist, nakolik jsou ty scénáře reálné, ale podle toho, co vím, je opravdu velmi pravděpodobné, že se nám budoucí růst nějak zvýší v souvislosti právě s tou umělou inteligencí, která je tou technologií, která umí sama generovat myšlenky, nápady a nic takového jsme tady ještě neměli.
 
 A čím dál víc se přikláním k tomu, že tohle opravdu může mít hmatatelný dopad na ten růst a tím pádem i na výběr daní, produktivitu a situaci fiskální. Takže teď máte dvě protichůdné tendence. Kolaps, naprostý kolaps porodnosti. Děti v podstatě nebudou za pár let.
 

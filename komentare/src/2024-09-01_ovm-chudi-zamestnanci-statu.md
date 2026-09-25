@@ -36,7 +36,7 @@ Kde ty peníze seženeme, když zrušíme windfall tax dříve, než plánujeme?
 
 **Václav Moravec:** Vy byste navyšoval, je nějaký příjem, který vláda nechává, dejme tomu stranou, i když bude ten volební rok 2025? Vidíte vy příjmy, které zbytečně leží na chodníku a přitom by je bylo možné zvednout?
 
-**Tomáš Havránek:** Vidím tam strukturální problémy. První je ten, to moje oblíbené téma, ohledně správy devizových rezerv. Vlastně my máme majetek za zhruba 3,5 bilionů v zahraničí. A ten by víceméně mohl financovat ty úroky, které platíme na náš státní dluh, který je v podobné velikosti, asi tři a půl bilionu.
+**Tomáš Havránek:** Vidím tam strukturální problémy. První je ten, to moje oblíbené téma, ohledně správy devizových rezerv. Vlastně my máme majetek za zhruba 3,5 bilionu v zahraničí. A ten by víceméně mohl financovat ty úroky, které platíme na náš státní dluh, který je v podobné velikosti, asi tři a půl bilionu.
 
 A tím směrem, vy jste říkal, že to bylo odmítnuto, to nebylo. Tak Národní banka jde tím směrem, navyšuje podíl skutečně investovaných peněz z těch devizových rezerv. Teď to je asi 22% v akciích.
 
@@ -106,7 +106,7 @@ A potom se můžeme dostat k tomu, když to nebude stačit, že budeme zvyšovat
 
 Můžeme se nepochybně zase dočkat korekce jako v roce letošním. Podsekává tady vláda ekonomický růst svými kroky nebo nedělá dostatečně kroky pro...
 
-**Tomáš Havránek:** Tak vždycky můžete přes potřebu tu ekonomiku trošku nabustovat, ale to je krátkodobá věc. Vláda může dělat málo ohledně ekonomického růstu. Ač bychom rádi, aby tomu tak nebylo, tak vláda není to, co táhne ekonomický růst. To dělají ty zaměstnanci, jakou mají pracovní morálku, podnikatelé, jejich inovace.
+**Tomáš Havránek:** Tak vždycky můžete spotřebou tu ekonomiku trošku nabustovat, ale to je krátkodobá věc. Vláda může dělat málo ohledně ekonomického růstu. Ač bychom rádi, aby tomu tak nebylo, tak vláda není to, co táhne ekonomický růst. To dělají ti zaměstnanci, jakou mají pracovní morálku, podnikatelé, jejich inovace.
 
 To, jak lidé jsou ochotní brát riziko, dát výpověď v práci, najít si novou práci. Tohle vytváří ekonomický růst, a ne to, co vláda odhlasuje. A chci tady vám říct pár ještě faktů k těm platům státních zaměstnanců. Za poslední tři roky nám tady masivně klesly reálné mzdy v celé ekonomice.
 

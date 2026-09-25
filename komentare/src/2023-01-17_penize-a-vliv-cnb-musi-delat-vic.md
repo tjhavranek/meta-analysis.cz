@@ -16,7 +16,7 @@ body_note: "Pořad Peníze a vliv na Českém rozhlase Plus, moderuje Jana Klím
 
 **Jana Klímová:** A taky asi jak má nastavenou ekonomiku, protože faktem je, že třeba pobaltské země mají nejvyšší inflaci, ještě vyšší než my a ty jsou právě také hodně závislí na dovozech, je to tak?
 
-**Tomáš Havránek:** ale podle velké většiny ekonomického výzkumu vlastně ta otázka, jestli sama centrální banka tu inflaci může zkrotit nebo sama ji může kontrolovat, nebo jestli k tomu potřebuje vládu. Podle většiny výzkumu to může udělat sama centrální banka a jenom podle malé části ekonomů, řekněme, potřebuje k tomu i tu vládu. Ale každopádně tedy ty zdroje inflace převážně jsou domácí a většina ekonomů se shodne, že hlavně jsou na straně té měnové politiky, čili když se ptáte, kdo za to může, tak většina lidí nebo většina odborníků by měla správně vinit Národní banku.
+**Tomáš Havránek:** ale podle velké většiny ekonomického výzkumu vlastně ta otázka, jestli sama centrální banka tu inflaci může zkrotit nebo ji sama může kontrolovat, nebo jestli k tomu potřebuje vládu. Podle většiny výzkumu to může udělat sama centrální banka a jenom podle malé části ekonomů, řekněme, potřebuje k tomu i tu vládu. Ale každopádně tedy ty zdroje inflace převážně jsou domácí a většina ekonomů se shodne, že hlavně jsou na straně té měnové politiky, čili když se ptáte, kdo za to může, tak většina lidí nebo většina odborníků by měla správně vinit Národní banku.
 
 **Jana Klímová:** Málo zvýšila úrokové sazby nebo špatně využívala kurz koruny?
 
@@ -42,7 +42,7 @@ Nebo to může být jiný cíl, na kterém se dohodneme, ale mělo by to být ja
 
 **Jana Klímová:** Jasně. Čili vysoká inflace, nulové odměny členů bankovní rady.
 
-**Tomáš Havránek:** Přesně tak. Členové by si podle mě zasloužili mnohem větší plat v normální době, abychom mohli pro takovou práci nalákat ty lidi ze zahraničí například, aby to pro ně bylo zajímavé. Čili když se jim daří a inflace je kolem nuly, tak klidně, ať ty platy jsou mnohem vyšší. Ale pokud je inflace takhle veliká a věříme tomu, že Národní banka má nad inflací kontrolu, čemuž většina ekonomů opravdu věří, většina modelů to ukazuje, tak není vhodné, aby neměli žádné konsekvence, aby se vlastně nějak nepodíleli na tom utrpení většiny domácností.
+**Tomáš Havránek:** Přesně tak. Členové by si podle mě zasloužili mnohem větší plat v normální době, abychom mohli pro takovou práci nalákat i lidi ze zahraničí například, aby to pro ně bylo zajímavé. Čili když se jim daří a inflace je kolem nuly, tak klidně, ať ty platy jsou mnohem vyšší. Ale pokud je inflace takhle veliká a věříme tomu, že Národní banka má nad inflací kontrolu, čemuž většina ekonomů opravdu věří, většina modelů to ukazuje, tak není vhodné, aby neměli žádné konsekvence, aby se vlastně nějak nepodíleli na tom utrpení většiny domácností.
 
 A já si myslím, že většina z nás ekonomů věří tomu, že finanční motivace funguje, že mění chování lidí. A kdyby inflace dvouciferná znamenala třeba 5 milionů minus pro guvernéra ten daný rok, tak byste viděli, že by se to chování rozhodně změnilo. To je základní ekonomický princip a ničemu by to neuškodilo.
 

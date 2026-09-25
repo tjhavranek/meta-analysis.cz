@@ -95,7 +95,7 @@ Metaanalytici nejsou úplně populární. Když se díváš na něčí vlastně 
 
 Že ten efekt tam není. Že menší třídy nenapomáhají těm výsledkům. Takže samozřejmě my vidíme a i během covidu jsme viděli, že některé ty covidové fondy byly třeba použity na snižování tříd. Možná úplně z jiného důvodu samozřejmě, než je ten samotný efekt tříd.
 
-Ale vidíme, že ty argumenty, které třeba mají různé oborové svazy a podobně legislativci, kteří jsou zapojeni v tomhle, se právě vážou na to, že ta literatura toto podporuje a toto je proto dobré udělat a proto je dobré tam sypat nějaké peníze. A tedy intuitivně to dává smysl pro rodiče, pro nás intuitivně to dává smysl i pro učitele, protože mají větší klid a podobně. A každopádně ta metaanalýza je jenom tak dobrá, jako je podkladová literatura. Takže můžeme říct, že pokud ta podkladová literatura je dobrá, tak naše metaanalýza říká, že ten efekt tam není.
+Ale vidíme, že ty argumenty, které třeba mají různé oborové svazy a podobně, legislativci, kteří jsou zapojeni v tomhle, se právě vážou na to, že ta literatura toto podporuje a toto je proto dobré udělat a proto je dobré tam sypat nějaké peníze. A tedy intuitivně to dává smysl pro rodiče, pro nás intuitivně to dává smysl i pro učitele, protože mají větší klid a podobně. A každopádně ta metaanalýza je jenom tak dobrá, jako je podkladová literatura. Takže můžeme říct, že pokud ta podkladová literatura je dobrá, tak naše metaanalýza říká, že ten efekt tam není.
 
 Jenom z takového hlediska toho, jak můžeme vlastně tuhle myšlenku velikosti tříd a ten žádný efekt na výsledky žáků aplikovat reálně v životě. Představ si, že snižuješ velikost tříd z 30 dětí na 10. Nebo řekněme, že máme 60 dětí. Ano.
 

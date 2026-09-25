@@ -51,7 +51,7 @@ Já vím, že podle vás to není dobře. Proč ne?
 
 **Tomáš Havránek:** Já bych ještě možná na začátek pochválil pana Singera. Když to asi neslyší, tak já ho považuji za jednoho z největších centrálních bankéřů od První republiky. Zažil jsem ho osobně jako poradce bankovní rady v ČNB. Na něm bylo dobré to, že on vždy poslouchal výzkum, ekonomický výzkum.
 
-To znamená, že rozuměl mu a dbal na něj. Takže doufám, jestli se povede s tím navázat spojení. Nicméně ten problém s tou symetrií je jedna rovina, čili to, že se zachází jinak s deflací a s inflací. Proti deflaci jsme bojovali intervencemi, proti inflaci velmi málo.
+To znamená, že rozuměl mu a dbal na něj. Takže doufám, že se povede s ním navázat spojení. Nicméně ten problém s tou symetrií je jedna rovina, čili to, že se zachází jinak s deflací a s inflací. Proti deflaci jsme bojovali intervencemi, proti inflaci velmi málo.
 
 A ta druhá rovina je, že ten cíl ve výši 2 % neodpovídá poslednímu výzkumu o tom, co je zdravá optimální inflace. Zdravá pro ekonomický růst, zdravá pro nás všechny.
 
