@@ -122,6 +122,6 @@ Tady bych podpořil pana předsedu. Myslím, že to je nějaká věc, která je 
 
 **Václav Moravec:** Protože stát asi nemá ty zdroje?
 
-**Tomáš Havránek:** Ale tak stát se snaží šetřit, což vláda dělá, jak může, balancuje různé věci. Ale tady jsme už opravdu v situaci, kdy ten poměr na některých pozicích platu ve veřejné sféře a v soukromé je vlastně na historických minimech. Nebo se blížíme nějakému období 2014, podle studie IDEA, kterou jsem nedávno četl.
+**Tomáš Havránek:** Ale tak stát se snaží šetřit, což vláda dělá, co může, balancuje různé věci. Ale tady jsme už opravdu v situaci, kdy ten poměr na některých pozicích platu ve veřejné sféře a v soukromé je vlastně na historických minimech. Nebo se blížíme nějakému období 2014, podle studie IDEA, kterou jsem nedávno četl.
 
 A právě nejméně berou často ti lidé, kteří jsou nejvíc v kontaktu s lidmi. Proto jsem navrhoval ty dotazníky, že by část zvýšení platu mohla jít na bonusy právě tímto způsobem. Pro ty nejlepší z nich.

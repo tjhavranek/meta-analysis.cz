@@ -103,7 +103,7 @@ To znamená, že ta úroková sazba na spořicím účtu je větší než inflac
 
 **Tomáš Havránek:** To má dva důvody. První důvod je samozřejmě, oni mají nějaké náklady. Oni musí platit budovy, oni musí platit náklady na regulaci, pojištění a tak dále. A druhý důvod je, že chybí dost konkurence na tom trhu, aby donutila ty banky zvýšit úrokové sazby na spoření třeba na 5,5-6%, ale neomezeně.
 
-To znamená ne 100 tisíc nebo 200 tisíc, ale opravdu neomezené úložky za tuto sazbu. Ty peníze potom ta banka vezme, uloží si je u ČNB za 7%. Čili popravdě není důvod, aby vám za 6% nenabízela neomezené spoření.
+To znamená ne 100 tisíc nebo 200 tisíc, ale opravdu neomezené úložky za tuto sazbu. Ty peníze potom ta banka vezme, uloží si je u ČNB za 7%. Čili opravdu není důvod, aby vám za 6% nenabízela neomezené spoření.
 
 **Jan Bumba:** No a může tedy centrální banka nějak donutit ty banky k tomu, aby zvýšili úroky
 
