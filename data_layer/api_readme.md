@@ -167,9 +167,10 @@ the archived deposit:
 
 > **https://doi.org/10.5281/zenodo.21773678** — cite this. It always resolves to the newest version.
 >
-> Version 2.1.0, the table served here, is not yet deposited. Until it is, the newest deposit is
-> `https://doi.org/10.5281/zenodo.22647394`, version 2.0.0, which lacks `social_comparison`;
-> cite that one in a replication package, where the exact files matter.
+> Version 2.1.0, the table served here, is not yet deposited. Until it is, cite the concept DOI
+> above with the version you used (2.1.0) and the date you downloaded the files. The newest
+> deposit, `https://doi.org/10.5281/zenodo.22647394`, is version 2.0.0, which lacks
+> `social_comparison`; cite it only for work done on its archived files.
 >
 > `https://doi.org/10.5281/zenodo.22529684` is version 1.3.0, superseded. Anything computed against
 > it for `class` used that literature's robustness scale rather than the one its main models use,
@@ -388,14 +389,13 @@ which further check settled each literature.
 ## `/estimates.csv`, and why the headline is prose
 
 One row per meta-analysis, fifteen columns. `project` joins to `datasets.json.id`, and
-`source_quote` is meant to carry the verbatim sentence from the paper that the figure
-came from, so every number can be traced to the words that state it. On ten of the
-fifty-five rows it does not: the quote is verbatim from that paper's catalogue
-abstract in `tools/papers.json` rather than from the paper. Each is named, with the
-reason, in `tools/evidence_exceptions.json`, and `tools/check_evidence.py` fails on any
-new one, so the exceptions are a recorded debt rather than a silent tolerance.
+`source_quote` carries the verbatim sentence from the paper that the figure came from,
+so every number can be traced to the words that state it. All fifty-six do:
+`tools/check_evidence.py` confirms that each quote is a sentence in its paper's full text
+on this site and fails on any that is not, and `tools/evidence_exceptions.json`, where an
+exception would be named with its reason, is empty.
 
-**`headline` is prose on purpose, and only one of the fifty-five rows is a bare
+**`headline` is prose on purpose, and only one of the fifty-six rows is a bare
 number.** The others are ranges, qualitative statements, or clauses that carry
 their own conditions -- a percentage change per one-percentage-point rise,
 peaking after two years. Reducing those to a single numeric column would drop the
