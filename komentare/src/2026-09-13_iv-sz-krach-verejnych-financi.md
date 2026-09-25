@@ -46,7 +46,7 @@ A potom ale je pořád jedna naděje poměrně výrazná, která nevyřeší ten
 
 **Jiří Zatloukal:** Tak nějakých 300 miliard zhruba?
 
-**Tomáš Havránek:** Nějaká čtvrt bilion zhruba teď to je asi, máte pravdu, ale během 3-4 let pravděpodobně, pokud se ten svět nějak nezhroutí, tu ztrátu uhradí a potom, i kdyby neudělala nic navíc, tak bude ročně v průměru přispívat kolem 80 miliard korun do státního rozpočtu. Což ten rozpočet nezachrání, kdyby nedělala nic navíc.
+**Tomáš Havránek:** Nějaká čtvrt bilionu zhruba teď to je asi, máte pravdu, ale během 3-4 let pravděpodobně, pokud se ten svět nějak nezhroutí, tu ztrátu uhradí a potom, i kdyby neudělala nic navíc, tak bude ročně v průměru přispívat kolem 80 miliard korun do státního rozpočtu. Což ten rozpočet nezachrání, kdyby nedělala nic navíc.
 
 Ona může ještě zainvestovat víc, Aleš Michl, věřím, že se k tomu ještě odhodlá, že bude chtít, aby se na něj pamatovalo jako na opravdu výjimečného guvernéra, ne na průměrného. A těch 30% on zase toho tolik neudělal. Už ta předchozí vedení Národní banky to vlastně na 20% zvýšilo, on to maličko navýšil. Chce to mít většinu těch rezerv v akciích, jako to má třeba Singapur, který byl ve stejné situaci jako jsme my, měl příliš devizových rezerv a investovali a potom mu to vydělává.
 
@@ -62,7 +62,7 @@ I když ty změny samozřejmě se propíšou do příštích let.
 
 **Tomáš Havránek:** Klidní ne, ale já bych rád viděl daleko větší debatu o této klíčové věci, protože těch peněz, co můžete vydělat relativně bezbolestně, je hodně. A my trávíme spoustu debatování a spoustu času a spoustu úsilí ohledně desítek miliard, které opravdu někde budou chybět.
 
-Když si třeba dnes vezmeme, ta vláda předává peníze do zdravotnictví a dopravy, což je asi OK. Kdyby je ušetřila, tak ty peníze budou někde chybět. Tady nám leží peníze na chodníku a ani ta vláda minulá, ani ta současná aspoň trošku o tom mluví s vedením Národní banky, ta minulá udělala nula, nic ohledně tohodle. A třeba se mýlím, ale ta debata tam vůbec není.
+Když si třeba dnes vezmeme, ta vláda přidává peníze do zdravotnictví a dopravy, což je asi OK. Kdyby je ušetřila, tak ty peníze budou někde chybět. Tady nám leží peníze na chodníku a ani ta vláda minulá, ani ta současná aspoň trošku o tom mluví s vedením Národní banky, ta minulá udělala nula, nic ohledně tohodle. A třeba se mýlím, ale ta debata tam vůbec není.
 
 **Jiří Zatloukal:** Není třeba, ale spíš řešení zefektivňovat chod některých rezortů, vlastně těch největších ideálně, protože ty mandatorní a kvazimandatorní výdaje dlouhodobě tvoří drtivou většinu toho rozpočtu. To jsou ty výdaje, které stát tak, či onak musí vydat od platu státních zaměstnanců, důchody, zdravotnictví. Pohybuje se to podle Národní rozpočtové rady zhruba za poslední tři roky v průměru 94,8% příjmů státního rozpočtu. Ten manévrovací prostor je tam minimální.
 

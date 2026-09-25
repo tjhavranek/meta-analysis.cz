@@ -92,7 +92,7 @@ Teď tedy uvidíme, co se stane po zveřejnění české inflace, pokud bude ni�
 
 **Moderátor:** s Alešem Michlem poměrně, řekněme, podobný názor na zlato, konkrétně investici do zlata a bavili jsme se tady o tom majetku ČNB. myslíš si, že by bylo fajn nějakým způsobem v rámci teda ty ČNB investovat do toho zlata a třeba konkrétně Mojmír Hampl říkal, že to zlato tam vlastně nehraje žádnou monetární roli a neinvestoval by do toho, že by vlastně tuto investici vynechal, spíš bych koupil
 
-**Tomáš Havránek:** taky koupil akcie hlavně, protože akcie jsou něco, co má opravdu dlouhodobý cashflow, který je reálný. Znamená to, že si vlastně koupíš podíl na ziscích těch největších globálních firm, nebo se to dá ještě představit, jako jestli kupuješ podíl na technickém pokroku. Technický pokrok zvyšuje produktivitu práce, to, jak ty firmy vyrábějí věci, ty mají zisky z tohohle a ty si bereš podíl na těch ziscích. Čili to je něco, co je opravdu, co ti reálně vydělává, pokud ten svět bude fungovat nějak tak, jak fungoval posledních 200-300 let, kdy máme nějakou úspěšenost tak celým drhem.
+**Tomáš Havránek:** taky koupil akcie hlavně, protože akcie jsou něco, co má opravdu dlouhodobý cashflow, který je reálný. Znamená to, že si vlastně koupíš podíl na ziscích těch největších globálních firm, nebo se to dá ještě představit, jako jestli kupuješ podíl na technickém pokroku. Technický pokrok zvyšuje produktivitu práce, to, jak ty firmy vyrábějí věci, ty mají zisky z tohohle a ty si bereš podíl na těch ziscích. Čili to je něco, co je opravdu, co ti reálně vydělává, pokud ten svět bude fungovat nějak tak, jak fungoval posledních 200-300 let, kdy máme nějakou zkušenost tak celým trhem.
 
 Takže dává smysl, když máš velký balík peněz. A dostanu se k tomu bitcoinu, samozřejmě, ale ekonomicky fundamentálně, dlouhodobě, máš velký balík peněz, tak skoro vždycky, když se podíváš na nějaké fondy bohatství v různých zemích, nebo na fondy, takzvané endowmenty, fondy, univerzit. Univerzit, co mají spoustu majetku, potřebují se z toho majetku dlouhodobě financovat. Tak vždycky většina z těch investic jde do akcií.
 
@@ -240,7 +240,7 @@ Když přijde inflace, tak to vyrovnáš nějakou deflací a tak dále. Něco ja
 
 Čili to možné je, tehdy byla vlastně jiná ekonomika, ale principiálně to vidíš i ve Švýcarsku za posledních 15 let jsou ceny prakticky stejný, nezměněný. I ta inflační vlna, která se prohnala světem, tak ve Švýcarsku to byl takový malinký 3% růst. Takže ten hlavní princip toho mého projektu je, že by bylo dobré, abychom se na tu korunu mohli spolehnout, jako se můžeme spolehnout na to, že metr má 100 centimetrů. A o to bychom se měli snažit.
 
-Pokud to nebereme úplně, protože Švýcarsko je, jak říkám, jediná země, která vlastně toto de facto má, tak minimálně řekněme té centrální bance jasně, co po ní chceme, abychom ji mohli hodnotit podle toho, co ona dělá. protože teď ona má neuvěřitelnou moc, ta má pod palcem naše hypotéky, naše spoření, všechno. A přitom nemá žádnou odpovědnost. To je daleko být guverné, daleko lepší, že ho nedělat premiéra.
+Pokud to nebereme úplně, protože Švýcarsko je, jak říkám, jediná země, která vlastně toto de facto má, tak minimálně řekněme té centrální bance jasně, co po ní chceme, abychom ji mohli hodnotit podle toho, co ona dělá. protože teď ona má neuvěřitelnou moc, ta má pod palcem naše hypotéky, naše spoření, všechno. A přitom nemá žádnou odpovědnost. To je daleko být guvernér, daleko lepší, že ho nedělat premiéra.
 
 Protože finanční moc máš větší, máš menší moc v jiných oblastech, ale nejsou žádné interpelace v parlamentu. Nikdo tě nemůže odvolat. nikdo po tobě vlastně, když nechceš vysvětlovat, tak to neděláš. Nechodíš do diskuzních pořadů, které jsou předem připravené otázky.
 
@@ -408,7 +408,7 @@ Ta deflace byla spíš průvodní efekt té krize, respektive ji způsobily samy
 
 Byl to spíš důsledek, než že by to byl kauzální jako kauzální příčina. Ale tahle obava v těch hlavách těch lidí, i chytrejch lidí pořád je, ačkoliv to nemá vlastně faktický důvod. Takže všichni se deflace velmi bojí. Plus je tam ta věc, co jsem řekl, že dlužníci mají větší politickou sílu než věřitelé, nejenom u nás.
 
-U nás možná ještě méně, v ostatních zemích je to daleko víc. Bohužel, nebo pro mě bohudík, pro mě je to zesoká inflace. Obecně jako pro mladý lidi, což není úplně, to mi nehraje do krámu do toho měho projektu. Ale samozřejmě vyšší inflace je lepší pro mladý lidi.
+U nás možná ještě méně, v ostatních zemích je to daleko víc. Bohužel, nebo pro mě bohudík, pro mě je to vysoká inflace. Obecně jako pro mladý lidi, což není úplně, to mi nehraje do krámu do toho měho projektu. Ale samozřejmě vyšší inflace je lepší pro mladý lidi.
 
 Mladí lidé jsou většinou dlužníci, staří lidé jako moji rodiče, to je nejlepší příklad, moji rodiče jsou věřitelé, mají velké úspory, já jsem dlužník, mám velké dluhy. Takže inflace jim škodí, mně pomáhá. Takhle to je ne vždycky, třeba u tebe to je jinak, to já nevím, ale v průměru v té ekonomice to funguje takhle, že mladí lidé na inflaci spíš vydělávají, staří na ní spíš prodělávají, protože mladí budou pravděpodobněji dlužníci. Tím pádem máš odmazávaný ten dluh.
 

@@ -89,7 +89,7 @@ Ale i pro vysvětlení lidem není nic snazšího. Tehdy jsme intervenovali prot
 
 **Tomáš Havránek:** Myslíte zrušení inflace? Tak vezměte si třeba, že peníze existují v naší historii přes pět tisíc let a inflace, nějaká setrvalá inflace funguje 90 let. Čili ten normální stav nebo třeba ještě konkrétnější příklad. Cenová hladina v Evropě před první světovou válkou byla podobná jako o století předtím po konci napoleonských válek.
 
-Čili ta cenová stabilita je běžná věc v historii. Švýcaři mají dnes cenovou hladinu hodně podobnou roku 2008, asi jen o 2–3% vyšší. Ukazujeme všechny ty argumenty pro a proti, vlastně proč a jak je to možné snadno udělat. Čili tohle je, když to zjednoduším, to, co říká ústava.
+Čili ta cenová stabilita je běžná věc v historii. Švýcaři mají dnes cenovou hladinu hodně podobnou roku 2008, asi jen o 2–3% vyšší. Čili je to věc, která je možná, která nezpůsobuje žádnou katastrofu. A na stránce zrusmeinflaci.cz ukazujeme všechny ty argumenty pro a proti, vlastně proč a jak je to možné snadno udělat. Čili tohle je, když to zjednoduším, to, co říká ústava.
 
 Ta neříká Národní bance: starejte se o nějakou mírnou inflaci, byť by třeba byla optimální, ona není, ale říká cenovou stabilitu.
 

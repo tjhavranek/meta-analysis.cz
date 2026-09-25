@@ -151,7 +151,7 @@ Protože hodnota peněz je daná hodnotou toho balíku pro své chování určit
 
 Tak, pane Havránku,
 
-**Tomáš Havránek:** Tohle samozřejmě je pravda, ale to vychýlení není dvě procenta. To je podle Boskinovy komise, profesor Boskin ze Stanfordu, teď to o to nedávno opstal článek, je maximálně jedno procento, spíš něco mírně pod tím, čili zhruba 0,8. Takže je to argument zase proti tomu současnému cíli. To je první věc.
+**Tomáš Havránek:** Tohle samozřejmě je pravda, ale to vychýlení není dvě procenta. To je podle Boskinovy komise, profesor Boskin ze Stanfordu, teď o tom nedávno psal článek, je maximálně jedno procento, spíš něco mírně pod tím, čili zhruba 0,8. Takže je to argument zase proti tomu současnému cíli. To je první věc.
 
 Druhá věc je, pokud víme, A to už jenom stručně? Pokud víme, že staťák měří inflaci špatně, tak mu podaťme, že to dělá dobře. A třetí věc je, že správně by tam ještě měly být nemovitosti s větší váhou, které naopak rostou rychleji dlouhodobě. Čili to vychýlení je na obě strany.
 

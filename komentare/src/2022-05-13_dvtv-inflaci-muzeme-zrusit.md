@@ -122,7 +122,7 @@ A tohle bohužel naše centrální banka nedělá.
 
 **Tomáš Havránek:** Dlouhodobě. Dlouhodobě. Dlouhodobě centrální banka má plnou kontrolu nad inflací. Ne na ten letošní nebo příští rok, ale v horizontu deseti let.
 
-Pokud tomuhle nevěříme, tak vlastně můžeme tu banku zavřít. v ekonomice, nepřímo i objem peněz v ekonomice a může si dlouhodobě stanovit jakoukoliv průměrnou cenu, jakou chce
+Pokud tomuhle nevěříme, tak vlastně můžeme tu banku zavřít. Protože ona kontroluje cenu peněz v ekonomice, nepřímo i objem peněz v ekonomice a může si dlouhodobě stanovit jakoukoliv průměrnou cenu, jakou chce
 
 **Martin Veselovský:** že zhruba od září tady vlastně narážel jste na komunikaci České národní banky a na to, že Česká národní banka zhruba od září mluvila o jakémsi inflačním armagedonu, jste to nazval, který prostě přijde. a mě by zajímalo, jestli pokud teda teď je ten inflační armagedon, to je otázka. Je. Dobře.
 

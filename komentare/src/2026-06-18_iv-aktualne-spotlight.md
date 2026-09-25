@@ -89,9 +89,9 @@ Možná to bude, já bych si tipnul, čtyři, pět let, že by to mohlo být mo�
 
 **Petra Jaroměřská:** nějaké opatrnosti, protože zase investovat rizikověji nese nějaká rizika.
 
-**Tomáš Havránek:** ale opatrnost má taky svoje rizika. Já třeba čtu Plutarcha, protože jsem profesor, musím si to dovolit, a paralelní životy Plutarcha. Má tam hezký paralelní život Nikiasé, Nikia, což byl řecký generál, atenský generál, a Krasus, což byl římský generál. Oba skončili stejně špatně.
+**Tomáš Havránek:** ale opatrnost má taky svoje rizika. Já třeba čtu Plutarcha, protože jsem profesor, musím si to dovolit, a paralelní životy Plutarcha. Má tam hezký paralelní život Nikiasé, Nikia, což byl řecký generál, atenský generál, a Crassus, což byl římský generál. Oba skončili stejně špatně.
 
-Krasus kvůli své zbrklosti agresivitě Nikias kvůli tomu, jak byl pasivní a velmi opatrný. Čili oba extrémy jsou špatné. A tohle není nic kontroverzního. Investovat peníze tak, jak to dělá Singapur, není nic kontroverzního.
+Crassus kvůli své zbrklosti agresivitě Nikias kvůli tomu, jak byl pasivní a velmi opatrný. Čili oba extrémy jsou špatné. A tohle není nic kontroverzního. Investovat peníze tak, jak to dělá Singapur, není nic kontroverzního.
 
 A já jsem, je to i moje chyba, já jsem u toho tehdy byl, a sice jsem něco k tomu řekl, ale byl jsem velmi nedůrazný v tomto, měl jsem se chovat daleko asertivněji vůči bankovní radě, byl jsem poradce tehdy, viceguvernéra, a beru to i za svoje osobní selhání, že jsem tehdy tu věc, které jsem si náhodou všiml, netlačil mnohem, mnohem víc u bankovní rady, u celého toho aparátu v Národní bance. Čili samozřejmě ano, je to do velké míry ta opatrnost, která byla i na mé straně, já se přiznám k tomu.
 
@@ -185,7 +185,7 @@ A to EET, kdyby udělalo 30 miliard, tak už byste byla na dvou třetinách toho
 
 **Tomáš Havránek:** Ty dvě procenta já čerpám, to byl tuším článek v roce 2018, kde se to dá poměrně komplikovaně ekonometricky odhadnout, těch odhadů je i několik. A abych možná řekl, oka, tak nebavme se o konkrétním čísle, ale pojďme to nějak vzít celkově, pojďme se zamyslet nad tím, což třeba je možná úkol pro Národní rozpočtovou radu nebo pro vládu, jak toto implementovat tak, aby to fungovalo. My jsme tady měli něco podobného, to zaváděl tuším pan Kalousek po velké krizi, to NNV, Nároky z nerealizovaných výdajů, pak to nabobtnalo, ale ten problém je, že u nás nemáte garantované, že když to převedete, tam ty peníze budou a že vám ten šéf nesníží, takže moc to nefungovalo. Takže, samozřejmě to říkám tak, aby to bylo pochopitelné, ale to je něco rozhodně, kde se dá ušetřit desítky miliard korun.
 
-Investování rezerv, to jsou vysoké desítky miliard nebo přesto miliard, EET vám udělá nízké desítky miliard. Takže, kdyby toto ta vláda implementovala aspoň v nějaké určité formě, tak by to více než kompenzovalo další kroky, které zase směřují k vyššímu deficitu. Řekněme, musíte uspokojit nějaké svoje voličské jádro. Čemuž taky rozumím, než bych to úplně viděl rád, ale skoro bych řekl, že ta současná vláda se chová lépe, než bych očekával před volbami.
+Investování rezerv, to jsou vysoké desítky miliard nebo přes 100 miliard, EET vám udělá nízké desítky miliard. Takže, kdyby toto ta vláda implementovala aspoň v nějaké určité formě, tak by to více než kompenzovalo další kroky, které zase směřují k vyššímu deficitu. Řekněme, musíte uspokojit nějaké svoje voličské jádro. Čemuž taky rozumím, než bych to úplně viděl rád, ale skoro bych řekl, že ta současná vláda se chová lépe, než bych očekával před volbami.
 
 Z hlediska třeba destrukce, důchodové reformy, tak ta věc není zdaleka tak horká, jak se, tím nechci říkat, že by ta vláda dělala skvělé věci obecně, ale můžete tam najít i tyhle střípky těch dobrých zpráv.
 

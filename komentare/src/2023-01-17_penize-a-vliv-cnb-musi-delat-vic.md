@@ -92,6 +92,6 @@ A zatím to vypadá tak, že to zaplatí budoucí důchodci.
 
 **Tomáš Havránek:** To jsem neřekl, já si myslím, že to není úplně důležité, že není za každou cenu důležité snažit se stlačit o pár desítek miliard ten letošní schodek, pokud by to třeba mělo podvázat nějak budoucí ekonomický růst. Zvýšení DPH se mi obecně jeví jako lepší způsob, a to proto, že tím daníte spotřebu, nedaníte práci, když daníte práci, tak lidi odrazujete od toho, aby pracovali, což v situaci, kdy vám chybí zaměstnanci v řadě firem, možná není úplně správné řešení. A navíc, už dnes zaměstnanci platí největší část daní. To jsou lidé, kteří se opravdu daním vyhnout nemůžou, na rozdíl od ostatních skupin populace nebo od firem, od OSVČ.
 
-Těm zaměstnancům my to strháváme přímo z té výplaty, takže oni opravdu ty daně platí všechny. z práce, tak to bude něco, co bude i spravedlivé
+Těm zaměstnancům my to strháváme přímo z té výplaty, takže oni opravdu ty daně platí všechny. A když malinko přenesete tu zátěž z práce na spotřebu, tak to bude něco, co bude i spravedlivé.
 
 **Jana Klímová:** To byl profesor ekonomie na Univerzitě Karlově a člen Národní ekonomické rady vlády Tomáš Havránek. Dnešní vydání pořadu Peníze a vliv končí spolu s předchozími díly, ho najdete na webu Českého rozhlasu Plus v aplikaci Můj rozhlas a ve všech podcastových aplikacích. Příjemný poslech dalších pořadů přeje Jana Klímová.

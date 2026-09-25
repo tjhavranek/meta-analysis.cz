@@ -125,4 +125,4 @@ Ale zase, to nedostatečné odůvodnění těch nákladů je tam evidentní. A z
 
 Dráha ze San Franciska do Los Angeles měla už dávno stát. Nestojí, nejezdí ještě ani kousek. Vlastně to nefunguje. Stojí čtyřnásobek toho původního projektu a pořád se to ještě počítá.
 
-A těch příkladů je celá řada. Málokdy ex post vyhodnocení efektivity u rychlodráh ukazují, jestli se to vyplatí. Čili já bych měl velmi rád rychlovlak metro z Prahy do Litomyšle.
+A těch příkladů je celá řada. Málokdy ex post vyhodnocení efektivity u rychlodráh ukazují, jestli se to vyplatí. Čili já bych měl velmi rád rychlovlak metro z Prahy do Litomyšle. Ale spousta věcí je hezkých a nevyplatí se.

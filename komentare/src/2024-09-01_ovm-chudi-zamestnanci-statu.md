@@ -94,7 +94,7 @@ Samozřejmě ta data by se potom dala použít různě.
 
 **Václav Moravec:** Pane profesore, můžeš tě zůstat u té věci, kterou zmiňovali Josef Středula, že podle jejich aktuálních propočtů, kdyby se příjmy státního rozpočtu navýšily a zvýšila se složená daňová kvota na průměr Evropské unie, že by koum dokonce byly v 200 miliardovém přebytku státního rozpočtu, když se podíváme znovu na ten graf deficitů, vysokých deficitů.
 
-**Tomáš Havránek:** A to zkouším v hlavě propočítat, možná ano, ale zase by to asi platili do velké míry
+**Tomáš Havránek:** A to zkouším v hlavě propočítat, možná ano, ale zase by to asi platili do velké míry ti zaměstnanci, což úplně nechceme.
 
 A já bych začal tam, kde to nebolí. Proto já vždycky říkám majetek ČNB, kde nebolí investovat ho trošku víc na výnos. Ten rozpočtový carry-over, kde to nikoho nebolí. To jsou věci, které dohromady, proč nezačít tam, kde to jako nemusíte nikomu brát, nikoho vyhazovat.
 

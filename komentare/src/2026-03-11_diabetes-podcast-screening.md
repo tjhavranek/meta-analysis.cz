@@ -53,9 +53,7 @@ A postupně přicházely ty negativní výsledky, že Kristínka je negativní, 
 
 **Jan Hrušovský:** falešně pozitivní výsledek, cítím, že tam trošku hrála roli taky váš obor, ve kterým pracujete, že tam byla taková naděje jako ve stylu, ale z nějakého statistického hlediska by to ještě nemuselo být tak hrozný. Tak jak moc jste doufali to, že je to nějaká výjimka, že vlastně ten druhej kontrolní test se třeba vyjde taky negativní?
 
-**Tomáš Havránek:** To jsme doufali,
-
-těchto příliš citlivých testů, které vám dají ten alarm, i když vlastně tam ty protilátky, čili ten potenciál pro diabetes není, tak jsme jako doufali, ale vy to nemůžete nějak ovlivnit, tak nemá zase smysl nějak moc
+**Tomáš Havránek:** To jsme doufali. Já bych čekal, neznám přesná čísla, jak to je, že tam bude určité solidní procento těchto příliš citlivých testů, které vám dají ten alarm, i když vlastně tam ty protilátky, čili ten potenciál pro diabetes není, tak jsme jako doufali, ale vy to nemůžete nějak ovlivnit, tak nemá zase smysl nějak moc
 
 **Jan Hrušovský:** Jako to, že zatím asi člověk nedokáže ovlivnit ani to, že mu cukrovka prvního typu někdy vstoupí do života, protože zatím taky nevíme, co je ten spouštěč, jsou nějaké teorie, tak vlastně proto se tím asi jako trápit, co? Přesně tak. Ještě vlastně, když jste měli ty rovnou čtyři děti, který jste do toho zapojili, tak víte, jaký tam bylo ještě rozmezí mezi tím, než vám přišly ty výsledky, bylo to třeba měsíc, dva od toho testu?
 
