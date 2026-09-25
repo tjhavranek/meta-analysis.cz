@@ -95,7 +95,7 @@ Ta neříká Národní bance: starejte se o nějakou mírnou inflaci, byť by t�
 
 **Jan Bumba:** Já se ještě na ten, jestli můžu říct, Zpátky k těm konkrétním krokům, které by bylo možné učinit nyní. Vy jste třeba v rozhovoru pro Seznam Zprávy mluvil o tom, že by si měl guvernér centrální banky zavolat ředitele největších bank v Česku a říci jim, ať zvýší úrokové sazby na spořících účtech. To by tedy taky zabralo společně s posílením koruny?
 
-**Tomáš Havránek:** Co my potřebujeme, je, aby se vyplatilo spořit. Aby se, když máte peníze, nevyplatilo je utratit nebo vstrčit do nemovitostí, ale opravdu si je dát na spořicí účet a spořit. To je jediná cesta, jak vlastně dlouhodobě můžete tu inflaci porazit. A k tomu vedou dvě cesty. Co to je, že se vyplatí spořit?
+**Tomáš Havránek:** Co my potřebujeme, je, aby se vyplatilo spořit. Aby se, když máte peníze, nevyplatilo je utratit nebo strčit do nemovitostí, ale opravdu si je dát na spořicí účet a spořit. To je jediná cesta, jak vlastně dlouhodobě můžete tu inflaci porazit. A k tomu vedou dvě cesty. Co to je, že se vyplatí spořit?
 
 To znamená, že ta úroková sazba na spořícím účtu je větší než inflace, kterou čekáte za rok. To je, aby vám vycházelo to účetnictví. A Národní banka má v rukou obě ty části této rovnice. Ty úroky na spořicích účtech samozřejmě ovlivňuje její reposazba, která je teď 7%, ale 7% vám žádná banka, komerční banka nenabídne.
 
@@ -113,7 +113,7 @@ A tohle je jedna z posledních možností, jak se vlastně oni můžou zachráni
 
 **Jan Bumba:** vysloveně příjemné období, protože na jedné straně hodně vydělávají, na druhé straně klientům nepouštějí skoro nic.
 
-**Tomáš Havránek:** zase abych nebyl úplně kritický, tak trochu ty sazby zvyšují. Ale není to pět, šest procent. Není to... Řekněme, pět to je, ale vždycky je ta sazba omezená do nějakého objemu. Nemůžete dát svoje celoživotní úspory, ale třeba sto tisíc, 200 tisíc za tu sazbu 5%.
+**Tomáš Havránek:** zase abych nebyl úplně kritický, tak trochu ty sazby zvyšují. Ale není to pět, šest procent. Není to... Řekněme, pět to je, ale vždycky je ta sazba omezená na nějaký objem. Nemůžete dát svoje celoživotní úspory, ale třeba sto tisíc, 200 tisíc za tu sazbu 5%.
 
 A i když tam lidé ty peníze přesouvají, tak pořád ten objem je velmi malý na to, aby nám to pomohlo
 
@@ -155,7 +155,7 @@ A přitom ten benefit pro všechny by byl úžasný. To, že nám ta 100 koruná
 
 **Jan Bumba:** Jsou všechny tyto úvahy podmíněny tím, že Česká republika bude i nadále používat korunu? Nezmizely by veškeré tyto plány při vstupu do eurozóny?
 
-**Tomáš Havránek:** To je... Tenhle plán nevylučuje přijetí eura. Možná naopak, protože když máte inflaci nejvyšší v Evropě, tak nesplníte základní kritérium pro přijetí eura. A nesplníte ani to druhé, což je nějaká uměřenost úrokových sazeb.
+**Tomáš Havránek:** Tenhle plán nevylučuje přijetí eura. Možná naopak, protože když máte inflaci nejvyšší v Evropě, tak nesplníte základní kritérium pro přijetí eura. A nesplníte ani to druhé, což je nějaká uměřenost úrokových sazeb.
 
 Takže i kdybychom teď chtěli, tak do eurozóny nás nikdo nevezme, protože nesplníme ty základní principy. Kdybychom inflaci zrušili, tak kdykoliv se můžeme pro to přijetí eura rozhodnout, kdykoliv budeme chtít. Pro mě osobně přijetí eura je odlišná otázka od inflace. Samozřejmě potom by bylo komplikovanější přesvědčovat Evropu, že té inflace by se vlastně měli vzdát.
 

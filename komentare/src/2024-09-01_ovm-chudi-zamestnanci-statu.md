@@ -32,7 +32,7 @@ Spíš v té stránce příjmové. Tam bych měl konkrétní nápady. Ale ohledn
 
 **Tomáš Havránek:** Ne. Nenazval. Já bych to nazval tak, jak jsem to nazval, čili maximum rozumně možného pro volební rok. Mně se zdá, že všichni bychom chtěli šetřit, ale kde konkrétně, když chceme zaplatit nějak státní zaměstnance, tak aby měl kdo vařit ve školních jídelnách, rozumně, a děti to jedly.
 
-Kde ty peníze seženeme, když zrušíme windfall tax dříve, než plánujeme? Já to nevím. Můžeme se zase bavit o těch možnostech, které tam jsou na vyšší příjem někde jinde.
+Kde ty peníze seženeme, když zrušíme windfall tax dříve, než plánujeme? Já to nevím. Můžeme se zase bavit o těch možnostech, které tam jsou, jak navýšit příjmy někde jinde.
 
 **Václav Moravec:** Vy byste navyšoval, je nějaký příjem, který vláda nechává, dejme tomu stranou, i když bude ten volební rok 2025? Vidíte vy příjmy, které zbytečně leží na chodníku a přitom by je bylo možné zvednout?
 
@@ -54,13 +54,13 @@ A to se děje. Čili navyšujeme postupně, já bych to dělal rychleji, ale je 
 
 Není to jenom ve státním sektoru, je to i v korporátu, ale v té veřejné sféře je to poměrně silné. Protože vy víte, use it or lose it. Když to použijete, tak to vyčerpáte, když ne, tak vám to na konci roku seberou. Nejenom, že vám to seberou.
 
-… pro příští rok. Vám sníží ten další rozpočet. A ten carry over, který funguje třeba ve Spojených státech, to má ministerstvo obrany, tuším. Má to Victoria, stát v Austrálii, mají to Velká Británie.
+… pro příští rok. Vám sníží ten další rozpočet. A ten carry over, který funguje třeba ve Spojených státech, to má ministerstvo obrany, tuším. Má to Victoria, stát v Austrálii, má to Velká Británie.
 
 Tak podle odhadů, které jsou, na ta opatření třeba se zavedly, že byste si mohli převést jako odbor, jako ředitel odboru, ty peníze do dalšího roku a neutrácet je za nové iPhone'y pro vaše zaměstnance.
 
 **Václav Moravec:** Řekněme útraty za blbiny na posledních.
 
-**Tomáš Havránek:** Přesně tak. Tak podle těch odhadů, co máme za Spojené státy, Británii, Austrálii, tak ty úspory jsou někde mezi jedním až třemi procenty rozpočtu. Což by u nás dělalo kolik?
+**Tomáš Havránek:** Přesně tak. Tak podle těch odhadů, co máme za Spojené státy, Británii, Austrálii, tak ty úspory jsou někde mezi jedním a třemi procenty rozpočtu. Což by u nás dělalo kolik?
 
 **Václav Moravec:** No, Marian Jurečka by...
 
@@ -80,13 +80,13 @@ Což ne vždycky je ta moje zkušenost s úředníky.
 
 **Tomáš Havránek:** To odpovídá, já myslím, že odpovídá. Samozřejmě bylo by lepší, kdyby to bylo efektivnější. Nějaká forma těch dotazníků jako v Singapuru by určitě pomohla. Ono těch lidí, co platíme ze státních peněz, je mnohem víc, je asi milion, možná i víc než milion.
 
-Nepřímo. Ostatně, jako já na univerzitě taky mám, sice ne v těch tabulkách, o kterých se bavíme, ale také jsem placený ze státního rozpočtu převážně. Já nevidím velký prostor k masivnímu propouštění, protože se to sice snadno říká, že se ti úředníci točí na židlích nebo státní zaměstnanci, ale... Kdybychom lépe zdigitalizovali stát jako celek, tak...
+Nepřímo. Ostatně, jako já na univerzitě taky mám, sice ne v těch tabulkách, o kterých se bavíme, ale také jsem placený převážně ze státního rozpočtu. Já nevidím velký prostor k masivnímu propouštění, protože se to sice snadno říká, že se ti úředníci nebo státní zaměstnanci točí na židlích, ale v praxi... Kdybychom lépe zdigitalizovali stát jako celek, tak...
 
 Takhle jako mírné úspory konkrétně asi v tom... To je od Mariana Jurečky 10%. A dostaneme se k té super dávce a tomu zjednodušení, to je prima. Ale nevidím tady velký prostor opravdu propouštět bez třeba těch podkladů v těch dotaznících a nějakého dlouhodobého hodnocení, ze kterých uvidíte, koho ta práce baví, kdo to chce dělat, kdo chce pomáhat klientům, občanům a kdo to dělá proto, že to na něj v životě nějak zbylo a možná by měl s tím životem dělat něco jiného.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Tomáš Havránek:** … prosím, abychom to to srovnání opravdu ujeli. Má pravdu v řadě věcí, co říká třeba to, že opravdu daně tady platí hlavně zaměstnanci. Je potřeba zdůraznit. Je to velká většina
+**Tomáš Havránek:** … prosím, abychom to srovnání opravdu uvedli. Má pravdu v řadě věcí, co říká třeba to, že opravdu daně tady platí hlavně zaměstnanci. To je potřeba zdůraznit. Je to velká většina
 
 … aby ten daňový poplatník opravdu byl jako klient pro státní veřejnou správu. A proto jsem navrhoval ty dotazníky, to, co jste říkal, jsem za to rád, jsou spíš dotazníky na tu službu, ne na ty konkrétní lidi, co to dělají. A jednalo by se spíš o tu pozitivní. Chcem přidat těm nejlepším, ne, že bychom někoho trestali.
 

@@ -29,7 +29,7 @@ Takže v tom momentu je tam najednou dvakrát ty dvě procenta té šedé ekonom
 
 Zase se část z té bílé překlopila na šedou.
 
-**Petra Jaroměřská:** To znamená, teď po zavedení elektronické evidence trže můžeme čekat, že ten další rok ta ekonomika se zvětší podle tedy těch čísel. Můžeme to samozřejmě odhadovat, jaký ten dopad ve skutečnosti bude, ale lze tam odhadovat další růst HDP. Podle vás?
+**Petra Jaroměřská:** To znamená, teď po zavedení elektronické evidence tržeb můžeme čekat, že ten další rok ta ekonomika se zvětší podle tedy těch čísel. Můžeme to samozřejmě odhadovat, jaký ten dopad ve skutečnosti bude, ale lze tam odhadovat další růst HDP. Podle vás?
 
 **Tomáš Havránek:** Určitě dojde k něčemu podobnému, nevím přesně, do jaké míry to EET se liší, ta nová verze, ale určitě dojde k tomu obělení, jestli to bude jedno, dvě, tři procenta, nejsem schopen říct, ale opravdu dojde účetně, formálně, ne k růstu ekonomiky, která by byla dana tím, že jsme produktivnější, ale že se toho vykáže víc, stát toho víc zdaní, tak to vykázané HDP by mělo být větší, pokud nějak ČSÚ nezmění tu metodiku, což samozřejmě může, protože viděl, že tam to dvojí počítání bylo, takže možná na to zareaguje. Ale vybereme víc na daních, zase se můžeme přít, kolik přesně, ale...
 
@@ -51,7 +51,7 @@ Tak tohle je věc, která je užitečná.
 
 **Petra Jaroměřská:** V čem je podle vás kontroverzní?
 
-**Tomáš Havránek:** Zvyšujete daně. Tím, že zavádíte EET ne všem, ale těm lidem, kteří třeba mají nějakou malou živnost a pro které bylo snazší se těm daním vyhýbat. A já tomu rozumím, protože žiju na malém městě a vidíte, že to podnikání samozřejmě není vždycky úplně snadné, vzhledem k tomu, jakou byrokracii tady máme, kterou si děláme sami. Ne, že by nám to Brusel vnucoval.
+**Tomáš Havránek:** Zvyšujete daně. Tím, že zavádíte EET ne všem, ale těm lidem, kteří třeba mají nějakou malou živnost a pro které bylo snazší se těm daním vyhýbat. A já tomu rozumím, protože žiju na malém městě a vidíte, že to podnikání samozřejmě není vždycky úplně snadné, vzhledem k tomu, jakou byrokracii tady máme, kterou si děláme sami. Ne že by nám to Brusel vnucoval.
 
 Děláme si to sami. A chápu to, že když máte ten malý biznis, tak občas je to přirozené snažit se tomuhle vyhnout a zaplatit lidi, co zaměstnáváte třeba jednoho, dva, bez těch daní. Ale na druhou stranu taky dává smysl, aby ta pravidla platila stejně pro všechny. Takže určitě je to kontroverzní.
 
@@ -81,7 +81,7 @@ Když máte peníze, nenecháte je na běžném účtu, de facto. Já to zjednod
 
 **Petra Jaroměřská:** Já se vás jenom zeptám, v jakého horizontu, když jsme u té centrální banky, která by mohla po té, co uhradí ztrátu, že oni musí uhradit ztrátu, musí vytvořit nějaké rezervní fondy a pak se musí dohodnout, jaká část toho zisku by mohla jít do státního rozpočtu. Tak časově třeba za jak dlouho by mohla centrální banka přispět něco do státního rozpočtu?
 
-**Tomáš Havránek:** za jak dlouho. Ta důležitá věc je, že pokud toto udělá, tak jestli to bude trvat pět nebo deset let, tak vy máte téměř jistotu, že pokud se svět nezhroutí a bude fungovat podobně jako posledních pár set let, tak opravdu budete mít ročně těch 100-200 miliard korun navíc. Na pořád. To je ta důležitá věc.
+**Tomáš Havránek:** za jak dlouho. Ta důležitá věc je, že pokud toto udělá, tak jestli to bude trvat pět nebo deset let, tak vy máte téměř jistotu, že pokud se svět nezhroutí a bude fungovat podobně jako posledních pár set let, tak opravdu budete mít ročně těch 100-200 miliard korun navíc. Napořád. To je ta důležitá věc.
 
 Jestli to bude za pět nebo deset let, záleží, to záleží na panu premiérovi, nebo je to důležité pro pana premiéra, teď asi, nebo pro paní ministryni, pro mě ani tak ne. Mně jde o ten dlouhodobý efekt, ty státní finance jsou dlouhodobá věc. Je úplně jedno, když to zjednoduším, jaký je deficit letos. Nás zajímá ten kumulovaný součet deficitu, diskontovaný úrokovou sazbou.
 
@@ -89,7 +89,7 @@ Možná to bude, já bych si tipnul, čtyři, pět let, že by to mohlo být mo�
 
 **Petra Jaroměřská:** nějaké opatrnosti, protože zase investovat rizikověji nese nějaká rizika.
 
-**Tomáš Havránek:** ale opatrnost má taky svoje rizika. Já třeba čtu Plutarcha, protože jsem profesor, musím si to dovolit, a paralelní životy Plutarcha. Má tam hezký paralelní život Nikiasé, Nikia, což byl řecký generál, atenský generál, a Crassus, což byl římský generál. Oba skončili stejně špatně.
+**Tomáš Havránek:** ale opatrnost má taky svoje rizika. Já teď třeba čtu Plutarcha, protože jsem profesor, můžu si to dovolit, a paralelní životy Plutarcha. Má tam hezký paralelní život Nikia, což byl řecký, atenský generál, a Crassa, což byl římský generál. Oba skončili stejně špatně.
 
 Crassus kvůli své zbrklosti agresivitě Nikias kvůli tomu, jak byl pasivní a velmi opatrný. Čili oba extrémy jsou špatné. A tohle není nic kontroverzního. Investovat peníze tak, jak to dělá Singapur, není nic kontroverzního.
 
@@ -137,7 +137,7 @@ Já bych osobně byl v tomto daleko. Nechal bych to rozhodnutí hypotéku si vz�
 
 **Petra Jaroměřská:** A zároveň se tím tlumí i růst cen nemovitostí, kterých je nedostatek, tak když by vlastně víc lidí dosáhlo na hypotéku, bylo by víc kupců a byl by tady další tlak na ceny nemovitostí a tedy i inflaci.
 
-**Tomáš Havránek:** To do jisté míry máte samozřejmě pravdu, ano, čili tohle je něco jako způsob, jak tlumit ceny. Ale já bych skoro řekl, že třeba v Praze spousta těch obchodů s byty už teď probíhá vlastně v hotovosti nebo kupují to lidé, kteří si hypotéku brát nemusí, mají peněz dost. Čili my ta omezení směřujeme na, řekněme, tu střední třídu, a ne na ty opravdu bohatý lidi, kteří šponují potom ty ceny nemovitosti. To je moje chápání té situace, ale říkám, nechci lézt kolegům do zelí.
+**Tomáš Havránek:** To do jisté míry máte samozřejmě pravdu, ano, čili tohle je něco jako způsob, jak tlumit ceny. Ale já bych skoro řekl, že třeba v Praze spousta těch obchodů s byty už teď probíhá vlastně v hotovosti nebo kupují to lidé, kteří si hypotéku brát nemusí, mají peněz dost. Čili my ta omezení směřujeme na, řekněme, tu střední třídu, a ne na ty opravdu bohaté lidi, kteří potom šponují ty ceny nemovitostí. To je moje chápání té situace, ale říkám, nechci lézt kolegům do zelí.
 
 **Petra Jaroměřská:** Vy jste poměrně ostrým kritikem České národní banky, jednak tedy za tu měnovou politiku, jednak i tedy teď slyšíme za to, jak nastavuje pravidla. Okolo hypoték také jste kritizoval, vlastně mluvil jste o feudalismu obsazování postů v České národní bance v roce 2023. Jste napsal, já vás tedy s dovolením budu citovat. Ještě guvernér Singer býval občas přehlasován radou, od té doby systém degeneroval v léno, kdy prezident povýší guvernéra, jenž sám a najednou pasuje většinu rady.
 
@@ -147,7 +147,7 @@ Výsledkem je diktatura jednoho názoru a tektonické změny při výměně guve
 
 **Petra Jaroměřská:** když je systém toho jmenování stále vlastně stejný?
 
-**Tomáš Havránek:** Mně přijde trochu zábavné, že řekněme poradci současného pana prezidenta, kterého si velmi vážím, tak před volbami tenhle systém kritizovali. To, že vybírá sám prezident bez schválání třeba senátem vedení bankovní rady je dost nestandardní mezinárodně. Není to úplně výjimečná věc, ale je to nestandardní a rozhodně to vede potom k některým, řekněme, idiosynkratickým volbám oka. Ale jakmile vy jste u té moci a rozhodujete o tom, tak najednou se vám to líbí samozřejmě, že to můžete dělat sami.
+**Tomáš Havránek:** Mně přijde trochu zábavné, že řekněme poradci současného pana prezidenta, kterého si velmi vážím, tak před volbami tenhle systém kritizovali. To, že vybírá sám prezident bez schválení třeba senátem vedení bankovní rady je dost nestandardní mezinárodně. Není to úplně výjimečná věc, ale je to nestandardní a rozhodně to vede potom k některým, řekněme, idiosynkratickým volbám oka. Ale jakmile vy jste u té moci a rozhodujete o tom, tak najednou se vám to líbí samozřejmě, že to můžete dělat sami.
 
 A já neříkám, že je nutně špatně. Ty změny, o kterých tady mluvím, by se samozřejmě nejlépe provádělo v tomhle systému, kdy přesvědčíte o něčem pana prezidenta nebo donutíte ho se nad tím zamyslet. A ten potom může velmi snadno, protože vlastně v našem systému za inflaci odpovídá pan prezident. Tím, že on jmenuje celé vedení Národní banky, takže několik let je inflace podle standardní makroekonomické teorie z celá odpovědností pana prezidenta.
 
@@ -177,7 +177,7 @@ V té dané kapitole. V tom celkovém státním rozpočtu, kdybychom to zavedli 
 
 40 miliard? Počítáme správně. Takže 40 miliard je ten rozpočtový carry-over. Zase věc, která nikoho nebolí.
 
-Vy neberete peníze tam, kde jsou potřeba. Vy odstřednete něco, co vlastně by i pro ty ředitele to bylo lepší, kdyby nemuseli kupovat ty nesmysly ke konci roku často. Ano, 2%. 40 miliard tady, nějakých 150 miliard, řekněme, z ČNB dlouhodobě, to už je to skoro 200.
+Vy neberete peníze tam, kde jsou potřeba. Vy odstřednete něco, co vlastně by i pro ty ředitele to bylo lepší, kdyby nemuseli kupovat ty nesmysly ke konci roku často. Ano, 2%. 40 miliard tady, nějakých 150 miliard, řekněme, z ČNB dlouhodobě, to už je skoro 200.
 
 A to EET, kdyby udělalo 30 miliard, tak už byste byla na dvou třetinách toho rozpočtového schodku. A vlastně, kromě EET, ty dvě další opatření nikoho moc nebolí a přinesou hodně peněz.
 
@@ -209,7 +209,7 @@ Podle mě bohužel je mnohem pravděpodobnější scénář, pokud tady nebude t
 
 **Petra Jaroměřská:** dlouhodobě se to udržet přeci nedá.
 
-**Tomáš Havránek:** teď si mít peníze neomezeně, což stát může, já moji hypotéku nevyřeším jinak, než ty peníze splatím ze svého platu. Ale když se já, jako stát, zadlužím, tak já ovládám hodnotu té měny, ve které si půjčuji. Když si půjčuji tedy v korunách, jsem Česká republika, nemám euro, tak můžu těch korun vytvořit, kolik chci. Teď neříkám, že to je dobrá věc, ale vy to můžete udělat.
+**Tomáš Havránek:** teď si mít peníze neomezeně, což stát může, já moji hypotéku nevyřeším jinak, než že ty peníze splatím ze svého platu. Ale když se já, jako stát, zadlužím, tak já ovládám hodnotu té měny, ve které si půjčuji. Když si půjčuji tedy v korunách, jsem Česká republika, nemám euro, tak můžu těch korun vytvořit, kolik chci. Teď neříkám, že to je dobrá věc, ale vy to můžete udělat.
 
 A i když centrální banka, ať už to je Aleš Michl nebo Zdeněk Tůma, vám řeknou, že my jsme nezávislí a my tohle nikdy dělat nebudeme, tak v situaci, kdy by státní rozpočet stál před naprostým krachem a hrozil reálný bankrot země, tak oni ty peníze natisknou. Proč? Protože jsou taky odpovědní za finanční stabilitu. Neříkám, že to je správná věc?
 
@@ -229,7 +229,7 @@ Přesto vlastně jsou některé skupiny obyvatel, které neušetří nic, tak pr
 
 Ten první je malá finanční vzdělanost, finanční gramotnost, kdy my kupujeme nemovitosti nebo nic, nebo necháme peníze ležet, to je špatně, měli bychom kupovat globální akcie, diverzifikovaně, ETFka. To je první věc, to se pak odráží i v tom, co udělá Národní banka, která má balík bilionů korun a nedělá s tím nic. Jako pro mě to je věc, kterou pořád cítím trochu jako hořkost, že jsme toto dopustili, že jsem vlastně já i za to odpovídal do velké míry. A ta druhá věc je pracovní morálka, pracovní etika.
 
-V Americe, v Japonsku, kam já rád jezdím do těch obou zemí, vidíte úplně jiný přístup k práci. A vidím to i na sobě, že můj přístup k práci není takový, jako u mých kolegů v Japonsku a v Americe, čili je to jako obecný problém této země. V té Americe nebo v Japonsku vidíte člověka, co sbírá odpadky, a ti lidé to dělají, váží si té práce, není to pro ně podřadná věc a nemusí být nějak dobře placení. Platy v Japonsku jsou relativně nízké, divili bychom se.
+V Americe, v Japonsku, kam já rád jezdím, vidíte úplně jiný přístup k práci. A vidím to i na sobě, že můj přístup k práci není takový, jako u mých kolegů v Japonsku a v Americe, čili je to obecný problém této země. V té Americe nebo v Japonsku vidíte člověka, co sbírá odpadky, a ti lidé to dělají, váží si té práce, není to pro ně podřadná věc a nemusí být nějak dobře placení. Platy v Japonsku jsou relativně nízké, divili bychom se.
 
 I ceny jsou v Japonsku teď velmi nízké, ta země je extrémně levná. Takže vážit si práce, co dělám, postarat se o sebe, nespoléhat na to, že mi někdo ty peníze dá, protože nedá. Nebo vám dá něco, nějakou almužnu, ale vy nechcete říct almužny. Já vím, že život je občas těžký, a já jsem třeba měl štěstí v životě, takže pro mě je lehký to říct.
 

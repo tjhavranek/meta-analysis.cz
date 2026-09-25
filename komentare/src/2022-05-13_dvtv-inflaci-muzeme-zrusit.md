@@ -28,7 +28,7 @@ Ta inflace bude potřeba s ní bojovat. Aleš Michl, tak jak ho znám, dělal js
 
 **Tomáš Havránek:** Já si myslím, že to může být jinak, než jak teď to vypadá každopádně. V situaci, kdy tu odpovědnost bude mít na 100%, bude mít většinu v radě, kterou nejspíš mu prezident dopřeje pravděpodobně. Ještě tři členy je potřeba jmenovat. Přesně tak a vleto potom další dva.
 
-Ale možná je tedy už potom jmenování v červenci. A on... Samozřejmě je to možné, že nechá shořet korunu. Ale nejde mi to úplně k tomu, jak ho znám, že by se takhle chtěl zapsat do dějin.
+Ale možná je tedy už potom jmenování v červenci. Samozřejmě je to možné, že nechá shořet korunu. Ale nejde mi to úplně k tomu, jak ho znám, že by se takhle chtěl zapsat do dějin.
 
 Rašín tu naši korunu vlastně postavil silnou a on by ji spálil. Tohle on nebude chtít. … Tak to byl největší jestřáb. Aleš Michl.
 
@@ -60,7 +60,7 @@ A dvouciferné sazby dnes by znamenaly bankrot řady subjektů v té zemi. To ne
 
 **Tomáš Havránek:** ve srovnání se zbytkem světa. Když srovnáme naši inflaci s inflací globální, řekněme, podle čísel třeba OECD nebo Mezinárodní organizace práce, tak ta globální je 9%, kolem 9%, u nás to je 14%. Čili dá se říct zhruba, že dovážíme nějaké dvě třetiny té naší inflace, ale ta třetina těch pětprocentních bodů navíc je naše vlastní, kterou my přitápíme vlastně. A to má tři hlavní domácí zdroje.
 
-Ten první byly takové vrtulníkové peníze během pandemie. Rozhazování. Rozhazování peněz v masivním měřítku, nevídané vůbec v historii naší země. Druhý zdroj je nedostatek lidí, který tlačí na vyšší mzdy, sice teď už ne tolik, ale stále.
+Ten první byly takové vrtulníkové peníze během pandemie. Rozhazování peněz v masivním měřítku, nevídané vůbec v historii naší země. Druhý zdroj je nedostatek lidí, který tlačí na vyšší mzdy, sice teď už ne tolik, ale stále.
 
 A třetí zdroj je ta slabší koruna. Slabší, než by měla být nebo než by bylo dobré, aby byla, aby nám pomohla tu inflaci snížit.
 
@@ -94,7 +94,7 @@ Ale ta situace je dnes jiná. ČNB by nestanovila nějakou hladinu, na kterou ch
 
 Ale oni můžou říct, tak budeme prodávat miliardu eur měsíčně, čímž tu korunu by posílili. Ten druhý důvod, který je možná pravděpodobnější, je, že tohle se hodně špatně modeluje v tom modelu ČNB, který má. To je takový komplikovaný matematický model, v celé té prognóze. Ale s prodejem rezerv to vlastně neumí.
 
-Čili na tohle by se ten model musel dát úplně stranou a používat se na to nějaká jiná analytická část, což je ale jako hodně obtížné pro tu sekci měnovou, jak ji znám.
+Čili ten model by se musel dát úplně stranou a používat se na to nějaká jiná analytická část, což je ale hodně obtížné pro tu sekci měnovou, jak ji znám.
 
 **Martin Veselovský:** Dobře, chápu. Vy někdy uvádíte jako příklad dobré praxe Švýcarsko. V jakém ohledu Švýcarsko umí s inflací lépe zacházet?
 
@@ -134,7 +134,7 @@ Tak jestli prostě nezbytně musel přijít a Česká národní banka akorát m�
 
 **Tomáš Havránek:** Centrální banka je ten, kdo ve finále odpovídá za tu inflaci. Samozřejmě nemůže za válku, ale ta inflace byla dvouciferná před tou válkou. Nemůže za COVID, ale znamená to selhání. Ale to selhání není naše tuzemské.
 
-Je to selhání obecně všech centrálních bank, většiny z nich, kromě toho Švýcarska možná. A já, jak jste správně naznačil, často kritizuji vedení ČNB možná neúplně korektně v tom, že opravdu v tom mezinárodním srovnání oni si vedou dobře. Zvyšovali sazby, podle mě to není úplně ten nejefektivnější způsob, ale aspoň něco dělali, a to brzy. Bohužel nepovedlo se jim to celkově.
+Je to selhání obecně všech centrálních bank, většiny z nich, kromě toho Švýcarska možná. A já, jak jste správně naznačil, často kritizuji vedení ČNB možná neúplně korektně v tom, že opravdu v tom mezinárodním srovnání oni si vedou dobře. Zvyšovali sazby, podle mě to není úplně ten nejefektivnější způsob, ale aspoň něco dělali, a to brzy. Bohužel se jim to celkově nepovedlo.
 
 Ten obrázek jednak komunikační, jednak nepoužili kurz. A to možná přispělo i k tomu vlastně zemětřesení v ČNB, které nastane. Které bude bez precedentu.
 

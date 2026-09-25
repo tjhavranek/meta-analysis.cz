@@ -33,11 +33,11 @@ Ne úplně primárně, tak by ta ekonomika rostla rychleji, kdyby ty dálnice by
 
 **Tomáš Havránek:** … investice, když se nám vrátí, tak de facto potom vlastně ten dluh sníží. Takže to není úplně tolik. To samotné číslo není tak důležité. Ale já mám návrh, jak ty peníze sehnat.
 
-My tady máme jako země balík 3 bilionů korun, 3 tisíce miliard které má ČNB. A vlastně ona je nechce. Ona s nimi nic moc nedělá. Ty peníze nevydělávají.
+My tady máme jako země balík 3 bilionů korun, 3 tisíce miliard, které má ČNB. A vlastně ona je nechce. Ona s nimi nic moc nedělá. Ty peníze nevydělávají.
 
 A kdybychom je investovali třeba po vzoru Singapuru, který tohle udělal desetiletí zpátky a de facto si koupil podíl na globálním technickém pokroku, tak nám to ročně vydělá minimálně těch 100 miliard, co pan ministr potřebuje navíc.
 
-A teď, jenom bych to rozvedl. Samozřejmě ta ČNB si tohle uvědomuje a ta investice by byla velký krok. Ona se necítí mít autoritu na to, aby to sama udělala. I když znovu ona ty rezervy nepotřebuje, vlastně nechce.
+A teď bych to jenom rád rozvedl. Samozřejmě ta ČNB si tohle uvědomuje a ta investice by byla velký krok. Ona se necítí mít autoritu na to, aby to sama udělala. I když znovu ona ty rezervy nepotřebuje, vlastně nechce.
 
 Ty vznikly jako vedlejší produkt intervencí proti koruně. Tady nebyl nikdy plán nashromáždit 3 biliony. Ty peníze tam teď leží v eurech, tedy v dolarech. 131 miliard eur to je.
 
@@ -51,7 +51,7 @@ Ne jenom s vládou, ale i s opozicí. Čili když si třeba vy, pan Stínový pr
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Tomáš Havránek:** To nestojí vůbec nic. Ty peníze už tady jsou, 130 miliard eur, čili to je úplně jiná částka, i proporčně, než o jaké jste mluvil, pane poslanče, to je tři tisíce miliard, to je opravdu obrovský balík.
+**Tomáš Havránek:** To nestojí vůbec nic. Ty peníze už tady jsou, 130 miliard eur, čili to je úplně jiná částka, i proporčně, než o jaké jste mluvil, pane poslanče, to jsou tři tisíce miliard, to je opravdu obrovský balík.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 

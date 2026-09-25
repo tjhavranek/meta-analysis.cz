@@ -29,13 +29,13 @@ Jaké to je?
 
 **Zuzana Havránková:** Tak IES mě zaujala samozřejmě z několika důvodů. Jedním je, že je hodně centrováno na tu kvantitativní matematickou analýzu a myslím, že to je takový jakoby nosný bod, nosný prodejní bod toho IES. Takže často, když studenti si vlastně vybírají školy, jestli chtějí na nějakou jinou ekonomickou školu nebo na IES, tak se rozhodují na základě toho, jestli chtějí ten management, jestli chtějí využít ty svoje soft skills nebo spíše takovéto analytické myšlení. Takže to se mi na tom velmi líbí.
 
-Zároveň samozřejmě IES úplně miluji z toho důvodu, že je tam hodně, hodně takový jako mezinárodní feel, je tam hodně zahraničních studentů, je tam hodně těch kurzů v angličtině, což třeba je jako, mně je velmi sympatické i z toho důvodu, že ta čeština není úplně, nejsem native speaker, takže taky se s tím jako občas speru, shodou okolností učím kurz, který je v češtině, což je samo o sobě takové kuriózní, ale tak to dopadlo. Takže to IES byla taková jako jasná volba, já jsem vždycky chtěla do Prahy, a takže je to i ta Praha, i ta matematika, která tam je, a samozřejmě to renome, které je teď už po těch patnácti letech vlastně toho mého působení na IES, mezinárodní renome.
+Zároveň samozřejmě IES úplně miluji z toho důvodu, že je tam hodně, hodně takový mezinárodní feel, je tam hodně zahraničních studentů, je tam hodně těch kurzů v angličtině, což je mi velmi sympatické i z toho důvodu, že ta čeština není úplně, nejsem native speaker, takže se s tím taky občas peru, shodou okolností učím kurz, který je v češtině, což je samo o sobě takové kuriózní, ale tak to dopadlo. Takže IES byla taková jasná volba, já jsem vždycky chtěla do Prahy, takže je to i ta Praha, i ta matematika, která tam je, a samozřejmě to renome, které je teď už po těch patnácti letech vlastně toho mého působení na IES, mezinárodní renome.
 
 **Alice Němcová Tejkalová:** Ty se věnuješ vlastně způsobu výzkumu a vědy, který je hodně exaktní, právě hovořila se o matematice. Potkávaš se někdy s tím, že se lidé diví tomu, protože v Česku je hodně zakořeněné už od základního školství, že kluci jsou lepší na matematiku, holčičky spíš na humanitní vědy, často se s tím setkávají vlastně děti už od svého dětství. Zastavil někdy někdo tebe a řekl, ty nejsi dobrá na matematiku, protože jsi holka.
 
 **Zuzana Havránková:** Zrovna tohle se mi úplně nestalo, ale myslím si, že ty moje studie byly taky provázané takovou velkou pokorou z toho, na co mám a na co nemám. A samozřejmě, vždycky když jsi na té střední škole, tak máš kolem sebe nějaký pool lidí. A ten pool lidí ti vytváří takový vnitřní dojem z toho, jak jsi dobrá. A je to hodně omezený pool, řekněme.
 
-A teď si představ, že se ti lidé shromáždí z celé republiky a z okolí na jedno místo a jsou hodně dobří a ty vlastně vidíš úplně jiné srovnání. Ten žebříček je tam úplně jiný a ty vidíš, že je hodně lidí, kteří jsou mnohem, mnohem lepší než jsi ty. A tak já myslím, že nás to hodně učí. I té pokoře z toho, jací jsme, v čem jsme dobří a na co máme.
+A teď si představ, že se ti lidé shromáždí z celé republiky a z okolí na jedno místo a jsou hodně dobří a ty vlastně vidíš úplně jiné srovnání. Ten žebříček je tam úplně jiný a ty vidíš, že je hodně lidí, kteří jsou mnohem, mnohem lepší, než jsi ty. A tak já myslím, že nás to hodně učí. I té pokoře z toho, jací jsme, v čem jsme dobří a na co máme.
 
 Samozřejmě, že když se člověk jako koukne na to genderové rozdělení těch studentů, kteří tam chodí, tak zcela jakoby samozřejmě převažují ti kluci. A což je zase hezké, jako mně to nevadí.
 
@@ -61,7 +61,7 @@ To znamená, představ si, že máme nějakou otázku vědeckou, kterou se snaž
 
 Takže metaanalýza má tu úlohu, že dokáže vydestilovat nějaký výsledek, nějaký závěr, nějaký jednotný závěr z literatury, která je velice různorodá. Mimochodem metaanalýza vznikla v medicíně původně, v experimentálním medicínském výzkumu, v klinických studiích. Tam jsou ty studie jakoby hodně malé, protože, jak je notoricky známo, jsou velice drahé, nejen co do peněz, ale samozřejmě i co do zdraví těch lidí. Takže oni potřebovali vlastně nějakým způsobem ty malé klinické studie dát dokupy a zvýšit tu statistickou sílu těch výsledků.
 
-Proto metaanalýza se přirozeně vyvinula v té medicíně a takovýmhle způsobem vlastně dokáže nám něco říct o tom, jaký je tedy ten výsledek i s nějakou mírou jistoty. Je to něco jako, když se třeba... Ta metaanalýza samozřejmě s sebou nese různé problémy, protože my se koukáme na velký vzorek nějakých studií, které jsou hodně různorodé. Ten kontext těch studií, to, jaká data používá, jestli, jako třeba v tom medical research, máš různé pacienty, jestli jsou to muži, ženy, jestli jsou to různé rasy, jestli je to věk a tak dále, mají různé comorbidity a tak dále.
+Proto se metaanalýza přirozeně vyvinula v té medicíně a takovýmhle způsobem nám vlastně dokáže něco říct o tom, jaký je tedy ten výsledek i s nějakou mírou jistoty. Ta metaanalýza samozřejmě s sebou nese různé problémy, protože my se koukáme na velký vzorek nějakých studií, které jsou hodně různorodé. Ten kontext těch studií, to, jaká data používají, jestli, jako třeba v tom medical research, máš různé pacienty, jestli jsou to muži, ženy, jestli jsou to různé rasy, jestli je to věk a tak dále, mají různé comorbidity a tak dále.
 
 Takže tohle je jedna vlastně taková jako challenge metaanalýzy, jakým způsobem je možné kontrolovat ten kontext. A druhým tím problémem, kterému metaanalýzy čelí, je publikační selektivita. Publikační selektivita vzniká, když nějaké výsledky mají větší pravděpodobnost, že budou publikované. Což v podstatě vyplývá z toho, že my máme vnitřně často nějakou a priori preferenci ohledně toho, co by nám asi mělo v té studii vyjít.
 
@@ -69,7 +69,7 @@ Třeba když si představíš, že studují nějaký efekt pasivního kouření 
 
 A teď my víme... Takové studie opravdu jsou. Takové studie opravdu jsou. A my teď vnitřně víme, že samotné kouření je věc, která je už známá řadu let, že je to velice neprospěšné pro zdraví, je to velice škodlivé.
 
-A tím pádem máme i takový... Řekněme, kdybych já teď chtěla udělat nějakou takovouhle studii, tak jdu do toho s nějakou určitou představou nebo předsudkem, ohledně toho, jak by měl ten výsledek vypadat. A tedy budu si asi myslet, že bych měla dostat něco... Já nevím úplně, nerozumím tomu tématu, jsem jenom statistik, ale něco by mi mělo vyjít.
+Řekněme, kdybych já teď chtěla udělat nějakou takovouhle studii, tak jdu do toho s nějakou určitou představou nebo předsudkem ohledně toho, jak by měl ten výsledek vypadat. A tedy si asi budu myslet, že bych měla dostat něco... Já nevím úplně, nerozumím tomu tématu, jsem jenom statistik, ale něco by mi mělo vyjít.
 
 A předpokládám, že to asi bude negativní, nebo nulové. Ale určitě to nebude pozitivní. A tyhle předsudky se potom na levelu nějakých jednotlivých studií, na levelu jedné studie, to samozřejmě není nějaký problém nebo problém toho autora. My vždycky se snažíme nějakým způsobem vybrat nějaký reprezentativní výsledek, abychom ty lidi, ty čtenáře, nezahltili něčím, co není zkousnutelné a stravitelné.
 
@@ -109,11 +109,11 @@ ty tam už budou. A teď, když rozšiřuji ten pool o 50 %, jako bylo v tom mé
 
 Tedy přijde málo srdcařů. Přesně tak. Přesně tak. Teoreticky, řekněme, by tam mohlo být, že snižujeme kvalitu těch učitelů.
 
-Teoreticky. Samozřejmě, že toto musí být jako by dlouhodobý proces. Ano. A ono to snižování tříd bohužel ale probíhá jako relativně v krátkém časovém období.
+Teoreticky. Samozřejmě, že toto musí být dlouhodobý proces. Ano. A ono to snižování tříd bohužel ale probíhá v relativně krátkém časovém období.
 
-A to je vlastně ten náš problém. Už jenom v současné době, vidíš na stránkách mnoha škol, že pořád shání, shání, shání učitele. To je jako samo o sobě první problém. Takže můj nápad, jak vyřešit problém financování školství, by byl: v současnosti je průměrný počet studentů na třídu asi devatenáct a půl.
+A to je vlastně ten náš problém. Už jenom v současné době, vidíš na stránkách mnoha škol, že pořád shání, shání, shání učitele. To je samo o sobě první problém. Takže můj nápad, jak vyřešit problém financování školství, by byl: v současnosti je průměrný počet studentů na třídu asi devatenáct a půl.
 
-Průměr. To znamená, že jsou třídy, které mají patnáct dětí, jsou třídy, které mají dvacet pět. Navýšit počet těch dětí z těch dvaceti, z průměru z dvaceti, třeba na dvacet pět. A potom si můžeš přepočítat to, jakým způsobem vlastně ty nabereš ty finance v tom školství na ty platy těch učitelů, což je taky jedna jako taková krizová otázka.
+Průměr. To znamená, že jsou třídy, které mají patnáct dětí, jsou třídy, které mají dvacet pět. Navýšit počet těch dětí z těch dvaceti, z průměru z dvaceti, třeba na dvacet pět. A potom si můžeš přepočítat to, jakým způsobem vlastně ty nabereš ty finance v tom školství na ty platy těch učitelů, což je taky jedna taková krizová otázka.
 
 Nebo nemusíš všech těch, kolik to je, asi dvacet pět procent platů těch učitelů, platů navýšit pro učitele. Můžeš to použít
 
@@ -131,7 +131,7 @@ Vy jste se ale věnovali i dalšímu kontroverznímu tématu, a to jsou dopady z
 
 **Zuzana Havránková:** Já osobně to střídání letního a zimního času taky nemám úplně ráda, a hlavně to vidím na dětech. Ano, ta jarní změna je absolutně destruktivní pro ně. Ale ano, každopádně dělali jsme tu studii už před lety. Ta studie byla zaměřená na energetické úspory.
 
-A výsledkem té studie bylo, že ty energetické úspory už v současnosti nejsou. Ano, no, ta samotná myšlenka té politiky patří ještě do doby Bena Franklina, kdy se svítilo svíčkami a lidé chtěli využít to denní světlo, co nejefektivněji. Takže ty technologie toho svícení tam byly trošku jiné. Než jsou třeba v současnosti, kdy máme ty efektivní žárovky a zářivky.
+A výsledkem té studie bylo, že ty energetické úspory už v současnosti nejsou. Ano, no, ta samotná myšlenka té politiky patří ještě do doby Bena Franklina, kdy se svítilo svíčkami a lidé chtěli využít to denní světlo co nejefektivněji. Takže ty technologie toho svícení tam byly trošku jiné, než jsou třeba v současnosti, kdy máme ty efektivní žárovky a zářivky.
 
 A samozřejmě v době, kdy je taková větší spotřeba vlastně energie i v rámci klimatizování místností. Tedy to rozložení, obecně to rozložení spotřeby energie v průběhu dne je úplně jiné. A tím pádem ty můžeš skutečně vidět, že nejenže ten efekt je nulový, ale že je třeba i záporný, že třeba i té energie je kvůli tomu posouvání času spotřebováváno víc. A my jsme samozřejmě byli velmi...
 
@@ -147,7 +147,7 @@ A teď je jenom otázka, jak dlouho můžeme čekat, než se zruší. Ano, proto
 
 **Alice Němcová Tejkalová:** právě ještě ráda zeptala. Proč si myslíš, co je ta hlavní věc, kvůli kterém vlastně na tom střídání času lidé, politici
 
-**Zuzana Havránková:** podle mě lidé nemají rádi změny. Tohle by byla jakoby velká změna a ono není ani úplně jasné, jaké je to správné řešení toho, pokud by byl jeden stejný čas celý rok, jaké je to správné řešení. Ano, který letní a nebo zimní. Který letní nebo zimní.
+**Zuzana Havránková:** podle mě lidé nemají rádi změny. Tohle by byla jakoby velká změna a ono není ani úplně jasné, jaké je to správné řešení. Pokud by byl jeden stejný čas celý rok, jaké je to správné řešení? Ano, který, letní, nebo zimní?
 
 Já myslím, že sama mám o tom nějakou představu nebo jako intuici, protože takhle, kdybychom ponechali jenom ten náš zimní čas, který je takový ten středoevropský, ano, přesně, je nastaven pro člověka, který chodí spát v 8 večer a řekneme, že pokud průměrně spíme 8 hodin, tak máš střed spánku na půlnoci a budíš se ve 4. což jako nezní úplně, alespoň mně osobně, nezní úplně jako něco, co je takový standard pro průměrného Evropana vůbec. Takže asi kdybych já v tom měla nějakou rozhodovací sílu, tak bych se asi přikláněla ani ne jako k tomu letnímu času, ale ještě klidně i k tomu dvojitému letnímu času, který posouvá ten vlastně náš spánek na desátou hodinu s tím, že vstáváme v šest, ale samozřejmě tam je tolik těch konotací u téhle politiky, že tam musí i ti biologové, i ti medici říct, co si o tom myslí. Děkuji moc,
 

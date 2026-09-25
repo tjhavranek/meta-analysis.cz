@@ -49,9 +49,9 @@ Já se obávám, že zisky z té daně budou mnohem, mnohem menší, než jaké 
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Václav Moravec:** Ano, proto to považuji i ze mě jako vstředatele. Že to, co načnarážil Tomáš Havránek, aby dali víc na spořící účty, víc na úrocích a jeli těmi šesti sen, že budou optimalizovat, aby snížili tu svoji vstupenku, to znamená, že Zbyněk Stanjura nevybere ani těch 12 miliard, jako raduje bankovní asociace, protože to vnímáte jako část upřed tou takzvaně optimalizací.
+**Václav Moravec:** Ano, proto to považuji i ze mě jako vstředatele. Že to, co načnarážil Tomáš Havránek, aby dali víc na spořící účty, víc na úrocích a jeli těmi šesti sen, že budou optimalizovat, aby snížili tu svoji vstupenku, to znamená, že Zbyněk Stanjura nevybere ani těch 12 miliard, jak odhaduje bankovní asociace, protože to vnímáte jako část upřed tou takzvaně optimalizací.
 
-**Tomáš Havránek:** Přesně tak. Za mě osobně ty banky už teď není třeba danit víc, protože opravdu tuto daň si už tam vidím. Přenos sazeb na ty spořicí účty. Čili za mě tu svoji kritiku vlastně stahuji a už bych tu další daň nezaváděl.
+**Tomáš Havránek:** Přesně tak. Za mě osobně ty banky už teď není třeba danit víc, protože opravdu tu transmisi už tam vidím. Přenos sazeb na ty spořicí účty. Čili za mě tu svoji kritiku vlastně stahuji a už bych tu další daň nezaváděl.
 
 **Václav Moravec:** Včetně tedy této daně z mimořádných zisků. Ale dobrá zpráva to může být, že když už ta daň u velké šestky byla zavedena, takže nám budou lépe úročit vklady, protože jim je jedno, jestli to odvedou státu anebo jestli budou spokojení klienti.
 
@@ -105,7 +105,7 @@ Ty ostatní věci, které NERV radí, pomůžou, ale nejsou to úplně věci, kt
 
 Co byste zavrátil, v jakém pořadí, pane profesor?
 
-**Tomáš Havránek:** Ano, já už jenom k těm daním ještě. Inflační daň za tři roky dosáhne skoro bilion korun na našich úsporách. To je obrovská daňová zátěž, hlavně pro zaměstnance. Ti hodně bohatí nemají peníze v bankách, ti mají někde jinde, v nemovitostech, v akciích, ti hodně chudí, mají dávky a nemají žádné úspory.
+**Tomáš Havránek:** Ano, já už jenom k těm daním ještě. Inflační daň za tři roky dosáhne skoro bilion korun na našich úsporách. To je obrovská daňová zátěž, hlavně pro zaměstnance. Ti hodně bohatí nemají peníze v bankách, ti je mají někde jinde, v nemovitostech, v akciích, ti hodně chudí mají dávky a nemají žádné úspory.
 
 Čili, když znovu zvýšíme daně na práci, tak to vlastně bude dvojitá daň. Ještě k tomu poklesu reálných mezd, k té inflační dani na úspory dáme ještě další daň. Čili já chápu vládu, že tohle je velmi obtížné a že pravděpodobně k tomu nedojde. Ale tam je ten největší balík těch peněz, které by se daly vydělat, což samozřejmě pan Samek určitě potvrdí z vlastních výpočtů.
 

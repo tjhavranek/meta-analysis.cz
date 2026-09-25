@@ -34,11 +34,11 @@ Tohle je právě to, co FED změnil. Americká centrální banka tohle v té sv�
 
 Ta druhá rovina je tedy v průměru, co máte cílovat. 2% je tady nějaký úzus. Když se podíváte, ale na stránky těch bank, třeba ČNB, tak nikdo z nich ho nijak není schopen odůvodnit. Tam je vždycky jedna věta: takhle to děláme, takhle to dělají ostatní.
 
-A vědecká literatura od roku 1990, kdy vlastně začalo to cílování inflace, tak vygenerovala stovky studií, které odhadují, jaká je ta zdravá inflace, ta správná. Některé uvádějí zápornou, že je optimální, i které kladnou, ale ten průměr je nula. A teď tohle není jako, že bychom tu měli brát jako skutečně ten definitivní výstavek, ale je to nějaký benchmark, od kterého bychom se měli odrazit. Čili i podívat se znovu na tu literaturu, na tu novou výzkumnou literaturu a jestli ty 2% jsou to, co je optimální, to by mělo být cílem toho auditu.
+A vědecká literatura od roku 1990, kdy vlastně začalo to cílování inflace, tak vygenerovala stovky studií, které odhadují, jaká je ta zdravá inflace, ta správná. Některé uvádějí zápornou, že je optimální, některé kladnou, ale ten průměr je nula. A teď tohle není jako, že bychom tu měli brát jako skutečně ten definitivní výstavek, ale je to nějaký benchmark, od kterého bychom se měli odrazit. Čili i podívat se znovu na tu literaturu, na tu novou výzkumnou literaturu a jestli ty 2% jsou to, co je optimální, to by mělo být cílem toho auditu.
 
 **Nikita Poljakov:** A bavíme se tady o nějaký změně, vy tvrdíte, že nastal jako new normal, když to tak řeknu, jestli vám správně rozumím, že nemůžeme starými pravidly vysvětlovat současný svět. Podle Český národní banky, podle Jiřího Rusnoka se nejedná o tak dramatický problém současná situace, protože z poloviny za něj nemůžeme, k tvrdí půlka inflace je dovezená, z půlky se jedná o, řekněme, fiskální politiku minulých dvou, tří let, která byla velkorysá. Není to spíš nějaký cyklus, který se vrátí zpátky a vlastně tohle téma nebudeme řešit za tři roky.
 
-**Tomáš Havránek:** To se může stát, já tomu nevěřím, samozřejmě se to stát může, i kdyby jenom polovina té inflace byla domácí, tak pořád velká část odpovědnosti nakonec jde za centrální bankou, ač ji musíme pochválit za to, co dělá. Málokterá banka takhle bojuje proti inflaci jako ČNB. Podle mě to ale dělá špatným nástrojem, čili zvyšováním sazeb. Rozhodně bylo rozumné do nějaké míry 3-4 % na nějakou zdravou dlouhodobou hladinu.
+**Tomáš Havránek:** To se může stát, já tomu nevěřím, samozřejmě se to stát může, i kdyby jenom polovina té inflace byla domácí, tak pořád velká část odpovědnosti nakonec jde za centrální bankou, ač ji musíme pochválit za to, co dělá. Málokterá banka takhle bojuje proti inflaci jako ČNB. Podle mě to ale dělá špatným nástrojem, čili zvyšováním sazeb. Zvyšování sazeb rozhodně bylo rozumné do nějaké míry, na 3-4 %, na nějakou zdravou dlouhodobou hladinu.
 
 Ale ve chvíli, kdy máte inflaci 10, tak vy stejně nejste schopni doručit kladné úroky. Čili to byste museli někam na 11. To není možné. A nerozumím tomu, proč není používán ten druhý nástroj.
 
@@ -56,7 +56,7 @@ My jsme ty rezervy nepoužili v žádné krizi, ať to byla finanční krize, co
 
 Oni nám, když to zvulgarizuji, hnijí na běžném účtu, většina z nich. A k ničemu se nepoužívají. Takže k čemu je máme? Buď je prodejme, posílíme korunu, neutralizujeme ty intervence, nebo je investujme a vydělají nám něco.
 
-Ale to, že vlastně teď nám de facto, oni nejenže nevydělávají, oni hrubě prodělávají, protože my platíme bankám na reposazbě 4,5%, čili ty ztráty ČNB budou v letošním roce naprosto enormní. Ale je to nutné, je nutné ty sazby zvyšovat. Ale proč tedy, když máme na straně aktiv takový balík, neuděláme s ním aspoň něco užitečného. Necháme to hnít.
+Ale teď vlastně de facto oni nejenže nevydělávají, oni hrubě prodělávají, protože my platíme bankám na reposazbě 4,5%, čili ty ztráty ČNB budou v letošním roce naprosto enormní. Ale je to nutné, je nutné ty sazby zvyšovat. Ale proč tedy, když máme na straně aktiv takový balík, neuděláme s ním aspoň něco užitečného? Necháme to hnít.
 
 **Nikita Poljakov:** Pojďme si ještě na chvilku vrátit k cílování inflace. Tady je odvážná myšlenka, vy jste ji teď zmínil. To znamená, vlastně, že se podíváme na x let dozadu, na průměrnou inflaci, dostaneme se někam k nule. Nulová inflace, vy si ji dovedete představit jako cíl?
 
@@ -64,7 +64,7 @@ To znamená, že tady měříme něco jiného. To je jako vy jste v jednom člá
 
 **Tomáš Havránek:** Tak já bych to viděl rád a když se podíváte třeba do Švýcarska, tak v podstatě Švýcaři tenhle systém de facto mají. Oni ho nemají de jure, že by měli ve statutu centrální banky, že inflace nebude. Jim ale inflace nevadí. Tedy jim nevadí nulová inflace, promiňte.
 
-Ten cíl mají vlastně od 0 do 2%. Čili když je to nula, tak to nevadí. De jure, de facto jim nevadí ani mírná deflace. Čili za posledních tuším 13 let ta inflace v průměru je nulová ve Švýcarsku.
+Ten cíl mají vlastně od 0 do 2%. Čili když je to nula, tak to nevadí. De jure, de facto jim nevadí ani mírná deflace. Čili za posledních tuším 13 let je ta inflace ve Švýcarsku v průměru nulová.
 
 A přitom nevidíte, že by to tu ekonomiku nijak poškozovalo. Vyvíjí se minimálně stejně tak dobře jako Německo třeba nebo Švédsko, které mají ale úplně jinou tu měnovou politiku. Mají vyšší inflaci. Z tohohle pohledu to rozhodně je reálná věc.
 
@@ -92,7 +92,7 @@ Pojďme se o tom aspoň bavit v rámci toho auditu.
 
 **Nikita Poljakov:** Tahle debata asi předpokládá, teď udělám krok výš nějakou revizi narativu toho, jak funguje Česká národní banka nebo obecně národní banka a v naší provenienci. My jsme asi takovej německej je konzervativnější model. Tady, aby k tomu došlo, tak se musí asi trošičku nebo dost pozměnit způsob, jak uvažujeme o monetární politice, která je teda v tom svým významu prostě politikou také. To znamená předefinovat to,
 
-**Tomáš Havránek:** A nicméně, já si opravdu myslím, že ta definice nebo ta redefinice by nemusela být tak velká. To je jako vlastně drobná kalibrace. A často argument pro inflační cíle je, takhle to dělají v zahraničí v Americe v ECB. Ano, jenže tyto velké centrální banky jednak mají obrovskou setrvačnost.
+**Tomáš Havránek:** A nicméně, já si opravdu myslím, že ta definice nebo ta redefinice by nemusela být tak velká. To je jako vlastně drobná kalibrace. A často argument pro inflační cíle je: takhle to dělají v zahraničí, v Americe, v ECB. Ano, jenže tyto velké centrální banky jednak mají obrovskou setrvačnost.
 
 Ty ani to cílování inflace nezavedly jako první. To zavedly první na Zélandu a v Kanadě. Až hodně dlouho potom, nějakých 15 let, to zavedl Ben Bernanke ve Fedu v Americe. A navíc tyhle banky ani nemají cenovou stabilitu jako hlavní úkol.
 

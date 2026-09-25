@@ -29,7 +29,7 @@ Odhad z dnešního dne určuje míru meziroční inflace na 16%. Jak se s tím �
 
 **Tomáš Havránek:** Navíc tam jsou dvě ženy, což není důležité jenom z hlediska nějaké genderové, řekněme, spravedlnosti. To u centrální banky není klíčová věc, ale dlouhodobě těch žen opravdu bylo v bankovní radě mnohem méně, než by odpovídalo nějakému poměru kvalitních ekonomek v české odborné společnosti. Takže tohle je takový návrat skoro k normálu. Klidně by tam mohly být i tři. Ale hlavně opravdu jsou velmi kvalifikované.
 
-A i ta samotná přítomnost žen dokáže velmi kultivovat diskuzi pánů. Protože když tam ty dámy nejsou, tak často nejdete daleko pro nějaké ostřejší slovo. A tohle opravdu je kultivující prvek jak po odborné, tak i po té osobní lidské stránce. Ale k té vaší otázce, já mám dojem, že všichni z nich se dlouhodobě vyjadřují, možná tedy s výjimkou pana profesora Fraita, který se k tomu vyjadřovat nemohl jako zaměstnanec ČNB.
+A i ta samotná přítomnost žen dokáže velmi kultivovat diskuzi pánů. Protože když tam ty dámy nejsou, tak často nejdete daleko pro nějaké ostřejší slovo. A tohle opravdu je kultivující prvek jak po odborné, tak i po té osobní lidské stránce. Ale k té vaší otázce, já mám dojem, že se všichni z nich dlouhodobě vyjadřují, možná tedy s výjimkou pana profesora Fraita, který se k tomu vyjadřovat nemohl jako zaměstnanec ČNB.
 
 Tak paní Zamrazilová i paní Kubelková jsou spíše proti dalšímu zvyšování sazeb. A tohle dohromady s hlasy Aleše Michla a Oldřicha Dědka vlastně znamená, že to zvyšování sazeb nepochybně skončí na konci června, kdy dojde k jednomu poslednímu velkému zvýšení, dané ještě tou současnou takzvanou starou bankovní radou, ale potom už těžko si lze asi představit nějaké další zvyšování.
 
@@ -41,7 +41,7 @@ A asi pan profesor Frait, který sice byl, řekněme, jestřábem teď ve finan�
 
 **Marek Zavřel:** Předpokládáte těch sedm procentních bodů, takže to bude o jedna celá dvacet pět. To je trošku vychýlení od těch klasických 0,75 bodů, jak jsme viděli při těch zvýšeních v poslední době. Pojišťují si tak do zásoby pan guvernér Rusnok a stávající bankovní rada?
 
-**Tomáš Havránek:** Ano, já bych čekal, že ten model, který oni používají, jim bude ukazovat ještě mnohem razantnější zvýšení úrokových sazeb. Takže je to nutné vzhledem k tomu, jak velmi rychle ta inflace roste. Standardní poučka je u centrálních bank, že když inflace vzroste o jeden procentní bod, tak vy zvýšíte sazby rychleji, čili více než o jeden procentní bod. Dnes nám vzrostla inflace, te dnešní údaje tuším 16 procentních bodů za květen, oproti dubnu je to o víc než jeden procentní bod, takže bych čekal zase, že čistě modelově, když to vezmu velice jednoduše, ten model je samozřejmě komplikovanější, tak ta vyžadovaná reakce bude mnohem, mnohem silnější než tři čtvrtiny procentního bodu.
+**Tomáš Havránek:** Ano, já bych čekal, že ten model, který oni používají, jim bude ukazovat ještě mnohem razantnější zvýšení úrokových sazeb, že je to nutné vzhledem k tomu, jak velmi rychle ta inflace roste. Standardní poučka je u centrálních bank, že když inflace vzroste o jeden procentní bod, tak vy zvýšíte sazby rychleji, čili více než o jeden procentní bod. Dnes nám vzrostla inflace, ten dnešní údaj je tuším 16 procentních bodů za květen, oproti dubnu je to o víc než jeden procentní bod, takže bych čekal zase, že čistě modelově, když to vezmu velice jednoduše, ten model je samozřejmě komplikovanější, tak ta vyžadovaná reakce bude mnohem, mnohem silnější než tři čtvrtiny procentního bodu.
 
 Samozřejmě pak ten aparát to nějak, řekněme, moderuje, aby to nebylo, ty nárůsty nebyly šílené, protože si to už ta ekonomika nemůže moc dovolit z mnoha důvodů. Ale opravdu, jak to říkáte vy správně, já čekám, že to bude takový rozlučkový dáreček té staré bankovní rady a konkrétně pana guvernéra Rusnoka. A předzásobení se zvyšováním sazeb na několik měsíců, možná i let. Takže proto čekám, že to bude na sedmičku, ale jestli to bude 6,5 nebo 6,75, upřímně řečeno, rozdíl bude naprosto minimální pro inflaci.
 
@@ -77,7 +77,7 @@ Když je inflace větší, tak máte menší plat. Když máte větší plat za 
 
 **Marek Zavřel:** K povaze té inflace právě nastupující guvernér ČNB Aleš Michl tvrdí, že se jedná o inflaci dovezenou.
 
-**Tomáš Havránek:** Ta inflace rozhodně je zčásti, řekněme z poloviny nebo ze dvou třetin, dovezená v tom smyslu, že když nám rostou ceny elektřiny na burze v Evropě, tak to se projeví u nás. Když rostou ceny ropy, to se projeví v našich čerpacích stanicích.
+**Tomáš Havránek:** Ta inflace je rozhodně zčásti, řekněme z poloviny nebo ze dvou třetin, dovezená v tom smyslu, že když nám rostou ceny elektřiny na burze v Evropě, tak to se projeví u nás. Když rostou ceny ropy, to se projeví v našich čerpacích stanicích.
 
 **Marek Zavřel:** to asi jsou částí toho vždy. Ale není to převládající charakteristika té inflace, které máme dnes.
 
@@ -185,7 +185,7 @@ I potom, když to teď tak vlastně řekněme spektakulárně selhalo v těch po
 
 Do konce tohohle roku nečekám nějaké výraznější snížení. Rozhodně to budou pořád dvouciferné hodnoty. Pravděpodobně to budou pořád hodnoty kolem 15% nebo i výš.
 
-**Jiří Rusnok (ze záznamu):** Já už jsem skoro emeritní, volit se spekulovat. Podle mě by byla inflace někde mezi 25 a 25% minimálně. Musíme si uvímat, že především to, co už taky Dana řekla, kurz by byl úplně někde jinde. Kurs by byl 30 korun za euro, ne 25.
+**Jiří Rusnok (ze záznamu):** Já už jsem skoro emeritní, volit se spekulovat. Podle mě by byla inflace někde mezi 25 a 25% minimálně. Musíme si uvědomit, že především to, co už taky Dana řekla, kurz by byl úplně někde jinde. Kurs by byl 30 korun za euro, ne 25.
 
 **Marek Zavřel:** A máme se bát i vlastně 25 nebo 30%, protože pokud nebudeme zvyšovat ty úrokové sazby, tak guvernér Rusnok na jednom z diskuzních Fóru České národní banky řekl to, že by to bez toho zvyšování mohlo dosáhnout těch 25, možná 30%.
 
@@ -207,7 +207,7 @@ po té stabilizaci sazeb z léta a uklidnění situace by na podzim mohlo dojít
 
 **Tomáš Havránek:** Přejme jim to přesně, máte pravdu, já jsem občas moc negativní, takže každopádně já se vůbec nedivím, když dnes někdo jde za šéfem a vyžaduje to zvýšení platu o 20% třeba, protože cokoliv jiného znamená, že reálně ten jeho plat klesá.
 
-Takže já se ani odborům vlastně vůbec nedivím, že v téhle situaci chtějí ty platy zvýšit, aby dostali třeba alespoň o těch 15%, ale samozřejmě toto inflaci znovu přiživí a těžko s tím udělat něco jiného než stěžovat si u té Národní banky, která jednak dává příklad v té indexaci mezd a jednak tu inflaci bohužel zavinila ona ve velké části. Takže ty demonstrace měly být na Příkopech, před budovou ČNB a ne před úřadem vlády.
+Takže já se ani odborům vlastně vůbec nedivím, že v téhle situaci chtějí ty platy zvýšit, aby dostali třeba alespoň o těch 15%, ale samozřejmě toto inflaci znovu přiživí a těžko s tím udělat něco jiného než stěžovat si u té Národní banky, která jednak dává příklad v té indexaci mezd a jednak tu inflaci bohužel z velké části zavinila ona. Takže ty demonstrace měly být na Příkopech, před budovou ČNB a ne před úřadem vlády.
 
 **Marek Zavřel:** zpravodajského podcastu Kontext vše. Děkuji Tomáši Havránkovi za rozhovor. Děkuji, mějte se krásně. cz lomeno podcasty.
 

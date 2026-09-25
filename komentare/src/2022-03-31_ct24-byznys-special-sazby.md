@@ -41,7 +41,7 @@ Takže i to zvýšení urokových sazeb může tlumit ty dovozní korunové ceny
 
 **Tomáš Havránek:** Já myslím, že tohle ani možná není potřeba v seriózním vysílání komentovat, protože se asi každý shodne, že toto je nesmysl, to, co pan bývalý premiér prohlásil. Takže já bych se spíš vrátil k tomu, co říkal pan viceguvernér. Znovu ho chválím za to zvyšování sazeb, ale není pravda, že by nebyl limit pro zvyšování sazeb. Ten rozhodně je, ten je někde kolem 7 % bodů, protože vyšší sazby by naše ekonomika nevydržela z hlediska dluhu, z hlediska státního dluhu, z hlediska dluhu firem, domácností.
 
-A oni to dobře vědí, že ty sazby nemůžou růst do nekonečna, nemůžou růst na dvouciferné hodnoty, jako v roce 98. To je ten problém, proč my musíme sáhnout k posilování koruny. A druhý problém je, že už dnes řada firem si bere úvěry v eurech, kvůli tomu, že je tam tak veliký rozdíl mezi úroky korunovými a eurovými. Pan viceguvernér má přesnější data než já, ale brzy to bude dost možná polovina těch úvěrů, které se berou v eurech.
+A oni to dobře vědí, že ty sazby nemůžou růst do nekonečna, nemůžou růst na dvouciferné hodnoty, jako v roce 98. To je ten problém, proč my musíme sáhnout k posilování koruny. A druhý problém je, že si už dnes řada firem bere úvěry v eurech, kvůli tomu, že je tam tak veliký rozdíl mezi úroky korunovými a eurovými. Pan viceguvernér má přesnější data než já, ale brzy to bude dost možná polovina těch úvěrů, které se berou v eurech.
 
 Takže ta efektivita zvyšování sazeb, i kdyby to bylo možné, ale to už moc možné není, bude čím dál menší a menší. Ta transmise se bude zeslabovat a ten efekt na inflaci bude mnohem, mnohem menší. Čili já bych moc prosil se nad tím trochu podrobněji zamyslet a zanalyzovat to, aby to sekce měnová připravila. A dost možná už to zvýšení sazeb opravdu bylo poslední, které jsme dnes viděli.
 
@@ -63,7 +63,7 @@ Ale pokud by to byla pravda, tak nemůže platit ten jeho argument, že máme, �
 
 Tak ta euroizace samozřejmě je jenom v některých segmentech. Ta je u podniků zejména. Domácnosti si bohužel, nebo bohudík, jak se na to díváme, úvěry, hypotéky prakticky euroizovat nemůžou. Takže ony opravdu platí samozřejmě v korunách.
 
-Čili to posílení koruny samozřejmě se projeví v inflaci okamžitě. Ano, u toho zvyšování úroků vám ta transmise postupně úplně vymizí. A já myslím, že tu diskuzi musí pan viceguvernér vést i uvnitř ČNB. Takže znovu opakuji.
+Čili to posílení koruny se samozřejmě projeví v inflaci okamžitě. Ano, u toho zvyšování úroků vám ta transmise postupně úplně vymizí. A já myslím, že tu diskuzi musí pan viceguvernér vést i uvnitř ČNB. Takže znovu opakuji.
 
 To posílení koruny: když jsme použili kurzový kanál proti deflaci, měli bychom ho použít i proti inflaci.
 

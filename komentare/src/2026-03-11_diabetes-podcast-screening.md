@@ -67,7 +67,7 @@ A když potom chodí ta negativní čísla, tak taky jste rádi, ale vlastně to
 
 **Jan Hrušovský:** A jak probíhalo to oznámení těch výsledků? Že předpokládám, že negativní výsledek asi jako vyříděj jednoduše e-mailem, že to se jako jenom pošle, řekne se dobrý den, tady vaše dítě, negativní výsledek, v pořádku, mějte se hezky, cukrovka se vás netýká, ale v případě toho pozitivního, to přijde taky e-mailem nebo vám rovnou volají nebo se s vámi spojí jinak?
 
-**Tomáš Havránek:** Zase, to už je nějakou dobu, tak já musím zapátrat v paměti. Mám pocit, že téměř jistě paní doktorka Berka volala manželce, která byla ten kontakt uvedený k tomu testu Betty, že to bylo telefonicky. Možná teď je ta dobrá chvíle začít maličko mluvit o tom personálu z Motola, nebo řekněme o tom vedení toho projektu Betty, kde jsme byli už asi čtyřikrát, pětkrát na kontrole, na těch růzostech. To na rok a půl.
+**Tomáš Havránek:** Zase, to už je nějakou dobu, tak já musím zapátrat v paměti. Mám pocit, že téměř jistě paní doktorka Berka volala manželce, která byla uvedená jako kontakt k tomu testu Betty, že to bylo telefonicky. Možná je teď ta dobrá chvíle začít maličko mluvit o tom personálu z Motola, nebo řekněme o tom vedení toho projektu Betty, kde jsme byli už asi čtyřikrát, pětkrát na kontrole, na těch růzostech. To na rok a půl.
 
 Jestli si to pamatuji správně, tak myslím, že ano, nebo minimálně třikrát jsme byli v Motole. A ten přístup je naprosto skvělý. A to musím říct takhle na rovinu, že člověk má zkušenosti, ačkoliv naše zdravotnictví se hodně zlepšilo, za těch, řekněme, mně je čtyřicet, tak za těch třicet let, co si můžu nějak jako pamatovat. Tak pořád toto konkrétně, ta endokrinologie v Motole, jako se vymyká úplně tomu, co jsem zažil i v zahraničí.
 
@@ -137,7 +137,7 @@ Tak já vlastně nevím, co je pro ten systém jako lepší, že jo.
 
 **Jan Hrušovský:** Takhle, já bych byl za tu stejnou cestu jako vy, ale prostě jak některýma věcma se snažím jako přemýšlet i z té druhé strany, tak jako prostě někdy to takzvané overthinkuju.
 
-**Tomáš Havránek:** Ano, ale vy jste řekli jednu důležitou věc. Cena toho léku, nevím jaká je teď, jestli to je v těch cifrách, řekněme, co jste zmiňoval, ale půjde rapidně dolů kvůli konkurenci. Konkurence je to, co my chceme, panenko, jenom si přihřeju vlastní polívčičku ekonomickou všude. Kde máte konkurenci, tak máte nakonec něco, co funguje za rozumnou cenu, když tomu dáte dost času.
+**Tomáš Havránek:** Ano, ale vy jste řekli jednu důležitou věc. Cena toho léku, nevím jaká je teď, jestli to je v těch cifrách, řekněme, co jste zmiňoval, ale půjde rapidně dolů kvůli konkurenci. Konkurence je to, co my chceme, malinko, jenom si přihřeju vlastní polívčičku ekonomickou všude. Kde máte konkurenci, tak máte nakonec něco, co funguje za rozumnou cenu, když tomu dáte dost času.
 
 Ano, takže ta firma, která to vyvinula, jejíž jméno jsem zapomněl. Sanofi, francouzská firma. Tak to nebude jediný lék. Budou lepší léky, cena půjde rapidně dolů a téměř jistě brzy přijde situace, kdy se vám to vyplatí i čistě ekonomicky, čistě z hlediska toho cashflow pojišťoven.
 
@@ -199,7 +199,7 @@ A uvidíme, až samozřejmě přijde na to, že ten inzulin potřebuje, tak je z
 
 **Jan Hrušovský:** ale na to je strašně brzo. A s vámi, lékaři z Motola, tyhle si ty věci jako probírali? Jaký jsou vše možný komplikace, prostě cukrovky a co to obnáší, nějakou rutinu, co byste se měli naučit, to znamená, sacharidy, dobrý den, to není sprostý slovo, ale to je poměrně podstatná informace, kterou potřebují mít lidi, když je dídlo a podobně, tak řešili jste tohle s nima nějakým způsobem?
 
-**Tomáš Havránek:** Ne. Já mám pocit, že je na to ještě brzy. Jako nevím, k čemu by to teď bylo. Situace, kdy on si nemusí hlídat stravu.
+**Tomáš Havránek:** Ne. Já mám pocit, že je na to ještě brzy. Nevím, k čemu by to teď bylo v situaci, kdy si on nemusí hlídat stravu.
 
 By to způsobilo jenom, už jenom to, že o tom mluvíte mě. Ne, já zahořeně vím, že to, jaká ta praxe je. Ale mám pocit, že na to je ještě čas pro ty děti. A i vlastně pro nás, jako rodiče.
 

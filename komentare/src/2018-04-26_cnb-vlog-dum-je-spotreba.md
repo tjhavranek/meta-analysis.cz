@@ -62,7 +62,7 @@ A jako takové by podle něj měly mít určitou váhu v indexu spotřebitelský
 
 **Redaktorka ČNB:** Takže by se podle vás v tom indexu spotřebitelských cen mělo rozlišovat, jestli si ten dotyčný člověk koupí byt nebo dům za účelem bydlení, anebo pokud je to už jeho druhá nebo třetí nemovitost, tak za účelem investice.
 
-**Tomáš Havránek:** Ano, Markéto, to si myslím, že je výborný nápad, ale v praxi je potom těžko realizovatelné zjistit, jaká ta skutečnost je u té koupě bytu. Ale konceptuálně by to takhle bylo nejlepší.
+**Tomáš Havránek:** Ano, Markéto, myslím si, že to je výborný nápad, ale v praxi je to potom těžko realizovatelné: zjistit, jaká ta skutečnost je u té koupě bytu. Ale konceptuálně by to takhle bylo nejlepší.
 
 **Redaktorka ČNB:** Ale statisticky je asi těžko proveditelné. Přesně tak. Od roku 2016 jste také poradcem bankovní rady, jak už jsem zmínila konkrétně Mojmíra Hampla. Co všechno tahle práce obnáší?
 

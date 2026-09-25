@@ -96,7 +96,7 @@ Když ten váš horizont je 10, 20, 30 let a u Národní banky ten horizont je d
 
 **Jiří Zatloukal:** Vidíte ještě nějaké další jednoduché příjmy pro současnou vládu?
 
-**Tomáš Havránek:** Vidím. Říká se tomu rozpočtový carry over, kdy dnes, když jste šéf odboru, řekněme, v nějaké státní instituci, a nedaří se vám vyčerpat z nějakého důvodu, nevyčerpáte svůj rozpočet na ten daný rok. Co se vám asi stane pro příští rok? Jednak ty peníze z tohohle roku vám nikdo do dalšího roku většinu nepřevede, nebo něco málo, možná trošku.
+**Tomáš Havránek:** Vidím. Říká se tomu rozpočtový carry over, kdy dnes, když jste šéf odboru, řekněme, v nějaké státní instituci, a nedaří se vám vyčerpat z nějakého důvodu, nevyčerpáte svůj rozpočet na ten daný rok. Co se vám asi stane pro příští rok? Jednak ty peníze z tohohle roku vám nikdo do dalšího roku většinou nepřevede, nebo něco málo, možná trošku.
 
 A příští rok vám řeknou, ty jsi to nevyčerpal, tak to asi nepotřebuješ. A ten rozpočet vám často sníží. Takhle to je, nebudu jmenovat konkrétní, ale to je běžná praxe. To je běžná praxe.
 
@@ -194,7 +194,7 @@ A jakékoliv ekonomické zhodnocení eura vychází vlastně 0,0. Víceméně. C
 
 **Jiří Zatloukal:** Tak asi je to nějaká obrana proti ruskému vlivu.
 
-**Tomáš Havránek:** vy se spojíte co nejvíc s tím západem, který vás může snad ochránit. Revolut teď tuším, já když pracuji s Revolutem, s tou bankou, tak oni mají sídlo v Litvě. Litva nebo to ještě. Kdyby Rusko napadlo Litvu, tak přece nebyl to problém pro řadu lidí v Evropě, nejenom pro tu Litvu. *[Zápor zde zřejmě zazněl omylem: z okolního výkladu plyne, že problém by to byl.]*
+**Tomáš Havránek:** vy se spojíte co nejvíc s tím západem, který vás může snad ochránit. Revolut teď tuším, já když pracuji s Revolutem, s tou bankou, tak oni mají sídlo v Litvě. Takže kdyby Rusko napadlo Litvu, tak by to přece nebyl problém pro řadu lidí v Evropě, nejenom pro tu Litvu. *[Zápor zde zřejmě zazněl omylem: z okolního výkladu plyne, že problém by to byl.]*
 
 Ta integrace do té evropské ekonomiky je pro ně dobrá a nedělají to primárně kvůli tomu, že by se to vyplatilo, ale že jim to dá
 
@@ -240,7 +240,7 @@ Zatím nelze úplně nahradit to zaujetí těch studentů pro tu danou látku ni
 
 Což bych asi... Ale je to lepší, protože máte víc času na to, co je doopravdy důležité, na čem záleží a v čem můžete vy dát přínos nad rámec těch nástrojů. Třeba to jednou skončí a budu si hledat novou práci, jako třeba číšník nebo...
 
-**Jiří Zatloukal:** Opečovatelo, starší lidi, kterých to nebude mít. Ale aby jsme to nezlehčovali, uzavřím to. Souhlasíte rastí s tou reformou, že by se měly posílit pravomoce rektorů, aby mohly dávat finance do těch kateder nebo částí vysoké školy, které fungují na mezinárodní úrovni produků, kvalitní výsledky.
+**Jiří Zatloukal:** Opečovatelo, starší lidi, kterých to nebude mít. Ale aby jsme to nezlehčovali, uzavřím to. Souhlasíte rastí s tou reformou, že by se měly posílit pravomoce rektorů, aby mohly dávat finance do těch kateder nebo částí vysoké školy, které fungují na mezinárodní úrovni produkují kvalitní výsledky.
 
 **Tomáš Havránek:** Já mám na tom samozřejmě taky osobní zájem, takže mám tady střet zájmů. Zdá se mi to jako rozumná cesta. Šel bych ještě možná mnohem dál, opravdu se díval daleko přísněji na to, když ta škola dělá nějaký výzkum, tak používá ho někdo v zahraničí? Používá ho někdo pro nějakou konkrétní praxi?
 
