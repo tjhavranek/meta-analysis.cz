@@ -480,27 +480,7 @@ excluded += [
        excluded_because=("electricity_sr.csv is the short-run subset of the electricity "
                          "literature (1,647 estimates from 226 studies, columns effect, se, "
                          "n_obs, study_id), published for the MAER-Net 2026 PhD workshop. "
-                         "Its estimates are already in the catalogue under 'electricity'.")),
-  dict(id="money_demand",
-       reason="replication package of a 2014 article, not yet curated for the data layer",
-       paper=dict(title="A Meta-Analysis of the Income Elasticity of Money Demand",
-                  page_title="A Meta-Analysis of the Income Elasticity of Money Demand",
-                  url=f"{BASE}/money_demand/"),
-       excluded_because=("money_demand_replication.zip holds metadata2706.dta, 985 estimates of "
-                         "the income elasticity of money demand from 73 studies, and six Stata "
-                         "do-files. The data are estimate-level but have not been harmonised; "
-                         "whether to add them is a separate decision, since it changes the "
-                         "published dataset count.")),
-  dict(id="intra_spillovers",
-       reason="replication package of a 2010 article, not yet curated for the data layer",
-       paper=dict(title="Meta-Analysis of Intra-Industry FDI Spillovers: Updated Evidence",
-                  page_title="Meta-Analysis of Intra-Industry FDI Spillovers: Updated Evidence",
-                  url=f"{BASE}/intra_spillovers/"),
-       excluded_because=("intra_spillovers_replication.zip holds "
-                         "meta_spillovers_horizontal_data.dta, 97 estimates of intra-industry FDI "
-                         "spillovers from 67 studies, and the Stata routine. Estimate-level but not "
-                         "harmonised; its literature differs from the vertical spillovers pooled "
-                         "under 'spillovers'."))]
+                         "Its estimates are already in the catalogue under 'electricity'."))]
 datasets=[d for d in datasets if d.get("n_estimates")]
 ok=datasets
 # No $schema key: there is no JSON Schema document for this index, and the URL that

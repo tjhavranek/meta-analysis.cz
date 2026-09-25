@@ -190,61 +190,6 @@
    "width": 1079
   }
  },
- "bank_dea": {
-  "1": {
-   "box": [
-    0.105,
-    0.7,
-    0.895,
-    0.889
-   ],
-   "colours": 64,
-   "dpi": 250,
-   "height": 413,
-   "page": 10,
-   "pdf": "bank_dea/bank_dea.pdf",
-   "pdf_sha256": "3912b50a30747fd7f60a80bf7fff7045ac957496e4885e0a02bccc84967c231a",
-   "renderer": "poppler",
-   "sha256": "003193dbf89aad7f2d40cfbb20868ea666e89c4345a3a4e8d2d4b2f733c83941",
-   "width": 1164
-  }
- },
- "bank_mra": {
-  "1": {
-   "box": [
-    0.27,
-    0.092,
-    0.68,
-    0.325
-   ],
-   "colours": 64,
-   "dpi": 200,
-   "height": 391,
-   "page": 8,
-   "pdf": "bank_mra/bank_mra.pdf",
-   "pdf_sha256": "acd726604aad49efbf70e03d1fa92304413ad60fab418518859c92106382962d",
-   "renderer": "mupdf",
-   "sha256": "78635e5d0ec85210107fbfc8a2e49c272c120c22a4c7a71340d5cfb9a7a0a6f7",
-   "width": 459
-  },
-  "2": {
-   "box": [
-    0.09,
-    0.35,
-    0.89,
-    0.515
-   ],
-   "colours": 64,
-   "dpi": 200,
-   "height": 289,
-   "page": 8,
-   "pdf": "bank_mra/bank_mra.pdf",
-   "pdf_sha256": "acd726604aad49efbf70e03d1fa92304413ad60fab418518859c92106382962d",
-   "renderer": "mupdf",
-   "sha256": "b263862a6344c6ae1b1fae654e980602e23db9abec14af74c155f319f9b50579",
-   "width": 988
-  }
- },
  "beauty": {
   "1": {
    "box": [
@@ -2706,25 +2651,6 @@
    "width": 1091
   }
  },
- "intra_spillovers": {
-  "1": {
-   "box": [
-    0.25,
-    0.1,
-    0.76,
-    0.34
-   ],
-   "colours": 64,
-   "dpi": 200,
-   "height": 420,
-   "page": 16,
-   "pdf": "intra_spillovers/intra_spillovers.pdf",
-   "pdf_sha256": "40115bcac6c43be63bfd72bbbc9b15c6ac766be0bf03752c55feac4445964a13",
-   "renderer": "poppler",
-   "sha256": "d257f50f6f773aa38d409940fb059f71ebb3ad1b82a3af81f5cf7d35095d1224",
-   "width": 584
-  }
- },
  "lags": {
   "1": {
    "box": [
@@ -3617,42 +3543,6 @@
    "renderer": "poppler",
    "sha256": "0bab315d7323f9805d612400665f1f2c43a9511c5f47cadef42748e95ad32638",
    "width": 1122
-  }
- },
- "money_demand": {
-  "1": {
-   "box": [
-    0.1,
-    0.097,
-    0.915,
-    0.52
-   ],
-   "colours": 64,
-   "dpi": 200,
-   "height": 724,
-   "page": 6,
-   "pdf": "money_demand/money_demand.pdf",
-   "pdf_sha256": "816441edb4baf89646fc5278fc4028a676d8fce0911633d18f72c7846305142b",
-   "renderer": "poppler",
-   "sha256": "74900301c18557bb1f29082412c08d132a63db98dd84da67f425907efe294c05",
-   "width": 978
-  },
-  "2": {
-   "box": [
-    0.08,
-    0.097,
-    0.915,
-    0.5
-   ],
-   "colours": 64,
-   "dpi": 200,
-   "height": 718,
-   "page": 7,
-   "pdf": "money_demand/money_demand.pdf",
-   "pdf_sha256": "816441edb4baf89646fc5278fc4028a676d8fce0911633d18f72c7846305142b",
-   "renderer": "poppler",
-   "sha256": "d5a7e923abf8ebac90d68c942169aa78e9740e251d785577b37857d74ca90812",
-   "width": 1000
   }
  },
  "power": {
@@ -4735,44 +4625,6 @@
    "renderer": "mupdf",
    "sha256": "13827f7f91e2102b7ef51c3f41761759b62842e05163f8469e9cae9c45dd9155",
    "width": 1157
-  }
- },
- "subsidy_intensity": {
-  "1": {
-   "box": [
-    0.255,
-    0.414,
-    0.745,
-    0.584
-   ],
-   "colours": 64,
-   "dpi": 200,
-   "height": 373,
-   "page": 8,
-   "pdf": "subsidy_intensity/subsidy_intensity.pdf",
-   "pdf_sha256": "549c5f518064c64403ba576575725b85ba6aa1a3fb7eedb435f654f49b7a28ab",
-   "renderer": "mupdf",
-   "sha256": "6ab9340d150bb51a01aaaa4110601f024889f08de78da7bbb153666ea8836334",
-   "width": 793
-  }
- },
- "subsidy_supply": {
-  "1": {
-   "box": [
-    0.18,
-    0.482,
-    0.81,
-    0.664
-   ],
-   "colours": 64,
-   "dpi": 200,
-   "height": 418,
-   "page": 21,
-   "pdf": "subsidy_supply/subsidy_supply.pdf",
-   "pdf_sha256": "66e4a307256cc74b087c6dc533336f315b349465ce59948d501e88cd001d0bcd",
-   "renderer": "mupdf",
-   "sha256": "e08b61159575ec8ac79aea3aa10e4c4bf3192e5d69d609a03a228d9f84e7e29e",
-   "width": 1000
   }
  },
  "substitution": {
