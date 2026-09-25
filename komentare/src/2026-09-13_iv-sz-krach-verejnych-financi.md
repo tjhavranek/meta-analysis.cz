@@ -210,7 +210,7 @@ Ta integrace do té evropské ekonomiky je pro ně dobrá a nedělají to primá
 
 Jak zlepšit vlastně úrovni českého vysokého školství?
 
-**Tomáš Havránek:** To je velmi těžká otázka. Já rád cestuji do zahraničí. Nějaký čas trávím každý rok na Stanfordu a taky v Japonsku a trochu porovnávám, jak ty vysoké školy fungují v zahraničí. Ono se to zase tak opravdu moc neliší.
+**Tomáš Havránek:** To je velmi těžká otázka. Já rád cestuji do zahraničí. Nějaký čas trávím každý rok na Stanfordu a taky v Japonsku a trochu porovnávám, jak ty vysoké školy fungují v zahraničí. Ono se to zase tak moc neliší.
 
 Kromě té jedné důležité věci, ne v Japonsku, ale ve Spojených státech, na takových špičkových školách opravdu máte peníze zaplatit a přilákat špičkové lidi. To u nás není. Ten náš systém je, a já tomu rozumím do velké míry, máme spoustu univerzit v regionech, které taky chtějí nějak fungovat. A často se ale tváří, že dělají vědu.
 

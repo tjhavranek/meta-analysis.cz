@@ -27,7 +27,7 @@ To nevidíte v těch datech, nevybíráte z toho daně. Teď zavedeme EET a nepo
 
 Takže v tom momentu je tam najednou dvakrát ty dvě procenta té šedé ekonomiky. Já nevím, jestli posluchači nebo diváci budou chtít vysvětlovat ty detaily, ale takhle nějak to funguje a podobně, když se EET ruší, tak ten efekt je na opačnou stranu. To znamená, že my jsme nějakou dobu po pandemii vypadali, že máme nejslabší ekonomický růst v Evropě. Což ale nebyla pravda, to bylo dané právě do velké míry tím, že najednou ta ekonomika, HDP, byla opticky menší kvůli tomu, že ji bylo těžší spočítat.
 
-Zase se část z té bílé překlopila na šedou.
+Zase se část z té bílé přetřela na šedou.
 
 **Petra Jaroměřská:** To znamená, teď po zavedení elektronické evidence tržeb můžeme čekat, že ten další rok ta ekonomika se zvětší podle tedy těch čísel. Můžeme to samozřejmě odhadovat, jaký ten dopad ve skutečnosti bude, ale lze tam odhadovat další růst HDP. Podle vás?
 

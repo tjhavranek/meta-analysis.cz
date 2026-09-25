@@ -106,7 +106,7 @@ Mají inflaci asi dvě a půl procenta maximálně. I my máme vlastní energii.
 
 Aspoň ne v takové míře. Ano. Ale dlouhodobě je ta hlavní věc posilující měna, která pomáhá ty inflační tlaky tlumit. A zároveň to, že té centrální bance nevadí, když inflace je na nule.
 
-Všechny ostatní centrální banky kromě švýcarské vlastně, jakmile inflace klesne k nule, začínají něco dělat, uvolňovat tu měnovou politiku, aby inflaci dosáhly. U nás to byly intervence například proti koruně. Švýcarsko taky intervenuje, aby ta deflace nebyla nějak velká, ale nulová inflace jim nevadí. Pravidlo mají takové, že mezi nulou a dvojkou je to pro ně v pořádku.
+Všechny ostatní centrální banky kolem, jakmile inflace klesne k nule, začínají něco dělat, uvolňovat tu měnovou politiku, aby inflaci dosáhly. U nás to byly intervence například proti koruně. Švýcarsko taky intervenuje, aby ta deflace nebyla nějak velká, ale nulová inflace jim nevadí. Pravidlo mají takové, že mezi nulou a dvojkou je to pro ně v pořádku.
 
 Čili tohle je jasný krok, který by rozhodně pomohl do budoucna vlastně, protože základní problém našeho systému, toho inflačního cílování, který máme tady, je ten, že nám dává nejistotu ohledně budoucí hodnoty peněz. My vůbec nevíme, jakou hodnotu bude mít koruna za 20 let třeba. A v takovém režimu je velmi těžké spořit na důchod nebo pro děti. Děti máte, jak jsem si o vás načetl na Wikipedii.
 

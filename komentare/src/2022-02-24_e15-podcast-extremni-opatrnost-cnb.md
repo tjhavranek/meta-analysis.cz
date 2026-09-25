@@ -42,7 +42,7 @@ A vědecká literatura od roku 1990, kdy vlastně začalo to cílování inflace
 
 Ale ve chvíli, kdy máte inflaci 10, tak vy stejně nejste schopni doručit kladné úroky po odečtení té inflace. Čili to byste museli někam na 11. To není možné. A nerozumím tomu, proč není používán ten druhý nástroj.
 
-To znamená devizové rezervy, kterých máme velmi hodně. A vznikly právě intervenováním proti koruně. Kdybychom to mohli obrátit a vlastně je zčásti umazat. Čili by to nebyly nové intervence, ale de facto neutralizace těch minulých.
+To znamená devizové rezervy, kterých máme velmi mnoho. A vznikly právě intervenováním proti koruně. Kdybychom to mohli obrátit a vlastně je zčásti umazat. Čili by to nebyly nové intervence, ale de facto neutralizace těch minulých.
 
 A to působí velice rychle. Rychle posílíte korunu a to se potom rychle přemístí do těch cen dováženého zboží. Čili kdybychom tohle udělali v září, řekněme, tak dnes se nebavíme o dvouciferné inflaci.
 
