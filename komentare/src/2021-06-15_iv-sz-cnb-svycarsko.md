@@ -37,7 +37,7 @@ A pak je evidentní, že nemusíme všechny ty peníze nechávat ležet de facto
 
 **Tomáš Havránek:** Vloni ta šance byla veliká, samozřejmě. Pokud já vím, tak ČNB trochu nakoupila, za což jsem velice rád, právě v té době, že využila toho propadu. My jsme je prosili jak zevnitř, tak zvenku, aby toho koupili víc, ale aspoň díky bohu za to. Oni mají samozřejmě velkou odpovědnost.
 
-Ten balík peněz je tak obrovský, že jakákoliv chyba potom způsobí, že vaše fotky, jako pana guvernéra, budou v Blesku. A to kolísání nepochybně je. To, že dlouhodobě vyděláte, ten bulvár moc nezajímá. Čili osobně je velice obtížné to rozhodnutí prosadit, ač víte, že je správné. Nikdo vás za to během dvou, tří, pěti let moc nepochválí, ukáže se to až dlouhodobě.
+Ten balík peněz je tak obrovský, že jakákoliv chyba potom způsobí, že vaše fotky, jako pana guvernéra, budou v Blesku. A to kolísání nepochybně je. To, že dlouhodobě vyděláte, třeba ten bulvár moc nezajímá. Čili osobně je velice obtížné to rozhodnutí prosadit, ač víte, že je správné. Nikdo vás za to během dvou, tří, pěti let moc nepochválí, ukáže se to až dlouhodobě.
 
 Takže ano, investovat postupně, třeba 20 let, dejme tomu každý týden, nebo dokonce každý den. Nás už to moc nezachrání, ale pro naše děti to jednou může být takový státní poklad, nebo je to vlastně státní poklad, který by mohl pomáhat živit tuto zemi.
 
