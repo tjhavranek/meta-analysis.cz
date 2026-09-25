@@ -16,7 +16,7 @@ To se začalo dít včera. První věcí, kterou tedy Centrální banka po tom v
 
 **Tomáš Havránek:** Tak ten vzkaz je poměrně jasný ohledně toho, co si ten trh myslí, že Aleš Michl bude dělat. Já se obecně domnívám, že možná ta reakce byla maličko předčasná, protože jedna věc byla to, co Aleš Michl říkal doposud do toho jmenování a další věc je, jak se potom bude chovat, když tím guvernérem bude a bude mít většinu případně v bankovní radě. Takže podle mě zdaleka není jisté, že opravdu dojde na to holubičí vyznění těch dalších kroků bankovní rady. Protože ta inflace nezmizí sama od sebe.
 
-S tou inflací bude potřeba bojovat. Aleš Michl, tak jak ho znám, dělal jsem mu poradce několik měsíců a občas jsme se shodli, občas ne. Vlastně pak jsem odešel z té centrální banky. Ale jak ho znám, on si opravdu hodně potrpí na tom, jak si na něj historie bude pamatovat.
+S tou inflací bude potřeba bojovat. Aleš Michl, tak jak ho znám, dělal jsem mu poradce několik měsíců a občas jsme se shodli, občas ne. Vlastně pak jsem odešel z té centrální banky. Ale jak ho znám, on si opravdu hodně potrpí na to, jak si na něj historie bude pamatovat.
 
 Čili já si nemyslím, že by úplně nechal spálit českou korunu. A věřím, doufám v to, že se opravdu překlopí znovu do té své takové rašínovské roviny.
 
@@ -60,13 +60,13 @@ A dvouciferné sazby dnes by znamenaly bankrot řady subjektů v té zemi. To ne
 
 **Tomáš Havránek:** ve srovnání se zbytkem světa. Když srovnáme naši inflaci s inflací globální, řekněme, podle čísel třeba OECD nebo Mezinárodní organizace práce, tak ta globální je 9%, kolem 9%, u nás to je 14%. Čili dá se říct zhruba, že dovážíme nějaké dvě třetiny té naší inflace, ale ta třetina, těch pět procentních bodů navíc, je naše vlastní, kterou my přitápíme vlastně. A to má tři hlavní domácí zdroje.
 
-Ten první byly takové vrtulníkové peníze během pandemie. Rozhazování peněz v masivním měřítku, nevídané vůbec v historii naší země. Druhý zdroj je nedostatek lidí, který tlačí na vyšší mzdy, sice teď už ne tolik, ale stále.
+Ten první byly takové vrtulníkové peníze během pandemie. Rozhazování peněz v masivním měřítku, vůbec nevídané v historii naší země. Druhý zdroj je nedostatek lidí, který tlačí na vyšší mzdy, sice teď už ne tolik, ale stále.
 
 A třetí zdroj je ta slabší koruna. Slabší, než by měla být nebo než by bylo dobré, aby byla, aby nám pomohla tu inflaci snížit.
 
 **Martin Veselovský:** jestli popisujete tři hlavní důvody toho, v jakém inflačním stavu jsme teď. Tak jestli to, že by Česká národní banka řešila ten jeden důvod, to znamená slabou korunu, jestli by to celou tu situaci dokázalo relativně rychle zvrátit?
 
-**Tomáš Havránek:** rozhodně by to pomohlo. Ty další dva důvody nebo ty dva aspekty se trochu řeší samy od sebe tím, že pandemie skončila, ty vrtulníkové peníze pořád je máme v nějaké formě. Máme tady ty nové přídavky na děti, zvyšování důchodů, ale ten řád je úplně jiný. A podobně nedostatek lidí tady také pořád je, ale máme tady statisíce nových pracovnic z východu z Ukrajiny.
+**Tomáš Havránek:** rozhodně by to pomohlo. Ty další dva důvody nebo ty dva aspekty se trochu řeší samy od sebe tím, že pandemie skončila. Ty vrtulníkové peníze pořád máme v nějaké formě. Máme tady ty nové přídavky na děti, zvyšování důchodů, ale ten řád je úplně jiný. A podobně nedostatek lidí tady také pořád je, ale máme tady statisíce nových pracovnic z východu z Ukrajiny.
 
 A na řadě pozic, samozřejmě to neplatí plošně, ale když mluvíte s šéfy firem, třeba u nás v Litomyšli, tak řada těch menších nebo středních fabrik vlastně nemá už problém najít lidi, protože mají ty Ukrajinky, které ty, řekněme, manuální profese v knihárně, třeba v tiskárně dobře zastanou, což je nebývalá situace za posledních 15 let, řekněme.
 
@@ -120,7 +120,7 @@ A tohle bohužel naše centrální banka nedělá.
 
 **Martin Veselovský:** Ten rozdíl už je minimální. Tak to zrušit inflaci můžeme kdykoliv, zvlášť, když se díváme na dvouciferné číslo, poměrně odvážné tvrzení.
 
-**Tomáš Havránek:** Dlouhodobě. Dlouhodobě. Dlouhodobě centrální banka má plnou kontrolu nad inflací. Ne na ten letošní nebo příští rok, ale v horizontu deseti let.
+**Tomáš Havránek:** Dlouhodobě. Dlouhodobě centrální banka má plnou kontrolu nad inflací. Ne na ten letošní nebo příští rok, ale v horizontu deseti let.
 
 Pokud tomuhle nevěříme, tak vlastně můžeme tu banku zavřít. Protože ona kontroluje cenu peněz v ekonomice, nepřímo i objem peněz v ekonomice a může si dlouhodobě stanovit jakoukoliv průměrnou cenu, jakou chce
 
@@ -136,7 +136,7 @@ Tak jestli prostě nezbytně musel přijít a Česká národní banka akorát m�
 
 Je to selhání obecně všech centrálních bank, většiny z nich, kromě toho Švýcarska možná. A já, jak jste správně naznačil, často kritizuji vedení ČNB možná neúplně korektně v tom, že opravdu v tom mezinárodním srovnání oni si vedou dobře. Zvyšovali sazby, podle mě to není úplně ten nejefektivnější způsob, ale aspoň něco dělali, a to brzy. Bohužel se jim to celkově nepovedlo.
 
-Ten obrázek jednak komunikační, jednak nepoužili kurz. A to možná přispělo i k tomu vlastně zemětřesení v ČNB, které nastane. Které bude bez precedentu.
+Ten obrázek jednak komunikační, jednak nepoužili kurz. A to možná přispělo i k tomu vlastně zemětřesení v ČNB, které nastane a které bude bez precedentu.
 
 **Martin Veselovský:** Myslíte tím obměnu členů bankovní rady?
 

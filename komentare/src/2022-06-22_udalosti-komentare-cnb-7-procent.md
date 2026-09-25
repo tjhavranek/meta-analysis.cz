@@ -46,7 +46,7 @@ Ta hodnota toho dluhu se snižuje, tou inflací, a pak to zaplatí ti, kteří v
 
 **Moderátor:** Snižování dluhu by znamenalo utahování opasku, taková poučka z počátku 90. let. Tohle utahování opasku probíhá
 
-**Tomáš Havránek:** … u těch domácností, které spoří a ta inflace je jako daň, která jim bere hodnotu těch úspor a vlastně přerozděluje je k těm dlužníkům, to je stát a lidé, kteří mají hypotéku
+**Tomáš Havránek:** … u těch domácností, které spoří, a ta inflace je jako daň, která jim bere hodnotu těch úspor a vlastně je přerozděluje k těm dlužníkům, to je stát a lidé, kteří mají hypotéku
 
 **Moderátor:** … a mají zafixovanou nějakou delší dobu. To všechno jsou pro ty lidi velmi nepříjemné věci, nepříjemné situace, ale jedna věc nebo jedno téma, o kterém se mám pocit politici trošku zdráhají mluvit napříč politickým spektrem a to je případné zvyšování daní. Podle některých expertů se tomu nevyhneme.
 
@@ -64,7 +64,7 @@ Ale i nějaké další zvyšování daní pravděpodobně bude nutné, ale tohle
 
 **Moderátor:** Jak říkal Klasik, zdroje jsou, tak otázka je, jestli ty zdroje někde jsou, třeba státní majetek, jeho privatizace, ztrátové podniky, jako je Česká pošta, České dráhy, anebo třeba ty podniky, o kterých čas od času někteří politici říkají, že stát nemá vařit pivo, budvar nemá ubytovávat lázeňské hosty, termál a tak dále. Pomohlo by to?
 
-**Tomáš Havránek:** To dlouhodobě neřeší ten hlavní strukturální problém veřejných financí, takže to jsou spíš taková, jako řekněme, marketingová řešení, ale dlouhodobě to nijak moc nepomůže.
+**Tomáš Havránek:** To dlouhodobě neřeší ten hlavní strukturální problém veřejných financí, takže to jsou spíš taková, řekněme, marketingová řešení, ale dlouhodobě to nijak moc nepomůže.
 
 **Moderátor:** Jaký je odhad? Váš odhad růstu inflace a vývoje ekonomiky v těch nejbližších
 

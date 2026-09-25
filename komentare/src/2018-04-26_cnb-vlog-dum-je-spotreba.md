@@ -12,7 +12,7 @@ body_note: "Rozhovor pro vlog České národní banky, natočený v době, kdy T
 
 Kdo a kde vás cituje a k čemu je to vlastně dobré?
 
-**Tomáš Havránek:** Ty citace, o kterých mluvíte, vlastně znamenají, že někdo váš výzkum použije, vezme ho a použije pro svoji práci, což je to, co vy jako výzkumník nejvíc chcete. A nás hlavně citují zahraniční další ekonomové, ale máme třeba i citaci v takovém nejznámějším vědeckém časopise Science. Ale pro mě jako zaměstnance Národní banky je hlavně samozřejmě důležité využití v praxi toho našeho výzkumu. Takže jsem nejraději, když ten můj výzkum je použit tady u nás v ČNB.
+**Tomáš Havránek:** Ty citace, o kterých mluvíte, vlastně znamenají, že někdo váš výzkum použije, vezme ho a použije pro svoji práci, což je to, co vy jako výzkumník nejvíc chcete. A nás hlavně citují další zahraniční ekonomové, ale máme třeba i citaci v takovém nejznámějším vědeckém časopise Science. Ale pro mě jako zaměstnance Národní banky je hlavně samozřejmě důležité využití v praxi toho našeho výzkumu. Takže jsem nejraději, když ten můj výzkum je použit tady u nás v ČNB.
 
 **Redaktorka ČNB:** Ale zpátky tedy tomu Žebříčku, proč se ta kvalita výzkumu tímto způsobem vlastně měří?
 
@@ -40,7 +40,7 @@ Ale i pro tu cenovou stabilitu je důležité v krizi nějak zvednout náladu li
 
 **Redaktorka ČNB:** Je dnes podle vás ekonomie spíše exaktní, tedy na matematice založenou vědou, anebo spíše vědou společenskou?
 
-**Tomáš Havránek:** Ekonomie určitě má jak exaktní prvky z matematiky, tak humanitní prvky, třeba z psychologie. A dohromady to je společenská věda, jako čistě sociální věda, která ale vám nedá nějaký všelék na všechny problémy společnosti, dokonce ani ekonomiky. Protože i taková ryze ekonomická událost, důležitá ekonomická událost, jako byla průmyslová revoluce, tak vlastně nemá ekonomické vysvětlení,
+**Tomáš Havránek:** Ekonomie určitě má jak exaktní prvky z matematiky, tak humanitní prvky, třeba z psychologie. A dohromady to je společenská věda, jako čistě sociální věda, která vám ale nedá nějaký všelék na všechny problémy společnosti, dokonce ani ekonomiky. Protože i taková ryze ekonomická událost, důležitá ekonomická událost, jako byla průmyslová revoluce, tak vlastně nemá ekonomické vysvětlení,
 
 **Redaktorka ČNB:** S viceguvernérem Mojmírem Hamplem, jehož jste mimochodem poradcem, jste publikovali několik textů na téma zahrnutí ceny nemovitostí do inflace. Mě by zajímalo, proč je zrovna tohle téma pro vás důležité?
 
@@ -54,7 +54,7 @@ A jako takové by podle něj měly mít určitou váhu v indexu spotřebitelský
 
 **Redaktorka ČNB:** Proč to ve světě není zahrnuto vůbec? Proč ta situace vlastně ve světě a u nás je odlišná?
 
-**Tomáš Havránek:** Protože se většinou byty a domy považují spíš za investice, než za spotřebu. Takže nejsou v indexu spotřebitelských cen konceptuálně uváděny. Ale já si myslím, že ta situace u nás je odlišná, třeba od Spojených států, kde se lidé často stěhují a ty domy a byty často prodávají. Tady, když si koupíme první byt nebo dům, tak to je často na celý život, nebo skoro na celý život.
+**Tomáš Havránek:** Protože se většinou byty a domy považují spíš za investice než za spotřebu. Takže nejsou v indexu spotřebitelských cen konceptuálně uváděny. Ale já si myslím, že ta situace u nás je odlišná, třeba od Spojených států, kde se lidé často stěhují a ty domy a byty často prodávají. Tady, když si koupíme první byt nebo dům, tak to je často na celý život, nebo skoro na celý život.
 
 **Redaktorka ČNB:** Má to nějakou spojitost také s tím, že většina lidí u nás bydlí ve svém vlastním bytě nebo domě?
 

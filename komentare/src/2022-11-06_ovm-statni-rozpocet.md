@@ -97,7 +97,7 @@ Ty ostatní věci, které NERV radí, pomůžou, ale nejsou to úplně věci, kt
 
 **Václav Moravec:** … od té mantry, kterou opakuje premiér Fiala, ministr financí, že nebudou přistupovat ke zvýšení daní. Naopak, přicházejí i v tom daňovém balíčku letošním k, nechci říct ke snížení daní, ale k výpadkům státního rozpočtu na příjmové straně.
 
-**Tomáš Havránek:** … dělat. Máme tady třeba devizové rezervy, které pokud se neprodají, tak nám jednou můžou pěkně vydělávat, když se investují do akcií převážně, což pan nový guvernér, za to bych ho pochválil, vlastně chce udělat z větší části, ale to zase se projeví až v nějakém dalším období. A tam ten výnos může být klidně 100 miliard ročně v dnešních korunách.
+**Tomáš Havránek:** … dělat. Máme tady třeba devizové rezervy, které pokud se neprodají, tak nám jednou můžou pěkně vydělávat, když se investují do akcií převážně, což pan nový guvernér, za to bych ho pochválil, vlastně chce udělat z větší části, ale to se zase projeví až v nějakém dalším období. A tam ten výnos může být klidně 100 miliard ročně v dnešních korunách.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
@@ -147,6 +147,6 @@ Náš systém penzijního připojištění není úplně šťastný v tom, že t
 
 **Tomáš Havránek:** To máte pravdu, ale tohle, co jsem řekl, vyžaduje novou vlastně společenskou smlouvu, protože teď, jak to funguje, my čekáme od státu, že nám zajistí nějaký důstojný důchod. Ale my když pracujeme, neplatíme důchod sami sobě, platíme ho našim rodičům, jak víme my, ale řada lidí to neví. Čili já odvádím na důchod svých rodičů, moje děti budou odvádět na můj důchod. Čili mně by přišlo fér třeba navázat maličko ty odvody, aby přímo šly odvody mých dětí na můj důchod.
 
-Mám tedy střet zájmů, čtyři děti, takže pro mě to je samozřejmě snadné to říct. Ne všichni toto mohou takhle jednoduše udělat, ale dát tam větší spravedlnost, větší motivaci pro to zvýšit tu porodnost by rozhodně pomohlo, ale chápu, že to není věc, která se dá udělat hned. To vyžaduje dlouhou diskuzi, přesvědčování, novou společenskou smlouvu a smlouvu vlastně přes celé politické spektrum. Aby s tím souhlasily odbory, zleva doprava, to bude velmi...
+Mám tedy střet zájmů, čtyři děti, takže pro mě je samozřejmě snadné to říct. Ne všichni toto mohou takhle jednoduše udělat, ale dát tam větší spravedlnost, větší motivaci pro to zvýšit tu porodnost by rozhodně pomohlo, ale chápu, že to není věc, která se dá udělat hned. To vyžaduje dlouhou diskuzi, přesvědčování, novou společenskou smlouvu a smlouvu vlastně přes celé politické spektrum. Aby s tím souhlasily odbory, zleva doprava, to bude velmi...
 
 **Václav Moravec:** No ale podívejte se, že tu novou společenství...

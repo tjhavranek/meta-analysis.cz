@@ -109,9 +109,9 @@ Pane Havránku, tak není ekonomická realita jiná než vaše ekonomické model
 
 **Tomáš Havránek:** Je to ten model, co používá ČNB. Ale to je jedno. Takže to nejsou moje modely, jsou to modely centrálních bank.
 
-Ale já bych souhlasil vlastně s tím, co říkal pan Singer, skoro úplně. Samozřejmě ne všichni jsme racionální, ale pan Singer taky ví, že v ekonomii je konsenzus, že nějaké průměrné finanční rozhodování se dá dobře aproximovat racionálním očekáváním. Ale to není tak podstatné. Podstatné je, že ta změna k cenové stabilitě z 2%, to není žádná radikální změna.
+Ale já bych souhlasil vlastně s tím, co říkal pan Singer, skoro úplně. Samozřejmě ne všichni jsme racionální, ale pan Singer taky ví, že v ekonomii je konsenzus, že nějaké průměrné finanční rozhodování se dá dobře aproximovat racionálním očekáváním. Ale to není tak podstatné. Podstatné je, že ta změna k cenové stabilitě ze 2%, to není žádná radikální změna.
 
-To jsou dvě parametrické změny. Jedna změna je drobné snížení cíle z dvojky na nulu, a ČNB v posledních desetiletích ten cíl snižovala, tuším, z šestky v několika krocích na dvojku. Takže by to nebylo nijak bezprecedentně radikální. To je jedna věc.
+To jsou dvě parametrické změny. Jedna změna je drobné snížení cíle z dvojky na nulu, a ČNB v posledních desetiletích ten cíl snižovala, tuším, ze šestky v několika krocích na dvojku. Takže by to nebylo nijak bezprecedentně radikální. To je jedna věc.
 
 A druhá věc je, že zároveň by opravovala svoje chyby v plnění toho cíle.
 
@@ -153,7 +153,7 @@ Tak, pane Havránku,
 
 **Tomáš Havránek:** Tohle samozřejmě je pravda, ale to vychýlení není dvě procenta. To je podle Boskinovy komise, profesor Boskin ze Stanfordu, teď o tom nedávno psal článek, je maximálně jedno procento, spíš něco mírně pod tím, čili zhruba 0,8. Takže je to argument zase proti tomu současnému cíli. To je první věc.
 
-Druhá věc je, pokud víme, A to už jenom stručně? Pokud víme, že staťák měří inflaci špatně, tak mu podaťme, že to dělá dobře. A třetí věc je, že správně by tam ještě měly být nemovitosti s větší váhou, které naopak rostou rychleji dlouhodobě. Čili to vychýlení je na obě strany.
+Druhá věc je, a to už jenom stručně: pokud víme, že staťák měří inflaci špatně, tak mu podaťme, že to dělá dobře. A třetí věc je, že správně by tam ještě měly být nemovitosti s větší váhou, které naopak rostou rychleji dlouhodobě. Čili to vychýlení je na obě strany.
 
 Máme na to článek s Mojmírem Hamplem a pro Česko pak
 

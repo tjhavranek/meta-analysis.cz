@@ -3437,7 +3437,7 @@ Tak jo, tak asi můžeme pomalu začít a vítám vás u nového dílu CryptoPle
 
 **Tomáš Havránek:** Peníze pro mě jsou jednak, máme tady definici peněz, jak ji učíme na ekonomii jedna, která má ty tři náležitosti, s tím asi úplně diváky otravovat nebudeme. Ale peníze jsou pro mě něco, na co se můžu spolehnout, že bude mít podobnou kupní sílu, hodnotu na koupení si zboží i v nějaké rozumné budoucnosti. Takže třeba naše česká měna, pořád to jsou úplně peníze, ale kdyby se měla ta trajektorie těch posledních let protahovat, to znamená, že byste měli inflaci takovou, jaká byla za tři roky, vlastně, že jste ztratili třetinu hodnoty peněz, tak už to potom tedy charakter peněz ztrácí, protože se nemůžeš spolehnout na to, že si koupíš za 100 korun podobnou hodnotu zboží, že si můžeš spořit nějak rozumně bez obav. Čili pro mě je důležitá stabilita, relativní dlouhodobá stabilita hodnoty toho platidla.
 
-Takže jako by uchovatel hodnoty dá se říct. Uchovatel hodnoty, ano. To je z těch tří technických funkcí peněz taková ta hlavní pro mě.
+Takže jakoby uchovatel hodnoty, dá se říct. Uchovatel hodnoty, ano. To je z těch tří technických funkcí peněz taková ta hlavní pro mě.
 
 **Moderátor:** Ty jsi byl tedy poradcem viceguvernéra v roce, tuším, 2016 až 2018, tak to byl Mojmír Hampl. A ještě v roce 2019, tak si stihnul Aleše Michla. V čem konkrétně spočívala tvoje, ta profese vlastně, nebo ten úkol v rámci toho poradenství?
 
@@ -3501,7 +3501,7 @@ Právě z toho důvodu dlouhodobě nejvýnosnější, máš tam reálné zisky, 
 
 Čili když ty máš pod sebou Národní banku, chceš, aby ta banka byla rozumně důvěryhodná, tak dává určitý smysl, abys doručil i to, co lidé mají dlouhodobě spojené s nějakou stabilitou, psychologicky, s tím, co má centrální banka dělat. A to je mimo jiné i nákup zlata. Symbolicky, to znamená třeba jedno procento těch obřích rezerv, které jsou teď asi v přepočtu tři biliony korun tuším. Když jedno procento dáš do zlata, to zlato koupíš fyzicky, ne jako teď, kdy ho nakupují, ale mají ho fyzicky v Londýně.
 
-Když ho fyzicky vložíš do trezoru, který máš Na Příkopech, přesně pro ten účel vybudovaný dlouhodobě. Zabezpečíš to tak, jak už to vlastně zabezpečené je, a necháš lidi se na to podívat. Čili nejenom, že to někde máš v Londýně, ale že to máš fyzicky v Česku, v té budově, lidi se můžou přijít podívat na největší zlatý poklad ve střední Evropě v podstatě, nebo v středovýchodní Evropě, tak to je něco, co má velký psychologický efekt, psychologickou hodnotu, řekl bych, kterou nezměříš úplně a není to v tom, že by ti to zlato mělo něco vydělat. Pravděpodobně ti toho moc nevydělá, může, ale nedokážu o tom nic moc říct, tam není ten reálný cashflow, jako jsou ty dividendy u akcií, ale z toho psychologického hlediska je to dobré, ale musíš to mít přímo v budově, fyzicky, jinak to nemá velký význam, to, co dělají teď.
+Když ho fyzicky vložíš do trezoru, který máš Na Příkopech, přesně pro ten účel vybudovaný dlouhodobě. Zabezpečíš to tak, jak už to vlastně zabezpečené je, a necháš lidi se na to podívat. Čili nejenom, že to někde máš v Londýně, ale že to máš fyzicky v Česku, v té budově, lidi se můžou přijít podívat na největší zlatý poklad ve střední Evropě v podstatě, nebo ve středovýchodní Evropě, tak to je něco, co má velký psychologický efekt, psychologickou hodnotu, řekl bych, kterou nezměříš úplně a není to v tom, že by ti to zlato mělo něco vydělat. Pravděpodobně ti toho moc nevydělá, může, ale nedokážu o tom nic moc říct, tam není ten reálný cashflow, jako jsou ty dividendy u akcií, ale z toho psychologického hlediska je to dobré, ale musíš to mít přímo v budově, fyzicky, jinak to nemá velký význam, to, co dělají teď.
 
 Podobně bys klidně mohl koupit trochu bitcoinu, teď jenom doufám, že pak nebudou ty titulky v novinách, že chci nakupovat bitcoin jako v nějakém velkém kvantu do rezerv ČNB, ale symbolicky dát malou část těch rezerv do bitcoinu by ničemu neuškodilo. Těch rezerv máš velmi hodně. V rámci nějaké diverzifikace, ale hlavně v tom, že to je signál zase pro tu mladší generaci, že ta Národní banka hlavně chce udržovat stabilní cenovou hladinu, v druhé řadě chce něco i vydělat, proto kupuje ty akcie, pak má nějaké to zlato, ale tohle je jako vlastně vzkaz té nové generaci, že ta centrální banka taky myslí trochu na ně, že není úplně mimo ten moderní proud. Mít jedno procento aktiv v bitcoinu není něco, co by bylo mimo současný asset management i pro poměrně konzervativní instituce. Říkal to třeba pan profesor Krištoufek, prorektor pro vědu Univerzity Karlovy, jeden z nejcitovanějších vědců na světě, takže to jako není žádný úlet, i když to bude pravděpodobně neprůchozí, ale mně by nevadilo mít jedno procento aktiv ve zlatě, jedno procento v bitcoinu a potom ten velký balík v akciích, protože to je to, co ti vydělá ty peníze a je to relativně málo kontroverzní oproti bitcoinu.
 
@@ -3521,7 +3521,7 @@ Takže oni musí nějakou alternativu hledat, ale ta jediná pořádná alternat
 
 Ale tím, že ji mělo, tak ji pořád má v hlavách spousta lidí. To je ta psychologie. Takže my se s Mojmírem de facto shodneme. Jenom já bych na tu psychologii možná dával trochu větší důraz.
 
-Protože konec konců my máme v ekonomii hezké modely, kde máš spoustu rovnic a teď se tam díváš, jak se ty lidi asi chovají za nějakých předpokladů. Ale spousta té reálné akce v té ekonomice se děje v hlavách lidí tímhle způsobem, který se velmi těžko do těch rovnic dostane. Čili ty rovnice jsou nějaká první aproximace. Zvýšíš úrokové sazby, co se asi stane s korunou, tak asi posílí.
+Protože konec konců my máme v ekonomii hezké modely, kde máš spoustu rovnic a teď se tam díváš, jak se ti lidé asi chovají za nějakých předpokladů. Ale spousta té reálné akce v té ekonomice se děje v hlavách lidí tímhle způsobem, který se velmi těžko do těch rovnic dostane. Čili ty rovnice jsou nějaká první aproximace. Zvýšíš úrokové sazby, co se asi stane s korunou, tak asi posílí.
 
 Nebo neoslabí tolik. Ale potom jsou takové jemné nuance, a když je můžeš ukotvit, aby ti lidé trochu víc věřili, tak proč to neudělat, když tě to nestojí skoro nic. Dát 1%, 2% rezerv do zlata opravdu není něco, co by ti mělo dlouhodobě nějak uškodit. Když to doprovodíš rozumnou alokací toho zbytku, toho portfolia.
 
@@ -3551,7 +3551,7 @@ Všichni, kteří budoucnost měli, z té země odešli, to bude jenom vlastně 
 
 Samozřejmě suroviny a tak. Čína, ta na tom nebude o moc lépe, z hlediska demografie. A to začínáme pozorovat, co se v Číně bude dít po tom kolapsu porodnosti, která po ukončení politiky jednoho dítěte, místo aby se vrátila nahoru, klesá dál, protože ty nedonutíš už ty holky, které si zvykly, že jsou jedináčci, že jsou sebevědomé, chtějí mít vlastní kariéru, tak ony se najednou nevrátí domů a nebudou mít tři děti. Ta země umře taky a ten trend tam přišel mnohem dřív, než všichni čekali. Oni budou mít za pár let sami se sebou takové potíže, jak uživit tu populaci těch starých lidí, jak udržet nějakou dynamiku ve společnosti, která ti vymírá, kde máš v průměru jedno dítě na ženu.
 
-To je velice těžký. A oni to samozřejmě můžou řešit nějakou agresí navenek, abys domácí problémy zakryl. A můžeš působit potíže samozřejmě v sousedství, na Tajvanu, ve Vietnamu, v Koreji a tak dále, v Japonsku možná. Ale ani ekonomicky Čína nebude mít na to, aby mohla dlouhodobě soupeřit se Západem, protože demograficky naprosto skolabuje.
+To je velice těžké. A oni to samozřejmě můžou řešit nějakou agresí navenek, abys domácí problémy zakryl. A můžeš působit potíže samozřejmě v sousedství, na Tajvanu, ve Vietnamu, v Koreji a tak dále, v Japonsku možná. Ale ani ekonomicky Čína nebude mít na to, aby mohla dlouhodobě soupeřit se Západem, protože demograficky naprosto skolabuje.
 
 Ty demografické projekce samozřejmě musím brát s rezervou, ale do konce století ona může mít třeba 300 milionů, 400 milionů obyvatel, když to půjde tímhle stylem. Čili se vlastně může stát, že ještě možná za tvého života Čína bude mít méně obyvatel než Spojené státy. Asi je to nepravděpodobné, ale je to možné. Čili to jsou ty hlavní stavební kameny toho BRICS, pak tam máš Indii, která je ale poměrně spíš nakloněná nám jako západu, nebo minimálně neutrální.
 
@@ -3583,7 +3583,7 @@ Když si koupíš reálnou věc, což komodita reálná věc je, ať už zlato n
 
 **Moderátor:** technicky řekněme, že teda jakoby souhlasím, ale primárně takový to krytí, že prostě vezmu bankovky, což jsou vlastně ty dlužní úpisy, dojdu si do banky, dostanu ty pravý peníze, což bylo to zlato, tak nic takovýho prostě neexistuje a pořád nějakým způsobem si myslím, že ten primární pohled na to je ten hlavní a ten jediný, který jakoby dává smysl. Máš pravdu, no. Že prostě ta česká koruna, jako obecně, že jo, ty fiat měny prostě nejsou krytý ničím, žádným má rezervama, byť tam ty rezervy teda zlatý třeba v té bance jsou,
 
-**Tomáš Havránek:** jako na prvním řádu, čili to je ta hlavní otázka a hlavní odpověď je, máš pravdu. Ano, ale mohlo by to být udělaný tak, jak jsem říkal, kdyby to krytí opravdu aspoň teoreticky šlo zavést. Ano, a jinak, čím jsou kryté peníze, v ekonomii máme spoustu teorií, taková nová teorie, té se říká fiskální teorie cenové hladiny, ta říká, že vlastně peníze jsou kryté tím, že jimi můžeš platit daně. Což je zajímavé. Za tím je také spousta matematiky, a to třeba ukazuje, nebo to implikuje, že když my jsme v téhle zemi povolili tuším platit daně v eurech před pár lety, tak ty tím jako de facto zavedeš euro podle té nové ekonomické teorie.
+**Tomáš Havránek:** jako na prvním řádu, čili to je ta hlavní otázka a hlavní odpověď je, máš pravdu. Ano, ale mohlo by to být udělané tak, jak jsem říkal, kdyby to krytí opravdu aspoň teoreticky šlo zavést. Ano, a jinak, čím jsou kryté peníze, v ekonomii máme spoustu teorií, taková nová teorie, té se říká fiskální teorie cenové hladiny, ta říká, že vlastně peníze jsou kryté tím, že jimi můžeš platit daně. Což je zajímavé. Za tím je také spousta matematiky, a to třeba ukazuje, nebo to implikuje, že když my jsme v téhle zemi povolili tuším platit daně v eurech před pár lety, tak ty tím jako de facto zavedeš euro podle té nové ekonomické teorie.
 
 Ano, když dovolíš platit daně v eurech, tak je to, jako by se zavedlo euro, protože vlastně dáš hodnotu tomu euru tímhle. I kdyby nic jiného, tak to můžeš použít na zaplacení daní, a daně musíš platit nějak. Ano, takže to je jen taková odbočka, ale samozřejmě máš pravdu. A ty znáš někoho, kdo by říkal, že koruna je krytá zlatem?
 
@@ -3651,9 +3651,9 @@ Ano, neděláš vlastně skoro nic, dostaneš těch svých 6 milionů za rok a v
 
 **Tomáš Havránek:** a když tohle samozřejmě řekneš mezi ekonomy, tak ti řeknou: vrať se do školy. Ale proč? Proč by toto vlastně nemohlo být to intuitivní pochopení cenové stability? Centrální banka tvrdí, že to je doslovná cenová stabilita, to my neděláme, protože, a teď jsou nějaká taková mávání rukama, ale když se podíváš do výzkumu vědeckého, který se snaží odhadnout, jak velká inflace je zdravá pro tu ekonomiku, což je těžká věc, tam máš spoustu efektů na dlužníky, věřitele, možná, že i na ekonomický růst a tak dále, a tak přistupuje celá řada, ale ten průměrný odhad je opravdu nula. Někdo říká, že deflace je dobrá. Milton Friedman, sice to nebyla jeho hlavní teze, ale optimální inflace v tom jeho modelu byla mínus tak tři procenta podle toho, jaká byla reálná úroková sazba.
 
-Byla to deflace, optimální. Takže máš i přístupy ekonomické, které ti dají jako optimální deflaci, protože, když máš deflaci, ne, že bych chtěl dlouhodobou deflaci, jenom ilustruji, proč může být taky třeba někdy užitečná, že tě to nenutí vlastně spekulovat nebo investovat do něčeho, co je vlastně rizikové. Já riziko mám rád, mě to nevadí, ale spousta lidí, jako třeba moji rodiče, mají rádi jistotu. A když máš deflaci třeba 2% dlouhodobě, tak to znamená, že stačí mít peníze v hotovosti doma a ony ti vydělají 2%.
+Byla to deflace, optimální. Takže máš i přístupy ekonomické, které ti dají jako optimální deflaci, protože, když máš deflaci, ne, že bych chtěl dlouhodobou deflaci, jenom ilustruji, proč může být taky třeba někdy užitečná, že tě to nenutí vlastně spekulovat nebo investovat do něčeho, co je vlastně rizikové. Já riziko mám rád, mně to nevadí, ale spousta lidí, jako třeba moji rodiče, mají rádi jistotu. A když máš deflaci třeba 2% dlouhodobě, tak to znamená, že stačí mít peníze v hotovosti doma a ony ti vydělají 2%.
 
-Přeště do 7%. Takže i tohle může být argument pro nějakou deflaci. Těch studií asi dvěstě, třicet, když jsem to dělal naposledy a opravdu průměrný odhad je nula, takže je dobře. Pokud ty říkáš, že 2% je ten správný inflační cíl, ale to není cenová stabilita, ale ten nějaký zdravý inflační cíl, tak to odůvodni pořádně.
+Přeště do 7%. Takže i tohle může být argument pro nějakou deflaci. Těch studií je asi dvě stě třicet, když jsem to dělal naposledy a opravdu průměrný odhad je nula, takže je dobře. Pokud ty říkáš, že 2% je ten správný inflační cíl, ale to není cenová stabilita, ale ten nějaký zdravý inflační cíl, tak to odůvodni pořádně.
 
 A na tu diskuzi já bych se moc těšil, protože si neumím představit, jak to ta dvojka může vyhrát oproti té intuitivní nule. Ale dobře, když to vyhraje, tak v pořádku, 2%, ale dejme to jasně té bance za úkol, podobně jako třeba Bank of England v Anglii, která má za úkol od vlády konkrétní procentní inflační cíl. A když ho nesplní, tak jsou konsekvence. Minimálně ostuda, guvernér musí napsat omluvný dopis veřejnosti.
 
@@ -3663,7 +3663,7 @@ Tam musí být minimálně zase z psychologických důvodů pro obyčejného čl
 
 Potřebuješ nejlepší top talent pro top joby v této zemi. A těch důležitých jobů je celá řada, ale čemu rozumím já, to centrální bankovnictví, tam je to naprosto evidentní, že potřebuješ špičky z celého světa, které ti budou řídit tu centrální banku. Tady není důvod se omezovat na pár lidí, jako jsme my, kteří žijou v tom českém prostředí. Ty můžeš najmout lidi ze zahraničí a zaplatit je velmi dobře a to se ti vrátí mnohonásobně.
 
-Ale my na to tady v Česku bohužel jsme zvyklí, že bys zaplatil někomu 5 milionů euro za rok a chtěl po něm jako špičkový výkon na úrovni toho vedení centrální banky. To by se musel maličko změnit i zákon, tam je podmínka českého občanství, ale to není zase tak velký problém změnit zákon o ČNB. To bys tak musel dělat, kdybys chtěl dát explicitní úkol, o jakou inflaci se mají snažit.
+Ale my na to tady v Česku bohužel jsme zvyklí, že bys zaplatil někomu 5 milionů eur za rok a chtěl po něm jako špičkový výkon na úrovni toho vedení centrální banky. To by se musel maličko změnit i zákon, tam je podmínka českého občanství, ale to není zase tak velký problém změnit zákon o ČNB. To bys tak musel dělat, kdybys chtěl dát explicitní úkol, o jakou inflaci se mají snažit.
 
 **Moderátor:** Já se chci zeptat, mám hodně podotázek, ale začneme ještě vlastně touhle. Myslím si, že to je vůbec možný, aby jsme v tomhle systému, který máme, měli nulovou inflaci? Protože my jsme se tady předtím bavili o těch úrokových sazbách, proč je nezvednou nahoru, protože tady máme, jak jsi říkal, ty dvě strany, máme tady ty svědomitý lidi, který si spoří na druhý straně, ale tady máme ty dlužníky, kterým naopak ta inflace vyhovuje a kdyby se ty úrokových sazby nějak dlouhodobě zase nesnižily, tak tady možná riskujeme nějakou recesi v podobě nemovitostní krize, jako jsme viděli třeba v roce 2008 v Americe a já si myslím, že nejsme schopný dojít na žádný státní měně na nulovou inflaci, protože je za ní ten ohromnej dluh, který se prostě nějakým způsobem musí splatit, jsou tam ty úroky a ty potřebuješ neustále nový peněžní jednotky,
 
@@ -3737,7 +3737,7 @@ Navíc ta centrální banka dělá spoustu dalších věcí. Hlídá, aby ten ba
 
 Takže dobře, když někdo vymyslí lepší způsob, jak to měřit, tak použijeme ten způsob. Ale pokud nic lepšího nemáme, tak berme to tak, jak to je, nedokonalé, ač je to nedokonalé. Když máš metr, který není úplně přesný, tak ho pořád použiješ. Nevyhodíš ho úplně a neřekneš, že já to nedokážu změřit, tak se na to vykašlu. Třeba to měříš tím měřítkem, co máš, když to není mikrometr, ale má to nějakou chybu, která třeba někdy je systematická, ale vlastně nevíš, na kterou stranu.
 
-A já bych se velmi rád dožil doby, kdy bychom se opravdu začali programově o tu cenovou stabilitu snažit, protože nehledě na všechny ty výhody, co by to mělo, o kterých jsme se bavili, takovou tu jistotu a tak, by to byla skvělá reklama pro tuhle zemi. Vezmi si třeba ten Nový Zéland, jak jsi ty správně zmiňoval, že tam začalo inflační cílování. Nový Zéland je hezká země, já tam rád jezdím, my tam pojedeme za rok na několik měsíců s rodinou, na pozvání, ale je to taková dost nudná země, kde se vlastně nic musí. Je to daleko od všech center dění ve světě.
+A já bych se velmi rád dožil doby, kdy bychom se opravdu začali programově o tu cenovou stabilitu snažit, protože nehledě na všechny ty výhody, co by to mělo, o kterých jsme se bavili, takovou tu jistotu a tak, by to byla skvělá reklama pro tuhle zemi. Vezmi si třeba ten Nový Zéland, jak jsi ty správně zmiňoval, že tam začalo inflační cílování. Nový Zéland je hezká země, já tam rád jezdím, my tam pojedeme za rok na několik měsíců s rodinou, na pozvání, ale je to taková dost nudná země, kde se vlastně nic neděje. Je to daleko od všech center dění ve světě.
 
 A ve vědě je ten Zéland právě známý tím, že tam zavedli to inflační cílování. Takže i takhle malá země může něco užitečného, vlivného přispět do světové diskuze. A tohle je něco, ta cenová stabilita, opravdu, jako mají Švýcaři, ale ne de facto, ale de jure, aby to bylo garantované, aby to bylo začleněné v zákoně. Něco, co nikdo nemá.
 
@@ -3775,7 +3775,7 @@ Musíš mít jasná fakta, proč je toto nejlepší možná politika, nejlepší
 
 Centrální banka se tváří, že to ví, ale to není žádný mechanický mechanismus. To má spoustu nuancí a my vlastně nevíme. A podobně ty úplně nevíš, nebo takhle, rozhodně nemůžeš říct, že jasně 2% inflace je ta ideální. Naopak spousta věcí ukazuje na to, že ta nula by byla nejenom že intuitivní, ale že by byla v řadě věcí lepší.
 
-Takže já jsem Mojmírovi toto nezmiňoval, ale o čem jsme se bavili už tehdy, byla ta investice devizových rezerv. Protože to je naprosto evidentní a to nepotřebuje žádné velké vzdělání. Na řadu věcí nepotřebuje žádné velké ekonomické vzdělání, ale možná úvodní kurz k ekonomii jedna nebo dva a trošku zdravého rozumu. Když máš obrovský balík peněz, 3 biliony korun v přepočtu, a ty nechceš je mít dlouho.
+Takže já jsem Mojmírovi toto nezmiňoval, ale o čem jsme se bavili už tehdy, byla ta investice devizových rezerv. Protože to je naprosto evidentní a to nepotřebuje žádné velké vzdělání. Na řadu věcí nepotřebuje žádné velké ekonomické vzdělání, ale možná úvodní kurz k ekonomii jedna nebo dva a trošku zdravého rozumu. Když máš obrovský balík peněz, 3 biliony korun v přepočtu, a ty je nechceš mít dlouho.
 
 **Moderátor:** Nechceš, aby se z toho za 3 roky staly 2 biliony korun.
 
@@ -3799,7 +3799,7 @@ Tak to vytváří problémy pro kohokoliv, kdo má velký dluh. Sice to pomáhá
 
 2-3%? Tak to je daleko jako složitější otázka. Je na to spousta literatury, ale když se na to podíváš, není tam žádný jasný vztah, že by taková nemírná deflace měla zhoršit ekonomický růst. To jsou data nebo nějaká věda.
 
-Potom i příklady, jako třeba Japonsko, které se často udává jako odstrašující příklad deflace, to je jenom jako statistický artefakt, no mýtus. Když se podíváš na životní úroveň tam, oni se vždycky ukazují, jak mají deflaci, jak jim klesá HDP. Ale ten pokles HDP je daný tím, že tam ta populace stárne a méně ty lidi pracují. Když se podíváš na to, kolik lidé vyrobí za odpracovanou hodinu, tak to Japonsko na tom není hůř než Amerika nebo Evropa.
+Potom i příklady, jako třeba Japonsko, které se často udává jako odstrašující příklad deflace, to je jenom jako statistický artefakt, no mýtus. Když se podíváš na životní úroveň tam, oni se vždycky ukazují, jak mají deflaci, jak jim klesá HDP. Ale ten pokles HDP je daný tím, že tam ta populace stárne a méně ti lidé pracují. Když se podíváš na to, kolik lidé vyrobí za odpracovanou hodinu, tak to Japonsko na tom není hůř než Amerika nebo Evropa.
 
 Čili to máš jasný důkaz nebo minimálně protipříklad toho, že ta deflace ti nutně musí škodit. Podobně Švýcarsko. Švýcarsko je polovinu času v deflaci za posledních patnáct let, tuším. Vyvíjí se lépe než ostatní země.
 
@@ -3847,7 +3847,7 @@ Ještě bych se tě zeptal jenom třeba na nějaký, setkáváme se s hodně mý
 
 A takových věcí tady máme mraky a tuhle spotřebu prostě neodložíš. Ani jako kdyby si chtěl, protože to zaplatit musíš. Tak jestli se na to koukáš nějakým způsobem stejně nebo tam vidíš něco jiného ještě.
 
-**Tomáš Havránek:** Já to zkusím ještě trochu jako přiblížit k ekonomickému výzkumu. Super, skvělý. Takže podle takových těch keynesianských teorií, možná znáš Keynese. Jasně.
+**Tomáš Havránek:** Já to zkusím ještě trochu jako přiblížit k ekonomickému výzkumu. Super, skvělý. Takže podle takových těch keynesiánských teorií, možná znáš Keynese. Jasně.
 
 Tak tam opravdu ta deflační spirála nastat může. A ta klíčová věc je, že lidi se nedívají do budoucnosti, ale dívají se na současnost a minulost. Mají takzvané adaptivní očekávání nebo naivní. Že se nedívají do budoucnosti.
 
@@ -4141,7 +4141,7 @@ Jaké to je?
 
 **Zuzana Havránková:** Tak IES mě samozřejmě zaujalo z několika důvodů. Jedním je, že je hodně centrováno na tu kvantitativní matematickou analýzu a myslím, že to je takový jakoby nosný bod, nosný prodejní bod toho IES. Takže často, když si studenti vlastně vybírají školy, jestli chtějí na nějakou jinou ekonomickou školu nebo na IES, tak se rozhodují na základě toho, jestli chtějí ten management, jestli chtějí využít ty svoje soft skills nebo spíše takovéto analytické myšlení. Takže to se mi na tom velmi líbí.
 
-Zároveň samozřejmě IES úplně miluji z toho důvodu, že je tam hodně, hodně takový mezinárodní feel, je tam hodně zahraničních studentů, je tam hodně těch kurzů v angličtině, což je mi velmi sympatické i z toho důvodu, že ta čeština není úplně, nejsem native speaker, takže se s tím taky občas peru, shodou okolností učím kurz, který je v češtině, což je samo o sobě takové kuriózní, ale tak to dopadlo. Takže IES byla taková jasná volba, já jsem vždycky chtěla do Prahy, takže je to i ta Praha, i ta matematika, která tam je, a samozřejmě to renome, které je teď už po těch patnácti letech vlastně toho mého působení na IES, mezinárodní renome.
+Zároveň samozřejmě IES úplně miluji z toho důvodu, že je tam hodně, hodně takový mezinárodní feel, je tam hodně zahraničních studentů, je tam hodně těch kurzů v angličtině, což je mi velmi sympatické i z toho důvodu, že ta čeština není úplně, nejsem native speaker, takže se s tím taky občas peru, shodou okolností učím kurz, který je v češtině, což je samo o sobě takové kuriózní, ale tak to dopadlo. Takže to byla taková jasná volba, já jsem vždycky chtěla do Prahy, takže je to i ta Praha, i ta matematika, která tam je, a samozřejmě to renome, které je teď už po těch patnácti letech vlastně toho mého působení na IES, mezinárodní renome.
 
 **Alice Němcová Tejkalová:** Ty se věnuješ vlastně způsobu výzkumu a vědy, který je hodně exaktní, právě hovořila se o matematice. Potkávaš se někdy s tím, že se lidé diví tomu, protože v Česku je hodně zakořeněné už od základního školství, že kluci jsou lepší na matematiku, holčičky spíš na humanitní vědy, často se s tím setkávají vlastně děti už od svého dětství. Zastavil někdy někdo tebe a řekl, ty nejsi dobrá na matematiku, protože jsi holka.
 
@@ -4173,7 +4173,7 @@ To znamená, představ si, že máme nějakou otázku vědeckou, kterou se snaž
 
 Takže metaanalýza má tu úlohu, že dokáže vydestilovat nějaký výsledek, nějaký závěr, nějaký jednotný závěr z literatury, která je velice různorodá. Mimochodem metaanalýza vznikla původně v medicíně, v experimentálním medicínském výzkumu, v klinických studiích. Tam jsou ty studie jakoby hodně malé, protože, jak je notoricky známo, jsou velice drahé, nejen co do peněz, ale samozřejmě i co do zdraví těch lidí. Takže oni potřebovali vlastně nějakým způsobem ty malé klinické studie dát dokupy a zvýšit tu statistickou sílu těch výsledků.
 
-Proto se metaanalýza přirozeně vyvinula v té medicíně a takovýmhle způsobem nám vlastně dokáže něco říct o tom, jaký je tedy ten výsledek i s nějakou mírou jistoty. Ta metaanalýza samozřejmě s sebou nese různé problémy, protože my se koukáme na velký vzorek nějakých studií, které jsou hodně různorodé. Ten kontext těch studií, to, jaká data používají, jestli, jako třeba v tom medical research, máš různé pacienty, jestli jsou to muži, ženy, jestli jsou to různé rasy, jestli je to věk a tak dále, mají různé comorbidity a tak dále.
+Proto se metaanalýza přirozeně vyvinula v té medicíně a takovýmhle způsobem nám vlastně dokáže něco říct o tom, jaký je tedy ten výsledek i s nějakou mírou jistoty. Ta metaanalýza samozřejmě s sebou nese různé problémy, protože my se koukáme na velký vzorek nějakých studií, které jsou hodně různorodé. Ten kontext těch studií, to, jaká data používají, jestli, jako třeba v tom medical research, máš různé pacienty, jestli jsou to muži, ženy, jestli jsou to různé rasy, jestli je to věk a tak dále, mají různé komorbidity a tak dále.
 
 Takže tohle je jedna vlastně taková challenge metaanalýzy, jakým způsobem je možné kontrolovat ten kontext. A druhým tím problémem, kterému metaanalýzy čelí, je publikační selektivita. Publikační selektivita vzniká, když nějaké výsledky mají větší pravděpodobnost, že budou publikované. Což v podstatě vyplývá z toho, že my máme vnitřně často nějakou a priori preferenci ohledně toho, co by nám asi mělo v té studii vyjít.
 
@@ -4209,7 +4209,7 @@ Metaanalytici nejsou úplně populární. Když se díváš na něčí vlastně 
 
 Ale vidíme, že ty argumenty, které třeba mají různé oborové svazy a podobně, legislativci, kteří jsou zapojeni v tomhle, se právě vážou na to, že ta literatura toto podporuje a toto je proto dobré udělat a proto je dobré tam sypat nějaké peníze. A tedy intuitivně to dává smysl pro rodiče, pro nás intuitivně to dává smysl i pro učitele, protože mají větší klid a podobně. A každopádně ta metaanalýza je jenom tak dobrá, jako je podkladová literatura. Takže můžeme říct, že pokud ta podkladová literatura je dobrá, tak naše metaanalýza říká, že ten efekt tam není.
 
-Jenom z takového hlediska toho, jak můžeme vlastně tuhle myšlenku velikosti tříd a ten žádný efekt na výsledky žáků aplikovat reálně v životě. Představ si, že snižuješ velikost tříd z 30 dětí na 10. Nebo řekněme, že máme 60 dětí. Ano.
+Jenom z takového hlediska toho, jak můžeme vlastně tuhle myšlenku velikosti tříd a ten žádný efekt na výsledky žáků aplikovat reálně v životě. Představ si, že snižuješ velikost tříd ze 30 dětí na 10. Nebo řekněme, že máme 60 dětí. Ano.
 
 To znamená, že v současnosti má průměrná třída kolem 20 dětí. Pokud by měla 30, jsou to dvě třídy. Pokud by měla 20, jsou to tři třídy. Tedy zmenšujeme ten počet těch dětí, tu velikost třídy asi o třetinu.
 
@@ -4243,7 +4243,7 @@ Vy jste se ale věnovali i dalšímu kontroverznímu tématu, a to jsou dopady z
 
 **Zuzana Havránková:** Já osobně to střídání letního a zimního času taky nemám úplně ráda, a hlavně to vidím na dětech. Ano, ta jarní změna je absolutně destruktivní pro ně. Ale ano, každopádně dělali jsme tu studii už před lety. Ta studie byla zaměřená na energetické úspory.
 
-A výsledkem té studie bylo, že ty energetické úspory už v současnosti nejsou. Ano, no, ta samotná myšlenka té politiky patří ještě do doby Bena Franklina, kdy se svítilo svíčkami a lidé chtěli využít to denní světlo co nejefektivněji. Takže ty technologie toho svícení tam byly trošku jiné, než jsou třeba v současnosti, kdy máme ty efektivní žárovky a zářivky.
+A výsledkem té studie bylo, že ty energetické úspory už v současnosti nejsou. Ta samotná myšlenka té politiky patří ještě do doby Bena Franklina, kdy se svítilo svíčkami a lidé chtěli využít to denní světlo co nejefektivněji. Takže ty technologie toho svícení tam byly trošku jiné, než jsou třeba v současnosti, kdy máme ty efektivní žárovky a zářivky.
 
 A samozřejmě v době, kdy je taková větší spotřeba vlastně energie i v rámci klimatizování místností. Obecně to rozložení spotřeby energie v průběhu dne je úplně jiné. A tím pádem ty můžeš skutečně vidět, že nejenže ten efekt je nulový, ale že je třeba i záporný, že třeba i té energie je kvůli tomu posouvání času spotřebováváno víc. A my jsme samozřejmě byli velmi...
 
@@ -4961,9 +4961,9 @@ Pane Havránku, tak není ekonomická realita jiná než vaše ekonomické model
 
 **Tomáš Havránek:** Je to ten model, co používá ČNB. Ale to je jedno. Takže to nejsou moje modely, jsou to modely centrálních bank.
 
-Ale já bych souhlasil vlastně s tím, co říkal pan Singer, skoro úplně. Samozřejmě ne všichni jsme racionální, ale pan Singer taky ví, že v ekonomii je konsenzus, že nějaké průměrné finanční rozhodování se dá dobře aproximovat racionálním očekáváním. Ale to není tak podstatné. Podstatné je, že ta změna k cenové stabilitě z 2%, to není žádná radikální změna.
+Ale já bych souhlasil vlastně s tím, co říkal pan Singer, skoro úplně. Samozřejmě ne všichni jsme racionální, ale pan Singer taky ví, že v ekonomii je konsenzus, že nějaké průměrné finanční rozhodování se dá dobře aproximovat racionálním očekáváním. Ale to není tak podstatné. Podstatné je, že ta změna k cenové stabilitě ze 2%, to není žádná radikální změna.
 
-To jsou dvě parametrické změny. Jedna změna je drobné snížení cíle z dvojky na nulu, a ČNB v posledních desetiletích ten cíl snižovala, tuším, z šestky v několika krocích na dvojku. Takže by to nebylo nijak bezprecedentně radikální. To je jedna věc.
+To jsou dvě parametrické změny. Jedna změna je drobné snížení cíle z dvojky na nulu, a ČNB v posledních desetiletích ten cíl snižovala, tuším, ze šestky v několika krocích na dvojku. Takže by to nebylo nijak bezprecedentně radikální. To je jedna věc.
 
 A druhá věc je, že zároveň by opravovala svoje chyby v plnění toho cíle.
 
@@ -5005,7 +5005,7 @@ Tak, pane Havránku,
 
 **Tomáš Havránek:** Tohle samozřejmě je pravda, ale to vychýlení není dvě procenta. To je podle Boskinovy komise, profesor Boskin ze Stanfordu, teď o tom nedávno psal článek, je maximálně jedno procento, spíš něco mírně pod tím, čili zhruba 0,8. Takže je to argument zase proti tomu současnému cíli. To je první věc.
 
-Druhá věc je, pokud víme, A to už jenom stručně? Pokud víme, že staťák měří inflaci špatně, tak mu podaťme, že to dělá dobře. A třetí věc je, že správně by tam ještě měly být nemovitosti s větší váhou, které naopak rostou rychleji dlouhodobě. Čili to vychýlení je na obě strany.
+Druhá věc je, a to už jenom stručně: pokud víme, že staťák měří inflaci špatně, tak mu podaťme, že to dělá dobře. A třetí věc je, že správně by tam ještě měly být nemovitosti s větší váhou, které naopak rostou rychleji dlouhodobě. Čili to vychýlení je na obě strany.
 
 Máme na to článek s Mojmírem Hamplem a pro Česko pak
 
@@ -6276,7 +6276,7 @@ Ty ostatní věci, které NERV radí, pomůžou, ale nejsou to úplně věci, kt
 
 **Václav Moravec:** … od té mantry, kterou opakuje premiér Fiala, ministr financí, že nebudou přistupovat ke zvýšení daní. Naopak, přicházejí i v tom daňovém balíčku letošním k, nechci říct ke snížení daní, ale k výpadkům státního rozpočtu na příjmové straně.
 
-**Tomáš Havránek:** … dělat. Máme tady třeba devizové rezervy, které pokud se neprodají, tak nám jednou můžou pěkně vydělávat, když se investují do akcií převážně, což pan nový guvernér, za to bych ho pochválil, vlastně chce udělat z větší části, ale to zase se projeví až v nějakém dalším období. A tam ten výnos může být klidně 100 miliard ročně v dnešních korunách.
+**Tomáš Havránek:** … dělat. Máme tady třeba devizové rezervy, které pokud se neprodají, tak nám jednou můžou pěkně vydělávat, když se investují do akcií převážně, což pan nový guvernér, za to bych ho pochválil, vlastně chce udělat z větší části, ale to se zase projeví až v nějakém dalším období. A tam ten výnos může být klidně 100 miliard ročně v dnešních korunách.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
@@ -6326,7 +6326,7 @@ Náš systém penzijního připojištění není úplně šťastný v tom, že t
 
 **Tomáš Havránek:** To máte pravdu, ale tohle, co jsem řekl, vyžaduje novou vlastně společenskou smlouvu, protože teď, jak to funguje, my čekáme od státu, že nám zajistí nějaký důstojný důchod. Ale my když pracujeme, neplatíme důchod sami sobě, platíme ho našim rodičům, jak víme my, ale řada lidí to neví. Čili já odvádím na důchod svých rodičů, moje děti budou odvádět na můj důchod. Čili mně by přišlo fér třeba navázat maličko ty odvody, aby přímo šly odvody mých dětí na můj důchod.
 
-Mám tedy střet zájmů, čtyři děti, takže pro mě to je samozřejmě snadné to říct. Ne všichni toto mohou takhle jednoduše udělat, ale dát tam větší spravedlnost, větší motivaci pro to zvýšit tu porodnost by rozhodně pomohlo, ale chápu, že to není věc, která se dá udělat hned. To vyžaduje dlouhou diskuzi, přesvědčování, novou společenskou smlouvu a smlouvu vlastně přes celé politické spektrum. Aby s tím souhlasily odbory, zleva doprava, to bude velmi...
+Mám tedy střet zájmů, čtyři děti, takže pro mě je samozřejmě snadné to říct. Ne všichni toto mohou takhle jednoduše udělat, ale dát tam větší spravedlnost, větší motivaci pro to zvýšit tu porodnost by rozhodně pomohlo, ale chápu, že to není věc, která se dá udělat hned. To vyžaduje dlouhou diskuzi, přesvědčování, novou společenskou smlouvu a smlouvu vlastně přes celé politické spektrum. Aby s tím souhlasily odbory, zleva doprava, to bude velmi...
 
 **Václav Moravec:** No ale podívejte se, že tu novou společenství...
 
@@ -6850,7 +6850,7 @@ Buď je utratíte, protože jinak vám je ta inflace požere, ale tím znovu tu 
 
 **Jan Bumba:** Když zůstaneme chviličku o té aktuální situace a té možná až 20% inflace na podzim, vedou se debaty o tom, jestli to je inflace dovezená, hlavně přes vysoké ceny plynu, anebo jestli je to vnitřní poptávková inflace. Na které straně stojíte vy?
 
-**Tomáš Havránek:** Na obou, což je taková jako odpověď, řekněme, trochu triviální, ale samozřejmě ty zdroje jsou oba. A je to složitější, já se pokusím to nějak zjednodušit. Tak samozřejmě ta naše ekonomika byla přehřátá, řekněme, už před tím covidem. A zároveň, řekněme, ta státní pomoc, ty vrtulníkové peníze lidem během pandemie u nás byly štědřejší než v ostatních zemích.
+**Tomáš Havránek:** Na obou, což je taková odpověď, řekněme, trochu triviální, ale samozřejmě ty zdroje jsou oba. A je to složitější, já se to pokusím nějak zjednodušit. Tak samozřejmě ta naše ekonomika byla přehřátá, řekněme, už před tím covidem. A zároveň, řekněme, ta státní pomoc, ty vrtulníkové peníze lidem během pandemie u nás byly štědřejší než v ostatních zemích.
 
 Čili to rozhodně hrálo svou roli, ale svoji podstatnou roli hraje také politika Národní banky, která dlouhodobě udržuje peníze nebo udržovala peníze levné, čili vlastně přitápila pod tím kotlem. A když tedy ta inflace začala růst, tak ona správně začala zvyšovat úrokové sazby. Ale dělala to sice rychleji než ostatní, řekněme, centrální banky, ale stále pomaleji, než té bankovní radě doporučovali její vlastní odborníci, kteří chtěli dříve a razantněji už na jaře ty sazby zvyšovat, potom během léta. Ta bankovní rada to vetovala a potom byla nucena k dramatičtějším krokům najednou v září.
 
@@ -6874,7 +6874,7 @@ V průběhu toho minulého roku jsme viděli, jak Centrální banka zvyšovala a
 
 **Tomáš Havránek:** Vy se ptáte velice návodně, jsou. A je to používání devizových rezerv, čili nějaké silnější posílení koruny, které znamená, že nám okamžitě zlevní zboží z dovozu, jako je třeba benzín zejména, ale je spousta dalšího zboží. Když naší zemi hrozila deflace před devíti lety, tak, jak víme, Národní banka intervenovala masivně proti koruně, aby korunu oslabila a aby tak té deflaci předešla, nebo dokonce aby tu inflaci zvýšila na nějaké úrovně, které nebudou blízké nule. A ten návrh, který jsem vznášel nejenom já, ale zase i řada ostatních ekonomů, je teď se chovat stejně, když bojujeme proti inflaci a máme tak velký problém v krátkém období, ve kterém nemohou nikdy fungovat ty nástroje typu zvyšování sazeb, které se projevují komplikovaně a mnohem pomaleji, minimálně během roku, spíše dva a více let.
 
-Kdežto to posílení koruny vám okamžitě, jak jsem řekl, zlevní benzín a další věci, takže v té inflaci ho uvidíme už další měsíc. Ne plně, ale do určité míry. Čili ten návrh je jednoduše ta eura, která se tehdy nakoupila a koruny, které se tehdy vytvořily, tak teď to všechno obrátit. Ta eura prodat, ty koruny vytvořené zrušit, korunu posílit a tím pádem inflaci snížit a snížit i inflační očekávání,
+Kdežto to posílení koruny vám okamžitě, jak jsem řekl, zlevní benzín a další věci, takže v té inflaci ho uvidíme už další měsíc. Ne plně, ale do určité míry. Čili ten návrh je jednoduše ta eura, která se tehdy nakoupila, a koruny, které se tehdy vytvořily, tak teď to všechno obrátit. Ta eura prodat, ty koruny vytvořené zrušit, korunu posílit a tím pádem inflaci snížit a snížit i inflační očekávání,
 
 **Jan Bumba:** Na jaký kurz podle vás by měla česká koruna posílit? Kolik by měla stát za euro?
 
@@ -6938,7 +6938,7 @@ A i když tam lidé ty peníze přesouvají, tak pořád ten objem je velmi mal�
 
 **Tomáš Havránek:** Je to náhoda. Když potom bádáte, kde vzniklo to číslo 2%, tak na prvopočátku stál Nový Zéland v roce 1990, kdy měli dlouhodobě na Zélandu potíže s inflací, která byla vysoká. Jeden z nápadů potom byl: explicitně oznámíme, na kterou hladinu tu inflaci chceme snížit. A ty 2%, to nebyl ten cíl, ale to byl horní limit.
 
-Čili aby ta inflace byla do 2%, maximálně 2%. A vypadalo to, že tohle funguje, ta transparentnost v tom, ať to zní triviálně, že ta banka řekne, o co se vlastně snaží. Nejenom, že se snaží o, řekněme, vyváženou ekonomiku, ale o inflaci do 2%. A ten guvernér Národní banky Zélandu, Don Brash, to hodně propagoval v zahraničí.
+Čili aby ta inflace byla do 2%, maximálně 2%. A vypadalo to, že tohle funguje, ta transparentnost v tom, ať to zní triviálně, že ta banka řekne, o co se vlastně snaží. Nejenom že se snaží o, řekněme, vyváženou ekonomiku, ale o inflaci do 2%. A ten guvernér Národní banky Zélandu, Don Brash, to hodně propagoval v zahraničí.
 
 Mimochodem, sám řekl na rovinu, že to číslo vytáhli z klobouku, ty 2%, a že za tím není žádný hluboký vědecký výzkum. A pak to převzaly ostatní země, jako Kanada, a ty to posunuly maličko na ty 2%, protože se vlastně bály deflace. Ale to je všechno. Abych to jenom dal do kontextu nějakého vědeckého výzkumu, tak v roce 1990 bylo už tehdy 17 studií, které odhadovaly, jak velká inflace je zdravá pro ekonomiku.
 
@@ -6960,7 +6960,7 @@ Stačí většina v té bankovní radě, nepotřebuje změnu zákona ani nic a m
 
 **Jan Bumba:** ten slogan zrušme inflaci? Je to spíš akademické cvičení? A nebo opravdu věříte tomu, že to je proveditelné i vzhledem k tomu, že máte zkušenosti z praxe? Víte, jaká je politika, víte, jaká je společenská nálada.
 
-**Tomáš Havránek:** Já hluboce věřím tomu, že ano. Takhle, asi není pravděpodobné, že to pan guvernér, jak jsem říkal, teď udělá. Mohl by, ale kdy jindy se o to snažit, když ne v době, kdy ten současný systém tak strašlivě selhal, jako teď, všichni to vidíme. Je hrozná věc, když Národní banka má v mandátu ústavním, čili v tom nejvyšším, v jakém vůbec může být úkol cenové stability.
+**Tomáš Havránek:** Já hluboce věřím tomu, že ano. Takhle, asi není pravděpodobné, že to pan guvernér, jak jsem říkal, teď udělá. Mohl by, ale kdy jindy se o to snažit, když ne v době, kdy ten současný systém tak strašlivě selhal, jako teď, všichni to vidíme. Je hrozná věc, když Národní banka má v mandátu ústavním, čili v tom nejvyšším, v jakém vůbec může být, úkol cenové stability.
 
 A přitom během tří let, vloni, letos a za rok, nám naše úspory ztratí třetinu hodnoty dohromady. To je strašné selhání a je na čase minimálně přemýšlet o nějaké změně. Proto jsem navrhoval audit Národní banky, abychom se podívali, jestli to opravdu odpovídá současnému vědeckému poznání. Já vím, že ne.
 
@@ -6968,7 +6968,7 @@ Proto vím, co by z toho auditu muselo vyplynout. Protože zase průměrný odha
 
 A přitom pro tu banku by bylo velmi snadné to změnit. Ty nástroje by byly úplně stejné. Zvyšování sazeb, pohyby sazeb, pohyby devizového kurzu. A jenom by maličko upravila ty svoje procesy, to, co jak dělá.
 
-A přitom ten benefit pro všechny by byl úžasný. To, že nám ta 100 koruná má stejnou hodnotu teď, jako za 20 let. Pro spoření, pro jakékoliv plánování budoucnosti, i firem a jejich investic, by to byla úžasná věc.
+A přitom ten benefit pro všechny by byl úžasný. To, že nám ta stokoruna má stejnou hodnotu teď jako za 20 let. Pro spoření, pro jakékoliv plánování budoucnosti, i firem a jejich investic, by to byla úžasná věc.
 
 **Jan Bumba:** Jsou všechny tyto úvahy podmíněny tím, že Česká republika bude i nadále používat korunu? Nezmizely by veškeré tyto plány při vstupu do eurozóny?
 
@@ -7499,7 +7499,7 @@ Každá inflace je neústavní. Hodnota peněz je základní měrná jednotka, p
 
 Kdybychom každý rok zkracovali délku metru, nastal by naprostý zmatek. A to samé bohužel dělá inflace s penězi. Proto je dnes tak těžké spořit na důchod nebo pro děti.
 
-Ale inflace běží jen posledních 100 let. Ceny před první světovou válkou byly podobné, jako o století dříve. Každá inflace je nepřirozená.
+Ale inflace běží jen posledních 100 let. Ceny před první světovou válkou byly podobné jako o století dříve. Každá inflace je nepřirozená.
 
 Nad cenou průměrného zboží a služeb má nakonec kontrolu Národní banka. Ta totiž určuje cenu peněz a nepřímo i jejich množství. A díky zásobě eur a dolarů má také vliv na hodnotu koruny oproti ostatním měnám.
 
@@ -7559,7 +7559,7 @@ Ta hodnota toho dluhu se snižuje, tou inflací, a pak to zaplatí ti, kteří v
 
 **Moderátor:** Snižování dluhu by znamenalo utahování opasku, taková poučka z počátku 90. let. Tohle utahování opasku probíhá
 
-**Tomáš Havránek:** … u těch domácností, které spoří a ta inflace je jako daň, která jim bere hodnotu těch úspor a vlastně přerozděluje je k těm dlužníkům, to je stát a lidé, kteří mají hypotéku
+**Tomáš Havránek:** … u těch domácností, které spoří, a ta inflace je jako daň, která jim bere hodnotu těch úspor a vlastně je přerozděluje k těm dlužníkům, to je stát a lidé, kteří mají hypotéku
 
 **Moderátor:** … a mají zafixovanou nějakou delší dobu. To všechno jsou pro ty lidi velmi nepříjemné věci, nepříjemné situace, ale jedna věc nebo jedno téma, o kterém se mám pocit politici trošku zdráhají mluvit napříč politickým spektrem a to je případné zvyšování daní. Podle některých expertů se tomu nevyhneme.
 
@@ -7577,7 +7577,7 @@ Ale i nějaké další zvyšování daní pravděpodobně bude nutné, ale tohle
 
 **Moderátor:** Jak říkal Klasik, zdroje jsou, tak otázka je, jestli ty zdroje někde jsou, třeba státní majetek, jeho privatizace, ztrátové podniky, jako je Česká pošta, České dráhy, anebo třeba ty podniky, o kterých čas od času někteří politici říkají, že stát nemá vařit pivo, budvar nemá ubytovávat lázeňské hosty, termál a tak dále. Pomohlo by to?
 
-**Tomáš Havránek:** To dlouhodobě neřeší ten hlavní strukturální problém veřejných financí, takže to jsou spíš taková, jako řekněme, marketingová řešení, ale dlouhodobě to nijak moc nepomůže.
+**Tomáš Havránek:** To dlouhodobě neřeší ten hlavní strukturální problém veřejných financí, takže to jsou spíš taková, řekněme, marketingová řešení, ale dlouhodobě to nijak moc nepomůže.
 
 **Moderátor:** Jaký je odhad? Váš odhad růstu inflace a vývoje ekonomiky v těch nejbližších
 
@@ -7615,7 +7615,7 @@ Odhad z dnešního dne určuje míru meziroční inflace na 16%. Jak se s tím �
 
 A i ta samotná přítomnost žen dokáže velmi kultivovat diskuzi pánů. Protože když tam ty dámy nejsou, tak často nejdete daleko pro nějaké ostřejší slovo. A tohle opravdu je kultivující prvek jak po odborné, tak i po té osobní lidské stránce. Ale k té vaší otázce, já mám dojem, že se všichni z nich dlouhodobě vyjadřují, možná tedy s výjimkou pana profesora Fraita, který se k tomu vyjadřovat nemohl jako zaměstnanec ČNB.
 
-Tak paní Zamrazilová i paní Kubelková jsou spíše proti dalšímu zvyšování sazeb. A tohle dohromady s hlasy Aleše Michla a Oldřicha Dědka vlastně znamená, že to zvyšování sazeb nepochybně skončí na konci června, kdy dojde k jednomu poslednímu velkému zvýšení, dané ještě tou současnou takzvanou starou bankovní radou, ale potom už si lze asi těžko představit nějaké další zvyšování.
+Tak paní Zamrazilová i paní Kubelková jsou spíše proti dalšímu zvyšování sazeb. A tohle dohromady s hlasy Aleše Michla a Oldřicha Dědka vlastně znamená, že to zvyšování sazeb nepochybně skončí na konci června, kdy dojde k jednomu poslednímu velkému zvýšení, danému ještě tou současnou takzvanou starou bankovní radou, ale potom už si lze asi těžko představit nějaké další zvyšování.
 
 **Marek Zavřel:** A máme předpokládat, že se nebudou zvyšovat, anebo že se budou zvyšovat mírně ty úrokové sazby?
 
@@ -7647,7 +7647,7 @@ Samozřejmě budou chtít nakupovat, budou mít tolik peněz, že spousta peněz
 
 **Tomáš Havránek:** zase jak jsem říkal, sazby mají růst rychleji, než roste inflace, to je základní poučka, Taylorův princip v ekonomii, abyste inflaci mohli kontrolovat. Když zvyšujete sazby polovičním tempem, nebo třetinovým, než roste inflace, tak vy de facto pořád, teď to zkusím říct netechnicky, ale vy snižujete ty úrokové sazby očištěné o inflaci. Ty vám nerostou, ale klesají. Čili dnes máme úrokové sazby plus 5 a 3 čtvrtě procenta, inflace je 16 procent, čili ty reálné úrokové sazby, čili po odečtení inflace, jsou minus 10.
 
-To znamená, že pořád peníze jsou rekordně levné v tom reálném vyjádření, na kterém doopravdy záleží. Takže podle veškeré standardní ekonomické teorie i ta politika naší centrální banky ČNB, která se nám zdá, jako že hodně zvyšuje sazby, tak je extrémně uvolněná. Tak nejenom, že nebrzdí, ona jde z kopce a má nohu až na podlaze na plynu. To je ta standardní ekonomická logika.
+To znamená, že pořád peníze jsou rekordně levné v tom reálném vyjádření, na kterém doopravdy záleží. Takže podle veškeré standardní ekonomické teorie i ta politika naší centrální banky ČNB, která se nám zdá, jako že hodně zvyšuje sazby, tak je extrémně uvolněná. Tak nejenom že nebrzdí, ona jde z kopce a má nohu až na podlaze na plynu. To je ta standardní ekonomická logika.
 
 Problém je, že ona dnes nemůže ty sazby zvýšit na 20 procent, jak by asi bylo potřeba z hlediska tlumení inflace. A ten důvod je, že by způsobila strašlivou recesi. Protože samozřejmě řada firem by měla problémy splácet svoje úvěry. Řada domácností, možná i náš stát.
 
@@ -7681,11 +7681,11 @@ To je evidentní věc. Takže byste opravdu věřili víc tomu, že ta inflace z
 
 **Marek Zavřel:** A pokud tedy má Česká národní banka tedy nástroj buď to zvyšování úrokových sazeb anebo manipulacemi s devizovými rezervami, tedy s rezervami v dolarech, eurech a dalších menších měnách, proč to nedělá? Proč nevyužívá ty devizové rezervy k posilnění koruny?
 
-**Tomáš Havránek:** Já se na to ptám opakovaně, mluvím s desítkami lidí z ČNB, z nichž většina sama říká, že by to byla rozumná věc. A nikdo mi nedokázal vlastně říct, proč to tak není. Proč už minimálně v září, kdy bylo všem jisté, že ta inflace je mimo kontrolu, se nezačala měsíčně prodávat třeba miliarda eur. To by pomohlo rychle korunu posílit, protože to má daleko rychlejší dopad než nějaké změny úrokových sazeb na inflaci.
+**Tomáš Havránek:** Já se na to ptám opakovaně, mluvím s desítkami lidí z ČNB, z nichž většina sama říká, že by to byla rozumná věc. A nikdo mi nedokázal vlastně říct, proč to tak není. Proč se už minimálně v září, kdy bylo všem jisté, že ta inflace je mimo kontrolu, nezačala měsíčně prodávat třeba miliarda eur. To by pomohlo rychle korunu posílit, protože to má daleko rychlejší dopad než nějaké změny úrokových sazeb na inflaci.
 
 A my bychom dnes nemuseli mít dvoucifernou inflaci, já jsem o tom přesvědčen. Není to úplně jisté, ale je to dost možné, že bychom dnes měli inflaci třeba 8%. A potom by i ta bankovní rada vlastně mohla přežít v tom starém složení. Nemuseli bychom vidět ty výpovědi, které pan prezident takhle rozdává.
 
-Protože to je důsledek toho selhání centrální banky. Nepochybně, že ta inflace je takhle veliká. Ale odpověď je, že nevím. Já netuším, proč ten nástroj nepoužívá, když by jim to pomohlo v plnění jejich jediného ústavního cíle.
+Protože to je nepochybně důsledek toho selhání centrální banky, že ta inflace je takhle veliká. Ale odpověď je, že nevím. Já netuším, proč ten nástroj nepoužívá, když by jim to pomohlo v plnění jejich jediného ústavního cíle.
 
 **Marek Zavřel:** Někdo by ale mohl namítnout, že využití devizových rezerv je pomalejší nebo že se neprojeví tolik jako zvyšování nebo manipulace s těmi úrokovými sazbami. Vy říkáte, že rozprodeje těch devizových rezerv rychlejší dopad na tu míru té inflace.
 
@@ -7777,9 +7777,9 @@ Do konce tohohle roku nečekám nějaké výraznější snížení. Rozhodně to
 
 to z žádného modelu nemůže vyjít. Je to nějaká věc, kterou plácnul asi bez velkého přemýšlení. Já si nemyslím, že ta inflace takhle vysoko může vyrůst. Dnes asi už nelze vyloučit vůbec nic.
 
-Ale já hlavně doufám, že ta nová bankovní rada... Dobře, nebudou zvyšovat sazby, ale my vidíme, že už to moc nefunguje. Ono to taky nefunguje z toho důvodu, že si firmy dnes často berou úvěry v eurech, protože můžou a ty eurové úroky jsou mnohem, mnohem menší než ty korunové, čili nějaké zvyšování českých úroků už má malý dopad na firmy relativně. Má to dopad na hypotéky, ale pro ty lidi, kteří se zrovna refinancují nebo kteří si berou nové samozřejmě. Ale ten efekt je mnohem, mnohem menší než předpovídají všechny modely.
+Ale já hlavně doufám, že ta nová bankovní rada... Dobře, nebudou zvyšovat sazby, ale my vidíme, že už to moc nefunguje. Ono to taky nefunguje z toho důvodu, že si firmy dnes často berou úvěry v eurech, protože můžou a ty eurové úroky jsou mnohem, mnohem menší než ty korunové, čili nějaké zvyšování českých úroků už má malý dopad na firmy relativně. Má to dopad na hypotéky, ale pro ty lidi, kteří se zrovna refinancují nebo kteří si berou nové samozřejmě. Ale ten efekt je mnohem, mnohem menší, než předpovídají všechny modely.
 
-Ale doufám, že dojde k posílení koruny. Opravdu velkému masivnímu posílení koruny. Jak jsem slyšel pana prezidenta, on sám vlastně to zmiňoval, že by to bylo vhodné. Takže já doufám, vím, že i paní Zamrazilová to zmiňovala, takže doufám, že k tomu dojde na podzim.
+Ale doufám, že dojde k posílení koruny. Opravdu velkému masivnímu posílení koruny. Jak jsem slyšel pana prezidenta, on sám to vlastně zmiňoval, že by to bylo vhodné. Takže já doufám, vím, že i paní Zamrazilová to zmiňovala, takže doufám, že k tomu dojde na podzim.
 
 po té stabilizaci sazeb z léta a uklidnění situace by na podzim mohlo dojít k velkému posílení koruny, které tu inflaci konečně sníží klidně i na nějaké jednociferné hodnoty v příštím roce. Ale znovu říkám, ta realita je taková, že během tří let, 2021 až 2023, se nám sníží hodnota koruny asi o třetinu, což je naprosto šílená věc. Je to v absolutním protikladu s ústavním mandátem cenové stability a je to absolutní selhání naší centrální banky a té doktríny inflačního cílování.
 
@@ -7863,7 +7863,7 @@ To se začalo dít včera. První věcí, kterou tedy Centrální banka po tom v
 
 **Tomáš Havránek:** Tak ten vzkaz je poměrně jasný ohledně toho, co si ten trh myslí, že Aleš Michl bude dělat. Já se obecně domnívám, že možná ta reakce byla maličko předčasná, protože jedna věc byla to, co Aleš Michl říkal doposud do toho jmenování a další věc je, jak se potom bude chovat, když tím guvernérem bude a bude mít většinu případně v bankovní radě. Takže podle mě zdaleka není jisté, že opravdu dojde na to holubičí vyznění těch dalších kroků bankovní rady. Protože ta inflace nezmizí sama od sebe.
 
-S tou inflací bude potřeba bojovat. Aleš Michl, tak jak ho znám, dělal jsem mu poradce několik měsíců a občas jsme se shodli, občas ne. Vlastně pak jsem odešel z té centrální banky. Ale jak ho znám, on si opravdu hodně potrpí na tom, jak si na něj historie bude pamatovat.
+S tou inflací bude potřeba bojovat. Aleš Michl, tak jak ho znám, dělal jsem mu poradce několik měsíců a občas jsme se shodli, občas ne. Vlastně pak jsem odešel z té centrální banky. Ale jak ho znám, on si opravdu hodně potrpí na to, jak si na něj historie bude pamatovat.
 
 Čili já si nemyslím, že by úplně nechal spálit českou korunu. A věřím, doufám v to, že se opravdu překlopí znovu do té své takové rašínovské roviny.
 
@@ -7907,13 +7907,13 @@ A dvouciferné sazby dnes by znamenaly bankrot řady subjektů v té zemi. To ne
 
 **Tomáš Havránek:** ve srovnání se zbytkem světa. Když srovnáme naši inflaci s inflací globální, řekněme, podle čísel třeba OECD nebo Mezinárodní organizace práce, tak ta globální je 9%, kolem 9%, u nás to je 14%. Čili dá se říct zhruba, že dovážíme nějaké dvě třetiny té naší inflace, ale ta třetina, těch pět procentních bodů navíc, je naše vlastní, kterou my přitápíme vlastně. A to má tři hlavní domácí zdroje.
 
-Ten první byly takové vrtulníkové peníze během pandemie. Rozhazování peněz v masivním měřítku, nevídané vůbec v historii naší země. Druhý zdroj je nedostatek lidí, který tlačí na vyšší mzdy, sice teď už ne tolik, ale stále.
+Ten první byly takové vrtulníkové peníze během pandemie. Rozhazování peněz v masivním měřítku, vůbec nevídané v historii naší země. Druhý zdroj je nedostatek lidí, který tlačí na vyšší mzdy, sice teď už ne tolik, ale stále.
 
 A třetí zdroj je ta slabší koruna. Slabší, než by měla být nebo než by bylo dobré, aby byla, aby nám pomohla tu inflaci snížit.
 
 **Martin Veselovský:** jestli popisujete tři hlavní důvody toho, v jakém inflačním stavu jsme teď. Tak jestli to, že by Česká národní banka řešila ten jeden důvod, to znamená slabou korunu, jestli by to celou tu situaci dokázalo relativně rychle zvrátit?
 
-**Tomáš Havránek:** rozhodně by to pomohlo. Ty další dva důvody nebo ty dva aspekty se trochu řeší samy od sebe tím, že pandemie skončila, ty vrtulníkové peníze pořád je máme v nějaké formě. Máme tady ty nové přídavky na děti, zvyšování důchodů, ale ten řád je úplně jiný. A podobně nedostatek lidí tady také pořád je, ale máme tady statisíce nových pracovnic z východu z Ukrajiny.
+**Tomáš Havránek:** rozhodně by to pomohlo. Ty další dva důvody nebo ty dva aspekty se trochu řeší samy od sebe tím, že pandemie skončila. Ty vrtulníkové peníze pořád máme v nějaké formě. Máme tady ty nové přídavky na děti, zvyšování důchodů, ale ten řád je úplně jiný. A podobně nedostatek lidí tady také pořád je, ale máme tady statisíce nových pracovnic z východu z Ukrajiny.
 
 A na řadě pozic, samozřejmě to neplatí plošně, ale když mluvíte s šéfy firem, třeba u nás v Litomyšli, tak řada těch menších nebo středních fabrik vlastně nemá už problém najít lidi, protože mají ty Ukrajinky, které ty, řekněme, manuální profese v knihárně, třeba v tiskárně dobře zastanou, což je nebývalá situace za posledních 15 let, řekněme.
 
@@ -7967,7 +7967,7 @@ A tohle bohužel naše centrální banka nedělá.
 
 **Martin Veselovský:** Ten rozdíl už je minimální. Tak to zrušit inflaci můžeme kdykoliv, zvlášť, když se díváme na dvouciferné číslo, poměrně odvážné tvrzení.
 
-**Tomáš Havránek:** Dlouhodobě. Dlouhodobě. Dlouhodobě centrální banka má plnou kontrolu nad inflací. Ne na ten letošní nebo příští rok, ale v horizontu deseti let.
+**Tomáš Havránek:** Dlouhodobě. Dlouhodobě centrální banka má plnou kontrolu nad inflací. Ne na ten letošní nebo příští rok, ale v horizontu deseti let.
 
 Pokud tomuhle nevěříme, tak vlastně můžeme tu banku zavřít. Protože ona kontroluje cenu peněz v ekonomice, nepřímo i objem peněz v ekonomice a může si dlouhodobě stanovit jakoukoliv průměrnou cenu, jakou chce
 
@@ -7983,7 +7983,7 @@ Tak jestli prostě nezbytně musel přijít a Česká národní banka akorát m�
 
 Je to selhání obecně všech centrálních bank, většiny z nich, kromě toho Švýcarska možná. A já, jak jste správně naznačil, často kritizuji vedení ČNB možná neúplně korektně v tom, že opravdu v tom mezinárodním srovnání oni si vedou dobře. Zvyšovali sazby, podle mě to není úplně ten nejefektivnější způsob, ale aspoň něco dělali, a to brzy. Bohužel se jim to celkově nepovedlo.
 
-Ten obrázek jednak komunikační, jednak nepoužili kurz. A to možná přispělo i k tomu vlastně zemětřesení v ČNB, které nastane. Které bude bez precedentu.
+Ten obrázek jednak komunikační, jednak nepoužili kurz. A to možná přispělo i k tomu vlastně zemětřesení v ČNB, které nastane a které bude bez precedentu.
 
 **Martin Veselovský:** Myslíte tím obměnu členů bankovní rady?
 
@@ -8069,7 +8069,7 @@ Dobrý večer.
 
 **Tomáš Havránek:** Tak já bych prvé rád poděkoval za to, co udělala nebo co dělá dlouhodobě už naše centrální banka, že opravdu bojuje proti inflaci, což zdaleka není samozřejmé, když se podíváme kolem do ostatních zemí, do eurozóny, tak Evropská centrální banka dělá velice málo proti inflaci. Čili možná bych volil jiný nástroj, spíš posilování měny, ale každopádně poděkujeme bankovní radě za tu odvahu k takovému zvyšování sazeb. Ale ta samotná sazba je 5%, což vypadá dramaticky, ale když naposledy byla inflace takhle vysoká, 11%, tak to byl rok 1998 tuším, a tehdy byly sazby 15%, čili o 10 % bodů vyšší. A z toho vidíme, že opravdu ta reálná úroková sazba, čili ta opravená o inflaci, je stále hluboce záporná, je minus 6% bodů a to dnešní zvýšení ji jenom maličko posunulo z minus 6,5 na minus 6, čili bylo by to hezké, kdyby nám to pomohlo, ale bohužel na nějaké větší spoření Čechů to asi nevypadá, protože pořád proděláme na spoření velmi hodně.
 
-Čili co by pomohlo je buď zvýšení těch sazeb nad hodnotu inflace, jako to bylo před 20 lety nebo v tom roce 1998, ale to nejde, protože dnes při tom objemu dluhů v ekonomice i při zadlužení státu by to vlastně znamenalo potíže s financováním státního dluhu a možná i státní bankrot. Čili ta druhá možnost, která zbývá, je posílení koruny, jak jsem už zmínil, když ČNB proti koruně intervenovala před lety, tak vytvořila 2 biliony korun a za ně nakoupila nová eura a teď by mohla to samé obrátit, ta eura prodávat, korunu posílit, čímž by nám rychle zlevnilo dovážené zboží a rychle by se inflace snížila. Není to úplně všelék, ale rozhodně by to pomohlo a mimochodem i kvůli tomu má inflaci nízkou třeba Švýcarsko stále kolem 2%, čili ta pevná a posilující měna je něco, co je klíčové pro snížení inflace.
+Čili co by pomohlo, je buď zvýšení těch sazeb nad hodnotu inflace, jako to bylo před 20 lety nebo v tom roce 1998, ale to nejde, protože dnes při tom objemu dluhů v ekonomice i při zadlužení státu by to vlastně znamenalo potíže s financováním státního dluhu a možná i státní bankrot. Čili ta druhá možnost, která zbývá, je posílení koruny, jak jsem už zmínil, když ČNB proti koruně intervenovala před lety, tak vytvořila 2 biliony korun a za ně nakoupila nová eura a teď by mohla to samé obrátit, ta eura prodávat, korunu posílit, čímž by nám rychle zlevnilo dovážené zboží a rychle by se inflace snížila. Není to úplně všelék, ale rozhodně by to pomohlo a mimochodem i kvůli tomu má inflaci nízkou třeba Švýcarsko stále kolem 2%, čili ta pevná a posilující měna je něco, co je klíčové pro snížení inflace.
 
 **Moderátorka:** Pane viceguvernére, intervenovat a posilovat tím korunu, je to vůbec téma pro centrální banku? Neříkám, že to muselo být téma dnes, ale není to téma na další zasedání.
 
@@ -8258,9 +8258,9 @@ Zdroj: https://www.e15.cz/podcasty/e15-cast/extremni-opatrnost-cnb-je-ve-vysledk
 
 Vy jste ve svých komentářích v minulých týdnech a měsících napsal, že Česká národní banka v tom stavu, ve kterém teď je, a teďko není z hlediska toho, zda dělají svoji práci dobře nebo ne, ale z hlediska toho, na co targetují, zaměřují svoje priority, to znamená ten inflační cíl, že je to trošičku outdated, že to je zastaralý a že by potřebovala audit. A ten audit svých politik, takovou revizi provedly velké malé centrální banky, a vy jste psal, že už se to stalo v cizině. Proč by si zrovna teď Česká národní banka takový audit zasloužila?
 
-**Tomáš Havránek:** Protože podle mě by to pomohlo posílit její důvěryhodnost, a to jak vlastně dovnitř republiky, tak i navenek, z hlediska kurzu koruny. A čili to inflační cílování, jak jste říkal, jak víme dobře, je to taková všeobecná mantra, používají to skoro všechny centrální banky vyspělých zemí. A určitě, když se to zavádělo před 30 lety na Zélandu, v Kanadě, tak to byl velký průlom. Pomohlo to inflaci snížit, pomohlo to zvýšit důvěru v tu nízkou inflaci a v centrální banky obecně.
+**Tomáš Havránek:** Protože podle mě by to pomohlo posílit její důvěryhodnost, a to jak vlastně dovnitř republiky, tak i navenek, z hlediska kurzu koruny. Čili to inflační cílování, jak jste říkal a jak dobře víme, je taková všeobecná mantra, používají to skoro všechny centrální banky vyspělých zemí. A určitě, když se to zavádělo před 30 lety na Zélandu, v Kanadě, tak to byl velký průlom. Pomohlo to inflaci snížit, pomohlo to zvýšit důvěru v tu nízkou inflaci a v centrální banky obecně.
 
-A fungovalo to velice dobře. V té době vlastně nebyl žádný průšvih. Ten průšvih přišel až teď, kdy ta inflace, částečně z globálních, částečně z lokálních příčin v těch různých zemích, stoupá tak silně, že to popírá tu původní mantru toho, že ta inflační očekávání v té ekonomice jsou dobře ukotvená, že to funguje. Tohle se nemělo nikdy stát, v té doktríně inflačního cílování.
+A fungovalo to velice dobře. Od té doby vlastně nebyl žádný průšvih. Ten průšvih přišel až teď, kdy ta inflace, částečně z globálních, částečně z lokálních příčin v těch různých zemích, stoupá tak silně, že to popírá tu původní mantru toho, že ta inflační očekávání v té ekonomice jsou dobře ukotvená, že to funguje. Tohle se nemělo nikdy stát, v té doktríně inflačního cílování.
 
 Čili tohle ukazuje na, když už ne na selhání, tak na velké problémy toho frameworku, toho vlastně nastavení. A ukazuje to na potřebu nějakého zamyšlení se nad tím, jestli tohle je opravdu to nejlepší, co jsme schopni vygenerovat pro lidi, pro tu ekonomiku. A jak jste zmiňoval, nikdy to dobře, tak ten audit nebo revizi provedly už i ostatní centrální banky, FED, ECB, Bank of Canada například. Čili není důvod, abychom se v takovéhle situaci, kdy opravdu došlo možná k selhání té současné politiky, neměli zamyslet nad tím, jestli bychom to měli dělat lépe.
 
@@ -8322,7 +8322,7 @@ Ale to je jeden procentní bod maximálně, ne dva, to se nedá odůvodnit,
 
 **Tomáš Havránek:** Tak a to je přesně to, proč bychom měli udělat ten audit, nebo tu revizi, jak strategie, to znamená cíl, tak taktiky, to znamená, jak snižovat inflaci, jak investovat rezervy. Protože máte pravdu. Na druhou stranu, znovu říkám, Švýcarsko, tam se neděje žádná velká katastrofa, neříkáme, že by to bylo zcela přenositelné, ale tady máte příklad toho, jak by to mohlo být. Druhá věc je, že to není zase tak velká změna, jak se zdá.
 
-Vy snížíte průměrnou inflaci o 2 procentní body. To není nějaká velká revoluce a můžete to prodat jako vlastně vylepšení toho inflačního cílování, které, jak říkám znovu, tehdy, před 30 lety, opravdu pomohlo. Že to není negace toho, co funguje teď. Je to relativně drobná kalibrace.
+Vy snížíte průměrnou inflaci o 2 procentní body. To není nějaká velká revoluce a můžete to prodat jako vlastně vylepšení toho inflačního cílování, které, jak říkám znovu, tehdy, před 30 lety, opravdu pomohlo. Není to negace toho, co funguje teď. Je to relativně drobná kalibrace.
 
 Myslím si, že před 12 lety byl snížen inflační cíl ze 3 na 2 %. Všiml si toho někdo moc? Tohle je vlastně dvojnásobně větší krok, čili to by nebyla velká revoluce, ale bylo by to pro nás všechny jednodušší, protože bychom mohli spořit velice jednoduše, a i když se třeba někdo z nás vyhýbá riziku, tak by potom nemusel kupovat akcie, aby se mu zhodnotily úspory, mohl by je držet na běžném účtu. Nebo v hotovosti doma, konec konců.
 
@@ -10451,7 +10451,7 @@ Zdroj: https://www.cnb.cz/cs/o_cnb/vlog-cnb/Nejcitovanejsi-cesky-ekonom-Dum-je-p
 
 Kdo a kde vás cituje a k čemu je to vlastně dobré?
 
-**Tomáš Havránek:** Ty citace, o kterých mluvíte, vlastně znamenají, že někdo váš výzkum použije, vezme ho a použije pro svoji práci, což je to, co vy jako výzkumník nejvíc chcete. A nás hlavně citují zahraniční další ekonomové, ale máme třeba i citaci v takovém nejznámějším vědeckém časopise Science. Ale pro mě jako zaměstnance Národní banky je hlavně samozřejmě důležité využití v praxi toho našeho výzkumu. Takže jsem nejraději, když ten můj výzkum je použit tady u nás v ČNB.
+**Tomáš Havránek:** Ty citace, o kterých mluvíte, vlastně znamenají, že někdo váš výzkum použije, vezme ho a použije pro svoji práci, což je to, co vy jako výzkumník nejvíc chcete. A nás hlavně citují další zahraniční ekonomové, ale máme třeba i citaci v takovém nejznámějším vědeckém časopise Science. Ale pro mě jako zaměstnance Národní banky je hlavně samozřejmě důležité využití v praxi toho našeho výzkumu. Takže jsem nejraději, když ten můj výzkum je použit tady u nás v ČNB.
 
 **Redaktorka ČNB:** Ale zpátky tedy tomu Žebříčku, proč se ta kvalita výzkumu tímto způsobem vlastně měří?
 
@@ -10479,7 +10479,7 @@ Ale i pro tu cenovou stabilitu je důležité v krizi nějak zvednout náladu li
 
 **Redaktorka ČNB:** Je dnes podle vás ekonomie spíše exaktní, tedy na matematice založenou vědou, anebo spíše vědou společenskou?
 
-**Tomáš Havránek:** Ekonomie určitě má jak exaktní prvky z matematiky, tak humanitní prvky, třeba z psychologie. A dohromady to je společenská věda, jako čistě sociální věda, která ale vám nedá nějaký všelék na všechny problémy společnosti, dokonce ani ekonomiky. Protože i taková ryze ekonomická událost, důležitá ekonomická událost, jako byla průmyslová revoluce, tak vlastně nemá ekonomické vysvětlení,
+**Tomáš Havránek:** Ekonomie určitě má jak exaktní prvky z matematiky, tak humanitní prvky, třeba z psychologie. A dohromady to je společenská věda, jako čistě sociální věda, která vám ale nedá nějaký všelék na všechny problémy společnosti, dokonce ani ekonomiky. Protože i taková ryze ekonomická událost, důležitá ekonomická událost, jako byla průmyslová revoluce, tak vlastně nemá ekonomické vysvětlení,
 
 **Redaktorka ČNB:** S viceguvernérem Mojmírem Hamplem, jehož jste mimochodem poradcem, jste publikovali několik textů na téma zahrnutí ceny nemovitostí do inflace. Mě by zajímalo, proč je zrovna tohle téma pro vás důležité?
 
@@ -10493,7 +10493,7 @@ A jako takové by podle něj měly mít určitou váhu v indexu spotřebitelský
 
 **Redaktorka ČNB:** Proč to ve světě není zahrnuto vůbec? Proč ta situace vlastně ve světě a u nás je odlišná?
 
-**Tomáš Havránek:** Protože se většinou byty a domy považují spíš za investice, než za spotřebu. Takže nejsou v indexu spotřebitelských cen konceptuálně uváděny. Ale já si myslím, že ta situace u nás je odlišná, třeba od Spojených států, kde se lidé často stěhují a ty domy a byty často prodávají. Tady, když si koupíme první byt nebo dům, tak to je často na celý život, nebo skoro na celý život.
+**Tomáš Havránek:** Protože se většinou byty a domy považují spíš za investice než za spotřebu. Takže nejsou v indexu spotřebitelských cen konceptuálně uváděny. Ale já si myslím, že ta situace u nás je odlišná, třeba od Spojených států, kde se lidé často stěhují a ty domy a byty často prodávají. Tady, když si koupíme první byt nebo dům, tak to je často na celý život, nebo skoro na celý život.
 
 **Redaktorka ČNB:** Má to nějakou spojitost také s tím, že většina lidí u nás bydlí ve svém vlastním bytě nebo domě?
 

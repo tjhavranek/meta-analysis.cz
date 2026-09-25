@@ -33,7 +33,7 @@ Buď je utratíte, protože jinak vám je ta inflace požere, ale tím znovu tu 
 
 **Jan Bumba:** Když zůstaneme chviličku o té aktuální situace a té možná až 20% inflace na podzim, vedou se debaty o tom, jestli to je inflace dovezená, hlavně přes vysoké ceny plynu, anebo jestli je to vnitřní poptávková inflace. Na které straně stojíte vy?
 
-**Tomáš Havránek:** Na obou, což je taková jako odpověď, řekněme, trochu triviální, ale samozřejmě ty zdroje jsou oba. A je to složitější, já se pokusím to nějak zjednodušit. Tak samozřejmě ta naše ekonomika byla přehřátá, řekněme, už před tím covidem. A zároveň, řekněme, ta státní pomoc, ty vrtulníkové peníze lidem během pandemie u nás byly štědřejší než v ostatních zemích.
+**Tomáš Havránek:** Na obou, což je taková odpověď, řekněme, trochu triviální, ale samozřejmě ty zdroje jsou oba. A je to složitější, já se to pokusím nějak zjednodušit. Tak samozřejmě ta naše ekonomika byla přehřátá, řekněme, už před tím covidem. A zároveň, řekněme, ta státní pomoc, ty vrtulníkové peníze lidem během pandemie u nás byly štědřejší než v ostatních zemích.
 
 Čili to rozhodně hrálo svou roli, ale svoji podstatnou roli hraje také politika Národní banky, která dlouhodobě udržuje peníze nebo udržovala peníze levné, čili vlastně přitápila pod tím kotlem. A když tedy ta inflace začala růst, tak ona správně začala zvyšovat úrokové sazby. Ale dělala to sice rychleji než ostatní, řekněme, centrální banky, ale stále pomaleji, než té bankovní radě doporučovali její vlastní odborníci, kteří chtěli dříve a razantněji už na jaře ty sazby zvyšovat, potom během léta. Ta bankovní rada to vetovala a potom byla nucena k dramatičtějším krokům najednou v září.
 
@@ -57,7 +57,7 @@ V průběhu toho minulého roku jsme viděli, jak Centrální banka zvyšovala a
 
 **Tomáš Havránek:** Vy se ptáte velice návodně, jsou. A je to používání devizových rezerv, čili nějaké silnější posílení koruny, které znamená, že nám okamžitě zlevní zboží z dovozu, jako je třeba benzín zejména, ale je spousta dalšího zboží. Když naší zemi hrozila deflace před devíti lety, tak, jak víme, Národní banka intervenovala masivně proti koruně, aby korunu oslabila a aby tak té deflaci předešla, nebo dokonce aby tu inflaci zvýšila na nějaké úrovně, které nebudou blízké nule. A ten návrh, který jsem vznášel nejenom já, ale zase i řada ostatních ekonomů, je teď se chovat stejně, když bojujeme proti inflaci a máme tak velký problém v krátkém období, ve kterém nemohou nikdy fungovat ty nástroje typu zvyšování sazeb, které se projevují komplikovaně a mnohem pomaleji, minimálně během roku, spíše dva a více let.
 
-Kdežto to posílení koruny vám okamžitě, jak jsem řekl, zlevní benzín a další věci, takže v té inflaci ho uvidíme už další měsíc. Ne plně, ale do určité míry. Čili ten návrh je jednoduše ta eura, která se tehdy nakoupila a koruny, které se tehdy vytvořily, tak teď to všechno obrátit. Ta eura prodat, ty koruny vytvořené zrušit, korunu posílit a tím pádem inflaci snížit a snížit i inflační očekávání,
+Kdežto to posílení koruny vám okamžitě, jak jsem řekl, zlevní benzín a další věci, takže v té inflaci ho uvidíme už další měsíc. Ne plně, ale do určité míry. Čili ten návrh je jednoduše ta eura, která se tehdy nakoupila, a koruny, které se tehdy vytvořily, tak teď to všechno obrátit. Ta eura prodat, ty koruny vytvořené zrušit, korunu posílit a tím pádem inflaci snížit a snížit i inflační očekávání,
 
 **Jan Bumba:** Na jaký kurz podle vás by měla česká koruna posílit? Kolik by měla stát za euro?
 
@@ -121,7 +121,7 @@ A i když tam lidé ty peníze přesouvají, tak pořád ten objem je velmi mal�
 
 **Tomáš Havránek:** Je to náhoda. Když potom bádáte, kde vzniklo to číslo 2%, tak na prvopočátku stál Nový Zéland v roce 1990, kdy měli dlouhodobě na Zélandu potíže s inflací, která byla vysoká. Jeden z nápadů potom byl: explicitně oznámíme, na kterou hladinu tu inflaci chceme snížit. A ty 2%, to nebyl ten cíl, ale to byl horní limit.
 
-Čili aby ta inflace byla do 2%, maximálně 2%. A vypadalo to, že tohle funguje, ta transparentnost v tom, ať to zní triviálně, že ta banka řekne, o co se vlastně snaží. Nejenom, že se snaží o, řekněme, vyváženou ekonomiku, ale o inflaci do 2%. A ten guvernér Národní banky Zélandu, Don Brash, to hodně propagoval v zahraničí.
+Čili aby ta inflace byla do 2%, maximálně 2%. A vypadalo to, že tohle funguje, ta transparentnost v tom, ať to zní triviálně, že ta banka řekne, o co se vlastně snaží. Nejenom že se snaží o, řekněme, vyváženou ekonomiku, ale o inflaci do 2%. A ten guvernér Národní banky Zélandu, Don Brash, to hodně propagoval v zahraničí.
 
 Mimochodem, sám řekl na rovinu, že to číslo vytáhli z klobouku, ty 2%, a že za tím není žádný hluboký vědecký výzkum. A pak to převzaly ostatní země, jako Kanada, a ty to posunuly maličko na ty 2%, protože se vlastně bály deflace. Ale to je všechno. Abych to jenom dal do kontextu nějakého vědeckého výzkumu, tak v roce 1990 bylo už tehdy 17 studií, které odhadovaly, jak velká inflace je zdravá pro ekonomiku.
 
@@ -143,7 +143,7 @@ Stačí většina v té bankovní radě, nepotřebuje změnu zákona ani nic a m
 
 **Jan Bumba:** ten slogan zrušme inflaci? Je to spíš akademické cvičení? A nebo opravdu věříte tomu, že to je proveditelné i vzhledem k tomu, že máte zkušenosti z praxe? Víte, jaká je politika, víte, jaká je společenská nálada.
 
-**Tomáš Havránek:** Já hluboce věřím tomu, že ano. Takhle, asi není pravděpodobné, že to pan guvernér, jak jsem říkal, teď udělá. Mohl by, ale kdy jindy se o to snažit, když ne v době, kdy ten současný systém tak strašlivě selhal, jako teď, všichni to vidíme. Je hrozná věc, když Národní banka má v mandátu ústavním, čili v tom nejvyšším, v jakém vůbec může být úkol cenové stability.
+**Tomáš Havránek:** Já hluboce věřím tomu, že ano. Takhle, asi není pravděpodobné, že to pan guvernér, jak jsem říkal, teď udělá. Mohl by, ale kdy jindy se o to snažit, když ne v době, kdy ten současný systém tak strašlivě selhal, jako teď, všichni to vidíme. Je hrozná věc, když Národní banka má v mandátu ústavním, čili v tom nejvyšším, v jakém vůbec může být, úkol cenové stability.
 
 A přitom během tří let, vloni, letos a za rok, nám naše úspory ztratí třetinu hodnoty dohromady. To je strašné selhání a je na čase minimálně přemýšlet o nějaké změně. Proto jsem navrhoval audit Národní banky, abychom se podívali, jestli to opravdu odpovídá současnému vědeckému poznání. Já vím, že ne.
 
@@ -151,7 +151,7 @@ Proto vím, co by z toho auditu muselo vyplynout. Protože zase průměrný odha
 
 A přitom pro tu banku by bylo velmi snadné to změnit. Ty nástroje by byly úplně stejné. Zvyšování sazeb, pohyby sazeb, pohyby devizového kurzu. A jenom by maličko upravila ty svoje procesy, to, co jak dělá.
 
-A přitom ten benefit pro všechny by byl úžasný. To, že nám ta 100 koruná má stejnou hodnotu teď, jako za 20 let. Pro spoření, pro jakékoliv plánování budoucnosti, i firem a jejich investic, by to byla úžasná věc.
+A přitom ten benefit pro všechny by byl úžasný. To, že nám ta stokoruna má stejnou hodnotu teď jako za 20 let. Pro spoření, pro jakékoliv plánování budoucnosti, i firem a jejich investic, by to byla úžasná věc.
 
 **Jan Bumba:** Jsou všechny tyto úvahy podmíněny tím, že Česká republika bude i nadále používat korunu? Nezmizely by veškeré tyto plány při vstupu do eurozóny?
 

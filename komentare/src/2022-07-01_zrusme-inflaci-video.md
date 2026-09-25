@@ -31,7 +31,7 @@ Každá inflace je neústavní. Hodnota peněz je základní měrná jednotka, p
 
 Kdybychom každý rok zkracovali délku metru, nastal by naprostý zmatek. A to samé bohužel dělá inflace s penězi. Proto je dnes tak těžké spořit na důchod nebo pro děti.
 
-Ale inflace běží jen posledních 100 let. Ceny před první světovou válkou byly podobné, jako o století dříve. Každá inflace je nepřirozená.
+Ale inflace běží jen posledních 100 let. Ceny před první světovou válkou byly podobné jako o století dříve. Každá inflace je nepřirozená.
 
 Nad cenou průměrného zboží a služeb má nakonec kontrolu Národní banka. Ta totiž určuje cenu peněz a nepřímo i jejich množství. A díky zásobě eur a dolarů má také vliv na hodnotu koruny oproti ostatním měnám.
 

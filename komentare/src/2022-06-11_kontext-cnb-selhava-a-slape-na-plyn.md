@@ -31,7 +31,7 @@ Odhad z dnešního dne určuje míru meziroční inflace na 16%. Jak se s tím �
 
 A i ta samotná přítomnost žen dokáže velmi kultivovat diskuzi pánů. Protože když tam ty dámy nejsou, tak často nejdete daleko pro nějaké ostřejší slovo. A tohle opravdu je kultivující prvek jak po odborné, tak i po té osobní lidské stránce. Ale k té vaší otázce, já mám dojem, že se všichni z nich dlouhodobě vyjadřují, možná tedy s výjimkou pana profesora Fraita, který se k tomu vyjadřovat nemohl jako zaměstnanec ČNB.
 
-Tak paní Zamrazilová i paní Kubelková jsou spíše proti dalšímu zvyšování sazeb. A tohle dohromady s hlasy Aleše Michla a Oldřicha Dědka vlastně znamená, že to zvyšování sazeb nepochybně skončí na konci června, kdy dojde k jednomu poslednímu velkému zvýšení, dané ještě tou současnou takzvanou starou bankovní radou, ale potom už si lze asi těžko představit nějaké další zvyšování.
+Tak paní Zamrazilová i paní Kubelková jsou spíše proti dalšímu zvyšování sazeb. A tohle dohromady s hlasy Aleše Michla a Oldřicha Dědka vlastně znamená, že to zvyšování sazeb nepochybně skončí na konci června, kdy dojde k jednomu poslednímu velkému zvýšení, danému ještě tou současnou takzvanou starou bankovní radou, ale potom už si lze asi těžko představit nějaké další zvyšování.
 
 **Marek Zavřel:** A máme předpokládat, že se nebudou zvyšovat, anebo že se budou zvyšovat mírně ty úrokové sazby?
 
@@ -63,7 +63,7 @@ Samozřejmě budou chtít nakupovat, budou mít tolik peněz, že spousta peněz
 
 **Tomáš Havránek:** zase jak jsem říkal, sazby mají růst rychleji, než roste inflace, to je základní poučka, Taylorův princip v ekonomii, abyste inflaci mohli kontrolovat. Když zvyšujete sazby polovičním tempem, nebo třetinovým, než roste inflace, tak vy de facto pořád, teď to zkusím říct netechnicky, ale vy snižujete ty úrokové sazby očištěné o inflaci. Ty vám nerostou, ale klesají. Čili dnes máme úrokové sazby plus 5 a 3 čtvrtě procenta, inflace je 16 procent, čili ty reálné úrokové sazby, čili po odečtení inflace, jsou minus 10.
 
-To znamená, že pořád peníze jsou rekordně levné v tom reálném vyjádření, na kterém doopravdy záleží. Takže podle veškeré standardní ekonomické teorie i ta politika naší centrální banky ČNB, která se nám zdá, jako že hodně zvyšuje sazby, tak je extrémně uvolněná. Tak nejenom, že nebrzdí, ona jde z kopce a má nohu až na podlaze na plynu. To je ta standardní ekonomická logika.
+To znamená, že pořád peníze jsou rekordně levné v tom reálném vyjádření, na kterém doopravdy záleží. Takže podle veškeré standardní ekonomické teorie i ta politika naší centrální banky ČNB, která se nám zdá, jako že hodně zvyšuje sazby, tak je extrémně uvolněná. Tak nejenom že nebrzdí, ona jde z kopce a má nohu až na podlaze na plynu. To je ta standardní ekonomická logika.
 
 Problém je, že ona dnes nemůže ty sazby zvýšit na 20 procent, jak by asi bylo potřeba z hlediska tlumení inflace. A ten důvod je, že by způsobila strašlivou recesi. Protože samozřejmě řada firem by měla problémy splácet svoje úvěry. Řada domácností, možná i náš stát.
 
@@ -97,11 +97,11 @@ To je evidentní věc. Takže byste opravdu věřili víc tomu, že ta inflace z
 
 **Marek Zavřel:** A pokud tedy má Česká národní banka tedy nástroj buď to zvyšování úrokových sazeb anebo manipulacemi s devizovými rezervami, tedy s rezervami v dolarech, eurech a dalších menších měnách, proč to nedělá? Proč nevyužívá ty devizové rezervy k posilnění koruny?
 
-**Tomáš Havránek:** Já se na to ptám opakovaně, mluvím s desítkami lidí z ČNB, z nichž většina sama říká, že by to byla rozumná věc. A nikdo mi nedokázal vlastně říct, proč to tak není. Proč už minimálně v září, kdy bylo všem jisté, že ta inflace je mimo kontrolu, se nezačala měsíčně prodávat třeba miliarda eur. To by pomohlo rychle korunu posílit, protože to má daleko rychlejší dopad než nějaké změny úrokových sazeb na inflaci.
+**Tomáš Havránek:** Já se na to ptám opakovaně, mluvím s desítkami lidí z ČNB, z nichž většina sama říká, že by to byla rozumná věc. A nikdo mi nedokázal vlastně říct, proč to tak není. Proč se už minimálně v září, kdy bylo všem jisté, že ta inflace je mimo kontrolu, nezačala měsíčně prodávat třeba miliarda eur. To by pomohlo rychle korunu posílit, protože to má daleko rychlejší dopad než nějaké změny úrokových sazeb na inflaci.
 
 A my bychom dnes nemuseli mít dvoucifernou inflaci, já jsem o tom přesvědčen. Není to úplně jisté, ale je to dost možné, že bychom dnes měli inflaci třeba 8%. A potom by i ta bankovní rada vlastně mohla přežít v tom starém složení. Nemuseli bychom vidět ty výpovědi, které pan prezident takhle rozdává.
 
-Protože to je důsledek toho selhání centrální banky. Nepochybně, že ta inflace je takhle veliká. Ale odpověď je, že nevím. Já netuším, proč ten nástroj nepoužívá, když by jim to pomohlo v plnění jejich jediného ústavního cíle.
+Protože to je nepochybně důsledek toho selhání centrální banky, že ta inflace je takhle veliká. Ale odpověď je, že nevím. Já netuším, proč ten nástroj nepoužívá, když by jim to pomohlo v plnění jejich jediného ústavního cíle.
 
 **Marek Zavřel:** Někdo by ale mohl namítnout, že využití devizových rezerv je pomalejší nebo že se neprojeví tolik jako zvyšování nebo manipulace s těmi úrokovými sazbami. Vy říkáte, že rozprodeje těch devizových rezerv rychlejší dopad na tu míru té inflace.
 
@@ -193,9 +193,9 @@ Do konce tohohle roku nečekám nějaké výraznější snížení. Rozhodně to
 
 to z žádného modelu nemůže vyjít. Je to nějaká věc, kterou plácnul asi bez velkého přemýšlení. Já si nemyslím, že ta inflace takhle vysoko může vyrůst. Dnes asi už nelze vyloučit vůbec nic.
 
-Ale já hlavně doufám, že ta nová bankovní rada... Dobře, nebudou zvyšovat sazby, ale my vidíme, že už to moc nefunguje. Ono to taky nefunguje z toho důvodu, že si firmy dnes často berou úvěry v eurech, protože můžou a ty eurové úroky jsou mnohem, mnohem menší než ty korunové, čili nějaké zvyšování českých úroků už má malý dopad na firmy relativně. Má to dopad na hypotéky, ale pro ty lidi, kteří se zrovna refinancují nebo kteří si berou nové samozřejmě. Ale ten efekt je mnohem, mnohem menší než předpovídají všechny modely.
+Ale já hlavně doufám, že ta nová bankovní rada... Dobře, nebudou zvyšovat sazby, ale my vidíme, že už to moc nefunguje. Ono to taky nefunguje z toho důvodu, že si firmy dnes často berou úvěry v eurech, protože můžou a ty eurové úroky jsou mnohem, mnohem menší než ty korunové, čili nějaké zvyšování českých úroků už má malý dopad na firmy relativně. Má to dopad na hypotéky, ale pro ty lidi, kteří se zrovna refinancují nebo kteří si berou nové samozřejmě. Ale ten efekt je mnohem, mnohem menší, než předpovídají všechny modely.
 
-Ale doufám, že dojde k posílení koruny. Opravdu velkému masivnímu posílení koruny. Jak jsem slyšel pana prezidenta, on sám vlastně to zmiňoval, že by to bylo vhodné. Takže já doufám, vím, že i paní Zamrazilová to zmiňovala, takže doufám, že k tomu dojde na podzim.
+Ale doufám, že dojde k posílení koruny. Opravdu velkému masivnímu posílení koruny. Jak jsem slyšel pana prezidenta, on sám to vlastně zmiňoval, že by to bylo vhodné. Takže já doufám, vím, že i paní Zamrazilová to zmiňovala, takže doufám, že k tomu dojde na podzim.
 
 po té stabilizaci sazeb z léta a uklidnění situace by na podzim mohlo dojít k velkému posílení koruny, které tu inflaci konečně sníží klidně i na nějaké jednociferné hodnoty v příštím roce. Ale znovu říkám, ta realita je taková, že během tří let, 2021 až 2023, se nám sníží hodnota koruny asi o třetinu, což je naprosto šílená věc. Je to v absolutním protikladu s ústavním mandátem cenové stability a je to absolutní selhání naší centrální banky a té doktríny inflačního cílování.
 
