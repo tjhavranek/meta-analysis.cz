@@ -17,7 +17,7 @@ body_note: "Rozhovor pro pořad Spotlight Aktuálně.cz, ptá se Petra Jaroměř
 
 **Tomáš Havránek:** Já se přiznám, že českou politiku zase tak moc nesleduji, takže z toho, co jsem zaznamenal, se mi zdá, že v rámci toho, co vidíte v politické sféře, jak politici zachází s daty, tak to vlastně nevybočuje z toho, co bych tak nějak očekával. Čili pokud to chápu správně, ona upozorňuje na to, že po minulém zavedení, té první vlny EET, nebo té minulé verze EET, jedna moje studentka spočítala, že vykazované HDP účetně vzrostlo asi o 2 až 3 procenta. Což si myslím, že je to, co ta studie tak nějak říká. Samozřejmě to neznamená, že by to HDP vzrostlo skutečně tak, že bychom toho víc vyráběli, nebo byly produktivnější.
 
-Ale ten účetní efekt je dán tím, že najednou část té šedé ekonomiky se obělila a ČSÚ, který to počítá, na tu změnu nezareaguje hned. To znamená, že najednou vlastně tam máte část té ekonomiky dvakrát započítanou a vypadá větší. Ale vybere se z ní víc daní, protože ji vidíte, což je to, co zajímá ministryni financí. Takže ta interpretace víceméně je v pořádku na první aproximaci.
+Ale ten účetní efekt je dán tím, že najednou část té šedé ekonomiky se obělila a ČSÚ, který to počítá, na tu změnu nezareaguje hned. To znamená, že tam najednou vlastně máte část té ekonomiky dvakrát započítanou a vypadá větší. Ale vybere se z ní víc daní, protože ji vidíte, což je to, co zajímá ministryni financí. Takže ta interpretace víceméně je v pořádku na první aproximaci.
 
 **Petra Jaroměřská:** To znamená, když ta velikost ekonomiky, kterou počítá Český statistický úřad, už zahrnuje, oni říkají, že už zahrnuje část té šedé ekonomiky, tak to, že na jednu stranu jsme viděli nějaký růst, který ten Český statistický úřad nezohlednil v té šedé ekonomice, znamená, že tam je nějaké spoždění? Nebo jak to funguje?
 
@@ -171,7 +171,7 @@ Každý, kdo tohle zažil, tak ví, jak se zbytečně
 
 **Tomáš Havránek:** To je taky jasně, to je prima. To je, máte pravdu, to je trošku příbuzná trochu jiná věc. Čili, co bych navrhoval já, je pořádně se na to podívat a implementovat něco, co funguje trochu v Británii nebo v některých státech v Austrálii, kdy vy, když ušetříte ty peníze v daném roce jako ředitelka odboru, tady třeba v ekonomii, když se bavíme o státních institucích, tak si je můžete převést a máte garantované, že příští rok tam ty peníze budou. Že když je budete chtít použít, to vám někdo vyplatí.
 
-A zároveň, že vám nesníží ten váš rozpočet na příští rok, třeba naopak vám ho zvýší, protože jste ho ušetřila. A tohle, na to jsou různé úplně sofistikované odhady, kolik je ten systém schopen ušetřit. A ty odhady jsou kolem 2% výdajů. Což by znamenalo...
+A zároveň, že vám nesníží ten váš rozpočet na příští rok, třeba naopak vám ho zvýší, protože jste ušetřila. A tohle, na to jsou různé poměrně sofistikované odhady, kolik je ten systém schopen ušetřit. A ty odhady jsou kolem 2% výdajů. Což by znamenalo...
 
 V té dané kapitole. V tom celkovém státním rozpočtu, kdybychom to zavedli opravdu dobře, zavedli to napříč. Z těch 2 bilionů tedy. Takže to máme kolik?
 
@@ -183,7 +183,7 @@ A to EET, kdyby udělalo 30 miliard, tak už byste byla na dvou třetinách toho
 
 **Petra Jaroměřská:** Jestli tomu rozumím správně, tak vy tady kritizujete nějaké bezhlavé utrácení ke konci roku jednotlivých rozpočtových kapitola. Opravdu je to 40 miliard?
 
-**Tomáš Havránek:** Ty dvě procenta já čerpám, to byl tuším článek v roce 2018, kde se to dá poměrně komplikovaně ekonometricky odhadnout, těch odhadů je i několik. A abych možná řekl, oka, tak nebavme se o konkrétním čísle, ale pojďme to nějak vzít celkově, pojďme se zamyslet nad tím, což třeba je možná úkol pro Národní rozpočtovou radu nebo pro vládu, jak toto implementovat tak, aby to fungovalo. My jsme tady měli něco podobného, to zaváděl tuším pan Kalousek po velké krizi, to NNV, Nároky z nerealizovaných výdajů, pak to nabobtnalo, ale ten problém je, že u nás nemáte garantované, že když to převedete, tam ty peníze budou a že vám ten šéf nesníží, takže moc to nefungovalo. Takže, samozřejmě to říkám tak, aby to bylo pochopitelné, ale to je něco rozhodně, kde se dá ušetřit desítky miliard korun.
+**Tomáš Havránek:** Ty dvě procenta já čerpám, to byl tuším článek z roku 2018, kde se to dá poměrně komplikovaně ekonometricky odhadnout, těch odhadů je i několik. A abych možná řekl, OK, tak se nebavme o konkrétním čísle, ale pojďme to nějak vzít celkově, pojďme se zamyslet nad tím, což třeba je možná úkol pro Národní rozpočtovou radu nebo pro vládu, jak toto implementovat tak, aby to fungovalo. My jsme tady měli něco podobného, to zaváděl tuším pan Kalousek po velké krizi, to NNV, Nároky z nerealizovaných výdajů, pak to nabobtnalo, ale ten problém je, že u nás nemáte garantované, že když to převedete, tam ty peníze budou a že vám ten šéf nesníží, takže moc to nefungovalo. Takže, samozřejmě to říkám tak, aby to bylo pochopitelné, ale to je rozhodně něco, kde se dá ušetřit desítky miliard korun.
 
 Investování rezerv, to jsou vysoké desítky miliard nebo přes 100 miliard, EET vám udělá nízké desítky miliard. Takže, kdyby toto ta vláda implementovala aspoň v nějaké určité formě, tak by to více než kompenzovalo další kroky, které zase směřují k vyššímu deficitu. Řekněme, musíte uspokojit nějaké svoje voličské jádro. Čemuž taky rozumím, než bych to úplně viděl rád, ale skoro bych řekl, že ta současná vláda se chová lépe, než bych očekával před volbami.
 
@@ -191,17 +191,17 @@ Z hlediska třeba destrukce, důchodové reformy, tak ta věc není zdaleka tak 
 
 **Petra Jaroměřská:** tedy toho zvyšování zadlužení není zas až takovej problém, jak někteří kritici říkají?
 
-**Tomáš Havránek:** Pokud vláda zavede třeba EET, tak to je krok ke snížení zadlužení. A já říkám, kdyby se k tomu přidali ještě další věci, co nikoho nebolí, to znamená trošku nějaká větší komunikace s ČNB ohledně toho, jak dlouhodobě ty rezervy investovat, tak tohle více než vyváží téměř cokoliv špatného, co ta vláda je schopná udělat jinak. To znamená rozdat peníze z vrtulníku svým voličkům třeba. Takže to je jedna věc.
+**Tomáš Havránek:** Pokud vláda zavede třeba EET, tak to je krok ke snížení zadlužení. A já říkám, kdyby se k tomu přidaly ještě další věci, co nikoho nebolí, to znamená trošku nějaká větší komunikace s ČNB ohledně toho, jak dlouhodobě ty rezervy investovat, tak tohle více než vyváží téměř cokoliv špatného, co ta vláda je schopná udělat jinak. To znamená rozdat peníze z vrtulníku svým voličkům třeba. Takže to je jedna věc.
 
 Druhá věc je, že my nejsme zdaleka jediná země, která má fiskální problémy nebo bude mít. A ten problém, který je globální nebo ve vyspělých zemích, ale víceméně vlastně všude, se ještě zvýraznil tím, jak nám klesá porodnost v posledních několika letech po covidu, ale teď se to opravdu velmi urychlilo. A tohle samozřejmě nevám naprosto rozbourá důchodový systém, ale nejenom to, ta celá společnost bude tím, jak už nám teď dnes klesá globální populace pravděpodobně, všude na světě vám klesá porodnost, ale už i globální celá ta taková ta rubrika, ta tkaň společnosti se bude rozpadat do velké míry. To je ta špatná zpráva, ta dobrá je, aspoň pro někoho, já třeba často jezdím do Kalifornie, mám kamarády v Silicon Valley, takže mi říkají, jak skvělá věc je umělá inteligence, nejenom to, co známe, ale to, co do budoucna bude, čili oni vidí explozi v ekonomickém růstu, v produktivitě, roboti, kteří se o nás budou starat, což nejsem si jist, nakolik ty scénáře jsou reálné, ale podle toho, co vím, je opravdu velmi pravděpodobné, že se nám budoucí růst nějak zvýší v souvislosti právě s tou umělou inteligencí, která je tou technologií, která umí sama generovat myšlenky, nápady a nic takového jsme tady ještě neměli.
 
-Takže máte, a čím dál víc se přikláním k tomu, že tohle opravdu může mít hmatatelný dopad na ten růst a tím pádem i na výběr daní, produktivitu a situaci fiskální. Takže máte dvě protichůdné teď tendence. Kolaps, naprostý kolaps porodnosti. Děti v podstatě nebudou za pár let.
+A čím dál víc se přikláním k tomu, že tohle opravdu může mít hmatatelný dopad na ten růst a tím pádem i na výběr daní, produktivitu a situaci fiskální. Takže teď máte dvě protichůdné tendence. Kolaps, naprostý kolaps porodnosti. Děti v podstatě nebudou za pár let.
 
 Ale zároveň je tu ten potenciál možná exploze umělé inteligence, pokud nedojde k nějaké katastrofě. Naopak. Čili společnost bude menší a produktivnější? Mohla by, ale musí uživit ty starší lidi, což budu já brzy, dřív než vy, o dost asi.
 
 Takže možná se o nás budou starat roboti. Já myslím, že to je docela reálná věc, že o mě v důchodu bude pečovat humanoidní robot. Už bych se na to vlastně poměrně vsadil, což vám pomůže hodně jinak vůbec s tím, kdo se fyzicky bude o ty lidi starat a kdo to zaplatí. Ti roboti budou jednou levní.
 
-Tak to je spekulace, ale je to podložená spekulace a znám řadu chytrých lidí, co vám o tom řeknou mnohem víc, právě třeba v Kalifornii, co se na tom podílejí, na tom vývoji. Tak, ale pořád stejně to nebude stačit na splacení těch dluhů a na vyrovnání toho rozpočtu. Pokud neuděláme něco v tom smyslu, když jsme se bavili, což by skoro stačilo. Nebylo by to úplně všechno, ale dvě třetiny z toho bychom smazali docela snadno.
+Tak to je spekulace, ale je to podložená spekulace a znám řadu chytrých lidí, co vám o tom řeknou mnohem víc, právě třeba v Kalifornii, co se na tom podílejí, na tom vývoji. Tak, ale pořád stejně to nebude stačit na splacení těch dluhů a na vyrovnání toho rozpočtu. Pokud neuděláme něco v tom smyslu, o kterém jsme se bavili, což by skoro stačilo. Nebylo by to úplně všechno, ale dvě třetiny z toho bychom smazali docela snadno.
 
 A nemusí se nijak moc šetřit? Šetřit je prima, ale to šetření nebo třeba zvyšování daní někoho bolí, takže realita je taková, že větší reformy daní nebo výdajů jsou v demokracii v podstatě nemožné. Ne, že by to bylo úplně nemožné, je to velmi, velmi komplikované. Čili co?
 
@@ -215,7 +215,7 @@ A i když centrální banka, ať už to je Aleš Michl nebo Zdeněk Tůma, vám 
 
 Ale tím rozpoutají další inflaci. Samozřejmě. Ta inflace je to špatné řešení státního dluhu, ale zároveň vidíme, měli jsme inflaci 20% skoro. Lidem se to nelíbilo, ale Národní banka řekne je to chyba vlády, vláda řekne je to chyba Národní banky nebo je to chyba zahraničí, za to můžou Rusové nebo Ukrajinci.
 
-Čili takhle by to bylo a čili já osobně, když mám dát nějakou předpověď, což je vždycky těžké v ekonomii, tak já čekám dlouhodobě. A nevděčný. Tak, když dám dlouhodobou předpověď, tak to mezitím všichni umřeme, než se to třeba realizuje. Ale čekám vyšší inflaci.
+Čili takhle by to bylo. Já osobně, když mám dát nějakou předpověď, což je vždycky těžké v ekonomii, tak já čekám dlouhodobě. A nevděčný. Tak, když dám dlouhodobou předpověď, tak to mezitím všichni umřeme, než se to třeba realizuje. Ale čekám vyšší inflaci.
 
 Ta vysoká inflace, nejenom u nás, to není jenom česká věc, je relativně snadné a relativně málo bolestné řešení státního dluhu. Jak u nás, tak v eurozóně, tak ve Spojených státech. Přijetím eura si v tomhle nepomůžeme, když se podíváte na fiskální situaci eurozóny. Neříkám, že euro je dobré nebo špatné, chápu ty výhody eura, ale nižší inflaci my těžko budeme mít dlouhodobě s eurem než s korunou.
 
@@ -231,9 +231,9 @@ Ten první je malá finanční vzdělanost, finanční gramotnost, kdy my kupuje
 
 V Americe, v Japonsku, kam já rád jezdím, vidíte úplně jiný přístup k práci. A vidím to i na sobě, že můj přístup k práci není takový, jako u mých kolegů v Japonsku a v Americe, čili je to obecný problém této země. V té Americe nebo v Japonsku vidíte člověka, co sbírá odpadky, a ti lidé to dělají, váží si té práce, není to pro ně podřadná věc a nemusí být nějak dobře placení. Platy v Japonsku jsou relativně nízké, divili bychom se.
 
-I ceny jsou v Japonsku teď velmi nízké, ta země je extrémně levná. Takže vážit si práce, co dělám, postarat se o sebe, nespoléhat na to, že mi někdo ty peníze dá, protože nedá. Nebo vám dá něco, nějakou almužnu, ale vy nechcete říct almužny. Já vím, že život je občas těžký, a já jsem třeba měl štěstí v životě, takže pro mě je lehký to říct.
+I ceny jsou v Japonsku teď velmi nízké, ta země je extrémně levná. Takže vážit si práce, co dělám, postarat se o sebe, nespoléhat na to, že mi někdo ty peníze dá, protože nedá. Nebo vám dá něco, nějakou almužnu, ale vy nechcete žít z almužny. Já vím, že život je občas těžký, a já jsem třeba měl štěstí v životě, takže pro mě je lehké to říct.
 
-Ale postarat se o sebe a najít smysl života nejenom v penězích a v rodině, což je super, ale taky v té práci, kterou máte ráda. A když tu práci ráda nemáte, tak ji nedělejte. Dnes vás jakákoliv firma zaměstná ráda, když přijdete ráno do práce, střízlivý a tu práci chcete dělat. Čili já trochu vidím, že máme rezervu v tomhle, čili finanční gramotnost a pracovní morálka.
+Ale postarat se o sebe a najít smysl života nejenom v penězích a v rodině, což je super, ale taky v té práci, kterou máte ráda. A když tu práci ráda nemáte, tak ji nedělejte. Dnes vás jakákoliv firma zaměstná ráda, když přijdete ráno do práce střízlivý a tu práci chcete dělat. Čili já trochu vidím, že máme rezervu v tomhle, čili finanční gramotnost a pracovní morálka.
 
 **Petra Jaroměřská:** Moc vám děkuju za rozhovor.
 

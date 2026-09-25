@@ -52,7 +52,7 @@ A to působí velice rychle. Rychle posílíte korunu a to se potom rychle přem
 
 **Tomáš Havránek:** Tady bych k tomu řekl to, že být jako extrémně opatrný je často mnohem dražší, než být agresivní. A neříkám, že by vyloženě agresivita byla optimální, ale přehnaná opatrnost taky škodí. Jako škodí exces čehokoliv. A ta otázka tedy pro mě je, k čemu ty rezervy máme.
 
-My jsme ty rezervy nepoužili v žádné krizi, ať to byla finanční krize, covidová krize. nepoužíváme je k posílení koruny, když inflace je dvojciferná, nebo bude velice brzy dvojciferná. Aktuálně už asi je v únoru. A nepoužíváme je ani k tomu, aby vydělávaly.
+My jsme ty rezervy nepoužili v žádné krizi, ať to byla finanční krize, covidová krize. Nepoužíváme je k posílení koruny, když inflace je dvojciferná, nebo bude velice brzy dvojciferná. Aktuálně už asi je v únoru. A nepoužíváme je ani k tomu, aby vydělávaly.
 
 Oni nám, když to zvulgarizuji, hnijí na běžném účtu, většina z nich. A k ničemu se nepoužívají. Takže k čemu je máme? Buď je prodejme, posílíme korunu, neutralizujeme ty intervence, nebo je investujme a vydělají nám něco.
 
@@ -80,7 +80,7 @@ Ale to je jeden procentní bod maximálně, ne dva, to se nedá odůvodnit,
 
 **Tomáš Havránek:** Tak a to je přesně to, proč bychom měli udělat ten audit, nebo tu revizi, jak strategie, to znamená cíl, tak taktiky, to znamená, jak snižovat inflaci, jak investovat rezervy. Protože máte pravdu. Na druhou stranu, znovu říkám, Švýcarsko, tam se neděje žádná velká katastrofa, neříkáme, že by to bylo zcela přenositelné, ale tady máte příklad toho, jak by to mohlo být. Druhá věc je, že to není zase tak velká změna, jak se zdá.
 
-Vy snížíte průměrnou inflaci o 2% body. To není nějaká velká revoluce a můžete to prodat jako vlastně vylepšení toho inflačního cílování, které, jak říkám znovu, tehdy, před 30 lety, opravdu pomohlo. Že není to negace toho, co funguje teď. Je to relativně drobná kalibrace.
+Vy snížíte průměrnou inflaci o 2 procentní body. To není nějaká velká revoluce a můžete to prodat jako vlastně vylepšení toho inflačního cílování, které, jak říkám znovu, tehdy, před 30 lety, opravdu pomohlo. Že to není negace toho, co funguje teď. Je to relativně drobná kalibrace.
 
 Myslím si, že před 12 lety byl snížen inflační cíl ze 3 na 2 %. Všiml si toho někdo moc? Tohle je vlastně dvojnásobně větší krok, čili to by nebyla velká revoluce, ale bylo by to pro nás všechny jednodušší, protože bychom mohli spořit velice jednoduše, a i když se třeba někdo z nás vyhýbá riziku, tak by potom nemusel kupovat akcie, aby se mu zhodnotily úspory, mohl by je držet na běžném účtu. Nebo v hotovosti doma, konec konců.
 

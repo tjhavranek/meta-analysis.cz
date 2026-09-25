@@ -27,7 +27,7 @@ Začněme od vás, pane Singře. Zvládá Česká národní banka dlouhodobě bo
 
 **Lukáš Matoška:** Pane Havránku, váš pohled?
 
-**Tomáš Havránek:** Já bych byl trochu kritičtější, protože ta inflace u nás je vysoká v mezinárodním srovnání ne rok nebo dva, ale už opravdu delší dobu několik let. A protože za dlouhodobě vysokou inflaci vždy odpovídá národní banka té dané země, tak bych skoro řekl, že to slovo selhání je tady na místě i v tom středně až dlouhodobém horizontu.
+**Tomáš Havránek:** Já bych byl trochu kritičtější, protože ta inflace u nás je vysoká v mezinárodním srovnání ne rok nebo dva, ale už opravdu delší dobu, několik let. A protože za dlouhodobě vysokou inflaci vždy odpovídá národní banka té dané země, tak bych skoro řekl, že to slovo selhání je tady na místě i v tom středně až dlouhodobém horizontu.
 
 **Lukáš Matoška:** Pánové, na úvod vám děkuju.
 
@@ -41,7 +41,7 @@ Pane Havránku, co by tedy Česká Národní banka podle vás měla dělat zása
 
 Ale proti vysoké inflaci už my tak agresivně nebojujeme. To znamená, že pokud bychom se i shodli na tom, že dvouprocentní cíl inflace, o který se ta banka snaží, je správný, tak ona ho v budoucnosti nesplní. Protože my vidíme, že vlastně máme záklopku na inflaci zespodu na té nule, ale shora ta záklopka není. To znamená, že pokud člověk aspoň trošku rozumně uvažuje a sleduje to chování centrální banky, tak musí vidět, že v průměru ta inflace bude větší než dva, díky tomuhle omezení zdola.
 
-A tím pádem neočekává, že inflace bude dva, tím pádem vlastně padá základní podmínka pro to, aby inflační cílování na dvojce fungovalo.
+A tím pádem neočekává, že inflace bude dva, a tím pádem vlastně padá základní podmínka pro to, aby inflační cílování na dvojce fungovalo.
 
 **Lukáš Matoška:** Pane Singře, tak není to dlouhodobé selhávání České národní banky, jak se teď vyjádřil pan Havránek v tom, že mají centrální bankéři dva metry. Jeden na inflaci, kde jsou mírnější, a druhý na deflaci, kde jsou agresivnější. Pane Singře, slyšíme se? Tak zdá se, že Miroslav Singer, bývalý guvernér České národní banky, s námi ztratil spojení.
 
@@ -87,7 +87,7 @@ pane Singře, k tomu cíli se hned dostaneme. Já bych byl rád, aby ta naše de
 
 A já musím říct, že když se zavádělo inflační cílování na Zélandu poprvé před 30 lety, tak vlastně základ toho inflačního cílování jsou racionální očekávání. A ta se také prvně v ekonomii objevila zhruba 30 let předtím. Čili trvá nějakou dobu, než se ta věda propíše do praxe centrálních bank a zlomit tu zavedenou praxi, i když třeba není úplně optimální, trvá nějakou dobu. Nějakou dobu to potrvá i u nás.
 
-A jde o to, že u nás se ta změna dá udělat jednodušeji. Ten impuls inovace ohledně inflačního cílování také přišel v malé zemi na Zélandu, ne ve Spojených státech, protože v těch malých centrálních bankách se věci snáze změní přece jenom, zejména u nás. Čili bychom mohli být znovu takový příklad pro svět v této záležitosti. Podobně jako Zéland je známý Pánem prstenů, slomováním
+A jde o to, že u nás se ta změna dá udělat jednodušeji. Ten impuls inovace ohledně inflačního cílování také přišel v malé zemi na Zélandu, ne ve Spojených státech, protože v těch malých centrálních bankách se věci snáze změní přece jenom, zejména u nás. Čili bychom mohli být znovu takovým příkladem pro svět v této záležitosti. Podobně jako Zéland je známý Pánem prstenů, slomováním
 
 **Lukáš Matoška:** Cenovou stabilitou. K tomu, jak by se to podle vás dalo udělat, se ještě dostaneme. Teď se obracím na vás, pane Singře, a zajímalo by mě, jestli by nebylo vhodnější, aby Česká národní banka měla inflační cíl nulu, tedy aby usilovala
 
@@ -99,7 +99,7 @@ Jí bolí a něco stojí.
 
 **Lukáš Matoška:** Hosty dnešního Pro a proti
 
-jsou bývalý guvernér České národní banky, dnes hlavní ekonom, Generali CEE Holding, Miroslav Singer a bývalý poradce centrálních bankéřů ekonom z Fakulty sociálních věd Univerzity Karlovy Tomáš Havránek. Posloucháte Pro a proti. Dva hosté, dva různé pohledy. cz, v aplikaci Můj rozhlas a v dalších podcastových aplikacích.
+jsou bývalý guvernér České národní banky, dnes hlavní ekonom, Generali CEE Holding, Miroslav Singer a bývalý poradce centrálních bankéřů ekonom z Fakulty sociálních věd Univerzity Karlovy Tomáš Havránek. Posloucháte Pro a proti. Dva hosté, dva různé pohledy. V aplikaci Můj rozhlas a v dalších podcastových aplikacích.
 
 Pane Havránku, tak není ekonomická realita jiná než vaše ekonomické modely, ze kterých vycházíte a neukázalo by se nakonec, že určitá byť mírná inflace je vlastně v ekonomice přirozená?
 
@@ -117,7 +117,7 @@ A druhá věc je, že zároveň by opravovala svoje chyby plnění toho cíle.
 
 **Lukáš Matoška:** Co tím myslíte?
 
-**Tomáš Havránek:** To znamená, že když máte pan Singer změn deflaci, když máte deflaci najednou 4%, tak ta banka v příštím roce, aby se dostala na nulu v průměru, tak by usilovala o 4% inflace zhruba. A to je mechanismus, který v ekonomické teorii i praxi pomáhá tlumit ty deflační spirály, které právě zmínil pan Singer, to znamená, čím větší je deflace, tím víc musí potom šlápnout centrální banka na plyn, aby té ekonomice pomohla.
+**Tomáš Havránek:** To znamená, že když máte, jak říkal pan Singer, deflaci najednou 4%, tak ta banka v příštím roce, aby se dostala na nulu v průměru, tak by usilovala o 4% inflace zhruba. A to je mechanismus, který v ekonomické teorii i praxi pomáhá tlumit ty deflační spirály, které právě zmínil pan Singer, to znamená, čím větší je deflace, tím víc musí potom šlápnout centrální banka na plyn, aby té ekonomice pomohla.
 
 To v tom současném režimu takhle není. Když máte deflaci 20%, tak ta banka se v příštím roce bude snažit o plus 2%, ne o plus 20%. Čili deflační spirála nebo její možnost, která je nějaká teoretická, je další argument pro cenovou stabilitu, pro tento režim opravování minulých chyb, který já navrhuji,
 

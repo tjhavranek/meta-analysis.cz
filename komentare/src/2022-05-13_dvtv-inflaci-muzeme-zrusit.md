@@ -36,7 +36,7 @@ Pár měsíců. Pak se překlopil, to už jsem u toho nebyl, nevím proč.
 
 **Martin Veselovský:** Dvakrát jste použil ten termín spálit Českou národní banku a spálit korunu. Opravdu by tím, kdyby trpělivě, bez ohledu na to, co se bude dít vlastně na finančních trzích a v České republice, kdyby nezvyšoval například úrokové sazby, který by měl většinu v radě České národní banky, tak by spálil korunu?
 
-**Tomáš Havránek:** Toto zvyšování sazeb, ty sazby už jsou poměrně vysoko. A to další zvyšování pořád má nějaký dopad, třeba na kurz koruny, má dopad na další věci. Ale není zdaleka jisté, jestli pomáhá nějak významně tlumit tu inflaci v horizontu třeba jednoho roku. Podle mě by daleko lepší nástroj byl využití kurzu, čili posilování koruny, prodávání těch velkých devizových, což se děje.
+**Tomáš Havránek:** Toto zvyšování sazeb, ty sazby už jsou poměrně vysoko. A to další zvyšování pořád má nějaký dopad, třeba na kurz koruny, má dopad na další věci. Ale není zdaleka jisté, jestli pomáhá nějak významně tlumit tu inflaci v horizontu třeba jednoho roku. Podle mě by daleko lepším nástrojem bylo využití kurzu, čili posilování koruny, prodávání těch velkých devizových, což se děje.
 
 Ale děje se to v řádu desítek milionů eur a ne v řádu stovek milionů eur za měsíc, což by opravdu s tím kurzem mohlo pohnout, mohlo by to brzy tu inflaci stlačit na nějaké jednociferné údaje, kam se nedostaneme jinak, jenom za pomoci sazeb.
 
@@ -104,7 +104,7 @@ A těch důvodů je několik. Samozřejmě jim třeba dnes hodně pomáhá, že 
 
 Mají inflaci asi dvě a půl procenta maximálně. I my máme vlastní energii. Ano, ale nemáme hydroelektrárny. To je pravda.
 
-Aspoň ne v takové míře. Ano. Ale dlouhodobě je ta hlavní věc posilující měna, která pomáhá ty inflační tlaky tlumit. a zároveň to, že té centrální bance nevadí, když inflace je na nule.
+Aspoň ne v takové míře. Ano. Ale dlouhodobě je ta hlavní věc posilující měna, která pomáhá ty inflační tlaky tlumit. A zároveň to, že té centrální bance nevadí, když inflace je na nule.
 
 Všechny ostatní centrální banky kromě švýcarské vlastně jakmile inflace klesne k nule, oni začínají něco dělat, uvolňovat tu měnovou politiku, aby inflaci dosáhly. U nás to byly intervence například proti koruně. Švýcarsko taky intervenuje, aby ta deflace nebyla nějak velká, ale nulová inflace jim nevadí. Pravidlo mají takové, že mezi nulou a dvojkou je to pro ně v pořádku.
 
@@ -148,7 +148,7 @@ Ten obrázek jednak komunikační, jednak nepoužili kurz. A to možná přispě
 
 **Martin Veselovský:** A pak ještě jedna věc, celou dobu se tady bavíme o České centrální bance, která bezesporu má nástroje na nějakou práci s inflací a s mnohými jinými věcmi. Může v tomhle ohledu teď dělat něco vláda?
 
-**Tomáš Havránek:** může dělat mnoho pro inflaci, ale není to její primární úkol, není to něco, za co by byla primárně odpovědná. A ta je primárně odpovědná samozřejmě za stabilitu těch veřejných financí, ale já bych toto neslučoval úplně. Opravdu centrální banka je ten, kdo garantuje cenovou stabilitu, mají podle ústavy garantovat.
+**Tomáš Havránek:** může dělat mnoho pro inflaci, ale není to její primární úkol, není to něco, za co by byla primárně odpovědná. A ta je primárně odpovědná samozřejmě za stabilitu těch veřejných financí, ale já bych toto neslučoval úplně. Opravdu centrální banka je ten, kdo garantuje cenovou stabilitu, má ji podle ústavy garantovat.
 
 **Martin Veselovský:** Jenom pardon, já vám řeknu, proč jsem se na to ptal. Vy jste zmiňoval ty vrtulníkové peníze, to znamená vlastně zejména v době covidu prostě neadresné, vlastně plošné přídavky na spoustu věcí a něco podobného se vlastně děje teď, ale to je nějaký důsledek příchodu uprchlíků a tak dále. Tak jestli náhodou tím krokem třeba není to, aby se v nejbližší nebo v delší době vyhnula vrtulníkovým penězům.
 

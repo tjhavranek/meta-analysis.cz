@@ -35,13 +35,13 @@ Buď je utratíte, protože jinak vám je ta inflace požere, ale tím znovu tu 
 
 **Tomáš Havránek:** Na obou, což je taková jako odpověď, řekněme, trochu triviální, ale samozřejmě ty zdroje jsou oba. A je to složitější, já se pokusím to nějak zjednodušit. Tak samozřejmě ta naše ekonomika byla přehřátá, řekněme, už před tím covidem. A zároveň, řekněme, ta státní pomoc, ty vrtulníkové peníze lidem během pandemie u nás byly štědřejší než v ostatních zemích.
 
-Čili to rozhodně hrálo svou roli, ale svoji roli podstatnou hraje také politika Národní banky, která dlouhodobě udržuje peníze nebo udržovala peníze levné, čili vlastně přitápila pod tím kotlem. A když tedy ta inflace začala růst, tak ona správně začala zvyšovat úrokové sazby. Ale dělala to sice rychleji než ostatní, řekněme, centrální banky, ale stále pomaleji, než té bankovní radě doporučovali její vlastní odborníci, kteří chtěli dříve a razantněji už na jaře ty sazby zvyšovat, potom během léta. Ta bankovní rada to vetovala a potom byla nucena k dramatičtějším krokům najednou v září.
+Čili to rozhodně hrálo svou roli, ale svoji podstatnou roli hraje také politika Národní banky, která dlouhodobě udržuje peníze nebo udržovala peníze levné, čili vlastně přitápila pod tím kotlem. A když tedy ta inflace začala růst, tak ona správně začala zvyšovat úrokové sazby. Ale dělala to sice rychleji než ostatní, řekněme, centrální banky, ale stále pomaleji, než té bankovní radě doporučovali její vlastní odborníci, kteří chtěli dříve a razantněji už na jaře ty sazby zvyšovat, potom během léta. Ta bankovní rada to vetovala a potom byla nucena k dramatičtějším krokům najednou v září.
 
 Za to byla kritizovaná.
 
 **Jan Bumba:** A pardon, že do toho vstupují, ale o tom se zase tak moc nemluví. Tedy samotní analytici centrální banky doporučovali bankovní radě, aby rychleji zvyšovala úrokové sazby. Ano. A ten důvod, proč se tak nedělo?
 
-**Tomáš Havránek:** Tak asi to byla přehnaná opatrnost z dnešního pohledu, ale to pak bylo nutné dohánět těmi ještě daleko silnějšími, takzvanými hajky, čili zvyšováním těch sazeb. Abych to dopověděl, tak vlastně to velké zvyšování sazeb vyvolalo kritiku ze strany vlády a řady analytiků, i když samozřejmě i chválu, ale kritiku ze strany vlády, která byla hodně hlasitá tehdy. A ta Národní banka pro mě z nepochopitelných důvodů začala se obhajovat, ale tak velice pasivně. Ona začala říkat, že my to musíme dělat, protože inflace bude velmi veliká.
+**Tomáš Havránek:** Tak asi to byla přehnaná opatrnost z dnešního pohledu, ale to pak bylo nutné dohánět těmi ještě daleko silnějšími, takzvanými hajky, čili zvyšováním těch sazeb. Abych to dopověděl, tak vlastně to velké zvyšování sazeb vyvolalo kritiku ze strany vlády a řady analytiků, i když samozřejmě i chválu, ale kritiku ze strany vlády, která byla hodně hlasitá tehdy. A ta Národní banka se pro mě z nepochopitelných důvodů začala obhajovat, ale tak velice pasivně. Ona začala říkat, že my to musíme dělat, protože inflace bude velmi veliká.
 
 My s tím teď už nic neuděláme, ale příští rok nebo za rok a půl se zase sníží. Čili místo toho, aby uklidňovali veřejnost, tak oni zdůrazňovali to, že ta inflace bude velmi veliká, v příštích měsících nejvyšší v Evropě v podstatě. Upozorňovali na ty vyšší inflační tlaky u nás oproti zbytku Evropy a že s tím v krátké době nemůžou nic dělat. Což podle mě a podle řady ekonomů dalších přispělo právě k tomu roztočení té naší inflační hysterie.
 
@@ -51,7 +51,7 @@ My s tím teď už nic neuděláme, ale příští rok nebo za rok a půl se zas
 
 A taková, apokalyptická, řekněme.
 
-**Jan Bumba:** Hostem interview je dnes profesor ekonomie na Karlově univerzitě, bývalý poradce Bankovní rady České národní banky Tomáš Havránek. Posloucháte Interview Plus. Rozhovory s významnými lidmi, kteří mají vliv. cz, v aplikaci Můj rozhlas, v podcastových aplikacích a video na našem profilu na YouTube.
+**Jan Bumba:** Hostem interview je dnes profesor ekonomie na Karlově univerzitě, bývalý poradce Bankovní rady České národní banky Tomáš Havránek. Posloucháte Interview Plus. Rozhovory s významnými lidmi, kteří mají vliv. V aplikaci Můj rozhlas, v podcastových aplikacích a video na našem profilu na YouTube.
 
 V průběhu toho minulého roku jsme viděli, jak Centrální banka zvyšovala a zvyšovala úrokové sazby. Jsou i nějaké jiné nástroje, které by bylo možné použít pro zkrocení inflace?
 
@@ -121,7 +121,7 @@ A i když tam lidé ty peníze přesouvají, tak pořád ten objem je velmi mal�
 
 **Tomáš Havránek:** Je to náhoda. Když potom bádáte, kde vzniklo to číslo 2%, tak na prvopočátku stál Nový Zéland v roce 1990, kdy měli dlouhodobě na Zélandu potíže s inflací, která byla vysoká. Jeden z nápadů potom byl: explicitně oznámíme, na kterou hladinu tu inflaci chceme snížit. A ty 2%, to nebyl ten cíl, ale to byl horní limit.
 
-Čili aby ta inflace byla do 2%, maximálně 2%. A vypadalo, že tohle funguje ta transparentnost v tom, ať to zní triviálně, že ta banka řekne, o co se vlastně snaží. Nejenom, že se snaží o, řekněme, vyváženou ekonomiku, ale o inflaci do 2%. A ten guvernér Národní banky Zélandu, Don Brash, to hodně propagoval v zahraničí.
+Čili aby ta inflace byla do 2%, maximálně 2%. A vypadalo to, že tohle funguje, ta transparentnost v tom, ať to zní triviálně, že ta banka řekne, o co se vlastně snaží. Nejenom, že se snaží o, řekněme, vyváženou ekonomiku, ale o inflaci do 2%. A ten guvernér Národní banky Zélandu, Don Brash, to hodně propagoval v zahraničí.
 
 Mimochodem, sám řekl na rovinu, že to číslo vytáhli z klobouku, ty 2%, a že za tím není žádný hluboký vědecký výzkum. A pak to převzaly ostatní země, jako Kanada, a ty to posunuly maličko na ty 2%, protože se vlastně bály deflace. Ale to je všechno. Abych to jenom dal do kontextu nějakého vědeckého výzkumu, tak v roce 1990 bylo už tehdy 17 studií, které odhadovaly, jak velká inflace je zdravá pro ekonomiku.
 
@@ -133,7 +133,7 @@ A žádná z nich, ani jedna z těch studií, neukazovala, že by zdravá inflac
 
 **Jan Bumba:** že teď, dejme tomu, budeme mít za rok třeba 17% inflaci, peníze ztratí, těch 17% na hodnotě, že by ji zase získali za čas,
 
-**Tomáš Havránek:** Ono, když dovolíte, aby ta inflace takhle vystřelila, tak srazit ji zpátky dolů je opravdu velice, velice nákladné. Vezměte si, že třeba máte hypotéku, kterou jste si vzal teď, a v příštím roce bychom se snažili třeba během deseti let pomaličku tu inflaci rozpouštět, ale hlavní je, že pokud garantujete lidem opravdu cenovou stabilitu, stabilitu průměrného nákupu, průměrného zboží a služeb v ekonomice na dlouhou dobu, tak oni by nepodlehli té inflační mánii, které jsme tady všichni, včetně mě, taky teď utrácím víc, než jsem utrácil dřív, podlehli letos, vlastně už vloni, kdy vidíme, že ta Národní banka bohužel tu situaci absolutně nemá pod kontrolou a negarantuje nám nic. Švýcaři to mají jinak, jak jsme zmiňovali, že oni tu cenovou stabilitu de facto mají, ta důvěra lidí v Národní banku je úplně jiná a tam vidíte, že i přes tu současnou situaci inflace je pořád jenom 3%, čili ta psychologie, ta důvěra lidí v ten měnový systém, který je tam jiný než u nás, tam se necílí 2%, ale nevadí třeba nulová inflace, tak to je ten klíčový element že se nám opravdu daří tu inflaci nějak krotit.
+**Tomáš Havránek:** Ono, když dovolíte, aby ta inflace takhle vystřelila, tak srazit ji zpátky dolů je opravdu velice, velice nákladné. Vezměte si, že třeba máte hypotéku, kterou jste si vzal teď, a v příštím roce bychom se snažili o deflaci 17%, to nejde. Šlo by to možná dlouhodobě, třeba během deseti let pomaličku tu inflaci rozpouštět, ale hlavní je, že pokud garantujete lidem opravdu cenovou stabilitu, stabilitu průměrného nákupu, průměrného zboží a služeb v ekonomice na dlouhou dobu, tak oni by nepodlehli té inflační mánii, které jsme tady všichni, včetně mě, taky teď utrácím víc, než jsem utrácil dřív, podlehli letos, vlastně už vloni, kdy vidíme, že ta Národní banka bohužel tu situaci absolutně nemá pod kontrolou a negarantuje nám nic. Švýcaři to mají jinak, jak jsme zmiňovali, že oni tu cenovou stabilitu de facto mají, ta důvěra lidí v Národní banku je úplně jiná a tam vidíte, že i přes tu současnou situaci inflace je pořád jenom 3%, čili ta psychologie, ta důvěra lidí v ten měnový systém, který je tam jiný než u nás, tam se necílí 2%, ale nevadí jim třeba nulová inflace, tak to je ten klíčový element k tomu, že se nám opravdu daří tu inflaci nějak krotit.
 
 **Jan Bumba:** že když stál před nějakými pár lety oběd 120 korun, dneska stojí 220, takže by se někdy mohly ty ceny vrátit zase zpátky na těch 120?
 
@@ -157,7 +157,7 @@ A přitom ten benefit pro všechny by byl úžasný. To, že nám ta 100 koruná
 
 **Tomáš Havránek:** Tenhle plán nevylučuje přijetí eura. Možná naopak, protože když máte inflaci nejvyšší v Evropě, tak nesplníte základní kritérium pro přijetí eura. A nesplníte ani to druhé, což je nějaká uměřenost úrokových sazeb.
 
-Takže i kdybychom teď chtěli, tak do eurozóny nás nikdo nevezme, protože nesplníme ty základní principy. Kdybychom inflaci zrušili, tak kdykoliv se můžeme pro to přijetí eura rozhodnout, kdykoliv budeme chtít. Pro mě osobně přijetí eura je odlišná otázka od inflace. Samozřejmě potom by bylo komplikovanější přesvědčovat Evropu, že té inflace by se vlastně měli vzdát.
+Takže i kdybychom teď chtěli, tak do eurozóny nás nikdo nevezme, protože nesplníme ty základní principy. Kdybychom inflaci zrušili, tak kdykoliv se můžeme pro to přijetí eura rozhodnout, kdykoliv budeme chtít. Pro mě osobně přijetí eura je odlišná otázka od inflace. Samozřejmě potom by bylo komplikovanější přesvědčovat Evropu, že by se té inflace vlastně měli vzdát.
 
 Ale euro ekonomicky víceméně vychází neutrálně. Výhody a nevýhody. To není otázka ekonomická, je to spíš otázka ideologická nebo politická. Třeba baltské země mají euro, mají vysokou inflaci, ale nevadí jim to, protože oni berou to euro jako další takovou záruku bezpečnosti, další přivázání se k západní Evropě a další pojistku toho, že kdyby na ně Rusové zaútočili, tak oni je budou bránit zuby nehty.
 

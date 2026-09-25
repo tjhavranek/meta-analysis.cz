@@ -70,4 +70,4 @@ Ale i nějaké další zvyšování daní pravděpodobně bude nutné, ale tohle
 
 … měsících, pokud si to vůbec troufnete.
 
-**Tomáš Havránek:** Tak to já si troufnu, ta inflace nepochybně se přiblíží 20% někdy na přelomu, řekněme, léta a podzimu. A ten růst ekonomiky bude asi poměrně blízký nule, já si nemyslím, že budeme přímo v recesi, že by to HDP klesalo, ale
+**Tomáš Havránek:** Tak to já si troufnu, ta inflace se nepochybně přiblíží 20% někdy na přelomu, řekněme, léta a podzimu. A ten růst ekonomiky bude asi poměrně blízký nule, já si nemyslím, že budeme přímo v recesi, že by to HDP klesalo, ale

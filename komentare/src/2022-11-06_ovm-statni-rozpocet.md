@@ -31,7 +31,7 @@ Já se obávám, že zisky z té daně budou mnohem, mnohem menší, než jaké 
 
 **Tomáš Havránek:** Bohužel. Třeba i u bank je vůbec otázka, jestli nějaké mimořádné zisky budou mít v příštích letech. Protože třeba hypotéky vlastně nové jsou na mnohaletých minimech. To je jeden z hlavních biznesů těch komerčních bank.
 
-Čili plus ta optimalizace, nejenom u bank, ale u všech ostatních firem, kterých se týká. Čili ty zisky budou, bohužel, kdyby se to týkalo i letošního roku, tak by ta situace byla jiná. Čili kdyby ta daň platila vlastně i zpětně za rok
+Čili plus ta optimalizace, nejenom u bank, ale u všech ostatních firem, kterých se to týká. Čili ty zisky budou, bohužel, kdyby se to týkalo i letošního roku, tak by ta situace byla jiná. Čili kdyby ta daň platila vlastně i zpětně za rok
 
 **Václav Moravec:** 22. A my kdybyste měl tu pravomoc rozhodovací, vy byste pro takový
 
@@ -45,7 +45,7 @@ Já se obávám, že zisky z té daně budou mnohem, mnohem menší, než jaké 
 
 **Tomáš Havránek:** … zmiňoval, ale když už tam mimořádná daň je, tak nějaká ta hranice se udělat musí. Samozřejmě za sebe, moje interpretace je taky taková, že tady dlouhodobě vnímáme, že náš bankovní sektor je hodně ziskový, je hodně regulovaný, tím pádem hodně ziskový. Ty zisky jdou do ciziny. Přesně tak.
 
-Čili možná, že i tahle motivace tam byla. Podle mě tohle by konkrétně šlo asi dělat lépe a to třeba tak, že snížíte regulace těch bank trochu méně ziskové, tím pádem vlastně ty odvody dividend nebudou takové. Já samozřejmě jsem ty banky kritizoval, jak asi víte, kvůli nedokonalému přenosu úrokových sazeb na spořicí účty. To už je dnes mnohem lepší, ale spořáky za 6,5 už se dají sehnat, čili
+Čili možná, že i tahle motivace tam byla. Podle mě tohle by konkrétně šlo asi dělat lépe a to třeba tak, že snížíte regulace těch bank, budou trochu méně ziskové, tím pádem vlastně ty odvody dividend nebudou takové. Já jsem samozřejmě ty banky kritizoval, jak asi víte, kvůli nedokonalému přenosu úrokových sazeb z ČNB na spořicí účty. To už je dnes mnohem lepší, ale spořáky za 6,5 už se dají sehnat, čili
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
@@ -67,7 +67,7 @@ Tady tedy ta pozitivita už končí, ale reálně opravdu ten přebyt...
 
 **Václav Moravec:** No to se na to díváte jenom z pohledu státního rozpočtu, protože inflace 18%, když se podíváte na vaše příjmy.
 
-**Tomáš Havránek:** Je to v podstatě forma státního bankrotu, tak ta velká inflace, která umazává ten státní dluh. A to potom platí kdo? To potom platí lidé, kteří mají nějaké úspory v bance a nebo doma v hotovosti.
+**Tomáš Havránek:** Je to v podstatě forma státního bankrotu, takhle velká inflace, která umazává ten státní dluh. A to potom platí kdo? To potom platí lidé, kteří mají nějaké úspory v bance a nebo doma v hotovosti.
 
 **Vít Samek:** Ale lidi nám zdá, když propady, reálné propady mezd už jsou teď přes 10% ročně a u řady lidí ještě větší. Takže naši zaměstnanci jsou první obětí.
 

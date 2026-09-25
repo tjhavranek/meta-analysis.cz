@@ -47,7 +47,7 @@ A potom se vždycky snažíme, tím, že mám i tu výuku magisterského seminá
 
 **Alice Němcová Tejkalová:** To je velmi pozitivní a všem ekonomkám fandíme, když se právě dostaneme k tomu, jak ty jsi studovala doktorát a jaká témata jsi vybrala. Věděla jsi hned od začátku, co chceš dělat a čemu se chceš věnovat?
 
-**Zuzana Havránková:** Věděla jsem od začátku toho doktorátu, i když ono se to tak jako v průběhu těch studií bakaláře a magistra krystalizovalo. A myslím, že taková největší krystalizace, která proběhla, tak byla právě v těch Helsinkách, protože tam jsme se dostali k profesorovi Ilmakunnasovi na úplně běžném předmětu, který je tam vyučován pro všechny ty zahraniční studenty. Empirická analýza, nějaké ekonometrické zpracování, různých věcí. A ten nám představil něco, čemu se říká metaanalýza.
+**Zuzana Havránková:** Věděla jsem od začátku toho doktorátu, i když ono se to tak jako v průběhu těch studií bakaláře a magistra krystalizovalo. A myslím, že taková největší krystalizace, která proběhla, tak byla právě v těch Helsinkách, protože tam jsme se dostali k profesorovi Ilmakunnasovi na úplně běžném předmětu, který je tam vyučován pro všechny ty zahraniční studenty. Empirická analýza, nějaké ekonometrické zpracování různých věcí. A ten nám představil něco, čemu se říká metaanalýza.
 
 A z toho vznikla seminární práce, z toho vznikla moje první publikace, která byla recenzovaná a z toho jsme se tak nějak jako vykrystalizovali do toho, co děláme dnes, což je ta metaanalýza.
 
@@ -87,7 +87,7 @@ A na základě toho, jak vypadá ten statistický vzorek, na základě nějakýc
 
 **Zuzana Havránková:** To je pravda.
 
-Metaanalytici nejsou úplně populární. Když se díváš na něčí vlastně celoživotní práci a v podstatě ho kritizuješ, nevědomně, spíše poukazuješ na to, že v té celé literatuře je něco špatně a něco třeba se dělá jako dobře a něco se dělá lépe. A tím pádem to, co se dělá jinak než lépe, je to jako taková nepřímá kritika.
+Metaanalytici nejsou úplně populární. Když se díváš na něčí vlastně celoživotní práci a v podstatě ho kritizuješ, nevědomně, spíše poukazuješ na to, že v té celé literatuře je něco špatně a něco se třeba dělá jako dobře a něco se dělá lépe. A tím pádem to, co se dělá jinak než lépe, je to jako taková nepřímá kritika.
 
 **Alice Němcová Tejkalová:** celé řadě různých témat. Stojí za to určitě zmínit, že ty výzkumě velmi často spolupracují se svým mužem, Tomášem Havránkem, nejen s ním, i s dalšími kolegy. Máš takové poměrně stabilní výzkumné týmy, jak jsem si měla možnost všimnout i u tvých publikací. Věnovali jste se například dopadu velikosti tříd na výsledky žáků.
 
@@ -115,7 +115,7 @@ A to je vlastně ten náš problém. Už jenom v současné době, vidíš na st
 
 Průměr. To znamená, že jsou třídy, které mají patnáct dětí, jsou třídy, které mají dvacet pět. Navýšit počet těch dětí z těch dvaceti, z průměru z dvaceti, třeba na dvacet pět. A potom si můžeš přepočítat to, jakým způsobem vlastně ty nabereš ty finance v tom školství na ty platy těch učitelů, což je taky jedna taková krizová otázka.
 
-Nebo nemusíš všech těch, kolik to je, asi dvacet pět procent platů těch učitelů, platů navýšit pro učitele. Můžeš to použít
+Nebo nemusíš platy těch učitelů navýšit o všech těch, kolik to je, asi dvacet pět procent. Můžeš to použít
 
 **Alice Němcová Tejkalová:** jak se tvářím, protože já přemýšlím nad tím, že bydlíme v Praze. Moje dcery vlastně chodí od začátku do třídy, kde je mezi sedm a dvaceti a devět a dvaceti. Říkám, to je nádhera, že v nějakých školách je devět a dvacet dětí. Nebo patnáct.
 

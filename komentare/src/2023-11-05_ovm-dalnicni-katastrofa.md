@@ -47,7 +47,7 @@ A nevydělávají nám. A ničemu by neuškodilo vzít větší část z těch p
 
 **Tomáš Havránek:** … ku příkladu. Vůbec ne. Oni to můžou dělat sami. Ale já chápu tu jejich obavu, že to je tak velký krok, že k němu potřebují širější společenskou dohodu.
 
-Ne jenom s vládou, ale i s opozicí. Čili když si třeba vy, pan Stínový premiér, pan vysoce postavený ministr, domluvíte schůzku s guvernérem a zeptáte se ho, jestli by šlo vykročit tím směrem
+Ne jenom s vládou, ale i s opozicí. Čili když si třeba vy, pan stínový premiér, pan vysoce postavený ministr, domluvíte schůzku s guvernérem a zeptáte se ho, jestli by šlo vykročit tím směrem
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 

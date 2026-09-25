@@ -78,7 +78,7 @@ To inflace neovlivní. Ale co ji může ovlivnit opravdu je ta sestupná tendenc
 
 A třeba pokud jde o DPH, o kterém se teď velmi diskutuje, že by měly být místo tří sazeb jenom dvě, což tedy hrozí zdražením některých věcí, které jsou v té nejnižší sazbě.
 
-**Tomáš Havránek:** že ten samotný stav rozpočtu vloni nebo letos nebo příští rok není zase tak důležitý z hlediska třeba inflace nebo vůbec dlouhodobého vývoje této země. Co je důležité, je ten výhled střednědobý a dlouhodobý. A tam tyhle drobné změny daní nebo nějaké drobné škrty vlastně zase tak velký vliv hrát, ono to může pomoct, ale velký vliv to hrát nebude. Co je důležité jednak je prorůstová politika, pokud možno redukce regulace, kde to ještě trochu jde.
+**Tomáš Havránek:** že ten samotný stav rozpočtu vloni nebo letos nebo příští rok není zase tak důležitý z hlediska třeba inflace nebo vůbec dlouhodobého vývoje této země. Co je důležité, je ten výhled střednědobý a dlouhodobý. A tam tyhle drobné změny daní nebo nějaké drobné škrty, ono to může pomoct, ale velký vliv to hrát nebude. Co je důležité, je jednak prorůstová politika, pokud možno redukce regulace, kde to ještě trochu jde.
 
 Ale hlavně vyřešit dva hlavní problémy na straně příjmu a výdajů. Na straně výdajů to jsou důchody. Důchodový systém, který opravdu je neudržitelný. Všichni to vědí a dlouhodobě se s tím bohužel nic nedělá z toho důvodu, že to samozřejmě někdo musí zaplatit.
 

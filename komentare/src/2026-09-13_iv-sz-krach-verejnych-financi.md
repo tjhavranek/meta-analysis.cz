@@ -28,7 +28,7 @@ Potom bere peníze z obrany a dává je do zdravotnictví, víceméně nějaký 
 
 **Tomáš Havránek:** Nějaká větší poptávka ze strany voličů po stabilizaci veřejných financí, která tady evidentně není. Minulá vláda dělala přece něco víc ohledně konsolidace, ale taky to nebylo úplně zase tak moc. Teď vidíme, že ta poptávka není. Čili nejjednodušší pro jakoukoliv vládu je ty věci řešit jen tak trošku nebo vůbec a nechat to nakonec nějak vyhnít pravděpodobně inflací, k tomu se tedy ještě dostaneme.
 
-Ale i těch 3,5% HDP, je to špatné, není to dobře, ale v kontextu Evropy jsme přesně na průměru. To je přesně průměrný schodek evropských zemí. Čili my bychom měli se snažit něco dělat, k tomu se taky dostaneme, co by šlo udělat poměrně jednoduše. Ale není to zatím žádná katastrofa ten jeden rok.
+Ale i těch 3,5% HDP, je to špatné, není to dobře, ale v kontextu Evropy jsme přesně na průměru. To je přesně průměrný schodek evropských zemí. Čili my bychom se měli snažit něco dělat, k tomu se taky dostaneme, co by šlo udělat poměrně jednoduše. Ale není to zatím žádná katastrofa ten jeden rok.
 
 Horší je samozřejmě výhled na to dlouhé období, to je to, na čem záleží. Dlouhodobý součet schodků, ne jeden rok.
 
@@ -42,13 +42,13 @@ Moje otázka mířila tam, kde podle vás by mohla být ta stopka?
 
 Je to nejpravděpodobnější scénář. Není to scénář, který bych já chtěl, ale můžeme se na ně nějak připravit. Třeba tak, že máme majetek tam, kde ta inflace na ně nedosáhne. To znamená třeba v akciích.
 
-A potom ale je pořád jedna naděje poměrně výrazná, která nevyřeší ten náš problém, ale může pomoci minimálně provést nějaké bolestivější reformy. A to je majetek, který tato země má v zahraničí, což jsou devizové rezervy Národní banky, a které stále nejsou investovány tak, aby vydělávaly tolik, kolik by vydělávat mohly. I kdyby se ale nezměnilo vůbec nic, tak za několik let, a ta současná alokace rezerv byla stejná, tak za několik let, protože už velká část těch peněz je v akciích, 30% zhruba té disponibilní části. Jsou to 4 biliony korun, takže je to velký balík. A ta Národní banka pořád splácí ztrátu z minulých let.
+A potom ale je pořád jedna naděje poměrně výrazná, která nevyřeší ten náš problém, ale může pomoci minimálně provést nějaké bolestivější reformy. A to je majetek, který tato země má v zahraničí, což jsou devizové rezervy Národní banky, a ty stále nejsou investovány tak, aby vydělávaly tolik, kolik by vydělávat mohly. I kdyby se ale nezměnilo vůbec nic a ta současná alokace rezerv byla stejná, tak za několik let, protože už velká část těch peněz je v akciích, 30% zhruba té disponibilní části. Jsou to 4 biliony korun, takže je to velký balík. A ta Národní banka pořád splácí ztrátu z minulých let.
 
 **Jiří Zatloukal:** Tak nějakých 300 miliard zhruba?
 
 **Tomáš Havránek:** Nějaká čtvrt bilionu zhruba teď to je asi, máte pravdu, ale během 3-4 let pravděpodobně, pokud se ten svět nějak nezhroutí, tu ztrátu uhradí a potom, i kdyby neudělala nic navíc, tak bude ročně v průměru přispívat kolem 80 miliard korun do státního rozpočtu. Což ten rozpočet nezachrání, kdyby nedělala nic navíc.
 
-Ona může ještě zainvestovat víc, Aleš Michl, věřím, že se k tomu ještě odhodlá, že bude chtít, aby se na něj pamatovalo jako na opravdu výjimečného guvernéra, ne na průměrného. A těch 30% on zase toho tolik neudělal. Už ta předchozí vedení Národní banky to vlastně na 20% zvýšilo, on to maličko navýšil. Chce to mít většinu těch rezerv v akciích, jako to má třeba Singapur, který byl ve stejné situaci jako jsme my, měl příliš devizových rezerv a investovali a potom mu to vydělává.
+Ona může ještě zainvestovat víc, Aleš Michl, věřím, že se k tomu ještě odhodlá, že bude chtít, aby se na něj pamatovalo jako na opravdu výjimečného guvernéra, ne na průměrného. A těch 30% on zase toho tolik neudělal. Už ta předchozí vedení Národní banky to vlastně na 20% zvýšila, on to maličko navýšil. Chce to mít většinu těch rezerv v akciích, jako to má třeba Singapur, který byl ve stejné situaci jako jsme my, měl příliš devizových rezerv a investovali a potom mu to vydělává.
 
 A ten potenciál je dohromady až 200 miliard, že by ČNB mohla ročně přinášet státním rozpočtu, aniž by to mělo jakýkoliv negativní vliv na měnovou.
 
@@ -86,13 +86,13 @@ Já jsem byl v televizi onehdy s panem Kupkou, který o tom slyšel poprvé, pak
 
 Máte pravdu.
 
-**Tomáš Havránek:** Mimochodem, jenom k tomu, samozřejmě, to není oběd zdarma, berete na sebe riziko. To riziko je, že ta ČNB udělá ztrátu. Mimochodem, ona ve ztrátě je v podstatě odjakživa a tvrdí vždycky, že na té ztrátě nezáleží. Pokud na ztrátě nezáleží, no to není úplně pravda, ale pokud je to tak, jak oni tvrdí, na ztrátě nezáleží, ztráta může být půl bilionu, bilion, je to jedno, tak ale ten zisk je naprosto reálný.
+**Tomáš Havránek:** Mimochodem, jenom k tomu, samozřejmě, to není oběd zdarma, berete na sebe riziko. To riziko je, že ta ČNB udělá ztrátu. Mimochodem, ona ve ztrátě je v podstatě odjakživa a tvrdí vždycky, že na té ztrátě nezáleží. Pokud na ztrátě nezáleží, no to není úplně pravda, ale pokud je to tak, jak oni tvrdí, že na ztrátě nezáleží, ztráta může být půl bilionu, bilion, je to jedno, tak ale ten zisk je naprosto reálný.
 
 Pokud uděláte zisk, ten můžete použít, můžete z něj postavit nemocnici, rychlovlaky, dálnici, ten zisk je reálný. Takže pokud je to tak máte asymetrii v tom riziku. Ale berete na sebe riziko, tohle je karikatura, ale takhle to oni říkají. Berete na sebe nějaké riziko, ale pokud ten svět se nezhroutí, já to dělám taky, kupuji akcie, to je moje investice, protože je to na dlouhou dobu.
 
 Když ten váš horizont je 10, 20, 30 let a u Národní banky ten horizont je delší, ta neumře nikdy, tak vy si můžete dovolit u peněz, které nepotřebujete. A když je potřebujete, vy ty akcie můžete prodat. Sice třeba levněji, ale zároveň vám v krizi většinou oslabí koruna, takže to není zas takový problém pro tu vaši rozvahu. Vás zajímá dlouhodobý výhled a v tom dlouhodobém výhledu je velice nepravděpodobné, vyjma nějaké termonukleární války, kdy by nás peníze stejně nezajímaly, že se tato věc nevyplatí.
 
-Čili je to riskantní ano z roku na rok, ale mě nezajímá z roku na rok. Ta ČNB předtím, než pošle první peníze vládě, si vytvoří buffer, vytvoří si polštář, 300, 400, 500 miliard, aby právě tyto výkyvy mohla absorbovat a může dočasně být znovu ve ztrátě. Znovu říkám, teď má ztrátu čtvrt bilionu kumulovanou a nikdo to zatím splácet nemusel.
+Čili je to riskantní, ano, z roku na rok, ale mě nezajímá z roku na rok. Ta ČNB předtím, než pošle první peníze vládě, si vytvoří buffer, vytvoří si polštář, 300, 400, 500 miliard, aby právě tyto výkyvy mohla absorbovat a může dočasně být znovu ve ztrátě. Znovu říkám, teď má ztrátu čtvrt bilionu kumulovanou a nikdo to zatím splácet nemusel.
 
 **Jiří Zatloukal:** Vidíte ještě nějaké další jednoduché příjmy pro současnou vládu?
 
@@ -108,7 +108,7 @@ Což jsou nějaká procenta rozpočtu,
 
 **Tomáš Havránek:** Podle těch odhadů, co jsem viděl z celého světa, by to mohla být nějaká 2-3 procenta toho rozpočtu. Což není vůbec málo. A je to věc, která zase není potřeba. Čili kdybychom měli pružný, flexibilní systém, kdy když já ty peníze nevyčerpám, mám garantované, že příští rok je dostanu.
 
-A zároveň, že mi nikdo nesníží ten rozpočet na příští roky, třeba naopak, že budu odměněný za to, že je šetřím. Tak tohle není nápad zčistajasna. To opravdu funguje v řadě zemí a mohlo by to ušetřit nějaké 2-3 procenta státního rozpočtu. Několik desítek miliard.
+A zároveň, že mi nikdo nesníží ten rozpočet na příští roky, třeba naopak, že budu odměněný za to, že šetřím. Tak tohle není nápad zčistajasna. To opravdu funguje v řadě zemí a mohlo by to ušetřit nějaké 2-3 procenta státního rozpočtu. Několik desítek miliard.
 
 Zase věc, která nikomu neublíží, kromě těch účetních, kteří to musí implementovat, ale jinak je to politicky věc, která nikoho moc nebolí. A je škoda to neudělat.
 
@@ -130,9 +130,9 @@ Ale ne, i na východě,
 
 **Jiří Zatloukal:** Vlastně v Číně taky, no. Kromě Afriky vlastně...
 
-**Tomáš Havránek:** Kromě Afriky, Izraele, vám jste na... V podstatě jste na nějaké trajektorii naprostého kolapsu demografického té společnosti. Dobře. Tohle je to, co je hlavní.
+**Tomáš Havránek:** Kromě Afriky a Izraele jste v podstatě na nějaké trajektorii naprostého demografického kolapsu té společnosti. Dobře. Tohle je to, co je hlavní.
 
-Nějakých 40, 50 miliard mě mrzí v tom rozpočtu, ale to není něco, kvůli čemu bych nespal. Mně spíš vadí, nebo vadí. Já se bojím tohohle. A já nemám právo někomu říkat, jak má žít, kolik dětí má mít.
+Nějakých 40, 50 miliard mě mrzí v tom rozpočtu, ale to není něco, kvůli čemu bych nespal. Mně spíš vadí, nebo vadí. Já se bojím tohohle. A já nemám právo nikomu říkat, jak má žít, kolik dětí má mít.
 
 My dohromady jich máme dost, ne spolu tedy, ale chci šest, ne?
 
@@ -188,7 +188,7 @@ Jak se díváte na debatu o přijetí eura v České republice? Záad na druhou 
 
 To znamená, že má třeba vyšší inflaci, nižší inflaci. Nevím. Nemám na to jistý názor. Hlasoval bych asi pro, protože je to pro mě dobrá věc, ale necítím se tak, abych to doporučoval ostatním.
 
-A jakékoliv ekonomické zhodnocení eura vychází vlastně 0,0. Víceméně. Co je důležitější možná, je takový civilizační rozměr členství v eurozóně. Třeba, proč mají pobaltské země euro?
+A jakékoliv ekonomické zhodnocení eura vychází vlastně 0,0. Víceméně. Co je možná důležitější, je takový civilizační rozměr členství v eurozóně. Třeba, proč mají pobaltské země euro?
 
 Že jim to ekonomicky pomůže?
 

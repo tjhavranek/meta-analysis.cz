@@ -193,7 +193,7 @@ Do konce tohohle roku nečekám nějaké výraznější snížení. Rozhodně to
 
 to z žádného modelu nemůže vyjít. Je to nějaká věc, kterou plácnul bez asi velkého přemýšlení. Já si nemyslím, že ta inflace takhle vysoko může vyrůst. Dnes asi už nelze vyloučit vůbec nic.
 
-Ale já hlavně doufám, že ta nová bankovní rada dobře, nebudou zvyšovat sazby, ale my vidíme, že už to moc nefunguje. Ono taky to nefunguje z toho důvodu, že firmy si dnes často berou úvěry v eurech, protože můžou a ty eurové úroky jsou mnohem, mnohem menší než ty korunové, čili nějaké zvyšování českých úroků už má malý dopad na firmy relativně. Máte dopad na hypotéky, ale pro ty lidi, kteří se zrovna refinancují nebo kteří si berou nové samozřejmě. Ale ten efekt je mnohem, mnohem menší než předpovídají všechny zhradní modely.
+Ale já hlavně doufám, že ta nová bankovní rada dobře, nebudou zvyšovat sazby, ale my vidíme, že už to moc nefunguje. Ono to taky nefunguje z toho důvodu, že firmy si dnes často berou úvěry v eurech, protože můžou a ty eurové úroky jsou mnohem, mnohem menší než ty korunové, čili nějaké zvyšování českých úroků už má malý dopad na firmy relativně. Má to dopad na hypotéky, ale pro ty lidi, kteří se zrovna refinancují nebo kteří si berou nové samozřejmě. Ale ten efekt je mnohem, mnohem menší než předpovídají všechny zhradní modely.
 
 Ale doufám, že dojde k posílení koruny. Opravdu velkému masivnímu posílení koruny. Jak jsem slyšel pana prezidenta, on sám vlastně to zmiňoval, že by to bylo vhodné. Takže já doufám, vím, že i paní Zamrazilová to zmiňovala, takže doufám, že k tomu dojde na podzim.
 
@@ -209,6 +209,6 @@ po té stabilizaci sazeb z léta a uklidnění situace by na podzim mohlo dojít
 
 Takže já se ani odborům vlastně vůbec nedivím, že v téhle situaci chtějí ty platy zvýšit, aby dostali třeba alespoň o těch 15%, ale samozřejmě toto inflaci znovu přiživí a těžko s tím udělat něco jiného než stěžovat si u té Národní banky, která jednak dává příklad v té indexaci mezd a jednak tu inflaci bohužel z velké části zavinila ona. Takže ty demonstrace měly být na Příkopech, před budovou ČNB a ne před úřadem vlády.
 
-**Marek Zavřel:** zpravodajského podcastu Kontext vše. Děkuji Tomáši Havránkovi za rozhovor. Děkuji, mějte se krásně. cz lomeno podcasty.
+**Marek Zavřel:** zpravodajského podcastu Kontext vše. Děkuji Tomáši Havránkovi za rozhovor. Děkuji, mějte se krásně.
 
 Loučí se s vámi
