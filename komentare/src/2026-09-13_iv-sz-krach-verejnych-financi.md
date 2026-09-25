@@ -22,7 +22,7 @@ Vítejte ve studiu.
 
 A zůstala tady ta vláda, která vládla předtím a rozpočet sestavoval pan Stanjura, jak by to asi vypadalo. Tak ten hlavní rozdíl je, nebo jeden z těch rozdílů je, že tato vláda mírně snižuje daně. Že vlastně místo toho, abychom my platili, řekněme, za ty obnovitelné zdroje, tak část toho si ta vláda bere. Oproti tomu zase zavádí EET, což je trochu zvýšení daní, nějaké drobné úlevy pro osobe, čili dohromady pár miliard dolů.
 
-Potom bere peníze z obrany a dává je do zdravotnictví, víceméně nějaký 20 miliard, zhruba. A potom navíc na dluh, dá se říct, dá něco státním zaměstnancům a důchodcům, plus ještě investuje do dopravy nějakých 30 miliard. Čili když uděláte tento porovnání, co by bylo, kdyby ta vláda byla jiná, tak ten schodek by byl téměř jistě dost nižší, ale ten rozdíl by byl třeba 40-50 miliard pravděpodobně tak realisticky. Čili tohle není úplně zásadní číslo, nevidíme to rádi, ale jak vidíte, ta trajektorie, teď je horší, ale není zase tak velmi horší oproti tomu, co by bylo jinak.
+Potom bere peníze z obrany a dává je do zdravotnictví, víceméně nějakých 20 miliard, zhruba. A potom navíc na dluh, dá se říct, dá něco státním zaměstnancům a důchodcům, plus ještě investuje do dopravy nějakých 30 miliard. Čili když uděláte toto porovnání, co by bylo, kdyby ta vláda byla jiná, tak ten schodek by byl téměř jistě dost nižší, ale ten rozdíl by byl třeba 40-50 miliard pravděpodobně tak realisticky. Čili tohle není úplně zásadní číslo, nevidíme to rádi, ale jak vidíte, ta trajektorie je teď horší, ale není zase tak strašně horší oproti tomu, co by bylo jinak.
 
 **Jiří Zatloukal:** No ale když se na to podíváme celkově, tak politická reprezentace evidentně problém deficitu veřejných financí neřeší. Protože ekonomika roste, to opakuju, a deficit veřejných rozpočtů má dosáhnout 3,5% HDP. Co se podle vás bude muset stát, abychom začali ten problém řešit?
 
@@ -46,7 +46,7 @@ A potom ale je pořád jedna naděje poměrně výrazná, která nevyřeší ten
 
 **Jiří Zatloukal:** Tak nějakých 300 miliard zhruba?
 
-**Tomáš Havránek:** Nějaká čtvrt bilionu zhruba teď to je asi, máte pravdu, ale během 3-4 let pravděpodobně, pokud se ten svět nějak nezhroutí, tu ztrátu uhradí a potom, i kdyby neudělala nic navíc, tak bude ročně v průměru přispívat kolem 80 miliard korun do státního rozpočtu. Což ten rozpočet nezachrání, kdyby nedělala nic navíc.
+**Tomáš Havránek:** Teď je to asi zhruba nějaká čtvrt bilionu, máte pravdu, ale během 3-4 let pravděpodobně, pokud se ten svět nějak nezhroutí, tu ztrátu uhradí a potom, i kdyby neudělala nic navíc, tak bude ročně v průměru přispívat kolem 80 miliard korun do státního rozpočtu. Což ten rozpočet nezachrání, kdyby nedělala nic navíc.
 
 Ona může ještě zainvestovat víc, Aleš Michl, věřím, že se k tomu ještě odhodlá, že bude chtít, aby se na něj pamatovalo jako na opravdu výjimečného guvernéra, ne na průměrného. A těch 30% on zase toho tolik neudělal. Už ta předchozí vedení Národní banky to vlastně na 20% zvýšila, on to maličko navýšil. Chce to mít většinu těch rezerv v akciích, jako to má třeba Singapur, který byl ve stejné situaci jako jsme my, měl příliš devizových rezerv a investovali a potom mu to vydělává.
 
@@ -162,7 +162,7 @@ Byla válka, tak ta inflace byla nějaká taková inflační daň.
 
 **Tomáš Havránek:** nejenom moje, ale vy víte, že jsou další jako Goodhart nebo Ken Rogoff, který má hezkou knížku o dolaru, kde vlastně říká to samé. Inflace je nejpravděpodobnější výsledek. A to není žádná, je to samozřejmě špatná věc, ale není to žádná katastrofa. O peníze přijdou lidi, kteří nechávají svoje úspory na nějakém spořícím účtu nebo si kupují dluhopisy, což je stejná věc.
 
-Dluhopisy jsou extrémně rizikové kvůli vysoké pravděpodobnosti budoucí inflace. Čili kupujme si něco, co je reálné, čili to jsou nemovitosti nebo hlavně akcie, podíly, zvláště s umělou inteligencí, je dobrý mít podíl na výkonu americké ekonomiky nebo globální ekonomiku. A kdyby se náhodou stalo, vy nevíte, jak to dopadne s AI, kdyby se náhodou stalo to, co tvrdí Elon Musk, že roboti budou dělat všechno, což je krajní řešení, ale pravděpodobně nějakou takovou cestou půjdeme, dost možná, a budete mít daleko větší část ekonomiky, která půjde směrem ke kapitálu, i k firmám, které vyvíjejí ty modely, a které staví ty roboty a tak dále, což se nemusí stát, ale může, tak máte aspoň ty dividendy z těchto firm. Takže mít dobrou pozici v akciích, je dobré jednak kvůli inflaci, jednak kvůli AI.
+Dluhopisy jsou extrémně rizikové kvůli vysoké pravděpodobnosti budoucí inflace. Čili kupujme si něco, co je reálné, čili to jsou nemovitosti nebo hlavně akcie, podíly, zvláště s umělou inteligencí, je dobré mít podíl na výkonu americké ekonomiky nebo globální ekonomiky. A kdyby se náhodou stalo, vy nevíte, jak to dopadne s AI, kdyby se náhodou stalo to, co tvrdí Elon Musk, že roboti budou dělat všechno, což je krajní řešení, ale pravděpodobně nějakou takovou cestou půjdeme, dost možná, a budete mít daleko větší část ekonomiky, která půjde směrem ke kapitálu, i k firmám, které vyvíjejí ty modely a které staví ty roboty a tak dále, což se nemusí stát, ale může, tak máte aspoň ty dividendy z těchto firm. Takže mít dobrou pozici v akciích je dobré jednak kvůli inflaci, jednak kvůli AI.
 
 **Jiří Zatloukal:** Vy jste byl v delší dobu taky poradcem vlastně víceguvernéra České národní banky a s veřejnými rozpočty, s vysokým deficitem souvisí vlastně fungování i měnové politiky, protože každé zvýšení úrokové sazby Českou národní bankou zvyšuje zároveň výrazně splátky státního dluhu, které už jsou v Česku relativně vysoké, je to 100 miliard na úrocích ročně. Ta vláda vždy bude tlačit na to, aby Česká národní banka ty úroky nezvyšovala, protože pokud ty nějak výrazně zvýší, povede to rovněž směrem ke kolapsu těch veřejných financí. Není tohle, nestává se ta Česká národní banka, nebo nebude se stávat postupně čím dál víc zbytečnější v této situaci?
 
@@ -184,7 +184,7 @@ A jak vy znáte dobře asi Fergusonovo pravidlo, že jakmile země dává na úr
 
 Jak se díváte na debatu o přijetí eura v České republice? Záad na druhou stranu pomohlo by to výrazně asi těm podnikům, firmám a zefektivně bylo by to jejich možná chod?
 
-**Tomáš Havránek:** Já rád kupuji akcie, české akcie, mám jich trochu, ale musíte kupovat zahraniční, což jsou hlavně ty ETFka, čili ty koše těch akcií, jsou denominované často v eurech nebo v dolarech, čili mně by euro velmi pomohlo, rád hodně cestuji a vlastně asi většina mého cashflow tak nějak jako potřebuje eura, takže mě by to pomohlo. Nejsem si úplně jist a firmám by to některým taky asi pomohlo, jak jste říkal správně, ty transakční náklady snížit a zjednodušit život. Nejsem si úplně jist, jestli by to pomohlo té zemi jako celku, to znamená, protože já nejsem průměrný člověk, vy taky ne. A tomu průměrnému člověku, dá se představit, může pomoct, když máme centrální banku, která v případě nějakého šoku, který postihne tuhle zemi víc než jiné země v Evropské unii, může reagovat tak, že přizpůsobí svoji reakci přímo situaci této země.
+**Tomáš Havránek:** Já rád kupuji akcie, české akcie, mám jich trochu, ale musíte kupovat zahraniční, což jsou hlavně ty ETFka, čili ty koše těch akcií, jsou denominované často v eurech nebo v dolarech, čili mně by euro velmi pomohlo, rád hodně cestuji a vlastně asi většina mého cashflow tak nějak potřebuje eura, takže mně by to pomohlo. Nejsem si úplně jist a některým firmám by to taky asi pomohlo, jak jste říkal správně, ty transakční náklady snížit a zjednodušit život. Nejsem si úplně jist, jestli by to pomohlo té zemi jako celku, to znamená, protože já nejsem průměrný člověk, vy taky ne. A tomu průměrnému člověku, dá se představit, může pomoct, když máme centrální banku, která v případě nějakého šoku, který postihne tuhle zemi víc než jiné země v Evropské unii, může reagovat tak, že přizpůsobí svoji reakci přímo situaci této země.
 
 To znamená, že má třeba vyšší inflaci, nižší inflaci. Nevím. Nemám na to jistý názor. Hlasoval bych asi pro, protože je to pro mě dobrá věc, ale necítím se tak, abych to doporučoval ostatním.
 
@@ -214,7 +214,7 @@ Jak zlepšit vlastně úrovni českého vysokého školství?
 
 Kromě té jedné důležité věci, ne v Japonsku, ale ve Spojených státech, na takových špičkových školách opravdu máte peníze zaplatit a přilákat špičkové lidi. To u nás není. Ten náš systém je, a já tomu rozumím do velké míry, máme spoustu univerzit v regionech, které taky chtějí nějak fungovat. A často se ale tváří, že dělají vědu.
 
-Nevřícky ta věda má úplně, řekněme, globální parametry a určitě by pomohlo aspoň do nějaké míry se soustředit v různých oborech na excelenci, na různých konkrétních univerzitách, i když to slovo excelence se často zneužívá. Ale vy vidíte, output některých univerzit, který nemá žádný globální ohlas. Nemá to žádnou relevanci.
+Nevřícky ta věda má úplně, řekněme, globální parametry a určitě by pomohlo aspoň do nějaké míry se soustředit v různých oborech na excelenci, na různých konkrétních univerzitách, i když to slovo excelence se často zneužívá. Ale vy vidíte output některých univerzit, který nemá žádný globální ohlas. Nemá to žádnou relevanci.
 
 **Jiří Zatloukal:** úzkou vymezenou speciální oblast, které najít vlastní výhodu?
 
@@ -232,7 +232,7 @@ Ale vzít to jako něco, jako byla dřív kalkulačka, počítač, samozřejmě 
 
 **Jiří Zatloukal:** Které 5% to jsou, kterých 5% to je při vaší práci profesora na Karlové univerzitě?
 
-**Tomáš Havránek:** opravdu dobrých nápadů vám ta AI tam z vás neudělá. To je pravda. Až tohle bude umět, tak se ta hra úplně změní nejenom pro mě, pro vás, pro všechny, pro celý svět, ale možná v lepším. Ale tak tohle něco, takže já můžu dělat teď věci, saší mi je taková ten obecnější, ta obecnější myšlenka, nápad a technické detaily s tím mi pomůže často ten agent místo kolegy z Japonska, kterého jsem musel platit, protože jsem neuměl tu matematiku z MIT, kterou on uměl.
+**Tomáš Havránek:** opravdu dobrých nápadů vám ta AI z vás neudělá. To je pravda. Až tohle bude umět, tak se ta hra úplně změní nejenom pro mě, pro vás, pro všechny, pro celý svět, ale možná v lepším. Ale tak tohle něco, takže já můžu dělat teď věci, saší mi je taková ten obecnější, ta obecnější myšlenka, nápad, a s technickými detaily mi často pomůže ten agent místo kolegy z Japonska, kterého jsem musel platit, protože jsem neuměl tu matematiku z MIT, kterou on uměl.
 
 Teď ho potřebuji pořád, ale méně. Další věc, samotné přednášení. Vy sice můžete nějakou hezkou přednášku z YouTube, ale pořád to není úplně...
 

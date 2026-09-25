@@ -49,7 +49,7 @@ Takže ta efektivita zvyšování sazeb, i kdyby to bylo možné, ale to už moc
 
 **Tomáš Havránek:** Nelíbilo, tak je potřeba říct, že za prvé úkolem ČNB centrální banky není pomáhat exportérům nebo importérům. A za druhé, ty intervence, které byly minule proti koruně, ty dva biliony nových korun, tohle byla přímá podpora exportérům. Kdybychom teď ta nakoupená eura za ty nové koruny prodali, tak to jenom obrátíme a pomůžeme naopak importérům. Čili bychom to vlastně neutralizovali, ty minulé intervence.
 
-Čili ten dopad by byl nulový v součtu a nebylo by to celkové poškození exportérů ani importérů, ale vlastně čistá nula. Čili i z tohohle pohledu se mi to zdá poměrně fair, jestli se to dá takhle říct. Každopádně ten úkol ČNB, znovu říkám, je cenová stabilita. A když je inflace takhle pádivá, dvouciferná, tak by měla využít všechny nástroje, které má, nejenom ten úrokový, který už se vyčerpává a brzy nebude fungovat vůbec.
+Čili ten dopad by byl nulový v součtu a nebylo by to celkové poškození exportérů ani importérů, ale vlastně čistá nula. Čili i z tohohle pohledu se mi to zdá poměrně fér, jestli se to dá takhle říct. Každopádně ten úkol ČNB, znovu říkám, je cenová stabilita. A když je inflace takhle pádivá, dvouciferná, tak by měla využít všechny nástroje, které má, nejenom ten úrokový, který už se vyčerpává a brzy nebude fungovat vůbec.
 
 **Moderátorka:** Pane viceguvernére, bude vůbec tématem to, co naznačil pan Havránek, že by vaše sekce měnová připravila možná srovnání toho, jestli by to nebyl vhodnější postup, nebo na to už je pozdě, protože zkrátka jste se rozhodli jít tou jednou cestou.
 

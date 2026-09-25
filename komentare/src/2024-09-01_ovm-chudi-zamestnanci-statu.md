@@ -38,7 +38,7 @@ Kde ty peníze seženeme, když zrušíme windfall tax dříve, než plánujeme?
 
 **Tomáš Havránek:** Vidím tam strukturální problémy. První je ten, to moje oblíbené téma, ohledně správy devizových rezerv. Vlastně my máme majetek za zhruba 3,5 bilionů v zahraničí. A ten by víceméně mohl financovat ty úroky, které platíme na náš státní dluh, který je v podobné velikosti, asi tři a půl bilionu.
 
-A tím směrem, vy jste říkal, že to bylo odmítnuto, to nebylo. Tak Národní banka, jde tím směrem, navyšuje podíl skutečně investovaných peněz z těch devizových rezerv. Teď to je asi 22% v akciích.
+A tím směrem, vy jste říkal, že to bylo odmítnuto, to nebylo. Tak Národní banka jde tím směrem, navyšuje podíl skutečně investovaných peněz z těch devizových rezerv. Teď to je asi 22% v akciích.
 
 **Václav Moravec:** Martin Kupka, vy jste tady totiž mluvil o tom, že ty by mohl jít třeba na dopravní investice,
 
@@ -46,7 +46,7 @@ A že by mohly být v nějakém fondu. A když jsem se na to opakovaně doptáva
 
 **Tomáš Havránek:** Zákony jsou úplně v pořádku, to je dlouhodobá věc. Když vám budou dlouhodobě tyhle aktiva vydělávat, budete brát dividendy ze zahraničí, vlastně dorovnávat ten odliv zisku, co teď tady vidíme na druhou stranu. A z toho časem ne hned, protože potrvá, než ta Národní banka bude zisková, můžete financovat částečně úroky, které teď platíme 100 miliard ročně na státní dluh. K tomu nemusíte měnit zákon, je potřeba jenom vůle vedení Národní banky.
 
-A to se děje. Čili navyšujeme postupně, já bych to dělal rychleji, ale je třeba pochválit aspoň to, že jsme se z 8% peněz zainvestovaných na výnos před lety, kdy jsem o tom začal mluvit, dostali na 22% zhruba. Čili ten trend tam je jasný a když budeme pokračovat v tom dále, tak za pár let se dostaneme do situace, kdy opravdu nám tyhle peníze budou pomáhat výrazně splácet úroky na náš státní dluh a to nám pak umožní financovat jiné věci ze státního rozpočtu.
+A to se děje. Čili navyšujeme postupně, já bych to dělal rychleji, ale je třeba pochválit aspoň to, že jsme se z 8% peněz zainvestovaných na výnos před lety, kdy jsem o tom začal mluvit, dostali na 22% zhruba. Čili ten trend tam je jasný a když budeme pokračovat v tom dále, tak za pár let se dostaneme do situace, kdy nám tyhle peníze opravdu budou pomáhat výrazně splácet úroky na náš státní dluh a to nám pak umožní financovat jiné věci ze státního rozpočtu.
 
 **Václav Moravec:** A ten druhý nebo třetí možnost navýšení příjmu státního rozpočtu vedle toho vašeho oblíbeného tématu?
 
@@ -56,7 +56,7 @@ Není to jenom ve státním sektoru, je to i v korporátu, ale v té veřejné s
 
 … pro příští rok. Vám sníží ten další rozpočet. A ten carry over, který funguje třeba ve Spojených státech, to má ministerstvo obrany, tuším. Má to Victoria, stát v Austrálii, má to Velká Británie.
 
-Tak podle odhadů, které jsou, na ta opatření třeba se zavedly, že byste si mohli převést jako odbor, jako ředitel odboru, ty peníze do dalšího roku a neutrácet je za nové iPhone'y pro vaše zaměstnance.
+Tak podle odhadů, které jsou, na ta opatření, která se zavedla, že byste si mohli převést jako odbor, jako ředitel odboru, ty peníze do dalšího roku a neutrácet je za nové iPhone'y pro vaše zaměstnance.
 
 **Václav Moravec:** Řekněme útraty za blbiny na posledních.
 
@@ -96,7 +96,7 @@ Samozřejmě ta data by se potom dala použít různě.
 
 **Tomáš Havránek:** A to zkouším v hlavě propočítat, možná ano, ale zase by to asi platili do velké míry ti zaměstnanci, což úplně nechceme.
 
-A já bych začal tam, kde to nebolí. Proto já vždycky říkám majetek ČNB, kde nebolí investovat ho trošku víc na výnos. Ten rozpočtový carry-over, kde to nikoho nebolí. To jsou věci, které dohromady, proč nezačít tam, kde to jako nemusíte nikomu brát, nikoho vyhazovat.
+A já bych začal tam, kde to nebolí. Proto já vždycky říkám: majetek ČNB, kde nebolí investovat ho trošku víc na výnos. Ten rozpočtový carry-over, kde to nikoho nebolí. Proč nezačít tam, kde to jako nemusíte nikomu brát, nikoho vyhazovat?
 
 A potom se můžeme dostat k tomu, když to nebude stačit, že budeme zvyšovat daně.
 
@@ -110,18 +110,18 @@ Můžeme se nepochybně zase dočkat korekce jako v roce letošním. Podsekává
 
 To, jak lidé jsou ochotní brát riziko, dát výpověď v práci, najít si novou práci. Tohle vytváří ekonomický růst, a ne to, co vláda odhlasuje. A chci tady vám říct pár ještě faktů k těm platům státních zaměstnanců. Za poslední tři roky nám tady masivně klesly reálné mzdy v celé ekonomice.
 
-Opravdu dvojcifrným tempem přes 10%. Přitom to, co se vyrobí v té ekonomice, to, co ty zaměstnanci vytvoří, to nekleslo. To HDP je teď trošku na vyšší úrovni, než bylo tehdy. Čili tady vidíte, že to rozdělení toho koláče opravdu jde, to musí pravicový volič pochopit nebo uznat, že jde ve prospěch spíš těch firem než těch zaměstnanců.
+Opravdu dvojcifrným tempem přes 10%. Přitom to, co se vyrobí v té ekonomice, to, co ti zaměstnanci vytvoří, to nekleslo. To HDP je teď trošku na vyšší úrovni, než bylo tehdy. Čili tady vidíte, že to rozdělení toho koláče opravdu jde, to musí pravicový volič pochopit nebo uznat, že jde ve prospěch spíš těch firem než těch zaměstnanců.
 
 A tohle se nutně, to je základní ekonomický princip, musí vyrovnat v příštích letech. Čili my budeme vidět svižný růst průměrných platů, reálných platů po odečtení inflace. V soukromé sféře podle prognózy ČNB to je na příští rok asi 7%. A teď, za ty poslední roky nám ty reálné platy očištěné o inflaci ve státní správě, nebo v té veřejné, klesaly ještě rychleji.
 
 V řadě profesí to bylo opravdu jako výrazně rychleji. I přes 20%. A teď stůj, co stůj, pokud chcete, aby někdo tyhle práce vykonával v té státní veřejné sféře, tak vy je musíte zaplatit tak, aby to bylo aspoň trošku kompetitivní, i když chcete šetřit jinak. Bez toho vám řada služeb bude postupně kolabovat a nebudou tam kvalitní lidi.
 
-Protože i ty, co to baví, tak potřebují nějakou mzdu, ze které rozumně vyžijí a nemusí si potom žádat o dávku na bydlení, na kterou tedy brzy budeme mít asi nárok všichni. Jak to vypadá, k tomu se ještě asi dostaneme. Ale takže u těchto profesí, jak tady pan předseda jmenoval, jak jste vy vyčíslovali, bude opravdu nutný nárůst výrazně vyšší než nějakých třeba 5%, o kterých se mluví, i když ten celkový objem prostředků je ještě menší. Tam rozhodně nějakých 7% bude potřeba.
+Protože i ty, co to baví, tak potřebují nějakou mzdu, ze které rozumně vyžijí a nemusí si potom žádat o dávku na bydlení, na kterou tedy brzy budeme mít asi nárok všichni, jak to vypadá. K tomu se ještě asi dostaneme. Ale takže u těchto profesí, jak tady pan předseda jmenoval, jak jste vy vyčíslovali, bude opravdu nutný nárůst výrazně vyšší než nějakých třeba 5%, o kterých se mluví, i když ten celkový objem prostředků je ještě menší. Tam rozhodně nějakých 7% bude potřeba.
 
 Tady bych podpořil pana předsedu. Myslím, že to je nějaká věc, která je evidentní: že nemůžete do nekonečna rozevírat ty nůžky na stejné pozici mezi platy v té veřejné sféře a v té soukromé.
 
 **Václav Moravec:** Protože stát asi nemá ty zdroje?
 
-**Tomáš Havránek:** Ale tak stát se snaží šetřit, což vláda dělá, jak může, balancuje různé věci. Ale tady jsme už opravdu v situaci, kdy ten poměr na některých pozicích platu ve veřejné sféře a v soukromé je vlastně na historických minimech. Nebo blížíme se nějakému období 2014. Podle studie IDEA, kterou jsem nedávno četl.
+**Tomáš Havránek:** Ale tak stát se snaží šetřit, což vláda dělá, jak může, balancuje různé věci. Ale tady jsme už opravdu v situaci, kdy ten poměr na některých pozicích platu ve veřejné sféře a v soukromé je vlastně na historických minimech. Nebo se blížíme nějakému období 2014, podle studie IDEA, kterou jsem nedávno četl.
 
 A právě nejméně berou často ti lidé, kteří jsou nejvíc v kontaktu s lidmi. Proto jsem navrhoval ty dotazníky, že by část zvýšení platu mohla jít na bonusy právě tímto způsobem. Pro ty nejlepší z nich.

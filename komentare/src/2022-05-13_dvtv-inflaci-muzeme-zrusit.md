@@ -48,7 +48,7 @@ Ale děje se to v řádu desítek milionů eur a ne v řádu stovek milionů eur
 
 **Tomáš Havránek:** že asi o řád víc by to mělo. Přesně tak. Když byla inflace před osmi lety u nuly, hrozila deflace, tak se intervenovalo masivně proti koruně, aby se oslabila a ta deflace se vlastně zvrátila. Teď máme inflaci na sedminásobku inflačního cíle, čili bych čekal podobně silnou reakci.
 
-Oni zvyšují sazby, ale historicky vždycky centrální banky zvyšovaly sazby rychleji, než rostla inflace. A to z toho důvodu, aby rostly i ty reálné sazby, čili po odečtení inflace. To dnes se neděje, ale ono to ani nejde. A to z toho důvodu, že všichni, nebo většina z nás, většina ekonomik, řekněme, je hodně zadlužená, i domácnosti a firmy.
+Oni zvyšují sazby, ale historicky vždycky centrální banky zvyšovaly sazby rychleji, než rostla inflace. A to z toho důvodu, aby rostly i ty reálné sazby, čili po odečtení inflace. To se dnes neděje, ale ono to ani nejde. A to z toho důvodu, že všichni, nebo většina z nás, většina ekonomik, řekněme, je hodně zadlužená, i domácnosti a firmy.
 
 A dvouciferné sazby dnes by znamenaly bankrot řady subjektů v té zemi. To není možné. Extrémním příkladem je eurozóna, která vlastně nemůže proti inflaci dělat nic z toho důvodu, že zvýšení sazeb i na ty naše úrovně, kolem těch 5-6%, by znamenalo bankrot řady jižních států v čele s Itálií. Takže to není možné.
 
@@ -106,7 +106,7 @@ Mají inflaci asi dvě a půl procenta maximálně. I my máme vlastní energii.
 
 Aspoň ne v takové míře. Ano. Ale dlouhodobě je ta hlavní věc posilující měna, která pomáhá ty inflační tlaky tlumit. A zároveň to, že té centrální bance nevadí, když inflace je na nule.
 
-Všechny ostatní centrální banky kromě švýcarské vlastně jakmile inflace klesne k nule, oni začínají něco dělat, uvolňovat tu měnovou politiku, aby inflaci dosáhly. U nás to byly intervence například proti koruně. Švýcarsko taky intervenuje, aby ta deflace nebyla nějak velká, ale nulová inflace jim nevadí. Pravidlo mají takové, že mezi nulou a dvojkou je to pro ně v pořádku.
+Všechny ostatní centrální banky kromě švýcarské vlastně, jakmile inflace klesne k nule, začínají něco dělat, uvolňovat tu měnovou politiku, aby inflaci dosáhly. U nás to byly intervence například proti koruně. Švýcarsko taky intervenuje, aby ta deflace nebyla nějak velká, ale nulová inflace jim nevadí. Pravidlo mají takové, že mezi nulou a dvojkou je to pro ně v pořádku.
 
 Čili tohle je jasný krok, který by rozhodně pomohl do budoucna vlastně, protože základní problém našeho systému, toho inflačního cílování, který máme tady, je ten, že nám dává nejistotu ohledně budoucí hodnoty peněz. My vůbec nevíme, jakou hodnotu bude mít koruna za 20 let třeba. A v takovém režimu je velmi těžké spořit na důchod nebo pro děti. Děti máte, jak jsem si o vás načetl na Wikipedii.
 

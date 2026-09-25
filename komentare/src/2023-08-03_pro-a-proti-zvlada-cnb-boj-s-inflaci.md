@@ -103,7 +103,7 @@ jsou bývalý guvernér České národní banky, dnes hlavní ekonom, Generali C
 
 Pane Havránku, tak není ekonomická realita jiná než vaše ekonomické modely, ze kterých vycházíte a neukázalo by se nakonec, že určitá byť mírná inflace je vlastně v ekonomice přirozená?
 
-**Tomáš Havránek:** To nejsou moje modely. To jsou modely centrálních bank obecně i té naší národní banky. Mimochodem, v tom modelu vychází, že optimální inflace je nula. Když to chcete spočítat v modelu G3+, což je ten novokeynesianský model.
+**Tomáš Havránek:** To nejsou moje modely. To jsou modely centrálních bank obecně i té naší Národní banky. Mimochodem, v tom modelu vychází, že optimální inflace je nula, když to chcete spočítat v modelu G3+, což je ten novokeynesiánský model.
 
 **Lukáš Matoška:** Nevím, co je G3+.
 

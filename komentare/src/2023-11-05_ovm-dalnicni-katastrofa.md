@@ -109,7 +109,7 @@ Tak tohle je výsledek toho, který je nejoptimální pro tu zemi, konkrétně p
 
 **Tomáš Havránek:** … každopádně to ukazuje na obecnější problém, že mi tady ta lávka stála kolik? 300 milionů. 300 milionů. A to, abychom se rozuměli, to tedy není tak jako lávka, to je skutečně jako... My jsme ji viděli.
 
-Ty věci mají konkrétní náklady, ale ty benefity často nejsou úplně jasně spočítané, nebo si na to někdy hrajeme, ale je to často psané na vodě. Ty rychlovlaky jsou malinko podobný případ, k tomu se asi dostaneme, to budou bilionové částky pravděpodobně a tam opravdu je velmi důležité to podrobně odůvodnit, kde budou ty biliony těch výnosů, protože ty náklady jsou naprosto jasné, takže tohle mi malinko chybí podrobnější cost-benefit analýza nákladů a výnosů a
+Ty věci mají konkrétní náklady, ale ty benefity často nejsou úplně jasně spočítané, nebo si na to někdy hrajeme, ale je to často psané na vodě. Ty rychlovlaky jsou malinko podobný případ, k tomu se asi dostaneme, to budou bilionové částky pravděpodobně a tam opravdu je velmi důležité to podrobně odůvodnit, kde budou ty biliony těch výnosů, protože ty náklady jsou naprosto jasné, takže tohle mi malinko chybí, podrobnější cost-benefit analýza nákladů a výnosů a
 
 **Václav Moravec:** Vysokorychlostních tratí budu překládat pro diváky.
 

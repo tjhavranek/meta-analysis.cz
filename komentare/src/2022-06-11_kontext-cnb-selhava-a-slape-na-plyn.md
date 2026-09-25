@@ -31,7 +31,7 @@ Odhad z dnešního dne určuje míru meziroční inflace na 16%. Jak se s tím �
 
 A i ta samotná přítomnost žen dokáže velmi kultivovat diskuzi pánů. Protože když tam ty dámy nejsou, tak často nejdete daleko pro nějaké ostřejší slovo. A tohle opravdu je kultivující prvek jak po odborné, tak i po té osobní lidské stránce. Ale k té vaší otázce, já mám dojem, že se všichni z nich dlouhodobě vyjadřují, možná tedy s výjimkou pana profesora Fraita, který se k tomu vyjadřovat nemohl jako zaměstnanec ČNB.
 
-Tak paní Zamrazilová i paní Kubelková jsou spíše proti dalšímu zvyšování sazeb. A tohle dohromady s hlasy Aleše Michla a Oldřicha Dědka vlastně znamená, že to zvyšování sazeb nepochybně skončí na konci června, kdy dojde k jednomu poslednímu velkému zvýšení, dané ještě tou současnou takzvanou starou bankovní radou, ale potom už těžko si lze asi představit nějaké další zvyšování.
+Tak paní Zamrazilová i paní Kubelková jsou spíše proti dalšímu zvyšování sazeb. A tohle dohromady s hlasy Aleše Michla a Oldřicha Dědka vlastně znamená, že to zvyšování sazeb nepochybně skončí na konci června, kdy dojde k jednomu poslednímu velkému zvýšení, dané ještě tou současnou takzvanou starou bankovní radou, ale potom už si lze asi těžko představit nějaké další zvyšování.
 
 **Marek Zavřel:** A máme předpokládat, že se nebudou zvyšovat, anebo že se budou zvyšovat mírně ty úrokové sazby?
 
@@ -91,7 +91,7 @@ Ten oheň se sám neuhasí, je potřeba s ním bojovat, i když to třeba bude b
 
 Což není nic nestandardního, není to nic radikálního. Bylo by to jenom vlastně obrácení těch intervencí, které byly dříve proti koruně v řádu desítek miliard eur. Tak tady by byly naopak pro korunu. My bychom umazali ty tehdejší devizové intervence proti koruně.
 
-A výsledkem by bylo posílení koruny, které by pomohlo inflaci snížit jak mechanicky, že máme najednou levnější z dovozu benzín, v přepočtu na koruny máme levnější elektřinu. Ale také by to bylo psychologicky daleko lepší než zvyšování úrokových sazeb, protože to je něco, co je pozitivní. Vy to vidíte hned na své peněžence, že máte levnější nákup. A je to něco, co zvýší vaši důvěru v to, že když máte silnou korunu, tak dlouhodobě nemůže být vysoká inflace.
+A výsledkem by bylo posílení koruny, které by pomohlo inflaci snížit jak mechanicky, že máme najednou levnější benzín z dovozu, v přepočtu na koruny máme levnější elektřinu. Ale také by to bylo psychologicky daleko lepší než zvyšování úrokových sazeb, protože to je něco, co je pozitivní. Vy to vidíte hned na své peněžence, že máte levnější nákup. A je to něco, co zvýší vaši důvěru v to, že když máte silnou korunu, tak dlouhodobě nemůže být vysoká inflace.
 
 To je evidentní věc. Takže byste opravdu věřili víc tomu, že ta inflace znovu klesne někam k nule ideálně.
 
@@ -113,7 +113,7 @@ Za dva a půl roku my absolutně nevíme, jaká bude situace, jestli bude potře
 
 **Tomáš Havránek:** To je dobrá otázka.
 
-Každopádně vám pomůže mít úrokové sazby na nějaké vyšší úrovni, kvůli tomu, že potom je koruna atraktivnější pro zahraniční finanční instituce, ukládání té koruny, ukládání peněz v korunách potom vydělává víc. Nicméně zase v situaci, kdy je tak velká krize, kdy potřebujete tu inflaci snížit rychle, tak je potřeba dát větší důraz na tu kurzovou složku, čili prodávat víc eur. Ono to ČNB dělá, ČNB prodává eura, moc o tom nemluví, neříká tomu intervence z nějakého důvodu, ale jsou to stovky milionů eur měsíčně. Měla by prodávat miliardy, čili desetinásobně víc zhruba, i když za ten poslední měsíc toho prodala hodně, pravděpodobně díky těm intervencím po jmenování Aleše Michla guvernérem.
+Každopádně vám pomůže mít úrokové sazby na nějaké vyšší úrovni, kvůli tomu, že potom je koruna atraktivnější pro zahraniční finanční instituce, ukládání peněz v korunách potom vydělává víc. Nicméně zase v situaci, kdy je tak velká krize, kdy potřebujete tu inflaci snížit rychle, tak je potřeba dát větší důraz na tu kurzovou složku, čili prodávat víc eur. Ono to ČNB dělá, ČNB prodává eura, moc o tom nemluví, neříká tomu intervence z nějakého důvodu, ale jsou to stovky milionů eur měsíčně. Měla by prodávat miliardy, čili desetinásobně víc zhruba, i když za ten poslední měsíc toho prodala hodně, pravděpodobně díky těm intervencím po jmenování Aleše Michla guvernérem.
 
 **Marek Zavřel:** že jste byl několik měsíců poradcem Aleše Michla, když byl řadovým členem bankovní rady za měsíc, když bude guvernérem. Chce guvernér Michl nějakým způsobem krýt zadlužování státu Andrejem Babišem z dob jeho premiérství? Je tam podle vás ten střet zájmu? Protože Aleš Michl dlouho spolupracoval s Andrejem Babišem na jeho předvolební kampani.
 
@@ -165,19 +165,19 @@ Tam se píše cenová stabilita. Takže to nejde odůvodnit, je to podle mě jas
 
 **Tomáš Havránek:** ale to říká asi dvě stě studií publikovaných od roku 1990, které váží náklady a výnosy inflace, těch je asi třicet. Nemáme čas to rozebírat, je to hodně technické, ale těchto dvě stě studií nám ukazuje, že průměrný odhad té zdravé inflace je opravdu nula nebo 0,09% nebo tak nějak. Vlastně je to nula. Nějaký mírný růst.
 
-Ale znovu, tohle není ten, takže i kdyby mandát centrální banky ústavní byl starat se o zdravou inflaci, tak je to nula. Ale ten mandát je cenová stabilita. To znamená stabilita průměrných cen. To je něco jiného.
+Ale znovu, tohle není ten, takže i kdyby ústavní mandát centrální banky byl starat se o zdravou inflaci, tak je to nula. Ale ten mandát je cenová stabilita. To znamená stabilita průměrných cen. To je něco jiného.
 
 To znamená ještě, že vlastně vy, když se zmýlíte, když inflace je teď 15%, tak byste ji v budoucnu měli pomaličku vymazat, že by pomaličku ty ceny mohly klesat, třeba v horizontu deseti let, abyste docílili toho, že peníze dnes budou mít stejnou kupní sílu, stejnou hodnotu, jako třeba za 20 let, že vy si dáte 100 tisíc do banky a za 20 let, až budete v důchodu, tedy já už bych se tomu důchodu skoro blížil, tak si ty peníze vyberu a budu vědět, že si za ně koupím stejné množství věcí. Ty věci budou maličko jiné, jak je technický pokrok, ale tohle lze udělat.
 
 **Marek Zavřel:** A nekoupíte si ne stejné množství věcí, ale víc věcí, pokud bychom počítali s tím, že životní úroveň bude růst.
 
-**Tomáš Havránek:** může růst, ale pokud ten cenový index měří průměrné ceny dobře, tak koruna dnes by potom znamenala korunu za 20 let. Ta její hodnota by se nezmenšovala ani nezvětšovala, ale byla by stejná. To je ta cenová stabilita. Takhle to bylo mimochodem celou historii lidstva s výjimkou takových věcí, jako je posledních 100 let, kdy vlastně se snažíme cíleně o nějakou inflaci a s výjimkou takových věcí, jako bylo záměrné snižování obsahu stříbra v mincích, jako ve třetím století v Římské říši nebo náhoda, jako příliv nového stříbra z Ameriky v 16. století z těch dolů v Potosí. Ale jinak ceny byly stabilní, ony se z roku na rok mohly měnit, ale dlouhodobě nerostly nebo neklesaly. Byly pořád stejné a to je něco, k čemu se můžeme vrátit, protože jednak to ta ústava po té centrální bance chce a jednak je to velmi pohodlná věc, kdybychom nehýbali s hodnotou koruny, podobně jako nehýbáme s délkou metru, kdybychom zkracovali metr každý rok o 2 cm nebo někdy o 15 cm, tak by to byl hrozný zmatek, čili je to nepohodlná věc, je to neústavní věc, je to věc, která je vzhledem k výzkumu neoptimální
+**Tomáš Havránek:** může růst, ale pokud ten cenový index měří průměrné ceny dobře, tak by koruna dnes potom znamenala korunu za 20 let. Ta její hodnota by se nezmenšovala ani nezvětšovala, ale byla by stejná. To je ta cenová stabilita. Takhle to bylo mimochodem celou historii lidstva s výjimkou takových věcí, jako je posledních 100 let, kdy vlastně se snažíme cíleně o nějakou inflaci a s výjimkou takových věcí, jako bylo záměrné snižování obsahu stříbra v mincích, jako ve třetím století v Římské říši nebo náhoda, jako příliv nového stříbra z Ameriky v 16. století z těch dolů v Potosí. Ale jinak ceny byly stabilní, ony se z roku na rok mohly měnit, ale dlouhodobě nerostly nebo neklesaly. Byly pořád stejné a to je něco, k čemu se můžeme vrátit, protože jednak to ta ústava po té centrální bance chce a jednak je to velmi pohodlná věc, kdybychom nehýbali s hodnotou koruny, podobně jako nehýbáme s délkou metru, kdybychom zkracovali metr každý rok o 2 cm nebo někdy o 15 cm, tak by to byl hrozný zmatek, čili je to nepohodlná věc, je to neústavní věc, je to věc, která je vzhledem k výzkumu neoptimální
 
 **Marek Zavřel:** A proč si to děláme? Proč nám to ti centrální bankéři dělají, to zvyšování o 2% jako dobrý standard?
 
 **Tomáš Havránek:** My jsme se na to ptali s manželkou kdysi na setkání v Lindau, na setkání nositelů Nobelovy ceny a tam byly ty nejlepší mozky v ekonomii. A vlastně nikdo nám taky neřekl, proč to tak je. Je to nějaká zvyklost, která začala na Novém Zélandu a v Kanadě a tehdy opravdu pomohla. Ta inflace byla dřív vyšší. To inflační cílování ji pomohlo snížit tak ke dvěma procentům. Ale proč to používáme pořád?
 
-I potom, když to teď tak vlastně řekněme spektakulárně selhalo v těch posledních dvou v posledním roce, kde je vidět, že ta doktrína absolutně nefunguje, nepomáhá tu inflaci stabilizovat, tak to já nechápu. Je to zvyklost. Ty výbuchy inflace pomáhají snižovat dluhy, čili pomáhá to velkým dlužníkům, pomáhá to státu samozřejmě a dokud to budeme tolerovat, řekněme, tomu státu, té národní bance, té vládě, tak to bude fungovat takhle dál. Proto říkám, dejme do zákona o ČNB, že cenová stabilita znamená stabilitu průměrných cen
+I potom, když to teď tak vlastně řekněme spektakulárně selhalo v posledním roce, kdy je vidět, že ta doktrína absolutně nefunguje, nepomáhá tu inflaci stabilizovat, tak to já nechápu. Je to zvyklost. Ty výbuchy inflace pomáhají snižovat dluhy, čili pomáhá to velkým dlužníkům, pomáhá to státu samozřejmě a dokud to budeme tolerovat, řekněme, tomu státu, té Národní bance, té vládě, tak to bude fungovat takhle dál. Proto říkám, dejme do zákona o ČNB, že cenová stabilita znamená stabilitu průměrných cen
 
 **Marek Zavřel:** jak už jsme zmínili, přistoupila Česká národní banka ke zvyšování úrokových sazeb. Efekt zvyšování na růst inflace by se měl projevit po 12 až 18 měsících, i když vy jste sám říkal po dvou a půl letech. Kdy podle vás dojde k ustálení anebo rovnou poklesu inflace a návratu do nějakého normálu nebo nového normálu?
 
@@ -201,7 +201,7 @@ po té stabilizaci sazeb z léta a uklidnění situace by na podzim mohlo dojít
 
 **Marek Zavřel:** Kdy má na tu inflaci reagovat také zvýšení mezd, protože odbory právě teď jsou ve stávkové pohotovosti ohledně státních zaměstnanců, žádají přidání o právě míru inflace na platech učitelů a dalších pracovníků. Kdy se tohle má stát, abychom nedošli k té inflační spirále, které se tak bojí současná vláda?
 
-**Tomáš Havránek:** To je těžká otázka v tom, že samozřejmě můj plat taky není svázán s inflací, čili taky reálně vydělávám letos méně než vloni. Jako většina z nás zase kromě zaměstnanců ČNB, bohužel, nebo dobře pro ně, ale oni by si ty vyšší platy zasloužili, ale ne tímto způsobem.
+**Tomáš Havránek:** To je těžká otázka v tom, že samozřejmě můj plat taky není svázán s inflací, čili taky reálně vydělávám letos méně než vloni, jako většina z nás, zase kromě zaměstnanců ČNB, bohužel, nebo dobře pro ně, ale oni by si ty vyšší platy zasloužili, ale ne tímto způsobem.
 
 **Marek Zavřel:** Pojďme jim to přát.
 

@@ -47,7 +47,7 @@ Kdy jste šli na ten první test?
 
 Filípek je druhý. Najednou tam přišli všichni. Já myslím, že byli najednou. Tam se jednalo o odběr krve, pokud se nemýlím.
 
-A postupně přicházely ty negativní výsledky, že Kristínka je negativní, Daník je negativní, Lucinka je negativní. A pak po nějaké pauze, která je se daná tím, že se to musí ověřit, tak přišel ten pozitivní nález, který pořád, díky tomu, že ten první screening je hodně citlivý, tak vlastně není definitivní a musí se potom ještě ověřit. My jsme jako pořád doufali, že třeba to byl ten false positive, ale nebyl. A potom, jak už jsem říkal, tak vám nezbývá, než se s tím nějak smířit.
+A postupně přicházely ty negativní výsledky, že Kristínka je negativní, Daník je negativní, Lucinka je negativní. A pak po nějaké pauze, která je daná tím, že se to musí ověřit, tak přišel ten pozitivní nález, který pořád, díky tomu, že ten první screening je hodně citlivý, tak vlastně není definitivní a musí se potom ještě ověřit. My jsme jako pořád doufali, že třeba to byl ten false positive, ale nebyl. A potom, jak už jsem říkal, tak vám nezbývá, než se s tím nějak smířit.
 
 Člověk by se tomu radši vyhnul, ale v životě je mnohem, mnohem, jako velká spousta,
 
@@ -73,7 +73,7 @@ Jestli si to pamatuji správně, tak myslím, že ano, nebo minimálně třikrá
 
 Ten přístup, který je velmi citlivý i pro ty rodiče. Ty děti jsou trošku asi vystrašené, ale nevědí moc, co se děje. A právě proto je tak důležité toto uklidňování a vysvětlování toho, co to vlastně je. Tím spíš to zachytíte včas.
 
-A víte, že máte spoustu času, spoustu prostoru na tu přípravu, co vlastně toho člověka čeká, co to znamená pro tu rodinu. A samozřejmě, čím starší to dítě je, tím starší to je, protože ta určitá životospráva a ta disciplína, která k tomu náleží, tak se samozřejmě snáz naplňuje, když vám, když jste po pubertě, řekněme, nebo když vám není osu. A ta paní doktorka Berka je úplně skvělá. Já v životě jsem potkal velmi málo, nebo asi bych řekl jako nikoho, kdo by takhle dobře přistupoval k těm dětem i rodičům.
+A víte, že máte spoustu času, spoustu prostoru na tu přípravu, co vlastně toho člověka čeká, co to znamená pro tu rodinu. A samozřejmě, čím starší to dítě je, tím starší to je, protože ta určitá životospráva a ta disciplína, která k tomu náleží, tak se samozřejmě snáz naplňuje, když jste po pubertě, řekněme, nebo když vám není osu. A ta paní doktorka Berka je úplně skvělá. Já jsem v životě potkal velmi málo, nebo asi bych řekl jako nikoho, kdo by takhle dobře přistupoval k těm dětem i rodičům.
 
 A nejenom ona, ale celý ten kolektiv, paní Chrástecká, která je taky skvělá. Mimochodem jsou to šarmantní dámy, obě dvě. Takže já bych se tam skoro i těšil do Motola, což Filípek úplně ne, protože mu berou krev a to nedobře snáší, jak my jsme asi všichni v tomhle věku. Takže nevím, jak by bylo možné toto nastavit ještě lépe.
 
@@ -121,7 +121,7 @@ Tak vlastně jako si říkám, jak moc jste k němu vzhlíželi v té době. Pro
 
 Tehdy to bylo ve fázi právě, kdy FDA v Americe už ten lék schválila a my jsme v Evropě čekali, než se v Bruselu k tomu dokopou taky. Ale na to jsem velmi rychle zapomněl. Až nedávno jsem se dočetl v novinách, že už v Motole to funguje. To znamená, že to je po schválení Evropskou lékovou agenturou a ačkoliv to nehradí stále pojišťovny, což ale dovolím si spekulovat, že je věc, která je neodvratná, že i díky tomu ten screening vlastně by měl být plošná věc, protože to dokáže zachránit potom ve finále jako stovky let nebo možná i tisíce let kvalitního života, nebo kvalitního, ten život je kvalitní taky, ale jako z našího života.
 
-A i to ušetří léčbu tím inzulinem a ušetří to spoustu zdravotních komplikací, takže asi za mě ideálně jako laika, jako ekonoma. Ideální situace, to by se dalo propočítat vlastně, kolik, když uděláte plošný screening, který bude rutinní, a potom tu včasnou aplikaci, ať už z tohohle konkrétního léku nebo nějaké nové generace, která bude ještě lepší. A když zaplatíte tohle oboje z veřejného pojištění, tak jestli náhodou to nebude ekonomicky výhodnější, jestli to neušetří víc peněz na té léčbě, kterou potom věnujeme těm diabetikům. Takže by to byl win-win jak pro, řekněme, rozpočet zdravotních pojišťoven, tak pro ty pacienty,
+A i to ušetří léčbu tím inzulinem a ušetří to spoustu zdravotních komplikací, takže asi za mě, jako laika, jako ekonoma, ideální situace, to by bylo vlastně propočítat, když uděláte plošný screening, který bude rutinní, a potom tu včasnou aplikaci, ať už z tohohle konkrétního léku nebo nějaké nové generace, která bude ještě lepší, a když zaplatíte tohle oboje z veřejného pojištění, jestli náhodou to nebude ekonomicky výhodnější, jestli to neušetří víc peněz na té léčbě, kterou potom věnujeme těm diabetikům. Takže by to byl win-win jak pro, řekněme, rozpočet zdravotních pojišťoven, tak pro ty pacienty,
 
 **Jan Hrušovský:** protože aspoň využiju vaši odbornosti a třeba mě z toho vyvedete. Ale zatím jako jdete tím stejným směrem jako já, že taky nad tím přemýšlím, tak říkám si, OK, když tady bude ten teplizumab, bude stát nevím kolik. Teď to jsou, podle mě, v té dávce to jsou nějaký hodnota kolik, asi stovky tisíc dolarů. Ale to jsme na začátku.
 
@@ -155,11 +155,11 @@ Každopádně, když se tady u toho ještě podíváme na to, řekněme trošku,
 
 Tak já nevím, čtěte Marka Aurelia. Když s něčím nemůžu nic dělat, tak nemá smysl se ohledně toho nějak trápit a v tom Motole vám udělají ty testy a řeknou vám, ten problém přijde v tu a tu dobu, anebo příští rok na 99% se nic dít nebude, tak máte klid. Takže samozřejmě to je těžké pro toho rodiče. Ty děti, nevím jak to vnímají oni, já se s Filípkem o tom bavím, ale on nedokáže si to podle mě dost dobře představit, takže nevím.
 
-Ale to je ta odpovědnost toho rodiče, aby řešil věci, které řešit může, které má pod kontrolou, a tohle pod kontrolou má, může tím pomoct. A když ten screening udělá, s drtivou pravděpodobností to stejně vyjde negativní. A když to vyjde pozitivní, tak může mít vlastně, ne asi úplně radost, ale měl by mít ze sebe dobrý pocit, protože pomohlo to včas zachytit.
+Ale to je ta odpovědnost toho rodiče, aby řešil věci, které řešit může, které má pod kontrolou, a tohle pod kontrolou má, může tím pomoct. A když ten screening udělá, s drtivou pravděpodobností to stejně vyjde negativní. A když to vyjde pozitivní, tak může mít vlastně, ne asi úplně radost, ale měl by mít ze sebe dobrý pocit, protože to pomohl včas zachytit.
 
 **Jan Hrušovský:** Když říkáte, že se o tom se synem bavíte, tak co probíráte?
 
-**Tomáš Havránek:** Já jsem to možná malinko, upřímně řečeno, samozřejmě musím mu vysvětlit, proč do toho Motola jedeme, proč mu berou tu krev, ví, jak to funguje u Báry sestřenice, tak k tomu něco říkám, že podívej, jako dá se s tím normálně fungovat. Tohle tě taky jednou čeká, ale buď v klidu, protože zeptují se Báry, dá se s tím není to něco, co by... Nebo navíc ještě možná řeknu tohle, a to jsem mu říkal často, on hraje florbal, na poměrně solidní úrovni, třikrát týdně trénink a každý víkend máte nějaký turnaj, velký turnaj v Praze, kde jsme to vyhráli. Za Litomyšl v lednu tu kategorii, na letech se nám to podařilo vyhrát, a v tom florbale máte několik špičkových sportovců, které, já nebudu jmenovat, abych to nepopletl, ale kteří tu cukrovku mají, prvního typu.
+**Tomáš Havránek:** Já jsem to možná malinko, upřímně řečeno, samozřejmě mu musím vysvětlit, proč do toho Motola jedeme, proč mu berou tu krev, ví, jak to funguje u sestřenice Báry, tak k tomu něco říkám, že podívej, dá se s tím normálně fungovat. Tohle tě taky jednou čeká, ale buď v klidu, protože, zeptej se Báry, dá se s tím... Není to něco, co by... Nebo navíc ještě možná řeknu tohle, a to jsem mu říkal často, on hraje florbal, na poměrně solidní úrovni, třikrát týdně trénink a každý víkend máte nějaký turnaj, velký turnaj v Praze, kde jsme v lednu za Litomyšl vyhráli tu kategorii, takže po mnoha letech se nám to podařilo vyhrát, a v tom florbale máte několik špičkových sportovců, které já nebudu jmenovat, abych to nepopletl, ale kteří mají tu cukrovku prvního typu.
 
 Já vím o jednom. Tak to možná řekněte vy, abych to... Pokračujte, pokračujte, a já si to najdu zatím na Instagramu, to možná nemusíme ani, ale já jsem mu to říkal, podívej, jak hraje skvěle, tento pán, kluk, a přitom vlastně má tu cukrovku, tak vidíš,
 
@@ -171,13 +171,13 @@ A mimochodem florbal je super sport, protože vlastně v sobě spojuje tu dynami
 
 Takže toto florbalové srovnání docela funguje. Nevím, jak to on... Tak o tomhle se bavíme, tomu říkám, abych ho trochu uklidnil. Myslím, že nejdůležitější je to, aby on z toho neměl strach, aby měl ty informace, které dokáže zpracovat nějak jako rozumně.
 
-Ale detaily mu neříkám, protože mi to přijde jako zbytečný asi ohledně té konkrétní rutiny
+Ale detaily mu neříkám, protože mi to přijde zbytečné asi ohledně té konkrétní rutiny
 
 **Jan Hrušovský:** potom z diabetes. stát takový té pozitivní motivace. Ukázat mu, že opravdu na světě jsou i ostatní diabetici, kteří prostě dokážou dělat cokoliv prakticky,
 
 **Tomáš Havránek:** že je to v ničem neomezuje. A teď budu malinko spekulovat, ale tím, že když máte diabetes, tak musíte dodržovat nějaký režim. Když to nebudete dělat, tak to vaše tělo nebude fungovat. A ta disciplína, kterou vy musíte mít, abyste nějak mohl žít normálně, tak je dobrá do života.
 
-Ta disciplína je dobrá. To, že vy musíte udělat nějakou věc v danou dobu, a ne to odložit. Takže možná, a já nejsem psycholog, nevím, jestli to, co říkám, je nějak vědecky podložený, ale čekal bych, že tohle bude mít v dospívání dobrý vliv. Podobně jako sport má sám o sobě ty tři tréninky týdně.
+Ta disciplína je dobrá. To, že vy musíte udělat nějakou věc v danou dobu, a ne to odložit. Takže možná, a já nejsem psycholog, nevím, jestli to, co říkám, je nějak vědecky podložené, ale čekal bych, že tohle bude mít v dospívání dobrý vliv. Podobně jako sport má dobrý vliv, ten florbal sám o sobě, ty tři tréninky týdně.
 
 Ten kolektiv, odpovědnost za tým, že neděláte jenom věc na sebe, ale pro ten tým. Máte tam ty spoluhráče, kteří na vás spoléhají. I když jste třeba kapitán nebo něco, tak máte tím větší odpovědnost. Takže tohle je něco, co vám pomůže být v životě nakonec ještě lepší.
 
@@ -211,13 +211,13 @@ A převzít si z toho něco, to je jako strašný. Protože jsou ve vás emoce, 
 
 Takový jako příjemný, hezký, že z toho nemusíte mít jako žádný strach, nic takovýho. Tak vlastně jako si spíš říkám, jestli vy sám už nejdete trošku za roh. Jestli si některé věci ve volném čase jako nevyhledáváte. Nebo jestli se neptáte tý sestřenice.
 
-**Tomáš Havránek:** zase já teď s tím nemůžu nic udělat. Na co jsem se ptal, když jsem si ten lék teplizumab znovu připomněl, tak jsem se ptal hned, jaké jsou pro to podmínky, to je něco, co má smysl řešit, že by to mohlo pomoct. Samozřejmě vím, že v Motole to hlídají, takže jsem možná i nemusel, ale ty komplikace jsou věci, které jako teď já to nemůžu nějak ovlivnit, nemůžu s tím nic udělat, proč bych toto řešil.
+**Tomáš Havránek:** zase já teď s tím nemůžu nic udělat. Na co jsem se ptal, když jsem si ten lék teplizumab znovu připomněl, tak jsem se hned ptal, jaké jsou pro to podmínky. To je něco, co má smysl řešit, že by to mohlo pomoct. Samozřejmě vím, že v Motole to hlídají, takže jsem možná i nemusel, ale ty komplikace jsou věci, které jako teď já to nemůžu nějak ovlivnit, nemůžu s tím nic udělat, proč bych toto řešil.
 
 **Jan Hrušovský:** Jasně, tomu rozumím. Další věc je ta, by se nějak proměnil váš pohled na vašeho syna, a teďka myslím třeba z hlediska té starosti, jo, o něj, že najednou teďkon začínáte víc ho třeba pozorovat, sledovat, odehrává se tam nějaká takováhle změna?
 
 **Tomáš Havránek:** Asi ani ne. Tím, že těch dětí máme několik, tak řešíte pořád něco u každého z nich, co je potřeba, na co si dát pozor, co vás tak nějak trápí, a ačkoliv s tím třeba nemůžete nic dělat, tak se neubráníte tomu, že vás to trápí. Čili tohle je jenom jedna ze těch zdravotních patálií, které se občas projeví, i když tahle je asi tedy dlouhodobě nejzávažnější, ale tím, že mám plnou důvěru v ten personál v Motole, tak mám pocit, že to hlídají oni. Takže já nemusím toho Filípka nějak zvláště hlídat, protože oni mi řekli, že to potřeba není, tak já jim důvěřuji.
 
-A vím, že je to pravda. Čili asi ne, asi se nic moc nezměnilo. Jezdíme častěji do Prahy s Filípkem, takže možná je maličko víc času, člověk třeba je v autě s ním, tak si něco můžeme říct, což je fajn, ale ta změna je malá.
+A vím, že je to pravda. Čili asi ne, asi se nic moc nezměnilo. Jezdíme častěji do Prahy s Filípkem, takže možná je maličko víc času, člověk je třeba s ním v autě, tak si něco můžeme říct, což je fajn, ale ta změna je malá.
 
 **Jan Hrušovský:** Možná trošku osobní otázka, ale vlastně když se podíváme i na jeho sourozence, tak Filip je na tom, jak jako z hlediska věku má třeba i mladší sourozence,
 
@@ -229,7 +229,7 @@ Takže já už, jak jsem starší člověk, tak si to... Máme děti aktuálně 
 
 Takže má ještě mladší sestru, Lucinku. A každé z těch dětí má, řekněme, nějaký jako zdravotní problém dnes. Což je zajímavá věc, protože ty civilizační choroby jsou čím dál častější. A ten důvod je jako evidentní, protože nefunguje úplně evoluce u lidí, jako fungovala dřív.
 
-Což bylo dost krutý, protože bylo zvykem ve středověku, že jste měli třeba čtyři děti jako já, ale dvě z nich zemřely v raném věku, protože měly nějaký zdravotní problém. Třeba jak vidíte, tak já mám poměrně hodně dioptrií, takže před několika sty lety já bych se možná dožil dospělosti, ale těžko bych asi měl sám děti, nebo pravděpodobně ne. Když teď, a je to dobře, umíme zachránit lidi s různými zdravotními problémy, a ty pak mají děti, jako jsem třeba já, a ty svoje problémy jim třeba předají, tak se ale v tom genomu lidí kumulují tyto chyby, ty náhodné mutace, které způsobují a bude toho čím dál víc a víc. A ten diabetes je jedna věc, která taky tímhle tím způsobem vlastně, že máme tu léčbu, která bude ještě lepší, dovolí, a my to chceme, aby ti lidé, jako by náš Filípek, nebo jako jste vy, měli ten život normální a mohli fungovat dál.
+Což bylo dost kruté, protože bylo zvykem ve středověku, že jste měli třeba čtyři děti jako já, ale dvě z nich zemřely v raném věku, protože měly nějaký zdravotní problém. Třeba jak vidíte, tak já mám poměrně hodně dioptrií, takže před několika sty lety já bych se možná dožil dospělosti, ale těžko bych asi měl sám děti, nebo pravděpodobně ne. Když teď, a je to dobře, umíme zachránit lidi s různými zdravotními problémy, a ti pak mají děti, jako jsem třeba já, a ty svoje problémy jim třeba předají, tak se ale v tom genomu lidí kumulují tyto chyby, ty náhodné mutace, které způsobují a bude toho čím dál víc a víc. A ten diabetes je jedna věc, která taky tímhle tím způsobem vlastně, že máme tu léčbu, která bude ještě lepší, dovolí, a my to chceme, aby ti lidé, jako by náš Filípek, nebo jako jste vy, měli ten život normální a mohli fungovat dál.
 
 Ale je to jedna z věcí, nebude to jen diabetes, ale těch problémů bude čím dál víc, u našich vnoučat třeba, než je u našich dětí. Musíme se s tím nějak srovnat, a díky bohu za tu moderní medicínu, která umožňuje, ono to pak má i implikace pro něco jako genové úpravy u dětí, nebo řekněme u těch embryí ještě, protože asi za pár set let se nevyhnete něčemu takovému, protože ta akumulace těch chyb v genomu bude taková, že se dítě narodí a bude mít hned jako deset vrozených vad, různých. Diabetes plus nějaké další problémy. Takže už dnes je málo dětí, které nemají žádnou civilizační chorobu, a není to úplně tím, jak bychom žili, ale je to tím nedostatkem evoluce, kterou vlastně nechceme, protože je velmi krutá.
 
@@ -263,7 +263,7 @@ Najednou, když víte, že jednoho dne ta cukrovka prostě do toho života vstou
 
 Ano, dobře. Tak tohle je jejich práce. A člověk by si za sebe některé věci buď měl vyřešit sám, anebo jít na to správné oddělení, pokud má ten problém a sám ho vyřešit neumí, takže já bych úplně nechtěl zatěžovat kolegy tady z tohohle konkrétního oddělení i s věcmi ohledně psychologie.
 
-To, co udělají už teď, má i poměrně velký, jako silný aspekt toho uklidňování, což s tím velmi silně souvisí a nemyslím, že by měli dělat ještě něco nad rámec toho. Ne, tak já předpokládám,
+To, co dělají už teď, má i poměrně velký, jako silný aspekt toho uklidňování, což s tím velmi silně souvisí a nemyslím, že by měli dělat ještě něco nad rámec toho. Ne, tak já předpokládám,
 
 **Jan Hrušovský:** že by vás poslali asi za nějakým jiným odborníkem, že vlastně za nějakým třeba psychoterapeutem a podobně, ale líbí se mi to, že vlastně už na začátku dávají i ty dotazníky, aby dokázali nějakým způsobem vyfiltrovat ty problematický, ale to nemyslím jako, že by ty lidi měli by problémový, ale spíš jako tam, kde můžou očekávat nějaký třeba zhoršení toho psychického stavu. Protože to potom vlastně ve výsledku může vyústit mnohem větší komplikace a třeba i v to, že to dítě nebo ta rodina tu nemoc nebude chtít jako přijmout. A to je vlastně jako mimo hledu úplně to nejhorší, když máte pocit, že ta cukrovka jako je něco strašného. V momentě, kdy jsem jí přijal jako za svojí a začal jsem s ní být takový kámoš, tak se vlastně zlepšila i ta moje kompenzace jsem začal mít jako pohodovej, bezstarostnej život, když to tak řeknu.
 
@@ -285,7 +285,7 @@ Inzulinové pumpy, senzory, uzavřené smyčky nebo systémy toho, který dávku
 
 Na závěr já tady mám vždycky jako otázku pro lidi, kteří mají cukrovku anebo kteří s ní mají něco společného, co jsou jako lékaři, co je na té nemoci jako nejlepší. To se u vás jako ptát zatím nemůžu, i když byste tady vyjmenoval tu disciplínu a další věci, který by se dali pod to jako hezky vložit a podepsat, ale spíš bych měl něco jinýho. Takový trošku možná motivační, nebo to, co byste poradili nebo vzkázali jiným rodičům, kteří nad tím screeningem ještě přemýšlí, váhají anebo se toho třeba bojí, protože jako budou mít strach toho, že opravdu ten pozitivní výsledek pro ně bude moc velký jako emoční šok. Tak co byste také lidem chtěli poradit nebo vzkázat?
 
-**Tomáš Havránek:** Já bych zopakoval to, co jsme už načali vlastně několikrát, že ten screening nemůže přinést špatné zprávy. Pokud bude negativní, tak je všechno v pořádku a máte prověřený, že z hlediska diabetes všechno oká. Pak je spousta jiných problémů, které se můžou objevit, i zdravotních, tak jiných. A pokud to vyjde pozitivní, tak vy jste tomu dítěti pomohli.
+**Tomáš Havránek:** Já bych zopakoval to, co jsme už načali vlastně několikrát, že ten screening nemůže přinést špatné zprávy. Pokud bude negativní, tak je všechno v pořádku a máte prověřené, že z hlediska diabetu je všechno OK. Pak je spousta jiných problémů, které se můžou objevit, jak zdravotních, tak jiných. A pokud to vyjde pozitivní, tak vy jste tomu dítěti pomohli.
 
 Protože jste to včas zachytili a je to vlastně taky dobrá zpráva, protože to, o čem my rozhodujeme, jestli je dobrý nebo ne, je naše vlastní chování. To rozhodnutí, jestli do toho screeningu jít nebo nejít. A pokud to vyšlo pozitivní, tak to vaše rozhodnutí bylo velmi důležité a správné. Takže to nemůže dopadnout špatně.
 

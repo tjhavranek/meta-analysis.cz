@@ -40,9 +40,9 @@ A vědecká literatura od roku 1990, kdy vlastně začalo to cílování inflace
 
 **Tomáš Havránek:** To se může stát, já tomu nevěřím, samozřejmě se to stát může, i kdyby jenom polovina té inflace byla domácí, tak pořád velká část odpovědnosti nakonec jde za centrální bankou, ač ji musíme pochválit za to, co dělá. Málokterá banka takhle bojuje proti inflaci jako ČNB. Podle mě to ale dělá špatným nástrojem, čili zvyšováním sazeb. Zvyšování sazeb rozhodně bylo rozumné do nějaké míry, na 3-4 %, na nějakou zdravou dlouhodobou hladinu.
 
-Ale ve chvíli, kdy máte inflaci 10, tak vy stejně nejste schopni doručit kladné úroky. Čili to byste museli někam na 11. To není možné. A nerozumím tomu, proč není používán ten druhý nástroj.
+Ale ve chvíli, kdy máte inflaci 10, tak vy stejně nejste schopni doručit kladné úroky po odečtení té inflace. Čili to byste museli někam na 11. To není možné. A nerozumím tomu, proč není používán ten druhý nástroj.
 
-To znamená devizové rezervy, kterých máme velmi hodně. A vznikly právě intervenováním proti koruně. Kdybychom to mohli obrátit a vlastně je umazat části. Čili by to nebyly nové intervence, ale de facto neutralizace těch minulých.
+To znamená devizové rezervy, kterých máme velmi hodně. A vznikly právě intervenováním proti koruně. Kdybychom to mohli obrátit a vlastně je zčásti umazat. Čili by to nebyly nové intervence, ale de facto neutralizace těch minulých.
 
 A to působí velice rychle. Rychle posílíte korunu a to se potom rychle přemístí do těch cen dováženého zboží. Čili kdybychom tohle udělali v září, řekněme, tak dnes se nebavíme o dvouciferné inflaci.
 
@@ -68,7 +68,7 @@ Ten cíl mají vlastně od 0 do 2%. Čili když je to nula, tak to nevadí. De j
 
 A přitom nevidíte, že by to tu ekonomiku nijak poškozovalo. Vyvíjí se minimálně stejně tak dobře jako Německo třeba nebo Švédsko, které mají ale úplně jinou tu měnovou politiku. Mají vyšší inflaci. Z tohohle pohledu to rozhodně je reálná věc.
 
-Neříkám, že to je jako příklad typický, je hodně zvláštní, ale zároveň to není nemožné. A teď máte stovky studií, které opravdu, jak jsem říkal, odhadují tu optimální inflaci. A průměr je nula. Čili z hlediska vědeckého výzkumu to není něco, co by bylo mimo.
+Neříkám, že to je typický příklad, je hodně zvláštní, ale zároveň to není nemožné. A teď máte stovky studií, které opravdu, jak jsem říkal, odhadují tu optimální inflaci. A průměr je nula. Čili z hlediska vědeckého výzkumu to není něco, co by bylo mimo.
 
 To je něco, co byste mohli odůvodnit snadno. A hlavně je to velice intuitivní pro běžného člověka. Čili z hlediska důvěryhodnosti té banky, by to bylo mnohem lepší, protože bychom všichni věděli, proč ta banka dělá to, co dělá, aby nám doručila cenovou stabilitu. Dvouprocentní inflace není cenová stabilita.
 

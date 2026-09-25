@@ -44,7 +44,7 @@ Ale i pro tu cenovou stabilitu je důležité v krizi nějak zvednout náladu li
 
 **Redaktorka ČNB:** S viceguvernérem Mojmírem Hamplem, jehož jste mimochodem poradcem, jste publikovali několik textů na téma zahrnutí ceny nemovitostí do inflace. Mě by zajímalo, proč je zrovna tohle téma pro vás důležité?
 
-**Tomáš Havránek:** Tak mimo jiné, protože teď stavíme dům s manželkou a to děláme proto, abychom v něm potom žili s našimi čtyřmi dětmi. A ne proto, abychom ho prodali během několika let. Takže pro nás to je spotřeba, ten dům. Ty peníze, které vložíme, jsou spotřeba.
+**Tomáš Havránek:** Tak mimo jiné proto, že teď stavíme dům s manželkou a to děláme proto, abychom v něm potom žili s našimi čtyřmi dětmi. A ne proto, abychom ho prodali během několika let. Takže pro nás to je spotřeba, ten dům. Ty peníze, které do něj vložíme, jsou spotřeba.
 
 A jako takové by podle něj měly mít určitou váhu v indexu spotřebitelských cen. To je ten index, jehož stabilitu ČNB zajišťuje.
 

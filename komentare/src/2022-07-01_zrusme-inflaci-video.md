@@ -39,7 +39,7 @@ Tedy Národní banka nakonec dokáže, aby koruna měla takovou kupní sílu, ja
 
 Nemůže plnit svůj ústavní úkol. Ale před sto lety Rašín také dokázal inflaci srazit z dvouciferných hodnot na nulu a stabilizovat průměrné ceny. Navažme platy vedení Národní banky na dodržování cenové stability.
 
-Inflace údajně promazává kola ekonomiky, ale vědecký výzkum je proti. Podívejte se na oddíl Časté dotazy na zrusmeinflaci.cz, kde podrobně rozebíráme 25 takových námitek. Ano, někteří na inflaci vydělávají, někteří vydělávají hodně a jejich odpor bude tvrdý.
+Inflace údajně promazává kola ekonomiky, ale vědecký výzkum je proti. Podívejte se na oddíl Časté dotazy na zrusme-inflaci.cz, kde podrobně rozebíráme 25 takových námitek. Ano, někteří na inflaci vydělávají, někteří vydělávají hodně a jejich odpor bude tvrdý.
 
 Přesto nakonec inflaci zrušíme a každý z nás se o to může zasloužit. Volíme prezidenta, který sám rozhoduje o celém vedení Národní banky. Vybírejme z prezidentských kandidátů, kteří zaručí, že inflaci zruší.
 

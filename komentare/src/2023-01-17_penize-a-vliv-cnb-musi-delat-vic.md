@@ -36,7 +36,7 @@ A co by vedení Národní banky postihlo, když ten svůj cíl plnit nebude. Co�
 
 **Tomáš Havránek:** Já bych navrhoval jednak v tom zákoně jasně vymezit, co vlastně po té Národní bance chceme.
 
-Protože ústava nám říká, že Národní banka pečuje o cenovou stabilitu, ale ona si to vykládá jako dvouprocentní inflaci, což se velmi těžko technicky dá zdůvodnit, že toto je cenová stabilita. Můžeme se bavit o tom, jestli to je nějaká zdravá inflace, ale ta ústava říká celkem jasně cenová stabilita. A pomohlo by tedy v zákoně vyjasnit, co se tím myslí. Já bych nejraději byl za dlouhodobě průměrnou inflaci nulovou, což odpovídá opravdu cenové stabilitě.
+Protože ústava nám říká, že Národní banka pečuje o cenovou stabilitu, ale ona si to vykládá jako dvouprocentní inflaci, což se velmi těžko technicky dá zdůvodnit, že toto je cenová stabilita. Můžeme se bavit o tom, jestli to je nějaká zdravá inflace, ale ta ústava říká celkem jasně cenová stabilita. A pomohlo by tedy v zákoně vyjasnit, co se tím myslí. Já bych byl nejraději za dlouhodobě průměrnou inflaci nulovou, což odpovídá opravdu cenové stabilitě.
 
 Nebo to může být jiný cíl, na kterém se dohodneme, ale mělo by to být jasné zadání, podle kterého potom lze hodnotit vedení Národní banky a navázat hodnocení i finanční na takovou výkonnost, jako je to běžné v jiných velkých firmách. To znamená, není úplně vhodné, aby si jednak sama ta banka stanovovala, co je jejím cílem. A za druhé, aby nebyla nijak odpovědná vůbec nikomu.
 
@@ -48,7 +48,7 @@ A já si myslím, že většina z nás ekonomů věří tomu, že finanční mot
 
 **Jana Klímová:** Nepodvazovalo by to nějakou objektivitu jejich rozhodování, kdyby jim šlo jenom o vlastní peníze. Přece jenom třeba to, že existuje nějaká inflace, čili růst cen, tak to zvyšuje atraktivitu investic přeci a tak, že nějaký smysl to přece jenom má?
 
-**Tomáš Havránek:** To je možná na samostatný rozhovor. To je velmi široké téma. Já o tom mluvím rád, ale jenom stručně. Na to jsou stovky studií, které odhadují vlastně, jaká je zdravá inflace.
+**Tomáš Havránek:** To je možná na samostatný rozhovor. To je velmi široké téma. Já o tom mluvím rád, ale jenom stručně. Na to jsou stovky studií, které vlastně odhadují, jaká je zdravá inflace.
 
 Ta inflace, jak jste řekla správně, má i svoje výhody, taky má spoustu nevýhod. Jak vidíme dnes, znehodnocuje úspory, když to zjednoduším. A nejhorší na tom je ta nejistota, že vy nevíte, jaká ta inflace bude za rok nebo v horizontu deseti let. Čili minimálně jednoduchá změna, kterou by ta Národní banka měla udělat a kterou věřím, že udělá, je nesnažit se o inflaci znovu každý rok dvě procenta, ale v průměru.
 
@@ -68,7 +68,7 @@ Co se podle vás děje v tomto směru v Česku? Je to podle vás nějaká poruch
 
 **Tomáš Havránek:** Tak zrovna ten úsporný tarif, upřímně řečeno, to jméno je malinko zavádějící, protože to vlastně není tarif. Není to úsporné, není to tarif. To byl v podstatě voucher pro všechny. To je spíš něco, čemu bychom v ekonomii řekli vrtulníkové peníze.
 
-To znamená, že dostanete peníze od vlády, která vám je dá jen tak, ale to, že to vidíme v inflaci promítnuté, vlastně nedává ekonomický smysl. Nerozumím tomu, proč to ČSÚ takhle udělalo. A dlouhodobě naopak tu inflaci spíš zvýší, protože to znamená, že máme trochu víc peněz, než bychom jinak měli. I tady já si tedy říkám, že za inflaci převážně může Národní banka v zemi, která má vlastní měnu, tak většina kolegů se na tom shodne, že to tak je.
+To znamená, že dostanete peníze od vlády, která vám je dá jen tak, ale to, že to vidíme v inflaci promítnuté, vlastně nedává ekonomický smysl. Nerozumím tomu, proč to ČSÚ takhle udělalo. A dlouhodobě naopak tu inflaci spíš zvýší, protože to znamená, že máme trochu víc peněz, než bychom jinak měli. I tady já si tedy říkám, že za inflaci převážně může Národní banka v zemi, která má vlastní měnu, tak se na tom většina kolegů shodne, že to tak je.
 
 Ale i podle novějších teorií, jako třeba fiskální teorie, může mít vliv hospodaření vlády, ale dlouhodobé. Čili ani ne tak ty covidové schodky nebo současné schodky, ale dlouhodobá neudržitelnost státních financí, která vlastně teď vychází najevo, když se podíváte na projekce Národní rozpočtové rady. A tam je ten hlavní problém. Čili nějaké úpravy daní, nějaké drobné transfery zas tak moc dlouhodobě.
 
