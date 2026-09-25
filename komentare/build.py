@@ -173,6 +173,7 @@ MONTHS_NOM = ["leden", "únor", "březen", "duben", "květen", "červen",
 OUTLET_IN = {
     "Hospodářské noviny": "v Hospodářských novinách",
     "Seznam Zprávy": "na Seznam Zprávách",
+    "Be the Best": "v magazínu Be the Best",
     "Lilie": "v Lilii, měsíčníku města Litomyšle",
     "CzechCrunch": "na CzechCrunch",
     "Forbes": "ve Forbesu",

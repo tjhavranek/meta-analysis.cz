@@ -5,21 +5,21 @@
  "newest_record": "2026-10-01",
  "temporal_coverage": "2009-08-18/2026-10-01",
  "records": {
-  "total": 253,
+  "total": 261,
   "by_text_status": {
-   "author_manuscript": 20,
-   "machine_transcript": 19,
+   "author_manuscript": 24,
+   "machine_transcript": 21,
    "published_full_text": 202,
-   "correspondence": 6,
+   "correspondence": 8,
    "unpublished_manuscript": 2,
    "publisher_transcript": 1,
    "link_only": 1,
    "publisher_excerpt": 2
   },
   "by_section": {
-   "Celostátní komentáře": 85,
-   "Litomyšlské sloupky": 63,
-   "Rozhovory": 53,
+   "Celostátní komentáře": 91,
+   "Litomyšlské sloupky": 64,
+   "Rozhovory": 54,
    "In English": 26,
    "Posts (ze sítí)": 26
   }
@@ -45,28 +45,28 @@
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 2284130,
-   "sha256": "deb19d9ebc7341c9f0efaba0ab7bc449a7be246812fc5d3e876b8f5190da38ea"
+   "bytes": 2352394,
+   "sha256": "8213378475a1c1b78236a6e6b56affadaeaec30817492c033fe846d2a7249e3b"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 2305276,
-   "sha256": "43c31a072176589e0e4af09e3f4daf57de2ef1f6db861f0fc04ffb8e9dd46edd"
+   "bytes": 2374100,
+   "sha256": "64aa002888a89469f7374538f188d9070a4ff6991e30c216f41ef3b6b2044213"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
-   "bytes": 2048179,
-   "sha256": "5cf96ca3fb6a7e1bba303300a153da88ba8b79be685191d11844f296150f3413"
+   "bytes": 2108820,
+   "sha256": "f67efc4a82312625d52f6d38e4bc211ad749b8b19a8733f22641a9a4352ff91c"
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
-   "bytes": 47968,
-   "sha256": "c98ab059ef8134c859a0621e9149a61abd02702d0559a41e0ae6c1d53a5057ed"
+   "bytes": 49565,
+   "sha256": "3577866abef675011de1d14f0a84d3937e6e7d8ef8576fea6af4e828d2930708"
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 2237036,
-   "sha256": "36e238d4fb1980fc24478a8cdbcd3e8045a99cd257eeda465f3060553a93bccb"
+   "bytes": 2303079,
+   "sha256": "f6ccfa2408464bea504b26ddcefc79185d6739990b4d95582d4258437ebabc7a"
   }
  },
  "generated_from": [

@@ -10,5 +10,17 @@
  "eis:111f294e5c": "The online appendix's cover line, 'Online Appendix: Additional results to \"Measuring intertemporal substitution ...\"', followed by its contents list beginning 'Data and do files'. A title, not half a sentence.",
  "exercise:3673878b57": "The APA author note ends on the correspondence address 'f.bartos96@gmail.com' and the ORCID list follows it as a separate block, exactly as exercise.pdf p1 sets it.",
  "hedge:5d8b39dc89": "The epigraph's attribution line, 'Eugene F. Fama' with its footnote marker, standing between the quotation and the opening of the introduction on hedge2.pdf p2. An attribution is not a sentence and does not take a full stop.",
- "price_puzzle:599c18224d": "The reference to Forni and Gambetti (2010) has an opening bracket that is never closed -- '(2010 \"The Dynamic Effects of Monetary Policy: ...\"'. That missing bracket is printed in the published article (price_puzzle2.pdf p29). Reproducing the reference list faithfully means reproducing it."
+ "price_puzzle:599c18224d": "The reference to Forni and Gambetti (2010) has an opening bracket that is never closed -- '(2010 \"The Dynamic Effects of Monetary Policy: ...\"'. That missing bracket is printed in the published article (price_puzzle2.pdf p29). Reproducing the reference list faithfully means reproducing it.",
+ "intra_spillovers:414cf5c3ca": "intra_spillovers.pdf prints no full stop after 'polarities of the estimates' before the next paragraph 'When the dummy for significance ...'; the paragraph ends there in the journal's own typesetting.",
+ "money_demand:8313cdb76e": "The last author-affiliation line (an e-mail address) of the front matter; the JEL classification line follows as its own block, as printed.",
+ "power:5856c243be": "SI Appendix title page: the bold paper title on its own line, followed by the author line, as printed.",
+ "power:2fc0b5ec3c": "SI Appendix title page: the author list is printed on two lines; the first ends on a name, not mid-sentence.",
+ "power:4383e0d87a": "SI Appendix title page: the second author line, followed by the 'Contents:' heading, as printed.",
+ "subsidy_intensity:4bd08004ab": "One item of the variable list: each variable's definition ends with its hypothesis in the form 'H_9: FDI' and a direction arrow; the next item (RISK) begins a new entry, as printed.",
+ "subsidy_intensity:a9c100f27b": "Variable list: the RISK entry ends with its hypothesis H_10 and arrow; CLEG begins the next entry, as printed.",
+ "subsidy_intensity:685fe1aae5": "Variable list: the CLEG entry ends with its hypothesis H_11 and arrow; BUDGET begins the next entry, as printed.",
+ "subsidy_intensity:189e7eb286": "Variable list: the BUDGET entry ends with its hypothesis H_12, arrow and footnote 7; GDPG begins the next entry, as printed.",
+ "subsidy_intensity:853bba8e51": "A displayed list of three conditions, one per line: 'Condition 1 ENT > 1' is a complete item, as printed.",
+ "subsidy_intensity:cb22bc8bcd": "The same list: 'Condition 2 CIT1 > 1/2 CIT2' is a complete item, as printed.",
+ "subsidy_intensity:cbf9e1f604": "The same list ends with 'Condition 3 ENT > CIT2'; the body resumes with 'Apart from SPILLA ...', as printed."
 }

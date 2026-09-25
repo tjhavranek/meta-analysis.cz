@@ -35,8 +35,14 @@ import _poppler
 # down to the full stop. So a delimiter must be followed by the caption's own text. A
 # number with nothing at all after it is still a caption -- some journals set the label on
 # its own line and the title beneath it.
+#
+# An opening parenthesis usually belongs to the caption ("Table 3 (continued)"), but not
+# when it points elsewhere: bank_dea's body starts a line with "Table 9 (supplementary
+# material) summarizes ...", and that table exists only in the publisher's separate
+# supplement, so counting it as printed failed the page for a table it cannot carry.
 CAPTION = re.compile(r"^\s*(T\s?A\s?B\s?L\s?E|TABLE|Table|F\s?I\s?G\s?U\s?R\s?E|FIGURE|Figure|Fig\.)"
                      r"\s*(S?[0-9]+[A-Za-z]?)"
+                     r"(?![^\S\n]*\((?:[Ss]upplementary|[Oo]nline)\b)"
                      r"(?=[^\S\n]*$"
                      r"|[^\S\n]*[.:;,\u2014\u2013-][^\S\n]*\S"
                      r"|[^\S\n]*[A-Z(\[])", re.M)

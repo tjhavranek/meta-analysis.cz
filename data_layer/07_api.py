@@ -480,7 +480,43 @@ excluded += [
        excluded_because=("electricity_sr.csv is the short-run subset of the electricity "
                          "literature (1,647 estimates from 226 studies, columns effect, se, "
                          "n_obs, study_id), published for the MAER-Net 2026 PhD workshop. "
-                         "Its estimates are already in the catalogue under 'electricity'."))]
+                         "Its estimates are already in the catalogue under 'electricity'.")),
+  # Temporary: an estimate-level dataset that will join the catalogue and the homepage
+  # board in its own commit. Replace this entry when it is integrated.
+  dict(id="social_comparison",
+       reason="estimate-level dataset awaiting integration into the data layer and the homepage board",
+       paper=dict(title="Adjusting for Publication Bias Reveals Evidence Against Social Comparison "
+                        "As a Behaviour Change Technique Across the Behavioural Sciences",
+                  page_title="Adjusting for Publication Bias Reveals Evidence Against Social "
+                             "Comparison As a Behaviour Change Technique Across the Behavioural Sciences",
+                  url=f"{BASE}/social_comparison/"),
+       excluded_because=("social_comparison_replication.zip is the public OSF package of the "
+                         "reanalysis (osf.io/rj2g5). Its main table, scBCT-short.csv, holds 79 "
+                         "effects (37 against passive and 42 against active control conditions) "
+                         "as Hedges' g with variance and standard error; scBCT.csv stacks seven "
+                         "analysis subsets of the same effects, and the xlsx is the coded data of "
+                         "the meta-analysis being re-examined. Not yet harmonised, so not yet "
+                         "counted.")),
+  dict(id="money_demand",
+       reason="replication package of a 2014 article, not yet curated for the data layer",
+       paper=dict(title="A Meta-Analysis of the Income Elasticity of Money Demand",
+                  page_title="A Meta-Analysis of the Income Elasticity of Money Demand",
+                  url=f"{BASE}/money_demand/"),
+       excluded_because=("money_demand_replication.zip holds metadata2706.dta, 985 estimates of "
+                         "the income elasticity of money demand from 73 studies, and six Stata "
+                         "do-files. The data are estimate-level but have not been harmonised; "
+                         "whether to add them is a separate decision, since it changes the "
+                         "published dataset count.")),
+  dict(id="intra_spillovers",
+       reason="replication package of a 2010 article, not yet curated for the data layer",
+       paper=dict(title="Meta-Analysis of Intra-Industry FDI Spillovers: Updated Evidence",
+                  page_title="Meta-Analysis of Intra-Industry FDI Spillovers: Updated Evidence",
+                  url=f"{BASE}/intra_spillovers/"),
+       excluded_because=("intra_spillovers_replication.zip holds "
+                         "meta_spillovers_horizontal_data.dta, 97 estimates of intra-industry FDI "
+                         "spillovers from 67 studies, and the Stata routine. Estimate-level but not "
+                         "harmonised; its literature differs from the vertical spillovers pooled "
+                         "under 'spillovers'."))]
 datasets=[d for d in datasets if d.get("n_estimates")]
 ok=datasets
 # No $schema key: there is no JSON Schema document for this index, and the URL that

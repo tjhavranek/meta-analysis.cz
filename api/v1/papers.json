@@ -1,10 +1,10 @@
 {
  "name": "meta-analysis.cz papers",
- "description": "One record per full-text document on meta-analysis.cz: 71 papers plus the MAIVE supplement, each with its full text, PDF, and section map. Fetch this first and one page after, rather than the whole corpus.",
+ "description": "One record per full-text document on meta-analysis.cz: 80 papers plus the MAIVE supplement, each with its full text, PDF, and section map. Fetch this first and one page after, rather than the whole corpus.",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "full_corpus": "https://meta-analysis.cz/llms-full.txt",
- "count": 72,
- "paper_count": 71,
+ "count": 81,
+ "paper_count": 80,
  "supplement_count": 1,
  "papers": [
   {
@@ -310,6 +310,185 @@
     "codebook": "https://meta-analysis.cz/api/v1/codebooks/armington.json"
    },
    "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/armington.json"
+  },
+  {
+   "project": "bank_dea",
+   "document_type": "paper",
+   "version": "record",
+   "version_note": null,
+   "published_as": null,
+   "title": "Determinants of Bank Performance in Transition Countries: A Data Envelopment Analysis",
+   "authors": [
+    "Tomas Havranek",
+    "Zuzana Irsova"
+   ],
+   "year": 2013,
+   "journal": "Transition Studies Review",
+   "doi": "https://doi.org/10.1007/s11300-013-0270-x",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/bank_dea/paper/",
+   "project_url": "https://meta-analysis.cz/bank_dea/",
+   "pdf_url": "https://meta-analysis.cz/bank_dea/bank_dea.pdf",
+   "abstract": "We analyze what drives bank efficiency in the transition countries of Central Europe and compare the results with those for the United States. This paper is one of the few that use data envelopment analysis for the computation of efficiency scores in transition countries, and, to our knowledge, it is the first to explore systematically how different specifications of data envelopment analysis affect the results. Our findings corroborate the common wisdom that foreign-owned banks operating in transition countries are more efficient than domestic banks. While in the United States large banks are in general more efficient, the result for transition countries depends on the design of data envelopment analysis.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "Introduction",
+     "anchor": "sec-introduction"
+    },
+    {
+     "level": 2,
+     "title": "Methodology and Data",
+     "anchor": "sec-methodology-and-data"
+    },
+    {
+     "level": 3,
+     "title": "Methodology—Data Envelopment Analysis",
+     "anchor": "sec-methodologydata-envelopment-analysis"
+    },
+    {
+     "level": 3,
+     "title": "Dataset",
+     "anchor": "sec-dataset"
+    },
+    {
+     "level": 2,
+     "title": "Empirical Results",
+     "anchor": "sec-empirical-results"
+    },
+    {
+     "level": 3,
+     "title": "Comments on the Results for the US Dataset",
+     "anchor": "sec-comments-on-the-results-for-the-us-dataset"
+    },
+    {
+     "level": 3,
+     "title": "Comments on the Results for the Transition Dataset",
+     "anchor": "sec-comments-on-the-results-for-the-transition-dataset"
+    },
+    {
+     "level": 2,
+     "title": "Conclusion",
+     "anchor": "sec-conclusion"
+    },
+    {
+     "level": 2,
+     "title": "Acknowledgments",
+     "anchor": "sec-acknowledgments"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ]
+  },
+  {
+   "project": "bank_mra",
+   "document_type": "paper",
+   "version": "record",
+   "version_note": null,
+   "published_as": null,
+   "title": "Measuring Bank Efficiency: A Meta-Regression Analysis",
+   "authors": [
+    "Zuzana Irsova",
+    "Tomas Havranek"
+   ],
+   "year": 2010,
+   "journal": "Prague Economic Papers",
+   "doi": "https://doi.org/10.18267/j.pep.379",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/bank_mra/paper/",
+   "project_url": "https://meta-analysis.cz/bank_mra/",
+   "pdf_url": "https://meta-analysis.cz/bank_mra/bank_mra.pdf",
+   "abstract": "This article presents a meta-regression analysis of 32 studies on frontier efficiency measurement in banking, focusing on the sensitivity of the reported estimates to the methodological design. Our findings suggest that study design is crucial for the resulting scores. The differences between the scores estimated using parametric and non-parametric approaches arise when the Fourier-flexible functional form is used since this functional form yields lower scores. Generally, the higher the number of observations, the higher is the average estimated efficiency. The removal of scale effects using equity capital increases the profit efficiency but it is insignificant for other scores. The efficiency analysis should distinguish the commercial banking from other bank types because the former tends to deliver lower efficiency scores.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Highlights of the Frontier Approach",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 3,
+     "title": "Estimation Methods",
+     "anchor": "sec-estimation-methods"
+    },
+    {
+     "level": 3,
+     "title": "Efficiency frontiers",
+     "anchor": "sec-efficiency-frontiers"
+    },
+    {
+     "level": 3,
+     "title": "Functional Form",
+     "anchor": "sec-functional-form"
+    },
+    {
+     "level": 3,
+     "title": "Defining Bank Output",
+     "anchor": "sec-defining-bank-output"
+    },
+    {
+     "level": 3,
+     "title": "Other Descriptive Meta-variables",
+     "anchor": "sec-other-descriptive-meta-variables"
+    },
+    {
+     "level": 2,
+     "title": "3. Data and Methodology",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. Results and Interpretation",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 3,
+     "title": "Overall sample in Table 2",
+     "anchor": "sec-overall-sample-in-table-2"
+    },
+    {
+     "level": 3,
+     "title": "Bank efficiency till 1992 in Table 5 and since 1992 in Table 6 in the Appendix",
+     "anchor": "sec-bank-efficiency-till-1992-in-table-5-and-since-1992-in-table-6-in-the-appendix"
+    },
+    {
+     "level": 3,
+     "title": "Bank cost efficiency in Table 7 and profit efficiency in Table 8 in the Appendix",
+     "anchor": "sec-bank-cost-efficiency-in-table-7-and-profit-efficiency-in-table-8-in-the-appendix"
+    },
+    {
+     "level": 2,
+     "title": "5. Concluding Remarks",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "Appendix",
+     "anchor": "sec-appendix"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ]
   },
   {
    "project": "beauty",
@@ -1309,6 +1488,83 @@
    "headline_question": "Are meta-analyses of correlations biased?",
    "headline": "conventional fixed- and random-effects estimators are biased; the UWLS+3 and Hunter-Schmidt estimators correct this",
    "headline_url": "https://meta-analysis.cz/results/#correlations"
+  },
+  {
+   "project": "cpi_housing",
+   "document_type": "paper",
+   "version": "working_paper",
+   "version_note": "The note also circulated as IES Working Paper 2017/12 under the title “Should Inflation Measures Used by Central Banks Incorporate House Prices? The Czech Approach”, and a version titled “Should monetary policy pay attention to house prices? The Czech National Bank’s approach” appears in BIS Papers No 94 (2017), pages 129-140.",
+   "published_as": null,
+   "title": "Should Inflation Measures Used by Central Banks Incorporate House Prices? The Czech National Bank's Approach",
+   "authors": [
+    "Mojmir Hampl",
+    "Tomas Havranek"
+   ],
+   "year": 2017,
+   "technical_report": {
+    "institution": "Czech National Bank Research and Policy Notes",
+    "number": "1/2017",
+    "year": 2017
+   },
+   "journal": null,
+   "doi": null,
+   "publisher_url": "https://www.cnb.cz/export/sites/cnb/en/economic-research/.galleries/research_publications/irpn/download/rpn_1_2017.pdf",
+   "full_text_url": "https://meta-analysis.cz/cpi_housing/paper/",
+   "project_url": "https://meta-analysis.cz/cpi_housing/",
+   "pdf_url": "https://meta-analysis.cz/cpi_housing/cpi_housing.pdf",
+   "abstract": "In this note we describe the Czech National Bank’s approach to incorporating macroprudential considerations into monetary policy decision making: the use of a broader inflation measure that gives substantial weight to house prices and is considered along with headline CPI inflation. We argue that, in terms of theory, the broader inflation gauge is at least as suitable for measuring the value of money as headline CPI inflation is, but we also acknowledge practical problems that arise from the use of the broader index.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "Abstrakt",
+     "anchor": "sec-abstrakt"
+    },
+    {
+     "level": 2,
+     "title": "Nontechnical Summary",
+     "anchor": "sec-nontechnical-summary"
+    },
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Macroprudential Reasons for Incorporating House Prices into the CPI",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. Conceptual Reasons for Incorporating House Prices into the CPI",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. Approaches to Measuring Owner-Occupied Housing",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 2,
+     "title": "5. The Czech Experience",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "6. Concluding Remarks",
+     "anchor": "sec-6"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ]
   },
   {
    "project": "crisis_ews",
@@ -3956,6 +4212,73 @@
    "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/inflation.json"
   },
   {
+   "project": "intra_spillovers",
+   "document_type": "paper",
+   "version": "record",
+   "version_note": null,
+   "published_as": null,
+   "title": "Meta-Analysis of Intra-Industry FDI Spillovers: Updated Evidence",
+   "authors": [
+    "Tomas Havranek",
+    "Zuzana Irsova"
+   ],
+   "year": 2010,
+   "journal": "Czech Journal of Economics and Finance",
+   "doi": null,
+   "publisher_url": "https://journal.fsv.cuni.cz/mag/article/show/id/1184",
+   "full_text_url": "https://meta-analysis.cz/intra_spillovers/paper/",
+   "project_url": "https://meta-analysis.cz/intra_spillovers/",
+   "pdf_url": "https://meta-analysis.cz/intra_spillovers/intra_spillovers.pdf",
+   "abstract": "Using 67 published and unpublished studies, we conduct a meta-analysis of the literature on intra-industry productivity spillovers from foreign direct investment. The combined significance test of individual t-statistics is inconclusive, but it is apparent that papers published in leading journals tend to report insignificant results. Meta-regression analysis confirms that cross-sectional and industry-level studies are likely to find relatively strong spillover effects and that the choice of the proxy for foreign presence is important. The pattern, however, seems to weaken over time. Evidence for publication selection bias was detected employing the funnel asymmetry test, and the spillover effect corrected for publication bias is not significantly different from zero.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Horizontal Spillovers from FDI",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. Sample of Literature",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. Combined Significance",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 2,
+     "title": "5 Meta-Regression Analysis",
+     "anchor": "sec-5-meta-regression-analysis"
+    },
+    {
+     "level": 2,
+     "title": "6. Publication Bias",
+     "anchor": "sec-6"
+    },
+    {
+     "level": 2,
+     "title": "7. Conclusion",
+     "anchor": "sec-7"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ]
+  },
+  {
    "project": "lags",
    "document_type": "paper",
    "version": "record",
@@ -4719,6 +5042,108 @@
    "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/migrant.json"
   },
   {
+   "project": "money_demand",
+   "document_type": "paper",
+   "version": "record",
+   "version_note": "The article is written in Czech, and the full text here follows it in Czech. The English abstract at the top is the journal's own, printed at the end of the article.",
+   "published_as": null,
+   "title": "A Meta-Analysis of the Income Elasticity of Money Demand",
+   "authors": [
+    "Tomas Havranek",
+    "Jana Sedlarikova"
+   ],
+   "year": 2014,
+   "journal": "Politicka Ekonomie",
+   "doi": "https://doi.org/10.18267/j.polek.956",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/money_demand/paper/",
+   "project_url": "https://meta-analysis.cz/money_demand/",
+   "pdf_url": "https://meta-analysis.cz/money_demand/money_demand.pdf",
+   "abstract": "The income elasticity of money demand is one of the most frequently estimated parameters in economics, but the individual estimates of the elasticity vary a lot. In this paper we present a quantitative survey of the literature estimating this parameter. We collect previous empirical estimates of the elasticity from many studies and analyze why the estimated elasticities differ so much. We test whether the literature is affected by the so-called publication selection bias; that is, if estimates consistent with mainstream theories tend to be published more often. Moreover, we analyze whether the reported estimates of the elasticity differ systematically across countries, estimation methods, and time periods.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Úvod",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Data",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 3,
+     "title": "2.1. Sběr dat",
+     "anchor": "sec-2-1"
+    },
+    {
+     "level": 3,
+     "title": "2.2. Specifikace a popis proměnných",
+     "anchor": "sec-2-2"
+    },
+    {
+     "level": 2,
+     "title": "3. Publikační selektivita",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 3,
+     "title": "3.1. Grafické testy publikační selektivity",
+     "anchor": "sec-3-1"
+    },
+    {
+     "level": 3,
+     "title": "3.2. Test asymetrie trychtýřového grafu",
+     "anchor": "sec-3-2"
+    },
+    {
+     "level": 3,
+     "title": "3.3. Víceúrovňový model smíšených efektů",
+     "anchor": "sec-3-3"
+    },
+    {
+     "level": 2,
+     "title": "4. Rozdíly v odhadech",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 3,
+     "title": "4.1. Metodologie",
+     "anchor": "sec-4-1"
+    },
+    {
+     "level": 3,
+     "title": "4.2. Obecný model",
+     "anchor": "sec-4-2"
+    },
+    {
+     "level": 3,
+     "title": "4.3. Upravený meta-regresní model",
+     "anchor": "sec-4-3"
+    },
+    {
+     "level": 2,
+     "title": "5. Závěr",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "Literatura",
+     "anchor": "sec-literatura"
+    },
+    {
+     "level": 2,
+     "title": "A META-ANALYSIS OF THE INCOME ELASTICITY OF MONEY DEMAND",
+     "anchor": "sec-a-meta-analysis-of-the-income-elasticity-of-money-demand"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ]
+  },
+  {
    "project": "outliers",
    "document_type": "paper",
    "version": "record",
@@ -5161,6 +5586,98 @@
    "headline_question": "Does the choice of meta-analysis method change the answer for partial correlations?",
    "headline": "small-sample biases are negligible and Fisher's z helps with neither them nor publication selection bias; UWLS and Hunter-Schmidt give smaller, arguably less biased means than random effects",
    "headline_url": "https://meta-analysis.cz/results/#pcc_survey"
+  },
+  {
+   "project": "power",
+   "document_type": "paper",
+   "version": "working_paper",
+   "version_note": "The full text includes the SI Appendix printed in the same PDF. The main text prints no heading over its introduction; the one here exists so that the section can be linked, and the figure captions stay at the end of the main text, where the paper prints them. As printed, the main text cites references 39 and 40, which its reference list does not include, and the SI Appendix cites several works by numbers that differ from that list (Arel-Bundock et al. as 9, for example); both are kept as printed.",
+   "published_as": null,
+   "title": "The Power of Science: Statistical Power in Published Research Across Five Disciplines",
+   "authors": [
+    "Yue Wang",
+    "Frantisek Bartos",
+    "Tom Coupe",
+    "Tomas Havranek",
+    "Sanghyun Hong",
+    "Zuzana Irsova",
+    "W. Robert Reed"
+   ],
+   "year": 2026,
+   "technical_report": {
+    "institution": "University of Canterbury, Department of Economics and Finance",
+    "number": "4/2026",
+    "year": 2026
+   },
+   "journal": null,
+   "doi": null,
+   "publisher_url": "https://repec.canterbury.ac.nz/cbt/econwp/2604.pdf",
+   "full_text_url": "https://meta-analysis.cz/power/paper/",
+   "project_url": "https://meta-analysis.cz/power/",
+   "pdf_url": "https://meta-analysis.cz/power/power.pdf",
+   "abstract": "Statistical power, the probability that a study detects a true effect, is a key determinant of the reproducibility of published research. Prior studies have documented low power within individual disciplines, but these estimates are difficult to compare: they span different fields, use different effect-size measures, and apply different methods, leaving no coherent cross-disciplinary picture. We analyze statistical power across five disciplines, environmental science, economics, medicine, political science, and psychology, using approximately 748,000 estimates from large meta-analysis collections. Benchmarking each estimate against Cohen's conventional small and medium effect-size thresholds, we find that published research in the meta-analyzed literature is substantially underpowered for small effects in every discipline. Under the medium-effect benchmark, median power exceeds 80 percent in psychology, economics, and political science, but remains well below that threshold in environmental science and medicine. We compare this benchmark approach with the Fixed-Effects Meta-Analytic (FE-MA) approach used in prior work. The two align in environmental science and medicine, and partly in psychology, but diverge sharply in economics and political science. We argue that heterogeneity, sign-mixing, and publication selection can make the FE-MA pooled estimate an unreliable assumed true effect for the individual studies in a literature, whereas the conventional benchmark is transparent and comparable across fields. Because it offers a transparent and uniform basis for comparing power across fields, we recommend that benchmark power be reported routinely, with FE-MA treated as a complement. These findings link low power to replication failures and suggest that the severity of the replication crisis varies across disciplines.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "INTRODUCTION",
+     "anchor": "sec-introduction"
+    },
+    {
+     "level": 2,
+     "title": "RESULTS",
+     "anchor": "sec-results"
+    },
+    {
+     "level": 2,
+     "title": "DISCUSSION",
+     "anchor": "sec-discussion"
+    },
+    {
+     "level": 2,
+     "title": "MATERIALS AND METHODS",
+     "anchor": "sec-materials-and-methods"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "FIGURE CAPTIONS",
+     "anchor": "sec-figure-captions"
+    },
+    {
+     "level": 2,
+     "title": "SI Appendix",
+     "anchor": "sec-si-appendix"
+    },
+    {
+     "level": 3,
+     "title": "Section S1. Descriptive Statistics",
+     "anchor": "sec-section-s1--descriptive-statistics"
+    },
+    {
+     "level": 3,
+     "title": "Section S2. CB-Large Results",
+     "anchor": "sec-section-s2--cb-large-results"
+    },
+    {
+     "level": 3,
+     "title": "Section S3. Comparing the CB and FE-MA Approaches",
+     "anchor": "sec-section-s3--comparing-the-cb-and-fe-ma-approaches"
+    },
+    {
+     "level": 3,
+     "title": "Section S4. Robustness Check: Alternative Effect-Size Thresholds",
+     "anchor": "sec-section-s4--robustness-check-alternative-effect-size-thresholds"
+    },
+    {
+     "level": 3,
+     "title": "Section S5. Power Curves and Minimum Detectable Effects",
+     "anchor": "sec-section-s5--power-curves-and-minimum-detectable-effects"
+    }
+   ]
   },
   {
    "project": "price_puzzle",
@@ -6707,6 +7224,60 @@
    "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/skill.json"
   },
   {
+   "project": "social_comparison",
+   "document_type": "paper",
+   "version": "record",
+   "version_note": null,
+   "published_as": null,
+   "title": "Adjusting for Publication Bias Reveals Evidence Against Social Comparison As a Behaviour Change Technique Across the Behavioural Sciences",
+   "authors": [
+    "Frantisek Bartos",
+    "Zuzana Irsova",
+    "Tomas Havranek",
+    "Eric-Jan Wagenmakers"
+   ],
+   "year": 2025,
+   "journal": null,
+   "doi": "https://doi.org/10.31234/osf.io/jtv5d_v1",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/social_comparison/paper/",
+   "project_url": "https://meta-analysis.cz/social_comparison/",
+   "pdf_url": "https://meta-analysis.cz/social_comparison/social_comparison.pdf",
+   "abstract": "Social comparison is increasingly used as a behaviour change technique (SC-BCT) yet its true efficacy remains unclear. To address this concern, Hoppen and colleagues performed a comprehensive meta-analysis of 79 randomized controlled trials involving over 1.3 million participants. Hoppen and colleagues “found evidence supporting the efficacy of SC-BCTs in shaping behaviour in the desired direction”. However, their own risk of bias assessment revealed that “most trials (k = 66; 84%) had some concern of bias regarding selection of the reported result(s) given that preregistrations and prespecified analysis protocols were rare” and they noted that “it remains unknown to what extent the present results are affected by publication bias”. In our re-analysis, we demonstrate that publication bias exaggerated the evidence in favor of SC-BCT to such a degree that once this bias is properly adjusted for, the effect disappears entirely. In fact, the data show moderate evidence against the presence of an effect.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "Adjusting for Publication Bias Reveals Evidence Against Social Comparison As a Behaviour Change Technique Across the Behavioural Sciences",
+     "anchor": "sec-adjusting-for-publication-bias-reveals-evidence-against-social-comparison-as-a-behaviour-change-technique-across-the-behavioural-sciences"
+    },
+    {
+     "level": 2,
+     "title": "Data & Materials",
+     "anchor": "sec-data-materials"
+    },
+    {
+     "level": 2,
+     "title": "Acknowledgements",
+     "anchor": "sec-acknowledgements"
+    },
+    {
+     "level": 2,
+     "title": "Competing interests",
+     "anchor": "sec-competing-interests"
+    },
+    {
+     "level": 2,
+     "title": "Author Contribution",
+     "anchor": "sec-author-contribution"
+    },
+    {
+     "level": 2,
+     "title": "REFERENCES",
+     "anchor": "sec-references"
+    }
+   ]
+  },
+  {
    "project": "spillovers",
    "document_type": "paper",
    "version": "record",
@@ -6973,6 +7544,189 @@
     "codebook": "https://meta-analysis.cz/api/v1/codebooks/students.json"
    },
    "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/students.json"
+  },
+  {
+   "project": "subsidy_intensity",
+   "document_type": "paper",
+   "version": "record",
+   "version_note": null,
+   "published_as": null,
+   "title": "On the Intensity of International Subsidy Competition for FDI",
+   "authors": [
+    "Tomas Havranek",
+    "Zuzana Irsova"
+   ],
+   "year": 2010,
+   "journal": "Theoretical and Applied Economics",
+   "doi": null,
+   "publisher_url": "https://www.ectap.ro/articol.php?id=440",
+   "full_text_url": "https://meta-analysis.cz/subsidy_intensity/paper/",
+   "project_url": "https://meta-analysis.cz/subsidy_intensity/",
+   "pdf_url": "https://meta-analysis.cz/subsidy_intensity/subsidy_intensity.pdf",
+   "abstract": "The objective of this paper is to empirically assess the recently introduced models of subsidy competition based on the classical oligopoly theories. Three crucial scenarios (coordination, weak competition, and fierce competition) are tested employing iteratively re-weighted least squares, fixed effects, and dynamic Blundell-Bond estimator on the data from the World Competitiveness Yearbook. The results suggest that none of the scenarios can be strongly supported – although there is some weak support for cooperation –, and thus that empirical evidence is not in accordance with the tested models. There is no evidence for a significant international competition for FDI. It seems that, however, by means of FDI incentives, governments try to compensate foreign investors for high wages and low productivity of their countries’ labor force.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. Hypotheses",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 2,
+     "title": "3. Data and Variables Description",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 2,
+     "title": "4. Methods of Estimation",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 2,
+     "title": "5. Discussion of Results",
+     "anchor": "sec-5"
+    },
+    {
+     "level": 2,
+     "title": "6. Conclusion",
+     "anchor": "sec-6"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "Appendix",
+     "anchor": "sec-appendix"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ]
+  },
+  {
+   "project": "subsidy_supply",
+   "document_type": "paper",
+   "version": "record",
+   "version_note": null,
+   "published_as": null,
+   "title": "The Supply of Foreign Direct Investment Incentives: Subsidy Competition in an Oligopolistic Framework",
+   "authors": [
+    "Tomas Havranek"
+   ],
+   "year": 2009,
+   "journal": "Prague Economic Papers",
+   "doi": "https://doi.org/10.18267/j.pep.346",
+   "publisher_url": null,
+   "full_text_url": "https://meta-analysis.cz/subsidy_supply/paper/",
+   "project_url": "https://meta-analysis.cz/subsidy_supply/",
+   "pdf_url": "https://meta-analysis.cz/subsidy_supply/subsidy_supply.pdf",
+   "abstract": "This paper examines the microeconomic motivation of governments to provide tax incentives for foreign direct investment. Author applies the classical models of oligopoly to subsidy competition, endogenousing investment incentives, but leaving tax rates exogenous. According to the conventional wisdom, subsidy competition leads to overprovision of incentives. This paper suggests that, in the oligopolistic framework, supranational coordination can either decrease or increase the supply of subsidies. Further, in the setting of subsidy regulation, the host country’s corporate income tax rate has an ambiguous effect on the provision of incentives.",
+   "sections": [
+    {
+     "level": 2,
+     "title": "1. Introduction",
+     "anchor": "sec-1"
+    },
+    {
+     "level": 2,
+     "title": "2. The Minimal Sufficient INI Model",
+     "anchor": "sec-2"
+    },
+    {
+     "level": 3,
+     "title": "2.1. Related Work",
+     "anchor": "sec-2-1"
+    },
+    {
+     "level": 3,
+     "title": "2.2. Methodology and Basic Assumptions",
+     "anchor": "sec-2-2"
+    },
+    {
+     "level": 3,
+     "title": "2.3. Optimization",
+     "anchor": "sec-2-3"
+    },
+    {
+     "level": 3,
+     "title": "2.4. Comparative Statics",
+     "anchor": "sec-2-4"
+    },
+    {
+     "level": 3,
+     "title": "2.5. Application on the Visegrad Countries",
+     "anchor": "sec-2-5"
+    },
+    {
+     "level": 3,
+     "title": "2.6. Limitations & Extensions",
+     "anchor": "sec-2-6"
+    },
+    {
+     "level": 2,
+     "title": "3. The Optimal INI Model",
+     "anchor": "sec-3"
+    },
+    {
+     "level": 3,
+     "title": "3.1. Intuition and Methodology",
+     "anchor": "sec-3-1"
+    },
+    {
+     "level": 3,
+     "title": "3.2. Basic Assumptions",
+     "anchor": "sec-3-2"
+    },
+    {
+     "level": 3,
+     "title": "3.3. Decentralized Equilibrium",
+     "anchor": "sec-3-3"
+    },
+    {
+     "level": 3,
+     "title": "3.4. Stackelberg Leadership",
+     "anchor": "sec-3-4"
+    },
+    {
+     "level": 3,
+     "title": "3.5. Supranational Coordination",
+     "anchor": "sec-3-5"
+    },
+    {
+     "level": 3,
+     "title": "3.6. Sensibility Analysis",
+     "anchor": "sec-3-6"
+    },
+    {
+     "level": 3,
+     "title": "3.7. Limitations & Extensions",
+     "anchor": "sec-3-7"
+    },
+    {
+     "level": 2,
+     "title": "4. Conclusion",
+     "anchor": "sec-4"
+    },
+    {
+     "level": 2,
+     "title": "References",
+     "anchor": "sec-references"
+    },
+    {
+     "level": 2,
+     "title": "ENDNOTES",
+     "anchor": "sec-endnotes"
+    }
+   ]
   },
   {
    "project": "substitution",

@@ -1,0 +1,82 @@
+---
+category: "rozhovory"
+media: "text"
+outlet: "Be the Best"
+date: "2018-12-01"
+date_precision: "month"
+headline: "Slepoty se nezbavíme"
+byline: "Tomáš Havránek"
+interviewer: "Tomáš Zima"
+source: "image"
+word_count: "2466"
+perex: "S Tomášem Havránkem, který je přes své mládí nejcitovanějším českým ekonomem v akademickém tisku, o úloze centrální banky, emisích oxidu uhličitého, samořízených autech, střídání času i penězích z vrtulníku."
+body_note: "Rozhovor vedl tehdejší rektor Univerzity Karlovy Tomáš Zima; vyšel v magazínu Be the Best v rubrice BE IN (s. 18 až 21), fotografie Jakub Hněvkovský. Tučně jsou otázky a poznámky rektora. Životopisné rámečky obou účastníků a vytažené citace z tištěné sazby zde neuvádíme."
+---
+
+# Slepoty se nezbavíme
+
+**Pane docente, jsem rád, že máme první příležitost popovídat si osobně. Určitě mne zajímá, kdy jste se rozhodl pro ekonomii, respektive makroekonomii.**
+
+Děkuji za pozvání, pane rektore, je to pro mne čest. Ekonomem jsem vlastně chtěl být vždycky, a to už odmalička. Důvod je poměrně kuriózní: může za to literatura science fiction, kterou jsem měl vždycky moc rád. V deseti letech jsem pořád dokola četl Asimova, hlavně jeho knihy o Nadaci. V nich hraje významnou úlohu věda zvaná psychohistorie, pomocí které hlavní hrdina Hari Seldon modeluje směr cesty společnosti tak, aby se vyhnula těm nejhorším scénářům. Což mě jako kluka fascinovalo. Pár let nato jsem se dostal k článku o matematických modelech v makroekonomii a zdálo se mi, že je to hodně podobné tomu, co by dělal Hari Seldon. Byl to sice krutý omyl, ale to jsem zjistil až později, když už nebylo cesty zpět. Stejně je ale ekonomie úžasná věda! Jiná volba než Univerzita Karlova pro mne nepřipadala v úvahu, zde má ekonomie velkou tradici už od dob profesora Engliše. Podle žebříčků dlouhodobě patříme mezi stovku nejlepších pracovišť na světě. Na Fakultě sociálních věd, kde se ekonomie v rámci UK vyučuje, běžně působí hostující profesoři z Oxfordu nebo Princetonu, což mě samozřejmě lákalo, stejně jako skutečnost, že někteří kolegové spolupracují s nositeli Nobelovy ceny. Doktorské studium jsem absolvoval u profesora Horvátha, který mi zdůrazňoval, že věda i umění mohou být krásné, ale že ve finále se věda od umění liší tím, že je užitná. A když chce ekonom aplikovat svůj výzkum, není lepší cesty než v centrální bance, která má ekonomicky největší vliv. Každé její zdánlivě drobné rozhodnutí může mít obrovský dopad na celou společnost. V centrální bance prostě zaokrouhlujete na miliardy, což mě lákalo, a nakonec se mi povedlo získat pozici ve výzkumu ČNB.
+
+**Taky jste ale působil na univerzitách v Helsinkách a v Berkeley… Jak se tamní vzdělávací systémy liší od toho našeho? Kde se vám líbilo víc?**
+
+Na Helsinské univerzitě jsem se seznámil s evropským systémem, který je podobný tomu našemu na UK, a to i fyzicky – univerzita má řadu malých kampusů roztroušených po Helsinkách. Berkeley je samozřejmě zcela jiné, vlastní univerzitní město, ohromný kampus, koncentrovaný studentský život. Tenhle svět vás na první pohled uhrane. Potkáváte se denně se stovkami studentů i pedagogů, všude kolem vás mezioborové intelektuální podhoubí. K Helsinkám mám ale silný vztah, protože jsem se tam poprvé dostal k metaanalýze, kterou se zabývám větší část svého profesního života. Jedná se o metodu kvantitativní syntézy výzkumu na nějaké téma. Vy ji samozřejmě znáte dobře, pane rektore, protože medicínský výzkum s ní pracuje již velmi dlouho, ale pro ekonomii to ještě před deseti lety bylo něco docela nového, okrajová záležitost. Přitom metaanalýza je úžasný nástroj právě pro ekonomii, která má obvykle měkčí data než medicína. Výsledky různých studií jsou často odlišné a umět je uchopit, spojit a statisticky kombinovat dává úplně nové možnosti především pro využití v praxi.
+
+**Působíte rovněž v centrální bance. Jak se mění její role? A bude za deset let třeba jiná? Já ještě pamatuji, že bankovky byly kryty zlatem a aktivy státní banky, dnes už se to neuvádí, svět je úplně jiný…**
+
+Víte, hrozně by mě zajímalo, co si myslíte vy, čím jsou dnes bankovky kryty.
+
+**Upřímně? Myslím si, že ničím. Když to vidím ve světě, jak mnohé vlády tisknou, kdy potřebují. I americká i evropské…**
+
+Peníze jsou skutečně elastické, tedy jejich množství se mění podle potřeby, to máte úplnou pravdu. Z nějakého důvodu ale tomu papírku věříme, nějakou hodnotu v něm musíte vidět.
+
+**Já ji vidím jako hodně virtuální. Když je třeba něco saturovat, tak se tiskne, ať mají lidé radost…**
+
+Dokud věříme tomu, že měna bude mít stabilní hodnotu, pak ji vlastně mít bude i ve skutečnosti. Důležitá je důvěra. Jinými slovy, musíte věřit podpisu pana guvernéra na každé bankovce, to je veškeré krytí a záruka, že centrální banka „nevytiskne“ tolik, aby došlo ke znehodnocení měny. Úkolem centrální banky je hlídat, aby ve vývoji hospodářství nedocházelo k přílišným výkyvům, což lze nejlépe provádět přes kontrolu cenové hladiny, nikoli množství peněz. Cenová stabilita je v tomto ohledu nejlepší cíl a centrální banky ho obvykle mají zapsán ve svém statutu. Což je důležité především v období silné recese, kdy padá produkce, padají ceny, padá zaměstnanost. A nejsou to jen čísla, jsou za tím hluboké lidské příběhy – ztracená zaměstnání, ztracené vzdělání pro děti, alkoholismus, deprese, sebevraždy, zločinnost. I dnes, v období bezuzdné konjunktury, stále ještě cítíme následky minulé krize, která jen díky mimořádné odvaze a bezprecedentní reakci americké centrální banky nebyla tak děsivá, jak velmi snadno mohla být. Ale i přesto se v reakci na krizi zvedla vlna populismu, se kterou se dodnes potýkáme. V příští krizi, která bezesporu přijde, bude vše ještě složitější.
+
+**To bych se rád zeptal, kdy to bude?**
+
+Já bych vám to řekl moc rád, pane rektore, ale je to podobné jako předpovídat tornádo. Meteorologie se za posledních pár let nesmírně zlepšila, ale když dostanou lidé v Oklahomě varování o tornádu půl hodiny dopředu, mají štěstí. Týden dopředu to neumí nikdo. Předpovídat krizi na roky dopředu je ještě těžší, protože je to náhodný jev. Na kterémkoliv trhu na světě může dojít ke kolapsu důvěry, což je hlavní hybatel takzvaného ekonomického cyklu.
+
+**Jsme tedy svým způsobem v pasti slepoty?**
+
+Možná je to past, možná je to normální stav světa. Jen si musíme uvědomit, že slepoty v této oblasti se nikdy úplně nezbavíme. Nebudeme umět předpovídat tornáda týden dopředu. Nikdy nevíme, co se přesně stane, ale výzkum nám pomůže odhadovat, co by se tak asi mohlo stát, abychom mohli být na určité varianty připraveni. Před deseti lety jsme byli do této pasti chyceni úplně, třeba ceny nemovitostí v USA rostly desítky let v řadě a implikace zněla, že když rostly tak dlouho, porostou pořád. Zlom v tomto vývoji, to byla ona Talebova černá labuť, něco, co skoro nikdo nečekal a na co nebyl nikdo připraven. Jinými slovy, není pro nás nejdůležitější otázka, kdy krize přijde, ale vědomí, že zcela jistě přijde – a zejména, co bude moci udělat centrální banka, aby nám všem pomohla. Snižovat úrokové sazby totiž můžeme jen do určité úrovně.
+
+**A deflace také není zdravá…**
+
+Ano, máte pravdu, byť deflace sama o sobě by nám asi nevadila, problém ale je, že v konečném efektu recesi prohlubuje. Takže primárním cílem centrální banky v krizi je právě zastavit deflaci, zastavit propad poptávky. Nestandardních nástrojů je pak celá řada, třeba Milton Friedman již před mnoha lety zmiňoval tzv. „peníze z vrtulníku“. To je nástroj, jehož případné spuštění v minulosti bylo nereálné, byl zmiňován spíše jen v žertu, ale s využitím moderní digitální měny to už je reálná alternativa. Princip je jednoduchý – v hluboké krizi rozdáte peníze obyvatelům, aby je utratili, i když samozřejmě v praxi je nebudete shazovat z vrtulníku. Můžete pro každého vytvořit digitální peněženku a v případě silné recese tam posílat nově vytvořené peníze, dokud se kupní síla peněz nestabilizuje. Zdůrazňuji, že jen do té doby, než se inflace vrátí na cíl. Důsledkem je samozřejmě ztráta pro centrální banku, ale zároveň je to zisk občanů, takže účetně na úrovni země čistá nula. Přitom takový nástroj může být nesmírně silný pro zastavení krize a obnovení důvěry. Je ale zapotřebí ještě spousta výzkumu, a to nejen v ekonomii, ale i v psychologii a informační vědě – jak konkrétně digitální měnu koncipovat, jak přimět lidi, aby ty prostředky utratili, za co by je utratili.
+
+**Jestli by investovali nebo létali na Havaj…**
+
+Přesně tak, to by se muselo ošetřit, například vymezením, za co by šlo tyto prostředky utratit. Protože letenka na Havaj nebo nákup čínských akcií naši ekonomiku skutečně příliš nepovzbudí. Právě k tomu je potřeba digitální měna, kde každá transakce může být samostatný program, takové peníze mohou mít třeba omezenou platnost. Jsem přesvědčen, že toto téma je velká výzva jak pro centrální banky, tak pro ekonomii jako vědu. Nutno dodat, že jako výzkumník rád zkouším nové věci, tak se možná nechávám trochu unést. Použití peněz z vrtulníku by bylo skutečně revoluční, ale nových nástrojů máme více a je potřeba pečlivě kvantifikovat, který z nich bude pro tuto zemi nejprospěšnější.
+
+**Když už jste zmínil ekonomický výzkum, na jaké úrovni je ten náš?**
+
+Na nejvyšší úrovni se ekonomickému výzkumu v České republice věnují Institut ekonomických studií a CERGE, které je zaměřeno spíše na postgraduální studium, zatímco Institut pokrývá vedle toho i bakalářskou a magisterskou úroveň. Obě instituce mají vysoké hodnocení, patří mezi první světovou stovku, jsou na čele žebříčku středoevropských ekonomických institucí, kolegové třeba spolupracují s Chrisem Simsem, nositelem Nobelovy ceny. Ve srovnání s úrovní ekonomie ve Finsku, se kterou jsem se měl možnost podrobně seznámit, obstojíme velmi dobře. Je však co zlepšovat. Specifikem ekonomie je, že je nesmírně atraktivní pro mladé lidi, kteří vidí ekonomy vystupovat v médiích a myslí si, že ekonomie je hlavně o počítání peněz. Takže nabídka studijních programů různých škol je pestrá, ale obsahově často poměrně vágní. Obě instituce, které jsem zmínil, se snaží o vědeckou ekonomii západního střihu, ale zároveň tak, aby měla přesah do praxe, do podnikové sféry. I v malém podniku je k dispozici množství dat, která lze systematicky zpracovávat ve prospěch efektivity firmy; datová věda je relativně nové odvětví, které rychle nabývá na významu. Pokud jde o vědeckou ekonomii jako takovou, především po formální stránce, narážíme celosvětově na problém, že ekonomie je dnes, abych tak řekl, procesně poněkud vyšinutá. Běžně trvá i pět let, než je článek od okamžiku napsání publikován v časopise, a vzhledem ke všem povinným revizím dosahuje občas rozsahu malé monografie.
+
+**Neumím si podobnou situaci představit třeba v biologických vědách nebo i medicíně, protože experimentální postupy i data by zaostaly.**
+
+Ano, výsledky zastarají i v sociálních vědách. Kompenzujeme to tím, že články publikujeme jako preprinty, na internetu je tedy článek hned. Ale publikační proces v ekonomii je rozbitý a řada kolegů na to upozorňuje. Je přece absurdní, že některé americké katedry ekonomie neuznávají pro karierní postup publikace v Science nebo Nature, protože publikování ve špičkových ekonomických časopisech je statisticky těžší a pomalejší.
+
+**Mediálním světem hýbou dnes mnohé jevy, které jsou často nazírány i pohledem ekonomie. Skleníkový efekt, otázka pohonu motorů… Jaký je váš pohled? Jsou to bubliny?**
+
+Nerad bych lezl do zelí kolegům klimatologům, ale shodou okolností jsme právě v Berkeley spolu s profesorem Zilbermanem pracovali na studii, která se zabývala společenskými náklady emisí oxidu uhličitého. Problém je v tom, že jakkoliv oxid uhličitý způsobuje nežádoucí efekty v podobě změn klimatu, nelze jeho vypouštění šmahem zakázat, jelikož takový zákaz by způsobil ohromné škody podnikům a ve finále nám všem. Je zkrátka potřeba nalézt rovnováhu mezi únosnou mírou znečištění a únosnou mírou ekonomických dopadů omezení, aby to bylo pro společnost optimální. Optimální množství prachu v domácnosti také není nulové. Pokud jde o pohon motorů, tam je nástup elektromobilů nezastavitelný, ale ekonomicky zajímavější je autonomní řízení vozidel, které pro lepší využití v ekonomice uvolní masu lidí, kteří se dnes řízení nebo jeho zabezpečení věnují. Ve hře je i otázka nehodovosti, všichni přece známe nějakou rodinu, která ztratila blízkého člověka při dopravní nehodě. Rozšíření autonomních vozidel do běžné praxe každopádně zvýší HDP skokově. Ale abych se vrátil k Vaší primární otázce a shrnul ekonomickou odpověď, tak tlak na snížení emisí je odůvodněný, ale Evropa je možná oproti ostatním na tomto poli až příliš avantgardní.
+
+**Je pravda, že když my v Evropě se třeba i utřídíme a nijak se k tomu problému nepostaví Čína, Indie, Brazílie, Spojené státy, tak se globálního řešení nedočkáme a problém odpadu nevyřešíme. Velkým hitem posledních dnů je také letní a zimní čas. I tento problém řeší ekonomové…**
+
+Z čistě subjektivního hlediska musím říct, že střídání času nesnáším. Mám čtyři malé děti a předělat jejich vnitřní hodiny je značný problém, hlavně na jaře. Ale to je nevědecký pohled rodiče. Co se týče empirické evidence, na toto téma jsme dělali velkou metaanalýzu a úspora energie plynoucí ze střídání času je nulová, někdy dokonce záporná. Dříve šlo o úspory za svícení, dnešní technologie žárovek je však v podstatě vymazaly, zvláště v kombinaci s tím, že spotřeba se přesunuje k široké škále elektrospotřebičů, které dříve nebyly běžně dostupné. Delší letní večery zvyšují spotřebu z titulu provozu klimatizace, což v některých oblastech představuje významnou položku. Ale hlavní jsou jiné dopady, zejména zdravotní. My, co často létáme mimo Evropu, s jednou hodinou posunu obvykle problém nemáme, ale na českých silnicích to dohromady několik desítek nehod způsobí. Stačí trochu více nepozornosti, která pramení z toho, že nám po jarním posunu chybí hodina spánku. Nehledě na infarkty, duševní zdraví a tak dále. Náš výzkum byl použit i v současných evropských debatách na toto téma a citován v materiálech Evropské komise. V součtu je totiž zřejmé, že střídání času není pro společnost vůbec prospěšné. Za ty desítky let jsme si na to zvykli, ale dnes by něco tak prokazatelně škodlivého nikoho nenapadlo zavádět.
+
+**A přichází otázka, který čas je ten pravý. Z hlediska chronobiologie je to zřejmé – ten, který patří k našemu poledníku. Je pohled ekonoma jiný?**
+
+Samozřejmě jsem si vědom silné evidence, která říká, že z hlediska biorytmů je lepší standardní čas, tedy brzké ranní světlo. Ale ekonomicky tam vstupují ještě jiné souvislosti. Nechodíme totiž spát v osm hodin večer, abychom období tmy využili nejlépe, aby prostředek spánku byl o půlnoci. Ano, formálně je správné, když je slunce v poledne nejvýše na obloze. Ale k čemu nám je formální čistota, když se jí jako společnost neřídíme? Když se podíváte na celý problém v souvislostech, ukazuje se, že dřívější tma večer přináší více nehod, vyšší kriminalitu, nižší ekonomickou aktivitu a nižší tržby obchodníků. Tedy z ekonomického pohledu je světlo večer pozitivní faktor, protože večer chceme být aktivní. A zase jsme u rovnováhy nákladů a výnosů, kterou je třeba nalézt.
+
+**Takže můžeme čekat posun o pásmo?**
+
+Podle mého názoru je to výborné téma pro nějaký interdisciplinární a mezinárodní ERC grant. Manželka, která se tímto dlouhodobě zabývá, zvažuje, že si ho podá.
+
+**A vaše vlastní projekty?**
+
+Zmínil jsem metaanalýzu, kde spolupracujeme s Johnem Ioannidisem ze Stanfordu a Chishiou Furukawou z MIT na nových technikách očištění výsledků o publikační selektivitu, což je velké téma, a to nejen v ekonomii. Čím menší máte statistickou sílu, tím širší je naopak škála možností, jak získat výsledek, který vám přijde publikovatelný, a to docela nezávisle na datech. Bohužel se jako kritérium užitečnosti stále často používá statistická významnost, která je ovšem pro praxi zavádějící a důraz na ni vede právě k publikační selektivitě. Ale to je příliš technická záležitost, která by čtenáře nebavila, nicméně ve vědě obecně se jedná o žhavé téma. Však John Ioannidis patří mezi nejcitovanější vědce světa. No a pak je tu samozřejmě ještě mé druhé působiště, centrální banka, kde pracujeme právě na tom, jaké nástroje a jakým způsobem bychom mohli využít v případě další recese.
+
+**Budu si spolu s vámi přát, aby se to povedlo a abyste společnost uchránili od silných dopadů krize, pokud by měly přijít. Aby byla budoucnost snesitelná. Děkuji za inspirativní setkání.**

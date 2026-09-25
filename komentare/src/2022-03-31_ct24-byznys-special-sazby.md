@@ -29,11 +29,11 @@ Mimochodem to Švýcarsko samozřejmě je úplně jiný případ. Těm posiluje 
 
 Pokud intervenuje, tak proti přílišnému posilování. To znamená, ona neposiluje ten kurz. Ten kurz posiluje sám o sobě. Takže těch centrálních bank, které by cílovaly inflaci a ještě k tomu nějakým způsobem dělali to, jak navrhuje pan profesor Havránek, pokud já vím v tom vyspělém světě, až příliš mnoho není.
 
-A byl by to prostě takový trošku nestandardní nástroj. V situaci, kdy máme k dispozici ten nástroj standardní, my prostě můžeme zvyšovat libovolně vysoko urokové sazby. Což je jiná situace, než kde jsme byli někdy třeba v roce 2013, kdy začaly devizové intervence, ale začaly opačným směrem, začaly na oslabování kurzu a to bylo v situaci, kdy jsme byli se sazbami na nule nebo blízko nuli.
+A byl by to prostě takový trošku nestandardní nástroj. V situaci, kdy máme k dispozici ten nástroj standardní, my prostě můžeme zvyšovat libovolně vysoko úrokové sazby. Což je jiná situace, než kde jsme byli někdy třeba v roce 2013, kdy začaly devizové intervence, ale začaly opačným směrem, začaly na oslabování kurzu a to bylo v situaci, kdy jsme byli se sazbami na nule nebo blízko nuli.
 
 **Moderátorka:** Tomu rozumím, ale sám jste říkal, že ani sazby nevyřeší dovezenou inflaci. Pan Havránek, zmiňoval, že právě dovozové komodity...
 
-**Marek Mora:** Já jsem to trošku opravil. Já jsem řekl, že částeční zmírní tím, že kurz spontánně reaguje na vyšší urokové sazby. Mimochodem, pokud se podíváte na kurzový vývoj, dejme tomu za poslední rok a půl, tak uvidíte, že česká koruna posiluje výrazněji než třeba maďarský forint nebo polský zlotý, což jsou takové ty srovnatelné měny z našeho regionu, což má podle měho názoru dva základní důvody. Jeden jsou ty zdravé makroekonomické, pořád ještě zdravé makroekonomické fundamenty České republiky a ten druhý důvod je to, že jsme poměrně výrazně zvyšovali urokové sazby, takže ten kurz na tu vyšší urokovou sazbu samozřejmě reaguje.
+**Marek Mora:** Já jsem to trošku opravil. Já jsem řekl, že částečně zmírní tím, že kurz spontánně reaguje na vyšší úrokové sazby. Mimochodem, pokud se podíváte na kurzový vývoj, dejme tomu za poslední rok a půl, tak uvidíte, že česká koruna posiluje výrazněji než třeba maďarský forint nebo polský zlotý, což jsou takové ty srovnatelné měny z našeho regionu, což má podle měho názoru dva základní důvody. Jeden jsou ty zdravé makroekonomické, pořád ještě zdravé makroekonomické fundamenty České republiky a ten druhý důvod je to, že jsme poměrně výrazně zvyšovali úrokové sazby, takže ten kurz na tu vyšší urokovou sazbu samozřejmě reaguje.
 
 Takže i to zvýšení urokových sazeb může tlumit ty dovozní korunové ceny.
 

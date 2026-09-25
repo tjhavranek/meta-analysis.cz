@@ -1393,7 +1393,16 @@
      "name": "Mojmir Hampl"
     }
    ],
-   "links": [],
+   "links": [
+    {
+     "label": "The research note behind the column (CNB Research and Policy Notes 1/2017)",
+     "url": "https://meta-analysis.cz/cpi_housing/"
+    },
+    {
+     "label": "Read the note in full",
+     "url": "https://meta-analysis.cz/cpi_housing/paper/"
+    }
+   ],
    "syndicated": [
     {
      "label": "VoxEU / CEPR",

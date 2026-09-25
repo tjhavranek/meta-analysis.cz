@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory, stanoviska poradce bankovní rady ČNB a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 227 položek a 26 kratších příspěvků ze sítí (253 záznamů celkem), 2009–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
+Publicistika: 235 položek a 26 kratších příspěvků ze sítí (261 záznamů celkem), 2009–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
 
 ## Celostátní komentáře
 
@@ -63,6 +63,7 @@ Komentáře a sloupky pro celostátní média — měnová politika, inflace, ve
 - [Lockdowny přinesly obrovské náklady, ale malý užitek. Zkraťme tedy prázdniny na polovinu, ať to napravíme](https://meta-analysis.cz/komentare/lockdowny-zkratme-prazdniny/) — Hospodářské noviny, 7. února 2022
 - [ČNB mohla inflaci srazit už v září posílením koruny](https://meta-analysis.cz/komentare/zi-cnb-mohla-inflaci-srazit-uz-v-zari-posilenim/) — E15, 29. ledna 2022
 - [Jak zkrotit inflaci? Přišel čas odčinit intervence proti koruně](https://meta-analysis.cz/komentare/zkrotit-inflaci-odcinit-intervence/) — Hospodářské noviny, 4. ledna 2022
+- [Trvalé zrušení inflace a nová bankovní rada ČNB: dopis prezidentu Zemanovi](https://meta-analysis.cz/komentare/zruseni-inflace-dopis-prezidentovi/) — prezident republiky Miloš Zeman (korespondence, nepublikováno), 20. prosince 2021
 - [Éru levných peněz vystřídají roky šetření. Z inflační krize se ale neprošetříme, když zároveň neporosteme](https://meta-analysis.cz/komentare/era-levnych-penez-roky-setreni/) — Hospodářské noviny, 7. prosince 2021
 - [Klimatický extremismus škodí víc než globální oteplování](https://meta-analysis.cz/komentare/klimaticky-extremismus/) — Hospodářské noviny, 10. listopadu 2021
 - [Porazit Babiše může generál Pavel i rektorka Nerudová](https://meta-analysis.cz/komentare/zi-hn-porazit-babise/) — Hospodářské noviny (autorská verze, ne otištěné znění), 3. listopadu 2021
@@ -75,11 +76,16 @@ Komentáře a sloupky pro celostátní média — měnová politika, inflace, ve
 - [Přežijí papírové peníze pandemii?](https://meta-analysis.cz/komentare/preziji-papirove-penize-pandemii/) — Hospodářské noviny, 6. dubna 2021
 - [Je inflace neústavní? Aneb budoucnost měnové politiky](https://meta-analysis.cz/komentare/je-inflace-neustavni-aneb-budoucnost-menove/) — Hospodářské noviny, 4. února 2021
 - [Poslední šance na Česko bez bankrotu](https://meta-analysis.cz/komentare/posledni-sance-na-cesko-bez-bankrotu/) — Hospodářské noviny, 11. listopadu 2020
+- [ČNB neinvestuje devizové rezervy: dopis prezidentu Zemanovi](https://meta-analysis.cz/komentare/cnb-rezervy-dopis-prezidentovi/) — prezident republiky Miloš Zeman (korespondence, nepublikováno), 10. listopadu 2020
 - [Zlato do trezorů ČNB patří](https://meta-analysis.cz/komentare/zlato-do-trezoru-cnb-patri/) — Hospodářské noviny, 7. října 2020
 - [Proč cenová stabilita neznamená stabilitu průměrných cen? Inflace je historický přežitek](https://meta-analysis.cz/komentare/proc-cenova-stabilita-neznamena-stabilitu-prumernych/) — Hospodářské noviny, 8. září 2020
 - [Pokud chce vláda bránit životy všemi prostředky, měla by zavést povinné očkování proti chřipce](https://meta-analysis.cz/komentare/pokud-chce-vlada-branit-zivoty-vsemi/) — Hospodářské noviny, 8. června 2020
 - [Stromy, to je ekonomická odpověď na sucho](https://meta-analysis.cz/komentare/hn-stromy-sucho/) — Hospodářské noviny (autorská verze, ne otištěné znění), 5. května 2020
 - [Konec Cobbovy-Douglasovy produkční funkce?](https://meta-analysis.cz/komentare/cnb-cobb-douglas/) — čnBlog, 30. dubna 2020
+- [Kde sehnat bilion na obnovu ekonomiky](https://meta-analysis.cz/komentare/hn-kde-sehnat-bilion/) — Hospodářské noviny (autorská verze, ne otištěné znění), 14. dubna 2020
+- [Ekonomika nyní závisí na ČNB. Začne posílat peníze lidem?](https://meta-analysis.cz/komentare/hn-cnb-penize-lidem/) — Hospodářské noviny (autorská verze, ne otištěné znění), 18. března 2020
+- [Bída českých penzijních fondů. Proč jako jediné v OECD prodělávají?](https://meta-analysis.cz/komentare/hn-bida-penzijnich-fondu/) — Hospodářské noviny (autorská verze, ne otištěné znění), 12. prosince 2019
+- [Ekonomie globálních katastrof](https://meta-analysis.cz/komentare/hn-ekonomie-globalnich-katastrof/) — Hospodářské noviny (autorská verze, ne otištěné znění), 22. listopadu 2019
 - [Jak přicházíme o sto miliard korun ročně](https://meta-analysis.cz/komentare/hn-sto-miliard-rocne/) — Hospodářské noviny (autorská verze, ne otištěné znění), 11. září 2019
 - [Stanovisko poradce k 8. situační zprávě 2018](https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-8sz-2018/) — Česká národní banka, 19. prosince 2018
 - [Nejlepší využití kryptoměn – baterie?](https://meta-analysis.cz/komentare/forbes-next-kryptomeny-baterie/) — Forbes NEXT, 22. března 2018
@@ -161,6 +167,7 @@ Především sloupky pro Lilii, měsíčník města Litomyšle — doprava, zele
 - [Schovejme auta pod zemí](https://meta-analysis.cz/komentare/litomysl-schovejme-auta-pod-zemi/) — Lilie, březen 2018
 - [Poděkování za vánoční dílny](https://meta-analysis.cz/komentare/litomysl-podekovani-vanocni-dilny/) — Lilie, leden 2018
 - [A co děti, mají si kde hrát?](https://meta-analysis.cz/komentare/litomysl-a-co-deti-maji-si-kde-hrat/) — Lilie, červenec 2017
+- [Dálnici uslyšíme všichni](https://meta-analysis.cz/komentare/litomysl-dalnici-uslysime-vsichni/) — Lilie, duben 2017
 
 ## Rozhovory
 
@@ -197,7 +204,7 @@ Rozhovory pro česká média. U audio a video rozhovorů vede archiv odkaz na p�
 - [Evropa odchází od rozumu k ideologii. Kvůli sociálním sítím, říká ekonom](https://meta-analysis.cz/komentare/iv-idnes-evropa-ideologie/) — iDNES.cz, 28. října 2022
 - [Banky si speciální daň zaslouží, rýžují peníze a nemusí se ani snažit](https://meta-analysis.cz/komentare/iv-hn-banky-specialni-dan/) — Hospodářské noviny, 31. srpna 2022
 - [Za vysokou inflaci může špatná politika centrální banky](https://meta-analysis.cz/komentare/rozhlas-interview-plus-inflace/) — Český rozhlas Plus (strojový přepis nahrávky), 15. srpna 2022
-- [Zrušme inflaci, říká exporadce guvernéra Michla](https://meta-analysis.cz/komentare/iv-sz-zrusme-inflaci/) — Seznam Zprávy, 10. srpna 2022
+- [Zrušme inflaci, říká exporadce guvernéra Michla](https://meta-analysis.cz/komentare/iv-sz-zrusme-inflaci/) — Seznam Zprávy (strojový přepis nahrávky), 10. srpna 2022
 - [Události, komentáře: ČNB zvýšila základní úrokovou sazbu na 7 %](https://meta-analysis.cz/komentare/udalosti-komentare-cnb-7-procent/) — Česká televize (strojový přepis nahrávky), 22. června 2022
 - [Kontext: ČNB selhává a šlape na plyn. Ať rozprodá devizové rezervy](https://meta-analysis.cz/komentare/kontext-cnb-selhava-a-slape-na-plyn/) — iDNES.cz (strojový přepis nahrávky), 11. června 2022
 - [Inflaci můžeme kdykoliv zrušit, centrální banky včetně té české selhaly](https://meta-analysis.cz/komentare/dvtv-inflaci-muzeme-zrusit/) — DVTV (strojový přepis nahrávky), 13. května 2022 [stejné natáčení jako [Zemětřesení v ČNB bude bezprecedentní](https://video.aktualne.cz/dvtv/zive-zemetreseni-v-cnb-bude-bezprecedentni-byvaly-michluv-po/r~ed187658d21a11eca0d8ac1f6b220ee8/)]
@@ -208,9 +215,10 @@ Rozhovory pro česká média. U audio a video rozhovorů vede archiv odkaz na p�
 - [Inflaci můžeme úplně zrušit, je neústavní](https://meta-analysis.cz/komentare/zi-inflaci-muzeme-uplne-zrusit-je-neustavni-rik/) — iDNES.cz, 19. prosince 2021
 - [Havránek: Hodnocení ERC je velmi poctivé, nápady vynikající](https://meta-analysis.cz/komentare/iv-ukforum-erc/) — Forum Univerzity Karlovy, 22. června 2021
 - [Vršící se státní dluh má pět řešení. Ale jen jedno je dobré](https://meta-analysis.cz/komentare/iv-sz-dluh/) — Seznam Zprávy, 19. června 2021
-- [Ať se ČNB inspiruje ve Švýcarsku. Může vydělávat stamiliardy](https://meta-analysis.cz/komentare/iv-sz-cnb-svycarsko/) — Seznam Zprávy, 15. června 2021
+- [Ať se ČNB inspiruje ve Švýcarsku. Může vydělávat stamiliardy](https://meta-analysis.cz/komentare/iv-sz-cnb-svycarsko/) — Seznam Zprávy (strojový přepis nahrávky), 15. června 2021
 - [Bojím se, že papírové peníze v Česku skončí do pěti let, říká ekonom](https://meta-analysis.cz/komentare/iv-idnes-papirove-penize/) — iDNES.cz, 18. dubna 2021
 - [Krize je typický náhodný jev. Mýlíme se častěji než jiní vědci, říká ekonomka roku Zuzana Havránková](https://meta-analysis.cz/komentare/zi-iv-hn-krize-nahodny-jev/) — Hospodářské noviny, 21. prosince 2018
+- [Slepoty se nezbavíme](https://meta-analysis.cz/komentare/iv-btb-slepoty-se-nezbavime/) — Be the Best, prosinec 2018
 - [Proč se stěhovat právě do Litomyšle?](https://meta-analysis.cz/komentare/iv-lilie-proc-se-stehovat/) — Lilie, červen 2018
 - [Nejcitovanější český ekonom: Další krize určitě nevznikne u nás](https://meta-analysis.cz/komentare/iv-roklen24/) — Roklen24, 22. května 2018
 - [Nejcitovanější český ekonom: Dům je pro mě spotřeba](https://meta-analysis.cz/komentare/cnb-vlog-dum-je-spotreba/) — Česká národní banka (strojový přepis nahrávky), 26. dubna 2018

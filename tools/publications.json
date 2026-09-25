@@ -1163,7 +1163,7 @@
     "Jana Sedlarikova"
    ],
    "n_authors": 2,
-   "project": null,
+   "project": "money_demand",
    "type": "journal-article"
   },
   {
@@ -1232,7 +1232,7 @@
     "Zuzana Irsova"
    ],
    "n_authors": 2,
-   "project": null,
+   "project": "bank_dea",
    "type": "journal-article"
   },
   {
@@ -1400,7 +1400,7 @@
     "Tomas Havranek"
    ],
    "n_authors": 2,
-   "project": null,
+   "project": "bank_mra",
    "type": "journal-article"
   },
   {
@@ -1416,7 +1416,7 @@
     "Zuzana Irsova"
    ],
    "n_authors": 2,
-   "project": null,
+   "project": "intra_spillovers",
    "type": "no-doi",
    "url": "https://journal.fsv.cuni.cz/mag/article/show/id/1184"
   },
@@ -1433,7 +1433,7 @@
     "Zuzana Irsova"
    ],
    "n_authors": 2,
-   "project": null,
+   "project": "subsidy_intensity",
    "type": "no-doi",
    "url": "https://ideas.repec.org/a/agr/journl/v2(543)y2010i2(543)p25-54.html"
   },
@@ -1464,7 +1464,7 @@
     "Tomas Havranek"
    ],
    "n_authors": 1,
-   "project": null,
+   "project": "subsidy_supply",
    "type": "journal-article"
   }
  ],
@@ -2394,7 +2394,7 @@
     "Zuzana Irsova"
    ],
    "n_authors": 2,
-   "project": null,
+   "project": "bank_dea",
    "type": "journal-article"
   },
   {
@@ -2491,7 +2491,7 @@
     "Tomas Havranek"
    ],
    "n_authors": 2,
-   "project": null,
+   "project": "bank_mra",
    "type": "journal-article"
   },
   {
@@ -2507,7 +2507,7 @@
     "Zuzana Irsova"
    ],
    "n_authors": 2,
-   "project": null,
+   "project": "intra_spillovers",
    "type": "no-doi",
    "url": "https://journal.fsv.cuni.cz/mag/article/show/id/1184"
   },
@@ -2524,7 +2524,7 @@
     "Zuzana Irsova"
    ],
    "n_authors": 2,
-   "project": null,
+   "project": "subsidy_intensity",
    "type": "no-doi",
    "url": "https://ideas.repec.org/a/agr/journl/v2(543)y2010i2(543)p25-54.html"
   }
