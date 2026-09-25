@@ -43,16 +43,16 @@ inst <- read.csv("https://meta-analysis.cz/data/v1/estimates_harmonised.csv")
 **Read the Parquet where you can, and pass `float_precision="round_trip"` where you
 cannot.** The CSV is not the problem: it carries every value at full precision and
 round-trips exactly. Pandas' default CSV parser is the problem, and it is not exact. It
-moves 16,794 of the 52,800 `se` values, 9,008 `effect` values and 9,960 `t_stat` values,
+moves 16,794 of the 52,879 `se` values, 9,008 `effect` values and 9,935 `t_stat` values,
 each by up to about 2.9e-11. So this applies to any column you read, not only the derived
 ones, and recomputing `effect / se` yourself does not avoid it.
 
 That is invisible almost everywhere and decisive at a threshold. 100 estimates sit within
 1e-9 of |t| = 1.96 and 33 sit exactly on it, so any count either side of that line has to
 state its convention: bins here are closed on the left, and an estimate reported as
-exactly 1.96 is counted above. On that convention the caliper comes out as 550 below and
-683 above
-from the Parquet, 544 and 690 from the same CSV at pandas' defaults, and 549 and 684 if
+exactly 1.96 is counted above. On that convention the caliper comes out as 551 below and
+684 above
+from the Parquet, 545 and 691 from the same CSV at pandas' defaults, and 550 and 685 if
 you recompute the ratio from a default-parsed CSV. The figures published on this site
 quote the Parquet. Writing the CSV with more digits does not help; it makes the default
 parse worse. The Parquet is canonical. Read the CSV as:
@@ -69,18 +69,28 @@ curl -s https://meta-analysis.cz/api/v1/datasets.json | jq '.datasets[] | {id, n
 ## The harmonised table
 
 One row per harmonised **observation**, pooled across literatures. The primary
-analysis set is **49,664 estimates satisfying the source papers' own sample
+analysis set is **49,743 estimates satisfying the source papers' own sample
 definitions**; a further 3,136 estimates those papers excluded are carried
-alongside for robustness work, giving **52,800 rows from 42 literatures** in all.
-Cite the paper-sample figure. The change to 52,800 from 1.3.0's 50,441 rows is not growth in
-the evidence base, and 52,800 is not "all estimates": it is a selection from the
-67,606 source rows. Filter `in_paper_sample` to true to reproduce a paper's
+alongside for robustness work, giving **52,879 rows from 43 literatures** in all.
+Cite the paper-sample figure. The change to 52,800 in 2.0.0 from 1.3.0's 50,441 rows was not
+growth in the evidence base; 2.1.0's 79 new rows are a new literature. And 52,879 is not "all
+estimates": it is a selection from the 67,685 source rows. Filter `in_paper_sample` to true to reproduce a paper's
 own sample, and read `paper_sample_exclusion` to see which clause removed a row.
 
 Rows are not always independent estimates — `price_puzzle`
 carries one row per impulse response per horizon, and `house_prices` ships about
 seven horizons per impulse response. Check `horizon` before treating rows as
-independent. Version **2.0.0**.
+independent. Version **2.1.0**.
+
+2.1.0 adds `social_comparison`: 79 effects, as Hedges' g, from randomized controlled trials of
+social comparison as a behaviour change technique, 37 against passive and 42 against active
+control conditions. Its paper corrects the two comparisons separately and never pools them, so
+they are told apart by `outcome_variant` (`vs_passive_control`, `vs_active_control`). That takes
+the table to 43 literatures and 52,879 rows. 2.1.0 also carries the label changes made after
+2.0.0 was deposited: `effect_units` reads elasticity, semi-elasticity or regression coefficient
+for `armington`, `house_prices`, `price_puzzle`, `migrant` and `habits`, and `chemnitz`, a
+teaching copy of 1,647 `electricity` estimates, is listed under `excluded_resources`. No other
+estimate, standard error or count changed.
 
 2.0.0 is a breaking release. `class` published the partial correlation of an
 appendix robustness block as its effect and now publishes the test-score scale its
@@ -157,8 +167,9 @@ the archived deposit:
 
 > **https://doi.org/10.5281/zenodo.21773678** — cite this. It always resolves to the newest version.
 >
-> `https://doi.org/10.5281/zenodo.22647394` is version 2.0.0, the table served here and the newest
-> deposit. Cite this one in a replication package, where the exact files matter.
+> Version 2.1.0, the table served here, is not yet deposited. Until it is, the newest deposit is
+> `https://doi.org/10.5281/zenodo.22647394`, version 2.0.0, which lacks `social_comparison`;
+> cite that one in a replication package, where the exact files matter.
 >
 > `https://doi.org/10.5281/zenodo.22529684` is version 1.3.0, superseded. Anything computed against
 > it for `class` used that literature's robustness scale rather than the one its main models use,
@@ -180,16 +191,16 @@ DOI will not.
 ## Before you pool
 
 **Cluster on `(dataset, study_id)`, never on `study_id` alone.** `study_id` is unique within
-a literature, not across the table. There are 524 distinct values but 2,963 real
+a literature, not across the table. There are 536 distinct values but 3,125 real
 literature-study pairs, so clustering on the bare column silently merges unrelated studies
-and collapses 82% of your clusters, from 2,963 to 524. And if you deduplicate, do it
+and collapses 83% of your clusters, from 3,125 to 536. And if you deduplicate, do it
 on `(dataset, estimate_id)`, which is unique by construction: rows elsewhere can legitimately
 agree in every other column, so a blanket `drop_duplicates()` deletes real estimates. On a pooled regression the standard
 errors happen to come out within 1% of the correct ones, so nothing looks wrong; the damage is
 to the cluster count that cluster-robust inference depends on, and to any literature-level
 statistic where the merged studies are genuinely unrelated.
 
-**Three literatures have fewer `study_id` values than they have studies, so those 2,963 pairs
+**Three literatures have fewer `study_id` values than they have studies, so those 3,125 pairs
 are 20 short of the truth.** Where a source file carries no column whose NAME matches
 `study_id`/`idstudy`, the harmoniser factorises the study label instead, and a label is the
 author string: two papers by the same authors become one study. It affects `euro` (52 values
@@ -204,7 +215,7 @@ next data revision; the pooled values are not changed underneath a published ver
 
 These are real published estimates, and several literatures are heavy-tailed.
 The `eis` file, for instance, runs from −10,000 to 100,000 with standard errors
-to match; 68 rows across the collection have a standard error below 1e-4. Those
+to match; 70 rows across the collection have a standard error below 1e-4. Those
 values are in the source files, not an artefact of the harmonisation, and they
 are kept so the table stays faithful to what was published.
 
@@ -216,10 +227,10 @@ which is what the underlying papers do. As a worked check, FAT-PET run on the
 `education` corrects to about 0.02 and `excess_sensitivity` to about 0.01, both
 of which their papers describe as near zero, and `forward` corrects to 0.92
 against a null of 1. On the same winsorised data, with standard errors clustered
-by study, the FAT publication-bias intercept lies beyond ±1.96 in 26 of the 42
+by study, the FAT publication-bias intercept lies beyond ±1.96 in 26 of the 43
 literatures.
 
-**All 42 pooled literatures are verified** — 22 `domain_reviewed`, 20 `code_traced`. Where a
+**All 43 pooled literatures are verified** — 23 `domain_reviewed`, 20 `code_traced`. Where a
 paper ships no replication code, the mapping was checked against its published results by
 hand: `gasoline_price`'s abstract reports corrected elasticities of -0.31 long-run and -0.09
 short-run with published averages "exaggerated twofold", and the shipped data gives -0.691 and
@@ -287,9 +298,9 @@ estimates twice and present one literature as two independent ones:
 **Dataset IDs are not literature families.** The catalogue counts *contributing dataset
 IDs*. Two of them describe the same literature: `trust` is a later, separate collection of
 the size-premium literature that `size` also covers, which is why only the 212 estimates
-`size` does not already carry are pooled. So "42 literatures" means 42 contributing dataset
-IDs, not 42 independent bodies of evidence: `trust` and `size` cover the same size-premium
-literature, so the 42 IDs represent at most 41 literature families. Treat those two as one
+`size` does not already carry are pooled. So "43 literatures" means 43 contributing dataset
+IDs, not 43 independent bodies of evidence: `trust` and `size` cover the same size-premium
+literature, so the 43 IDs represent at most 42 literature families. Treat those two as one
 family in any analysis that assumes independence.
 
 **Several pooled columns are literature-local.** `study_id` and `estimate_id` are unique
@@ -348,14 +359,14 @@ records which file and which line of reasoning settled it.
 ## Two products, not one
 
 **The archive is a faithful mirror. The harmonised table is an interpretation.**
-They are separate things and should be trusted differently. All 42 literatures'
+They are separate things and should be trusted differently. All 43 literatures'
 mappings are verified, but the table still involves judgement the archive does
 not.
 
 *Archive* — the original files, faithful CSV and Parquet mirrors, codebooks, and
 paper/DOI metadata. Faithful conversions of what was published.
 
-*Harmonised table* — 52,800 selected estimates, automatically mapped and in some
+*Harmonised table* — 52,879 selected estimates, automatically mapped and in some
 cases transformed. Every column mapping is verified against the paper's own
 replication code or published results.
 
@@ -364,8 +375,8 @@ rather than read prose:
 
 | status | meaning | count |
 |---|---|---|
-| `domain_reviewed` | checked by hand against the paper's own replication code, or against its published results where no code exists | 22 of 42 pooled |
-| `code_traced` | mapping confirmed by reading the paper's code and comparing the variables it regresses | 20 of 42 pooled |
+| `domain_reviewed` | checked by hand against the paper's own replication code, or against its published results where no code exists | 23 of 43 pooled |
+| `code_traced` | mapping confirmed by reading the paper's code and comparing the variables it regresses | 20 of 43 pooled |
 | `duplicate_excluded` | same estimates as another literature | 2 |
 | `excluded_no_precision` | no per-estimate standard error exists | 2 |
 

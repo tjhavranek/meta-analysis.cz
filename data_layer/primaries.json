@@ -5189,6 +5189,39 @@
   "aux": false,
   "score": 11.053
  },
+ "social_comparison": {
+  "project": "social_comparison",
+  "source": "zip",
+  "archive": "social_comparison_replication.zip",
+  "member": "scBCT-short.csv",
+  "ext": ".csv",
+  "rows": 79,
+  "ncols": 5,
+  "sheet": null,
+  "columns": [
+   "yi",
+   "vi",
+   "dataset",
+   "reference",
+   "sei"
+  ],
+  "bytes": 13207,
+  "roles": {
+   "se": [
+    "sei"
+   ],
+   "study_lbl": [
+    "reference"
+   ]
+  },
+  "se_cols": [
+   "sei"
+  ],
+  "effect": null,
+  "effect_how": null,
+  "aux": false,
+  "score": null
+ },
  "spillovers": {
   "project": "spillovers",
   "source": "loose",

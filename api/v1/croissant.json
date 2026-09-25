@@ -48,13 +48,13 @@
  "@type": "sc:Dataset",
  "conformsTo": "http://mlcommons.org/croissant/1.0",
  "name": "meta-analysis-cz",
- "version": "2.0.0",
- "description": "Estimate-level data from meta-analyses in economics and the social sciences. 46 datasets containing 67,606 converted source rows and 58,405 harmonisable estimates after each paper's reproducible filters, each with the hand-coded study and design characteristics collected for the original paper. LICENCE: everything here is CC BY 4.0, including the underlying research data. Free to use, adapt, and redistribute, including commercially and as training data for machine-learning models. Credit is the only condition: cite the collection and the paper whose dataset you used.",
+ "version": "2.1.0",
+ "description": "Estimate-level data from meta-analyses in economics and the social sciences. 47 datasets containing 67,685 converted source rows and 58,484 harmonisable estimates after each paper's reproducible filters, each with the hand-coded study and design characteristics collected for the original paper. LICENCE: everything here is CC BY 4.0, including the underlying research data. Free to use, adapt, and redistribute, including commercially and as training data for machine-learning models. Credit is the only condition: cite the collection and the paper whose dataset you used.",
  "url": "https://meta-analysis.cz",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "citeAs": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678",
  "datePublished": "2026-08-04",
- "dateModified": "2026-09-07",
+ "dateModified": "2026-09-25",
  "keywords": [
   "meta-analysis",
   "publication bias",
@@ -444,6 +444,15 @@
   },
   {
    "@type": "cr:FileObject",
+   "@id": "social_comparison.parquet",
+   "name": "social_comparison.parquet",
+   "contentUrl": "https://meta-analysis.cz/data/v1/social_comparison/social_comparison.parquet",
+   "encodingFormat": "application/vnd.apache.parquet",
+   "sha256": "e888a4f06ab34df4f0e72c8d39a12c1bca0df71baf5af0b765ed9bfda9542601",
+   "contentSize": "8991"
+  },
+  {
+   "@type": "cr:FileObject",
    "@id": "spillovers.parquet",
    "name": "spillovers.parquet",
    "contentUrl": "https://meta-analysis.cz/data/v1/spillovers/spillovers.parquet",
@@ -494,8 +503,8 @@
    "description": "DERIVED AGGREGATE VIEW of the per-dataset files above, reshaped to a common schema. Rows are not additional to them.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.csv",
    "encodingFormat": "text/csv",
-   "sha256": "83d5efaf59f4afe6a88be913402b719f46d7774c96012c5354fd260f8e97f450",
-   "contentSize": "13128658"
+   "sha256": "0fa6caa6c28b9276f9f6dce722ca652e11263ee5cda813c0272e7d13b4aa4fa3",
+   "contentSize": "13146390"
   },
   {
    "@type": "cr:FileObject",
@@ -504,8 +513,8 @@
    "description": "The same derived aggregate view, as Parquet.",
    "contentUrl": "https://meta-analysis.cz/data/v1/estimates_harmonised.parquet",
    "encodingFormat": "application/vnd.apache.parquet",
-   "sha256": "8f8e05d536226245258f9e2f208a8eabf7506c506c21ae75d345f575a86d675a",
-   "contentSize": "1786374"
+   "sha256": "caec2e7fbaef41cf882b4773166e9a73ea411141cdb2094fa1eeadb82840f63b",
+   "contentSize": "1787797"
   }
  ],
  "recordSet": [
@@ -45384,6 +45393,87 @@
        "column": "reference"
       }
      }
+    }
+   ]
+  },
+  {
+   "@type": "cr:RecordSet",
+   "@id": "social_comparison",
+   "name": "social_comparison",
+   "description": "Adjusting for Publication Bias Reveals Evidence Against Social Comparison As a Behaviour Change Technique Across the Behavioural Sciences",
+   "isBasedOn": "https://doi.org/10.31234/osf.io/jtv5d_v1",
+   "field": [
+    {
+     "@type": "cr:Field",
+     "@id": "social_comparison/yi",
+     "name": "yi",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "social_comparison.parquet"
+      },
+      "extract": {
+       "column": "yi"
+      }
+     },
+     "description": "verified role: effect_estimate"
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "social_comparison/vi",
+     "name": "vi",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "social_comparison.parquet"
+      },
+      "extract": {
+       "column": "vi"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "social_comparison/dataset",
+     "name": "dataset",
+     "dataType": "sc:Text",
+     "source": {
+      "fileObject": {
+       "@id": "social_comparison.parquet"
+      },
+      "extract": {
+       "column": "dataset"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "social_comparison/reference",
+     "name": "reference",
+     "dataType": "sc:Text",
+     "source": {
+      "fileObject": {
+       "@id": "social_comparison.parquet"
+      },
+      "extract": {
+       "column": "reference"
+      }
+     }
+    },
+    {
+     "@type": "cr:Field",
+     "@id": "social_comparison/sei",
+     "name": "sei",
+     "dataType": "sc:Float",
+     "source": {
+      "fileObject": {
+       "@id": "social_comparison.parquet"
+      },
+      "extract": {
+       "column": "sei"
+      }
+     },
+     "description": "verified role: standard_error"
     }
    ]
   },

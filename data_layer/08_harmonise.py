@@ -402,6 +402,16 @@ for proj in sorted(man):
     out["t_stat"]=out["effect"]/out["se"]
     out["precision"]=1.0/out["se"]
     # Whether the paper's own analysis kept this row, and if not, which clause removed it.
+    # A file can stack comparisons its paper analyses separately and never pools, and names
+    # each in a column of its own (social_comparison: against passive and against active
+    # control conditions). The override maps that column to short outcome_variant labels, as
+    # frisch's margins and reforms' horizons are told apart; every row must get one.
+    _vf=o.get("variant_from")
+    if _vf:
+        _lab=df[_vf["column"]].map(_vf["labels"])
+        if _lab.isna().any():
+            raise SystemExit(f"{proj}: variant_from leaves {int(_lab.isna().sum())} rows unlabelled")
+        df["outcome_variant"]=_lab
     out["outcome_variant"]=(df["outcome_variant"][keep].values
                             if "outcome_variant" in df.columns else None)
     out["in_paper_sample"]=_in_sample[keep].values
@@ -458,6 +468,17 @@ for proj in sorted(man):
                     vals=vals.round()
                 out[concept]=vals.values
         else: out[concept]=np.nan
+    # A label column can name more than the study. social_comparison's `reference` reads
+    # "Bator et al. (2019) study 1; electricity usage (not restricted); electricity usage", one
+    # string per comparison, so factorising it would count every arm of one paper as a study.
+    # The override's pattern keeps the part that names the study; a row it cannot read stops
+    # the build rather than becoming a study of its own.
+    _slp=o.get("study_label_pattern")
+    if _slp and "study_label" in out:
+        _sl=pd.Series(out["study_label"]).astype(str).str.extract(_slp,expand=False).str.strip()
+        if _sl.isna().any():
+            raise SystemExit(f"{proj}: study_label_pattern does not match {int(_sl.isna().sum())} rows")
+        out["study_label"]=_sl.values
     if out["study_id"].isna().all() and "study_label" in out:
         out["study_id"]=pd.factorize(out["study_label"])[0]+1
     out["estimate_id"]=out.groupby("dataset").cumcount()+1

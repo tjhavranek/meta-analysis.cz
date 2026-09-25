@@ -425,6 +425,16 @@
   "sheet": null
  },
  {
+  "project": "social_comparison",
+  "status": "ok",
+  "rows": 79,
+  "cols": 5,
+  "parquet_bytes": 8991,
+  "csv_bytes": 13127,
+  "source": "scBCT-short.csv",
+  "sheet": null
+ },
+ {
   "project": "spillovers",
   "status": "ok",
   "rows": 4147,

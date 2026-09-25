@@ -7275,7 +7275,16 @@
      "title": "REFERENCES",
      "anchor": "sec-references"
     }
-   ]
+   ],
+   "headline_question": "Does social comparison change behaviour?",
+   "headline": "g = 0.00 against passive and 0.01 against active control conditions, with moderate evidence against any effect",
+   "headline_url": "https://meta-analysis.cz/results/#social_comparison",
+   "data": {
+    "parquet": "https://meta-analysis.cz/data/v1/social_comparison/social_comparison.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/social_comparison/social_comparison.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/social_comparison.json"
+   },
+   "codebook_url": "https://meta-analysis.cz/api/v1/codebooks/social_comparison.json"
   },
   {
    "project": "spillovers",

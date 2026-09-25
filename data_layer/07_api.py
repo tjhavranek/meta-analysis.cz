@@ -8,20 +8,20 @@ OUT=os.path.join(WORK,"out"); BASE="https://meta-analysis.cz"
 VERSION="1.0.0"; DATA_V="v1"
 # The DATA artefact's version, in ONE place. It was hardcoded in four, which is how a
 # consumer once saw the Croissant record say 1.0.0 while the table said 0.9.0-beta.
-DATA_VERSION="2.0.0"; DATA_STATUS="stable"
+DATA_VERSION="2.1.0"; DATA_STATUS="stable"
 # The release date of THIS version, in one place beside it. It was a literal in the
 # croissant record and went four releases stale there: the record said 2.0.0 while
 # dateModified still carried 1.1.1's 2026-08-21, which is what a dataset crawler reads
 # to decide whether anything has changed.
-DATA_RELEASED="2026-09-07"
+DATA_RELEASED="2026-09-25"
 # The VERSION DOI, set once Zenodo minted it. None until deposited -- publishing the
 # previous version's DOI beside a new version tells a citing reader the wrong thing.
-# Reserved on the 1.3.0 draft before the bundle was built, so the archived CITATION.cff
-# inside the zip names the identifier the record is published under. 1.3.0 adds the intensive
-# margin to frisch, which had published only the extensive one: 1,471 rows over 57 studies.
-# 1.2.1 is 10.5281/zenodo.22520929 and is superseded; the full history is in CITATION.cff.
-DATA_DOI="10.5281/zenodo.22647394"
-                                  # before the bundle was built, so the archived files name it.
+# NULL until 2.1.0 is deposited (the owner makes the Zenodo version). 2.1.0 adds
+# social_comparison as the 47th dataset and 43rd pooled literature, and carries the label
+# changes made since 2.0.0 (effect_units for five literatures, chemnitz listed as excluded).
+# 2.0.0 is 10.5281/zenodo.22647394 and is superseded; the full history is in CITATION.cff.
+# Reserve the DOI on the draft before the bundle is built, so the archived files name it.
+DATA_DOI=None
 
 papers={p["project"]:p for p in json.load(open(os.path.join(SITE,"tools","papers.json"),encoding="utf-8"))}
 man={m["project"]:m for m in json.load(open(os.path.join(WORK,"convert_manifest.json"),encoding="utf-8"))}
@@ -481,22 +481,6 @@ excluded += [
                          "literature (1,647 estimates from 226 studies, columns effect, se, "
                          "n_obs, study_id), published for the MAER-Net 2026 PhD workshop. "
                          "Its estimates are already in the catalogue under 'electricity'.")),
-  # Temporary: an estimate-level dataset that will join the catalogue and the homepage
-  # board in its own commit. Replace this entry when it is integrated.
-  dict(id="social_comparison",
-       reason="estimate-level dataset awaiting integration into the data layer and the homepage board",
-       paper=dict(title="Adjusting for Publication Bias Reveals Evidence Against Social Comparison "
-                        "As a Behaviour Change Technique Across the Behavioural Sciences",
-                  page_title="Adjusting for Publication Bias Reveals Evidence Against Social "
-                             "Comparison As a Behaviour Change Technique Across the Behavioural Sciences",
-                  url=f"{BASE}/social_comparison/"),
-       excluded_because=("social_comparison_replication.zip is the public OSF package of the "
-                         "reanalysis (osf.io/rj2g5). Its main table, scBCT-short.csv, holds 79 "
-                         "effects (37 against passive and 42 against active control conditions) "
-                         "as Hedges' g with variance and standard error; scBCT.csv stacks seven "
-                         "analysis subsets of the same effects, and the xlsx is the coded data of "
-                         "the meta-analysis being re-examined. Not yet harmonised, so not yet "
-                         "counted.")),
   dict(id="money_demand",
        reason="replication package of a 2014 article, not yet curated for the data layer",
        paper=dict(title="A Meta-Analysis of the Income Elasticity of Money Demand",

@@ -1,5 +1,15 @@
 # Zenodo deposit — what to upload, and what must never be uploaded
 
+> **STATUS: 2.1.0 DEPOSIT PENDING (the owner makes the Zenodo version).** The site serves
+> 2.1.0 since 25 September 2026: `social_comparison` (Bartos, Irsova, Havranek and
+> Wagenmakers 2025) joins as the 47th dataset and 43rd pooled literature, 79 Hedges' g effects,
+> taking the table to 52,879 rows. It also folds in the label changes below (`effect_units` for
+> five literatures, `chemnitz` under `excluded_resources`). `DATA_DOI` is None in 07_api.py.
+> To deposit: "New version" on the concept record (not "New upload"), reserve the DOI, put it
+> in DATA_DOI, `.zenodo.json`, `citation.cff` and DEPOSITS in 91_distribution.py, run the full
+> rebuild and `12_zenodo_bundle.py`, upload the one zip, and correct the live record's
+> description (it still says the table grew "from 1.3.0's 52,800 rows").
+>
 > **STATUS: 2.0.0 PUBLISHED.** https://doi.org/10.5281/zenodo.22647394, uploaded and
 > verified 2026-09-07: one file, md5 68dcaf34ab3e19aa47c1f7786a8a64b6, byte-identical
 > to the local build. 1.3.0 and earlier are superseded.

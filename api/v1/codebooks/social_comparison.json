@@ -1,0 +1,86 @@
+{
+ "project": "social_comparison",
+ "source_file": "scBCT-short.csv",
+ "source_archive": "social_comparison_replication.zip",
+ "source_sheet": null,
+ "n_rows": 79,
+ "n_columns": 5,
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "columns": [
+  {
+   "name": "yi",
+   "normalized": "yi",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 79,
+   "role": "effect_estimate",
+   "stats": {
+    "min": -0.465487,
+    "p25": 0.054076,
+    "median": 0.187845,
+    "p75": 0.42407,
+    "max": 1.131275,
+    "mean": 0.266012,
+    "sd": 0.308574
+   }
+  },
+  {
+   "name": "vi",
+   "normalized": "vi",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 79,
+   "stats": {
+    "min": 5.2e-05,
+    "p25": 0.007104,
+    "median": 0.022764,
+    "p75": 0.064327,
+    "max": 0.167183,
+    "mean": 0.037301,
+    "sd": 0.04044
+   }
+  },
+  {
+   "name": "dataset",
+   "normalized": "dataset",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 2,
+   "top_values": [
+    "SC-BCTs versus active control conditions",
+    "SC-BCTs versus passive control conditions"
+   ]
+  },
+  {
+   "name": "reference",
+   "normalized": "reference",
+   "dtype": "str",
+   "n_missing": 0,
+   "n_unique": 74,
+   "top_values": [
+    "Ferraro & Price (2013); water usage (not restricted); water usage",
+    "Lewis et al. (2023); learning performance (downward); peak velocity",
+    "Mahler (2018); sun-caused skin damage (upward); skin protection behaviour",
+    "Mahler et al. (2010); sun-caused skin damage (upward); skin protection behaviour",
+    "Qin & Chen (2021); electricity usage (not restricted); electricity usage"
+   ]
+  },
+  {
+   "name": "sei",
+   "normalized": "sei",
+   "dtype": "float64",
+   "n_missing": 0,
+   "n_unique": 79,
+   "role": "standard_error",
+   "stats": {
+    "min": 0.007207,
+    "p25": 0.084029,
+    "median": 0.150877,
+    "p75": 0.253628,
+    "max": 0.40888,
+    "mean": 0.163281,
+    "sd": 0.103813
+   }
+  }
+ ]
+}

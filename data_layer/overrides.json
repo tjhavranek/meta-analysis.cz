@@ -495,5 +495,22 @@
   "note": "The file also carries the RAW reported pair, e/se, which is what each primary study printed. Those coefficients run over different dependent variables and different units, which is why the paper transforms them to partial correlations before pooling anything; do not analyse e/se across studies. `good` marks the 146 estimates the paper calls comparable and reports separately, and `invperstudy` is the per-study inverse count used as a weight in the paper's third specification. Both are kept in the per-dataset file.",
   "evidence": "paper's replication code",
   "audit_status": "domain_reviewed"
+ },
+ "social_comparison": {
+  "effect": "yi",
+  "se": "sei",
+  "units": "standardised mean difference",
+  "study_label_pattern": "^(.*?\\((?:\\d{4}|in print)\\))",
+  "variant_from": {
+   "column": "dataset",
+   "labels": {
+    "SC-BCTs versus passive control conditions": "vs_passive_control",
+    "SC-BCTs versus active control conditions": "vs_active_control"
+   }
+  },
+  "verified_by": "analysis.R is the paper's replication code. It reads the OSF workbook of Hoppen and colleagues' meta-analysis, fits rma(yi, vi) and RoBMA(d = yi, se = sqrt(vi)) separately for each comparison, and writes the stacked rows with sei = sqrt(vi) (analysis.R:251). scBCT-short.csv holds the two post-intervention comparisons the paper headlines: 37 effects against passive and 42 against active control conditions, 79 in all. sei equals sqrt(vi) to within 3e-6 on every row, and a REML random-effects fit of each comparison reproduces the paper's unadjusted estimates exactly: 0.170 [0.11, 0.23] against passive and 0.232 [0.15, 0.31] against active controls, against its 'g = 0.17, 95% CI [0.11, 0.23]' and 'g = 0.23, 95% CI [0.15, 0.31]'.",
+  "note": "The two comparisons are never pooled in the paper, which corrects each for publication bias on its own; outcome_variant tells them apart. `reference` names the study, the outcome and, where a study has several, the arm, one string per comparison; study_id is the study part of it (author and year, 63 studies), so the arms of one experiment are not counted as separate studies. The file carries no sample size, so MAIVE cannot be run on it.",
+  "evidence": "paper's replication code",
+  "audit_status": "domain_reviewed"
  }
 }

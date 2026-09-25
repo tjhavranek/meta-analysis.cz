@@ -2,7 +2,7 @@
  "name": "meta-analysis.cz data API",
  "version": "1.0.0",
  "api_version": "1.0.0",
- "data_version": "2.0.0",
+ "data_version": "2.1.0",
  "version_note": "version and api_version describe this INTERFACE. data_version describes the harmonised table, and is what croissant.json reports. They move independently.",
  "description": "Estimate-level datasets from meta-analyses in economics and the social sciences, with the hand-coded study characteristics collected for each paper.",
  "license": {
@@ -14,11 +14,11 @@
   "machine_readable": true
  },
  "cite_as": "Havranek, T. and Z. Irsova (2026). meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo. https://doi.org/10.5281/zenodo.21773678",
- "doi": "10.5281/zenodo.22647394",
- "doi_url": "https://doi.org/10.5281/zenodo.22647394",
+ "doi": null,
+ "doi_url": null,
  "concept_doi": "10.5281/zenodo.21773678",
  "concept_doi_url": "https://doi.org/10.5281/zenodo.21773678",
- "doi_note": "Cite the CONCEPT DOI in prose - it always resolves to the newest version. Cite the version DOI in a replication package, where you need the exact files.",
+ "doi_note": "Cite the CONCEPT DOI: it always resolves to the newest archived version. This table, 2.1.0, is not yet deposited, so it has no version DOI and the newest deposit is the previous version. A replication package needing these exact files should cite the concept DOI and record the date.",
  "endpoints": {
   "datasets": "https://meta-analysis.cz/api/v1/datasets.json",
   "codebook": "https://meta-analysis.cz/api/v1/codebooks/{id}.json",
@@ -29,21 +29,21 @@
   "headline_estimates": "https://meta-analysis.cz/estimates.csv"
  },
  "counts": {
-  "datasets": 46,
-  "rows_in_source_files": 67606,
-  "estimates_in_analysis_samples": 58405,
-  "estimates_in_paper_samples": 49664,
-  "rows_carried": 52800,
-  "estimates_in_harmonised_table": 52800,
-  "literatures_in_harmonised_table": 42,
-  "in_harmonised_table": 42,
-  "counts_explained": "rows_in_source_files counts every row of the 46 converted files. estimates_in_analysis_samples applies each paper's own filters where its replication code defines them as a row filter on the stored scale, and otherwise keeps the rows carrying a usable standard error; it is what the catalogue table shows. estimates_in_harmonised_table additionally drops literatures that duplicate another exactly, overlap one already included, or lack per-estimate precision."
+  "datasets": 47,
+  "rows_in_source_files": 67685,
+  "estimates_in_analysis_samples": 58484,
+  "estimates_in_paper_samples": 49743,
+  "rows_carried": 52879,
+  "estimates_in_harmonised_table": 52879,
+  "literatures_in_harmonised_table": 43,
+  "in_harmonised_table": 43,
+  "counts_explained": "rows_in_source_files counts every row of the 47 converted files. estimates_in_analysis_samples applies each paper's own filters where its replication code defines them as a row filter on the stored scale, and otherwise keeps the rows carrying a usable standard error; it is what the catalogue table shows. estimates_in_harmonised_table additionally drops literatures that duplicate another exactly, overlap one already included, or lack per-estimate precision."
  },
  "harmonised_table": {
-  "version": "2.0.0",
+  "version": "2.1.0",
   "status": "stable",
-  "n_rows": 52800,
-  "n_literatures": 42,
+  "n_rows": 52879,
+  "n_literatures": 43,
   "columns": [
    "dataset",
    "study_id",
@@ -182,16 +182,6 @@
     "url": "https://meta-analysis.cz/electricity/"
    },
    "excluded_because": "electricity_sr.csv is the short-run subset of the electricity literature (1,647 estimates from 226 studies, columns effect, se, n_obs, study_id), published for the MAER-Net 2026 PhD workshop. Its estimates are already in the catalogue under 'electricity'."
-  },
-  {
-   "id": "social_comparison",
-   "reason": "estimate-level dataset awaiting integration into the data layer and the homepage board",
-   "paper": {
-    "title": "Adjusting for Publication Bias Reveals Evidence Against Social Comparison As a Behaviour Change Technique Across the Behavioural Sciences",
-    "page_title": "Adjusting for Publication Bias Reveals Evidence Against Social Comparison As a Behaviour Change Technique Across the Behavioural Sciences",
-    "url": "https://meta-analysis.cz/social_comparison/"
-   },
-   "excluded_because": "social_comparison_replication.zip is the public OSF package of the reanalysis (osf.io/rj2g5). Its main table, scBCT-short.csv, holds 79 effects (37 against passive and 42 against active control conditions) as Hedges' g with variance and standard error; scBCT.csv stacks seven analysis subsets of the same effects, and the xlsx is the coded data of the meta-analysis being re-examined. Not yet harmonised, so not yet counted."
   },
   {
    "id": "money_demand",
@@ -2552,6 +2542,65 @@
    "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
    "max_precision_weight_share": 0.0555,
    "audit_status": "code_traced"
+  },
+  {
+   "id": "social_comparison",
+   "paper": {
+    "title": "Adjusting for Publication Bias Reveals Evidence Against Social Comparison As a Behaviour Change Technique Across the Behavioural Sciences",
+    "page_title": "Adjusting for Publication Bias Reveals Evidence Against Social Comparison As a Behaviour Change Technique Across the Behavioural Sciences",
+    "literature": "Social Comparison as a Behaviour Change Technique",
+    "authors": [
+     "Frantisek Bartos",
+     "Zuzana Irsova",
+     "Tomas Havranek",
+     "Eric-Jan Wagenmakers"
+    ],
+    "year": 2025,
+    "journal": null,
+    "doi": "https://doi.org/10.31234/osf.io/jtv5d_v1",
+    "url": "https://meta-analysis.cz/social_comparison/"
+   },
+   "description": "Re-analysis of a meta-analysis of 79 randomized controlled trials: once publication bias is adjusted for, the effect of social comparison as a behaviour change technique disappears and the data show moderate evidence against it.",
+   "n_estimates": 79,
+   "n_variables": 5,
+   "n_estimates_in_literature": 79,
+   "source_file": "https://meta-analysis.cz/social_comparison/social_comparison_replication.zip",
+   "source_member": "scBCT-short.csv",
+   "source_sheet": null,
+   "files": {
+    "parquet": "https://meta-analysis.cz/data/v1/social_comparison/social_comparison.parquet",
+    "csv": "https://meta-analysis.cz/data/v1/social_comparison/social_comparison.csv",
+    "codebook": "https://meta-analysis.cz/api/v1/codebooks/social_comparison.json"
+   },
+   "core_columns": {
+    "effect": "yi",
+    "standard_error": "sei",
+    "standard_error_note": null,
+    "evidence": "paper's replication code",
+    "sample_size": null,
+    "sample_size_note": "no sample-size column in this dataset; MAIVE cannot be run on it without supplying one"
+   },
+   "effect_units": "standardised mean difference",
+   "direction_note": "Hedges' g. Positive values mean the behaviour moved in the direction the intervention intended. The rows stack two comparisons the paper analyses separately, against passive and against active control conditions, told apart by outcome_variant.",
+   "column_mapping_verified_by": "analysis.R is the paper's replication code. It reads the OSF workbook of Hoppen and colleagues' meta-analysis, fits rma(yi, vi) and RoBMA(d = yi, se = sqrt(vi)) separately for each comparison, and writes the stacked rows with sei = sqrt(vi) (analysis.R:251). scBCT-short.csv holds the two post-intervention comparisons the paper headlines: 37 effects against passive and 42 against active control conditions, 79 in all. sei equals sqrt(vi) to within 3e-6 on every row, and a REML random-effects fit of each comparison reproduces the paper's unadjusted estimates exactly: 0.170 [0.11, 0.23] against passive and 0.232 [0.15, 0.31] against active controls, against its 'g = 0.17, 95% CI [0.11, 0.23]' and 'g = 0.23, 95% CI [0.15, 0.31]'.",
+   "in_harmonised_table": true,
+   "reconciliation": {
+    "n_estimates_reported_in_paper": null,
+    "n_rows_in_harmonised_table": 79,
+    "note": null
+   },
+   "excluded_from_harmonised_because": null,
+   "duplicate_of": null,
+   "overlaps_with": null,
+   "same_literature_as": null,
+   "excluded_to_avoid_double_counting": false,
+   "shares_source_file_with": null,
+   "rights_status": "cc-by-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "rights_note": "CC BY 4.0. Free to use, adapt, and redistribute, including commercially and including as training data. The only condition is credit: cite the paper named in this entry.",
+   "max_precision_weight_share": 0.2516,
+   "audit_status": "domain_reviewed",
+   "note": "The two comparisons are never pooled in the paper, which corrects each for publication bias on its own; outcome_variant tells them apart. `reference` names the study, the outcome and, where a study has several, the arm, one string per comparison; study_id is the study part of it (author and year, 63 studies), so the arms of one experiment are not counted as separate studies. The file carries no sample size, so MAIVE cannot be run on it."
   },
   {
    "id": "spillovers",

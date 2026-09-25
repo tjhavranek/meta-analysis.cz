@@ -1,0 +1,80 @@
+yi,vi,dataset,reference,sei
+0.220639909,0.03043547,SC-BCTs versus passive control conditions,"Ambasta et al. (2023); orders, costs and lab free patients (not restricted); ordered routine laboratory tests",0.174457646
+0.128449435,0.005946958,SC-BCTs versus passive control conditions,Bator et al. (2019) study 2; electricity usage (not restricted); electricity usage,0.077116522
+0.118755751,0.000770719,SC-BCTs versus passive control conditions,Brent et al. (2020); water usage (intended upward); water usage; [two letters arm],0.027761819
+0.44,6.97e-05,SC-BCTs versus passive control conditions,Chen et al. (2017); traffic violations (not restricted); traffic violations likelihood (extensive); [own car brand arm],0.008347658
+0.419886821,0.047561825,SC-BCTs versus passive control conditions,Chen et al. (2023); electricity usage (not restricted); electricity usage; [SC with other team arm],0.218086738
+0.086123597,0.022197648,SC-BCTs versus passive control conditions,De Dominicis et al. (2019); electricity usage (not restricted); electricity usage,0.148988752
+0.323984876,0.04277037,SC-BCTs versus passive control conditions,Dohnke et al. (2018); healthy diet (not restricted); consumption of sweets in the last 24h,0.206809986
+0.21504455,0.015779121,SC-BCTs versus passive control conditions,Earnhart & Ferraro (2021); waste water discharge (not restricted); waste water discharge,0.12561497
+0.328,0.00468,SC-BCTs versus passive control conditions,Feizi & Khatabiroudi (2023); water usage (not restricted); water usage,0.068410526
+0.055786224,9.96e-05,SC-BCTs versus passive control conditions,Ferraro & Price (2013); water usage (not restricted); water usage,0.009981109
+0.010265431,0.004635061,SC-BCTs versus passive control conditions,Hrozencik et al. (2023) study in Colorado; water usage (not restricted); water usage,0.068081286
+0.016255559,0.001677966,SC-BCTs versus passive control conditions,Hrozencik et al. (2023) study in Kansas; water usage (not restricted); water usage,0.040962979
+0.028,0.000108589,SC-BCTs versus passive control conditions,Kim & Kaemingk (2021); electricity usage (upward); eletricity usage; [usage in money arm],0.01042061
+0.331,0.018631033,SC-BCTs versus passive control conditions,Klege et al. (2022); electricity usage (intended upward); electricity usage; [SC + peer leader arm],0.136495541
+0.236777339,0.022763735,SC-BCTs versus passive control conditions,Krampen (1987); maths performance (not restricted); math grade,0.150876557
+0.195448532,0.01390108,SC-BCTs versus passive control conditions,LaBrie et al. (2013); alcohol consumption (intended upward); alcohol consumption,0.117902842
+0.428252876,0.033680117,SC-BCTs versus passive control conditions,Lewis & Neighbors (2007); alcohol consumption (upward); alcohol consumption,0.183521433
+0.18679677,0.026303765,SC-BCTs versus passive control conditions,Lewis et al. (2007); alcohol consumption (upward); alcohol consumption,0.162184356
+0.323973865,0.126639985,SC-BCTs versus passive control conditions,Lewis et al. (2023); learning performance (downward); peak velocity,0.355865122
+0.152359253,0.000425722,SC-BCTs versus passive control conditions,Lurbé et al. (2023); water usage (not restricted); water usage,0.020633043
+0.887543562,0.081469654,SC-BCTs versus passive control conditions,Mahler (2018); sun-caused skin damage (upward); skin protection behaviour,0.285428894
+0.240771209,0.028176091,SC-BCTs versus passive control conditions,Mahler et al. (1999); diet and exercise compliance after coronary bypass surgery (upward); light exercise; [more attainable coping arm],0.167857353
+0.501071804,0.064461507,SC-BCTs versus passive control conditions,Mahler et al. (2010); sun-caused skin damage (upward); skin protection behaviour,0.253892709
+0.108218989,0.036610229,SC-BCTs versus passive control conditions,Miller et al. (2016); alcohol consumption (not restricted); drinks consumed per week,0.191337997
+0.078,0.018628867,SC-BCTs versus passive control conditions,Myers & Souza (2020); electricity usage (not restricted); electricity usage; [individual feedback arm],0.136487609
+0.026536529,0.012993086,SC-BCTs versus passive control conditions,Neighbors et al. (2010); alcohol consumption (intended upward); alcohol consumption,0.113987221
+0.020687025,0.010419768,SC-BCTs versus passive control conditions,Neighbors et al. (2016); alcohol consumption (intended upward); drinks past 30 days,0.102077263
+0.103606441,0.022031424,SC-BCTs versus passive control conditions,Neighbors et al. (2019); alcohol consumption (intended upward); alcohol consumption,0.148429862
+0.037102686,0.053722025,SC-BCTs versus passive control conditions,Otaki et al. (2022); water usage (not restricted); water usage; [narrow range arm],0.231780123
+0.037516418,0.010391508,SC-BCTs versus passive control conditions,Qin & Chen (2021); electricity usage (not restricted); electricity usage,0.101938748
+0.336887108,0.036927661,SC-BCTs versus passive control conditions,Steers et al. (2016); alcohol consumption (intended upward); alcohol consumption,0.192165713
+0.53052554,0.015469096,SC-BCTs versus passive control conditions,Vasilaky et al. (2023); water pumping hours (not restricted); water pumping hours,0.124374819
+0.128008659,0.043587873,SC-BCTs versus passive control conditions,Young & Neighbors (2019); alcohol consumption (not restricted); drinks per week,0.20877709
+-0.465486994,0.064192798,SC-BCTs versus passive control conditions,Zhang et al. (2023); electricity usage (not restricted); electricity usage,0.253362977
+0.119710464,0.022067826,SC-BCTs versus passive control conditions,Zhu et al. (2023); energy usage (not restricted); energy usage [first-grade sample arms compared],0.148552435
+-0.33219731,0.024552231,SC-BCTs versus passive control conditions,Zhu et al. (2023); energy usage (not restricted); energy usage [second-grade sample arms compared],0.156691517
+0.829041264,0.070962351,SC-BCTs versus passive control conditions,Zhu et al. (2023); energy usage (not restricted); energy usage [third-grade sample arms compared],0.266387595
+0.027024403,0.008940735,SC-BCTs versus active control conditions,Bator et al. (2019) study 1; electricity usage (not restricted); electricity usage,0.094555461
+0.245480443,0.034445577,SC-BCTs versus active control conditions,Brülisauer et al. (2020); electricity usage (not restricted); electricity usage; [own apartment arm],0.185595197
+0.332025453,0.031376384,SC-BCTs versus active control conditions,Cadigan et al. (2019); alcohol consumption (not restricted); drinks per week,0.177133804
+0.977,0.070018353,SC-BCTs versus active control conditions,Chapman et al. (2016); steps (not restricted); objective steps,0.264609812
+0.062886235,0.011485205,SC-BCTs versus active control conditions,Chen et al. (2010); movie ratings (not restricted); movie ratings; [movie ratings arm],0.107169049
+0.041871368,0.030805132,SC-BCTs versus active control conditions,Chevalier et al. (2023); sun protection (not restricted); sun exposure and sun protection [SunSmart Information arm],0.175513909
+0.183481996,0.022269235,SC-BCTs versus active control conditions,De Dominicis et al. (2019); electricity usage (not restricted); electricity usage; [vs. norms + feedback arm],0.1492288
+0.034047942,0.000400586,SC-BCTs versus active control conditions,Eyring & Narayanan (2018) study 1; course activity level (intended upward); course activity level; [activity level arm],0.020014641
+0.081173118,0.001353949,SC-BCTs versus active control conditions,Eyring & Narayanan (2018) study 2; grade (intended upward); grade; [grade arm],0.03679605
+0.052365126,0.000171358,SC-BCTs versus active control conditions,Ferraro & Price (2013); water usage (not restricted); water usage,0.013090362
+0.499423529,0.008208523,SC-BCTs versus active control conditions,Fleur et al. (2023) study 1; grades (intended upward); final grade,0.090600902
+0.466847653,0.07221218,SC-BCTs versus active control conditions,Fleur et al. (2023) study 2; grades (intended upward); final grade,0.268723241
+0.8987,0.167183258,SC-BCTs versus active control conditions,Goncalves et al. (2018); basketball free throw (downward); basketball free throw,0.408880494
+0.252200377,0.027806847,SC-BCTs versus active control conditions,Hamamura et al. (2023); smartphone use time (not restricted); problematic smartphone use,0.166753851
+0.356,0.000530774,SC-BCTs versus active control conditions,Holladay et al. (2019); electricity usage in kWh (not restricted); energy-efficient installations; [usage in dollar/month arm],0.02303853
+0.727202709,0.067705079,SC-BCTs versus active control conditions,Hong et al. (2022); writing progress (upward); writing progress; [best example arm],0.260201996
+0.065179541,0.013179722,SC-BCTs versus active control conditions,Kazukauskas et al. (2021); electricity usage (not restricted); electricity usage; [electricity usage arm],0.114802969
+0.211291995,0.005384721,SC-BCTs versus active control conditions,Kitamura & Yamada (in print); time outside during lockdown (intended downward); time outside during lockdown; [emperor arm],0.073380659
+-0.019102894,0.00515981,SC-BCTs versus active control conditions,Kitamura & Yamada (in print); time outside during lockdown (intended downward); time outside during lockdown; [prime minister arm],0.071831815
+0.056709848,0.005999534,SC-BCTs versus active control conditions,Kitamura & Yamada (in print); time outside during lockdown (upward); time outside during lockdown; [emperor arm],0.077456656
+0.059739943,0.005904186,SC-BCTs versus active control conditions,Kitamura & Yamada (in print); time outside during lockdown (upward); time outside during lockdown; [prime minister arm],0.076838699
+0.8293151,0.128169725,SC-BCTs versus active control conditions,Kollöffel & de Jong (2016); performance in trigonometry exercises (not restricted); test performance,0.358007996
+0.771105058,0.02402472,SC-BCTs versus active control conditions,Krampen (1987); maths performance (not restricted); math grade; [vs. temporal feedback arm],0.154999098
+0.580997311,0.130274342,SC-BCTs versus active control conditions,Lewis et al. (2023); learning performance (downward); peak velocity,0.360935371
+1.131275242,0.082855211,SC-BCTs versus active control conditions,Liu & Lachman (2021); physical acticity (not restricted); % change in mean weekly steps,0.287845812
+0.129996763,0.02753764,SC-BCTs versus active control conditions,Magnan et al. (2020); weekly exercise (upward); weekly exercise; [less attainable SC arm vs. feedback arm],0.165944691
+0.412177276,0.078556636,SC-BCTs versus active control conditions,Mahler (2018); sun-caused skin damage (upward); skin protection behaviour,0.280279567
+-0.12699506,0.064713396,SC-BCTs versus active control conditions,Mahler et al. (2010); sun-caused skin damage (upward); skin protection behaviour,0.254388278
+0.333178498,0.07395346,SC-BCTs versus active control conditions,Max et al. (2016); virtual bike ride exercise (upward); exercise persistence; [fatiguing partner arm],0.271943854
+1.079464781,0.145121955,SC-BCTs versus active control conditions,Meng et al. (2017); diet (intended upward); fruit and vegetable consumption; [ideal consuming peers arm],0.380948756
+0.670136384,0.156667996,SC-BCTs versus active control conditions,Michinov & Primois (2005); brainstorm contribution (not restricted); productivity,0.395813082
+0.459312505,0.066284688,SC-BCTs versus active control conditions,Moseley et al. (2018); volunteering (intended upward); volunteering; [national sample top 20% arm],0.257458129
+0.029,5.19e-05,SC-BCTs versus active control conditions,Mukai et al. (2022); electricity usage (not restricted); electricity usage,0.007207317
+-0.180708963,0.083818425,SC-BCTs versus active control conditions,Mulgrew et al. (2018); exercise (not restricted); exercise behaviour,0.289514118
+0.007875231,0.01049942,SC-BCTs versus active control conditions,Qin & Chen (2021); electricity usage (not restricted); electricity usage,0.102466678
+0.042135872,0.031016497,SC-BCTs versus active control conditions,Reiff et al. (2022); physicians' work performance (intended upward); work performance,0.17611501
+0.511334348,0.010899689,SC-BCTs versus active control conditions,van der Werff & Lee (2021); waste production (not restricted); waste production; [vs. control condition arm],0.104401575
+0.136,0.00433546,SC-BCTs versus active control conditions,Villas-Boas et al. (2019); service participation (not restricted); service participation,0.065844207
+0.022513281,0.00021565,SC-BCTs versus active control conditions,Ye et al. (2022); revenue of taxi driving (not restricted); working days,0.014685032
+0.187845112,0.010045107,SC-BCTs versus active control conditions,Zhang et al. (2016); physical activity (not restricted); physical activity,0.100225283
+0.713390872,0.08521747,SC-BCTs versus active control conditions,Zhong & Xia (2022); robotics course performance (not restricted); robotics course performance; [vs. delayed reward arm],0.291920315
+0.230704594,0.106255879,SC-BCTs versus active control conditions,Zuckerman & Gal-Oz (2014) study 2; step count (not restricted); physical actitivity; [vs. quantified version arm],0.325969139

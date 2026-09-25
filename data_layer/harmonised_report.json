@@ -1,6 +1,6 @@
 {
- "n_rows": 52800,
- "n_datasets": 42,
+ "n_rows": 52879,
+ "n_datasets": 43,
  "columns": [
   "dataset",
   "study_id",
@@ -558,6 +558,19 @@
    "direction_note": "The stored `elasticity` column is the substitution elasticity on ALL 1,097 rows. It is not pre-transformed for any of them. What varies is which quantity the paper ANALYSES: skill.do line 16 computes `coefficient = -1/elasticity` from the stored column for every row, then keeps the stored elasticity where `inverted_estimate == 0` (414 rows, 24 studies) and the computed negative inverse where `inverted_estimate == 1` (683 rows, 77 studies, the paper's headline sample of 682). So to reproduce the paper's headline group you apply -1/x yourself; the column does not arrive already inverted. The paper's Table A2 reports each group on its own scale and both reproduce from the published file after the paper's 1/99 winsorisation: the direct group's stored elasticity gives 0.921 against a reported 0.921, and -1/stored on the inverted group gives -0.558 against a reported -0.554. Averaging the stored column across both groups is meaningful only as a statement about elasticities; averaging it as though the two groups were on different scales is not.",
    "n_studies": 81,
    "moderators": 15
+  },
+  "social_comparison": {
+   "included": true,
+   "n": 79,
+   "effect": "yi",
+   "se": "sei",
+   "se_is_derived": false,
+   "n_obs_col": null,
+   "n_obs_from_log": false,
+   "units": "standardised mean difference",
+   "direction_note": "Hedges' g. Positive values mean the behaviour moved in the direction the intervention intended. The rows stack two comparisons the paper analyses separately, against passive and against active control conditions, told apart by outcome_variant.",
+   "n_studies": 63,
+   "moderators": 3
   },
   "spillovers": {
    "included": true,

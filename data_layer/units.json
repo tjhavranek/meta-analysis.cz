@@ -180,5 +180,9 @@
  "finance_growth": {
   "units": "partial correlation coefficient",
   "direction_note": "Positive means financial development is associated with higher growth."
+ },
+ "social_comparison": {
+  "units": "standardised mean difference",
+  "direction_note": "Hedges' g. Positive values mean the behaviour moved in the direction the intervention intended. The rows stack two comparisons the paper analyses separately, against passive and against active control conditions, told apart by outcome_variant."
  }
 }

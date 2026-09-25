@@ -111,7 +111,7 @@ CHECKS = [
      lambda: (f(_derived_true()), pct(_derived_true()))),
 
     ("pub_year",
-     r"Populated on ([\d,]+) of ([\d,]+) rows \(([\d.]+)%\) from (\d+) of the 42 literatures, "
+     rf"Populated on ([\d,]+) of ([\d,]+) rows \(([\d.]+)%\) from (\d+) of the {NLIT} literatures, "
      r"spanning (\d+)",
      lambda: (f(cov("pub_year")), f(N), pct(cov("pub_year")), str(lits("pub_year")),
               str(int(d["pub_year"].min())))),
@@ -125,7 +125,7 @@ CHECKS = [
     ("impact_factor", r"([\d,]+) values are exactly 0",
      lambda: (f((d["impact_factor"] == 0).sum()),)),
 
-    ("published", r"Present on ([\d,]+) rows \(([\d.]+)%\) from just (\d+) of the 42",
+    ("published", rf"Present on ([\d,]+) rows \(([\d.]+)%\) from just (\d+) of the {NLIT}",
      lambda: (f(cov("published")), pct(cov("published")), str(lits("published")))),
     ("published", r"activism \(([\d,]+) rows\) and size \(([\d,]+) rows\)",
      lambda: (f(sub("activism")["published"].notna().sum()),
@@ -165,23 +165,23 @@ CHECKS = [
               f(sub("price_puzzle")["horizon"].notna().sum()),
               str(NLIT - lits("horizon")))),
 
-    ("is_panel", r"Only (\d+) of 42 literatures populate it \(([\d,]+) rows, ([\d.]+)%",
+    ("is_panel", rf"Only (\d+) of {NLIT} literatures populate it \(([\d,]+) rows, ([\d.]+)%",
      lambda: (str(lits("is_panel")), f(cov("is_panel")), pct(cov("is_panel")))),
     ("is_cross_section",
-     r"Populated for (\d+) of 42 literatures \(([\d,]+) rows, ([\d.]+)%",
+     rf"Populated for (\d+) of {NLIT} literatures \(([\d,]+) rows, ([\d.]+)%",
      lambda: (str(lits("is_cross_section")), f(cov("is_cross_section")),
               pct(cov("is_cross_section")))),
     ("is_time_series",
-     r"only (\d+) of 42 literatures carry it \(([\d,]+) rows, ([\d.]+)%",
+     rf"only (\d+) of {NLIT} literatures carry it \(([\d,]+) rows, ([\d.]+)%",
      lambda: (str(lits("is_time_series")), f(cov("is_time_series")),
               pct(cov("is_time_series")))),
 
-    ("freq_annual", r"Filled for (\d+) of 42 literatures \(([\d,]+) rows, ([\d.]+)%",
+    ("freq_annual", rf"Filled for (\d+) of {NLIT} literatures \(([\d,]+) rows, ([\d.]+)%",
      lambda: (str(lits("freq_annual")), f(cov("freq_annual")), pct(cov("freq_annual")))),
-    ("freq_quarterly", r"Present in (\d+) of 42 literatures \(([\d,]+) rows, ([\d.]+)%",
+    ("freq_quarterly", rf"Present in (\d+) of {NLIT} literatures \(([\d,]+) rows, ([\d.]+)%",
      lambda: (str(lits("freq_quarterly")), f(cov("freq_quarterly")),
               pct(cov("freq_quarterly")))),
-    ("freq_monthly", r"(\d+) of 42 literatures, ([\d,]+) rows \(([\d.]+)%",
+    ("freq_monthly", rf"(\d+) of {NLIT} literatures, ([\d,]+) rows \(([\d.]+)%",
      lambda: (str(lits("freq_monthly")), f(cov("freq_monthly")), pct(cov("freq_monthly")))),
     ("freq_monthly",
      r"([\d,]+) rows have freq_monthly, ([\d,]+) have freq_annual, and only ([\d,]+) have all three",
@@ -189,15 +189,15 @@ CHECKS = [
               f((d["freq_monthly"].notna() & d["freq_annual"].notna()
                  & d["freq_quarterly"].notna()).sum()))),
 
-    ("method_ols", r"filled for (\d+) of 42 literatures \(([\d,]+) rows, ([\d.]+)%",
+    ("method_ols", rf"filled for (\d+) of {NLIT} literatures \(([\d,]+) rows, ([\d.]+)%",
      lambda: (str(lits("method_ols")), f(cov("method_ols")), pct(cov("method_ols")))),
-    ("method_iv", r"Filled for (\d+) of 42 literatures \(([\d,]+) rows, ([\d.]+)%",
+    ("method_iv", rf"Filled for (\d+) of {NLIT} literatures \(([\d,]+) rows, ([\d.]+)%",
      lambda: (str(lits("method_iv")), f(cov("method_iv")), pct(cov("method_iv")))),
-    ("method_gmm", r"filled for (\d+) of 42 literatures, ([\d,]+) rows \(([\d.]+)%",
+    ("method_gmm", rf"filled for (\d+) of {NLIT} literatures, ([\d,]+) rows \(([\d.]+)%",
      lambda: (str(lits("method_gmm")), f(cov("method_gmm")), pct(cov("method_gmm")))),
-    ("method_ml", r"Filled for (\d+) of 42 literatures, ([\d,]+) rows \(([\d.]+)%",
+    ("method_ml", rf"Filled for (\d+) of {NLIT} literatures, ([\d,]+) rows \(([\d.]+)%",
      lambda: (str(lits("method_ml")), f(cov("method_ml")), pct(cov("method_ml")))),
-    ("method_fe", r"(\d+) of 42 literatures, ([\d,]+) rows \(([\d.]+)%",
+    ("method_fe", rf"(\d+) of {NLIT} literatures, ([\d,]+) rows \(([\d.]+)%",
      lambda: (str(lits("method_fe")), f(cov("method_fe")), pct(cov("method_fe")))),
 
     ("is_europe",

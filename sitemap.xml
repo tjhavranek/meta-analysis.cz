@@ -343,7 +343,7 @@
   <url><loc>https://meta-analysis.cz/about/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/chemnitz/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/chemnitz/slides/</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://meta-analysis.cz/datasets/</loc><lastmod>2026-09-12</lastmod></url>
+  <url><loc>https://meta-analysis.cz/datasets/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/impact/</loc><lastmod>2026-09-13</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/babis-stamiliardy-cnb-nezavislost/</loc><lastmod>2026-09-18</lastmod></url>
@@ -632,7 +632,7 @@
   <url><loc>https://meta-analysis.cz/papers/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/publications/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/publications/irsova/</loc><lastmod>2026-09-25</lastmod></url>
-  <url><loc>https://meta-analysis.cz/results/</loc><lastmod>2026-09-12</lastmod></url>
+  <url><loc>https://meta-analysis.cz/results/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/search/</loc><lastmod>2026-09-13</lastmod></url>
   <url><loc>https://meta-analysis.cz/teaching/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://meta-analysis.cz/teaching/christchurch-2025/</loc><lastmod>2026-09-14</lastmod></url>
@@ -644,11 +644,11 @@
   <url><loc>https://meta-analysis.cz/api/v1/datasets.json</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/papers.json</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/search-index.json</loc><lastmod>2026-09-25</lastmod></url>
-  <url><loc>https://meta-analysis.cz/api/v1/datapackage.json</loc><lastmod>2026-09-09</lastmod></url>
-  <url><loc>https://meta-analysis.cz/api/v1/croissant.json</loc><lastmod>2026-09-09</lastmod></url>
-  <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.csv</loc><lastmod>2026-09-09</lastmod></url>
-  <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.parquet</loc><lastmod>2026-09-09</lastmod></url>
-  <url><loc>https://meta-analysis.cz/estimates.csv</loc><lastmod>2026-09-04</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/datapackage.json</loc><lastmod>2026-09-25</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/croissant.json</loc><lastmod>2026-09-25</lastmod></url>
+  <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.csv</loc><lastmod>2026-09-25</lastmod></url>
+  <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.parquet</loc><lastmod>2026-09-25</lastmod></url>
+  <url><loc>https://meta-analysis.cz/estimates.csv</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/llms.txt</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/llms-full.txt</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/activism.json</loc><lastmod>2026-09-07</lastmod></url>
@@ -692,6 +692,7 @@
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/sigma.json</loc><lastmod>2026-09-04</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/size.json</loc><lastmod>2026-09-07</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/skill.json</loc><lastmod>2026-09-04</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/codebooks/social_comparison.json</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/spillovers.json</loc><lastmod>2026-09-04</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/students.json</loc><lastmod>2026-09-04</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/substitution.json</loc><lastmod>2026-09-04</lastmod></url>
