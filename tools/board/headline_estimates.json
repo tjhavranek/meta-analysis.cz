@@ -526,7 +526,7 @@
  },
  {
   "project": "social_comparison",
-  "parameter": "Effect of social comparison as a behaviour change technique",
+  "parameter": "Effect of social comparison as a behavior change technique",
   "headline": "g = 0.00 against passive and 0.01 against active control conditions, with moderate evidence against any effect",
   "evidence": "In fact, the data show moderate evidence against the presence of an effect. ... After adjusting for publication bias, the efficacy of SC-BCT in comparison to passive control condition decreases from g = 0.17, 95% CI [0.11, 0.23] to g = 0.00, 95% CI [-0.11, 0.04] and the efficacy of SC-BCT in comparison to active control conditions decreases from g = 0.23, 95% CI [0.15, 0.31] to g = 0.01, 95% CI [0.00, 0.14]. In essence, the efficacy of SC-BCT completely disappears once publication bias adjustment is performed.",
   "basis": "79 effect sizes from randomized controlled trials",

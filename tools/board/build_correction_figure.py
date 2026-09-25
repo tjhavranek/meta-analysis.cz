@@ -548,6 +548,20 @@ def build(check=False):
     NOLIT = {"guidelines", "maive", "outliers", "pcc",
              "pcc_survey", "conventional_wisdom", "debate"}
     n_nolit = len([e for e in spec["excluded"] if e["project"] in NOLIT])
+    # The caption counts the rest by kind. It said "the other 12" and then accounted for 11
+    # when social_comparison was excluded without a kind of its own, so every exclusion must
+    # now fall into exactly one of these, or the build stops.
+    SHARED = {"alphas", "substitution", "trust"}        # the literature already has a dot
+    MOVES = {"spillovers_bias"}                          # studies what moves its number
+    SPLIT = {"social_comparison"}                        # corrects two comparisons separately
+    _kinds = [NOLIT, SHARED, MOVES, SPLIT]
+    _unsorted = [e["project"] for e in spec["excluded"]
+                 if sum(e["project"] in k for k in _kinds) != 1]
+    if _unsorted:
+        sys.exit(f"exclusions without exactly one kind in the caption: {_unsorted}")
+    WORDS = {1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five"}
+    n_shared, n_moves, n_split = (len([e for e in spec["excluded"] if e["project"] in k])
+                                  for k in (SHARED, MOVES, SPLIT))
 
     # The caption had grown to hold the comparator rule, the sensitivity check, the ring
     # taxonomy, the exclusion taxonomy and a defence of the selection rule. All of it is worth
@@ -625,9 +639,15 @@ def build(check=False):
         + f'<p><b>{len(out)} of the {n_all} papers qualify.</b> Of the other {n_all - len(out)}, '
         f'{n_nolit} have no single literature effect to correct: methods papers, an '
         'experiment, a survey of other meta-analyses, and the review of 24 literatures named '
-        'above, whose own figure is on <a href="/conventional_wisdom/">its page</a>. Three share '
-        'a literature with a paper that already has a dot, and a literature gets one dot. One '
-        'studies what moves its number rather than the number itself. A reversal of sign is '
+        'above, whose own figure is on <a href="/conventional_wisdom/">its page</a>. '
+        f'{WORDS[n_shared]} share '
+        'a literature with a paper that already has a dot, and a literature gets one dot. '
+        f'{WORDS[n_moves]} '
+        'studies what moves its number rather than the number itself. '
+        + (f'{"And one" if n_split == 1 else WORDS[n_split]} corrects two comparisons separately, against passive and '
+           'against active control conditions, and states no single corrected value. '
+           if n_split else '')
+        + 'A reversal of sign is '
         '<i>not</i> a reason to '
         'leave a paper out. The rule takes no account of which way a paper moved, and every one '
         f'of those {n_all - len(out)} is written down with its reason, individually, in '
