@@ -28,7 +28,7 @@ body_note: "Pořad Peníze a vliv na Českém rozhlase Plus, moderuje Jana Klím
 
 **Jana Klímová:** A v těch zvyšování sazeb, více než je těch současných 7%, než je tady reposazba, měla podle vás ČNB pokračovat, protože proti tomu řada ekonomů protestuje, že to vlastně podvazuje ekonomiku, protože zdražují firmám úvěry, lidem úvěry.
 
-**Tomáš Havránek:** Ono to bolí, snižování inflace je většinou bolestivé právě, jak říkáte, pro řadu segmentů ekonomiky. Ale je to otázka priority, jestli tedy chceme nízkou inflaci za cenu nějaké bolesti, nebo jestli chceme tady žít třeba 10 let s inflací kolem 6%, což je docela reálné, pokud ta Národní banka nebude činit nic navíc, oproti tomu, co už udělala v minulém složení. A já myslím, že obecně česká populace je velice pasivní a málo náročná, protože se spokojí s tím vysvětlením, že se vlastně nedá nic dělat, inflace je něco jako povodeň, musíme to vydržet. A netlačíme na politiky, aby zase oni třeba upřesněli v zákoně zadání pro Národní banku, o co přesně se má snažit.
+**Tomáš Havránek:** Ono to bolí, snižování inflace je většinou bolestivé právě, jak říkáte, pro řadu segmentů ekonomiky. Ale je to otázka priority, jestli tedy chceme nízkou inflaci za cenu nějaké bolesti, nebo jestli chceme tady žít třeba 10 let s inflací kolem 6%, což je docela reálné, pokud ta Národní banka nebude činit nic navíc, oproti tomu, co už udělala v minulém složení. A já myslím, že obecně česká populace je velice pasivní a málo náročná, protože se spokojí s tím vysvětlením, že se vlastně nedá nic dělat, inflace je něco jako povodeň, musíme to vydržet. A netlačíme na politiky, aby zase oni třeba upřesnili v zákoně zadání pro Národní banku, o co přesně se má snažit.
 
 A co by vedení Národní banky postihlo, když ten svůj cíl plnit nebude. Což, jak pozorujeme, se děje v těch posledních měsících.
 
@@ -38,7 +38,7 @@ A co by vedení Národní banky postihlo, když ten svůj cíl plnit nebude. Co�
 
 Protože ústava nám říká, že Národní banka pečuje o cenovou stabilitu, ale ona si to vykládá jako dvouprocentní inflaci, což se velmi těžko technicky dá zdůvodnit, že toto je cenová stabilita. Můžeme se bavit o tom, jestli to je nějaká zdravá inflace, ale ta ústava říká celkem jasně cenová stabilita. A pomohlo by tedy v zákoně vyjasnit, co se tím myslí. Já bych nejraději byl za dlouhodobě průměrnou inflaci nulovou, což odpovídá opravdu cenové stabilitě.
 
-Nebo to může být jiný cíl, na kterém se dohodneme, ale mělo by to být jasné zadání, podle kterého potom lze hodnotit vedení Národní banky a navázat hodnocení i finanční na takovou výkonnost, jako je to běžné v jiných velkých firmách. To znamená, není úplně vhodné, aby jednak si sama ta banka stanovovala, co je jejím cílem. A za druhé, aby nebyla nijak odpovědná vůbec nikomu.
+Nebo to může být jiný cíl, na kterém se dohodneme, ale mělo by to být jasné zadání, podle kterého potom lze hodnotit vedení Národní banky a navázat hodnocení i finanční na takovou výkonnost, jako je to běžné v jiných velkých firmách. To znamená, není úplně vhodné, aby si jednak sama ta banka stanovovala, co je jejím cílem. A za druhé, aby nebyla nijak odpovědná vůbec nikomu.
 
 **Jana Klímová:** Jasně. Čili vysoká inflace, nulové odměny členů bankovní rady.
 
@@ -58,7 +58,7 @@ Ta inflace, jak jste řekla správně, má i svoje výhody, taky má spoustu nev
 
 Co se podle vás děje v tomto směru v Česku? Je to podle vás nějaká porucha trhu nebo jenom výrobci v tomto oboru vzali příležitost, že se zdražuje do vlastních rukou nebo prostě za vším stojí drahé energie zvyšující se náklady?
 
-**Tomáš Havránek:** Ty energie rozhodně tam hrají roli hlavně vstupy. To znamená, jak jste řekla, energie, potom třeba i hnojiva, ty další věci, které se zdražují zase z titulů, které úplně nesouvisí s naší českou situací, ale třeba i s tou válkou na Ukrajině. Samozřejmě se zmenšuje nabídka potravinářských výrobků a to tlačí na vyšší ceny. Ale rozhodně by také pomohlo, kdyby na našem trhu byla větší konkurence v těchto potravinářských řetězcích. Ten náš systém je dominovaný vlastně jedním holdingem, jehož jméno začíná na A, a který teď samozřejmě masivně vydělává, vydělává dlouhodobě na dotacích z našich daní, vydělává teď na vysokých cenách,
+**Tomáš Havránek:** Ty energie tam rozhodně hrají roli, hlavně vstupy. To znamená, jak jste řekla, energie, potom třeba i hnojiva, ty další věci, které se zdražují zase z titulů, které úplně nesouvisí s naší českou situací, ale třeba i s tou válkou na Ukrajině. Samozřejmě se zmenšuje nabídka potravinářských výrobků a to tlačí na vyšší ceny. Ale rozhodně by také pomohlo, kdyby na našem trhu byla větší konkurence v těchto potravinářských řetězcích. Ten náš systém je dominovaný vlastně jedním holdingem, jehož jméno začíná na A a který teď samozřejmě masivně vydělává, vydělává dlouhodobě na dotacích z našich daní, vydělává teď na vysokých cenách,
 
 **Jana Klímová:** Já ho řeknu, je to Agrofert, ale oni zase tvrdí, že za všechno můžou řetězce, že tam je ta porucha té konkurence v obchodu,
 

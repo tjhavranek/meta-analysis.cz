@@ -25,7 +25,7 @@ body_note: "Nedělní diskusní pořad Otázky Václava Moravce na ČT, 5. listo
 
 **Tomáš Havránek:** Tím, že, jak jste zmínil vy na začátku, tak ta naše síť, ať už tedy dálnic nebo železnic, není hotová. Zdaleka není hotová tak jako v západních zemích, kde už není ten prostor takový dále investovat, aby to vynášelo, podobně jako třeba dokončení dálnice D35, které hodně pomůže celému východu republiky. Takže to je to ovoce: opravdu stačí dostavět páteřní síť dálnic a to HDP se zvýší víc, než by udělala podobná investice třeba ve Francii nebo v Německu nebo v Polsku, kde už ta síť je nebo brzy bude mnohem hustší a kompletnější.
 
-Ne úplně primárně, tak by ta ekonomika rostla rychleji, kdyby ty dálnice byly dokončené. Ale já bych jenom možná malinko zmínil, že to, že nejsme na předcovidové úrovni ohledně HDP, je trošku takový statistický klam, protože díky zrušení EET nebo zastavení a pak zrušení EET nám to HDP opticky kleslo, jak se část ekonomiky přesunula do šeda, z bílé do šeda. Takže kdybychom tu statistiku, řekněme, o to opravili, tak to udělá nějaké 2-3% body a nebudeme na tom tak špatně zdaleka.
+Ne úplně primárně, tak by ta ekonomika rostla rychleji, kdyby ty dálnice byly dokončené. Ale já bych jenom možná malinko zmínil, že to, že nejsme na předcovidové úrovni ohledně HDP, je trošku takový statistický klam, protože díky zrušení EET nebo zastavení a pak zrušení EET nám to HDP opticky kleslo, jak se část ekonomiky přesunula do šeda, z bílé do šeda. Takže kdybychom tu statistiku, řekněme, o to opravili, tak to udělá nějaké 2-3 procentní body a zdaleka na tom nebudeme tak špatně.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
@@ -85,9 +85,9 @@ Polský dálniční průměr na jeden rok v poslední dekádě byl 280, kdežto 
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Tomáš Havránek:** … nejjednodušší řešení je finanční. Tak navážete odměny více na dokončené úseky dálnic a případně tedy železnic, jestli se dočkáme někdy VRT. A já bych tady znovu pochválil pana Mátla, protože sebelepší zákon vám nepomůže stavět dálnice, když nemáte lidi, kteří jsou schopni vyjet z Prahy, třeba do Litomyšle nebo do Šumperka a ty problémy osobně řešit a jednat s těmi lidmi, s kterým třetím níkou nejednal. A to pan Mátl dělá a proto teď k těm zpožděním nedochází u dálnic minimálně.
+**Tomáš Havránek:** … nejjednodušší řešení je finanční. Tak navážete odměny více na dokončené úseky dálnic a případně tedy železnic, jestli se dočkáme někdy VRT. A já bych tady znovu pochválil pana Mátla, protože sebelepší zákon vám nepomůže stavět dálnice, když nemáte lidi, kteří jsou schopni vyjet z Prahy, třeba do Litomyšle nebo do Šumperka a ty problémy osobně řešit a jednat s těmi lidmi, s kterými předtím nikdo nejednal. A to pan Mátl dělá, a proto teď k těm zpožděním nedochází, minimálně u dálnic.
 
-Mě trochu třeba mrzí, že přivaděče k dálnici nejsou plně v kompetenci ŘSD, že některé jsou v režii krajů a ne všechny kraje umí stavět vlastně stavby na zelené louce. Konkrétně Pardubický kraj v tom úplně se nevyznamenává, takže ve finále celá polovina kraje bude bez přístupu k D35, Česká Třebová nebo Letohrad, jak jsme se bavili předtím. Čili já bych osobně klidně tohle břemeno krajům odňal a když se osvědčil pan Mátl a ŘSD, které už s tím má zkušenosti. Taky to nebylo snadné, a už se to
+Mě trochu třeba mrzí, že přivaděče k dálnici nejsou plně v kompetenci ŘSD, že některé jsou v režii krajů a ne všechny kraje umí stavět vlastně stavby na zelené louce. Konkrétně Pardubický kraj se v tom úplně nevyznamenává, takže ve finále celá polovina kraje bude bez přístupu k D35, Česká Třebová nebo Letohrad, jak jsme se bavili předtím. Čili já bych osobně klidně tohle břemeno krajům odňal, když se osvědčil pan Mátl a ŘSD, které už s tím má zkušenosti. Taky to nebylo snadné, když s tím začínali, a už se to
 
 **Václav Moravec:** … příklad D52, protože ať se podíváme k řidičům kolem Brna a těm, kteří chtějí z Brna jet do Vídně co nejrychleji, tak marně čekali a čekají řidiči na dokončení té dálnice D52 s Brnem kolem Mikulova k hranicím s Rakouskem Ředitelství silnic a dálnic v úterý. Podalo žádost na Ministerstvu životního prostředí o vydání nového stanoviska EIA, které posoudí vliv stavby na okolní přírodu. Hotová je od roku 1996 pouze část od Rajhradu do Pohořelic. Dál směrem k Mikulovu zůstala trasa jen na papíře.
 
@@ -99,7 +99,7 @@ Je možné na příkladu D52 vlastně ukázat, že i ŘSD
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Tomáš Havránek:** Chápu, no vy jste říkal, že stát pomáhá finančně. To třeba je pravda u toho Pardubického kraje, kde kraj dostal peníze za ty přivaděče. A pak zjistil, že to neumí postavit. Tak za ty peníze opravil současnou silnici, která vede středem města, kolem památky UNESCO, kolem škol a říká tomu přivaděč.
+**Tomáš Havránek:** Chápu, vy jste říkal, že stát pomáhá finančně. To je třeba pravda u toho Pardubického kraje, kde kraj dostal peníze na ty přivaděče. A pak zjistil, že to neumí postavit. Tak za ty peníze opravil současnou silnici, která vede středem města, kolem památky UNESCO, kolem škol a říká tomu přivaděč.
 
 Tak tohle je výsledek toho, který je nejoptimální pro tu zemi, konkrétně pro celou polovinu toho kraje. Takže toto mně osobně vadí, když tam žiju a připadá mi to neřešitelné na té krajské úrovni.
 
@@ -107,7 +107,7 @@ Tak tohle je výsledek toho, který je nejoptimální pro tu zemi, konkrétně p
 
 **Václav Moravec:** … té nekoncepčnosti, že jedno zastupitelstvo řekne, ano, my to budeme financovat provoz lávky a zastupitelé a primátor ze stejné strany pak řeknou se, že doce ne, my nechceme tu lávku přebírat, protože nebudeme
 
-**Tomáš Havránek:** … každopádně to ukazuje na obecnější problém, že mi tady ta lávka stála kolik 300 milionů. 300 milionů. A to, abychom se rozuměli, to tedy není tak jako lávka, to je skutečně jako... My jsme ji viděli.
+**Tomáš Havránek:** … každopádně to ukazuje na obecnější problém, že mi tady ta lávka stála kolik? 300 milionů. 300 milionů. A to, abychom se rozuměli, to tedy není tak jako lávka, to je skutečně jako... My jsme ji viděli.
 
 Ty věci mají konkrétní náklady, ale ty benefity často nejsou úplně jasně spočítané, nebo si na to někdy hrajeme, ale je to často psané na vodě. Ty rychlovlaky jsou malinko podobný případ, k tomu se asi dostaneme, to budou bilionové částky pravděpodobně a tam opravdu je velmi důležité to podrobně odůvodnit, kde budou ty biliony těch výnosů, protože ty náklady jsou naprosto jasné, takže tohle mi malinko chybí podrobnější cost-benefit analýza nákladů a výnosů a
 

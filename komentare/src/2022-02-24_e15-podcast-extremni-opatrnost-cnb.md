@@ -32,7 +32,7 @@ Tohle je právě to, co FED změnil. Americká centrální banka tohle v té sv�
 
 Čili tohle vám vlastně pomůže odstranit část nejistoty ohledně dlouhodobého vývoje ceny peněz. To vám umožní lépe spořit, protože víte, s čím máte počítat. Čili mně to dává velký smysl. To je jedna rovina.
 
-Ta druhá rovina je tedy v průměru, co máte cílovat. 2% je tady nějaký úzus. Když se podíváte, ale na stránky těch bank, třeba ČNB, tak nikdo z nich ho nijak není schopen odůvodnit. Tam je vždycky jedna věta: takhle to děláme, takhle to dělají ostatní.
+Ta druhá rovina je tedy v průměru, co máte cílovat. 2% je tady nějaký úzus. Když se ale podíváte na stránky těch bank, třeba ČNB, tak nikdo z nich ho nijak není schopen odůvodnit. Tam je vždycky jedna věta: takhle to děláme, takhle to dělají ostatní.
 
 A vědecká literatura od roku 1990, kdy vlastně začalo to cílování inflace, tak vygenerovala stovky studií, které odhadují, jaká je ta zdravá inflace, ta správná. Některé uvádějí zápornou, že je optimální, některé kladnou, ale ten průměr je nula. A teď tohle není jako, že bychom tu měli brát jako skutečně ten definitivní výstavek, ale je to nějaký benchmark, od kterého bychom se měli odrazit. Čili i podívat se znovu na tu literaturu, na tu novou výzkumnou literaturu a jestli ty 2% jsou to, co je optimální, to by mělo být cílem toho auditu.
 
@@ -82,11 +82,11 @@ Ale to je jeden procentní bod maximálně, ne dva, to se nedá odůvodnit,
 
 Vy snížíte průměrnou inflaci o 2% body. To není nějaká velká revoluce a můžete to prodat jako vlastně vylepšení toho inflačního cílování, které, jak říkám znovu, tehdy, před 30 lety, opravdu pomohlo. Že není to negace toho, co funguje teď. Je to relativně drobná kalibrace.
 
-Myslím si, že před 12 lety byl snížen inflační cíl ze 3 na 2% body. Všiml si toho někdo moc. Tohle je vlastně dvojnásobně větší krok, čili to by nebyla velká revoluce, ale bylo by to pro nás všechny jednodušší, protože bychom mohli spořit velice jednoduše, ale i když třeba někdo z nás se vyhýbá riziku, tak by potom nemusel kupovat akcie, aby se mu zhodnotily úspory, mohl by je držet na běžném účtu. Nebo v hotovosti doma, konec konců.
+Myslím si, že před 12 lety byl snížen inflační cíl ze 3 na 2 %. Všiml si toho někdo moc? Tohle je vlastně dvojnásobně větší krok, čili to by nebyla velká revoluce, ale bylo by to pro nás všechny jednodušší, protože bychom mohli spořit velice jednoduše, a i když se třeba někdo z nás vyhýbá riziku, tak by potom nemusel kupovat akcie, aby se mu zhodnotily úspory, mohl by je držet na běžném účtu. Nebo v hotovosti doma, konec konců.
 
 Čili my vlastně teď, jak je to nastavené, nutíme populaci jít do rizikových aktiv. Pokud to neudělají, nepochybně prodělají. Ta inflace jim ty úspory požere. Spoření jsme de facto zabili.
 
-Tímto cílováním inflace, které neopravuje svoje chyby. Čili buď alespoň opravujeme ty chyby, abychom měli inflaci v průměru 2%, pokud si myslíme, že to je optimální hladina. Nebo je rovnou úplně smažme. To potom je to elegantní, je to intuitivní, dá se to vědecky dobře odůvodnit.
+Tímto cílováním inflace, které neopravuje svoje chyby. Čili buď alespoň opravujeme ty chyby, abychom měli inflaci v průměru 2%, pokud si myslíme, že to je optimální hladina. Nebo je rovnou úplně smažme. Potom je to elegantní, je to intuitivní, dá se to vědecky dobře odůvodnit.
 
 Pojďme se o tom aspoň bavit v rámci toho auditu.
 

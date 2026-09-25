@@ -80,7 +80,7 @@ Nemá pravdu? Vlastně se chci jenom zeptat, jestli je možné relativně rychle
 
 **Tomáš Havránek:** Je otázka, jak moc jsme ochotni to ještě vydržet, tu bolest. Kdybychom bývali spustili podporu koruny intervencemi už vloni, třeba někdy v září, když došlo k tomu prvnímu velkému zvýšení úroků, tak by to bylo daleko méně bolestivé. Čím později to uděláte, ten radikální zákrok proti inflaci, tím víc to bolí. To je vlastně ta obecná historická zkušenost.
 
-Takhle to na světě vždycky bylo, v 80. letech ve Spojených státech, takový ten nejznámější případ nákladů krocení inflace koneckonců i u nás po vzniku Československa. Jak jsme zmiňovali toho Rašína.
+Takhle to na světě vždycky bylo, v 80. letech ve Spojených státech, to je ten nejznámější případ nákladů krocení inflace, koneckonců i u nás po vzniku Československa. Jak jsme zmiňovali toho Rašína.
 
 Čili bezbolestně to nejde, ale pořád si myslím, že posílení koruny přesto jednak působí hodně rychle technicky, mechanicky, tím, že zlevníte dovozy. Ta inflace klesne. Nevyřešíte ji celou, ale pomůžete i psychologicky lidem, že oni najednou vidí, že ta centrální banka reálně dělá něco, co je pozitivní pro ně. Vidí levnější benzín například.
 
@@ -88,7 +88,7 @@ Takhle to na světě vždycky bylo, v 80. letech ve Spojených státech, takový
 
 Vy tu pořád ještě nevíte.
 
-**Tomáš Havránek:** Nevím, ale mám samozřejmě nějaké jako takové nápady, když projím s lidmi z ČNB. Co mi říkají, tak jedna ta teorie je, že třeba pan guvernér se netají tím, že si myslí, že ty minulé intervence byly nelegální. Že podle zákona o ČNB se měla banka poradit s vládou o změně toho kurzového, řekněme, režimu.
+**Tomáš Havránek:** Nevím, ale mám samozřejmě nějaké takové nápady, když mluvím s lidmi z ČNB. Co mi říkají, tak jedna ta teorie je, že se třeba pan guvernér netají tím, že si myslí, že ty minulé intervence byly nelegální. Že podle zákona o ČNB se měla banka poradit s vládou o změně toho kurzového, řekněme, režimu.
 
 Ale ta situace je dnes jiná. ČNB by nestanovila nějakou hladinu, na kterou chce korunu posílit. To nejde kvůli spekulantům, kteří by ji mohli porazit.
 

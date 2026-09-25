@@ -37,7 +37,7 @@ Tak paní Zamrazilová i paní Kubelková jsou spíše proti dalšímu zvyšová
 
 **Tomáš Havránek:** Ty úrokové sazby se rozhodně zvýší teď na konci června. A potom? Potom se zvyšovat nebudou. Minimálně během léta a podzimu si je těžko představit nějaké zvýšení vzhledem k výrokům všech těchto čtyř členů, kteří budou mít nově většinu.
 
-A asi pan profesor Frait, který sice byl, řekněme, jestřábem teď ve finanční stabilitě, ale ve svém prvním období byl spíše v bankovní radě byl spíše holubice, čili byl spíše pro ty nižší sazby. Čili já čekám teď razantní zvýšení někam k sedmi procentním bodům a potom několik let možná i stabilitu této základní reposazby na sedmi procentních bodech.
+A asi pan profesor Frait, který sice byl, řekněme, jestřábem teď ve finanční stabilitě, ale ve svém prvním období v bankovní radě byl spíše holubicí, čili byl spíše pro ty nižší sazby. Čili já čekám teď razantní zvýšení někam k sedmi procentním bodům a potom několik let možná i stabilitu této základní reposazby na sedmi procentních bodech.
 
 **Marek Zavřel:** Předpokládáte těch sedm procentních bodů, takže to bude o jedna celá dvacet pět. To je trošku vychýlení od těch klasických 0,75 bodů, jak jsme viděli při těch zvýšeních v poslední době. Pojišťují si tak do zásoby pan guvernér Rusnok a stávající bankovní rada?
 
@@ -85,7 +85,7 @@ Když je inflace větší, tak máte menší plat. Když máte větší plat za 
 
 Na to bychom neměli zapomínat. Myslím, že i sám guvernér, ten nový guvernér tvrdí, že minimálně třetina inflace je domácího původu, což znamená, třetina z šestnácti je víc než pět procentních bodů. A i kdyby byla inflace jenom pět procentních bodů, čili jen ta domácí složka, tak pořád to je strašné selhání té centrální banky. Čili i v téhle logice to není v pořádku, není to něco, s čím by ta centrální banka nemohla nic dělat.
 
-Tady se ukazuje, že naprosto selhal ten základní režim měnové politiky, čili cílování inflace. Protože ten režim měl zajistit, že když přijde nějaký krátkodobý šok, tak tím, že věříme tomu inflačnímu cíli, tak další rok se znovu sníží inflace směrem k těm dvěma procentům. Dnes už ale bohužel nikdo nevěří těm centrálním bankám nebo mnohem méně než dřív. Protože se ukazuje, že samotné projevy a tvrzení, že všechno bude v pořádku, na tu inflaci nestačí.
+Tady se ukazuje, že naprosto selhal ten základní režim měnové politiky, čili cílování inflace. Protože ten režim měl zajistit, že když přijde nějaký krátkodobý šok, tak tím, že věříme tomu inflačnímu cíli, tak se další rok znovu sníží inflace směrem k těm dvěma procentům. Dnes už ale bohužel nikdo nevěří těm centrálním bankám nebo mnohem méně než dřív. Protože se ukazuje, že samotné projevy a tvrzení, že všechno bude v pořádku, na tu inflaci nestačí.
 
 Ten oheň se sám neuhasí, je potřeba s ním bojovat, i když to třeba bude bolet poměrně hodně. Takže to je ten základní problém. My tady vidíme, že ta centrální banka nepoužívá všechny nástroje, které má. Nepoužívá zejména možnost posílit korunu.
 
@@ -121,7 +121,7 @@ Je tam riziko střetu zájmu u pana guvernéra budoucího?
 
 **Tomáš Havránek:** já bych řekl, že tam je určitá naděje. Aleš Michl je opravdu člověk, který se nebojí střetu. To sice není přijímáno úplně dobře všemi vrstvami odborné společnosti. A v řadě věcí s tím taky úplně nesouhlasím. Ale on má naději minimálně na to, že opravdu některé věci změní k lepšímu, které by se jinak změnit nedaly. A ten dobrý příklad je správa devizových rezerv, které dnes vydělávají velmi málo.
 
-Úplně zbytečně. To jsou peníze, které máme v eurech, v dolarech a leží vlastně v hotovosti nebo v dluhopisech, které nevydělávají skoro nic. A daly by se investovat po vzoru Singapuru, po vzoru Švýcarska, mnohem, mnohem výnosněji do akcií. A tohle si myslím, že Aleš Michl doručí pravděpodobně.
+Úplně zbytečně. To jsou peníze, které máme v eurech, v dolarech a leží vlastně v hotovosti nebo v dluhopisech, které nevydělávají skoro nic. A daly by se investovat po vzoru Singapuru, po vzoru Švýcarska, mnohem, mnohem výnosněji do akcií. A tohle si myslím, že Aleš Michl pravděpodobně doručí.
 
 **Marek Zavřel:** že to je právě součást toho plánu, když Aleš Michl říká, že nebude zvyšovat ty úrokové sazby, tak tohle je ta druhá část, kterou neříká?
 
@@ -153,11 +153,11 @@ A máte daleko menší odpovědnost, než má třeba premiér vůči veřejnosti
 
 **Marek Zavřel:** do jaké míry má vláda spolupracovat s Českou národní bankou a s jejím guvernérem
 
-**Tomáš Havránek:** ta možnost spolupráce tam samozřejmě nějaká je v tom smyslu, že by se měla vzájemně radit a setkávat se, ale ta odpovědnost je naprosto jasná. Stoprocentní odpovědnost za inflaci podle ústavy má Česká národní banka. Čili Aleš Michl má pravdu v tom, co píše, ale já bych mu poradil dát si opravdu velký pozor na to, aby to nevypadalo jako, že je to alibismus, že svoji práci, za kterou je stoprocentně teď odpovědný, nebo bude od prvního sedmého, ale už je jako člen bankovní rady, svaluje na někoho jiného. To je podobné, jako by vláda si stěžovala bankovní radě, národní bance, že jsou vysoké úroky a tím pádem ona musí platit hodně na dluhu a tím pádem má vysoký deficit.
+**Tomáš Havránek:** ta možnost spolupráce tam samozřejmě nějaká je v tom smyslu, že by se měla vzájemně radit a setkávat se, ale ta odpovědnost je naprosto jasná. Stoprocentní odpovědnost za inflaci podle ústavy má Česká národní banka. Čili Aleš Michl má pravdu v tom, co píše, ale já bych mu poradil dát si opravdu velký pozor na to, aby to nevypadalo, jako že je to alibismus, že svoji práci, za kterou je stoprocentně teď odpovědný, nebo bude od prvního sedmého, ale už je jako člen bankovní rady, svaluje na někoho jiného. To je podobné, jako by si vláda stěžovala bankovní radě, národní bance, že jsou vysoké úroky a tím pádem ona musí platit hodně na dluhu a tím pádem má vysoký deficit.
 
 To samozřejmě může být technicky pravda, ale tohle je velmi slabé říkat takovéhle věci. Ne. Stoprocentní odpovědnost má Národní banka. V ústavě se píše, že pečuje o cenovou stabilitu, což mimochodem není dvouprocentní inflace.
 
-Cenová stabilita podle jakékoliv definice znamená stabilitu průměrných cen neboli takzvaného toho indexu CPI, který počítá Český statistický úřad, čili ne každoroční inflaci. A je až úsměvné, jak je to takový doublespeak, když člověk říkáte Orwella, tak to je něco podobného, že vlastně máte na starosti stabilitu, ale tu stabilitu si pojímáte tak, že to je růst. To nedává žádný ekonomický ani technický smysl. V té ústavě se nepíše, že ČNB pečuje o optimální nebo zdravou inflaci.
+Cenová stabilita podle jakékoliv definice znamená stabilitu průměrných cen neboli takzvaného toho indexu CPI, který počítá Český statistický úřad, čili ne každoroční inflaci. A je až úsměvné, jak je to takový doublespeak, když člověk čte Orwella, tak to je něco podobného, že vlastně máte na starosti stabilitu, ale tu stabilitu si pojímáte tak, že to je růst. To nedává žádný ekonomický ani technický smysl. V té ústavě se nepíše, že ČNB pečuje o optimální nebo zdravou inflaci.
 
 Tam se píše cenová stabilita. Takže to nejde odůvodnit, je to podle mě jasné porušení ústavy, i podle řady lidí, se kterými jsem se o tom bavil. Bohužel není způsob, jak donutit tu ČNB, aby tu ústavu v tomto ohledu respektovala. Není jasné, kdo by podával ústavní stížnost vlastně na koho, jestli na guvernéra nebo na celou bankovní radu, ale minimálně by šlo napsat do zákona o ČNB, podobně jako to je třeba v Bank of England, v Anglii, kde ten ústavní nebo inflační cíl cenové stability dává vláda centrální bance. Aby to nebylo jako u nás, že ta Národní banka si sama řekne, co je její práce a pak sama hodnotí, jak ten cíl plní.
 
@@ -189,7 +189,7 @@ Do konce tohohle roku nečekám nějaké výraznější snížení. Rozhodně to
 
 **Marek Zavřel:** A máme se bát i vlastně 25 nebo 30%, protože pokud nebudeme zvyšovat ty úrokové sazby, tak guvernér Rusnok na jednom z diskuzních Fóru České národní banky řekl to, že by to bez toho zvyšování mohlo dosáhnout těch 25, možná 30%.
 
-**Tomáš Havránek:** A tak to je trochu z pohádky, jak šla ekonomie na vandr. To nevím, odkud si ta čísla pan guvernér vycucal. To opravdu je to nesmysl. Je nesmysl říct, že bez zvyšování úroků by byla inflace dnes 25%.
+**Tomáš Havránek:** A tak to je trochu z pohádky, jak šla ekonomie na vandr. To nevím, odkud si ta čísla pan guvernér vycucal. To je opravdu nesmysl. Je nesmysl říct, že bez zvyšování úroků by byla inflace dnes 25%.
 
 to z žádného modelu nemůže vyjít. Je to nějaká věc, kterou plácnul bez asi velkého přemýšlení. Já si nemyslím, že ta inflace takhle vysoko může vyrůst. Dnes asi už nelze vyloučit vůbec nic.
 

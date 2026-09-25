@@ -59,7 +59,7 @@ Ale pokud by to byla pravda, tak nemůže platit ten jeho argument, že máme, �
 
 **Moderátorka:** Pane Havránku, ještě jedna věc a to je, srovnejme to, jak se vyvíjí česká inflace a inflace v zahraničí? Proč ta česká je daleko vyšší?
 
-**Tomáš Havránek:** Tak jednak je to asi přece jenom natlakovanější trh práce, čili nižší nezaměstnanost obecně. A potom je to možná trochu větší podíl, řekněme, energií a potravin ve spotřebním koši, než mají ostatní země. Nicméně ta inflace dostuje opravdu skoro všude, kromě těch pár výjimek, jako je to Švýcarsko. A já bych se ještě vrátil k tomu, co říkal pan viceguvernér Mora.
+**Tomáš Havránek:** Tak jednak je to asi přece jenom natlakovanější trh práce, čili nižší nezaměstnanost obecně. A potom je to možná trochu větší podíl, řekněme, energií a potravin ve spotřebním koši, než mají ostatní země. Nicméně ta inflace se dostavuje opravdu skoro všude, kromě těch pár výjimek, jako je to Švýcarsko. A já bych se ještě vrátil k tomu, co říkal pan viceguvernér Mora.
 
 Tak ta euroizace samozřejmě je jenom v některých segmentech. Ta je u podniků zejména. Domácnosti si bohužel, nebo bohudík, jak se na to díváme, úvěry, hypotéky prakticky euroizovat nemůžou. Takže ony opravdu platí samozřejmě v korunách.
 

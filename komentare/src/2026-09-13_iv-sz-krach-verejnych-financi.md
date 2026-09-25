@@ -80,7 +80,7 @@ Abychom podpořili Národní banku v tom, ona to dělat chce.
 
 **Tomáš Havránek:** ale i opozice, protože to je dlouhodobá věc. Jak jste říkal velmi správně, ty příjmy z ČNB, možná tahle vláda ještě trochu dostane, ale hlavně to bude příští vláda a ta další. Takže ta opozice na to má mít stejný zájem, i kdyby to byl jen sobecký zájem, ne o tu zemi, ale o svůj manévrovací prostor jako vládnoucí, řekněme, skupiny, jako ta současná koalice. A já vůbec nechápu Starosty, Piráty, ODS, že nikdo z těch stran to vůbec nějak neřeší.
 
-Já jsem byl v televizi onehdy s panem Kupkou, který o tom slyšel poprvé, pak jsem psal e-mail a v podstatě toto vyznělo úplně do ztracena. A já chápu, že třeba těm lidem je těžké do toho proniknout. Ale je to tak důležitá věc, že vyžaduje spolupráci jak koalice, tak opozice a Národní banky, aby to nevypadalo jako, že tady Michl posílá Babišovi 200 miliard před volbami.
+Já jsem byl v televizi onehdy s panem Kupkou, který o tom slyšel poprvé, pak jsem psal e-mail a v podstatě toto vyznělo úplně do ztracena. A já chápu, že třeba těm lidem je těžké do toho proniknout. Ale je to tak důležitá věc, že vyžaduje spolupráci jak koalice, tak opozice a Národní banky, aby to nevypadalo, jako že tady Michl posílá Babišovi 200 miliard před volbami.
 
 **Jiří Zatloukal:** A vy to prezentujete jako nějaký prostě jakoby free lunch, jako nějaký oběd, za který nemusíme platit, že prostě přijdou nějaké peníze každý rok z České Národní banky, ale ty rezervy, které jsou zainvestování v akciích, jsou výrazně na těch vlastně veřejných trzích, na světových burzách, jsou výrazně volatilní. Tam můžou přijít jeden, dva roky, kdy nebude znovu žádný příjem. A nikde není psáno, že i akciové trhy porostou do nebe pořád. Navíc, když jsou všechny vlády vyspělého světa extrémně zadlužené.
 
@@ -90,7 +90,7 @@ Máte pravdu.
 
 Pokud uděláte zisk, ten můžete použít, můžete z něj postavit nemocnici, rychlovlaky, dálnici, ten zisk je reálný. Takže pokud je to tak máte asymetrii v tom riziku. Ale berete na sebe riziko, tohle je karikatura, ale takhle to oni říkají. Berete na sebe nějaké riziko, ale pokud ten svět se nezhroutí, já to dělám taky, kupuji akcie, to je moje investice, protože je to na dlouhou dobu.
 
-Když ten váš horizont je 10, 20, 30 let a u Národní banky ten horizont je delší, ta neumře nikdy, tak vy si můžete dovolit u peněz, který nepotřebujete. A když je potřebujete, vy ty akcie můžete prodat. Sice třeba levněji, ale zároveň vám v krizi většinou oslabí koruna, takže to není zas takový problém pro tu vaši rozvahu. Vás zajímá dlouhodobý výhled a v tom dlouhodobém výhledu je velice nepravděpodobné, vyjma nějaké termonukleární války, kdyby nás peníze nezajímaly stejně, že se tato věc nevyplatí.
+Když ten váš horizont je 10, 20, 30 let a u Národní banky ten horizont je delší, ta neumře nikdy, tak vy si můžete dovolit u peněz, které nepotřebujete. A když je potřebujete, vy ty akcie můžete prodat. Sice třeba levněji, ale zároveň vám v krizi většinou oslabí koruna, takže to není zas takový problém pro tu vaši rozvahu. Vás zajímá dlouhodobý výhled a v tom dlouhodobém výhledu je velice nepravděpodobné, vyjma nějaké termonukleární války, kdy by nás peníze stejně nezajímaly, že se tato věc nevyplatí.
 
 Čili je to riskantní ano z roku na rok, ale mě nezajímá z roku na rok. Ta ČNB předtím, než pošle první peníze vládě, si vytvoří buffer, vytvoří si polštář, 300, 400, 500 miliard, aby právě tyto výkyvy mohla absorbovat a může dočasně být znovu ve ztrátě. Znovu říkám, teď má ztrátu čtvrt bilionu kumulovanou a nikdo to zatím splácet nemusel.
 
@@ -114,7 +114,7 @@ Zase věc, která nikomu neublíží, kromě těch účetních, kteří to musí
 
 **Jiří Zatloukal:** byl schodek státního rozpočtu zhruba 40 miliard a zuřivě se debatovalo, jestli to má být 45 nebo 39 a pak to vyskočilo po pandemii vlastně ořád výš na 400, 300, 400 miliard. Každopádně my se tím přibližujeme v Evropě těm rozpočtově méně zodpovědným zemím z Jižního křídla. Myslíte, že na které jsme se vlastně dívali trošku z vrchu, na Řecko, neumí to, utrácejí. Myslíte, že to může třeba narušit tahle rozpočtová nezodpovědnost důvěru lidí ve stát, že bude doručovat kvalitní služby, protože důvěra ve stát je důležitá, aby ta společnost nějak dobře fungovala?
 
-**Tomáš Havránek:** My jsme pořád i přes tahle negativa, o kterých jsem se zmiňoval, i v tom rozpočtu a v tom výhledu financí v nejhorším, řekněme, v polovině evropských zemí. Takže asi úplně se neblížíme Řecku, když Řecko na tom teď je docela dobře, ale dlouhodobě to, co je naprosto dominantní a o čem jsme se ještě nebavili, co bychom měli nakousnout, je samozřejmě to, že v téhle zemi brzy nebudou děti, když to přeženu. Tuším, že loni byl počet narozených dětí v této zemi 77 tisíc, nejméně v historii od začátku měření, čili minimálně od Marie Terezie, pravděpodobně ještě za mnohem delší dobu, čili nejméně dětí za čtvrt tisíciletí. Tady máme.
+**Tomáš Havránek:** My jsme pořád i přes tahle negativa, o kterých jste se zmiňoval, i v tom rozpočtu a v tom výhledu financí v nejhorším, řekněme, v polovině evropských zemí. Takže se asi úplně neblížíme Řecku, když Řecko na tom teď je docela dobře, ale dlouhodobě to, co je naprosto dominantní a o čem jsme se ještě nebavili, co bychom měli nakousnout, je samozřejmě to, že v téhle zemi brzy nebudou děti, když to přeženu. Tuším, že loni byl počet narozených dětí v této zemi 77 tisíc, nejméně v historii od začátku měření, čili minimálně od Marie Terezie, pravděpodobně ještě za mnohem delší dobu, čili nejméně dětí za čtvrt tisíciletí tady máme.
 
 Což nejenom, že se samozřejmě ne hned, ale za nějakou dobu mechanicky projeví v kolapsu důchodového systému. Teď funguje tak, že lidé mají děti a ty děti platí důchody všech, ale zároveň celá ta rubrika společnosti se bude rozpadat bez těch dětí. Kdo se bude starat o nás, až budeme my...
 
@@ -124,7 +124,7 @@ Což nejenom, že se samozřejmě ne hned, ale za nějakou dobu mechanicky proje
 
 **Jiří Zatloukal:** protože za 20 let, kdy naše generace zhruba půjde do důchodu, tak stát bude mít extrémně, nebo podstatně vyšší výdaje na sociální služby, na důchody a příjmy zdá se nestoupají nebo nebudou stoupat, pokud nezvýšíme zdanění a budou buď vyšší deficity, nebo se budou tyhle služby prostě omezovat. Jinou nevidím cestu.
 
-**Tomáš Havránek:** těch schodků, v těch hrozných výhledech, které jste zmiňoval, tohle ještě není zohledněné. Ten kolaps porodnosti za poslední roky u nás, v západním světě, vlastně i všude na světě. Je takový, že myslím... V západním světě.
+**Tomáš Havránek:** těch schodků, v těch hrozných výhledech, které jste zmiňoval, tohle ještě není zohledněné. Ten kolaps porodnosti za poslední roky u nás, v západním světě, vlastně i všude na světě, je takový, že myslím... V západním světě.
 
 Ale ne, i na východě,
 
@@ -146,7 +146,7 @@ Já znám řadu lidí, co děti nikdy neměli, profesoři v Americe a tak dále.
 
 **Tomáš Havránek:** Ne, to bych... Takové návrhy se taky objevují. Tím, že mám čtyři děti, nejsem v pozici, abych toto komentoval, protože na to mám očividný zájem sám, takže tohle já komentovat nebudu. Jenom chci říct, že přijde mi velká škoda, kdybychom ty děti neměli.
 
-Moje žena... A ta matka tím nemusí obětovat kariéru. Víte, že moje žena je daleko úspěšnější než já, vydělává víc peněz než já a ten život je sice složitej, ale je skvělý. Takže tohle mně přijde, že lidé mají pocit, že to nepotřebují, nakonec toho budou velmi litovat a do velké míry ten život promarní díky tomuhle.
+Moje žena... Ale ta matka tím nemusí obětovat kariéru. Víte, že moje žena je daleko úspěšnější než já, vydělává víc peněz než já a ten život je sice složitý, ale je skvělý. Takže mně přijde, že lidé, kteří mají pocit, že to nepotřebují, toho nakonec budou velmi litovat a do velké míry ten život promarní díky tomuhle.
 
 A není to tak, že bychom si to nemohli dovolit. My jsme třeba v šesti lidech žili na 40 metrech čtverečních v Nuslích
 
@@ -154,7 +154,7 @@ A není to tak, že bychom si to nemohli dovolit. My jsme třeba v šesti lidech
 
 **Tomáš Havránek:** Jak bude ten kolaps asi vypadat? Musíme o tom malinko spekulovat. Pravděpodobně něco takového přijde, ale těžko to bude znamenat státní bankrot. To je věc, která je politicky velmi nepopulární, co je mnohem snazší, je nechat tu krizi prohořet tu inflací, jak jsme se o tom bavili.
 
-Stát nemá peníze, tak si je vytiskne. A neříkám, že by to byla správná věc. Víte dobře, že já bych tu inflaci radši viděl opravdu nulovou v průměru, což jste mi tady minule kvůli tomu pěkně posmažil. Ale ta inflace vlastně funguje jako takový únikový ventil, který není explicitně daný, ale všichni tak nějak víme, že bude nejhůř.
+Stát nemá peníze, tak si je vytiskne. A neříkám, že by to byla správná věc. Víte dobře, že já bych tu inflaci radši viděl opravdu nulovou v průměru, kvůli čemuž jste mě tady minule pěkně posmažil. Ale ta inflace vlastně funguje jako takový únikový ventil, který není explicitně daný, ale všichni tak nějak víme, že bude nejhůř.
 
 Byla válka, tak ta inflace byla nějaká taková inflační daň.
 
@@ -226,7 +226,7 @@ To se dnes úplně změní zase s rozvojem AI. Tyhle věci budeme muset...
 
 **Tomáš Havránek:** používali AI co nejvíc. K vylepšení toho produktu, který daví. Podobně jako potom v práci to budou dělat. Aby se připravili na ten pracovní, na ten profesní život.
 
-A pak se to musí obhájit. Teď máte ústní obhajoby, To je velmi důležitá část, ne? Kdy to netrvají dlouho, kde toho člověka, jako jste minule grilloval vy mě, já budu grillovat toho studenta a vím přesně, co on ví nebo neví, tu práci si přečtu a poznáte, jakou známku mu máte dát. Čili nemá smysl to nějak zakazovat, tvářit se, že to neexistuje nebo že to budete nějak regulovat, to nejde.
+A pak si to musí obhájit. Takže máte ústní obhajoby. To je velmi důležitá část, ne? Ty netrvají dlouho. A jako jste minule griloval vy mě, já budu grilovat toho studenta a vím přesně, co on ví nebo neví, tu práci si přečtu a poznáte, jakou známku mu máte dát. Čili nemá smysl to nějak zakazovat, tvářit se, že to neexistuje nebo že to budete nějak regulovat, to nejde.
 
 Ale vzít to jako něco, jako byla dřív kalkulačka, počítač, samozřejmě je to něco mnohem víc, protože to dokáže dělat mnohem víc věcí, ale i pro mě je velmi těžké udržet se na tom tepu doby a sledovat vývoj těch modelů, těch agentických nástrojů. Ale už dnes řeknu sám o sobě, 90% úkonů, co jsem před pěti lety dělal já, zvládne lépe ta umělá inteligence. Pořád zbývá těch 5%, které můžu dělat mnohem lépe.
 

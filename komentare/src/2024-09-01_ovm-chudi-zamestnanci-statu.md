@@ -22,7 +22,7 @@ Loni byl 288,5 miliardy. Teď vidíme, ty nejvyšší schodky státního rozpoč
 
 **Tomáš Havránek:** Je možné mluvit o tom, že ten rozpočet je z mého pohledu asi maximum možného ohledně úspor, nebo maximum rozumně možného ve volebním roce. Vezměme v úvahu, že skoro polovina toho schodku jsou náklady na placení úroků státního dluhu. Čili to není něco, co by najednou vlastně rozhodnutím teď vlády vzniklo, ale co se tady dlouhodobě kumulovalo za několik vlád. A teď je to tolik peněz, protože úroky jsou vyšší než byly třeba za minulých vlád nebo v těch letech, co jste zmiňoval.
 
-Čili ten schodek je vlastně mnohem menší, než se zdá. Čímž nechci říkat, že to je všechno dokonalé. Ale rozhodně těžko bych hledal teď úspory. Pak se můžeme bavit o tom, kde najít peníze navíc.
+Čili ten schodek je vlastně mnohem menší, než se zdá. Čímž nechci říkat, že to je všechno dokonalé. Ale rozhodně bych teď těžko hledal úspory. Pak se můžeme bavit o tom, kde najít peníze navíc.
 
 Spíš v té stránce příjmové. Tam bych měl konkrétní nápady. Ale ohledně...
 
@@ -68,7 +68,7 @@ Tak podle odhadů, které jsou, na ta opatření třeba se zavedly, že byste si
 
 **Václav Moravec:** Pane profesore Havránku, když se znovu vrátíme k objemu peněz na platy zaměstnanců státu, nebudu říkat státních zaměstnanců, ale prostě to, co je placeno z veřejných prostředků, tak už jsem zmiňoval v návrhu rozpočtu na příští rok 277,8 desetin miliardy korun nárůst o nějakých 11%. Teď teda ta znovu vidíme. Pokud byste vytvořil státní rozpočet množství zaměstnanců státu a to navýšení celkových prostředků 3,7%, tedy těch 11 miliard korun, je to opět podle vás maximum možného, nebo by bylo možné restrukturalizovat státní zaměstnance, aby ta přetahovaná, kterou jsme v tomto týdnu viděli, i ohledně zářijového přidání, aby skončila?
 
-**Tomáš Havránek:** My bychom všichni rádi viděli efektivnější státní správu, ale zase, jak konkrétně to docílit, není vůbec zřejmé. Mám jeden nápad. Osobně mám velmi dobré zkušenosti také s úředníky. Třeba, když jsem dával daňové přiznání před pár lety, to bylo ještě školkovné, tak jsem vyplňoval za děti školkovné, než jsme ho zrušili.
+**Tomáš Havránek:** My bychom všichni rádi viděli efektivnější státní správu, ale zase, jak konkrétně toho docílit, není úplně zřejmé. Mám jeden nápad. Osobně mám velmi dobré zkušenosti také s úředníky. Třeba když jsem dával daňové přiznání před pár lety, to bylo ještě školkovné, tak jsem vyplňoval za děti školkovné, než jsme ho zrušili.
 
 Odevzdal jsem to a pak mi volala paní z finančního úřadu, a já myslel, že tam mám chybu. Já jsem se už děsil toho, co jsem tam provedl. Ona mi chtěla poradit, že jsem si mohl přiznat víc té daňové slevy na děti. Já jsem to špatně pochopil.
 
@@ -78,7 +78,7 @@ Což ne vždycky je ta moje zkušenost s úředníky.
 
 **Václav Moravec:** A těch 76 tisíc úředníků, když Mariana Jurečka, jemu se nelíbila ta první tabulka, nebo ten první graf vývoj počtu zaměstnanců státu, do kterého jsou započítány, jak jsem zmiňoval, tam jsou bezpečnostní složky, učitelé, zdravotníci a podobně, kde jsme na těch zhruba půl milionu, půl milionu státních zaměstnancích, že jo, 488 tisíc, nebo 489 tisíc zaměstnanců. To odpovídá České republice a službám, které si jako daňoví poplatníci platíme?
 
-**Tomáš Havránek:** To odpovídá, já myslím, že odpovídá. Samozřejmě bylo by lepší, kdyby to bylo efektivnější. Nějaká forma těch dotazníků jako v Singapuru by určitě pomohla. Ono těch lidí, co platíme ze státních peněz, je mnohem víc, je asi milion, možná i víc než milion.
+**Tomáš Havránek:** To odpovídá, já myslím, že odpovídá. Samozřejmě by bylo lepší, kdyby to bylo efektivnější. Nějaká forma těch dotazníků jako v Singapuru by určitě pomohla. Ono těch lidí, co platíme ze státních peněz, je mnohem víc, je asi milion, možná i víc než milion.
 
 Nepřímo. Ostatně, jako já na univerzitě taky mám, sice ne v těch tabulkách, o kterých se bavíme, ale také jsem placený převážně ze státního rozpočtu. Já nevidím velký prostor k masivnímu propouštění, protože se to sice snadno říká, že se ti úředníci nebo státní zaměstnanci točí na židlích, ale v praxi... Kdybychom lépe zdigitalizovali stát jako celek, tak...
 
@@ -88,7 +88,7 @@ Takhle jako mírné úspory konkrétně asi v tom... To je od Mariana Jurečky 1
 
 **Tomáš Havránek:** … prosím, abychom to srovnání opravdu uvedli. Má pravdu v řadě věcí, co říká třeba to, že opravdu daně tady platí hlavně zaměstnanci. To je potřeba zdůraznit. Je to velká většina
 
-… aby ten daňový poplatník opravdu byl jako klient pro státní veřejnou správu. A proto jsem navrhoval ty dotazníky, to, co jste říkal, jsem za to rád, jsou spíš dotazníky na tu službu, ne na ty konkrétní lidi, co to dělají. A jednalo by se spíš o tu pozitivní. Chcem přidat těm nejlepším, ne, že bychom někoho trestali.
+… aby ten daňový poplatník opravdu byl jako klient pro státní veřejnou správu. A proto jsem navrhoval ty dotazníky, jsem rád, že jste to říkal, a jsou to spíš dotazníky na tu službu, ne na ty konkrétní lidi, co to dělají. A jednalo by se spíš o tu pozitivní. Chceme přidat těm nejlepším, ne že bychom někoho trestali.
 
 Samozřejmě ta data by se potom dala použít různě.
 
@@ -118,7 +118,7 @@ V řadě profesí to bylo opravdu jako výrazně rychleji. I přes 20%. A teď s
 
 Protože i ty, co to baví, tak potřebují nějakou mzdu, ze které rozumně vyžijí a nemusí si potom žádat o dávku na bydlení, na kterou tedy brzy budeme mít asi nárok všichni. Jak to vypadá, k tomu se ještě asi dostaneme. Ale takže u těchto profesí, jak tady pan předseda jmenoval, jak jste vy vyčíslovali, bude opravdu nutný nárůst výrazně vyšší než nějakých třeba 5%, o kterých se mluví, i když ten celkový objem prostředků je ještě menší. Tam rozhodně nějakých 7% bude potřeba.
 
-Tady bych podpořil pana předsedu. Myslím, že to je nějaká věc, která je evidentní. Že nemůžete do nekonečna rozvírat ty nůžky na stejné pozici mezi platy v té veřejné sféře a v té soukromé.
+Tady bych podpořil pana předsedu. Myslím, že to je nějaká věc, která je evidentní: že nemůžete do nekonečna rozevírat ty nůžky na stejné pozici mezi platy v té veřejné sféře a v té soukromé.
 
 **Václav Moravec:** Protože stát asi nemá ty zdroje?
 

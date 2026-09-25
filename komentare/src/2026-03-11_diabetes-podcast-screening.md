@@ -37,7 +37,7 @@ Bára byla ředitelka mateřské školy, teď je zástupkyně, takže má, mysl�
 
 **Jan Hrušovský:** když jste říkal Bára, tak to jste myslel o tu svoji sestřenici.
 
-**Tomáš Havránek:** k tomu se možná dostaneme taky později, k paní doktorce, která byla hostem nedávno, jak jste už zmiňoval, vašeho pořadu, ale to je moje sestřenice Bára Hajková, kterou zdravím, jestli poslouchá.
+**Tomáš Havránek:** k tomu se možná dostaneme taky později, k paní doktorce, která byla nedávno hostem vašeho pořadu, jak jste už zmiňoval, ale to je moje sestřenice Bára Hajková, kterou zdravím, jestli poslouchá.
 
 **Jan Hrušovský:** Třeba to udělám. No, tak to budu rád. Ale pojďme se podívat na ten screening. Kdy jste ho podstoupili?
 
@@ -57,7 +57,7 @@ A postupně přicházely ty negativní výsledky, že Kristínka je negativní, 
 
 **Jan Hrušovský:** Jako to, že zatím asi člověk nedokáže ovlivnit ani to, že mu cukrovka prvního typu někdy vstoupí do života, protože zatím taky nevíme, co je ten spouštěč, jsou nějaké teorie, tak vlastně proto se tím asi jako trápit, co? Přesně tak. Ještě vlastně, když jste měli ty rovnou čtyři děti, který jste do toho zapojili, tak víte, jaký tam bylo ještě rozmezí mezi tím, než vám přišly ty výsledky, bylo to třeba měsíc, dva od toho testu?
 
-**Tomáš Havránek:** Tuším, že to byly týdny, v řádu týdnů. Teď bych asi lhal, kdybych řekl něco konkrétního, protože diabetes přece není úplně běžná věc, není to třeba ani tak časté jako potíže se štítnou žlázou, které v rodině máme a známe. A kde je to jednodušší, protože si jenom ráno vezmete ten váš lék a neřešíte vlastně nic dalšího, takže to je, ale je to mnohem častější. U toho diabetu, teď jsem zase přesné číslo zapomněl, ale to procento dětí, kterým ten test u paní doktorky Berky v Motole vyjde pozitivní, je malé, a to vy znáte lépe než já, možná mě doplníte.
+**Tomáš Havránek:** Tuším, že to byly týdny, v řádu týdnů. Teď bych asi lhal, kdybych řekl něco konkrétního, protože diabetes přece není úplně běžná věc, není to třeba ani tak časté jako potíže se štítnou žlázou, které v rodině máme a známe. A kde je to jednodušší, protože si jenom ráno vezmete ten váš lék a neřešíte vlastně nic dalšího, ale je to mnohem častější. U toho diabetu, teď jsem zase přesné číslo zapomněl, ale to procento dětí, kterým ten test u paní doktorky Berky v Motole vyjde pozitivní, je malé, a to vy znáte lépe než já, možná mě doplníte.
 
 **Jan Hrušovský:** ale to fakt, teď bych jako kecal a vím, že jsme to s Bárou řešili a i v tom jsme udělali drobnou chybu, že jsme tam řekli ty čísla trošku jinak. Takže vím, že taky jako je neznám z hlavy, ale máte pravdu v tom, že to procento je fakt jako mizivý toho, u kterých to vyjde.
 
@@ -69,7 +69,7 @@ A když potom chodí ta negativní čísla, tak taky jste rádi, ale vlastně to
 
 **Tomáš Havránek:** Zase, to už je nějakou dobu, tak já musím zapátrat v paměti. Mám pocit, že téměř jistě paní doktorka Berka volala manželce, která byla uvedená jako kontakt k tomu testu Betty, že to bylo telefonicky. Možná je teď ta dobrá chvíle začít maličko mluvit o tom personálu z Motola, nebo řekněme o tom vedení toho projektu Betty, kde jsme byli už asi čtyřikrát, pětkrát na kontrole, na těch růzostech. To na rok a půl.
 
-Jestli si to pamatuji správně, tak myslím, že ano, nebo minimálně třikrát jsme byli v Motole. A ten přístup je naprosto skvělý. A to musím říct takhle na rovinu, že člověk má zkušenosti, ačkoliv naše zdravotnictví se hodně zlepšilo, za těch, řekněme, mně je čtyřicet, tak za těch třicet let, co si můžu nějak jako pamatovat. Tak pořád toto konkrétně, ta endokrinologie v Motole, jako se vymyká úplně tomu, co jsem zažil i v zahraničí.
+Jestli si to pamatuji správně, tak myslím, že ano, nebo minimálně třikrát jsme byli v Motole. A ten přístup je naprosto skvělý. A to musím říct takhle na rovinu, že člověk má zkušenosti, ačkoliv se naše zdravotnictví hodně zlepšilo za těch, řekněme, mně je čtyřicet, tak za těch třicet let, co si můžu nějak jako pamatovat, tak pořád tohle konkrétně, ta endokrinologie v Motole, jako se vymyká úplně tomu, co jsem zažil i v zahraničí.
 
 Ten přístup, který je velmi citlivý i pro ty rodiče. Ty děti jsou trošku asi vystrašené, ale nevědí moc, co se děje. A právě proto je tak důležité toto uklidňování a vysvětlování toho, co to vlastně je. Tím spíš to zachytíte včas.
 
@@ -137,7 +137,7 @@ Tak já vlastně nevím, co je pro ten systém jako lepší, že jo.
 
 **Jan Hrušovský:** Takhle, já bych byl za tu stejnou cestu jako vy, ale prostě jak některýma věcma se snažím jako přemýšlet i z té druhé strany, tak jako prostě někdy to takzvané overthinkuju.
 
-**Tomáš Havránek:** Ano, ale vy jste řekli jednu důležitou věc. Cena toho léku, nevím jaká je teď, jestli to je v těch cifrách, řekněme, co jste zmiňoval, ale půjde rapidně dolů kvůli konkurenci. Konkurence je to, co my chceme, malinko, jenom si přihřeju vlastní polívčičku ekonomickou všude. Kde máte konkurenci, tak máte nakonec něco, co funguje za rozumnou cenu, když tomu dáte dost času.
+**Tomáš Havránek:** Ano, ale vy jste řekl jednu důležitou věc. Cena toho léku, nevím, jaká je teď, jestli je v těch cifrách, řekněme, které jste zmiňoval, ale půjde rapidně dolů kvůli konkurenci. Konkurence je to, co my chceme, jenom si malinko přihřeju vlastní ekonomickou polívčičku. Všude, kde máte konkurenci, tak máte nakonec něco, co funguje za rozumnou cenu, když tomu dáte dost času.
 
 Ano, takže ta firma, která to vyvinula, jejíž jméno jsem zapomněl. Sanofi, francouzská firma. Tak to nebude jediný lék. Budou lepší léky, cena půjde rapidně dolů a téměř jistě brzy přijde situace, kdy se vám to vyplatí i čistě ekonomicky, čistě z hlediska toho cashflow pojišťoven.
 
@@ -215,7 +215,7 @@ Takový jako příjemný, hezký, že z toho nemusíte mít jako žádný strach
 
 **Jan Hrušovský:** Jasně, tomu rozumím. Další věc je ta, by se nějak proměnil váš pohled na vašeho syna, a teďka myslím třeba z hlediska té starosti, jo, o něj, že najednou teďkon začínáte víc ho třeba pozorovat, sledovat, odehrává se tam nějaká takováhle změna?
 
-**Tomáš Havránek:** Asi ani ne. Tím, že těch dětí máme několik, tak řešíte pořád něco u každého z nich, co je potřeba, na co si dát pozor, co vás tak nějak trápí, že jo, ačkoliv třeba s tím nemůžete nic dělat, tak neubráníte se tomu, že vás to trápí. A čili tohle je jenom jedna ze těch zdravotních patálií, které se občas projeví, i když tahle je asi tedy nejzávažnější dlouhodobě, ale tím, že mám plnou důvěru v ten personál v Motole, tak mám pocit, že to hlídají oni. Takže já nemusím toho Filípka nějak zvláště hlídat, protože oni mi řekli, že to potřeba není, tak já jim důvěřuji.
+**Tomáš Havránek:** Asi ani ne. Tím, že těch dětí máme několik, tak řešíte pořád něco u každého z nich, co je potřeba, na co si dát pozor, co vás tak nějak trápí, a ačkoliv s tím třeba nemůžete nic dělat, tak se neubráníte tomu, že vás to trápí. Čili tohle je jenom jedna ze těch zdravotních patálií, které se občas projeví, i když tahle je asi tedy dlouhodobě nejzávažnější, ale tím, že mám plnou důvěru v ten personál v Motole, tak mám pocit, že to hlídají oni. Takže já nemusím toho Filípka nějak zvláště hlídat, protože oni mi řekli, že to potřeba není, tak já jim důvěřuji.
 
 A vím, že je to pravda. Čili asi ne, asi se nic moc nezměnilo. Jezdíme častěji do Prahy s Filípkem, takže možná je maličko víc času, člověk třeba je v autě s ním, tak si něco můžeme říct, což je fajn, ale ta změna je malá.
 
@@ -255,13 +255,13 @@ Najednou, když víte, že jednoho dne ta cukrovka prostě do toho života vstou
 
 **Jan Hrušovský:** jako překvapuje, jak k tomu přistupujete jako racionálně, protože jako vlastně já to mám dost podobně, jo, v přístupu ke svý cukrovce, já si říkám, OK, no tak se z toho nebudu hroutit, no, tak pojďme dělat jako něco, když už to tady je, tak prostě s tím jako nějak pracovat a že mi to vlastně přijde jako relativně zdravý.
 
-**Tomáš Havránek:** v životě nějaký problém a trápí vás to, tak jsou dvě možnosti, že s tím nemůžete nic dělat, pak ale nemá smysl se s tím trápit, když to není na vás, nebo že s tím něco můžete dělat, tak to udělejte a nemá smysl se s tím trápit. Samozřejmě tohle člověk říká, a sám se tím úplně řídit neumí, ale je dobré si občas uvědomit, že nemá smysl vztekat se nad tím, co vám ten život připravil. Takhle to je a nejlepší, co můžete dělat je vzít si z toho, co se dá a užít si tu současnost, na tu budoucnost nějak myslet, a pokud se trápit, tak tím, co bych mohl udělat, abych to zlepšil pro ty svoje děti, pro svoje město, nebo pro svoje okolí, pro tuto zemi. Tak toto má smysl.
+**Tomáš Havránek:** v životě nějaký problém a trápí vás to, tak jsou dvě možnosti, že s tím nemůžete nic dělat, pak ale nemá smysl se s tím trápit, když to není na vás, nebo že s tím něco můžete dělat, tak to udělejte a nemá smysl se s tím trápit. Samozřejmě tohle člověk říká a sám se tím úplně řídit neumí, ale je dobré si občas uvědomit, že nemá smysl vztekat se nad tím, co vám ten život připravil. Takhle to je a nejlepší, co můžete dělat, je vzít si z toho, co se dá a užít si tu současnost, na tu budoucnost nějak myslet, a pokud se trápit, tak tím, co bych mohl udělat, abych to zlepšil pro ty svoje děti, pro svoje město, nebo pro svoje okolí, pro tuto zemi. Tak toto má smysl.
 
 **Jan Hrušovský:** Mě to ještě v souvislosti s tím napadá, jestli třeba z Motola se ozvali s tím, že by vám nebo vašemu synovi poskytli nějakou pomoc v oblasti duševního zdraví, jestli tam něco takového přišlo, že si sami uvědomují, že to může být pro ty rodiny složitý, velký zásah do jejich života, by poskytli vlastně i takovou pomocnou ruku v tom, jak tu situaci zvládat lépe.
 
 **Tomáš Havránek:** Tuším, vyplňoval jsem nějaké dotazníky ohledně duševního zdraví a možná díky tomu, že jsem tam jako nic moc neindikoval, tak ta nabídka asi nepřišla, ale možná přišla. Takhle, ten Motol, je to diabetologie, endokrinologie, ne, promiňte. Říkám to správně? Většinou tyhle dvě oddělení jsou spojené.
 
-Ano, dobře. Tak tohle je jejich práce. A člověk za sebe si některé věci buď měl vyřešit sám a nebo jít na to správné oddělení, pokud má ten problém a sám ho vyřešit neumí, takže já bych úplně nechtěl zatěžovat kolegy tady z tohohle konkrétního oddělení i s věcmi ohledně psychologie.
+Ano, dobře. Tak tohle je jejich práce. A člověk by si za sebe některé věci buď měl vyřešit sám, anebo jít na to správné oddělení, pokud má ten problém a sám ho vyřešit neumí, takže já bych úplně nechtěl zatěžovat kolegy tady z tohohle konkrétního oddělení i s věcmi ohledně psychologie.
 
 To, co udělají už teď, má i poměrně velký, jako silný aspekt toho uklidňování, což s tím velmi silně souvisí a nemyslím, že by měli dělat ještě něco nad rámec toho. Ne, tak já předpokládám,
 
@@ -273,7 +273,7 @@ Nebo ten inzulin, ta aplikace toho inzulinu. Tak přemýšlíte i, nebo díváte
 
 **Tomáš Havránek:** Tak samozřejmě, já mám rád technický pokrok. Asi i vy, jak jsem pochopil z vašeho povídání. A pořád v člověku je taková trošku jako myšlenka, že třeba do té doby, než se ten Filípek opravdu dostane do té třetí fáze, tak nejenom, že ten lék, o čem jsme se bavili, ale možná bude něco, co ho úplně vyléčí. Tak to je taková věc, která víte, že to není úplně racionální, ale stát se to může.
 
-Nebo opakované podání toho léku. Tak člověk by rád, kdyby tenhle trend setrval. Za posledních cirka 200 let tady máme ten neuvěřitelný pokrok nejenom v tom, kolik máme peněz, a kolik dětí přežije, různé patálie, včetně diabetu, ale jakou možnost máme jako lidé se rozvíjet. O kolik se zlepšilo i životní prostředí, ač se o tom moc nemluví, ale třeba množství lesů, plocha lesů, jak v Česku, tak v západní Evropě je větší, než byla ve středověku.
+Nebo opakované podání toho léku. Tak člověk by rád, kdyby tenhle trend setrval. Za posledních cirka 200 let tady máme ten neuvěřitelný pokrok nejenom v tom, kolik máme peněz a kolik dětí přežije různé patálie včetně diabetu, ale jakou možnost máme jako lidé se rozvíjet. O kolik se zlepšilo i životní prostředí, ač se o tom moc nemluví, ale třeba množství lesů, plocha lesů, jak v Česku, tak v západní Evropě je větší, než byla ve středověku.
 
 A obecně to životní prostředí je na tom lépe, než bylo. Tak to je úžasná věc, to zlepšení tohohle světa, za od průmyslové revoluce, která ale není úplně, to není jako garantovaná trajektorie, že takhle to bude pokračovat dál. pokazilo, kdybychom si najednou řekli, že by se to všechno mělo zastavit, a růst měl zastavit, technický pokrok, všechno zregulovat. Což maličko vidíme na té, ačkoliv Evropa je skvělá, tak té evropské úrovni, jak jsme narazili maličko na tu Evropskou lékovou agenturu, tohohle, toho nového odporu vůči inovacím, řekněme, nebo vůči tomu, čemu se říká růst, ale není to růst, že by bylo víc věcí, ale že věci se dělají lépe.
 

@@ -61,7 +61,7 @@ Nevidíte nějakou velkou chválu na paní Schillerovou nebo pana Babiše, jak s
 
 **Tomáš Havránek:** Velmi rád. Takže nejlepší řešení je takové ideálně, které zase tak moc nikoho nebolí a přinese hodně peněz. Což zní dobře, tak co by to mohlo být? Mám dvě věci, o kterých často se snažím mluvit.
 
-Ta první věc je, že tahle země má poměrně velký majetek v zahraničí. O devizových rezervách Národní banky mluvím, což jsou skoro 4 biliony korun. Biliony je milion milionů. To je poměrně hodně, 4 biliony korun.
+Ta první věc je, že tahle země má poměrně velký majetek v zahraničí. Mluvím o devizových rezervách Národní banky, což jsou skoro 4 biliony korun. Bilion je milion milionů. To je poměrně hodně, 4 biliony korun.
 
 Máme v majetku v zahraničních měnách. Eura, dolary převážně. A tyhle peníze my vlastně nepotřebujeme, ty vznikly, aby to nebylo moc komplikované, jako vedlejší produkt toho, co Národní banka dělá, když intervenovala proti koruně, tak vytvářela nové koruny a kupovala eura.
 
@@ -83,7 +83,7 @@ Když máte peníze, nenecháte je na běžném účtu, de facto. Já to zjednod
 
 **Tomáš Havránek:** za jak dlouho. Ta důležitá věc je, že pokud toto udělá, tak jestli to bude trvat pět nebo deset let, tak vy máte téměř jistotu, že pokud se svět nezhroutí a bude fungovat podobně jako posledních pár set let, tak opravdu budete mít ročně těch 100-200 miliard korun navíc. Napořád. To je ta důležitá věc.
 
-Jestli to bude za pět nebo deset let, záleží, to záleží na panu premiérovi, nebo je to důležité pro pana premiéra, teď asi, nebo pro paní ministryni, pro mě ani tak ne. Mně jde o ten dlouhodobý efekt, ty státní finance jsou dlouhodobá věc. Je úplně jedno, když to zjednoduším, jaký je deficit letos. Nás zajímá ten kumulovaný součet deficitu, diskontovaný úrokovou sazbou.
+Jestli to bude za pět nebo deset let, je to důležité pro pana premiéra, teď asi, nebo pro paní ministryni, pro mě ani tak ne. Mně jde o ten dlouhodobý efekt, ty státní finance jsou dlouhodobá věc. Je úplně jedno, když to zjednoduším, jaký je deficit letos. Nás zajímá ten kumulovaný součet deficitu, diskontovaný úrokovou sazbou.
 
 Možná to bude, já bych si tipnul, čtyři, pět let, že by to mohlo být možná dřív, ale důležitý je ten delší horizont. Takže jasně, splatíte kumulovanou ztrátu. Mimochodem, kdybychom tohle udělali, jak jsme někteří z nás říkali před deseti lety, tak už teď by těch 200 miliard ročně ta ČNB přispívala. Čili dobrá otázka je, proč se o tom bavíme až teď a ne v roce 2017, když jsme ten balík peněz měli a nebyla žádná strategie v Národní bance, co s nimi dál dělat.
 
@@ -103,7 +103,7 @@ A já jsem, je to i moje chyba, já jsem u toho tehdy byl, a sice jsem něco k t
 
 **Tomáš Havránek:** Tak já bych se asi nesázel v první řadě. Já ale bych čekal, že bankovní rada bude chtít ukázat, že je nezávislá. To znamená, když vnímáte nějaké výroky ze strany vlády, pana premiéra, že by měly být úroky nižší, tak co bych udělal já, kdybych byl členem bankovní rady, Národní banky, tak bych ty sazby zvýšil. Čili asi to je to, co bych čekal, jestli to bude teď nebo na příštím zasedání, to nevím.
 
-Nějaké to zvýšení sazeb o čtvrt procentního bodu, 25 bazických bodů, s tou inflací samozřejmě nic neudělá. Ten efekt je velmi malý. To spíš to očekávání do budoucna, kumulativně, jestli opravdu třeba pan guvernér chce zdrtit ekonomiku, tak kdyby trhy tomu věřily, tak to už něco udělat trošku může.
+Nějaké to zvýšení sazeb o čtvrt procentního bodu, 25 bazických bodů, s tou inflací samozřejmě nic neudělá. Ten efekt je velmi malý. To je spíš to očekávání do budoucna, kumulativně, jestli opravdu třeba pan guvernér chce zdrtit ekonomiku, tak kdyby tomu trhy věřily, tak to už něco udělat trošku může.
 
 **Petra Jaroměřská:** nějaký růst cen v souvislosti třeba s tím, co se děje na Blízkém východě?
 
@@ -159,7 +159,7 @@ Pak se můžeme bavit o dalších nějakých nových názorech, ale takhle to vl
 
 **Tomáš Havránek:** Já jsem zapomněl dopovědět to svoje řešení těch fiskálních problémů země. Čili to první, co bych udělal, je investovat devizové rezervy. Nikoho to nebolí, je to naprosto nekontroverzní záležitost technokratická, která vytvoří nějakou práci v ČNB, ale je to vlastně snadná věc. Uděláme takhle.
 
-Ta druhá věc, co bych udělal, je to, čemu se říká rozpočtový carryover. Co to znamená? Teď, když pracujete v nějaké státní anebo i privátní, ale hlavně státní instituce, tak na konci roku vám zbude nějaký balík rozpočtu, který chcete utratit. Vánoční utrácení.
+Ta druhá věc, co bych udělal, je to, čemu se říká rozpočtový carryover. Co to znamená? Teď, když pracujete v nějaké státní anebo i privátní, ale hlavně státní instituci, tak na konci roku vám zbude nějaký balík rozpočtu, který chcete utratit. Vánoční utrácení.
 
 Protože když to neutratíte, tak se stane co? Co byste řekla, když jsem ředitel odboru a neutratím svůj rozpočet na konci roku. Tak se to převede do dalšího? To by bylo dobrý, to bylo skvělý.
 
@@ -199,13 +199,13 @@ Takže máte, a čím dál víc se přikláním k tomu, že tohle opravdu může
 
 Ale zároveň je tu ten potenciál možná exploze umělé inteligence, pokud nedojde k nějaké katastrofě. Naopak. Čili společnost bude menší a produktivnější? Mohla by, ale musí uživit ty starší lidi, což budu já brzy, dřív než vy, o dost asi.
 
-Takže možná se o nás budou starat roboti. Já myslím, že to je docela reálná věc, že o mě v důchodu bude pečovat humanoidní robot. Už bych vlastně se na to vsadil poměrně, což vám pomůže hodně jinak vůbec s tím, kdo se fyzicky bude o ty lidi starat a kdo to zaplatí. Ti roboti budou jednou levní.
+Takže možná se o nás budou starat roboti. Já myslím, že to je docela reálná věc, že o mě v důchodu bude pečovat humanoidní robot. Už bych se na to vlastně poměrně vsadil, což vám pomůže hodně jinak vůbec s tím, kdo se fyzicky bude o ty lidi starat a kdo to zaplatí. Ti roboti budou jednou levní.
 
 Tak to je spekulace, ale je to podložená spekulace a znám řadu chytrých lidí, co vám o tom řeknou mnohem víc, právě třeba v Kalifornii, co se na tom podílejí, na tom vývoji. Tak, ale pořád stejně to nebude stačit na splacení těch dluhů a na vyrovnání toho rozpočtu. Pokud neuděláme něco v tom smyslu, když jsme se bavili, což by skoro stačilo. Nebylo by to úplně všechno, ale dvě třetiny z toho bychom smazali docela snadno.
 
 A nemusí se nijak moc šetřit? Šetřit je prima, ale to šetření nebo třeba zvyšování daní někoho bolí, takže realita je taková, že větší reformy daní nebo výdajů jsou v demokracii v podstatě nemožné. Ne, že by to bylo úplně nemožné, je to velmi, velmi komplikované. Čili co?
 
-Podle mě bohužel je mnohem pravděpodobnější scénář, pokud tady nebude ta hojnost umělé inteligence pro všechny, že peníze vlastně nebudou mít už všichni můžu všechno, což asi ne, tak v situaci, kdy ten stát není dlouhodobě schopen na daních vybírat tolik, kolik potřebuje, tak si ty peníze natiskne. To je, to sice taky není, to není dobrý řešení, lidi to rádi mít nebudou, ale je to politicky přijatelnější, než vybírat mnohem víc daní nebo snižovat důchody.
+Podle mě bohužel je mnohem pravděpodobnější scénář, pokud tady nebude ta hojnost umělé inteligence pro všechny, že peníze vlastně nebudou mít už… všichni můžou všechno, což asi ne, že v situaci, kdy ten stát není dlouhodobě schopen na daních vybírat tolik, kolik potřebuje, tak si ty peníze natiskne. To sice taky není, to není dobré řešení, lidi to rádi mít nebudou, ale je to politicky přijatelnější, než vybírat mnohem víc daní nebo snižovat důchody.
 
 **Petra Jaroměřská:** dlouhodobě se to udržet přeci nedá.
 

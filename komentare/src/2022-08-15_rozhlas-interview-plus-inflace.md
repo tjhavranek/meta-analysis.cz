@@ -27,9 +27,9 @@ Prostě se to přihnalo a my to musíme nějak vydržet?
 
 **Jan Bumba:** Ale musíme tedy rozlišovat to, co se děje nyní, ty mimořádné podmínky a tu současnou vysokánskou inflaci a tu dlouhodobou, na kterou se takzvaně cíluje.
 
-**Tomáš Havránek:** Ano, ten cíl jsou dvě procenta, čili z dnešního pohledu by to byla samozřejmě hodnota naprosto krásná, dvě procenta oproti dvaceti, aktuálně sedmnáct a půl, ale ta prognóza opravdu je Národní banky, kolem dvaceti procent na začátku podzimu. Ale ono to s tím souvisí, protože když ta Národní banka vám negarantuje, jakou hodnotu budou peníze mít za pět nebo deset let, tak vy nemáte jistotu. Vy naopak máte velkou nejistotu, ohledně toho, co s penězi můžete dělat. V dnešní době, když člověk má nějaké peníze, tak vlastně má dvě možnosti, co s nimi udělat.
+**Tomáš Havránek:** Ano, ten cíl jsou dvě procenta, čili z dnešního pohledu by to byla samozřejmě hodnota naprosto krásná, dvě procenta oproti dvaceti, aktuálně sedmnáct a půl, ale prognóza Národní banky opravdu je kolem dvaceti procent na začátku podzimu. Ale ono to s tím souvisí, protože když ta Národní banka vám negarantuje, jakou hodnotu budou peníze mít za pět nebo deset let, tak vy nemáte jistotu. Vy naopak máte velkou nejistotu ohledně toho, co s penězi můžete dělat. V dnešní době, když člověk má nějaké peníze, tak vlastně má dvě možnosti, co s nimi udělat.
 
-Buď je utratíte, protože jinak vám je ta inflace požere, ale tím znovu tu inflaci živíte tím zvyšováním poptávky anebo je vložíte do něčeho, co je reálné, jako třeba do nemovitostí, ale tím vytváříte potom tu bublinu nemovitostí. A díky té nejistotě vy vlastně i krátkodobé výkyvy v inflaci berete, víte, že je ta Národní banka neopraví, nenechá zase nějakou mírnou deflací v průběhu třeba deseti let, ty ceny klesnout v průměru zpátky na tu původní úroveň. A hledáte tedy alternativní cesty. Čili buď ty peníze utratit, protože nemáte nějakou šanci na to spořením jejich hodnotu zachovat, anebo je vložit do něčeho, čím vytváříte ty bubliny.
+Buď je utratíte, protože jinak vám je ta inflace požere, ale tím znovu tu inflaci živíte tím zvyšováním poptávky, anebo je vložíte do něčeho, co je reálné, jako třeba do nemovitostí, ale tím vytváříte potom tu bublinu nemovitostí. A díky té nejistotě vy vlastně i u krátkodobých výkyvů v inflaci víte, že je ta Národní banka neopraví, nenechá zase nějakou mírnou deflací v průběhu třeba deseti let ty ceny klesnout v průměru zpátky na tu původní úroveň. A hledáte tedy alternativní cesty. Čili buď ty peníze utratit, protože nemáte nějakou šanci na to spořením jejich hodnotu zachovat, anebo je vložit do něčeho, čím vytváříte ty bubliny.
 
 **Jan Bumba:** Když zůstaneme chviličku o té aktuální situace a té možná až 20% inflace na podzim, vedou se debaty o tom, jestli to je inflace dovezená, hlavně přes vysoké ceny plynu, anebo jestli je to vnitřní poptávková inflace. Na které straně stojíte vy?
 
@@ -73,9 +73,9 @@ Není samotná osoba guvernéra překážkou posilování koruny?
 
 Podle mě teď je nutné, aby Národní banka ukázala, že udělá cokoliv, cokoliv pro to, aby nám doručila cenovou stabilitu. Čili podle mě ideálně inflaci nulovou dlouhodobě, ale alespoň tedy ten inflační cíl 2%. A ona to nedělá. Ona dobře, zvýšila sazby poměrně hodně.
 
-Tam je otázka, jak moc to bylo účinné. Ale má tady velký účinný nástroj, u kterého nikdo nezpochybňuje jeho účinnost. A nepoužívá ho. Používá ho tak trošku tím, že brání oslabování.
+Tam je otázka, jak moc to bylo účinné. Ale má tady velký účinný nástroj, jehož účinnost nikdo nezpochybňuje. A nepoužívá ho. Používá ho tak trošku tím, že brání oslabování.
 
-Ale i pro vysvětlení lidem není nic snazšího. Tehdy jsme intervenovali proti koruně, kvůli deflaci. Teď máme problém opačný, čili intervenujeme, my ta eura prodáme, vrátíme to všechno do normálního stavu, který nebude zkreslen těmi intervencemi, které tam pořád leží na účtech těch bank, ty nové koruny.
+Ale i pro vysvětlení lidem není nic snazšího. Tehdy jsme intervenovali proti koruně, kvůli deflaci. Teď máme problém opačný, čili intervenujeme, my ta eura prodáme, korunu posílíme, vrátíme to všechno do normálního stavu, který nebude zkreslen těmi intervencemi, které tam pořád leží na účtech těch bank, ty nové koruny.
 
 **Jan Bumba:** Proč myslíte, že se to neděje?
 
@@ -89,7 +89,7 @@ Ale i pro vysvětlení lidem není nic snazšího. Tehdy jsme intervenovali prot
 
 **Tomáš Havránek:** Myslíte zrušení inflace? Tak vezměte si třeba, že peníze existují v naší historii přes pět tisíc let a inflace, nějaká setrvalá inflace funguje 90 let. Čili ten normální stav nebo třeba ještě konkrétnější příklad. Cenová hladina v Evropě před první světovou válkou byla podobná jako o století předtím po konci napoleonských válek.
 
-Čili ta cenová stabilita je běžná věc v historii. Švýcaři mají dnes cenovou hladinu hodně podobnou roku 2008, asi jen o 2–3% vyšší. Čili je to věc, která je možná, která nezpůsobuje žádnou katastrofu. A na stránce zrusmeinflaci.cz ukazujeme všechny ty argumenty pro a proti, vlastně proč a jak je to možné snadno udělat. Čili tohle je, když to zjednoduším, to, co říká ústava.
+Čili ta cenová stabilita je běžná věc v historii. Švýcaři mají dnes cenovou hladinu hodně podobnou roku 2008, asi jen o 2 až 3% vyšší. Čili je to věc, která je možná, která nezpůsobuje žádnou katastrofu. A na stránce zrusmeinflaci.cz ukazujeme všechny ty argumenty pro a proti, vlastně proč a jak je to možné snadno udělat. Čili tohle je, když to zjednoduším, to, co říká ústava.
 
 Ta neříká Národní bance: starejte se o nějakou mírnou inflaci, byť by třeba byla optimální, ona není, ale říká cenovou stabilitu.
 
@@ -137,7 +137,7 @@ A žádná z nich, ani jedna z těch studií, neukazovala, že by zdravá inflac
 
 **Jan Bumba:** že když stál před nějakými pár lety oběd 120 korun, dneska stojí 220, takže by se někdy mohly ty ceny vrátit zase zpátky na těch 120?
 
-**Tomáš Havránek:** Musel byste vybrat datum, ke kterému ty ceny zafixujete. A to neznamená, že by se nikdy neměnily, ale znamená to, že kdyby se od tohohle, řekněme, benchmarku, od té hladiny moc vychýlily v průměru, tak se Národní banka snaží vrátit je zpátky k té hodnotě. Asi ale nedává smysl vybrat datum zpřed několika let, bylo by to nějaké datum v současnosti nebo v blízké budoucnosti, třeba prvního prvního příštího roku. To mimochodem může pan guvernér udělat z vlastní vůle kdykoliv.
+**Tomáš Havránek:** Musel byste vybrat datum, ke kterému ty ceny zafixujete. A to neznamená, že by se nikdy neměnily, ale znamená to, že kdyby se od tohohle, řekněme, benchmarku, od té hladiny moc vychýlily v průměru, tak se je Národní banka snaží vrátit zpátky k té hodnotě. Asi ale nedává smysl vybrat datum zpřed několika let, bylo by to nějaké datum v současnosti nebo v blízké budoucnosti, třeba prvního ledna příštího roku. To mimochodem může pan guvernér udělat z vlastní vůle kdykoliv.
 
 Stačí většina v té bankovní radě, nepotřebuje změnu zákona ani nic a může to udělat on sám,
 
@@ -145,7 +145,7 @@ Stačí většina v té bankovní radě, nepotřebuje změnu zákona ani nic a m
 
 **Tomáš Havránek:** Já hluboce věřím tomu, že ano. Takhle, asi není pravděpodobné, že to pan guvernér, jak jsem říkal, teď on udělá. Mohl by, ale kdy jindy se o to snažit, když ne v době, kdy ten současný systém tak strašlivě selhal, jako teď, všichni to vidíme. Je hrozná věc, když Národní banka má v mandátu ústavním, čili v tom nejvyšším, v jakém vůbec může být úkol cenové stability.
 
-A přitom během tří let, vloni, letos a za rok, nám naše úspory ztratí třetinu hodnoty dohromady. To je strašné selhání a je na čase minimálně přemýšlet o nějaké změně. Proto se navrhoval audit Národní banky, abychom se podívali, jestli to opravdu odpovídá vědeckému poznání současnému. Já vím, že ne.
+A přitom během tří let, vloni, letos a za rok, nám naše úspory ztratí třetinu hodnoty dohromady. To je strašné selhání a je na čase minimálně přemýšlet o nějaké změně. Proto jsem navrhoval audit Národní banky, abychom se podívali, jestli to opravdu odpovídá současnému vědeckému poznání. Já vím, že ne.
 
 Proto vím, co by z toho auditu muselo vyplynout. Protože zase průměrný odhad optimální míry inflace v 200 studiích je nula. Čili nulová inflace je ta, která je zdravá pro tu ekonomiku. My tady z tradice držíme něco, co škodí nám všem.
 

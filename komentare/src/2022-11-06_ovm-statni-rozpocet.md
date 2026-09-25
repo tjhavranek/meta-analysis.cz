@@ -71,7 +71,7 @@ Tady tedy ta pozitivita už končí, ale reálně opravdu ten přebyt...
 
 **Vít Samek:** Ale lidi nám zdá, když propady, reálné propady mezd už jsou teď přes 10% ročně a u řady lidí ještě větší. Takže naši zaměstnanci jsou první obětí.
 
-**Tomáš Havránek:** Jenom chci říct, že krátkodobě ty veřejné finance na tom nejsou zase tak špatně kvůli té inflaci. Ne díky, ale kvůli ní. Příští rok bude ten vlastně rozpočet vyrovnaný kvůli inflaci. Víceméně o 300 miliard se sníží státní dluh kvůli inflaci.
+**Tomáš Havránek:** Jenom chci říct, že krátkodobě ty veřejné finance na tom nejsou zase tak špatně kvůli té inflaci. Ne díky, ale kvůli ní. Příští rok bude vlastně ten rozpočet vyrovnaný kvůli inflaci. Víceméně o 300 miliard se sníží státní dluh kvůli inflaci.
 
 300 miliard bude ten schodek. Ale dlouhodobě ten problém jsou důchody. O čemž pan Rusnok ví z nás nejvíc rozhodně. A to je vlastně to, co ten rozpočet rozbourá za nějakých deset let.
 
@@ -147,6 +147,6 @@ Náš systém připojištění penzijního není úplně šťastný v tom, že t
 
 **Tomáš Havránek:** To máte pravdu, ale tohle, co jsem řekl, vyžaduje novou vlastně společenskou smlouvu, protože teď, jak to funguje, my čekáme od státu, že nám zajistí nějaký důstojný důchod. Ale my když pracujeme, neplatíme důchod sami sobě, platíme ho našim rodičům, jak víme my, ale řada lidí to neví. Čili já odvádím na důchod svých rodičů, moje děti budou odvádět na můj důchod. Čili mně by přišlo fér třeba navázat maličko ty odvody, aby přímo šly odvody mých dětí na můj důchod.
 
-Mám tedy střet zájmů čtyři děti, takže pro mě to je samozřejmě snadné to říct. Ne všichni toto mohou takhle jednoduše udělat, ale dát tam větší spravedlnost, větší motivaci pro to zvýšit tu porodnost by rozhodně pomohlo, ale to chápu, že není věc, která se dá udělat hned. To vyžaduje dlouhou diskuzi, přesvědčování, novou společenskou smlouvu a smlouvu vlastně přes celé politické spektrum. Aby s tím souhlasily odbory, zleva doprava, to bude velmi...
+Mám tedy střet zájmů, čtyři děti, takže pro mě to je samozřejmě snadné to říct. Ne všichni toto mohou takhle jednoduše udělat, ale dát tam větší spravedlnost, větší motivaci pro to zvýšit tu porodnost by rozhodně pomohlo, ale chápu, že to není věc, která se dá udělat hned. To vyžaduje dlouhou diskuzi, přesvědčování, novou společenskou smlouvu a smlouvu vlastně přes celé politické spektrum. Aby s tím souhlasily odbory, zleva doprava, to bude velmi...
 
 **Václav Moravec:** No ale podívejte se, že tu novou společenství...
