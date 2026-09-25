@@ -639,6 +639,10 @@
   {
    "project": "trust",
    "why": "the paper declines to estimate the quantity this figure plots, and says so: 'We do not fit a full selection model, because the target is the institutional moderators of reported slopes, not the bias-corrected mean size premium.' Its headline is which institutions move the premium, not a level."
+  },
+  {
+   "project": "social_comparison",
+   "why": "two separate comparisons, against passive and against active control conditions, each corrected on its own (0.00 and 0.01, from 0.17 and 0.23), so the paper states no single corrected value; and its comparators are random-effects estimates, not simple means of the reported effects"
   }
  ]
 }

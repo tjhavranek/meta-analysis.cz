@@ -228,6 +228,11 @@
   "spillovers_bias": {
    "value": "only in journals, and only for the estimates authors stress",
    "zero": false
+  },
+  "social_comparison": {
+   "value": "0.00 against passive, 0.01 against active controls",
+   "zero": true,
+   "tail": "moderate evidence against any effect; 0.17 and 0.23 before the correction for publication bias"
   }
  }
 }

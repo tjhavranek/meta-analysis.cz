@@ -273,5 +273,10 @@
   "project": "spillovers_bias",
   "question": "Is the FDI spillover literature affected by publication bias?",
   "short": "publication bias in the fdi spillover li"
+ },
+ {
+  "project": "social_comparison",
+  "question": "Does social comparison change behaviour?",
+  "short": "social comparison"
  }
 ]
