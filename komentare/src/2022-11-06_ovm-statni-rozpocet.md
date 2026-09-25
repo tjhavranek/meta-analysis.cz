@@ -17,7 +17,7 @@ body_note: "Nedělní diskusní pořad Otázky Václava Moravce na ČT, 6. listo
 
 **Tomáš Havránek:** Možná to nebylo jenom o té jedné firmě. Obecně mi to možná dává docela smysl, protože ty zisky tady konkrétně tohohle podniku opravdu nepocházejí z území této země, jsou zahraniční. A je velmi snadné potom opravdu to sídlo přesunout. Čili tohle se dalo anticipovat.
 
-A mně by dávalo smysl ten návrh pana poslance Havránka schválit. Takže jenom dávám tedy tu poznámku,
+A mně by dával smysl ten návrh pana poslance Havránka schválit. Takže jenom dávám tedy tu poznámku,
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
@@ -29,9 +29,9 @@ Já se obávám, že zisky z té daně budou mnohem, mnohem menší, než jaké 
 
 **Václav Moravec:** I vy patříte k těm skeptikům, že nebude vybráno 100 miliard na dani
 
-**Tomáš Havránek:** Bohužel. Třeba i u bank je vůbec otázka, jestli nějaké mimořádné zisky budou mít v příštích letech. Protože třeba hypotéky vlastně nové jsou na mnohaletých minimech. To je jeden z hlavních biznesů těch komerčních bank.
+**Tomáš Havránek:** Bohužel. Třeba i u bank je vůbec otázka, jestli nějaké mimořádné zisky budou mít v příštích letech. Protože třeba nové hypotéky jsou vlastně na mnohaletých minimech. To je jeden z hlavních biznesů těch komerčních bank.
 
-Čili plus ta optimalizace, nejenom u bank, ale u všech ostatních firem, kterých se to týká. Čili ty zisky budou, bohužel, kdyby se to týkalo i letošního roku, tak by ta situace byla jiná. Čili kdyby ta daň platila vlastně i zpětně za rok
+Čili plus ta optimalizace, nejenom u bank, ale u všech ostatních firem, kterých se to týká. Čili ty zisky budou bohužel... Kdyby se to týkalo i letošního roku, tak by ta situace byla jiná. Čili kdyby ta daň platila vlastně i zpětně za rok
 
 **Václav Moravec:** 22. A my kdybyste měl tu pravomoc rozhodovací, vy byste pro takový
 
@@ -87,7 +87,7 @@ Ty ostatní věci, které NERV radí, pomůžou, ale nejsou to úplně věci, kt
 
 **Václav Moravec:** Ale v programu vlády tak je ta rozpočtová odpovědná.
 
-**Tomáš Havránek:** To jsou dva, řekněme, protichůdné cíle, ale já myslím, že dojde k přehodnocení toho odmítání zvýšování daní, protože i přes tu inflaci v nějakém horizontu dvou let musíme něco s tím rozpočtem dělat.
+**Tomáš Havránek:** To jsou dva, řekněme, protichůdné cíle, ale já myslím, že dojde k přehodnocení toho odmítání zvyšování daní, protože i přes tu inflaci v nějakém horizontu dvou let musíme něco s tím rozpočtem dělat.
 
 **Vít Samek:** Já předpokládám, že ta inflace tu nebude za dva, tři roky pořád takhle.
 
@@ -97,7 +97,7 @@ Ty ostatní věci, které NERV radí, pomůžou, ale nejsou to úplně věci, kt
 
 **Václav Moravec:** … od té mantry, kterou opakuje premiér Fiala, ministr financí, že nebudou přistupovat ke zvýšení daní. Naopak, přicházejí i v tom daňovém balíčku letošním k, nechci říct ke snížení daní, ale k výpadkům státního rozpočtu na příjmové straně.
 
-**Tomáš Havránek:** … dělat. Máme tady třeba devizové rezervy, které pokud se neprodají, tak nám jednou můžou pěkně vydělávat, když se investují do akcií převážně, což pan nový guvernér za to bych ho pochválil, vlastně chce udělat z větší části, ale to zase se projeví až v nějakém dalším období. A tam ten výnos může být klidně 100 miliard ročně v dnešních korunách.
+**Tomáš Havránek:** … dělat. Máme tady třeba devizové rezervy, které pokud se neprodají, tak nám jednou můžou pěkně vydělávat, když se investují do akcií převážně, což pan nový guvernér, za to bych ho pochválil, vlastně chce udělat z větší části, ale to zase se projeví až v nějakém dalším období. A tam ten výnos může být klidně 100 miliard ročně v dnešních korunách.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
@@ -133,7 +133,7 @@ Spíš tomu moc nevěřím, ale ta možnost tu určitě je.
 
 **Václav Moravec:** … nezaměstnanosti, proto, abych ty lidi motivoval, aby si práci hledali velmi rychle, aby ta podpora nebyla třeba tak dlouhá z hlediska toho časovosti, anebo případně, aby ta míra podpory se snižovala rychle. Marian Jurečka dodal, že snížení podpory v nezaměstnanosti plánuje jako ministr práce a sociálních věcí zavést v první polovině příštího roku. Přijde vám šťastné, že se začíná nejrazantněji
 
-**Tomáš Havránek:** Tak můžeme být rádi, že aspoň něco se použije, ale ta hlavní věc jsou samozřejmě důchody. Na té stránce výdajové jsou vlastně tři čtvrtiny výdajů rozpočtu nějaké mandatorní nebo kvazimandatorní výdaje a ten důchodový systém, jak jsme už tady naznačili, ten se změnit musí, jinak ten rozpočet dlouhodobě bude opravdu zkrachovalý. Čili nebudou stačit nějaké parametrické změny. Samozřejmě, když půjdeme do důchodu všichni v 90 letech, tak tím se to vyřeší, ale bude třeba nějak reagovat na to, že ten průběžný systém byl vyvinut v situaci, kde lidé měli čtyři, pět dětí za Bismarcka a tohle dlouhodobě fungovat nemůže v situaci, kdy máte...
+**Tomáš Havránek:** Tak můžeme být rádi, že se aspoň něco použije, ale ta hlavní věc jsou samozřejmě důchody. Na té stránce výdajové jsou vlastně tři čtvrtiny výdajů rozpočtu nějaké mandatorní nebo kvazimandatorní výdaje a ten důchodový systém, jak jsme už tady naznačili, ten se změnit musí, jinak ten rozpočet dlouhodobě bude opravdu zkrachovalý. Čili nebudou stačit nějaké parametrické změny. Samozřejmě, když půjdeme do důchodu všichni v 90 letech, tak tím se to vyřeší, ale bude třeba nějak reagovat na to, že ten průběžný systém byl vyvinut v situaci, kde lidé měli čtyři, pět dětí za Bismarcka a tohle dlouhodobě fungovat nemůže v situaci, kdy máte...
 
 Byl 70 let. Byl, takže se ho málo kdo dožil. Dnes vlastně máte porodnost hluboce pod dvěma, možná ne už tak hluboce u nás, ale stále to nemůže fungovat, čili to narazí do té demografické zdi a my musíme jednak motivovat lidi, aby měli třeba víc dětí.
 
@@ -141,7 +141,7 @@ Byl 70 let. Byl, takže se ho málo kdo dožil. Dnes vlastně máte porodnost hl
 
 **Tomáš Havránek:** Ano, to je trochu demografický zázrak, ale pořád to nestačí. Já vím, ale ono... A ten druhý pilíř musí být mnohem větší motivace kupovat akcie už v mladém věku od 20 let, vlastně od prvního zaměstnání. To naše...
 
-Náš systém penzijního připojištění není úplně šťastný v tom, že tam máme ty transformované fondy, které vlastně garantují neprodělek, nominálně, reálně garantují prodělek všem, kdo se jich účastní každý rok. Takže tam je potřeba to celé změnit a více motivovat opravdu jednoduchý nákup akcií v mládí, postupný prodej ve stáří s menšími poplatky, jak to dnes na trhu jde, ale ty penzijní fondy pořád mají poplatky relativně vysoké. Tam by možná jsou zatlačit na to, aby ta státní podpora byla vázána
+Náš systém penzijního připojištění není úplně šťastný v tom, že tam máme ty transformované fondy, které vlastně garantují neprodělek, nominálně, reálně garantují prodělek všem, kdo se jich účastní každý rok. Takže tam je potřeba to celé změnit a více motivovat opravdu jednoduchý nákup akcií v mládí, postupný prodej ve stáří s menšími poplatky, jak to dnes na trhu jde, ale ty penzijní fondy pořád mají poplatky relativně vysoké. Tam by možná šlo zatlačit na to, aby ta státní podpora byla vázána
 
 **Václav Moravec:** A to byste uvítal, pokud by dříve než snižování podpory v nezaměstnanosti přišlo Ministerstvo práce a sociálních věcí, protože narážím i na možnou nejednotnost NERVu, kdy se ohradil Daniel Prokop, sociolog, který korigoval slova ministra Jurečky, že říkal, to přinese pouze drobné úspory a nemělo by se v rámci rychlosti zavádění, protože jsem mluvil o těch prioritách, vás jako členů NERVu, nemělo by se jít na snižování nezaměstnanosti jako prvním kroku, který chce ministr práce a sociálních věcí realizovat.
 

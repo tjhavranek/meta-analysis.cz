@@ -20,15 +20,15 @@ body_note: "Pořad Peníze a vliv na Českém rozhlase Plus, moderuje Jana Klím
 
 **Jana Klímová:** Málo zvýšila úrokové sazby nebo špatně využívala kurz koruny?
 
-**Tomáš Havránek:** Já už to říkám asi rok a půl, já bych byl býval rád, kdyby došlo dříve k tomu využití kurzu, to znamená posílení koruny, vlastně obrácení těch devizových intervencí, které dříve před nějakými deseti lety začaly proti koruně. A od té doby se nashromáždilo hodně eur, která naopak teď se můžou prodávat, aby se koruna posílila. K tomu nakonec došlo, ale pozdě a v malých objemech a navíc pasivně. To znamená, že to nebyla strategie Národní banky, jak tu inflaci zkrotit, ale až to byla reakce na takový spekulativní útok proti koruně.
+**Tomáš Havránek:** Já už to říkám asi rok a půl, já bych byl býval rád, kdyby došlo dříve k tomu využití kurzu, to znamená posílení koruny, vlastně obrácení těch devizových intervencí, které dříve před nějakými deseti lety začaly proti koruně. A od té doby se nashromáždilo hodně eur, která se teď naopak můžou prodávat, aby se koruna posílila. K tomu nakonec došlo, ale pozdě a v malých objemech a navíc pasivně. To znamená, že to nebyla strategie Národní banky, jak tu inflaci zkrotit, ale byla to až reakce na takový spekulativní útok proti koruně.
 
 **Jana Klímová:** Co by to v praxi pro vysvětlení jenom znamenalo? Že by se zlevněly dovozy, čili by se snížila u nás ta cenová hladina?
 
-**Tomáš Havránek:** Přesně tak. Tak vezměte si to, že opravdu ten prvotní inflační šok byl dovozního charakteru, zejména přes energie. A když by se podařilo při tom prvním zvýšení sazeb zároveň se zavázat k tomu, že během dvou let Národní banka postupně prodá polovinu devizových rezerv, tak už jen to oznámení tohohle kroku by vedlo k prudkému posílení koruny, což by pomohlo do velké míry tyhle dovozní inflační tlaky umazat a zároveň obnovit důvěru nebo zachovat důvěru veřejnosti, že je nějaký způsob, jak s tou inflací bojovat, můžeme tady u nás, což je důvěra, která byla velmi ochromena za poslední rok a půl.
+**Tomáš Havránek:** Přesně tak. Tak vezměte si to, že opravdu ten prvotní inflační šok byl dovozního charakteru, zejména přes energie. A když by se podařilo při tom prvním zvýšení sazeb zároveň se zavázat k tomu, že během dvou let Národní banka postupně prodá polovinu devizových rezerv, tak už jen to oznámení tohohle kroku by vedlo k prudkému posílení koruny, což by pomohlo do velké míry tyhle dovozní inflační tlaky umazat a zároveň obnovit důvěru nebo zachovat důvěru veřejnosti, že je nějaký způsob, jak s tou inflací můžeme bojovat tady u nás, což je důvěra, která byla velmi ochromena za poslední rok a půl.
 
 **Jana Klímová:** A v těch zvyšování sazeb, více než je těch současných 7%, než je tady reposazba, měla podle vás ČNB pokračovat, protože proti tomu řada ekonomů protestuje, že to vlastně podvazuje ekonomiku, protože zdražují firmám úvěry, lidem úvěry.
 
-**Tomáš Havránek:** Ono to bolí, snižování inflace je většinou bolestivé právě, jak říkáte, pro řadu segmentů ekonomiky. Ale je to otázka priority, jestli tedy chceme nízkou inflaci za cenu nějaké bolesti, nebo jestli chceme tady žít třeba 10 let s inflací kolem 6%, což je docela reálné, pokud ta Národní banka nebude činit nic navíc, oproti tomu, co už udělala v minulém složení. A já myslím, že obecně česká populace je velice pasivní a málo náročná, protože se spokojí s tím vysvětlením, že se vlastně nedá nic dělat, inflace je něco jako povodeň, musíme to vydržet. A netlačíme na politiky, aby zase oni třeba upřesnili v zákoně zadání pro Národní banku, o co přesně se má snažit.
+**Tomáš Havránek:** Ono to bolí, snižování inflace je většinou bolestivé právě, jak říkáte, pro řadu segmentů ekonomiky. Ale je to otázka priorit, jestli tedy chceme nízkou inflaci za cenu nějaké bolesti, nebo jestli chceme tady žít třeba 10 let s inflací kolem 6%, což je docela reálné, pokud ta Národní banka nebude činit nic navíc, oproti tomu, co už udělala v minulém složení. A já myslím, že obecně česká populace je velice pasivní a málo náročná, protože se spokojí s tím vysvětlením, že se vlastně nedá nic dělat, inflace je něco jako povodeň, musíme to vydržet. A netlačíme na politiky, aby zase oni třeba upřesnili v zákoně zadání pro Národní banku, o co přesně se má snažit.
 
 A co by vedení Národní banky postihlo, když ten svůj cíl plnit nebude. Což, jak pozorujeme, se děje v těch posledních měsících.
 
@@ -44,7 +44,7 @@ Nebo to může být jiný cíl, na kterém se dohodneme, ale mělo by to být ja
 
 **Tomáš Havránek:** Přesně tak. Členové by si podle mě zasloužili mnohem větší plat v normální době, abychom mohli pro takovou práci nalákat i lidi ze zahraničí například, aby to pro ně bylo zajímavé. Čili když se jim daří a inflace je kolem nuly, tak klidně, ať ty platy jsou mnohem vyšší. Ale pokud je inflace takhle veliká a věříme tomu, že Národní banka má nad inflací kontrolu, čemuž většina ekonomů opravdu věří, většina modelů to ukazuje, tak není vhodné, aby neměli žádné konsekvence, aby se vlastně nějak nepodíleli na tom utrpení většiny domácností.
 
-A já si myslím, že většina z nás ekonomů věří tomu, že finanční motivace funguje, že mění chování lidí. A kdyby inflace dvouciferná znamenala třeba 5 milionů minus pro guvernéra ten daný rok, tak byste viděli, že by se to chování rozhodně změnilo. To je základní ekonomický princip a ničemu by to neuškodilo.
+A já si myslím, že většina z nás ekonomů věří tomu, že finanční motivace funguje, že mění chování lidí. A kdyby dvouciferná inflace znamenala třeba 5 milionů minus pro guvernéra ten daný rok, tak byste viděli, že by se to chování rozhodně změnilo. To je základní ekonomický princip a ničemu by to neuškodilo.
 
 **Jana Klímová:** Nepodvazovalo by to nějakou objektivitu jejich rozhodování, kdyby jim šlo jenom o vlastní peníze. Přece jenom třeba to, že existuje nějaká inflace, čili růst cen, tak to zvyšuje atraktivitu investic přeci a tak, že nějaký smysl to přece jenom má?
 
@@ -80,7 +80,7 @@ A třeba pokud jde o DPH, o kterém se teď velmi diskutuje, že by měly být m
 
 **Tomáš Havránek:** že ten samotný stav rozpočtu vloni nebo letos nebo příští rok není zase tak důležitý z hlediska třeba inflace nebo vůbec dlouhodobého vývoje této země. Co je důležité, je ten výhled střednědobý a dlouhodobý. A tam tyhle drobné změny daní nebo nějaké drobné škrty, ono to může pomoct, ale velký vliv to hrát nebude. Co je důležité, je jednak prorůstová politika, pokud možno redukce regulace, kde to ještě trochu jde.
 
-Ale hlavně vyřešit dva hlavní problémy na straně příjmu a výdajů. Na straně výdajů to jsou důchody. Důchodový systém, který opravdu je neudržitelný. Všichni to vědí a dlouhodobě se s tím bohužel nic nedělá z toho důvodu, že to samozřejmě někdo musí zaplatit.
+Ale hlavně vyřešit dva hlavní problémy na straně příjmů a výdajů. Na straně výdajů to jsou důchody. Důchodový systém, který opravdu je neudržitelný. Všichni to vědí a dlouhodobě se s tím bohužel nic nedělá z toho důvodu, že to samozřejmě někdo musí zaplatit.
 
 A zatím to vypadá tak, že to zaplatí budoucí důchodci.
 

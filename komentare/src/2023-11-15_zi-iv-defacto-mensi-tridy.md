@@ -37,13 +37,13 @@ Zároveň samozřejmě IES úplně miluji z toho důvodu, že je tam hodně, hod
 
 A teď si představ, že se ti lidé shromáždí z celé republiky a z okolí na jedno místo a jsou hodně dobří a ty vlastně vidíš úplně jiné srovnání. Ten žebříček je tam úplně jiný a ty vidíš, že je hodně lidí, kteří jsou mnohem, mnohem lepší, než jsi ty. A tak já myslím, že nás to hodně učí. I té pokoře z toho, jací jsme, v čem jsme dobří a na co máme.
 
-Samozřejmě že když se člověk koukne na to genderové rozdělení těch studentů, kteří tam chodí, tak zcela jakoby samozřejmě převažují ti kluci. A což je zase hezké, jako mně to nevadí.
+Samozřejmě že když se člověk koukne na to genderové rozdělení těch studentů, kteří tam chodí, tak zcela jakoby samozřejmě převažují ti kluci. Což je zase hezké, mně to nevadí.
 
 **Alice Němcová Tejkalová:** pro detekování možných překážek v kariérním rozvoji žen na naší fakultě. Věnuješ se tomu tématu i na univerzitní úrovni vlastně v pracovní skupině. Tak kdyby jsi měla povzbudit nějaké uchazečky, které nás teď slyší, že IES je pro ně taky jedna z cest, proč se nemají bát.
 
 **Zuzana Havránková:** Absolutně rozhodně a já myslím, že ty ženy, které jsou na IES, tak jsou toho taky jako důkazem. Vzhledem k tomu, že IES je jakoby hodně kvantitativně zaměřené, tak hodně té práce, která se na IES dělá, patří za počítač a patří za excelovské tabulky a patří za různé statistické softwary. Z toho důvodu nám to dává i takovou jakoby volnost a časovou flexibilitu, která třeba rozhodně není úplně věrna jiným oborům, jako je třeba medicína, kde ten člověk opravdu musí chodit mezi lidi, musí si dělat tu práci na nějakém místě, nebo biologie, kde ti lidé zůstávají v těch laboratořích a musí tam chodit a pracovat. Takže já to vnímám jakoby velice pozitivně z hlediska té časové flexibility.
 
-A potom, tím, že mám i tu výuku magisterského semináře k diplomovým pracím, se vždycky snažíme hodně, hodně motivovat právě ty holky a říkáme jim: založte si rodinu během toho studia na doktorátu. Není problém, zvládnete to vy, protože to zvládli ostatní.
+A potom, tím, že mám i tu výuku magisterského semináře k diplomovým pracím, tak se vždycky snažíme hodně, hodně motivovat právě ty holky a říkáme jim: založte si rodinu během toho studia na doktorátu. Není problém, zvládnete to vy, protože to zvládli ostatní.
 
 **Alice Němcová Tejkalová:** To je velmi pozitivní a všem ekonomkám fandíme, když se právě dostaneme k tomu, jak ty jsi studovala doktorát a jaká témata jsi vybrala. Věděla jsi hned od začátku, co chceš dělat a čemu se chceš věnovat?
 
@@ -55,7 +55,7 @@ A z toho vznikla seminární práce, z toho vznikla moje první publikace, kter�
 
 **Zuzana Havránková:** Ano, tak metaanalýza je celkem jako takový mezioborový pojem. Je to v podstatě kvantitativní shrnutí literatury.
 
-To znamená, představ si, že máme nějakou otázku vědeckou, kterou se snažíme zodpovědat. Těch studií máme na ni hodně, hodně. A ony jsou často takové i kontradiktorní, že si odporují, že ty výsledky jsou jiné. Větší, menší, pozitivní, negativní.
+To znamená, představ si, že máme nějakou otázku vědeckou, kterou se snažíme zodpovědět. Těch studií máme na ni hodně, hodně. A ony jsou často takové i kontradiktorní, že si odporují, že ty výsledky jsou jiné. Větší, menší, pozitivní, negativní.
 
 Často i když se média nebo politici nebo kdokoliv, nějací zákonodárci, koukají na to, jak si vlastně vytáhnout nějakou tu správnou odpověď na otázku, kterou chtějí dělat, tak se vůbec nedivím, že je to těžké a problematické najít nějaké argumenty, když je velice jednoduché najít ty protiargumenty. A tohle je právě ten problém i té naší vědy, že ročně vidíme exponenciální růst toho, co se produkuje, ale zároveň ten důraz na tu evidence-based policy tam až tak silný není. A možná je to právě proto, že prožíváme něco, čemu říkáme replikační krize, že je skutečně často těžké dopídit se ke stejným výsledkům na to téma, které bylo předtím v literatuře probírané.
 
@@ -65,13 +65,13 @@ Proto se metaanalýza přirozeně vyvinula v té medicíně a takovýmhle způso
 
 Takže tohle je jedna vlastně taková challenge metaanalýzy, jakým způsobem je možné kontrolovat ten kontext. A druhým tím problémem, kterému metaanalýzy čelí, je publikační selektivita. Publikační selektivita vzniká, když nějaké výsledky mají větší pravděpodobnost, že budou publikované. Což v podstatě vyplývá z toho, že my máme vnitřně často nějakou a priori preferenci ohledně toho, co by nám asi mělo v té studii vyjít.
 
-Třeba když si představíš, že studují nějaký efekt pasivního kouření na zdraví, což je taková velká literatura, můžeš tam najít hodně velké negativní výsledky, menší negativní výsledky, to znamená, že pasivní kouření má nějaký negativní efekt na to zdraví. Můžeš najít nulový efekt, to znamená, že nic se neděje. A můžeš najít dokonce i pozitivní efekty. To znamená, že třeba to pasivní kouření je zdraví prospěšné.
+Třeba když si představíš, že studují nějaký efekt pasivního kouření na zdraví, což je taková velká literatura, můžeš tam najít hodně velké negativní výsledky, menší negativní výsledky, to znamená, že pasivní kouření má nějaký negativní efekt na to zdraví. Můžeš najít nulový efekt, to znamená, že se nic neděje. A můžeš najít dokonce i pozitivní efekty. To znamená, že třeba to pasivní kouření je zdraví prospěšné.
 
 A teď my víme... Takové studie opravdu jsou. Takové studie opravdu jsou. A my teď vnitřně víme, že samotné kouření je věc, která je už známá řadu let, že je to velice neprospěšné pro zdraví, je to velice škodlivé.
 
 Řekněme, kdybych já teď chtěla udělat nějakou takovouhle studii, tak jdu do toho s nějakou určitou představou nebo předsudkem ohledně toho, jak by měl ten výsledek vypadat. A tedy si asi budu myslet, že bych měla dostat něco... Já nevím úplně, nerozumím tomu tématu, jsem jenom statistik, ale něco by mi mělo vyjít.
 
-A předpokládám, že to asi bude negativní, nebo nulové. Ale určitě to nebude pozitivní. A tyhle předsudky potom na levelu jedné studie, to samozřejmě není nějaký problém nebo problém toho autora. My vždycky se snažíme nějakým způsobem vybrat nějaký reprezentativní výsledek, abychom ty lidi, ty čtenáře, nezahltili něčím, co není zkousnutelné a stravitelné.
+A předpokládám, že to asi bude negativní, nebo nulové. Ale určitě to nebude pozitivní. A tyhle předsudky potom na levelu jedné studie, to samozřejmě není nějaký problém nebo problém toho autora. My se vždycky snažíme nějakým způsobem vybrat nějaký reprezentativní výsledek, abychom ty lidi, ty čtenáře, nezahltili něčím, co není zkousnutelné a stravitelné.
 
 Takže jsme selektivní ohledně toho, co publikujeme. A pokud já mám nicméně takový jako a priori předsudek, takový ten bias ohledně toho, co je správné nebo není, protože jsem přesvědčená o tom, nebo editor bude přesvědčený o tom, že buď mám nějaký malý vzorek, nebo mám kontaminovaná data, nebo jsem špatně použila model, může to být jenom čistě role náhody a já dostanu nějaký pozitivní výsledek a může to být pro mě i problematické samozřejmě takovouhle studii potom posílat někam dál a snažit se to nějakým způsobem publikovat. Tedy na úrovni jedné studie dobře, já si dokážu odargumentovat, proč ty výsledky dávám do šuplíku nebo nechávám ležet někde v appendixu. Ten problém je, když se tohle dělá systematicky, v literatuře.
 
@@ -105,7 +105,7 @@ Nicméně ty potřebuješ 50 % učitelů navíc na to, abys vlastně uspokojila 
 
 Ten druhý problém je samozřejmě, že ten pool těch srdcařů, těch učitelů je jenom nějaký. Je jako hodně omezený. A oni tam už nejspíše v tom školství jsou. Protože je to vnitřně jejich poslání, je to, co oni prožívají, je to, co chtějí dělat.
 
-ty tam už budou. A teď, když rozšiřuji ten pool o 50 %, jako bylo v tom mém příkladě, to je hodně lidí navíc. A tím pádem nutně se musí stát, že hledám i mezi těmi, kteří to třeba primárně nechtěli dělat. Tedy přijde málo srdcařů.
+ty tam už budou. A teď, když rozšiřuji ten pool o 50 %, jako bylo v tom mém příkladě, to je hodně lidí navíc. A tím pádem se nutně musí stát, že hledám i mezi těmi, kteří to třeba primárně nechtěli dělat. Tedy přijde málo srdcařů.
 
 Tedy přijde málo srdcařů. Přesně tak. Přesně tak. Teoreticky, řekněme, by tam mohlo být, že snižujeme kvalitu těch učitelů.
 
@@ -113,7 +113,7 @@ Teoreticky. Samozřejmě, že toto musí být dlouhodobý proces. Ano. A ono to 
 
 A to je vlastně ten náš problém. Už jenom v současné době, vidíš na stránkách mnoha škol, že pořád shání, shání, shání učitele. To je samo o sobě první problém. Takže můj nápad, jak vyřešit problém financování školství, by byl: v současnosti je průměrný počet studentů na třídu asi devatenáct a půl.
 
-Průměr. To znamená, že jsou třídy, které mají patnáct dětí, jsou třídy, které mají dvacet pět. Navýšit počet těch dětí z těch dvaceti, z průměru z dvaceti, třeba na dvacet pět. A potom si můžeš přepočítat to, jakým způsobem vlastně ty nabereš ty finance v tom školství na ty platy těch učitelů, což je taky jedna taková krizová otázka.
+Průměr. To znamená, že jsou třídy, které mají patnáct dětí, jsou třídy, které mají dvacet pět. Navýšit počet těch dětí z průměrných dvaceti třeba na dvacet pět. A potom si můžeš přepočítat to, jakým způsobem vlastně ty nabereš ty finance v tom školství na ty platy těch učitelů, což je taky jedna taková krizová otázka.
 
 Nebo nemusíš platy těch učitelů navýšit o všech těch, kolik to je, asi dvacet pět procent. Můžeš to použít
 

@@ -14,11 +14,11 @@ body_note: "Rozhovor pro DVTV, ptá se Martin Veselovský. Text je strojový př
 
 To se začalo dít včera. První věcí, kterou tedy Centrální banka po tom včerejším jmenování musela udělat, byla intervence na devizovém trhu a posílení koruny pod 25 korun za euro. Jak vy sám tenhle vzkaz trhu čtete?
 
-**Tomáš Havránek:** Tak ten vzkaz je poměrně jasný ohledně toho, co ten trh si myslí, že Aleš Michl bude dělat. Já se obecně domnívám, že možná ta reakce byla maličko předčasná, protože jedna věc byla to, co Aleš Michl říkal doposud do toho jmenování a další věc je, jak se potom bude chovat, když tím guvernérem bude a bude mít většinu případně v bankovní radě. Takže podle mě zdaleka není jisté, že opravdu dojde na to holubičí vyznění těch dalších kroků bankovní rady. Protože ta inflace nezmizí sama od sebe.
+**Tomáš Havránek:** Tak ten vzkaz je poměrně jasný ohledně toho, co si ten trh myslí, že Aleš Michl bude dělat. Já se obecně domnívám, že možná ta reakce byla maličko předčasná, protože jedna věc byla to, co Aleš Michl říkal doposud do toho jmenování a další věc je, jak se potom bude chovat, když tím guvernérem bude a bude mít většinu případně v bankovní radě. Takže podle mě zdaleka není jisté, že opravdu dojde na to holubičí vyznění těch dalších kroků bankovní rady. Protože ta inflace nezmizí sama od sebe.
 
-Ta inflace bude potřeba s ní bojovat. Aleš Michl, tak jak ho znám, dělal jsem mu poradce několik měsíců a občas jsme se shodli, občas ne. Vlastně pak jsem odešel z té centrální banky. Ale jak ho znám, on si opravdu hodně potrpí na tom, jak historie si na něj bude pamatovat.
+S tou inflací bude potřeba bojovat. Aleš Michl, tak jak ho znám, dělal jsem mu poradce několik měsíců a občas jsme se shodli, občas ne. Vlastně pak jsem odešel z té centrální banky. Ale jak ho znám, on si opravdu hodně potrpí na tom, jak si na něj historie bude pamatovat.
 
-Čili já si nemyslím, že by úplně nechal spálit českou korunu. A věřím, doufám v to, že opravdu se překlopí znovu do té své takové rašínovské roviny.
+Čili já si nemyslím, že by úplně nechal spálit českou korunu. A věřím, doufám v to, že se opravdu překlopí znovu do té své takové rašínovské roviny.
 
 **Martin Veselovský:** Dobře, jenom pardon, jste České národní banky, jste odešel kvůli neshodám s Alešem Michlem?
 
@@ -36,13 +36,13 @@ Pár měsíců. Pak se překlopil, to už jsem u toho nebyl, nevím proč.
 
 **Martin Veselovský:** Dvakrát jste použil ten termín spálit Českou národní banku a spálit korunu. Opravdu by tím, kdyby trpělivě, bez ohledu na to, co se bude dít vlastně na finančních trzích a v České republice, kdyby nezvyšoval například úrokové sazby, který by měl většinu v radě České národní banky, tak by spálil korunu?
 
-**Tomáš Havránek:** Toto zvyšování sazeb, ty sazby už jsou poměrně vysoko. A to další zvyšování pořád má nějaký dopad, třeba na kurz koruny, má dopad na další věci. Ale není zdaleka jisté, jestli pomáhá nějak významně tlumit tu inflaci v horizontu třeba jednoho roku. Podle mě by daleko lepším nástrojem bylo využití kurzu, čili posilování koruny, prodávání těch velkých devizových, což se děje.
+**Tomáš Havránek:** Toto zvyšování sazeb, ty sazby už jsou poměrně vysoko. A to další zvyšování pořád má nějaký dopad, třeba na kurz koruny, má dopad na další věci. Ale není zdaleka jisté, jestli pomáhá nějak významně tlumit tu inflaci v horizontu třeba jednoho roku. Podle mě by daleko lepším nástrojem bylo využití kurzu, čili posilování koruny, prodávání těch velkých devizových rezerv, což se děje.
 
 Ale děje se to v řádu desítek milionů eur a ne v řádu stovek milionů eur za měsíc, což by opravdu s tím kurzem mohlo pohnout, mohlo by to brzy tu inflaci stlačit na nějaké jednociferné údaje, kam se nedostaneme jinak, jenom za pomoci sazeb.
 
 **Martin Veselovský:** Co by tedy on jako guvernéra nebo jakákoliv rada České národní banky musela dělat, aby, jak jste říkal, došlo prostě k demolici koruny nebo ke spálení koruny?
 
-**Tomáš Havránek:** chovat se tak, aby velká část toho aparátu, který tam je velice kvalitní, v sekci měnové zejména, odešel. Čili vlastně potom ty podklady by nebyly zdaleka tak kvalitní, což by se projevilo i na mezinárodním renomé té centrální banky, bylo by to vidět navenek. Pokud by komunikoval zbrkle, takovým tím stylem, který není úplně, řekněme, konzervativní, a pokud by ty sazby snižoval nějak významně, to by znamenalo spálení koruny.
+**Tomáš Havránek:** chovat se tak, aby velká část toho aparátu, který tam je velice kvalitní, v sekci měnové zejména, odešla. Čili vlastně potom ty podklady by nebyly zdaleka tak kvalitní, což by se projevilo i na mezinárodním renomé té centrální banky, bylo by to vidět navenek. Pokud by komunikoval zbrkle, takovým tím stylem, který není úplně, řekněme, konzervativní, a pokud by ty sazby snižoval nějak významně, to by znamenalo spálení koruny.
 
 **Martin Veselovský:** Z jakého důvodu si myslíte, že Česká národní banka teď nedělá to, co byste naznačili jako určitou cestu protiinflační, to znamená vlastně ty rezervy, které v minulém desetiletí, devizové rezervy, byly nahromaděny.
 
@@ -58,7 +58,7 @@ A dvouciferné sazby dnes by znamenaly bankrot řady subjektů v té zemi. To ne
 
 **Martin Veselovský:** To znamená, když se vrátím zpátky k inflaci, to znamená asi k tématu číslo jedna teď v tuhle chvíli, tak Česko ten boj s inflací prohrává
 
-**Tomáš Havránek:** ve srovnání se zbytkem světa. Když srovnáme naši inflaci s inflací globální, řekněme, podle čísel třeba OECD nebo Mezinárodní organizace práce, tak ta globální je 9%, kolem 9%, u nás to je 14%. Čili dá se říct zhruba, že dovážíme nějaké dvě třetiny té naší inflace, ale ta třetina těch pětprocentních bodů navíc je naše vlastní, kterou my přitápíme vlastně. A to má tři hlavní domácí zdroje.
+**Tomáš Havránek:** ve srovnání se zbytkem světa. Když srovnáme naši inflaci s inflací globální, řekněme, podle čísel třeba OECD nebo Mezinárodní organizace práce, tak ta globální je 9%, kolem 9%, u nás to je 14%. Čili dá se říct zhruba, že dovážíme nějaké dvě třetiny té naší inflace, ale ta třetina, těch pět procentních bodů navíc, je naše vlastní, kterou my přitápíme vlastně. A to má tři hlavní domácí zdroje.
 
 Ten první byly takové vrtulníkové peníze během pandemie. Rozhazování peněz v masivním měřítku, nevídané vůbec v historii naší země. Druhý zdroj je nedostatek lidí, který tlačí na vyšší mzdy, sice teď už ne tolik, ale stále.
 
@@ -66,7 +66,7 @@ A třetí zdroj je ta slabší koruna. Slabší, než by měla být nebo než by
 
 **Martin Veselovský:** jestli popisujete tři hlavní důvody toho, v jakém inflačním stavu jsme teď. Tak jestli to, že by Česká národní banka řešila ten jeden důvod, to znamená slabou korunu, jestli by to celou tu situaci dokázalo relativně rychle zvrátit?
 
-**Tomáš Havránek:** rozhodně by to pomohlo. Ty další dva důvody nebo ty dva aspekty se trochu řeší samy od sebe tím, že pandemie skončila, ty vrtulníkové peníze pořád je máme v nějaké formě. Máme tady ty nové přídavky na děti, zvyšování důchodu, ale ten řád je úplně jiný. A podobně nedostatek lidí tady také pořád je, ale máme tady statisíce nových pracovnic z východu z Ukrajiny.
+**Tomáš Havránek:** rozhodně by to pomohlo. Ty další dva důvody nebo ty dva aspekty se trochu řeší samy od sebe tím, že pandemie skončila, ty vrtulníkové peníze pořád je máme v nějaké formě. Máme tady ty nové přídavky na děti, zvyšování důchodů, ale ten řád je úplně jiný. A podobně nedostatek lidí tady také pořád je, ale máme tady statisíce nových pracovnic z východu z Ukrajiny.
 
 A na řadě pozic, samozřejmě to neplatí plošně, ale když mluvíte s šéfy firem, třeba u nás v Litomyšli, tak řada těch menších nebo středních fabrik vlastně nemá už problém najít lidi, protože mají ty Ukrajinky, které ty, řekněme, manuální profese v knihárně, třeba v tiskárně dobře zastanou, což je nebývalá situace za posledních 15 let, řekněme.
 
@@ -92,7 +92,7 @@ Vy tu pořád ještě nevíte.
 
 Ale ta situace je dnes jiná. ČNB by nestanovila nějakou hladinu, na kterou chce korunu posílit. To nejde kvůli spekulantům, kteří by ji mohli porazit.
 
-Ale oni můžou říct, tak budeme prodávat miliardu eur měsíčně, čímž tu korunu by posílili. Ten druhý důvod, který je možná pravděpodobnější, je, že tohle se hodně špatně modeluje v tom modelu ČNB, který má. To je takový komplikovaný matematický model, v celé té prognóze. Ale s prodejem rezerv to vlastně neumí.
+Ale oni můžou říct, tak budeme prodávat miliardu eur měsíčně, čímž by tu korunu posílili. Ten druhý důvod, který je možná pravděpodobnější, je, že se tohle hodně špatně modeluje v tom modelu ČNB, který má. To je takový komplikovaný matematický model, který dobře funguje u pohybu sazeb a v celé té prognóze. Ale s prodejem rezerv to vlastně neumí.
 
 Čili ten model by se musel dát úplně stranou a používat se na to nějaká jiná analytická část, což je ale hodně obtížné pro tu sekci měnovou, jak ji znám.
 

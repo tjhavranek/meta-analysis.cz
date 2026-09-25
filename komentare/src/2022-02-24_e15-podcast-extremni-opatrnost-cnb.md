@@ -72,7 +72,7 @@ Neříkám, že to je typický příklad, je hodně zvláštní, ale zároveň t
 
 To je něco, co byste mohli odůvodnit snadno. A hlavně je to velice intuitivní pro běžného člověka. Čili z hlediska důvěryhodnosti té banky by to bylo mnohem lepší, protože bychom všichni věděli, proč ta banka dělá to, co dělá, aby nám doručila cenovou stabilitu. Dvouprocentní inflace není cenová stabilita.
 
-Vy si můžete udělat model, kde vám to vyjde jako optimální inflace. Ale nikdy nemůžete zdůvodnit, že to se rovná cenové stabilitě. Jasně, inflace se měří asi špatně, nezohledňuje technický pokrok. Jasně, spoustu věcí.
+Vy si můžete udělat model, kde vám to vyjde jako optimální inflace. Ale nikdy nemůžete zdůvodnit, že se to rovná cenové stabilitě. Jasně, inflace se měří asi špatně, nezohledňuje technický pokrok. Jasně, spoustu věcí.
 
 Ale to je jeden procentní bod maximálně, ne dva, to se nedá odůvodnit,
 

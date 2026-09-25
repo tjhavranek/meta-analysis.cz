@@ -34,7 +34,7 @@ To je model, který se používá pro odhadování vývoje ekonomiky a reakcí e
 
 **Tomáš Havránek:** Kdybych měl zůstat u měnové ekonomie, měnové politiky, tak to je určitě otázka toho, co by měly centrální banky dělat během další recese, která nepochybně přijde. Otázka je, kdy? To nevíme, to neví nikdo. Úrokové sazby jsou obecně hodně nízko, nejen u nás, ale i ve světě.
 
-Takže, abychom té ekonomice pomohli snížením sazeb, to už nebude tak jednoduché. Takže se mluví o různých jiných alternativách. Ve světě se například diskutuje hodně o nějaké formě přímé podpory, spotřeby třeba. Ale pro centrální banku je vždycky hlavní cenová stabilita.
+Takže, abychom té ekonomice pomohli snížením sazeb, to už nebude tak jednoduché. Takže se mluví o různých jiných alternativách. Ve světě se například diskutuje hodně o nějaké formě přímé podpory spotřeby třeba. Ale pro centrální banku je vždycky hlavní cenová stabilita.
 
 Ale i pro tu cenovou stabilitu je důležité v krizi nějak zvednout náladu lidí.
 
@@ -54,11 +54,11 @@ A jako takové by podle něj měly mít určitou váhu v indexu spotřebitelský
 
 **Redaktorka ČNB:** Proč to ve světě není zahrnuto vůbec? Proč ta situace vlastně ve světě a u nás je odlišná?
 
-**Tomáš Havránek:** Protože většinou se byty a domy považují spíš za investice, než za spotřebu. Takže nejsou v indexu spotřebitelských cen konceptuálně uváděny. Ale já si myslím, že ta situace u nás je odlišná, třeba od Spojených států, kde se lidé často stěhují a ty domy a byty často prodávají. Tady, když si koupíme první byt nebo dům, tak to je často na celý život, nebo skoro na celý život.
+**Tomáš Havránek:** Protože se většinou byty a domy považují spíš za investice, než za spotřebu. Takže nejsou v indexu spotřebitelských cen konceptuálně uváděny. Ale já si myslím, že ta situace u nás je odlišná, třeba od Spojených států, kde se lidé často stěhují a ty domy a byty často prodávají. Tady, když si koupíme první byt nebo dům, tak to je často na celý život, nebo skoro na celý život.
 
 **Redaktorka ČNB:** Má to nějakou spojitost také s tím, že většina lidí u nás bydlí ve svém vlastním bytě nebo domě?
 
-**Tomáš Havránek:** Ano, to s tím také určitě do jisté míry souvisí. Ta míra osobního vlastnictví nebo vlastnictví bytu, ve kterém bydlíte domů, je u nás jedna z nejvyšších v Evropě. Oproti Německu je to o desítky procentních bodů víc. Takže to rozhodně je taky důležitý faktor.
+**Tomáš Havránek:** Ano, to s tím také určitě do jisté míry souvisí. Ta míra osobního vlastnictví nebo vlastnictví bytu či domu, ve kterém bydlíte, je u nás jedna z nejvyšších v Evropě. Oproti Německu je to o desítky procentních bodů víc. Takže to rozhodně je taky důležitý faktor.
 
 **Redaktorka ČNB:** Takže by se podle vás v tom indexu spotřebitelských cen mělo rozlišovat, jestli si ten dotyčný člověk koupí byt nebo dům za účelem bydlení, anebo pokud je to už jeho druhá nebo třetí nemovitost, tak za účelem investice.
 
@@ -66,7 +66,7 @@ A jako takové by podle něj měly mít určitou váhu v indexu spotřebitelský
 
 **Redaktorka ČNB:** Ale statisticky je asi těžko proveditelné. Přesně tak. Od roku 2016 jste také poradcem bankovní rady, jak už jsem zmínila konkrétně Mojmíra Hampla. Co všechno tahle práce obnáší?
 
-**Tomáš Havránek:** Práce poradce obnáší hlavně psaní mnoha stanovisek pro bankovní radu na různá témata, protože ta bankovní rada dostává týdně často i stovky stran dokumentů, poměrně technických materiálů, a úkolem poradce je poskytnout nějaký alternativní náhled na ty materiály, který by nebyl závislý na ostatních útvarech uvnitř banky, aby to byla taková určitá interní oponentura tomu, co ty ostatní sekce připravují.
+**Tomáš Havránek:** Práce poradce obnáší hlavně psaní mnoha stanovisek pro bankovní radu na různá témata, protože ta bankovní rada dostává týdně často i stovky stran dokumentů, poměrně technických materiálů, a úkolem poradce je poskytnout nějaký alternativní náhled na ty materiály, který by nebyl závislý na ostatních útvarech uvnitř banky, aby to byla taková určitá interní oponentura vůči tomu, co ty ostatní sekce připravují.
 
 **Redaktorka ČNB:** Vedle této poradenské dále výzkumné činnosti také přednášíte na vysoké škole. Mě by zajímalo, co z toho všeho, co děláte, vás baví nejvíc?
 
@@ -74,7 +74,7 @@ A jako takové by podle něj měly mít určitou váhu v indexu spotřebitelský
 
 **Redaktorka ČNB:** Známou ekonomkou je také vaše žena Zuzana, která mimo jiné tvoří modely pro odhad volebních výsledků. Mě by zajímalo, jestli když se večer, tak se jdete doma po práci, jestli vůbec máte ještě někdy chuť si spolu povídat o ekonomii?
 
-**Tomáš Havránek:** Nemáme. A já myslím, že by to nebylo ani zdravé. Pracovat večer, se snažím tomu vždycky vyhnout. Takže občas se tomu nevyhnete z toho důvodu, že se něco musí dodělat velice rychle.
+**Tomáš Havránek:** Nemáme. A já myslím, že by to nebylo ani zdravé, pracovat večer. Snažím se tomu vždycky vyhnout. Takže občas se tomu nevyhnete z toho důvodu, že se něco musí dodělat velice rychle.
 
 Díky tomu, že máme čtyři děti, tak toho času během dne taky není moc. Ale obecně se tomu snažíme vyhnout. Takže ekonomie není tématem našich večerních komunikací.
 

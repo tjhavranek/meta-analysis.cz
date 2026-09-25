@@ -34,13 +34,13 @@ Hostem je Tomáš Havránek z Institutu ekonomických studií Fakulty sociální
 
 **Moderátor:** Dokáže si představit další zvyšování úrokových sazeb během léta a podzimu?
 
-**Tomáš Havránek:** Podle mě to je naprosto vyloučené. Vlastně díky novému složení té bankovní rady, ale právě i kvůli tomu, co ta naše ekonomika je ještě možná snést.
+**Tomáš Havránek:** Podle mě to je naprosto vyloučené. Vlastně díky novému složení té bankovní rady, ale právě i kvůli tomu, co ta naše ekonomika ještě možná snese.
 
 **Moderátor:** Vy znáte velmi dobře budoucího guvernéra Aleše Michla. Je jisté, že růst sazeb se po jeho nástupu zastaví? Dá se to očekávat?
 
 **Tomáš Havránek:** Podle mě je to zcela jisté. Už i z toho důvodu, že ta ekonomika vyšší sazby neustojí. Když jsme mluvili tady o té situaci domácností, tak samozřejmě musíme zmínit
 
-… to zadlužení se zvyšuje, ale zase ta inflace pomáhá k tomu, že se ta reálná hodnota toho zadlužení vlastně snižuje. Opticky nám zadlužení roste, ale ta reálná hodnota klesá díky tomu, že inflace ho umazává. Takže de facto paradoxně na konci roku to naše zadlužení v poměru k HDP bude menší, než bylo pravděpodobně na začátku roku. A tak to je u všech z nás, kteří mají nějaký dluh.
+… to zadlužení se zvyšuje, ale zase ta inflace pomáhá k tomu, že se ta reálná hodnota toho zadlužení vlastně snižuje. Opticky nám zadlužení roste, ale ta reálná hodnota klesá díky tomu, že ho inflace umazává. Takže de facto paradoxně na konci roku to naše zadlužení v poměru k HDP bude menší, než bylo pravděpodobně na začátku roku. A tak to je u všech z nás, kteří mají nějaký dluh.
 
 Ta hodnota toho dluhu se snižuje, tou inflací, a pak to zaplatí ti, kteří vlastně mají víc úspor, než mají dluhu.
 

@@ -51,7 +51,7 @@ Já vím, že podle vás to není dobře. Proč ne?
 
 **Tomáš Havránek:** Já bych ještě možná na začátek pochválil pana Singera. Když to asi neslyší, tak já ho považuji za jednoho z největších centrálních bankéřů od První republiky. Zažil jsem ho osobně jako poradce bankovní rady v ČNB. Na něm bylo dobré to, že on vždy poslouchal výzkum, ekonomický výzkum.
 
-To znamená, že rozuměl mu a dbal na něj. Takže doufám, že se povede s ním navázat spojení. Nicméně ten problém s tou symetrií je jedna rovina, čili to, že se zachází jinak s deflací a s inflací. Proti deflaci jsme bojovali intervencemi, proti inflaci velmi málo.
+To znamená, že mu rozuměl a dbal na něj. Takže doufám, že se povede s ním navázat spojení. Nicméně ten problém s tou symetrií je jedna rovina, čili to, že se zachází jinak s deflací a s inflací. Proti deflaci jsme bojovali intervencemi, proti inflaci velmi málo.
 
 A ta druhá rovina je, že ten cíl ve výši 2 % neodpovídá poslednímu výzkumu o tom, co je zdravá optimální inflace. Zdravá pro ekonomický růst, zdravá pro nás všechny.
 
@@ -59,7 +59,7 @@ A ta druhá rovina je, že ten cíl ve výši 2 % neodpovídá poslednímu výzk
 
 **Tomáš Havránek:** Dobře. Inflace i deflace mají desítky výhod a nevýhod. A nemáme čas, abychom všechny probrali. Nicméně je řada studií, které tyhle výhody a nevýhody váží, porovnávají a počítají, jaká tedy míra inflace v průměru by pro tu ekonomiku byla zdravá, byla správná.
 
-Těch studií jsem si dělal včera od roku 1990, kdy bylo zavedeno inflační cílování je 222 a průměrný odhad té zdravé inflace je 0,09%, čili velice blízko nuly. Čili to je ten základní argument pro to, proč nulová inflace, čili cenová stabilita, opravdu minimálně není horší a pravděpodobně by byla lepší pro ekonomiku, než současný dvouprocentní cíl.
+Těch studií, dělal jsem si to včera, od roku 1990, kdy bylo zavedeno inflační cílování, je 222 a průměrný odhad té zdravé inflace je 0,09%, čili velice blízko nuly. Čili to je ten základní argument pro to, proč nulová inflace, čili cenová stabilita, opravdu minimálně není horší a pravděpodobně by byla lepší pro ekonomiku, než současný dvouprocentní cíl.
 
 **Lukáš Matoška:** Ať nepřeskakujeme, tak já přece jenom se teď vrátím k té otázce, kterou jsem pokládal panu Singerovi ještě předtím, než jsme s ním ztratili spojení. Pane Singře, doufám, že už se dobře slyšíme. Nedud, co z té naší debaty jste slyšel, tak já tu otázku zopakuju v úplnosti. A sice, jestli není chyba, že centrální banka si nepočíná tak agresivně proti inflaci, jako si počíná proti deflaci, tedy naopak proti snižování cen v ekonomice.
 
@@ -87,7 +87,7 @@ pane Singře, k tomu cíli se hned dostaneme. Já bych byl rád, aby ta naše de
 
 A já musím říct, že když se zavádělo inflační cílování na Zélandu poprvé před 30 lety, tak vlastně základ toho inflačního cílování jsou racionální očekávání. A ta se také prvně v ekonomii objevila zhruba 30 let předtím. Čili trvá nějakou dobu, než se ta věda propíše do praxe centrálních bank a zlomit tu zavedenou praxi, i když třeba není úplně optimální, trvá nějakou dobu. Nějakou dobu to potrvá i u nás.
 
-A jde o to, že u nás se ta změna dá udělat jednodušeji. Ten impuls inovace ohledně inflačního cílování také přišel v malé zemi na Zélandu, ne ve Spojených státech, protože v těch malých centrálních bankách se věci snáze změní přece jenom, zejména u nás. Čili bychom mohli být znovu takovým příkladem pro svět v této záležitosti. Podobně jako Zéland je známý Pánem prstenů, slomováním
+A jde o to, že u nás se ta změna dá udělat jednodušeji. Ten impuls inovace ohledně inflačního cílování také přišel v malé zemi na Zélandu, ne ve Spojených státech, protože v těch malých centrálních bankách se věci snáze změní přece jenom, zejména u nás. Čili bychom mohli být znovu takovým příkladem pro svět v této záležitosti. Podobně jako Zéland je známý Pánem prstenů
 
 **Lukáš Matoška:** Cenovou stabilitou. K tomu, jak by se to podle vás dalo udělat, se ještě dostaneme. Teď se obracím na vás, pane Singře, a zajímalo by mě, jestli by nebylo vhodnější, aby Česká národní banka měla inflační cíl nulu, tedy aby usilovala
 
@@ -113,7 +113,7 @@ Ale já bych souhlasil vlastně s tím, co říkal pan Singer, skoro úplně. Sa
 
 To jsou dvě parametrické změny. Jedna změna je drobné snížení cíle z dvojky na nulu, a ČNB v posledních desetiletích ten cíl snižovala, tuším, z šestky v několika krocích na dvojku. Takže by to nebylo nijak bezprecedentně radikální. To je jedna věc.
 
-A druhá věc je, že zároveň by opravovala svoje chyby plnění toho cíle.
+A druhá věc je, že zároveň by opravovala svoje chyby v plnění toho cíle.
 
 **Lukáš Matoška:** Co tím myslíte?
 
@@ -133,7 +133,7 @@ Vzpomínám, že naše centrální banka se na začátku snaží a by zvětila, 
 
 **Lukáš Matoška:** u otázky, nakolik ta vaše představa, pane Havránku, je prosaditelná v praxi.
 
-**Tomáš Havránek:** Pan Singer mluvil správně o srozumitelnosti a je to přesně naopak. Tohle je mnohem srozumitelnější než ten současný režim, kdy vy jste to zažil sám, pane Singře, když jste musel vysvětlovat během intervencí, proč vlastně se snažíme o 2% plus, když inflace je na nule. Cenová stabilita, to, že máte ceny v průměru stabilní, je tak intuitivní základní věc, že je mnohem snazší to lidem vysvětlit, že když máte nějakou dobu inflaci, tak ji pak taky nějakou dobu rozpouštíte mírnou deflací. A naopak, samozřejmě, jak jsem se zmínil, mělo by to být symetrické, to znamená, že když máte cíl na nule, vy ho podstřelujete, máte tady nějakou deflaci, tak zase potom by byla inflace.
+**Tomáš Havránek:** Pan Singer mluvil správně o srozumitelnosti a je to přesně naopak. Tohle je mnohem srozumitelnější než ten současný režim, kdy vy jste to zažil sám, pane Singře, když jste musel vysvětlovat během intervencí, proč se vlastně snažíme o 2% plus, když inflace je na nule. Cenová stabilita, to, že máte ceny v průměru stabilní, je tak intuitivní základní věc, že je mnohem snazší to lidem vysvětlit, že když máte nějakou dobu inflaci, tak ji pak taky nějakou dobu rozpouštíte mírnou deflací. A naopak, samozřejmě, jak jsem se zmínil, mělo by to být symetrické, to znamená, že když máte cíl na nule, vy ho podstřelujete, máte tady nějakou deflaci, tak zase potom by byla inflace.
 
 Já si nemyslím, že by byl problém tohle vysvětlit, naopak by to lidem pomohlo pochopit to, co a proč vlastně centrální banka dělá. Dělá to proto, aby hodnota peněz byla konstantní. Abychom se na ni mohli spolehnout, jako se můžeme spolehnout, že metr má 100 centimetrů, a ne 98 nebo 95 podle toho, jak se nám to zrovna povede. A nesnažíme se metr zmenšovat o 2 cm ročně.
 

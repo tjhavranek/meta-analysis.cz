@@ -15,7 +15,7 @@ body_note: "Nedělní diskusní pořad Otázky Václava Moravce na ČT, 5. listo
 
 **Václav Moravec:** Ale když jsme u vás, pane profesore, máte spočítané, o kolik by se zvýšil potenciál tuzemské ekonomiky, pokud by Česká republika dokončila síť silnic a dálnic, i k vám do Litomyšle, že byste jel z Prahy po D11
 
-**Tomáš Havránek:** A D35. Spočítané to nemám, to se počítá těžko. Na to má dobrý výzkum třeba Esther Duflo, nositelka Nobelovy ceny, která ukazuje, že ten efekt obecně je sice kladný, ale trochu menší, než se obecně uvádí. Ale já jsem rád, že ty věci se u nás hýbou k lepšímu a chtěl bych poděkovat tady panu ministrovi i panu ministrovi bývalému, že ve funkci podpořili pana ředitele Mátla, ředitele ŘSD, protože za pana Mátla opravdu se ty dálnice
+**Tomáš Havránek:** A D35. Spočítané to nemám, to se počítá těžko. Na to má dobrý výzkum třeba Esther Duflo, nositelka Nobelovy ceny, která ukazuje, že ten efekt obecně je sice kladný, ale trochu menší, než se obecně uvádí. Ale já jsem rád, že se ty věci u nás hýbou k lepšímu a chtěl bych poděkovat tady panu ministrovi i panu ministrovi bývalému, že ve funkci podpořili pana ředitele Mátla, ředitele ŘSD, protože za pana Mátla opravdu se ty dálnice
 
 **Václav Moravec:** Ale stále pomalým tempem, když se podíváme na srovnání Česka a Polska.
 
@@ -45,7 +45,7 @@ A nevydělávají nám. A ničemu by neuškodilo vzít větší část z těch p
 
 **Václav Moravec:** A podle vás to nemůže ohrozit, protože vy jste byl poradcem guvernéra předchozího guvernéra. To nemůže ohrozit nezávislost centrální banky, pokud by se centrální banka s vládou dohodly, že ty devizové rezervy budou investovány
 
-**Tomáš Havránek:** … ku příkladu. Vůbec ne. Oni to můžou dělat sami. Ale já chápu tu jejich obavu, že to je tak velký krok, že k němu potřebují širější společenskou dohodu.
+**Tomáš Havránek:** … ku příkladu. Vůbec ne. Oni to můžou dělat sami. Ale já chápu tu jejich obavu, že to je tak velký krok, že k němu potřebují širší společenskou dohodu.
 
 Ne jenom s vládou, ale i s opozicí. Čili když si třeba vy, pan stínový premiér, pan vysoce postavený ministr, domluvíte schůzku s guvernérem a zeptáte se ho, jestli by šlo vykročit tím směrem
 
@@ -77,7 +77,7 @@ Polský dálniční průměr na jeden rok v poslední dekádě byl 280, kdežto 
 
 **Václav Moravec:** Tady jste slyšel nástroj Tomáše Havránka.
 
-**Tomáš Havránek:** Můžu se k tomuhle zeptat jenom, mně se líbí ta myšlenka těch 50 letých dluhopisů. Vhodná doba na ně byla, když byly úroky u nuly, to znamená před třemi, čtyřmi lety.
+**Tomáš Havránek:** Můžu se k tomuhle zeptat jenom, mně se líbí ta myšlenka těch 50letých dluhopisů. Vhodná doba na ně byla, když byly úroky u nuly, to znamená před třemi, čtyřmi lety.
 
 **Václav Moravec:** Teď, když jsou u sedmi procent, tak je to ekonomický nesmysl.
 

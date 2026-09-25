@@ -30,7 +30,7 @@ Spíš v té stránce příjmové. Tam bych měl konkrétní nápady. Ale ohledn
 
 Účetní zoufalství lidí, kteří vůbec netuší, jak systémové změny by měly do fiskální politiky promítat. Konec citátu. Vy byste nazval ten rozpočet účetním zoufalstvím?
 
-**Tomáš Havránek:** Ne. Nenazval. Já bych to nazval tak, jak jsem to nazval, čili maximum rozumně možného pro volební rok. Mně se zdá, že všichni bychom chtěli šetřit, ale kde konkrétně, když chceme zaplatit nějak státní zaměstnance, tak aby měl kdo vařit ve školních jídelnách, rozumně, a děti to jedly.
+**Tomáš Havránek:** Ne. Nenazval. Já bych to nazval tak, jak jsem to nazval, čili maximum rozumně možného pro volební rok. Mně se zdá, že bychom všichni chtěli šetřit, ale kde konkrétně, když chceme zaplatit nějak státní zaměstnance, tak aby měl kdo vařit ve školních jídelnách, rozumně, a děti to jedly.
 
 Kde ty peníze seženeme, když zrušíme windfall tax dříve, než plánujeme? Já to nevím. Můžeme se zase bavit o těch možnostech, které tam jsou, jak navýšit příjmy někde jinde.
 
@@ -44,7 +44,7 @@ A tím směrem, vy jste říkal, že to bylo odmítnuto, to nebylo. Tak Národn�
 
 A že by mohly být v nějakém fondu. A když jsem se na to opakovaně doptával, proč si ty peníze nevyužijí, proč si stát pak vlastně půjčuje, tak bylo řečeno, že to podle nějakých zákonů, nebo čehosi nejde. A pravdou je, že zatím nikdo nedělá nic pro to, aby ty zákony nebo ty normy změnili.
 
-**Tomáš Havránek:** Zákony jsou úplně v pořádku, to je dlouhodobá věc. Když vám budou dlouhodobě tyhle aktiva vydělávat, budete brát dividendy ze zahraničí, vlastně dorovnávat ten odliv zisku, co teď tady vidíme na druhou stranu. A z toho časem ne hned, protože potrvá, než ta Národní banka bude zisková, můžete financovat částečně úroky, které teď platíme 100 miliard ročně na státní dluh. K tomu nemusíte měnit zákon, je potřeba jenom vůle vedení Národní banky.
+**Tomáš Havránek:** Zákony jsou úplně v pořádku, to je dlouhodobá věc. Když vám budou dlouhodobě tahle aktiva vydělávat, budete brát dividendy ze zahraničí, vlastně dorovnávat ten odliv zisku, co teď tady vidíme na druhou stranu. A z toho časem ne hned, protože to potrvá, než ta Národní banka bude zisková, můžete financovat částečně úroky, které teď platíme 100 miliard ročně na státní dluh. K tomu nemusíte měnit zákon, je potřeba jenom vůle vedení Národní banky.
 
 A to se děje. Čili navyšujeme postupně, já bych to dělal rychleji, ale je třeba pochválit aspoň to, že jsme se z 8% peněz zainvestovaných na výnos před lety, kdy jsem o tom začal mluvit, dostali na 22% zhruba. Čili ten trend tam je jasný a když budeme pokračovat v tom dále, tak za pár let se dostaneme do situace, kdy nám tyhle peníze opravdu budou pomáhat výrazně splácet úroky na náš státní dluh a to nám pak umožní financovat jiné věci ze státního rozpočtu.
 
@@ -108,15 +108,15 @@ Můžeme se nepochybně zase dočkat korekce jako v roce letošním. Podsekává
 
 **Tomáš Havránek:** Tak vždycky můžete spotřebou tu ekonomiku trošku nabustovat, ale to je krátkodobá věc. Vláda může dělat málo ohledně ekonomického růstu. Ač bychom rádi, aby tomu tak nebylo, tak vláda není to, co táhne ekonomický růst. To dělají ti zaměstnanci, jakou mají pracovní morálku, podnikatelé, jejich inovace.
 
-To, jak lidé jsou ochotní brát riziko, dát výpověď v práci, najít si novou práci. Tohle vytváří ekonomický růst, a ne to, co vláda odhlasuje. A chci tady vám říct pár ještě faktů k těm platům státních zaměstnanců. Za poslední tři roky nám tady masivně klesly reálné mzdy v celé ekonomice.
+To, jak lidé jsou ochotní brát riziko, dát výpověď v práci, najít si novou práci. Tohle vytváří ekonomický růst, a ne to, co vláda odhlasuje. A chci vám tady říct ještě pár faktů k těm platům státních zaměstnanců. Za poslední tři roky nám tady masivně klesly reálné mzdy v celé ekonomice.
 
-Opravdu dvojcifrným tempem přes 10%. Přitom to, co se vyrobí v té ekonomice, to, co ti zaměstnanci vytvoří, to nekleslo. To HDP je teď trošku na vyšší úrovni, než bylo tehdy. Čili tady vidíte, že to rozdělení toho koláče opravdu jde, to musí pravicový volič pochopit nebo uznat, že jde ve prospěch spíš těch firem než těch zaměstnanců.
+Opravdu dvouciferným tempem přes 10%. Přitom to, co se vyrobí v té ekonomice, to, co ti zaměstnanci vytvoří, to nekleslo. To HDP je teď trošku na vyšší úrovni, než bylo tehdy. Čili tady vidíte, že to rozdělení toho koláče opravdu jde, to musí pravicový volič pochopit nebo uznat, že jde ve prospěch spíš těch firem než těch zaměstnanců.
 
 A tohle se nutně, to je základní ekonomický princip, musí vyrovnat v příštích letech. Čili my budeme vidět svižný růst průměrných platů, reálných platů po odečtení inflace. V soukromé sféře podle prognózy ČNB to je na příští rok asi 7%. A teď, za ty poslední roky nám ty reálné platy očištěné o inflaci ve státní správě, nebo v té veřejné, klesaly ještě rychleji.
 
 V řadě profesí to bylo opravdu jako výrazně rychleji. I přes 20%. A teď stůj, co stůj, pokud chcete, aby někdo tyhle práce vykonával v té státní veřejné sféře, tak vy je musíte zaplatit tak, aby to bylo aspoň trošku kompetitivní, i když chcete šetřit jinak. Bez toho vám řada služeb bude postupně kolabovat a nebudou tam kvalitní lidi.
 
-Protože i ty, co to baví, tak potřebují nějakou mzdu, ze které rozumně vyžijí a nemusí si potom žádat o dávku na bydlení, na kterou tedy brzy budeme mít asi nárok všichni, jak to vypadá. K tomu se ještě asi dostaneme. Ale takže u těchto profesí, jak tady pan předseda jmenoval, jak jste vy vyčíslovali, bude opravdu nutný nárůst výrazně vyšší než nějakých třeba 5%, o kterých se mluví, i když ten celkový objem prostředků je ještě menší. Tam rozhodně nějakých 7% bude potřeba.
+Protože i ti, co to baví, tak potřebují nějakou mzdu, ze které rozumně vyžijí a nemusí si potom žádat o dávku na bydlení, na kterou tedy brzy budeme mít asi nárok všichni, jak to vypadá. K tomu se ještě asi dostaneme. Takže u těchto profesí, jak tady pan předseda jmenoval, jak jste vy vyčíslovali, bude opravdu nutný nárůst výrazně vyšší než nějakých třeba 5%, o kterých se mluví, i když ten celkový objem prostředků je ještě menší. Tam rozhodně nějakých 7% bude potřeba.
 
 Tady bych podpořil pana předsedu. Myslím, že to je nějaká věc, která je evidentní: že nemůžete do nekonečna rozevírat ty nůžky na stejné pozici mezi platy v té veřejné sféře a v té soukromé.
 

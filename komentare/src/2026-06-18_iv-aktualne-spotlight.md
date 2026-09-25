@@ -17,11 +17,11 @@ body_note: "Rozhovor pro pořad Spotlight Aktuálně.cz, ptá se Petra Jaroměř
 
 **Tomáš Havránek:** Já se přiznám, že českou politiku zase tak moc nesleduji, takže z toho, co jsem zaznamenal, se mi zdá, že v rámci toho, co vidíte v politické sféře, jak politici zacházejí s daty, tak to vlastně nevybočuje z toho, co bych tak nějak očekával. Čili pokud to chápu správně, ona upozorňuje na to, že po minulém zavedení, té první vlny EET, nebo té minulé verze EET, jedna moje studentka spočítala, že vykazované HDP účetně vzrostlo asi o 2 až 3 procenta. Což si myslím, že je to, co ta studie tak nějak říká. Samozřejmě to neznamená, že by to HDP vzrostlo skutečně tak, že bychom toho víc vyráběli, nebo byli produktivnější.
 
-Ale ten účetní efekt je dán tím, že najednou část té šedé ekonomiky se obělila a ČSÚ, který to počítá, na tu změnu nezareaguje hned. To znamená, že tam najednou vlastně máte část té ekonomiky dvakrát započítanou a vypadá větší. Ale vybere se z ní víc daní, protože ji vidíte, což je to, co zajímá ministryni financí. Takže ta interpretace víceméně je v pořádku na první aproximaci.
+Ale ten účetní efekt je dán tím, že se najednou část té šedé ekonomiky obělila a ČSÚ, který to počítá, na tu změnu nezareaguje hned. To znamená, že tam najednou vlastně máte část té ekonomiky dvakrát započítanou a vypadá větší. Ale vybere se z ní víc daní, protože ji vidíte, což je to, co zajímá ministryni financí. Takže ta interpretace víceméně je v pořádku na první aproximaci.
 
 **Petra Jaroměřská:** To znamená, když ta velikost ekonomiky, kterou počítá Český statistický úřad, už zahrnuje, oni říkají, že už zahrnuje část té šedé ekonomiky, tak to, že na jednu stranu jsme viděli nějaký růst, který ten Český statistický úřad nezohlednil v té šedé ekonomice, znamená, že tam je nějaké spoždění? Nebo jak to funguje?
 
-**Tomáš Havránek:** Jasně, ta šedá ekonomika tím, že ji nevidíte, tak se blbě počítá, blbě se odhaduje. To znamená, že ČSÚ a různé další zahraniční podobné instituce na to mají nějaké metody, které ale jsou opravdu takové, že to odhadujete velmi hrubě, řeknete, že určitou část té bílé ekonomiky asi nevidíte a je šedá. A tím, že ji nepočítáte, nevidíte, tak ten odhad se příliš nemění. Čili vy něco spočítáte a přidáte k tomu nějaké procentu navíc, že to je šedá ekonomika.
+**Tomáš Havránek:** Jasně, ta šedá ekonomika tím, že ji nevidíte, tak se blbě počítá, blbě se odhaduje. To znamená, že ČSÚ a různé další zahraniční podobné instituce na to mají nějaké metody, které ale jsou opravdu takové, že to odhadujete velmi hrubě, řeknete, že určitou část té bílé ekonomiky asi nevidíte a je šedá. A tím, že ji nepočítáte, nevidíte, tak ten odhad se příliš nemění. Čili vy něco spočítáte a přidáte k tomu nějaké procento navíc, že to je šedá ekonomika.
 
 To nevidíte v těch datech, nevybíráte z toho daně. Teď zavedeme EET a nepochybně se část té šedé ekonomiky obělí. Čili najednou máte doklady, platíte z toho daně, staťák ČSÚ to umí spočítat, ale on neví, jak moc došlo k tomu obělení. Čili ten náš odhad je dvě procenta, ale je to odhad, co má nějakou nepřesnost, řekněme.
 
@@ -31,11 +31,11 @@ Zase se část z té bílé překlopila na šedou.
 
 **Petra Jaroměřská:** To znamená, teď po zavedení elektronické evidence tržeb můžeme čekat, že ten další rok ta ekonomika se zvětší podle tedy těch čísel. Můžeme to samozřejmě odhadovat, jaký ten dopad ve skutečnosti bude, ale lze tam odhadovat další růst HDP. Podle vás?
 
-**Tomáš Havránek:** Určitě dojde k něčemu podobnému, nevím přesně, do jaké míry se to EET liší, ta nová verze, ale určitě dojde k tomu obělení, jestli to bude jedno, dvě, tři procenta, nejsem schopen říct, ale opravdu dojde účetně, formálně, ne k růstu ekonomiky, která by byla dána tím, že jsme produktivnější, ale že se toho vykáže víc, stát toho víc zdaní, tak to vykázané HDP by mělo být větší, pokud nějak ČSÚ nezmění tu metodiku, což samozřejmě může, protože viděl, že tam to dvojí počítání bylo, takže možná na to zareaguje. Ale vybereme víc na daních, zase se můžeme přít, kolik přesně, ale...
+**Tomáš Havránek:** Určitě dojde k něčemu podobnému, nevím přesně, do jaké míry se to EET liší, ta nová verze, ale určitě dojde k tomu obělení, jestli to bude jedno, dvě, tři procenta, nejsem schopen říct, ale opravdu dojde účetně, formálně, ne k růstu ekonomiky, který by byl dán tím, že jsme produktivnější, ale že se toho vykáže víc, stát toho víc zdaní, tak to vykázané HDP by mělo být větší, pokud nějak ČSÚ nezmění tu metodiku, což samozřejmě může, protože viděl, že tam to dvojí počítání bylo, takže možná na to zareaguje. Ale vybereme víc na daních, zase se můžeme přít, kolik přesně, ale...
 
 **Petra Jaroměřská:** Vy máte nějaký odhad, kolik by se dalo díky EET na daních víc vybrat?
 
-**Tomáš Havránek:** Můžeme to odhadat buď pomocí dat z firem, ale tam je to těžké, protože jsou nějaké kontroly, které dělá ministerstvo, ale to nedělá ve všech firmách. A vy nevidíte úplně, to, kde má nejvíc EET působit, jsou ty nejmenší subjekty, kde teď často platby probíhají v hotovosti. A to EET by překlopilo víc na karty a na to oficiální vykazování. A to ty mikrodata nejsou úplně schopná zachytit.
+**Tomáš Havránek:** Můžeme to odhadnout buď pomocí dat z firem, ale tam je to těžké, protože jsou nějaké kontroly, které dělá ministerstvo, ale to nedělá ve všech firmách. A vy nevidíte úplně, to, kde má nejvíc EET působit, jsou ty nejmenší subjekty, kde teď často platby probíhají v hotovosti. A to EET by je překlopilo víc na karty a na to oficiální vykazování. A to ta mikrodata nejsou úplně schopná zachytit.
 
 Čili nejnižší odhady, co jsem viděl, byly kolem 13-14 miliard. Když to počítáme přes celou ekonomiku, to je to, co ta moje studentka zkoušela před lety a co paní ministryně cituje, tak to je nějaké zvýšení 2-3% HDP, což vám dá na výběru daní řekněme 40 miliard korun, 50 miliard by byl ten vrchní odhad. Takže kdybych si měl tipnout, je tam nejistota zdola i shora, tak bych řekl třeba 30, ale já jsem to nepočítal, to byli kolegové, jejich čísla teď tady používám.
 
@@ -55,11 +55,11 @@ Tak tohle je věc, která je užitečná.
 
 Děláme si to sami. A chápu to, že když máte ten malý biznis, tak občas je to přirozené snažit se tomuhle vyhnout a zaplatit lidi, co zaměstnáváte třeba jednoho, dva, bez těch daní. Ale na druhou stranu taky dává smysl, aby ta pravidla platila stejně pro všechny. Takže určitě je to kontroverzní.
 
-Nevidíte nějakou velkou chválu na paní Schillerovou nebo pana Babiše, jak si přispívají k vyrovnání státního rozpočtu. V tomhle ohledu. A já myslím, že tu chválu možná zaslouží tady konkrétně u tohohle opatření.
+Nevidíte nějakou velkou chválu na paní Schillerovou nebo pana Babiše, jak přispívají k vyrovnání státního rozpočtu. V tomhle ohledu. A já myslím, že tu chválu možná zaslouží tady konkrétně u tohohle opatření.
 
 **Petra Jaroměřská:** Ale já jsem vás přerušila, říkal jste, že byste tuto fiskální stránku řešil jinak, tak pojďme možná k tomu pár slov říct.
 
-**Tomáš Havránek:** Velmi rád. Takže nejlepší řešení je takové ideálně, které zase tak moc nikoho nebolí a přinese hodně peněz. Což zní dobře, tak co by to mohlo být? Mám dvě věci, o kterých často se snažím mluvit.
+**Tomáš Havránek:** Velmi rád. Takže nejlepší řešení je takové ideálně, které zase tak moc nikoho nebolí a přinese hodně peněz. Což zní dobře, tak co by to mohlo být? Mám dvě věci, o kterých se často snažím mluvit.
 
 Ta první věc je, že tahle země má poměrně velký majetek v zahraničí. Mluvím o devizových rezervách Národní banky, což jsou skoro 4 biliony korun. Bilion je milion milionů. To je poměrně hodně, 4 biliony korun.
 
@@ -69,11 +69,11 @@ Ta eura se jí hromadila a teď co s tím? Není žádný plán je nějak využ�
 
 Tak já bych navrhl je investovat, aby dlouhodobě vydělávaly. Tak jak to dělá třeba Singapur, jak to dělá Norsko, se svým fondem bohatství. Ty peníze vznikly trošku jinak tady než v Norsku. V Norsku jsou to výnosy z prodeje ropy, ale třeba v Singapuru je to úplně stejný mechanismus.
 
-To znamená, že oni měli najednou příliš mnoho těch devizových rezerv, tak se rozhodli investovat je na dlouho. Jak přesně by to fungovalo? Koupili byste globální akcie, čili podíly na globálních firmách a tím pádem se podílíte na technickém pokroku, který vede k tomu, že ty firmy pak mají zisk a na dividendách je vyplácí. Ta Národní banka to už trochu dělá, ale málo, velmi málo a pozdě.
+To znamená, že oni měli najednou příliš mnoho těch devizových rezerv, tak se je rozhodli investovat na dlouho. Jak přesně by to fungovalo? Koupili byste globální akcie, čili podíly na globálních firmách a tím pádem se podílíte na technickém pokroku, který vede k tomu, že ty firmy pak mají zisk a na dividendách je vyplácí. Ta Národní banka to už trochu dělá, ale málo, velmi málo a pozdě.
 
-Čili po deseti letech, co ten balík peněz má, nemá ještě ani 30% těch peněz zainvestovaných tak, jak by měla to znamená v akciích. Čili to je jedna věc, se kterou ta vláda nemůže, ale může něco dělat. Ona samozřejmě nemůže nutit centrální banku, aby něco provedla, snížila sazby, to vůbec ne. Ale tím, že o tom mluví, o tom, že tohle je nejlepší světová praxe, tak může udělat pro tu Národní banku, aby to bylo snazší, ty peníze účelně investovat.
+Čili po deseti letech, co ten balík peněz má, nemá ještě ani 30% těch peněz zainvestovaných tak, jak by měla, to znamená v akciích. Čili to je jedna věc, se kterou ta vláda nemůže, ale může něco dělat. Ona samozřejmě nemůže nutit centrální banku, aby něco provedla, snížila sazby, to vůbec ne. Ale tím, že o tom mluví, o tom, že tohle je nejlepší světová praxe, tak může udělat pro tu Národní banku, aby to bylo snazší, ty peníze účelně investovat.
 
-Oni to udělat chtějí. Já ty lidi znám, bavím se s nimi a často tlačím je k tomu taky, ale já nic nejsem. Kdyby ta vláda o tomhle vytvořila nějakou třeba poradní skupinu, která bude opravdu řešit jenom rezervy Národní banky společně s ČNB, vláda i nemůže nic nutit, ale aby to bylo přijatelnější pro vedení Národní banky investovat ne 30%, ale třeba 70% do akcí. A tím bychom vydělali ročně, každý rok, nakonec, protože zisky musí převádět Národní banka do státního rozpočtu.
+Oni to udělat chtějí. Já ty lidi znám, bavím se s nimi a často je k tomu tlačím taky, ale já nic nejsem. Kdyby ta vláda o tomhle vytvořila nějakou třeba poradní skupinu, která bude opravdu řešit jenom rezervy Národní banky společně s ČNB, vláda ji nemůže nic nutit, ale aby to bylo přijatelnější pro vedení Národní banky investovat ne 30%, ale třeba 70% do akcí. A tím bychom vydělali ročně, každý rok, nakonec, protože zisky musí převádět Národní banka do státního rozpočtu.
 
 Minimálně 100 miliard korun navíc. Možná by to bylo až 200, podle toho, jak přesně bychom to udělali. Čili dnes máme roční schodek státního rozpočtu kolem 300 miliard korun a těch 100 nebo 150 bychom snadno tímto způsobem, aniž by to někoho bolelo. Je to jenom jednoduchá aplikace standardní mezinárodní praxe.
 
@@ -83,15 +83,15 @@ Když máte peníze, nenecháte je na běžném účtu, de facto. Já to zjednod
 
 **Tomáš Havránek:** za jak dlouho. Ta důležitá věc je, že pokud toto udělá, tak jestli to bude trvat pět nebo deset let, tak vy máte téměř jistotu, že pokud se svět nezhroutí a bude fungovat podobně jako posledních pár set let, tak opravdu budete mít ročně těch 100-200 miliard korun navíc. Napořád. To je ta důležitá věc.
 
-Jestli to bude za pět nebo deset let, je to důležité pro pana premiéra, teď asi, nebo pro paní ministryni, pro mě ani tak ne. Mně jde o ten dlouhodobý efekt, ty státní finance jsou dlouhodobá věc. Je úplně jedno, když to zjednoduším, jaký je deficit letos. Nás zajímá ten kumulovaný součet deficitu, diskontovaný úrokovou sazbou.
+Jestli to bude za pět nebo deset let, je to důležité pro pana premiéra, teď asi, nebo pro paní ministryni, pro mě ani tak ne. Mně jde o ten dlouhodobý efekt, ty státní finance jsou dlouhodobá věc. Je úplně jedno, když to zjednoduším, jaký je deficit letos. Nás zajímá ten kumulovaný součet deficitů, diskontovaný úrokovou sazbou.
 
-Možná to bude, já bych si tipnul, čtyři, pět let, že by to mohlo být možná dřív, ale důležitý je ten delší horizont. Takže jasně, splatíte kumulovanou ztrátu. Mimochodem, kdybychom tohle udělali, jak jsme někteří z nás říkali před deseti lety, tak už teď by těch 200 miliard ročně ta ČNB přispívala. Čili dobrá otázka je, proč se o tom bavíme až teď a ne v roce 2017, když jsme ten balík peněz měli a nebyla žádná strategie v Národní bance, co s nimi dál dělat.
+Možná to bude, já bych si tipnul, čtyři, pět let, že by to mohlo být možná dřív, ale důležitý je ten delší horizont. Takže jasně, splatíte kumulovanou ztrátu. Mimochodem, kdybychom tohle udělali, jak jsme někteří z nás říkali před deseti lety, tak by už teď těch 200 miliard ročně ta ČNB přispívala. Čili dobrá otázka je, proč se o tom bavíme až teď a ne v roce 2017, když jsme ten balík peněz měli a nebyla žádná strategie v Národní bance, co s nimi dál dělat.
 
 **Petra Jaroměřská:** nějaké opatrnosti, protože zase investovat rizikověji nese nějaká rizika.
 
 **Tomáš Havránek:** ale opatrnost má taky svoje rizika. Já teď třeba čtu Plutarcha, protože jsem profesor, můžu si to dovolit, a paralelní životy Plutarcha. Má tam hezký paralelní život Nikia, což byl řecký, atenský generál, a Crassa, což byl římský generál. Oba skončili stejně špatně.
 
-Crassus kvůli své zbrklosti agresivitě Nikias kvůli tomu, jak byl pasivní a velmi opatrný. Čili oba extrémy jsou špatné. A tohle není nic kontroverzního. Investovat peníze tak, jak to dělá Singapur, není nic kontroverzního.
+Crassus kvůli své zbrklosti a agresivitě, Nikias kvůli tomu, jak byl pasivní a velmi opatrný. Čili oba extrémy jsou špatné. A tohle není nic kontroverzního. Investovat peníze tak, jak to dělá Singapur, není nic kontroverzního.
 
 A já jsem, je to i moje chyba, já jsem u toho tehdy byl, a sice jsem něco k tomu řekl, ale byl jsem velmi nedůrazný v tomto, měl jsem se chovat daleko asertivněji vůči bankovní radě, byl jsem tehdy poradce viceguvernéra, a beru to i za svoje osobní selhání, že jsem tehdy tu věc, které jsem si náhodou všiml, netlačil mnohem, mnohem víc u bankovní rady, u celého toho aparátu v Národní bance. Čili samozřejmě ano, je to do velké míry ta opatrnost, která byla i na mé straně, já se přiznám k tomu.
 
@@ -101,13 +101,13 @@ A já jsem, je to i moje chyba, já jsem u toho tehdy byl, a sice jsem něco k t
 
 **Petra Jaroměřská:** Shodou okolností my natáčíme ve středu. Zítra rozhoduje bankovní rada centrální banky o zvýšení úrokových sazeb, případně ponechání je na současné úrovni. Na co byste si vsadil? Je teď čas na to, ty sazby zvýšit?
 
-**Tomáš Havránek:** Tak já bych se asi nesázel v první řadě. Já ale bych čekal, že bankovní rada bude chtít ukázat, že je nezávislá. To znamená, když vnímáte nějaké výroky ze strany vlády, pana premiéra, že by měly být úroky nižší, tak co bych udělal já, kdybych byl členem bankovní rady, Národní banky, tak bych ty sazby zvýšil. Čili asi to je to, co bych čekal, jestli to bude teď nebo na příštím zasedání, to nevím.
+**Tomáš Havránek:** Tak já bych se asi nesázel v první řadě. Já bych ale čekal, že bankovní rada bude chtít ukázat, že je nezávislá. To znamená, když vnímáte nějaké výroky ze strany vlády, pana premiéra, že by měly být úroky nižší, tak co bych udělal já, kdybych byl členem bankovní rady, Národní banky, tak bych ty sazby zvýšil. Čili asi to je to, co bych čekal, jestli to bude teď nebo na příštím zasedání, to nevím.
 
 Nějaké to zvýšení sazeb o čtvrt procentního bodu, 25 bazických bodů, s tou inflací samozřejmě nic neudělá. Ten efekt je velmi malý. To je spíš to očekávání do budoucna, kumulativně, jestli opravdu třeba pan guvernér chce zdrtit ekonomiku, tak kdyby tomu trhy věřily, tak to už něco udělat trošku může.
 
 **Petra Jaroměřská:** nějaký růst cen v souvislosti třeba s tím, co se děje na Blízkém východě?
 
-**Tomáš Havránek:** Protože já se necítím kvalifikovaný. Já jsem profesor ekonomie na univerzitě, z té Národní banky jsem nějakou dobu pryč a tam jsou desítky lidí, co tomu rozumí mnohem lépe než já, počítají to, věnují se tomu denně. Takže já bych se podíval na prognózu Národní banky a uvidíme, co vám zítra ukážou. A jinak jim nechci lézt do zelí, v tomto nevím víc než oni. Moje osobní očekávání je, že se ten konflikt pravděpodobně nějakým způsobem utlumí, ten na Blízkém východě, na Středním východě, čili i ty inflační tlaky z této strany asi pominou.
+**Tomáš Havránek:** Protože já se necítím úplně kvalifikovaný. Já jsem profesor ekonomie na univerzitě, z té Národní banky jsem nějakou dobu pryč a tam jsou desítky lidí, co tomu rozumí mnohem lépe než já, počítají to, věnují se tomu denně. Takže já bych se podíval na prognózu Národní banky a uvidíme, co vám zítra ukážou. A jinak jim nechci lézt do zelí, v tomto nevím víc než oni. Moje osobní očekávání je, že se ten konflikt pravděpodobně nějakým způsobem utlumí, ten na Blízkém východě, na Středním východě, čili i ty inflační tlaky z této strany asi pominou.
 
 Dlouhodobě, a k tomu se možná dostaneme, co vyřeší státní dluh dlouhodobě, tam bych nebyl tak jistý, že inflace bude kolem 2%, ale nechám možná vás
 
@@ -117,15 +117,15 @@ Dlouhodobě, a k tomu se možná dostaneme, co vyřeší státní dluh dlouhodob
 
 **Petra Jaroměřská:** se zeptám, jak jste vnímal slova premiéra, který vyzval guvernéra České národní banky, aby naopak
 
-**Tomáš Havránek:** proč by to pan premiér chtěl dělat. Protože my to vidíme třeba například u Spojených států, kde když prezident, v tom případě, který tu zemi řídí, vyzve centrální banku, aby snížila sazby, tak ona samozřejmě to udělat nechce. I kdyby třeba si sama vyhodnotila, že je to dobré, tak to nemůže udělat. Aby to nevypadalo, že je pod...
+**Tomáš Havránek:** proč by to pan premiér chtěl dělat. Protože my to vidíme třeba například u Spojených států, kde když prezident, v tom případě, který tu zemi řídí, vyzve centrální banku, aby snížila sazby, tak ona to samozřejmě udělat nechce. I kdyby si třeba sama vyhodnotila, že je to dobré, tak to nemůže udělat. Aby to nevypadalo, že je pod...
 
-Takže vlastně, když to pan premiér takhle to svoje přání vysloví, tak tím tu cestu uzavře. Takže to poráží samo sebe. Čili jestli ten cíl je sazby zvýšit, ale nevím proč, to by nepomohlo asi ani vládě, ani firmám. Samozřejmě by to mohlo pomoct proti inflaci, ale jestli...
+Takže vlastně, když pan premiér takhle to svoje přání vysloví, tak tím tu cestu uzavře. Takže to poráží samo sebe. Čili jestli ten cíl je sazby zvýšit, ale nevím proč, to by nepomohlo asi ani vládě, ani firmám. Samozřejmě by to mohlo pomoct proti inflaci, ale jestli...
 
-Já jako nerozumím té logice za tímto vyjádřením, abych se přiznal,
+Já nerozumím té logice za tímto vyjádřením, abych se přiznal,
 
 **Petra Jaroměřská:** ano, levnější hypotéky, tak oni to i dávají do souvislosti, že nižší sazby ovlivní cenu úvěru.
 
-**Tomáš Havránek:** to by byly levnější hypotéky, ale pokud chcete mít hypotéky dostupnější lidem, tak mnohem snazší je omezit regulaci ze strany Národní banky, která je opravdu, jako z mého pohledu, extrémně přísná. Sice dnes hypotéku je velmi těžký, nejenom proto, že ty úroky jsou vysoký, ale co všechno musíte splnit, jak velký příjem musíte mít. Čili já bych daleko víc nechal to rozhodnutí hypotéku si vzít nebo ne na lidech a těch bankách, aniž by ten stát jim diktoval
+**Tomáš Havránek:** to by byly levnější hypotéky, ale pokud chcete mít hypotéky dostupnější lidem, tak mnohem snazší je omezit regulaci ze strany Národní banky, která je opravdu, jako z mého pohledu, extrémně přísná. Sice dnes hypotéku je velmi těžký, nejenom proto, že ty úroky jsou vysoké, ale co všechno musíte splnit, jak velký příjem musíte mít. Čili já bych daleko víc nechal to rozhodnutí hypotéku si vzít nebo ne na lidech a těch bankách, aniž by jim ten stát diktoval
 
 **Petra Jaroměřská:** A ta pravidla jsou v rámci nějaké obezřetnosti, že ti lidé opravdu budou schopni splácet ten úvěr, je dlouhý, je to vysoká půjčka.
 
@@ -147,13 +147,13 @@ Výsledkem je diktatura jednoho názoru a tektonické změny při výměně guve
 
 **Petra Jaroměřská:** když je systém toho jmenování stále vlastně stejný?
 
-**Tomáš Havránek:** Mně přijde trochu zábavné, že řekněme poradci současného pana prezidenta, kterého si velmi vážím, tak před volbami tenhle systém kritizovali. To, že vybírá sám prezident bez schválení třeba senátem vedení bankovní rady je dost nestandardní mezinárodně. Není to úplně výjimečná věc, ale je to nestandardní a rozhodně to vede potom k některým, řekněme, idiosynkratickým volbám oka. Ale jakmile vy jste u té moci a rozhodujete o tom, tak najednou se vám to líbí samozřejmě, že to můžete dělat sami.
+**Tomáš Havránek:** Mně přijde trochu zábavné, že řekněme poradci současného pana prezidenta, kterého si velmi vážím, tak před volbami tenhle systém kritizovali. To, že vybírá sám prezident bez schválení třeba Senátem vedení bankovní rady je dost nestandardní mezinárodně. Není to úplně výjimečná věc, ale je to nestandardní a rozhodně to vede potom k některým, řekněme, idiosynkratickým volbám. Ale jakmile vy jste u té moci a rozhodujete o tom, tak najednou se vám to líbí samozřejmě, že to můžete dělat sami.
 
-A já neříkám, že je nutně špatně. Ty změny, o kterých tady mluvím, by se samozřejmě nejlépe provádělo v tomhle systému, kdy přesvědčíte o něčem pana prezidenta nebo donutíte ho se nad tím zamyslet. A ten potom může velmi snadno, protože vlastně v našem systému za inflaci odpovídá pan prezident. Tím, že on jmenuje celé vedení Národní banky, takže několik let je inflace podle standardní makroekonomické teorie z celá odpovědností pana prezidenta.
+A já neříkám, že to je nutně špatně. Ty změny, o kterých tady mluvím, by se samozřejmě nejlépe prováděly v tomhle systému, kdy přesvědčíte o něčem pana prezidenta nebo ho donutíte se nad tím zamyslet. A ten potom může velmi snadno, protože vlastně v našem systému za inflaci odpovídá pan prezident. Tím, že on jmenuje celé vedení Národní banky, takže několik let je inflace podle standardní makroekonomické teorie zcela odpovědností pana prezidenta.
 
 Což je výjimečné v globálním měřítku, ale je to tak. A měli bychom o tom mluvit víc. Čili volby prezidenta jsou důležité mnohem víc než asi volby do sněmovny, z hlediska inflace. Podle standardní ekonomické teorie.
 
-Pak se můžeme bavit o dalších nějakých nových názorech, ale takhle to vlastně je. A asi to není úplně správně. Asi bych přece jenom řekl, že by bylo lepší, kdyby tam byla ta pojistka senátem.
+Pak se můžeme bavit o dalších nějakých nových názorech, ale takhle to vlastně je. A asi to není úplně správně. Asi bych přece jenom řekl, že by bylo lepší, kdyby tam byla ta pojistka Senátem.
 
 **Petra Jaroměřská:** Pojďme na politiku této vlády. Ona je často terčem kritiky, že chce zvýšit zadlužení a že navýší deficit státního rozpočtu. Lze dopředu říct, že jde o rizikové chování anebo o směřování k vyšší prosperitě, čímž argumentuje tedy současná vláda.
 
@@ -169,7 +169,7 @@ Každý, kdo tohle zažil, tak ví, jak se zbytečně
 
 **Petra Jaroměřská:** A ono se často se děje i to, když se vlastně někde se peníze nedostávají, tak se z těch kapitol převádí peníze tam, kde přebývají, tak se převádí i tam, kde se nedostávají.
 
-**Tomáš Havránek:** To je taky jasně, to je prima. To je, máte pravdu, to je trošku příbuzná trochu jiná věc. Čili, co bych navrhoval já, je pořádně se na to podívat a implementovat něco, co funguje trochu v Británii nebo v některých státech v Austrálii, kdy vy, když ušetříte ty peníze v daném roce jako ředitelka odboru, tady třeba v ekonomii, když se bavíme o státních institucích, tak si je můžete převést a máte garantované, že příští rok tam ty peníze budou. Že když je budete chtít použít, to vám někdo vyplatí.
+**Tomáš Havránek:** To je taky jasně, to je prima. To je, máte pravdu, to je trošku příbuzná a trochu jiná věc. Čili, co bych navrhoval já, je pořádně se na to podívat a implementovat něco, co funguje trochu v Británii nebo v některých státech v Austrálii, kdy vy, když ušetříte ty peníze v daném roce jako ředitelka odboru, tady třeba v ekonomii, když se bavíme o státních institucích, tak si je můžete převést a máte garantované, že příští rok tam ty peníze budou. Že když je budete chtít použít, to vám někdo vyplatí.
 
 A zároveň, že vám nesníží ten váš rozpočet na příští rok, třeba naopak vám ho zvýší, protože jste ušetřila. A tohle, na to jsou různé poměrně sofistikované odhady, kolik je ten systém schopen ušetřit. A ty odhady jsou kolem 2% výdajů. Což by znamenalo...
 
@@ -177,21 +177,21 @@ V té dané kapitole. V tom celkovém státním rozpočtu, kdybychom to zavedli 
 
 40 miliard? Počítáme správně. Takže 40 miliard je ten rozpočtový carry-over. Zase věc, která nikoho nebolí.
 
-Vy neberete peníze tam, kde jsou potřeba. Vy odstřednete něco, co vlastně by i pro ty ředitele to bylo lepší, kdyby nemuseli kupovat ty nesmysly ke konci roku často. Ano, 2%. 40 miliard tady, nějakých 150 miliard, řekněme, z ČNB dlouhodobě, to už je skoro 200.
+Vy neberete peníze tam, kde jsou potřeba. Vy odstřihnete něco, co vlastně by i pro ty ředitele to bylo lepší, kdyby nemuseli kupovat ty nesmysly ke konci roku často. Ano, 2%. 40 miliard tady, nějakých 150 miliard, řekněme, z ČNB dlouhodobě, to už je skoro 200.
 
 A to EET, kdyby udělalo 30 miliard, tak už byste byla na dvou třetinách toho rozpočtového schodku. A vlastně, kromě EET, ty dvě další opatření nikoho moc nebolí a přinesou hodně peněz.
 
 **Petra Jaroměřská:** Jestli tomu rozumím správně, tak vy tady kritizujete nějaké bezhlavé utrácení ke konci roku jednotlivých rozpočtových kapitola. Opravdu je to 40 miliard?
 
-**Tomáš Havránek:** Ty dvě procenta já čerpám, to byl tuším článek z roku 2018, kde se to dá poměrně komplikovaně ekonometricky odhadnout, těch odhadů je i několik. A abych možná řekl, OK, tak se nebavme o konkrétním čísle, ale pojďme to nějak vzít celkově, pojďme se zamyslet nad tím, což třeba je možná úkol pro Národní rozpočtovou radu nebo pro vládu, jak toto implementovat tak, aby to fungovalo. My jsme tady měli něco podobného, to zaváděl tuším pan Kalousek po velké krizi, to NNV, Nároky z nerealizovaných výdajů, pak to nabobtnalo, ale ten problém je, že u nás nemáte garantované, že když to převedete, tam ty peníze budou a že vám ten šéf nesníží, takže moc to nefungovalo. Takže, samozřejmě to říkám tak, aby to bylo pochopitelné, ale to je rozhodně něco, kde se dá ušetřit desítky miliard korun.
+**Tomáš Havránek:** Ty dvě procenta já čerpám, to byl tuším článek z roku 2018, kde se to dá poměrně komplikovaně ekonometricky odhadnout, těch odhadů je i několik. A abych možná řekl, OK, tak se nebavme o konkrétním čísle, ale pojďme to nějak vzít celkově, pojďme se zamyslet nad tím, což třeba je možná úkol pro Národní rozpočtovou radu nebo pro vládu, jak toto implementovat tak, aby to fungovalo. My jsme tady měli něco podobného, to zaváděl tuším pan Kalousek po velké krizi, to NNV, Nároky z nerealizovaných výdajů, pak to nabobtnalo, ale ten problém je, že u nás nemáte garantované, že když to převedete, tam ty peníze budou a že vám ten šéf nesníží, takže to moc nefungovalo. Takže, samozřejmě to říkám tak, aby to bylo pochopitelné, ale to je rozhodně něco, kde se dají ušetřit desítky miliard korun.
 
 Investování rezerv, to jsou vysoké desítky miliard nebo přes 100 miliard, EET vám udělá nízké desítky miliard. Takže, kdyby toto ta vláda implementovala aspoň v nějaké určité formě, tak by to více než kompenzovalo další kroky, které zase směřují k vyššímu deficitu. Řekněme, musíte uspokojit nějaké svoje voličské jádro, čemuž taky rozumím, ne že bych to úplně viděl rád, ale skoro bych řekl, že ta současná vláda se chová lépe, než bych očekával před volbami.
 
-Z hlediska třeba destrukce, důchodové reformy, tak ta věc není zdaleka tak horká, jak se, tím nechci říkat, že by ta vláda dělala skvělé věci obecně, ale můžete tam najít i tyhle střípky těch dobrých zpráv.
+Z hlediska třeba destrukce důchodové reformy, tak ta věc není zdaleka tak horká, jak se, tím nechci říkat, že by ta vláda dělala skvělé věci obecně, ale můžete tam najít i tyhle střípky těch dobrých zpráv.
 
 **Petra Jaroměřská:** tedy toho zvyšování zadlužení není zas až takovej problém, jak někteří kritici říkají?
 
-**Tomáš Havránek:** Pokud vláda zavede třeba EET, tak to je krok ke snížení zadlužení. A já říkám, kdyby se k tomu přidaly ještě další věci, co nikoho nebolí, to znamená trošku nějaká větší komunikace s ČNB ohledně toho, jak dlouhodobě ty rezervy investovat, tak tohle více než vyváží téměř cokoliv špatného, co ta vláda je schopná udělat jinak. To znamená rozdat peníze z vrtulníku svým voličkům třeba. Takže to je jedna věc.
+**Tomáš Havránek:** Pokud vláda zavede třeba EET, tak to je krok ke snížení zadlužení. A já říkám, kdyby se k tomu přidaly ještě další věci, co nikoho nebolí, to znamená trošku nějaká větší komunikace s ČNB ohledně toho, jak dlouhodobě ty rezervy investovat, tak tohle více než vyváží téměř cokoliv špatného, co ta vláda je schopná udělat jinak. To znamená rozdat peníze z vrtulníku svým voličům třeba. Takže to je jedna věc.
 
 Druhá věc je, že my nejsme zdaleka jediná země, která má fiskální problémy nebo bude mít. A ten problém, který je globální nebo ve vyspělých zemích, ale víceméně vlastně všude, se ještě zvýraznil tím, jak nám klesá porodnost v posledních několika letech po covidu, ale teď se to opravdu velmi urychlilo. A tohle samozřejmě nevám naprosto rozbourá důchodový systém, ale nejenom to, ta celá společnost bude tím, jak už nám teď dnes klesá globální populace pravděpodobně, všude na světě vám klesá porodnost, ale už i globální populace zřejmě klesá, tak celá ta taková ta rubrika, ta tkáň společnosti se bude rozpadat do velké míry. To je ta špatná zpráva, ta dobrá je, aspoň pro někoho, já třeba často jezdím do Kalifornie, mám kamarády v Silicon Valley, takže mi říkají, jak skvělá věc je umělá inteligence, nejenom to, co známe, ale to, co do budoucna bude, čili oni vidí explozi v ekonomickém růstu, v produktivitě, roboti, kteří se o nás budou starat. Nejsem si jist, nakolik jsou ty scénáře reálné, ale podle toho, co vím, je opravdu velmi pravděpodobné, že se nám budoucí růst nějak zvýší v souvislosti právě s tou umělou inteligencí, která je tou technologií, která umí sama generovat myšlenky, nápady a nic takového jsme tady ještě neměli.
 
@@ -227,7 +227,7 @@ Přesto vlastně jsou některé skupiny obyvatel, které neušetří nic, tak pr
 
 **Tomáš Havránek:** Jsou to lidé, kteří, jako třeba, dám osobní příklad, moji rodiče, se celý život snažili pracovat a šetřit ty peníze, co neutratili, co si vydělali. A nikdo je úplně nevedl k tomu, jak se ochránit před inflací, o které jsem mluvil. A to jsou lidé, kteří financují fungování tohohle státu, nejenom, že platí daně, ale že mají ty peníze uložené v bance a ty přicházejí inflací o hodnotu. Čili, podle mě tahle země má z hlediska ekonomického dva základní problémy.
 
-Ten první je malá finanční vzdělanost, finanční gramotnost, kdy my kupujeme nemovitosti nebo nic, nebo necháme peníze ležet, to je špatně, měli bychom kupovat globální akcie, diverzifikovaně, ETFka. To je první věc, to se pak odráží i v tom, co udělá Národní banka, která má balík bilionů korun a nedělá s tím nic. Jako pro mě to je věc, kterou pořád cítím trochu jako hořkost, že jsme toto dopustili, že jsem vlastně já i za to odpovídal do velké míry. A ta druhá věc je pracovní morálka, pracovní etika.
+Ten první je malá finanční vzdělanost, finanční gramotnost, kdy my kupujeme nemovitosti nebo nic, nebo necháme peníze ležet, to je špatně, měli bychom kupovat globální akcie, diverzifikovaně, ETFka. To je první věc, to se pak odráží i v tom, co udělá Národní banka, která má balík bilionů korun a nedělá s tím nic. Jako pro mě to je věc, kterou pořád cítím trochu jako hořkost, že jsme toto dopustili, že jsem za to vlastně i já odpovídal do velké míry. A ta druhá věc je pracovní morálka, pracovní etika.
 
 V Americe, v Japonsku, kam já rád jezdím, vidíte úplně jiný přístup k práci. A vidím to i na sobě, že můj přístup k práci není takový, jako u mých kolegů v Japonsku a v Americe, čili je to obecný problém této země. V té Americe nebo v Japonsku vidíte člověka, co sbírá odpadky, a ti lidé to dělají, váží si té práce, není to pro ně podřadná věc a nemusí být nějak dobře placení. Platy v Japonsku jsou relativně nízké, divili bychom se.
 

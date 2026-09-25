@@ -23,7 +23,7 @@ Prostě se to přihnalo a my to musíme nějak vydržet?
 
 **Tomáš Havránek:** Do jisté míry ano, do jisté míry ne. Do té míry ano, že opravdu to, že ta inflace bude dvojciferná nějakou dobu, několik měsíců minimálně, s tím se opravdu už tolik dělat nedá. Ale na druhou stranu dlouhodobě my inflaci opravdu mít nemusíme. Dlouhodobě inflaci má v rukou Národní banka, která kontroluje jak cenu peněz, tedy úrokové sazby, vlastně i kurz měny, oproti ostatním jiným měnám, kurz koruny, tak i nepřímo množství peněz v ekonomice.
 
-Čili my bychom mohli začít tím, že budeme chtít po té Národní bance, aby ona opravdu nám doručila stabilitu cen, stabilitu průměrných cen v té ekonomice, a nikoli inflaci, o což se snaží teď už vlastně od konce 90. let.
+Čili my bychom mohli začít tím, že budeme chtít po té Národní bance, aby nám opravdu doručila stabilitu cen, stabilitu průměrných cen v té ekonomice, a nikoli inflaci, o což se snaží teď už vlastně od konce 90. let.
 
 **Jan Bumba:** Ale musíme tedy rozlišovat to, co se děje nyní, ty mimořádné podmínky a tu současnou vysokánskou inflaci a tu dlouhodobou, na kterou se takzvaně cíluje.
 
@@ -47,7 +47,7 @@ My s tím teď už nic neuděláme, ale příští rok nebo za rok a půl se zas
 
 **Jan Bumba:** Takže centrální banka vyvolala nebo spolu vyvolala očekávání vysoké inflace?
 
-**Tomáš Havránek:** Já tomu věřím, zase nejsem sám. Když se podíváte na oficiální analýzy Národní banky, tak tam jim vychází, že takové ty fundamentální faktory, jako kolik mají lidé peněz před pandemií, po pandemii, vysvětlují zhruba třetinu té naší zvýšené inflace oproti zbytku Evropy. Čili ty dvě třetiny jsou primárně psychologického původu. A pokud můžeme spekulovat, odkud ta psychologie šla, nepochybně jeden z těch zdrojů byl, řekněme, ne úplně dobrá komunikace Národní banky.
+**Tomáš Havránek:** Já tomu věřím, zase nejsem sám. Když se podíváte na oficiální analýzy Národní banky, tak tam jim vychází, že takové ty fundamentální faktory, jako kolik mají lidé peněz před pandemií, po pandemii, vysvětlují zhruba třetinu té naší zvýšené inflace oproti zbytku Evropy. Čili ty dvě třetiny jsou primárně psychologického původu. A pokud můžeme spekulovat, odkud ta psychologie šla, nepochybně jedním z těch zdrojů byla, řekněme, ne úplně dobrá komunikace Národní banky.
 
 A taková, apokalyptická, řekněme.
 
@@ -83,7 +83,7 @@ Ale i pro vysvětlení lidem není nic snazšího. Tehdy jsme intervenovali prot
 
 **Jan Bumba:** já bych už jste na to někdy narazil, ale nejsou tam příliš silné tlaky zase třeba ze strany firem exportérů, pro které by byla ta silná koruna nevýhodná?
 
-**Tomáš Havránek:** já nevěřím tomu, že by tyhle tlaky byly nějak zásadní pro rozhodování bankovní rady, která dlouhodobě ukázala, že může být nezávislá. Ale opravdu, ten základní cíl Národní banky je cenová stabilita. Když se takhle děsivě nedaří ho plnit, tak nechápu, jak může odůvodnit před sebou sama, před veřejností, to, že nepoužívá nástroje, které má, které by hned teď mohla použít a to nechápu. Jak už u té minulé bankovní rady, tak už u té nové, řekněme té nové většiny, která od července tady vlastně vládne v té národní bance.
+**Tomáš Havránek:** já nevěřím tomu, že by tyhle tlaky byly nějak zásadní pro rozhodování bankovní rady, která dlouhodobě ukázala, že může být nezávislá. Ale opravdu, ten základní cíl Národní banky je cenová stabilita. Když se takhle děsivě nedaří ho plnit, tak nechápu, jak může odůvodnit před sebou sama, před veřejností, to, že nepoužívá nástroje, které má, které by hned teď mohla použít. Já to nechápu. Jak už u té minulé bankovní rady, tak už u té nové, řekněme té nové většiny, která od července tady vlastně vládne v té národní bance.
 
 **Jan Bumba:** že ten pohled, který prezentujete, se může jevit jako třeba experimentální nebo takový s nejasným dopadem?
 
@@ -97,7 +97,7 @@ Ta neříká Národní bance: starejte se o nějakou mírnou inflaci, byť by t�
 
 **Tomáš Havránek:** Co my potřebujeme, je, aby se vyplatilo spořit. Aby se, když máte peníze, nevyplatilo je utratit nebo strčit do nemovitostí, ale opravdu si je dát na spořicí účet a spořit. To je jediná cesta, jak vlastně dlouhodobě můžete tu inflaci porazit. A k tomu vedou dvě cesty. Co to je, že se vyplatí spořit?
 
-To znamená, že ta úroková sazba na spořícím účtu je větší než inflace, kterou čekáte za rok. To je, aby vám vycházelo to účetnictví. A Národní banka má v rukou obě ty části této rovnice. Ty úroky na spořicích účtech samozřejmě ovlivňuje její reposazba, která je teď 7%, ale 7% vám žádná banka, komerční banka nenabídne.
+To znamená, že ta úroková sazba na spořicím účtu je větší než inflace, kterou čekáte za rok. To je, aby vám vycházelo to účetnictví. A Národní banka má v rukou obě ty části této rovnice. Ty úroky na spořicích účtech samozřejmě ovlivňuje její reposazba, která je teď 7%, ale 7% vám žádná banka, komerční banka nenabídne.
 
 **Jan Bumba:** Takový jednoduchý dotaz. Proč ne? Proč to ty retailové banky nedělají?
 
@@ -133,7 +133,7 @@ A žádná z nich, ani jedna z těch studií, neukazovala, že by zdravá inflac
 
 **Jan Bumba:** že teď, dejme tomu, budeme mít za rok třeba 17% inflaci, peníze ztratí, těch 17% na hodnotě, že by ji zase získali za čas,
 
-**Tomáš Havránek:** Ono, když dovolíte, aby ta inflace takhle vystřelila, tak srazit ji zpátky dolů je opravdu velice, velice nákladné. Vezměte si, že třeba máte hypotéku, kterou jste si vzal teď, a v příštím roce bychom se snažili o deflaci 17%, to nejde. Šlo by to možná dlouhodobě, třeba během deseti let pomaličku tu inflaci rozpouštět, ale hlavní je, že pokud garantujete lidem opravdu cenovou stabilitu, stabilitu průměrného nákupu, průměrného zboží a služeb v ekonomice na dlouhou dobu, tak oni by nepodlehli té inflační mánii, které jsme tady všichni, včetně mě, taky teď utrácím víc, než jsem utrácil dřív, podlehli letos, vlastně už vloni, kdy vidíme, že ta Národní banka bohužel tu situaci absolutně nemá pod kontrolou a negarantuje nám nic. Švýcaři to mají jinak, jak jsme zmiňovali, že oni tu cenovou stabilitu de facto mají, ta důvěra lidí v Národní banku je úplně jiná a tam vidíte, že i přes tu současnou situaci inflace je pořád jenom 3%, čili ta psychologie, ta důvěra lidí v ten měnový systém, který je tam jiný než u nás, tam se necílí 2%, ale nevadí jim třeba nulová inflace, tak to je ten klíčový element k tomu, že se nám opravdu daří tu inflaci nějak krotit.
+**Tomáš Havránek:** Ono, když dovolíte, aby ta inflace takhle vystřelila, tak srazit ji zpátky dolů je opravdu velice, velice nákladné. Vezměte si, že třeba máte hypotéku, kterou jste si vzal teď, a v příštím roce bychom se snažili o deflaci 17%, to nejde. Šlo by to možná dlouhodobě, třeba během deseti let pomaličku tu inflaci rozpouštět, ale hlavní je, že pokud garantujete lidem opravdu cenovou stabilitu, stabilitu průměrného nákupu, průměrného zboží a služeb v ekonomice na dlouhou dobu, tak oni by nepodlehli té inflační mánii, které jsme tady všichni, včetně mě, taky teď utrácím víc, než jsem utrácel dřív, podlehli letos, vlastně už vloni, kdy vidíme, že ta Národní banka bohužel tu situaci absolutně nemá pod kontrolou a negarantuje nám nic. Švýcaři to mají jinak, jak jsme zmiňovali, že oni tu cenovou stabilitu de facto mají, ta důvěra lidí v Národní banku je úplně jiná a tam vidíte, že i přes tu současnou situaci inflace je pořád jenom 3%, čili ta psychologie, ta důvěra lidí v ten měnový systém, který je tam jiný než u nás, tam se necílí 2%, ale nevadí jim třeba nulová inflace, tak to je ten klíčový element k tomu, že se nám opravdu daří tu inflaci nějak krotit.
 
 **Jan Bumba:** že když stál před nějakými pár lety oběd 120 korun, dneska stojí 220, takže by se někdy mohly ty ceny vrátit zase zpátky na těch 120?
 
@@ -143,7 +143,7 @@ Stačí většina v té bankovní radě, nepotřebuje změnu zákona ani nic a m
 
 **Jan Bumba:** ten slogan zrušme inflaci? Je to spíš akademické cvičení? A nebo opravdu věříte tomu, že to je proveditelné i vzhledem k tomu, že máte zkušenosti z praxe? Víte, jaká je politika, víte, jaká je společenská nálada.
 
-**Tomáš Havránek:** Já hluboce věřím tomu, že ano. Takhle, asi není pravděpodobné, že to pan guvernér, jak jsem říkal, teď on udělá. Mohl by, ale kdy jindy se o to snažit, když ne v době, kdy ten současný systém tak strašlivě selhal, jako teď, všichni to vidíme. Je hrozná věc, když Národní banka má v mandátu ústavním, čili v tom nejvyšším, v jakém vůbec může být úkol cenové stability.
+**Tomáš Havránek:** Já hluboce věřím tomu, že ano. Takhle, asi není pravděpodobné, že to pan guvernér, jak jsem říkal, teď udělá. Mohl by, ale kdy jindy se o to snažit, když ne v době, kdy ten současný systém tak strašlivě selhal, jako teď, všichni to vidíme. Je hrozná věc, když Národní banka má v mandátu ústavním, čili v tom nejvyšším, v jakém vůbec může být úkol cenové stability.
 
 A přitom během tří let, vloni, letos a za rok, nám naše úspory ztratí třetinu hodnoty dohromady. To je strašné selhání a je na čase minimálně přemýšlet o nějaké změně. Proto jsem navrhoval audit Národní banky, abychom se podívali, jestli to opravdu odpovídá současnému vědeckému poznání. Já vím, že ne.
 
