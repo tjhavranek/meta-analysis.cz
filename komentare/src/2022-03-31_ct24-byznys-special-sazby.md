@@ -75,4 +75,4 @@ Ale my tím opačným směrem žádné takové omezení nemáme. Podle mě nemá
 
 **Tomáš Havránek:** Děkuji za pozvání, mějte se hezky.
 
-**Moderátorka:** A kroky Centrální banky dnes přišel vysvětlit a možná i trochu obhájit viceguvernér Marek Mora. Díky, že jste přišel.
+**Moderátorka:** A kroky centrální banky dnes přišel vysvětlit a možná i trochu obhájit viceguvernér Marek Mora. Díky, že jste přišel.

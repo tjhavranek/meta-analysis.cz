@@ -10,15 +10,15 @@ body_note: "Rozhovor pro podcast Kryptoplebs. Přepis pokrývá veřejně zveře
 ---
 **Moderátor:** Co vy a bitcoin, jak jste na tom jenom jinak takhle? Najdeme na to téma teda samozřejmě.
 
-**Tomáš Havránek:** Já jsem spíš velmi skeptický.
+**Tomáš Havránek:** Já jsem spíš laik a jsem velmi skeptický.
 
 **Moderátor:** Výborně, to je super, to je skvělý, to jsem hrozně rád, že pokecáme možná.
 
-**Tomáš Havránek:** Já jsem se tomu bránil a myslel jsem si, že to spadne na nulu. Ale posledních x let, kdy se to opravdu šíří mezi lidmi z financí, mě přesvědčilo, že to na nulu nespadne a že to tu bude dlouhodobě. Sám jsem si ale bitcoin ještě nekoupil, pořád nic. Většina mých kamarádů ho ale samozřejmě má.
+**Tomáš Havránek:** Já jsem se tomu bránil a myslel jsem si, že to spadne na nulu. Ale posledních x let, kdy se to opravdu šíří mezi lidmi z financí, mě přesvědčilo, že to na nulu nespadne a že to tu bude dlouhodobě. Sám jsem si ale bitcoin ještě nekoupil, pořád nic. Většina mých kamarádů ho ale samozřejmě má. Tak aspoň: kdyby všichni byli přesvědčení, nepotřebujete dělat ty pořady, ne?
 
-Ano. Tak aspoň kdyby všichni byli přesvědčení, tak nepotřebujete dělat ty pořady, ne? Vlastně, moc. To je pravda.
+**Moderátor:** Vlastně… To je pravda.
 
-Neděláte pro lidi, který…
+**Tomáš Havránek:** Neděláte to pro lidi, kteří…
 
 **Moderátor:** Mě to prostě baví, pro mě je to tak hrozně chytlo, úplně, že jsem k tomu přišel jak slepej k houslím asi jako většina a tak nějak se propadáte furt tou králičí norou a objevujete nové věci, ať už od těch peněz přes ekonomii k filozofii, k psychologii, k sociologii, těch oborů. Je tam v tom bitcoinu strašně moc teorie her a můžete se o tom bavit více méně jakoby do nekonečna, takže i vlastně v rámci tady podcastu se snažím ty hosty trošičku jakoby točit, ať už je to vlastně takhle v rámci té ekonomie, nebo jsem beru, měl jsem tady Saru Polak, což je antropoložka, archeoložka, řešili jsme peníze z pohledu teda jakoby té antropologie z minulosti a tak dále.
 

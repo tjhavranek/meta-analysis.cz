@@ -21,7 +21,7 @@ A mně by dávalo smysl návrh pana poslance Havránka schválit. Takže jen dá
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Václav Moravec:** … si činit problémy a možnost rychlé nápravy takové situace bude omezená. Struktura navržené daně, vztahuje se to právě k bankovnímu sektoru, postup při definování, kdo je poplatníkem a postup při stanovení základu daně jsou dosti složité a nabízí se otázka, zda by nemohlo být zvoleno řešení jednodušší, napsala Centrální banka kromě jiného ve stanovisku, které jsme viděli. Vám přijde způsob tvorby té daně…
+**Václav Moravec:** … si činit problémy a možnost rychlé nápravy takové situace bude omezená. Struktura navržené daně, vztahuje se to právě k bankovnímu sektoru, postup při definování, kdo je poplatníkem a postup při stanovení základu daně jsou dosti složité a nabízí se otázka, zda by nemohlo být zvoleno řešení jednodušší, napsala centrální banka kromě jiného ve stanovisku, které jsme viděli. Vám přijde způsob tvorby té daně…
 
 **Tomáš Havránek:** Ta myšlenka mi původně dávala velký smysl, jako asi řadě z nás. Když máte mimořádné výdaje, hledáte mimořádné příjmy u těch, kdo na dané situaci vydělávají. Když se ale podíváme do detailů, je velmi těžké to implementovat tak, aby to dávalo smysl. To už myslím vidí skoro všichni, ale museli to nějak dotáhnout do konce.
 

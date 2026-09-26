@@ -11,7 +11,7 @@ body_note: "Interview Plus na Českém rozhlase Plus, ptal se Jan Bumba. Text je
 ---
 **Jan Bumba:** Inflace se stala kvůli svým současným enormním hodnotám jedním z nejskloňovanějších slov letošního roku. Ekonomové připouštějí, že předpovídat její další vývoj je krajně obtížné, málokdo ale vidí situaci optimisticky. Spíše se všeobecně očekává delší období, po které porostou ceny a naspořené peníze budou ztrácet hodnotu. Mnoho lidí přijímá tento stav podobně jako přírodní katastrofu, která se na nás snesla a nezbývá, než vyčkat, až se tahle velká voda převalí.
 
-Jsme proti inflaci opravdu tak bezbraní. A pokud nyní peníze hodnotu ztratí, znamená to, že už ji nikdy nemůžou získat zpátky? Dobrý poslech přeje Jan Bumba. Hostem interview je dnes profesor ekonomie z Institutu ekonomických studií Fakulty sociálních věd Univerzity Karlovy a také bývalý poradce Bankovní rady České národní banky Tomáš Havránek.
+Jsme proti inflaci opravdu tak bezbranní? A pokud nyní peníze hodnotu ztratí, znamená to, že už ji nikdy nemůžou získat zpátky? Dobrý poslech přeje Jan Bumba. Hostem interview je dnes profesor ekonomie z Institutu ekonomických studií Fakulty sociálních věd Univerzity Karlovy a také bývalý poradce Bankovní rady České národní banky Tomáš Havránek.
 
 Dobrý den.
 
@@ -53,7 +53,7 @@ A taková, řekněme, apokalyptická.
 
 **Jan Bumba:** Hostem interview je dnes profesor ekonomie na Karlově univerzitě, bývalý poradce Bankovní rady České národní banky Tomáš Havránek. Posloucháte Interview Plus. Rozhovory s významnými lidmi, kteří mají vliv. V aplikaci Můj rozhlas, v podcastových aplikacích a video na našem profilu na YouTube.
 
-V průběhu toho minulého roku jsme viděli, jak Centrální banka zvyšovala a zvyšovala úrokové sazby. Jsou i nějaké jiné nástroje, které by bylo možné použít pro zkrocení inflace?
+V průběhu toho minulého roku jsme viděli, jak centrální banka zvyšovala a zvyšovala úrokové sazby. Jsou i nějaké jiné nástroje, které by bylo možné použít pro zkrocení inflace?
 
 **Tomáš Havránek:** Ptáte se velice návodně. Jsou. Je to používání devizových rezerv, tedy nějaké silnější posílení koruny, které znamená, že nám okamžitě zlevní zboží z dovozu, zejména třeba benzín, ale i spousta dalšího zboží. Když naší zemi před devíti lety hrozila deflace, Národní banka, jak víme, masivně intervenovala proti koruně, aby ji oslabila a deflaci tak předešla, nebo dokonce aby zvýšila inflaci na úrovně, které nebudou blízké nule. Návrh, který jsem vznášel nejenom já, ale i řada dalších ekonomů, je chovat se teď stejně, když bojujeme proti inflaci a máme tak velký problém v krátkém období, ve kterém nástroje typu zvyšování sazeb nemohou nikdy fungovat. Ty se projevují komplikovaně a mnohem pomaleji, minimálně během roku, spíše za dva a více let.
 
@@ -167,7 +167,7 @@ Myslím tedy, že i pro nás je to spíš otázka toho, jestli chceme být víc 
 
 **Tomáš Havránek:** Samozřejmě že ne. To jsou nevýhody, které z eura plynou. Euro má i spoustu svých výhod. Mně osobně by euro, to řeknu upřímně, život zjednodušilo, ale vidím i velké problémy pro řadu… Dopady se velmi liší podle toho, jestli hodně cestujete, kde investujete a tak dále.
 
-**Jan Bumba:** Ta současná vysokánská inflace v České republice je tedy podle vašeho soudu důsledkem chyb Centrální banky?
+**Jan Bumba:** Ta současná vysokánská inflace v České republice je tedy podle vašeho soudu důsledkem chyb centrální banky?
 
 **Tomáš Havránek:** Podle mě je primárním důvodem skutečně špatná politika centrální banky, která má cenovou stabilitu na starosti. Je to jediná instituce, která se o ni opravdu má starat. Je to její jediný ústavní mandát. A ona, když to srovnám…
 

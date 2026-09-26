@@ -2867,7 +2867,7 @@ Kdo se mezitím chce podívat, jak krásná taková synagoga může být (a vyhn
 
 Zdroj: https://www.ceskatelevize.cz/porady/1126672097-otazky-vaclava-moravce/224411030500901/
 
-**Václav Moravec:** Ekonoma z Institutu ekonomických studií Fakulty sociálních věd Univerzity Karlovy a výzkumníka Centru inovací metavýzkumu Stanfordovy univerzity. Tomáše Havránka, pane profesore, děkuji, že jste po čase v Otázkách.
+**Václav Moravec:** …ekonoma z Institutu ekonomických studií Fakulty sociálních věd Univerzity Karlovy a výzkumníka Centra inovací metavýzkumu Stanfordovy univerzity Tomáše Havránka. Pane profesore, děkuji, že jste po čase v Otázkách.
 
 Pane vicepremiére, ministr financí zbyt…
 
@@ -3411,15 +3411,15 @@ Zdroj: https://www.youtube.com/watch?v=dVgcnhFbSc8
 
 **Moderátor:** Co vy a bitcoin, jak jste na tom jenom jinak takhle? Najdeme na to téma teda samozřejmě.
 
-**Tomáš Havránek:** Já jsem spíš velmi skeptický.
+**Tomáš Havránek:** Já jsem spíš laik a jsem velmi skeptický.
 
 **Moderátor:** Výborně, to je super, to je skvělý, to jsem hrozně rád, že pokecáme možná.
 
-**Tomáš Havránek:** Já jsem se tomu bránil a myslel jsem si, že to spadne na nulu. Ale posledních x let, kdy se to opravdu šíří mezi lidmi z financí, mě přesvědčilo, že to na nulu nespadne a že to tu bude dlouhodobě. Sám jsem si ale bitcoin ještě nekoupil, pořád nic. Většina mých kamarádů ho ale samozřejmě má.
+**Tomáš Havránek:** Já jsem se tomu bránil a myslel jsem si, že to spadne na nulu. Ale posledních x let, kdy se to opravdu šíří mezi lidmi z financí, mě přesvědčilo, že to na nulu nespadne a že to tu bude dlouhodobě. Sám jsem si ale bitcoin ještě nekoupil, pořád nic. Většina mých kamarádů ho ale samozřejmě má. Tak aspoň: kdyby všichni byli přesvědčení, nepotřebujete dělat ty pořady, ne?
 
-Ano. Tak aspoň kdyby všichni byli přesvědčení, tak nepotřebujete dělat ty pořady, ne? Vlastně, moc. To je pravda.
+**Moderátor:** Vlastně… To je pravda.
 
-Neděláte pro lidi, který…
+**Tomáš Havránek:** Neděláte to pro lidi, kteří…
 
 **Moderátor:** Mě to prostě baví, pro mě je to tak hrozně chytlo, úplně, že jsem k tomu přišel jak slepej k houslím asi jako většina a tak nějak se propadáte furt tou králičí norou a objevujete nové věci, ať už od těch peněz přes ekonomii k filozofii, k psychologii, k sociologii, těch oborů. Je tam v tom bitcoinu strašně moc teorie her a můžete se o tom bavit více méně jakoby do nekonečna, takže i vlastně v rámci tady podcastu se snažím ty hosty trošičku jakoby točit, ať už je to vlastně takhle v rámci té ekonomie, nebo jsem beru, měl jsem tady Saru Polak, což je antropoložka, archeoložka, řešili jsme peníze z pohledu teda jakoby té antropologie z minulosti a tak dále.
 
@@ -6238,7 +6238,7 @@ A mně by dávalo smysl návrh pana poslance Havránka schválit. Takže jen dá
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Václav Moravec:** … si činit problémy a možnost rychlé nápravy takové situace bude omezená. Struktura navržené daně, vztahuje se to právě k bankovnímu sektoru, postup při definování, kdo je poplatníkem a postup při stanovení základu daně jsou dosti složité a nabízí se otázka, zda by nemohlo být zvoleno řešení jednodušší, napsala Centrální banka kromě jiného ve stanovisku, které jsme viděli. Vám přijde způsob tvorby té daně…
+**Václav Moravec:** … si činit problémy a možnost rychlé nápravy takové situace bude omezená. Struktura navržené daně, vztahuje se to právě k bankovnímu sektoru, postup při definování, kdo je poplatníkem a postup při stanovení základu daně jsou dosti složité a nabízí se otázka, zda by nemohlo být zvoleno řešení jednodušší, napsala centrální banka kromě jiného ve stanovisku, které jsme viděli. Vám přijde způsob tvorby té daně…
 
 **Tomáš Havránek:** Ta myšlenka mi původně dávala velký smysl, jako asi řadě z nás. Když máte mimořádné výdaje, hledáte mimořádné příjmy u těch, kdo na dané situaci vydělávají. Když se ale podíváme do detailů, je velmi těžké to implementovat tak, aby to dávalo smysl. To už myslím vidí skoro všichni, ale museli to nějak dotáhnout do konce.
 
@@ -6876,7 +6876,7 @@ Zdroj: https://plus.rozhlas.cz/za-vysokou-inflaci-muze-spatna-politika-centralni
 
 **Jan Bumba:** Inflace se stala kvůli svým současným enormním hodnotám jedním z nejskloňovanějších slov letošního roku. Ekonomové připouštějí, že předpovídat její další vývoj je krajně obtížné, málokdo ale vidí situaci optimisticky. Spíše se všeobecně očekává delší období, po které porostou ceny a naspořené peníze budou ztrácet hodnotu. Mnoho lidí přijímá tento stav podobně jako přírodní katastrofu, která se na nás snesla a nezbývá, než vyčkat, až se tahle velká voda převalí.
 
-Jsme proti inflaci opravdu tak bezbraní. A pokud nyní peníze hodnotu ztratí, znamená to, že už ji nikdy nemůžou získat zpátky? Dobrý poslech přeje Jan Bumba. Hostem interview je dnes profesor ekonomie z Institutu ekonomických studií Fakulty sociálních věd Univerzity Karlovy a také bývalý poradce Bankovní rady České národní banky Tomáš Havránek.
+Jsme proti inflaci opravdu tak bezbranní? A pokud nyní peníze hodnotu ztratí, znamená to, že už ji nikdy nemůžou získat zpátky? Dobrý poslech přeje Jan Bumba. Hostem interview je dnes profesor ekonomie z Institutu ekonomických studií Fakulty sociálních věd Univerzity Karlovy a také bývalý poradce Bankovní rady České národní banky Tomáš Havránek.
 
 Dobrý den.
 
@@ -6918,7 +6918,7 @@ A taková, řekněme, apokalyptická.
 
 **Jan Bumba:** Hostem interview je dnes profesor ekonomie na Karlově univerzitě, bývalý poradce Bankovní rady České národní banky Tomáš Havránek. Posloucháte Interview Plus. Rozhovory s významnými lidmi, kteří mají vliv. V aplikaci Můj rozhlas, v podcastových aplikacích a video na našem profilu na YouTube.
 
-V průběhu toho minulého roku jsme viděli, jak Centrální banka zvyšovala a zvyšovala úrokové sazby. Jsou i nějaké jiné nástroje, které by bylo možné použít pro zkrocení inflace?
+V průběhu toho minulého roku jsme viděli, jak centrální banka zvyšovala a zvyšovala úrokové sazby. Jsou i nějaké jiné nástroje, které by bylo možné použít pro zkrocení inflace?
 
 **Tomáš Havránek:** Ptáte se velice návodně. Jsou. Je to používání devizových rezerv, tedy nějaké silnější posílení koruny, které znamená, že nám okamžitě zlevní zboží z dovozu, zejména třeba benzín, ale i spousta dalšího zboží. Když naší zemi před devíti lety hrozila deflace, Národní banka, jak víme, masivně intervenovala proti koruně, aby ji oslabila a deflaci tak předešla, nebo dokonce aby zvýšila inflaci na úrovně, které nebudou blízké nule. Návrh, který jsem vznášel nejenom já, ale i řada dalších ekonomů, je chovat se teď stejně, když bojujeme proti inflaci a máme tak velký problém v krátkém období, ve kterém nástroje typu zvyšování sazeb nemohou nikdy fungovat. Ty se projevují komplikovaně a mnohem pomaleji, minimálně během roku, spíše za dva a více let.
 
@@ -7032,7 +7032,7 @@ Myslím tedy, že i pro nás je to spíš otázka toho, jestli chceme být víc 
 
 **Tomáš Havránek:** Samozřejmě že ne. To jsou nevýhody, které z eura plynou. Euro má i spoustu svých výhod. Mně osobně by euro, to řeknu upřímně, život zjednodušilo, ale vidím i velké problémy pro řadu… Dopady se velmi liší podle toho, jestli hodně cestujete, kde investujete a tak dále.
 
-**Jan Bumba:** Ta současná vysokánská inflace v České republice je tedy podle vašeho soudu důsledkem chyb Centrální banky?
+**Jan Bumba:** Ta současná vysokánská inflace v České republice je tedy podle vašeho soudu důsledkem chyb centrální banky?
 
 **Tomáš Havránek:** Podle mě je primárním důvodem skutečně špatná politika centrální banky, která má cenovou stabilitu na starosti. Je to jediná instituce, která se o ni opravdu má starat. Je to její jediný ústavní mandát. A ona, když to srovnám…
 
@@ -7897,9 +7897,13 @@ Problém rychlé řešení nemá. Aspoň úplný zákaz kamionů na Zámecké kr
 
 Zdroj: https://video.aktualne.cz/dvtv/havranek-inflaci-muzeme-kdykoliv-zrusit-centralni-banky-vcet/r~d074e14ad23211eca89f0cc47ab5f122/
 
-**Martin Veselovský:** Hostem DVTV ekonom a bývalý poradce viceguvernéra České národní banky Tomáš Havránek. Dobrý den. Dobrý den. V reakci na jmenování Aleše Michla novým guvernérem České národní banky začala oslabovat koruna.
+**Martin Veselovský:** Hostem DVTV ekonom a bývalý poradce viceguvernéra České národní banky Tomáš Havránek. Dobrý den.
 
-To se začalo dít včera. První věcí, kterou tedy Centrální banka po tom včerejším jmenování musela udělat, byla intervence na devizovém trhu a posílení koruny pod 25 korun za euro. Jak vy sám tenhle vzkaz trhu čtete?
+**Tomáš Havránek:** Dobrý den.
+
+**Martin Veselovský:** V reakci na jmenování Aleše Michla novým guvernérem České národní banky začala oslabovat koruna.
+
+To se začalo dít včera. První věcí, kterou tedy centrální banka po tom včerejším jmenování musela udělat, byla intervence na devizovém trhu a posílení koruny pod 25 korun za euro. Jak vy sám tenhle vzkaz trhu čtete?
 
 **Tomáš Havránek:** Ten vzkaz je poměrně jasný, pokud jde o to, co si trh myslí, že bude Aleš Michl dělat. Obecně se domnívám, že ta reakce byla možná maličko předčasná, protože jedna věc je, co Aleš Michl říkal až do jmenování, a další věc, jak se bude chovat, až guvernérem bude a případně bude mít v bankovní radě většinu. Podle mě tedy zdaleka není jisté, že opravdu dojde na holubičí vyznění dalších kroků bankovní rady. Inflace totiž nezmizí sama od sebe.
 
@@ -8173,7 +8177,7 @@ Ale my tím opačným směrem žádné takové omezení nemáme. Podle mě nemá
 
 **Tomáš Havránek:** Děkuji za pozvání, mějte se hezky.
 
-**Moderátorka:** A kroky Centrální banky dnes přišel vysvětlit a možná i trochu obhájit viceguvernér Marek Mora. Díky, že jste přišel.
+**Moderátorka:** A kroky centrální banky dnes přišel vysvětlit a možná i trochu obhájit viceguvernér Marek Mora. Díky, že jste přišel.
 
 ---
 
