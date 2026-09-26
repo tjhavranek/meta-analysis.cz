@@ -215,9 +215,7 @@ Je to tak: v prvním stadiu diabetu je času dost a člověk má v životě spou
 
 **Jan Hrušovský:** A to mi vlastně přijde dobrý přístup. Protože v momentě, kdy ta cukrovka jako přijde a to přijde tím, že nemáte žádný screening, ale prostě najednou to dítě je v nějaký diabetický ketoacidóze, nebo prostě skolabuje, musí ho odvézt, respektive hospitalizovat v nemocnici a podobně. A najednou přichází ten velký šok, protože tam už ta produkce toho inzulinu není. Tak tam zpravidla na to dítě, nebo na toho diabetika a ty jeho rodiče se vychrlí strašný kvantum jako informací.
 
-A převzít si z toho něco, to je jako strašný. Protože jsou ve vás emoce, tak je to nespravedlivý, strašný a tak dále, co se teď bude dít. A do toho vám ještě do vás valej informace, jak musíte jíst, tak to musíte změnit a tak dále. Takže mi vlastně přijde tento ten jako postupný dávkování těch věcí.
-
-Takový jako příjemný, hezký, že z toho nemusíte mít jako žádný strach, nic takovýho. Tak vlastně jako si spíš říkám, jestli vy sám už nejdete trošku za roh. Jestli si některé věci ve volném čase jako nevyhledáváte. Nebo jestli se neptáte tý sestřenice.
+A převzít si z toho něco, to je jako strašný. Protože jsou ve vás emoce, tak je to nespravedlivý, strašný a tak dále, co se teď bude dít. A do toho vám ještě do vás valej informace, jak musíte jíst, tak to musíte změnit a tak dále. Takže mi vlastně přijde ten postupný dávkování těch věcí takový jako příjemný, hezký, že z toho nemusíte mít jako žádný strach, nic takovýho. Tak vlastně jako si spíš říkám, jestli vy sám už nejdete trošku za roh. Jestli si některé věci ve volném čase jako nevyhledáváte. Nebo jestli se neptáte tý sestřenice.
 
 **Tomáš Havránek:** Zase, já s tím teď nemůžu nic udělat. Když jsem si znovu připomněl lék teplizumab, hned jsem se ptal, jaké jsou pro něj podmínky. To je něco, co má smysl řešit, protože by to mohlo pomoci. Samozřejmě vím, že v Motole to hlídají, takže jsem se možná ptát nemusel, ale komplikace jsou věci, které teď nemůžu nijak ovlivnit, nemůžu s tím nic udělat, tak proč bych je řešil?
 
