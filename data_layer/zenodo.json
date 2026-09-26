@@ -39,7 +39,7 @@
    "scheme": "url"
   },
   {
-   "identifier": "https://github.com/tjhavranek/meta-analysis.cz/tree/BUILD-COMMIT-PENDING",
+   "identifier": "https://github.com/tjhavranek/meta-analysis.cz/tree/49771a3e2c9bc92825c3e8714755ea8e50e8bd7a",
    "relation": "isCompiledBy",
    "scheme": "url"
   }
@@ -49,5 +49,5 @@
  "version": "2.1.0",
  "concept_doi": "10.5281/zenodo.21773678",
  "doi": "10.5281/zenodo.22971345",
- "_BUILD_COMMIT_NOTE": "The deposited zip was built from commit BUILD-COMMIT-PENDING in a clean clone, and reproduced byte for byte there and in the working tree. This identifier is a commit SHA rather than a branch because a branch moves. It is written by a metadata-only commit made after the build commit: a file cannot contain the hash of the commit containing it, and .zenodo.json is Zenodo form metadata rather than part of the uploaded zip, so setting it afterwards does not change the artifact."
+ "_BUILD_COMMIT_NOTE": "The deposited zip was built from commit 49771a3e2c9bc92825c3e8714755ea8e50e8bd7a in the working tree, and reproduced byte for byte (sha256 4001ec3a68f39d74a9fa5d18af7adc63839d7c75592aef73d95ee1342a5a5ec3) in a clean clone of that commit checked out without line-ending conversion. A clone with core.autocrlf=true gives CRLF copies of CITATION.cff, LICENSE and README.md and so a different checksum over the same content. This identifier is a commit SHA rather than a branch because a branch moves. It is written by a metadata-only commit made after the build commit: a file cannot contain the hash of the commit containing it, and .zenodo.json is Zenodo form metadata rather than part of the uploaded zip, so setting it afterwards does not change the artifact."
 }
