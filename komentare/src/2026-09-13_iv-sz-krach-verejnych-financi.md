@@ -42,7 +42,7 @@ Nejpravděpodobnější řešení, které se nebude líbit ani vám, a určitě 
 
 Je to nejpravděpodobnější scénář. Není to scénář, který bych chtěl, ale můžeme se na něj nějak připravit. Třeba tak, že máme majetek tam, kam na něj inflace nedosáhne, například v akciích.
 
-Pořád tu ale je jedna poměrně výrazná naděje, která náš problém nevyřeší, ale může přinejmenším pomoci provést nějaké bolestivější reformy. Je to majetek, který tato země má v zahraničí, tedy devizové rezervy Národní banky. Ty stále nejsou investovány tak, aby vydělávaly tolik, kolik by mohly. I kdyby se ale nezměnilo vůbec nic a současná alokace rezerv zůstala stejná, tak za několik let... Už teď je totiž velká část těch peněz v akciích, zhruba 30% disponibilní části. Jsou to 4 biliony korun, takže je to velký balík. A Národní banka pořád splácí ztrátu z minulých let.
+Pořád tu ale je jedna poměrně výrazná naděje, která náš problém nevyřeší, ale může přinejmenším pomoci provést nějaké bolestivější reformy. Je to majetek, který tato země má v zahraničí, tedy devizové rezervy Národní banky. Ty stále nejsou investovány tak, aby vydělávaly tolik, kolik by mohly. I kdyby se ale nezměnilo vůbec nic a současná alokace rezerv zůstala stejná, tak za několik let… Už teď je totiž velká část těch peněz v akciích, zhruba 30% disponibilní části. Jsou to 4 biliony korun, takže je to velký balík. A Národní banka pořád splácí ztrátu z minulých let.
 
 **Jiří Zatloukal:** Tak nějakých 300 miliard zhruba?
 
@@ -50,7 +50,7 @@ Pořád tu ale je jedna poměrně výrazná naděje, která náš problém nevy�
 
 Ona může investovat ještě víc. Věřím, že se k tomu Aleš Michl ještě odhodlá a že bude chtít, aby se na něj vzpomínalo jako na opravdu výjimečného guvernéra, ne jako na průměrného. A u těch 30% toho on zase tolik neudělal: už ta předchozí vedení Národní banky to zvýšila na 20% a on to maličko navýšil. Chce to mít většinu rezerv v akciích, jako to má třeba Singapur, který byl ve stejné situaci jako my: měl příliš devizových rezerv, investoval je a pak mu to vydělává.
 
-Celkový potenciál je až 200 miliard, které by ČNB mohla ročně přinášet státnímu rozpočtu, aniž by to mělo jakýkoli negativní vliv na měnovou...
+Celkový potenciál je až 200 miliard, které by ČNB mohla ročně přinášet státnímu rozpočtu, aniž by to mělo jakýkoli negativní vliv na měnovou…
 
 **Jiří Zatloukal:** To myslíte třeba za 10 let.
 
@@ -62,7 +62,7 @@ I když se ty změny samozřejmě propíší do příštích let.
 
 **Tomáš Havránek:** Klidní ne, ale rád bych viděl daleko větší debatu o této klíčové věci, protože peněz, které můžete vydělat relativně bezbolestně, je hodně. A my trávíme spoustu času a spoustu úsilí debatami o desítkách miliard, které opravdu někde budou chybět.
 
-Vezměme si třeba dnešek: vláda přidává peníze do zdravotnictví a dopravy, což je asi v pořádku. Kdyby je ušetřila, ty peníze by někde chyběly. Tady nám leží peníze na chodníku, a ani ta vláda minulá, ani ta současná... Ta současná o tom s vedením Národní banky aspoň trošku mluví, ta minulá v tomhle ohledu neudělala nic. Třeba se mýlím, ale ta debata tam vůbec není.
+Vezměme si třeba dnešek: vláda přidává peníze do zdravotnictví a dopravy, což je asi v pořádku. Kdyby je ušetřila, ty peníze by někde chyběly. Tady nám leží peníze na chodníku, a ani ta vláda minulá, ani ta současná… Ta současná o tom s vedením Národní banky aspoň trošku mluví, ta minulá v tomhle ohledu neudělala nic. Třeba se mýlím, ale ta debata tam vůbec není.
 
 **Jiří Zatloukal:** Není třeba, ale spíš řešení zefektivňovat chod některých rezortů, vlastně těch největších ideálně, protože ty mandatorní a kvazimandatorní výdaje dlouhodobě tvoří drtivou většinu toho rozpočtu. To jsou ty výdaje, které stát tak, či onak musí vydat od platu státních zaměstnanců, důchody, zdravotnictví. Pohybuje se to podle Národní rozpočtové rady zhruba za poslední tři roky v průměru 94,8% příjmů státního rozpočtu. Ten manévrovací prostor je tam minimální.
 
@@ -90,7 +90,7 @@ Onehdy jsem byl v televizi s panem Kupkou, který o tom slyšel poprvé. Pak jse
 
 **Tomáš Havránek:** Máte pravdu. Jen k tomu: samozřejmě to není oběd zdarma, berete na sebe riziko. To riziko je, že ČNB udělá ztrátu. Mimochodem, ona je ve ztrátě v podstatě odjakživa a vždycky tvrdí, že na ztrátě nezáleží. Pokud na ztrátě nezáleží, což není úplně pravda, ale pokud je to tak, jak oni tvrdí, že na ztrátě nezáleží, pak ztráta může být půl bilionu, bilion, je to jedno. Ale zisk je naprosto reálný.
 
-Pokud uděláte zisk, můžete ho použít, můžete z něj postavit nemocnici, rychlovlaky, dálnici. Ten zisk je reálný. Pokud je to tak, máte v tom riziku asymetrii. Tohle je karikatura, ale takhle to oni říkají. Berete na sebe nějaké riziko, ale pokud se svět nezhroutí... Já to dělám taky, kupuji akcie, to je moje investice, protože je to na dlouhou dobu.
+Pokud uděláte zisk, můžete ho použít, můžete z něj postavit nemocnici, rychlovlaky, dálnici. Ten zisk je reálný. Pokud je to tak, máte v tom riziku asymetrii. Tohle je karikatura, ale takhle to oni říkají. Berete na sebe nějaké riziko, ale pokud se svět nezhroutí… Já to dělám taky, kupuji akcie, to je moje investice, protože je to na dlouhou dobu.
 
 Když je váš horizont 10, 20, 30 let, a Národní banka má horizont ještě delší, ta neumře nikdy, můžete si to u peněz, které nepotřebujete, dovolit. A když je potřebujete, můžete ty akcie prodat. Sice třeba levněji, ale v krizi vám zároveň většinou oslabí koruna, takže to pro vaši rozvahu není zase takový problém. Zajímá vás dlouhodobý výhled a v dlouhodobém výhledu je velice nepravděpodobné, že se tato věc nevyplatí, s výjimkou nějaké termonukleární války, kdy by nás peníze stejně nezajímaly.
 
@@ -102,9 +102,9 @@ Z roku na rok je to tedy riskantní, ano, ale mě nezajímá, co je z roku na ro
 
 A příští rok vám řeknou: ty jsi to nevyčerpal, tak to asi nepotřebuješ. A rozpočet vám často sníží. Takhle to je. Konkrétně jmenovat nebudu, ale je to běžná praxe.
 
-V některých zemích funguje rozpočtový carry over, kdy vy jako ředitel odboru máte... Mimochodem, když to funguje takhle, jakou máte v prosinci motivaci, co dělat? Utrácíte za nesmysly, za zbytečnosti. Máme peníze na cestovném, ty pojedeš na Havaj, abychom ty peníze utratili. A další věci: koupíme si věci, které nepotřebujeme.
+V některých zemích funguje rozpočtový carry over, kdy vy jako ředitel odboru máte… Mimochodem, když to funguje takhle, jakou máte v prosinci motivaci, co dělat? Utrácíte za nesmysly, za zbytečnosti. Máme peníze na cestovném, ty pojedeš na Havaj, abychom ty peníze utratili. A další věci: koupíme si věci, které nepotřebujeme.
 
-To jsou nějaká procenta rozpočtu...
+To jsou nějaká procenta rozpočtu…
 
 **Jiří Zatloukal:** Myslíte, že to může být nějaká, nebo je to nějaká podstatnější částka?
 
@@ -118,7 +118,7 @@ Je to zase věc, která nikomu neublíží, kromě účetních, kteří to musí
 
 **Tomáš Havránek:** I přes ta negativa, o kterých jste se zmiňoval, v rozpočtu i ve výhledu financí, jsme pořád v nejhorším, řekněme, v polovině evropských zemí. Takže se Řecku asi úplně neblížíme, když je na tom Řecko teď docela dobře. Dlouhodobě je ale naprosto dominantní něco, o čem jsme se ještě nebavili a co bychom měli nakousnout: samozřejmě to, že v téhle zemi brzy nebudou děti, když to přeženu. Tuším, že loni se v této zemi narodilo 77 tisíc dětí, nejméně od začátku měření, tedy minimálně od Marie Terezie, pravděpodobně i za mnohem delší dobu. Máme tu tedy nejméně dětí za čtvrt tisíciletí.
 
-To se samozřejmě, ne hned, ale za nějakou dobu, mechanicky projeví kolapsem důchodového systému. Teď to funguje tak, že lidé mají děti a ty děti platí důchody všem. Ale nejen to: zároveň se bez těch dětí bude rozpadat celá tkáň společnosti. Kdo se o nás bude starat, až budeme my...
+To se samozřejmě, ne hned, ale za nějakou dobu, mechanicky projeví kolapsem důchodového systému. Teď to funguje tak, že lidé mají děti a ty děti platí důchody všem. Ale nejen to: zároveň se bez těch dětí bude rozpadat celá tkáň společnosti. Kdo se o nás bude starat, až budeme my…
 
 **Jiří Zatloukal:** Pokud tady nepustíme imigranty, tak to bude samozřejmě problém.
 
@@ -126,11 +126,11 @@ To se samozřejmě, ne hned, ale za nějakou dobu, mechanicky projeví kolapsem 
 
 **Jiří Zatloukal:** Dokonce i náš, protože za 20 let, kdy naše generace zhruba půjde do důchodu, tak stát bude mít extrémně, nebo podstatně vyšší výdaje na sociální služby, na důchody a příjmy zdá se nestoupají nebo nebudou stoupat, pokud nezvýšíme zdanění a budou buď vyšší deficity, nebo se budou tyhle služby prostě omezovat. Jinou nevidím cestu.
 
-**Tomáš Havránek:** V těch hrozných výhledech schodků, které jste zmiňoval, tohle ještě není zohledněno. Kolaps porodnosti za poslední roky u nás, v západním světě, vlastně i všude na světě, je takový, že myslím... V západním světě.
+**Tomáš Havránek:** V těch hrozných výhledech schodků, které jste zmiňoval, tohle ještě není zohledněno. Kolaps porodnosti za poslední roky u nás, v západním světě, vlastně i všude na světě, je takový, že myslím… V západním světě.
 
-Ale ne, i na východě...
+Ale ne, i na východě…
 
-**Jiří Zatloukal:** Vlastně v Číně taky, no. Kromě Afriky vlastně...
+**Jiří Zatloukal:** Vlastně v Číně taky, no. Kromě Afriky vlastně…
 
 **Tomáš Havránek:** Kromě Afriky a Izraele jste v podstatě na trajektorii naprostého demografického kolapsu společnosti. Tohle je to hlavní.
 
@@ -140,11 +140,11 @@ My dohromady jich máme dost, ne? Spolu tedy asi šest.
 
 **Jiří Zatloukal:** Dohromady šest, vy máte čtyři, já mám dvě, tak…
 
-**Tomáš Havránek:** Chci jen říct, že znám řadu lidí, kteří nikdy neměli děti, profesory v Americe a tak dále. Skoro všichni mi nakonec řekli, jak toho strašně litují. Vy tedy 40 let bez dětí strávíte v pohodě, jezdíte si po světě, a zbytek života strávíte tím...
+**Tomáš Havránek:** Chci jen říct, že znám řadu lidí, kteří nikdy neměli děti, profesory v Americe a tak dále. Skoro všichni mi nakonec řekli, jak toho strašně litují. Vy tedy 40 let bez dětí strávíte v pohodě, jezdíte si po světě, a zbytek života strávíte tím…
 
 **Jiří Zatloukal:** Směřujete k tomu, že bezdětní lidé by měli platit vyšší daně? Což se taky objevuje tento návrh. Teda ti, kteří je samozřejmě mohou mít, ne? Ti, kteří je nemohou mít.
 
-**Tomáš Havránek:** Ne, to bych... Takové návrhy se taky objevují. Tím, že mám čtyři děti, nejsem v pozici, abych to komentoval, protože na tom mám sám očividný zájem. Takže to komentovat nebudu. Chci jen říct, že mi přijde velká škoda, kdybychom ty děti neměli.
+**Tomáš Havránek:** Ne, to bych… Takové návrhy se taky objevují. Tím, že mám čtyři děti, nejsem v pozici, abych to komentoval, protože na tom mám sám očividný zájem. Takže to komentovat nebudu. Chci jen říct, že mi přijde velká škoda, kdybychom ty děti neměli.
 
 Ale matka tím nemusí obětovat kariéru. Víte, že moje žena je daleko úspěšnější než já a vydělává víc peněz než já. Ten život je sice složitý, ale je skvělý. Takže mi přijde, že lidé, kteří mají pocit, že to nepotřebují, toho nakonec budou velmi litovat a kvůli tomu do velké míry promarní život.
 
@@ -220,7 +220,7 @@ Ne vždycky má ta věda úplně, řekněme, globální parametry a určitě by 
 
 **Tomáš Havránek:** Nedávat peníze tam, kde je sypete do nějaké králičí nory, která nikam nevede. Vypadá to jako výzkum, je to takový cargo kult: vypadá to jako výzkum, a přitom to v zahraničí nikdo nepoužívá. Víc se tedy dívat na to, jak je práce českých vědců na univerzitách využívaná v zahraničí. Něco jiného je výuka, která musí být dobrá i na regionálních univerzitách.
 
-To se dnes s rozvojem AI zase úplně změní. Tyhle věci budeme muset...
+To se dnes s rozvojem AI zase úplně změní. Tyhle věci budeme muset…
 
 **Jiří Zatloukal:** Co to vlastně mění u vás? Studenti mohou své práce vypracovat s pomocí AI, zjednodušit si často život. Vy můžete hodnotit studentské práce s pomocí AI. Jak tohle řešíte?
 
@@ -234,11 +234,11 @@ Ale vzít to jako něco, čím byla dřív kalkulačka nebo počítač. Samozře
 
 **Tomáš Havránek:** Pořád generování opravdu dobrých nápadů, to za vás ta AI neudělá. To je pravda. Až tohle bude umět, hra se úplně změní, nejen pro mě, pro vás, ale pro všechny, pro celý svět. Ale možná k lepšímu. Já teď tedy můžu dělat obecnější věci, obecnější myšlenku, nápad, a s technickými detaily mi často pomůže agent místo kolegy z Japonska, kterého jsem musel platit, protože jsem neuměl matematiku z MIT, kterou on uměl.
 
-Teď ho pořád potřebuji, ale méně. Další věc je samotné přednášení. Sice můžete pustit nějakou hezkou přednášku z YouTube, ale pořád to není úplně...
+Teď ho pořád potřebuji, ale méně. Další věc je samotné přednášení. Sice můžete pustit nějakou hezkou přednášku z YouTube, ale pořád to není úplně…
 
 Zaujetí studentů pro danou látku zatím nelze úplně nahradit ničím jiným, než že jim to říkáte takhle, bavíte se s nimi, často pak i individuálně. Je to dialog. Ale ve velké většině ostatních věcí, kromě nápadů, verbální komunikace a motivace, mě už teď nejnovější nástroje pravděpodobně dokážou do velké míry nahradit.
 
-Ale je to lepší, protože máte víc času na to, co je doopravdy důležité, na čem záleží a čím můžete přispět nad rámec těch nástrojů. Třeba to jednou skončí a budu si hledat novou práci, třeba jako číšník nebo...
+Ale je to lepší, protože máte víc času na to, co je doopravdy důležité, na čem záleží a čím můžete přispět nad rámec těch nástrojů. Třeba to jednou skončí a budu si hledat novou práci, třeba jako číšník nebo…
 
 **Jiří Zatloukal:** Nebo pečovatel o starší lidi, *[nesrozumitelné]*. Ale abychom to nezlehčovali, uzavřeme to. Souhlasíte tedy s tou reformou, že by se měly posílit pravomoce rektorů, aby mohly dávat finance do těch kateder nebo částí vysoké školy, které fungují na mezinárodní úrovni produkují kvalitní výsledky.
 

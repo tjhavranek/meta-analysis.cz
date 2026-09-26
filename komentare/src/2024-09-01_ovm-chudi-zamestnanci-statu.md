@@ -7,12 +7,12 @@ date: "2024-09-01"
 headline: "Otázky Václava Moravce: Chudí zaměstnanci státu"
 byline: "Tomáš Havránek"
 interviewer: "Václav Moravec"
-body_note: "Nedělní diskusní pořad Otázky Václava Moravce na ČT, 1. září 2024; kromě Tomáše Havránka v něm byli vicepremiér Marian Jurečka a předseda ČMKOS Josef Středula. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, vychází ze dvou nezávislých zdrojů: z titulků České televize, které značí střídání mluvčích, a z porovnání hlasu s hlasovým vzorkem z pořadů, kde Česká televize autora jmenuje. Na těch úsecích, kde rozhodují oba, se shodují v 94 procentech; titulky navíc přicházejí o jednu až dvě vteřiny později než řeč, a proto se u přechodů mezi otázkou a odpovědí dorovnávají podle slov. Zde jsou autorovy odpovědi a otázky, které mu byly položeny; pasáže s ostatními hosty tu nejsou a najdete je v původním záznamu. Místa, kde je něco vynecháno, jsou v textu označena. Opraveno bylo 52 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Dvě opravy zůstaly neprovedené, protože by dosazovaly slova, která v nahrávce nezazněla. Text prošel lehkou úpravou, jaká je u publikovaných přepisů obvyklá: odstraněna zjevná přeřeknutí a opakování slov. Odpovědi Tomáše Havránka jsou navíc redakčně upraveny tak, jak se upravují autorizované rozhovory: odstraněna přeřeknutí, opakování, výplňová slova a nedokončené začátky vět, věty učesány a hovorové tvary převedeny do spisovné češtiny. Obsah výpovědí se tím nemění: čísla, zápory ani míra opatrnosti ve formulacích zůstaly tak, jak zazněly, a nebylo doplněno nic věcně nového. Při závěrečné kontrole byla místa, kde první model přeslechl číslo, zápor nebo vynechal část věty, opravena podle toho, co v nahrávce slyší druhý, nezávislý model (Whisper large-v3). Mluvená řeč obsahuje nedokončené věty — nejde o psaný text. Při revizi v září 2026 byla sporná místa znovu přepsána modelem Whisper large-v3 z krátkých úseků nahrávky a porovnána s titulky České televize. Opraveny byly další přeslechy, hlavně v otázkách moderátora, například „277,8 miliardy“ místo „277,8 desetin miliardy“ a „že bychom dokonce byli v přebytku“; údaj „0,4 %“ o původním odhadu ČSÚ poslech potvrdil."
+body_note: "Nedělní diskusní pořad Otázky Václava Moravce na ČT, 1. září 2024; kromě Tomáše Havránka v něm byli vicepremiér Marian Jurečka a předseda ČMKOS Josef Středula. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, vychází ze dvou nezávislých zdrojů: z titulků České televize, které značí střídání mluvčích, a z porovnání hlasu s hlasovým vzorkem z pořadů, kde Česká televize autora jmenuje. Na těch úsecích, kde rozhodují oba, se shodují v 94 procentech; titulky navíc přicházejí o jednu až dvě vteřiny později než řeč, a proto se u přechodů mezi otázkou a odpovědí dorovnávají podle slov. Zde jsou autorovy odpovědi a otázky, které mu byly položeny; pasáže s ostatními hosty tu nejsou a najdete je v původním záznamu. Místa, kde je něco vynecháno, jsou v textu označena. Opraveno bylo 52 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Dvě opravy zůstaly neprovedené, protože by dosazovaly slova, která v nahrávce nezazněla. Text prošel lehkou úpravou, jaká je u publikovaných přepisů obvyklá: odstraněna zjevná přeřeknutí a opakování slov. Odpovědi Tomáše Havránka jsou navíc redakčně upraveny tak, jak se upravují autorizované rozhovory: odstraněna přeřeknutí, opakování, výplňová slova a nedokončené začátky vět, věty učesány a hovorové tvary převedeny do spisovné češtiny. Obsah výpovědí se tím nemění: čísla, zápory ani míra opatrnosti ve formulacích zůstaly tak, jak zazněly, a nebylo doplněno nic věcně nového. Při závěrečné kontrole byla místa, kde první model přeslechl číslo, zápor nebo vynechal část věty, opravena podle toho, co v nahrávce slyší druhý, nezávislý model (Whisper large-v3). Mluvená řeč obsahuje nedokončené věty — nejde o psaný text. Při revizi v září 2026 byla sporná místa znovu přepsána modelem Whisper large-v3 z krátkých úseků nahrávky a porovnána s titulky České televize. Opraveny byly další přeslechy, hlavně v otázkách moderátora, například „277,8 miliardy“ místo „277,8 desetin miliardy“ a „že bychom dokonce byli v přebytku“; údaj „0,4 %“ o původním odhadu ČSÚ poslech potvrdil. Doplněna byla i vsuvka moderátora „A ještě vám sníží pro příště.“ a věta „A proto bych rád, aby daňový poplatník byl pro státní a veřejnou správu opravdu klientem“, kterou první přepis vynechal."
 ---
 
 **Václav Moravec:** Ekonoma z Institutu ekonomických studií Fakulty sociálních věd Univerzity Karlovy a výzkumníka Centru inovací metavýzkumu Stanfordovy univerzity. Tomáše Havránka, pane profesore, děkuji, že jste po čase v Otázkách.
 
-Pane vicepremiére, ministr financí zbyt...
+Pane vicepremiére, ministr financí zbyt…
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
@@ -24,9 +24,9 @@ Loni byl 288,5 miliardy. Teď vidíme, ty nejvyšší schodky státního rozpoč
 
 Schodek je tedy ve skutečnosti mnohem menší, než se zdá. Tím nechci říct, že je všechno dokonalé, ale rozhodně bych teď úspory hledal těžko. Pak se můžeme bavit o tom, kde najít peníze navíc.
 
-Spíš na příjmové straně. Tam bych měl konkrétní nápady. Ale ohledně…
+Spíš na příjmové straně. Tam bych měl konkrétní nápady. Ale ohledně výdajů…
 
-**Václav Moravec:** … jste tady zmiňoval centrální banku a ten návrh byl odmítnut, byť jsem se na něj dotázal opakovaně. Když bývalý ale ministr financí Miroslav Kalousek stále v TOP 09 dnes nad ránem na sociální síti X napsal, že buď nerozumí slovu trend v souvislosti se zlomením trendu růstu vládních výdajů nebo ODS a vládní politici nemluvili pravdu. A za teď cituji zlodějinu, pak označil příjmy z windfall tax, která zůstává v roce 2025 a cituji závěr. Závěr dvojtečka.
+**Václav Moravec:** Budu rád, když je zmíníte. Vy jste tady zmiňoval centrální banku a ten návrh byl odmítnut, byť jsem se na něj dotázal opakovaně. Když bývalý ale ministr financí Miroslav Kalousek stále v TOP 09 dnes nad ránem na sociální síti X napsal, že buď nerozumí slovu trend v souvislosti se zlomením trendu růstu vládních výdajů nebo ODS a vládní politici nemluvili pravdu. A za teď cituji zlodějinu, pak označil příjmy z windfall tax, která zůstává v roce 2025 a cituji závěr. Závěr dvojtečka.
 
 Účetní zoufalství lidí, kteří vůbec netuší, jak systémové změny by měly do fiskální politiky promítat. Konec citátu. Vy byste nazval ten rozpočet účetním zoufalstvím?
 
@@ -52,7 +52,9 @@ A to se děje. Navyšujeme postupně, já bych to dělal rychleji, ale je třeba
 
 Není to jen ve státním sektoru, je to i v korporátu, ale ve veřejné sféře je to poměrně silné. Víte totiž, use it or lose it: když peníze použijete, vyčerpáte je, když ne, na konci roku vám je seberou. A nejenom že vám je seberou…
 
-… pro příští rok. Sníží vám další rozpočet. Carry-over funguje třeba ve Spojených státech, má ho tuším ministerstvo obrany. Má ho Victoria, stát v Austrálii, má ho Velká Británie.
+**Václav Moravec:** A ještě vám sníží pro příště.
+
+**Tomáš Havránek:** Pro příště vám sníží další rozpočet. Carry-over funguje třeba ve Spojených státech, má ho tuším ministerstvo obrany. Má ho Victoria, stát v Austrálii, má ho Velká Británie.
 
 Existují odhady pro zavedená opatření, díky nimž si jako odbor, jako ředitel odboru, můžete peníze převést do dalšího roku a neutrácet je za nové iPhony pro své zaměstnance.
 
@@ -60,7 +62,7 @@ Existují odhady pro zavedená opatření, díky nimž si jako odbor, jako ředi
 
 **Tomáš Havránek:** Přesně tak. Podle odhadů, které máme pro Spojené státy, Británii a Austrálii, jsou úspory někde mezi jedním a třemi procenty rozpočtu. Což by u nás dělalo kolik?
 
-**Václav Moravec:** No, Marian Jurečka by...
+**Václav Moravec:** No, Marian Jurečka by…
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
@@ -84,9 +86,7 @@ Mírné úspory, konkrétně asi v tom… To je od Mariana Jurečky 10%. A dosta
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Tomáš Havránek:** … prosím, abychom to srovnání opravdu uvedli. V řadě věcí, které říká, má pravdu, třeba v tom, že daně tu opravdu platí hlavně zaměstnanci. To je potřeba zdůraznit. Je to velká většina…
-
-… aby daňový poplatník byl pro státní a veřejnou správu opravdu klientem. Proto jsem navrhoval ty dotazníky, jsem rád, že jste to zmínil, a jsou to spíš dotazníky na službu, ne na konkrétní lidi, kteří ji poskytují. A šlo by spíš o to pozitivní: chceme přidat těm nejlepším, ne že bychom někoho trestali.
+**Tomáš Havránek:** No, ale prosím, abychom to srovnání opravdu uváděli. V řadě věcí, které říká, má pravdu, třeba v tom, že daně tu opravdu platí hlavně zaměstnanci. To je potřeba zdůraznit: je to velká většina příjmů. A proto bych rád, aby daňový poplatník byl pro státní a veřejnou správu opravdu klientem. Proto jsem navrhoval ty dotazníky, jsem rád, že jste to zmínil, a jsou to spíš dotazníky na službu, ne na konkrétní lidi, kteří ji poskytují. A šlo by spíš o to pozitivní: chceme přidat těm nejlepším, ne že bychom někoho trestali.
 
 Ta data by se samozřejmě potom dala použít různě.
 
@@ -102,7 +102,7 @@ A pokud to nebude stačit, můžeme se potom dostat k tomu, že budeme zvyšovat
 
 **Václav Moravec:** Pane profesore, ta role platů a celkového objemu jako prorůstové opatření. Josef Středula tady mluví o tom, že vláda vlastně nedělá maximum pro růst, když se podíváme na zpřesnění odhadu HDP za druhé čtvrtletí. Čeští statistici ho zpřesnili v pátek, podle nich česká ekonomika ve druhém čtvrtletí letošního roku vzrostla meziročně o 0,6%. Původně ČSÚ uváděl meziroční růst 0,4 %. Nárůst o 0,6% byl podle dat ČSÚ nejvýraznějším meziročním posílením české ekonomiky a v letošním roce pouze jednoprocentní růst, pro příští zhruba 2,7%.
 
-Můžeme se nepochybně zase dočkat korekce jako v roce letošním. Podsekává tady vláda ekonomický růst svými kroky nebo nedělá dostatečně kroky pro...
+Můžeme se nepochybně zase dočkat korekce jako v roce letošním. Podsekává tady vláda ekonomický růst svými kroky nebo nedělá dostatečně kroky pro…
 
 **Tomáš Havránek:** Spotřebou můžete ekonomiku vždycky trochu povzbudit, ale to je krátkodobá věc. Pro ekonomický růst může vláda udělat málo. Ač bychom si přáli, aby tomu tak nebylo, vláda není tím, co táhne ekonomický růst. To dělají zaměstnanci a jejich pracovní morálka, podnikatelé a jejich inovace.
 

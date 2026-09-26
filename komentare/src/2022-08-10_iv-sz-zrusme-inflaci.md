@@ -39,7 +39,7 @@ Už samotné oznámení toho opatření by vedlo k velkému posílení koruny, k
 
 Chápu, že potřebujete nějak vydělat, ale musí to mít svou míru. Máte své náklady, ale kdybyste na spořicích účtech dali 6% bez omezení, tedy ne do 100 000 nebo 200 000, ale 6% bez omezení, pořád neproděláte. Nám to pomůže s transmisí, nám to pomůže to jenom srazit.
 
-Když to neuděláte... Guvernér na ně má zase silné páky. Může zvýšit kapitálovou přiměřenost, aby nemohli na dividendách odvádět tolik zisku do zahraničí. Může tlačit na zavedení bankovní daně, lobovat u vlády. Jakmile se jednou zavede, už se nikdy nezruší, takže by ty daně platili navždy. Oni si to dobře rozmyslí. A tohle by pro tlumení inflace a pro motivaci k úsporám pomohlo mnohem víc než nějaké další zvyšování reposazby ČNB na 8, 10, 15%, když nemáte transmisi do klientských sazeb na úsporách.
+Když to neuděláte… Guvernér na ně má zase silné páky. Může zvýšit kapitálovou přiměřenost, aby nemohli na dividendách odvádět tolik zisku do zahraničí. Může tlačit na zavedení bankovní daně, lobovat u vlády. Jakmile se jednou zavede, už se nikdy nezruší, takže by ty daně platili navždy. Oni si to dobře rozmyslí. A tohle by pro tlumení inflace a pro motivaci k úsporám pomohlo mnohem víc než nějaké další zvyšování reposazby ČNB na 8, 10, 15%, když nemáte transmisi do klientských sazeb na úsporách.
 
 **Jiří Zatloukal:** To zatím není. Vy sám dlouhodobě tu myšlenku zrušit úplně inflaci prosazujete. Udělal jste si teďka internetové stránky, jste v tom aktivnější. Jak chcete tu inflaci zrušit? Řekněte to krátce.
 
@@ -65,7 +65,7 @@ Byla by to tedy nějaká zkouška. Pět let bychom si zkoušeli, jestli to nezp�
 
 **Jiří Zatloukal:** To znamená, že ceny někdy ale porostou v krátkodobějším 3-5letém horizontu a pak zase ceny budou klesat. Já bych se vrátil ale ještě k té koruně. Pokud posílíte korunu, tak exportérům to nesmírně uškodí. Začaly by krachovat. V tom nevidíte problém české exportní ekonomiky, exportně orientované?
 
-**Tomáš Havránek:** Ano. Zaprvé, hlavní, vlastně jediný ústavní úkol Národní banky je cenová stabilita. Nemáte tam nic o exportérech ani o nezaměstnanosti. A zadruhé, během těch intervencí proti koruně... Tohle by bylo jen obrácení těch intervencí. Tehdy Národní banka pomáhala exportérům, teď by úplně stejně pomohla importérům. Čistě by to tedy byla nula.
+**Tomáš Havránek:** Ano. Zaprvé, hlavní, vlastně jediný ústavní úkol Národní banky je cenová stabilita. Nemáte tam nic o exportérech ani o nezaměstnanosti. A zadruhé, během těch intervencí proti koruně… Tohle by bylo jen obrácení těch intervencí. Tehdy Národní banka pomáhala exportérům, teď by úplně stejně pomohla importérům. Čistě by to tedy byla nula.
 
 **Jiří Zatloukal:** To není pravda, protože česká ekonomika je exportní, takže většinu HDP nebo většinu výkonu ekonomiky vytváří export. Ne domácí trh, tady není tak silný domácí trh, takže to se nerovná. To by ekonomiku poškodilo.
 
@@ -77,7 +77,7 @@ Byla by to tedy nějaká zkouška. Pět let bychom si zkoušeli, jestli to nezp�
 
 **Jiří Zatloukal:** Velký problém by to, myslím, že bylo i pro banky. Vezměme například, že by se začala snižovat hodnota nemovitostí. Banky by musely po klientech, kterým daly vlastně na ty nemovitosti úvěry, žádat další peníze, aby vlastně nebyla ta hodnota té nemovitosti, té zástavy nižší, než hodnota půjčených peněz. Nebo je dokonce zesplatňovat, což by mohlo způsobit vlnu krachů v ekonomice nebo platebních neschopností. Jak se díváte na tohle?
 
-**Tomáš Havránek:** Myslíte, kdyby posílení koruny vyvolalo recesi, která by potom způsobila nějaké...
+**Tomáš Havránek:** Myslíte, kdyby posílení koruny vyvolalo recesi, která by potom způsobila nějaké…
 
 **Jiří Zatloukal:** Říkáte, že ty ceny by fluktuovaly, někdy by nebyly vůbec konstantní, někdy by posílily, někdy by se ceny zvýšily v ekonomice a někdy by se zase snížily. A kdyby se snížily v ekonomice, tak najednou banky musí požadovat po svých klientech další peníze, které by nemusely mít.
 
@@ -131,7 +131,7 @@ Ceny jsou teď i po velkém výbuchu v letošním roce 2022 o 3% vyšší než v
 
 Když je prodáte, tlak na posílení koruny bude takový, že jít proti tomu je strašlivě nákladné. Zvlášť když máte reposazbu 7%, je financování krátké pozice velmi, velmi drahé. Nedovedu si tedy představit, že bychom to spustili a za rok by byla koruna slabší kvůli nějakému spekulačnímu útoku. To je de facto prakticky vyloučená věc.
 
-**Jiří Zatloukal:** Exportéři by to teda podle vás přežili, nebo bylo by to, nezkrachovala by tady třetina ekonomiky, nebo aspoň desetina, kvůli tomu, kdyby koruna byla... Ty marže u těch podniků, které dodávají do třeba německého automotive, nejsou nějak zázračné. Takže to posílení koruny by jim krásně mohlo vymazat a řada firem by skončila.
+**Jiří Zatloukal:** Exportéři by to teda podle vás přežili, nebo bylo by to, nezkrachovala by tady třetina ekonomiky, nebo aspoň desetina, kvůli tomu, kdyby koruna byla… Ty marže u těch podniků, které dodávají do třeba německého automotive, nejsou nějak zázračné. Takže to posílení koruny by jim krásně mohlo vymazat a řada firem by skončila.
 
 **Tomáš Havránek:** To by mohlo. Dost možná bychom místo nulového růstu měli jemnou recesi, i v ročním vyjádření. Ale ptejme se, co je z toho horší: drobná recese na rok nebo dva, nebo inflace 20%, která nám žere nejen letošní úspory, ale celoživotní práci, celoživotní úspory. Pro mě osobně je lepší projít si nějakou krátkou recesí, i když to samozřejmě možná bude spoustu lidí bolet víc než mě, to přiznávám. Sám na inflaci vydělávám. Mám velkou hypotéku, sazby pod dvěma.
 

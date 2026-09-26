@@ -7,7 +7,7 @@ date: "2026-06-18"
 headline: "„Za inflaci může prezident.“ Vlivný profesor popsal, odkud Babiš získá 200 miliard"
 byline: "Tomáš Havránek"
 interviewer: "Petra Jaroměřská"
-body_note: "Rozhovor pro pořad Spotlight Aktuálně.cz, ptá se Petra Jaroměřská. Text je strojový přepis řeči z videozáznamu (model Whisper large-v3-turbo); nahrávka trvá 40 minut. Kdo co říká, je určeno podle hlasu; vzorky obou mluvčích pocházejí z této nahrávky, z míst, kde je mluvčí jistý z obsahu. Čtyři krátké repliky, které přepis přiřadil nesprávně, vrátila na místo kontrola opřená o obsah. Aktuálně.cz na své stránce vydalo kratší psanou verzi — není to přepis, ale článek o rozhovoru s několika citacemi a rozpisem témat podle času; z jeho 24 odstavců sedí v nahrávce doslova jen čtyři. Proto je přepis zde: v nahrávce je zhruba 5900 slov, v psané verzi 1091. Text je lehce upraven tak, jak je u publikovaných přepisů obvyklé: odstraněna přeřeknutí a opakování, opraveno 51 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Odpovědi Tomáše Havránka jsou navíc redakčně upraveny tak, jak se upravují autorizované rozhovory: odstraněna přeřeknutí, opakování, výplňová slova a nedokončené začátky vět, věty učesány a hovorové tvary převedeny do spisovné češtiny. Obsah výpovědí se tím nemění: čísla, zápory ani míra opatrnosti ve formulacích zůstaly tak, jak zazněly, a nebylo doplněno nic věcně nového; kde by oprava znamenala hádat, co zaznělo, zůstalo místo tak, jak je přepis zachytil. Mluvená řeč obsahuje nedokončené věty — nejde o psaný text. Při závěrečné kontrole byla místa, kde první model přeslechl slovo nebo vynechal část věty, opravena podle toho, co v nahrávce slyší druhý, nezávislý model (Whisper large-v3). Při revizi v září 2026 byly opraveny ještě dva přeslechy v otázkách moderátorky. Repliky, jejichž začátek nebo konec první přepis na hranici mluvčích vynechal a zvukem ho doplnit nešlo, začínají nebo končí třemi tečkami."
+body_note: "Rozhovor pro pořad Spotlight Aktuálně.cz, ptá se Petra Jaroměřská. Text je strojový přepis řeči z videozáznamu (model Whisper large-v3-turbo); nahrávka trvá 40 minut. Kdo co říká, je určeno podle hlasu; vzorky obou mluvčích pocházejí z této nahrávky, z míst, kde je mluvčí jistý z obsahu. Čtyři krátké repliky, které přepis přiřadil nesprávně, vrátila na místo kontrola opřená o obsah. Aktuálně.cz na své stránce vydalo kratší psanou verzi — není to přepis, ale článek o rozhovoru s několika citacemi a rozpisem témat podle času; z jeho 24 odstavců sedí v nahrávce doslova jen čtyři. Proto je přepis zde: v nahrávce je zhruba 5900 slov, v psané verzi 1091. Text je lehce upraven tak, jak je u publikovaných přepisů obvyklé: odstraněna přeřeknutí a opakování, opraveno 51 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Odpovědi Tomáše Havránka jsou navíc redakčně upraveny tak, jak se upravují autorizované rozhovory: odstraněna přeřeknutí, opakování, výplňová slova a nedokončené začátky vět, věty učesány a hovorové tvary převedeny do spisovné češtiny. Obsah výpovědí se tím nemění: čísla, zápory ani míra opatrnosti ve formulacích zůstaly tak, jak zazněly, a nebylo doplněno nic věcně nového; kde by oprava znamenala hádat, co zaznělo, zůstalo místo tak, jak je přepis zachytil. Mluvená řeč obsahuje nedokončené věty — nejde o psaný text. Při závěrečné kontrole byla místa, kde první model přeslechl slovo nebo vynechal část věty, opravena podle toho, co v nahrávce slyší druhý, nezávislý model (Whisper large-v3). Při revizi v září 2026 byly opraveny ještě dva přeslechy v otázkách moderátorky. Repliky, jejichž začátek nebo konec první přepis na hranici mluvčích vynechal a zvukem ho doplnit nešlo, začínají nebo končí třemi tečkami. Doplněny byly i začátky a konce replik, které první přepis vynechal, například otázka „A není to třeba i z důvodu nějaké opatrnosti…?“ a odpověď „Jasně, máte pravdu, ale opatrnost má také svoje rizika“."
 ---
 **Petra Jaroměřská:** Vítejte u dalšího dílu pořadu Spotlight. Já jsem Petra Jaroměřská a se mnou je ve studiu ekonom a profesor Univerzity Karlovy a také bývalý poradce viceguvernéra České národní banky Tomáš Havránek. Vítejte.
 
@@ -87,15 +87,15 @@ Jestli to bude za pět, nebo za deset let, je teď asi důležité pro pana prem
 
 Možná to bude, tipnul bych si, čtyři, pět let, možná by to mohlo být dřív, ale důležitý je delší horizont. Takže jasně, splatíte kumulovanou ztrátu. Mimochodem, kdybychom to udělali, jak jsme někteří z nás říkali před deseti lety, ČNB by už teď přispívala těmi 200 miliardami ročně. Dobrá otázka tedy je, proč se o tom bavíme až teď, a ne v roce 2017, kdy jsme ten balík peněz měli a v Národní bance nebyla žádná strategie, co s ním dál dělat.
 
-**Petra Jaroměřská:** …nějaké opatrnosti, protože zase investovat rizikověji nese nějaká rizika.
+**Petra Jaroměřská:** A není to třeba i z důvodu nějaké opatrnosti, protože zase investovat rizikověji nese nějaká rizika?
 
-**Tomáš Havránek:** …ale opatrnost má také svoje rizika. Teď třeba čtu Plutarcha, jeho paralelní životy, protože jsem profesor a můžu si to dovolit. Má tam hezký paralelní život Nikia, což byl řecký, athénský generál, a Crassa, což byl římský generál. Oba skončili stejně špatně.
+**Tomáš Havránek:** Jasně, máte pravdu, ale opatrnost má také svoje rizika. Teď třeba čtu Plutarcha, jeho paralelní životy, protože jsem profesor a můžu si to dovolit. Má tam hezký paralelní život Nikia, což byl řecký, athénský generál, a Crassa, což byl římský generál. Oba skončili stejně špatně.
 
 Crassus kvůli své zbrklosti a agresivitě, Nikias kvůli tomu, jak byl pasivní a velmi opatrný. Oba extrémy jsou tedy špatné. A tohle není nic kontroverzního. Investovat peníze tak, jak to dělá Singapur, není nic kontroverzního.
 
 Je to i moje chyba. Tehdy jsem u toho byl a sice jsem k tomu něco řekl, ale byl jsem v tom velmi nedůrazný. Měl jsem vůči bankovní radě vystupovat daleko asertivněji, byl jsem tehdy poradcem viceguvernéra. Beru to i jako své osobní selhání, že jsem tu věc, které jsem si tehdy náhodou všiml, netlačil mnohem, mnohem víc u bankovní rady a u celého aparátu Národní banky. Takže samozřejmě ano, je to do velké míry ta opatrnost, která byla i na mé straně, to se přiznám.
 
-**Petra Jaroměřská:** …nedávná slova guvernéra České národní banky, o tom, že neváhá zdrtit ekonomiku s případným zvýšením sazeb, tak, aby zabránil inflaci.
+**Petra Jaroměřská:** Jak jste vnímal nedávná slova guvernéra České národní banky o tom, že neváhá zdrtit ekonomiku s případným zvýšením sazeb, tak, aby zabránil inflaci.
 
 **Tomáš Havránek:** Znám ho poměrně dlouho, několik měsíců jsem mu dělal poradce, než jsem z Národní banky odešel. A to jsou výroky, které mi k Alešovi přesně sedí, takže mě to nijak nepřekvapuje. Jenom bych připomněl, že když tu byla inflace naposledy dvojciferná, Aleš Michl nebyl z těch, kdo by chtěli drtit ekonomiku vysokými sazbami. Takže buď bude nekonzistentní a udělá to… Spíš bych čekal, že… Vlastně nevím, co bych čekal…
 
@@ -105,27 +105,27 @@ Je to i moje chyba. Tehdy jsem u toho byl a sice jsem k tomu něco řekl, ale by
 
 Zvýšení sazeb o čtvrt procentního bodu, 25 bazických bodů, samozřejmě s inflací nic neudělá. Ten efekt je velmi malý. Jde spíš o očekávání do budoucna, kumulativně: jestli pan guvernér opravdu třeba chce zdrtit ekonomiku. Kdyby tomu trhy věřily, pak už to trošku něco udělat může.
 
-**Petra Jaroměřská:** …nějaký růst cen v souvislosti třeba s tím, co se děje na Blízkém východě?
+**Petra Jaroměřská:** A hrozí podle vás nějaký růst cen v souvislosti třeba s tím, co se děje na Blízkém východě?
 
 **Tomáš Havránek:** Protože se necítím úplně kvalifikovaný. Jsem profesor ekonomie na univerzitě, z Národní banky jsem už nějakou dobu pryč a jsou tam desítky lidí, kteří tomu rozumějí mnohem lépe než já, počítají to a věnují se tomu denně. Podíval bych se tedy na prognózu Národní banky a uvidíme, co vám zítra ukážou. Jinak jim nechci lézt do zelí, v tomhle nevím víc než oni. Osobně čekám, že se ten konflikt na Blízkém východě, na Středním východě, pravděpodobně nějakým způsobem utlumí, takže i inflační tlaky z této strany asi pominou.
 
-Dlouhodobě, a k tomu se možná dostaneme, totiž k tomu, co dlouhodobě vyřeší státní dluh, bych si nebyl tak jistý, že inflace bude kolem 2 %. Ale nechám možná vás…
+Dlouhodobě, a k tomu se možná dostaneme, totiž k tomu, co dlouhodobě vyřeší státní dluh, bych si nebyl tak jistý, že inflace bude kolem 2 %. Ale nechám možná chvilku mluvit vás.
 
-**Petra Jaroměřská:** Pokud oni zítra zvýší ty sazby, tak znamená to podle vás opravdu ty obavy z nějakého zdražování, co to bude znamenat? Je to právě ta brzda této inflace, nebo jste říkal, že to neudělá s inflací nic, že to bude spíš signál toho, že ta bankovní rada…
+**Petra Jaroměřská:** Pokud oni zítra zvýší ty sazby, tak znamená to podle vás opravdu ty obavy z nějakého zdražování, co to bude znamenat? Je to právě ta brzda této inflace, nebo jste říkal, že to neudělá s inflací nic, že to bude spíš signál toho, že ta bankovní rada je nezávislá?
 
-**Tomáš Havránek:** To, co jste řekla, bych podepsal.
+**Tomáš Havránek:** To jste řekla velmi dobře. To, co jste řekla, bych podepsal.
 
-**Petra Jaroměřská:** …se zeptám, jak jste vnímal slova premiéra, který vyzval guvernéra České národní banky, aby naopak…
+**Petra Jaroměřská:** Na druhou stranu se zeptám, jak jste vnímal slova premiéra, který vyzval guvernéra České národní banky, aby naopak ty sazby snížil.
 
-**Tomáš Havránek:** …proč by to pan premiér chtěl dělat. Vidíme to například u Spojených států: když prezident, který tu zemi v tom případě řídí, vyzve centrální banku, aby snížila sazby, ona to samozřejmě udělat nechce. I kdyby sama třeba vyhodnotila, že je to dobré, nemůže to udělat, aby to nevypadalo, že je pod…
+**Tomáš Havránek:** Úplně nerozumím tomu, proč by to pan premiér chtěl dělat. Vidíme to například u Spojených států: když prezident, který tu zemi v tom případě řídí, vyzve centrální banku, aby snížila sazby, ona to samozřejmě udělat nechce. I kdyby sama třeba vyhodnotila, že je to dobré, nemůže to udělat, aby to nevypadalo, že je pod…
 
 Když pan premiér takhle své přání vysloví, tu cestu tím uzavře. Poráží to samo sebe. Pokud je tedy cílem sazby zvýšit, i když nevím proč, to by asi nepomohlo ani vládě, ani firmám. Samozřejmě by to mohlo pomoct proti inflaci, ale jestli…
 
-Abych se přiznal, logice za tímto vyjádřením nerozumím…
+Abych se přiznal, logice za tímto vyjádřením nerozumím, ale asi mi něco uniká.
 
-**Petra Jaroměřská:** …ano, levnější hypotéky, tak oni to i dávají do souvislosti, že nižší sazby ovlivní cenu úvěru.
+**Petra Jaroměřská:** Před volbami slibovalo hnutí ANO levnější hypotéky, tak oni to i dávají do souvislosti, že nižší sazby ovlivní cenu úvěru.
 
-**Tomáš Havránek:** …to by byly levnější hypotéky, ale pokud chcete, aby byly hypotéky pro lidi dostupnější, mnohem snazší je omezit regulaci ze strany Národní banky, která je z mého pohledu opravdu extrémně přísná. Dnes je velmi těžké hypotéku získat, nejenom proto, že úroky jsou vysoké, ale kvůli tomu, co všechno musíte splnit, jak velký příjem musíte mít. Já bych rozhodnutí, jestli si hypotéku vzít, nebo ne, nechal daleko víc na lidech a na bankách, aniž by jim stát diktoval…
+**Tomáš Havránek:** To je pravda, to by byly levnější hypotéky, ale pokud chcete, aby byly hypotéky pro lidi dostupnější, mnohem snazší je omezit regulaci ze strany Národní banky, která je z mého pohledu opravdu extrémně přísná. Dnes je velmi těžké hypotéku získat, nejenom proto, že úroky jsou vysoké, ale kvůli tomu, co všechno musíte splnit, jak velký příjem musíte mít. Já bych rozhodnutí, jestli si hypotéku vzít, nebo ne, nechal daleko víc na lidech a na bankách, aniž by jim stát diktoval tak přísné podmínky.
 
 **Petra Jaroměřská:** A ta pravidla jsou v rámci nějaké obezřetnosti, že ti lidé opravdu budou schopni splácet ten úvěr, je dlouhý, je to vysoká půjčka.
 
@@ -133,7 +133,7 @@ Abych se přiznal, logice za tímto vyjádřením nerozumím…
 
 Je to podle mě naprosto přehnaná reakce na velkou finanční krizi, která ale v Americe probíhala v úplně jiných hypotečních podmínkách než u nás. To je komplikovaný příběh. U nás to vůbec nehrozí. Rozumím, proč to kolegové dělají, určitě tomu rozumějí víc než já.
 
-Já osobně bych byl v tomto daleko… Rozhodnutí vzít si hypotéku bych nechal na rodinách a na bance…
+Já osobně bych byl v tomto daleko… Rozhodnutí vzít si hypotéku bych nechal na rodinách a na bance, jestli jim je ochotná půjčit, nebo ne.
 
 **Petra Jaroměřská:** A zároveň se tím tlumí i růst cen nemovitostí, kterých je nedostatek, tak když by vlastně víc lidí dosáhlo na hypotéku, bylo by víc kupců a byl by tady další tlak na ceny nemovitostí a tedy i inflaci.
 
@@ -165,7 +165,7 @@ Protože když to neutratíte, co se stane? Co byste řekla, když jsem ředitel
 
 Většinou se to nepřevede. Většinou mi můj šéf řekne: ty peníze asi nepotřebuješ, takže za prvé ti na příští rok rozpočet snížíme a za druhé ti to nepřevedu. Samozřejmě máme něco jako nároky z nerealizovaných výdajů, NNV, kde to převést lze, ale nemáte garantované, že když to převedete, budou na to příští rok peníze, abyste to mohla použít. Nebo že se vám na příští rok nesníží rozpočet. Příklady z ČNB radši dávat nebudu.
 
-Každý, kdo tohle zažil, ví, jak se zbytečně…
+Každý, kdo tohle zažil, ví, jak se zbytečně v prosinci utrácí.
 
 **Petra Jaroměřská:** A ono se často se děje i to, když se vlastně někde se peníze nedostávají, tak se z těch kapitol převádí peníze tam, kde přebývají, tak se převádí i tam, kde se nedostávají.
 
@@ -173,9 +173,7 @@ Každý, kdo tohle zažil, ví, jak se zbytečně…
 
 A zároveň, že vám rozpočet na příští rok nesníží, naopak vám ho třeba zvýší, protože jste ušetřila. Na to jsou různé poměrně sofistikované odhady, kolik je takový systém schopen ušetřit, a ty odhady jsou kolem 2 % výdajů. Což by znamenalo…
 
-V dané kapitole. V celkovém státním rozpočtu, kdybychom to zavedli opravdu dobře, napříč, tedy z těch 2 bilionů. Takže to máme kolik?
-
-40 miliard? Počítáme správně. Takže rozpočtový carry-over je 40 miliard. Zase věc, která nikoho nebolí.
+V dané kapitole. V celkovém státním rozpočtu, kdybychom to zavedli opravdu dobře, napříč, tedy z těch 2 bilionů. Takže to máme kolik? 40 miliard, počítáme správně. Takže rozpočtový carry-over je 40 miliard. Zase věc, která nikoho nebolí.
 
 Neberete peníze tam, kde jsou potřeba. Odstřihnete něco, u čeho by i pro ty ředitele bylo lepší, kdyby ke konci roku často nemuseli kupovat nesmysly. Ano, 2 %. 40 miliard tady, nějakých 150 miliard, řekněme, z ČNB dlouhodobě, to už je skoro 200.
 
@@ -189,7 +187,7 @@ Investování rezerv, to jsou vysoké desítky miliard nebo přes 100 miliard, E
 
 Třeba co se týče destrukce důchodové reformy, ta věc není zdaleka tak horká, jak se… Tím nechci říkat, že by vláda obecně dělala skvělé věci, ale můžete tam najít i tyhle střípky dobrých zpráv.
 
-**Petra Jaroměřská:** …tedy toho zvyšování zadlužení není zas až takovej problém, jak někteří kritici říkají?
+**Petra Jaroměřská:** Podle vás tedy to zvyšování zadlužení není zas až takovej problém, jak někteří kritici říkají?
 
 **Tomáš Havránek:** Pokud vláda zavede třeba EET, je to krok ke snížení zadlužení. A říkám: kdyby se k tomu přidaly ještě další věci, které nikoho nebolí, tedy trošku větší komunikace s ČNB o tom, jak dlouhodobě investovat rezervy, více než to vyváží téměř cokoliv špatného, co je vláda jinak schopná udělat. Třeba rozdat peníze z vrtulníku svým voličům. To je jedna věc.
 
@@ -207,7 +205,7 @@ A nemusí se nijak moc šetřit? Šetřit je prima, ale šetření nebo třeba z
 
 Podle mě je bohužel mnohem pravděpodobnější tento scénář: pokud tu nebude hojnost umělé inteligence pro všechny, kdy peníze vlastně už nebudou mít… kdy všichni můžou všechno, což asi ne, tak si stát v situaci, kdy dlouhodobě není schopen vybrat na daních tolik, kolik potřebuje, ty peníze natiskne. To sice také není dobré řešení, lidi to rádi mít nebudou, ale je to politicky přijatelnější než vybírat mnohem víc daní nebo snižovat důchody.
 
-**Petra Jaroměřská:** …dlouhodobě se to udržet přeci nedá.
+**Petra Jaroměřská:** Ale je to krátkodobé řešení. Dlouhodobě se to udržet přeci nedá.
 
 **Tomáš Havránek:** …teď si mít peníze neomezeně, což stát může. Já svoji hypotéku nevyřeším jinak, než že ty peníze splatím ze svého platu. Ale když se zadlužím jako stát, ovládám hodnotu měny, ve které si půjčuji. Když si tedy půjčuji v korunách, jsem Česká republika a nemám euro, můžu korun vytvořit, kolik chci. Neříkám, že je to dobrá věc, ale můžete to udělat.
 

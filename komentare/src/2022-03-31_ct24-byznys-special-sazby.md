@@ -31,7 +31,7 @@ Pokud intervenuje, tak proti přílišnému posilování. To znamená, ona nepos
 
 A byl by to prostě takový trošku nestandardní nástroj. V situaci, kdy máme k dispozici ten nástroj standardní, my prostě můžeme zvyšovat libovolně vysoko úrokové sazby. Což je jiná situace, než kde jsme byli někdy třeba v roce 2013, kdy začaly devizové intervence, ale začaly opačným směrem, začaly na oslabování kurzu a to bylo v situaci, kdy jsme byli se sazbami na nule nebo blízko nuli.
 
-**Moderátorka:** Tomu rozumím, ale sám jste říkal, že ani sazby nevyřeší dovezenou inflaci. Pan Havránek, zmiňoval, že právě dovozové komodity...
+**Moderátorka:** Tomu rozumím, ale sám jste říkal, že ani sazby nevyřeší dovezenou inflaci. Pan Havránek, zmiňoval, že právě dovozové komodity…
 
 **Marek Mora:** Já jsem to trošku opravil. Já jsem řekl, že částečně zmírní tím, že kurz spontánně reaguje na vyšší úrokové sazby. Mimochodem, pokud se podíváte na kurzový vývoj, dejme tomu za poslední rok a půl, tak uvidíte, že česká koruna posiluje výrazněji než třeba maďarský forint nebo polský zlotý, což jsou takové ty srovnatelné měny z našeho regionu, což má podle mého názoru dva základní důvody. Jeden jsou ty zdravé makroekonomické, pořád ještě zdravé makroekonomické fundamenty České republiky a ten druhý důvod je to, že jsme poměrně výrazně zvyšovali úrokové sazby, takže ten kurz na tu vyšší úrokovou sazbu samozřejmě reaguje.
 

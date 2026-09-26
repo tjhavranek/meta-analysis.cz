@@ -7,13 +7,17 @@ date: "2023-08-03"
 headline: "Pro a proti: Zvládá ČNB dlouhodobě boj s inflací?"
 byline: "Tomáš Havránek"
 interviewer: "Lukáš Matoška"
-body_note: "Pro a proti na Českém rozhlase Plus, moderuje Lukáš Matoška. Debata dvou ekonomů — Tomáše Havránka ve studiu a Miroslava Singera na dálku. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, je určeno podle hlasu, s vzorky všech tří mluvčích pořízenými z této nahrávky. Že se oba ekonomové skutečně rozlišili, potvrzují citace v článku Českého rozhlasu: tři, které stanice přiřadila jmenovitě, sedí na správném mluvčím, žádná nesedí špatně. Opraveno bylo 53 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Miroslav Singer mluvil po telefonní lince, která se v 199. vteřině přerušila a obnovila se až po třech minutách; jeho hlas proto zní v pořadu ve dvou různých podobách. Šest míst zůstalo tak, jak je přepis zachytil, protože je bez poslechu nelze rozhodnout. Úvodní odpověď Miroslava Singera a moderátorova otázka „Pane Havránku, váš pohled?“ v přepisu chyběly, takže se zdálo, že na otázku určenou Singerovi odpovídá Havránek; obojí je doplněno. Text prošel lehkou úpravou, jaká je u publikovaných přepisů obvyklá: odstraněna zjevná přeřeknutí a opakování slov. Odpovědi Tomáše Havránka jsou navíc redakčně upraveny tak, jak se upravují autorizované rozhovory: odstraněna přeřeknutí, opakování, výplňová slova a nedokončené začátky vět, věty učesány a hovorové tvary převedeny do spisovné češtiny. Obsah výpovědí se tím nemění: čísla, zápory ani míra opatrnosti ve formulacích zůstaly tak, jak zazněly, a nebylo doplněno nic věcně nového. Při závěrečné kontrole byla místa, kde první model přeslechl číslo, zápor nebo vynechal část věty, opravena podle toho, co v nahrávce slyší druhý, nezávislý model (Whisper large-v3). Mluvená řeč obsahuje nedokončené věty — nejde o psaný text."
+body_note: "Pro a proti na Českém rozhlase Plus, moderuje Lukáš Matoška. Debata dvou ekonomů — Tomáše Havránka ve studiu a Miroslava Singera na dálku. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Kdo co říká, je určeno podle hlasu, s vzorky všech tří mluvčích pořízenými z této nahrávky. Že se oba ekonomové skutečně rozlišili, potvrzují citace v článku Českého rozhlasu: tři, které stanice přiřadila jmenovitě, sedí na správném mluvčím, žádná nesedí špatně. Opraveno bylo 53 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Miroslav Singer mluvil po telefonní lince, která se v 199. vteřině přerušila a obnovila se až po třech minutách; jeho hlas proto zní v pořadu ve dvou různých podobách. Šest míst zůstalo tak, jak je přepis zachytil, protože je bez poslechu nelze rozhodnout. Úvodní odpověď Miroslava Singera a moderátorova otázka „Pane Havránku, váš pohled?“ v přepisu chyběly, takže se zdálo, že na otázku určenou Singerovi odpovídá Havránek; obojí je doplněno. Text prošel lehkou úpravou, jaká je u publikovaných přepisů obvyklá: odstraněna zjevná přeřeknutí a opakování slov. Odpovědi Tomáše Havránka jsou navíc redakčně upraveny tak, jak se upravují autorizované rozhovory: odstraněna přeřeknutí, opakování, výplňová slova a nedokončené začátky vět, věty učesány a hovorové tvary převedeny do spisovné češtiny. Obsah výpovědí se tím nemění: čísla, zápory ani míra opatrnosti ve formulacích zůstaly tak, jak zazněly, a nebylo doplněno nic věcně nového. Při závěrečné kontrole byla místa, kde první model přeslechl číslo, zápor nebo vynechal část věty, opravena podle toho, co v nahrávce slyší druhý, nezávislý model (Whisper large-v3). Mluvená řeč obsahuje nedokončené věty — nejde o psaný text. Při revizi v září 2026 byla celá nahrávka znovu přepsána modelem Whisper large-v3 a sporné úseky ještě jednou po krátkých kouscích; u sporných slov rozhodlo, které znění nahrávka podporuje nejlépe, a mluvčí sporných replik bylo ověřeno hlasem. Odpovědi Miroslava Singera, které první přepis kvůli horší telefonní lince zachytil jen útržkovitě, jsou podle nového přepisu přepsány celé; místa, která se nepodařilo spolehlivě rozluštit, jsou označena jako nesrozumitelná. Doplněny byly i vynechané otázky a poznámky moderátora, Singerův pozdrav a krátká výměna, v níž moderátor navrhl „nulovou inflaci“ a Tomáš Havránek ji opravil na „cenovou stabilitu“. V odpovědích Tomáše Havránka je opraveno „překládám do českého kontextu“ (první přepis měl „ukládám“) a „poraďme mu, jak to dělat dobře“ (první přepis měl „podaťme, že to dělá dobře“) a vypuštěno „jak říkal pan Singer“, které v nahrávce nezaznělo."
 ---
 **Lukáš Matoška:** Inflace v Česku sice postupně klesá, pořád se ale drží hodně vysoko, těsně pod 10%. Bankovní rada České národní banky dnes rozhoduje, jak bude s inflací bojovat dál. Všeobecně se očekává, že úrokové sazby nezmění. Nechává je na stejné úrovni už přes rok.
 
-Podobně jako jiné, centrální banky i ta česká usiluje o to, aby inflace klesla ke dvouprocentnímu cíli. Je to správný přístup? Pro a proti Lukáše Matošky. A našimi hosty k tomuhle tématu jsou bývalý guvernér České národní banky, dnes hlavní ekonom Generali CEE Holding Miroslav Singer.
+Podobně jako jiné centrální banky i ta česká usiluje o to, aby inflace klesla ke dvouprocentnímu cíli. Je to správný přístup? Pro a proti Lukáše Matošky. A našimi hosty k tomuhle tématu jsou bývalý guvernér České národní banky, dnes hlavní ekonom Generali CEE Holding Miroslav Singer.
 
-Dobrý den, zdravím vás na dálku. Dobrý den, slyšíme se. Slyšíme se. A taky bývalý poradce centrálních bankéřů, ekonom z Fakulty sociálních věd Univerzity Karlovy Tomáš Havránek.
+Dobrý den, zdravím vás na dálku.
+
+**Miroslav Singer:** Dobrý den, slyšíme se.
+
+**Lukáš Matoška:** Slyšíme se. A taky bývalý poradce centrálních bankéřů, ekonom z Fakulty sociálních věd Univerzity Karlovy Tomáš Havránek.
 
 Dobrý den, vítejte v našem studiu.
 
@@ -55,23 +59,23 @@ Rozuměl mu a dbal na něj. Takže doufám, že se spojení s ním podaří nav�
 
 Druhá rovina je, že cíl ve výši 2 % neodpovídá nejnovějšímu výzkumu o tom, jaká je zdravá, optimální inflace. Zdravá pro ekonomický růst, zdravá pro nás všechny.
 
-**Lukáš Matoška:** Tak, prosím, ještě dokončete já. Jenom jsem chtěl říct, že s panem Singerem jsme navázali spojení,
+**Lukáš Matoška:** Tak, prosím, ještě dokončete. Já jsem jenom chtěl říct, že s panem Singerem už jsme navázali spojení, ale v klidu dokončete větu.
 
 **Tomáš Havránek:** Dobře. Inflace i deflace mají desítky výhod a nevýhod a nemáme čas, abychom je všechny probrali. Existuje ale řada studií, které tyto výhody a nevýhody váží, porovnávají a počítají, jaká míra inflace by pro ekonomiku byla v průměru zdravá, správná.
 
 Takových studií je od roku 1990, kdy bylo zavedeno inflační cílování, 222, zjišťoval jsem si to včera. Průměrný odhad zdravé inflace je 0,09%, což je velice blízko nuly. To je základní argument pro to, proč nulová inflace, čili cenová stabilita, opravdu přinejmenším není horší a pravděpodobně by byla pro ekonomiku lepší než současný dvouprocentní cíl.
 
-**Lukáš Matoška:** Ať nepřeskakujeme, tak já přece jenom se teď vrátím k té otázce, kterou jsem pokládal panu Singerovi ještě předtím, než jsme s ním ztratili spojení. Pane Singře, doufám, že už se dobře slyšíme. Nedud, co z té naší debaty jste slyšel, tak já tu otázku zopakuju v úplnosti. A sice, jestli není chyba, že centrální banka si nepočíná tak agresivně proti inflaci, jako si počíná proti deflaci, tedy naopak proti snižování cen v ekonomice.
+**Lukáš Matoška:** Ať nepřeskakujeme, tak já přece jenom se teď vrátím k té otázce, kterou jsem pokládal panu Singerovi ještě předtím, než jsme s ním ztratili spojení. Pane Singře, doufám, že už se dobře slyšíme. Nevím, co z té naší debaty jste slyšel, tak já tu otázku zopakuju v úplnosti. A sice, jestli není chyba, že centrální banka si nepočíná tak agresivně proti inflaci, jako si počíná proti deflaci, tedy naopak proti snižování cen v ekonomice.
 
-**Miroslav Singer:** A ten důvod je jednoduchý. Ono, prostě právní systém, který se týká především bankrotu, prostě neumožňuje, nefunguje stejně vůči poklesu cen, jako vůči vzestupu cen. Když to řeknu jednoduše, když zažijeme situaci, ve které začnou ceny skutečně rychle klesat, tak to neznamená, že se jednou, každý, kdo si půjčil na fabriku, na cokoliv má příjmy, třeba o třetinu nižší. Ale ten reální důvod, vůči tomu najednou samozřejmě, vůči vzrostem, vůči tomu příjmu, a můžou se začít řetězit bankroty.
+**Miroslav Singer:** Já si myslím, že to chyba není. A ten důvod je jednoduchý. Ono, prostě právní systém, který se týká především bankrotu, prostě neumožňuje, nefunguje stejně vůči poklesu cen jako vůči vzestupu cen. Když to řeknu jednoduše, když zažijeme situaci, ve které začnou ceny skutečně rychle klesat, tak to neznamená, že se oddlužujeme. Najednou každý, kdo si půjčil na fabriku, na cokoliv, má příjmy třeba o třetinu nižší. Ale reálný dluh z půjčky vůči tomu příjmu najednou samozřejmě vzroste a můžou se začít řetězit bankroty.
 
-A my máme tu zkušenost s tím obdobím. Tady nejenom naší většin centrálních bank, vůči možnosti, že by skutečně delší dobu klesaly ceny, po roce 2008, byla vyvolaná, to už jsou tehdy centrální banky, jako moudře a rozšafně, jako rozkládali o tom, jak je dobré, že jsou příliš nespoleh lidí, nebo příliš zadlužující se lidé potrestáni. A nejenom, že ty ekonomiky zažily jako třetinové nezaměstnanosti, dobré uvědomit si vyspělé demokracie často přestaly být demokraciemi. Za těch deset let bylo docela evidentní, že ten dvac, že vlastně přijde válka.
+A my máme tu zkušenost s tím obdobím. Vlastně celá ta reakce centrálních bank, nejenom naší, většiny centrálních bank, vůči možnosti, že by po roce 2008 skutečně delší dobu klesaly ceny, byla vyvolaná tou zkušeností z třicátých let, která je univerzálně příšerná. Tehdy centrální banky jako moudře a rozšafně rozkládaly o tom, jak je dobré, že jsou příliš nespolehliví nebo příliš zadlužující se lidé potrestáni. A nejenom že ty ekonomiky zažily třetinovou nezaměstnanost; je dobré uvědomit si, že mezi rokem 28 a 38 vyspělé demokracie často přestaly být demokraciemi a v roce 1938 už bylo docela evidentní, že ten rozklad dospěl do situace, kdy vlastně přijde válka. Počkejte, nechte mě domluvit.
 
-**Lukáš Matoška:** Určitě, poprosím stručně, jak můžeme nechat zareagovat.
+**Lukáš Matoška:** Určitě, poprosím stručně, ať můžeme nechat zareagovat.
 
-Prosím, promiňte, že vás přerušuju,
+**Miroslav Singer:** Jasně. Mezi roky 2008 a 2018 jsme sice zažili věci nepříjemné, ale rozhodně se nedá říct, že by politické systémy zažily takové otřesy, jaké jsme zažili v období masové nezaměstnanosti a hospodářské deprese. To je ta zkušenost, která k tomu vede. A druhá moje poznámka ještě k tomu cíli. Jestli je tedy…
 
-pane Singře, k tomu cíli se hned dostaneme. Já bych byl rád, aby ta naše debata byla přehledná, takže vezmeme jednu otázku po druhé. Teď se vracíme k vám do studia, pane Havránku, a zajímalo by mě, jestli vás teď ta argumentace, kterou jste slyšel od bývalého guvernéra České národní banky přesvědčila, jestli náhodou jste tam neslyšel vysvětlení, proč si centrální banka počíná přísněji v obdobích deflace, tedy v období, kdy ceny jdou dolů, než v období inflace, tedy v období, kdy jdou ceny naopak nahoru.
+**Lukáš Matoška:** Prosím, promiňte, že vás přerušuju, pane Singře, k tomu cíli se hned dostaneme. Já bych byl rád, aby ta naše debata byla přehledná, takže vezmeme jednu otázku po druhé. Teď se vracíme k vám do studia, pane Havránku, a zajímalo by mě, jestli vás teď ta argumentace, kterou jste slyšel od bývalého guvernéra České národní banky přesvědčila, jestli náhodou jste tam neslyšel vysvětlení, proč si centrální banka počíná přísněji v obdobích deflace, tedy v období, kdy ceny jdou dolů, než v období inflace, tedy v období, kdy jdou ceny naopak nahoru.
 
 **Tomáš Havránek:** Se vší úctou, úplně ne. Máte inflační cíl, o tom, jestli je správný, nebo ne, se budeme bavit, ale máte ho ve výši 2%. A ten má být symetrický, na tom se asi shodneme. V situaci, kdy vám hrozí inflace o 2 procentní body nižší, tedy k nule, nebo nějaká mírná deflace, reagujete velmi agresivně, což je v pořádku. V pořádku je i to, co jste udělali před desetiletím, co jsme tehdy společně udělali. Mělo by to ale být symetrické i v situaci, kdy máte inflaci vysokou, dobře, třeba ne čtyři, ale určitě deset. Ty 2 biliony korun, které se tehdy vytvořily, se tedy měly v předchozích dvou letech zase skartovat, odbourat, abychom pomohli inflaci snížit rychleji, protože posilování kurzu působí na snižování inflace mnohem rychleji a efektivněji.
 
@@ -79,27 +83,31 @@ pane Singře, k tomu cíli se hned dostaneme. Já bych byl rád, aby ta naše de
 
 **Lukáš Matoška:** Pane Singře, dokázal byste to panu Havránkovi vysvětlit?
 
-**Miroslav Singer:** Takhle, já čtu pana Havránka, tak já myslím, že mu se to vysvětlit nedá, protože on je prostě přesvědčený o něčem jiném, to se v životě stává. Takže takhle jako přímo na tu osobní otázku ne. Jinak si myslím, že tu reakci na ten vzestup inflace bohužel nebo bohužel z hlediska nejenom Centrální bank. Já si myslím, že ta reakce by tam přišla zrovna u nás už v tom roce 2020, že ho ta Centrální banka začala zvyšovat ty sazby, jenom že přišla ta covidová pandemie, což je z mýho hlediska jako velmi nestadnilo na to rozhodování Centrální bank, nejenom zase té naší,
+**Miroslav Singer:** Takhle, já čtu pana Havránka, tak já myslím, že mu se to vysvětlit nedá, protože on je prostě přesvědčený o něčem jiném. To se v životě stává. Takže takhle jako přímo na tu osobní otázku ne. Jinak si myslím, že tu reakci na ten vzestup inflace, bohužel… bohužel z hlediska nejenom centrálních bank… Já si myslím, že ta reakce by tam přišla, zrovna u nás už v tom roce 2020, že jo, ta centrální banka začala zvyšovat ty sazby, jenomže přišla ta covidová pandemie, což z mého hlediska velmi znesnadnilo rozhodování centrálních bank, nejenom zase té naší, o tom, co dělat.
 
-**Lukáš Matoška:** …k které už jsme se tady v dnešní debatě dotkli. A sice, jestli je správný ten dvouprocentní inflační cíl České národní banky, tedy přesvědčení našich centrálních bankéřů, že ideální situace bude taková, kdy znovu inflace bude kolem těch dvou procent. Pane Havránku, pokud vím, takhle uvažují centrální bankéři skoro všude po světě. To se všichni pletou?
+**Lukáš Matoška:** Tak se posuňme k další otázce, které už jsme se tady v dnešní debatě dotkli. A sice, jestli je správný ten dvouprocentní inflační cíl České národní banky, tedy přesvědčení našich centrálních bankéřů, že ideální situace bude taková, kdy znovu inflace bude kolem těch dvou procent. Pane Havránku, pokud vím, takhle uvažují centrální bankéři skoro všude po světě. To se všichni pletou?
 
-**Tomáš Havránek:** Skoro všude. Třeba ve Švýcarsku je de facto cenová stabilita. Ne že bych ji vymyslel já, jenom tady ukládám do českého kontextu nápady chytřejších lidí, jako je John Cochrane, jeden z největších současných ekonomů, nebo koneckonců Paul Volcker, bývalý šéf americké centrální banky, kteří také něco takového považovali za ideální, nebo profesoři Agarwal, Kimball a tak dále. Jednak tu ale máte vědeckou evidenci, kterou jsem zmínil a která implikuje, že ekonomikám prospívá, když je inflace kolem nuly. A trvá nějakou dobu, než se taková evidence propíše do praxe centrálních bank.
+**Tomáš Havránek:** Skoro všude. Třeba ve Švýcarsku je de facto cenová stabilita. Ne že bych ji vymyslel já, jenom tady překládám do českého kontextu nápady chytřejších lidí, jako je John Cochrane, jeden z největších současných ekonomů, nebo koneckonců Paul Volcker, bývalý šéf americké centrální banky, kteří také něco takového považovali za ideální, nebo profesoři Agarwal, Kimball a tak dále. Jednak tu ale máte vědeckou evidenci, kterou jsem zmínil, a trvá nějakou dobu, než se propíše do praxe centrálních bank.
 
-A musím říct, že základem inflačního cílování, které se poprvé zavádělo před 30 lety na Zélandu, jsou racionální očekávání. A ta se v ekonomii poprvé objevila zhruba 30 let předtím. Čili trvá nějakou dobu, než se věda propíše do praxe centrálních bank, a zlomit zavedenou praxi, i když třeba není úplně optimální, také nějakou dobu trvá. Nějakou dobu to potrvá i u nás.
+**Lukáš Matoška:** To znamená, že ekonomikám prospívá, když je inflace kolem nuly?
 
-Jde o to, že u nás se ta změna dá udělat jednodušeji. Impuls k inovaci inflačního cílování také přišel z malé země, ze Zélandu, ne ze Spojených států, protože v malých centrálních bankách se věci přece jenom mění snáz, zejména u nás. Mohli bychom tedy být v této záležitosti znovu příkladem pro svět. Podobně jako je Zéland známý Pánem prstenů…
+**Tomáš Havránek:** To implikuje vědecká evidence, kterou jsem zmínil. A chci vám říct, že základem inflačního cílování, které se poprvé zavádělo před 30 lety na Zélandu, jsou racionální očekávání. A ta se v ekonomii poprvé objevila zhruba 30 let předtím. Čili trvá nějakou dobu, než se věda propíše do praxe centrálních bank, a zlomit zavedenou praxi, i když třeba není úplně optimální, také nějakou dobu trvá. Nějakou dobu to potrvá i u nás.
 
-**Lukáš Matoška:** Cenovou stabilitou. K tomu, jak by se to podle vás dalo udělat, se ještě dostaneme. Teď se obracím na vás, pane Singře, a zajímalo by mě, jestli by nebylo vhodnější, aby Česká národní banka měla inflační cíl nulu, tedy aby usilovala
+Jde o to, že u nás se ta změna dá udělat jednodušeji. Impuls k inovaci inflačního cílování také přišel z malé země, ze Zélandu, ne ze Spojených států, protože v malých centrálních bankách se věci přece jenom mění snáz, zejména u nás. Mohli bychom tedy být v této záležitosti znovu příkladem pro svět. Podobně jako je Zéland známý Pánem prstenů, filmováním a ve vědě pak inflačním cílováním…
 
-**Miroslav Singer:** …povede ke změně výšší. Přiznám se, že jsem trošku skeptický skeptický k tomu, že bude změněný na nulu právě proto, co říkám, že té hraní si prostě z jevy, které jsme zažili v těch třicátých letech podobně, tý velký. Některé země začnou zkoušet jednoprocentní cíl, který koneckonců myslím, že ve dvou ekonomikách byl. Jedna ekonomika ho opustila a vrátila se, nebo nevrátila se vedla ho.
+**Lukáš Matoška:** Tak my bychom byli známí nulovou inflací?
 
-Myslím, že to byly Japonci na dvě, když tak mě pan Havránek opraví. Ale myslím, že je to jako tak závažná změna. Já moc nevěřím z praxe, moc nevěřím na to, že by ty racionální očekávání, o kterých lidi především si vytvářejí očekávání ekonomicky. To znamená, v období, kdy inflace je delší, do paň, to netvoří si to očekávání, protože nemají důvod.
+**Tomáš Havránek:** Cenovou stabilitou.
 
-Jí bolí a něco stojí.
+**Lukáš Matoška:** K tomu, jak by se to podle vás dalo udělat, se ještě dostaneme. Teď se obracím na vás, pane Singře, a zajímalo by mě, jestli by nebylo vhodnější, aby Česká národní banka měla inflační cíl nulu, tedy aby usilovala o úplnou cenovou stabilitu.
 
-**Lukáš Matoška:** Hosty dnešního Pro a proti
+**Miroslav Singer:** Já vůbec nevylučuju, že ta doba povede ke změně výše inflačního cíle. Přiznám se, že jsem trošku skeptický k tomu, že bude změněný na nulu, právě proto, co říkám: že to je hraní si prostě s jevy, které jsme zažili v těch třicátých letech, podobně té velké deprese. Můžu si představit, že některé země začnou zkoušet jednoprocentní cíl, který koneckonců, myslím, ve dvou ekonomikách byl. Jedna ekonomika ho opustila a vrátila se, nebo nevrátila se, vedla ho.
 
-jsou bývalý guvernér České národní banky, dnes hlavní ekonom, Generali CEE Holding, Miroslav Singer a bývalý poradce centrálních bankéřů ekonom z Fakulty sociálních věd Univerzity Karlovy Tomáš Havránek. Posloucháte Pro a proti. Dva hosté, dva různé pohledy. V aplikaci Můj rozhlas a v dalších podcastových aplikacích.
+Myslím, že to byli Japonci, na dvě, když tak mě pan Havránek opraví. A myslím, že Švýcaři mají furt ještě tu jedničku. Ale musím říct, že si nemyslím, že je to tak závažná změna. Já moc nevěřím z praxe, moc nevěřím na to, že by ta racionální očekávání, o kterých mluvil, fungovala tak krásně jako v těch modelech, prostě protože lidi si především vytvářejí očekávání ekonomicky. To znamená, že v období, kdy je inflace delší dobu nízká, oni v podstatě nepřemýšlejí o tom, netvoří si to očekávání, protože nemají důvod. V okamžiku, kdy inflace vystřelí, se o ni vlastně začnou zajímat a zabývat se jí nějak systematicky. Protože přemýšlení bolí a něco stojí.
+
+Takže ten model racionálních očekávání v tomhle smyslu nepostihuje celou tu realitu a nemyslím si, že tou změnou o 2% dolů nebo o 2% inflace se dosáhne nějaké radikální změny reality.
+
+**Lukáš Matoška:** Hosty dnešního Pro a proti jsou bývalý guvernér České národní banky, dnes hlavní ekonom Generali CEE Holding Miroslav Singer, a bývalý poradce centrálních bankéřů, ekonom z Fakulty sociálních věd Univerzity Karlovy Tomáš Havránek. Posloucháte Pro a proti. Dva hosté, dva různé pohledy. Atraktivní názorové střety najdete také na webu plus.rozhlas.cz, v aplikaci Můj rozhlas a v dalších podcastových aplikacích.
 
 Pane Havránku, tak není ekonomická realita jiná než vaše ekonomické modely, ze kterých vycházíte a neukázalo by se nakonec, že určitá byť mírná inflace je vlastně v ekonomice přirozená?
 
@@ -117,21 +125,21 @@ Druhá věc je, že by zároveň opravovala své chyby v plnění cíle.
 
 **Lukáš Matoška:** Co tím myslíte?
 
-**Tomáš Havránek:** Když máte, jak říkal pan Singer, najednou deflaci 4%, banka by v příštím roce, aby se v průměru dostala na nulu, usilovala o inflaci zhruba 4%. To je mechanismus, který v ekonomické teorii i praxi pomáhá tlumit deflační spirály, o kterých právě mluvil pan Singer: čím větší je deflace, tím víc pak musí centrální banka šlápnout na plyn, aby ekonomice pomohla.
+**Tomáš Havránek:** Když máte najednou deflaci 4%, banka by v příštím roce, aby se v průměru dostala na nulu, usilovala o inflaci zhruba 4%. To je mechanismus, který v ekonomické teorii i praxi pomáhá tlumit deflační spirály, o kterých právě mluvil pan Singer: čím větší je deflace, tím víc pak musí centrální banka šlápnout na plyn, aby ekonomice pomohla.
 
-V současném režimu to takhle není. Když máte deflaci 20%, banka se v příštím roce bude snažit o plus 2%, ne o plus 20%. Čili deflační spirála, nebo její teoretická možnost, je další argument pro cenovou stabilitu, pro tento režim opravování minulých chyb, který navrhuji…
+V současném režimu to takhle není. Když máte deflaci 20%, banka se v příštím roce bude snažit o plus 2%, ne o plus 20%. Čili deflační spirála, nebo její teoretická možnost, je další argument pro cenovou stabilitu, pro tento režim opravování minulých chyb, který navrhuji, nebo nejenom já, já ho jen překládám do českého kontextu.
 
-**Lukáš Matoška:** …nebylo by na místě, aby, tak jak to popsal pan Havránek, centrální banka opravovala svoje chyby, tak, aby skutečně jsme tady měli cenovou stabilitu?
+**Lukáš Matoška:** Pane Singře, nebylo by na místě, aby, tak jak to popsal pan Havránek, centrální banka opravovala svoje chyby, tak, aby skutečně jsme tady měli cenovou stabilitu?
 
-**Miroslav Singer:** To se taky přiznám,
+**Miroslav Singer:** Já jsem zažil podobnou debatu v opačném kontextu. My jsme v té době, kdy jsem byl v centrální bance, spíše podstřelovali, takže já jsem zažil tu debatu o tom, že by vlastně bylo dobré spíš uvolnit a navýšit. Tak se tomu říkalo, vlastně přetlakování toho papiňáku.
 
-**Lukáš Matoška:** …že nevím, co je, teda přetlakování
+**Lukáš Matoška:** To se taky přiznám, že nevím, co to je. Přetlakování papiňáku možná ano, ale v ekonomice ne.
 
-**Miroslav Singer:** …ale v ekonomice ne. Jakoby přehřát, jasně, přehřát to, že inflace byla nevším dobu podstavovat. Vlaci není tak úplně jednoduché, rozdíly mezi několika měřítkami inflace. bylo něco tvrdit, že je skoro nevysvětli.
+**Miroslav Singer:** Jakoby přehřát, jasně, přehřát to, aby se kompenzovalo to, že inflace byla delší dobu pod cílem. A já jsem hodně skeptický vůči tomu… Ono zase to máme tu komunikaci, jo. Už za běžné situace vysvětlovat uživatelům měnové politiky, což jsou všichni občané, inflaci není tak úplně jednoduché, rozdíly mezi několika měřítky inflace… A do té komunikace vnášet ještě tu minulost… Já jsem prostě vůči tomu docela skeptický z toho praktického hlediska. Já si umím velmi špatně představit tu komunikaci nesenou tím, že teď budeme mít tu inflaci takovou či jinou, ovlivňujeme ji koneckonců tou měnovou politikou za rok a půl, protože před dvěma lety bylo něco takto. To si troufnu tvrdit, že je skoro nevysvětlitelné a nekomunikovatelné.
 
-Vzpomínám, že naše centrální banka se na začátku snaží a by zvětila, že ani to, což je měnově politická inflace, takže to vlastně není schopná vysvětlovat. Pane Havránku. A to bylo jako úkol vysvětlovat měnovou politiku. Pravěticky krásný, ale prakticky
+A připomínám, že naše centrální banka se na začátku snažila komunikovat ten pravý inflační ukazatel, který centrální banky sledujou, aby zjistila, že ani to, což je měnověpolitická inflace, *[nesrozumitelné]*, že to vlastně není schopná vysvětlovat. Aby to byl jako úkol vysvětlovat měnovou politiku posledními třemi, čtyřmi, pěti lety vývoje, to považuji za mimořádně teoreticky krásný, ale prakticky špatně realizovatelný koncept.
 
-**Lukáš Matoška:** …u otázky, nakolik ta vaše představa, pane Havránku, je prosaditelná v praxi.
+**Lukáš Matoška:** A tady už jsme tedy u otázky, nakolik ta vaše představa, pane Havránku, je prosaditelná v praxi.
 
 **Tomáš Havránek:** Pan Singer správně mluvil o srozumitelnosti, jenže je to přesně naopak. Tohle je mnohem srozumitelnější než současný režim. Sám jste to zažil, pane Singře, když jste během intervencí musel vysvětlovat, proč se snažíme o 2% plus, když je inflace na nule. Cenová stabilita, tedy to, že jsou ceny v průměru stabilní, je tak intuitivní a základní věc, že je mnohem snazší lidem vysvětlit, že když máte nějakou dobu inflaci, pak ji zase nějakou dobu rozpouštíte mírnou deflací. A samozřejmě naopak: jak jsem zmínil, mělo by to být symetrické. Když máte cíl na nule a podstřelujete ho, máte tu nějakou deflaci, pak by zase následovala inflace.
 
@@ -139,22 +147,30 @@ Nemyslím si, že by byl problém tohle vysvětlit. Naopak by to lidem pomohlo p
 
 Podobně je i hodnota peněz základní měrnou jednotkou naší společnosti, možná ještě důležitější než metr. Nechme ji tedy konstantní, zjednodušme to pro všechny, ať se můžeme bavit o něčem důležitějším, než jsou peníze a inflace, třeba o klimatické změně nebo o ne úplně dobrém výkonu naší ekonomiky.
 
-**Lukáš Matoška:** …tak nebyla by smysluplná nulová inflace, a tedy cenová stabilita z toho důvodu, že peníze, jak se vyjádřil pan Havránek, jsou určitou měrnou jednotkou naší společnosti a že tedy, abychom se podle ní dobře orientovali, tak by bylo lepší, kdyby se její hodnota pořád neproměňovala.
+**Lukáš Matoška:** Pane Singře, tak nebyla by smysluplná nulová inflace, a tedy cenová stabilita z toho důvodu, že peníze, jak se vyjádřil pan Havránek, jsou určitou měrnou jednotkou naší společnosti a že tedy, abychom se podle ní dobře orientovali, tak by bylo lepší, kdyby se její hodnota pořád neproměňovala?
 
-**Miroslav Singer:** Měnová politika není schopná kompenzovat dobře po vlesce. Proměrová politika funguje mnohem líp na snižování inflace, než na její zvyšování. O toho jsme se konec konců... Dobře, ano, ale nekomunikujeme.
+**Miroslav Singer:** Tak já zaprvé: z praktického hlediska měnová politika není schopná kompenzovat dobře poklesy. Ta měnová politika funguje mnohem líp na snižování inflace než na její zvyšování. O tom jsme se koneckonců přesvědčili, myslím si, že zrovna to moje druhé období v centrální bance bylo v podstatě jenom o tom, jak je měnová politika mnohem hůře použitelným nástrojem na kompenzování potenciálního poklesu cen. Takže tam by to stejně vyžadovalo spolupráci s vládou, a tím se tam dostáváme do naprosto další roviny, jako obtížné komunikace.
 
-A odpovím na tu druhou otázku. Ano. Ta představa, že žaduje nulovou inflaci, a to pan Havránek musí. Proč je to nesmysl?
+**Lukáš Matoška:** Dobře, ale nekomunikujeme…
 
-Protože hodnota peněz je daná hodnotou toho balíku pro své chování určitěm. Předvede například, když zdraží hovězí, tak si s největší pravděpodobností časně, koupíte na grill trkovná.
+**Miroslav Singer:** A odpověď na tu druhou otázku. Ano. Ta představa, že stabilní hodnota peněz vyžaduje nulovou inflaci, a to pan Havránek musí vědět, je nesmysl. Proč je to nesmysl? Protože hodnota peněz je daná hodnotou toho balíku pro vás, který si celý koupíte. A vy neustále optimalizujete své chování vůči těm změnám cen. Abychom si to předvedli: například když zdraží hovězí, tak si s největší pravděpodobností častěji koupíte na gril krkovičku, a naopak. Když zdraží krkovička, tak si možná spíš koupíte klobásku nebo steak. A ten balík… *[nesrozumitelné]* nevyžaduje, aby ten balík, který si kupujete, měl pro vás stále stejnou hodnotu. V ekonomice se mění hodnoty, mění se ceny.
 
-**Lukáš Matoška:** Prosím, stručně, ať může pan Havránek ještě zareagovat.
+**Lukáš Matoška:** Prosím stručně, ať může pan Havránek ještě zareagovat.
 
-Tak, pane Havránku,
+**Miroslav Singer:** Jasně, jasně. Tak to už neznamená, že ta inflace musí být v průměru nula. A protože tenhle ten koncept ignoruje zkvalitňování věcí a tenhle ten koncept ignoruje optimalizaci chování vůči…
+
+**Lukáš Matoška:** Tak, pane Havránku, prosím.
 
 **Tomáš Havránek:** To je samozřejmě pravda, ale to vychýlení není dvě procenta. Podle Boskinovy komise, profesor Boskin ze Stanfordu o tom nedávno psal článek, je maximálně jedno procento, spíš mírně pod tím, čili zhruba 0,8. Takže je to zase argument proti současnému cíli. To je první věc.
 
-Druhá věc, a to už jenom stručně: pokud víme, že staťák měří inflaci špatně, tak mu podaťme, že to dělá dobře. A třetí věc je, že správně by tam ještě měly být s větší váhou nemovitosti, které naopak dlouhodobě rostou rychleji. Čili to vychýlení je na obě strany.
+Druhá věc…
 
-Máme na to článek s Mojmírem Hamplem a pro Česko pak…
+**Lukáš Matoška:** A to už jenom stručně.
+
+**Tomáš Havránek:** Pokud víme, že statistický úřad měří inflaci špatně, poraďme mu, jak to dělat dobře. A třetí věc je, že by tam správně ještě měly být s větší váhou nemovitosti, které naopak dlouhodobě rostou rychleji. Čili to vychýlení jde na obě strany. Máme na to článek s Mojmírem Hamplem a pro Česko pak celkové vychýlení vychází na…
+
+**Lukáš Matoška:** Tak, a čtvrtou věc už bohužel… protože končíme.
+
+**Tomáš Havránek:** Každopádně to není problém.
 
 **Lukáš Matoška:** Našimi hosty byly ekonomové Tomáš Havránek a Miroslav Singer. Pánové, oběma vám děkuju. Díky moc, mějte se hezky. Od mikrofonu se loučí Lukáš Matoška.

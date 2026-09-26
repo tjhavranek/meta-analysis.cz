@@ -63,7 +63,7 @@ Máte pravdu, ale když vidíte vývoj našich státních financí, mám dojem, 
 
 **Tomáš Havránek:** Jedna výhoda je, mimochodem, že by to přesně odpovídalo ústavě. Ústava říká, že ČNB pečuje o cenovou stabilitu. To opravdu není dvouprocentní inflace. Když to zjednoduším, cenová stabilita není to, že je inflace každý rok pořád nula, ale že v nějakém období, třeba pěti let, zůstává hodnota koruny opravdu stejná. Váš sobotní nákup, můj sobotní nákup v Tescu by tedy stál tuto sobotu i za 30 let stejně. Zhruba stejně, ne přesně na desetiny, ale zhruba stejně, kdybych kupoval podobné zboží. To je skutečná cenová stabilita.
 
-Proč ji nemáme? Proč se tady, ale i v zahraničí často cílují dvě procenta, nebo trochu méně, ale často dvě procenta? To je dobrá otázka. Inflace má kromě nevýhod, které jsou jasné: ta nepohodlnost, to, že nemůžete... Oba máme děti, takže víme, že když pro ně chceme spořit, třeba na studia, je to teď velmi těžké, protože nevíte, kolik budete potřebovat.
+Proč ji nemáme? Proč se tady, ale i v zahraničí často cílují dvě procenta, nebo trochu méně, ale často dvě procenta? To je dobrá otázka. Inflace má kromě nevýhod, které jsou jasné: ta nepohodlnost, to, že nemůžete… Oba máme děti, takže víme, že když pro ně chceme spořit, třeba na studia, je to teď velmi těžké, protože nevíte, kolik budete potřebovat.
 
 **Jiří Zatloukal:** Úspory se znehodnocují.
 
@@ -71,7 +71,7 @@ Proč ji nemáme? Proč se tady, ale i v zahraničí často cílují dvě procen
 
 **Jiří Zatloukal:** Taková je myšlenka za tou dvouprocentní inflací.
 
-**Tomáš Havránek:** K tomu se dostávám. Výhody a nevýhody inflace můžete zvážit. A dělá to spousta studií, výzkumných, opravdu rigorózních studií, které porovnávají a počítají, jaká inflace by tedy byla optimální. Napočítal jsem 230 takových studií publikovaných od roku 1990. Žádná z nich, ani jedna, netvrdí, že optimální inflace je 2%. Ani jedna z nich. Inflační cíl, jak je stanoven, nemá žádný vědecký základ. Je to prostě...
+**Tomáš Havránek:** K tomu se dostávám. Výhody a nevýhody inflace můžete zvážit. A dělá to spousta studií, výzkumných, opravdu rigorózních studií, které porovnávají a počítají, jaká inflace by tedy byla optimální. Napočítal jsem 230 takových studií publikovaných od roku 1990. Žádná z nich, ani jedna, netvrdí, že optimální inflace je 2%. Ani jedna z nich. Inflační cíl, jak je stanoven, nemá žádný vědecký základ. Je to prostě…
 
 **Jiří Zatloukal:** Je to relikt nějaké minulosti?
 
@@ -81,7 +81,7 @@ Mimochodem, kdybychom to udělali, koruna by nám posilovala rychleji, protože 
 
 **Jiří Zatloukal:** Nicméně toho, čeho se centrální banky historicky teďka v moderní době nejvíc obávají, je strašák deflace, to znamená, že ceny začnou padat, což má na ekonomiku jako ničivé důsledky. Hlavní z nich je nezaměstnanost vysoká. Začalo to vlastně po velké hospodářské krizi a teďka po vlastně finanční krizi 2008-2009 i po současné covidové. Aby neklesaly ceny, aby nedošlo k tomu, k zvýšení nezaměstnanosti, tak se naopak uvažuje, centrální banky uvažují, co jsem zaznamenal, i o zvýšení spíš toho inflačního cíle, aby ta inflace se akcelerovala, rychle se třeba eurozóna dostala z téhle pasti.
 
-**Tomáš Havránek:** To souvisí s tím, že... To už je možná technická věc, ale zmíním to stejně. Když máte vyšší inflaci, máte i vyšší nominální úrokové sazby, to jsou reálné sazby plus inflace. Centrální banka pak má v krizi větší prostor ty vyšší nominální úrokové sazby snížit k nule. Pod nulu to nemůže. Čím vyšší inflace, tím víc má prostoru něco dělat. Ale je to vlastně rezignace na primární cíl cenové stability z důvodu nějaké technické nekompetence. Nástrojů má přitom centrální banka celou řadu.
+**Tomáš Havránek:** To souvisí s tím, že… To už je možná technická věc, ale zmíním to stejně. Když máte vyšší inflaci, máte i vyšší nominální úrokové sazby, to jsou reálné sazby plus inflace. Centrální banka pak má v krizi větší prostor ty vyšší nominální úrokové sazby snížit k nule. Pod nulu to nemůže. Čím vyšší inflace, tím víc má prostoru něco dělat. Ale je to vlastně rezignace na primární cíl cenové stability z důvodu nějaké technické nekompetence. Nástrojů má přitom centrální banka celou řadu.
 
 Ale mimochodem, deflační spirála, to je mezi těmi výhodami inflace. V modelech se to už započítává. Přesto to vychází nula, tak velké jsou nevýhody inflace. A navíc, kde jste deflační spirálu v historii pozoroval? Ano, během velké deprese. Tam byla spíš otázka, jestli to byl důsledek, nebo příčina té krize, šlo to ruku v ruce. Ale třeba po minulé finanční krizi to nikdy nenastalo.
 

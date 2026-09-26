@@ -7,7 +7,7 @@ date: "2022-11-06"
 headline: "Otázky Václava Moravce: Jak zachránit státní rozpočet?"
 byline: "Tomáš Havránek"
 interviewer: "Václav Moravec"
-body_note: "Nedělní diskusní pořad Otázky Václava Moravce na ČT, 6. listopadu 2022; kromě Tomáše Havránka v něm byli bývalý guvernér ČNB Jiří Rusnok a místopředseda ČMKOS Vít Samek. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Titulky České televize u tohoto dílu — na rozdíl od ostatních — vůbec neznačí střídání mluvčích, takže kdo co říká, vychází jen z hlasu. Hlasové vzorky všech čtyř mluvčích pocházejí z této nahrávky, z míst, kde je mluvčí jistý z obsahu. Zde jsou autorovy odpovědi a otázky, které mu byly položeny; pasáže s ostatními hosty tu nejsou a najdete je v původním záznamu. Místa, kde je něco vynecháno, jsou v textu označena. Opraveno bylo 48 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Pozor na shodu jmen: v pořadu se probírá pozměňovací návrh poslance Havránka, se kterým autor není příbuzný, jak sám v pořadu uvádí. Devět oprav zůstalo neprovedených, protože by dosazovaly slova, která v nahrávce nezazněla. Jedna otázka moderátora končila oslovením „pane profesore“, které přepis připojil k následující odpovědi; vráceno k otázce. Text prošel lehkou úpravou, jaká je u publikovaných přepisů obvyklá: odstraněna zjevná přeřeknutí a opakování slov. Odpovědi Tomáše Havránka jsou navíc redakčně upraveny tak, jak se upravují autorizované rozhovory: odstraněna přeřeknutí, opakování, výplňová slova a nedokončené začátky vět, věty učesány a hovorové tvary převedeny do spisovné češtiny. Obsah výpovědí se tím nemění: čísla, zápory ani míra opatrnosti ve formulacích zůstaly tak, jak zazněly, a nebylo doplněno nic věcně nového. Při závěrečné kontrole byla místa, kde první model přeslechl číslo, zápor nebo vynechal část věty, opravena podle toho, co v nahrávce slyší druhý, nezávislý model (Whisper large-v3). Mluvená řeč obsahuje nedokončené věty — nejde o psaný text. Při revizi v září 2026 byla sporná místa znovu přepsána modelem Whisper large-v3 z krátkých úseků nahrávky a porovnána s titulky České televize; mluvčí sporných vět bylo ověřeno hlasem. Doplněno bylo, co přepis na hranicích replik vynechal, například věta „pan poslanec Havránek není můj příbuzný, je to jen shoda jmen“, a opraveny další přeslechy, mezi nimi „prosadily ODS a ANO“ místo „prosadila ODS, ano“. Moderátor při čtení prezidentova dopisu řekl „na rok 2002“, ačkoli dopis se týká roku 2022; zůstává, jak zaznělo, s poznámkou v textu. Jedno slovo Víta Samka zůstává nesrozumitelné a je tak označeno."
+body_note: "Nedělní diskusní pořad Otázky Václava Moravce na ČT, 6. listopadu 2022; kromě Tomáše Havránka v něm byli bývalý guvernér ČNB Jiří Rusnok a místopředseda ČMKOS Vít Samek. Text je strojový přepis řeči z nahrávky (model Whisper large-v3-turbo). Titulky České televize u tohoto dílu — na rozdíl od ostatních — vůbec neznačí střídání mluvčích, takže kdo co říká, vychází jen z hlasu. Hlasové vzorky všech čtyř mluvčích pocházejí z této nahrávky, z míst, kde je mluvčí jistý z obsahu. Zde jsou autorovy odpovědi a otázky, které mu byly položeny; pasáže s ostatními hosty tu nejsou a najdete je v původním záznamu. Místa, kde je něco vynecháno, jsou v textu označena. Opraveno bylo 48 zjevných přeslechů — jména, hranice slov a tvary, kde je správné znění jisté. Význam, čísla ani míra opatrnosti ve formulacích se neměnily; nejistá místa zůstala tak, jak je přepis zachytil. Pozor na shodu jmen: v pořadu se probírá pozměňovací návrh poslance Havránka, se kterým autor není příbuzný, jak sám v pořadu uvádí. Devět oprav zůstalo neprovedených, protože by dosazovaly slova, která v nahrávce nezazněla. Jedna otázka moderátora končila oslovením „pane profesore“, které přepis připojil k následující odpovědi; vráceno k otázce. Text prošel lehkou úpravou, jaká je u publikovaných přepisů obvyklá: odstraněna zjevná přeřeknutí a opakování slov. Odpovědi Tomáše Havránka jsou navíc redakčně upraveny tak, jak se upravují autorizované rozhovory: odstraněna přeřeknutí, opakování, výplňová slova a nedokončené začátky vět, věty učesány a hovorové tvary převedeny do spisovné češtiny. Obsah výpovědí se tím nemění: čísla, zápory ani míra opatrnosti ve formulacích zůstaly tak, jak zazněly, a nebylo doplněno nic věcně nového. Při závěrečné kontrole byla místa, kde první model přeslechl číslo, zápor nebo vynechal část věty, opravena podle toho, co v nahrávce slyší druhý, nezávislý model (Whisper large-v3). Mluvená řeč obsahuje nedokončené věty — nejde o psaný text. Při revizi v září 2026 byla sporná místa znovu přepsána modelem Whisper large-v3 z krátkých úseků nahrávky a porovnána s titulky České televize; mluvčí sporných vět bylo ověřeno hlasem. Doplněno bylo, co přepis na hranicích replik vynechal, například věta „pan poslanec Havránek není můj příbuzný, je to jen shoda jmen“, a opraveny další přeslechy, mezi nimi „prosadily ODS a ANO“ místo „prosadila ODS, ano“. Moderátor při čtení prezidentova dopisu řekl „na rok 2002“, ačkoli dopis se týká roku 2022; zůstává, jak zaznělo, s poznámkou v textu. Jedno slovo Víta Samka zůstává nesrozumitelné a je tak označeno. Doplněno bylo i to, co první přepis vynechal na hranicích replik: známka „áčko“, kterou Tomáš Havránek dal provedení daně z mimořádných zisků, krátká výměna o zvýšení daně z příjmů fyzických osob, slovo „dlouhodobě“ ve větě „Ale pořád to není něco, co by rozpočet dlouhodobě zachránilo“ a závěrečná odpověď o penzijních komisích."
 ---
 **Václav Moravec:** Pane profesore Havránku, vy jste členem Národní ekonomické rady vlády. Vznik té daně z mimořádných zisků. Nakolik jako ekonom považujete za transparentní a byly s vámi ty parametry jako s NERVem konzultovány?
 
@@ -27,7 +27,7 @@ A mně by dávalo smysl návrh pana poslance Havránka schválit. Takže jen dá
 
 Obávám se, že výnosy z té daně budou mnohem, mnohem menší, než s jakými vláda počítá.
 
-**Václav Moravec:** I vy patříte k těm skeptikům, že nebude vybráno 100 miliard na dani…
+**Václav Moravec:** I vy patříte k těm skeptikům, že nebude vybráno 100 miliard na dani z mimořádných zisků?
 
 **Tomáš Havránek:** Bohužel. Třeba i u bank je vůbec otázka, jestli budou mít v příštích letech nějaké mimořádné zisky. Nové hypotéky jsou totiž na mnohaletých minimech, a to je jeden z hlavních byznysů komerčních bank.
 
@@ -37,13 +37,15 @@ A k tomu ještě optimalizace, nejenom u bank, ale u všech ostatních firem, kt
 
 **Tomáš Havránek:** Upřímně řečeno asi ne, protože daň uvalená ex post je precedens, který i v takto mimořádné situaci není dobrý. Jak říkám, opravdu se těžko hledají detaily toho, jak to správně vyladit. Ta myšlenka dávala smysl.
 
-**Václav Moravec:** A provedení, kdybyste...
+**Václav Moravec:** A provedení? Kdybyste známkoval na Institutu ekonomických studií a přišel za vámi student, který by zrealizoval daň z mimořádných zisků v podání Zbyňka Stanjury, tak by dostal… A máte na výběr A až F.
+
+**Tomáš Havránek:** Já bych mu dal áčko. Asi to o moc líp udělat nešlo.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
 **Václav Moravec:** … lépe systémově, jak naznačoval Jiří Rusnok, když vy byste dával Ačko a teď ukazuju na rozpor mezi kroky ministerstva financí a doporučením centrální banky, která psala o hranici 3 miliard?
 
-**Tomáš Havránek:** … zmiňoval, ale když už tam mimořádná daň je, nějaká hranice se udělat musí. Samozřejmě mluvím za sebe, moje interpretace je také taková, že dlouhodobě vnímáme, že náš bankovní sektor je hodně regulovaný, a tím pádem hodně ziskový. A ty zisky jdou do ciziny. Přesně tak.
+**Tomáš Havránek:** Lepší by asi bylo nahradit mimořádnou daň nějakým jiným systémem, jak tady zmiňoval pan bývalý guvernér. Ale když už tam mimořádná daň je, nějaká hranice se udělat musí. Samozřejmě mluvím za sebe, moje interpretace je také taková, že dlouhodobě vnímáme, že náš bankovní sektor je hodně regulovaný, a tím pádem hodně ziskový. A ty zisky jdou do ciziny. Přesně tak.
 
 Čili možná i tahle motivace tam byla. Podle mě by konkrétně tohle šlo asi dělat lépe, třeba tak, že snížíte regulaci bank, budou trochu méně ziskové, a tím pádem nebudou odvody dividend tak vysoké. Banky jsem samozřejmě kritizoval, jak asi víte, kvůli nedokonalému přenosu úrokových sazeb z ČNB na spořicí účty. To je dnes už mnohem lepší, spořicí účty za 6,5 už se dají sehnat, čili…
 
@@ -63,7 +65,7 @@ A k tomu ještě optimalizace, nejenom u bank, ale u všech ostatních firem, kt
 
 **Tomáš Havránek:** To bych neřekl. Dám jednu pozitivní poznámku po všem tom negativním, co jsme tu společně řekli. Letošní rozpočet je reálně přebytkový. A proč? Protože máte tak vysokou inflaci, že umazává existující dluh rychleji, než vláda stačí vytvářet nový.
 
-Tady ta pozitivní stránka končí, ale reálně opravdu ten přebyt…
+Tady ta pozitivní stránka končí, ale reálně opravdu ten přebytek…
 
 **Václav Moravec:** No to se na to díváte jenom z pohledu státního rozpočtu, protože inflace 18%, když se podíváte na vaše příjmy.
 
@@ -71,13 +73,11 @@ Tady ta pozitivní stránka končí, ale reálně opravdu ten přebyt…
 
 **Vít Samek:** Ale lidi *[nesrozumitelné]*, když propady, reálné propady mezd už jsou teď přes 10% ročně a u řady lidí ještě větší. Takže naši zaměstnanci jsou první obětí.
 
-**Tomáš Havránek:** Jen chci říct, že krátkodobě na tom veřejné finance kvůli inflaci nejsou zase tak špatně. Ne díky ní, ale kvůli ní. Příští rok bude rozpočet kvůli inflaci vyrovnaný, státní dluh se kvůli ní sníží víceméně o 300 miliard.
+**Tomáš Havránek:** Jen chci říct, že krátkodobě na tom veřejné finance kvůli inflaci nejsou zase tak špatně. Ne díky ní, ale kvůli ní. Příští rok bude rozpočet kvůli inflaci vyrovnaný: státní dluh se kvůli ní sníží víceméně o 300 miliard a schodek bude 300 miliard.
 
-Schodek bude 300 miliard. Dlouhodobě jsou ale problémem důchody, o čemž pan Rusnok ví z nás rozhodně nejvíc. A to je to, co rozpočet rozbourá za nějakých deset let.
+Dlouhodobě jsou ale problémem důchody, o čemž pan Rusnok ví z nás rozhodně nejvíc. A to je to, co rozpočet rozbourá za nějakých deset let. Ostatní věci, které NERV radí, pomohou, ale nejsou to úplně věci, které by nás dlouhodobě zachránily.
 
-Ostatní věci, které NERV radí, pomohou, ale nejsou to úplně věci, které by nás dlouhodobě zachránily.
-
-**Václav Moravec:** Ale když se podíváte, protože vy jste významným členem,
+**Václav Moravec:** Ale když se podíváte, protože vy jste významným členem Národní ekonomické rady vlády, a NERV v souvislosti se zadlužováním, rychlým zadlužováním státu doporučil, aby došlo k reformě na straně výdajů i na straně příjmů. Jsou tam popsány daně, včetně daně z příjmu fyzických osob, které by se mohly v rámci progrese zvyšovat. Premiér Petr Fiala a klíčoví členové vlády odmítli návrh na zvýšení daně z příjmu.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
@@ -93,11 +93,11 @@ Ostatní věci, které NERV radí, pomohou, ale nejsou to úplně věci, které 
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Tomáš Havránek:** Ale pořád to není něco, co by rozpočet zachránilo.
+**Tomáš Havránek:** Ale pořád to není něco, co by rozpočet dlouhodobě zachránilo.
 
-**Václav Moravec:** … od té mantry, kterou opakuje premiér Fiala, ministr financí, že nebudou přistupovat ke zvýšení daní. Naopak, přicházejí i v tom daňovém balíčku letošním k, nechci říct ke snížení daní, ale k výpadkům státního rozpočtu na příjmové straně.
+**Václav Moravec:** Podle vás bude muset vláda ustoupit od té mantry, kterou opakuje premiér Fiala, ministr financí, že nebudou přistupovat ke zvýšení daní? Naopak, přicházejí i v tom daňovém balíčku letošním k, nechci říct ke snížení daní, ale k výpadkům státního rozpočtu na příjmové straně.
 
-**Tomáš Havránek:** … dělat. Máme tu třeba devizové rezervy, které, pokud se neprodají, nám jednou mohou pěkně vydělávat, když se budou investovat převážně do akcií. To chce nový pan guvernér z větší části udělat, za což bych ho pochválil, ale projeví se to zase až v nějakém dalším období. A výnos tam může být klidně 100 miliard ročně v dnešních korunách.
+**Tomáš Havránek:** Pořád je naděje, že se to nebude muset dělat. Máme tu třeba devizové rezervy, které, pokud se neprodají, nám jednou mohou pěkně vydělávat, když se budou investovat převážně do akcií. To chce nový pan guvernér z větší části udělat, za což bych ho pochválil, ale projeví se to zase až v nějakém dalším období. A výnos tam může být klidně 100 miliard ročně v dnešních korunách.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
@@ -111,13 +111,21 @@ Co byste zavedl, v jakém pořadí, pane profesore?
 
 Bude to tedy těžká věc. Osobně čekám, že se vybere jen několik málo z těch bodů, jak jste zmiňoval, možná snížení podpory v nezaměstnanosti. Vláda ale samozřejmě také chce vyhrát volby, takže všichni chápeme, že většina z toho realizována nebude, přestože ekonomicky to dává smysl.
 
-**Václav Moravec:** … znovu odpovězte, prosím, na tu otázku: kdyby se nehledělo na ideologii a vy byste byl ministrem financí, tak které z těch kroků byste zaváděl, které by dávaly největší smysl na příjmové straně státního rozpočtu při udržení…
+**Václav Moravec:** Ale vy znovu odpovězte, prosím, na tu otázku: kdyby se nehledělo na ideologii a vy byste byl ministrem financí, tak které z těch kroků byste zaváděl, které by dávaly největší smysl na příjmové straně státního rozpočtu při udržení solidarity v české společnosti?
 
-**Tomáš Havránek:** … balík peněz, a na tom je, řekl bych, možná i poměrně široká společenská shoda. Čili snížení daní, které prosadily ODS a ANO, bylo něco, co v té době nedávalo úplně velký smysl. Takže vrátit to zpátky je něco, na čem se tady ve studiu možná shodneme asi všichni.
+**Tomáš Havránek:** Zvýšení daní.
+
+**Václav Moravec:** Z fyzických osob?
+
+**Tomáš Havránek:** Ano.
+
+**Václav Moravec:** To dává největší smysl?
+
+**Tomáš Havránek:** Je to největší balík peněz, a na tom je, řekl bych, možná i poměrně široká společenská shoda. Čili snížení daní, které prosadily ODS a ANO, bylo něco, co v té době nedávalo úplně velký smysl. Takže vrátit to zpátky je něco, na čem se tady ve studiu možná shodneme asi všichni.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Václav Moravec:** Váš materiál, který jste koncem týdne představili jako NERV, navazovat nějaký další, který už vyčíslí ty možné výnosy, protože u některých těch výnosů tam jsou obecné nástřely. Řády jednotek miliard, desítek miliard, zvýšení daně z příjmů fyzických osob cca 100 miliard. Bude se s tímto materiálem dál analyticky pracovat, aby byl tak…
+**Václav Moravec:** Váš materiál, který jste koncem týdne představili jako NERV, navazovat nějaký další, který už vyčíslí ty možné výnosy, protože u některých těch výnosů tam jsou obecné nástřely. Řády jednotek miliard, desítek miliard, zvýšení daně z příjmů fyzických osob cca 100 miliard. Bude se s tímto materiálem dál analyticky pracovat, aby byl tak propracovaný, jak požadují odbory?
 
 **Tomáš Havránek:** Určitě bude. Nedokážu teď slíbit přesně to, co by chtěl pan Samek. Konkrétnější propočty ale rozhodně budou na nějaké úrovni provedeny, buď v NERVu, nebo na vládě.
 
@@ -131,7 +139,7 @@ Spíš tomu moc nevěřím, ale ta možnost tu určitě je.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Václav Moravec:** … nezaměstnanosti, proto, abych ty lidi motivoval, aby si práci hledali velmi rychle, aby ta podpora nebyla třeba tak dlouhá z hlediska toho časovosti, anebo případně, aby ta míra podpory se snižovala rychle. Marian Jurečka dodal, že snížení podpory v nezaměstnanosti plánuje jako ministr práce a sociálních věcí zavést v první polovině příštího roku. Přijde vám šťastné, že se začíná nejrazantněji…
+**Václav Moravec:** … nezaměstnanosti, proto, abych ty lidi motivoval, aby si práci hledali velmi rychle, aby ta podpora nebyla třeba tak dlouhá z hlediska toho časovosti, anebo případně, aby ta míra podpory se snižovala rychle. Marian Jurečka dodal, že snížení podpory v nezaměstnanosti plánuje jako ministr práce a sociálních věcí zavést v první polovině příštího roku. Přijde vám šťastné, že se začíná nejrazantněji tímto bodem z vašeho materiálu?
 
 **Tomáš Havránek:** Můžeme být rádi, že se aspoň něco použije, ale hlavní věcí jsou samozřejmě důchody. Na výdajové straně tvoří tři čtvrtiny výdajů rozpočtu mandatorní nebo kvazimandatorní výdaje a důchodový systém se, jak jsme tu už naznačili, změnit musí, jinak bude rozpočet dlouhodobě opravdu zkrachovalý. Nebudou stačit nějaké parametrické změny. Samozřejmě, když půjdeme všichni do důchodu v 90 letech, tím se to vyřeší, ale bude třeba nějak reagovat na to, že průběžný systém vznikl za Bismarcka v situaci, kdy lidé měli čtyři, pět dětí, a to dlouhodobě nemůže fungovat v situaci, kdy máte…
 
@@ -141,7 +149,7 @@ Byl 70 let, takže se ho málokdo dožil. Dnes máte porodnost hluboko pod dvěm
 
 **Tomáš Havránek:** Ano, to je trochu demografický zázrak, ale pořád to nestačí. A tím druhým pilířem musí být mnohem větší motivace kupovat akcie už v mladém věku, od 20 let, vlastně od prvního zaměstnání.
 
-Náš systém penzijního připojištění není úplně šťastný v tom, že máme transformované fondy, které nominálně garantují neprodělek, ale reálně garantují prodělek každý rok všem, kdo se jich účastní. Je tedy potřeba to celé změnit a více motivovat k jednoduchému nákupu akcií v mládí a postupnému prodeji ve stáří s menšími poplatky, jak to dnes na trhu jde. Penzijní fondy ale pořád mají relativně vysoké poplatky. Tam by možná šlo zatlačit na to, aby státní podpora byla vázána…
+Náš systém penzijního připojištění není úplně šťastný v tom, že máme transformované fondy, které nominálně garantují neprodělek, ale reálně garantují prodělek každý rok všem, kdo se jich účastní. Je tedy potřeba to celé změnit a více motivovat k jednoduchému nákupu akcií v mládí a postupnému prodeji ve stáří s menšími poplatky, jak to dnes na trhu jde. Penzijní fondy ale pořád mají relativně vysoké poplatky. Tam by možná šlo zatlačit na to, aby státní podpora byla vázána na snížení poplatků.
 
 **Václav Moravec:** A to byste uvítal, pokud by dříve než snižování podpory v nezaměstnanosti přišlo Ministerstvo práce a sociálních věcí, protože narážím i na možnou nejednotnost NERVu, kdy se ohradil Daniel Prokop, sociolog, který korigoval slova ministra Jurečky, že říkal, to přinese pouze drobné úspory a nemělo by se v rámci rychlosti zavádění, protože jsem mluvil o těch prioritách, vás jako členů NERVu, nemělo by se jít na snižování nezaměstnanosti jako prvním kroku, který chce ministr práce a sociálních věcí realizovat.
 
@@ -149,4 +157,6 @@ Náš systém penzijního připojištění není úplně šťastný v tom, že m
 
 Mám tedy střet zájmů, čtyři děti, takže pro mě je samozřejmě snadné to říct. Ne všichni to mohou takhle jednoduše udělat, ale vnést tam větší spravedlnost a větší motivaci zvýšit porodnost by rozhodně pomohlo. Chápu ale, že to není věc, která se dá udělat hned. Vyžaduje to dlouhou diskusi, přesvědčování, novou společenskou smlouvu, a to napříč celým politickým spektrem. Aby s tím souhlasily odbory, zleva doprava, to bude velmi…
 
-**Václav Moravec:** No ale podívejte se, že tu novou společenství...
+**Václav Moravec:** No ale podívejte se, tu novou společenskou smlouvu vždy měly nastavovat různé penzijní komise, které by šly v nějaké dlouhodobé udržitelnosti a perspektivě. A kolik toho prosadily?
+
+**Tomáš Havránek:** Mluví se o tom asi už od mého dětství, ale na to vám odpověď nedám.
