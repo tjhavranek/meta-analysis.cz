@@ -1216,7 +1216,7 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
 /* /about/photos/: a grid of photographs, each opening its larger file. The page's figures
    are smaller than the article figures above, so they drop the measure and the vertical
    margin that .entry figure sets. */
-.entry .photos{ display:grid; grid-template-columns:repeat(auto-fill, minmax(11rem, 1fr));
+.entry .photos{ display:grid; grid-template-columns:repeat(auto-fill, minmax(9.5rem, 1fr));
   gap:var(--s5); margin:var(--s4) 0 var(--s7); }
 .entry .photos figure{ margin:0; max-width:none; }
 .entry .photos img{ display:block; width:100%; height:auto; aspect-ratio:4/5; object-fit:cover; }
