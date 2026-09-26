@@ -113,6 +113,9 @@ pages = ["index.html"] + sorted(
 # line it would be the one page nothing verifies.
 if os.path.isfile(os.path.join(SITE, "about", "index.html")):
     pages.append("about/index.html")
+# /about/photos/ lives under the self-managed /about/, so the sub-page sweep below skips it.
+if os.path.isfile(os.path.join(SITE, "about", "photos", "index.html")):
+    pages.append("about/photos/index.html")
 # Same for the two publication lists: self-managed so the injector leaves them alone, but
 # every structural check below still applies.
 for _pub in ("publications/index.html", "publications/irsova/index.html"):

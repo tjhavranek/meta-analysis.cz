@@ -1212,3 +1212,15 @@ table.catalogue li{ margin-bottom:var(--s2); font-size:var(--f-1); line-height:1
   font:inherit; line-height:1.65;
 }
 .entry ul.uses > li::before{ content:"\203A\00a0"; color:var(--ink-soft); }
+
+/* /about/photos/: a grid of photographs, each opening its larger file. The page's figures
+   are smaller than the article figures above, so they drop the measure and the vertical
+   margin that .entry figure sets. */
+.entry .photos{ display:grid; grid-template-columns:repeat(auto-fill, minmax(11rem, 1fr));
+  gap:var(--s5); margin:var(--s4) 0 var(--s7); }
+.entry .photos figure{ margin:0; max-width:none; }
+.entry .photos img{ display:block; width:100%; height:auto; aspect-ratio:4/5; object-fit:cover; }
+/* one frame for every thumbnail, portrait or landscape, so the grid reads as a contact sheet;
+   landscape pictures carry an object-position on the page to keep the person in frame, and
+   the full picture opens on click */
+.entry .photos figcaption{ margin-top:var(--s2); font:400 var(--f-1)/1.4 var(--sans); color:var(--ink-soft); }
