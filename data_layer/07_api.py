@@ -16,12 +16,12 @@ DATA_VERSION="2.1.0"; DATA_STATUS="stable"
 DATA_RELEASED="2026-09-25"
 # The VERSION DOI, set once Zenodo minted it. None until deposited -- publishing the
 # previous version's DOI beside a new version tells a citing reader the wrong thing.
-# NULL until 2.1.0 is deposited (the owner makes the Zenodo version). 2.1.0 adds
-# social_comparison as the 47th dataset and 43rd pooled literature, and carries the label
-# changes made since 2.0.0 (effect_units for five literatures, chemnitz listed as excluded).
-# 2.0.0 is 10.5281/zenodo.22647394 and is superseded; the full history is in CITATION.cff.
-# Reserve the DOI on the draft before the bundle is built, so the archived files name it.
-DATA_DOI=None
+# 2.1.0's version DOI, reserved on the Zenodo draft on 26 September 2026 before the bundle
+# was built. 2.1.0 adds social_comparison as the 47th dataset and 43rd pooled literature, and
+# carries the label changes made since 2.0.0 (effect_units for five literatures, chemnitz
+# listed as excluded). 2.0.0 is 10.5281/zenodo.22647394 and is superseded; the full history
+# is in CITATION.cff. For the next version: set None again until its DOI is reserved.
+DATA_DOI="10.5281/zenodo.22971345"
 
 papers={p["project"]:p for p in json.load(open(os.path.join(SITE,"tools","papers.json"),encoding="utf-8"))}
 man={m["project"]:m for m in json.load(open(os.path.join(WORK,"convert_manifest.json"),encoding="utf-8"))}

@@ -167,10 +167,11 @@ the archived deposit:
 
 > **https://doi.org/10.5281/zenodo.21773678** — cite this. It always resolves to the newest version.
 >
-> Version 2.1.0, the table served here, is not yet deposited. Until it is, cite the concept DOI
-> above with the version you used (2.1.0) and the date you downloaded the files. The newest
-> deposit, `https://doi.org/10.5281/zenodo.22647394`, is version 2.0.0, which lacks
-> `social_comparison`; cite it only for work done on its archived files.
+> `https://doi.org/10.5281/zenodo.22971345` is version 2.1.0, the table served here. Cite this
+> version DOI in a replication package, where the exact files matter.
+>
+> `https://doi.org/10.5281/zenodo.22647394` is version 2.0.0, superseded. It lacks
+> `social_comparison`; every estimate and standard error it holds is unchanged in 2.1.0.
 >
 > `https://doi.org/10.5281/zenodo.22529684` is version 1.3.0, superseded. Anything computed against
 > it for `class` used that literature's robustness scale rather than the one its main models use,
