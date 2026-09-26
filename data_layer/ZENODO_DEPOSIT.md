@@ -1,14 +1,17 @@
 # Zenodo deposit — what to upload, and what must never be uploaded
 
-> **STATUS: 2.1.0 DEPOSIT PENDING (the owner makes the Zenodo version).** The site serves
-> 2.1.0 since 25 September 2026: `social_comparison` (Bartos, Irsova, Havranek and
-> Wagenmakers 2025) joins as the 47th dataset and 43rd pooled literature, 79 Hedges' g effects,
-> taking the table to 52,879 rows. It also folds in the label changes below (`effect_units` for
-> five literatures, `chemnitz` under `excluded_resources`). `DATA_DOI` is None in 07_api.py.
-> To deposit: "New version" on the concept record (not "New upload"), reserve the DOI, put it
-> in DATA_DOI, `.zenodo.json`, `citation.cff` and DEPOSITS in 91_distribution.py, run the full
-> rebuild and `12_zenodo_bundle.py`, upload the one zip, and correct the live record's
-> description (it still says the table grew "from 1.3.0's 52,800 rows").
+> **STATUS: 2.1.0 PUBLISHED.** https://doi.org/10.5281/zenodo.22971345, published and
+> verified 2026-09-26: one file, md5 038876189f975ee5805c9b987485f915, byte-identical to the
+> local build and to a clean clone of commit 49771a3e (sha256 4001ec3a...). The concept DOI
+> resolves to it. `social_comparison` (Bartos, Irsova, Havranek and Wagenmakers 2025) joins as
+> the 47th dataset and 43rd pooled literature, 79 Hedges' g effects, taking the table to 52,879
+> rows; the label changes below (`effect_units` for five literatures, `chemnitz` under
+> `excluded_resources`) are folded in. 2.0.0 is superseded. Its live description still says the
+> table grew "from 1.3.0's 52,800 rows" (50,441 is right); fixing that is a metadata edit on the
+> 2.0.0 record, the owner's call. Next release: set `DATA_DOI` to None when the version moves,
+> reserve the new DOI on the draft, and build the bundle only after it is in the four places.
+> Clone for reproduction with `core.autocrlf=false`, or CITATION.cff, LICENSE and README.md
+> come out CRLF and the checksum differs over identical content.
 >
 > **STATUS: 2.0.0 PUBLISHED.** https://doi.org/10.5281/zenodo.22647394, uploaded and
 > verified 2026-09-07: one file, md5 68dcaf34ab3e19aa47c1f7786a8a64b6, byte-identical
