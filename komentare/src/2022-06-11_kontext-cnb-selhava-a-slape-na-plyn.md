@@ -69,7 +69,11 @@ Problém je, že dnes nemůže sazby zvýšit na 20 procent, jak by asi bylo z h
 
 Pak je otázka, jestli tohle za snížení inflace stojí. Bankovní rada evidentně vyhodnotila, že ne, a proto to nedělá. Volí ale takovou prostřední cestu, která mnoho nevyřeší, protože reálně máte pořád velmi levné peníze.
 
-Zároveň moc nepomůžete lidem, kteří spoří, protože ti na svých úsporách reálně ztrácejí opravdu těch 10 procentních bodů. A naštvete lidi, kteří mají hypotéku: inflace je sice vysoká, ale jim plat zřejmě o těch 16% neroste, jako asi roste zaměstnancům Národní banky. Ta má automatickou indexaci, automatickou kompenzaci mezd o inflaci, což je v centrálních bankách naprosto nevídané. To mi zní skoro jako střet zájmů. Rozhodně je to střet zájmů v tom smyslu, že když máte jako hlavní ústavní úkol, aby inflace nebyla, odměňování by přece mělo být opačné.
+Zároveň moc nepomůžete lidem, kteří spoří, protože ti na svých úsporách reálně ztrácejí opravdu těch 10 procentních bodů. A naštvete lidi, kteří mají hypotéku: inflace je sice vysoká, ale jim plat zřejmě o těch 16% neroste, jako asi roste zaměstnancům Národní banky. Ta má automatickou indexaci, automatickou kompenzaci mezd o inflaci, což je v centrálních bankách naprosto nevídané.
+
+**Marek Zavřel:** To mi zní skoro jako střet zájmů.
+
+**Tomáš Havránek:** Rozhodně je to střet zájmů v tom smyslu, že když máte jako hlavní ústavní úkol, aby inflace nebyla, odměňování by přece mělo být opačné.
 
 Když je inflace vyšší, máte menší plat. Když máte za vyšší inflace vyšší plat, je to, jako byste dávali policistům větší odměny za větší zločinnost. Nedává to žádný smysl. Je to manažerské selhání současné bankovní rady, které bylo jedním z důvodů, proč bohužel dva členové dostali takzvaně padáka a další ho pravděpodobně dostane někdy v zimě. Takže z tohoto pohledu se tomu nelze úplně divit.
 
