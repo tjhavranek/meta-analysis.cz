@@ -2891,7 +2891,7 @@ Pane vicepremiére, ministr financí zbyt…
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Václav Moravec:** 40 miliard na investice. Vy teď otevíráte další téma. Pane profesore Havránku, zmiňoval jsem deficit v tom volebním roce, kdy se konají volby do poslanecké sněmovny o 22 miliard nižší než schodek letošní. Současná vláda se označuje za vládu rozpočtové odpovědnosti podle premiéra Fialy nezbytné snižování rozpočtu, když na letošní rok plánovaný schodek 252 miliardy.
+**Václav Moravec:** 140 miliard na investice. Vy teď otevíráte další téma. Pane profesore Havránku, zmiňoval jsem deficit v tom volebním roce, kdy se konají volby do poslanecké sněmovny o 22 miliard nižší než schodek letošní. Současná vláda se označuje za vládu rozpočtové odpovědnosti podle premiéra Fialy nezbytné snižování rozpočtu, když na letošní rok plánovaný schodek 252 miliardy.
 
 Loni byl 288,5 miliardy. Teď vidíme, ty nejvyšší schodky státního rozpočtu měla vláda premiéra Andreje Babiše v covidových letech 2020 a 2021 367, respektive 420 miliard korun. Je možné při víc než zhruba 2,5% růstu ekonomiky? Na němž je postaven ten státní rozpočet mluvit o vládě rozpočtové odpovědnosti, pokud bude schodek jenom o 22 miliard nižší než v roce letošní?
 
@@ -2937,7 +2937,9 @@ Existují odhady pro zavedená opatření, díky nimž si jako odbor, jako ředi
 
 **Tomáš Havránek:** Přesně tak. Podle odhadů, které máme pro Spojené státy, Británii a Austrálii, jsou úspory někde mezi jedním a třemi procenty rozpočtu. Což by u nás dělalo kolik?
 
-**Václav Moravec:** No, Marian Jurečka by…
+**Václav Moravec:** No, Marian Jurečka by byl spokojen, že by dostal na sociální služby, a Ivan Bartoš by měl sedm miliard.
+
+**Tomáš Havránek:** Kdybychom vzali střední odhad, tedy dvě procenta, je to 40 miliard úspor. To je reálně dosažitelné, aniž by to někomu ublížilo nebo moc vadilo.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
@@ -2969,7 +2971,9 @@ Ta data by se samozřejmě potom dala použít různě.
 
 **Tomáš Havránek:** Zkouším to v hlavě propočítat. Možná ano, ale zase by to asi do velké míry platili zaměstnanci, což úplně nechceme.
 
-Já bych začal tam, kde to nebolí. Proto vždycky říkám: majetek ČNB, který nebolí investovat trochu víc na výnos. Rozpočtový carry-over, který nikoho nebolí. Proč nezačít tam, kde nemusíte nikomu brát a nikoho vyhazovat?
+**Václav Moravec:** To je velká otázka, jak by vypadala daňová soustava, protože o tom má být ta debata.
+
+**Tomáš Havránek:** Já bych začal tam, kde to nebolí. Proto vždycky říkám: majetek ČNB, který nebolí investovat trochu víc na výnos. Rozpočtový carry-over, který nikoho nebolí. Proč nezačít tam, kde nemusíte nikomu brát a nikoho vyhazovat?
 
 A pokud to nebude stačit, můžeme se potom dostat k tomu, že budeme zvyšovat daně.
 
