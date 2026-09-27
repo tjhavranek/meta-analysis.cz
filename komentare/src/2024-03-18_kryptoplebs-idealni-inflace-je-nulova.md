@@ -376,7 +376,7 @@ Pivo. Oni znají pivo.
 
 **Moderátor:** Jo, tak to je skoro to jedno a to samé, že?
 
-**Tomáš Havránek:** No, to by taky nesouhlasila.
+**Tomáš Havránek:** To by taky nesouhlasila.
 
 **Moderátor:** Dobře, tak se omlouvám. Nejde, no.
 

@@ -172,7 +172,7 @@ Je to selhání obecně všech centrálních bank, většiny z nich, možná kro
 
 **Martin Veselovský:** Jak vy osobně vidíte nějaký výhled, co se inflace týče dál do dalších měsíců nebo minimálně do zbytku tohohle roku?
 
-**Tomáš Havránek:** Teď je to velmi těžké právě kvůli změně v centrální bance. Globální faktory to samozřejmě nějak neovlivní a i ty je těžké predikovat. Těch 90% inflace budeme vlastně asi dále dovážet. Ale záleží na kurzu měny.
+**Tomáš Havránek:** Teď je to velmi těžké právě kvůli změně v centrální bance. Globální faktory to samozřejmě nějak neovlivní a i ty je těžké predikovat. Těch 9 % inflace budeme vlastně asi dále dovážet. Ale záleží na kurzu měny.
 
 Opravdu, to je jediná věc, která může inflaci rychle ovlivnit. Ne že by hned úplně slezla na nulu, ale jako jediná ji může rychle ovlivnit. A záleží na Aleši Michlovi, jak se k tomu v dalších měsících postaví. A znovu, věřím tomu, že bude chtít, aby si ho historie pamatovala, když ne jako Rašína.
 
