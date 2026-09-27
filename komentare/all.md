@@ -7040,7 +7040,11 @@ A tohle je jedna z posledních možností, jak se před bankovní daní mohou za
 
 **Jan Bumba:** A teď tedy banky zažívají vysloveně příjemné období, protože na jedné straně hodně vydělávají, na druhé straně klientům nepouštějí skoro nic.
 
-**Tomáš Havránek:** Abych zase nebyl úplně kritický, ty sazby trochu zvyšují. Ale není to pět, šest procent. Respektive, řekněme, pět to je, ale ta sazba je vždycky omezená na nějaký objem. Nemůžete za tu sazbu 5% uložit celoživotní úspory, ale třeba sto tisíc, 200 tisíc.
+**Tomáš Havránek:** Abych zase nebyl úplně kritický, ty sazby trochu zvyšují.
+
+**Jan Bumba:** Ale není to pět, šest procent.
+
+**Tomáš Havránek:** Není. Respektive, řekněme, pět to je, ale ta sazba je vždycky omezená na nějaký objem. Nemůžete za tu sazbu 5% uložit celoživotní úspory, ale třeba sto tisíc, 200 tisíc.
 
 A i když tam lidé peníze přesouvají, pořád je ten objem velmi malý na to, aby nám to pomohlo s inflací.
 
