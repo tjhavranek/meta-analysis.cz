@@ -147,7 +147,11 @@ Tak já vlastně nevím, co je pro ten systém jako lepší, že jo.
 
 **Tomáš Havránek:** Ano, ale řekl jste jednu důležitou věc. Nevím, jaká je teď cena toho léku, jestli je v těch cifrách, které jste zmiňoval, ale kvůli konkurenci půjde rapidně dolů. Konkurence je to, co chceme, jen si maličko přihřeju vlastní ekonomickou polívčičku. Všude, kde máte konkurenci, máte nakonec něco, co funguje za rozumnou cenu, když tomu dáte dost času.
 
-Ano. Vyvinula to francouzská firma Sanofi. Tohle nebude jediný lék. Budou lepší léky, cena půjde rapidně dolů a téměř jistě brzy přijde situace, kdy se to vyplatí i čistě ekonomicky, čistě z hlediska cashflow pojišťoven.
+Firma, která to vyvinula…
+
+**Jan Hrušovský:** Sanofi, francouzská firma.
+
+**Tomáš Havránek:** Tohle nebude jediný lék. Budou lepší léky, cena půjde rapidně dolů a téměř jistě brzy přijde situace, kdy se to vyplatí i čistě ekonomicky, čistě z hlediska cashflow pojišťoven.
 
 I kdyby se to nevyplatilo, pojišťovny jsou veřejné, řekněme státní firmy, jejichž úkolem není maximalizovat zisk. Jsou tu z nějakého důvodu: aby fungovalo veřejné zdravotnictví. A nedovedu si představit situaci, kdy máte šanci velmi významně pomoci tisícům, ročně tisícům dětí, máte lék, který funguje, a nebudeme ho hradit.
 
