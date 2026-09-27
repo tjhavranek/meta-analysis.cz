@@ -390,9 +390,13 @@ Nečekám, že teď přijde guvernér a řekne: jo, zrušme inflaci. Proč jsi m
 
 **Tomáš Havránek:** No… V krátkosti: reakce nebyla v podstatě žádná. Reakce ale třeba byla, když jsme se bavili o investování devizových rezerv.
 
-A teď se bavíme o Mojmírovi. O Alešovi. O Alešovi. Tak Mojmír není guvernér.
+**Moderátor:** A teď se bavíme o Mojmírovi?
 
-Ten byl ale předtím, tak jsem teď nevěděl, o jakém období se bavíme. Jasně. Viceguvernér. Ne, když jsem byl u Mojmíra, tyto nápady jsem ještě ani neměl.
+**Tomáš Havránek:** Vůbec ne. O Alešovi.
+
+**Moderátor:** O Alešovi. Tak Mojmír není guvernér. Ten byl ale předtím, tak jsem teď nevěděl, o jakém období se bavíme.
+
+**Tomáš Havránek:** Jasně. Viceguvernér. Když jsem byl u Mojmíra, tyto nápady jsem ještě ani neměl.
 
 Když totiž v té bance pracuješ, jeden z efektů je, že opravdu nasákneš filozofií toho, jak to vnímají všichni ostatní. Je to takový groupthink, řekl bych, když to mám nazvat ošklivě, ale je to tak. Vlastně tě ani nenapadne, že by mohlo existovat něco jiného než dvouprocentní inflační cíl. Takhle o tom vůbec nepřemýšlíš.
 
