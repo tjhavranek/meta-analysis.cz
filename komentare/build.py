@@ -1228,7 +1228,13 @@ def write_index(items, key=None):
                            f'</p>\n')
 
     body = (f'    <div class="lede">\n      <h1>{esc(title)}</h1>\n'
-            f'      <p>{esc(HUB_LEDE if not key else desc)}</p>\n{counts}'
+            f'      <p>{esc(HUB_LEDE if not key else desc)}'
+            # The hub is where a first-time reader, often a journalist, lands without knowing
+            # the research exists; the footer's bare "meta-analysis.cz" undersold it. Hub only:
+            # item pages already carry the bio, the profile links and the JSON-LD identity.
+            + ('' if key else ' Odborné práce obou autorů jsou na '
+               '<a href="https://meta-analysis.cz/">meta-analysis.cz</a>.')
+            + f'</p>\n{counts}'
             + ('      <p class="ask-link"><a href="/komentare/ask/">Zeptejte se AI.</a>'
                ' Odpovídá podle textů Tomáše a Zuzany Havránkových na tomto webu a odkazuje na zdroje.</p>\n'
                if not key else '')
