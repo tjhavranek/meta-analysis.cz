@@ -56,7 +56,7 @@ Ale i těch 3,5% HDP: je to špatné, není to dobře, ale v kontextu Evropy jsm
 
 Horší je samozřejmě výhled na dlouhé období, a na tom záleží: dlouhodobý součet schodků, ne jeden rok.
 
-**Jiří Zatloukal:** Samozřejmě, ale ta situace se nezmění ani příští rok, ani přes příští rok. A poptávka voličů po zvyšování daní úsporných opatření vlastně tady není nikdy. Takže ten deficit bude dál růst. Za minulé vlády vyrostl státní dluh o zhruba bilion korun. Za téhle vlády vyroste, řekněme, 1,3 bilionu, přesně.
+**Jiří Zatloukal:** Samozřejmě, ale ta situace se nezmění ani příští rok, ani přespříští rok. A poptávka voličů po zvyšování daní úsporných opatření vlastně tady není nikdy. Takže ten deficit bude dál růst. Za minulé vlády vyrostl státní dluh o zhruba bilion korun. Za téhle vlády vyroste, řekněme, 1,3 bilionu, přesně.
 
 Moje otázka mířila tam, kde podle vás by mohla být ta stopka?
 
@@ -260,7 +260,7 @@ A pak si to musí obhájit, takže máte ústní obhajoby.
 
 **Jiří Zatloukal:** To je velmi důležitá část.
 
-**Tomáš Havránek:** Ty trvají dlouho. Jako jste minule griloval vy mě, já budu grilovat studenta a přesně vím, co ví a co neví. Práci si přečtu a poznám, jakou známku mu mám dát. Nemá tedy smysl to nějak zakazovat, tvářit se, že to neexistuje, nebo že to budete nějak regulovat. To nejde.
+**Tomáš Havránek:** Ty obhajoby trvají dlouho. Jako jste minule griloval vy mě, já budu grilovat studenta a přesně vím, co ví a co neví. Práci si přečtu a poznám, jakou známku mu mám dát. Nemá tedy smysl to nějak zakazovat, tvářit se, že to neexistuje, nebo že to budete nějak regulovat. To nejde.
 
 Ale vzít to jako něco, čím byla dřív kalkulačka nebo počítač. Samozřejmě je to něco mnohem víc, protože to dokáže dělat mnohem víc věcí, a i pro mě je velmi těžké udržet se na tepu doby a sledovat vývoj těch modelů, těch agentických nástrojů. Ale už dnes o sobě řeknu, že 90% úkonů, které jsem před pěti lety dělal, zvládne umělá inteligence lépe. Pořád zbývá těch 5%, které můžu dělat mnohem lépe.
 
@@ -605,7 +605,7 @@ Druhá věc je, že zdaleka nejsme jediná země, která má, nebo bude mít, fi
 
 Čím dál víc se přikláním k tomu, že tohle opravdu může mít hmatatelný dopad na růst, a tím i na výběr daní, produktivitu a fiskální situaci. Teď tedy máte dvě protichůdné tendence. Kolaps, naprostý kolaps porodnosti: za pár let v podstatě nebudou děti.
 
-Zároveň je tu ale potenciál možná exploze umělé inteligence, pokud nedojde k nějaké katastrofě. Naopak.
+Zároveň je tu ale potenciál možná exploze umělé inteligence, pokud nedojde k nějaké katastrofě.
 
 **Petra Jaroměřská:** Společnost tedy bude menší a produktivnější?
 
@@ -1223,7 +1223,7 @@ Najednou, když víte, že jednoho dne ta cukrovka prostě do toho života vstou
 
 **Tomáš Havránek:** Tuším, že jsem vyplňoval nějaké dotazníky ohledně duševního zdraví, a možná díky tomu, že jsem v nich nic moc neindikoval, ta nabídka asi nepřišla. Ale možná přišla. V Motole je to diabetologie a endokrinologie, říkám to správně?
 
-**Jan Hrušovský:** Ano, tyhle dvě oddělení jsou spojené.
+**Jan Hrušovský:** Ano, tahle dvě oddělení jsou spojená.
 
 **Tomáš Havránek:** Ano, dobře. Tohle je tedy jejich práce. A člověk by si některé věci měl buď vyřešit sám, anebo jít na správné oddělení, pokud ten problém má a sám ho vyřešit neumí. Takže bych úplně nechtěl zatěžovat kolegy z tohoto konkrétního oddělení ještě i věcmi ohledně psychologie.
 
@@ -3639,7 +3639,7 @@ Ještě poslední otázka k tomu zlatu. Setkáváš se stále s názory v rámci
 
 Můžeš se na to dívat několika způsoby, je několik přístupů. Hlavní přístup samozřejmě je, že není krytá ničím.
 
-V ekonomii dominuje přístup, že je krytá podpisem guvernéra. Tedy tím, jestli věříš guvernérovi, centrální bance, což teď evidentně asi úplně není, když koruna za poslední roky tak rapidně ztrácí hodnotu a teď klesá i její kurz vůči euru. Rozpočty centrální banky a státu jsou teď u nás oddělené zvykem, ale není to úplně uzákoněné.
+V ekonomii dominuje přístup, že je krytá podpisem guvernéra. Tedy tím, jestli věříš guvernérovi, centrální bance, což teď evidentně asi úplně není, když koruna za poslední roky tak rapidně ztrácí hodnotu a teď klesá i její kurz vůči euru. Rozpočty centrální banky a státu jsou teď u nás oddělené zvykově, ale úplně uzákoněné to není.
 
 Kdyby náhodou ČNB měla zisk, musí ho nakonec převést do státního rozpočtu. Ale kdybys to ze zákona, v ústavě, oddělil a řekl: tohle jsou aktiva, majetek národní banky, jakýkoliv zisk nebo ztráta patří jenom národní bance, nikdo si zisk nemůže brát a nikdo naopak nemůže kompenzovat ztrátu, pak platí, že peníze vydává centrální banka. Jsou to její pasiva (to je trochu účetnictví, ale jen maličko) a ta jsou kryta, tedy na druhé straně vyvážena aktivy, majetkem centrální banky. Když to máš oddělené, můžeš říct, že bankovky nebo elektronické peníze, které centrální banka vydává, jsou opravdu kryté jejím majetkem. A kdybys to vzal technicky, teď tam máš těch několik promile zlata, takže by mohly být trošku kryté zlatem, kdybys měl rozpočty, tedy bilance, úplně oddělené, což teď není, ale mohlo by být. Není to tak úplně daleko.
 
@@ -4353,7 +4353,7 @@ A teď je jen otázka, jak dlouho můžeme čekat, než se zruší. Ano, protož
 
 **Alice Němcová Tejkalová:** Děkuji moc. Já bych tě hrozně ráda poslouchala, povídala si s tebou o dalších výzkumech klidně déle, ale ten čas, který máme vždycky pro podcast de facto, tak už se naplnil, já ti přeju krásné Vánoce, tobě i celé rodině, ať se ti pořád tak dál daří, ať je pořád ta tvoje energie tak silná, nakažlivá.
 
-**Zuzana Havránková:** Moc děkuji, moc děkuji za pozvání.
+**Zuzana Havránková:** Moc děkuji za pozvání.
 
 **Alice Němcová Tejkalová:** A s vámi se loučím a těším se zase někdy na slyšenou.
 
@@ -4481,7 +4481,7 @@ A funguje to velmi, velmi dobře. Čili i jen trochu vykročit tímto směrem n�
 
 **Václav Moravec:** Pro mě jako pro laika: kdyby se pánové dohodli s guvernérem centrální banky, stát pak vrátí centrální bance ty peníze? Nebo jak to bude?
 
-**Tomáš Havránek:** Centrální banka, když vydělá peníze, je ze zákona musí převést do státního rozpočtu. Kdyby tedy bylo jasné, že 3 biliony budou dlouhodobě vydělávat, stát může počítat s tím, že každý rok dostane v průměru nějakých 100 miliard navíc oproti současnému stavu. A je už potom na něm, jestli to dá do dálnic, rychlovlaků, nebo třeba do zdravotnictví.
+**Tomáš Havránek:** Když centrální banka vydělá peníze, musí je ze zákona převést do státního rozpočtu. Kdyby tedy bylo jasné, že 3 biliony budou dlouhodobě vydělávat, stát by mohl počítat s tím, že každý rok dostane v průměru nějakých 100 miliard navíc oproti současnému stavu. A je už potom na něm, jestli to dá do dálnic, rychlovlaků, nebo třeba do zdravotnictví.
 
 **Václav Moravec:** No protože u toho státního fondu dopravní infrastruktury vidíme, že se ty odhady drží velmi nízko.
 
@@ -7048,7 +7048,7 @@ Znamená to, že úroková sazba na spořicím účtu je vyšší než inflace, 
 
 Tedy ne 100 tisíc nebo 200 tisíc, ale opravdu neomezené vklady za tuto sazbu. Banka pak ty peníze vezme a uloží si je u ČNB za 7%. Opravdu tedy není důvod, aby vám za 6% nenabízela neomezené spoření.
 
-**Jan Bumba:** No a může tedy centrální banka nějak donutit ty banky k tomu, aby zvýšili úroky na spořících účtech?
+**Jan Bumba:** No a může tedy centrální banka nějak donutit ty banky k tomu, aby zvýšily úroky na spořicích účtech?
 
 **Tomáš Havránek:** Může je velmi silně motivovat, protože je jejich regulátorem. Může jim život zjednodušit, nebo znepříjemnit. Zároveň může lobovat. Podívejte se, teď bankám hrozí bankovní daň, a to poměrně reálně a pravděpodobně.
 
@@ -8101,7 +8101,7 @@ Všechny ostatní centrální banky kolem začínají, jakmile inflace klesne k 
 
 Tohle je jasný krok, který by do budoucna rozhodně pomohl, protože základní problém našeho systému inflačního cílování je v tom, že nám dává nejistotu ohledně budoucí hodnoty peněz. Vůbec nevíme, jakou hodnotu bude mít koruna třeba za 20 let. A v takovém režimu je velmi těžké spořit na důchod nebo pro děti. Děti máte, jak jsem si o vás načetl na Wikipedii.
 
-Takže jim spoříme třeba na studia, na vysokou školu. Jenže spoření je v tomhle systému těžké, když vám nikdo negarantuje, jaká bude dlouhodobá hodnota peněz. Tohle by šlo zrušit nebo změnit jednoduše tak, že byste do budoucna opravovali svoje minulé chyby v cílování, pokaždé když se netrefíte.
+Takže jim spoříme třeba na studia, na vysokou školu. Jenže spoření je v tomhle systému těžké, když vám nikdo negarantuje, jaká bude dlouhodobá hodnota peněz. Tohle by šlo zrušit nebo změnit jednoduše tak, že byste do budoucna opravovali svoje minulé chyby v cílování, pokaždé, když se netrefíte.
 
 A tohle naše centrální banka bohužel nedělá.
 
@@ -8406,7 +8406,7 @@ Vy jste ve svých komentářích v minulých týdnech a měsících napsal, že 
 
 A fungovalo to velice dobře. Od té doby nebyl žádný průšvih. Ten přišel až teď, kdy inflace, zčásti z globálních, zčásti z lokálních příčin v jednotlivých zemích, stoupá tak silně, že to popírá původní mantru, že inflační očekávání jsou v ekonomice dobře ukotvená a že to funguje. Podle doktríny inflačního cílování se tohle nemělo nikdy stát.
 
-Tohle ukazuje, když už ne na selhání, tak na velké problémy toho frameworku, toho nastavení. A ukazuje to na potřebu zamyslet se nad tím, jestli je tohle opravdu to nejlepší, co jsme schopni pro lidi a pro ekonomiku vygenerovat. A jak jste zmiňoval, ten audit nebo revizi už provedly i ostatní centrální banky, například FED, ECB nebo Bank of Canada. Není tedy důvod, abychom se v situaci, kdy možná opravdu došlo k selhání současné politiky, neměli zamyslet nad tím, jestli bychom to měli dělat lépe.
+Tohle ukazuje, když už ne na selhání, tak na velké problémy toho frameworku, toho nastavení. A ukazuje to na potřebu zamyslet se nad tím, jestli je tohle opravdu to nejlepší, co jsme schopni pro lidi a pro ekonomiku vygenerovat. A jak jste zmiňoval, ten audit nebo revizi už provedly i ostatní centrální banky, například Fed, ECB nebo Bank of Canada. Není tedy důvod, abychom se v situaci, kdy možná opravdu došlo k selhání současné politiky, neměli zamyslet nad tím, jestli bychom to měli dělat lépe.
 
 **Nikita Poljakov:** A na co byste to zaměřil, pardon, na co byste to zaměřil, když teďko řekněme, že ta priorita, ten hlavní cíl je teda dvouprocentní inflace, řekněme, to je ten ideál. Co vy byste hlídal, kdybyste mohl nově?
 
@@ -8414,7 +8414,7 @@ Tohle ukazuje, když už ne na selhání, tak na velké problémy toho framework
 
 Když tedy letos bude průměrná inflace 8-10 %, což pravděpodobně bude, centrální banka už nebude chtít tohle nikdy opravit, aby se dostala zpátky dolů na průměr 2 %. Příští rok se bude znovu snažit o plus 2 %, což bude třeba 5-6 %, a tak dále. Z toho plyne, že člověk vůbec neví, jakou hodnotu budou mít jeho peníze za 10-20 let, ani za 5 let, protože tu garanci nemáte. To je tedy jedna věc: opravování předchozích chyb.
 
-Právě tohle FED změnil. Americká centrální banka to ve své revizi změnila.
+Právě tohle americká centrální banka, Fed, ve své revizi změnila.
 
 **Nikita Poljakov:** Cílí průměrnou inflaci za nějaké období, tuším.
 

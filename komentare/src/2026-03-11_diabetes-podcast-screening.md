@@ -271,7 +271,7 @@ Najednou, když víte, že jednoho dne ta cukrovka prostě do toho života vstou
 
 **Tomáš Havránek:** Tuším, že jsem vyplňoval nějaké dotazníky ohledně duševního zdraví, a možná díky tomu, že jsem v nich nic moc neindikoval, ta nabídka asi nepřišla. Ale možná přišla. V Motole je to diabetologie a endokrinologie, říkám to správně?
 
-**Jan Hrušovský:** Ano, tyhle dvě oddělení jsou spojené.
+**Jan Hrušovský:** Ano, tahle dvě oddělení jsou spojená.
 
 **Tomáš Havránek:** Ano, dobře. Tohle je tedy jejich práce. A člověk by si některé věci měl buď vyřešit sám, anebo jít na správné oddělení, pokud ten problém má a sám ho vyřešit neumí. Takže bych úplně nechtěl zatěžovat kolegy z tohoto konkrétního oddělení ještě i věcmi ohledně psychologie.
 

@@ -20,7 +20,7 @@ Vy jste ve svých komentářích v minulých týdnech a měsících napsal, že 
 
 A fungovalo to velice dobře. Od té doby nebyl žádný průšvih. Ten přišel až teď, kdy inflace, zčásti z globálních, zčásti z lokálních příčin v jednotlivých zemích, stoupá tak silně, že to popírá původní mantru, že inflační očekávání jsou v ekonomice dobře ukotvená a že to funguje. Podle doktríny inflačního cílování se tohle nemělo nikdy stát.
 
-Tohle ukazuje, když už ne na selhání, tak na velké problémy toho frameworku, toho nastavení. A ukazuje to na potřebu zamyslet se nad tím, jestli je tohle opravdu to nejlepší, co jsme schopni pro lidi a pro ekonomiku vygenerovat. A jak jste zmiňoval, ten audit nebo revizi už provedly i ostatní centrální banky, například FED, ECB nebo Bank of Canada. Není tedy důvod, abychom se v situaci, kdy možná opravdu došlo k selhání současné politiky, neměli zamyslet nad tím, jestli bychom to měli dělat lépe.
+Tohle ukazuje, když už ne na selhání, tak na velké problémy toho frameworku, toho nastavení. A ukazuje to na potřebu zamyslet se nad tím, jestli je tohle opravdu to nejlepší, co jsme schopni pro lidi a pro ekonomiku vygenerovat. A jak jste zmiňoval, ten audit nebo revizi už provedly i ostatní centrální banky, například Fed, ECB nebo Bank of Canada. Není tedy důvod, abychom se v situaci, kdy možná opravdu došlo k selhání současné politiky, neměli zamyslet nad tím, jestli bychom to měli dělat lépe.
 
 **Nikita Poljakov:** A na co byste to zaměřil, pardon, na co byste to zaměřil, když teďko řekněme, že ta priorita, ten hlavní cíl je teda dvouprocentní inflace, řekněme, to je ten ideál. Co vy byste hlídal, kdybyste mohl nově?
 
@@ -28,7 +28,7 @@ Tohle ukazuje, když už ne na selhání, tak na velké problémy toho framework
 
 Když tedy letos bude průměrná inflace 8-10 %, což pravděpodobně bude, centrální banka už nebude chtít tohle nikdy opravit, aby se dostala zpátky dolů na průměr 2 %. Příští rok se bude znovu snažit o plus 2 %, což bude třeba 5-6 %, a tak dále. Z toho plyne, že člověk vůbec neví, jakou hodnotu budou mít jeho peníze za 10-20 let, ani za 5 let, protože tu garanci nemáte. To je tedy jedna věc: opravování předchozích chyb.
 
-Právě tohle FED změnil. Americká centrální banka to ve své revizi změnila.
+Právě tohle americká centrální banka, Fed, ve své revizi změnila.
 
 **Nikita Poljakov:** Cílí průměrnou inflaci za nějaké období, tuším.
 

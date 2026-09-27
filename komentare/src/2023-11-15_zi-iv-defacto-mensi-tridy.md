@@ -157,6 +157,6 @@ A teď je jen otázka, jak dlouho můžeme čekat, než se zruší. Ano, protož
 
 **Alice Němcová Tejkalová:** Děkuji moc. Já bych tě hrozně ráda poslouchala, povídala si s tebou o dalších výzkumech klidně déle, ale ten čas, který máme vždycky pro podcast de facto, tak už se naplnil, já ti přeju krásné Vánoce, tobě i celé rodině, ať se ti pořád tak dál daří, ať je pořád ta tvoje energie tak silná, nakažlivá.
 
-**Zuzana Havránková:** Moc děkuji, moc děkuji za pozvání.
+**Zuzana Havránková:** Moc děkuji za pozvání.
 
 **Alice Němcová Tejkalová:** A s vámi se loučím a těším se zase někdy na slyšenou.

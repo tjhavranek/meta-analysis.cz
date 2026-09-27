@@ -128,7 +128,7 @@ Všechny ostatní centrální banky kolem začínají, jakmile inflace klesne k 
 
 Tohle je jasný krok, který by do budoucna rozhodně pomohl, protože základní problém našeho systému inflačního cílování je v tom, že nám dává nejistotu ohledně budoucí hodnoty peněz. Vůbec nevíme, jakou hodnotu bude mít koruna třeba za 20 let. A v takovém režimu je velmi těžké spořit na důchod nebo pro děti. Děti máte, jak jsem si o vás načetl na Wikipedii.
 
-Takže jim spoříme třeba na studia, na vysokou školu. Jenže spoření je v tomhle systému těžké, když vám nikdo negarantuje, jaká bude dlouhodobá hodnota peněz. Tohle by šlo zrušit nebo změnit jednoduše tak, že byste do budoucna opravovali svoje minulé chyby v cílování, pokaždé když se netrefíte.
+Takže jim spoříme třeba na studia, na vysokou školu. Jenže spoření je v tomhle systému těžké, když vám nikdo negarantuje, jaká bude dlouhodobá hodnota peněz. Tohle by šlo zrušit nebo změnit jednoduše tak, že byste do budoucna opravovali svoje minulé chyby v cílování, pokaždé, když se netrefíte.
 
 A tohle naše centrální banka bohužel nedělá.
 

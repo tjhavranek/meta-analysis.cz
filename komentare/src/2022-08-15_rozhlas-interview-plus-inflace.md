@@ -105,7 +105,7 @@ Znamená to, že úroková sazba na spořicím účtu je vyšší než inflace, 
 
 Tedy ne 100 tisíc nebo 200 tisíc, ale opravdu neomezené vklady za tuto sazbu. Banka pak ty peníze vezme a uloží si je u ČNB za 7%. Opravdu tedy není důvod, aby vám za 6% nenabízela neomezené spoření.
 
-**Jan Bumba:** No a může tedy centrální banka nějak donutit ty banky k tomu, aby zvýšili úroky na spořících účtech?
+**Jan Bumba:** No a může tedy centrální banka nějak donutit ty banky k tomu, aby zvýšily úroky na spořicích účtech?
 
 **Tomáš Havránek:** Může je velmi silně motivovat, protože je jejich regulátorem. Může jim život zjednodušit, nebo znepříjemnit. Zároveň může lobovat. Podívejte se, teď bankám hrozí bankovní daň, a to poměrně reálně a pravděpodobně.
 

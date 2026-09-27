@@ -32,7 +32,7 @@ Ale i těch 3,5% HDP: je to špatné, není to dobře, ale v kontextu Evropy jsm
 
 Horší je samozřejmě výhled na dlouhé období, a na tom záleží: dlouhodobý součet schodků, ne jeden rok.
 
-**Jiří Zatloukal:** Samozřejmě, ale ta situace se nezmění ani příští rok, ani přes příští rok. A poptávka voličů po zvyšování daní úsporných opatření vlastně tady není nikdy. Takže ten deficit bude dál růst. Za minulé vlády vyrostl státní dluh o zhruba bilion korun. Za téhle vlády vyroste, řekněme, 1,3 bilionu, přesně.
+**Jiří Zatloukal:** Samozřejmě, ale ta situace se nezmění ani příští rok, ani přespříští rok. A poptávka voličů po zvyšování daní úsporných opatření vlastně tady není nikdy. Takže ten deficit bude dál růst. Za minulé vlády vyrostl státní dluh o zhruba bilion korun. Za téhle vlády vyroste, řekněme, 1,3 bilionu, přesně.
 
 Moje otázka mířila tam, kde podle vás by mohla být ta stopka?
 
@@ -236,7 +236,7 @@ A pak si to musí obhájit, takže máte ústní obhajoby.
 
 **Jiří Zatloukal:** To je velmi důležitá část.
 
-**Tomáš Havránek:** Ty trvají dlouho. Jako jste minule griloval vy mě, já budu grilovat studenta a přesně vím, co ví a co neví. Práci si přečtu a poznám, jakou známku mu mám dát. Nemá tedy smysl to nějak zakazovat, tvářit se, že to neexistuje, nebo že to budete nějak regulovat. To nejde.
+**Tomáš Havránek:** Ty obhajoby trvají dlouho. Jako jste minule griloval vy mě, já budu grilovat studenta a přesně vím, co ví a co neví. Práci si přečtu a poznám, jakou známku mu mám dát. Nemá tedy smysl to nějak zakazovat, tvářit se, že to neexistuje, nebo že to budete nějak regulovat. To nejde.
 
 Ale vzít to jako něco, čím byla dřív kalkulačka nebo počítač. Samozřejmě je to něco mnohem víc, protože to dokáže dělat mnohem víc věcí, a i pro mě je velmi těžké udržet se na tepu doby a sledovat vývoj těch modelů, těch agentických nástrojů. Ale už dnes o sobě řeknu, že 90% úkonů, které jsem před pěti lety dělal, zvládne umělá inteligence lépe. Pořád zbývá těch 5%, které můžu dělat mnohem lépe.
 

@@ -203,7 +203,7 @@ Druhá věc je, že zdaleka nejsme jediná země, která má, nebo bude mít, fi
 
 Čím dál víc se přikláním k tomu, že tohle opravdu může mít hmatatelný dopad na růst, a tím i na výběr daní, produktivitu a fiskální situaci. Teď tedy máte dvě protichůdné tendence. Kolaps, naprostý kolaps porodnosti: za pár let v podstatě nebudou děti.
 
-Zároveň je tu ale potenciál možná exploze umělé inteligence, pokud nedojde k nějaké katastrofě. Naopak.
+Zároveň je tu ale potenciál možná exploze umělé inteligence, pokud nedojde k nějaké katastrofě.
 
 **Petra Jaroměřská:** Společnost tedy bude menší a produktivnější?
 

@@ -65,7 +65,7 @@ A funguje to velmi, velmi dobře. Čili i jen trochu vykročit tímto směrem n�
 
 **Václav Moravec:** Pro mě jako pro laika: kdyby se pánové dohodli s guvernérem centrální banky, stát pak vrátí centrální bance ty peníze? Nebo jak to bude?
 
-**Tomáš Havránek:** Centrální banka, když vydělá peníze, je ze zákona musí převést do státního rozpočtu. Kdyby tedy bylo jasné, že 3 biliony budou dlouhodobě vydělávat, stát může počítat s tím, že každý rok dostane v průměru nějakých 100 miliard navíc oproti současnému stavu. A je už potom na něm, jestli to dá do dálnic, rychlovlaků, nebo třeba do zdravotnictví.
+**Tomáš Havránek:** Když centrální banka vydělá peníze, musí je ze zákona převést do státního rozpočtu. Kdyby tedy bylo jasné, že 3 biliony budou dlouhodobě vydělávat, stát by mohl počítat s tím, že každý rok dostane v průměru nějakých 100 miliard navíc oproti současnému stavu. A je už potom na něm, jestli to dá do dálnic, rychlovlaků, nebo třeba do zdravotnictví.
 
 **Václav Moravec:** No protože u toho státního fondu dopravní infrastruktury vidíme, že se ty odhady drží velmi nízko.
 
