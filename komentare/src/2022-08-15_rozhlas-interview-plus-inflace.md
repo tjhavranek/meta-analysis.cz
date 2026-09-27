@@ -105,7 +105,7 @@ Znamená to, že úroková sazba na spořicím účtu je vyšší než inflace, 
 
 Tedy ne 100 tisíc nebo 200 tisíc, ale opravdu neomezené vklady za tuto sazbu. Banka pak ty peníze vezme a uloží si je u ČNB za 7%. Opravdu tedy není důvod, aby vám za 6% nenabízela neomezené spoření.
 
-**Jan Bumba:** No a může tedy centrální banka nějak donutit ty banky k tomu, aby zvýšili úroky…
+**Jan Bumba:** No a může tedy centrální banka nějak donutit ty banky k tomu, aby zvýšili úroky na spořících účtech?
 
 **Tomáš Havránek:** Může je velmi silně motivovat, protože je jejich regulátorem. Může jim život zjednodušit, nebo znepříjemnit. Zároveň může lobovat. Podívejte se, teď bankám hrozí bankovní daň, a to poměrně reálně a pravděpodobně.
 
@@ -131,7 +131,7 @@ A žádná z nich, ani jedna z těch studií, neukazovala, že by zdravá inflac
 
 **Tomáš Havránek:** K takové situaci dojít může, a to je ten návrh: aby peníze tu hodnotu neztrácely.
 
-**Jan Bumba:** Ale ta představa, že teď, dejme tomu, budeme mít za rok třeba 17% inflaci, peníze ztratí, těch 17% na hodnotě, že by ji zase získali za čas,
+**Jan Bumba:** Ale ta představa, že teď, dejme tomu, budeme mít za rok třeba 17% inflaci, peníze ztratí, těch 17% na hodnotě, že by ji zase získali za čas, tak to se už nikdy nestane?
 
 **Tomáš Havránek:** Když dovolíte, aby inflace takhle vystřelila, je opravdu velice, velice nákladné srazit ji zpátky dolů. Vezměte si, že máte třeba hypotéku, kterou jste si vzal teď, a v příštím roce bychom se snažili o deflaci 17%. To nejde. Šlo by to možná dlouhodobě, třeba během deseti let pomaličku inflaci rozpouštět. Hlavní ale je, že pokud lidem opravdu garantujete cenovou stabilitu, stabilitu průměrného nákupu, průměrného zboží a služeb v ekonomice, na dlouhou dobu, nepodlehli by inflační mánii, které jsme tady letos, vlastně už loni, podlehli všichni, včetně mě. I já teď utrácím víc, než jsem utrácel dřív. Vidíme totiž, že Národní banka bohužel situaci absolutně nemá pod kontrolou a negarantuje nám nic. Švýcaři to mají jinak, jak jsme zmiňovali. Cenovou stabilitu de facto mají, důvěra lidí v národní banku je tam úplně jiná a vidíte, že i přes současnou situaci je inflace pořád jen 3%. Klíčovým prvkem k tomu, že se inflaci opravdu daří nějak krotit, je tedy psychologie, důvěra lidí v měnový systém, který je tam jiný než u nás: necílí se tam 2%, ale nevadí jim třeba nulová inflace.
 

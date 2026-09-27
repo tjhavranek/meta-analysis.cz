@@ -25,7 +25,7 @@ Jaké to je?
 
 **Zuzana Havránková:** To je pravda, slavím narozeniny na Silvestra. Je to radost a zároveň je to vlastně trochu depresivní. Radost z toho, že se lidé v ten den těší a velice intenzivně očekávají další den, a to je právě ta deprese: že se těší, až to skončí. A zároveň mám pocit, že jsem na další rok vždycky o dva roky starší. Takže asi tak.
 
-**Alice Němcová Tejkalová:** Takže se vůbec nedivím, že se cítíš každý rok o dva roky starší. Nicméně, kdyby si měla říct, protože teď se i celá řada studentů rozhoduje středních škol, kam potom půjde, proč jsi vybrat IES, proč jsi ty vybrala IES a proč jsi tady zůstala?
+**Alice Němcová Tejkalová:** Podle toho, co jsi za sebou dokázala, podle těch ocenění, je to určitě na dvojí život, takže se vůbec nedivím, že se cítíš každý rok o dva roky starší. Nicméně, kdyby si měla říct, protože teď se i celá řada studentů rozhoduje středních škol, kam potom půjde, proč jsi vybrat IES, proč jsi ty vybrala IES a proč jsi tady zůstala?
 
 **Zuzana Havránková:** IES mě samozřejmě zaujalo z několika důvodů. Jedním je, že je hodně zaměřené na kvantitativní matematickou analýzu, a myslím, že to je takový nosný prodejní argument IES. Když si studenti vybírají školy, jestli chtějí na nějakou jinou ekonomickou školu, nebo na IES, často se rozhodují podle toho, jestli chtějí management a využít své soft skills, nebo spíše analytické myšlení. A to se mi na tom velmi líbí.
 
@@ -77,7 +77,7 @@ Jsme tedy selektivní ohledně toho, co publikujeme. A pokud mám takový aprior
 
 Většina výzkumníků pak pozitivní výsledky nereportuje, ale reportuje velké negativní výsledky, které přitom můžou být v tomhle případě špatné z úplně stejného důvodu: role náhody, nějaký bias, špatný model a tak dále.
 
-**Alice Němcová Tejkalová:** Dokážu si to představit i u mnohem méně kontroverznějších témat, právě než je kouření, koneckonců ten tlak na to, aby ty články, které jsou publikovány v časopisech, které mají určité zaměření, tak také máme vlastně evidovaný i tady na našem institutu komunikačních studií a žurnalistiky. Bavili jsme se o tom s kolegy opakovaně, že potřeba pak vybírat ten časopis, který řekněme otevřenější k tomu, že věci mohou být různě. Mě by zajímalo, jak se pak výzkumníci tváří na ty výsledky právě té metaanalýzy, když se ukáže, že tam vlastně nějaký ten systémový sklon je.
+**Alice Němcová Tejkalová:** Dokážu si to představit i u mnohem méně kontroverznějších témat, právě než je kouření, koneckonců ten tlak na to, aby ty články, které jsou publikovány v časopisech, které mají určité zaměření, tak také máme vlastně evidovaný i tady na našem institutu komunikačních studií a žurnalistiky. Bavili jsme se o tom s kolegy opakovaně, že je potřeba pak vybírat ten časopis, který je řekněme otevřenější k tomu, že věci mohou být různě. Mě by zajímalo, jak se pak výzkumníci tváří na ty výsledky právě té metaanalýzy, když se ukáže, že tam vlastně nějaký ten systémový sklon je.
 
 **Zuzana Havránková:** Jasně, tohle není problém jednotlivých výzkumníků. Není to tak, že bychom tvrdili, že někdo podvádí nebo schválně něco zamlčuje. O tom to vůbec není. Naším úkolem jako metaanalytiků je přijít na to, jestli tam nějaký problém je, a pak ho opravit.
 
@@ -89,7 +89,7 @@ A dokážeme to určit na základě toho, jak vypadá statistický vzorek, a na 
 
 Metaanalytici nejsou úplně populární. Díváš se na něčí celoživotní práci a v podstatě ho nevědomky kritizuješ, respektive spíše poukazuješ na to, že v celé té literatuře je něco špatně: něco se třeba dělá dobře a něco se dělá lépe. A to, co se dělá jinak než lépe, je tím pádem taková nepřímá kritika.
 
-**Alice Němcová Tejkalová:** Vy jste se věnovali celé řadě různých témat. Stojí za to určitě zmínit, že ty výzkumně velmi často spolupracuješ se svým mužem, Tomášem Havránkem, nejen s ním, i s dalšími kolegy. Máš takové poměrně stabilní výzkumné týmy, jak jsem si měla možnost všimnout i u tvých publikací. Věnovali jste se například dopadu velikosti tříd na výsledky žáků.
+**Alice Němcová Tejkalová:** Vy jste se věnovali celé řadě různých témat. Stojí za to určitě zmínit, že ty výzkumně velmi často spolupracuješ se svým mužem, Tomášem Havránkem, nejen s ním, i s dalšími kolegy. Máš takové poměrně stabilní výzkumné týmy, jak jsem si měla možnost všimnout i u tvých publikací. Věnovali jste se například dopadu velikosti tříd na výsledky žáků. Na co jste přišli?
 
 **Zuzana Havránková:** Tenhle efekt je jednou z takových intuitivních věcí, které nějak vnímá každý člověk a každý rodič, jako třeba já nebo ty. Intuice nám říká, že pro děti je to lepší v menších třídách: dítě má od učitele víc pozornosti, učitel má víc času na dítě a větší klid, aby mohl něco dělat. Z literatury, kterou jsme destilovali, nám ale vyšlo, že ten efekt je nulový.
 
@@ -119,7 +119,7 @@ Průměr. To znamená, že jsou třídy, které mají patnáct dětí, a třídy
 
 Nebo nemusíš celých těch, kolik to je, asi 25 % použít na navýšení platů učitelů. Můžeš to použít i na nepedagogické pracovníky.
 
-**Alice Němcová Tejkalová:** Ne, ty reaguješ na to, jak se tvářím, protože já přemýšlím nad tím, že bydlíme v Praze. Moje dcery vlastně chodí od začátku do třídy, kde je mezi sedmi a dvaceti a devíti a dvaceti. Říkám, to je nádhera, že v nějakých školách je devět a dvacet dětí.
+**Alice Němcová Tejkalová:** Ne, ty reaguješ na to, jak se tvářím, protože já přemýšlím nad tím, že bydlíme v Praze. Moje dcery vlastně chodí od začátku do třídy, kde je mezi sedmi a dvaceti a devíti a dvaceti. Říkám, to je nádhera, že v nějakých školách je devatenáct, dvacet dětí.
 
 **Zuzana Havránková:** Nebo patnáct. Protože tohle je průměr.
 

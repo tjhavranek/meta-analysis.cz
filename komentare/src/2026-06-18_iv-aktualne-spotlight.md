@@ -43,7 +43,11 @@ Nejnižší odhady, které jsem viděl, byly kolem 13-14 miliard. Když to poč�
 
 **Tomáš Havránek:** Dá se na ně spoléhat tak, jak se dá spoléhat na jakýkoliv sofistikovaný výpočet. Takže ano, těm číslům docela věřím. Abych to řekl jasně: věřím tomu, že dopad EET na výběr daní je větší než 13 miliard, bude to v řádu nízkých desítek miliard.
 
-**Petra Jaroměřská:** Ano. Vybírá stát tedy dostatečně daně, vy jste v minulosti to kritizoval, tak jaká je současnost?
+**Petra Jaroměřská:** Zrušit EET byla podle vás chyba?
+
+**Tomáš Havránek:** Ano.
+
+**Petra Jaroměřská:** Vybírá stát tedy dostatečně daně, vy jste v minulosti to kritizoval, tak jaká je současnost?
 
 **Tomáš Havránek:** Současnost je taková, že po zavedení EET bychom, zdá se mi, mohli říct, že stát bude vybírat daně relativně efektivně. Já osobně bych fiskální situaci státního rozpočtu řešil ještě trošku jinak. EET je věc mírně kontroverzní, ale ne zas tak moc. Myslím, že za něj bychom měli vládu pochválit, když chceme mít veřejné finance stabilizované.
 
@@ -81,7 +85,7 @@ Když máte peníze, nenecháte je de facto na běžném účtu, zjednodušuji t
 
 **Petra Jaroměřská:** Já se vás jenom zeptám, v jakém horizontu, když jsme u té centrální banky, která by mohla po té, co uhradí ztrátu, že oni musí uhradit ztrátu, musí vytvořit nějaké rezervní fondy a pak se musí dohodnout, jaká část toho zisku by mohla jít do státního rozpočtu. Tak časově třeba za jak dlouho by mohla centrální banka přispět něco do státního rozpočtu?
 
-**Tomáš Havránek:** Za jak dlouho… Důležité je, že pokud to udělá, ať už to bude trvat pět nebo deset let, máte téměř jistotu, že pokud se svět nezhroutí a bude fungovat podobně jako posledních pár set let, budete opravdu mít ročně těch 100-200 miliard korun navíc. Napořád. To je ta důležitá věc.
+**Tomáš Havránek:** Mně je celkem jedno, za jak dlouho. Důležité je, že pokud to udělá, ať už to bude trvat pět nebo deset let, máte téměř jistotu, že pokud se svět nezhroutí a bude fungovat podobně jako posledních pár set let, budete opravdu mít ročně těch 100-200 miliard korun navíc. Napořád. To je ta důležitá věc.
 
 Jestli to bude za pět, nebo za deset let, je teď asi důležité pro pana premiéra nebo pro paní ministryni, pro mě ani tak ne. Mně jde o dlouhodobý efekt, státní finance jsou dlouhodobá věc. Když to zjednoduším, je úplně jedno, jaký je deficit letos. Zajímá nás kumulovaný součet deficitů diskontovaný úrokovou sazbou.
 
@@ -145,7 +149,7 @@ Výsledkem je diktatura jednoho názoru a tektonické změny při výměně guve
 
 **Tomáš Havránek:** To zní docela tvrdě, asi jsem to opravdu napsal. Kritizuje se mi to dobře, když nemám tu odpovědnost. Samozřejmě, jsem profesor, to bych měl asi říct na rovinu.
 
-**Petra Jaroměřská:** …když je systém toho jmenování stále vlastně stejný?
+**Petra Jaroměřská:** Změní se to podle vás někdy, když je systém toho jmenování stále vlastně stejný?
 
 **Tomáš Havránek:** Přijde mi trochu zábavné, že, řekněme, poradci současného pana prezidenta, kterého si velmi vážím, tenhle systém před volbami kritizovali. To, že vedení bankovní rady vybírá sám prezident bez schválení třeba Senátem, je mezinárodně dost nestandardní. Není to úplně výjimečná věc, ale je to nestandardní a rozhodně to pak vede k některým, řekněme, idiosynkratickým volbám. Jakmile jste ale u moci a rozhodujete o tom, najednou se vám samozřejmě líbí, že to můžete dělat sami.
 
@@ -179,7 +183,7 @@ Neberete peníze tam, kde jsou potřeba. Odstřihnete něco, u čeho by i pro ty
 
 A kdyby EET udělalo 30 miliard, byla byste už na dvou třetinách rozpočtového schodku. A kromě EET ty dvě další opatření nikoho moc nebolí a přinesou hodně peněz.
 
-**Petra Jaroměřská:** Jestli tomu rozumím správně, tak vy tady kritizujete nějaké bezhlavé utrácení ke konci roku jednotlivých rozpočtových kapitola. Opravdu je to 40 miliard?
+**Petra Jaroměřská:** Jestli tomu rozumím správně, tak vy tady kritizujete nějaké bezhlavé utrácení ke konci roku jednotlivých rozpočtových kapitola. Opravdu je to 40 miliard, z čeho ta čísla vycházejí?
 
 **Tomáš Havránek:** Ty dvě procenta čerpám, tuším, z článku z roku 2018. Dá se to poměrně komplikovaně ekonometricky odhadnout a těch odhadů je i několik. A abych možná řekl: dobře, nebavme se o konkrétním čísle, ale vezměme to celkově a zamysleme se nad tím, jak to zavést tak, aby to fungovalo, což je možná třeba úkol pro Národní rozpočtovou radu nebo pro vládu. Něco podobného jsme tu měli, zaváděl to tuším pan Kalousek po velké krizi, to NNV, nároky z nerealizovaných výdajů. Pak to nabobtnalo, ale problém je, že u nás nemáte garantované, že když to převedete, ty peníze tam budou a že vám šéf rozpočet nesníží, takže to moc nefungovalo. Samozřejmě to říkám tak, aby to bylo pochopitelné, ale rozhodně je to něco, kde se dají ušetřit desítky miliard korun.
 
@@ -213,7 +217,7 @@ Podle mě je bohužel mnohem pravděpodobnější tento scénář: pokud tu nebu
 
 **Petra Jaroměřská:** Ale je to krátkodobé řešení. Dlouhodobě se to udržet přeci nedá.
 
-**Tomáš Havránek:** …teď si mít peníze neomezeně, což stát může. Já svoji hypotéku nevyřeším jinak, než že ty peníze splatím ze svého platu. Ale když se zadlužím jako stát, ovládám hodnotu měny, ve které si půjčuji. Když si tedy půjčuji v korunách, jsem Česká republika a nemám euro, můžu korun vytvořit, kolik chci. Neříkám, že je to dobrá věc, ale můžete to udělat.
+**Tomáš Havránek:** Když můžete tisknout peníze neomezeně, což stát může. Já svoji hypotéku nevyřeším jinak, než že ty peníze splatím ze svého platu. Ale když se zadlužím jako stát, ovládám hodnotu měny, ve které si půjčuji. Když si tedy půjčuji v korunách, jsem Česká republika a nemám euro, můžu korun vytvořit, kolik chci. Neříkám, že je to dobrá věc, ale můžete to udělat.
 
 A i když vám v centrální bance, ať už je to Aleš Michl, nebo Zdeněk Tůma, řeknou: my jsme nezávislí a tohle nikdy dělat nebudeme, tak v situaci, kdy by státní rozpočet stál před naprostým krachem a hrozil reálný bankrot země, ty peníze natisknou. Proč? Protože jsou také odpovědní za finanční stabilitu. Neříkám, že je to správná věc.
 

@@ -25,7 +25,7 @@ Takže takhle to bylo, přes paní doktorku.
 
 **Jan Hrušovský:** Takže jste do toho šli z takového trošku praktického hlediska vlastně, jako ne kvůli tý cukrovce, ale vlastně trošku ze zájmu z té svý práce, ne?
 
-**Tomáš Havránek:** Částečně ano, chápete to správně. Je to výzkum: jednak to má pomoci dětem a rodičům, ale zároveň je to výzkumný projekt. A my máme výzkum rádi, takže jsme ho chtěli trochu podpořit a ujistit se, jestli je všechno v pořádku. Ukázalo se, že skoro.
+**Tomáš Havránek:** Částečně ano, chápete to správně. Je to výzkum: jednak to má pomoci dětem a rodičům, ale zároveň je to výzkumný projekt. A my máme výzkum rádi, takže jsme ho chtěli trochu podpořit a ujistit se, jestli je všechno v pořádku. Ukázalo se, že skoro. U tří ze čtyř dětí.
 
 **Jan Hrušovský:** No, k tomu se ještě dostaneme možná, ale mě ještě zajímá ta motivace, co vlastně byla ta hlavní motivace, jako jak pomoct tomu výzkumu? Nebo bylo to i v tom třeba nějakým způsobem nějaká lehká zadní motivace v tom, že si řeknete, OK, chceme vidět, jestli jako můžeme být v klidu, že vlastně cukrovka do našeho života nebo do života našich dětí jako nevstoupí?
 
@@ -61,7 +61,7 @@ Postupně přicházely negativní výsledky: Kristínka je negativní, Daník je
 
 **Jan Hrušovský:** Já ta čísla taky úplně neznám, ale to fakt, teď bych jako kecal a vím, že jsme to s Bárou řešili a i v tom jsme udělali drobnou chybu, že jsme tam řekli ty čísla trošku jinak. Takže vím, že taky jako je neznám z hlavy, ale máte pravdu v tom, že to procento je fakt jako mizivý toho, u kterých to vyjde.
 
-**Tomáš Havránek:** Určitě to není v procentech. I proto, když mi o tom řekla manželka, která na projekt Betty narazila u paní doktorky, jsem to velmi rychle pustil z hlavy. Dobře, necháme děti otestovat, ale samozřejmě nečekáte, že by to vyšlo pozitivně. Takže ani neřešíte, jak dlouho testování trvá nebo jaká je prodleva mezi testem a výsledky.
+**Tomáš Havránek:** Bude to v promilích, určitě to není v procentech. I proto, když mi o tom řekla manželka, která na projekt Betty narazila u paní doktorky, jsem to velmi rychle pustil z hlavy. Dobře, necháme děti otestovat, ale samozřejmě nečekáte, že by to vyšlo pozitivně. Takže ani neřešíte, jak dlouho testování trvá nebo jaká je prodleva mezi testem a výsledky.
 
 A když potom chodí negativní výsledky, jste taky rádi, ale vlastně to nijak neřešíte, dokud vám nevyskočí ten pozitivní.
 
@@ -137,7 +137,7 @@ Jenomže, když mu to dám, tak vlastně jako snížím nějaký komplikace, že
 
 Tak já vlastně nevím, co je pro ten systém jako lepší, že jo.
 
-**Tomáš Havránek:** To nás napadlo až teď. Nicméně se mi vaše uvažování velmi líbí, uvažujete jako ekonom, takže…
+**Tomáš Havránek:** To samozřejmě tady na místě nespočítám, to nás napadlo až teď. Nicméně se mi vaše uvažování velmi líbí, uvažujete jako ekonom, takže…
 
 **Jan Hrušovský:** Takhle, já bych byl za tu stejnou cestu jako vy, ale prostě jak některýma věcma se snažím jako přemýšlet i z té druhé strany, tak jako prostě někdy to takzvané overthinkuju.
 
@@ -217,7 +217,7 @@ Je to tak: v prvním stadiu diabetu je času dost a člověk má v životě spou
 
 A převzít si z toho něco, to je jako strašný. Protože jsou ve vás emoce, tak je to nespravedlivý, strašný a tak dále, co se teď bude dít. A do toho vám ještě do vás valej informace, jak musíte jíst, tak to musíte změnit a tak dále. Takže mi vlastně přijde ten postupný dávkování těch věcí takový jako příjemný, hezký, že z toho nemusíte mít jako žádný strach, nic takovýho. Tak vlastně jako si spíš říkám, jestli vy sám už nejdete trošku za roh. Jestli si některé věci ve volném čase jako nevyhledáváte. Nebo jestli se neptáte tý sestřenice.
 
-**Tomáš Havránek:** Zase, já s tím teď nemůžu nic udělat. Když jsem si znovu připomněl lék teplizumab, hned jsem se ptal, jaké jsou pro něj podmínky. To je něco, co má smysl řešit, protože by to mohlo pomoci. Samozřejmě vím, že v Motole to hlídají, takže jsem se možná ptát nemusel, ale komplikace jsou věci, které teď nemůžu nijak ovlivnit, nemůžu s tím nic udělat, tak proč bych je řešil?
+**Tomáš Havránek:** Ani ne. Zase, já s tím teď nemůžu nic udělat. Když jsem si znovu připomněl lék teplizumab, hned jsem se ptal, jaké jsou pro něj podmínky. To je něco, co má smysl řešit, protože by to mohlo pomoci. Samozřejmě vím, že v Motole to hlídají, takže jsem se možná ptát nemusel, ale komplikace jsou věci, které teď nemůžu nijak ovlivnit, nemůžu s tím nic udělat, tak proč bych je řešil?
 
 **Jan Hrušovský:** Jasně, tomu rozumím. Další věc je ta, jestli se nějak proměnil váš pohled na vašeho syna, a teďka myslím třeba z hlediska té starosti, jo, o něj, že najednou teďkon začínáte víc ho třeba pozorovat, sledovat, odehrává se tam nějaká takováhle změna?
 
@@ -237,7 +237,7 @@ To bylo dost kruté, protože ve středověku bylo zvykem, že jste měli třeba
 
 Ale je to jedna z věcí, nebude to jen diabetes. Těch problémů bude čím dál víc, třeba u našich vnoučat víc než u našich dětí. Musíme se s tím nějak srovnat, a díky bohu za moderní medicínu, která to umožňuje. Má to pak i implikace pro něco jako genové úpravy u dětí, respektive ještě u embryí, protože za pár set let se něčemu takovému asi nevyhnete. Akumulace chyb v genomu bude taková, že se dítě narodí a bude mít hned třeba deset různých vrozených vad. Diabetes plus nějaké další problémy. Už dnes je málo dětí, které nemají žádnou civilizační chorobu, a není to úplně tím, jak žijeme, ale nedostatkem evoluce, kterou vlastně nechceme, protože je velmi krutá.
 
-**Jan Hrušovský:** Ano, je to tak vlastně, jako přemýšlím, jak na to navázat, ale bylo to hezky popsaný a vlastně ještě jsem si říkal, jestli víte, jaká je hypotéza, jedna z těch hypotéz, proč se u dětí rozvíjí cukrovka prvního typu. Vlastně psalo v souvislosti s tím, když se řešilo, že teplizumab podávají v Motole těm dětem. Tak četl jste o tom, nebo hledal jste si něco jako jo?
+**Jan Hrušovský:** Ano, je to tak vlastně, jako přemýšlím, jak na to navázat, ale bylo to hezky popsaný a vlastně ještě jsem si říkal, jestli víte, jaká je hypotéza, jedna z těch hypotéz, proč se u dětí rozvíjí cukrovka prvního typu. Zrovna poměrně nedávno se o tom vlastně psalo v souvislosti s tím, když se řešilo, že teplizumab podávají v Motole těm dětem. Tak četl jste o tom, nebo hledal jste si něco jako jo?
 
 **Tomáš Havránek:** Přiznám se, že ne.
 
@@ -261,9 +261,11 @@ Najednou, když víte, že jednoho dne ta cukrovka prostě do toho života vstou
 
 **Jan Hrušovský:** Mě to ještě v souvislosti s tím napadá, jestli třeba z Motola se ozvali s tím, že by vám nebo vašemu synovi poskytli nějakou pomoc v oblasti duševního zdraví, jestli tam něco takového přišlo, že si sami uvědomují, že to může být pro ty rodiny složitý, velký zásah do jejich života, by poskytli vlastně i takovou pomocnou ruku v tom, jak tu situaci zvládat lépe.
 
-**Tomáš Havránek:** Tuším, že jsem vyplňoval nějaké dotazníky ohledně duševního zdraví, a možná díky tomu, že jsem v nich nic moc neindikoval, ta nabídka asi nepřišla. Ale možná přišla. V Motole je to diabetologie, endokrinologie… ne, promiňte. Říkám to správně? Většinou jsou tahle dvě oddělení spojená.
+**Tomáš Havránek:** Tuším, že jsem vyplňoval nějaké dotazníky ohledně duševního zdraví, a možná díky tomu, že jsem v nich nic moc neindikoval, ta nabídka asi nepřišla. Ale možná přišla. V Motole je to diabetologie, endokrinologie… ne, promiňte. Říkám to správně?
 
-Ano, dobře. Tohle je tedy jejich práce. A člověk by si některé věci měl buď vyřešit sám, anebo jít na správné oddělení, pokud ten problém má a sám ho vyřešit neumí. Takže bych úplně nechtěl zatěžovat kolegy z tohoto konkrétního oddělení ještě i věcmi ohledně psychologie.
+**Jan Hrušovský:** Ano, tyhle dvě oddělení jsou spojené.
+
+**Tomáš Havránek:** Ano, dobře. Tohle je tedy jejich práce. A člověk by si některé věci měl buď vyřešit sám, anebo jít na správné oddělení, pokud ten problém má a sám ho vyřešit neumí. Takže bych úplně nechtěl zatěžovat kolegy z tohoto konkrétního oddělení ještě i věcmi ohledně psychologie.
 
 To, co dělají už teď, má i poměrně silný aspekt uklidňování, což s tím velmi silně souvisí, a nemyslím si, že by měli dělat ještě něco nad rámec toho.
 
@@ -281,7 +283,7 @@ A obecně je na tom životní prostředí lépe, než bylo. To zlepšení světa
 
 A k tomu je potřeba konkurence, nejen mezi firmami, ale i mezi státy, které dělají věci trochu jinak a nejsou všechny unifikované do jednoho monolitu, s nemožností cokoli dělat, vystoupit z regulatorních norem. Takže doufejme, že to bude tak, jak jste popsal. Že naše vnoučata, nebo možná vaše děti, Honzo, budou vědět, že i kdyby jim screening vyšel pozitivně, existuje lék, který to nejen oddálí, ale který je i vyléčí. A to je, myslím, předpověď, která už by mohla být reálná.
 
-**Jan Hrušovský:** Ano, je pravda, velký hit posledních měsíců, možná jednoho dvou let, ale ten výzkum je dlouhý, všechno to prostě trvá dlouho, než se dostane na ten trh, to je vidět i na těch inzulinových pumpách a dalších věcech, i na senzorech vlastně. Ty tady taky zas tak dlouho nejsou a dost pomáhají. Ale tomu bych měl jenom jednu poznámku, možná pro posluchače, že není úplně dobrý se v téhle době k tomu nějakým způsobem upínat a vzhlížet, že jednoho dne ten lék tady bude. Spíš bych se držel toho, který ty věci teďkon jsou na tom trhu, jak nám zlepšují život a že fantasticky ho zlepšují.
+**Jan Hrušovský:** Ano, je pravda, že léčba kmenovými buňkami je velký hit posledních měsíců, možná jednoho dvou let, ale ten výzkum je dlouhý, všechno to prostě trvá dlouho, než se dostane na ten trh, to je vidět i na těch inzulinových pumpách a dalších věcech, i na senzorech vlastně. Ty tady taky zas tak dlouho nejsou a dost pomáhají. Ale tomu bych měl jenom jednu poznámku, možná pro posluchače, že není úplně dobrý se v téhle době k tomu nějakým způsobem upínat a vzhlížet, že jednoho dne ten lék tady bude. Spíš bych se držel toho, který ty věci teďkon jsou na tom trhu, jak nám zlepšují život a že fantasticky ho zlepšují.
 
 Inzulinové pumpy, senzory, uzavřené smyčky nebo systémy toho, který dávkují inzulin a podobně. A že i tak se dá žít jako super život, než se upínat tomu, že jednoho dne budeme schopni jako tu cukrovku vyléčit. Přijde mi, že potom se k tomu ty lidi moc upínají a to taky není úplně zdravý. Takže jenom ta nějaká poznámka na okraj.
 

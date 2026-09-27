@@ -22,7 +22,7 @@ Vítejte ve studiu.
 
 Kdyby tady zůstala vláda, která vládla předtím, a rozpočet sestavoval pan Stanjura, jak by to asi vypadalo? Hlavní rozdíl, nebo jeden z rozdílů, je, že tato vláda mírně snižuje daně. Místo toho, abychom za obnovitelné zdroje platili my, bere si část těchto nákladů na sebe vláda. Oproti tomu zase zavádí EET, což je trochu zvýšení daní, a nějaké drobné úlevy pro OSVČ. Dohromady je to tedy pár miliard dolů.
 
-Potom bere peníze z obrany a dává je do zdravotnictví, zhruba nějakých 20 miliard. A navíc, dá se říct na dluh, dá něco státním zaměstnancům a důchodcům a ještě investuje nějakých 30 miliard do dopravy. Když tedy uděláte toto srovnání, co by bylo, kdyby byla vláda jiná, schodek by byl téměř jistě dost nižší, ale rozdíl by realisticky činil pravděpodobně třeba 40-50 miliard. Není to tedy úplně zásadní číslo. Nevidíme to rádi, ale jak vidíte, trajektorie je teď horší, i když zase není tak strašně horší oproti tomu, co by bylo jinak.
+Potom bere peníze z obrany a dává je do zdravotnictví, víc než nějakých 20 miliard. A navíc, dá se říct na dluh, dá něco státním zaměstnancům a důchodcům a ještě investuje nějakých 30 miliard do dopravy. Když tedy uděláte toto srovnání, co by bylo, kdyby byla vláda jiná, schodek by byl téměř jistě dost nižší, ale rozdíl by realisticky činil pravděpodobně třeba 40-50 miliard. Není to tedy úplně zásadní číslo. Nevidíme to rádi, ale jak vidíte, trajektorie je teď horší, i když zase není tak strašně horší oproti tomu, co by bylo jinak.
 
 **Jiří Zatloukal:** No ale když se na to podíváme celkově, tak politická reprezentace evidentně problém deficitu veřejných financí neřeší. Protože ekonomika roste, to opakuju, a deficit veřejných rozpočtů má dosáhnout 3,5% HDP. Co se podle vás bude muset stát, abychom začali ten problém řešit?
 
@@ -32,7 +32,7 @@ Ale i těch 3,5% HDP: je to špatné, není to dobře, ale v kontextu Evropy jsm
 
 Horší je samozřejmě výhled na dlouhé období, a na tom záleží: dlouhodobý součet schodků, ne jeden rok.
 
-**Jiří Zatloukal:** A poptávka voličů po zvyšování daní úsporných opatření vlastně tady není nikdy. Takže ten deficit bude dál růst. Za minulé vlády vyrostl státní dluh o zhruba bilion korun. Za téhle vlády vyroste, řekněme, 1,3 bilionu, přesně.
+**Jiří Zatloukal:** Samozřejmě, ale ta situace se nezmění ani příští rok, ani přes příští rok. A poptávka voličů po zvyšování daní úsporných opatření vlastně tady není nikdy. Takže ten deficit bude dál růst. Za minulé vlády vyrostl státní dluh o zhruba bilion korun. Za téhle vlády vyroste, řekněme, 1,3 bilionu, přesně.
 
 Moje otázka mířila tam, kde podle vás by mohla být ta stopka?
 
@@ -50,7 +50,7 @@ Pořád tu ale je jedna poměrně výrazná naděje, která náš problém nevy�
 
 Ona může investovat ještě víc. Věřím, že se k tomu Aleš Michl ještě odhodlá a že bude chtít, aby se na něj vzpomínalo jako na opravdu výjimečného guvernéra, ne jako na průměrného. A u těch 30% toho on zase tolik neudělal: už ta předchozí vedení Národní banky to zvýšila na 20% a on to maličko navýšil. Chce to mít většinu rezerv v akciích, jako to má třeba Singapur, který byl ve stejné situaci jako my: měl příliš devizových rezerv, investoval je a pak mu to vydělává.
 
-Celkový potenciál je až 200 miliard, které by ČNB mohla ročně přinášet státnímu rozpočtu, aniž by to mělo jakýkoli negativní vliv na měnovou…
+Celkový potenciál je až 200 miliard, které by ČNB mohla ročně přinášet státnímu rozpočtu, aniž by to mělo jakýkoli negativní vliv na měnovou politiku.
 
 **Jiří Zatloukal:** To myslíte třeba za 10 let.
 
@@ -90,7 +90,7 @@ Onehdy jsem byl v televizi s panem Kupkou, který o tom slyšel poprvé. Pak jse
 
 **Tomáš Havránek:** Máte pravdu. Jen k tomu: samozřejmě to není oběd zdarma, berete na sebe riziko. To riziko je, že ČNB udělá ztrátu. Mimochodem, ona je ve ztrátě v podstatě odjakživa a vždycky tvrdí, že na ztrátě nezáleží. Pokud na ztrátě nezáleží, což není úplně pravda, ale pokud je to tak, jak oni tvrdí, že na ztrátě nezáleží, pak ztráta může být půl bilionu, bilion, je to jedno. Ale zisk je naprosto reálný.
 
-Pokud uděláte zisk, můžete ho použít, můžete z něj postavit nemocnici, rychlovlaky, dálnici. Ten zisk je reálný. Pokud je to tak, máte v tom riziku asymetrii. Tohle je karikatura, ale takhle to oni říkají. Berete na sebe nějaké riziko, ale pokud se svět nezhroutí… Já to dělám taky, kupuji akcie, to je moje investice, protože je to na dlouhou dobu.
+Pokud uděláte zisk, můžete ho použít, můžete z něj postavit nemocnici, rychlovlaky, dálnici. Ten zisk je reálný. Pokud je to tak, máte v tom riziku asymetrii. Tohle je karikatura, ale takhle to oni říkají. Berete na sebe nějaké riziko, ale pokud se svět nezhroutí… Já to dělám taky, kupuji akcie, to je moje jediná investice, protože je to na dlouhou dobu.
 
 Když je váš horizont 10, 20, 30 let, a Národní banka má horizont ještě delší, ta neumře nikdy, můžete si to u peněz, které nepotřebujete, dovolit. A když je potřebujete, můžete ty akcie prodat. Sice třeba levněji, ale v krizi vám zároveň většinou oslabí koruna, takže to pro vaši rozvahu není zase takový problém. Zajímá vás dlouhodobý výhled a v dlouhodobém výhledu je velice nepravděpodobné, že se tato věc nevyplatí, s výjimkou nějaké termonukleární války, kdy by nás peníze stejně nezajímaly.
 
@@ -140,7 +140,7 @@ My dohromady jich máme dost, ne? Spolu tedy asi šest.
 
 **Jiří Zatloukal:** Dohromady šest, vy máte čtyři, já mám dvě, tak…
 
-**Tomáš Havránek:** Chci jen říct, že znám řadu lidí, kteří nikdy neměli děti, profesory v Americe a tak dále. Skoro všichni mi nakonec řekli, jak toho strašně litují. Vy tedy 40 let bez dětí strávíte v pohodě, jezdíte si po světě, a zbytek života strávíte tím…
+**Tomáš Havránek:** Chci jen říct, že znám řadu lidí, kteří nikdy neměli děti, profesory v Americe a tak dále. Skoro všichni mi nakonec řekli, jak toho strašně litují. Vy tedy 40 let bez dětí strávíte v pohodě, jezdíte si po světě, a zbytek života strávíte tím, že toho litujete.
 
 **Jiří Zatloukal:** Směřujete k tomu, že bezdětní lidé by měli platit vyšší daně? Což se taky objevuje tento návrh. Teda ti, kteří je samozřejmě mohou mít, ne? Ti, kteří je nemohou mít.
 
@@ -150,7 +150,7 @@ Ale matka tím nemusí obětovat kariéru. Víte, že moje žena je daleko úsp�
 
 A není to tak, že bychom si to nemohli dovolit. My jsme třeba v šesti žili na 40 metrech čtverečních v Nuslích a bylo nám velmi dobře.
 
-**Jiří Zatloukal:** My jsme tady nezmínili ještě jednu důležitou věc. My jsme poměrně malá země a na rozdíl od těch velkých zemí, jako je Francie, nebo spojené státy vůbec mají vlastní měnu a jsou v centru finančního systému, takže ten dluh si můžou dovolit jednoznačně větší. My, jako malinká země, ale nemáme takovou možnost mít vysoký dluh, protože když se od nás investoři odvrátí, jinými slovy nebude ho nikdo chtít kupovat, tak ta naše krize přijde mnohem dřív a současné výnosy státních dluhopisů, které jsou v Česku kolem pěti procent ročně, co můžou vyhoupnout na osm a bude to kolaps státních financí.
+**Jiří Zatloukal:** My jsme tady nezmínili ještě jednu důležitou věc. My jsme poměrně malá země a na rozdíl od těch velkých zemí, jako je Francie, nebo spojené státy vůbec mají vlastní měnu a jsou v centru finančního systému, takže ten dluh si můžou dovolit jednoznačně větší. My, jako malinká země, ale nemáme takovou možnost mít vysoký dluh, protože když se od nás investoři odvrátí, jinými slovy nebude ho nikdo chtít kupovat, tak ta naše krize přijde mnohem dřív a současné výnosy státních dluhopisů, které jsou v Česku kolem pěti procent ročně, se můžou vyhoupnout na osm a bude to kolaps státních financí.
 
 **Tomáš Havránek:** Jak bude ten kolaps asi vypadat? O tom musíme malinko spekulovat. Pravděpodobně něco takového přijde, ale těžko to bude znamenat státní bankrot. To je politicky velmi nepopulární věc. Mnohem snazší je nechat krizi prohořet inflací, jak jsme se o tom bavili.
 
