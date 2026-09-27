@@ -557,7 +557,11 @@ Pak se můžeme bavit o dalších, nějakých nových názorech, ale takhle to j
 
 Druhá věc, kterou bych udělal, je to, čemu se říká rozpočtový carry-over. Co to znamená? Když teď pracujete v nějaké státní, nebo i soukromé, ale hlavně státní instituci, zbude vám na konci roku nějaký balík rozpočtu, který chcete utratit. Vánoční utrácení.
 
-Protože když to neutratíte, co se stane? Co byste řekla, když jsem ředitel odboru a na konci roku svůj rozpočet neutratím? Tak se to převede do dalšího? To by bylo dobré, to by bylo skvělé.
+Protože když to neutratíte, co se stane? Co byste řekla, když jsem ředitel odboru a na konci roku svůj rozpočet neutratím?
+
+**Petra Jaroměřská:** Tak se to převede do dalšího?
+
+**Tomáš Havránek:** To by bylo dobré, to by bylo skvělé.
 
 Většinou se to nepřevede. Většinou mi můj šéf řekne: ty peníze asi nepotřebuješ, takže za prvé ti na příští rok rozpočet snížíme a za druhé ti to nepřevedu. Samozřejmě máme něco jako nároky z nerealizovaných výdajů, NNV, kde to převést lze, ale nemáte garantované, že když to převedete, budou na to příští rok peníze, abyste to mohla použít. Nebo že se vám na příští rok nesníží rozpočet. Příklady z ČNB radši dávat nebudu.
 
@@ -613,7 +617,9 @@ Podle mě je bohužel mnohem pravděpodobnější tento scénář: pokud tu nebu
 
 A i když vám v centrální bance, ať už je to Aleš Michl, nebo Zdeněk Tůma, řeknou: my jsme nezávislí a tohle nikdy dělat nebudeme, tak v situaci, kdy by státní rozpočet stál před naprostým krachem a hrozil reálný bankrot země, ty peníze natisknou. Proč? Protože jsou také odpovědní za finanční stabilitu. Neříkám, že je to správná věc.
 
-Tím ale samozřejmě rozpoutají další inflaci. Inflace je to špatné řešení státního dluhu, ale zároveň vidíme, měli jsme inflaci skoro 20 %. Lidem se to nelíbilo, ale Národní banka řekne, že je to chyba vlády, vláda řekne, že je to chyba Národní banky nebo chyba zahraničí, že za to můžou Rusové nebo Ukrajinci.
+**Petra Jaroměřská:** Tím ale rozpoutají další inflaci.
+
+**Tomáš Havránek:** Samozřejmě. Inflace je to špatné řešení státního dluhu, ale zároveň vidíme, měli jsme inflaci skoro 20 %. Lidem se to nelíbilo, ale Národní banka řekne, že je to chyba vlády, vláda řekne, že je to chyba Národní banky nebo chyba zahraničí, že za to můžou Rusové nebo Ukrajinci.
 
 Takhle by to tedy bylo. Předpovídat je v ekonomii vždycky těžké. A nevděčné: když dám dlouhodobou předpověď, všichni mezitím umřeme, než se třeba naplní. Když ale mám já osobně nějakou předpověď dát, čekám dlouhodobě vyšší inflaci.
 
