@@ -7945,7 +7945,7 @@ Nemyslím si proto, že by nechal českou korunu úplně spálit. A věřím, do
 
 Ale možná je potom jmenování už v červenci. Samozřejmě je možné, že nechá korunu shořet. Ale úplně mi to nejde k tomu, jak ho znám, že by se takhle chtěl zapsat do dějin.
 
-Rašín naši korunu postavil silnou a on by ji spálil. Tohle chtít nebude. … To byl největší jestřáb, Aleš Michl.
+Rašín naši korunu postavil silnou a on by ji spálil. Tohle chtít nebude. Když jsem *[nesrozumitelné]* byl, byl to největší jestřáb, Aleš Michl.
 
 Pár měsíců. Pak se překlopil. To už jsem u toho nebyl, nevím proč.
 
