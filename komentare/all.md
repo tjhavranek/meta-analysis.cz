@@ -623,7 +623,11 @@ Na inflaci se tedy můžeme připravit třeba tak, že sami nenecháme ležet mo
 
 **Petra Jaroměřská:** Možná na závěr je, v jakém stavu je česká ekonomika a teď se ptám tedy spíše z toho mikroekonomického pohledu. Jsou některé skupiny obyvatel, které jsou na tom opravdu špatně a ta skupina je větší, než by odpovídala velikosti naší ekonomiky a struktuře naší ekonomiky. Ano. Protože ta makrodata vypadají celkem příznivě, ekonomika roste, částečně roste, produktivita, domácnosti utrácejí.
 
-Přesto vlastně jsou některé skupiny obyvatel, které neušetří nic, tak proto se ptám, jestli jsou takové skupiny obyvatel,
+Přesto vlastně jsou některé skupiny obyvatel, které neušetří nic, tak proto se ptám, jestli jsou takové skupiny obyvatel, které jsou na tom opravdu špatně.
+
+**Tomáš Havránek:** Jsou…
+
+**Petra Jaroměřská:** A jsou větší, než by odpovídalo té ekonomice? Které to jsou?
 
 **Tomáš Havránek:** Jsou to lidé, kteří se, dám osobní příklad, jako třeba moji rodiče, celý život snažili pracovat a šetřit peníze, které si vydělali a neutratili. A nikdo je úplně nevedl k tomu, jak se chránit před inflací, o které jsem mluvil. A to jsou lidé, kteří financují fungování tohoto státu: nejenom tím, že platí daně, ale i tím, že mají peníze uložené v bance a ty inflací ztrácejí hodnotu. Podle mě má tedy tahle země z ekonomického hlediska dva základní problémy.
 
@@ -3559,7 +3563,7 @@ Proto říkám, že 1% do bitcoinu ti taky nějak. Když to budeš schopen vysv�
 
 **Tomáš Havránek:** Salvador je zase extrémní případ. My nechceme přejít na bitcoin, to by mě ani nenapadlo.
 
-**Moderátor:** Já jsem to myslel spíš z pohledu geopolitiky, že by se to asi stalo spíš v Jižní Americe, nebo teďka možná vlastně, jak to tam má ten Milei v tom, v Argentině. Ten to tam jako vede docela dobře, tak i když tu centrální banku nějak nezrušil,
+**Moderátor:** Já jsem to myslel spíš z pohledu geopolitiky, že by se to asi stalo spíš v Jižní Americe, nebo teďka možná vlastně, jak to tam má ten Milei v tom, v Argentině. Ten to tam jako vede docela dobře, tak i když tu centrální banku nějak nezrušil, ale byly tam nějaký…
 
 **Tomáš Havránek:** Tam je plán na dolarizaci, což je v podstatě úplné nahrazení domácí měny. Mimochodem, vidíš, kam se domácí měna dostane: když máš dlouhodobě vysokou inflaci, horší než v ostatních zemích, vzniká tlak na její zrušení. Řeknu to možná tvrdě, ale nedobrá výkonnost Národní banky nám paradoxně možná otevře dveře do eura nebo k většímu zapojení do kryptoměn, po kterém by standardně nebyla poptávka, kdybychom v centrálním bankovnictví fungovali dobře. Špatná výkonnost bohužel opravdu vede k tomu, že se znovu otevřela diskuze o euru.
 
@@ -3699,7 +3703,7 @@ Na top pozice v této zemi potřebuješ ten nejlepší talent. Důležitých poz
 
 Na to ale tady v Česku bohužel nejsme zvyklí: zaplatit někomu 5 milionů eur za rok a chtít po něm špičkový výkon na úrovni vedení centrální banky. Musel by se maličko změnit i zákon, je tam podmínka českého občanství, ale změnit zákon o ČNB zase není tak velký problém. To bys musel udělat, kdybys chtěl dát explicitní úkol, o jakou inflaci se mají snažit.
 
-**Moderátor:** Já se chci zeptat, mám hodně podotázek, ale začneme ještě vlastně touhle. Myslím si, že to je vůbec možný, abychom v tomhle systému, který máme, měli nulovou inflaci? Protože my jsme se tady předtím bavili o těch úrokových sazbách, proč je nezvednou nahoru, protože tady máme, jak jsi říkal, ty dvě strany, máme tady ty svědomitý lidi, který si spoří na druhý straně, ale tady máme ty dlužníky, kterým naopak ta inflace vyhovuje a kdyby se ty úrokových sazby nějak dlouhodobě zase nesnižily, tak tady možná riskujeme nějakou recesi v podobě nemovitostní krize, jako jsme viděli třeba v roce 2008 v Americe a já si myslím, že nejsme schopný dojít na žádný státní měně na nulovou inflaci, protože je za ní ten ohromnej dluh, který se prostě nějakým způsobem musí splatit, jsou tam ty úroky a ty potřebuješ neustále nový peněžní jednotky,
+**Moderátor:** Já se chci zeptat, mám hodně podotázek, ale začneme ještě vlastně touhle. Myslím si, že to je vůbec možný, abychom v tomhle systému, který máme, měli nulovou inflaci? Protože my jsme se tady předtím bavili o těch úrokových sazbách, proč je nezvednou nahoru, protože tady máme, jak jsi říkal, ty dvě strany, máme tady ty svědomitý lidi, který si spoří na druhý straně, ale tady máme ty dlužníky, kterým naopak ta inflace vyhovuje a kdyby se ty úrokových sazby nějak dlouhodobě zase nesnižily, tak tady možná riskujeme nějakou recesi v podobě nemovitostní krize, jako jsme viděli třeba v roce 2008 v Americe a já si myslím, že nejsme schopný dojít na žádný státní měně na nulovou inflaci, protože je za ní ten ohromnej dluh, který se prostě nějakým způsobem musí splatit, jsou tam ty úroky a ty potřebuješ neustále nový peněžní jednotky, aby ten systém nějakým způsobem fungoval a nezastavil se?
 
 **Tomáš Havránek:** To je složitá otázka, ale to, co říkáš, celkem odpovídá té nové teorii, fiskální teorii cenové hladiny, o které jsem mluvil. Podle téhle teorie, která pořád není mainstream, opravdu ani centrální banka nakonec nemůže dostat inflaci pod kontrolu, protože když stát vytvoří nový dluh, je ten dluh jako nové peníze a centrální banka ho nakonec musí zmonetizovat. Pokud platí tento nový proud v ekonomii, se kterým by asi souhlasilo, řekněme, 20% makroekonomů, tak to opravdu nejde.
 
@@ -5920,7 +5924,7 @@ Co se podle vás děje v tomto směru v Česku? Je to podle vás nějaká poruch
 
 **Tomáš Havránek:** U řetězců funguje konkurence podle mě poměrně dobře. Jak vidíte, když projíždíte různá města, kolik je tam různých obchodních domů, tam konkurence funguje dobře. Ve výrobě ale často máte opravdu skoro, řekněme, monopolní situaci, která je navíc vertikálně integrovaná, takže se s tím potom těžko soupeří, a to samozřejmě generuje nadměrné zisky pro našeho největšího zemědělce. Situace se ale zase tak moc neliší od ostatních zemí, takže to není primární příčina. Rozhodně ale, jak jste říkala, využívají příležitosti k tomu, aby vydělali nadměrné zisky.
 
-**Jana Klímová:** Inflace by byla ještě vyšší nebýt úsporného tarifu na elektřinu v říjnu a v prosinci zase inflaci směrem dolů ovlivnilo zlevnění pohonných hmot. Není třeba právě tohle vlastně důvod k tomu, aby vláda byla aktivnější, pokud jde o pomoc s cenami energií nebo nafty? Vy jste zmiňoval, že vlastně třeba vy vidíte tu hlavní vinu té vysoké inflace u ČNB, ale nemohla by vláda udělat něco víc, nebo jak se díváte na ty dosavadní kroky vlády? I z pohledu toho, že jste členem NERVu,
+**Jana Klímová:** Inflace by byla ještě vyšší nebýt úsporného tarifu na elektřinu v říjnu a v prosinci zase inflaci směrem dolů ovlivnilo zlevnění pohonných hmot. Není třeba právě tohle vlastně důvod k tomu, aby vláda byla aktivnější, pokud jde o pomoc s cenami energií nebo nafty? Vy jste zmiňoval, že vlastně třeba vy vidíte tu hlavní vinu té vysoké inflace u ČNB, ale nemohla by vláda udělat něco víc, nebo jak se díváte na ty dosavadní kroky vlády? I z pohledu toho, že jste členem NERVu, který radí vládě?
 
 **Tomáš Havránek:** Zrovna úsporný tarif je, upřímně řečeno, malinko zavádějící jméno, protože to vlastně není tarif. Není to úsporné, není to tarif. Byl to v podstatě voucher pro všechny, spíš něco, čemu bychom v ekonomii řekli vrtulníkové peníze.
 

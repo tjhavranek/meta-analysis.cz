@@ -231,7 +231,11 @@ Na inflaci se tedy můžeme připravit třeba tak, že sami nenecháme ležet mo
 
 **Petra Jaroměřská:** Možná na závěr je, v jakém stavu je česká ekonomika a teď se ptám tedy spíše z toho mikroekonomického pohledu. Jsou některé skupiny obyvatel, které jsou na tom opravdu špatně a ta skupina je větší, než by odpovídala velikosti naší ekonomiky a struktuře naší ekonomiky. Ano. Protože ta makrodata vypadají celkem příznivě, ekonomika roste, částečně roste, produktivita, domácnosti utrácejí.
 
-Přesto vlastně jsou některé skupiny obyvatel, které neušetří nic, tak proto se ptám, jestli jsou takové skupiny obyvatel,
+Přesto vlastně jsou některé skupiny obyvatel, které neušetří nic, tak proto se ptám, jestli jsou takové skupiny obyvatel, které jsou na tom opravdu špatně.
+
+**Tomáš Havránek:** Jsou…
+
+**Petra Jaroměřská:** A jsou větší, než by odpovídalo té ekonomice? Které to jsou?
 
 **Tomáš Havránek:** Jsou to lidé, kteří se, dám osobní příklad, jako třeba moji rodiče, celý život snažili pracovat a šetřit peníze, které si vydělali a neutratili. A nikdo je úplně nevedl k tomu, jak se chránit před inflací, o které jsem mluvil. A to jsou lidé, kteří financují fungování tohoto státu: nejenom tím, že platí daně, ale i tím, že mají peníze uložené v bance a ty inflací ztrácejí hodnotu. Podle mě má tedy tahle země z ekonomického hlediska dva základní problémy.
 
