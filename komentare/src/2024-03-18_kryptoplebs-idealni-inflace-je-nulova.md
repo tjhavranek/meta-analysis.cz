@@ -388,7 +388,7 @@ Nečekám, že teď přijde guvernér a řekne: jo, zrušme inflaci. Proč jsi m
 
 **Moderátor:** A jaká byla reakce?
 
-**Tomáš Havránek:** No… V krátkosti: reakce nebyla v podstatě žádná. Reakce ale třeba byla, když jsme se bavili o investování devizových rezerv.
+**Tomáš Havránek:** V krátkosti: reakce nebyla v podstatě žádná. Reakce ale třeba byla, když jsme se bavili o investování devizových rezerv.
 
 **Moderátor:** A teď se bavíme o Mojmírovi?
 

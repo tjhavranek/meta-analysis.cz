@@ -2957,7 +2957,7 @@ Mírné úspory, konkrétně asi v tom… To je od Mariana Jurečky 10%. A dosta
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Tomáš Havránek:** No, ale prosím, abychom to srovnání opravdu uváděli. V řadě věcí, které říká, má pravdu, třeba v tom, že daně tu opravdu platí hlavně zaměstnanci. To je potřeba zdůraznit: je to velká většina příjmů. A proto bych rád, aby daňový poplatník byl pro státní a veřejnou správu opravdu klientem. Proto jsem navrhoval ty dotazníky, jsem rád, že jste to zmínil, a jsou to spíš dotazníky na službu, ne na konkrétní lidi, kteří ji poskytují. A šlo by spíš o to pozitivní: chceme přidat těm nejlepším, ne že bychom někoho trestali.
+**Tomáš Havránek:** Prosím, abychom to srovnání opravdu uváděli. V řadě věcí, které říká, má pravdu, třeba v tom, že daně tu opravdu platí hlavně zaměstnanci. To je potřeba zdůraznit: je to velká většina příjmů. A proto bych rád, aby daňový poplatník byl pro státní a veřejnou správu opravdu klientem. Proto jsem navrhoval ty dotazníky, jsem rád, že jste to zmínil, a jsou to spíš dotazníky na službu, ne na konkrétní lidi, kteří ji poskytují. A šlo by spíš o to pozitivní: chceme přidat těm nejlepším, ne že bychom někoho trestali.
 
 Ta data by se samozřejmě potom dala použít různě.
 
@@ -3803,7 +3803,7 @@ Nečekám, že teď přijde guvernér a řekne: jo, zrušme inflaci. Proč jsi m
 
 **Moderátor:** A jaká byla reakce?
 
-**Tomáš Havránek:** No… V krátkosti: reakce nebyla v podstatě žádná. Reakce ale třeba byla, když jsme se bavili o investování devizových rezerv.
+**Tomáš Havránek:** V krátkosti: reakce nebyla v podstatě žádná. Reakce ale třeba byla, když jsme se bavili o investování devizových rezerv.
 
 **Moderátor:** A teď se bavíme o Mojmírovi?
 
