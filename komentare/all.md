@@ -4391,7 +4391,7 @@ Zdroj: https://www.ceskatelevize.cz/porady/1126672097-otazky-vaclava-moravce/223
 
 **Tomáš Havránek:** Dobrý den, rád jsem přijel z Litomyšle po nové dálnici.
 
-**Václav Moravec:** Ale když jsme u vás, pane profesore, máte spočítané, o kolik by se zvýšil potenciál tuzemské ekonomiky, pokud by Česká republika dokončila síť silnic a dálnic, i k vám do Litomyšle, že byste jel z Prahy po D11
+**Václav Moravec:** Ale když jsme u vás, pane profesore, máte spočítané, o kolik by se zvýšil potenciál tuzemské ekonomiky, pokud by Česká republika dokončila síť silnic a dálnic, i k vám do Litomyšle, že byste jel z Prahy po D11 kompletně do Litomyšle?
 
 **Tomáš Havránek:** A D35. Spočítané to nemám, to se počítá těžko. Dobrý výzkum na to má třeba Esther Duflo, nositelka Nobelovy ceny, a ukazuje, že efekt je obecně sice kladný, ale trochu menší, než se běžně uvádí. Jsem ale rád, že se u nás věci hýbou k lepšímu, a chtěl bych tady poděkovat panu ministrovi i panu bývalému ministrovi, že ve funkci podpořili pana Mátla, ředitele ŘSD, protože za pana Mátla se ty dálnice opravdu konečně stavějí v termínu.
 
@@ -4409,7 +4409,7 @@ Zdroj: https://www.ceskatelevize.cz/porady/1126672097-otazky-vaclava-moravce/223
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Václav Moravec:** … obrátím na Tomáše Havránka, který psal o nutnosti těch gigantických investic, které by byly zapotřebí. Je těch 150 miliard korun. Pro rok příští, které jsou ve státním fondu dopravní infrastruktury i na výstavbu nových dálnic a silnic rychlostních, je to dostatečná částka ta gigantická investice, protože vy jste v březnu říkal, není podstatné, jak velký bude schodek, pokud půjdou právě peníze do investic, jako je dopravní infrastruktura?
+**Václav Moravec:** … obrátím na Tomáše Havránka, který psal o nutnosti těch gigantických investic, které by byly zapotřebí. Je těch 150 miliard korun pro rok příští, které jsou ve státním fondu dopravní infrastruktury i na výstavbu nových dálnic a silnic rychlostních, dostatečná částka, ta gigantická investice, protože vy jste v březnu říkal, není podstatné, jak velký bude schodek, pokud půjdou právě peníze do investic, jako je dopravní infrastruktura?
 
 **Tomáš Havránek:** Ano, podstatné to pořád je, ale investice, když se nám vrátí, dluh potom de facto sníží. Takže to není úplně tolik. Samotné číslo není tak důležité. Ale já mám návrh, jak ty peníze sehnat.
 
@@ -4429,7 +4429,7 @@ A nevydělávají nám. Ničemu by neuškodilo vzít větší část těch peně
 
 **Tomáš Havránek:** Vůbec ne. Mohou to dělat sami. Chápu ale jejich obavu, že je to tak velký krok, že k němu potřebují širší společenskou dohodu.
 
-Nejen s vládou, ale i s opozicí. Čili když si třeba vy, pan stínový premiér a pan vysoce postavený ministr, domluvíte schůzku s guvernérem a zeptáte se ho, jestli by šlo vykročit tím směrem…
+Nejen s vládou, ale i s opozicí. Čili když si třeba vy, pan stínový premiér a pan vysoce postavený ministr, domluvíte schůzku s guvernérem a zeptáte se ho, jestli by šlo vykročit tím směrem a případně jak a co by k tomu potřeboval, nemůže to ničemu uškodit.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
@@ -4439,13 +4439,13 @@ Nejen s vládou, ale i s opozicí. Čili když si třeba vy, pan stínový premi
 
 **Tomáš Havránek:** Ne že byste to mohli vzít a poslat do dálnic, ale investovat to jako Singapur, který z toho dlouhodobě financuje metra, silnice, železnice.
 
-A funguje to velmi, velmi dobře. Čili i jen trochu vykročit tímto směrem nám vydělá tolik peněz, že to zastíní všechna ostatní řešení.
+A funguje to velmi, velmi dobře. Čili i jen trochu vykročit tímto směrem nám vydělá tolik peněz, že to zastíní všechna ostatní řešení, a nikoho to nebude stát vůbec nic.
 
-*[Přeskočeno: část pořadu s jinými hosty.]*
+**Václav Moravec:** Pro mě jako pro laika: kdyby se pánové dohodli s guvernérem centrální banky, stát pak vrátí centrální bance ty peníze? Nebo jak to bude?
 
-**Tomáš Havránek:** 3 biliony budou dlouhodobě vydělávat, takže stát může počítat s tím, že každý rok dostane v průměru nějakých 100 miliard navíc oproti současnému stavu.
+**Tomáš Havránek:** Centrální banka, když vydělá peníze, je ze zákona musí převést do státního rozpočtu. Kdyby tedy bylo jasné, že 3 biliony budou dlouhodobě vydělávat, stát může počítat s tím, že každý rok dostane v průměru nějakých 100 miliard navíc oproti současnému stavu. A je už potom na něm, jestli to dá do dálnic, rychlovlaků, nebo třeba do zdravotnictví.
 
-**Václav Moravec:** No protože u toho státního fondu dopravní infrastruktury vidíme…
+**Václav Moravec:** No protože u toho státního fondu dopravní infrastruktury vidíme, že se ty odhady drží velmi nízko.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
@@ -4453,7 +4453,7 @@ A funguje to velmi, velmi dobře. Čili i jen trochu vykročit tímto směrem n�
 
 Teď polská síť čítá 4625 kilometrů. Na začátku roku 2012 to bylo jen 1865 kilometrů. V České republice se za stejné desetiletí, jak vidíme tady, postavilo pouze 193 kilometrů. Za deset let teď má Česká dálniční síť 1346 kilometrů.
 
-Polský dálniční průměr na jeden rok v poslední dekádě byl 280, kdežto Český necelých 20. A bavíme se právě o dokončení té dálniční sítě a o tom, aby ty projekty byly připraveny, protože to souvisí s tím, kolik peněz může být alokováno a to je to, o čem mluví pan profesor Havránek. Že pokud nebudou, tady výhled,
+Polský dálniční průměr na jeden rok v poslední dekádě byl 280, kdežto Český necelých 20. A bavíme se právě o dokončení té dálniční sítě a o tom, aby ty projekty byly připraveny, protože to souvisí s tím, kolik peněz může být alokováno a to je to, o čem mluví pan profesor Havránek. Že pokud nebudou, tady výhled, chápu-li to, pane profesore, správně, toho dlouhodobého financování, a vy říkáte: zapojíme devizové rezervy centrální banky, tak nebudou pak ani ty projekty, protože nejsou peníze.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
@@ -4469,13 +4469,13 @@ Polský dálniční průměr na jeden rok v poslední dekádě byl 280, kdežto 
 
 **Tomáš Havránek:** … nejjednodušší řešení je finanční: navážete odměny více na dokončené úseky dálnic, případně železnic, jestli se někdy dočkáme VRT. A já bych tady znovu pochválil pana Mátla, protože sebelepší zákon vám nepomůže stavět dálnice, když nemáte lidi, kteří jsou schopni vyjet z Prahy třeba do Litomyšle nebo do Šumperka, osobně řešit problémy a jednat s lidmi, s nimiž předtím nikdo nejednal. To pan Mátl dělá, a proto teď ke zpožděním nedochází, minimálně u dálnic.
 
-Mě třeba trochu mrzí, že přivaděče k dálnici nejsou plně v kompetenci ŘSD, že některé jsou v režii krajů a ne všechny kraje umějí stavět stavby na zelené louce. Konkrétně Pardubický kraj se v tom úplně nevyznamenává, takže nakonec bude celá polovina kraje bez přístupu k D35, Česká Třebová nebo Letohrad, jak jsme se bavili předtím. Já osobně bych krajům tohle břemeno klidně odňal, když se osvědčil pan Mátl a ŘSD, které už s tím má zkušenosti. Také to nebylo snadné, když s tím začínali, a už se to…
+Mě třeba trochu mrzí, že přivaděče k dálnici nejsou plně v kompetenci ŘSD, že některé jsou v režii krajů a ne všechny kraje umějí stavět stavby na zelené louce. Konkrétně Pardubický kraj se v tom úplně nevyznamenává, takže nakonec bude celá polovina kraje bez přístupu k D35, Česká Třebová nebo Letohrad, jak jsme se bavili předtím. Já osobně bych krajům tohle břemeno klidně odňal, když se osvědčil pan Mátl a ŘSD, které už s tím má zkušenosti. Také to nebylo snadné, když s tím začínali, ale už se to naučili, takže bych to břemeno uvalil na ně. Oni to zvládnou.
 
-**Václav Moravec:** … příklad D52, protože ať se podíváme k řidičům kolem Brna a těm, kteří chtějí z Brna jet do Vídně co nejrychleji, tak marně čekali a čekají řidiči na dokončení té dálnice D52 s Brnem kolem Mikulova k hranicím s Rakouskem Ředitelství silnic a dálnic v úterý. Podalo žádost na Ministerstvu životního prostředí o vydání nového stanoviska EIA, které posoudí vliv stavby na okolní přírodu. Hotová je od roku 1996 pouze část od Rajhradu do Pohořelic. Dál směrem k Mikulovu zůstala trasa jen na papíře.
+**Václav Moravec:** A uvedl byste i tam příklad D52? Protože ať se podíváme k řidičům kolem Brna a těm, kteří chtějí z Brna jet do Vídně co nejrychleji, tak marně čekali a čekají řidiči na dokončení té dálnice D52 s Brnem kolem Mikulova k hranicím s Rakouskem. Ředitelství silnic a dálnic v úterý podalo žádost na Ministerstvu životního prostředí o vydání nového stanoviska EIA, které posoudí vliv stavby na okolní přírodu. Hotová je od roku 1996 pouze část od Rajhradu do Pohořelic. Dál směrem k Mikulovu zůstala trasa jen na papíře.
 
 Silničářům chybí postavit úseky od Pohořelic po Nové Mlýny, přes Nové Mlýny a od nádrží po státní hranici s Rakouskem. Rakušané už přitom svoji stavbu dokončili, to je podobné jak s těmi patníky u Polsko-českých hranic na severu republiky. Pouze koncový úsek je zatím dvoupruh a čtyřpruhem se stane až ve chvíli, kdy i Česká republika se svojí stavbou pokročí. ŘSD aktuálně počítá, že stavba by mohla začít v roce 2026.
 
-Je možné na příkladu D52 vlastně ukázat, že i ŘSD
+Je možné na příkladu D52 vlastně ukázat, že i ŘSD zbytečně otálelo s novou EIA a podává ji teprve teď?
 
 **Tomáš Havránek:** ŘSD není dokonalá instituce. Chci jen říct, že se opravdu velice zlepšila ve své efektivitě, v tom, jak funguje. A znovu děkuji vám oběma, že jste pana Mátla v jeho funkci podpořili. Já bych jeho kompetence rozšířil.
 
@@ -4487,7 +4487,7 @@ Tak tohle je výsledek, který je „optimální“ pro tuto zemi, konkrétně p
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Václav Moravec:** … té nekoncepčnosti, že jedno zastupitelstvo řekne, ano, my to budeme financovat provoz lávky a zastupitelé a primátor ze stejné strany pak řeknou se, že ne, my nechceme tu lávku přebírat, protože nebudeme…
+**Václav Moravec:** … té nekoncepčnosti, že jedno zastupitelstvo řekne, ano, my to budeme financovat provoz lávky a zastupitelé a primátor ze stejné strany pak řeknou se, že ne, my nechceme tu lávku přebírat, protože nebudeme financovat její provoz?
 
 **Tomáš Havránek:** Možná. Každopádně to ukazuje na obecnější problém: ta lávka tady stála kolik? 300 milionů.
 
