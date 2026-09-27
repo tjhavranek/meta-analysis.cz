@@ -8364,7 +8364,7 @@ Tedy devizové rezervy, kterých máme velmi mnoho a které vznikly právě inte
 
 A to působí velice rychle. Rychle posílíte korunu a to se pak rychle promítne do cen dováženého zboží. Kdybychom to udělali, řekněme, v září, dnes se nebavíme o dvouciferné inflaci.
 
-**Nikita Poljakov:** ČNB se k rozpouštění rezerv staví agresivněji, proaktivněji. Někteří členové mluví, pojďme rozpouštět, pojďme investovat, pojďme vlastně nedržet devizový rezervy na účtech. Guvernér zároveň říká, že už drží asi kolem 10%, možná víc. Já se teď omlouvám, nepamatuju si, v akciích, že tak konzervativní systém je to vlastně nějaký novum, který není úplně potřeba dělat.
+**Nikita Poljakov:** ČNB se k rozpouštění rezerv staví agresivněji, proaktivněji. Někteří členové mluví, pojďme rozpouštět, pojďme investovat, pojďme vlastně nedržet devizový rezervy na účtech. Guvernér zároveň říká, že už drží asi kolem 10%, možná víc. Já se teď omlouvám, nepamatuju si, v akciích, že na tak konzervativní systém je to vlastně nějaký novum, který není úplně potřeba dělat.
 
 Česká národní banka není od toho, aby generovala nějaké vysoké zisky. Jak vy vnímáte tady ten pohled, že vlastně nebýt agresivní, nevymýšlet nový nápady v složitých dobách?
 
@@ -8408,9 +8408,9 @@ A to tímto cílováním inflace, které neopravuje svoje chyby. Buď tedy alesp
 
 Pojďme se o tom aspoň bavit v rámci toho auditu.
 
-**Nikita Poljakov:** Tahle debata asi předpokládá, teď udělám krok výš nějakou revizi narativu toho, jak funguje Česká národní banka nebo obecně národní banka a v naší provenienci. My jsme asi takovej německej je konzervativnější model. Tady, aby k tomu došlo, tak se musí asi trošičku nebo dost pozměnit způsob, jak uvažujeme o monetární politice, která je teda v tom svým významu prostě politikou také. To znamená předefinovat to,
+**Nikita Poljakov:** Tahle debata asi předpokládá, teď udělám krok výš nějakou revizi narativu toho, jak funguje Česká národní banka nebo obecně národní banka a v naší provenienci. My jsme asi takovej německej je konzervativnější model. Tady, aby k tomu došlo, tak se musí asi trošičku nebo dost pozměnit způsob, jak uvažujeme o monetární politice, která je teda v tom svým významu prostě politikou také. To znamená předefinovat to, jak o tom přemýšlíme.
 
-**Tomáš Havránek:** Nicméně si opravdu myslím, že ta definice, nebo redefinice, by nemusela být tak velká. Je to drobná kalibrace. Častým argumentem pro inflační cíle je, že takhle to dělají v zahraničí, v Americe, v ECB. Ano, jenže tyhle velké centrální banky jednak mají obrovskou setrvačnost.
+**Tomáš Havránek:** To máte pravdu. Nicméně si opravdu myslím, že ta definice, nebo redefinice, by nemusela být tak velká. Je to drobná kalibrace. Častým argumentem pro inflační cíle je, že takhle to dělají v zahraničí, v Americe, v ECB. Ano, jenže tyhle velké centrální banky jednak mají obrovskou setrvačnost.
 
 Ani cílování inflace nezavedly jako první. Jako první ho zavedli na Zélandu a v Kanadě. Ben Bernanke ho ve Fedu v Americe zavedl až hodně dlouho potom, nějakých 15 let. A navíc tyhle banky ani nemají cenovou stabilitu jako hlavní úkol.
 
