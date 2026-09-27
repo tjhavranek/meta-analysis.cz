@@ -50,6 +50,10 @@ Líbil se mi ten profesionální, poctivý přístup, který Mojmír měl a stá
 
 **Moderátor:** Co vlastně, Mojmír má hodně povedenou přednášku o penězích i o kryptoměnách a tuším, že přednášel minulý rok na konferenci u Urzy peníze včera dnes a zítra, tak jsme se tam s ním i bavili, s jedním mým známým, zdravíme, Štěpána z ekonomie jednoduše. A bavili jsme se o tom Bitcoinu a bylo to hodně zajímavý, byť on je taky takový spíš jako skeptický, ale ty jeho argumenty byly k věci, jako racionální, v určitých částech to dávalo smysl, ale samozřejmě to je debata na hodiny a ne jenom na otázky z publika, který jsou krátký. Jak ty se zpětně díváš na kroky ČNB, nebo který podnikla v rámci snižování inflace v roce 2021? Řekněme vlastně, že to byla jedna z prvních centrálních bank, která začala snižovat úrokový sazby.
 
+**Tomáš Havránek:** Zvyšovat.
+
+**Moderátor:** Pardon, pardon, zvyšovat, jo.
+
 **Tomáš Havránek:** To je mimochodem přeřeknutí, které ale není úplně nepodstatné. V ekonomické vědě pořád úplně nevíme, jak změny úrokových sazeb inflaci ovlivní. Věříme, že když zvýšíme úrokové sazby, tedy zdražíme peníze, českou korunu, inflace nakonec nějak klesne. Přesný mechanismus ale není úplně jednoznačný, ať už v teoriích, nebo když se díváme na datové modely.
 
 Kolik máme času?
@@ -68,11 +72,11 @@ Dnes víme, že jsme ji měli chladit víc. Tam je vlastně podhoubí nedávné 
 
 To se úplně nedělo. Sazby pak přece jen začaly trochu růst a pak do toho přišla pandemie. Když doznívala, bylo už poměrně evidentní, že se tu zadělává na průšvih. To bylo v polovině roku 2021, kdy inflace začala poměrně hodně růst. A tady je to, co jsi říkal: v září toho roku se ČNB odhodlala sazby poměrně hodně zvýšit.
 
-Jako jedna z prvních centrálních bank. To samo o sobě určitě bylo v pořádku, i když už to bylo řešení symptomů, a ne prvotní příčiny, která leží spíše v letech 17, 18 a dříve. Hlavní problém, kvůli kterému politiku a dlouhodobou strategii ČNB, jak možná víš, dlouhodobě kritizuji, byl ale v tom, že když jako centrální bankér něco děláš s úrokovou sazbou, víš, že potrvá hodně dlouho, než se to propíše do ekonomiky. Vede to přes různé složité kanály, které tu nebudu vysvětlovat. Většinou se říká, že trvá rok a půl, dva roky, než se zvýšení sazeb naplno projeví v inflaci, tedy v jejím snížení.
+Jako jedna z prvních centrálních bank. To samo o sobě určitě bylo v pořádku, i když už to bylo řešení symptomů, a ne prvotní příčiny, která leží spíše v letech 17, 18 a dříve. Hlavní problém, kvůli kterému politiku a dlouhodobou strategii ČNB, jak možná víš, dlouhodobě kritizuji, byl ale v tom, že když jako centrální bankér něco děláš s úrokovou sazbou, víš, že potrvá hodně dlouho, než se to propíše do ekonomiky. Vede to přes různé složité kanály, které tu nebudu vysvětlovat. Většinou se říká, že trvá rok, rok a půl, dva roky, než se zvýšení sazeb naplno projeví v inflaci, tedy v jejím snížení.
 
 Má to velké zpoždění. Nabízelo se proto naopak využít koruny vymačkané během devizových intervencí proti koruně a eura, která za ně banka nakoupila, a proces intervencí obrátit: prodat eura, nakoupit koruny, tím je stáhnout z trhu, posílit korunu a rychle zlevnit dovážené zboží.
 
-Obrátila by tak intervenční proces, který předtím v letech 13 až 17 provozovala opačným směrem. To bohužel neudělala, z důvodů, které mi nejsou úplně zřejmé, nebo mi je nikdo nevysvětlil. Inflaci by to snížilo rychle. Nemusel bys čekat rok a půl, dva roky, než se to projeví.
+Obrátila by tak intervenční proces, který předtím v letech 13 až 17 provozovala opačným směrem. To bohužel neudělala, z důvodů, které mi nejsou úplně zřejmé, nebo mi je nikdo nevysvětlil. Inflaci by to snížilo rychle. Nemusel bys čekat rok, rok a půl, dva roky, než se to projeví.
 
 Viděl bys to hned v cenách benzínu, v řádu týdnů. Zároveň bys snížil nafouklou bilanci, tedy rozvahu centrální banky, která teď má obrovský majetek. Jestli je to dobře, nebo špatně, k tomu se ještě můžeme dostat, ale má to všemožné vedlejší účinky, se kterými zpočátku nikdo moc nepočítal. Mně tedy vadí, že v tom, co Národní banka dělá, chybí symetrie.
 
@@ -140,9 +144,9 @@ Proto říkám, že 1% do bitcoinu ti taky nějak. Když to budeš schopen vysv�
 
 **Tomáš Havránek:** Salvador je zase extrémní případ. My nechceme přejít na bitcoin, to by mě ani nenapadlo.
 
-**Moderátor:** Že to je tam, jo? Že by se to asi stalo spíš v Jižní Americe, nebo teďka možná vlastně, jak to tam má ten Milei v tom, v Argentině. Ten to tam jako vede docela dobře, tak i když tu centrální banku nějak nezrušil,
+**Moderátor:** Já jsem to myslel spíš z pohledu geopolitiky, že by se to asi stalo spíš v Jižní Americe, nebo teďka možná vlastně, jak to tam má ten Milei v tom, v Argentině. Ten to tam jako vede docela dobře, tak i když tu centrální banku nějak nezrušil,
 
-**Tomáš Havránek:** Na dolarizaci, což je v podstatě úplné nahrazení domácí měny. Mimochodem, vidíš, kam se domácí měna dostane: když máš dlouhodobě vysokou inflaci, horší než v ostatních zemích, vzniká tlak na její zrušení. Řeknu to možná tvrdě, ale nedobrá výkonnost Národní banky nám paradoxně možná otevře dveře do eura nebo k většímu zapojení do kryptoměn, po kterém by standardně nebyla poptávka, kdybychom v centrálním bankovnictví fungovali dobře. Špatná výkonnost bohužel opravdu vede k tomu, že se znovu otevřela diskuze o euru.
+**Tomáš Havránek:** Tam je plán na dolarizaci, což je v podstatě úplné nahrazení domácí měny. Mimochodem, vidíš, kam se domácí měna dostane: když máš dlouhodobě vysokou inflaci, horší než v ostatních zemích, vzniká tlak na její zrušení. Řeknu to možná tvrdě, ale nedobrá výkonnost Národní banky nám paradoxně možná otevře dveře do eura nebo k většímu zapojení do kryptoměn, po kterém by standardně nebyla poptávka, kdybychom v centrálním bankovnictví fungovali dobře. Špatná výkonnost bohužel opravdu vede k tomu, že se znovu otevřela diskuze o euru.
 
 Je to jenom proto, že centrální banka má v inflaci takhle nedobrý výkon. Mít jedno procento bitcoinu v rezervách si tedy představit umím, ale chtělo by to podrobné vysvětlení pro většinu populace, která by se toho samozřejmě asi bála. To je tak možná na příští desetiletí.
 
@@ -196,7 +200,7 @@ Když si koupíš reálnou věc, a komodita reálná věc je, ať už zlato, neb
 
 Ano, když dovolíš platit daně v eurech, je to, jako by se zavedlo euro, protože tím euru dáš hodnotu. I kdyby nic jiného, můžeš ho použít na zaplacení daní, a daně nějak platit musíš. Ano, takže to je jen taková odbočka, ale samozřejmě máš pravdu. A znáš někoho, kdo by říkal, že koruna je krytá zlatem?
 
-**Moderátor:** Hodně to slýcháme, když se takhle dohadujeme na Twitteru, nebo mám kamaráda, který jako by dělá v ČNB a nebo dělali se nějaký průzkumy, prostě hodně lidí v rámci veřejnosti, tak si myslí, že koruna je stále nějakým způsobem krytá zlatem, třeba jenom z části. A teďka vlastně v posledním podcastu u Pepi Tětka, a říkala, že tam dali tuhle otázku a zase kecal bych, kolik lidí odpovědělo, že to taky, ale bylo jich hodně. Že prostě stále tady přetrvává ten narativ, že ta koruna je opravdu krytá, to zlato v té bance je a jedná se teda převážně o tu, jak říkáš, o tu starší populaci, která by nerozdýchala, kdyby Česká národní banka dala do rezerv nějaký podvod, něco jako je bitcoin, že jo.
+**Moderátor:** Hodně to slýcháme, když se takhle dohadujeme na Twitteru, nebo mám kamaráda, který jako by dělá v ČNB a nebo dělali se nějaký průzkumy, prostě hodně lidí v rámci veřejnosti, tak si myslí, že koruna je stále nějakým způsobem krytá zlatem, třeba jenom z části. A teďka vlastně v posledním podcastu u Pepi Tětka tam byla, teď si nevzpomenu na jméno slečny, ale ta dělá ty ekonomický olympiády, a říkala, že tam dali tuhle otázku a zase kecal bych, kolik lidí odpovědělo, že to taky, ale bylo jich hodně. Že prostě stále tady přetrvává ten narativ, že ta koruna je opravdu krytá, to zlato v té bance je a jedná se teda převážně o tu, jak říkáš, o tu starší populaci, která by nerozdýchala, kdyby Česká národní banka dala do rezerv nějaký podvod, něco jako je bitcoin, že jo.
 
 **Tomáš Havránek:** Ale tady právě vstupuje do hry ta psychologie, o které jsme se bavili. Vidíš, že si to lidé pořád myslí, což je pro mě vlastně překvapivé, ta čísla jsem neviděl. Evidentně je tedy uklidňuje vědomí, že centrální banka nějaké zlato má. V té budově ho už skoro nemá, jen velice málo, a proto říkám: OK, zaplň ty trezory dole, protože peněz máš hodně a jedno procento ze tří bilionů ti udělá zlata dost. Psychologie je ale důležitá nejenom pro starší část populace, ale i pro mladší, aby centrální bance věřila. Pokud se bude centrální banka chovat tak, že je úplně mimo moderní trendy, mimo to, jak žijí lidé třeba do 30 let (mně už bude skoro 40, takže se tam už nepočítám), projeví se to dlouhodobě i v tom, jak budou centrální banku vnímat. A oni budou brzy v roli, kdy budou mít v téhle zemi dominantní ekonomickou úlohu, a bude záležet na tom, jak moc centrální bance důvěřují, nebo ne. Proto se o tom teď bavíme hypoteticky.
 
