@@ -4339,9 +4339,11 @@ A teď je jen otázka, jak dlouho můžeme čekat, než se zruší. Ano, protož
 
 **Alice Němcová Tejkalová:** Pardon, na to bych se tě právě ještě ráda zeptala. Proč si myslíš, co je ta hlavní věc, kvůli které na tom střídání času lidé, politici tolik lpí?
 
-**Zuzana Havránková:** Nejsem si jistá. Podle mě lidé nemají rádi změny. Tohle by byla velká změna a ani není úplně jasné, jaké je správné řešení. Pokud by byl jeden stejný čas celý rok, jaké je to správné řešení? Který, letní, nebo zimní?
+**Zuzana Havránková:** Nejsem si jistá. Podle mě lidé nemají rádi změny. Tohle by byla velká změna a ani není úplně jasné, jaké je správné řešení. Pokud by byl jeden stejný čas celý rok, jaké je to správné řešení?
 
-Myslím, že sama mám nějakou představu nebo intuici. Kdybychom ponechali jen náš zimní čas, tedy středoevropský: ten je nastavený pro člověka, který chodí spát v 8 večer. Řekněme, že pokud průměrně spíme 8 hodin, máš střed spánku o půlnoci a budíš se ve 4, což alespoň mně osobně nezní úplně jako nějaký standard pro průměrného Evropana. Takže kdybych v tom měla nějakou rozhodovací pravomoc, asi bych se přikláněla ani ne tak k letnímu času, ale klidně i k dvojitému letnímu času, který posouvá náš spánek na desátou hodinu s tím, že vstáváme v šest. Ale samozřejmě má tahle politika tolik souvislostí, že i biologové a medici musí říct, co si o tom myslí.
+**Alice Němcová Tejkalová:** Ano, který, letní, nebo zimní?
+
+**Zuzana Havránková:** Myslím, že sama mám nějakou představu nebo intuici. Kdybychom ponechali jen náš zimní čas, tedy středoevropský: ten je nastavený pro člověka, který chodí spát v 8 večer. Řekněme, že pokud průměrně spíme 8 hodin, máš střed spánku o půlnoci a budíš se ve 4, což alespoň mně osobně nezní úplně jako nějaký standard pro průměrného Evropana. Takže kdybych v tom měla nějakou rozhodovací pravomoc, asi bych se přikláněla ani ne tak k letnímu času, ale klidně i k dvojitému letnímu času, který posouvá náš spánek na desátou hodinu s tím, že vstáváme v šest. Ale samozřejmě má tahle politika tolik souvislostí, že i biologové a medici musí říct, co si o tom myslí.
 
 **Alice Němcová Tejkalová:** Děkuji moc. Já bych tě hrozně ráda poslouchala, povídala si s tebou o dalších výzkumech klidně déle, ale ten čas, který máme vždycky pro podcast de facto, tak už se naplnil, já ti přeju krásné Vánoce, tobě i celé rodině, ať se ti pořád tak dál daří, ať je pořád ta tvoje energie tak silná, nakažlivá. Moc děkuji, moc děkuji za pozvání. A s vámi se loučím a těším se zase někdy na slyšenou.
 
