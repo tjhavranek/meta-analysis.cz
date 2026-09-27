@@ -105,11 +105,11 @@ Jenže potřebuješ o 50 % učitelů víc, abys pokryla poptávku té další t�
 
 Druhým problémem samozřejmě je, že těch srdcařů, těch učitelů, je jen určitý počet. Je to hodně omezená skupina. A ti už ve školství nejspíše jsou, protože je to jejich vnitřní poslání, je to, co prožívají, co chtějí dělat.
 
-Ti tam už budou. A když teď tu skupinu rozšiřuji o 50 %, jako v mém příkladu, je to hodně lidí navíc. Tím pádem se nutně musí stát, že hledám i mezi těmi, kdo to třeba primárně dělat nechtěli. Přijde tedy málo srdcařů.
+Ti tam už budou. A když teď tu skupinu rozšiřuji o 50 %, jako v mém příkladu, je to hodně lidí navíc. Tím pádem se nutně musí stát, že hledám i mezi těmi, kdo to třeba primárně dělat nechtěli.
 
 **Alice Němcová Tejkalová:** Tedy přijde málo srdcařů.
 
-**Zuzana Havránková:** Přesně tak. Teoreticky, řekněme, by se mohlo stát, že snižujeme kvalitu učitelů.
+**Zuzana Havránková:** Přesně tak, přijde málo nových srdcařů. Teoreticky, řekněme, by se mohlo stát, že snižujeme kvalitu učitelů.
 
 Teoreticky. Samozřejmě, že to musí být dlouhodobý proces. Ano. Jenže zmenšování tříd bohužel probíhá v relativně krátkém časovém období.
 
@@ -155,4 +155,8 @@ A teď je jen otázka, jak dlouho můžeme čekat, než se zruší. Ano, protož
 
 **Zuzana Havránková:** Myslím, že sama mám nějakou představu nebo intuici. Kdybychom ponechali jen náš zimní čas, tedy středoevropský: ten je nastavený pro člověka, který chodí spát v 8 večer. Řekněme, že pokud průměrně spíme 8 hodin, máš střed spánku o půlnoci a budíš se ve 4, což alespoň mně osobně nezní úplně jako nějaký standard pro průměrného Evropana. Takže kdybych v tom měla nějakou rozhodovací pravomoc, asi bych se přikláněla ani ne tak k letnímu času, ale klidně i k dvojitému letnímu času, který posouvá náš spánek na desátou hodinu s tím, že vstáváme v šest. Ale samozřejmě má tahle politika tolik souvislostí, že i biologové a medici musí říct, co si o tom myslí.
 
-**Alice Němcová Tejkalová:** Děkuji moc. Já bych tě hrozně ráda poslouchala, povídala si s tebou o dalších výzkumech klidně déle, ale ten čas, který máme vždycky pro podcast de facto, tak už se naplnil, já ti přeju krásné Vánoce, tobě i celé rodině, ať se ti pořád tak dál daří, ať je pořád ta tvoje energie tak silná, nakažlivá. Moc děkuji, moc děkuji za pozvání. A s vámi se loučím a těším se zase někdy na slyšenou.
+**Alice Němcová Tejkalová:** Děkuji moc. Já bych tě hrozně ráda poslouchala, povídala si s tebou o dalších výzkumech klidně déle, ale ten čas, který máme vždycky pro podcast de facto, tak už se naplnil, já ti přeju krásné Vánoce, tobě i celé rodině, ať se ti pořád tak dál daří, ať je pořád ta tvoje energie tak silná, nakažlivá.
+
+**Zuzana Havránková:** Moc děkuji, moc děkuji za pozvání.
+
+**Alice Němcová Tejkalová:** A s vámi se loučím a těším se zase někdy na slyšenou.
