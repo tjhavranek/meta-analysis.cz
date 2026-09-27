@@ -101,7 +101,7 @@ Je to i moje chyba. Tehdy jsem u toho byl a sice jsem k tomu něco řekl, ale by
 
 **Petra Jaroměřská:** Jak jste vnímal nedávná slova guvernéra České národní banky o tom, že neváhá zdrtit ekonomiku s případným zvýšením sazeb, tak, aby zabránil inflaci.
 
-**Tomáš Havránek:** Znám ho poměrně dlouho, několik měsíců jsem mu dělal poradce, než jsem z Národní banky odešel. A to jsou výroky, které mi k Alešovi přesně sedí, takže mě to nijak nepřekvapuje. Jenom bych připomněl, že když tu byla inflace naposledy dvojciferná, Aleš Michl nebyl z těch, kdo by chtěli drtit ekonomiku vysokými sazbami. Takže buď bude nekonzistentní a udělá to… Spíš bych čekal, že… Vlastně nevím, co bych čekal…
+**Tomáš Havránek:** Znám ho poměrně dlouho, několik měsíců jsem mu dělal poradce, než jsem z Národní banky odešel. A to jsou výroky, které mi k Alešovi přesně sedí, takže mě to nijak nepřekvapuje. Jenom bych připomněl, že když tu byla inflace naposledy dvojciferná, Aleš Michl nebyl z těch, kdo by chtěli drtit ekonomiku vysokými sazbami. Takže pokud to udělá, bude nekonzistentní. Vlastně nevím, co bych čekal…
 
 **Petra Jaroměřská:** Shodou okolností my natáčíme ve středu. Zítra rozhoduje bankovní rada centrální banky o zvýšení úrokových sazeb, případně ponechání je na současné úrovni. Na co byste si vsadil? Je teď čas na to, ty sazby zvýšit?
 
@@ -121,9 +121,9 @@ Dlouhodobě, a k tomu se možná dostaneme, totiž k tomu, co dlouhodobě vyře�
 
 **Petra Jaroměřská:** Na druhou stranu se zeptám, jak jste vnímal slova premiéra, který vyzval guvernéra České národní banky, aby naopak ty sazby snížil.
 
-**Tomáš Havránek:** Úplně nerozumím tomu, proč by to pan premiér chtěl dělat. Vidíme to například u Spojených států: když prezident, který tu zemi v tom případě řídí, vyzve centrální banku, aby snížila sazby, ona to samozřejmě udělat nechce. I kdyby sama třeba vyhodnotila, že je to dobré, nemůže to udělat, aby to nevypadalo, že je pod…
+**Tomáš Havránek:** Úplně nerozumím tomu, proč by to pan premiér chtěl dělat. Vidíme to například u Spojených států: když prezident, který tu zemi v tom případě řídí, vyzve centrální banku, aby snížila sazby, ona to samozřejmě udělat nechce. I kdyby sama třeba vyhodnotila, že je to dobré, nemůže to udělat, aby to nevypadalo, že je pod tlakem.
 
-Když pan premiér takhle své přání vysloví, tu cestu tím uzavře. Poráží to samo sebe. Pokud je tedy cílem sazby zvýšit, i když nevím proč, to by asi nepomohlo ani vládě, ani firmám. Samozřejmě by to mohlo pomoct proti inflaci, ale jestli…
+Když pan premiér takhle své přání vysloví, tu cestu tím uzavře. Poráží to samo sebe. Pokud je tedy cílem sazby zvýšit, i když nevím proč, to by asi nepomohlo ani vládě, ani firmám. Samozřejmě by to mohlo pomoct proti inflaci.
 
 Abych se přiznal, logice za tímto vyjádřením nerozumím, ale asi mi něco uniká.
 
@@ -137,7 +137,7 @@ Abych se přiznal, logice za tímto vyjádřením nerozumím, ale asi mi něco u
 
 Je to podle mě naprosto přehnaná reakce na velkou finanční krizi, která ale v Americe probíhala v úplně jiných hypotečních podmínkách než u nás. To je komplikovaný příběh. U nás to vůbec nehrozí. Rozumím, proč to kolegové dělají, určitě tomu rozumějí víc než já.
 
-Já osobně bych byl v tomto daleko… Rozhodnutí vzít si hypotéku bych nechal na rodinách a na bance, jestli jim je ochotná půjčit, nebo ne.
+Já osobně bych rozhodnutí vzít si hypotéku nechal daleko víc na rodinách a na bance, jestli jim je ochotná půjčit, nebo ne.
 
 **Petra Jaroměřská:** A zároveň se tím tlumí i růst cen nemovitostí, kterých je nedostatek, tak když by vlastně víc lidí dosáhlo na hypotéku, bylo by víc kupců a byl by tady další tlak na ceny nemovitostí a tedy i inflaci.
 
@@ -153,7 +153,7 @@ Výsledkem je diktatura jednoho názoru a tektonické změny při výměně guve
 
 **Tomáš Havránek:** Přijde mi trochu zábavné, že, řekněme, poradci současného pana prezidenta, kterého si velmi vážím, tenhle systém před volbami kritizovali. To, že vedení bankovní rady vybírá sám prezident bez schválení třeba Senátem, je mezinárodně dost nestandardní. Není to úplně výjimečná věc, ale je to nestandardní a rozhodně to pak vede k některým, řekněme, idiosynkratickým volbám. Jakmile jste ale u moci a rozhodujete o tom, najednou se vám samozřejmě líbí, že to můžete dělat sami.
 
-Neříkám, že je to nutně špatně. Změny, o kterých tady mluvím, by se samozřejmě nejlépe prováděly v tomhle systému, kdy o něčem přesvědčíte pana prezidenta nebo ho donutíte se nad tím zamyslet. A ten pak může velmi snadno… V našem systému totiž za inflaci odpovídá pan prezident. Tím, že jmenuje celé vedení Národní banky, je inflace podle standardní makroekonomické teorie několik let zcela odpovědností pana prezidenta.
+Neříkám, že je to nutně špatně. Změny, o kterých tady mluvím, by se samozřejmě nejlépe prováděly v tomhle systému, kdy o něčem přesvědčíte pana prezidenta nebo ho donutíte se nad tím zamyslet. V našem systému totiž za inflaci odpovídá pan prezident. Tím, že jmenuje celé vedení Národní banky, je inflace podle standardní makroekonomické teorie několik let zcela odpovědností pana prezidenta.
 
 To je v globálním měřítku výjimečné, ale je to tak. A měli bychom o tom mluvit víc. Z hlediska inflace jsou tedy volby prezidenta asi mnohem důležitější než volby do Sněmovny. Podle standardní ekonomické teorie.
 
@@ -175,7 +175,7 @@ Každý, kdo tohle zažil, ví, jak se zbytečně v prosinci utrácí.
 
 **Tomáš Havránek:** To je také jasné, to je prima. Máte pravdu, to je trošku příbuzná a trochu jiná věc. Navrhoval bych pořádně se na to podívat a implementovat něco, co trochu funguje v Británii nebo v některých státech Austrálie: když jako ředitelka odboru, tady třeba v ekonomii, když se bavíme o státních institucích, ty peníze v daném roce ušetříte, můžete si je převést a máte garantované, že tam příští rok budou. Že když je budete chtít použít, někdo vám je vyplatí.
 
-A zároveň, že vám rozpočet na příští rok nesníží, naopak vám ho třeba zvýší, protože jste ušetřila. Na to jsou různé poměrně sofistikované odhady, kolik je takový systém schopen ušetřit, a ty odhady jsou kolem 2 % výdajů. Což by znamenalo…
+A zároveň, že vám rozpočet na příští rok nesníží, naopak vám ho třeba zvýší, protože jste ušetřila. Na to jsou různé poměrně sofistikované odhady, kolik je takový systém schopen ušetřit, a ty odhady jsou kolem 2 % výdajů.
 
 V dané kapitole. V celkovém státním rozpočtu, kdybychom to zavedli opravdu dobře, napříč, tedy z těch 2 bilionů. Takže to máme kolik? 40 miliard, počítáme správně. Takže rozpočtový carry-over je 40 miliard. Zase věc, která nikoho nebolí.
 
@@ -189,7 +189,7 @@ A kdyby EET udělalo 30 miliard, byla byste už na dvou třetinách rozpočtové
 
 Investování rezerv, to jsou vysoké desítky miliard nebo přes 100 miliard, EET vám udělá nízké desítky miliard. Kdyby to tedy vláda zavedla aspoň v nějaké formě, více než by to vykompenzovalo další kroky, které zase směřují k vyššímu deficitu. Musíte, řekněme, uspokojit nějaké své voličské jádro, čemuž také rozumím, ne že bych to úplně rád viděl, ale skoro bych řekl, že se současná vláda chová lépe, než bych před volbami očekával.
 
-Třeba co se týče destrukce důchodové reformy, ta věc není zdaleka tak horká, jak se… Tím nechci říkat, že by vláda obecně dělala skvělé věci, ale můžete tam najít i tyhle střípky dobrých zpráv.
+Třeba co se týče destrukce důchodové reformy, ta věc není zdaleka tak horká. Tím nechci říkat, že by vláda obecně dělala skvělé věci, ale můžete tam najít i tyhle střípky dobrých zpráv.
 
 **Petra Jaroměřská:** Podle vás tedy to zvyšování zadlužení není zas až takovej problém, jak někteří kritici říkají?
 
@@ -213,7 +213,7 @@ To je spekulace, ale podložená, a znám řadu chytrých lidí, kteří vám o 
 
 **Tomáš Havránek:** Šetřit je prima, ale šetření nebo třeba zvyšování daní někoho bolí, takže realita je taková, že větší reformy daní nebo výdajů jsou v demokracii v podstatě nemožné. Ne že by to bylo úplně nemožné, ale je to velmi, velmi komplikované. Co tedy?
 
-Podle mě je bohužel mnohem pravděpodobnější tento scénář: pokud tu nebude hojnost umělé inteligence pro všechny, kdy peníze vlastně už nebudou mít… kdy všichni můžou všechno, což asi ne, tak si stát v situaci, kdy dlouhodobě není schopen vybrat na daních tolik, kolik potřebuje, ty peníze natiskne. To sice také není dobré řešení, lidi to rádi mít nebudou, ale je to politicky přijatelnější než vybírat mnohem víc daní nebo snižovat důchody.
+Podle mě je bohužel mnohem pravděpodobnější tento scénář: pokud tu nebude hojnost umělé inteligence pro všechny, kdy všichni můžou všechno, což asi ne, tak si stát v situaci, kdy dlouhodobě není schopen vybrat na daních tolik, kolik potřebuje, ty peníze natiskne. To sice také není dobré řešení, lidi to rádi mít nebudou, ale je to politicky přijatelnější než vybírat mnohem víc daní nebo snižovat důchody.
 
 **Petra Jaroměřská:** Ale je to krátkodobé řešení. Dlouhodobě se to udržet přeci nedá.
 
@@ -223,7 +223,7 @@ A i když vám v centrální bance, ať už je to Aleš Michl, nebo Zdeněk Tům
 
 Tím ale samozřejmě rozpoutají další inflaci. Inflace je to špatné řešení státního dluhu, ale zároveň vidíme, měli jsme inflaci skoro 20 %. Lidem se to nelíbilo, ale Národní banka řekne, že je to chyba vlády, vláda řekne, že je to chyba Národní banky nebo chyba zahraničí, že za to můžou Rusové nebo Ukrajinci.
 
-Takhle by to tedy bylo. Když mám já osobně dát nějakou předpověď, což je v ekonomii vždycky těžké, čekám dlouhodobě… A nevděčné. Když dám dlouhodobou předpověď, všichni mezitím umřeme, než se třeba realizuje. Ale čekám vyšší inflaci.
+Takhle by to tedy bylo. Předpovídat je v ekonomii vždycky těžké. A nevděčné: když dám dlouhodobou předpověď, všichni mezitím umřeme, než se třeba naplní. Když ale mám já osobně nějakou předpověď dát, čekám dlouhodobě vyšší inflaci.
 
 Vysoká inflace, a to není jenom česká věc, je relativně snadné a relativně málo bolestné řešení státního dluhu, jak u nás, tak v eurozóně a ve Spojených státech. Přijetím eura si v tomhle nepomůžeme, když se podíváte na fiskální situaci eurozóny. Neříkám, že euro je dobré, nebo špatné, chápu jeho výhody, ale s eurem těžko budeme mít dlouhodobě nižší inflaci než s korunou.
 

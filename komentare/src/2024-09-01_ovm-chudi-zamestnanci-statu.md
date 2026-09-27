@@ -80,9 +80,9 @@ Což s úředníky ne vždycky bývá moje zkušenost.
 
 **Tomáš Havránek:** To odpovídá, myslím, že odpovídá. Samozřejmě by bylo lepší, kdyby to bylo efektivnější. Nějaká forma dotazníků jako v Singapuru by určitě pomohla. Lidí, které platíme ze státních peněz, je přitom mnohem víc, asi milion, možná i víc než milion.
 
-Nepřímo. Ostatně i já na univerzitě, sice ne v tabulkách, o kterých se bavíme, jsem také placený převážně ze státního rozpočtu. Nevidím velký prostor pro masivní propouštění. Snadno se sice říká, že se úředníci nebo státní zaměstnanci točí na židlích, ale v praxi… Kdybychom lépe zdigitalizovali stát jako celek…
+Nepřímo. Ostatně i já na univerzitě, sice ne v tabulkách, o kterých se bavíme, jsem také placený převážně ze státního rozpočtu. Nevidím velký prostor pro masivní propouštění. Snadno se sice říká, že se úředníci nebo státní zaměstnanci točí na židlích, ale v praxi to tak jednoduché není. Kdybychom lépe zdigitalizovali stát jako celek, mírné úspory by asi šly.
 
-Mírné úspory, konkrétně asi v tom… To je od Mariana Jurečky 10%. A dostaneme se k superdávce a ke zjednodušení, to je prima. Ale nevidím tu velký prostor opravdu propouštět, třeba bez podkladů z dotazníků a nějakého dlouhodobého hodnocení, ze kterých uvidíte, koho ta práce baví, kdo ji chce dělat, kdo chce pomáhat klientům, občanům, a kdo ji dělá proto, že na něj v životě nějak zbyla, a možná by měl se svým životem dělat něco jiného.
+To je od Mariana Jurečky 10%. A dostaneme se k superdávce a ke zjednodušení, to je prima. Ale nevidím tu velký prostor opravdu propouštět, třeba bez podkladů z dotazníků a nějakého dlouhodobého hodnocení, ze kterých uvidíte, koho ta práce baví, kdo ji chce dělat, kdo chce pomáhat klientům, občanům, a kdo ji dělá proto, že na něj v životě nějak zbyla, a možná by měl se svým životem dělat něco jiného.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 

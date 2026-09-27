@@ -62,7 +62,7 @@ I když se ty změny samozřejmě propíší do příštích let.
 
 **Tomáš Havránek:** Klidní ne, ale rád bych viděl daleko větší debatu o této klíčové věci, protože peněz, které můžete vydělat relativně bezbolestně, je hodně. A my trávíme spoustu času a spoustu úsilí debatami o desítkách miliard, které opravdu někde budou chybět.
 
-Vezměme si třeba dnešek: vláda přidává peníze do zdravotnictví a dopravy, což je asi v pořádku. Kdyby je ušetřila, ty peníze by někde chyběly. Tady nám leží peníze na chodníku, a ani ta vláda minulá, ani ta současná… Ta současná o tom s vedením Národní banky aspoň trošku mluví, ta minulá v tomhle ohledu neudělala nic. Třeba se mýlím, ale ta debata tam vůbec není.
+Vezměme si třeba dnešek: vláda přidává peníze do zdravotnictví a dopravy, což je asi v pořádku. Kdyby je ušetřila, ty peníze by někde chyběly. Tady nám leží peníze na chodníku. Současná vláda o tom s vedením Národní banky aspoň trošku mluví, ta minulá v tomhle ohledu neudělala nic. Třeba se mýlím, ale ta debata tam vůbec není.
 
 **Jiří Zatloukal:** Není třeba, ale spíš řešení zefektivňovat chod některých rezortů, vlastně těch největších ideálně, protože ty mandatorní a kvazimandatorní výdaje dlouhodobě tvoří drtivou většinu toho rozpočtu. To jsou ty výdaje, které stát tak, či onak musí vydat od platu státních zaměstnanců, důchody, zdravotnictví. Pohybuje se to podle Národní rozpočtové rady zhruba za poslední tři roky v průměru 94,8% příjmů státního rozpočtu. Ten manévrovací prostor je tam minimální.
 
@@ -90,7 +90,7 @@ Onehdy jsem byl v televizi s panem Kupkou, který o tom slyšel poprvé. Pak jse
 
 **Tomáš Havránek:** Máte pravdu. Jen k tomu: samozřejmě to není oběd zdarma, berete na sebe riziko. To riziko je, že ČNB udělá ztrátu. Mimochodem, ona je ve ztrátě v podstatě odjakživa a vždycky tvrdí, že na ztrátě nezáleží. Pokud na ztrátě nezáleží, což není úplně pravda, ale pokud je to tak, jak oni tvrdí, že na ztrátě nezáleží, pak ztráta může být půl bilionu, bilion, je to jedno. Ale zisk je naprosto reálný.
 
-Pokud uděláte zisk, můžete ho použít, můžete z něj postavit nemocnici, rychlovlaky, dálnici. Ten zisk je reálný. Pokud je to tak, máte v tom riziku asymetrii. Tohle je karikatura, ale takhle to oni říkají. Berete na sebe nějaké riziko, ale pokud se svět nezhroutí… Já to dělám taky, kupuji akcie, to je moje jediná investice, protože je to na dlouhou dobu.
+Pokud uděláte zisk, můžete ho použít, můžete z něj postavit nemocnici, rychlovlaky, dálnici. Ten zisk je reálný. Pokud je to tak, máte v tom riziku asymetrii. Tohle je karikatura, ale takhle to oni říkají. Berete na sebe nějaké riziko, ale pokud se svět nezhroutí, vyplatí se to. Já to dělám taky: kupuji akcie, to je moje jediná investice, protože je to na dlouhou dobu.
 
 Když je váš horizont 10, 20, 30 let, a Národní banka má horizont ještě delší, ta neumře nikdy, můžete si to u peněz, které nepotřebujete, dovolit. A když je potřebujete, můžete ty akcie prodat. Sice třeba levněji, ale v krizi vám zároveň většinou oslabí koruna, takže to pro vaši rozvahu není zase takový problém. Zajímá vás dlouhodobý výhled a v dlouhodobém výhledu je velice nepravděpodobné, že se tato věc nevyplatí, s výjimkou nějaké termonukleární války, kdy by nás peníze stejně nezajímaly.
 
@@ -102,7 +102,7 @@ Z roku na rok je to tedy riskantní, ano, ale mě nezajímá, co je z roku na ro
 
 A příští rok vám řeknou: ty jsi to nevyčerpal, tak to asi nepotřebuješ. A rozpočet vám často sníží. Takhle to je. Konkrétně jmenovat nebudu, ale je to běžná praxe.
 
-V některých zemích funguje rozpočtový carry over, kdy vy jako ředitel odboru máte… Mimochodem, když to funguje takhle, jakou máte v prosinci motivaci, co dělat? Utrácíte za nesmysly, za zbytečnosti. Máme peníze na cestovném, ty pojedeš na Havaj, abychom ty peníze utratili. A další věci: koupíme si věci, které nepotřebujeme.
+V některých zemích funguje rozpočtový carry over, kdy se vám jako řediteli odboru nevyčerpané peníze převedou do dalšího roku. Když to ale funguje tak jako dnes u nás, jakou máte v prosinci motivaci, co dělat? Utrácíte za nesmysly, za zbytečnosti. Máme peníze na cestovném, ty pojedeš na Havaj, abychom ty peníze utratili. A další věci: koupíme si věci, které nepotřebujeme.
 
 To jsou nějaká procenta rozpočtu…
 
@@ -144,7 +144,7 @@ My dohromady jich máme dost, ne? Spolu tedy asi šest.
 
 **Jiří Zatloukal:** Směřujete k tomu, že bezdětní lidé by měli platit vyšší daně? Což se taky objevuje tento návrh. Teda ti, kteří je samozřejmě mohou mít, ne? Ti, kteří je nemohou mít.
 
-**Tomáš Havránek:** Ne, to bych… Takové návrhy se taky objevují. Tím, že mám čtyři děti, nejsem v pozici, abych to komentoval, protože na tom mám sám očividný zájem. Takže to komentovat nebudu. Chci jen říct, že mi přijde velká škoda, kdybychom ty děti neměli.
+**Tomáš Havránek:** Ne. Takové návrhy se sice taky objevují, ale tím, že mám čtyři děti, nejsem v pozici, abych to komentoval, protože na tom mám sám očividný zájem. Takže to komentovat nebudu. Chci jen říct, že mi přijde velká škoda, kdybychom ty děti neměli.
 
 Ale matka tím nemusí obětovat kariéru. Víte, že moje žena je daleko úspěšnější než já a vydělává víc peněz než já. Ten život je sice složitý, ale je skvělý. Takže mi přijde, že lidé, kteří mají pocit, že to nepotřebují, toho nakonec budou velmi litovat a kvůli tomu do velké míry promarní život.
 
@@ -234,7 +234,7 @@ Ale vzít to jako něco, čím byla dřív kalkulačka nebo počítač. Samozře
 
 **Tomáš Havránek:** Pořád generování opravdu dobrých nápadů, to za vás ta AI neudělá. To je pravda. Až tohle bude umět, hra se úplně změní, nejen pro mě, pro vás, ale pro všechny, pro celý svět. Ale možná k lepšímu. Já teď tedy můžu dělat obecnější věci, obecnější myšlenku, nápad, a s technickými detaily mi často pomůže agent místo kolegy z Japonska, kterého jsem musel platit, protože jsem neuměl matematiku z MIT, kterou on uměl.
 
-Teď ho pořád potřebuji, ale méně. Další věc je samotné přednášení. Sice můžete pustit nějakou hezkou přednášku z YouTube, ale pořád to není úplně…
+Teď ho pořád potřebuji, ale méně. Další věc je samotné přednášení. Sice můžete pustit nějakou hezkou přednášku z YouTube, ale pořád to není úplně totéž.
 
 Zaujetí studentů pro danou látku zatím nelze úplně nahradit ničím jiným, než že jim to říkáte takhle, bavíte se s nimi, často pak i individuálně. Je to dialog. Ale ve velké většině ostatních věcí, kromě nápadů, verbální komunikace a motivace, mě už teď nejnovější nástroje pravděpodobně dokážou do velké míry nahradit.
 

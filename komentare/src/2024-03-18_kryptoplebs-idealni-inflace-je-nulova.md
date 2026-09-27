@@ -184,7 +184,7 @@ Ještě poslední otázka k tomu zlatu. Setkáváš se stále s názory v rámci
 
 Můžeš se na to dívat několika způsoby, je několik přístupů. Hlavní přístup samozřejmě je, že není krytá ničím.
 
-V ekonomii dominuje přístup, že je krytá podpisem guvernéra. Tedy tím, jestli věříš guvernérovi, centrální bance, což teď evidentně asi úplně není, když koruna za poslední roky tak rapidně ztrácí hodnotu a teď klesá i její kurz vůči euru. Ale kdybys konceptuálně úplně oddělil rozpočty centrální banky a státu, což je teď u nás zvykem, ale není to úplně uzákoněné…
+V ekonomii dominuje přístup, že je krytá podpisem guvernéra. Tedy tím, jestli věříš guvernérovi, centrální bance, což teď evidentně asi úplně není, když koruna za poslední roky tak rapidně ztrácí hodnotu a teď klesá i její kurz vůči euru. Rozpočty centrální banky a státu jsou teď u nás oddělené zvykem, ale není to úplně uzákoněné.
 
 Kdyby náhodou ČNB měla zisk, musí ho nakonec převést do státního rozpočtu. Ale kdybys to ze zákona, v ústavě, oddělil a řekl: tohle jsou aktiva, majetek národní banky, jakýkoliv zisk nebo ztráta patří jenom národní bance, nikdo si zisk nemůže brát a nikdo naopak nemůže kompenzovat ztrátu, pak platí, že peníze vydává centrální banka, jsou to její pasiva, to je trochu účetnictví, ale jen maličko, a ta jsou kryta, tedy na druhé straně vyvážena aktivy, majetkem centrální banky. Když to máš oddělené, můžeš říct, že bankovky nebo elektronické peníze, které centrální banka vydává, jsou opravdu kryté jejím majetkem. A kdybys to vzal technicky, teď tam máš těch několik promile zlata, takže by mohly být trošku kryté zlatem, kdybys měl rozpočty, tedy bilance, úplně oddělené, což teď není, ale mohlo by být. Není to tak úplně daleko.
 
@@ -264,7 +264,7 @@ Pokud to nebereme úplně, protože Švýcarsko je, jak říkám, jediná země,
 
 Finanční moc máš totiž větší, v jiných oblastech menší, ale nejsou žádné interpelace v parlamentu. Nikdo tě nemůže odvolat. Když nechceš vysvětlovat, tak to neděláš. Nechodíš do diskuzních pořadů, kde nejsou předem připravené otázky.
 
-Ano, neděláš skoro nic, dostaneš svých 6 milionů za rok a všechno je v pořádku, i když výkonnost banky je naprosto tristní. Bylo by tedy dobré zvýšit odpovědnost té instituce za inflaci, ale k tomu jí musíš říct, co po ní chceš. Ústava říká cenová stabilita. Nejintuitivnější představa, co je cenová stabilita… Co bys řekl, že je podle tebe cenová stabilita?
+Ano, neděláš skoro nic, dostaneš svých 6 milionů za rok a všechno je v pořádku, i když výkonnost banky je naprosto tristní. Bylo by tedy dobré zvýšit odpovědnost té instituce za inflaci, ale k tomu jí musíš říct, co po ní chceš. Ústava říká cenová stabilita. Co bys řekl, že je ta nejintuitivnější představa cenové stability?
 
 **Moderátor:** Že na první dobrou bych sem řekl, že ceny jsou stejný a nemění se.
 
@@ -372,7 +372,7 @@ Pivo. Oni znají pivo.
 
 **Moderátor:** Bitcoin teda. V bitcoinový komunitě, tak jako Česká republika je velmoc, jsme tím hodně známí. Máme tady hodně projektů a vynálezů, které tady v České republice vznikly v rámci bitcoinů.
 
-**Tomáš Havránek:** Dobře. Většinou je to Praha a Havel. Václav Havel je asi taková pozitivní věc, kromě toho, že máme hezké hlavní město a třeba hezké ženy. Možná, když… možná je Slovenka, takže já tady musím nesouhlasit.
+**Tomáš Havránek:** Dobře. Většinou je to Praha a Havel. Václav Havel je asi taková pozitivní věc, kromě toho, že máme hezké hlavní město a třeba hezké ženy. Možná je Slovenka, takže já tady musím nesouhlasit.
 
 **Moderátor:** Jo, tak to je skoro to jedno a to samé, že?
 

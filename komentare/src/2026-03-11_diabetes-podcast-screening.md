@@ -31,7 +31,7 @@ Takže takhle to bylo, přes paní doktorku.
 
 **Tomáš Havránek:** Výzkum potřebuje, aby se ho někdo účastnil, takže to byla jedna věc, asi ta druhotná. A potom ano, ten klid, nebo spíš představa, že kdyby to nebylo v pořádku, je prima vědět to dopředu, pokud by se s tím dalo něco dělat. A jak se teď ukazuje, dá. Zpětně by tedy byla chyba nenechat se otestovat. Když to neuděláme, ušetříme si sice několik let, řekněme, starostí. K tomu, jak velké starosti to pro rodiče jsou, nebo ne, se třeba ještě dostaneme. Jenže když se nenecháte testovat, nevíte to.
 
-A pak se to někdy projeví, u Filípka třeba ve dvanácti letech, a vy najednou šokově zjistíte, že ten problém je. Předtím jste sice měli několik let úplně v klidu, ale dost možná jste už promeškali dobu, kdy se dnes dětem dá pomoci, tedy oddálit nástup situace, kdy si musí píchat inzulin a samotná nemoc propukne v plném stadiu. Takže jsem rád. Samozřejmě na začátku, když se to člověk dozví… Nevím, jak to bylo u vás, jestli si to třeba pamatujete. Já cukrovku nemám, ale moje sestřenice má diabetes, takže vím, jaké to je. A protože jsme s Bárou poměrně často spolu, víme i s naším Filípkem, že život člověka s diabetem je normální: jenom máte nějakou tu krabičku, občas to zapípá, hlídáte si, co jíte, ale víme, že se s tím dá žít.
+A pak se to někdy projeví, u Filípka třeba ve dvanácti letech, a vy najednou šokově zjistíte, že ten problém je. Předtím jste sice měli několik let úplně v klidu, ale dost možná jste už promeškali dobu, kdy se dnes dětem dá pomoci, tedy oddálit nástup situace, kdy si musí píchat inzulin a samotná nemoc propukne v plném stadiu. Takže jsem rád. Nevím, jak to bylo u vás na začátku, když jste se to dozvěděli, jestli si to třeba pamatujete. Já cukrovku nemám, ale moje sestřenice má diabetes, takže vím, jaké to je. A protože jsme s Bárou poměrně často spolu, víme i s naším Filípkem, že život člověka s diabetem je normální: jenom máte nějakou tu krabičku, občas to zapípá, hlídáte si, co jíte, ale víme, že se s tím dá žít.
 
 Bára byla ředitelkou mateřské školy, teď je zástupkyní, takže má, myslím, velmi hezký život. Není to něco, kvůli čemu má smysl se trápit, zvlášť když s tím nemůžete nic dělat. Ve chvíli, kdy vám test vyjde pozitivní a druhý test potvrdí, že protilátky tam opravdu jsou, víte, že nemoc jednou propukne. Přesněji řečeno to ví rodič, dítě si to v těch, řekněme, devíti letech možná úplně nedovede představit. A v tu chvíli nemá smysl být smutný, zoufat si nebo se vztekat. Jediná smysluplná reakce je přijmout to a zajímat se o to, jak můžeme pomoci a jak se na to připravit, aby to bylo co možná nejlepší.
 
@@ -109,7 +109,7 @@ Samozřejmě je tam spousta proměnných a tak dále, ale ten teplizumab, pokud 
 
 **Jan Hrušovský:** Je to tak, já vlastně přemýšlím, kdy to udělala americká FDA, to udělala mnohem dřív.
 
-**Tomáš Havránek:** Bylo to mnohem dřív. Ne všechny věci, které se v Americe dějí, jsou skvělé, ale opakovaně se stává, že americká agentura FDA je přes všechny své problémy mnohem rychlejší a flexibilnější než ta evropská. A to stojí… Nebudu říkat konkrétní odhad, ale je to opravdu problém, je to ostuda Evropské unie, nebo Evropy jako celku. My s tím, myslím, nic neuděláme, ale je pozoruhodné, jak špatně v Evropě některé věci fungují. Takže s Filípkem jsme v první fázi. Shodou okolností jsem se včera paní doktorky na teplizumab ptal a čas na to ještě máme, asi rok nebo dva. Nejsem si jistý, jestli se nedává ve druhé fázi, kdy už je tam nějaký ten problém.
+**Tomáš Havránek:** Bylo to mnohem dřív. Ne všechny věci, které se v Americe dějí, jsou skvělé, ale opakovaně se stává, že americká agentura FDA je přes všechny své problémy mnohem rychlejší a flexibilnější než ta evropská. A to něco stojí. Nebudu říkat konkrétní odhad, ale je to opravdu problém, je to ostuda Evropské unie, nebo Evropy jako celku. My s tím, myslím, nic neuděláme, ale je pozoruhodné, jak špatně v Evropě některé věci fungují. Takže s Filípkem jsme v první fázi. Shodou okolností jsem se včera paní doktorky na teplizumab ptal a čas na to ještě máme, asi rok nebo dva. Nejsem si jistý, jestli se nedává ve druhé fázi, kdy už je tam nějaký ten problém.
 
 Každopádně tím se vracíme k důležitosti screeningu. Když screening neuděláte, protože si řeknete: no tak, já s tím stejně nic neudělám a nemá smysl kazit ratolestem dětství tím, že já i oni budeme zatížení vědomím, že jednou cukrovku budou mít, je to špatné uvažování. Když to neuděláte, pravděpodobně propásnete možnost prodloužit jim tímhle lékem dětství, ten bezstarostný život. A dokonce tuším, že průměrné oddálení bylo dva a půl roku, ale že to může být mnohem víc, a možná při opakovaném podání kumulativně ještě mnohem, mnohem víc. Takže do budoucna možná, a to už trochu spekuluji, ale pravděpodobně se bude dát inzulinu možná úplně předejít. To jsou ty možnosti.
 
@@ -147,9 +147,9 @@ Tak já vlastně nevím, co je pro ten systém jako lepší, že jo.
 
 **Tomáš Havránek:** Ano, ale řekl jste jednu důležitou věc. Nevím, jaká je teď cena toho léku, jestli je v těch cifrách, které jste zmiňoval, ale kvůli konkurenci půjde rapidně dolů. Konkurence je to, co chceme, jen si maličko přihřeju vlastní ekonomickou polívčičku. Všude, kde máte konkurenci, máte nakonec něco, co funguje za rozumnou cenu, když tomu dáte dost času.
 
-Ano. Firma, která to vyvinula a jejíž jméno jsem zapomněl… Sanofi, francouzská firma. Tohle nebude jediný lék. Budou lepší léky, cena půjde rapidně dolů a téměř jistě brzy přijde situace, kdy se to vyplatí i čistě ekonomicky, čistě z hlediska cashflow pojišťoven.
+Ano. Vyvinula to francouzská firma Sanofi. Tohle nebude jediný lék. Budou lepší léky, cena půjde rapidně dolů a téměř jistě brzy přijde situace, kdy se to vyplatí i čistě ekonomicky, čistě z hlediska cashflow pojišťoven.
 
-I kdyby se to nevyplatilo, pojišťovny tu nejsou proto, aby… Jsou to veřejné, řekněme státní firmy, jejichž úkolem není maximalizovat zisk. Jsou tu z nějakého důvodu: aby fungovalo veřejné zdravotnictví. A nedovedu si představit situaci, kdy máte šanci velmi významně pomoci tisícům, ročně tisícům dětí, máte lék, který funguje, a nebudeme ho hradit.
+I kdyby se to nevyplatilo, pojišťovny jsou veřejné, řekněme státní firmy, jejichž úkolem není maximalizovat zisk. Jsou tu z nějakého důvodu: aby fungovalo veřejné zdravotnictví. A nedovedu si představit situaci, kdy máte šanci velmi významně pomoci tisícům, ročně tisícům dětí, máte lék, který funguje, a nebudeme ho hradit.
 
 Myslím si, že to není politicky udržitelné, takže nevěřím, že by tu takové riziko bylo. Čekám, že lék bude velmi brzy dostupný všem v této zemi.
 
@@ -167,17 +167,17 @@ Ale to je odpovědnost rodiče: řešit věci, které řešit může, které má
 
 **Jan Hrušovský:** Když říkáte, že se o tom se synem bavíte, tak co probíráte?
 
-**Tomáš Havránek:** Samozřejmě mu musím vysvětlit, proč do Motola jezdíme a proč mu berou krev. Ví, jak to funguje u sestřenice Báry, tak mu k tomu něco říkám: podívej, dá se s tím normálně fungovat. Tohle tě taky jednou čeká, ale buď v klidu, zeptej se Báry. Není to něco, co by… A navíc mu možná řeknu ještě tohle, a to jsem mu říkal často. On hraje florbal, na poměrně solidní úrovni: třikrát týdně trénink a každý víkend nějaký turnaj. Na velkém turnaji v Praze jsme v lednu za Litomyšl vyhráli svou kategorii, po mnoha letech se nám to podařilo. A ve florbale je několik špičkových sportovců, které nebudu jmenovat, abych to nepopletl, kteří mají cukrovku prvního typu.
+**Tomáš Havránek:** Samozřejmě mu musím vysvětlit, proč do Motola jezdíme a proč mu berou krev. Ví, jak to funguje u sestřenice Báry, tak mu k tomu něco říkám: podívej, dá se s tím normálně fungovat. Tohle tě taky jednou čeká, ale buď v klidu, zeptej se Báry. A navíc mu možná řeknu ještě tohle, a to jsem mu říkal často. On hraje florbal, na poměrně solidní úrovni: třikrát týdně trénink a každý víkend nějaký turnaj. Na velkém turnaji v Praze jsme v lednu za Litomyšl vyhráli svou kategorii, po mnoha letech se nám to podařilo. A ve florbale je několik špičkových sportovců, které nebudu jmenovat, abych to nepopletl, kteří mají cukrovku prvního typu.
 
 Já vím o jednom. Tak to možná řekněte vy, abych to… Pokračujte, pokračujte, já si to zatím najdu na Instagramu. To možná ani nemusíme. Ale říkal jsem mu: podívej, jak skvěle hraje tenhle pán, kluk, a přitom má cukrovku. Tak vidíš, když on může na téhle úrovni chytat. Byl to gólman.
 
 **Jan Hrušovský:** Tak tím pádem myslíte asi toho samého, co já, to je Adam *[nesrozumitelné]*, který chytá teď za Bohemians, nebo jak se ten tým jmenuje.
 
-**Tomáš Havránek:** Já jsem myslel někoho jiného, ale to je na tom právě skvělé. Gólman… Dobrý gólman. Tak vidíš, že to jde.
+**Tomáš Havránek:** Já jsem myslel někoho jiného, ale to je na tom právě skvělé. Gólman, a to dobrý. Tak vidíš, že to jde.
 
 Mimochodem, florbal je super sport, protože v sobě spojuje dynamiku fotbalu i hokeje, a zároveň není profesionální. Děti tedy nemají to lákadlo, že jednou budou vydělávat miliardy jako Ronaldo. Je to jen koníček a i ti nejlepší hráči florbalu v Čechách mají nějakou skutečnou práci. Sport by podle mého názoru měl být hlavně něco, co děláte bokem, co není vaše primární kariéra. Nebo to není jediná věc, kterou v životě profesionálně děláte.
 
-Takže tohle florbalové srovnání docela funguje. Nevím, jak to on… O tomhle se tedy bavíme, tohle mu říkám, abych ho trochu uklidnil. Myslím, že nejdůležitější je, aby z toho neměl strach a aby měl informace, které dokáže rozumně zpracovat.
+Takže tohle florbalové srovnání docela funguje. Nevím, jak to vnímá on, ale o tomhle se bavíme a tohle mu říkám, abych ho trochu uklidnil. Myslím, že nejdůležitější je, aby z toho neměl strach a aby měl informace, které dokáže rozumně zpracovat.
 
 Ale detaily mu neříkám, protože mi to přijde asi zbytečné, ohledně té konkrétní rutiny s diabetem.
 
@@ -213,7 +213,7 @@ Uvidíme. Až přijde na to, že inzulin potřebuje, bude asi zase lepší brát
 
 **Tomáš Havránek:** Ne. Mám pocit, že je na to ještě brzy. Nevím, k čemu by to teď bylo v situaci, kdy si nemusí hlídat stravu.
 
-Způsobilo by to jenom… Já vím, jaká ta praxe je. Ale mám pocit, že na to je ještě čas, pro děti a i pro nás jako rodiče.
+Samozřejmě vím, jaká ta praxe je, ale mám pocit, že na to je ještě čas, pro děti i pro nás jako rodiče.
 
 Je to tak: v prvním stadiu diabetu je času dost a člověk má v životě spoustu jiných, teď akutních věcí k řešení, než aby řešil to, co bude za dva roky. Takže myslím, že to kolegové moudře nechávají na pozdější konzultace.
 
@@ -233,7 +233,7 @@ A vím, že je to pravda. Takže asi ne, asi se nic moc nezměnilo. S Filípkem 
 
 **Tomáš Havránek:** Každý rok se to mění.
 
-Takže já, jak už jsem starší člověk, si to… Aktuálně máme děti od 8 do 14 let. Filípkovi je 10 a v květnu mu bude 11.
+Aktuálně máme děti od 8 do 14 let. Filípkovi je 10 a v květnu mu bude 11.
 
 Má tedy ještě mladší sestru Lucinku. A každé z našich dětí má dnes, řekněme, nějaký zdravotní problém. To je zajímavá věc, protože civilizační choroby jsou čím dál častější. A důvod je evidentní: evoluce u lidí nefunguje úplně tak, jako fungovala dřív.
 
@@ -265,7 +265,7 @@ Najednou, když víte, že jednoho dne ta cukrovka prostě do toho života vstou
 
 **Jan Hrušovský:** Mě to ještě v souvislosti s tím napadá, jestli třeba z Motola se ozvali s tím, že by vám nebo vašemu synovi poskytli nějakou pomoc v oblasti duševního zdraví, jestli tam něco takového přišlo, že si sami uvědomují, že to může být pro ty rodiny složitý, velký zásah do jejich života, by poskytli vlastně i takovou pomocnou ruku v tom, jak tu situaci zvládat lépe.
 
-**Tomáš Havránek:** Tuším, že jsem vyplňoval nějaké dotazníky ohledně duševního zdraví, a možná díky tomu, že jsem v nich nic moc neindikoval, ta nabídka asi nepřišla. Ale možná přišla. V Motole je to diabetologie, endokrinologie… ne, promiňte. Říkám to správně?
+**Tomáš Havránek:** Tuším, že jsem vyplňoval nějaké dotazníky ohledně duševního zdraví, a možná díky tomu, že jsem v nich nic moc neindikoval, ta nabídka asi nepřišla. Ale možná přišla. V Motole je to diabetologie a endokrinologie, říkám to správně?
 
 **Jan Hrušovský:** Ano, tyhle dvě oddělení jsou spojené.
 

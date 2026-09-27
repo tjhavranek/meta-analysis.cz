@@ -16,7 +16,7 @@ body_note: "Pořad Peníze a vliv na Českém rozhlase Plus, moderuje Jana Klím
 
 **Jana Klímová:** A taky asi jak má nastavenou ekonomiku, protože faktem je, že třeba pobaltské země mají nejvyšší inflaci, ještě vyšší než my a ty jsou právě také hodně závislí na dovozech, je to tak?
 
-**Tomáš Havránek:** To máte pravdu, hraje tam roli celá řada faktorů. Ale podle velké většiny ekonomického výzkumu… Otázka je, jestli centrální banka může inflaci zkrotit a kontrolovat sama, nebo jestli k tomu potřebuje vládu. Podle většiny výzkumu to centrální banka může udělat sama a jen podle malé části ekonomů k tomu, řekněme, potřebuje i vládu. Každopádně jsou ale zdroje inflace převážně domácí a většina ekonomů se shodne, že jsou hlavně na straně měnové politiky. Když se tedy ptáte, kdo za to může, většina odborníků by v tom měla správně vidět Národní banku.
+**Tomáš Havránek:** To máte pravdu, hraje tam roli celá řada faktorů. Otázka ale je, jestli centrální banka může inflaci zkrotit a kontrolovat sama, nebo jestli k tomu potřebuje vládu. Podle velké většiny ekonomického výzkumu to centrální banka může udělat sama a jen podle malé části ekonomů k tomu, řekněme, potřebuje i vládu. Každopádně jsou ale zdroje inflace převážně domácí a většina ekonomů se shodne, že jsou hlavně na straně měnové politiky. Když se tedy ptáte, kdo za to může, většina odborníků by v tom měla správně vidět Národní banku.
 
 **Jana Klímová:** Málo zvýšila úrokové sazby nebo špatně využívala kurz koruny?
 

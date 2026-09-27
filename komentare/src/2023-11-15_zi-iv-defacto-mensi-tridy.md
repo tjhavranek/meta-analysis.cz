@@ -67,9 +67,9 @@ To je tedy jedna z výzev metaanalýzy: jakým způsobem je možné ten kontext 
 
 Představ si třeba, že se studuje efekt pasivního kouření na zdraví, o čemž existuje rozsáhlá literatura. Můžeš tam najít hodně velké negativní výsledky a menší negativní výsledky, tedy že pasivní kouření má na zdraví nějaký negativní efekt. Můžeš najít nulový efekt, tedy že se nic neděje. A můžeš najít dokonce i pozitivní efekty, tedy že je pasivní kouření třeba zdraví prospěšné.
 
-A teď víme… Takové studie opravdu jsou. A vnitřně víme, že o samotném kouření je už řadu let známo, že je velice neprospěšné pro zdraví, že je velice škodlivé.
+Takové studie opravdu jsou. A vnitřně víme, že o samotném kouření je už řadu let známo, že je velice neprospěšné pro zdraví, že je velice škodlivé.
 
-Řekněme, že bych teď chtěla udělat takovou studii. Jdu do toho s určitou představou nebo předsudkem o tom, jak by měl výsledek vypadat. Asi si tedy budu myslet, že bych měla dostat něco… Úplně nevím, tomu tématu nerozumím, jsem jen statistička, ale něco by mi mělo vyjít.
+Řekněme, že bych teď chtěla udělat takovou studii. Jdu do toho s určitou představou nebo předsudkem o tom, jak by měl výsledek vypadat. Asi si tedy budu myslet, že by mi mělo něco vyjít. Úplně nevím co, tomu tématu nerozumím, jsem jen statistička.
 
 Předpokládám, že to asi bude negativní, nebo nulové. Ale určitě to nebude pozitivní. Na úrovni jedné studie to samozřejmě není nějaký problém, nebo problém autora. Vždycky se snažíme nějak vybrat reprezentativní výsledek, abychom lidi, čtenáře, nezahltili něčím, co není zkousnutelné a stravitelné.
 

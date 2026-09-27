@@ -79,7 +79,7 @@ Ale i pro vysvětlení lidem není nic snazšího. Tehdy jsme kvůli deflaci int
 
 **Jan Bumba:** Proč myslíte, že se to neděje?
 
-**Tomáš Havránek:** To bych asi… Tu otázku si kladu už asi rok…
+**Tomáš Havránek:** Tu otázku si kladu už asi rok…
 
 **Jan Bumba:** A nejsou tam také, já vím, že jste na to někdy narazil, ale nejsou tam příliš silné tlaky zase třeba ze strany firem exportérů, pro které by byla ta silná koruna nevýhodná?
 
@@ -165,11 +165,11 @@ Myslím tedy, že i pro nás je to spíš otázka toho, jestli chceme být víc 
 
 **Jan Bumba:** Ale nemohli bychom bojovat proti inflaci posílením české koruny?
 
-**Tomáš Havránek:** Samozřejmě že ne. To jsou nevýhody, které z eura plynou. Euro má i spoustu svých výhod. Mně osobně by euro, to řeknu upřímně, život zjednodušilo, ale vidím i velké problémy pro řadu… Dopady se velmi liší podle toho, jestli hodně cestujete, kde investujete a tak dále.
+**Tomáš Havránek:** Samozřejmě že ne. To jsou nevýhody, které z eura plynou. Euro má i spoustu svých výhod. Mně osobně by euro, to řeknu upřímně, život zjednodušilo, ale pro řadu lidí vidím i velké problémy. Dopady se velmi liší podle toho, jestli hodně cestujete, kde investujete a tak dále.
 
 **Jan Bumba:** Ta současná vysokánská inflace v České republice je tedy podle vašeho soudu důsledkem chyb centrální banky?
 
-**Tomáš Havránek:** Podle mě je primárním důvodem skutečně špatná politika centrální banky, která má cenovou stabilitu na starosti. Je to jediná instituce, která se o ni opravdu má starat. Je to její jediný ústavní mandát. A ona, když to srovnám…
+**Tomáš Havránek:** Podle mě je primárním důvodem skutečně špatná politika centrální banky, která má cenovou stabilitu na starosti. Je to jediná instituce, která se o ni opravdu má starat. Je to její jediný ústavní mandát.
 
 Národní banka se má vlastně snažit o to…
 
