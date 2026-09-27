@@ -193,7 +193,7 @@ Do konce tohoto roku nečekám nějaké výraznější snížení. Rozhodně to 
 
 To z žádného modelu vyjít nemůže. Je to něco, co plácnul asi bez velkého přemýšlení. Nemyslím si, že inflace může vyrůst takhle vysoko. Dnes už ale asi nelze vyloučit vůbec nic.
 
-Hlavně ale doufám, že nová bankovní rada… Dobře, nebudou zvyšovat sazby, ale vidíme, že už to moc nefunguje. Nefunguje to také proto, že si firmy dnes často berou úvěry v eurech, protože mohou, a eurové úroky jsou mnohem, mnohem nižší než korunové. Zvyšování českých úroků tak už má na firmy relativně malý dopad. Má dopad na hypotéky, ale samozřejmě pro lidi, kteří zrovna refinancují nebo si berou nové. Efekt je ale mnohem, mnohem menší, než předpovídají všechny modely.
+Nová bankovní rada sice nebude zvyšovat sazby, ale vidíme, že už to moc nefunguje. Nefunguje to také proto, že si firmy dnes často berou úvěry v eurech, protože mohou, a eurové úroky jsou mnohem, mnohem nižší než korunové. Zvyšování českých úroků tak už má na firmy relativně malý dopad. Má dopad na hypotéky, ale samozřejmě pro lidi, kteří zrovna refinancují nebo si berou nové. Efekt je ale mnohem, mnohem menší, než předpovídají všechny modely.
 
 Doufám ale, že dojde k posílení koruny. K opravdu velkému, masivnímu posílení koruny. Jak jsem slyšel, sám pan prezident zmiňoval, že by to bylo vhodné. Vím, že to zmiňovala i paní Zamrazilová, takže doufám, že k tomu na podzim dojde.
 
