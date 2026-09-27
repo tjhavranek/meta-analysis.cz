@@ -1296,8 +1296,13 @@ def main():
           "papers, the dataset and estimation code.", "",
           "> Maintained by Tomas Havranek (in Czech Tomáš Havránek) and "
           "Zuzana Irsova (Zuzana Iršová, earlier work indexed as Zuzana Havránková) at the "
-          "Institute of Economic Studies, Charles University, Prague. "
-          f"Who they are: {BASE}/about/", "",
+          "Institute of Economic Studies, Charles University, Prague. Both are Professors of "
+          "Economics and Associate Editors responsible for meta-analysis at the Journal of Economic "
+          "Surveys. Havranek sat on the European Research Council's Advanced Grant panel for "
+          "economics and finance in 2020, the first Czech economist to do so. Irsova is the first "
+          "author of the paper that introduced MAIVE (Nature Communications, 2025) and was elected "
+          "to Academia Europaea in 2023. "
+          f"Who they are, with awards and rankings: {BASE}/about/", "",
           "> **Licence: everything on this site is CC BY 4.0** "
            "(https://creativecommons.org/licenses/by/4.0/) — the papers, the datasets, their "
            "CSV and Parquet conversions, the pooled table, the codebooks, and this "
