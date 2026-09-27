@@ -168,7 +168,11 @@ My dohromady jich máme dost, ne? Spolu tedy asi šest.
 
 **Jiří Zatloukal:** Směřujete k tomu, že bezdětní lidé by měli platit vyšší daně? Což se taky objevuje tento návrh. Teda ti, kteří je samozřejmě mohou mít, ne? Ti, kteří je nemohou mít.
 
-**Tomáš Havránek:** Ne. Takové návrhy se sice taky objevují, ale tím, že mám čtyři děti, nejsem v pozici, abych to komentoval, protože na tom mám sám očividný zájem. Takže to komentovat nebudu. Chci jen říct, že mi přijde velká škoda, kdybychom ty děti neměli.
+**Tomáš Havránek:** Ne, to bych…
+
+**Jiří Zatloukal:** Takové návrhy se taky objevují.
+
+**Tomáš Havránek:** Tím, že mám čtyři děti, nejsem v pozici, abych to komentoval, protože na tom mám sám očividný zájem. Takže to komentovat nebudu. Chci jen říct, že mi přijde velká škoda, kdybychom ty děti neměli.
 
 Ale matka tím nemusí obětovat kariéru. Víte, že moje žena je daleko úspěšnější než já a vydělává víc peněz než já. Ten život je sice složitý, ale je skvělý. Takže mi přijde, že lidé, kteří mají pocit, že to nepotřebují, toho nakonec budou velmi litovat a kvůli tomu do velké míry promarní život.
 
@@ -196,7 +200,9 @@ Dluhopisy jsou extrémně rizikové kvůli vysoké pravděpodobnosti budoucí in
 
 Podívejte se na ECB. A to není ani centrální banka jednoho státu, ale nově vytvořenými penězi sanuje vlastně jakýkoli problém, kde se objeví. Co v takové situaci udělat, je pak velmi těžké. Jako centrální banka samozřejmě musíte předem říkat: my to nikdy neuděláme, abyste i vysokými úroky donutili vládu chovat se zodpovědněji. Zároveň ale možná k tomu problému přispíváte, protože dnes už platíme, respektive příští rok budeme platit na úrocích 130 miliard, nebo 150 miliard z celého veřejného dluhu, podle toho, jak to počítáte.
 
-To v rozpočtu není zanedbatelná položka. Není. Pořád je to tedy méně, než dáme na obranu. Na obranu je to asi 200 miliard.
+**Jiří Zatloukal:** To v rozpočtu není zanedbatelná položka.
+
+**Tomáš Havránek:** Není. Pořád je to tedy méně, než dáme na obranu. Na obranu je to asi 200 miliard.
 
 A vy asi dobře znáte Fergusonovo pravidlo, že jakmile země dává na úroky ze svého dluhu víc, než dává na obranu, dopadne to s ní špatně.
 
@@ -250,7 +256,11 @@ To se dnes s rozvojem AI zase úplně změní. Tyhle věci budeme muset…
 
 **Tomáš Havránek:** Chci, aby studenti používali AI co nejvíc, k vylepšení toho, co odevzdají, podobně jako to potom budou dělat v práci, aby se připravili na profesní život.
 
-A pak si to musí obhájit, takže máte ústní obhajoby. To je velmi důležitá část a trvají dlouho. Jako jste minule griloval vy mě, já budu grilovat studenta a přesně vím, co ví a co neví. Práci si přečtu a poznám, jakou známku mu mám dát. Nemá tedy smysl to nějak zakazovat, tvářit se, že to neexistuje, nebo že to budete nějak regulovat. To nejde.
+A pak si to musí obhájit, takže máte ústní obhajoby.
+
+**Jiří Zatloukal:** To je velmi důležitá část.
+
+**Tomáš Havránek:** Ty trvají dlouho. Jako jste minule griloval vy mě, já budu grilovat studenta a přesně vím, co ví a co neví. Práci si přečtu a poznám, jakou známku mu mám dát. Nemá tedy smysl to nějak zakazovat, tvářit se, že to neexistuje, nebo že to budete nějak regulovat. To nejde.
 
 Ale vzít to jako něco, čím byla dřív kalkulačka nebo počítač. Samozřejmě je to něco mnohem víc, protože to dokáže dělat mnohem víc věcí, a i pro mě je velmi těžké udržet se na tepu doby a sledovat vývoj těch modelů, těch agentických nástrojů. Ale už dnes o sobě řeknu, že 90% úkonů, které jsem před pěti lety dělal, zvládne umělá inteligence lépe. Pořád zbývá těch 5%, které můžu dělat mnohem lépe.
 
