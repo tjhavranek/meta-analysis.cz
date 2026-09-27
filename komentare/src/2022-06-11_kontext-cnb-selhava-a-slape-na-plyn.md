@@ -55,7 +55,7 @@ Během epidemie vlády dávaly lidem a firmám peníze, aniž by firmy a lidé v
 
 Samozřejmě budou chtít nakupovat a budou mít tolik peněz, že spousta peněz bude honit malé množství zboží a ceny porostou. Tohle centrální banky absolutně podcenily. U nás trochu méně, řekl bych, ale ve Spojených státech a v Evropě to byla chyba, jaká se stává jednou za sto let.
 
-**Marek Zavřel:** Já jsem tedy laik, ale nějak mi nedává smysl, že tohle nemohli předpovědět.
+**Marek Zavřel:** Já jsem tedy laik, ale nějak mi nedává smysl, že tohle nemohli předpovědět. Jak se to stalo?
 
 **Tomáš Havránek:** Je to zajímavé, ale několik lidí tohle opravdu čekalo. Například John Cochrane ve Spojených státech předtím dlouho varoval, už od začátku roku 2021. Ale centrální banky se, když inflace vypukla, tvářily, že je to přechodná věc. Naše centrální banka zareagovala ve srovnání s ostatními poměrně brzy, ale pořád to bylo velmi pozdě.
 
@@ -75,7 +75,7 @@ Když je inflace vyšší, máte menší plat. Když máte za vyšší inflace v
 
 **Aleš Michl (ze záznamu):** Problém je, jak jste ji zmínil, že je to inflace nákladová z větší části. Je to inflace dovezená hlavně přes větší a dražší ceny energií. Jak jsme se přesvědčili, tak zvyšování úrokových sazeb příliš tuto inflaci nesnižuje.
 
-**Marek Zavřel:** K povaze té inflace právě nastupující guvernér ČNB Aleš Michl tvrdí, že se jedná o inflaci dovezenou.
+**Marek Zavřel:** K povaze té inflace právě nastupující guvernér ČNB Aleš Michl tvrdí, že se jedná o inflaci dovezenou. Je to tak?
 
 **Tomáš Havránek:** Inflace je rozhodně zčásti, řekněme z poloviny nebo ze dvou třetin, dovezená v tom smyslu, že když rostou ceny elektřiny na burze v Evropě, projeví se to u nás. Když rostou ceny ropy, projeví se to na našich čerpacích stanicích.
 
