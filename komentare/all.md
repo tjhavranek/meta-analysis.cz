@@ -4403,7 +4403,9 @@ Zdroj: https://www.ceskatelevize.cz/porady/1126672097-otazky-vaclava-moravce/223
 
 **Tomáš Havránek:** To, že naše síť, ať už dálnic, nebo železnic, jak jste zmínil na začátku, není hotová. Zdaleka není hotová tak jako v západních zemích, kde už není takový prostor dále investovat tak, aby to vynášelo, jako třeba dokončení dálnice D35, které hodně pomůže celému východu republiky. To je to ovoce: opravdu stačí dostavět páteřní síť dálnic a HDP se zvýší víc, než by ho zvýšila podobná investice třeba ve Francii, v Německu nebo v Polsku, kde už je síť mnohem hustší a kompletnější, nebo brzy bude.
 
-Ne úplně primárně. Ekonomika by rostla rychleji, kdyby byly dálnice dokončené. Jenom bych možná zmínil, že to, že s HDP nejsme na předcovidové úrovni, je trochu statistický klam, protože se zastavením a pak zrušením EET nám HDP opticky kleslo, jak se část ekonomiky přesunula z bílé do šedé. Kdybychom tedy statistiku o tento efekt opravili, udělá to nějaké 2 až 3 procentní body a zdaleka na tom nebudeme tak špatně.
+**Václav Moravec:** Je tuzemská ekonomika i v recesi proto, že nemáme dokončenou dopravní infrastrukturu? Jinými slovy, podílí se tedy, vrátím-li se k té původní otázce, na té recesi a relativně slabém potenciálu ekonomiky nedokončená dopravní infrastruktura, a v jaké míře?
+
+**Tomáš Havránek:** Ne úplně primárně. Ekonomika by rostla rychleji, kdyby byly dálnice dokončené. Jenom bych možná zmínil, že to, že s HDP nejsme na předcovidové úrovni, je trochu statistický klam, protože se zastavením a pak zrušením EET nám HDP opticky kleslo, jak se část ekonomiky přesunula z bílé do šedé. Kdybychom tedy statistiku o tento efekt opravili, udělá to nějaké 2 až 3 procentní body a zdaleka na tom nebudeme tak špatně.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
@@ -4415,7 +4417,9 @@ Jako země tu máme balík 3 bilionů korun, 3 tisíc miliard, které má ČNB. 
 
 Kdybychom je investovali třeba po vzoru Singapuru, který to udělal před desetiletími a de facto si koupil podíl na globálním technickém pokroku, vydělá nám to ročně minimálně těch 100 miliard, které pan ministr potřebuje navíc.
 
-Rád bych to ještě rozvedl. ČNB si to samozřejmě uvědomuje a taková investice by byla velký krok. Necítí se mít autoritu na to, aby to udělala sama. I když, znovu, ty rezervy nepotřebuje, vlastně je nechce.
+**Václav Moravec:** Teď mluvíte o devizových rezervách?
+
+**Tomáš Havránek:** O devizových rezervách. Rád bych to ještě rozvedl. ČNB si to samozřejmě uvědomuje a taková investice by byla velký krok. Necítí se mít autoritu na to, aby to udělala sama. I když, znovu, ty rezervy nepotřebuje, vlastně je nechce.
 
 Vznikly jako vedlejší produkt intervencí proti koruně. Nikdy tu nebyl plán nashromáždit 3 biliony. Ty peníze teď leží v eurech a v dolarech. Je to 131 miliard eur.
 
