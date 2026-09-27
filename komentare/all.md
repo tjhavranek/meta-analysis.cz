@@ -7012,7 +7012,7 @@ A i když tam lidé peníze přesouvají, pořád je ten objem velmi malý na to
 
 Tedy aby inflace byla do 2%, maximálně 2%. A vypadalo to, že to funguje: ta transparentnost, jakkoli to zní triviálně, že banka řekne, o co se vlastně snaží. Nejenom že se snaží o, řekněme, vyváženou ekonomiku, ale o inflaci do 2%. Guvernér Národní banky Zélandu Don Brash to hodně propagoval v zahraničí.
 
-Mimochodem sám na rovinu řekl, že to číslo, ty 2%, vytáhli z klobouku a že za tím není žádný hluboký vědecký výzkum. Pak to převzaly ostatní země, jako Kanada, a posunuly to maličko na 2%, protože se bály deflace. Ale to je všechno. Abych to dal do kontextu vědeckého výzkumu: v roce 1990 už existovalo 17 studií, které odhadovaly, jak vysoká inflace je pro ekonomiku zdravá.
+Mimochodem sám na rovinu řekl, že to číslo, ta 2%, vytáhli z klobouku a že za tím není žádný hluboký vědecký výzkum. Pak to převzaly ostatní země, jako Kanada, a posunuly to maličko na 2%, protože se bály deflace. Ale to je všechno. Abych to dal do kontextu vědeckého výzkumu: v roce 1990 už existovalo 17 studií, které odhadovaly, jak vysoká inflace je pro ekonomiku zdravá.
 
 A žádná z nich, ani jedna z těch studií, neukazovala, že by zdravá inflace byla vyšší než nula.
 
@@ -7126,7 +7126,7 @@ Otázka je, jestli je to něco, co bychom měli chtít. A tam máme asi 25 argum
 
 **Tomáš Havránek:** V první řadě je to teď hodně podobné, jako když chcete mít inflaci na dvou procentech. Mezi 20 a dvěma je podobný rozdíl jako mezi 20 a nulou. Nástroje jsou tedy, znovu říkám, hodně podobné: posilování koruny a další zvyšování sazeb poté, co se vyřeší transmise. A byla by to dlouhodobá záležitost.
 
-Ale i kdybychom zůstali v rámci 2%, že je to ta, řekněme, optimální inflace, pořád to platí v průměru. Tím se ještě vloni chlubili minulá bankovní rada i současný guvernér: že inflace je tady v České republice v průměru 2%. Teď máme inflaci 20%, takže abychom byli znovu na průměru 2%, je už jen v tomto rámci potřeba mít dlouho, několik let, inflaci na nule, než se na ty 2% dostaneme.
+Ale i kdybychom zůstali v rámci 2%, že je to ta, řekněme, optimální inflace, pořád to platí v průměru. Tím se ještě vloni chlubili minulá bankovní rada i současný guvernér: že inflace je tady v České republice v průměru 2%. Teď máme inflaci 20%, takže abychom byli znovu na průměru 2%, je už jen v tomto rámci potřeba mít dlouho, několik let, inflaci na nule, než se na ta 2% dostaneme.
 
 Byla by to tedy nějaká zkouška. Pět let bychom si zkoušeli, jestli to nezpůsobuje nějaké problémy, pořád v rámci inflačního cílování, průměrné inflace. A kdybychom viděli, že je to v pořádku, mohli bychom si cenovou stabilitu opravdu nechat napořád.
 

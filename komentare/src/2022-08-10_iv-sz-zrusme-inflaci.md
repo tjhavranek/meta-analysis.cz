@@ -59,7 +59,7 @@ Otázka je, jestli je to něco, co bychom měli chtít. A tam máme asi 25 argum
 
 **Tomáš Havránek:** V první řadě je to teď hodně podobné, jako když chcete mít inflaci na dvou procentech. Mezi 20 a dvěma je podobný rozdíl jako mezi 20 a nulou. Nástroje jsou tedy, znovu říkám, hodně podobné: posilování koruny a další zvyšování sazeb poté, co se vyřeší transmise. A byla by to dlouhodobá záležitost.
 
-Ale i kdybychom zůstali v rámci 2%, že je to ta, řekněme, optimální inflace, pořád to platí v průměru. Tím se ještě vloni chlubili minulá bankovní rada i současný guvernér: že inflace je tady v České republice v průměru 2%. Teď máme inflaci 20%, takže abychom byli znovu na průměru 2%, je už jen v tomto rámci potřeba mít dlouho, několik let, inflaci na nule, než se na ty 2% dostaneme.
+Ale i kdybychom zůstali v rámci 2%, že je to ta, řekněme, optimální inflace, pořád to platí v průměru. Tím se ještě vloni chlubili minulá bankovní rada i současný guvernér: že inflace je tady v České republice v průměru 2%. Teď máme inflaci 20%, takže abychom byli znovu na průměru 2%, je už jen v tomto rámci potřeba mít dlouho, několik let, inflaci na nule, než se na ta 2% dostaneme.
 
 Byla by to tedy nějaká zkouška. Pět let bychom si zkoušeli, jestli to nezpůsobuje nějaké problémy, pořád v rámci inflačního cílování, průměrné inflace. A kdybychom viděli, že je to v pořádku, mohli bychom si cenovou stabilitu opravdu nechat napořád.
 
