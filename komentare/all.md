@@ -3475,7 +3475,13 @@ Zdroj: https://www.youtube.com/watch?v=dVgcnhFbSc8
 
 **Moderátor:** Sara, já jsem na ni narazil vlastně tady v Polis, ta tady měla nějaký projekt a já jsem ji sledoval už dlouho, to je taková skvělá, velmi sympatická mladá žena a to spojení archeologie, antropologie a ještě je to odbornice na umělou inteligenci, tak o to zakopnete a už jako…
 
-Já si myslím, no, to nevím, jestli úplně, teď se tomu vyrovnám tady dneska. To nevím, každopádně Sara je můj nejlepší teda rozhovor, ten má nejvíc zhlédnutí, no, to je jako hezká holka a ještě chytrá, takže to je… To tady dneska nevyrovnáme, ani nemůžeme být naše ambice. Super kombo.
+**Tomáš Havránek:** Nevím, jestli se tomu tady dneska úplně vyrovnám.
+
+**Moderátor:** To nevím, každopádně Sara je můj nejlepší teda rozhovor, ten má nejvíc zhlédnutí, no, to je jako hezká holka a ještě chytrá, takže to je…
+
+**Tomáš Havránek:** To tady dneska nevyrovnáme, to ani nemůže být naše ambice.
+
+**Moderátor:** Super kombo.
 
 Tak jo, tak asi můžeme pomalu začít a vítám vás u nového dílu Kryptoplebs. Mým dnešním hostem je ekonom a bývalý poradce viceguvernéra ČNB Tomáš Havránek. Tomáši, já tě vítám, ahoj.
 
