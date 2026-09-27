@@ -348,9 +348,9 @@ Centrální banka navíc dělá spoustu dalších věcí. Hlídá, aby bankovní
 
 **Moderátor:** Dobře, možná bys mluvil trošičku jinak, ale chápu point a nevím, jak by to mělo postavený, každopádně tady ty algoritmické věci v kryptu většinou skončí velmi špatně, tak jenom jsem se jenom teďka vzpomněl. Já bych se chtěl jenom ještě vrátit k tomu problému toho měření, jsi říkal, že je problém měření na obou stranách. Jak si tady zmiňoval ten metr, já ty peníze velmi rád přirovnávám zase k času, myslím si, že peníze a čas jsou velmi, velmi podobný koncepty na mnoha dimenzích a je to jako, že kdybychom chtěli, když vytiskneme víc peněz a myslím, jestli že budeme bohatší, tak je to přesně jako namalovat se na ciferník víc číslíček a myslet si, že budeme mít víc času.
 
-Že to je vlastně, přijde mi to úplně samý stejně jako s tím metrem a nemůžeme efektivně dlouhodobě měřit ceny, když nevíme nebo když se nám neustále mění ta zásoba peněz a na té druhé straně je to vlastně v rámci měření té inflace existuje něco, čemu se říká Goodhartovo pravidlo. Goodhartovo pravidlo vlastně říká, že proměnná přestává být dobrou proměnnou, pokud je cílená a takhle vlastně je to postavené s tou inflací, že jak jsi říkal v tom spotřebním koši, což je vlastně velmi úzkej snapshot ekonomiky a chybí tam ty nemovitosti, tak samozřejmě můžeme mít inflaci plácnou 6, 8, 10% to je jedno, ale ty ceny nemovitosti samozřejmě jsou daleko vyšší než je ta oficiální inflace. Proto vlastně nemůžeme ty reální ceny měřit tu oficiální inflací, která je měřena na základě toho spotřebního koše,
+Že to je vlastně, přijde mi to úplně samý stejně jako s tím metrem a nemůžeme efektivně dlouhodobě měřit ceny, když nevíme nebo když se nám neustále mění ta zásoba peněz a na té druhé straně je to vlastně v rámci měření té inflace existuje něco, čemu se říká Goodhartovo pravidlo. Goodhartovo pravidlo vlastně říká, že proměnná přestává být dobrou proměnnou, pokud je cílená a takhle vlastně je to postavené s tou inflací, že jak jsi říkal v tom spotřebním koši, což je vlastně velmi úzkej snapshot ekonomiky a chybí tam ty nemovitosti, tak samozřejmě můžeme mít inflaci plácnou 6, 8, 10% to je jedno, ale ty ceny nemovitosti samozřejmě jsou daleko vyšší než je ta oficiální inflace. Proto vlastně nemůžeme ty reální ceny měřit tu oficiální inflací, která je měřena na základě toho spotřebního koše, který je velmi neefektivní.
 
-**Tomáš Havránek:** …který je velmi neefektivní. Měření inflace je ještě daleko složitější. Naťukl jsi jeden z problémů, které tam jsou, a je to technická diskuze, do které nechci moc zabíhat. Máš pravdu. Já osobně si říkám: víme, že tam jsou problémy na obě strany, ale máme něco lepšího? Odpověď je, že úplně nemáme.
+**Tomáš Havránek:** Měření inflace je ještě daleko složitější. Naťukl jsi jeden z problémů, které tam jsou, a je to technická diskuze, do které nechci moc zabíhat. Máš pravdu. Já osobně si říkám: víme, že tam jsou problémy na obě strany, ale máme něco lepšího? Odpověď je, že úplně nemáme.
 
 ČNB měla jeden čas index CPIH, který tam tehdy prosadil Mojmír Hampl. Byla to vlastně inflace, do které se s nějakou adekvátní vahou, řekněme, započítaly ceny nemovitostí, aby to odpovídalo tomu, kolik lidé za svůj život v průměru utratí za různé věci včetně nemovitostí. Ta byla samozřejmě v průměru vyšší, takže ho ČNB po odchodu Mojmíra, po několika letech, přestala publikovat. Ale to jsou pořád takové věci, které jsou obecně přijímané. Obecně přijímaný je index CPI, Consumer Price Index. Přes všechny problémy nic lepšího nemáme.
 
@@ -382,7 +382,9 @@ Minimálně lidé ve světě, kteří jsou aspoň trochu gramotní. Takže ne pi
 
 Nečekám, že teď přijde guvernér a řekne: jo, zrušme inflaci. Proč jsi mi to neřekl předtím? Proč jsi mi to neřekl? Já jsem mu to říkal, ale…
 
-A jaká byla reakce? No… V krátkosti. V krátkosti: reakce nebyla v podstatě žádná. Reakce ale třeba byla, když jsme se bavili o investování devizových rezerv.
+**Moderátor:** A jaká byla reakce?
+
+**Tomáš Havránek:** No… V krátkosti: reakce nebyla v podstatě žádná. Reakce ale třeba byla, když jsme se bavili o investování devizových rezerv.
 
 A teď se bavíme o Mojmírovi. O Alešovi. O Alešovi. Tak Mojmír není guvernér.
 

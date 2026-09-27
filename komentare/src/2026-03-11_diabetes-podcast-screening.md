@@ -187,7 +187,7 @@ Kolektiv, odpovědnost za tým: neděláte věci jen pro sebe, ale pro tým. Má
 
 Znám spoustu lidí, kteří mají něco, co by ostatní považovali za problém nebo zátěž, ale díky tomu, že s tím musí bojovat, se naučí v životě lépe pracovat. A tohle může být jedna z takových věcí.
 
-**Jan Hrušovský:** Já bych tomu chtěl taky věřit. Souhlasím s váma, že ta disciplína je v tom jako důležitá a že to se propisuje i v tom životě. Vidím to sám na sobě. Že někdy prostě se i v tom normálním životě musím prostě těm nepříjemným situacím postavit, protože během toho dne s cukrovkou se těm nepříjemným situacím, kdy musím řešit tu glykémii a to, kolik inzulinu si píchnu a tak dále a co s jídlem řeším jako nespočet, takže pak si jako vždycky získávám takový to sebevědomí a tu sílu to řešit i v jiných situacích, který se netýkají bez cukrovky, ale třeba práce nebo jakýchkoliv jiných věcí.
+**Jan Hrušovský:** Já bych tomu chtěl taky věřit. Souhlasím s váma, že ta disciplína je v tom jako důležitá a že to se propisuje i v tom životě. Vidím to sám na sobě. Že někdy prostě se i v tom normálním životě musím prostě těm nepříjemným situacím postavit, protože během toho dne s cukrovkou se těm nepříjemným situacím, kdy musím řešit tu glykémii a to, kolik inzulinu si píchnu a tak dále a co s jídlem řeším jako nespočet, takže pak si jako vždycky získávám takový to sebevědomí a tu sílu to řešit i v jiných situacích, který se netýkají vůbec cukrovky, ale třeba práce nebo jakýchkoliv jiných věcí.
 
 Takže chci věřit, že ta disciplína tomu jako pomůže, kterou ten člověk získá díky cukrovce, i když to zní možná trošku jako bizarně, ale já mám totiž takový pozitivní pohled na cukrovku, takže možná jste si našel blbýho člověka, nebo jste přišel k blbýmu člověku.
 

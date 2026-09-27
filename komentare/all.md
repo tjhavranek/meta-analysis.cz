@@ -587,13 +587,19 @@ Druhá věc je, že zdaleka nejsme jediná země, která má, nebo bude mít, fi
 
 Čím dál víc se přikláním k tomu, že tohle opravdu může mít hmatatelný dopad na růst, a tím i na výběr daní, produktivitu a fiskální situaci. Teď tedy máte dvě protichůdné tendence. Kolaps, naprostý kolaps porodnosti: za pár let v podstatě nebudou děti.
 
-Zároveň je tu ale potenciál možná exploze umělé inteligence, pokud nedojde k nějaké katastrofě. Naopak. Společnost tedy bude menší a produktivnější? Mohla by, ale musí uživit starší lidi, mezi které budu brzy patřit i já, dřív než vy, asi o dost.
+Zároveň je tu ale potenciál možná exploze umělé inteligence, pokud nedojde k nějaké katastrofě. Naopak.
+
+**Petra Jaroměřská:** Společnost tedy bude menší a produktivnější?
+
+**Tomáš Havránek:** Mohla by, ale musí uživit starší lidi, mezi které budu brzy patřit i já, dřív než vy, asi o dost.
 
 Takže se o nás možná budou starat roboti. Myslím, že je docela reálné, že o mě v důchodu bude pečovat humanoidní robot. Už bych se na to poměrně vsadil. To vám hodně pomůže s tím, kdo se o ty lidi bude fyzicky starat a kdo to zaplatí. Ti roboti budou jednou levní.
 
 To je spekulace, ale podložená, a znám řadu chytrých lidí, kteří vám o tom řeknou mnohem víc, třeba právě v Kalifornii, kteří se na tom vývoji podílejí. Pořád to ale stejně nebude stačit na splacení dluhů a vyrovnání rozpočtu, pokud neuděláme něco v tom smyslu, o kterém jsme se bavili, což by skoro stačilo. Nebylo by to úplně všechno, ale dvě třetiny z toho bychom smazali docela snadno.
 
-A nemusí se nijak moc šetřit? Šetřit je prima, ale šetření nebo třeba zvyšování daní někoho bolí, takže realita je taková, že větší reformy daní nebo výdajů jsou v demokracii v podstatě nemožné. Ne že by to bylo úplně nemožné, ale je to velmi, velmi komplikované. Co tedy?
+**Petra Jaroměřská:** A nemusí se nijak moc šetřit?
+
+**Tomáš Havránek:** Šetřit je prima, ale šetření nebo třeba zvyšování daní někoho bolí, takže realita je taková, že větší reformy daní nebo výdajů jsou v demokracii v podstatě nemožné. Ne že by to bylo úplně nemožné, ale je to velmi, velmi komplikované. Co tedy?
 
 Podle mě je bohužel mnohem pravděpodobnější tento scénář: pokud tu nebude hojnost umělé inteligence pro všechny, kdy peníze vlastně už nebudou mít… kdy všichni můžou všechno, což asi ne, tak si stát v situaci, kdy dlouhodobě není schopen vybrat na daních tolik, kolik potřebuje, ty peníze natiskne. To sice také není dobré řešení, lidi to rádi mít nebudou, ale je to politicky přijatelnější než vybírat mnohem víc daní nebo snižovat důchody.
 
@@ -1109,7 +1115,7 @@ Kolektiv, odpovědnost za tým: neděláte věci jen pro sebe, ale pro tým. Má
 
 Znám spoustu lidí, kteří mají něco, co by ostatní považovali za problém nebo zátěž, ale díky tomu, že s tím musí bojovat, se naučí v životě lépe pracovat. A tohle může být jedna z takových věcí.
 
-**Jan Hrušovský:** Já bych tomu chtěl taky věřit. Souhlasím s váma, že ta disciplína je v tom jako důležitá a že to se propisuje i v tom životě. Vidím to sám na sobě. Že někdy prostě se i v tom normálním životě musím prostě těm nepříjemným situacím postavit, protože během toho dne s cukrovkou se těm nepříjemným situacím, kdy musím řešit tu glykémii a to, kolik inzulinu si píchnu a tak dále a co s jídlem řeším jako nespočet, takže pak si jako vždycky získávám takový to sebevědomí a tu sílu to řešit i v jiných situacích, který se netýkají bez cukrovky, ale třeba práce nebo jakýchkoliv jiných věcí.
+**Jan Hrušovský:** Já bych tomu chtěl taky věřit. Souhlasím s váma, že ta disciplína je v tom jako důležitá a že to se propisuje i v tom životě. Vidím to sám na sobě. Že někdy prostě se i v tom normálním životě musím prostě těm nepříjemným situacím postavit, protože během toho dne s cukrovkou se těm nepříjemným situacím, kdy musím řešit tu glykémii a to, kolik inzulinu si píchnu a tak dále a co s jídlem řeším jako nespočet, takže pak si jako vždycky získávám takový to sebevědomí a tu sílu to řešit i v jiných situacích, který se netýkají vůbec cukrovky, ale třeba práce nebo jakýchkoliv jiných věcí.
 
 Takže chci věřit, že ta disciplína tomu jako pomůže, kterou ten člověk získá díky cukrovce, i když to zní možná trošku jako bizarně, ale já mám totiž takový pozitivní pohled na cukrovku, takže možná jste si našel blbýho člověka, nebo jste přišel k blbýmu člověku.
 
@@ -3747,9 +3753,9 @@ Centrální banka navíc dělá spoustu dalších věcí. Hlídá, aby bankovní
 
 **Moderátor:** Dobře, možná bys mluvil trošičku jinak, ale chápu point a nevím, jak by to mělo postavený, každopádně tady ty algoritmické věci v kryptu většinou skončí velmi špatně, tak jenom jsem se jenom teďka vzpomněl. Já bych se chtěl jenom ještě vrátit k tomu problému toho měření, jsi říkal, že je problém měření na obou stranách. Jak si tady zmiňoval ten metr, já ty peníze velmi rád přirovnávám zase k času, myslím si, že peníze a čas jsou velmi, velmi podobný koncepty na mnoha dimenzích a je to jako, že kdybychom chtěli, když vytiskneme víc peněz a myslím, jestli že budeme bohatší, tak je to přesně jako namalovat se na ciferník víc číslíček a myslet si, že budeme mít víc času.
 
-Že to je vlastně, přijde mi to úplně samý stejně jako s tím metrem a nemůžeme efektivně dlouhodobě měřit ceny, když nevíme nebo když se nám neustále mění ta zásoba peněz a na té druhé straně je to vlastně v rámci měření té inflace existuje něco, čemu se říká Goodhartovo pravidlo. Goodhartovo pravidlo vlastně říká, že proměnná přestává být dobrou proměnnou, pokud je cílená a takhle vlastně je to postavené s tou inflací, že jak jsi říkal v tom spotřebním koši, což je vlastně velmi úzkej snapshot ekonomiky a chybí tam ty nemovitosti, tak samozřejmě můžeme mít inflaci plácnou 6, 8, 10% to je jedno, ale ty ceny nemovitosti samozřejmě jsou daleko vyšší než je ta oficiální inflace. Proto vlastně nemůžeme ty reální ceny měřit tu oficiální inflací, která je měřena na základě toho spotřebního koše,
+Že to je vlastně, přijde mi to úplně samý stejně jako s tím metrem a nemůžeme efektivně dlouhodobě měřit ceny, když nevíme nebo když se nám neustále mění ta zásoba peněz a na té druhé straně je to vlastně v rámci měření té inflace existuje něco, čemu se říká Goodhartovo pravidlo. Goodhartovo pravidlo vlastně říká, že proměnná přestává být dobrou proměnnou, pokud je cílená a takhle vlastně je to postavené s tou inflací, že jak jsi říkal v tom spotřebním koši, což je vlastně velmi úzkej snapshot ekonomiky a chybí tam ty nemovitosti, tak samozřejmě můžeme mít inflaci plácnou 6, 8, 10% to je jedno, ale ty ceny nemovitosti samozřejmě jsou daleko vyšší než je ta oficiální inflace. Proto vlastně nemůžeme ty reální ceny měřit tu oficiální inflací, která je měřena na základě toho spotřebního koše, který je velmi neefektivní.
 
-**Tomáš Havránek:** …který je velmi neefektivní. Měření inflace je ještě daleko složitější. Naťukl jsi jeden z problémů, které tam jsou, a je to technická diskuze, do které nechci moc zabíhat. Máš pravdu. Já osobně si říkám: víme, že tam jsou problémy na obě strany, ale máme něco lepšího? Odpověď je, že úplně nemáme.
+**Tomáš Havránek:** Měření inflace je ještě daleko složitější. Naťukl jsi jeden z problémů, které tam jsou, a je to technická diskuze, do které nechci moc zabíhat. Máš pravdu. Já osobně si říkám: víme, že tam jsou problémy na obě strany, ale máme něco lepšího? Odpověď je, že úplně nemáme.
 
 ČNB měla jeden čas index CPIH, který tam tehdy prosadil Mojmír Hampl. Byla to vlastně inflace, do které se s nějakou adekvátní vahou, řekněme, započítaly ceny nemovitostí, aby to odpovídalo tomu, kolik lidé za svůj život v průměru utratí za různé věci včetně nemovitostí. Ta byla samozřejmě v průměru vyšší, takže ho ČNB po odchodu Mojmíra, po několika letech, přestala publikovat. Ale to jsou pořád takové věci, které jsou obecně přijímané. Obecně přijímaný je index CPI, Consumer Price Index. Přes všechny problémy nic lepšího nemáme.
 
@@ -3781,7 +3787,9 @@ Minimálně lidé ve světě, kteří jsou aspoň trochu gramotní. Takže ne pi
 
 Nečekám, že teď přijde guvernér a řekne: jo, zrušme inflaci. Proč jsi mi to neřekl předtím? Proč jsi mi to neřekl? Já jsem mu to říkal, ale…
 
-A jaká byla reakce? No… V krátkosti. V krátkosti: reakce nebyla v podstatě žádná. Reakce ale třeba byla, když jsme se bavili o investování devizových rezerv.
+**Moderátor:** A jaká byla reakce?
+
+**Tomáš Havránek:** No… V krátkosti: reakce nebyla v podstatě žádná. Reakce ale třeba byla, když jsme se bavili o investování devizových rezerv.
 
 A teď se bavíme o Mojmírovi. O Alešovi. O Alešovi. Tak Mojmír není guvernér.
 
@@ -4237,7 +4245,9 @@ Druhým problémem samozřejmě je, že těch srdcařů, těch učitelů, je jen
 
 Ti tam už budou. A když teď tu skupinu rozšiřuji o 50 %, jako v mém příkladu, je to hodně lidí navíc. Tím pádem se nutně musí stát, že hledám i mezi těmi, kdo to třeba primárně dělat nechtěli. Přijde tedy málo srdcařů.
 
-Tedy přijde málo srdcařů. Přesně tak. Teoreticky, řekněme, by se mohlo stát, že snižujeme kvalitu učitelů.
+**Alice Němcová Tejkalová:** Tedy přijde málo srdcařů.
+
+**Zuzana Havránková:** Přesně tak. Teoreticky, řekněme, by se mohlo stát, že snižujeme kvalitu učitelů.
 
 Teoreticky. Samozřejmě, že to musí být dlouhodobý proces. Ano. Jenže zmenšování tříd bohužel probíhá v relativně krátkém časovém období.
 

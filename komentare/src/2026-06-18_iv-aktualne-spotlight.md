@@ -195,13 +195,19 @@ Druhá věc je, že zdaleka nejsme jediná země, která má, nebo bude mít, fi
 
 Čím dál víc se přikláním k tomu, že tohle opravdu může mít hmatatelný dopad na růst, a tím i na výběr daní, produktivitu a fiskální situaci. Teď tedy máte dvě protichůdné tendence. Kolaps, naprostý kolaps porodnosti: za pár let v podstatě nebudou děti.
 
-Zároveň je tu ale potenciál možná exploze umělé inteligence, pokud nedojde k nějaké katastrofě. Naopak. Společnost tedy bude menší a produktivnější? Mohla by, ale musí uživit starší lidi, mezi které budu brzy patřit i já, dřív než vy, asi o dost.
+Zároveň je tu ale potenciál možná exploze umělé inteligence, pokud nedojde k nějaké katastrofě. Naopak.
+
+**Petra Jaroměřská:** Společnost tedy bude menší a produktivnější?
+
+**Tomáš Havránek:** Mohla by, ale musí uživit starší lidi, mezi které budu brzy patřit i já, dřív než vy, asi o dost.
 
 Takže se o nás možná budou starat roboti. Myslím, že je docela reálné, že o mě v důchodu bude pečovat humanoidní robot. Už bych se na to poměrně vsadil. To vám hodně pomůže s tím, kdo se o ty lidi bude fyzicky starat a kdo to zaplatí. Ti roboti budou jednou levní.
 
 To je spekulace, ale podložená, a znám řadu chytrých lidí, kteří vám o tom řeknou mnohem víc, třeba právě v Kalifornii, kteří se na tom vývoji podílejí. Pořád to ale stejně nebude stačit na splacení dluhů a vyrovnání rozpočtu, pokud neuděláme něco v tom smyslu, o kterém jsme se bavili, což by skoro stačilo. Nebylo by to úplně všechno, ale dvě třetiny z toho bychom smazali docela snadno.
 
-A nemusí se nijak moc šetřit? Šetřit je prima, ale šetření nebo třeba zvyšování daní někoho bolí, takže realita je taková, že větší reformy daní nebo výdajů jsou v demokracii v podstatě nemožné. Ne že by to bylo úplně nemožné, ale je to velmi, velmi komplikované. Co tedy?
+**Petra Jaroměřská:** A nemusí se nijak moc šetřit?
+
+**Tomáš Havránek:** Šetřit je prima, ale šetření nebo třeba zvyšování daní někoho bolí, takže realita je taková, že větší reformy daní nebo výdajů jsou v demokracii v podstatě nemožné. Ne že by to bylo úplně nemožné, ale je to velmi, velmi komplikované. Co tedy?
 
 Podle mě je bohužel mnohem pravděpodobnější tento scénář: pokud tu nebude hojnost umělé inteligence pro všechny, kdy peníze vlastně už nebudou mít… kdy všichni můžou všechno, což asi ne, tak si stát v situaci, kdy dlouhodobě není schopen vybrat na daních tolik, kolik potřebuje, ty peníze natiskne. To sice také není dobré řešení, lidi to rádi mít nebudou, ale je to politicky přijatelnější než vybírat mnohem víc daní nebo snižovat důchody.
 

@@ -107,7 +107,9 @@ Druhým problémem samozřejmě je, že těch srdcařů, těch učitelů, je jen
 
 Ti tam už budou. A když teď tu skupinu rozšiřuji o 50 %, jako v mém příkladu, je to hodně lidí navíc. Tím pádem se nutně musí stát, že hledám i mezi těmi, kdo to třeba primárně dělat nechtěli. Přijde tedy málo srdcařů.
 
-Tedy přijde málo srdcařů. Přesně tak. Teoreticky, řekněme, by se mohlo stát, že snižujeme kvalitu učitelů.
+**Alice Němcová Tejkalová:** Tedy přijde málo srdcařů.
+
+**Zuzana Havránková:** Přesně tak. Teoreticky, řekněme, by se mohlo stát, že snižujeme kvalitu učitelů.
 
 Teoreticky. Samozřejmě, že to musí být dlouhodobý proces. Ano. Jenže zmenšování tříd bohužel probíhá v relativně krátkém časovém období.
 
