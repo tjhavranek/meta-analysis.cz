@@ -137,7 +137,7 @@ A žádná z nich, ani jedna z těch studií, neukazovala, že by zdravá inflac
 
 **Jan Bumba:** …že když stál před nějakými pár lety oběd 120 korun, dneska stojí 220, takže by se někdy mohly ty ceny vrátit zase zpátky na těch 120?
 
-**Tomáš Havránek:** Musel byste vybrat datum, ke kterému ceny zafixujete. To neznamená, že by se nikdy neměnily, ale znamená to, že kdyby se od tohoto, řekněme, benchmarku, od té hladiny, v průměru moc vychýlily, snaží se je Národní banka vrátit zpátky k té hodnotě. Asi ale nedává smysl vybrat datum zpřed několika let. Bylo by to nějaké datum v současnosti nebo v blízké budoucnosti, třeba prvního ledna příštího roku. To mimochodem může pan guvernér udělat z vlastní vůle kdykoli.
+**Tomáš Havránek:** Musel byste vybrat datum, ke kterému ceny zafixujete. To neznamená, že by se nikdy neměnily, ale znamená to, že kdyby se od tohoto, řekněme, benchmarku, od té hladiny, v průměru moc vychýlily, snažila by se je Národní banka vrátit zpátky k té hodnotě. Asi ale nedává smysl vybrat datum zpřed několika let. Bylo by to nějaké datum v současnosti nebo v blízké budoucnosti, třeba prvního ledna příštího roku. To mimochodem může pan guvernér udělat z vlastní vůle kdykoli.
 
 Stačí většina v bankovní radě, nepotřebuje změnu zákona ani nic jiného a může to udělat sám, když bude chtít.
 

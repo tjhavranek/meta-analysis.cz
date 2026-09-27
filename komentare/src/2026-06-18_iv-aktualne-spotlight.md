@@ -25,7 +25,7 @@ Ten účetní efekt je ale dán tím, že se najednou část šedé ekonomiky ob
 
 V datech to nevidíte a nevybíráte z toho daně. Teď zavedeme EET a část šedé ekonomiky se nepochybně obělí. Najednou máte doklady, platíte z toho daně, ČSÚ to umí spočítat, ale neví, jak moc k obělení došlo. Náš odhad je dvě procenta, ale je to odhad, který má, řekněme, nějakou nepřesnost.
 
-V tu chvíli jsou tam tedy najednou ty dvě procenta šedé ekonomiky dvakrát. Nevím, jestli posluchači nebo diváci budou chtít vysvětlení detailů, ale takhle nějak to funguje. A podobně, když se EET ruší, je efekt opačný. Proto jsme nějakou dobu po pandemii vypadali, že máme nejslabší ekonomický růst v Evropě. To ale nebyla pravda, do velké míry to bylo dané právě tím, že ekonomika, HDP, byla najednou opticky menší, protože ji bylo těžší spočítat.
+V tu chvíli jsou tam tedy najednou ta dvě procenta šedé ekonomiky dvakrát. Nevím, jestli posluchači nebo diváci budou chtít vysvětlení detailů, ale takhle nějak to funguje. A podobně, když se EET ruší, je efekt opačný. Proto jsme nějakou dobu po pandemii vypadali, že máme nejslabší ekonomický růst v Evropě. To ale nebyla pravda, do velké míry to bylo dané právě tím, že ekonomika, HDP, byla najednou opticky menší, protože ji bylo těžší spočítat.
 
 Část bílé ekonomiky se zase přetřela na šedou.
 
@@ -79,7 +79,7 @@ Po deseti letech, co ten balík peněz má, nemá ještě ani 30 % z nich zainve
 
 Oni to udělat chtějí. Ty lidi znám, bavím se s nimi a často je k tomu také tlačím, ale já nic nejsem. Vláda nemůže ČNB do ničeho nutit, ale kdyby k tomu vytvořila třeba nějakou poradní skupinu, která by společně s ČNB řešila opravdu jenom rezervy Národní banky, bylo by pro vedení Národní banky přijatelnější investovat do akcií ne 30 %, ale třeba 70 %. Tím bychom nakonec každý rok vydělali, protože zisky musí Národní banka převádět do státního rozpočtu.
 
-Minimálně 100 miliard korun navíc. Možná by to bylo až 200, podle toho, jak přesně bychom to udělali. Dnes máme roční schodek státního rozpočtu kolem 300 miliard korun a těch 100 nebo 150 bychom snadno tímto způsobem, aniž by to někoho bolelo. Je to jenom jednoduchá aplikace standardní mezinárodní praxe.
+Minimálně 100 miliard korun navíc. Možná by to bylo až 200, podle toho, jak přesně bychom to udělali. Dnes máme roční schodek státního rozpočtu kolem 300 miliard korun a těch 100 nebo 150 bychom tímto způsobem snadno získali, aniž by to někoho bolelo. Je to jenom jednoduchá aplikace standardní mezinárodní praxe.
 
 Když máte peníze, nenecháte je de facto na běžném účtu, zjednodušuji to, ale investujete je tak, aby dlouhodobě vydělávaly. Tím bych začal, to je první věc.
 
@@ -181,11 +181,11 @@ V dané kapitole. V celkovém státním rozpočtu, kdybychom to zavedli opravdu 
 
 Neberete peníze tam, kde jsou potřeba. Odstřihnete něco, u čeho by i pro ty ředitele bylo lepší, kdyby ke konci roku často nemuseli kupovat nesmysly. Ano, 2 %. 40 miliard tady, nějakých 150 miliard, řekněme, z ČNB dlouhodobě, to už je skoro 200.
 
-A kdyby EET udělalo 30 miliard, byla byste už na dvou třetinách rozpočtového schodku. A kromě EET ty dvě další opatření nikoho moc nebolí a přinesou hodně peněz.
+A kdyby EET udělalo 30 miliard, byla byste už na dvou třetinách rozpočtového schodku. A kromě EET ta dvě další opatření nikoho moc nebolí a přinesou hodně peněz.
 
 **Petra Jaroměřská:** Jestli tomu rozumím správně, tak vy tady kritizujete nějaké bezhlavé utrácení ke konci roku jednotlivých rozpočtových kapitola. Opravdu je to 40 miliard, z čeho ta čísla vycházejí?
 
-**Tomáš Havránek:** Ty dvě procenta čerpám, tuším, z článku z roku 2018. Dá se to poměrně komplikovaně ekonometricky odhadnout a těch odhadů je i několik. A abych možná řekl: dobře, nebavme se o konkrétním čísle, ale vezměme to celkově a zamysleme se nad tím, jak to zavést tak, aby to fungovalo, což je možná třeba úkol pro Národní rozpočtovou radu nebo pro vládu. Něco podobného jsme tu měli, zaváděl to tuším pan Kalousek po velké krizi, to NNV, nároky z nerealizovaných výdajů. Pak to nabobtnalo, ale problém je, že u nás nemáte garantované, že když to převedete, ty peníze tam budou a že vám šéf rozpočet nesníží, takže to moc nefungovalo. Samozřejmě to říkám tak, aby to bylo pochopitelné, ale rozhodně je to něco, kde se dají ušetřit desítky miliard korun.
+**Tomáš Havránek:** Ta dvě procenta čerpám, tuším, z článku z roku 2018. Dá se to poměrně komplikovaně ekonometricky odhadnout a těch odhadů je i několik. A abych možná řekl: dobře, nebavme se o konkrétním čísle, ale vezměme to celkově a zamysleme se nad tím, jak to zavést tak, aby to fungovalo, což je možná třeba úkol pro Národní rozpočtovou radu nebo pro vládu. Něco podobného jsme tu měli, zaváděl to tuším pan Kalousek po velké krizi, to NNV, nároky z nerealizovaných výdajů. Pak to nabobtnalo, ale problém je, že u nás nemáte garantované, že když to převedete, ty peníze tam budou a že vám šéf rozpočet nesníží, takže to moc nefungovalo. Samozřejmě to říkám tak, aby to bylo pochopitelné, ale rozhodně je to něco, kde se dají ušetřit desítky miliard korun.
 
 Investování rezerv, to jsou vysoké desítky miliard nebo přes 100 miliard, EET vám udělá nízké desítky miliard. Kdyby to tedy vláda zavedla aspoň v nějaké formě, více než by to vykompenzovalo další kroky, které zase směřují k vyššímu deficitu. Musíte, řekněme, uspokojit nějaké své voličské jádro, čemuž také rozumím, ne že bych to úplně rád viděl, ale skoro bych řekl, že se současná vláda chová lépe, než bych před volbami očekával.
 

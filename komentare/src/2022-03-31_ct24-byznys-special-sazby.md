@@ -47,7 +47,7 @@ Efektivita zvyšování sazeb, i kdyby bylo možné, a to už moc možné není,
 
 **Moderátorka:** Tak pan guvernér říkal, že pokud bude potřeba, můžou centrální bankéři zvyšovat sazby, jak se jim zlíbí. Vraťme se ještě k posilování koruny, protože, co jsme, pane Havránku, ale společně nezmínili, jsou exportéři. Já si vybavuji slova exportérů, když jsme řešili posilování koruny k 25 korunám za euro. Tak těm by se asi nelíbilo, kdyby se centrální bankéři pustili do bezmezného posilování české měny.
 
-**Tomáš Havránek:** Nelíbilo. Je ale potřeba říct, že zaprvé úkolem ČNB, centrální banky, není pomáhat exportérům nebo importérům. A zadruhé minulé intervence proti koruně, ty dva biliony nových korun, byly přímou podporou exportérů. Kdybychom teď eura nakoupená za nové koruny prodali, jen to obrátíme a pomůžeme naopak importérům. Minulé intervence bychom tím vlastně neutralizovali.
+**Tomáš Havránek:** Nelíbilo. Je ale potřeba říct, že zaprvé úkolem ČNB, centrální banky, není pomáhat exportérům nebo importérům. A zadruhé minulé intervence proti koruně, ty dva biliony nových korun, byly přímou podporou exportérů. Kdybychom teď eura nakoupená za nové koruny prodali, jen bychom to obrátili a pomohli naopak importérům. Minulé intervence bychom tím vlastně neutralizovali.
 
 Dopad by byl v součtu nulový. Nebylo by to celkové poškození exportérů ani importérů, ale vlastně čistá nula. I z tohoto pohledu se mi to tedy zdá poměrně fér, jestli se to dá takhle říct. Úkolem ČNB je každopádně, znovu říkám, cenová stabilita. A když je inflace takhle pádivá, dvouciferná, měla by využít všechny nástroje, které má, nejenom úrokový, který se už vyčerpává a brzy nebude fungovat vůbec.
 
