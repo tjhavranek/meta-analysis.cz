@@ -30,7 +30,11 @@ Nemyslím si proto, že by nechal českou korunu úplně spálit. A věřím, do
 
 **Martin Veselovský:** Jenom pokud tedy popisujete vlastně vývoj koruny nebo tu reakci trochu jako předčasnou, tak ale musím k tomu říct, že Aleš Michl po už svém jmenování guvernérem řekl, že na prvním zasedání bankovní rady v srpnu navrhne ponechání úrokových sazeb bez změny. Takže nevím, jestli vlastně jako neoznamuje dopředu, že bude spíš tou holubičí povahou. Oznamuje, ale… No tak je otázka, jestli ta reakce trhu byla opravdu předčasná.
 
-**Tomáš Havránek:** Myslím si, že to může být jinak, než jak to teď vypadá. Každopádně bude v situaci, kdy ponese odpovědnost na 100 % a bude mít v radě většinu, kterou mu prezident nejspíš, pravděpodobně dopřeje. Ještě tři členy je potřeba jmenovat. Přesně tak, a v létě potom další dva.
+**Tomáš Havránek:** Myslím si, že to může být jinak, než jak to teď vypadá. Každopádně bude v situaci, kdy ponese odpovědnost na 100 % a bude mít v radě většinu, kterou mu prezident nejspíš, pravděpodobně dopřeje.
+
+**Martin Veselovský:** Ještě tři členy je potřeba jmenovat.
+
+**Tomáš Havránek:** Přesně tak, a v létě potom další dva.
 
 Ale možná je potom jmenování už v červenci. Samozřejmě je možné, že nechá korunu shořet. Ale úplně mi to nejde k tomu, jak ho znám, že by se takhle chtěl zapsat do dějin.
 
@@ -114,9 +118,11 @@ Model by se tedy musel dát úplně stranou a používat by se na to musela něj
 
 Důvodů je několik. Dnes jim samozřejmě hodně pomáhá třeba to, že mají vlastní energii z hydroelektráren. Nemusí tolik nakupovat, což jim pomáhá tlumit ten opravdu velmi vysoký šok.
 
-Inflaci mají maximálně asi dvě a půl procenta. I my máme vlastní energii. Ano, ale nemáme hydroelektrárny. To je pravda.
+Inflaci mají maximálně asi dvě a půl procenta.
 
-Aspoň ne v takové míře. Ano. Dlouhodobě je ale hlavní věcí posilující měna, která pomáhá inflační tlaky tlumit. A zároveň to, že centrální bance nevadí, když je inflace na nule.
+**Martin Veselovský:** I my máme vlastní energii.
+
+**Tomáš Havránek:** Ano, ale nemáme hydroelektrárny, aspoň ne v takové míře. Dlouhodobě je ale hlavní věcí posilující měna, která pomáhá inflační tlaky tlumit. A zároveň to, že centrální bance nevadí, když je inflace na nule.
 
 Všechny ostatní centrální banky kolem začínají, jakmile inflace klesne k nule, něco dělat, uvolňovat měnovou politiku, aby inflace dosáhly. U nás to byly například intervence proti koruně. Švýcarsko také intervenuje, aby deflace nebyla nějak velká, ale nulová inflace jim nevadí. Mají pravidlo, že mezi nulou a dvojkou je to pro ně v pořádku.
 
