@@ -71,7 +71,7 @@ Není samotná osoba guvernéra překážkou posilování koruny?
 
 **Tomáš Havránek:** Ano, z toho důvodu, že posilování koruny nechce ani Aleš Michl. To bych mu asi zrovna vyčítal. Řadu věcí nedělá úplně špatně, ale s tímhle nesouhlasím.
 
-Podle mě je teď nutné, aby Národní banka ukázala, že udělá cokoli, cokoli pro to, aby nám doručila cenovou stabilitu. Podle mě tedy ideálně dlouhodobě nulovou inflaci, ale alespoň inflační cíl 2%. A to nedělá. Dobře, zvýšila sazby poměrně hodně.
+Podle mě je teď nutné, aby Národní banka ukázala, že udělá cokoli pro to, aby nám doručila cenovou stabilitu. Podle mě tedy ideálně dlouhodobě nulovou inflaci, ale alespoň inflační cíl 2%. A to nedělá. Dobře, zvýšila sazby poměrně hodně.
 
 Otázka je, jak moc to bylo účinné. Ale má tu velký účinný nástroj, jehož účinnost nikdo nezpochybňuje, a nepoužívá ho. Používá ho tak trochu tím, že brání oslabování.
 
@@ -157,7 +157,7 @@ A přínos pro všechny by byl úžasný. To, že má stokoruna teď stejnou hod
 
 **Tomáš Havránek:** Tenhle plán přijetí eura nevylučuje. Možná naopak, protože když máte nejvyšší inflaci v Evropě, nesplníte základní kritérium pro přijetí eura. A nesplníte ani to druhé, tedy nějakou uměřenost úrokových sazeb.
 
-Takže i kdybychom teď chtěli, do eurozóny nás nikdo nevezme, protože nesplníme základní principy. Kdybychom inflaci zrušili, můžeme se pro přijetí eura rozhodnout kdykoli, kdykoli budeme chtít. Pro mě osobně je přijetí eura otázka odlišná od inflace. Potom by samozřejmě bylo komplikovanější přesvědčovat Evropu, že by se inflace vlastně měla vzdát.
+Takže i kdybychom teď chtěli, do eurozóny nás nikdo nevezme, protože nesplníme základní principy. Kdybychom inflaci zrušili, můžeme se pro přijetí eura rozhodnout kdykoli budeme chtít. Pro mě osobně je přijetí eura otázka odlišná od inflace. Potom by samozřejmě bylo komplikovanější přesvědčovat Evropu, že by se inflace vlastně měla vzdát.
 
 Ekonomicky ale euro vychází víceméně neutrálně: má výhody i nevýhody. Není to otázka ekonomická, je to spíš otázka ideologická nebo politická. Třeba baltské země mají euro a mají vysokou inflaci, ale nevadí jim to, protože euro berou jako další záruku bezpečnosti, další přivázání k západní Evropě a další pojistku toho, že kdyby na ně Rusové zaútočili, budou je bránit zuby nehty.
 

@@ -45,7 +45,7 @@ Takže ano, investovat postupně, třeba 20 let, dejme tomu každý týden, nebo
 
 **Tomáš Havránek:** Je to tak. Podle zákona převádí ČNB své zisky do státního rozpočtu, samozřejmě poté, co pokryje své ztráty z minulých let a vytvoří nějaký rezervní fond, třeba 100 miliard korun. To by ale mohlo být třeba i příští rok, pokud by se současný vývoj na trhu nějak zachoval.
 
-**Jiří Zatloukal:** Vidíme tady na druhou stranu, ale ze strany politiků už jsme viděli výraznou chuť vlastně převádět ty současné zisky, loňský zisk nebo předloňský zisk do státního rozpočtu. Nevzbudí to v politicích nezodpovědnost, že si můžou brát vlastně peníze, peníze z České národní banky, které jim pokryjí schodky do příštích let?
+**Jiří Zatloukal:** Vidíme tady na druhou stranu, ale ze strany politiků už jsme viděli výraznou chuť vlastně převádět ty současné zisky, loňský zisk nebo předloňský zisk do státního rozpočtu. Nevzbudí to v politicích nezodpovědnost, že si můžou brát peníze z České národní banky, které jim pokryjí schodky do příštích let?
 
 **Tomáš Havránek:** To v nich vzbudit může, ale pořád platí, že když ty peníze můžete vydělat, přece je nevyhodíte z okna. Samozřejmě je to může, dejme tomu, podnítit k laxnějšímu přístupu k reformám důchodového systému, ale to jsou spekulace. Tady evidentně zbytečně přicházíme o peníze v porovnání se Švýcarskem, Singapurem a Norskem.
 
