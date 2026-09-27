@@ -6310,7 +6310,7 @@ A mně by dávalo smysl návrh pana poslance Havránka schválit. Takže jen dá
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Václav Moravec:** … si činit problémy a možnost rychlé nápravy takové situace bude omezená. Struktura navržené daně, vztahuje se to právě k bankovnímu sektoru, postup při definování, kdo je poplatníkem a postup při stanovení základu daně jsou dosti složité a nabízí se otázka, zda by nemohlo být zvoleno řešení jednodušší, napsala centrální banka kromě jiného ve stanovisku, které jsme viděli. Vám přijde způsob tvorby té daně…
+**Václav Moravec:** … si činit problémy a možnost rychlé nápravy takové situace bude omezená. Struktura navržené daně, vztahuje se to právě k bankovnímu sektoru, postup při definování, kdo je poplatníkem a postup při stanovení základu daně jsou dosti složité a nabízí se otázka, zda by nemohlo být zvoleno řešení jednodušší, napsala centrální banka kromě jiného ve stanovisku, které jsme viděli. Vám přijde způsob tvorby té daně z mimořádných zisků transparentní?
 
 **Tomáš Havránek:** Ta myšlenka mi původně dávala velký smysl, jako asi řadě z nás. Když máte mimořádné výdaje, hledáte mimořádné příjmy u těch, kdo na dané situaci vydělávají. Když se ale podíváme do detailů, je velmi těžké to implementovat tak, aby to dávalo smysl. To už myslím vidí skoro všichni, ale museli to nějak dotáhnout do konce.
 
@@ -6332,7 +6332,7 @@ A k tomu ještě optimalizace, nejenom u bank, ale u všech ostatních firem, kt
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Václav Moravec:** … lépe systémově, jak naznačoval Jiří Rusnok, když vy byste dával Ačko a teď ukazuju na rozpor mezi kroky ministerstva financí a doporučením centrální banky, která psala o hranici 3 miliard?
+**Václav Moravec:** Pane profesore Havránku, opravdu to nešlo udělat lépe systémově, jak naznačoval Jiří Rusnok, když vy byste dával Ačko a teď ukazuju na rozpor mezi kroky ministerstva financí a doporučením centrální banky, která psala o hranici 3 miliard?
 
 **Tomáš Havránek:** Lepší by asi bylo nahradit mimořádnou daň nějakým jiným systémem, jak tady zmiňoval pan bývalý guvernér. Ale když už tam mimořádná daň je, nějaká hranice se udělat musí. Samozřejmě mluvím za sebe, moje interpretace je také taková, že dlouhodobě vnímáme, že náš bankovní sektor je hodně regulovaný, a tím pádem hodně ziskový. A ty zisky jdou do ciziny. Přesně tak.
 
@@ -6360,7 +6360,7 @@ Tady ta pozitivní stránka končí, ale reálně opravdu ten přebytek…
 
 **Tomáš Havránek:** Takhle vysoká inflace, která umazává státní dluh, je v podstatě forma státního bankrotu. A kdo to potom platí? Lidé, kteří mají nějaké úspory v bance nebo doma v hotovosti.
 
-**Vít Samek:** Ale lidi *[nesrozumitelné]*, když propady, reálné propady mezd už jsou teď přes 10% ročně a u řady lidí ještě větší. Takže naši zaměstnanci jsou první obětí.
+**Vít Samek:** Ale lidi na mzdách… Reálné propady mezd už jsou teď přes 10% ročně a u řady lidí ještě větší. Takže naši zaměstnanci jsou první obětí.
 
 **Tomáš Havránek:** Jen chci říct, že krátkodobě na tom veřejné finance kvůli inflaci nejsou zase tak špatně. Ne díky ní, ale kvůli ní. Příští rok bude rozpočet kvůli inflaci vyrovnaný: státní dluh se kvůli ní sníží víceméně o 300 miliard a schodek bude 300 miliard.
 
@@ -6378,7 +6378,7 @@ Dlouhodobě jsou ale problémem důchody, o čemž pan Rusnok ví z nás rozhodn
 
 **Tomáš Havránek:** To jsou dva, řekněme, protichůdné cíle, ale myslím, že dojde k přehodnocení toho odmítání zvyšování daní, protože i přes inflaci musíme s rozpočtem v horizontu nějakých dvou let něco dělat.
 
-**Vít Samek:** Já předpokládám, že ta inflace tu nebude za dva, tři roky pořád takhle.
+**Vít Samek:** Já předpokládám, že ta inflace tu nebude za dva, tři roky pořád takhle vysoká.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
@@ -6432,7 +6432,7 @@ Spíš tomu moc nevěřím, ale ta možnost tu určitě je.
 
 **Tomáš Havránek:** Můžeme být rádi, že se aspoň něco použije, ale hlavní věcí jsou samozřejmě důchody. Na výdajové straně tvoří tři čtvrtiny výdajů rozpočtu mandatorní nebo kvazimandatorní výdaje a důchodový systém se, jak jsme tu už naznačili, změnit musí, jinak bude rozpočet dlouhodobě opravdu zkrachovalý. Nebudou stačit nějaké parametrické změny. Samozřejmě, když půjdeme všichni do důchodu v 90 letech, tím se to vyřeší, ale bude třeba nějak reagovat na to, že průběžný systém vznikl za Bismarcka v situaci, kdy lidé měli čtyři, pět dětí a důchodový věk byl 70 let, takže se ho málokdo dožil. Dnes máte porodnost hluboko pod dvěma, u nás už možná ne tak hluboko, a v takové situaci to dlouhodobě fungovat nemůže. Narazí to na demografickou zeď a my musíme jednak motivovat lidi, aby měli třeba víc dětí.
 
-**Vít Samek:** To se teď v posledních dvou letech nám počet narozených dětí roste,
+**Vít Samek:** To se teď v posledních dvou letech nám počet narozených dětí roste, takže…
 
 **Tomáš Havránek:** Ano, to je trochu demografický zázrak, ale pořád to nestačí. A tím druhým pilířem musí být mnohem větší motivace kupovat akcie už v mladém věku, od 20 let, vlastně od prvního zaměstnání.
 
