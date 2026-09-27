@@ -987,7 +987,11 @@ Postupně přicházely negativní výsledky: Kristínka je negativní, Daník je
 
 **Tomáš Havránek:** To jsme doufali. Neznám přesná čísla, ale čekal bych, že tam bude určité solidní procento těchto příliš citlivých testů, které spustí poplach, i když tam potenciál pro diabetes, tedy ty protilátky, není. Doufali jsme tedy, ale ovlivnit to nemůžete, takže zase nemá smysl nějak moc o tom přemýšlet.
 
-**Jan Hrušovský:** Jako to, že zatím asi člověk nedokáže ovlivnit ani to, že mu cukrovka prvního typu někdy vstoupí do života, protože zatím taky nevíme, co je ten spouštěč, jsou nějaké teorie, tak vlastně proč se tím asi jako trápit, co? Přesně tak. Ještě vlastně, když jste měli ty rovnou čtyři děti, který jste do toho zapojili, tak víte, jaký tam bylo ještě rozmezí mezi tím, než vám přišly ty výsledky, bylo to třeba měsíc, dva od toho testu?
+**Jan Hrušovský:** Jako to, že zatím asi člověk nedokáže ovlivnit ani to, že mu cukrovka prvního typu někdy vstoupí do života, protože zatím taky nevíme, co je ten spouštěč, jsou nějaké teorie, tak vlastně proč se tím asi jako trápit, co?
+
+**Tomáš Havránek:** Přesně tak.
+
+**Jan Hrušovský:** Ještě vlastně, když jste měli ty rovnou čtyři děti, který jste do toho zapojili, tak víte, jaký tam bylo ještě rozmezí mezi tím, než vám přišly ty výsledky, bylo to třeba měsíc, dva od toho testu?
 
 **Tomáš Havránek:** Tuším, že to byly týdny, v řádu týdnů. Asi bych lhal, kdybych teď řekl něco konkrétního, protože diabetes přece není úplně běžná věc. Není to ani tak časté jako třeba potíže se štítnou žlázou, které v rodině máme a známe. Tam je to jednodušší, protože si jen ráno vezmete svůj lék a nic dalšího neřešíte, ale je to mnohem častější. U diabetu jsem teď zase zapomněl přesné číslo, ale procento dětí, kterým test u paní doktorky Berky v Motole vyjde pozitivní, je malé. To znáte lépe než já, možná mě doplníte.
 
@@ -3713,7 +3717,7 @@ Jak říkám, příklady, že to funguje, existují. Ale proč v ústavě řík�
 
 **Moderátor:** Já tuším, že to číslo bylo někde jenom vymyšlené na tom Novém Zélandě, tenkrát na nějakém tom sjezdu.
 
-**Tomáš Havránek:** Takže cenová stabilita je ten benchmark, nulová inflace, tomu můžeš rozumět, a v průměru je to dobré. Pak můžeš argumentovat, že se inflace měří špatně, protože nebere v úvahu technický pokrok. Když měřím inflaci tak, že se dívám, kolik stál iPhone loni a kolik stojí letos, nová generace iPhonu je třeba trochu lepší, ale pořád je v položce iPhone. Je to výkonnější stroj, lepší věc. Zdraží se, ale tohle v cenovém indexu zohledněné není, a k tomu nějaké další technické faktory.
+**Tomáš Havránek:** Takže cenová stabilita je ten benchmark, nulová inflace, tomu každý rozumí, a v průměru je to dobré. Pak můžeš argumentovat, že se inflace měří špatně, protože nebere v úvahu technický pokrok. Když měřím inflaci tak, že se dívám, kolik stál iPhone loni a kolik stojí letos, nová generace iPhonu je třeba trochu lepší, ale pořád je v položce iPhone. Je to výkonnější stroj, lepší věc. Zdraží se, ale tohle v cenovém indexu zohledněné není, a k tomu nějaké další technické faktory.
 
 Ta nula v indexu CPI tedy podle některých lidí z těchto důvodů vlastně znamená mírnou deflaci. Na druhou stranu jsou ale lidé, kteří říkají opak: oficiální inflace je měřená podhodnoceně, protože třeba pořádně nebere v úvahu ceny nemovitostí s nějakou větší váhou.
 
@@ -3753,7 +3757,7 @@ I kdybych se totiž na korunu vykašlal, zrušil ji a měl bitcoin, nemám žád
 
 Centrální banka navíc dělá spoustu dalších věcí. Hlídá, aby bankovní trh fungoval, a tak dále. Potřebuješ tedy někoho, kdo bude tyto funkce vykonávat, ochranu spotřebitele a podobně.
 
-**Moderátor:** Ta otázka byla spíš taková sarkastická. Bylo to podle mě myšlený tím, že pokud ty hlavní bankovní transakce a tak dále můžeme provádět v rámci komerčních bank, tak na co bychom potřebovali tu centrální banku, která se má hlavně starat o tu cenovou stabilitu, ale tady teďka se spolu bavíme, že ty centrální banky to nedělají úplně tak, jak bychom si představili nebo jak by to mělo dejít. Takže to bylo spíš jako…
+**Moderátor:** Ta otázka byla spíš taková sarkastická. Bylo to podle mě myšlený tím, že pokud ty hlavní bankovní transakce a tak dále můžeme provádět v rámci komerčních bank, tak na co bychom potřebovali tu centrální banku, která se má hlavně starat o tu cenovou stabilitu, ale tady teďka se spolu bavíme, že ty centrální banky to nedělají úplně tak, jak bychom si představili nebo jak by to mělo být. Takže to bylo spíš jako…
 
 **Tomáš Havránek:** Rozumím, je dobré se nad tím zamyslet. Co bys vlastně bez centrální banky dělal? Asi by to nějak šlo, ale je lepší postupovat krok po kroku. Nebo bys mohl mít místo centrální banky opravdu nějaký algoritmus, o tom existuje technická a ekonomická literatura. Místo bankovní rady bys měl ne úplně umělou inteligenci, ale jednoduchý vzoreček, který by automaticky dorovnával něco jako teď má ČNB model, takže při trochu jiném aranžmá bys mohl mít jednoduchý vzoreček, který ti doručuje cenovou stabilitu, nějak tak, že vyrovnává inflační očekávání s tím, jaká je reálná cena peněz, a tak dále.
 
@@ -3829,7 +3833,7 @@ Celková strategie je ale podle mě příliš opatrná. Taková, jako hlavně ni
 
 **Moderátor:** Dobrá, pojďme se přesunout na chviličku k deflaci. O inflaci už jsme se tedy bavili celkem dost. Co ta deflace? Proč je to pro ty lidi, nebo obecně pro tu centrální banku takovej velký strašák?
 
-Je to teda z toho důvodu, že ty banky jsou zadlužený a nominálně by jim, nebo nenominálně,
+Je to teda z toho důvodu, že ty banky jsou zadlužený a nominálně by jim, nebo ne nominálně, vlastně… reálně ten dluh?
 
 **Tomáš Havránek:** Když se zeptáš někoho z národní banky, ani se s tebou nebaví: jasně, deflace je špatná. A když se pak díváš do výzkumu, do vědecké literatury, proč je deflace špatná, tak jasně: když máš deflaci 30%, nebo i 10%, řekněme dvoucifernou.
 
@@ -3851,11 +3855,11 @@ Mladí lidé jsou většinou dlužníci, staří lidé jako moji rodiče věřit
 
 **Moderátor:** Ono asi záleží, na jakou generaci se koukáš, zase pak je problém třeba tu hypotéku dostat, pokud si jdeš žádat, že o tu hypotéku chci si koupit nějakej byt, tak hodně mladých lidí na to nedošáhne. Vlastně já na rehabilitaci poslouchám takových příběhů, ať už u těch mladých nebo u těch jejich rodičů, že prostě jak jim musí finančně pomáhat a tak dále a ty vlastně ty mladý zase říkají, já kdybych nebyl jakoby s partnerkou nebo partnerka s partnerem, tak by to prostě dohromady nedali, že ta inflace má spíš jako daleko víc těch negativních aspektů v rámci tohodle než těch pozitivních. Chápu, že potom, že ten, kdo si vzal… Když už ten dluh máš…
 
-Jo, kdo si vzal hypotéku, když byly ty sazby dole v covidu, řekněme, v roce 2020 nebo 2020 to bylo a vzal si tu hypotéku, tak chápu, že ty na tom vydělali jakoby pěkně, ale záleží, v jakém časovém horizontu se na to koukáme,
+Jo, kdo si vzal hypotéku, když byly ty sazby dole v covidu, řekněme v roce 2020, a vzal si tu hypotéku, tak chápu, že ty na tom vydělali jakoby pěkně, ale záleží, v jakém časovém horizontu se na to koukáme, jak moc mladí lidi máme na mysli.
 
 **Tomáš Havránek:** To máš pravdu. To, co jsem řekl, platí asi tak v průměru, a rozumím kontextu, který k tomu dodáváš.
 
-**Moderátor:** Každopádně zase líbilo se mi u té deflace, že to je spíš psychologický teda efekt, než by to bylo…
+**Moderátor:** Každopádně zase líbilo se mi u té deflace, že to je spíš psychologický efekt, než že by to bylo podložený nějak ekonomicky.
 
 **Tomáš Havránek:** Je to v hlavách těch centrálních bankéřů. Když se opravdu díváš na ekonomickou vědu, je velmi těžké najít přesvědčivý důvod, proč by drobná deflace měla být špatná pro ekonomiku jako celek.
 
@@ -3897,7 +3901,7 @@ Už tenhle jednoduchý mechanismus tak spirálu úplně odbourává. Není to je
 
 Deflační spirála je tedy, jak říkáš, mýtus. Ještě nedávno jsme to ale nevěděli úplně jasně, takže bych to nevyčítal lidem, kteří o ní mluvili před deseti lety. Dnes už bychom se jí ale opravdu bát neměli. Mírná deflace vůbec ničemu nevadí, to je takový převažující výsledek ekonomického výzkumu.
 
-**Moderátor:** Super, tak jo. Já bych sem pomalučku přešel na Herohero, na bonusovou verzi, kde se spolu pobavíme o bitcoinu, na to se hodně těším a chtěl bych sem probrat, my jsme to tady nakousli na začátku, pobavíme se o euru, jak to bude, jestli bychom ho měli přijmout, kdy, jestli bude, nebude, co si o to myslíš a ještě bych se s tebou chtěl pobavit o CBDC, jak je to tady v České republice, jak je na to, jak je na to, má názor Česká národní banka a jestli se tady něco chystá nebo ne. Takže děkujeme všem posluchačům, který doposlouchali až teď a rozhovor pokračuje
+**Moderátor:** Super, tak jo. Já bych sem pomalučku přešel na Herohero, na bonusovou verzi, kde se spolu pobavíme o bitcoinu, na to se hodně těším a chtěl bych sem probrat, my jsme to tady nakousli na začátku, pobavíme se o euru, jak to bude, jestli bychom ho měli přijmout, kdy, jestli bude, nebude, co si o to myslíš a ještě bych se s tebou chtěl pobavit o CBDC, jak je to tady v České republice, jak je na to, jak je na to, má názor Česká národní banka a jestli se tady něco chystá nebo ne. Takže děkujeme všem posluchačům, který doposlouchali až teď, a rozhovor pokračuje na Herohero.
 
 *[Přeskočeno: znělka a upoutávka na pořad.]*
 

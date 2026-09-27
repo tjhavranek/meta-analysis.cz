@@ -55,7 +55,11 @@ Postupně přicházely negativní výsledky: Kristínka je negativní, Daník je
 
 **Tomáš Havránek:** To jsme doufali. Neznám přesná čísla, ale čekal bych, že tam bude určité solidní procento těchto příliš citlivých testů, které spustí poplach, i když tam potenciál pro diabetes, tedy ty protilátky, není. Doufali jsme tedy, ale ovlivnit to nemůžete, takže zase nemá smysl nějak moc o tom přemýšlet.
 
-**Jan Hrušovský:** Jako to, že zatím asi člověk nedokáže ovlivnit ani to, že mu cukrovka prvního typu někdy vstoupí do života, protože zatím taky nevíme, co je ten spouštěč, jsou nějaké teorie, tak vlastně proč se tím asi jako trápit, co? Přesně tak. Ještě vlastně, když jste měli ty rovnou čtyři děti, který jste do toho zapojili, tak víte, jaký tam bylo ještě rozmezí mezi tím, než vám přišly ty výsledky, bylo to třeba měsíc, dva od toho testu?
+**Jan Hrušovský:** Jako to, že zatím asi člověk nedokáže ovlivnit ani to, že mu cukrovka prvního typu někdy vstoupí do života, protože zatím taky nevíme, co je ten spouštěč, jsou nějaké teorie, tak vlastně proč se tím asi jako trápit, co?
+
+**Tomáš Havránek:** Přesně tak.
+
+**Jan Hrušovský:** Ještě vlastně, když jste měli ty rovnou čtyři děti, který jste do toho zapojili, tak víte, jaký tam bylo ještě rozmezí mezi tím, než vám přišly ty výsledky, bylo to třeba měsíc, dva od toho testu?
 
 **Tomáš Havránek:** Tuším, že to byly týdny, v řádu týdnů. Asi bych lhal, kdybych teď řekl něco konkrétního, protože diabetes přece není úplně běžná věc. Není to ani tak časté jako třeba potíže se štítnou žlázou, které v rodině máme a známe. Tam je to jednodušší, protože si jen ráno vezmete svůj lék a nic dalšího neřešíte, ale je to mnohem častější. U diabetu jsem teď zase zapomněl přesné číslo, ale procento dětí, kterým test u paní doktorky Berky v Motole vyjde pozitivní, je malé. To znáte lépe než já, možná mě doplníte.
 
