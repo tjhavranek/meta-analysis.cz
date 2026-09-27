@@ -822,6 +822,28 @@ def _hand_built():
 _HAND_BUILT = _hand_built()
 
 
+def about_for_llms():
+    """The About page's own prose, folded sections included, as plain text for llms-full.txt.
+    Read from about/index.html rather than restated here, so the two cannot drift. The awards
+    and rankings sit in collapsed <details> on the page; a machine reading llms-full.txt should
+    not have to fetch and parse the page to find them."""
+    try:
+        s = open(os.path.join(SITE, "about", "index.html"), encoding="utf-8").read()
+    except OSError:
+        return []
+    m = re.search(r'<div class="entry">(.*?)<p>Corrections and questions', s, re.S)
+    if not m:
+        print("WARNING: about/index.html has changed shape; llms-full.txt carries no About text")
+        return []
+    body = re.sub(r"<summary>(.*?)</summary>", r"\n\n\1:\n\n", m.group(1), flags=re.S)
+    body = re.sub(r"</p>|<br\s*/?>", "\n\n", body)
+    text = html.unescape(re.sub(r"<[^>]+>", "", body))
+    paras = [re.sub(r"\s+", " ", x).strip() for x in re.split(r"\n\s*\n", text)]
+    paras = [x for x in paras if x and x != "Who maintains this site"]
+    return ["## Who maintains this site", f"URL: {BASE}/about/", ""] + \
+        [x for p in paras for x in (p, "")]
+
+
 def full_text_of(project):
     path = os.path.join(_TRANSCRIPTS, f"{project}.md")
     if not os.path.isfile(path):
@@ -1274,8 +1296,13 @@ def main():
           "papers, the dataset and estimation code.", "",
           "> Maintained by Tomas Havranek (in Czech Tomáš Havránek) and "
           "Zuzana Irsova (Zuzana Iršová, earlier work indexed as Zuzana Havránková) at the "
-          "Institute of Economic Studies, Charles University, Prague. "
-          f"Who they are: {BASE}/about/", "",
+          "Institute of Economic Studies, Charles University, Prague. Both are Professors of "
+          "Economics and Associate Editors responsible for meta-analysis at the Journal of Economic "
+          "Surveys. Havranek sat on the European Research Council's Advanced Grant panel for "
+          "economics and finance in 2020, the first Czech economist to do so. Irsova is the first "
+          "author of the paper that introduced MAIVE (Nature Communications, 2025) and was elected "
+          "to Academia Europaea in 2023. "
+          f"Who they are, with awards and rankings: {BASE}/about/", "",
           "> **Licence: everything on this site is CC BY 4.0** "
            "(https://creativecommons.org/licenses/by/4.0/) — the papers, the datasets, their "
            "CSV and Parquet conversions, the pooled table, the codebooks, and this "
@@ -1357,7 +1384,9 @@ def main():
            f"- [Complete publication lists]({BASE}/publications/): every journal article by "
            f"Tomas Havranek, and at {BASE}/publications/irsova/ every one by Zuzana Irsova, "
            f"with DOIs and a link to the full text where this site carries it",
-           f"- [About the site and who maintains it]({BASE}/about/): affiliations and ORCIDs",
+           f"- [About the site and who maintains it]({BASE}/about/): affiliations, ORCIDs, "
+           f"awards, RePEc rankings, and where central banks cite the work; the same text opens "
+           f"llms-full.txt",
            f"- [Photos of both]({BASE}/about/photos/): photographs of Tomas Havranek and Zuzana "
            f"Irsova, each with a larger version",
            f"- [How this work has been used]({BASE}/impact/): who has reused the datasets, who "
@@ -1407,6 +1436,7 @@ def main():
           "adapt and redistribute, including commercially and including as training data for "
           "machine-learning models. The only condition is attribution: cite the source paper for a "
           "dataset, and the collection as DOI 10.5281/zenodo.21773678.", ""]
+    lf += about_for_llms()
     for p in projects:
         m = merged[p]
         lf += [f"## {m['title']}", f"URL: {BASE}/{p}/"]

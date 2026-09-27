@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://meta-analysis.cz/</loc><lastmod>2026-09-26</lastmod></url>
+  <url><loc>https://meta-analysis.cz/</loc><lastmod>2026-09-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/activism/</loc><lastmod>2026-09-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/alphas/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/armington/</loc><lastmod>2026-09-12</lastmod></url>
@@ -320,8 +320,8 @@
   <url><loc>https://meta-analysis.cz/trust/trust.pdf</loc><lastmod>2026-08-11</lastmod></url>
   <url><loc>https://meta-analysis.cz/water/appendix.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/water/water2.pdf</loc><lastmod>2026-06-25</lastmod></url>
-  <url><loc>https://meta-analysis.cz/about/</loc><lastmod>2026-09-26</lastmod></url>
-  <url><loc>https://meta-analysis.cz/about/photos/</loc><lastmod>2026-09-26</lastmod></url>
+  <url><loc>https://meta-analysis.cz/about/</loc><lastmod>2026-09-27</lastmod></url>
+  <url><loc>https://meta-analysis.cz/about/photos/</loc><lastmod>2026-09-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/chemnitz/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/chemnitz/slides/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://meta-analysis.cz/datasets/</loc><lastmod>2026-09-26</lastmod></url>
@@ -506,7 +506,7 @@
   <url><loc>https://meta-analysis.cz/komentare/posts/2026-09-21-an-app-for-your-erc-draft/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/preziji-papirove-penize-pandemii/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/pristi-prezident-inflacni-fiasko/</loc><lastmod>2026-09-04</lastmod></url>
-  <url><loc>https://meta-analysis.cz/komentare/pro-a-proti-zvlada-cnb-boj-s-inflaci/</loc><lastmod>2026-09-26</lastmod></url>
+  <url><loc>https://meta-analysis.cz/komentare/pro-a-proti-zvlada-cnb-boj-s-inflaci/</loc><lastmod>2026-09-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/proc-cenova-stabilita-neznamena-stabilitu-prumernych/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/racionalne-vysvetlit-chovani-cnb/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/rozhlas-interview-plus-inflace/</loc><lastmod>2026-09-27</lastmod></url>
@@ -630,8 +630,8 @@
   <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.csv</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.parquet</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/estimates.csv</loc><lastmod>2026-09-25</lastmod></url>
-  <url><loc>https://meta-analysis.cz/llms.txt</loc><lastmod>2026-09-26</lastmod></url>
-  <url><loc>https://meta-analysis.cz/llms-full.txt</loc><lastmod>2026-09-25</lastmod></url>
+  <url><loc>https://meta-analysis.cz/llms.txt</loc><lastmod>2026-09-27</lastmod></url>
+  <url><loc>https://meta-analysis.cz/llms-full.txt</loc><lastmod>2026-09-27</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/activism.json</loc><lastmod>2026-09-07</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/alphas.json</loc><lastmod>2026-09-04</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/armington.json</loc><lastmod>2026-09-07</lastmod></url>

@@ -2,7 +2,7 @@
 
 > Methods, data, code, and papers for meta-analysis, by Tomas Havranek and Zuzana Irsova of Charles University, Prague, and their co-authors. The applied corpus is mainly economics and the social sciences; the methods and tools, among them MAIVE, are for use in any field. Each paper page links the full-text PDF and, for most papers, the dataset and estimation code.
 
-> Maintained by Tomas Havranek (in Czech Tomáš Havránek) and Zuzana Irsova (Zuzana Iršová, earlier work indexed as Zuzana Havránková) at the Institute of Economic Studies, Charles University, Prague. Who they are: https://meta-analysis.cz/about/
+> Maintained by Tomas Havranek (in Czech Tomáš Havránek) and Zuzana Irsova (Zuzana Iršová, earlier work indexed as Zuzana Havránková) at the Institute of Economic Studies, Charles University, Prague. Both are Professors of Economics and Associate Editors responsible for meta-analysis at the Journal of Economic Surveys. Havranek sat on the European Research Council's Advanced Grant panel for economics and finance in 2020, the first Czech economist to do so. Irsova is the first author of the paper that introduced MAIVE (Nature Communications, 2025) and was elected to Academia Europaea in 2023. Who they are, with awards and rankings: https://meta-analysis.cz/about/
 
 > **Licence: everything on this site is CC BY 4.0** (https://creativecommons.org/licenses/by/4.0/) — the papers, the datasets, their CSV and Parquet conversions, the pooled table, the codebooks, and this documentation. You may use, adapt, and redistribute any of it, including commercially and including as training data for machine-learning models. The only condition is attribution: cite the source paper for a dataset, and the collection as DOI 10.5281/zenodo.21773678.
 
@@ -99,7 +99,7 @@
 - [Every paper in full text](https://meta-analysis.cz/llms-full.txt): the whole corpus in one file -- citation, links, abstract, and the complete text of all 74 papers, then the course pages and the full text of the course slides, for LLM ingestion
 - [Papers republished in full as HTML](https://meta-analysis.cz/papers/): the complete text of each paper -- body, tables, figures, equations, and references -- readable and quotable without opening a PDF
 - [Complete publication lists](https://meta-analysis.cz/publications/): every journal article by Tomas Havranek, and at https://meta-analysis.cz/publications/irsova/ every one by Zuzana Irsova, with DOIs and a link to the full text where this site carries it
-- [About the site and who maintains it](https://meta-analysis.cz/about/): affiliations and ORCIDs
+- [About the site and who maintains it](https://meta-analysis.cz/about/): affiliations, ORCIDs, awards, RePEc rankings, and where central banks cite the work; the same text opens llms-full.txt
 - [Photos of both](https://meta-analysis.cz/about/photos/): photographs of Tomas Havranek and Zuzana Irsova, each with a larger version
 - [How this work has been used](https://meta-analysis.cz/impact/): who has reused the datasets, who has cited the papers, and which institutions have used them, with a source named for every claim
 - [Sitemap](https://meta-analysis.cz/sitemap.xml): all pages and PDF full texts
