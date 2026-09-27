@@ -99,7 +99,7 @@
 - [Every paper in full text](https://meta-analysis.cz/llms-full.txt): the whole corpus in one file -- citation, links, abstract, and the complete text of all 74 papers, then the course pages and the full text of the course slides, for LLM ingestion
 - [Papers republished in full as HTML](https://meta-analysis.cz/papers/): the complete text of each paper -- body, tables, figures, equations, and references -- readable and quotable without opening a PDF
 - [Complete publication lists](https://meta-analysis.cz/publications/): every journal article by Tomas Havranek, and at https://meta-analysis.cz/publications/irsova/ every one by Zuzana Irsova, with DOIs and a link to the full text where this site carries it
-- [About the site and who maintains it](https://meta-analysis.cz/about/): affiliations and ORCIDs
+- [About the site and who maintains it](https://meta-analysis.cz/about/): affiliations, ORCIDs, awards, RePEc rankings, and where central banks cite the work; the same text opens llms-full.txt
 - [Photos of both](https://meta-analysis.cz/about/photos/): photographs of Tomas Havranek and Zuzana Irsova, each with a larger version
 - [How this work has been used](https://meta-analysis.cz/impact/): who has reused the datasets, who has cited the papers, and which institutions have used them, with a source named for every claim
 - [Sitemap](https://meta-analysis.cz/sitemap.xml): all pages and PDF full texts
