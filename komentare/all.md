@@ -2963,7 +2963,7 @@ To je od Mariana Jurečky 10%. A dostaneme se k superdávce a ke zjednodušení,
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Tomáš Havránek:** Prosím, abychom to srovnání opravdu uváděli. V řadě věcí, které říká, má pravdu, třeba v tom, že daně tu opravdu platí hlavně zaměstnanci. To je potřeba zdůraznit: je to velká většina příjmů. A proto bych rád, aby daňový poplatník byl pro státní a veřejnou správu opravdu klientem. Proto jsem navrhoval ty dotazníky, jsem rád, že jste to zmínil, a jsou to spíš dotazníky na službu, ne na konkrétní lidi, kteří ji poskytují. A šlo by spíš o to pozitivní: chceme přidat těm nejlepším, ne že bychom někoho trestali.
+**Tomáš Havránek:** V řadě věcí, které říká, má pravdu, třeba v tom, že daně tu opravdu platí hlavně zaměstnanci. To je potřeba zdůraznit: je to velká většina příjmů. A proto bych rád, aby daňový poplatník byl pro státní a veřejnou správu opravdu klientem. Proto jsem navrhoval ty dotazníky, jsem rád, že jste to zmínil, a jsou to spíš dotazníky na službu, ne na konkrétní lidi, kteří ji poskytují. A šlo by spíš o to pozitivní: chceme přidat těm nejlepším, ne že bychom někoho trestali.
 
 Ta data by se samozřejmě potom dala použít různě.
 
@@ -2991,7 +2991,7 @@ Opravdu dvouciferným tempem, přes 10%. Přitom to, co se v ekonomice vyrobí, 
 
 A to se v příštích letech nutně musí vyrovnat, to je základní ekonomický princip. Budeme tedy vidět svižný růst průměrných platů, reálných platů po odečtení inflace. V soukromé sféře je to podle prognózy ČNB na příští rok asi 7%. A za poslední roky nám reálné platy očištěné o inflaci ve státní správě, nebo ve veřejné sféře, klesaly ještě rychleji.
 
-V řadě profesí to bylo opravdu výrazně rychleji, i přes 20%. Pokud chcete, aby tyhle práce ve státní a veřejné sféře někdo vykonával, musíte lidi stůj co stůj zaplatit tak, aby to bylo aspoň trochu kompetitivní, i když chcete jinak šetřit. Bez toho vám řada služeb bude postupně kolabovat a nebudou v nich kvalitní lidé.
+V řadě profesí to bylo opravdu výrazně rychleji. Pokud chcete, aby tyhle práce ve státní a veřejné sféře někdo vykonával, musíte lidi stůj co stůj zaplatit tak, aby to bylo aspoň trochu kompetitivní, i když chcete jinak šetřit. Bez toho vám řada služeb bude postupně kolabovat a nebudou v nich kvalitní lidé.
 
 I ti, které to baví, totiž potřebují nějakou mzdu, ze které rozumně vyžijí a nemusí potom žádat o dávku na bydlení, na kterou, jak to vypadá, budeme mít brzy asi nárok všichni. K tomu se ještě asi dostaneme. U těchto profesí, jak je tu pan předseda jmenoval a jak jste je vyčíslovali, bude tedy opravdu nutný nárůst výrazně vyšší než nějakých třeba 5%, o kterých se mluví, i když celkový objem prostředků je ještě menší. Tam bude rozhodně potřeba nějakých 7%.
 
