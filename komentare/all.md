@@ -5968,7 +5968,11 @@ Co se podle vás děje v tomto směru v Česku? Je to podle vás nějaká poruch
 
 **Jana Klímová:** Inflace by byla ještě vyšší nebýt úsporného tarifu na elektřinu v říjnu a v prosinci zase inflaci směrem dolů ovlivnilo zlevnění pohonných hmot. Není třeba právě tohle vlastně důvod k tomu, aby vláda byla aktivnější, pokud jde o pomoc s cenami energií nebo nafty? Vy jste zmiňoval, že vlastně třeba vy vidíte tu hlavní vinu té vysoké inflace u ČNB, ale nemohla by vláda udělat něco víc, nebo jak se díváte na ty dosavadní kroky vlády? I z pohledu toho, že jste členem NERVu, který radí vládě?
 
-**Tomáš Havránek:** Zrovna úsporný tarif je, upřímně řečeno, malinko zavádějící jméno, protože to vlastně není tarif. Není to úsporné, není to tarif. Byl to v podstatě voucher pro všechny, spíš něco, čemu bychom v ekonomii řekli vrtulníkové peníze.
+**Tomáš Havránek:** Zrovna úsporný tarif je, upřímně řečeno, malinko zavádějící jméno, protože to vlastně není tarif. Není to úsporné, není to tarif.
+
+**Jana Klímová:** Byl to v podstatě voucher pro všechny.
+
+**Tomáš Havránek:** Je to spíš něco, čemu bychom v ekonomii řekli vrtulníkové peníze.
 
 Znamená to, že dostanete peníze od vlády, která vám je dá jen tak. To, že to vidíme promítnuté v inflaci, ale vlastně nedává ekonomický smysl. Nerozumím tomu, proč to ČSÚ takhle udělalo. Dlouhodobě naopak inflaci spíš zvýší, protože to znamená, že máme trochu víc peněz, než bychom jinak měli. I tady si tedy říkám, že v zemi, která má vlastní měnu, může za inflaci převážně Národní banka. Na tom se většina kolegů shodne.
 
