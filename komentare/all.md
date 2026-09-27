@@ -7605,7 +7605,7 @@ Hostem je Tomáš Havránek z Institutu ekonomických studií Fakulty sociální
 
 **Tomáš Havránek:** To se čekat dalo, ani jinak to být nemohlo, protože to už čekaly i finanční trhy. Kdyby bylo zvýšení menší než na sedm procent, koruna by nutně oslabila, protože vklady v korunách by byly méně výnosné. A tím pádem by potom i Národní banka musela víc intervenovat na posílení koruny, a to úplně nechce, tomu se chce vyhnout. Sazby ale zase také už nemohou být o moc vyšší, protože naše zadlužená ekonomika by to dlouhodobě neustála.
 
-**Moderátor:** Vy říkáte, že sazby mají obecně růst rychleji než inflace, aby zůstala pod kontrolou, takže v nějakém ideálním případě by to bylo na nějakých 15 až 16%, nebo…
+**Moderátor:** Vy říkáte, že sazby mají obecně růst rychleji než inflace, aby zůstala pod kontrolou, takže v nějakém ideálním případě by to bylo na nějakých 15 až 16%, nebo víc.
 
 **Tomáš Havránek:** To je standardní ekonomická poučka: pokud inflace roste nějakým tempem, musíte sazby zvyšovat rychleji, než inflace roste, abyste ji zkrotili. To ale dnes není možné právě kvůli zadlužení nejenom vlády, ale i domácností a firem.
 
@@ -7625,9 +7625,9 @@ Hodnota dluhu se inflací snižuje a zaplatí to ti, kdo mají víc úspor než 
 
 **Moderátor:** Snižování dluhu by znamenalo utahování opasku, taková poučka z počátku 90. let?
 
-**Tomáš Havránek:** Tohle utahování opasku probíhá u domácností, které spoří. Inflace je jako daň, která jim bere hodnotu úspor a přerozděluje ji k dlužníkům, tedy ke státu a k lidem, kteří mají hypotéku…
+**Tomáš Havránek:** Tohle utahování opasku probíhá u domácností, které spoří. Inflace je jako daň, která jim bere hodnotu úspor a přerozděluje ji k dlužníkům, tedy ke státu a k lidem, kteří mají hypotéku zafixovanou na nějakou delší dobu.
 
-**Moderátor:** … a mají zafixovanou nějakou delší dobu. To všechno jsou pro ty lidi velmi nepříjemné věci, nepříjemné situace, ale jedna věc nebo jedno téma, o kterém se mám pocit politici trošku zdráhají mluvit napříč politickým spektrem a to je případné zvyšování daní. Podle některých expertů se tomu nevyhneme.
+**Moderátor:** To všechno jsou pro ty lidi velmi nepříjemné věci, nepříjemné situace, ale jedna věc nebo jedno téma, o kterém se mám pocit politici trošku zdráhají mluvit napříč politickým spektrem a to je případné zvyšování daní. Podle některých expertů se tomu nevyhneme.
 
 Kde stojíte v této otázce vy?
 
@@ -7635,7 +7635,7 @@ Kde stojíte v této otázce vy?
 
 I nějaké další zvyšování daní ale pravděpodobně bude nutné. Už tohle samo o sobě je přitom enormní, enormní daňová zátěž.
 
-**Moderátor:** Vy jste sám také řekl, že Česká Národní banka by měla investovat třeba do nákupu akcií, trošku riskovat, když to nadnesu chovat se trošku tržně,
+**Moderátor:** Vy jste sám také řekl, že Česká národní banka by měla investovat třeba do nákupu akcií, trošku riskovat, když to nadnesu chovat se trošku tržně, jestli to chápu správně. Ona by ale riskovala vaše peníze, moje peníze, naše peníze. Co ta odpovědnost? Není to příliš riskantní krok?
 
 **Tomáš Havránek:** Když to neudělá, jistě ztratí spoustu peněz. Má teď totiž v devizových rezervách, tedy v eurech a v dolarech, v přepočtu 3 biliony korun, ještě víc, a našim bankám, které si pak ty rezervy v korunách ukládají u Národní banky, musí dnes platit 7%. Rezervy jsou tedy velmi nákladné, a aby neprodělávaly, musí se investovat tak, jak to dělá třeba Singapur nebo fondy soukromých univerzit, aby dlouhodobě vydělávaly.
 
@@ -7645,7 +7645,7 @@ I nějaké další zvyšování daní ale pravděpodobně bude nutné. Už tohle
 
 **Moderátor:** Jaký je odhad? Váš odhad růstu inflace a vývoje ekonomiky v těch nejbližších měsících, pokud si to vůbec troufnete?
 
-**Tomáš Havránek:** To si troufnu. Inflace se nepochybně přiblíží 20% někdy na přelomu, řekněme, léta a podzimu. A růst ekonomiky bude asi poměrně blízký nule. Nemyslím si, že budeme přímo v recesi, že by HDP klesalo, ale…
+**Tomáš Havránek:** To si troufnu. Inflace se nepochybně přiblíží 20% někdy na přelomu, řekněme, léta a podzimu. A růst ekonomiky bude asi poměrně blízký nule. Nemyslím si, že budeme přímo v recesi, že by HDP klesalo, ale žádná velká hitparáda to v tomto smyslu nebude.
 
 ---
 
