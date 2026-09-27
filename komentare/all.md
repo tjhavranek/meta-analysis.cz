@@ -8406,9 +8406,11 @@ Tohle ukazuje, když už ne na selhání, tak na velké problémy toho framework
 
 Když tedy letos bude průměrná inflace 8-10 %, což pravděpodobně bude, centrální banka už nebude chtít tohle nikdy opravit, aby se dostala zpátky dolů na průměr 2 %. Příští rok se bude znovu snažit o plus 2 %, což bude třeba 5-6 %, a tak dále. Z toho plyne, že člověk vůbec neví, jakou hodnotu budou mít jeho peníze za 10-20 let, ani za 5 let, protože tu garanci nemáte. To je tedy jedna věc: opravování předchozích chyb.
 
-Právě tohle FED změnil. Americká centrální banka to ve své revizi změnila: cílí průměrnou inflaci za nějaké období, tuším. Přesně tak.
+Právě tohle FED změnil. Americká centrální banka to ve své revizi změnila.
 
-Tohle vám pomůže odstranit část nejistoty ohledně dlouhodobého vývoje ceny peněz. Umožní vám to lépe spořit, protože víte, s čím máte počítat. Mně to dává velký smysl. To je jedna rovina.
+**Nikita Poljakov:** Cílí průměrnou inflaci za nějaké období, tuším.
+
+**Tomáš Havránek:** Přesně tak. Tohle vám pomůže odstranit část nejistoty ohledně dlouhodobého vývoje ceny peněz. Umožní vám to lépe spořit, protože víte, s čím máte počítat. Mně to dává velký smysl. To je jedna rovina.
 
 Druhá rovina je, co máte cílovat v průměru. Nějakým územ jsou tady 2 %. Když se ale podíváte na stránky těch bank, třeba ČNB, nikdo z nich ho není schopen nijak odůvodnit. Vždycky tam je jedna věta: takhle to děláme, takhle to dělají ostatní.
 
