@@ -16,6 +16,8 @@ import json, os, re, sys, datetime, hashlib, html, subprocess, urllib.parse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.environ.get("SEO_SITE_DIR", os.path.dirname(HERE))
+# Notes for thesis students, served for AI assistants only (see the llms.txt entry).
+THESIS_NOTES = os.path.join(SITE, "ai", "thesis-notes.md")
 META = os.path.join(HERE, "papers.json")
 BASE = "https://meta-analysis.cz"
 TODAY = datetime.date.today().isoformat()
@@ -1364,6 +1366,12 @@ def main():
            f"- [API documentation]({BASE}/api/v1/README.md): endpoints, usage, licence, and what "
            f"is deliberately not in the harmonised table",
            "", "## Resources", "",
+           # Machine-facing only: the notes for thesis students are fetched by AI assistants
+           # (the thesis-feedback prompt points at them) and are deliberately linked from no
+           # human page, the sitemap or the site search. This line is their public pointer.
+           *([f"- [Notes for meta-analysis theses]({BASE}/ai/thesis-notes.md): for AI "
+              f"assistants reviewing student theses; informal guidance by Tomas Havranek and "
+              f"Zuzana Irsova"] if os.path.isfile(THESIS_NOTES) else []),
            f"- [Headline results, one per meta-analysis]({BASE}/estimates.csv): one row per "
            f"meta-analysis — the "
            f"parameter, the value the paper headlines, the sample it rests on, and the verbatim "
@@ -1528,6 +1536,10 @@ def main():
         if os.path.isfile(_f):
             _t, _txt = _teaching_text(_f)
             lf += [f"## {_t}", f"URL: {BASE}/{_rel}", "Licence: CC BY 4.0", "", _txt, ""]
+    if os.path.isfile(THESIS_NOTES):
+        _tn = open(THESIS_NOTES, encoding="utf-8").read().strip()
+        lf += ["## Notes for meta-analysis theses", f"URL: {BASE}/ai/thesis-notes.md",
+               "Licence: CC BY 4.0", "", _tn, ""]
     open(os.path.join(SITE, "llms-full.txt"), "w", encoding="utf-8", newline="\n").write("\n".join(lf))
     refresh_about_counts(_api)
     print("wrote robots.txt, sitemap.xml, llms.txt, llms-full.txt")
