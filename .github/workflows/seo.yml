@@ -93,6 +93,13 @@ jobs:
       - name: Require the search index to match the pages it indexes
         run: python tools/build_search_index.py --check
 
+      # The counts written into prose by hand (papers in full, datasets, estimates) go stale
+      # when a release changes them: in September 2026 three pages said 71 papers for days
+      # after the site had 74. This reads the truth from the papers and datasets APIs and
+      # fails on any current statement that disagrees; dated passages are listed by phrase.
+      - name: Require every stated count to match the site's holdings
+        run: python tools/check_counts.py
+
       # /maive/how-to/ prints numbers that came from somebody else's service. The requests and
       # the full responses are recorded in api/v1/maive-howto.json, and this proves the page is
       # exactly what that file renders, that the settings the page teaches are the settings

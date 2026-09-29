@@ -2629,11 +2629,52 @@ def check():
                     fails.append(f"post url absent from index.json: {u}")
     except Exception as e:
         fails.append(f"index.json: {e}")
+    fails += check_transcript_notes()
     print(f"checked {len(pages)} pages")
     for f in fails:
         print("  FAIL", f)
     print("OK" if not fails else f"{len(fails)} FAILURES")
     return 1 if fails else 0
+
+
+NOTE_MAX_WORDS = 200
+# Phrases of a revision log. A note describes the text as it now stands; how it got there
+# belongs in the commit history. By September 2026 the notes had grown to 140-510 words of
+# layered history ("Při revizi v září 2026...", "Opraveno bylo 62 přeslechů") and some
+# contradicted themselves; they were rewritten to about 110 words each on 29 September.
+NOTE_LOG = re.compile(r"\bPři revizi\b|\brevizi v (?:září|říjnu|srpnu|listopadu)|"
+                      r"\b[Oo]praveno bylo \d|\bopraveno \d+ (?:zjevných )?(?:přeslech|míst)")
+
+
+def check_transcript_notes():
+    """The editorial note on a machine transcript: short, current, and not self-contradictory.
+
+    A note that says numbers and negations were kept as spoken and then lists corrected
+    slips contradicts itself unless the sentence names the exception ("neměnily, jen ...",
+    "kromě ...", "s jedinou výjimkou"). That contradiction shipped in four notes once."""
+    fails = []
+    try:
+        rows = [json.loads(l) for l in (KDIR / "corpus.jsonl").read_text(encoding="utf-8").splitlines()
+                if l.strip()]
+    except OSError as e:
+        return [f"corpus.jsonl: {e}"]
+    for r in rows:
+        n = r.get("transcript_note") or ""
+        if "strojový přepis" not in n:
+            continue
+        rid = r.get("id", "?")
+        if len(n.split()) > NOTE_MAX_WORDS:
+            fails.append(f"{rid}: transcript note has {len(n.split())} words (max {NOTE_MAX_WORDS})")
+        m = NOTE_LOG.search(n)
+        if m:
+            fails.append(f"{rid}: transcript note reads as a revision log ('{m.group(0)}')")
+        # A corrected slip is always quoted („…“) in the sentence that names it; "odstraněna
+        # jsou přeřeknutí" alone describes the smoothing, which changes no number or negation.
+        if re.search(r"přeřeknut\w*[^.]*„", n) and "neměnily" in n and not re.search(
+                r"neměnily(?:,? jen|,? kromě| s jedinou výjimkou| s výjimkou)", n):
+            fails.append(f"{rid}: note says numbers were kept as spoken but lists corrected slips "
+                         f"without naming them as the exception")
+    return fails
 
 
 def check_fresh():
@@ -2651,9 +2692,15 @@ def check_fresh():
         return sorted(f for f in KDIR.rglob("*")
                       if f.is_file() and not set(skip) & set(f.parts)
                       and f.suffix in (".html", ".txt", ".xml", ".md", ".json", ".jsonl"))
-    before = {f: f.read_bytes() for f in generated()}
+    # Compare with line endings normalised. A Windows checkout with core.autocrlf=true holds
+    # these files as CRLF while the build writes LF, so a byte comparison reported every
+    # file as stale and blocked pushes whose content was identical (three times in one week
+    # of September 2026). What matters is whether the TEXT follows from the sources.
+    def norm(b):
+        return b.replace(b"\r\n", b"\n")
+    before = {f: norm(f.read_bytes()) for f in generated()}
     main()
-    drift = [f for f in generated() if before.get(f) != f.read_bytes()]
+    drift = [f for f in generated() if before.get(f) != norm(f.read_bytes())]
     for f in drift:
         print(f"  FAIL {f.relative_to(KDIR.parent)}: not what a fresh build produces")
     if drift:
