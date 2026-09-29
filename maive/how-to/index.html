@@ -47,6 +47,15 @@ p-hacking.</b> Besides effect and standard error, it also asks for sample size.<
 <code>n_obs</code> &middot; <code>study_id</code> (the latter is needed when a study reports
 several estimates, and inference then clusters on it)</p>
 
+<p><b>Why the total sample size.</b> <code>n_obs</code> is the total number of observations behind
+the estimate, not an effective sample size such as the number of clusters or the degrees of
+freedom. The total sample size is fixed by the data and hard to p-hack. An effective sample
+size depends on choices such as the clustering level, which researchers make together with the
+rest of the specification and which can themselves be p-hacked; degrees of freedom would also
+give more weight to studies that ignore clustering. Where the right clustering unit is well
+established in a literature, the number of clusters can replace the sample size or serve as a
+second instrument (<a href="/maive/supplement/">supplement</a>).</p>
+
 <p class="cta"><a class="button" href="https://www.easymeta.org/">Open EasyMeta</a>
 <a class="button quiet" href="/maive/how-to/alpha.csv">Download the example data
 (CSV)</a></p>
