@@ -169,7 +169,8 @@ as you give attribution to meta-analysis.cz. You do not need to ask.</p>
           var su = safeUrl(s.url);
           return su ? '<sup><a href="' + esc(su) + '" title="' + esc(s.title) + '">' + n + "</a></sup>" : "<sup>" + n + "</sup>";
         }).join("");
-      });
+      // adjacent citations ([1, 5] or [1][5]) get a comma between them, or they read as "15"
+      }).replace(/<\/sup>\s*<sup>/g, "</sup><sup>,</sup><sup>");
       return "<p>" + h + "</p>";
     }).join("");
     var list = srcs.map(function (s, i) {

@@ -53,7 +53,7 @@ One person can rarely collect data from more than about 100 studies, or 50 when 
 
 ## How many studies and estimates
 
-As a rule of thumb, you need at least 10 studies and 50 estimates, or 20 studies and 100 estimates if you want to publish. The practitioner's guide puts the floor for modern meta-regression at 30 estimates from 10 studies. The median bachelor's or master's thesis on meta-analysis uses around 60 studies with some 1,000 estimates, and smaller ones with around 40 studies and 600 estimates still make sense. With only about 20 studies there is little between-study variation to explain, so the heterogeneity part will be thin. Collect all estimates each study reports, not just one.
+As a rule of thumb, you need at least 10 studies and 50 estimates, or 20 studies and 100 estimates if you want to publish. The practitioner's guide puts the floor for modern meta-regression at 30 estimates from 10 studies. A typical bachelor's or master's thesis meta-analysis uses around 60 studies and 1,000 estimates; one with around 40 studies and 600 estimates is also fine. With only about 20 studies there is little between-study variation to explain, so the heterogeneity part will be thin. Collect all estimates each study reports, not just one.
 
 ## What to collect
 
