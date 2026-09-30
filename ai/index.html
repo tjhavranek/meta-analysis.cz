@@ -216,6 +216,8 @@ as you give attribution to meta-analysis.cz. You do not need to ask.</p>
     // once a question is asked the examples go, so the wait and the answer show right under
     // the button, also on a phone (Zuzana, 29 Sep 2026: the answer was below the fold)
     ex.style.display = "none";
+    // on a touch screen, close the on-screen keyboard so it does not cover the answer
+    if (window.matchMedia && window.matchMedia("(pointer: coarse)").matches && document.activeElement === q) q.blur();
     note(T.wait);
     // bring the wait (and so the answer) up to a third of the way down, with the question still
     // in view, when it would start in the lower 40% of the screen (phones, small laptops); on a
