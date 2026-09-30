@@ -86,10 +86,10 @@ dissertation chapter: ask how to proceed at any step.</p>
     <button type="button">Does class size affect how much students learn?</button>
   </div>
 </form>
+<div id="out" aria-live="polite"></div>
 <p class="pilot">Answers are not a personal statement by the authors. This is a pilot on a free
 service, so it gives about 50 answers a day in total. You can also ask your own AI chatbot: write
 &#8220;Answer only from the texts on meta-analysis.cz&#8221; and add your question.</p>
-<div id="out" aria-live="polite"></div>
 <p class="privacy">We keep questions and answers for 30 days so that a wrong answer can be corrected
 or withdrawn; nothing else about you is stored. They are processed by Cloudflare, which also
 protects the page from bots (Turnstile). Questions from one address are counted only within the
@@ -213,7 +213,14 @@ as you give attribution to meta-analysis.cz. You do not need to ask.</p>
     if (busy) return;
     var my = ++seq;
     setBusy(true);
+    // once a question is asked the examples go, so the wait and the answer show right under
+    // the button, also on a phone (Zuzana, 29 Sep 2026: the answer was below the fold)
+    ex.style.display = "none";
     note(T.wait);
+    // bring the wait (and so the answer) into view when it would start near or below the
+    // bottom of the screen; leave the page alone when it is already well in view
+    var r = out.getBoundingClientRect();
+    if (r.top > window.innerHeight - 160) window.scrollBy({ top: r.top - 100, behavior: "smooth" });
     withToken(function (tok) {
       var ctl = window.AbortController ? new AbortController() : null;
       var timer = setTimeout(function () { if (ctl) ctl.abort(); }, 60000);
