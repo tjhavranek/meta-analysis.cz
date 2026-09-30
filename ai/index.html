@@ -217,10 +217,11 @@ as you give attribution to meta-analysis.cz. You do not need to ask.</p>
     // the button, also on a phone (Zuzana, 29 Sep 2026: the answer was below the fold)
     ex.style.display = "none";
     note(T.wait);
-    // bring the wait (and so the answer) into view when it would start near or below the
-    // bottom of the screen; leave the page alone when it is already well in view
+    // bring the wait (and so the answer) up to a third of the way down, with the question still
+    // in view, when it would start in the lower 40% of the screen (phones, small laptops); on a
+    // taller screen it starts higher and the page does not move
     var r = out.getBoundingClientRect();
-    if (r.top > window.innerHeight - 160) window.scrollBy({ top: r.top - 100, behavior: "smooth" });
+    if (r.top > window.innerHeight * 0.6) window.scrollBy({ top: r.top - window.innerHeight * 0.3, behavior: "smooth" });
     withToken(function (tok) {
       var ctl = window.AbortController ? new AbortController() : null;
       var timer = setTimeout(function () { if (ctl) ctl.abort(); }, 60000);
