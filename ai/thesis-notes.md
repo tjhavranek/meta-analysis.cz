@@ -2,7 +2,7 @@
 
 Tomas Havranek and Zuzana Irsova
 
-Version: 29 September 2026, cleaned from the 31 May 2026 cookbook
+Version: 30 September 2026, cleaned from the 31 May 2026 cookbook
 
 These are our own informal, subjective notes for students writing a meta-analysis thesis with us, at bachelor's, master's or PhD level. They are a menu of methods and a set of principles, not a checklist every thesis must complete. We expect less from a bachelor's or master's thesis than from a journal paper, so do not despair if you cannot do everything here. Where these notes differ from the published guidelines, discuss the choice with your supervisor. Many of our students have published a shorter version of their thesis in a journal.
 
@@ -78,8 +78,8 @@ A standard error is always positive, and a negative coefficient goes with a nega
 - Standard deviation instead: SE = SD / sqrt(n), with n the number of observations, when the SD describes the sample behind a mean effect. If the SD is that of the estimate itself (for example a posterior or bootstrap SD), it is already the standard error. If unsure, ask your supervisor.
 - 95% confidence interval: SE = (upper - lower) / (2 × 1.96). For -0.12 to 0.23, SE = 0.35 / 3.92 = 0.089.
 - p-value only: in Excel, t = TINV(p, df) for a two-sided p (T.INV.2T in newer versions, and double a one-sided p first), with df the degrees of freedom (observations minus regressors, which in large samples is close to the number of observations). Then SE = |estimate| / t. TINV(0.01569, 352) = 2.43.
-- Stars only: ask the authors if you can. Otherwise a t between 1.645 and 1.96 approximates significance at 10%, and between 1.96 and 2.575 at 5%. At 1% the t can be anything above 2.575, so exclude such estimates or use other information. Keep approximations rare, since many add systematic error.
-- Zero p-value or standard error: ask the authors, approximate (say p = 0.0002 for 0.000), or drop. With only a few, we lean toward inclusion. Convert after collection, since such estimates may turn out to be outliers.
+- Stars only: ask the authors if you can. Otherwise approximate the t-statistic: an estimate significant at 10% but not at 5% has a t between 1.645 and 1.96, and one significant at 5% but not at 1% has a t between 1.96 and 2.575. An estimate significant at 1% can have any t above 2.575, so exclude such estimates or use other information. Keep approximations rare, since many add systematic error.
+- Zero p-value or standard error: ask the authors, approximate (say p = 0.0002 for 0.000), or drop. With only a few such estimates, we lean toward inclusion. Approximate them only after collection, since they may turn out to be outliers.
 - No precision at all: usable for simple averages and motivation, not for the bias or heterogeneity analysis, since both need the standard error.
 
 Transformations. If you rescale an estimate by a constant, rescale its standard error the same way: 0.03 (SE 0.01) per inch becomes 0.03/2.54 = 0.012 (SE 0.0039) per centimeter. For a nonlinear function (elasticity = 1/B) or a combination of estimates (B1/B2), use the delta method:
@@ -128,7 +128,7 @@ Spend several days on cleaning. Negative or zero standard errors point to a typo
 
 Drop or merge dummies with a mean below 0.03 or above 0.97. Variance inflation factors should ideally stay below 10, though that is not always possible. Keep a variable that theory makes important even if it breaks these rules.
 
-We prefer winsorizing the estimates and standard errors to dropping observations. Typically 2.5% on each side, but 1% or 5% (not more). Start at 1% and go higher only if needed. The right level removes meaningless outliers, and results change little when you raise it. If you do not need winsorizing, skip it. In Stata, use winsor2. Report results with other levels or none. On how much outlier handling matters, see [meta-analysis.cz/outliers](https://meta-analysis.cz/outliers/).
+We prefer winsorizing the estimates and standard errors to dropping observations. Start at 1% on each side and go higher only if needed, typically to 2.5% and never beyond 5%. The right level removes meaningless outliers, and results change little when you raise it. If you do not need winsorizing, skip it. In Stata, use winsor2. Report results with other levels or none. On how much outlier handling matters, see [meta-analysis.cz/outliers](https://meta-analysis.cz/outliers/).
 
 ## Publication bias and p-hacking
 
@@ -138,7 +138,7 @@ The current core:
 
 - Always show a funnel plot. It motivates the analysis, though judging asymmetry by eye is subjective.
 - [RoBMA](https://fbartos.github.io/RoBMA/) corrects for publication bias. It averages selection models and funnel-based methods such as PET-PEESE, weighting each by fit. It is an R package, and JASP runs it from menus.
-- [MAIVE](https://meta-analysis.cz/maive/) corrects for p-hacking as well as publication bias. It instruments the reported standard error with a function of the sample size. The standard error is itself estimated, precision can be reported selectively, and method choices move both the estimate and its standard error, so treating it as exogenous is risky. The [how-to page](https://meta-analysis.cz/maive/how-to/) recommends PET-PEESE, equal weights, a log first stage and CR2 errors clustered by study. Report the first-stage F. Below 10, report the Anderson-Rubin interval instead of the point estimate and cross-check with RTMA. With data clustered by study, treat that interval as indicative, because it is not cluster-robust. MAIVE is on CRAN and runs in [EasyMeta](https://www.easymeta.org).
+- [MAIVE](https://meta-analysis.cz/maive/) corrects for p-hacking as well as publication bias. It instruments the reported standard error with a function of the sample size. The standard error is itself estimated, precision can be reported selectively, and method choices move both the estimate and its standard error, so treating it as exogenous is risky. The [how-to page](https://meta-analysis.cz/maive/how-to/) recommends PET-PEESE, equal weights, a log first stage and CR2 errors clustered by study. Report the first-stage F. If it is below 10, report the Anderson-Rubin interval instead of the point estimate and cross-check with RTMA. With data clustered by study, treat that interval as indicative, because it is not cluster-robust. MAIVE is on CRAN and runs in [EasyMeta](https://www.easymeta.org).
 - [RTMA](https://onlinelibrary.wiley.com/doi/10.1002/jrsm.1701), by Maya Mathur, corrects for p-hacking under different assumptions. EasyMeta runs it.
 
 Report the corrected mean next to the simple mean, in economic terms, even when tests find little bias.
@@ -147,7 +147,7 @@ Older methods are optional robustness checks, and you need few or none: the funn
 
 ## Clustering and dependence
 
-Estimates from one study are not independent, so cluster standard errors by study in every regression, using CR2. With few studies, add wild bootstrap intervals ([an introduction](https://www.stata.com/meeting/canada18/slides/canada18_Webb.pdf)). The practitioner's guide puts the threshold at 40 studies. If author teams or datasets repeat, consider clustering by author, or two-way by study and country or dataset ([an example](https://ideas.repec.org/a/pal/imfecr/v65y2017i2d10.1057_s41308-016-0001-5.html)). Clustering does not fully solve sample overlap.
+Estimates from one study are not independent, so cluster standard errors by study in every regression, using CR2. With few studies (fewer than 40, the threshold in the practitioner's guide), add wild bootstrap intervals ([an introduction](https://www.stata.com/meeting/canada18/slides/canada18_Webb.pdf)). If author teams or datasets repeat, consider clustering by author, or two-way by study and country or dataset ([an example](https://ideas.repec.org/a/pal/imfecr/v65y2017i2d10.1057_s41308-016-0001-5.html)). Clustering does not fully solve sample overlap.
 
 So that studies with many estimates do not dominate, add a robustness check weighting each estimate by the inverse of the number of estimates per study. We prefer this to a multilevel model, whose study random effects may correlate with study-level regressors. Study fixed effects rely on within-study variation and may not work well when many studies report one or two estimates, so complement them with between effects.
 
@@ -175,20 +175,22 @@ Read about writing first: The Elements of Style, Economical Writing, How to Writ
 
 ## Answers to common criticisms
 
-Apples and oranges. Meta-analysis in economics examines heterogeneous estimates. Control for differences in design, report subsamples, keep the topic narrow, and use a common metric.
+Each paragraph quotes a common criticism of meta-analysis and then answers it.
 
-Low-quality studies should be excluded. Not necessarily. Any line between good and bad studies is arbitrary, so err on the side of inclusion, control for impact factor and citations, and let best practice weight the better methods.
+"Meta-analysis mixes apples and oranges." Meta-analysis in economics examines heterogeneous estimates. Control for differences in design, report subsamples, keep the topic narrow, and use a common metric.
 
-Some studies are missing. That is fine unless their results differ systematically. Publish the query and data.
+"Low-quality studies should be excluded." Not necessarily. Any line between good and bad studies is arbitrary, so err on the side of inclusion, control for impact factor and citations, and let best practice weight the better methods.
 
-Preferred estimates deserve more weight. Many studies do not say which they prefer. Code it where they do, and show the preferred subsample as a robustness check.
+"Some studies are missing." That is fine unless their results differ systematically. Publish the query and data.
 
-Estimates are not independent, and studies with many estimates dominate. Cluster by study, and weight by the inverse of the number of estimates per study as a robustness check.
+"Preferred estimates deserve more weight." Many studies do not say which they prefer. Code it where they do, and show the preferred subsample as a robustness check.
 
-Precision weights are wrong because some methods understate standard errors. MAIVE instruments the standard error with sample size, and we prefer a baseline heterogeneity analysis without precision weights.
+"Estimates are not independent, and studies with many estimates dominate." Cluster by study, and weight by the inverse of the number of estimates per study as a robustness check.
 
-Coding mistakes are inevitable. As in any dataset. Double-check random parts, and errors that are not systematic should not bias the results.
+"Precision weights are wrong because some methods understate standard errors." MAIVE instruments the standard error with sample size, and we prefer a baseline heterogeneity analysis without precision weights.
 
-Some sources of heterogeneity are omitted. A line must be drawn somewhere: in the 140 meta-analyses reviewed by Nelson and Kennedy (2009), the median uses 12 explanatory variables.
+"Coding mistakes are inevitable." As in any dataset. Double-check random parts, and errors that are not systematic should not bias the results.
 
-Meta-analysis disagrees with large studies. In economics methods differ, and meta-analysis measures the effect of each method choice, which no single study can.
+"Some sources of heterogeneity are omitted." A line must be drawn somewhere: in the 140 meta-analyses reviewed by Nelson and Kennedy (2009), the median uses 12 explanatory variables.
+
+"Meta-analysis disagrees with large studies." In economics methods differ, and meta-analysis measures the effect of each method choice, which no single study can.
