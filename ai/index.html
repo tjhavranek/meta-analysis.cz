@@ -160,17 +160,28 @@ as you give attribution to meta-analysis.cz. You do not need to ask.</p>
     return m ? (+m[3]) + " " + MON[+m[2] - 1] + " " + m[1] : (s || "");
   }
   function render(d) {
-    var srcs = d.sources || [];
+    // several passages of one text share its URL: the text is listed once and cited by one number
+    var srcs = [], num = {}, at = {};
+    (d.sources || []).forEach(function (s, i) {
+      var k = s.url || s.title || String(i);
+      if (!at.hasOwnProperty(k)) { at[k] = srcs.length + 1; srcs.push(s); }
+      num[i + 1] = at[k];
+    });
     var paras = String(d.answer || "").split(/\n\s*\n/).map(function (p) {
-      var h = esc(p).replace(/\[(\d+(?:\s*,\s*\d+)*)\]/g, function (m, nums) {
-        return nums.split(/\s*,\s*/).map(function (n) {
-          var s = srcs[+n - 1];
-          if (!s) return "[" + n + "]";
-          var su = safeUrl(s.url);
-          return su ? '<sup><a href="' + esc(su) + '" title="' + esc(s.title) + '">' + n + "</a></sup>" : "<sup>" + n + "</sup>";
-        }).join("");
-      // adjacent citations ([1, 5] or [1][5]) get a comma between them, or they read as "15"
-      }).replace(/<\/sup>\s*<sup>/g, "</sup><sup>,</sup><sup>");
+      // a run of citations ([1, 5], [1][5] or [1] [5]) is one group: each text once, with commas
+      // between the numbers, or they read as "15"
+      var h = esc(p).replace(/\[\d+(?:\s*,\s*\d+)*\](?:\s*\[\d+(?:\s*,\s*\d+)*\])*/g, function (m) {
+        var seen = {}, sup = [], rest = "";
+        m.match(/\d+/g).forEach(function (n) {
+          var k = num[+n];
+          if (!k) { rest += "[" + n + "]"; return; }
+          if (seen[k]) return;
+          seen[k] = 1;
+          var s = srcs[k - 1], su = safeUrl(s.url);
+          sup.push(su ? '<sup><a href="' + esc(su) + '" title="' + esc(s.title) + '">' + k + "</a></sup>" : "<sup>" + k + "</sup>");
+        });
+        return sup.join("<sup>,</sup>") + rest;
+      });
       return "<p>" + h + "</p>";
     }).join("");
     var list = srcs.map(function (s, i) {

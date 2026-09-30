@@ -47861,7 +47861,7 @@ These are our own informal, subjective notes for students writing a meta-analysi
 Judge these at the level of the thesis. The core items are the search, comparability, standard errors, bias correction and clustering. The wild bootstrap, alternative priors and alternative weights are robustness checks. A missing core item matters more than a missing robustness check, a reasoned departure is fine, and following the practitioner's guide where these notes differ is not a defect.
 
 - Search: a documented query (Google Scholar by default), about 500 hits screened, snowballing, explicit inclusion criteria, published versions used, any restriction stated, a PRISMA diagram. If a meta-analysis of the topic exists, the thesis says what it adds.
-- Size: as a rule of thumb at least 10 studies and 50 estimates, with all estimates from each study.
+- Size: as a rule of thumb at least 10 studies and 50 estimates (a good thesis has around 40 studies and 600 estimates or more), with all estimates from each study.
 - Comparability: one clearly defined effect, comparable in size and not only in sign, with conversions documented. Partial correlations only as a last resort, with a robustness check on a comparable subset.
 - Standard errors: how each was obtained is explained, approximations are listed in an appendix, all are positive, each t-statistic has the sign of its estimate, and sample sizes were collected.
 - Cleaning: outliers checked against the studies, any winsorizing small, stated and not driving the results.
@@ -47903,7 +47903,12 @@ One person can rarely collect data from more than about 100 studies, or 50 when 
 
 ## How many studies and estimates
 
-As a rule of thumb, you need at least 10 studies and 50 estimates, or 20 studies and 100 estimates if you want to publish. The practitioner's guide puts the floor for modern meta-regression at 30 estimates from 10 studies. The median bachelor's or master's thesis meta-analysis uses around 60 studies and 1,000 estimates; one with around 40 studies and 600 estimates still makes sense. With only about 20 studies there is little between-study variation to explain, so the heterogeneity part will be thin. Collect all estimates each study reports, not just one.
+- Bare minimum, as a rule of thumb: 10 studies and 50 estimates. The practitioner's guide puts the floor for modern meta-regression at 30 estimates from 10 studies.
+- Minimum if you want to publish: 20 studies and 100 estimates.
+- A good thesis, well above the minimum: around 40 studies and 600 estimates or more. The median bachelor's or master's thesis meta-analysis uses around 60 studies and 1,000 estimates.
+- With only about 20 studies there is little between-study variation to explain, so the heterogeneity part will be thin.
+
+Collect all estimates each study reports, not just one.
 
 ## What to collect
 
@@ -48015,7 +48020,7 @@ The bottom line is the effect the literature implies once corrected for publicat
 
 ## Writing and structure
 
-The usual order is publication bias, heterogeneity, then best practice. Prepare figures and tables first so that they tell one story, such as "publication bias matters more than method choices." Write the results first and the conclusion, introduction and abstract last, and revise those three most.
+The usual order is publication bias, heterogeneity, then best practice. Prepare figures and tables first so that they tell one story, such as "publication bias matters more than method choices." Write the results first. Write the conclusion, introduction and abstract last, and revise those three most.
 
 The introduction must argue why the study is needed. A histogram of estimates, a plot showing they do not converge over time, or a demonstration of what is at stake when the parameter changes can help (see the [habit formation meta-analysis](https://meta-analysis.cz/habits/)). Consider citing (none is required) [Methods Matter](http://ftp.iza.org/dp11796.pdf), [The Power of Bias](https://onlinelibrary.wiley.com/doi/full/10.1111/ecoj.12461), [Andrews and Kasy](https://www.aeaweb.org/articles?id=10.1257/aer.20180310&&from=f), [Star Wars](https://www.aeaweb.org/articles?id=10.1257/app.20150044), [credibility in economics](https://www.aeaweb.org/articles?id=10.1257/jel.20171350), [editorial statements](https://academic.oup.com/ej/article-abstract/130/629/1226/5716665), [present bias](https://ideas.repec.org/p/rco/dpaper/168.html), and replicability studies ([1](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0225826), [2](https://www.nature.com/articles/s41562-018-0399-z), [3](https://science.sciencemag.org/content/351/6280/1433)).
 
