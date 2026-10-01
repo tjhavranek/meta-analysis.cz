@@ -1415,7 +1415,8 @@ def main():
            f"{BASE}/chemnitz/slides/, the demo dataset, and the prompts for AI assistants",
            f"- [Meta-Analysis in Economics, Osaka 2026]({BASE}/teaching/osaka-2026/): "
            f"a three-hour course at ISER, the University of Osaka, with the slides as text at "
-           f"{BASE}/teaching/osaka-2026/slides/",
+           f"{BASE}/teaching/osaka-2026/slides/ and an edited transcript of the recordings at "
+           f"{BASE}/teaching/osaka-2026/transcript/",
            f"- [Meta-Analysis for Policy Economists, Stockholm 2025]({BASE}/teaching/stockholm-2025/): "
            f"a two-day course at Tillväxtanalys, with the slides as text at "
            f"{BASE}/teaching/stockholm-2025/slides/",
@@ -1536,6 +1537,8 @@ def main():
     # the edited Christchurch lecture transcripts, after that course's slides
     _i = _rels.index("teaching/christchurch-2025/slides/") + 1
     _rels[_i:_i] = [f"teaching/christchurch-2025/transcripts/lecture-{_n}/" for _n in (1, 2, 3, 4, 5, 7, 8, 9, 10, 11)]
+    # the edited Osaka transcript, after that course's slides
+    _rels.insert(_rels.index("teaching/osaka-2026/slides/") + 1, "teaching/osaka-2026/transcript/")
     for _rel in _rels:
         _f = os.path.join(SITE, _rel, "index.html")
         if os.path.isfile(_f):
