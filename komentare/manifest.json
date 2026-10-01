@@ -5,11 +5,11 @@
  "newest_record": "2026-10-01",
  "temporal_coverage": "2009-08-18/2026-10-01",
  "records": {
-  "total": 261,
+  "total": 262,
   "by_text_status": {
+   "published_full_text": 203,
    "author_manuscript": 24,
    "machine_transcript": 21,
-   "published_full_text": 202,
    "correspondence": 8,
    "unpublished_manuscript": 2,
    "publisher_transcript": 1,
@@ -18,7 +18,7 @@
   },
   "by_section": {
    "Celostátní komentáře": 91,
-   "Litomyšlské sloupky": 64,
+   "Litomyšlské sloupky": 65,
    "Rozhovory": 54,
    "In English": 26,
    "Posts (ze sítí)": 26
@@ -45,28 +45,28 @@
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 2327548,
-   "sha256": "32bd3bff1981108e8bfd1698a6ee3cddef0d843ecf20899b6256b1acd7518c36"
+   "bytes": 2336507,
+   "sha256": "d635d0cbbe590372d025ac7c60e79f048e52a8f9830ca443715eed25dbd2ee49"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 2349254,
-   "sha256": "722217c16ae4acfbe09a7e1bf2fea8596a4ebaa57b51963ea97119ea47011bad"
+   "bytes": 2358280,
+   "sha256": "29f7ab561ca81b0bb9018f9170368893d4f3fdfc3af7d29abfd4167ea651076c"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
-   "bytes": 2101423,
-   "sha256": "567d47876674c64d0112687428a4297ec1802a405e277ac9c837539928cde358"
+   "bytes": 2109895,
+   "sha256": "fe470b314e3efaabf039baf02de9e5d2ce59d50cdf0ea80a50308715ebe39212"
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
-   "bytes": 49565,
-   "sha256": "3577866abef675011de1d14f0a84d3937e6e7d8ef8576fea6af4e828d2930708"
+   "bytes": 49757,
+   "sha256": "acb7fd21d7b7909ea44fac8737ef897156f5186e6a14aac651d25fc1d14c2572"
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 2297903,
-   "sha256": "82c1f09b41d692a44a38e2799ac86eef63c11ea52915374926c3d90d30b8f7a8"
+   "bytes": 2307053,
+   "sha256": "8576ae5daaaedd70667cbd4b3bf983457752b09a5517073d2ad3063e2455e72f"
   }
  },
  "generated_from": [
