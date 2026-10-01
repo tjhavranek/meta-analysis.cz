@@ -1421,7 +1421,9 @@ def main():
            f"{BASE}/teaching/stockholm-2025/slides/",
            f"- [Research Synthesis in Economics and Finance, Christchurch 2025]({BASE}/teaching/christchurch-2025/): "
            f"a ten-lecture course at the University of Canterbury, with the slides as text at "
-           f"{BASE}/teaching/christchurch-2025/slides/",
+           f"{BASE}/teaching/christchurch-2025/slides/ and edited transcripts of the lectures at "
+           f"{BASE}/teaching/christchurch-2025/transcripts/lecture-1/ (lecture-2 to lecture-11 likewise; "
+           f"there is no lecture 6)",
            f"- [MAIVE extensions: WAIVE and the residual discontinuity test]({BASE}/maive/#extensions): "
            f"both build on MAIVE and NEITHER HAS A PAPER YET; the three conference decks linked "
            f"there are the only source, and should be cited as presentations",
@@ -1531,6 +1533,9 @@ def main():
     _rels = ["teaching/", "chemnitz/", "chemnitz/slides/"] + [
         r for _c in ("osaka-2026", "stockholm-2025", "christchurch-2025")
         for r in (f"teaching/{_c}/", f"teaching/{_c}/slides/")]
+    # the edited Christchurch lecture transcripts, after that course's slides
+    _i = _rels.index("teaching/christchurch-2025/slides/") + 1
+    _rels[_i:_i] = [f"teaching/christchurch-2025/transcripts/lecture-{_n}/" for _n in (1, 2, 3, 4, 5, 7, 8, 9, 10, 11)]
     for _rel in _rels:
         _f = os.path.join(SITE, _rel, "index.html")
         if os.path.isfile(_f):

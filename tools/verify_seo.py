@@ -124,7 +124,8 @@ for _pub in ("publications/index.html", "publications/irsova/index.html"):
 # The teaching pages are self-managed too, and every structural check below applies to them.
 for _t in ("teaching/index.html", "teaching/osaka-2026/index.html", "teaching/osaka-2026/slides/index.html",
            "teaching/stockholm-2025/index.html", "teaching/stockholm-2025/slides/index.html",
-           "teaching/christchurch-2025/index.html", "teaching/christchurch-2025/slides/index.html"):
+           "teaching/christchurch-2025/index.html", "teaching/christchurch-2025/slides/index.html") + tuple(
+           f"teaching/christchurch-2025/transcripts/lecture-{_n}/index.html" for _n in (1, 2, 3, 4, 5, 7, 8, 9, 10, 11)):
     if os.path.isfile(os.path.join(SITE, _t)) and _t not in pages:
         pages.append(_t)
 # Sub-pages of a project, one level down: /guidelines/guide/, /maive/paper/. The listing

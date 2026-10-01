@@ -2,7 +2,7 @@
 
 Tomas Havranek and Zuzana Irsova
 
-Version: 30 September 2026, cleaned from the 31 May 2026 cookbook
+Version: 1 October 2026, cleaned from the 31 May 2026 cookbook
 
 These are our own informal, subjective notes for students writing a meta-analysis thesis with us, at bachelor's, master's or PhD level. They are a menu of methods and a set of principles, not a checklist every thesis must complete. We expect less from a bachelor's or master's thesis than from a journal paper, so do not despair if you cannot do everything here. Where these notes differ from the published guidelines, discuss the choice with your supervisor. Many of our students have published a shorter version of their thesis in a journal.
 
@@ -11,7 +11,7 @@ These are our own informal, subjective notes for students writing a meta-analysi
 Judge these at the level of the thesis. The core items are the search, comparability, standard errors, bias correction and clustering. The wild bootstrap, alternative priors and alternative weights are robustness checks. A missing core item matters more than a missing robustness check, a reasoned departure is fine, and following the practitioner's guide where these notes differ is not a defect.
 
 - Search: a documented query (Google Scholar by default), about 500 hits screened, snowballing, explicit inclusion criteria, published versions used, any restriction stated, a PRISMA diagram. If a meta-analysis of the topic exists, the thesis says what it adds.
-- Size: as a rule of thumb at least 10 studies and 50 estimates (a good thesis has around 40 studies and 600 estimates or more), with all estimates from each study.
+- Size: as a rule of thumb at least 10 studies and 50 estimates (20 studies and 100 estimates for a journal), with all estimates from each study. A solid thesis has around 40 studies and 600 estimates or more.
 - Comparability: one clearly defined effect, comparable in size and not only in sign, with conversions documented. Partial correlations only as a last resort, with a robustness check on a comparable subset.
 - Standard errors: how each was obtained is explained, approximations are listed in an appendix, all are positive, each t-statistic has the sign of its estimate, and sample sizes were collected.
 - Cleaning: outliers checked against the studies, any winsorizing small, stated and not driving the results.
@@ -54,9 +54,9 @@ One person can rarely collect data from more than about 100 studies, or 50 when 
 ## How many studies and estimates
 
 - Bare minimum, as a rule of thumb: 10 studies and 50 estimates. The practitioner's guide puts the floor for modern meta-regression at 30 estimates from 10 studies.
-- Minimum if you want to publish: 20 studies and 100 estimates.
-- A good thesis, well above the minimum: around 40 studies and 600 estimates or more. The median bachelor's or master's thesis meta-analysis uses around 60 studies and 1,000 estimates.
-- With only about 20 studies there is little between-study variation to explain, so the heterogeneity part will be thin.
+- Minimum if you want to publish: 20 studies and 100 estimates. With only about 20 studies, though, there is little between-study variation to explain, so the heterogeneity part will be thin.
+- A solid thesis, well above the minimum: around 40 studies and 600 estimates.
+- The median bachelor's or master's thesis meta-analysis: around 60 studies and 1,000 estimates. The larger the dataset, the more convincing the results.
 
 Collect all estimates each study reports, not just one.
 
