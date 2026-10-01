@@ -48477,7 +48477,7 @@ URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-1/
 Licence: CC BY 4.0
 
 Transcript. Lecture 1, Introduction to Meta-Analysis, from Research Synthesis in Economics and Finance,
-given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named. A few slips of the tongue are corrected in the text; they are listed at the end. Times
+given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
 are positions in the lecture recording; the
 slides follow the same order. What is said here is spoken and
 informal; the written guidelines take precedence.
@@ -48620,7 +48620,7 @@ So these DSGE models are a little bit like that. For inflation, the DSGE model i
 
 #### Main output: fan charts 00:34:44
 
-When you work on these DSGE models, you are in the end most interested in something called fan charts. It is called a fan chart because you have uncertainty around your prediction which looks a little bit like a fan. For central banks, the key thing is inflation. You want to keep inflation on the target. On the horizontal axis you have the future, different time periods. On the vertical axis you have how large inflation is. The model, as a sort of artificial intelligence, wants to keep inflation at 2%. That is a number which, by the way, came from New Zealand.
+When you work on these DSGE models, you are in the end most interested in something called fan charts. It is called a fan chart because you have uncertainty around your prediction which looks a little bit like a fan. For central banks, the key thing is inflation. You want to keep inflation on the target. On the horizontal axis you have the future, different time periods. On the vertical axis you have how large inflation is. The model wants to keep inflation at 2%. That is a number which, by the way, came from New Zealand.
 
 Everybody keeps repeating 2%. It is like the ideal inflation. By the way, there are also many papers which estimate optimal inflation, and I am in the middle of a project which would do a meta-analysis on optimal inflation. But it is difficult because these papers are mostly not empirical estimates: they have their own structural models inside. So it is a bit hard to know how to tackle it.
 
@@ -48660,7 +48660,7 @@ The second parameter, very important for monetary policy, is habit formation, wh
 
 00:44:29 Participant: But again, here your meta-analysis will give you a point estimate and then a confidence interval. So are you sure that your confidence interval isn't going to be as wide as your...
 
-00:44:40 Tomas Havranek: No, it could be true, especially in this case, where after a couple of quarters the difference is not so huge.
+00:44:40 Tomas Havranek: It could be true, especially in this case, where after a couple of quarters the difference is not so huge.
 
 00:44:51 Participant: I agree that we should do a meta-analysis, but in the end, even with a meta-analysis, we think we are still quite uncertain about the range.
 
@@ -48802,7 +48802,7 @@ Overall we find no evidence for substitution, not much evidence, but for older w
 
 I will later explain the details, how it works. So, for example, CBO can then go and use these numbers for the calibration of their model, because, at least in some versions of their model, they can have different values for women, for workers in retirement, and so on.
 
-So this could be used in practice. Of course, the confidence intervals are quite wide, but that is simply what we get. But you can notice that even the largest confidence interval here does not include 0.5, which is the upper end of the values they now use for the calibration in the CBO. So at least what you can say based on this, definitely, is that with high confidence you can reject the upper end of the calibration they use right now. [Note, 2026: in the published paper the upper 95% limits for the intensive margin are 0.52 to 0.59; see meta-analysis.cz/frisch/.]
+So this could be used in practice. Of course, the confidence intervals are quite wide, but that is simply what we get. But you can notice that even the largest confidence interval here does not include 0.5, which is the upper end of the values they now use for the calibration in the CBO. [Note, 2026: in the published paper the upper 95% limits for the intensive margin are 0.52 to 0.59, just above 0.5; see meta-analysis.cz/frisch/.]
 
 #### Course 01:21:48
 
@@ -48849,7 +48849,7 @@ URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-2/
 Licence: CC BY 4.0
 
 Transcript. Lecture 2, Applied Meta-Analysis Examples, from Research Synthesis in Economics and Finance,
-given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named. A few slips of the tongue are corrected in the text; they are listed at the end. Times
+given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
 are positions in the lecture recording; the
 slides follow the same order. What is said here is spoken and
 informal; the written guidelines take precedence.
@@ -48976,7 +48976,7 @@ For now, let's just say it should be symmetrical, because all imprecise estimate
 
 #### Funnel asymmetry tests 00:21:10
 
-Now we do the same thing as in the figure, but we just use a simple statistic to measure how asymmetrical it is. So we essentially do what is called either an Egger regression or a funnel asymmetry test, and we regress the reported effects, the estimates, on standard errors. So if I go back, essentially you take the horizontal axis, you switch it to the vertical axis, and then you invert the vertical axis to get, instead of precision, standard errors.
+Now we do the same thing as in the figure, but we just use a simple statistic to measure how asymmetrical it is. So we essentially do what is called either an Egger regression or a funnel asymmetry test, and we regress the reported effects, the estimates, on standard errors. So if I go back, essentially you take the horizontal axis, you switch it to the vertical axis, and then you invert the other axis to get, instead of precision, standard errors.
 
 So the slope coefficient will measure the amount of asymmetry in the literature. That's one thing. The other thing is that the intercept will measure the top of the funnel. So under some assumptions, that's going to be the true effect beyond any publication bias. Again, I will discuss it in much more detail. This is just for you to have a flavor before we get into the details.
 
@@ -49225,7 +49225,7 @@ URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-3/
 Licence: CC BY 4.0
 
 Transcript. Lecture 3, Literature Search, from Research Synthesis in Economics and Finance,
-given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named. A few slips of the tongue are corrected in the text; they are listed at the end. Times
+given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
 are positions in the lecture recording; the
 slides follow the same order. What is said here is spoken and
 informal; the written guidelines take precedence.
@@ -49502,7 +49502,7 @@ So in these cases, you can reasonably impute. Also, when you collect data on met
 
 01:06:38 Tomas Havranek: Of course, Bob is right that it will be better. If I had degrees of freedom, it would be great. The problem is that it is quite often not reported. You need to do your imputation. It is a mess. It is better to use the sample size.
 
-But you always find a way. For instance, the referee says, "You should use degrees of freedom, not sample size." I have about 5,000 estimates from 200 studies. So what I can do is collect it from 20 studies, and I will show you what the difference is. I can show you that there is a very tiny difference. It is not statistically significant. Do you really want it? If you want, I will do it, of course.
+But you always find a way. For instance, the referee says, "You should use degrees of freedom, not sample size." I have about 5,000 estimates from 200 studies. So what I can do is collect it from 20 studies, and I will show you what the difference is. I can show you that there is a very tiny difference. It is not statistically significant. If you want, I will do it, of course.
 
 This is the minimum that you need. So you can do a small meta-analysis, for example, for a project in this class, if you want. It doesn't take you months of your life, but it can be done relatively easily. Or you can take existing data and add a couple of new studies to them. If you do a thesis, for example, it does not have to be a full-fledged new meta-analysis.
 
@@ -49603,7 +49603,7 @@ URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-4/
 Licence: CC BY 4.0
 
 Transcript. Lecture 4, Data Collection, from Research Synthesis in Economics and Finance,
-given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named. A few slips of the tongue are corrected in the text; they are listed at the end. Times
+given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
 are positions in the lecture recording; the
 slides follow the same order. What is said here is spoken and
 informal; the written guidelines take precedence.
@@ -49943,7 +49943,7 @@ URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-5/
 Licence: CC BY 4.0
 
 Transcript. Lecture 5, Basic Meta-Analysis Tools, from Research Synthesis in Economics and Finance,
-given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named. A few slips of the tongue are corrected in the text; they are listed at the end. Times
+given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
 are positions in the lecture recording; the
 slides follow the same order. What is said here is spoken and
 informal; the written guidelines take precedence.
@@ -50273,7 +50273,7 @@ URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-7/
 Licence: CC BY 4.0
 
 Transcript. Lecture 7, Publication Bias, from Research Synthesis in Economics and Finance,
-given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named. Times
+given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. Times
 are positions in the lecture recording; the
 slides follow the same order. What is said here is spoken and
 informal; the written guidelines take precedence.
@@ -50436,7 +50436,7 @@ What I mean is that if the true effect is zero and I publish just positive signi
 
 But these are also the cases in which there is selection, but it does not create bias in the overall mean.
 
-Now I use the same simulated data and switch the axes. I have estimates on the horizontal instead of the vertical axis, and now I have precision, which is 1 over the standard error, on the vertical axis. It is very similar, but the axes are switched, and this is inverted. These are the same data. I do not really know why I do it, but this is how people have reported it in meta-analysis for decades, at least since the Egger et al. paper.
+Now I use the same simulated data and switch the axes. I have estimates on the horizontal instead of the vertical axis, and now I have precision, which is 1 over the standard error, on the vertical axis. It is very similar, but the axes are switched, and this is inverted. These are the same data. This is how people have reported it in meta-analysis for decades, at least since the Egger et al. paper.
 
 00:45:47 Participant: I often wonder why people do that, because I find that far less intuitive than the other graph.
 
@@ -50655,7 +50655,7 @@ URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-8/
 Licence: CC BY 4.0
 
 Transcript. Lecture 8, p-hacking, from Research Synthesis in Economics and Finance,
-given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named. A few slips of the tongue are corrected in the text; they are listed at the end. Times
+given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
 are positions in the lecture recording; the
 slides follow the same order. What is said here is spoken and
 informal; the written guidelines take precedence.
@@ -50722,7 +50722,7 @@ So far, so good. But today we are going to talk about something slightly more co
 
 As for p-hacking, the topic of today's session, we discussed last time how to define it. One way to define it is to say that in publication bias the estimates which you observe can be selectively reported, but on their own they are unbiased. Or they could be biased in a way that they are not done well, but they were not selected for this reason. They were just selected because you got the estimate and you either report it or not. With p-hacking, the individual estimates can be biased because you actively try to get statistical significance, or you can try to get positive estimates.
 
-It is still not a clear-cut definition, I realize that, and I don't think there will be a clear-cut definition in the future, but you get the idea of what is going on here. So in this p-hacking framework, it is not enough just to say, I observe this number of published insignificant and significant estimates, I compute the likelihood with which insignificant estimates are published, and then I just put more weight on the insignificant estimates. So it doesn't work anymore. Well, maybe it can work with some types of p-hacking, but in general it doesn't work. Let me give you an extreme example. Suppose I p-hack in a way that I completely cheat: I get my results, I just erase them, and I write new numbers, which give me a lot of statistical significance.
+It is still not a clear-cut definition, I realize that, and I don't think there will be a clear-cut definition in the future, but you get the idea of what is going on here. So in this p-hacking framework, it is not enough just to say, I observe this number of published insignificant and significant estimates, I compute the likelihood with which insignificant estimates are published, and then I just put more weight on the insignificant estimates. So it doesn't work anymore. Well, maybe it can work with some types of p-hacking, but in general it doesn't work. Let me give you an extreme example. Suppose someone p-hacks in a way that completely cheats: they get their results, just erase them, and write new numbers, which give them a lot of statistical significance.
 
 That is a very extreme example. That is almost never how it works, I think. But you can imagine that you can have bias in the way observational research is done, how regression is done. After a lot of work, you can essentially get whatever results you want. It does not have to mean that they have the same degree of defensibility, that you can justify them. If you just play around with the controls, with the subsamples, with the methodology, whether you use IV, what kind of instrument you use and so on, you can really change your estimates a lot, almost to the point of getting whatever you want in some contexts, in some scenarios.
 
@@ -50929,7 +50929,7 @@ URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-9/
 Licence: CC BY 4.0
 
 Transcript. Lecture 9, Heterogeneity, from Research Synthesis in Economics and Finance,
-given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named. A few slips of the tongue are corrected in the text; they are listed at the end. Times
+given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
 are positions in the lecture recording; the
 slides follow the same order. What is said here is spoken and
 informal; the written guidelines take precedence.
@@ -51371,7 +51371,7 @@ URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-10/
 Licence: CC BY 4.0
 
 Transcript. Lecture 10, Meta-Research, from Research Synthesis in Economics and Finance,
-given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named. A few slips of the tongue are corrected in the text; they are listed at the end. Times
+given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
 are positions in the lecture recording; the
 slides follow the same order. What is said here is spoken and
 informal; the written guidelines take precedence.
@@ -51552,7 +51552,7 @@ It was published in the Review of Economics and Statistics. Now we take the same
 
 00:42:48 Participant: [A participant asks which estimator the meta-analysis estimates on the slide are based on.]
 
-00:43:10 Tomas Havranek: We take the median. This is also based on what the referee wanted us to do. We have five correction techniques: we have our MAIVE here, fixed effects, between effects, endogenous kink and AK. So all five, and we take the median. In spirit, we are approaching something like RoBMA, Bayesian meta-analysis, but in a very simple way: just take the median. That is the best we can do. Or we could just take the MAIVE, which I would probably prefer, but the paper is unpublished. [Note, 2026: MAIVE has since been published: Irsova, Bom, Havranek and Rachinger (2025), "Spurious Precision in Meta-Analysis of Observational Research," Nature Communications 16, 8454. See meta-analysis.cz/maive/.] So we just went for the median.
+00:43:10 Tomas Havranek: We take the median. This is also based on what the referee wanted us to do. We have five correction techniques: we have our MAIVE here, fixed effects, between effects, endogenous kink and AK. So all five, and we take the median. In spirit, we are approaching something like RoBMA, Bayesian meta-analysis, but in a very simple way: just take the median. That is the best we can do. Or we could just take the MAIVE, which I would prefer, but the paper is unpublished. [Note, 2026: MAIVE has since been published: Irsova, Bom, Havranek and Rachinger (2025), "Spurious Precision in Meta-Analysis of Observational Research," Nature Communications 16, 8454. See meta-analysis.cz/maive/.] So we just went for the median.
 
 00:44:09 Participant: [A participant says they are surprised that random-effects estimates are not shown, since outside economics reviewers would want to see them.]
 
@@ -51624,7 +51624,7 @@ Autor is the most prominent OLS study. So when you do OLS, your inverse elastici
 
 00:59:32 Participant: [A participant asks whether, to define best practice like this, one could simply use the most cited paper.]
 
-00:59:56 Tomas Havranek: Yes, that could be one way. The idea is that you want to do something like this, but if you use just the first column, it is really subjective. People can tell you it is not convincing enough. What I like to do is to find at least one really well-cited and well-respected study on which there is general agreement that it is well done. Instead of your view of what best practice is, you use what the study uses, and impose it on the entire literature. So in a way you ask: what would the average effect be if all studies did it the same way as Card 2009, which we believe is a good way here? So it is not always best practice. I have these three categories of identification approaches: OLS, IV, natural experiments. From each category I choose the leading study based on citations, but it is also kind of obvious. There is one study which people really like to use a lot, which is based on OLS. One is the hugely influential paper by Card.
+00:59:56 Tomas Havranek: Yes, that could be one way. The idea is that you want to do something like this, but if you use just the first column, it is really subjective. People can tell you it is not convincing enough. What I like to do is to find at least one really well-cited and well-respected study on which there is general agreement that it is well done. Instead of your view of what best practice is, you use what the study uses, and impose it on the entire literature. So in a way you ask: what would the average effect be if all studies did it the same way as Card 2009, which we believe is a good way here? So it is not always best practice. I have these three categories of identification approaches: OLS, IV, natural experiments. From each category I choose the leading study based on citations, but it is also kind of obvious. There is one study which people really like to use a lot, which is based on OLS. Another is the hugely influential paper by Card.
 
 And then there is a new study, it does not really have many citations, but it is a new, well-executed study on Norway. So I think at least at this time the editor liked it.
 
@@ -51727,7 +51727,7 @@ URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-11/
 Licence: CC BY 4.0
 
 Transcript. Lecture 11, Limitations of Meta-Analysis, from Research Synthesis in Economics and Finance,
-given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named. Times
+given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. Times
 are positions in the lecture recording; the
 slides follow the same order. What is said here is spoken and
 informal; the written guidelines take precedence.
