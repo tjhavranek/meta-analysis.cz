@@ -1408,7 +1408,8 @@ def main():
            f"example with every number archived at {BASE}/api/v1/maive-howto.json, the same run "
            f"in R, and a ready request for the EasyMeta API",
            f"- [Teaching: courses on meta-analysis]({BASE}/teaching/): slides with their LaTeX "
-           f"sources, Stata and R code, data, and the Osaka recordings, from courses in Chemnitz "
+           f"sources, Stata and R code, data, the Osaka recordings, and edited transcripts of the "
+           f"Osaka and Christchurch lectures, from courses in Chemnitz "
            f"(2026), Osaka (2026), Stockholm (2025) and Christchurch (2025)",
            f"- [MAER-Net 2026 PhD workshop, Chemnitz]({BASE}/chemnitz/): a 90-minute session on "
            f"MAIVE, EasyMeta and AI in meta-analysis, with the slides as text at "

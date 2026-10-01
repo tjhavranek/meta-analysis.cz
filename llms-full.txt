@@ -43880,8 +43880,8 @@ URL: https://meta-analysis.cz/teaching/
 Licence: CC BY 4.0
 
 Courses on meta-analysis in economics, with everything that was taught.
-The slides and their LaTeX sources, the Stata and R code, the data, and recordings where
-available, all free to reuse. Taught by Tomas Havranek, Charles University, Prague.
+The slides and their LaTeX sources, the Stata and R code, the data, and recordings and edited
+transcripts where available, all free to reuse. Taught by Tomas Havranek, Charles University, Prague.
 
 ### Chemnitz, September 2026
 
@@ -43894,8 +43894,8 @@ demo dataset with the numbers to expect, and the prompts for AI assistants.
 Meta-Analysis in Economics: Practical Tools for
 Synthesizing Research. A three-hour course at the Institute of Social and Economic
 Research (ISER), the University of Osaka, on 16 March 2026, on site and online: four lectures on
-the workflow, selective reporting, heterogeneity, and interpretation. Slides, code and data, and
-the recordings.
+the workflow, selective reporting, heterogeneity, and interpretation. Slides, code and data, the
+recordings and an edited transcript.
 
 ### Stockholm, August 2025
 
@@ -43909,7 +43909,8 @@ Slides, code and data, and the programme.
 Research Synthesis in Economics and Finance. A
 university course (ECON670) at the University of Canterbury, New Zealand: ten two-hour lectures,
 from literature search and data collection to publication bias, p-hacking, heterogeneity and the
-limits of meta-analysis, with student projects. The lecture slides with their LaTeX sources.
+limits of meta-analysis, with student projects. The lecture slides with their LaTeX sources, and
+an edited transcript of each lecture.
 
 ### Further reading
 
