@@ -45402,7 +45402,7 @@ URL: https://meta-analysis.cz/teaching/osaka-2026/transcript/
 Licence: CC BY 4.0
 
 Transcript. The recorded lectures of Meta-Analysis in Economics: Practical Tools for Synthesizing Research,
-given by Tomas Havranek at the Institute of Social and Economic Research (ISER), the University of Osaka, on 16 March 2026. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. A few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the hosts where Tomas Havranek refers to them. A few slips of the tongue are corrected in the text; they are listed at the end. Times
+given by Tomas Havranek at the Institute of Social and Economic Research (ISER), the University of Osaka, on 16 March 2026. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers and negations are kept as spoken. A few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the hosts where Tomas Havranek refers to them. A few slips of the tongue are corrected in the text; they are listed at the end. Times
 are positions in the recordings (recording 1 is the morning session, recording 2 the afternoon); the
 slides follow the same order. What is said here is spoken and
 informal; the written guidelines take precedence.
@@ -45725,7 +45725,7 @@ We are talking about how you can also collect, in a meta-analysis, data from stu
 
 The next problem you will always face in meta-analysis is what to do with outliers. Unfortunately, there is no clear answer. I will give you mine, but other people have different answers. You will always have outliers, which means that sometimes you have estimates that are just strange. It could be a typo in the original study, or it could be a real estimate that is really far away from the mean, but only for some specific context, subset or demographic group, or for something really wild.
 
-If you don't do anything about outliers, they will mostly be a mess for your meta-analysis procedure, so you should do something. The solution I recommend is winsorizing. Say we winsorize at the 1% level. That means we shrink both tails, positive and negative, to the first percentile and the 99th percentile: anything that is larger than these percentiles, we shrink to them. We do not omit or drop these outliers. We keep the information in the data that it is a large estimate, but not an extremely crazy large one that would create problems. I do this for both estimates and precision, because these are the key things that you have to consider in meta-analysis.
+If you don't do anything about outliers, they will mostly be a mess for your meta-analysis procedure, so you should do something. The solution I recommend is winsorizing. Say we winsorize at the 1% level. That means we shrink both tails, positive and negative, to the first percentile and the 99th percentile: anything outside these percentiles, we shrink to them. We do not omit or drop these outliers. We keep the information in the data that it is a large estimate, but not an extremely crazy large one that would create problems. I do this for both estimates and precision, because these are the key things that you have to consider in meta-analysis.
 
 00:02:43 Participant: What about the combination of those? Suppose I have an estimate like here. It is inside.
 
@@ -45931,7 +45931,7 @@ It is also much more difficult to manipulate sample size than precision. In obse
 
 Again, IV is not really sexy nowadays, but here I think we have a strong case for it, because the instrument is almost always strong and likely to be valid in many cases. We use the definition of variance in the first stage: first we regress variance on inverse sample size and take the fitted values. Whatever p-hacking happens is not related to sample size. It is the choices you make after you have your sample, when you choose which variables to include and so on. These choices do not affect sample size, but they will affect variance. [Note, 2026: the settings recommended at meta-analysis.cz/maive/how-to/ use a log first stage.]
 
-The residuals are key here: we get rid of them and just take the fitted values. […] In our simulations, it works. It is not perfect, but at high, extreme values of p-hacking, you still get something substantially better than the naive mean, which is not the case for PEESE, for the other selection models, or for anything else.
+The residuals are key here: we get rid of them and just take the fitted values. […] In our simulations, it works. At high, extreme values of p-hacking, you still get something substantially better than the naive mean, which is not the case for PEESE, for the selection models, or for anything else.
 
 We are also working on something called WAIVE, where we use the residuals. In MAIVE we just get rid of the residuals, but here we use them as a weight, because the residuals from the first stage are likely to be related to p-hacking. If the residual is negative, it means that the variance is too small given the sample size, which may or may not be the case, but it could be consistent with some p-hacking. And if there is p-hacking, it likely affects both the estimate and the variance.
 
@@ -45953,7 +45953,7 @@ Our MAIVE is one way to do it. A completely different way was developed by Maya 
 
 What she does is this: you need to assume a distribution for the true effects, again as in a selection model, say a normal or t-distribution or something like that. Then you focus only on the insignificant estimates and use Bayesian techniques to reconstruct the latent distribution of the true effects. It is just a very simple statistical process. You could use maximum likelihood, but in this case you would need a much bigger sample, so the Bayesian technique is more feasible here. In the folder you have the code for how to do it in R.
 
-It is really straightforward to run this. I recommend that you use it, or you can use both, MAIVE and RTMA. For MAIVE you need a strong instrument, which will often be the case because, by definition, variance is a function of sample size. But sometimes it is not going to be strong. So even if you have this Anderson-Rubin confidence interval, it might then be better to rely more on RTMA. But RTMA has different problems. One of them is the assumption that insignificant estimates are not p-hacked, which we do not need in MAIVE. [Note, 2026: always report the first-stage F. Below 10, report MAIVE's Anderson-Rubin interval instead of the point estimate and cross-check it with RTMA; see meta-analysis.cz/maive/how-to/.]
+It is really straightforward to run this. I recommend that you use it, or you can use both, MAIVE and RTMA. For MAIVE you need a strong instrument, which will often be the case because, by definition, variance is a function of sample size. But sometimes it is not going to be strong. So even if you have this Anderson-Rubin confidence interval, it is worth cross-checking it with RTMA. But RTMA has different problems. One of them is the assumption that insignificant estimates are not p-hacked, which we do not need in MAIVE. [Note, 2026: always report the first-stage F. Below 10, report MAIVE's Anderson-Rubin interval instead of the point estimate and cross-check it with RTMA; see meta-analysis.cz/maive/how-to/.]
 
 01:24:16 Participant: It is very interesting. I think it would be interesting to compare those, because they are going to fail under different environments. For instance, with your exogeneity assumption, if you think about experimental data, especially if people have not registered their sample size, you could think that they might have some stopping rule on the sample size, and that could create failures of the exogeneity assumption. I also find this very interesting, as you are mentioning. In a sense, all of these approaches assume that what we care about is statistical significance and creating positive results, or whatever, in absolute value.
 
@@ -46011,7 +46011,7 @@ That is all in Stata. Here we have examples of the same thing, best practice imp
 
 The first step is to use Google Scholar and snowballing, and to use help from AI as an independent, or quasi-independent, actor. Focus on something that can be compared, not the statistics, ideally some economic effects, such as elasticities, mean differences in experimental data, or correlations in observational data. [Note, 2026: partial correlations are a last resort, for when effects cannot be translated into a common economic metric; with them, add a robustness check on the largest subset with a comparable economic effect.] What you need is always some sort of precision, sample size, and key differences in context. Then you probably want to do something about outliers. A relatively safe choice is to winsorize at the 1% level.
 
-You want to correct for both publication bias and p-hacking. There are many models, so you can use some of those I showed. Of course, I want to promote my own. That is not surprising. If you have weak instruments, you should definitely go for the Maya Mathur RTMA estimator. [Note, 2026: with a first-stage F below 10, report MAIVE's Anderson-Rubin interval instead of the point estimate and cross-check it with RTMA.] Do look at heterogeneity, for instance using BMA with the dilution prior. Then you will have this fancy figure I showed you. And then, as the bottom line, there should always be some computation: what is the implied number for different contexts? [Note, 2026: the three principles as of 2026 are to correct for publication bias (RoBMA), correct for p-hacking (MAIVE and Mathur's RTMA), and cluster by study (CR2 standard errors); see meta-analysis.cz/guidelines/.]
+You want to correct for both publication bias and p-hacking. There are many models, so you can use some of those I showed. Of course, I want to promote my own. That is not surprising. If you have weak instruments, you should definitely also run Maya Mathur's RTMA estimator. [Note, 2026: with a first-stage F below 10, report MAIVE's Anderson-Rubin interval instead of the point estimate and cross-check it with RTMA.] Do look at heterogeneity, for instance using BMA with the dilution prior. Then you will have this fancy figure I showed you. And then, as the bottom line, there should always be some computation: what is the implied number for different contexts? [Note, 2026: the three principles as of 2026 are to correct for publication bias (RoBMA), correct for p-hacking (MAIVE and Mathur's RTMA), and cluster by study (CR2 standard errors); see meta-analysis.cz/guidelines/.]
 
 I think I almost made it on time. I am five or ten seconds beyond. Thank you very much.
 
@@ -48480,7 +48480,7 @@ URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-1/
 Licence: CC BY 4.0
 
 Transcript. Lecture 1, Introduction to Meta-Analysis, from Research Synthesis in Economics and Finance,
-given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
+given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers and negations are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
 are positions in the lecture recording; the
 slides follow the same order. What is said here is spoken and
 informal; the written guidelines take precedence.
@@ -48852,7 +48852,7 @@ URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-2/
 Licence: CC BY 4.0
 
 Transcript. Lecture 2, Applied Meta-Analysis Examples, from Research Synthesis in Economics and Finance,
-given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
+given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers and negations are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
 are positions in the lecture recording; the
 slides follow the same order. What is said here is spoken and
 informal; the written guidelines take precedence.
@@ -49153,7 +49153,7 @@ It survives correction for publication bias, it survives correction for heteroge
 
 #### Work intensity clearly matters 01:15:18
 
-Now we have a couple of histograms which I think are quite revealing. Here, on the horizontal axis, we again have the size of the effect: how much does it hurt or help if you work while in school, in terms of your study performance? And we have two comparisons. We have red if you work a lot (I forgot the actual threshold, but I think it was 20 hours a week). And the gray histogram is if you work a little bit, so fewer than 20 hours a week. If you work a little bit, the effect is really close to zero on average. If you work a lot, well, you can see it can have a relatively significant effect on your performance. That makes sense: if you work a lot, you will have much less time for school. So this is a good sanity check that this is what you need to have there, otherwise it would be really weird.
+Now we have a couple of histograms which I think are quite revealing. Here, on the horizontal axis, we again have the size of the effect: how much does it hurt or help if you work while in school, in terms of your study performance? And we have two comparisons. We have red if you work a lot (I forgot the actual threshold, but I think it was 20 hours a week). And the gray histogram is if you work a little bit, so fewer than 20 hours a week. [Note, 2026: the published paper defines low-intensity work as fewer than 15 hours a week and high-intensity work as more than 30; see meta-analysis.cz/students/.] If you work a little bit, the effect is really close to zero on average. If you work a lot, well, you can see it can have a relatively significant effect on your performance. That makes sense: if you work a lot, you will have much less time for school. So this is a good sanity check that this is what you need to have there, otherwise it would be really weird.
 
 #### Endogeneity control is important 01:16:28
 
@@ -49193,7 +49193,7 @@ And you can see that in almost any model we run, we have a negative coefficient 
 
 #### Best practice estimates 01:27:11
 
-Again, you can compute best practice implied estimates for different countries. So here what is interesting is Germany. We have a positive effect, but it is not statistically significant. So even in Germany, we do not find a strong positive effect. Overall, the best-practice estimate is almost statistically significant, but the issue is that it is 0.04 in terms of partial correlation.
+Again, you can compute best practice implied estimates for different countries. So here what is interesting is Germany. We have a positive effect, but it is not statistically significant. So even in Germany, we do not find a strong positive effect. Overall, the best-practice estimate is almost statistically significant, but the issue is that it is -0.04 in terms of partial correlation.
 
 #### Results 01:27:51
 
@@ -49223,12 +49223,14 @@ Slips of the tongue corrected in the text:
 
 - [00:57:47] said "20-year fixation"; the text has "30-year fixation".
 
+- [01:27:11] said "0.04"; the text has "-0.04".
+
 ## Transcript: Lecture 3, Literature Search (Christchurch, 2025)
 URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-3/
 Licence: CC BY 4.0
 
 Transcript. Lecture 3, Literature Search, from Research Synthesis in Economics and Finance,
-given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
+given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers and negations are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
 are positions in the lecture recording; the
 slides follow the same order. What is said here is spoken and
 informal; the written guidelines take precedence.
@@ -49339,7 +49341,7 @@ Example number three could be about publication bias, or maybe not about publica
 
 But if you look at the empirical evidence, if you just read the five or ten most recent studies, there is really not much there. The effect seems to be really small, the effect of changing the size of the class on performance. The number actually means by how many percent student performance decreases when you increase class size by one student. When I have 20 students in a class and I compare it to 21 students, what is the difference in performance in terms of standard deviations? The result is that, on average, performance decreases by 0.36% of one standard deviation, which is really zero. [Note, 2026: in the published paper the mean reported effect is 0.25% of a standard deviation per additional student and the implied effect after corrections is 0.21%; see meta-analysis.cz/class/.] It's nothing.
 
-We have an entire paper in the Journal of Labor Economics, essentially, about this figure. There's no publication bias. The mean effect is pretty close to zero. And that's it. But it comes as a surprise to many people, because there are two influential papers from the 90s, by Joshua Angrist and by Alan Krueger, which use really sophisticated techniques to show that there is an effect.
+We have an entire paper in the Journal of Labor Economics, essentially, about this figure. There's no publication bias. [Note, 2026: the published paper finds little publication bias; see meta-analysis.cz/class/.] The mean effect is pretty close to zero. And that's it. But it comes as a surprise to many people, because there are two influential papers from the 90s, by Joshua Angrist and by Alan Krueger, which use really sophisticated techniques to show that there is an effect.
 
 What you can read in the literature, in the recent papers: you have a class, as a teacher, which had 25 students. Then it gets to 20 students. Your life is easier, but you don't really change the way you teach in many cases, on average.
 
@@ -49503,7 +49505,7 @@ So in these cases, you can reasonably impute. Also, when you collect data on met
 
 01:06:33 Participant: [A participant agrees and adds that it takes a good knowledge of economics.]
 
-01:06:38 Tomas Havranek: Of course, Bob is right that it will be better. If I had degrees of freedom, it would be great. The problem is that it is quite often not reported. You need to do your imputation. It is a mess. It is better to use the sample size.
+01:06:38 Tomas Havranek: Of course, Bob is right that it would be neater in theory. The problem is that it is quite often not reported. You need to do your imputation. It is a mess. It is better to use the sample size.
 
 But you always find a way. For instance, the referee says, "You should use degrees of freedom, not sample size." I have about 5,000 estimates from 200 studies. So what I can do is collect it from 20 studies, and I will show you what the difference is. I can show you that there is a very tiny difference. It is not statistically significant. If you want, I will do it, of course.
 
@@ -49606,7 +49608,7 @@ URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-4/
 Licence: CC BY 4.0
 
 Transcript. Lecture 4, Data Collection, from Research Synthesis in Economics and Finance,
-given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
+given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers and negations are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
 are positions in the lecture recording; the
 slides follow the same order. What is said here is spoken and
 informal; the written guidelines take precedence.
@@ -49845,7 +49847,7 @@ Again, the question is: how does beauty affect your success or productivity? Suc
 
 00:59:45 Participant: There are fewer than 10 studies that have the characteristics.
 
-00:59:48 Tomas Havranek: I think in the guidelines we say that the dummy should have a mean above 0.05, that is, 5% of all estimates.
+00:59:48 Tomas Havranek: I think in the guidelines we say that the dummy should have a mean above 0.05, that is, 5% of all estimates. [Note, 2026: the published guide warns against dummies with a mean below 0.03 or above 0.97; see meta-analysis.cz/guidelines/guide/.]
 
 01:00:04 Participant: Many of these things are at the study level.
 
@@ -49881,7 +49883,7 @@ I hinted at it a little bit with the IQ and beauty issue, but if you want to pub
 
 #### DST savings and latitude 01:11:22
 
-So we collected these different papers on the effect of daylight saving time from different countries, in total, I think, about 30-something countries. But each study was done just for one country, or maybe two countries, or maybe the European Union, but not individually for different countries.
+So we collected these different papers on the effect of daylight saving time from different countries, in total, I think, about 30-something countries. [Note, 2026: the published paper covers 21 countries; see meta-analysis.cz/dst/.] But each study was done just for one country, or maybe two countries, or maybe the European Union, but not individually for different countries.
 
 Now we have this data set, and we can actually look at how the effects differ in terms of the climate of each country. If the country is in Scandinavia, like Norway, it really has a big variation in sunlight. So daylight saving might have different effects there than in Jordan, which has relatively modest variation because it's much closer to the equator. And indeed, we find that in countries which are closer to the poles, where you have more variation, the effects are better in terms of higher savings.
 
@@ -49946,7 +49948,7 @@ URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-5/
 Licence: CC BY 4.0
 
 Transcript. Lecture 5, Basic Meta-Analysis Tools, from Research Synthesis in Economics and Finance,
-given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
+given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers and negations are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
 are positions in the lecture recording; the
 slides follow the same order. What is said here is spoken and
 informal; the written guidelines take precedence.
@@ -50159,13 +50161,13 @@ We have thought about it. It could be a way to summarize the study, but you woul
 
 Finally, we compute the random-effects meta-analysis estimate. We use random effects here because there is obviously heterogeneity. These are studies for different countries. Some studies are for primary school; a couple of studies are for high schools. We want to be on the safer side. Even with random effects and the medians, we have quite a tight confidence interval.
 
-It is a very small number, but the confidence interval doesn't include zero. There is a lot of precision, even though we are relatively conservative in how we measure it. You can see the weight: even the most precise studies have a weight of at most 4%. When you use random effects, you typically won't have any huge outliers in your data. If we first used fixed effects for each study and then did an overall fixed-effect meta-analysis here, we would have some super precise study, with maybe 50% weight for this study, or definitely 30%.
+It is a very small number, but the confidence interval doesn't include zero. There is a lot of precision, even though we are relatively conservative in how we measure it. You can see the weight: even the most precise studies have a weight of at most 4%. When you use random effects, you typically won't have any huge weights for individual studies. If we first used fixed effects for each study and then did an overall fixed-effect meta-analysis here, we would have some super precise study, with maybe 50% weight for this study, or definitely 30%.
 
 I'm not sure how the mean would change, but it would probably be smaller and much more precise. This would be really tight. This is one practical example of how you can do a forest plot in the context of a meta-analysis of economics or finance data. We were specifically asked for the forest plot by the referee. Normally, we don't do it because it is hard to do when we have more estimates per study. But maybe this is not a bad way to summarize your results as well. Here, when you have 60 studies, it is hard to grasp. But when you have 20 or 30 studies, I think such a figure is a good idea. It nicely shows you what is going on, especially when you combine the preferred estimates.
 
 #### Box plot 00:59:32
 
-What is much easier to do in many meta-analyses in economics and finance is the so-called box plot. For a box plot, you take the estimates you have from each study and plot them. You plot them in a structured way. You show the median from each study. You show the 25th percentile and the 75th percentile. Then, if there are any other values, you show them as outliers. It shows you the dispersion of the estimates within studies, but also across studies, and you can compare them.
+What is much easier to do in many meta-analyses in economics and finance is the so-called box plot. For a box plot, you take the estimates you have from each study and plot them. You plot them in a structured way. You show the median from each study. You show the 25th percentile and the 75th percentile. Then, if there are any extreme values, you show them as outliers. It shows you the dispersion of the estimates within studies, but also across studies, and you can compare them.
 
 Maybe the forest plot, which I showed previously, is probably more informative. But you need additional assumptions to do it. You need to choose fixed or random effects, and how to do it for each study. Maybe it would be better if we did this instead of the box plot. The main difference between the forest plot and the box plot is that the box plot shows you just the estimates as they are from the studies.
 
@@ -50225,7 +50227,7 @@ Another example: in the Journal of Economic Surveys, where I am one of the edito
 
 #### Publication bias (topic of the next lecture) 01:20:04
 
-[…] I will talk about publication bias, which I think is the key to any good meta-analysis. If you ignore publication bias, it is essentially as if you did nothing. In the class size paper we find no publication bias, but in most cases in economics and finance, if you ignore publication bias, you are likely, not always, to really mislead the reader. Publication bias tends to exaggerate reported results. I will explain in detail how it works, why it is a problem, and how we can correct for it, at least to some degree. […]
+[…] I will talk about publication bias, which I think is the key to any good meta-analysis. If you ignore publication bias, it is essentially as if you did nothing. In the class size paper we find no publication bias, but in most cases in economics and finance, if you ignore publication bias, you are likely, not always, to really mislead the reader. [Note, 2026: the published class size paper finds little publication bias; see meta-analysis.cz/class/.] Publication bias tends to exaggerate reported results. I will explain in detail how it works, why it is a problem, and how we can correct for it, at least to some degree. […]
 
 #### Discussion: multilevel models and the selection of contexts 01:21:02
 
@@ -50271,12 +50273,14 @@ Slips of the tongue corrected in the text:
 
 - [01:14:48] said "Federal Drug Administration"; the text has "Food and Drug Administration".
 
+- [00:57:43] said "huge outliers in your data"; the text has "huge weights for individual studies".
+
 ## Transcript: Lecture 7, Publication Bias (Christchurch, 2025)
 URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-7/
 Licence: CC BY 4.0
 
 Transcript. Lecture 7, Publication Bias, from Research Synthesis in Economics and Finance,
-given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. Times
+given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers and negations are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
 are positions in the lecture recording; the
 slides follow the same order. What is said here is spoken and
 informal; the written guidelines take precedence.
@@ -50371,7 +50375,7 @@ Then there was an independent reanalysis of the key study [Study 329, on teenage
 
 That was the main thing that started pre-registration in medicine. Nowadays, if you want to do an RCT and then publish it in a medical journal, you need to register first.
 
-The results are not hidden. Even if you don't submit your paper for publication, we can still see the results somewhere. We now have the same thing in economics. If you want to do an experiment and publish in AER, you have to register it.
+The results are not hidden. Even if you don't submit your paper for publication, we can still see the results somewhere. We now have the same thing in economics. If you want to do a field experiment and publish in AER, you have to register it.
 
 Pre-registration has now expanded beyond experimental research to observational research too. The problem with observational research is that it's very hard to guarantee that you don't already know what the results could be at the time when you submit your pre-registration or pre-analysis plan. With experimental data, it's much easier because you haven't done the experiment yet. You have nothing to base your analysis plan on in terms of results. But if it's observational, it's much trickier.
 
@@ -50439,7 +50443,7 @@ What I mean is that if the true effect is zero and I publish just positive signi
 
 But these are also the cases in which there is selection, but it does not create bias in the overall mean.
 
-Now I use the same simulated data and switch the axes. I have estimates on the horizontal instead of the vertical axis, and now I have precision, which is 1 over the standard error, on the vertical axis. It is very similar, but the axes are switched, and this is inverted. These are the same data. This is how people have reported it in meta-analysis for decades, at least since the Egger et al. paper.
+Now I use the same simulated data and switch the axes. I have estimates on the horizontal instead of the vertical axis, and now I have precision, which is 1 over the standard error, on the vertical axis. It is very similar, but the axes are switched, and this is inverted. These are the same data. I do not really know why I do it, but this is how people have reported it in meta-analysis for decades, at least since the Egger et al. paper.
 
 00:45:47 Participant: I often wonder why people do that, because I find that far less intuitive than the other graph.
 
@@ -50653,12 +50657,18 @@ I don't have any proof that we should use PEESE and treat all the rest as robust
 
 We can discuss the shortcomings and the problems, but I still think RoBMA should probably be the benchmark, unless we have some strong evidence that we should prefer something else. Hopefully, that could be MAIVE. […]
 
+#### Corrections
+
+Slips of the tongue corrected in the text:
+
+- [00:25:13] said "an experiment"; the text has "a field experiment".
+
 ## Transcript: Lecture 8, p-hacking (Christchurch, 2025)
 URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-8/
 Licence: CC BY 4.0
 
 Transcript. Lecture 8, p-hacking, from Research Synthesis in Economics and Finance,
-given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
+given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers and negations are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
 are positions in the lecture recording; the
 slides follow the same order. What is said here is spoken and
 informal; the written guidelines take precedence.
@@ -50859,17 +50869,17 @@ As I write here, unfortunately, we don't know what the true model is. If you run
 
 #### Meta-analysis instrumental variable estimator 00:58:24
 
-When we try to solve this endogeneity problem, we try to find an instrument that would be related to precision somehow, but not to the problem in the residual in the PET-PEESE regression. So it would not be related to p-hacking. In the paper we argue that sample size could be such an instrument. Sample size by definition is related to precision. If you have a larger sample, you have more precision, and vice versa.
+When we try to solve this endogeneity problem, we try to find an instrument that would be related to precision somehow, but not to the problem in the residual in the PET-PEESE regression. So it would not be related to p-hacking. In the paper we use sample size as such an instrument. Sample size by definition is related to precision. If you have a larger sample, you have more precision, and vice versa.
 
-It is much more difficult to somehow manipulate your sample size to get statistical significance than to change your estimation technique or your control variables to get more statistical significance. In more technical words, the instrument should be strong. There should be a strong correlation between precision and sample size, just by the definition of the standard error. And hopefully there is not much of a relation between sample size and p-hacking. There could be some. You could p-hack by changing the subset you are drawing from your data. But it is hard to artificially increase your sample size just to get statistical significance.
+It is much more difficult to somehow manipulate your sample size to get statistical significance than to change your estimation technique or your control variables to get more statistical significance. In more technical words, the instrument should be strong. There should be a strong correlation between precision and sample size, just by the definition of the standard error. And we assume there is not much of a relation between sample size and p-hacking. There could be some. You could p-hack by changing the subset you are drawing from your data. But it is hard to artificially increase your sample size just to get statistical significance.
 
 The reason is that typically you would use all the data you have. There is no reason you would just start with a small sample. One exception: in some fields of experimental research, when you plan your experiment, you can also plan how many people you will have in the experiment, how large a sample size you will have. And sometimes you do these power computations, in which you plan to have a bigger sample size, a bigger number of people in your experiment, if you expect the effect in your experiment to be small.
 
 Sometimes you have some idea. If I am doing an experiment on class size and student performance, the effect is probably not so large, so I want to have a big number of students to be able to really isolate and identify the effect. Sometimes you know that the coefficient is going to be large, so you need just a normal size, because experiments are costly and increasing the sample size in experiments is going to be expensive for you. So this is the intuition for the instrumental variable estimator, which we call MAIVE, the meta-analysis instrumental variable estimator.
 
-Since, as you know, IV is a two-stage regression approach, you first need to put your instrument on the right-hand side and regress the endogenous variable on the instrument. In this case, you regress variance on inverse sample size. And you hope that it will get rid of the p-hacking and misspecification things, which are hopefully not related to the sample size. So you will use the fitted values from the first-stage regression instead of the reported ones.
+Since, as you know, IV is a two-stage regression approach, you first need to put your instrument on the right-hand side and regress the endogenous variable on the instrument. In this case, you regress variance on inverse sample size. And it gets rid of the p-hacking and misspecification things, assuming they are not related to the sample size. So you will use the fitted values from the first-stage regression instead of the reported ones.
 
-In MAIVE, when you use PEESE with the MAIVE adjustment, you have a standard instrumental variable adjustment, but you can also use these adjusted variance measures in other estimators. That is also possible. And of course, when you estimate PEESE with the adjusted variance, you can also include other control variables for whatever you think should be included in a multivariate method. In the paper, we have the same simulations as before, and we just compare PET-PEESE with the instrumented version. You can see that it is not perfect, but it substantially helps to improve the performance of these estimators in the worst cases.
+In MAIVE, when you use PEESE with the MAIVE adjustment, you have a standard instrumental variable adjustment, but you can also use these adjusted variance measures in other estimators. That is also possible. And of course, when you estimate PEESE with the adjusted variance, you can also include other control variables for whatever you think should be included in a multivariate method. In the paper, we have the same simulations as before, and we just compare PET-PEESE with the instrumented version. You can see that it substantially helps to improve the performance of these estimators in the worst cases.
 
 #### Extended MAIVE 01:04:01
 
@@ -50889,7 +50899,7 @@ So we put 0.9 weight, just a slight adjustment, on these estimates where we have
 
 These simulations were meant to add a bit more credibility to our results. We have theoretical motivation, then we have simulations, and we also try to see what happens in real meta-analysis data, when we compare MAIVE to PET-PEESE.
 
-We use the data set of many meta-analyses collected by Chris Doucouliagos. And it really seems that if you use MAIVE, not always, but very often, you have smaller estimates, which would be consistent with p-hacking on average, pushing the estimates northeast in the funnel plot, causing a positive bias in your estimates, and also causing a positive bias in meta-analysis models which correct for publication bias like this.
+We use the data set of many meta-analyses collected by Chris Doucouliagos. And if you use MAIVE, not always, but very often, you have smaller estimates, which would be consistent with p-hacking on average, pushing the estimates northeast in the funnel plot, causing a positive bias in your estimates, and also causing a positive bias in meta-analysis models which correct for publication bias like this.
 
 #### Bonus: Maya Mathur's p-hacking correction 01:09:20
 
@@ -50932,7 +50942,7 @@ URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-9/
 Licence: CC BY 4.0
 
 Transcript. Lecture 9, Heterogeneity, from Research Synthesis in Economics and Finance,
-given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
+given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers and negations are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
 are positions in the lecture recording; the
 slides follow the same order. What is said here is spoken and
 informal; the written guidelines take precedence.
@@ -51015,7 +51025,7 @@ In almost all applications of meta-analysis in economics or finance, you will wa
 
 00:14:24 Participant: [A participant asks whether, if a technique cannot control for covariates, one should simply not use it.]
 
-00:14:41 Tomas Havranek: No. You might have techniques, like the one we have, MAIVE, where in principle you do not have to include controls, because by using an instrument for variance here, you solve the omitted variable bias problem. Sometimes a model cannot include covariates but has another advantage: people who like selection models, for example, tell you that maybe in some cases it is better even though we cannot add these things.
+00:14:41 Tomas Havranek: No. You might have techniques, like the one we have, MAIVE, where you do not have to include controls, because by using an instrument for variance here, you solve the omitted variable bias problem. Sometimes a model cannot include covariates but has another advantage: people who like selection models, for example, tell you that maybe in some cases it is better even though we cannot add these things.
 
 There is no definite answer. It is just a convention for me, which I find useful: first, in my paper, to focus on publication bias, with a disclaimer that many of these techniques, because in the first stage we do not include these controls, can be off for this reason. But then we always move to this heterogeneity analysis. You can think about adding covariates as another way to make your publication bias analysis hopefully more robust, less biased.
 
@@ -51374,7 +51384,7 @@ URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-10/
 Licence: CC BY 4.0
 
 Transcript. Lecture 10, Meta-Research, from Research Synthesis in Economics and Finance,
-given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
+given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers and negations are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. A few slips of the tongue are corrected in the text; they are listed at the end. Times
 are positions in the lecture recording; the
 slides follow the same order. What is said here is spoken and
 informal; the written guidelines take precedence.
@@ -51513,7 +51523,7 @@ When we collect all of these estimates and compute a simple mean, it is about mi
 
 00:32:28 Tomas Havranek: It is just a standard approximation. You can compute confidence intervals here and then also invert the confidence intervals. I think that is the way we do it in the paper. But now we need to go back to the elasticity, because that is what people are interested in. It is the same issue as in the original papers: they also estimate something and then need to comment on the elasticity.
 
-So for the inversion, we just follow what they do in the primary equation. It is the same kind of problem. What we liked a lot is that this 1.5, the overall average of all the estimates we have, is exactly what is considered the consensus elasticity in the literature. Of course, they do not use 77 studies; it is based on three studies, published in the AER, the QJE and another journal. So it is great: we collect a lot, and it is still the same. It is the same starting point. We started from the consensus, and then we try to see whether the consensus is built on strong ground.
+So for the inversion, we just follow what they do in the primary equation. It is the same kind of problem. What we liked a lot is that this 1.5, the overall average of all the estimates we have, is exactly what is considered the consensus elasticity in the literature. [Note, 2026: in the published paper the 682 estimates imply a mean elasticity of 1.8, and 1.5 is the consensus value; see meta-analysis.cz/skill/.] Of course, they do not use 77 studies; it is based on three studies, published in the QJE and the Review of Economics and Statistics. So it is great: we collect a lot, and it is still the same. It is the same starting point. We started from the consensus, and then we try to see whether the consensus is built on strong ground.
 
 00:33:52 Participant: Did you find publication bias?
 
@@ -51725,12 +51735,14 @@ Slips of the tongue corrected in the text:
 
 - [00:46:10] said "67 studies"; the text has "77 studies".
 
+- [00:33:05] said "the AER, the QJE and another journal"; the text has "the QJE and the Review of Economics and Statistics".
+
 ## Transcript: Lecture 11, Limitations of Meta-Analysis (Christchurch, 2025)
 URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-11/
 Licence: CC BY 4.0
 
 Transcript. Lecture 11, Limitations of Meta-Analysis, from Research Synthesis in Economics and Finance,
-given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers, negations and hedges are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. Times
+given by Tomas Havranek at the University of Canterbury, Christchurch, in February and March 2025. An edited machine transcript. Tomas Havranek's words are edited like an authorized interview: in standard written English, without fillers, repetitions and unfinished sentences; numbers and negations are kept as spoken. Course administration and a few passages are left out; […] marks a cut, and editorial notes are in square brackets. Questions and comments from the audience are labelled Participant or summarised in brackets; participants are not named, except the host, Bob Reed, where Tomas Havranek refers to him. Times
 are positions in the lecture recording; the
 slides follow the same order. What is said here is spoken and
 informal; the written guidelines take precedence.
@@ -51821,7 +51833,7 @@ Then you need to be careful. Even if the rounding is relatively small, it will g
 
 You can see these spikes at one and two in t-curves. There is a way to de-round it, which you need to think about if your primary goal is to look at publication bias or p-hacking using these t-curves or z-curves, the way Abel Brodeur does in his papers. It's not exactly a meta-analysis; it's meta-research. But even in any classical meta-analysis, potentially, especially if people ask about this, it could be nice to have a robustness check when you de-round.
 
-When it's rounded, something is cut off from the decimal points. You can add a small amount of random noise, but the same amount for all estimates, so that you have a consistent way in which all of these papers are rounded, let's say to 5 decimal points. There are ways to do this. On the slide [Rounding], the figure on the right-hand side was produced essentially this way.
+When it's rounded, something is cut off from the decimal points. You can add a small amount of random noise, so that you have a consistent way in which all of these papers are rounded, let's say to 5 decimal points. There are ways to do this. On the slide [Rounding], the figure on the right-hand side was produced essentially this way.
 
 There are ways to deal with this rounding issue. For normal meta-analyses, rounding is typically not a big issue. But if you focus on caliper tests, it could have a large effect. There is a comment on one paper by Abel Brodeur. If you read the original paper in AEJ Applied, from 2016, he uses these de-rounding techniques.
 
@@ -51945,7 +51957,7 @@ We can almost never just compare two means, for the control and treatment groups
 
 #### Attenuation bias 00:52:12
 
-Last time I also talked a little bit about this attenuation bias issue, and I want to stress it a little bit more. When we do meta-analysis, we are used to stressing exaggeration or overestimation because of publication bias. We like to stress that the estimates which are published are likely too large because the ones which are insignificant are often not reported. But we need to be aware that there is always also this opposite problem, called attenuation bias or regression dilution. Any time you do a regression, your coefficient will be biased toward zero a little bit.
+Last time I also talked a little bit about this attenuation bias issue, and I want to stress it a little bit more. When we do meta-analysis, we are used to stressing exaggeration or overestimation because of publication bias. We like to stress that the estimates which are published are likely too large because the ones which are insignificant are often not reported. But we need to be aware that there is always also this opposite problem, called attenuation bias or regression dilution. Any time you do a regression, measurement error in your regressor will bias your coefficient toward zero a little bit.
 
 I think it's fair to say that because you will always have some random measurement error. You can also have non-random measurement error, but you always have some mistakes in measurement, even if you look at macroeconomic data like GDP or micro surveys in labor economics, or any kind of regression analysis. You will have publication bias, which pushes your literature upwards, away from zero. But you also have attenuation bias, or regression dilution, which works the other way.
 
@@ -52045,7 +52057,7 @@ Especially with Tom [Stanley], we always have this issue: "You show us so many m
 
 01:16:04 Tomas Havranek: Right. But if you add study-level dummies, you capture a lot of this heterogeneity. It's not perfect, and you look at somewhat weird within-study variation, but you do take a lot of heterogeneity explicitly into account with these fixed effects. In this case, it does matter, but the corrected mean is not affected dramatically. It should give you some peace of mind when you want to focus on your OLS coefficient.
 
-I think more work is needed on what the baseline should be. I would, of course, say something like MAIVE, the instrumental approach. Then, as Bob said, look at the assumptions of these techniques. PEESE works well when heterogeneity is small; other techniques work better when heterogeneity is large. In general, I think the consensus is that selection models like Andrews and Kasy or p-uniform* work better with heterogeneity, while meta-regression models work better when there is a lower degree of heterogeneity. I don't think it's fully true, but that's the general consensus.
+I think more work is needed on what the baseline should be. I would, of course, say MAIVE, the instrumental approach. Then, as Bob said, look at the assumptions of these techniques. PEESE works well when heterogeneity is small; other techniques work better when heterogeneity is large. In general, I think the consensus is that selection models like Andrews and Kasy or p-uniform* work better with heterogeneity, while meta-regression models work better when there is a lower degree of heterogeneity. I don't think it's fully true, but that's the general consensus.
 
 #### P-hacking 01:17:45
 
