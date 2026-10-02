@@ -29,6 +29,8 @@ Frontmatter
     interviewer            for rozhovory
     issue                  for Lilie, e.g. "2025/10"
     date_precision         "month" when only the issue month is known
+    updated                YYYY-MM-DD, the author's last revision of a text already published
+                           here; becomes dateModified (the publication date stays)
     body_note              rendered as an editorial note above the text
     description            meta and JSON-LD description; wins over the perex there
     mirror                slug of a second copy at /notes/<slug>/ (English research
@@ -792,6 +794,8 @@ def write_item(a):
         **({"dateCreated": a["date"], "datePublished": a["released"]}
            if (not unpub and a.get("genre") == "advisor_opinion" and a.get("released"))
            else {("dateCreated" if unpub else "datePublished"): a["date"]}),
+        # `updated`: the day the author last revised a text already published here
+        **({"dateModified": a["updated"]} if a.get("updated") else {}),
         "isAccessibleForFree": True,
         "articleSection": SECTIONS[a["category"]]["title"],
         # This archive's own writing, so it carries the site's licence like everything
