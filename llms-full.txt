@@ -44464,6 +44464,7 @@ Osaka, on 16 March 2026, on site and online. Tomas Havranek, Charles University,
 
 Slides (PDF)
 Recordings
+Transcript
 
 From the announcement:
 
@@ -45999,7 +46000,7 @@ There are going to be millions and billions of regressions. To do it in a feasib
 
 It is one way to handle this collinearity problem. It is not a perfect way. We have an example in R of how to implement it, which you can, by the way, use in any regression analysis when you have many, many variables. The colors are the regression signs, and you can see how robust the signs are. Each column is a different regression with different variables. Some models have just a few variables, but we can also put all of them into the model, so that is some millions, or thousands, of models.
 
-The weight on the horizontal axis is proportional to parsimony and model fit. It is something like information criteria, or adjusted R-squared, that is, the model fit given its complexity. The best models are on the left. You can see that standard error is important,. […]
+The weight on the horizontal axis is proportional to parsimony and model fit. It is something like information criteria, or adjusted R-squared, that is, the model fit given its complexity. The best models are on the left. You can see that standard error is important. […]
 
 This will give you the most important factors related to the reported beauty premium in the literature. I think it is a nice way to summarize the results. Then you can look at the individual variables. You have these millions of regressions, so you can look at the distribution of the variables. Taisuke has much better visualizations in his paper, much more beautiful than this. For example, this one is from a different paper. This is how it looks: what you report is the posterior mean, standard deviation, and inclusion probability, which is something close to statistical significance in a Bayesian setting, let's say, for each variable. Again, you have fully annotated code in the package.
 
@@ -48849,6 +48850,9 @@ Slips of the tongue corrected in the text:
 
 - [00:39:29] said "what you have in the future"; the text has "what you had in the past".
 
+All lectures ·
+Next: Lecture 2, Applied Meta-Analysis Examples
+
 ## Transcript: Lecture 2, Applied Meta-Analysis Examples (Christchurch, 2025)
 URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-2/
 Licence: CC BY 4.0
@@ -49226,6 +49230,10 @@ Slips of the tongue corrected in the text:
 - [00:57:47] said "20-year fixation"; the text has "30-year fixation".
 
 - [01:27:11] said "0.04"; the text has "-0.04".
+
+Previous: Lecture 1, Introduction to Meta-Analysis ·
+All lectures ·
+Next: Lecture 3, Literature Search
 
 ## Transcript: Lecture 3, Literature Search (Christchurch, 2025)
 URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-3/
@@ -49605,6 +49613,10 @@ Slips of the tongue corrected in the text:
 
 - [00:49:48] said "about 150 studies"; the text has "about 120 studies".
 
+Previous: Lecture 2, Applied Meta-Analysis Examples ·
+All lectures ·
+Next: Lecture 4, Data Collection
+
 ## Transcript: Lecture 4, Data Collection (Christchurch, 2025)
 URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-4/
 Licence: CC BY 4.0
@@ -49945,6 +49957,10 @@ Slips of the tongue corrected in the text:
 
 - [00:10:12] said "percentage points"; the text has "percent".
 
+Previous: Lecture 3, Literature Search ·
+All lectures ·
+Next: Lecture 5, Basic Meta-Analysis Tools
+
 ## Transcript: Lecture 5, Basic Meta-Analysis Tools (Christchurch, 2025)
 URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-5/
 Licence: CC BY 4.0
@@ -50276,6 +50292,10 @@ Slips of the tongue corrected in the text:
 - [01:14:48] said "Federal Drug Administration"; the text has "Food and Drug Administration".
 
 - [00:57:43] said "huge outliers in your data"; the text has "huge weights for individual studies".
+
+Previous: Lecture 4, Data Collection ·
+All lectures ·
+Next: Lecture 7, Publication Bias
 
 ## Transcript: Lecture 7, Publication Bias (Christchurch, 2025)
 URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-7/
@@ -50665,6 +50685,10 @@ Slips of the tongue corrected in the text:
 
 - [00:25:13] said "an experiment"; the text has "a field experiment".
 
+Previous: Lecture 5, Basic Meta-Analysis Tools ·
+All lectures ·
+Next: Lecture 8, p-hacking
+
 ## Transcript: Lecture 8, p-hacking (Christchurch, 2025)
 URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-8/
 Licence: CC BY 4.0
@@ -50938,6 +50962,10 @@ Slips of the tongue corrected in the text:
 - [00:30:27] said "0.9 is an extreme value"; the text has "0.8 is an extreme value".
 
 - [00:40:10] said "selection technique"; the text has "correction technique".
+
+Previous: Lecture 7, Publication Bias ·
+All lectures ·
+Next: Lecture 9, Heterogeneity
 
 ## Transcript: Lecture 9, Heterogeneity (Christchurch, 2025)
 URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-9/
@@ -51381,6 +51409,10 @@ Slips of the tongue corrected in the text:
 
 - [01:28:56] said "Federal Reserve Bank of New Zealand"; the text has "Reserve Bank of New Zealand".
 
+Previous: Lecture 8, p-hacking ·
+All lectures ·
+Next: Lecture 10, Meta-Research
+
 ## Transcript: Lecture 10, Meta-Research (Christchurch, 2025)
 URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-10/
 Licence: CC BY 4.0
@@ -51738,6 +51770,10 @@ Slips of the tongue corrected in the text:
 - [00:46:10] said "67 studies"; the text has "77 studies".
 
 - [00:33:05] said "the AER, the QJE and another journal"; the text has "the QJE and the Review of Economics and Statistics".
+
+Previous: Lecture 9, Heterogeneity ·
+All lectures ·
+Next: Lecture 11, Limitations of Meta-Analysis
 
 ## Transcript: Lecture 11, Limitations of Meta-Analysis (Christchurch, 2025)
 URL: https://meta-analysis.cz/teaching/christchurch-2025/transcripts/lecture-11/
@@ -52114,6 +52150,9 @@ Why don't you base your policy implications on this one good primary study, the 
 01:27:39 Tomas Havranek: That's the same. I think that's why we need meta-analysis. In medicine, meta-analysis is the gold standard of evidence. Then there are RCTs, and below that is observational stuff.
 
 In economics and finance, I think we still have plenty of room to do better meta-research, to be more useful to society in general, and also to get more recognition from our colleagues in the profession.
+
+Previous: Lecture 10, Meta-Research ·
+All lectures
 
 ## Notes for meta-analysis theses
 URL: https://meta-analysis.cz/ai/thesis-notes.md
