@@ -194,6 +194,13 @@ main { padding: 2.75rem 0 4rem; }
 .foot .sep { margin-left: auto; }
 
 @media (max-width: 34rem) {
+  /* the five section links stay on one line on a phone: a second row for "Posts" cost
+     a quarter of the first screen. Larger system text scrolls the row instead. */
+  .masthead .wrap { padding-top: 1rem; padding-bottom: 0.9rem; row-gap: 0.55rem; }
+  .nav { flex-wrap: nowrap; width: 100%; justify-content: space-between; gap: 0 0.6rem;
+         overflow-x: auto; scrollbar-width: none; }
+  .nav::-webkit-scrollbar { display: none; }
+  .nav a { white-space: nowrap; flex: none; }
   .lede h1 { font-size: 1.65rem; }
   .article-head h1 { font-size: 1.5rem; }
   .prose { font-size: 1.06rem; }
