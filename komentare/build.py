@@ -77,6 +77,10 @@ CANON_ID = {
 }
 BASE = f"{SITE}/komentare"      # absolute: canonical, og:url, JSON-LD
 PATH = "/komentare"             # root-relative: every internal link and asset
+# The stylesheet is linked as style.css?v=<hash of its content>. Pages served it with
+# max-age=600 under a fixed name, so after a style change a reload kept the old look for
+# up to ten minutes. Line endings are normalised so a Windows checkout gives the same hash.
+CSS_V = hashlib.sha256((KDIR / "style.css").read_bytes().replace(b"\r\n", b"\n")).hexdigest()[:10]
 
 # The site is CC BY 4.0 throughout, Czech and English alike. This archive used to say
 # something narrower to machines -- that text and metadata "may be freely indexed, quoted
@@ -544,7 +548,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}" />
-<link rel="stylesheet" href="{PATH}/style.css" />
+<link rel="stylesheet" href="{PATH}/style.css?v={CSS_V}" />
 <link rel="canonical" href="{canonical_link or canonical}" />
 <link rel="alternate" type="application/rss+xml" title="{rss_title}" href="{PATH}/feed.xml" />
 <meta property="og:site_name" content="Komentáře — {SITE_AUTHORS}" />
@@ -2299,7 +2303,7 @@ def write_src_index(items):
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Markdown sources — Komentáře</title>
 <meta name="description" content="Plain Markdown source of every file-backed item in the Komentare archive." />
-<link rel="stylesheet" href="{PATH}/style.css" />
+<link rel="stylesheet" href="{PATH}/style.css?v={CSS_V}" />
 <link rel="canonical" href="{BASE}/src/" />
 <meta property="og:url" content="{BASE}/src/" />
 <meta name="robots" content="noindex, follow" />
