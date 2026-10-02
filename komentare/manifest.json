@@ -45,18 +45,18 @@
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 2337687,
-   "sha256": "35a6ce0a1f44be87698a0373e467d2df86f4b0d435dcbdf45d8c390345f23181"
+   "bytes": 2338006,
+   "sha256": "5e17f1f113117da4af782ba5a51af4966507207d54ceea1d18dc35cc82e4fca6"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 2359460,
-   "sha256": "48c789bb18f6e15022ec8b3ba61facab9737122313dd40f04dff932ba8105059"
+   "bytes": 2359779,
+   "sha256": "4992586738dd658c98303f3e9e48327649275d1edaf38b71249fadbfe94cfceb"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
-   "bytes": 2111071,
-   "sha256": "b1d01e97550385bf565c668063cff90749f8a34143b6fce455d0958d9f9ac703"
+   "bytes": 2111389,
+   "sha256": "16ac165fa1fe1685a60d17afbbe66b5a5c4ee85024f97b0143c23398b0b2eedb"
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
@@ -65,8 +65,8 @@
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 2308290,
-   "sha256": "b72c365b43b0bd52b374047ad21e50e4ff9e5078d04e6a1705bc84138525c9ab"
+   "bytes": 2308637,
+   "sha256": "1c8901a9a4687cb03d3e987761752618394945960fc8ac238924021e3ce779a1"
   }
  },
  "generated_from": [
