@@ -2245,6 +2245,33 @@ def _span(items, social):
     return f"{min(ds)}/{max(ds)}"
 
 
+# Short, topical addresses for print (the Lilie column gives meta-analysis.cz/komentare/gymnazium).
+# Each is a noindex redirect to the full address, which stays the only indexed one; generate_seo.py
+# leaves noindex pages out of the sitemap, and the deploy's IndexNow ping skips them. An address
+# names a topic: it may later list several texts on it, but never moves to another topic.
+SHORT = {"gymnazium": "litomysl-proc-vsechny-ctyri-deti-na-gymnazium"}
+
+
+def write_short_links():
+    for short, slug in SHORT.items():
+        a = BY_SLUG.get(slug)
+        if not a or not has_page(a):
+            sys.exit(f"error: short address /{short}/ points at a missing page: {slug}")
+        to = f"{BASE}/{slug}/"
+        d = KDIR / short
+        d.mkdir(exist_ok=True)
+        (d / "index.html").write_text(
+            '<!doctype html>\n<html lang="cs">\n<meta charset="utf-8">\n'
+            '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+            f'<title>{esc(a["headline"])}</title>\n'
+            f'<link rel="canonical" href="{to}">\n'
+            '<meta name="robots" content="noindex,follow">\n'
+            f'<meta http-equiv="refresh" content="0; url={to}">\n'
+            f'<script>location.replace("{to}");</script>\n'
+            f'<p>Pokud vás prohlížeč nepřesměroval, <a href="{to}">pokračujte zde</a>.</p>\n',
+            encoding="utf-8", newline="\n")
+
+
 def write_data_page(items, social=()):
     """A landing page for the corpus itself, carrying schema.org Dataset markup.
     Without it the bulk files are only discoverable from a footer line; with it a
@@ -2465,7 +2492,7 @@ def main():
     # slug-backed, so the sweep must spare it like the other generated directories.
     # "ask" is the hand-written "Zeptejte se AI" question page; web_meta/ask_worker answers it.
     live = ({a["slug"] for a in items if has_page(a)} | set(SECTIONS)
-            | {"data", "posts", "ze-siti", "social-img", "item-img", "files", "ask"})
+            | {"data", "posts", "ze-siti", "social-img", "item-img", "files", "ask"} | set(SHORT))
     orphans = [d for d in KDIR.iterdir()
                if d.is_dir() and d.name not in live and d.name not in ("src", "__pycache__")]
     for d in orphans:
@@ -2488,6 +2515,7 @@ def main():
     write_feed(items, social)
     n_txt = write_machine_readable(items, social)
     write_data_page(items, social)
+    write_short_links()
     n_src = write_src_index(items)
     n = update_sitemap(items)
 
@@ -2508,10 +2536,12 @@ def check():
     self-managed section cannot pass silently (the site-wide verifier skips it)."""
     import xml.etree.ElementTree as ET
     fails = []
-    # ze-siti/ is a redirect stub left behind when the section moved to /posts/: no
-    # JSON-LD, no chrome, deliberately noindex. Not a page to validate.
+    # ze-siti/ is a redirect stub left behind when the section moved to /posts/, and the
+    # SHORT addresses are redirects too: no JSON-LD, no chrome, deliberately noindex.
+    # Not pages to validate.
     pages = [p for p in KDIR.rglob("index.html")
-             if "src" not in p.parts and "ze-siti" not in p.parts]
+             if "src" not in p.parts and "ze-siti" not in p.parts
+             and not (set(p.parts) & set(SHORT))]
     for p in pages:
         t = p.read_text(encoding="utf-8")
         m = re.search(r'<script type="application/ld\+json">' + chr(92) + 'n(.*?)' + chr(92) + 'n</script>', t, re.S)

@@ -59,5 +59,22 @@ as you give attribution to meta-analysis.cz. You do not need to ask.</p>
 <a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
 <a href="/sitemap.xml">sitemap.xml</a> &middot; <a href="/LICENSE">LICENSE</a></p>
 </footer>
+<script>
+/* A mistyped short address from print (/komentare/Gymnázium, /gymnazium, /komentáře/gymnázium):
+   lower case, no diacritics, no trailing slash or .html; a known address is followed, and a
+   /komentare/ path that differed only in case or accents is tried once in its plain form. The
+   page still answers 404, so search engines see no change. */
+(function () {
+  try {
+    var raw = location.pathname;
+    var p = decodeURIComponent(raw).normalize("NFD").replace(/[̀-ͯ]/g, "")
+      .toLowerCase().replace(/\.html?$/, "").replace(/\/+$/, "");
+    var map = { "/komentare/gymnazium": "/komentare/gymnazium/", "/gymnazium": "/komentare/gymnazium/",
+                "/komentare": "/komentare/" };
+    var to = map[p] || (p.indexOf("/komentare/") === 0 && p + "/" !== raw ? p + "/" : "");
+    if (to && to !== raw) location.replace(to + location.search + location.hash);
+  } catch (e) {}
+})();
+</script>
 </body>
 </html>

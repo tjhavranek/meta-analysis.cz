@@ -237,6 +237,8 @@ jobs:
           for f in $CHANGED; do
             # root index.html -> canonical "/", project index.html -> "proj/"
             if [ "$f" = "index.html" ]; then continue; fi
+            # a noindex page (a redirect such as /komentare/gymnazium/) is not for search engines
+            if [ -f "$f" ] && head -c 3000 "$f" | grep -q 'name="robots" content="noindex'; then continue; fi
             u=$(echo "$f" | sed 's|/index.html$|/|')
             URLS="$URLS, \"https://meta-analysis.cz/$u\""
           done
