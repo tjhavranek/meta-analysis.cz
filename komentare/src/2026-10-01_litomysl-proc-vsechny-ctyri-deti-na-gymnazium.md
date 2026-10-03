@@ -5,7 +5,7 @@ date: "2026-10-01"
 updated: "2026-10-03"
 headline: "Proč chceme mít všechny čtyři děti na litomyšlském gymnáziu"
 byline: "Tomáš Havránek"
-word_count: "1238"
+word_count: "1233"
 title_tag: "Proč chceme mít všechny čtyři děti na Gymnáziu Aloise Jiráska v Litomyšli"
 description: "Proč chceme mít všechny čtyři děti na Gymnáziu Aloise Jiráska v Litomyšli: zkušenost rodiče a absolventa, fakta, přijímačky 2027, dny otevřených dveří."
 og_image: "2026-10-01_litomysl-gymnazium-foto.jpg"
@@ -27,7 +27,7 @@ Náš Dan přešel ze Zámecké, kde mu bylo dobře. První dva měsíce v prim
 
 Proč gymnázium? V éře umělé inteligence potřebují děti víc než dřív kritické myšlení, přehled, trénovanou paměť a schopnost strukturovaně mluvit o složitých problémech bez internetu. My i naše děti máme zkušenost se [školami na Novém Zélandu](https://meta-analysis.cz/komentare/litomysl-srovnani-skol-litomysl-novy-zeland/), jež jsou v mnoha ohledech příjemnější a určitě jednodušší. Přesto jsem přesvědčen, že gymnázium děti do dnešního světa připraví lépe.
 
-Na litomyšlském gymnáziu občas přednáším a studenti mají parádní dotazy, jaké slýchám od prváků na Univerzitě Karlově. Úspěšnost přijetí na vysoké školy byla podle výročních zpráv školy 100 % v roce 2024 a 95 % v roce 2025. A třeba u státní maturity 2026 mě potěšila matematika. Zvolilo si ji 42 % zdejších maturantů, o čtvrtinu víc než na gymnáziích v celé republice. Z loňských absolventů mě zaujal Jakub Očenáš, který jako oktaván získal celostátní Cenu Učené společnosti pro středoškoláky. Studenti jezdí na výměny do Francie, Německa i na Tchaj-wan a někteří si dávají semestr nebo rok v zahraničí.
+Na litomyšlském gymnáziu občas přednáším a studenti mají parádní dotazy, jaké slýchám od prváků na Univerzitě Karlově. Ostatně úspěšnost přijetí na vysoké školy se v posledních letech drží na 95 až 100 %. A třeba u státní maturity 2026 mě potěšila matematika. Zvolilo si ji 42 % zdejších maturantů, o čtvrtinu víc než na gymnáziích v celé republice. Z loňských absolventů mě zaujal Jakub Očenáš, který jako oktaván získal celostátní Cenu Učené společnosti pro středoškoláky. Studenti jezdí na výměny do Francie, Německa i na Tchaj-wan a někteří si dávají semestr nebo rok v zahraničí.
 
 Špičkové vzdělání mohou mít děti i v malém městě, pokud tam chtějí žít lidé, kteří by jinak mimo velké město nešli. Litomyšl taková je. Fyziku tu třeba učí docent z Univerzity Hradec Králové, který pomáhá řídit celorepublikovou Fyzikální olympiádu. Vymýšlí pokusy pro výuku a píše o nich do amerických fyzikálních časopisů. V jednom článku ukazuje, že učebnicové vysvětlení letu letadla jen pomocí Bernoulliho rovnice nesedí, a popisuje jednoduchý přístroj, na kterém to studenti pochopí lépe.
 
