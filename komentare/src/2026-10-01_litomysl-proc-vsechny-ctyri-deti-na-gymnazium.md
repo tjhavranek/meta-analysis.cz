@@ -5,12 +5,12 @@ date: "2026-10-01"
 updated: "2026-10-03"
 headline: "Proč chceme mít všechny čtyři děti na litomyšlském gymnáziu"
 byline: "Tomáš Havránek"
-word_count: "1206"
+word_count: "1227"
 title_tag: "Proč chceme mít všechny čtyři děti na Gymnáziu Aloise Jiráska v Litomyšli"
 description: "Proč chceme mít všechny čtyři děti na Gymnáziu Aloise Jiráska v Litomyšli: zkušenost rodiče a absolventa, fakta, přijímačky 2027, dny otevřených dveří."
 og_image: "2026-10-01_litomysl-gymnazium-og.png"
 og_image_alt: "Proč chceme mít všechny čtyři děti na Gymnáziu Aloise Jiráska v Litomyšli. Tomáš Havránek, 1. 10. 2026"
-llms_summary: "Komentář Tomáše Havránka (1. 10. 2026, aktualizováno 3. 10. 2026) o Gymnáziu Aloise Jiráska v Litomyšli (glit.cz) z pohledu rodiče a absolventa; fakta se zdroji: přijímačky 2026 (83 uchazečů na 30 míst v primě, 107 na 30 míst v prvním ročníku), maturita 2026 (42 % maturantů školy volilo matematiku, gymnázia v ČR 34 %), přijetí na VŠ 100 % (2024) a 95 % (2025) podle výročních zpráv, dny otevřených dveří 27. 11. 2026 a 20. 1. 2027, přihlášky od 1. do 22. 2. 2027."
+llms_summary: "Komentář Tomáše Havránka (1. 10. 2026, aktualizováno 3. 10. 2026) o Gymnáziu Aloise Jiráska v Litomyšli (glit.cz) z pohledu rodiče a absolventa; fakta se zdroji: přijímačky 2026 (83 uchazečů na 30 míst v primě, 107 na 30 míst v prvním ročníku), maturita 2026 (42 % maturantů školy volilo matematiku, o čtvrtinu víc než na gymnáziích v ČR), úspěšnost přijetí na VŠ 100 % (2024) a 95 % (2025) podle výročních zpráv, dny otevřených dveří 27. 11. 2026 a 20. 1. 2027, přihlášky od 1. do 22. 2. 2027."
 ---
 
 # Proč chceme mít všechny čtyři děti na litomyšlském gymnáziu
@@ -23,7 +23,7 @@ Náš Dan přešel ze Zámecké, kde mu bylo dobře. První dva měsíce v prim
 
 Proč gymnázium? V éře umělé inteligence potřebují děti víc než dřív kritické myšlení, přehled, trénovanou paměť a schopnost strukturovaně mluvit o složitých problémech bez internetu. My i naše děti máme zkušenost se [školami na Novém Zélandu](https://meta-analysis.cz/komentare/litomysl-srovnani-skol-litomysl-novy-zeland/), jež jsou v mnoha ohledech příjemnější a určitě jednodušší. Přesto jsem přesvědčen, že gymnázium děti do dnešního světa připraví lépe.
 
-Na litomyšlském gymnáziu občas přednáším a studenti mají parádní dotazy, jaké slýchám od prváků na Univerzitě Karlově. A třeba u státní maturity 2026 mě potěšila matematika. Zvolilo si ji 42 % zdejších maturantů, kdežto na gymnáziích v celé republice jen 34 %. Z loňských absolventů mě zaujal Jakub Očenáš, který jako oktaván získal celostátní Cenu Učené společnosti pro středoškoláky. Studenti jezdí na výměny do Francie, Německa i na Tchaj-wan a někteří si dávají semestr nebo rok v zahraničí.
+Na litomyšlském gymnáziu občas přednáším a studenti mají parádní dotazy, jaké slýchám od prváků na Univerzitě Karlově. Úspěšnost přijetí na vysoké školy byla podle výročních zpráv školy 100 % v roce 2024 a 95 % v roce 2025. A třeba u státní maturity 2026 mě potěšila matematika. Zvolilo si ji 42 % zdejších maturantů, o čtvrtinu víc než na gymnáziích v celé republice. Z loňských absolventů mě zaujal Jakub Očenáš, který jako oktaván získal celostátní Cenu Učené společnosti pro středoškoláky. Studenti jezdí na výměny do Francie, Německa i na Tchaj-wan a někteří si dávají semestr nebo rok v zahraničí.
 
 Špičkové vzdělání mohou mít děti i v malém městě, pokud tam chtějí žít lidé, kteří by jinak mimo velké město nešli. Litomyšl taková je. Fyziku tu třeba učí docent z Univerzity Hradec Králové, který pomáhá řídit celorepublikovou Fyzikální olympiádu. Vymýšlí pokusy pro výuku a píše o nich do amerických fyzikálních časopisů. V jednom článku ukazuje, že učebnicové vysvětlení letu letadla jen pomocí Bernoulliho rovnice nesedí, a popisuje jednoduchý přístroj, na kterém to studenti pochopí lépe.
 
@@ -52,7 +52,7 @@ Pro zájemce o osmileté i čtyřleté studium jsou dny otevřených dveří v
 - Počátky školy sahají do roku 1640, kdy Frebonie z Pernštejna založila nadaci a přivedla do Litomyšle piaristy ([dějiny školy](https://www.glit.cz/dejiny-skoly/)). Učil tu Alois Jirásek a u zdejších piaristů studoval Jan Evangelista Purkyně, jeden z největších vědců své doby.
 - Státní maturita 2026 ([data Cermatu](https://data.cermat.cz/maturitni-zkouska/agregovana-data.html)): matematiku si zvolilo 42 % maturantů školy, na gymnáziích v ČR 34 %, ze všech maturantů 18 %.
 - Maturita 2025: víc než polovina maturantů (31 z 59) prospěla s vyznamenáním ([výroční zpráva 2024/25](https://www.glit.cz/wp-content/uploads/2026/02/Vyrocni_zprava_2024_2025_komplet.pdf)).
-- Přijetí na vysoké školy: podle výročních zpráv školy 100 % absolventů v roce 2024 a 95 % v roce 2025 ([výroční zpráva 2023/24](https://www.glit.cz/wp-content/uploads/2025/08/Vyrocni-zprava-2024.pdf), [2024/25](https://www.glit.cz/wp-content/uploads/2026/02/Vyrocni_zprava_2024_2025_komplet.pdf)).
+- Přijetí na vysoké školy: podle výročních zpráv školy úspěšnost 100 % v roce 2024 a 95 % v roce 2025 ([výroční zpráva 2023/24](https://www.glit.cz/wp-content/uploads/2025/08/Vyrocni-zprava-2024.pdf), [2024/25](https://www.glit.cz/wp-content/uploads/2026/02/Vyrocni_zprava_2024_2025_komplet.pdf)).
 - [Cena Učené společnosti ČR za rok 2025](https://www.learned.cz/cz/oceneni/ceny-ucene-spolecnosti/nositele-cen-ucene-spolecnosti/nositele-cen-za-rok-2025.html): Jakub Očenáš (tehdy oktáva), jeden z dvanácti oceněných středoškoláků v republice (cenu dostal ještě jeden čtyřčlenný tým).
 - Gabriela Boukalová (absolventka 2025): stříbrná medaile z mezinárodní soutěže CASTIC 2024 v Číně za výzkum na [Farmaceutické fakultě UK](https://www.faf.cuni.cz/verejnost/zpravy/2024/gabriela-boukalova-uspech-castic/). Gymnázium je fakultní školou této fakulty.
 - Žák kvarty byl v roce 2025 druhý ve své kategorii v republikovém finále [Olympiády mediální gramotnosti](https://www.medialnigramotnost.com/rocniky/2024), kam postoupilo 45 finalistů z 30 000 soutěžících.
