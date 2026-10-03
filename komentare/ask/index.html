@@ -119,16 +119,30 @@
       /\b(je|jak|proc|co|kdy|jaky|jaka|jake|myslite|mysli|nazor|nebo|ale|ze|se|na|ve|inflace)\b/i.test(s) ? "cs" : "en";
   }
   var MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  var MES = ["leden", "únor", "březen", "duben", "květen", "červen", "červenec", "srpen", "září", "říjen",
+             "listopad", "prosinec"];
   function fmtDate(s, lng) {
-    var m = /^([0-9]{4})-([0-9]{2})-([0-9]{2})$/.exec(s || "");
+    var m = /^([0-9]{4})-([0-9]{2})-([0-9]{2})$/.exec(s || ""), y = /^([0-9]{4})-([0-9]{2})$/.exec(s || "");
+    if (y && +y[2] >= 1 && +y[2] <= 12) return (lng === "en" ? MON : MES)[+y[2] - 1] + " " + y[1];   // "únor 2025"
     if (!m) return s || "";
     return lng === "en" ? (+m[3]) + " " + MON[+m[2] - 1] + " " + m[1] : (+m[3]) + ". " + (+m[2]) + ". " + m[1];
   }
   function render(d, lang) {
     var t = T[d.lang || lang] || T.en;
     // several passages of one text share its URL: the text is listed once and cited by one number
+    // an answer lists only the texts it cites, renumbered in order; a note (a decline, the daily
+    // limit) lists the texts closest to the question. Uncited texts read as sources a visitor would
+    // open and find nothing in (3 Oct 2026: florbal columns under a question about a lecture).
+    var cited = null;
+    if (d.mode === "answer") {
+      cited = {};
+      (String(d.answer || "").match(/\[\d+(?:\s*,\s*\d+)*\]/g) || []).forEach(function (g) {
+        g.match(/\d+/g).forEach(function (n) { cited[+n] = 1; });
+      });
+    }
     var srcs = [], num = {}, at = {};
     (d.sources || []).forEach(function (s, i) {
+      if (cited && !cited[i + 1]) return;
       var k = s.url || s.title || String(i);
       if (!at.hasOwnProperty(k)) { at[k] = srcs.length + 1; srcs.push(s); }
       num[i + 1] = at[k];
@@ -229,7 +243,17 @@
     });
   }
   f.addEventListener("submit", function (e) { e.preventDefault(); var t = q.value.trim(); if (t.length > 2) ask(t); });
-  q.addEventListener("keydown", function (e) { if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) f.requestSubmit(); });
+  // Enter sends the question, as in a chat, and Shift+Enter starts a new line; on a touch screen the
+  // Enter key keeps its usual meaning (a new line) and the button sends
+  q.addEventListener("keydown", function (e) {
+    // keyCode 229: Safari ends an IME composition before the Enter that confirms it
+    if (e.key !== "Enter" || e.isComposing || e.keyCode === 229) return;
+    var touch = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
+    if (e.ctrlKey || e.metaKey || (!e.shiftKey && !touch)) {
+      e.preventDefault();
+      if (f.requestSubmit) f.requestSubmit(); else go.click();   // Safari before 16 has no requestSubmit
+    }
+  });
   ex.addEventListener("click", function (e) {
     if (e.target.tagName === "BUTTON" && !busy) { q.value = e.target.textContent; ask(q.value); }
   });
