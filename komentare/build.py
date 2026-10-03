@@ -1038,9 +1038,17 @@ def write_item(a):
                       f'<meta property="og:image:height" content="{oh}" />\n' if ow else "")
                    + f'<meta property="og:image:alt" content="{esc(og_alt)}" />\n'
                    + '<meta name="twitter:card" content="summary_large_image" />\n'
+                   + f'<meta name="twitter:image" content="{og_url}" />\n'
                    + '<meta name="robots" content="max-image-preview:large" />\n')
+        # someone else's photograph carries its author and licence into the graph
+        # (og_image_creator, og_image_credit, og_image_license, og_image_source)
+        credit = {k: v for k, v in (("creator", {"@type": "Person", "name": a["og_image_creator"]}
+                                     if a.get("og_image_creator") else None),
+                                    ("creditText", a.get("og_image_credit")),
+                                    ("license", a.get("og_image_license")),
+                                    ("acquireLicensePage", a.get("og_image_source"))) if v}
         node["image"] = ([{"@type": "ImageObject", "url": og_url,
-                           **({"width": ow, "height": oh} if ow else {})}]
+                           **({"width": ow, "height": oh} if ow else {}), **credit}]
                          + node.get("image", []))
 
     # The note is authored prose and routinely carries a link to a hosted PDF or to a

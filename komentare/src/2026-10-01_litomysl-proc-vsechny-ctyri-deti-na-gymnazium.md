@@ -5,11 +5,15 @@ date: "2026-10-01"
 updated: "2026-10-03"
 headline: "Proč chceme mít všechny čtyři děti na litomyšlském gymnáziu"
 byline: "Tomáš Havránek"
-word_count: "1227"
+word_count: "1238"
 title_tag: "Proč chceme mít všechny čtyři děti na Gymnáziu Aloise Jiráska v Litomyšli"
 description: "Proč chceme mít všechny čtyři děti na Gymnáziu Aloise Jiráska v Litomyšli: zkušenost rodiče a absolventa, fakta, přijímačky 2027, dny otevřených dveří."
-og_image: "2026-10-01_litomysl-gymnazium-og.png"
-og_image_alt: "Proč chceme mít všechny čtyři děti na Gymnáziu Aloise Jiráska v Litomyšli. Tomáš Havránek, 1. 10. 2026"
+og_image: "2026-10-01_litomysl-gymnazium-foto.jpg"
+og_image_alt: "Budova Gymnázia Aloise Jiráska v Litomyšli"
+og_image_creator: "Tadeáš Bednarz"
+og_image_credit: "Foto: Tadeáš Bednarz, Wikimedia Commons, CC BY-SA 4.0 (oříznuto)"
+og_image_license: "https://creativecommons.org/licenses/by-sa/4.0/"
+og_image_source: "https://commons.wikimedia.org/wiki/File:Litomy%C5%A1l,_Gymn%C3%A1zium_Aloise_Jir%C3%A1ska_%282019%29_03.jpg"
 llms_summary: "Komentář Tomáše Havránka (1. 10. 2026, aktualizováno 3. 10. 2026) o Gymnáziu Aloise Jiráska v Litomyšli (glit.cz) z pohledu rodiče a absolventa; fakta se zdroji: přijímačky 2026 (83 uchazečů na 30 míst v primě, 107 na 30 míst v prvním ročníku), maturita 2026 (42 % maturantů školy volilo matematiku, o čtvrtinu víc než na gymnáziích v ČR), úspěšnost přijetí na VŠ 100 % (2024) a 95 % (2025) podle výročních zpráv, dny otevřených dveří 27. 11. 2026 a 20. 1. 2027, přihlášky od 1. do 22. 2. 2027."
 ---
 
@@ -61,3 +65,5 @@ Pro zájemce o osmileté i čtyřleté studium jsou dny otevřených dveří v
 - Ve školním roce 2024/25 působila na škole americká jazyková asistentka z Fulbrightova programu. Výměny vedou do Francie (Erasmus+), Německa a na Tchaj-wan (partnerství přes 16 let) a někteří studenti tráví semestr nebo rok v zahraničí ([výroční zpráva 2024/25](https://www.glit.cz/wp-content/uploads/2026/02/Vyrocni_zprava_2024_2025_komplet.pdf)).
 - Studenti chodí na vědecké workshopy do firmy Contipro a v mezinárodním programu GLOBE, který zaštiťuje NASA, sbírají data o přírodě.
 - Dny otevřených dveří: pátek 27. 11. 2026 a středa 20. 1. 2027, prohlídky v 10, 13, 14 a 15 hodin, nutná registrace. Přihlášky na střední školy se podávají od 1. do 22. února 2027.
+
+*Foto v náhledu: [Tadeáš Bednarz, Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Litomy%C5%A1l,_Gymn%C3%A1zium_Aloise_Jir%C3%A1ska_%282019%29_03.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), oříznuto.*

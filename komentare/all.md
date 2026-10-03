@@ -61,6 +61,8 @@ Pro zájemce o osmileté i čtyřleté studium jsou dny otevřených dveří v
 - Studenti chodí na vědecké workshopy do firmy Contipro a v mezinárodním programu GLOBE, který zaštiťuje NASA, sbírají data o přírodě.
 - Dny otevřených dveří: pátek 27. 11. 2026 a středa 20. 1. 2027, prohlídky v 10, 13, 14 a 15 hodin, nutná registrace. Přihlášky na střední školy se podávají od 1. do 22. února 2027.
 
+*Foto v náhledu: [Tadeáš Bednarz, Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Litomy%C5%A1l,_Gymn%C3%A1zium_Aloise_Jir%C3%A1ska_%282019%29_03.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), oříznuto.*
+
 ---
 
 ## Florbal v Litomyšli pro děti už od čtyř let. Začít se dá kdykoli
