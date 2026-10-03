@@ -9,6 +9,7 @@ headline: "Poděkování řediteli a učitelům žluté školy"
 byline: "Tomáš Havránek"
 source: "draft"
 word_count: "400"
+related: "litomysl-proc-vsechny-ctyri-deti-na-gymnazium"
 ---
 
 # Poděkování řediteli a učitelům žluté školy

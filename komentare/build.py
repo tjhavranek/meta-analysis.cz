@@ -380,8 +380,15 @@ def md_to_html(md, figs=None):
             # Every heading gets a stable id, so a long text can carry its own table of
             # contents ("[Průběh](#prubeh)") and a reader, a search engine or an assistant
             # can link straight to one section instead of to the top of the page.
-            hid = _heading_id(m.group(2), used_ids)
-            out.append(f'<h{lvl} id="{hid}">{_inline(m.group(2))}</h{lvl}>')
+            # "## Visible text {#anchor}": the anchor stays when the heading is reworded
+            mx = re.match(r"^(.*?)\s*\{#([a-z0-9][a-z0-9-]*)\}\s*$", m.group(2))
+            htext = mx.group(1) if mx else m.group(2)
+            if mx:
+                hid = mx.group(2)
+                used_ids.add(hid)
+            else:
+                hid = _heading_id(htext, used_ids)
+            out.append(f'<h{lvl} id="{hid}">{_inline(htext)}</h{lvl}>')
             i += 1
             continue
         # Authors separate list items with a blank line ("loose list"), which every
@@ -747,6 +754,17 @@ def listing(items, show_cat):
 
 # ------------------------------------------------------------------ writers ---
 
+def related_html(a, en=False):
+    """`related: slug | slug`: a short list of texts on the same subject. Only slugs that have a
+    page here are linked; the text of the item itself does not change."""
+    rel = [BY_SLUG[x] for x in _split(a.get("related", "")) if x in BY_SLUG and has_page(BY_SLUG[x])]
+    if not rel:
+        return ""
+    links = ", ".join(f'<a href="{PATH}/{r["slug"]}/">{esc(r.get("title_tag") or r["headline"])}</a>' for r in rel)
+    return (f'      <div class="provenance related"><p>{"Related" if en else "Související"}: '
+            f'{links}.</p></div>\n')
+
+
 def write_item(a):
     canonical = f"{BASE}/{a['slug']}/"
     # `mirror: "<slug>"` means this English text is ALSO published at /notes/<slug>/, the
@@ -884,8 +902,14 @@ def write_item(a):
     plain = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", body_html)).strip()
     # `description:` wins where a perex is too terse to tell a search result what the item
     # is, e.g. a blog's tagline of bare numbers
+    # The fallback skips a leading editorial note in brackets ("(vyjde v listopadové Lilii…)"),
+    # which says where the text appears, not what it says, and drops the space that removing
+    # a link's tags left before punctuation ("v Litomyšli ."). 3 Oct 2026.
+    lead = re.sub(r"^\s*<p>\s*(?:<em>)?\s*\([^<]*\)\s*(?:</em>)?\s*</p>", "", body_html, count=1)
+    plain_d = re.sub(r"\s+([.,;:!?)])", r"\1",
+                     re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", lead)).strip())
     desc = (a.get("description") or a.get("perex")
-            or ((plain[:190].rsplit(" ", 1)[0] + "…") if len(plain) > 190 else plain))
+            or ((plain_d[:190].rsplit(" ", 1)[0] + "…") if len(plain_d) > 190 else plain_d))
     node["description"] = desc
     if a.get("perex"):
         node["abstract"] = a["perex"]
@@ -1003,6 +1027,21 @@ def write_item(a):
     figs = (_figs + "\n") if _figs else ""
     if _figfiles:
         node["image"] = [f"{SITE}{PATH}/item-img/{f}" for f in _figfiles]
+    og_head = ""
+    if a.get("og_image"):
+        # a card for link previews and Discover: og/twitter tags, and the image in the graph
+        og_url = f"{SITE}{PATH}/item-img/{a['og_image']}"
+        ow, oh = _img_size(KDIR / "item-img" / a["og_image"])
+        og_alt = a.get("og_image_alt") or a["headline"]
+        og_head = (f'<meta property="og:image" content="{og_url}" />\n'
+                   + (f'<meta property="og:image:width" content="{ow}" />\n'
+                      f'<meta property="og:image:height" content="{oh}" />\n' if ow else "")
+                   + f'<meta property="og:image:alt" content="{esc(og_alt)}" />\n'
+                   + '<meta name="twitter:card" content="summary_large_image" />\n'
+                   + '<meta name="robots" content="max-image-preview:large" />\n')
+        node["image"] = ([{"@type": "ImageObject", "url": og_url,
+                           **({"width": ow, "height": oh} if ow else {})}]
+                         + node.get("image", []))
 
     # The note is authored prose and routinely carries a link to a hosted PDF or to a
     # sibling record. Escaping it without running the inline markdown pass shipped the
@@ -1033,7 +1072,7 @@ def write_item(a):
 {body_html}
 {figs}      </div>
       <div class="provenance"><p>{prov}</p></div>
-      <nav class="pager">
+{related_html(a, en)}      <nav class="pager">
         <a href="{PATH}/{a["category"]}/">← {esc(SECTIONS[a["category"]]["title"])}</a>
         <a href="{PATH}/">{"All texts" if en else "Všechny texty"}</a>
       </nav>
@@ -1068,12 +1107,18 @@ def write_item(a):
 
     # some pieces share a printed headline — two letters under one title, or an item
     # inside a shared rubric. Disambiguate the <title> so search results are distinct.
-    tt = a["headline"]
+    tt = a.get("title_tag") or a["headline"]
     if a.get("title_suffix"):
         tt += f' ({a["title_suffix"]})'
+    graph = [node]
+    side = KDIR / "src" / (Path(a["file"]).stem + ".jsonld.json")
+    if side.exists():
+        extra = json.loads(side.read_text(encoding="utf-8"))
+        node.update(extra.get("node", {}))
+        graph += extra.get("graph", [])
     page = shell(f'{tt} — {", ".join(names)}', desc, canonical,
-                 {"@context": "https://schema.org", "@graph": [node]},
-                 body, a["category"], head, lang, canonical_link)
+                 {"@context": "https://schema.org", "@graph": graph},
+                 body, a["category"], head + og_head, lang, canonical_link)
     d = KDIR / a["slug"]
     d.mkdir(exist_ok=True)
     (d / "index.html").write_text(page, encoding="utf-8", newline="\n")
@@ -1396,7 +1441,10 @@ def write_machine_readable(items, social=()):
                     f"[{_tw['headline']}]"
                     f"({BASE + '/' + _tw['slug'] + '/' if has_page(_tw) else _tw.get('url','')})]"
                     if _tw else "")
-            if has_page(a):
+            if has_page(a) and a.get("llms_summary"):
+                L.append(f"- [{a['headline']}]({BASE}/{a['slug']}/) — {out}, {d}{same}. "
+                         f"{a['llms_summary']} Markdown: {BASE}/src/{a['file']}")
+            elif has_page(a):
                 L.append(f"- [{a['headline']}]({BASE}/{a['slug']}/) — {out}, {d}{same}")
             else:
                 L.append(f"- [{a['headline']}]({a.get('url','')}) — {a['outlet']}, {d} "

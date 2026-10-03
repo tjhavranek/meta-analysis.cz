@@ -105,6 +105,7 @@
 - [How this work has been used](https://meta-analysis.cz/impact/): who has reused the datasets, who has cited the papers, and which institutions have used them, with a source named for every claim
 - [Sitemap](https://meta-analysis.cz/sitemap.xml): all pages and PDF full texts
 - [Commentary and interviews](https://meta-analysis.cz/komentare/): op-eds, columns, and interviews (mostly Czech); machine index at https://meta-analysis.cz/komentare/llms.txt
+- [Litomyšl columns](https://meta-analysis.cz/komentare/litomysl/): Czech columns on the town of Litomyšl (schools, transport, sport), including why all four of the authors' children want to attend the Gymnázium Aloise Jiráska in Litomyšl (https://meta-analysis.cz/komentare/litomysl-proc-vsechny-ctyri-deti-na-gymnazium/)
 - [Research notes](https://meta-analysis.cz/notes/): short notes on methods and papers
 - [How to run MAIVE](https://meta-analysis.cz/maive/how-to/): the four columns MAIVE needs, a worked example with every number archived at https://meta-analysis.cz/api/v1/maive-howto.json, the same run in R, and a ready request for the EasyMeta API
 - [Teaching: courses on meta-analysis](https://meta-analysis.cz/teaching/): slides with their LaTeX sources, Stata and R code, data, the Osaka recordings, and edited transcripts of the Osaka and Christchurch lectures, from courses in Chemnitz (2026), Osaka (2026), Stockholm (2025) and Christchurch (2025)

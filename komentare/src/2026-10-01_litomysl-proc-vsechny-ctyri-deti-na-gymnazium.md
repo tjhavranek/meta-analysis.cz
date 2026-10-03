@@ -5,7 +5,12 @@ date: "2026-10-01"
 updated: "2026-10-03"
 headline: "Proč chceme mít všechny čtyři děti na litomyšlském gymnáziu"
 byline: "Tomáš Havránek"
-word_count: "1197"
+word_count: "1203"
+title_tag: "Proč chceme mít všechny čtyři děti na Gymnáziu Aloise Jiráska v Litomyšli"
+description: "Proč chceme mít všechny čtyři děti na Gymnáziu Aloise Jiráska v Litomyšli: zkušenost rodiče a absolventa, fakta, přijímačky 2027, dny otevřených dveří."
+og_image: "2026-10-01_litomysl-gymnazium-og.png"
+og_image_alt: "Proč chceme mít všechny čtyři děti na Gymnáziu Aloise Jiráska v Litomyšli. Tomáš Havránek, 1. 10. 2026"
+llms_summary: "Komentář Tomáše Havránka (1. 10. 2026, aktualizováno 3. 10. 2026) o Gymnáziu Aloise Jiráska v Litomyšli (glit.cz) z pohledu rodiče a absolventa; fakta se zdroji: přijímačky 2026 (83 uchazečů na 30 míst v primě, 107 na 30 míst v prvním ročníku), maturita 2026 (42 % maturantů školy volilo matematiku, gymnázia v ČR 34 %), přijetí na VŠ 100 % (2024) a 95 % (2025) podle výročních zpráv, dny otevřených dveří 27. 11. 2026 a 20. 1. 2027, přihlášky od 1. do 22. 2. 2027."
 ---
 
 # Proč chceme mít všechny čtyři děti na litomyšlském gymnáziu
@@ -40,7 +45,7 @@ Pro zájemce o osmileté i čtyřleté studium jsou dny otevřených dveří v
 
 *Tomáš Havránek je profesor ekonomie na Univerzitě Karlově, výzkumník (research affiliate) Meta-Research Innovation Center na Stanfordově univerzitě a Centre for Economic Policy Research v Londýně. Litomyšlské gymnázium sám absolvoval. Více informací je na [tomashavranek.cz](https://www.tomashavranek.cz/) a [meta-analysis.cz/komentare](https://meta-analysis.cz/komentare/).*
 
-## Fakta a odkazy
+## Gymnázium Aloise Jiráska v Litomyšli: fakta a odkazy {#fakta-a-odkazy}
 
 - Gymnázium Aloise Jiráska v Litomyšli, T. G. Masaryka 590: osmileté studium (po páté třídě) a čtyřleté (po deváté). [Web školy](https://www.glit.cz/), [informace pro uchazeče](https://www.glit.cz/pro-uchazece/).
 - V roce 2026 se o 30 míst v primě ucházelo 83 dětí a o 30 míst v prvním ročníku 107 ([výsledky přijímacích zkoušek](https://www.glit.cz/archiv/vysledky-prijimacich-zkousek-do-primy-a-1-rocniku-2026-27/)).

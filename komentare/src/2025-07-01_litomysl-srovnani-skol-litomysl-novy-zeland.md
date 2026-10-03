@@ -10,6 +10,7 @@ byline: "Tomáš Havránek"
 source: "image"
 word_count: "403"
 body_note: "Rubrika DOPISY ČTENÁŘŮ."
+related: "litomysl-proc-vsechny-ctyri-deti-na-gymnazium"
 ---
 
 # Srovnání základních škol v Litomyšli a na Novém Zélandu

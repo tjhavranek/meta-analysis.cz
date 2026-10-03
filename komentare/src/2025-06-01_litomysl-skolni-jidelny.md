@@ -9,6 +9,7 @@ headline: "Pátek pro planetu ve školní jídelně (pokračování)"
 byline: "Zuzana Havránková"
 source: "draft"
 word_count: "393"
+related: "litomysl-proc-vsechny-ctyri-deti-na-gymnazium"
 ---
 
 # Pátek pro planetu ve školní jídelně (pokračování)

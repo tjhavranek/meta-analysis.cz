@@ -44,7 +44,7 @@ Pro zájemce o osmileté i čtyřleté studium jsou dny otevřených dveří v
 
 *Tomáš Havránek je profesor ekonomie na Univerzitě Karlově, výzkumník (research affiliate) Meta-Research Innovation Center na Stanfordově univerzitě a Centre for Economic Policy Research v Londýně. Litomyšlské gymnázium sám absolvoval. Více informací je na [tomashavranek.cz](https://www.tomashavranek.cz/) a [meta-analysis.cz/komentare](https://meta-analysis.cz/komentare/).*
 
-## Fakta a odkazy
+## Gymnázium Aloise Jiráska v Litomyšli: fakta a odkazy {#fakta-a-odkazy}
 
 - Gymnázium Aloise Jiráska v Litomyšli, T. G. Masaryka 590: osmileté studium (po páté třídě) a čtyřleté (po deváté). [Web školy](https://www.glit.cz/), [informace pro uchazeče](https://www.glit.cz/pro-uchazece/).
 - V roce 2026 se o 30 míst v primě ucházelo 83 dětí a o 30 míst v prvním ročníku 107 ([výsledky přijímacích zkoušek](https://www.glit.cz/archiv/vysledky-prijimacich-zkousek-do-primy-a-1-rocniku-2026-27/)).

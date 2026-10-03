@@ -1,0 +1,37 @@
+{
+ "node": {
+  "about": {"@id": "https://meta-analysis.cz/komentare/litomysl-proc-vsechny-ctyri-deti-na-gymnazium/#gaj"},
+  "alternativeHeadline": "Proč chceme mít všechny čtyři děti na Gymnáziu Aloise Jiráska v Litomyšli",
+  "keywords": ["Gymnázium Aloise Jiráska Litomyšl", "gymnázium Litomyšl", "GAJ Litomyšl", "osmileté gymnázium",
+               "přijímací zkoušky 2027", "dny otevřených dveří"]
+ },
+ "graph": [
+  {
+   "@type": "EducationalOrganization",
+   "@id": "https://meta-analysis.cz/komentare/litomysl-proc-vsechny-ctyri-deti-na-gymnazium/#gaj",
+   "name": "Gymnázium Aloise Jiráska, Litomyšl",
+   "alternateName": ["Gymnázium Aloise Jiráska v Litomyšli", "GAJ Litomyšl", "gymnázium Litomyšl"],
+   "url": "https://www.glit.cz/",
+   "sameAs": ["https://cs.wikipedia.org/wiki/Gymn%C3%A1zium_Aloise_Jir%C3%A1ska"],
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "T. G. Masaryka 590",
+    "addressLocality": "Litomyšl",
+    "postalCode": "570 01",
+    "addressCountry": "CZ"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://meta-analysis.cz/#th",
+   "name": "Tomáš Havránek",
+   "url": "https://www.tomashavranek.cz/",
+   "alumniOf": {"@id": "https://meta-analysis.cz/komentare/litomysl-proc-vsechny-ctyri-deti-na-gymnazium/#gaj"},
+   "sameAs": ["https://orcid.org/0000-0002-3158-2539",
+              "https://scholar.google.com/citations?user=BF0BvBkAAAAJ",
+              "https://ideas.repec.org/f/pha418.html",
+              "https://metrics.stanford.edu/people/tomas-havranek",
+              "https://ies.fsv.cuni.cz/en/contacts/institute-members/78067720"]
+  }
+ ]
+}

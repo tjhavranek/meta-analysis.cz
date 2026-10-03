@@ -1403,6 +1403,10 @@ def main():
            f"- [Sitemap]({BASE}/sitemap.xml): all pages and PDF full texts",
            f"- [Commentary and interviews]({BASE}/komentare/): op-eds, columns, and interviews "
            f"(mostly Czech); machine index at {BASE}/komentare/llms.txt",
+           f"- [Litomyšl columns]({BASE}/komentare/litomysl/): Czech columns on the town of "
+           f"Litomyšl (schools, transport, sport), including why all four of the authors' children "
+           f"want to attend the Gymnázium Aloise Jiráska in Litomyšl "
+           f"({BASE}/komentare/litomysl-proc-vsechny-ctyri-deti-na-gymnazium/)",
            f"- [Research notes]({BASE}/notes/): short notes on methods and papers",
            f"- [How to run MAIVE]({BASE}/maive/how-to/): the four columns MAIVE needs, a worked "
            f"example with every number archived at {BASE}/api/v1/maive-howto.json, the same run "
