@@ -1097,6 +1097,9 @@ def write_item(a):
                f'<meta property="article:published_time" content='
                f'"{a.get("translated") or a.get("released") or (a["date"][:7] if a.get("date_precision") == "month" else a["date"])}"'
                f' />\n')
+            # the day of the author's last revision, as dateModified says in the graph
+            + (f'<meta property="article:modified_time" content="{a["updated"]}" />\n'
+               if a.get("updated") else "")
             # plain-text source of this page, for anything that would rather not parse HTML
             + f'<link rel="alternate" type="text/markdown" '
               f'href="{PATH}/src/{esc(a["file"])}" title="Zdrojový text (Markdown)" />\n')
