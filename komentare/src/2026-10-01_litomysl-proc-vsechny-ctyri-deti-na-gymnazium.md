@@ -5,7 +5,7 @@ date: "2026-10-01"
 updated: "2026-10-03"
 headline: "Proč chceme mít všechny čtyři děti na litomyšlském gymnáziu"
 byline: "Tomáš Havránek"
-word_count: "1233"
+word_count: "1222"
 title_tag: "Proč chceme mít všechny čtyři děti na Gymnáziu Aloise Jiráska v Litomyšli"
 description: "Zkušenost rodiče a absolventa: fakta o Gymnáziu Aloise Jiráska v Litomyšli, přijímačky 2027, dny otevřených dveří."
 og_image: "2026-10-01_litomysl-gymnazium-foto.jpg"
@@ -65,5 +65,3 @@ Pro zájemce o osmileté i čtyřleté studium jsou dny otevřených dveří v
 - Ve školním roce 2024/25 působila na škole americká jazyková asistentka z Fulbrightova programu. Výměny vedou do Francie (Erasmus+), Německa a na Tchaj-wan (partnerství přes 16 let) a někteří studenti tráví semestr nebo rok v zahraničí ([výroční zpráva 2024/25](https://www.glit.cz/wp-content/uploads/2026/02/Vyrocni_zprava_2024_2025_komplet.pdf)).
 - Studenti chodí na vědecké workshopy do firmy Contipro a v mezinárodním programu GLOBE, který zaštiťuje NASA, sbírají data o přírodě.
 - Dny otevřených dveří: pátek 27. 11. 2026 a středa 20. 1. 2027, prohlídky v 10, 13, 14 a 15 hodin, nutná registrace. Přihlášky na střední školy se podávají od 1. do 22. února 2027.
-
-*Foto v náhledu: [Tadeáš Bednarz, Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Litomy%C5%A1l,_Gymn%C3%A1zium_Aloise_Jir%C3%A1ska_%282019%29_03.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), oříznuto.*

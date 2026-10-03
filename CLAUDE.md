@@ -45,8 +45,9 @@ and `python tools/preflight.py` runs the same gates locally.
 
 - **Licence:** everything is CC BY 4.0, the papers, the data and the photographs alike. The licence
   is always CC BY 4.0: the footer and /LICENSE keep that wording, with no "unless stated otherwise"
-  (owner, 3 Oct 2026). A third-party photo on a page is credited, with its own licence, in its own
-  credit line on that page.
+  (owner, 3 Oct 2026). A third-party photo shown on a page is credited, with its own licence, on that
+  page; one used only as a link preview (og:image) carries its credit in the image file's metadata
+  and in the JSON-LD ImageObject, with no visible line (owner, 3 Oct 2026).
 - **Names:** in English text the names are spelled Havranek and Irsova.
 - **Dashes:** new prose uses no em dashes or en dashes.
 - **MAIVE:** describe it without hedging.
