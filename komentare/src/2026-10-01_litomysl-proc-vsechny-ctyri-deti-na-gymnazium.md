@@ -5,7 +5,7 @@ date: "2026-10-01"
 updated: "2026-10-03"
 headline: "Proč chceme mít všechny čtyři děti na litomyšlském gymnáziu"
 byline: "Tomáš Havránek"
-word_count: "1203"
+word_count: "1206"
 title_tag: "Proč chceme mít všechny čtyři děti na Gymnáziu Aloise Jiráska v Litomyšli"
 description: "Proč chceme mít všechny čtyři děti na Gymnáziu Aloise Jiráska v Litomyšli: zkušenost rodiče a absolventa, fakta, přijímačky 2027, dny otevřených dveří."
 og_image: "2026-10-01_litomysl-gymnazium-og.png"
@@ -25,7 +25,7 @@ Proč gymnázium? V éře umělé inteligence potřebují děti víc než dří
 
 Na litomyšlském gymnáziu občas přednáším a studenti mají parádní dotazy, jaké slýchám od prváků na Univerzitě Karlově. A třeba u státní maturity 2026 mě potěšila matematika. Zvolilo si ji 42 % zdejších maturantů, kdežto na gymnáziích v celé republice jen 34 %. Z loňských absolventů mě zaujal Jakub Očenáš, který jako oktaván získal celostátní Cenu Učené společnosti pro středoškoláky. Studenti jezdí na výměny do Francie, Německa i na Tchaj-wan a někteří si dávají semestr nebo rok v zahraničí.
 
-Gymnáziu bude do budoucna pomáhat i samotná Litomyšl, protože u nás chtějí žít lidé, kteří by jinak mimo velké město nešli. Fyziku tu třeba učí docent z Univerzity Hradec Králové, který pomáhá řídit celorepublikovou Fyzikální olympiádu. Vymýšlí pokusy pro výuku a píše o nich do amerických fyzikálních časopisů. V jednom článku ukazuje, že učebnicové vysvětlení letu letadla jen pomocí Bernoulliho rovnice nesedí, a popisuje jednoduchý přístroj, na kterém to studenti pochopí lépe.
+Špičkové vzdělání mohou mít děti i v malém městě, pokud tam chtějí žít lidé, kteří by jinak mimo velké město nešli. Litomyšl taková je. Fyziku tu třeba učí docent z Univerzity Hradec Králové, který pomáhá řídit celorepublikovou Fyzikální olympiádu. Vymýšlí pokusy pro výuku a píše o nich do amerických fyzikálních časopisů. V jednom článku ukazuje, že učebnicové vysvětlení letu letadla jen pomocí Bernoulliho rovnice nesedí, a popisuje jednoduchý přístroj, na kterém to studenti pochopí lépe.
 
 Také jsem rád, že mladší studenti mají od letoška v areálu školy mobil vypnutý v tašce celý den, i o přestávkách. Stát podobné opatření teprve chystá a mezinárodně se jedná o nejlepší praxi, platnou třeba už dva roky na Novém Zélandu.
 
