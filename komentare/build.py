@@ -2260,12 +2260,22 @@ def write_short_links():
         to = f"{BASE}/{slug}/"
         d = KDIR / short
         d.mkdir(exist_ok=True)
+        # Messaging apps (WhatsApp, Telegram, iMessage, Messenger) build a link preview from
+        # this page without following the redirect, so it carries the article's own title,
+        # description and og/twitter tags, copied from the page written above so that they
+        # never drift; og:url names the article, so a share is credited to it.
+        art = (KDIR / slug / "index.html").read_text(encoding="utf-8")
+        title = re.search(r"<title>.*?</title>", art, re.S)
+        tags = re.findall(r'<meta (?:name="description"|property="og:[^"]+"|name="twitter:[^"]+") '
+                          r'content="[^"]*" />', art)
         (d / "index.html").write_text(
             '<!doctype html>\n<html lang="cs">\n<meta charset="utf-8">\n'
             '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
-            f'<title>{esc(a["headline"])}</title>\n'
-            f'<link rel="canonical" href="{to}">\n'
+            # first, so the sitemap's noindex test (a page's first 2000 characters) sees it
             '<meta name="robots" content="noindex,follow">\n'
+            f'<link rel="canonical" href="{to}">\n'
+            + (title.group(0) if title else f'<title>{esc(a["headline"])}</title>') + "\n"
+            + "".join(t + "\n" for t in tags) +
             f'<meta http-equiv="refresh" content="0; url={to}">\n'
             f'<script>location.replace("{to}");</script>\n'
             f'<p>Pokud vás prohlížeč nepřesměroval, <a href="{to}">pokračujte zde</a>.</p>\n',
