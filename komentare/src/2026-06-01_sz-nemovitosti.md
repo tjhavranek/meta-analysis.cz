@@ -8,6 +8,8 @@ headline: "Očima byznysu: Nemovitosti jsou pro většinu Čechů špatná inves
 byline: "Tomáš Havránek"
 word_count: "830"
 perex: "Češi berou byty, domy a pozemky za nejbezpečnější investici. Nemovitosti jsou ale dnes riskantní sázkou na českou politiku, demografii a korunu, píše v komentáři ekonom a profesor Univerzity Karlovy Tomáš Havránek."
+vyber: "4"
+vyber_titulek: "Nemovitosti jsou pro většinu Čechů špatná investice"
 ---
 
 # Očima byznysu: Nemovitosti jsou pro většinu Čechů špatná investice

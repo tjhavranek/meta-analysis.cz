@@ -65,6 +65,7 @@ import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import quote
 
 KDIR = Path(__file__).resolve().parent
 ROOT = KDIR.parent
@@ -752,6 +753,38 @@ def listing(items, show_cat):
     return "\n".join(out)
 
 
+# An entry point for a first-time reader of the hub: a handful of texts to start with, chosen
+# after reading them in full. `vyber: N` in an item's front matter sets its place in the list
+# and `vyber_titulek` an optional shorter title for it; the item's own page does not change.
+# The list keeps its own classes on purpose: the hub's filter script hides `.item` and `.year`,
+# and this list must stay where it is whatever the reader types into the filter.
+VYBER_ASK_Q = "Proč Tomáš Havránek navrhuje zrušit inflaci?"
+
+
+def vyber_html(items):
+    chosen = [a for a in items if str(a.get("vyber", "")).strip()]
+    if not chosen:
+        return ""
+    places = [int(a["vyber"]) for a in chosen]
+    if sorted(places) != list(range(1, len(places) + 1)):
+        sys.exit(f"vyber: positions must run 1..{len(places)} without gaps or repeats, got {sorted(places)}")
+    rows = []
+    for a in sorted(chosen, key=lambda a: int(a["vyber"])):
+        names = people(a.get("byline"))
+        who = "" if names == [AUTHOR] else ", ".join(names)
+        kind = "rozhovor" if a.get("category") == "rozhovory" else ""
+        meta = " · ".join(x for x in (who, f'{a["outlet"]}, {a["date"][:4]}', kind) if x)
+        rows.append(f'        <li><a href="{PATH}/{a["slug"]}/">{esc(a.get("vyber_titulek") or a["headline"])}</a>'
+                    f'<span class="vyber-meta">{esc(meta)}</span></li>')
+    return ('    <section class="vyber" aria-labelledby="vyber-h">\n'
+            '      <h2 id="vyber-h" class="vyber-h">Výběr pro první čtení</h2>\n'
+            '      <ol>\n' + "\n".join(rows) + '\n      </ol>\n'
+            f'      <p class="ask-link vyber-ask"><a href="{PATH}/ask/?q={quote(VYBER_ASK_Q)}">Zeptejte se AI,</a>'
+            ' proč Tomáš Havránek navrhuje zrušit inflaci. Odpoví podle textů na tomto webu'
+            ' a odkáže na zdroje.</p>\n'
+            '    </section>\n')
+
+
 # ------------------------------------------------------------------ writers ---
 
 def related_html(a, en=False):
@@ -1292,6 +1325,9 @@ def write_index(items, key=None):
                            f'<a href="{PATH}/posts/{esc(_n["slug"])}/">celý příspěvek</a>'
                            f'</p>\n')
 
+    # The hub's selection carries the AI line in its footer, so the hub keeps one way in to
+    # the assistant rather than two a few lines apart.
+    vyber = vyber_html(items) if not key else ""
     body = (f'    <div class="lede">\n      <h1>{esc(title)}</h1>\n'
             f'      <p>{esc(HUB_LEDE if not key else desc)}'
             # The hub is where a first-time reader, often a journalist, lands without knowing
@@ -1302,8 +1338,9 @@ def write_index(items, key=None):
             + f'</p>\n{counts}'
             + ('      <p class="ask-link"><a href="/komentare/ask/">Zeptejte se AI.</a>'
                ' Odpovídá podle textů Tomáše a Zuzany Havránkových na tomto webu a odkazuje na zdroje.</p>\n'
-               if not key else '')
+               if not key and not vyber else '')
             + '    </div>\n'
+            + vyber
             + (FILTER if not key else "")
             + listing(sel, show_cat=not key))
     page = shell(f"{title} — {SITE_AUTHORS}", desc, canonical,

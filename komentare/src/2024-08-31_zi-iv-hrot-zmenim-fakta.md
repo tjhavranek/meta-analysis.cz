@@ -9,6 +9,8 @@ byline: "Zuzana Havránková"
 interviewer: "Pavel Štrunc"
 word_count: "5090"
 body_note: "Autorizovaná verze rozhovoru, kterou Zuzana Havránková schválila pro redakci. Rozhovor vyšel v tištěném měsíčníku Hrot, online je k dispozici pouze ukázka. Ze stejného rozhovoru čerpá i text vydaný na Hrot24.cz 11. 8. 2025."
+vyber: "3"
+vyber_titulek: "Změním fakta, změním názor"
 ---
 
 # Ekonomka Zuzana Havránková: Změním fakta, změním názor

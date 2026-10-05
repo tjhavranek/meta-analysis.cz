@@ -7,6 +7,8 @@ status: full
 byline: "Tomáš Havránek"
 word_count: "619"
 perex: "Nestačí nasypat peníze do školství a infrastruktury, zamíchat a čekat. Pro vyšší životní úroveň potřebujeme hlavně větší toleranci k inovacím a riziku, píše ekonom a profesor Univerzity Karlovy Tomáš Havránek."
+vyber: "1"
+vyber_titulek: "Odkud se bere ekonomický růst?"
 ---
 
 # Odkud se bere ekonomický růst? Investice prosperitu nezajistí
