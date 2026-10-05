@@ -8,6 +8,8 @@ headline: "Headline inflation measures shouldn't ignore costs of home ownership"
 mirror: "voxeu-home-ownership"
 byline: "Tomas Havranek, Mojmir Hampl"
 word_count: "1218"
+body_note: "Czech translation, made with AI: [Ukazatele celkové inflace by neměly přehlížet náklady na vlastnické bydlení](/komentare/voxeu-vlastnicke-bydleni/)."
+translation: "voxeu-vlastnicke-bydleni"
 ---
 
 # Headline inflation measures shouldn't ignore costs of home ownership

@@ -9,9 +9,10 @@ headline: "Srovnání základních škol v Litomyšli a na Novém Zélandu"
 byline: "Tomáš Havránek"
 source: "image"
 word_count: "403"
-body_note: "Rubrika DOPISY ČTENÁŘŮ."
+body_note: "Rubrika DOPISY ČTENÁŘŮ. Anglický překlad pořízený pomocí AI: [Comparing primary schools in Litomyšl and New Zealand](/komentare/litomysl-schools-litomysl-new-zealand/)."
 related: "litomysl-proc-vsechny-ctyri-deti-na-gymnazium"
 vyber: "6"
+translation: "litomysl-schools-litomysl-new-zealand"
 ---
 
 # Srovnání základních škol v Litomyšli a na Novém Zélandu

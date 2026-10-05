@@ -1321,7 +1321,12 @@
      "orcid": "https://orcid.org/0000-0002-3158-2539"
     }
    ],
-   "links": [],
+   "links": [
+    {
+     "label": "Czech translation (made with AI)",
+     "url": "https://meta-analysis.cz/komentare/voxeu-letni-cas/"
+    }
+   ],
    "syndicated": [
     {
      "label": "VoxEU / CEPR",
@@ -1401,6 +1406,10 @@
     {
      "label": "Read the note in full",
      "url": "https://meta-analysis.cz/cpi_housing/paper/"
+    },
+    {
+     "label": "Czech translation (made with AI)",
+     "url": "https://meta-analysis.cz/komentare/voxeu-vlastnicke-bydleni/"
     }
    ],
    "syndicated": [

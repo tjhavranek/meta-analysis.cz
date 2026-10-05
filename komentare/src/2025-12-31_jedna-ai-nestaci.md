@@ -7,6 +7,8 @@ status: full
 byline: "Tomáš Havránek, Zuzana Havránková"
 word_count: "521"
 perex: "Umělá inteligence často raději přikývne nebo si vymyslí, než aby přiznala, že neví. Spoléhat na jeden model se proto nevyplácí. Způsob, jak vytěžit z AI maximum, je nechat modely bojovat mezi sebou, píší ekonomové Zuzana Havránková a Tomáš Havránek."
+body_note: "Anglický překlad pořízený pomocí AI: [One AI isn't enough: let the models fight it out](/komentare/one-ai-is-not-enough/)."
+translation: "one-ai-is-not-enough"
 ---
 
 # Jedna AI nestačí, nechte modely spolu bojovat

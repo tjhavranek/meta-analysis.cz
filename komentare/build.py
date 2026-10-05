@@ -145,9 +145,11 @@ SECTIONS = {
     "english": dict(
         title="In English",
         short="English",
-        desc="Columns and commentary written in English: policy pieces for VoxEU/CEPR, "
-             "posts on meta-analysis methods for MAER-Net, and English translations of the "
-             "advisor's opinions written for the Bank Board of the Czech National Bank.",
+        desc="Columns and commentary written in English: policy pieces for VoxEU/CEPR and "
+             "posts on meta-analysis methods for MAER-Net. The section also holds English "
+             "translations, made with AI, of selected Czech columns and of the advisor's "
+             "opinions written for the Bank Board of the Czech National Bank; each links to "
+             "its Czech original.",
         lang="en",
     ),
 }
@@ -728,6 +730,10 @@ def item_row(a, show_cat):
         bits.append('<span class="tag tag-unpub">nevyšlo</span>')
     elif a.get("genre") == "correspondence":
         bits.append('<span class="tag tag-unpub">korespondence</span>')
+    # A translation's row names the outlet that published the ORIGINAL; unlabelled it
+    # reads as if Seznam Zprávy or VoxEU had printed this text. Labelled in the row's language.
+    if a.get("translated") and BY_SLUG.get(a.get("translation") or ""):
+        bits.append(f'<span class="tag">{"translation" if lang == "en" else "překlad"}</span>')
     if tag:
         bits.append(tag)
     zi = ' data-zi="1"' if any(n in ZI_NAMES for n in names_row) else ""
@@ -1564,8 +1570,10 @@ def write_machine_readable(items, social=()):
                                    "language": _orig.get("lang")
                                                or SECTIONS[_orig["category"]]["lang"]}
             d["translated"] = a["translated"]
-            d["outlet_note"] = ("The outlet published the original; this English "
-                                "translation was made for this archive.")
+            _tl = a.get("lang") or SECTIONS[a["category"]]["lang"]
+            d["outlet_note"] = (f"The outlet published the original; this "
+                                f"{'English' if _tl == 'en' else 'Czech'} translation was "
+                                f"made with AI for this archive.")
         # Two pages can be one recording: an outlet that ran the same interview twice
         # under two headlines. A consumer reading records on their own sees two items
         # and can take them for two occasions on which he said the same thing, which
@@ -1727,8 +1735,10 @@ def write_machine_readable(items, social=()):
         # thing the per-page metadata is careful never to say.
         _tr_of = BY_SLUG.get(a.get("translation") or "")
         if _tr_of and a.get("translated"):
-            A += [f"*English translation made for this archive, published "
-                  f"{a['translated']}. The record is the Czech original: "
+            _en_tr = (a.get("lang") or SECTIONS[a["category"]]["lang"]) == "en"
+            A += [f"*{'English' if _en_tr else 'Czech'} translation made with AI for this "
+                  f"archive, published {a['translated']}. The record is the "
+                  f"{'Czech' if _en_tr else 'English'} original: "
                   f"„{_tr_of['headline']}“, {BASE}/{_tr_of['slug']}/.*", ""]
         if a.get("genre") == "correspondence":
             A += [f"*Korespondence, nikoli publikovaný text. "
@@ -1812,9 +1822,9 @@ def write_machine_readable(items, social=()):
             "unpublished": "never printed anywhere, so no editor and no publication date",
             "correspondence": "sent to named recipients rather than published; no editor "
                          "stood between the author and the reader",
-            "archive_translation": "an English translation of a Czech document, made "
-                         "for this archive and published by it; the original and its "
-                         "own provenance are linked from the record",
+            "archive_translation": "a translation (English from Czech, or Czech from "
+                         "English) made with AI for this archive and published by it; the "
+                         "original and its own provenance are linked from the record",
             "institutional_record": "written inside an institution as an internal "
                          "document and released later by that institution as a record of "
                          "its own proceedings; no outlet editor stood between the author "

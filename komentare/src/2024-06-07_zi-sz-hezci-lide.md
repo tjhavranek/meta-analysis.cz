@@ -8,6 +8,8 @@ headline: "Hezčí lidé vydělávají víc. Kvůli kráse to ale není"
 byline: "Zuzana Havránková"
 word_count: "564"
 perex: "Výzkum se shoduje, že atraktivnější lidé jsou úspěšnější. Nejnovější studie ale ukazují, že krása sama vyšší plat nepřinese. Důležitější je sebevědomí, jež je často se vzhledem spojeno, píše ekonomka Zuzana Havránková."
+body_note: "Anglický překlad pořízený pomocí AI: [Better-looking people earn more. But beauty is not the reason](/komentare/zi-sz-better-looking-people/)."
+translation: "zi-sz-better-looking-people"
 ---
 
 # Hezčí lidé vydělávají víc. Kvůli kráse to ale není

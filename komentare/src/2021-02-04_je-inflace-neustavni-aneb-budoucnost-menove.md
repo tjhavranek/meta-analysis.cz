@@ -6,6 +6,8 @@ headline: "Je inflace neústavní? Aneb budoucnost měnové politiky"
 status: full
 byline: "Tomáš Havránek"
 word_count: "638"
+body_note: "Anglický překlad pořízený pomocí AI: [Is inflation unconstitutional? Or, the future of monetary policy](/komentare/is-inflation-unconstitutional/)."
+translation: "is-inflation-unconstitutional"
 ---
 
 # Je inflace neústavní? Aneb budoucnost měnové politiky

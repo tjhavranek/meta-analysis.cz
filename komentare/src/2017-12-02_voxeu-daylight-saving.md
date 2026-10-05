@@ -8,6 +8,8 @@ headline: "Daylight saving saves no energy"
 mirror: "voxeu-daylight-saving"
 byline: "Dominik Herman, Zuzana Irsova, Tomas Havranek"
 word_count: "992"
+body_note: "Czech translation, made with AI: [Letní čas žádnou energii nešetří](/komentare/voxeu-letni-cas/)."
+translation: "voxeu-letni-cas"
 ---
 
 # Daylight saving saves no energy

@@ -8,6 +8,8 @@ byline: "Tomáš Havránek"
 word_count: "619"
 perex: "Pro dokonalou angličtinu nemusíme dětem platit rodilé mluvčí ani školy v zahraničí. Nemusíme ani doma mluvit anglicky. Stačí odmalička pouštět televizi jen v angličtině, píše profesor UK a otec čtyř dětí Tomáš Havránek."
 vyber: "5"
+body_note: "Anglický překlad pořízený pomocí AI: [How to teach your kids perfect English, effortlessly and for free](/komentare/how-to-teach-kids-english/)."
+translation: "how-to-teach-kids-english"
 ---
 
 # Jak naučit děti perfektně anglicky bez námahy a zadarmo

@@ -4,7 +4,7 @@ Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostát
 
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Volně kopírovat, šířit, upravovat a dále používat k jakémukoli účelu, včetně komerčního využití a trénování modelů strojového učení, pokud uvedete meta-analysis.cz.
 
-Tento soubor obsahuje text všech položek, u nichž archiv text drží (235 z celkem 236), u naprosté většiny v plném znění; výjimkou jsou položky označené v index.json jako publisher_excerpt (2), kde je uložena jen volně dostupná ukázka, a author_manuscript (23), kde jde o autorskou verzi, která se může lišit od otištěné. Část položek je audio a video. Tam, kde archiv má přepis, je text v tomto souboru a položka nese status machine_transcript (21), tedy strojový přepis nahrávky, nebo publisher_transcript (1), tedy přepis vydaný samotnou stanicí. Zbylé audio a video (1) vede archiv pouze odkazem a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (26), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
+Tento soubor obsahuje text všech položek, u nichž archiv text drží (246 z celkem 247), u naprosté většiny v plném znění; výjimkou jsou položky označené v index.json jako publisher_excerpt (2), kde je uložena jen volně dostupná ukázka, a author_manuscript (23), kde jde o autorskou verzi, která se může lišit od otištěné. Část položek je audio a video. Tam, kde archiv má přepis, je text v tomto souboru a položka nese status machine_transcript (21), tedy strojový přepis nahrávky, nebo publisher_transcript (1), tedy přepis vydaný samotnou stanicí. Zbylé audio a video (1) vede archiv pouze odkazem a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (26), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
 
 ---
 
@@ -713,6 +713,44 @@ Ale postarat se o sebe a najít smysl života nejenom v penězích a v rodině, 
 **Petra Jaroměřská:** Moc vám děkuju za rozhovor.
 
 **Tomáš Havránek:** Já děkuji za pozvání, příště zase rád přijedu z Litomyšle.
+
+---
+
+## Real estate is a bad investment for most Czechs
+
+*Seznam Zprávy, 1. června 2026. Tomas Havranek.*
+
+*English translation made with AI for this archive, published 2026-10-05. The record is the Czech original: „Očima byznysu: Nemovitosti jsou pro většinu Čechů špatná investice“, https://meta-analysis.cz/komentare/sz-nemovitosti/.*
+
+Zdroj: https://www.seznamzpravy.cz/clanek/ekonomika-ocima-byznysu-ocima-byznysu-nemovitosti-jsou-pro-vetsinu-cechu-spatna-investice-307481
+
+When ordinary Czechs have money, the only thing they invest in is real estate. According to the Czech National Bank (CNB), real assets (which mostly means domestic property) account for 95% of the total net wealth of Czech households. Sure, it beats keeping a pile of cash in a bank account, where inflation eats it up. But economically, betting everything on one horse is dangerous. There are three reasons.
+
+First, Czech politics. The housing crisis is not a law of nature; it is our choice. We are not Singapore, with nowhere left to build. Rapeseed alone takes up two and a half times as much land as all the built-up areas and courtyards in the country. Once the government and the cities permit houses and trees, say in a 1:1 ratio, in place of the biological deserts of subsidized biofuel crops, property prices in some places will fall by double-digit percentages, and we will be better off in terms of climate, biodiversity and water retention in the landscape too.
+
+Second, Czech demographics. We will not become Japan, where commercial property prices fell 70% after 1991 and residential prices 50%. Still, it is worth asking: who will be living in Czech houses and apartments 40 years from now? Perhaps millions of Slovaks and Ukrainians will come, but if they do not, who will pay the rents that ultimately determine apartment prices? Personally, I fear the answer is nobody, and that a nasty hangover awaits the Czech property market once it realizes this.
+
+Third, the Czech koruna. It makes sense to hold some assets in koruna, because most of our spending is in koruna. But we no longer need to fear investing abroad; the koruna's trend appreciation ended in 2008. On the contrary: once your neighbors learn to invest abroad, they will be buying euros and dollars, and that will put downward pressure on the koruna. Something similar has been happening in Japan in recent years, where the currency has been weakening partly because Japanese households are learning to invest in the US.
+
+## Stocks are a better buy than another apartment
+
+What is the lesson for someone who does not plan on dying in the next 10 years? Go easy on more real estate. Most of you already own some, or will inherit it from your parents, often a weekend cottage as well. If you are not inheriting and you rent, enjoy the freedom that comes with it. If you have spare money, buy global stocks, gradually. That is the recommendation of modern economic research: it does not guarantee you wealth (we cannot see the future), but there is little you can do with your money that makes more sense.
+
+What about the risk, the swings in stock prices? Yes, the high long-run annual return of around 6% on average after inflation is precisely the reward for the risk you take on. Nobody gives money away for free. By financing companies through buying their shares, you take a share of their profits, which flow mainly from technological progress. For a year or two it is not worth it because of the volatility, but if you can afford to leave the money parked for 5 to 10 years, it is a more rational choice than government bonds.
+
+Think you can't manage it? Today it takes a few minutes, and my parents, who are over 65, manage it just fine. Czech investment companies will gladly help you buy diversified stocks from around the world, but make peace with paying them a fee of around 1% a year for it, so you net 5% rather than 6%. For most Czechs that is a good deal: a small amount every month by standing order, nothing to worry about, and your money invested the way wealthy households in developed countries invest theirs.
+
+Another option is to open an account with a broker and buy shares in stock funds (ETFs) yourself. That also means exchanging koruna for euros yourself. It cannot always be fully automated and it does not pay off for everyone, but you can get the total fee down to just 0.2% for a diversified portfolio of global stocks (FTSE All-World, VWCE). Buy gradually and slowly, not everything at once.
+
+## Buy your kids an ETF, not a plot of land
+
+I do the same myself: I invest my spare money both through Czech investment companies and directly through a broker. Besides convenience, the Czech companies offer cheap, tax-advantaged products for retirement and for children. Setting up a stock position for your children is exceptionally sensible, and if you do nothing else, you should at least think about that. Once more, put differently: do not save for your children in a bank account, and do not buy them an apartment or a plot of land. Buy them a global stock ETF every month, even if it is only CZK 500 worth.
+
+Stocks can fall, as we saw during the financial crisis or Covid. Globally, though, they rise again, and that will hold as long as the innovative market system and technological progress keep working. Of course, both may come to an end. A nuclear war could come along and leave my portfolio worth roughly zero. But then I would have other worries than my account balance. Progress may end, but without productivity growth there will be no money for further increases in apartment prices either.
+
+The bottom line: most of us already have heavy exposure to Czech real estate, either because we own it or because we will inherit it. Increasing that exposure further is unwise. Global stocks offer the best diversification with a long-term return. Compared with real estate, they also have the great advantage that you can sell them quickly when you happen to need cash. That means a small reserve in a savings account, a few months' salary, is enough; the rest can be earning.
+
+If dry economic arguments do not convince you that stocks beat another apartment, consider this: my portfolio does not call me at two in the morning to say water is leaking in from the neighbor upstairs.
 
 ---
 
@@ -1525,6 +1563,36 @@ Podle něj jsou právě akcie historicky ověřenou formou investování pro hor
 Při investování by však drobný investor neměl kupovat akcie několika málo firem, ale postupně, v průběhu let, rozprostřít své peníze do rozsáhlejšího portfolia. Tedy využít podílových fondů nebo ještě výhodnějších fondů ETF (Exchange Traded Funds), u nichž jsou nižší poplatky a které umožňují vlastnit podíly v nejvýznamnějších firmách po celém světě.
 
 „Je lepší investovat do zahraničních akcií než do českých, protože český akciový trh je málo rozvinutý. Aby člověk profitoval z globálního technického pokroku, musí investice směřovat do zahraničí, což už dnes Čechům umožňuje snadno a levně řada investičních firem,“ uzavírá Tomáš Havránek.
+
+---
+
+## One AI isn't enough: let the models fight it out
+
+*Hospodářské noviny, 31. prosince 2025. Tomas Havranek, Zuzana Irsova.*
+
+*English translation made with AI for this archive, published 2026-10-05. The record is the Czech original: „Jedna AI nestačí, nechte modely spolu bojovat“, https://meta-analysis.cz/komentare/jedna-ai-nestaci/.*
+
+Zdroj: https://archiv.hn.cz/c1-67828260-jedna-ai-nestaci-nechte-modely-spolu-bojovat
+
+We recently received referee reports on research we had submitted to one of the three most prestigious scientific journals in the world. The very first report advised us to use a different large dataset that fit the question perfectly. How could we have missed it? It turned out that the dataset does not exist and never did. It was a typical hallucination. Part of the report had been written for the referee by artificial intelligence, and he had not checked the output.
+
+A surprising number of smart people cannot use artificial intelligence effectively. Some tried it three years ago, after ChatGPT launched, and then tossed it aside with contempt because of the hallucinations. Others type in a question and then show us how inaccurate the first answer is: they call AI a "plausible-content generator." But worse than being afraid of artificial intelligence is using it badly, exactly as our referee did.
+
+The solution to these problems is to stage a duel between AI models. Let them attack each other's answers and try to find a flaw in the reasoning or the facts. After a few rounds you get output incomparably more useful than any single model would give you. Had our referee at the journal used a duel, he would have spared himself the embarrassment. And today it is so simple that anyone who can open a ChatGPT window can do it.
+
+The duel exploits the fact that each model is trained differently and on different data. Hallucinations that repeated questioning of ChatGPT fails to catch are usually corrected by the competition. The whole is better than its parts. The scientific analogy is meta-analysis: better than looking at a single study, however good, is to examine the literature as a whole. With an individual study we never know how far the results are driven by chance or by publication bias. In the same way, every AI model has biases of its own.
+
+## Even a beginner can do it
+
+A duel between AI models is not a new idea. Among experts the approach is called Multi-Agent Debate (MAD), and it has been in use for more than two years, often internally at the big AI firms. Until now, however, using MAD required a knowledge of programming and APIs, or the ability to work with structured tools such as AutoGen (or LangGraph or CrewAI). We have now prepared a prompt that democratizes MAD: just copy it into ChatGPT, add your problem, switch on agent mode, and wait.
+
+For this approach to work smoothly, you need a ChatGPT subscription. Many of us who use artificial intelligence a lot have one. We also usually have access to another paid model through our employer; at universities, for instance, it is often Google's Gemini. That is why our duel protocol works with these models, but you can apply the same approach to Claude or Grok.
+
+If you have no subscription, you can easily run the duel by hand. Open two or more freely available AI models side by side. Give them all the same information (files, photos) but opposing roles. Tell the first to be a creative visionary and develop the idea; order the second to be the devil's advocate whose job is to find every logical hole. Then copy the individual answers back and forth between the models, noting that each is the output of another AI in the given role. After a few rounds it starts to make sense to read the outputs.
+
+Such a duel, in which one model fights another, checks, attacks, repeats, again and again, is not suited to all everyday questions. But in our experience it is indispensable for important professional tasks. Even then, AI will not do your work for you. But if you work at a computer and learn to use the duel approach (even if only to hunt for mistakes in your own output), you will be more productive and more accurate than the vast majority of your colleagues.
+
+The authors are economists.
 
 ---
 
@@ -2453,6 +2521,40 @@ Děkuji paním učitelkám a pánům učitelům ze Zámecké (a hlavně třídn�
 
 ---
 
+## Comparing primary schools in Litomyšl and New Zealand
+
+*Lilie, červenec 2025. Tomas Havranek.*
+
+*English translation made with AI for this archive, published 2026-10-05. The record is the Czech original: „Srovnání základních škol v Litomyšli a na Novém Zélandu“, https://meta-analysis.cz/komentare/litomysl-srovnani-skol-litomysl-novy-zeland/.*
+
+Zdroj: https://www.litomysl.cz/soubor/17516211045744010_lilie_2025_7.pdf
+
+We had the chance to spend three months living down under, and the children went to school there. New Zealand primary schools are hugely popular abroad; people from China, Korea and European countries pay a great deal of money to send their children there. In our case the fees were taken care of by the local university that had invited us. How do the schools there compare with what we know from Litomyšl? Let's sum up the main differences.
+
+1) New Zealand schools are easier, especially in math.
+
+2) They are more informal. In one class the teacher did push-ups on three fingers when he couldn't answer the children's question. The emphasis is on discussion, argument, creativity, ambition.
+
+3) There are no grades. Assessment is given in words, often in the form of praise.
+
+4) Uniforms are compulsory. Phones are banned.
+
+5) The schools look like a cluster of cabins in a park. Children spend breaks outdoors, often playing rugby and cricket. The classroom has children from all over the world; white New Zealanders are a minority.
+
+6) There are no school cafeterias; you have to pack your children's lunch for them.
+
+7) From the age of 10 they learn practical skills: cooking, woodwork and so on.
+
+The children enjoyed it. Are our schools worse? I prefer the Czech system. New Zealanders themselves realize that their schools lack rigor. Immigrants from Asia and Europe are overtaking them. The other extreme is Korea or China, where children know nothing but drill from dawn to dusk. And you know what? When you talk to Koreans and New Zealanders, they end up saying they would most like a compromise, the kind we have in Europe. Czech primary education has a good reputation.
+
+That doesn't mean there is nothing we could improve at home. We pay too little attention to the ability to argue a point and too much to Eastern-style memorization (where kaolin is mined, name ten nearly identical butterflies, and so on). But even that is preparation for life: sometimes you have to do what your boss wants, period. You have to grit your teeth and get on with it.
+
+The New Zealand system is not as excessively progressivist as the American one. Schools do not serve as a vehicle for ideological indoctrination. Environmental problems, for instance, are discussed, but not as life's central concern: the emphasis is on the children's personal development and on finding solutions, not on atoning for inborn guilt. Creating, building, fixing, not self-restraint at any cost. School shows children what great things they can achieve in life, not how to minimize the consequences of their own existence.
+
+My thanks to the teachers at the Zámecká school (and above all the class teachers, Mrs. Lipavská, Pokorná, Motlová and Bořková) for making the stay possible, sending us the coursework while we were away, and being patient with the children after our return. Now I can say with a clear conscience that the work of our teachers is excellent, even by international standards.
+
+---
+
 ## Zuzana Havránková: Profesura a čtyři děti před čtyřicítkou? Jde to!
 
 *Forum Univerzity Karlovy, 20. června 2025, ptala se Helena Zdráhalová. Zuzana Havránková.*
@@ -3362,6 +3464,36 @@ Metaanalýza je statistická metoda souhrnu vědeckých výsledků. Díky ní m�
 
 ---
 
+## Where does economic growth come from? Investment won't guarantee prosperity
+
+*Seznam Zprávy, 12. června 2024. Tomas Havranek.*
+
+*English translation made with AI for this archive, published 2026-10-05. The record is the Czech original: „Odkud se bere ekonomický růst? Investice prosperitu nezajistí“, https://meta-analysis.cz/komentare/odkud-se-bere-ekonomicky-rust/.*
+
+Zdroj: https://www.seznamzpravy.cz/clanek/ekonomika-ocima-byznysu-komentar-odkud-se-bere-ekonomicky-rust-investice-prosperitu-nezajisti-253715
+
+For almost all of history, the ordinary person's standard of living was just enough to keep them from starving. A little better under good emperors, a little worse under bad ones. Anyone who had the rare luck of living to thirty would typically watch two of their own children die young. Economic growth as we know it today did not get going until around 1800. Since then, living standards in the developed world have risen thirtyfold. Yes, that holds for the Czech Republic too.
+
+So what was the breakthrough 200 years ago? It was not the birth of capitalism; that was already up and running in ancient Greece. It was not stable and predictable "institutions"; the Mongol Empire had those. It was not cheap money and savings to spare; medieval China had plenty of both. And it was certainly not state investment in education and infrastructure, which older civilizations were often even keener on. All of this is necessary, but it is not enough, much as fire needs oxygen but oxygen alone will not start a blaze.
+
+Economic growth means the collapse of poverty and, in the end, a healthier natural world as well. The most advanced countries have more forest today than they did in the Middle Ages. What actually made growth possible, first in the Netherlands and England and then across the rest of the West (with Bohemia and Moravia among the first), was a tectonic shift in attitudes toward innovation and innovators. The natural tendency of human beings, and of every civilization in history, is to fear change. Change threatens the position of the elites, and sometimes the livelihoods of some ordinary people too.
+
+By contrast, the system that is only two centuries old, which the economic historian Deirdre McCloskey calls the "Bourgeois Deal," would have shocked our ancestors: Let me, the innovator and entrepreneur, overhaul the way we live. Let me get rich, so that in the end you can get rich too. That is how we got electricity, the telephone, cars, airplanes, the rotavirus vaccine, the smartphone, Viagra, Google, Mapy.cz, Tesla, Uber, ChatGPT.
+
+Even the best innovations do not help everyone right away; they are not win-win. They are win-win-win-win-win-lose. Coachmen paid the price for cars, taxi drivers for Uber, translators for ChatGPT. A prosperous society has to get used to stories of failure. It is right to help people who temporarily lose out from innovation. But the threat of failure matters: if you know for certain that you cannot fail, that someone will always pull you back up to the average, what incentive do you have to make responsible decisions, say, when choosing a career?
+
+## Investment, incentives, and growth
+
+Today's growth economics is easy. Countries grow fast as long as they can absorb existing innovations from abroad. See Japan from the war to 1990, or the Czech Republic from EU accession to Covid. Then the boom ends. Further growth depends on how incentives are set. Does it pay to work hard, take risks, start businesses, innovate? Then you get Singapore's productivity. Does it pay to be passive, do only what you are told, cover your own backside? Then you stall 20% below the US level, as Japan, Italy, and the Czech Republic have.
+
+So the new mantra of Czech politicians does not work: pour money into education and infrastructure, add a pinch of "reforms," stir, and all will be well. To be clear, investing in both makes sense here. Our shortfalls relative to the West mean the first few hundred billion koruna earn an easy return. But are our elementary and middle schools really that much worse than America's? Will high-speed rail really pay off for us? Economic research, after all, finds only a weak link between government investment and living standards.
+
+The emphasis on investment is useful in that it breaks down Czech caution and penny-pinching management. In life you sometimes have to take a risk, borrow, invest. Just make sure we do not go into debt for projects whose benefits cannot outweigh their costs, even when they are sexy ideas like high-speed rail, and even if some other countries have them. Megaprojects call for careful cost-benefit analysis. Either way, public investment will not decide the living standards of our children and grandchildren.
+
+What will drive quality of life is our fellow citizens' willingness to work and to run businesses. In the end, growth will also be decided by the shoe repair shop at the railway station, the praline shop on the square, the startup by the church. Running a business is risky, and the responsibility is unimaginable to many of us. Useful innovations are not only great inventions but also small improvements in every area of life. If the government wants prosperity, it will look for inspiration not only in investment but also in the liberal approach that countries like Singapore take to business regulation and incentives to work.
+
+---
+
 ## Odkud se bere ekonomický růst? Investice prosperitu nezajistí
 
 *Seznam Zprávy, 12. června 2024. Tomáš Havránek.*
@@ -3415,6 +3547,36 @@ Výzkum také naznačuje, že vzhled je důležitý už v dětství. Hezčí dě
 Méně přijatelnou možností je, že krásnější lidé jsou v průměru trošičku inteligentnější. Biologové se na tom neshodnou, ale pomohlo by to vysvětlit rozdíly mezi ekonomickými studiemi. Inteligence možná souvisí s celkovým „vyladěním“ organismu, které se projevuje i větší symetrií obličeje. Tento mechanismus mohl způsobit genetický vztah mezi inteligencí a symetrií obličeje, kterou lidé vnímají jako krásu.
 
 Buď jak buď, ti méně krásní z nás si nemusí zoufat: pět procent je málo, plastická operace se nevyplatí. Vliv krásy můžeme snadno přebít trochou vzdělání navíc nebo zapracováním na sebevědomí. A pokud pořád nejste klidní, pak vězte, že vlastní atraktivitu můžete podle výzkumu dramaticky zvýšit tím, že se často smějete a chováte se energicky.
+
+---
+
+## Better-looking people earn more. But beauty is not the reason
+
+*Seznam Zprávy, 7. června 2024. Zuzana Irsova.*
+
+*English translation made with AI for this archive, published 2026-10-05. The record is the Czech original: „Hezčí lidé vydělávají víc. Kvůli kráse to ale není“, https://meta-analysis.cz/komentare/zi-sz-hezci-lide/.*
+
+Zdroj: https://www.seznamzpravy.cz/clanek/tech-technologie-veda-komentar-hezci-lide-vydelavaji-vic-kvuli-krase-to-ale-neni-253079
+
+According to scientific studies, attractive people earn on average 5% more than those of average looks. For sex workers and politicians the gap is even larger. Perhaps surprisingly, many economists study the effect of beauty, and for two reasons: first, it is more fun than national accounts. Second, the result is useful for calculating compensation after car accidents. On the basis of this research, some US states are also considering protecting "ugly" people from discrimination.
+
+How is this actually calculated? A controlled experiment would be best. But even an economist will eventually admit that it is not OK to disfigure thirty random people for the sake of a paper in Nature. One way around it is to compare people before and after plastic surgery. The coronavirus pandemic was also a natural experiment, because employers had no face-to-face contact with their employees. The same was true at universities between professors and students.
+
+Perhaps surprisingly, most people agree on what beauty means. Beauty is above all facial symmetry. When different people rate the attractiveness of a face, their ratings rarely depart significantly from the symmetry measured by artificial intelligence or a simple algorithm. This, incidentally, holds across cultures and races. So once the photographs have been assigned a score (usually from 1 to 5), we can look at the relationship between beauty and pay, and by extension performance.
+
+There are 67 scientific studies on this topic. [When we put them together](https://www.econstor.eu/bitstream/10419/289435/1/Bortnikova-Beauty-and-professional-success.pdf), we find that moving from a score of 3 (average) to 4 (good-looking) or 5 (beautiful) raises pay by 5%. So is this discrimination based on looks, and should we therefore protect "ugly" employees? The logic would be the same as in the case of pay discrimination against women. But then we would probably never stop, because further research shows that pay is also affected by height (for men) and curves (for women).
+
+A new analysis shows that this is probably not arbitrary discrimination, as three findings suggest. First, the effect of beauty on performance is on average roughly the same as its effect on pay. If employers discriminated on the basis of their own tastes, the effect on pay would be larger than the effect on performance. As it is, it looks as though they are simply happy to pay extra for more productive employees.
+
+Second, in fields where looks do not matter for the job (analysts, researchers, teachers, for example), new studies show a minimal effect of beauty on pay. Unsurprisingly, looks matter most for sex workers and politicians. Third, for the general population it usually holds that the beauty effect disappears once the researcher also takes into account employees' abilities, both intellectual and social.
+
+Better-looking people do tend to be more capable, though. Only by a few percent, but still: how come? It is quite possible that better looks help build self-confidence, which can then translate into better performance in a team, greater assertiveness and higher pay.
+
+Research also suggests that looks matter as early as childhood. Better-looking children get a little more attention from parents and teachers, which also helps them in life.
+
+A less palatable possibility is that more beautiful people are, on average, a tiny bit more intelligent. Biologists disagree on this, but it would help explain the differences between the economic studies. Intelligence may be related to the overall "fine-tuning" of the organism, which also shows up as greater facial symmetry. This mechanism could have produced a genetic link between intelligence and the facial symmetry that people perceive as beauty.
+
+Either way, the less beautiful among us need not despair: five percent is not much, and plastic surgery does not pay off. The effect of beauty can easily be outweighed by a little extra education or by working on our self-confidence. And if you are still not at ease, know that, according to the research, you can dramatically raise your own attractiveness by smiling often and acting energetically.
 
 ---
 
@@ -4104,6 +4266,38 @@ Sečteno a poodtrženo: digitální doba přináší úskalí, ale také nebýva
 
 ---
 
+## How to teach your kids perfect English, effortlessly and for free
+
+*Seznam Zprávy, 18. ledna 2024. Tomas Havranek.*
+
+*English translation made with AI for this archive, published 2026-10-05. The record is the Czech original: „Jak naučit děti perfektně anglicky bez námahy a zadarmo“, https://meta-analysis.cz/komentare/jak-naucit-deti-anglicky/.*
+
+Zdroj: https://www.seznamzpravy.cz/clanek/nazory-komentare-komentar-jak-naucit-deti-perfektne-anglicky-bez-namahy-a-zadarmo-243876
+
+Every year I meet up with a Portuguese colleague who works in Spain. His wife comes from the Basque Country. They met when both were working in Germany, and their three children were born there. At daycare the children spoke German. My colleague and his wife speak English to each other at home, so the children picked up English too. Each parent spoke to them in their own native language, so from early childhood they also learned Portuguese and Basque. And now, in Spain, they go to school in Spanish.
+
+"And how many languages do your children speak?" my colleague asks me over dinner in the Gion district of Kyoto. He knows full well that my wife is Slovak by origin, so he may think we must speak English at home too. I explain that Czech and Slovak are very close, something like London English and Appalachian English. I see his disappointed look: Pity, so at least the children speak Czech and Slovak? No, I shake my head, the two blur together for them; they speak Czech, they just prefer some words in Slovak.
+
+Still, in the end I can at least say that the children speak English well. No, we really don't speak it at home. I tried once, when my daughter was a year old, and she started crying. But now, at twelve, she speaks English better than I do, with a perfect American accent, and the three younger children are getting close. There is a single reason: when we turn on the TV at home, it is only ever in English. Czech fairy tales are a rare treat for the kids, something for Christmas at Grandma's.
+
+## Learning and resting at the same time
+
+Classes with a native speaker are great, and sending children to study abroad is better still. But both are expensive, and not always possible even when money is no object. YouTube, by contrast, is free, and English-language cartoon channels can be watched for next to nothing. We started when our daughter was a year old and could sit still in front of a tablet. Half an hour a day, which also gave us a chance to rest a little.
+
+I have to admit that the half hour gradually became an hour, and we still keep up the habit: the children demand their cartoons in English from six to seven in the evening. From YouTube shows for toddlers we moved on to The Penguins of Madagascar, My Little Pony, SpongeBob and The Simpsons. Sure, an hour of television is not the healthiest thing in the world. But parents deserve some rest, and on top of that they can justify it by the fact that the children are learning a language.
+
+I like telling friends about this system and describing the scientific research behind it. My wife frowns at me ("Oh, stop fibbing," she tells me, silently and sometimes out loud), because she knows full well that we weren't thinking about any research at the time. From her own childhood she remembered a classmate who spoke perfect English because his parents put Cartoon Network on at home. Correlation is not causation, but it seemed to us like a good idea.
+
+## Dubbing can stay
+
+None of this means the state should restrict Czech dubbing, which is excellent. I myself prefer some series dubbed (Red Dwarf, for example), and most Czechs will go on preferring dubbing, even at the cinema, for a long time to come. But I see no reason not to show children cartoons and films in the original version from an early age. It costs nothing and the benefits are clear. You have to keep one clear rule: if you want TV, it's in English.
+
+Beyond English, the same approach can be applied to general knowledge of the world. Let's get the children a radio and, from an early age, play Český rozhlas [Czech public radio] in the background. They'll get used to it and it will feel natural to them, just as it feels natural to me. At eight I got a radio, my parents tuned it to Radiožurnál [its news station], and since then I have never stopped looking forward to Zápisník zahraničních zpravodajů [the foreign correspondents' program]. I imagined all those faraway places and how one day I, too, might travel...
+
+To sum up: the digital age brings pitfalls, but also unprecedented opportunities for educating children. We can easily make use of them at home by sticking to a simple rule: at most an hour of TV a day for the kids, but only in English. Once we turn on the TV in Czech, it's over, because they won't want to go back. For Czech, let's tune in to the excellent Český rozhlas.
+
+---
+
 ## ČNB je rozbitá. Nezvládla inflaci a bojí se správně investovat
 
 *Seznam Zprávy, 26. prosince 2023, ptal se Jiří Nádoba. Tomáš Havránek.*
@@ -4693,6 +4887,54 @@ Zaprvé, má-li ČNB většinu eur uloženou de facto na běžném účtu, nezvl
 Osudnou chybu ČNB udělala v roce 2021, kdy gigantickou zásobu eur na běžném účtu odmítla využít k posílení koruny a rychlému snížení inflace. Jde o promarněnou příležitost katastrofálních rozměrů, která se zapíše do učebnic centrálního bankovnictví. Nyní víme, že ČNB se k inflačnímu cíli nechová symetricky. Odchylky dolů jí vadí, vysoká inflace tolik ne. Důsledek jsme viděli vloni, vidíme ho letos a uvidíme ho v letech příštích.
 
 V kostce: intervence splnily účel, pro nějž byly před 10 lety spuštěny. Jejich dlouhodobé důsledky jsme ale nezvážili dost. Možná by tehdy bylo lepší ztrátu ČNB rovnou nasypat na lidi „z vrtulníku“. Není jasné, jak intervence přispěly k inflaci 2021–2023. Každopádně díky nim mohla ČNB v roce 2021 vedle zvýšení sazeb též masivně posílit korunu. Tu možnost prováhala, i kvůli čemuž máme za poslední roky jednu z nejvyšších inflací ve vyspělém světě.
+
+---
+
+## How the Czech National Bank turned a triumph into a debacle: 10 years since the koruna was weakened
+
+*Seznam Zprávy, 28. října 2023. Tomas Havranek.*
+
+*English translation made with AI for this archive, published 2026-10-05. The record is the Czech original: „Jak ČNB udělala z triumfu debakl. 10 let od oslabení koruny“, https://meta-analysis.cz/komentare/jak-cnb-udelala-z-triumfu-debakl/.*
+
+Zdroj: https://www.seznamzpravy.cz/clanek/ekonomika-ocima-byznysu-komentar-jak-cnb-udelala-z-triumfu-debakl-10-let-od-oslabeni-koruny-238954
+
+In the fall of 2013 the Czech economy was in a sorry state. The last time we had seen decent growth was six years earlier. After the financial crisis came another recession in 2012, and it continued into the following year. The central bank's projections pointed to mild deflation for the coming year, that is, a fall in average prices, provided the Czech National Bank (CNB) did nothing about it.
+
+The CNB could not do anything about it in the standard way, by cutting the interest rate. That had been at 0.05% since November 2012. For long months Governor Singer tried to persuade the rest of the Bank Board to reach for a nonstandard tool: weakening the koruna. At every meeting, though, he was outvoted. It was not until November 7, 2013, that Mojmír Hampl added the decisive vote and the interventions began.
+
+I will admit right away, even as Mojmír's former advisor, that today I would prefer doing nothing in a similar situation. Mild deflation is no greater breach of price stability than mild inflation. But that is a story for another day, and among my colleagues I am in the minority. If a central bank believes that 2% inflation is best, it makes perfect sense for it to try to deliver it. Back then it was also not entirely clear that something like the deflationary spiral of the 1930s could be ruled out.
+
+## The interventions were nothing revolutionary
+
+Weakening the koruna had support both in the logic of the inflation target and in the practice of other advanced-country central banks. Most of them did not touch the exchange rate directly, but they swelled their assets in another way: chiefly by buying government bonds. That would not have been sensible in the Czech context, however, because the CNB could have sucked up the entire market.
+
+The interventions worked like this: anyone who wanted to buy koruna got it at a rate of 27 koruna to the euro. The new koruna were created by colleagues in the CNB's financial markets department with the requisite clicks on a keyboard. When the koruna happened to be weaker than 27 to the euro, the CNB did not intervene. In all, by April 2017 the CNB had clicked two trillion new koruna into existence.
+
+Was that money printed, or spent? Technically neither. Certainly not spent, because the CNB got euros for it. Whether it makes or loses money on them depends on how it invests them and when it sells. Nor were those two trillion printed, though that is only a formal distinction: they were clicked. Had they been physically printed and deposited in banks, the result would have been much the same.
+
+## Interventions and money printing
+
+And this is exactly where interventions differ from bond purchases, so-called quantitative easing: we really did click new money into existence. When it buys bonds, a central bank merely swaps one form of money (bonds) for another (cash). It is like breaking a thousand-koruna note into 10 hundred-koruna notes: paying with it then gets a little easier. With interventions, by contrast, entirely new koruna come into being; it is not just making change.
+
+That is why interventions have a better chance of doing something to the economy. Quantitative easing apparently had a negligible effect on both inflation and growth. Yet inflation and growth were what these policies were supposed to achieve. With interventions it was meant to work like this: the CNB weakens the koruna, which makes imports more expensive. A weaker koruna also helps exporters, who want to hire more people. A heated-up economy pushes wages up and, in the end, prices.
+
+In economics that last sentence is called the "Phillips curve." Looking at the data, it is not clear whether it is really a causal relationship and whether it works the way central banks want. In practice, the weakening of the koruna had a somewhat weaker effect than the bank expected. Still, with 10 years of hindsight and a series of econometric studies, there is no doubt that the interventions did in the end raise inflation, and growth a little too.
+
+## Research on the effects of the interventions
+
+How do we know? The interventions were a natural experiment. We can compare our economy with countries that had no interventions. The so-called synthetic control method lets us estimate how the Czech Republic would hypothetically have developed without them. There are three such studies, and although their results differ slightly from one another, together they confirm that the interventions raised prices (prevented deflation) and modestly revived the economy.
+
+So the interventions did what they were meant to do, even if not as quickly as the CNB expected in the fall of 2013. What is more, the exit from the interventions in April 2017 went unexpectedly smoothly. Until the pandemic arrived, then, we rated this "exchange rate commitment" as a near-total victory. I repeat that this assessment holds for a central bank targeting 2% inflation, which is, however, entirely standard.
+
+What tarnished the legacy of the interventions was the CNB's conduct after 2017, and especially after 2020. As a by-product of the interventions, the CNB hoarded more euros than the world's largest hedge funds. But it refused to invest those euros so that they would earn money over the long run, on the model of Singapore and Norway. The result is a massive loss for the CNB (and hence, in the end, for all of us), which has two sources.
+
+## The interventions as a Pyrrhic victory
+
+First, with most of its euros held in what is de facto a checking account, the CNB cannot offset the loss that comes from the koruna's appreciation. When the koruna strengthens, the koruna value of the euros falls. Second, with higher rates it has to pay tens of billions of koruna every quarter to the banks that keep the koruna it clicked into existence on deposit with it. Half of Czech banks' interest income today comes from here. It is not clear how this effortless profit affects banks' willingness to lend to people and firms.
+
+The CNB made its fatal mistake in 2021, when it refused to use the gigantic stock of euros in its checking account to strengthen the koruna and bring inflation down quickly. It is a missed opportunity of catastrophic proportions, one that will go into the central banking textbooks. We now know that the CNB does not treat its inflation target symmetrically. Deviations below the target bother it; high inflation, not so much. We saw the consequence last year, we see it this year, and we will see it in the years to come.
+
+In a nutshell: the interventions served the purpose for which they were launched 10 years ago. But we did not weigh their long-term consequences enough. Perhaps it would have been better back then to pay out the CNB's loss straight to people "from a helicopter." It is not clear how the interventions contributed to the inflation of 2021 to 2023. In any case, thanks to them the CNB could in 2021 have massively strengthened the koruna alongside raising rates. It squandered that option, which is one reason we have had, over the past few years, one of the highest inflation rates in the developed world.
 
 ---
 
@@ -5325,6 +5567,38 @@ Na velikosti třídy ovšem záleží rodičům a učitelům. Zmenšování tř�
 Zmenšování tříd nejenže nepomáhá, ale škodí ve dvou oblastech. Zaprvé, odsává peníze, které by jinak mohly jít na platy učitelů. Snížíte-li velikost třídy z 30 dětí na 20, potřebujete o 50 procent učitelů víc. Rozpočtově ekvivalentní je zvýšit platy o 50 procent. Zadruhé, když potřebujete tolik nových učitelů, získáte menší procento skutečných srdcařů. Méně dětí zažije špičkové učitele.
 
 Sečteno a podtrženo, nepotřebujeme menší třídy a víc učitelů. Potřebujeme, aby nejlepší učitelé učili větší třídy a byli špičkově placeni. Začněme zvýšením nejnižšího povoleného průměrného počtu dětí na třídu ve škole ze současných 17 (!) alespoň na 20. Ušetřené peníze dejme ředitelům na bonusy pro nejlepší učitele.
+
+---
+
+## Fewer than 20 children in a class is an expensive luxury. Kids don't learn more in small classes
+
+*Hospodářské noviny, 28. června 2023. Tomas Havranek.*
+
+*English translation made with AI for this archive, published 2026-10-05. The record is the Czech original: „Méně než 20 dětí ve třídě je drahý luxus. V malých třídách se víc nenaučí“, https://meta-analysis.cz/komentare/mene-nez-20-deti-ve-tride/.*
+
+Zdroj: https://archiv.hn.cz/c1-67218460-mene-nez-20-deti-ve-tride-je-drahy-luxus-v-malych-tridach-se-vic-nenauci
+
+When children go back to school after the summer break, they will often find fewer than 20 classmates waiting for them. Classes of 15 are common, even in cities. I myself treated class size as an important criterion when choosing a school for our four children: it makes intuitive sense that in a small class the teacher has more time for each child. Dozens of scientific studies have examined this intuition. The result? The number of children in a class has a negligible effect on their education.
+
+Not all the studies agree. There are 62 of them, and together they report 1,767 different estimates. Moreover, published studies need not reflect the actual scientific findings impartially: because of publication bias, results that are interesting or consistent with the prevailing theory get published more often. The studies also differ in methodological quality.
+
+The statistical method for summarizing the results of studies on the same topic is called meta-analysis. It corrects the literature for publication bias and takes differences in quality into account. It originally comes from medicine, but it can also be used, for instance, to compute the optimal rate of inflation or the ideal tax on CO2 emissions, or to assess the usefulness of investing in hedge funds.
+
+Our research group specializes in meta-analysis and helps organize an annual workshop attended by experts from around the world. Besides developing the method, we aim for research that can be put directly to use in practice. The latest meta-analysis is unambiguous: changes in class size within the range of 15 to 35 pupils do not affect academic results, not even for minorities and children from poor families.
+
+How do we judge which of the 62 studies are of good quality? We do not have to do much judging. The studies differ from one another in 42 respects (different data and methods), but a negligible effect of class size is the result common to all approaches. With a single exception: the experiment in the state of Tennessee, where in the 1980s elementary schools received $28 million to make some of their classes smaller.
+
+But Tennessee was not a proper experiment of the kind Julie Chytilová and Michal Bauer of Charles University publish in Nature. The Tennessee experiment was not randomized. So there is no way to verify whether children and teachers were assigned to classes at random. More proactive parents may have pushed to get their children into the smaller classes. Principals may have handed out the smaller classes to better teachers as a reward.
+
+A controlled experiment is unrealistic here. Many studies therefore use a clever trick, one of the things for which a Nobel Prize in economics was awarded: in many places, if 60 first-graders enroll, the school opens two classes. If 61 enroll, it opens three. Under ideal conditions this gives us a natural experiment in which the split into two classes (60 pupils) or three classes (61 pupils) does not depend on the abilities of the children or the teachers.
+
+The method is called regression discontinuity, and new studies by Nobel laureate Angrist show the same thing as the meta-analysis. The other methods that try to tackle the "correlation is not causation" problem, instrumental variables and regression analysis with control variables, give the same results too: class size matters precious little for children's education. Why? The studies disagree, but apparently it is not easy to adapt teaching effectively to a smaller class.
+
+Class size does matter to parents and teachers, however. Reducing class sizes is so popular a policy that since 2010 alone at least 17 countries and regions around the world have adopted it. This September, for instance, class sizes in New York will shrink. The justification: "Studies show that children learn faster in smaller classes." Behold, evidence-based policy in its postmodern form.
+
+Smaller classes not only fail to help, they do harm in two areas. First, they drain money that could otherwise go toward teachers' pay. Cut class size from 30 children to 20 and you need 50 percent more teachers. The budgetary equivalent is a 50 percent pay raise. Second, when you need that many new teachers, a smaller share of them will be people who truly have their heart in the job. Fewer children get to experience a top teacher.
+
+The bottom line: we do not need smaller classes and more teachers. We need the best teachers teaching larger classes and being paid top salaries. Let us start by raising the minimum permitted average number of children per class in a school from the current 17 (!) to at least 20. And let us give principals the money saved to pay bonuses to the best teachers.
 
 ---
 
@@ -9655,6 +9929,44 @@ Centrální banky tato vylepšení přijmou samy, ale potrvá to roky. Pokud chc
 
 ---
 
+## Is inflation unconstitutional? Or, the future of monetary policy
+
+*Hospodářské noviny, 4. února 2021. Tomas Havranek.*
+
+*English translation made with AI for this archive, published 2026-10-05. The record is the Czech original: „Je inflace neústavní? Aneb budoucnost měnové politiky“, https://meta-analysis.cz/komentare/je-inflace-neustavni-aneb-budoucnost-menove/.*
+
+Zdroj: https://archiv.hn.cz/c1-66878350-je-inflace-neustavni-aneb-budoucnost-menove-politiky
+
+It is possible to radically change even a practice that has worked for years and invokes the constitution. We saw as much yesterday, for instance, when the Constitutional Court lobbed a grenade into the established electoral system. And it can lob a similar grenade at any time into the policy of the Czech National Bank (CNB), which also invokes the constitution.
+
+The question is this: does a yearly rise in prices amount to price stability? The CNB's constitutional task, after all, is to maintain price stability, not to ensure positive inflation. But the CNB is not alone in this; all of central banking is due for a review.
+
+Central banks in small economies today work from a three-part recipe. First, they aim for inflation of around two percent. Second, they pile up foreign currency and park it mostly at no return. Third, in a crisis they buy up bonds or weaken the currency. The experience of the past decade and new research, however, call all three ingredients into question. What will monetary policy look like at the end of the decade?
+
+## Genuine price stability
+
+Most central banks are tasked with maintaining price stability. None of them, however, reads the mandate literally; instead they target two percent inflation. Mild price rises, we are told, help the economy. To a layman the logic does not add up: we do not shorten the meter by two centimeters a year either, to cut fuel consumption per hundred kilometers. Yes, we would meet emissions standards more easily on paper, but in practice there would be chaos. In the same way, the koruna is a basic unit of measurement, and changes in its value complicate life for all of us.
+
+The academic literature on optimal inflation shares this view. According to the US Federal Reserve's database, 220 studies on the topic have been published over the past 30 years. The average estimate of ideal inflation? Minus 0.06 percent, which is to say close to genuine price stability. Little wonder that genuine stability is now championed by authorities such as John Cochrane, a former president of the American Finance Association. The consequence will be a faster-appreciating koruna, but without harm to exporters, whose costs will grow more slowly once inflation is wiped out.
+
+## Investing the foreign exchange reserves
+
+The Czech Republic holds enormous foreign exchange reserves, more than EUR 135 billion, kept mainly in bonds. Economists currently disagree on whether advanced countries need reserves at all. The CNB did not use them in either the financial crisis or the Covid crisis. Even so, it would not be sensible for it to spend all its euros on, say, apartments in Athens or the Chinese yuan. The reserves would no longer be liquid, that is, quickly usable to defend the koruna. But there is no reason not to invest half of the euros, gradually, in quality global stocks.
+
+In a modern economy, stocks are about as liquid as government bonds. Yet over the long run they earn around 6 percent in real terms, while bonds now often carry a negative interest rate. The state does not die; it has an infinite investment horizon and can ignore short-term swings in share prices. Singapore, after all, invests its reserves in a similar way. It is not the end of capitalism: we would be buying global stocks, where we are a drop in the ocean. The Czech Republic would merely pick up the hundreds of billions of koruna it now leaves lying on the sidewalk. Nor is there anything to stop the CNB from buying more gold, too, and filling its empty vaults. Gold does not earn much over the long run, but unlike government bonds, at least it does not lose as much.
+
+## Direct support for consumption
+
+In a crisis, central banks rely on negative rates, weakening the currency, or buying bonds (so-called quantitative easing). A few years ago I believed in these tools myself, but the data are unforgiving. Negative rates do not help support lending. Quantitative easing has a negligible effect on inflation. Our own experience with interventions shows that weakening the currency gives the economy a push but does little to move prices.
+
+After the financial crisis we expected a deflationary spiral. It never arrived, anywhere, regardless of whether central banks used unconventional tools, or which ones. Genuine price stability apparently has no need of such tools. If we absolutely had to use one, let us reach for one that is understandable, positive and effective. That is direct support for consumption: sending the money earned by investing the foreign exchange reserves straight into citizens' accounts. Households, not speculators, would then be the ones to profit from the CNB's loss on an unconventional tool.
+
+A task for 2021
+
+Central banks will adopt these improvements on their own, but it will take years. If we want change in the Czech Republic sooner, it is enough to refine the Act on the CNB by adding the following three sentences. First, price stability means stability of the consumer price index. Second, the CNB manages the foreign exchange reserves with due managerial care. Third, to achieve price stability, the CNB may exceptionally send money directly to citizens.
+
+---
+
 ## Nově upravený projekt dálnice D35
 
 *Lilie, únor 2021. Tomáš Havránek.*
@@ -10658,7 +10970,7 @@ Závěrem: dostupná data o klientských sazbách končí říjnem 2018. Za list
 
 *Czech National Bank, 19. prosince 2018. Tomas Havranek.*
 
-*English translation made for this archive, published 2026-08-27. The record is the Czech original: „Stanovisko poradce k 8. situační zprávě 2018“, https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-8sz-2018/.*
+*English translation made with AI for this archive, published 2026-08-27. The record is the Czech original: „Stanovisko poradce k 8. situační zprávě 2018“, https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-8sz-2018/.*
 
 Zdroj: https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2018/download/stanoviska_2018_08.pdf
 
@@ -11118,6 +11430,38 @@ Rádi bychom tímto způsobem poděkovali všem, kteří se podíleli na přípr
 
 ---
 
+## Letní čas žádnou energii nešetří
+
+*VoxEU / CEPR, 2. prosince 2017. Dominik Herman, Zuzana Iršová, Tomáš Havránek.*
+
+*Czech translation made with AI for this archive, published 2026-10-05. The record is the English original: „Daylight saving saves no energy“, https://meta-analysis.cz/komentare/voxeu-daylight-saving/.*
+
+Zdroj: https://cepr.org/voxeu/columns/daylight-saving-saves-no-energy
+
+Původním zdůvodněním letního času byly úspory energie. Tento sloupek však ukazuje, že moderní empirická literatura na toto téma v průměru žádné úspory nenachází. Rozsah úspor souvisí se zeměpisnou šířkou: regiony ve vyšších zeměpisných šířkách zaznamenávají o něco větší úspory, zatímco subtropické regiony kvůli letnímu času spotřebovávají energie více. Dokonce i ve Skandinávii činí úspory jen 0,3 % roční spotřeby energie. Pokud chtějí tvůrci politik další používání letního času obhájit, musí se zaměřit na jeho jiné účinky.
+
+Většina Evropanů a Američanů se ve škole učí, že letní čas snižuje spotřebu energie. Toto rozšířené přesvědčení opakovali i tak renomovaní autoři jako Thaler a Sunstein, kteří letní čas chválí ve své knize Nudge (Thaler a Sunstein 2008). Letní čas samozřejmě původně zavedlo několik zemí během první světové války, aby snížily spotřebu energie, ale akademický výzkum toho, jak velké úspory energie letní čas v moderní ekonomice přináší, je překvapivě skromný. Prošli jsme časopisecké články, nepublikované pracovní studie, zprávy energetických společností, vládní dokumenty a doktorské disertace a našli jsme 44 použitelných studií provedených od průkopnické zprávy Ebersole (1974). Zběžný pohled na literaturu nám bohužel nepomůže. Odhady se rozbíhají všemi směry a ke konsenzuální hodnotě se ani zdaleka neblíží.
+
+Poznámka: Studie měří vliv letního času na spotřebu energie, takže záporný odhad znamená úsporu energie.
+
+Dva existující přehledy literatury, Reincke a van den Broek (1999) a Aries a Newsham (2008), rovněž ukazují, že různí výzkumníci dospívají k podstatně odlišným výsledkům. Lze najít doklady ve prospěch úspor energie díky letnímu času, stejně jako lze najít doklady o vyšší poptávce po energii v souvislosti s letním časem. Například nejcitovanější empirická studie, Kotchen a Grant (2011), dochází k závěru, že letní čas v rozporu s cílem této politiky spotřebu energie zvyšuje. (Právě tento výsledek může být důvodem, proč studie získává tolik citací, i když byla zároveň publikována v prestižním časopise The Review of Economics and Statistics.) Aries a Newsham (2008: 1864) uzavírají, že „existující poznatky o tom, jak letní čas ovlivňuje spotřebu energie, jsou omezené, neúplné nebo protichůdné“. Protichůdné výsledky lze ostatně najít i uvnitř mnoha jednotlivých studií, jak ukazuje obrázek 2.
+
+V připravovaném článku provádíme kvantitativní syntézu literatury: metaanalýzu (Irsova et al. 2018).1 Naším záměrem je vysvětlit rozdíly ve výsledcích odlišnostmi v datech, metodách a případně i v celkové kvalitě studií. Ze 44 studií o vlivu letního času na spotřebu energie shromažďujeme 162 použitelných odhadů. Nejprve testujeme publikační selektivitu, která v empirické ekonomii typicky zveličuje výsledky na dvojnásobek (Ioannidis et al. 2017). Nenacházíme vůbec žádnou publikační selektivitu, což je samo o sobě pozoruhodné zjištění. Náš soubor dat sice zahrnuje mnoho nepublikovaných studií, ale v ekonomii se publikační selektivita obvykle nachází i v pracovních studiích, protože mnozí autoři běžně diskriminují neintuitivní a statisticky nevýznamné výsledky.
+
+Absence publikační selektivity znamená, že můžeme přejít k hlavní části naší analýzy: ke zkoumání toho, proč se uváděné odhady tak liší. Za tím účelem odhadujeme regresi, v níž odhady vlivu letního času vysvětlujeme faktory spojenými s kontextem, v němž byly získány. Zahrnujeme například maximální počet hodin denního světla v regionu, ke kterému se odhad vztahuje. Mimo jiné zohledňujeme frekvenci dat o spotřebě energie (hodinová nebo denní), techniku odhadu (simulace, metoda rozdílů v rozdílech, prostá regrese), definici spotřeby energie (komerční, rezidenční, pouze osvětlení) a aspekty, které mohou souviset s kvalitou (publikace v časopise, impakt faktor periodika, počet citací).
+
+Poznámka: Faktory jsou seřazeny shora dolů podle důležitosti. Jejich kombinace (modely) jsou zobrazeny ve sloupcích seřazených zleva doprava podle užitečnosti. Relativní užitečnost je vyjádřena šířkou sloupce. Modrá barva znamená, že daný faktor přispívá k nalezení menších úspor díky letnímu času.
+
+Výsledky ukazují, že studie publikované v prestižnějších periodikách typicky uvádějí menší úspory energie díky letnímu času a že země s více hodinami denního světla v létě (tedy ve vyšší zeměpisné šířce) zaznamenávají úspory větší. Důležitá je také frekvence dat a metodologie odhadu.
+
+Dále pro každou zemi v našem vzorku počítáme odhady vlivu letního času odpovídající nejlepší praxi v literatuře. V podstatě pomocí výsledků metaanalýzy přepočítáváme odhady tak, jako by všechny pocházely ze studií, které používají metodu rozdílů v rozdílech a hodinová data a které byly publikovány v periodikách s maximálním impakt faktorem. Odhady podle nejlepší praxe uvádí tabulka 1.
+
+Záporné odhady znamenají, že v daných zemích letní čas spotřebu energie snižuje. V některých zemích s nižší zeměpisnou šířkou, a to i v Evropě, se zdá, že letní čas spotřebu energie zvyšuje. Všechny odhady jsou však statisticky nevýznamné a velmi malé. Průměr za celý soubor dat je téměř přesně nula. Zemí s nejvyšším přínosem letního času je Norsko, ale i tam činí efekt pouze 0,5 % ve dnech, kdy letní čas platí, a tedy přibližně 0,3 % roční spotřeby.
+
+Letní čas dvakrát ročně ovlivňuje 1,5 miliardy lidí na celém světě, někdy i se smrtelnými následky, jak ukazují studie dokumentující dopravní nehody způsobené střídáním času (Smith 2016). Se zjištěním, že letní čas nešetří prakticky žádnou energii, padá původní a dodnes běžně užívané zdůvodnění této politiky. Možná letní čas opravdu není tak dobrý šťouch (nudge); desítky zemí ho v posledních desetiletích opustily. Nebo možná pohodlí, které přinášejí delší světlé večery, převažuje nad nepohodlím ze spánkové deprivace a dokonce i nad ztrátami na životech v důsledku dopravních nehod (a možná také v důsledku vyššího výskytu infarktů a depresí). Nebo by snad celoroční letní čas zachoval většinu přínosů a zároveň odstranil mnohé problémy spojené se střídáním času. Jednoduše to nevíme. Stále čekáme na studii, která by systematicky porovnala všechny různé přínosy a náklady letního času.
+
+---
+
 ## Daylight saving saves no energy
 
 *VoxEU / CEPR, 2. prosince 2017. Dominik Herman, Zuzana Irsova, Tomas Havranek.*
@@ -11428,7 +11772,7 @@ Jakkoli není potřebné zapisovat se do učebnic centrálního bankovnictví t�
 
 *Czech National Bank, 25. září 2017. Tomas Havranek.*
 
-*English translation made for this archive, published 2026-08-27. The record is the Czech original: „Stanovisko poradce k 6. situační zprávě 2017“, https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-6sz-2017/.*
+*English translation made with AI for this archive, published 2026-08-27. The record is the Czech original: „Stanovisko poradce k 6. situační zprávě 2017“, https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-6sz-2017/.*
 
 Zdroj: https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2017/download/stanoviska_2017_06.pdf
 
@@ -11589,6 +11933,46 @@ While there is no need to write ourselves into the textbooks of central banking 
 [7] Hall and Reis (2017) show that the central bank can achieve a stable price level simply by indexing rates to expected prices. A summary is here: http://econlog.econlib.org/archives/2017/03/ricardo_reis_on.html.
 
 [8] Why, then, has no central bank yet abandoned inflation targeting in favor of targeting a stable purchasing power of money, combined with occasional use of direct support of consumption and the bonus for cash withdrawals? The philosophy behind both tools is old, but they were brought into practically workable form only in the last two years. Unless insurmountable obstacles appear, the first to introduce them will probably be the central bank of a small advanced country (much as with inflation targeting), since the large central banks face stronger inertial pressure from the public and from institutional tradition. That is one reason it took 22 years from New Zealand's pioneering example before inflation targeting was officially adopted in the United States.
+
+---
+
+## Ukazatele celkové inflace by neměly přehlížet náklady na vlastnické bydlení
+
+*VoxEU / CEPR, 12. září 2017. Tomáš Havránek, Mojmír Hampl.*
+
+*Czech translation made with AI for this archive, published 2026-10-05. The record is the English original: „Headline inflation measures shouldn't ignore costs of home ownership“, https://meta-analysis.cz/komentare/voxeu-home-ownership/.*
+
+Zdroj: https://cepr.org/voxeu/columns/headline-inflation-measures-shouldnt-ignore-costs-home-ownership
+
+Sedm z deseti Evropanů bydlí ve vlastním, a přesto nejdůležitější evropská míra inflace nezahrnuje náklady spojené s vlastnickým bydlením. V tomto komentáři argumentujeme, že zahrnutí nákladů na vlastnické bydlení by prospělo měnové i makroobezřetnostní politice. Zároveň by se tím tato míra přiblížila tomu, co většina lidí za inflaci považuje.
+
+Statistické úřady mnoha zemí měří náklady na vlastnické bydlení výpočtem imputovaného nájemného, které pak zahrnují do ukazatelů celkové inflace. Platí to mimo jiné pro Spojené státy, Japonsko a Švýcarsko. Naproti tomu harmonizovaný index spotřebitelských cen (HICP), nejdůležitější inflační statistika EU, vlastnické bydlení vylučuje, a to z technického důvodu: imputované transakce jsou v rozporu s definicí HICP a bylo by nutné použít složitější přístup založený na čistém pořízení (net acquisitions; Eurostat 2012, 2013).
+
+Eurostat o doplnění nákladů na vlastnické bydlení do HICP uvažuje už řadu let. Nečiní tak zčásti proto, že přístup založený na čistém pořízení znamená, že do HICP přímo vstupují ceny nemovitostí (spolu s poplatky spojenými s vlastnictvím a náklady na opravy a údržbu). Protože nákup domu či bytu obsahuje značnou investiční složku, jeho zahrnutí do celkové inflace vyvolává u mnoha statistiků rozpaky. Koncepčně jsou však domy a byty zvláštním případem zboží dlouhodobé spotřeby, protože představují nárok na tok budoucích služeb. Cecchetti (2007) například ukázal, že dlouhodobý kapitálový zisk z vlastnického bydlení je velmi malý.
+
+Ceny nemovitostí jsou samozřejmě důležité pro finanční stabilitu samy o sobě a v naší nedávné práci tvrdíme, že jejich zahrnutí do oficiálních měr inflace může pomoci propojit měnovou a makroobezřetnostní politiku (Hampl a Havranek 2017). Mnozí ekonomové sestavili systémy včasného varování před finančními krizemi, v nichž hrají ceny nemovitostí významnou roli (např. Reimers 2012, Babecky et al. 2013, Antunes et al. 2014, Laina et al. 2015, Tölö 2015). Význam cen nemovitostí v indikátorech včasného varování vede některé autory k tomu, že zdůrazňují interakci mezi jejich hodnotou a nastavením měnové politiky. Jako u mnoha dalších otázek v nedávné diskusi o makroobezřetnostní politice však ani zde nepanuje jasná shoda.
+
+Jeden myšlenkový proud, zastoupený mimo jiné pracemi Assenmacher-Wesche a Gerlach (2010) a Svensson (2014), tvrdil, že používat měnovou politiku k brzdění růstu cen nemovitostí je příliš nákladné a škodí blahobytu země. Williams (2015) provedl metaanalýzu empirických odhadů z této literatury a zjistil, že pokles cen nemovitostí o 4 % vyvolaný zpřísněním měnové politiky je typicky spojen se ztrátou 1 % HDP.
+
+Tato diskuse však často opomíjí pozitivní účinky takové politiky na HDP a zaměstnanost během poklesu, kdy tradiční cílování CPI, vezmeme-li v úvahu ceny nemovitostí, znamená menší uvolnění, než by jinak bylo optimální. Jinými slovy, je důležité zdůraznit, že cílování inflace je symetrické, ať už je složení inflační řady jakékoli.
+
+Několik studií prokázalo užitečnost zohlednění finanční stability (včetně cen nemovitostí, které zde hrají nejvýraznější roli) v pravidlech měnové politiky v režimu cílování inflace. Doklady pro to přinesli například Aydin a Volkan (2011). Použili strukturální model měnové politiky kalibrovaný pro Jižní Koreu a zjistili, že sledování cen nemovitostí vede k mírnějším výkyvům hospodářského cyklu než konvenční cílování inflace.
+
+Ceny nemovitostí jsou z oficiálních měr inflace zpravidla vyloučeny, zatímco jiné statky, které rovněž poskytují tok budoucích služeb (zboží dlouhodobé spotřeby jako automobily a pračky), zahrnuty jsou. Pro tuto konvenci neexistuje jasný teoretický důvod kromě intuice a praktičnosti. Argumentem v její prospěch je, že u domů a bytů je investiční složka v poměru ke složce spotřební větší než u zboží dlouhodobé spotřeby, jako jsou auta. Část hodnoty navíc připadá například na pozemek, který se neopotřebovává, a proto bývá považován za dobrého uchovatele hodnoty.
+
+Jednotlivá pozorování však naznačují, že mnohé domácnosti přistupují alespoň k nákupu svého prvního bydlení spíše jako ke spotřebě než k investici. A teoreticky by ceny všech aktiv, včetně nemovitostí, akcií a dluhopisů, měly být v zásadě do inflace zahrnuty, pokud chceme měřit současné náklady očekávané celoživotní spotřeby, a nikoli pouze spotřeby současné (Alchian a Klein 1973).
+
+Kromě známých studií (Alchian a Klein 1973; Goodhart 2001) se za zahrnutí cen nemovitostí do indexu spotřebitelských cen vyslovila řada dalších autorů. Bryan et al. (2002) například ukázali, že ve Spojených státech vynechání cen nemovitostí vnáší do indexu zkreslení z vyloučených statků (excluded goods bias) a vede k podhodnocení CPI přibližně o 0,25 procentního bodu ročně. Diewert a Nakamura (2009) také poukázali na potřebu přímější míry inflace cen nemovitostí v oficiálním indexu CPI. Naznačili, že nedávné období nízké oficiální inflace může být výsledkem chybného měření skutečného vývoje spotřebitelských cen.
+
+Graf 1 ukazuje čtvrtletní meziroční změny HICP v eurozóně, indexu vlastnického bydlení konzistentního s HICP a indexu samotných cen nemovitostí. Růst posledních dvou indexů byl v letech 2011 až 2014 pod oficiální inflací a od roku 2015 ji převyšuje. Z toho plyne, že zahrnutí nákladů na vlastnické bydlení do HICP by měnovou politiku ECB učinilo spíše ještě proticykličtější. Rozsah tohoto efektu závisí na váze přisouzené indexu vlastnického bydlení nebo indexu cen nemovitostí, ale i váha 10 % by v některých obdobích znamenala rozdíl v HICP až půl procentního bodu.
+
+Graf 1 Nenulová váha cen nemovitostí by učinila měnovou politiku v eurozóně proticykličtější
+
+Poznámky: Agregátní index vlastnického bydlení pro eurozónu je spočten s použitím vah jednotlivých zemí, které Eurostat používá při konstrukci harmonizovaného indexu spotřebitelských cen. Zdroj: Eurostat.
+
+Častým argumentem proti zahrnutí cen nemovitostí je zpoždění v dostupnosti dat. Jde o problém, který však několik statistických úřadů překonalo (Hampl a Havranek 2017). Například česká celková měsíční inflace zahrnuje ceny nemovitostí s váhou 1,4 % pro většinu regionů a s váhou 2,3 % pro hlavní město Prahu. Česká národní banka, což je mezi centrálními bankami neobvyklé, počítá vlastní doplňkový index inflace (CPIH), v němž mají ceny nemovitostí váhu 15 % podle svého podílu na výdajích spotřebitelů. Tento index banka zveřejňuje ve své zprávě o inflaci. V některých zemích lze data brát přímo z katastru nemovitostí, kde jsou veškeré cenové informace k dispozici během několika dnů po změně vlastníka.
+
+Mezi mnoha argumenty pro zahrnutí nákladů na vlastnické bydlení do celkového CPI vyniká jeden: index CPI by se tím přiblížil tomu, co většina lidí považuje za inflaci. Ve známém článku s barvitým názvem „Measuring inflation: the core is rotten“ (Měření inflace: jádro je zkažené) James Bullard, prezident Federální rezervní banky v St. Louis, kritizoval zaměření Fedu na jádrovou inflaci a tvrdil, že bychom měli věnovat více pozornosti širšímu ukazateli. Parafrázujeme-li provokativní výrok, s nímž Bullard (2011) přišel: bezprostředním přínosem odklonu od výlučného důrazu na míru inflace, která nezahrnuje náklady na vlastnické bydlení, by bylo znovu propojit centrální banky a statistické úřady s domácnostmi a firmami, které změny cen poznají na první pohled.
 
 ---
 
@@ -11959,7 +12343,7 @@ Jinými slovy, je-li v prvním čtvrtletí o jeden pracovní den více než prů
 
 *Czech National Bank, 26. září 2016. Tomas Havranek.*
 
-*English translation made for this archive, published 2026-08-27. The record is the Czech original: „Stanovisko poradce k 6. situační zprávě 2016“, https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-6sz-2016/.*
+*English translation made with AI for this archive, published 2026-08-27. The record is the Czech original: „Stanovisko poradce k 6. situační zprávě 2016“, https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-6sz-2016/.*
 
 Zdroj: https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2016/download/stanovisko_poradce_2016_06.pdf
 
@@ -12233,7 +12617,7 @@ V dosavadní diskuzi spodní hranice sazeb jsem předpokládal, že centrální 
 
 *Czech National Bank, 29. března 2016. Tomas Havranek.*
 
-*English translation made for this archive, published 2026-08-27. The record is the Czech original: „Stanovisko poradce k 2. situační zprávě 2016“, https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-2sz-2016/.*
+*English translation made with AI for this archive, published 2026-08-27. The record is the Czech original: „Stanovisko poradce k 2. situační zprávě 2016“, https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-2sz-2016/.*
 
 Zdroj: https://www.cnb.cz/export/sites/cnb/cs/menova-politika/.galleries/br_zapisy_z_jednani/2016/download/stanovisko_poradce_2016_02.pdf
 
@@ -12448,7 +12832,7 @@ To ukáže čas a příležitosti, které se naskytnou jak mě, tak manželovi. 
 
 *vylet09.blogspot.com, 18. srpna 2009. Tomas Havranek.*
 
-*English translation made for this archive, published 2026-09-11. The record is the Czech original: „Road trip 2009: Západ USA“, https://meta-analysis.cz/komentare/vylet09-road-trip-2009-zapad-usa/.*
+*English translation made with AI for this archive, published 2026-09-11. The record is the Czech original: „Road trip 2009: Západ USA“, https://meta-analysis.cz/komentare/vylet09-road-trip-2009-zapad-usa/.*
 
 Zdroj: https://vylet09.blogspot.com/
 

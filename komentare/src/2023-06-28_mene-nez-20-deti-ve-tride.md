@@ -6,6 +6,8 @@ headline: "Méně než 20 dětí ve třídě je drahý luxus. V malých třídá
 status: full
 byline: "Tomáš Havránek"
 word_count: "614"
+body_note: "Anglický překlad pořízený pomocí AI: [Fewer than 20 children in a class is an expensive luxury. Kids don't learn more in small classes](/komentare/fewer-than-20-children-in-a-class/)."
+translation: "fewer-than-20-children-in-a-class"
 ---
 
 # Méně než 20 dětí ve třídě je drahý luxus. V malých třídách se víc nenaučí

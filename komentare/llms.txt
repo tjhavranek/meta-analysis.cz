@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory, stanoviska poradce bankovní rady ČNB a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 236 položek a 26 kratších příspěvků ze sítí (262 záznamů celkem), 2009–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
+Publicistika: 247 položek a 26 kratších příspěvků ze sítí (273 záznamů celkem), 2009–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
 
 ## Celostátní komentáře
 
@@ -89,8 +89,10 @@ Komentáře a sloupky pro celostátní média — měnová politika, inflace, ve
 - [Jak přicházíme o sto miliard korun ročně](https://meta-analysis.cz/komentare/hn-sto-miliard-rocne/) — Hospodářské noviny (autorská verze, ne otištěné znění), 11. září 2019
 - [Stanovisko poradce k 8. situační zprávě 2018](https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-8sz-2018/) — Česká národní banka, 19. prosince 2018
 - [Nejlepší využití kryptoměn – baterie?](https://meta-analysis.cz/komentare/forbes-next-kryptomeny-baterie/) — Forbes NEXT, 22. března 2018
+- [Letní čas žádnou energii nešetří](https://meta-analysis.cz/komentare/voxeu-letni-cas/) — VoxEU / CEPR, 2. prosince 2017
 - [Drahoš a Zeman mají stejnou šanci na zvolení](https://meta-analysis.cz/komentare/zi-tz-prezidentske-volby/) — KdoVyhrajeVolby.cz, 8. listopadu 2017
 - [Stanovisko poradce k 6. situační zprávě 2017](https://meta-analysis.cz/komentare/cnb-stanovisko-poradce-6sz-2017/) — Česká národní banka, 25. září 2017
+- [Ukazatele celkové inflace by neměly přehlížet náklady na vlastnické bydlení](https://meta-analysis.cz/komentare/voxeu-vlastnicke-bydleni/) — VoxEU / CEPR, 12. září 2017
 - [KdoVyhrajeVolby.cz: Do sněmovny se může dostat rekordní počet stran](https://meta-analysis.cz/komentare/zi-tz-projekce-mandatu/) — KdoVyhrajeVolby.cz, 6. září 2017
 - [Vědci z Univerzity Karlovy vyvinuli volební model, který denně počítá aktuální preference](https://meta-analysis.cz/komentare/zi-tz-agregator-preferenci/) — KdoVyhrajeVolby.cz, 25. srpna 2017
 - [Nerovnost neroste](https://meta-analysis.cz/komentare/cnb-nerovnost-neroste/) — čnBlog, 15. května 2017
@@ -231,12 +233,14 @@ Rozhovory pro česká média. U audio a video rozhovorů vede archiv odkaz na p�
 
 ## In English
 
-Columns and commentary written in English: policy pieces for VoxEU/CEPR, posts on meta-analysis methods for MAER-Net, and English translations of the advisor's opinions written for the Bank Board of the Czech National Bank.
+Columns and commentary written in English: policy pieces for VoxEU/CEPR and posts on meta-analysis methods for MAER-Net. The section also holds English translations, made with AI, of selected Czech columns and of the advisor's opinions written for the Bank Board of the Czech National Bank; each links to its Czech original.
 
 - [Rebuilding meta-analysis.cz: what is on it now](https://meta-analysis.cz/komentare/maer-rebuilding-meta-analysis-cz/) — MAER-Net, 2. září 2026
 - [Two new pre-registered papers: outlier decisions in meta-analysis and AI feedback on meta-analyses](https://meta-analysis.cz/komentare/maer-two-pre-registered-papers/) — MAER-Net, 27. července 2026
 - [Results of the AI report ranking experiment](https://meta-analysis.cz/komentare/debate-vysledky-experimentu-autorum/) — the 47 authors who took part in the experiment (korespondence, nepublikováno), 16. července 2026
+- [Real estate is a bad investment for most Czechs](https://meta-analysis.cz/komentare/sz-real-estate-bad-investment/) — Seznam Zprávy, 1. června 2026
 - [Stress-testing research with AI, now super easy and fully automated](https://meta-analysis.cz/komentare/maer-stress-testing/) — MAER-Net, 31. května 2026
+- [One AI isn't enough: let the models fight it out](https://meta-analysis.cz/komentare/one-ai-is-not-enough/) — Hospodářské noviny, 31. prosince 2025
 - [Stress-Testing Meta-Research with AI Duels](https://meta-analysis.cz/komentare/maer-ai-duels/) — MAER-Net, 12. prosince 2025
 - [MAIVE Is Now on CRAN](https://meta-analysis.cz/komentare/maer-maive-cran/) — MAER-Net, 10. prosince 2025
 - [Highlights from the 2025 MAER-Net Colloquium in Ottawa](https://meta-analysis.cz/komentare/maer-ottawa-colloquium/) — MAER-Net, 31. října 2025
@@ -244,9 +248,16 @@ Columns and commentary written in English: policy pieces for VoxEU/CEPR, posts o
 - [Bias Correction Made Easy: A Web App for Meta-Analysis at EasyMeta.org](https://meta-analysis.cz/komentare/maer-easymeta/) — MAER-Net, 27. září 2025
 - [AI Tools for Meta-Analysis](https://meta-analysis.cz/komentare/maer-ai-tools/) — MAER-Net, 30. července 2025
 - [New Challenges for Meta-Analysis: Attenuation Bias, P-Hacking, Preferred Estimates](https://meta-analysis.cz/komentare/maer-new-challenges/) — MAER-Net, 7. července 2025
+- [Comparing primary schools in Litomyšl and New Zealand](https://meta-analysis.cz/komentare/litomysl-schools-litomysl-new-zealand/) — Lilie, červenec 2025
+- [Where does economic growth come from? Investment won't guarantee prosperity](https://meta-analysis.cz/komentare/where-does-economic-growth-come-from/) — Seznam Zprávy, 12. června 2024
+- [Better-looking people earn more. But beauty is not the reason](https://meta-analysis.cz/komentare/zi-sz-better-looking-people/) — Seznam Zprávy, 7. června 2024
+- [How to teach your kids perfect English, effortlessly and for free](https://meta-analysis.cz/komentare/how-to-teach-kids-english/) — Seznam Zprávy, 18. ledna 2024
 - [Methods Guidelines for Meta-Analysis](https://meta-analysis.cz/komentare/maer-methods-guidelines/) — MAER-Net, 27. listopadu 2023
+- [How the Czech National Bank turned a triumph into a debacle: 10 years since the koruna was weakened](https://meta-analysis.cz/komentare/how-the-cnb-turned-triumph-into-debacle/) — Seznam Zprávy, 28. října 2023
+- [Fewer than 20 children in a class is an expensive luxury. Kids don't learn more in small classes](https://meta-analysis.cz/komentare/fewer-than-20-children-in-a-class/) — Hospodářské noviny, 28. června 2023
 - [Spurious Precision in Meta-Analysis](https://meta-analysis.cz/komentare/maer-spurious-precision/) — MAER-Net, 16. února 2023
 - [How financial incentives affect performance](https://meta-analysis.cz/komentare/voxeu-incentives/) — VoxEU / CEPR, 13. února 2023
+- [Is inflation unconstitutional? Or, the future of monetary policy](https://meta-analysis.cz/komentare/is-inflation-unconstitutional/) — Hospodářské noviny, 4. února 2021
 - [Armington elasticity and international trade models: Fifty years on](https://meta-analysis.cz/komentare/voxeu-armington/) — VoxEU / CEPR, 23. září 2020
 - [Revision of Reporting Guidelines](https://meta-analysis.cz/komentare/maer-reporting-guidelines/) — MAER-Net, 11. listopadu 2019
 - [Death to the Cobb-Douglas Production Function!](https://meta-analysis.cz/komentare/maer-cobb-douglas/) — MAER-Net, 25. září 2019

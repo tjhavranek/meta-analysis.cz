@@ -9,6 +9,8 @@ word_count: "897"
 perex: "Intervence proti koruně sice pomohly po roce 2013 oživit ekonomiku, ale to, jak ČNB nakládala s eury získanými během intervencí, přineslo obří ztrátu a přispělo k rekordní inflaci, píše ekonom a profesor Tomáš Havránek."
 vyber: "2"
 vyber_titulek: "Jak ČNB udělala z triumfu debakl"
+body_note: "Anglický překlad pořízený pomocí AI: [How the Czech National Bank turned a triumph into a debacle: 10 years since the koruna was weakened](/komentare/how-the-cnb-turned-triumph-into-debacle/)."
+translation: "how-the-cnb-turned-triumph-into-debacle"
 ---
 
 # Jak ČNB udělala z triumfu debakl. 10 let od oslabení koruny
