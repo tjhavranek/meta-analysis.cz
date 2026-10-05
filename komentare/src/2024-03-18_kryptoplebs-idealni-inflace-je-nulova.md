@@ -10,6 +10,7 @@ body_note: "Rozhovor pro podcast Kryptoplebs. Přepis pokrývá veřejný sestř
 youtube: "dVgcnhFbSc8"
 youtube_seconds: "6493"
 youtube_upload: "2024-03-18T08:00:37-07:00"
+description: "Tomáš Havránek v podcastu Kryptoplebs o nulové inflaci, mírné deflaci a možné roli zlata a bitcoinu v rezervách České národní banky."
 ---
 **Moderátor:** Co vy a bitcoin, jak jste na tom jenom jinak takhle? Najdeme na to téma teda samozřejmě.
 

@@ -8,6 +8,7 @@ headline: "Otázky Václava Moravce: Jak zachránit státní rozpočet?"
 byline: "Tomáš Havránek"
 interviewer: "Václav Moravec"
 body_note: "Otázky Václava Moravce na ČT, 6. listopadu 2022; dalšími hosty byli exguvernér ČNB Jiří Rusnok a místopředseda ČMKOS Vít Samek. Zde jsou jen pasáže s Tomášem Havránkem; části s ostatními hosty jsou vynechány a v textu vyznačeny. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3 a porovnaný s titulky ČT; mluvčí jsou určeni podle hlasu. Odpovědi Tomáše Havránka jsou upraveny jako autorizovaný rozhovor, tedy spisovně a bez výplňových slov, opakování a nedokončených začátků vět; řeč ostatních mluvčích jen lehce. Čísla, zápory ani míra opatrnosti se neměnily. Poslanec Havránek, o jehož návrhu se v pořadu mluví, není s autorem příbuzný. Moderátorovo „na rok 2002“ při čtení prezidentova dopisu (jde o rok 2022) zůstává, jak zaznělo, s poznámkou [sic]. Tři tečky na začátku nebo konci repliky značí přerušení, nebo úsek, který nešlo ze zvuku spolehlivě zachytit."
+description: "Tomáš Havránek v Otázkách Václava Moravce o dani z mimořádných zisků, státním rozpočtu, zvyšování daní a důchodech; v debatě i Jiří Rusnok a Vít Samek."
 ---
 **Václav Moravec:** Pane profesore Havránku, vy jste členem Národní ekonomické rady vlády. Vznik té daně z mimořádných zisků. Nakolik jako ekonom považujete za transparentní a byly s vámi ty parametry jako s NERVem konzultovány?
 

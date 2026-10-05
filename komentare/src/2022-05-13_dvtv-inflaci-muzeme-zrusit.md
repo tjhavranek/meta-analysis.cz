@@ -9,6 +9,7 @@ byline: "Tomáš Havránek"
 interviewer: "Martin Veselovský"
 same_recording: "dvtv-zemetreseni-v-cnb"
 body_note: "Rozhovor pro DVTV, ptá se Martin Veselovský. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3; mluvčí jsou určeni podle hlasu. Odpovědi Tomáše Havránka jsou upraveny jako autorizovaný rozhovor, tedy spisovně a bez výplňových slov, opakování a nedokončených začátků vět; řeč moderátora jen lehce. Čísla, zápory ani míra opatrnosti se neměnily. Údaj „těch 9 %“ v odpovědi o dovážené inflaci je ověřen poslechem (zazní „devět procent“, strojový přepis měl 90 %). Tři tečky na začátku nebo konci repliky značí přerušení, nebo úsek, který nešlo ze zvuku spolehlivě zachytit; *[nesrozumitelné]* značí místo, které nešlo rozluštit."
+description: "Tomáš Havránek v DVTV po jmenování Aleše Michla guvernérem ČNB: co čekat od nového vedení, proč má ČNB posílit korunu a proč lze inflaci dlouhodobě zrušit."
 ---
 **Martin Veselovský:** Hostem DVTV ekonom a bývalý poradce viceguvernéra České národní banky Tomáš Havránek. Dobrý den.
 

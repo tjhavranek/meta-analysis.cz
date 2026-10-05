@@ -10,6 +10,7 @@ body_note: "Rozhovor pro vlog České národní banky z doby, kdy Tomáš Havrá
 youtube: "V4UAQ7znrEs"
 youtube_seconds: "469"
 youtube_upload: "2018-04-26T01:20:14-07:00"
+description: "Tomáš Havránek ve vlogu ČNB o tom, co znamená být nejcitovanějším českým ekonomem, proč by ceny nemovitostí měly být v inflaci a co dělá poradce bankovní rady."
 ---
 **Redaktorka ČNB:** Celosvětově nejcitovanější český ekonom pracuje už od roku 2009 v České národní bance. Je jím poradce bankovní rady Tomáš Havránek. Tomáši, informaci o vašem prvenství přinesla největší světová databáze ekonomického výzkumu Ideas. Co to ale znamená?
 

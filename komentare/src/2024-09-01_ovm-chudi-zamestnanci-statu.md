@@ -8,6 +8,7 @@ headline: "Otázky Václava Moravce: Chudí zaměstnanci státu"
 byline: "Tomáš Havránek"
 interviewer: "Václav Moravec"
 body_note: "Otázky Václava Moravce na ČT, 1. září 2024; dalšími hosty byli vicepremiér Marian Jurečka a předseda ČMKOS Josef Středula. Zde jsou jen pasáže s Tomášem Havránkem; části s ostatními hosty jsou vynechány a v textu vyznačeny. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3 a porovnaný s titulky ČT; mluvčí jsou určeni podle titulků a hlasu. Odpovědi Tomáše Havránka jsou upraveny jako autorizovaný rozhovor, tedy spisovně a bez výplňových slov, opakování a nedokončených začátků vět; řeč ostatních mluvčích jen lehce. Čísla, zápory ani míra opatrnosti se neměnily. Tři tečky na začátku nebo konci repliky značí přerušení, nebo úsek, který nešlo ze zvuku spolehlivě zachytit."
+description: "Tomáš Havránek v Otázkách Václava Moravce na ČT o rozpočtu na volební rok, platech zaměstnanců státu, investování rezerv ČNB a rozpočtovém carry-over."
 ---
 
 **Václav Moravec:** …ekonoma z Institutu ekonomických studií Fakulty sociálních věd Univerzity Karlovy a výzkumníka Centra inovací metavýzkumu Stanfordovy univerzity Tomáše Havránka. Pane profesore, děkuji, že jste po čase v Otázkách.

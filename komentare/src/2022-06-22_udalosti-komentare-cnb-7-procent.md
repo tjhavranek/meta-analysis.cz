@@ -7,6 +7,7 @@ date: "2022-06-22"
 headline: "Události, komentáře: ČNB zvýšila základní úrokovou sazbu na 7 %"
 byline: "Tomáš Havránek"
 body_note: "Rozhovor v Událostech, komentářích ČT z večera, kdy ČNB zvedla základní sazbu na 7 %; moderátora titulky nejmenují. Pořad má více témat, zde je jen část, na kterou vede odkaz. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3 a porovnaný s titulky ČT; mluvčí jsou určeni podle titulků a hlasu. Odpovědi Tomáše Havránka jsou upraveny jako autorizovaný rozhovor, tedy spisovně a bez výplňových slov, opakování a nedokončených začátků vět; řeč moderátora jen lehce. Čísla, zápory ani míra opatrnosti se neměnily, jen zjevné přeřeknutí „sedm procentních bodů“ je opraveno na „sedm procent“, protože jde o výši sazby. Průměrná sazba hypoték v úvodním komentáři (5,71 %) je ověřena poslechem."
+description: "Tomáš Havránek v Událostech, komentářích ČT po zvýšení sazby ČNB na 7 % o konci zvyšování sazeb, inflaci jako dani z úspor a investování devizových rezerv."
 ---
 **Moderátor:** Pojďme k tomu, jak zvyšovala Česká národní banka základní úrokovou sazbu. Loni v červnu začala s jejím zvedáním od čtvrtprocentního bodu na půl procenta. V říjnu pak přišlo první razantní zvýšení, ve kterém centrální bankéři pokračovali. Dnes, jak už jsme říkali, dosáhla reposazba až na sedm procent.
 

@@ -11,6 +11,7 @@ body_note: "Diabetes Podcast, ptá se Jan Hrušovský. Tomáš Havránek tu mluv
 youtube: "FQMmJGOw_Ik"
 youtube_seconds: "3609"
 youtube_upload: "2026-03-10T23:25:01-07:00"
+description: "Tomáš Havránek v Diabetes Podcastu jako otec syna, u něhož screening odhalil cukrovku prvního typu: o projektu Betty, péči v Motole a o tom, proč nechat děti testovat."
 ---
 **Jan Hrušovský:** Na začátku roku jsme si v Diabetes Podcastu povídali s Barborou Berkou z fakultní nemocnice Motol o projektu Betty. Jeho podstatou je včasný záchyt cukrovky prvního typu u dětí. Tentokrát se na tenhle screening podíváme optikou pacientů, respektive rodičů. Dnešním hostem Diabetes Podcastu je pan Tomáš Havránek, otec desetiletého syna Filipa, u kterého vyšel pozitivní výsledek ve screeningu.
 

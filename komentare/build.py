@@ -826,7 +826,7 @@ YT_ALLOW = "; ".join(f"{p} https://www.youtube-nocookie.com" for p in
 YT_SRCDOC_CSS = ("*{margin:0;padding:0;box-sizing:border-box}"
                  "html,body{height:100%;overflow:hidden;background:#000}"
                  "a{position:absolute;inset:0;display:block;color:#fff}"
-                 "img{display:block;width:100%;height:100%;object-fit:cover}"
+                 "img{display:block;width:100%;height:100%;object-fit:contain}"
                  ".p{position:absolute;width:56px;height:56px;margin:-28px 0 0 -28px;"
                  "border-radius:50%;background:rgba(17,17,17,.9);"
                  "box-shadow:0 0 0 2px rgba(255,255,255,.85);transition:background .15s}"

@@ -8,6 +8,7 @@ headline: "Pro a proti: Zvládá ČNB dlouhodobě boj s inflací?"
 byline: "Tomáš Havránek"
 interviewer: "Lukáš Matoška"
 body_note: "Pořad Pro a proti na Českém rozhlase Plus, moderuje Lukáš Matoška; debatují Tomáš Havránek ve studiu a Miroslav Singer na dálku. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3; mluvčí jsou určeni podle hlasu, což potvrzují i citace, které stanice ve svém článku připsala jmenovitě. Odpovědi Tomáše Havránka jsou upraveny jako autorizovaný rozhovor, tedy spisovně a bez výplňových slov, opakování a nedokončených začátků vět; řeč ostatních mluvčích jen lehce. Čísla, zápory ani míra opatrnosti se neměnily. Miroslav Singer mluvil po telefonní lince, která se na tři minuty přerušila, a jeho řeč je proto hůře srozumitelná. Tři tečky na začátku nebo konci repliky značí přerušení, nebo úsek, který nešlo ze zvuku spolehlivě zachytit; *[nesrozumitelné]* značí místo, které nešlo rozluštit."
+description: "Debata Tomáše Havránka s Miroslavem Singerem v pořadu Pro a proti na ČRo Plus: zvládá ČNB boj s inflací a je lepší dvouprocentní cíl, nebo cenová stabilita?"
 ---
 **Lukáš Matoška:** Inflace v Česku sice postupně klesá, pořád se ale drží hodně vysoko, těsně pod 10%. Bankovní rada České národní banky dnes rozhoduje, jak bude s inflací bojovat dál. Všeobecně se očekává, že úrokové sazby nezmění. Nechává je na stejné úrovni už přes rok.
 

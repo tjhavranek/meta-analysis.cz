@@ -15,6 +15,7 @@ youtube_play_at: "72% 40%"
 hub_video: "1"
 hub_video_title: "Rozhovor pro pořad Spotlight na Aktuálně.cz"
 hub_video_topic: "EET, veřejné finance a ČNB"
+description: "Tomáš Havránek v pořadu Spotlight na Aktuálně.cz o EET, investování rezerv ČNB, rozpočtovém carry-over, úrokových sazbách a o tom, kdo odpovídá za inflaci."
 ---
 **Petra Jaroměřská:** Vítejte u dalšího dílu pořadu Spotlight. Já jsem Petra Jaroměřská a se mnou je ve studiu ekonom a profesor Univerzity Karlovy a také bývalý poradce viceguvernéra České národní banky Tomáš Havránek. Vítejte.
 

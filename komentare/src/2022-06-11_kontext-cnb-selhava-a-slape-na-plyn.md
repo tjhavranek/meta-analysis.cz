@@ -8,6 +8,7 @@ headline: "Kontext: ČNB selhává a šlape na plyn. Ať rozprodá devizové rez
 byline: "Tomáš Havránek"
 interviewer: "Marek Zavřel"
 body_note: "Díl podcastu Kontext serveru iDNES.cz, ptá se Marek Zavřel. Archivní promluvy, které pořad pouští, jsou označeny „ze záznamu“. Vynechané úseky (znělka a pasáž, kde se archivní záznam prolíná s řečí ve studiu) jsou v textu vyznačeny. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3; mluvčí jsou určeni podle hlasu. Odpovědi Tomáše Havránka jsou upraveny jako autorizovaný rozhovor, tedy spisovně a bez výplňových slov, opakování a nedokončených začátků vět; řeč ostatních mluvčích jen lehce. Čísla, zápory ani míra opatrnosti se neměnily, jen zjevná přeřeknutí u úrovně inflace a sazby jsou opravena na procenta: „16 procentních bodů“, „k sedmi procentním bodům“, „na sedmi procentních bodech“, „jen pět procentních bodů“. Údaj „mezi 20 a 25 %“ v záznamu Jiřího Rusnoka je ověřen poslechem. Tři tečky na začátku nebo konci repliky značí přerušení, nebo úsek, který nešlo ze zvuku spolehlivě zachytit."
+description: "Tomáš Havránek v podcastu Kontext iDNES.cz o nové bankovní radě ČNB, příčinách inflace a o tom, proč by banka měla posílit korunu prodejem devizových rezerv."
 ---
 **Miloš Zeman (ze záznamu):** Chtěl bych dosavadním členům bankovní rady poděkovat za jejich práci a novým členům popřát, aby v jejich nelehké práci měli v zájmu všech občanů, zatížených inflací, plný úspěch a taky trochu toho štěstí.
 

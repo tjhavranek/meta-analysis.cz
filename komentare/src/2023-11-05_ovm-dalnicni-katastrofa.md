@@ -8,6 +8,7 @@ headline: "Otázky Václava Moravce: Dálniční katastrofa"
 byline: "Tomáš Havránek"
 interviewer: "Václav Moravec"
 body_note: "Otázky Václava Moravce na ČT, 5. listopadu 2023; dalšími hosty byli ministr dopravy Martin Kupka a exministr Karel Havlíček. Zde jsou jen pasáže s Tomášem Havránkem; části s ostatními hosty jsou vynechány a v textu vyznačeny. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3 a porovnaný s titulky ČT; mluvčí jsou určeni podle titulků a hlasu. Odpovědi Tomáše Havránka jsou upraveny jako autorizovaný rozhovor, tedy spisovně a bez výplňových slov, opakování a nedokončených začátků vět; řeč ostatních mluvčích jen lehce. Čísla, zápory ani míra opatrnosti se neměnily. Ironicky míněné „optimální“ je v uvozovkách. Tři tečky na začátku nebo konci repliky značí přerušení, nebo úsek, který nešlo ze zvuku spolehlivě zachytit."
+description: "Tomáš Havránek v Otázkách Václava Moravce s Martinem Kupkou a Karlem Havlíčkem o dostavbě dálnic, investování devizových rezerv ČNB a návratnosti rychlovlaků."
 ---
 **Václav Moravec:** …Institutu ekonomických studií Fakulty sociálních věd Univerzity Karlovy a výzkumníka z Centra inovací metavýzkumu Stanfordovy univerzity, profesora Tomáše Havránka. I vám přeji hezký dobrý den.
 

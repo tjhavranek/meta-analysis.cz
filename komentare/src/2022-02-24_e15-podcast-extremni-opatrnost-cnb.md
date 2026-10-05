@@ -7,6 +7,7 @@ date: "2022-02-24"
 headline: "Extrémní opatrnost ČNB je ve výsledku dražší než agresivita"
 byline: "Tomáš Havránek"
 body_note: "Díl podcastu E15cast, ptá se Nikita Poljakov; závěr pořadu čte hlasatel. Vynechán je úvodní zpravodajský blok, který se rozhovoru netýká, a reklamní vstup. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3; mluvčí jsou určeni podle hlasu. Odpovědi Tomáše Havránka jsou upraveny jako autorizovaný rozhovor, tedy spisovně a bez výplňových slov, opakování a nedokončených začátků vět; řeč ostatních mluvčích jen lehce. Čísla, zápory ani míra opatrnosti se neměnily."
+description: "Tomáš Havránek v podcastu E15 o tom, proč by ČNB měla provést revizi inflačního cílování, k čemu má devizové rezervy a proč by inflační cíl mohl být nula."
 ---
 **Nikita Poljakov:** A teď už tu vítám ekonoma, akademika Tomáše Havránka. Tomáši, krásný den.
 

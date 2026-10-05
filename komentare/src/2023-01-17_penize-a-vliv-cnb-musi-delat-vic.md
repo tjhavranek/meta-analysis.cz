@@ -9,6 +9,7 @@ byline: "Tomáš Havránek"
 interviewer: "Jana Klímová"
 same_recording: "penize-a-vliv-narodni-banka-stabilita"
 body_note: "Pořad Peníze a vliv na Českém rozhlase Plus, ptá se Jana Klímová. Díl skládá tři samostatně natočené rozhovory, s Josefem Bernardem, Janem Rafajem a Tomášem Havránkem; nešlo o společnou debatu. Zde je jen rozhovor s Tomášem Havránkem, ostatní jsou vynechány. Český rozhlas vydal k témuž vysílání i vlastní přepis (zde pod titulkem „Národní banka má udržovat stabilitu“), který z odpovědí Tomáše Havránka otiskl 1518 slov z 2459. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3; mluvčí jsou určeni podle hlasu. Odpovědi Tomáše Havránka jsou upraveny jako autorizovaný rozhovor, tedy spisovně a bez výplňových slov, opakování a nedokončených začátků vět; řeč moderátorky jen lehce. Čísla, zápory ani míra opatrnosti se neměnily. Tři tečky na začátku nebo konci repliky značí přerušení, nebo úsek, který nešlo ze zvuku spolehlivě zachytit."
+description: "Tomáš Havránek v pořadu Peníze a vliv na ČRo Plus o odpovědnosti ČNB za inflaci, o tom, zda mohla víc využít kurz koruny, a o jejím zadání v zákoně."
 ---
 **Jana Klímová:** …a člena Národní ekonomické rady vlády Tomáše Havránka. Inflace za celý rok 2022 byla přes 15%, což je nejvíc od roku 1993. Co je podle vás v ekonomice špatně? A mohla něco udělat lépe Česká národní banka nebo vláda?
 
