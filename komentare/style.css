@@ -317,10 +317,15 @@ main { padding: 2.75rem 0 4rem; }
 .vyber-meta { display: block; font-size: 0.83rem; color: var(--faint);
               line-height: 1.45; margin-top: 0.1rem; }
 /* One calm sentence with one accent: the invitation keeps the hub's bold accent link, the
-   example question is an ordinary underlined phrase until hovered. */
-.vyber-ask { margin: 1rem 0 0 !important; max-width: var(--measure); font-size: 0.95rem; }
+   example question is an ordinary underlined phrase until hovered. It is a footer to the
+   whole list, so it spans both columns and sits flush with the rule below. At the 34rem
+   prose measure its edge stopped just inside the second column and lined up with nothing.
+   Balanced wrapping keeps it to two even lines, and the example question never splits, so
+   the break falls before "proč". */
+.vyber-ask { margin: 1rem 0 0 !important; max-width: none; font-size: 0.95rem; text-wrap: balance; }
 .vyber-ask a { margin-right: 0; padding-block: 0.15rem; }
-.vyber-ask .vyber-ask-q { font-weight: 400; color: inherit; text-decoration-color: var(--control); }
+.vyber-ask .vyber-ask-q { font-weight: 400; color: inherit; text-decoration-color: var(--control);
+                          white-space: nowrap; }
 .vyber-ask .vyber-ask-q:hover { color: var(--accent); text-decoration-color: currentColor; }
 @media (min-width: 46rem) {
   .vyber ol { grid-template-columns: 1fr 1fr; }
