@@ -6,7 +6,13 @@ and `python tools/preflight.py` runs the same gates locally.
 
 ## Pushing
 
-- Commit everything, run `python tools/preflight.py`, then push. Do not push on `--fast`.
+- Commit everything, then push. The pre-push hook is the one battery: it runs every gate CI
+  runs (it stops if the workflow gains a gate it does not name), so do not also run
+  `tools/preflight.py` before pushing; that repeated every gate (5 Oct 2026). A push that
+  touches only `komentare/`, the pages of `/ai/`, `sitemap.xml` and `api/v1/search-index.json`
+  skips the full-text and data gates locally, provided CI passed on the base (CI still runs
+  them); `FULL=1 git push` forces everything. Use `tools/preflight.py` to
+  check without pushing. Never push on `--fast`.
 - Never edit files while the pre-push hook is running. It checks the working tree, so an
   edit made during the hook is what it sees, and the push is blocked or goes out mixed.
 - A push is not a deploy. Afterwards, confirm that the Actions run succeeded and that the

@@ -61,10 +61,77 @@ if [ -f tools/check_site_size.py ]; then
   cat /tmp/_size.log
 fi
 
+# This hook is the one battery a push runs (5 Oct 2026: running tools/preflight.py first and
+# then this hook repeated every gate, about 20 minutes a push). So it must not miss a gate CI
+# has: stop if a script the workflow runs is not named here.
+if ! "$PY" - > /tmp/_gates.log 2>&1 <<'PYEOF'
+import re, sys
+sys.path.insert(0, "tools")
+import preflight
+cmds, unknown = preflight.ci_commands()
+code = " ".join(l for l in open(".githooks/pre-push", encoding="utf-8").read().splitlines()
+                if not l.lstrip().startswith("#"))
+code = re.sub(r"\s+", " ", code)
+# The one deliberate local difference: the data layer is regenerated rather than --checked
+# here, because --check compares raw bytes and a Windows checkout reports CRLF drift.
+EQUIV = {"data_layer/rebuild.py --check --data": "data_layer/rebuild.py --data"}
+missing = []
+for c in cmds:
+    m = re.search(r"(?:-m \S+ )?[\w./-]+\.py.*$", c)
+    want = re.sub(r"\s+", " ", m.group(0).strip()) if m else c
+    want = EQUIV.get(want, want)
+    if want not in code:
+        missing.append(want)
+if missing or unknown:
+    print("CI runs these, the hook does not:", "; ".join(missing + unknown))
+    sys.exit(1)
+PYEOF
+then
+  cat /tmp/_gates.log
+  fail "the hook has fallen behind the workflow. Add the gate(s) above to .githooks/pre-push."
+fi
+
+# What is actually being pushed. At pre-push time the work is already COMMITTED, so
+# "git diff HEAD" and "git diff --cached HEAD" are both empty; compare against the upstream
+# branch, keeping the working-tree checks for a run with changes still uncommitted.
+UPSTREAM=$(git rev-parse --abbrev-ref --symbolic-full-name '@{upstream}' 2>/dev/null || echo origin/main)
+PUSHING=$( { git diff --name-only "$UPSTREAM...HEAD" 2>/dev/null
+             git diff --name-only HEAD 2>/dev/null
+             git diff --cached --name-only HEAD 2>/dev/null; } | sort -u )
+
+# A push that touches only the commentary section (komentare/) or the pages of /ai/ cannot
+# change what the full-text and data gates read: no catalogue in tools/ names those folders
+# and the data inventory skips komentare (data_layer/98_catalogue_complete.py, SKIP_DIRS).
+# The two generated files such a push usually carries, sitemap.xml and the site search index
+# api/v1/search-index.json, are read by none of those gates either (8 of the last 15
+# komentare commits carried the index); generate_seo, verify_seo and the index check still run.
+# Such a push skips those gates here, about eight of the ten minutes; CI still runs all of
+# them. Anything else, a tool, this hook or the workflow included, runs everything.
+# Force the full battery with FULL=1 git push.
+# Light mode also needs a base CI has passed: after a red run, a light push would skip the
+# very gates that failed and CI would fail again (Astra). grep -c reads all its input; a
+# grep -q that exits early can SIGPIPE printf, and under pipefail flip the test.
+LIGHT_ONLY=0
+NONLIGHT=$(printf '%s\n' "$PUSHING" | grep -cvE '^(komentare/|ai/[^/]+\.(html|md|css|js)$|sitemap\.xml$|api/v1/search-index\.json$)')
+if [ -n "$PUSHING" ] && [ "${FULL:-0}" != "1" ] && [ "$NONLIGHT" = 0 ]; then
+  BASE_SHA=$(git rev-parse "$UPSTREAM" 2>/dev/null)
+  BASE_OK=$(gh run list -R tjhavranek/meta-analysis.cz --workflow seo.yml --commit "$BASE_SHA" \
+            --json conclusion --jq '[.[] | select(.conclusion == "success")] | length' 2>/dev/null)
+  if [ "${BASE_OK:-0}" -ge 1 ] 2>/dev/null; then
+    LIGHT_ONLY=1
+    echo "pre-push: only komentare/ or /ai/ pages are pushed and CI passed on the base: the full-text and data gates are skipped here (CI runs them)"
+  else
+    echo "pre-push: no green CI run found for the base ${BASE_SHA:0:8}: running every gate"
+  fi
+fi
+
 # The generator both writes the page blocks and enriches tools/papers.json from
 # the pages, so a first run can leave input for a second. Iterate to a fixed
 # point (it is idempotent) so the author has one set of files to commit, not two.
+# The tree before the first run is the first comparison, so a run that changes nothing
+# stops at once instead of running the generator a second time (47 s).
 echo "pre-push: regenerating the metadata layer (same as CI)..."
+prev_snapshot=$(git status --porcelain -- . | sha1sum)
 for i in 1 2 3; do
   if ! "$PY" tools/generate_seo.py > /tmp/_seo_gen.log 2>&1; then
     sed -n '1,40p' /tmp/_seo_gen.log
@@ -79,7 +146,7 @@ for i in 1 2 3; do
 done
 sed -n '1,12p' /tmp/_seo_gen.log
 
-if [ -f komentare/build.py ]; then
+if [ -f komentare/build.py ] && { [ "$LIGHT_ONLY" != 1 ] || [ "$(printf '%s\n' "$PUSHING" | grep -c '^komentare/')" != 0 ]; }; then
   echo "pre-push: checking the self-managed commentary section..."
   "$PY" komentare/build.py --check > /tmp/_seo_kom.log 2>&1 || { sed -n '1,30p' /tmp/_seo_kom.log; fail "komentare/build.py --check failed."; }
 fi
@@ -89,19 +156,17 @@ fi
 # advertised URLs, parquet/csv agreement. It was never wired in, so the strongest verifier
 # in the repo ran only when someone remembered. Only for changes that touch the data layer,
 # and skipped cleanly if its dependencies are absent (CI has no pandas).
-# What is actually being pushed. At pre-push time the work is already COMMITTED, so
-# "git diff HEAD" and "git diff --cached HEAD" are both empty and this gate never fired.
-# That is exactly how the .zenodo.json drift in 01b3bbb0 reached CI: the commit changed
-# data_layer/zenodo.json, the condition saw nothing, and the run went red. Compare against
-# the upstream branch instead, keeping the working-tree checks as a fallback for the case
-# where this is run with changes still uncommitted.
-UPSTREAM=$(git rev-parse --abbrev-ref --symbolic-full-name '@{upstream}' 2>/dev/null || echo origin/main)
-PUSHING=$( { git diff --name-only "$UPSTREAM...HEAD" 2>/dev/null
-             git diff --name-only HEAD 2>/dev/null
-             git diff --cached --name-only HEAD 2>/dev/null; } | sort -u )
-
-if printf '%s\n' "$PUSHING" | grep -qE '^(data_layer/|api/|data/|CITATION\.cff|\.zenodo\.json|LICENSE)'; then
-  if [ -f data_layer/09_verify.py ] && "$PY" -c "import pandas, pyarrow" >/dev/null 2>&1; then
+# PUSHING (above) compares against the upstream branch: comparing against HEAD saw nothing,
+# which is how the .zenodo.json drift in 01b3bbb0 reached CI and the run went red.
+# CI runs these gates on every push, and they read tools/papers.json and the project pages
+# too, so since this hook became the only battery (5 Oct 2026) they run on every push that
+# is not komentare- or /ai/-only, not just on data changes.
+if [ "$LIGHT_ONLY" != 1 ]; then
+  if [ -f data_layer/09_verify.py ] && ! "$PY" -c "import pandas, pyarrow" >/dev/null 2>&1; then
+    fail "pandas/pyarrow are missing, so the data gates CI runs cannot run here.
+  Install them: python -m pip install -r data_layer/requirements-pinned.txt"
+  fi
+  if [ -f data_layer/09_verify.py ]; then
     echo "pre-push: running the data-layer gate (09_verify.py)..."
     if ! "$PY" data_layer/09_verify.py > /tmp/_dl_verify.log 2>&1; then
       sed -n '/FAILURE/,$p' /tmp/_dl_verify.log | head -20
@@ -111,8 +176,6 @@ if printf '%s\n' "$PUSHING" | grep -qE '^(data_layer/|api/|data/|CITATION\.cff|\
   passed every other check."
     fi
     tail -1 /tmp/_dl_verify.log
-  else
-    echo "pre-push: data-layer gate skipped (pandas/pyarrow not available)"
   fi
 
   # CI runs "rebuild.py --check --data" and fails on ANY drift between the published
@@ -138,11 +201,19 @@ if "$PY" -c "import latex2mathml" >/dev/null 2>&1; then
   run_check "verifying the headline evidence..."            tools/check_evidence.py
   run_check "verifying the matched reference DOIs..."       tools/check_reference_dois.py
   run_check "checking the search index against the pages..." tools/build_search_index.py --check
+  run_check "checking counts written in prose..."            tools/check_counts.py
   run_check "verifying the MAIVE how-to..."                 tools/check_maive_howto.py
   run_check "checking api/v1/papers.json..."                tools/build_papers_api.py --check
   run_check "checking the publication lists..."             tools/build_publications_page.py --check
   run_check "checking /papers/..."                          tools/build_fulltext_page.py --check
+
+  # The full-text gates read the catalogue, the transcripts, the paper pages and the PDFs,
+  # none of which a komentare- or /ai/-only push can change (see LIGHT_ONLY above).
+  if [ "$LIGHT_ONLY" = 1 ]; then
+    echo "pre-push: full-text gates skipped (komentare/ or /ai/ pages only; CI runs them)"
+  else
   run_check "checking the full-text pages against their transcripts..." tools/build_paper_page.py --all --check
+  run_check "auditing transcript continuity..."             tools/audit_continuity.py
 
   # The full-text gate reads the PDFs. CI installs poppler-utils; a Windows checkout
   # usually finds Xpdf's pdftotext first on PATH instead, which returns a different text
@@ -153,12 +224,15 @@ if "$PY" -c "import latex2mathml" >/dev/null 2>&1; then
     if "$PY" -c "import sys; sys.path.insert(0, 'tools'); import _poppler; sys.exit(0 if _poppler.is_poppler(_poppler.tool('pdftotext')) else 1)" >/dev/null 2>&1; then
       run_check "verifying the full-text pages (slow)..."   tools/check_paper_pages.py
       run_check "checking numbers in transcribed tables..." tools/check_table_numbers.py
+      run_check "testing the table-number checker..."       tools/test_check_table_numbers.py
     else
       echo "pre-push: full-text page check SKIPPED (needs poppler's pdftotext; this machine has $(pdftotext -v 2>&1 | head -1 | cut -c1-40))"
     fi
   fi
+  fi
 else
-  echo "pre-push: site-builder checks SKIPPED (latex2mathml missing: python -m pip install -r tools/requirements-pinned.txt)"
+  fail "latex2mathml is missing, so the site-builder gates CI runs cannot run here.
+  Install it: python -m pip install -r tools/requirements-pinned.txt"
 fi
 
 echo "pre-push: verifying..."
