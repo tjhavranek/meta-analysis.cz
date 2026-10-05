@@ -1367,7 +1367,10 @@ def write_feed(items, social=()):
     # lastBuildDate is the newest of them: ordered by the original's date, a translation
     # published here today sat deep in the feed with a pubDate newer than lastBuildDate.
     _pubd = lambda a: a.get("translated") or a.get("released") or a["date"]
-    _newest = max([_pubd(a) for a in items] + [p["date"] for p in social])
+    # only items that carry a pubDate count: letters and withdrawn drafts get none (below)
+    _newest = max([_pubd(a) for a in items
+                   if not (a.get("genre") == "correspondence" or a.get("unpublished"))]
+                  + [p["date"] for p in social])
     it = []
     for a in items:
         url = f"{BASE}/{a['slug']}/" if has_page(a) else (a.get("url") or BASE)
@@ -2772,12 +2775,14 @@ def check():
                          f"not {expected}")
         _fx = (KDIR / "feed.xml").read_text(encoding="utf-8")
         _lb = re.search(r"<lastBuildDate>(.*?)</lastBuildDate>", _fx)
-        # check() reads from disk; there is no `items` in this scope. Same rule as
-        # write_feed: a translation counts by the day it was published here.
-        _new = max(d.get("translated") or d["date"] for d in j["items"])
-        if _lb and rfc822(_new) != _lb.group(1):
-            fails.append(f"feed lastBuildDate {_lb.group(1)} is not the newest content "
-                         f"({_new})")
+        # The rule is "lastBuildDate is the newest pubDate the feed emits", so test exactly
+        # that, from the feed itself. Recomputing it from index.json missed `released`,
+        # which index.json does not carry.
+        from email.utils import parsedate_to_datetime as _p822
+        _pds = re.findall(r"<pubDate>(.*?)</pubDate>", _fx)
+        if _lb and _pds and _p822(_lb.group(1)) != max(_p822(x) for x in _pds):
+            fails.append(f"feed lastBuildDate {_lb.group(1)} is not the newest pubDate "
+                         f"({max(_pds, key=_p822)})")
         # the social data path has no src/*.md behind it, so nothing else checks it
         if SOCIAL_JSON.exists():
             sp = json.loads(SOCIAL_JSON.read_text(encoding="utf-8"))
