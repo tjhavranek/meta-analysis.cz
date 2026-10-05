@@ -779,9 +779,12 @@ def vyber_html(items):
     return ('    <section class="vyber" aria-labelledby="vyber-h">\n'
             '      <h2 id="vyber-h" class="vyber-h">Výběr pro první čtení</h2>\n'
             '      <ol>\n' + "\n".join(rows) + '\n      </ol>\n'
-            f'      <p class="ask-link vyber-ask"><a href="{PATH}/ask/?q={quote(VYBER_ASK_Q)}">Zeptejte se AI,</a>'
-            ' proč Tomáš Havránek navrhuje zrušit inflaci. Odpoví podle textů na tomto webu'
-            ' a odkáže na zdroje.</p>\n'
+            # Two links: the invitation opens an empty question box, so the line does not read
+            # as if the assistant knew only one topic; the example pre-fills its question.
+            f'      <p class="ask-link vyber-ask"><a href="{PATH}/ask/">Zeptejte se AI</a> na cokoli,'
+            ' o čem Tomáš a Zuzana Havránkovi psali, třeba'
+            f' <a class="vyber-ask-q" href="{PATH}/ask/?q={quote(VYBER_ASK_Q)}">proč Tomáš navrhuje zrušit inflaci</a>.'
+            ' Odpovídá jen podle textů na tomto webu a odkazuje na zdroje.</p>\n'
             '    </section>\n')
 
 

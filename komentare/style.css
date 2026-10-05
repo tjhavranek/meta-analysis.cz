@@ -300,21 +300,34 @@ main { padding: 2.75rem 0 4rem; }
 
 /* "Výběr pro první čtení": six texts to start with, between the lede and the filter. Quiet
    on purpose: the archive's own type and rules, no cards and no colour fields, so the page
-   still reads as one list. Two columns where there is room, one on a phone. */
+   still reads as one list. Two columns from tablet width, one on a phone. */
 .vyber { margin: 0 0 2.25rem; }
+/* the archive's small caps, but in the text colour: the faint version read as one more year
+   label, the same as "2026" a screen further down */
 .vyber-h { font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase;
-           color: var(--faint); margin: 0 0 0.35rem; font-weight: 600; }
+           color: var(--text); margin: 0 0 0.6rem; font-weight: 600; }
 .vyber ol { margin: 0; padding: 0 0 0 1.4rem; display: grid; grid-template-columns: 1fr;
-            column-gap: 2.75rem; }
-.vyber li { padding: 0.6rem 0; border-bottom: 1px solid var(--rule); }
-.vyber li::marker { color: var(--faint); font-size: 0.85rem; }
+            column-gap: 3.5rem; }
+.vyber li { padding: 0.5rem 0; border-bottom: 1px solid var(--rule); }
+.vyber li::marker { color: var(--faint); font-size: 0.85rem; font-variant-numeric: tabular-nums; }
 /* the anchor fills the row, as in the archive below, so the tap target is the whole title */
 .vyber li a { display: block; color: var(--text); font-weight: 600; line-height: 1.35;
               text-decoration: none; padding: 0.1rem 0 0.25rem; }
 .vyber li a:hover { color: var(--accent); text-decoration: underline; }
-.vyber-meta { display: block; font-size: 0.83rem; color: var(--faint); }
-.vyber-ask { margin: 1rem 0 0 !important; max-width: var(--measure); }
-.vyber-ask a { margin-right: 0; }
+.vyber-meta { display: block; font-size: 0.83rem; color: var(--faint);
+              line-height: 1.45; margin-top: 0.1rem; }
+/* One calm sentence with one accent: the invitation keeps the hub's bold accent link, the
+   example question is an ordinary underlined phrase until hovered. */
+.vyber-ask { margin: 1rem 0 0 !important; max-width: var(--measure); font-size: 0.95rem; }
+.vyber-ask a { margin-right: 0; padding-block: 0.15rem; }
+.vyber-ask .vyber-ask-q { font-weight: 400; color: inherit; text-decoration-color: var(--control); }
+.vyber-ask .vyber-ask-q:hover { color: var(--accent); text-decoration-color: currentColor; }
 @media (min-width: 46rem) {
   .vyber ol { grid-template-columns: 1fr 1fr; }
+}
+/* Once the 960px column has a real margin beside it, the numerals hang in it, so the titles
+   share one left edge with the heading, the AI line and the filter. Below that the gutter is
+   only 24px and a hanging numeral would sit against the screen edge. */
+@media (min-width: 65rem) {
+  .vyber ol { padding-left: 0; }
 }
