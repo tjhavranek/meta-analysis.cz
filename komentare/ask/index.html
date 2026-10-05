@@ -257,6 +257,15 @@
   ex.addEventListener("click", function (e) {
     if (e.target.tagName === "BUTTON" && !busy) { q.value = e.target.textContent; ask(q.value); }
   });
+  // A link with ?q= (e.g. from the komentare hub) puts its question in the box; the visitor sends it.
+  // No focus on a touch screen, where it would open the keyboard.
+  try {
+    var pre = new URLSearchParams(location.search).get("q");
+    if (pre && !q.value) {
+      q.value = pre.trim().slice(0, 600);
+      if (!(window.matchMedia && window.matchMedia("(pointer: coarse)").matches)) q.focus();
+    }
+  } catch (e) {}
 })();
 </script>
 </body>
