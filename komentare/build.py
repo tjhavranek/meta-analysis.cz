@@ -1363,7 +1363,11 @@ def write_index(items, key=None):
 
 
 def write_feed(items, social=()):
-    _newest = max([a["date"] for a in items] + [p["date"] for p in social])
+    # The date an item carries as pubDate (see _pub below). The feed is ordered by it and
+    # lastBuildDate is the newest of them: ordered by the original's date, a translation
+    # published here today sat deep in the feed with a pubDate newer than lastBuildDate.
+    _pubd = lambda a: a.get("translated") or a.get("released") or a["date"]
+    _newest = max([_pubd(a) for a in items] + [p["date"] for p in social])
     it = []
     for a in items:
         url = f"{BASE}/{a['slug']}/" if has_page(a) else (a.get("url") or BASE)
@@ -1382,6 +1386,20 @@ def write_feed(items, social=()):
             body = (f'<p><em>Nevyšlo. Text byl napsán pro otištění '
                     f'{OUTLET_IN.get(a["outlet"], "v " + a["outlet"])}; uvedené datum '
                     f"je zamýšlené, nikoli datum otištění.</em></p>\n" + body)
+        # A translation's reader in a feed never sees the page's note, so the item says
+        # itself that it is an AI translation and which original it renders.
+        _tr_of = BY_SLUG.get(a.get("translation") or "") if a.get("translated") else None
+        if _tr_of:
+            _o = (f'<a href="{BASE}/{_tr_of["slug"]}/">{esc(_tr_of["headline"])}</a> '
+                  f'({esc(_tr_of["outlet"])}, ')
+            if (a.get("lang") or SECTIONS[a["category"]]["lang"]) == "en":
+                body = (f'<p><em>English translation (made with AI) of the Czech original: '
+                        f'{_o}{cs_date(_tr_of["date"], _tr_of.get("date_precision"), "en")}).'
+                        f'</em></p>' + chr(10) + body)
+            else:
+                body = (f'<p><em>Český překlad (pomocí AI) anglického originálu: '
+                        f'{_o}{cs_date(_tr_of["date"], _tr_of.get("date_precision"))}).'
+                        f'</em></p>' + chr(10) + body)
         content = (f"<![CDATA[{body}]]>"
                    if has_page(a) else
                    f"<![CDATA[<p>{MEDIA_LABEL.get(a['media'], '')} — "
@@ -1392,8 +1410,9 @@ def write_feed(items, social=()):
         # stated intent, but the guard only tested for a url — and the letters do carry
         # one, pointing at a related document rather than an origin. <source> then told
         # a feed reader the letter had run there.
+        # A translation did not come from the original's outlet; <source> would say it had.
         source = (f'\n      <source url="{esc(a["url"])}">{esc(a["outlet"])}</source>'
-                  if a.get("url") and not _never else "")
+                  if a.get("url") and not _never and not _tr_of else "")
         # RSS pubDate means "when this was published". Six records were never published
         # anywhere — four letters and two withdrawn drafts — so they get no pubDate. An
         # earlier pass kept it for sort order and said so in a comment; two independent
@@ -1409,7 +1428,7 @@ def write_feed(items, social=()):
                 f'<pubDate>{rfc822(a.get("translated") or a.get("released") or a["date"])}'
                 f'</pubDate>'
                 + chr(10) + "      ")
-        it.append((a["date"], f"""    <item>
+        it.append((_pubd(a), f"""    <item>
       <title>{esc(a["headline"])}</title>
       <link>{url}</link>
       <guid isPermaLink="true">{url}</guid>
@@ -1498,11 +1517,24 @@ def write_machine_readable(items, social=()):
                     f"[{_tw['headline']}]"
                     f"({BASE + '/' + _tw['slug'] + '/' if has_page(_tw) else _tw.get('url','')})]"
                     if _tw else "")
+            tail = f"{out}, {d}"
+            # A translation's line must not present the original's outlet as the publisher
+            # of the translated text: it says what it is and names the original, in the
+            # wording of the page note.
+            _tr_of = BY_SLUG.get(a.get("translation") or "") if a.get("translated") else None
+            if _tr_of:
+                tail = ((f"English translation (made with AI) of the Czech original, "
+                         f"{_tr_of['outlet']}, "
+                         f"{cs_date(_tr_of['date'], _tr_of.get('date_precision'), 'en')}: "
+                         if (a.get("lang") or SECTIONS[a["category"]]["lang"]) == "en" else
+                         f"Český překlad (pomocí AI) anglického originálu, {_tr_of['outlet']}, "
+                         f"{cs_date(_tr_of['date'], _tr_of.get('date_precision'))}: ")
+                        + f"{BASE}/{_tr_of['slug']}/")
             if has_page(a) and a.get("llms_summary"):
-                L.append(f"- [{a['headline']}]({BASE}/{a['slug']}/) — {out}, {d}{same}. "
+                L.append(f"- [{a['headline']}]({BASE}/{a['slug']}/) — {tail}{same}. "
                          f"{a['llms_summary']} Markdown: {BASE}/src/{a['file']}")
             elif has_page(a):
-                L.append(f"- [{a['headline']}]({BASE}/{a['slug']}/) — {out}, {d}{same}")
+                L.append(f"- [{a['headline']}]({BASE}/{a['slug']}/) — {tail}{same}")
             else:
                 L.append(f"- [{a['headline']}]({a.get('url','')}) — {a['outlet']}, {d} "
                          f"({MEDIA_LABEL.get(a['media'], '')}, pouze odkaz){same}")
@@ -2740,8 +2772,9 @@ def check():
                          f"not {expected}")
         _fx = (KDIR / "feed.xml").read_text(encoding="utf-8")
         _lb = re.search(r"<lastBuildDate>(.*?)</lastBuildDate>", _fx)
-        # check() reads from disk; there is no `items` in this scope
-        _new = max(d["date"] for d in j["items"])
+        # check() reads from disk; there is no `items` in this scope. Same rule as
+        # write_feed: a translation counts by the day it was published here.
+        _new = max(d.get("translated") or d["date"] for d in j["items"])
         if _lb and rfc822(_new) != _lb.group(1):
             fails.append(f"feed lastBuildDate {_lb.group(1)} is not the newest content "
                          f"({_new})")
