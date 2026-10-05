@@ -44,6 +44,9 @@ Frontmatter
                            twice under two headlines. Declared from both sides.
     audio_url              a broadcast/podcast version of a text interview; linked
     audio_label            visible text for that link (default "podcast")
+    video_url              a video of a text item, e.g. a speech the stored text was read
+                           from; linked beside the date and listed on /video/. `media`
+                           stays text: the words here are not a transcript of it
 
 Design notes
   * The complete item list is in the HTML. JavaScript only filters what is already
@@ -213,6 +216,17 @@ OUTLET_IN = {
 }
 
 MEDIA_LABEL = {"video": "video", "audio": "audio"}
+
+# Recordings elsewhere on this domain that are not commentary items, listed on /video/ beside
+# them. A row there and nothing else: they have their own pages, so they stay out of the feed,
+# the corpus and the sitemap. `url` is root-relative; `id` is the recording's node on its page.
+MEDIA_EXTRA = [
+    {"slug": "", "headline": "Meta-Analysis in Economics", "date": "2026-03-16",
+     "outlet": "ISER, Ósacká univerzita", "byline": AUTHOR, "category": "celostatni",
+     "media": "video", "url": "/teaching/osaka-2026/",
+     "id": f"{SITE}/teaching/osaka-2026/#recording",
+     "row_note": "kurz, čtyři přednášky (3 h 31 min)"},
+]
 
 # Where a text was self-published rather than edited by an outlet. The archive mixes
 # both, and a retrieval corpus should be able to tell them apart: an HN op-ed passed an
@@ -736,10 +750,12 @@ SCRIPT = """<script>
 def item_row(a, show_cat):
     lang = a.get("lang") or SECTIONS[a["category"]]["lang"]
     url = f"{PATH}/{a['slug']}/" if has_page(a) else (a.get("url") or "#")
-    ext = "" if has_page(a) else ' rel="external"'
+    ext = "" if has_page(a) or url.startswith("/") else ' rel="external"'
     tag = ""
     if a["media"] in MEDIA_LABEL:
         tag = f'<span class="tag tag-av">{MEDIA_LABEL[a["media"]]}</span>'
+    elif a.get("video_url"):
+        tag = f'<span class="tag tag-av">{MEDIA_LABEL["video"]}</span>'
     elif show_cat:
         tag = f'<span class="tag">{esc(SECTIONS[a["category"]]["short"])}</span>'
     bits = [f'<span>{esc(cs_date(a["date"], a.get("date_precision"), lang))}</span>',
@@ -755,6 +771,8 @@ def item_row(a, show_cat):
     if a.get("interviewer"):
         bits.append(f'<span>{asked_by(a["interviewer"])}: '
                     f'{esc(a["interviewer"])}</span>')
+    if a.get("row_note"):
+        bits.append(f'<span>{esc(a["row_note"])}</span>')
     # A row that looks exactly like the published ones would imply this ran. It did not.
     if a.get("unpublished"):
         bits.append('<span class="tag tag-unpub">nevyšlo</span>')
@@ -929,7 +947,7 @@ def hub_video_html(items):
     a = chosen[0]
     if not a.get("youtube"):
         sys.exit(f'{a["file"]}: hub_video needs youtube:')
-    n_av = sum(1 for x in items if x["media"] in MEDIA_LABEL)
+    n_av = len(av_rows(items))
     when = cs_date(a["date"], a.get("date_precision"))
     topic = a.get("hub_video_topic")
     # "na YouTube" sits outside the poster, so it survives when the player is swapped in and
@@ -1119,12 +1137,16 @@ def write_item(a):
                     f'{esc(a["interviewer"])}</span>')
     # A recording's own link used to be "Původní vydání" under the last paragraph, often
     # thousands of words down. It belongs at the top: a player where YouTube has the
-    # recording (see yt_facade), otherwise a link beside the date.
-    if a["media"] in MEDIA_LABEL and a.get("url") and not a.get("youtube"):
+    # recording (see yt_facade), otherwise a link beside the date. A text with a video of its
+    # own (`video_url`, e.g. a speech) gets the same link.
+    rec, kind = ((a["video_url"], "video") if a.get("video_url") else
+                 (a.get("url"), a["media"]) if a["media"] in MEDIA_LABEL and not a.get("youtube")
+                 else (None, None))
+    if rec:
         _en = lang == "en"
-        meta.append(f'<span><a class="av-link" href="{esc(a["url"])}" rel="external">'
+        meta.append(f'<span><a class="av-link" href="{esc(rec)}" rel="external">'
                     + ({"video": "Watch the video", "audio": "Listen"} if _en else
-                       {"video": "Přehrát video", "audio": "Poslechnout si"})[a["media"]]
+                       {"video": "Přehrát video", "audio": "Poslechnout si"})[kind]
                     + '</a></span>')
 
     # Every sentence below is generated, so it can follow the item's OWN language.
@@ -1569,18 +1591,25 @@ def write_index(items, key=None):
     put(d / "index.html", page)
 
 
+def av_rows(items):
+    """The rows of /video/, newest first: recordings, texts with a video of their own and
+    MEDIA_EXTRA. The hub's link to the page counts the same list."""
+    sel = [a for a in items if a["media"] in MEDIA_LABEL or a.get("video_url")] + MEDIA_EXTRA
+    return sorted(sel, key=lambda a: (a["date"], a["headline"]), reverse=True)
+
+
 # Every recording in one place, playable on this site or not, in the archive's own rows: a
 # page that can be shared and found, where a filtered hub could not. Linked from the hub's
 # video caption, not from the nav. Not a SECTION: its rows belong to their own categories.
 def write_media_page(items):
-    sel = [a for a in items if a["media"] in MEDIA_LABEL]
-    nv = sum(1 for a in sel if a["media"] == "video")
+    sel = av_rows(items)
+    nv = sum(1 for a in sel if a["media"] == "video" or a.get("video_url"))
     na = len(sel) - nv
     cz = lambda n, one, few, many: one if n == 1 else few if 2 <= n <= 4 else many
     title = "Videa a audionahrávky"
     desc = (f"Záznamy rozhovorů a dalších vystoupení: {nv} {cz(nv, 'video', 'videa', 'videí')} "
             f"a {na} {cz(na, 'audionahrávka', 'audionahrávky', 'audionahrávek')}. Videa z "
-            f"YouTube lze přehrát přímo na stránce záznamu, ostatní na webu vydavatele. "
+            f"YouTube lze přehrát přímo na stránce záznamu, k ostatním vede odkaz. "
             f"Většinu doplňuje přepis.")
     canonical = f"{BASE}/video/"
     og_url = f"{SITE}{PATH}/item-img/{HUB_IMG['file']}"
@@ -1593,7 +1622,9 @@ def write_media_page(items):
                        **({"width": ow, "height": oh} if ow else {}),
                        "creator": {"@type": "Person", "name": HUB_IMG["creator"]},
                        "creditText": HUB_IMG["credit"]["cs"], "license": HUB_IMG["license"]}],
-            "hasPart": [{"@type": "Article", "headline": a["headline"],
+            "hasPart": [{"@type": "LearningResource", "@id": a["id"], "name": a["headline"],
+                         "url": SITE + a["url"]} if a.get("id") else
+                        {"@type": "Article", "headline": a["headline"],
                          "@id": (f"{BASE}/{a['slug']}/#article" if has_page(a) else a.get("url", "")),
                          "url": (f"{BASE}/{a['slug']}/" if has_page(a) else a.get("url", ""))}
                         for a in sel]}
@@ -1844,6 +1875,8 @@ def write_machine_readable(items, social=()):
             d["interviewer"] = a["interviewer"]
         if a.get("audio_url"):
             d["audio_url"] = a["audio_url"]
+        if a.get("video_url"):
+            d["video_url"] = a["video_url"]
         if a.get("issue"):
             d["issue"] = a["issue"]
         # index.json and corpus.jsonl are read on their own, without the page's JSON-LD.
