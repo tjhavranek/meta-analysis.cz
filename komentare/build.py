@@ -817,6 +817,12 @@ def vyber_html(items):
 # `youtube_upload` are what YouTube itself reports; the poster is item-img/<slug>-yt.jpg
 # (960 x 540, the channel's own thumbnail).
 YT_ID = re.compile(r"[A-Za-z0-9_-]{11}")
+# Each permission names YouTube's origin outright. A bare `allow="fullscreen"` means "the src
+# origin", and for an iframe with srcdoc that is THIS site, so the player it navigates to was
+# refused fullscreen and autoplay (the fullscreen button did nothing).
+YT_ALLOW = "; ".join(f"{p} https://www.youtube-nocookie.com" for p in
+                     ("autoplay", "encrypted-media", "picture-in-picture", "fullscreen",
+                      "clipboard-write", "web-share"))
 YT_SRCDOC_CSS = ("*{margin:0;padding:0;box-sizing:border-box}"
                  "html,body{height:100%;overflow:hidden;background:#000}"
                  "a{position:absolute;inset:0;display:block;color:#fff}"
@@ -890,7 +896,7 @@ def yt_facade(a, en=False, eager=False):
     lazy = "" if eager else ' loading="lazy"'
     return (f'<iframe class="yt" src="{embed}" srcdoc="{esc(inner)}" '
             f'title="{esc("Video: " + a["headline"])}" '
-            f'allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen '
+            f'allow="{YT_ALLOW}" allowfullscreen '
             f'referrerpolicy="strict-origin-when-cross-origin"{lazy}></iframe>')
 
 
