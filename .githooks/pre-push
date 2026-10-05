@@ -131,7 +131,7 @@ fi
 # The tree before the first run is the first comparison, so a run that changes nothing
 # stops at once instead of running the generator a second time (47 s).
 echo "pre-push: regenerating the metadata layer (same as CI)..."
-prev_snapshot=$(git status --porcelain -- . | sha1sum)
+prev_snapshot=$(git -c core.safecrlf=false status --porcelain -- . 2>/dev/null | sha1sum)
 for i in 1 2 3; do
   if ! "$PY" tools/generate_seo.py > /tmp/_seo_gen.log 2>&1; then
     sed -n '1,40p' /tmp/_seo_gen.log
@@ -140,7 +140,7 @@ for i in 1 2 3; do
   Every folder with an index.html needs one (project, title, abstract,
   authors, year) or Google Scholar tags cannot be generated and CI goes red."
   fi
-  snapshot=$(git status --porcelain -- . | sha1sum)
+  snapshot=$(git -c core.safecrlf=false status --porcelain -- . 2>/dev/null | sha1sum)
   [ "${prev_snapshot:-}" = "$snapshot" ] && break
   prev_snapshot="$snapshot"
 done
@@ -249,13 +249,21 @@ fi
 tail -2 /tmp/_seo_ver.log
 
 # The pushed state must match what CI will verify, so generated output must be committed.
-if ! git diff --quiet -- . ; then
+if ! git -c core.safecrlf=false diff --quiet -- . 2>/dev/null; then
   echo ""
   echo "Files the generator rewrote but which are not committed:"
-  git diff --name-only -- . | sed 's/^/    /' | head -20
+  git -c core.safecrlf=false diff --name-only -- . 2>/dev/null | sed 's/^/    /' | head -20
   fail "the metadata layer changed. Commit these files, then push again,
   so the pushed tree matches what CI regenerates and verifies."
 fi
 
-echo "pre-push: OK (metadata generated, verified, and committed)"
+# Staged but uncommitted changes passed the check above (it compares the working tree with the
+# index), yet they are not what is pushed, so the tree just verified is not the one CI gets.
+if ! git -c core.safecrlf=false diff --cached --quiet HEAD -- . 2>/dev/null; then
+  echo ""
+  git -c core.safecrlf=false diff --cached --name-only HEAD -- . 2>/dev/null | sed 's/^/    /' | head -20
+  fail "these changes are staged but not committed. Commit them (or unstage them), then push again."
+fi
+
+echo "pre-push: OK (metadata generated, verified, and already committed)"
 exit 0
