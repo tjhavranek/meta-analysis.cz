@@ -809,6 +809,120 @@ def vyber_html(items):
 
 # ------------------------------------------------------------------ writers ---
 
+# A video is a real YouTube iframe from the start, so a crawler sees the embed it points at,
+# but its first document is `srcdoc`: a local poster with a play mark. A browser renders srcdoc
+# instead of loading src, so nothing is requested from Google until the reader clicks, and the
+# click takes the same frame to the youtube-nocookie player: one box before and after, so
+# nothing on the page moves, and no script. `youtube:` is the video id; `youtube_seconds` and
+# `youtube_upload` are what YouTube itself reports; the poster is item-img/<slug>-yt.jpg
+# (960 x 540, the channel's own thumbnail).
+YT_ID = re.compile(r"[A-Za-z0-9_-]{11}")
+YT_SRCDOC_CSS = ("*{margin:0;padding:0;box-sizing:border-box}"
+                 "html,body{height:100%;overflow:hidden;background:#000}"
+                 "a{position:absolute;inset:0;display:block;color:#fff}"
+                 "img{display:block;width:100%;height:100%;object-fit:cover}"
+                 ".p{position:absolute;width:56px;height:56px;margin:-28px 0 0 -28px;"
+                 "border-radius:50%;background:rgba(17,17,17,.9);"
+                 "box-shadow:0 0 0 2px rgba(255,255,255,.85);transition:background .15s}"
+                 ".p:after{content:'';position:absolute;left:50%;top:50%;margin:-10px 0 0 -6px;"
+                 "border-style:solid;border-width:10px 0 10px 16px;"
+                 "border-color:transparent transparent transparent #fff}"
+                 "a:hover .p,a:focus-visible .p{background:#8c2f27}"
+                 "a:focus-visible{outline:3px solid #fff;outline-offset:-3px}"
+                 ".d{position:absolute;right:8px;bottom:8px;padding:2px 7px;border-radius:3px;"
+                 "font:600 13px/1.4 system-ui,-apple-system,'Segoe UI',sans-serif;"
+                 "background:rgba(0,0,0,.72);font-variant-numeric:tabular-nums}")
+
+
+def yt_watch(a):
+    return f'https://www.youtube.com/watch?v={a["youtube"]}'
+
+
+def yt_dur(secs):
+    """2411 -> "40:11", 3609 -> "1:00:09": the way YouTube itself prints a length."""
+    h, r = divmod(secs, 3600)
+    m, s = divmod(r, 60)
+    return f"{h}:{m:02d}:{s:02d}" if h else f"{m}:{s:02d}"
+
+
+def yt_spoken(secs, en=False):
+    """2411 -> "40 minut 11 sekund" / "40 minutes 11 seconds"."""
+    h, r = divmod(secs, 3600)
+    m, s = divmod(r, 60)
+    if en:
+        w = lambda n, u: f"{n} {u}" + ("" if n == 1 else "s")
+        parts = [w(h, "hour") if h else "", w(m, "minute") if m else "", w(s, "second") if s else ""]
+    else:
+        w = lambda n, one, few, many: f"{n} " + (one if n == 1 else few if 2 <= n <= 4 else many)
+        parts = [w(h, "hodina", "hodiny", "hodin") if h else "",
+                 w(m, "minuta", "minuty", "minut") if m else "",
+                 w(s, "sekunda", "sekundy", "sekund") if s else ""]
+    return " ".join(p for p in parts if p)
+
+
+def yt_facade(a, en=False, eager=False):
+    yid = a["youtube"]
+    if not YT_ID.fullmatch(yid):
+        sys.exit(f'{a["file"]}: youtube: "{yid}" is not a YouTube video id')
+    poster = KDIR / "item-img" / f'{a["slug"]}-yt.jpg'
+    if not poster.exists():
+        sys.exit(f'{a["file"]}: youtube: needs its poster at item-img/{poster.name}')
+    if not (a.get("youtube_seconds", "").isdigit() and a.get("youtube_upload")):
+        sys.exit(f'{a["file"]}: youtube: needs youtube_seconds and youtube_upload')
+    secs = int(a["youtube_seconds"])
+    # the badge is for the eye; a screen reader hears the same exact length in words
+    label = (f'Play the video ({yt_spoken(secs, en)}): {a["headline"]}' if en else
+             f'Přehrát video ({yt_spoken(secs, en)}): {a["headline"]}')
+    # Some posters carry their channel's own play icon off-centre; `youtube_play_at: "x% y%"`
+    # puts the site's play mark exactly over it instead of beside it.
+    at = a.get("youtube_play_at", "").split()
+    if at and not (len(at) == 2 and all(re.fullmatch(r"\d{1,2}(\.\d)?%", v) for v in at)):
+        sys.exit(f'{a["file"]}: youtube_play_at must be two percentages, e.g. "47.5% 52.4%"')
+    x, y = at if at else ("50%", "50%")
+    embed = f"https://www.youtube-nocookie.com/embed/{yid}"
+    inner = (f'<!doctype html><html lang="{"en" if en else "cs"}">'
+             f'<title>{esc(a["headline"])}</title><style>{YT_SRCDOC_CSS}</style>'
+             f'<a href="{esc(embed + "?autoplay=1&rel=0")}" '
+             f'referrerpolicy="strict-origin-when-cross-origin" aria-label="{esc(label)}">'
+             f'<img src="{PATH}/item-img/{poster.name}" alt="">'
+             f'<span class="p" style="left:{x};top:{y}" aria-hidden="true"></span>'
+             f'<span class="d" aria-hidden="true">{yt_dur(secs)}</span></a>')
+    lazy = "" if eager else ' loading="lazy"'
+    return (f'<iframe class="yt" src="{embed}" srcdoc="{esc(inner)}" '
+            f'title="{esc("Video: " + a["headline"])}" '
+            f'allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen '
+            f'referrerpolicy="strict-origin-when-cross-origin"{lazy}></iframe>')
+
+
+# One chosen interview on the hub, beside the lede on a wide screen and under it on a phone.
+# Chosen, not the newest: the newest can be a short clip, a player that cannot be embedded, or
+# a private subject. `hub_video: "1"` marks it and `hub_video_topic` says what it is about.
+def hub_video_html(items):
+    chosen = [a for a in items if str(a.get("hub_video", "")).strip()]
+    if not chosen:
+        return ""
+    if len(chosen) > 1:
+        sys.exit(f'hub_video: only one item may carry it, got {[a["slug"] for a in chosen]}')
+    a = chosen[0]
+    if not a.get("youtube"):
+        sys.exit(f'{a["file"]}: hub_video needs youtube:')
+    n_av = sum(1 for x in items if x["media"] in MEDIA_LABEL)
+    when = cs_date(a["date"], a.get("date_precision"))
+    topic = a.get("hub_video_topic")
+    # "na YouTube" sits outside the poster, so it survives when the player is swapped in and
+    # remains the way out if an embed is blocked
+    return ('      <figure class="hub-video" aria-labelledby="hub-video-h">\n'
+            '        <h2 id="hub-video-h" class="vyber-h hub-video-h">Video</h2>\n'
+            f'        {yt_facade(a, eager=True)}\n'
+            f'        <figcaption><a class="hub-video-t" href="{PATH}/{a["slug"]}/">'
+            f'{esc(a.get("hub_video_title") or a["headline"])}</a>'
+            f'<span class="vyber-meta">{esc(topic) + " · " if topic else ""}{esc(when)} · '
+            f'<a href="{yt_watch(a)}" rel="external">na&nbsp;YouTube</a></span>'
+            f'<a class="hub-video-all" href="{PATH}/video/">Všechna videa a audionahrávky '
+            f'({n_av})</a></figcaption>\n'
+            '      </figure>\n')
+
+
 def related_html(a, en=False):
     """`related: slug | slug`: a short list of texts on the same subject. Only slugs that have a
     page here are linked; the text of the item itself does not change."""
@@ -980,6 +1094,15 @@ def write_item(a):
     if a.get("interviewer"):
         meta.append(f'<span>{asked_by(a["interviewer"], lang == "en")}: '
                     f'{esc(a["interviewer"])}</span>')
+    # A recording's own link used to be "Původní vydání" under the last paragraph, often
+    # thousands of words down. It belongs at the top: a player where YouTube has the
+    # recording (see yt_facade), otherwise a link beside the date.
+    if a["media"] in MEDIA_LABEL and a.get("url") and not a.get("youtube"):
+        _en = lang == "en"
+        meta.append(f'<span><a class="av-link" href="{esc(a["url"])}" rel="external">'
+                    + ({"video": "Watch the video", "audio": "Listen"} if _en else
+                       {"video": "Přehrát video", "audio": "Poslechnout si"})[a["media"]]
+                    + '</a></span>')
 
     # Every sentence below is generated, so it can follow the item's OWN language.
     # Site chrome stays Czech by design (see shell()), but a reader who opens an
@@ -1126,12 +1249,42 @@ def write_item(a):
     perex = (f'      <p class="perex">{esc(fix_quotes(a["perex"]))}</p>\n'
              if a.get("perex") else "")
 
+    player = ""
+    if a.get("youtube"):
+        facade = yt_facade(a, en)
+        poster_url = f"{SITE}{PATH}/item-img/{a['slug']}-yt.jpg"
+        # "Open on YouTube" stays outside the poster: it survives the swap to the player and
+        # is the way out where an embed is blocked
+        player = (f'      <div class="yt-item">{facade}<p class="yt-alt">'
+                  f'<a href="{yt_watch(a)}" rel="external">'
+                  f'{"Open on YouTube" if en else "Otevřít na YouTube"}</a></p></div>\n')
+        # The recording is what this page is about, so the graph says so: a VideoObject with
+        # the length and upload time YouTube itself reports, and the embeddable player.
+        _s = int(a["youtube_seconds"])
+        _h, _r = divmod(_s, 3600)
+        node["video"] = {"@type": "VideoObject", "name": a["headline"], "description": desc,
+                         "thumbnailUrl": poster_url, "uploadDate": a["youtube_upload"],
+                         "duration": f"PT{_h}H{_r // 60}M{_r % 60}S" if _h else
+                                     f"PT{_r // 60}M{_r % 60}S",
+                         "embedUrl": f"https://www.youtube-nocookie.com/embed/{a['youtube']}",
+                         "url": yt_watch(a), "inLanguage": lang}
+        # a shared link to a video page previews the video's own poster, unless the page
+        # already has a card image of its own
+        if not og_head:
+            og_head = (f'<meta property="og:image" content="{poster_url}" />\n'
+                       '<meta property="og:image:width" content="960" />\n'
+                       '<meta property="og:image:height" content="540" />\n'
+                       f'<meta property="og:image:alt" content="{esc("Video: " + a["headline"])}" />\n'
+                       '<meta name="twitter:card" content="summary_large_image" />\n'
+                       f'<meta name="twitter:image" content="{poster_url}" />\n'
+                       '<meta name="robots" content="max-image-preview:large" />\n')
+
     body = f"""    <article>
       <div class="article-head">
         <h1>{esc(a["headline"])}</h1>
         <div class="byline">{"".join(meta)}</div>
       </div>
-{flag}{note}{perex}      <div class="prose reading">
+{flag}{player}{note}{perex}      <div class="prose reading">
 {body_html}
 {figs}      </div>
       <div class="provenance"><p>{prov}</p></div>
@@ -1350,7 +1503,11 @@ def write_index(items, key=None):
     # The hub's selection carries the AI line in its footer, so the hub keeps one way in to
     # the assistant rather than two a few lines apart.
     vyber = vyber_html(items) if not key else ""
-    body = (f'    <div class="lede">\n      <h1>{esc(title)}</h1>\n'
+    # the chosen video sits in the lede: beside its text on a wide screen, under it on a phone
+    hv = hub_video_html(items) if not key else ""
+    body = ((f'    <div class="lede has-video">\n      <div class="lede-text">\n' if hv else
+             f'    <div class="lede">\n')
+            + f'      <h1>{esc(title)}</h1>\n'
             f'      <p>{esc(HUB_LEDE if not key else desc)}'
             # The hub is where a first-time reader, often a journalist, lands without knowing
             # the research exists; the footer's bare "meta-analysis.cz" undersold it. Hub only:
@@ -1361,6 +1518,7 @@ def write_index(items, key=None):
             + ('      <p class="ask-link"><a href="/komentare/ask/">Zeptejte se AI.</a>'
                ' Odpovídá podle textů Tomáše a Zuzany Havránkových na tomto webu a odkazuje na zdroje.</p>\n'
                if not key and not vyber else '')
+            + ('      </div>\n' + hv if hv else '')
             + '    </div>\n'
             + vyber
             + (FILTER if not key else "")
@@ -1384,6 +1542,50 @@ def write_index(items, key=None):
     if not key:
         page = page.replace("</body>", SCRIPT + "</body>")
     d = KDIR if not key else KDIR / key
+    d.mkdir(exist_ok=True)
+    (d / "index.html").write_text(page, encoding="utf-8", newline="\n")
+
+
+# Every recording in one place, playable on this site or not, in the archive's own rows: a
+# page that can be shared and found, where a filtered hub could not. Linked from the hub's
+# video caption, not from the nav. Not a SECTION: its rows belong to their own categories.
+def write_media_page(items):
+    sel = [a for a in items if a["media"] in MEDIA_LABEL]
+    nv = sum(1 for a in sel if a["media"] == "video")
+    na = len(sel) - nv
+    cz = lambda n, one, few, many: one if n == 1 else few if 2 <= n <= 4 else many
+    title = "Videa a audionahrávky"
+    desc = (f"Záznamy rozhovorů a dalších vystoupení: {nv} {cz(nv, 'video', 'videa', 'videí')} "
+            f"a {na} {cz(na, 'audionahrávka', 'audionahrávky', 'audionahrávek')}. Videa z "
+            f"YouTube lze přehrát přímo na stránce záznamu, ostatní na webu vydavatele. "
+            f"Většinu doplňuje přepis.")
+    canonical = f"{BASE}/video/"
+    og_url = f"{SITE}{PATH}/item-img/{HUB_IMG['file']}"
+    ow, oh = _img_size(KDIR / "item-img" / HUB_IMG["file"])
+    node = {"@type": "CollectionPage", "@id": canonical + "#collection", "url": canonical,
+            "name": f"{title} — {SITE_AUTHORS}", "description": desc, "inLanguage": "cs",
+            "about": [{"@id": f"{SITE}/#th"}, {"@id": f"{SITE}/#zi"}], "license": CC_BY,
+            "isPartOf": {"@id": f"{BASE}/#collection"},
+            "image": [{"@type": "ImageObject", "url": og_url,
+                       **({"width": ow, "height": oh} if ow else {}),
+                       "creator": {"@type": "Person", "name": HUB_IMG["creator"]},
+                       "creditText": HUB_IMG["credit"]["cs"], "license": HUB_IMG["license"]}],
+            "hasPart": [{"@type": "Article", "headline": a["headline"],
+                         "@id": (f"{BASE}/{a['slug']}/#article" if has_page(a) else a.get("url", "")),
+                         "url": (f"{BASE}/{a['slug']}/" if has_page(a) else a.get("url", ""))}
+                        for a in sel]}
+    og_head = (f'<meta property="og:image" content="{og_url}" />\n'
+               + (f'<meta property="og:image:width" content="{ow}" />\n'
+                  f'<meta property="og:image:height" content="{oh}" />\n' if ow else "")
+               + f'<meta property="og:image:alt" content="{esc(HUB_IMG["alt"]["cs"])}" />\n'
+               + '<meta name="twitter:card" content="summary_large_image" />\n'
+               + f'<meta name="twitter:image" content="{og_url}" />\n')
+    body = (f'    <div class="lede">\n      <h1>{title}</h1>\n      <p>{esc(desc)}</p>\n'
+            f'    </div>\n' + listing(sel, show_cat=False))
+    page = shell(f"{title} — {SITE_AUTHORS}", desc, canonical,
+                 {"@context": "https://schema.org", "@graph": [node]},
+                 body, "", extra_head=og_head, lang="cs")
+    d = KDIR / "video"
     d.mkdir(exist_ok=True)
     (d / "index.html").write_text(page, encoding="utf-8", newline="\n")
 
@@ -2633,6 +2835,7 @@ def main():
     write_index(items)
     for k in SECTIONS:
         write_index(items, k)
+    write_media_page(items)
     write_feed(items, social)
     n_txt = write_machine_readable(items, social)
     write_data_page(items, social)

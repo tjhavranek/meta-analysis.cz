@@ -1,6 +1,6 @@
 ---
 category: "rozhovory"
-media: "audio"
+media: "video"
 outlet: "Český rozhlas Plus"
 url: "https://plus.rozhlas.cz/za-vysokou-inflaci-muze-spatna-politika-centralni-banky-mini-ekonom-havranek-8807137"
 date: "2022-08-15"
@@ -8,6 +8,9 @@ headline: "Za vysokou inflaci může špatná politika centrální banky"
 byline: "Tomáš Havránek"
 interviewer: "Jan Bumba"
 body_note: "Interview Plus na Českém rozhlase Plus, ptá se Jan Bumba. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3; mluvčí jsou určeni podle hlasu, což potvrzují výroky, které Český rozhlas ve svém článku připsal Tomáši Havránkovi. Citace v článku jsou zkrácené a přeskládané; tento text vychází z nahrávky. Odpovědi Tomáše Havránka jsou upraveny jako autorizovaný rozhovor, tedy spisovně a bez výplňových slov, opakování a nedokončených začátků vět; řeč moderátora jen lehce. Čísla, zápory ani míra opatrnosti se neměnily. Tři tečky na začátku nebo konci repliky značí přerušení, nebo úsek, který nešlo ze zvuku spolehlivě zachytit."
+youtube: "82DeYs5YNzc"
+youtube_seconds: "1564"
+youtube_upload: "2022-08-15T05:57:37-07:00"
 ---
 **Jan Bumba:** Inflace se stala kvůli svým současným enormním hodnotám jedním z nejskloňovanějších slov letošního roku. Ekonomové připouštějí, že předpovídat její další vývoj je krajně obtížné, málokdo ale vidí situaci optimisticky. Spíše se všeobecně očekává delší období, po které porostou ceny a naspořené peníze budou ztrácet hodnotu. Mnoho lidí přijímá tento stav podobně jako přírodní katastrofu, která se na nás snesla a nezbývá, než vyčkat, až se tahle velká voda převalí.
 

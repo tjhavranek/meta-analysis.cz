@@ -7,6 +7,9 @@ date: "2018-04-26"
 headline: "Nejcitovanější český ekonom: Dům je pro mě spotřeba"
 byline: "Tomáš Havránek"
 body_note: "Rozhovor pro vlog České národní banky z doby, kdy Tomáš Havránek působil jako poradce bankovní rady; ptá se redaktorka ČNB, kterou pořad nejmenuje. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3; kdo co říká, je určeno podle hlasu. Odpovědi Tomáše Havránka jsou upraveny jako autorizovaný rozhovor, tedy spisovně a bez výplňových slov, opakování a nedokončených začátků vět; řeč redaktorky jen lehce. Čísla, zápory ani míra opatrnosti se neměnily. Větu „A jako takové by podle něj měly mít určitou váhu v indexu spotřebitelských cen“, v níž se o Tomáši Havránkovi mluví ve třetí osobě, text přiřazuje redaktorce podle obsahu; poslechem to ověřit nešlo."
+youtube: "V4UAQ7znrEs"
+youtube_seconds: "469"
+youtube_upload: "2018-04-26T01:20:14-07:00"
 ---
 **Redaktorka ČNB:** Celosvětově nejcitovanější český ekonom pracuje už od roku 2009 v České národní bance. Je jím poradce bankovní rady Tomáš Havránek. Tomáši, informaci o vašem prvenství přinesla největší světová databáze ekonomického výzkumu Ideas. Co to ale znamená?
 

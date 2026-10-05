@@ -1,6 +1,6 @@
 ---
 category: "rozhovory"
-media: "audio"
+media: "video"
 outlet: "Diabetes Podcast"
 url: "https://www.spreaker.com/episode/kdyz-screening-odhali-cukrovku-u-ditete-nema-smysl-se-vztekat-rika-tatinek-maleho-diabetika--70577203"
 date: "2026-03-11"
@@ -8,6 +8,9 @@ headline: "Když screening odhalí cukrovku u dítěte"
 byline: "Tomáš Havránek"
 interviewer: "Jan Hrušovský"
 body_note: "Diabetes Podcast, ptá se Jan Hrušovský. Tomáš Havránek tu mluví jako otec syna s cukrovkou prvního typu, ne jako ekonom. Pozor na záměnu rolí: cukrovku má sám moderátor, takže text v první osobě o vlastní nemoci patří jemu. Vynechány jsou znělky a reklamní vstup. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3; mluvčí jsou určeni podle hlasu. Odpovědi Tomáše Havránka jsou upraveny jako autorizovaný rozhovor, tedy spisovně a bez výplňových slov, opakování a nedokončených začátků vět; řeč moderátora jen lehce. Čísla, zápory ani míra opatrnosti se neměnily. Tři tečky na začátku nebo konci repliky značí přerušení, nebo úsek, který nešlo ze zvuku spolehlivě zachytit; *[nesrozumitelné]* značí místo, které nešlo rozluštit."
+youtube: "FQMmJGOw_Ik"
+youtube_seconds: "3609"
+youtube_upload: "2026-03-10T23:25:01-07:00"
 ---
 **Jan Hrušovský:** Na začátku roku jsme si v Diabetes Podcastu povídali s Barborou Berkou z fakultní nemocnice Motol o projektu Betty. Jeho podstatou je včasný záchyt cukrovky prvního typu u dětí. Tentokrát se na tenhle screening podíváme optikou pacientů, respektive rodičů. Dnešním hostem Diabetes Podcastu je pan Tomáš Havránek, otec desetiletého syna Filipa, u kterého vyšel pozitivní výsledek ve screeningu.
 

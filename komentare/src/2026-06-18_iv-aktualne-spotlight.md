@@ -8,6 +8,13 @@ headline: "„Za inflaci může prezident.“ Vlivný profesor popsal, odkud Bab
 byline: "Tomáš Havránek"
 interviewer: "Petra Jaroměřská"
 body_note: "Rozhovor pro pořad Spotlight serveru Aktuálně.cz, ptá se Petra Jaroměřská. Aktuálně.cz k videu vydalo článek s několika citacemi a rozpisem témat, ne přepis; zde je přepis celé čtyřicetiminutové nahrávky. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3; mluvčí jsou určeni podle hlasu. Odpovědi Tomáše Havránka jsou upraveny jako autorizovaný rozhovor, tedy spisovně a bez výplňových slov, opakování a nedokončených začátků vět; řeč moderátorky jen lehce. Čísla, zápory ani míra opatrnosti se neměnily. Tři tečky na začátku nebo konci repliky značí přerušení, nebo úsek, který nešlo ze zvuku spolehlivě zachytit."
+youtube: "pIkLFfY3_p4"
+youtube_seconds: "2411"
+youtube_upload: "2026-06-18T02:38:59-07:00"
+youtube_play_at: "72% 40%"
+hub_video: "1"
+hub_video_title: "Rozhovor pro pořad Spotlight na Aktuálně.cz"
+hub_video_topic: "EET, veřejné finance a ČNB"
 ---
 **Petra Jaroměřská:** Vítejte u dalšího dílu pořadu Spotlight. Já jsem Petra Jaroměřská a se mnou je ve studiu ekonom a profesor Univerzity Karlovy a také bývalý poradce viceguvernéra České národní banky Tomáš Havránek. Vítejte.
 

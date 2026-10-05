@@ -7,6 +7,9 @@ date: "2024-03-18"
 headline: "Ideální inflace je nulová. ČNB může v budoucnu nakupovat bitcoin do rezerv"
 byline: "Tomáš Havránek"
 body_note: "Rozhovor pro podcast Kryptoplebs. Přepis pokrývá veřejný sestřih (108 minut); celý rozhovor je podle popisu videa delší a dostupný na placené platformě. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3; mluvčí jsou určeni podle hlasu. Odpovědi Tomáše Havránka jsou upraveny jako autorizovaný rozhovor, tedy spisovně a bez výplňových slov, opakování a nedokončených začátků vět; řeč moderátora jen lehce. Čísla, zápory ani míra opatrnosti se neměnily kromě zjevných přeřeknutí, která obracela smysl nebo udávala chybné číslo: „zhruba dva biliony“ korun z intervencí (zaznělo „100 miliard“), ekonomiku bylo třeba chladit „víc“ (zaznělo „míň“), „mírná deflace“ (zaznělo „inflace“ a „nemírná“) a platy v milionech eur, na které „nejsme zvyklí“ (zaznělo „jsme zvyklí“). Tři tečky na začátku nebo konci repliky značí přerušení, nebo úsek, který nešlo ze zvuku spolehlivě zachytit; *[nesrozumitelné]* značí místo, které nešlo rozluštit."
+youtube: "dVgcnhFbSc8"
+youtube_seconds: "6493"
+youtube_upload: "2024-03-18T08:00:37-07:00"
 ---
 **Moderátor:** Co vy a bitcoin, jak jste na tom jenom jinak takhle? Najdeme na to téma teda samozřejmě.
 

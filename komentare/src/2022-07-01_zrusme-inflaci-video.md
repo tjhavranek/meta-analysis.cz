@@ -8,6 +8,9 @@ date_precision: "month"
 headline: "Zrušme inflaci"
 byline: "Tomáš Havránek"
 body_note: "Pětiminutové video k iniciativě Zrušme inflaci na autorově kanálu YouTube; mluví jen Tomáš Havránek, což potvrzuje porovnání hlasu. Datum udává vznik videa pro iniciativu spuštěnou v červenci 2022; na YouTube bylo nahráno až v červnu 2024. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3. Odstraněna jsou přeřeknutí a opakování, hovorové tvary převedeny do spisovné češtiny a opraveny zjevné gramatické chyby; čísla, zápory ani míra opatrnosti se neměnily. Oba modely shodně slyší 220 odborných studií, ačkoli web zrusme-inflaci.cz uvádí 222; jde o rozdíl mezi nahrávkou a webem, ne o chybu přepisu."
+youtube: "0fNj1BrsD7w"
+youtube_seconds: "298"
+youtube_upload: "2024-06-16T22:00:06-07:00"
 ---
 Inflace se můžeme navěky zbavit. Je to naše rozhodnutí. Když to budeme po Národní bance chtít, tak za 100 korun toho půjde koupit stejně za 20 let jako dnes.
 

@@ -336,3 +336,29 @@ main { padding: 2.75rem 0 4rem; }
 @media (min-width: 65rem) {
   .vyber ol { padding-left: 0; }
 }
+
+/* Video: one chosen interview in the hub's lede, and a player on a video item's own page.
+   A YouTube iframe whose first document is a local poster (srcdoc, see yt_facade in
+   build.py); the click loads the youtube-nocookie player in the same box, so nothing moves. */
+.yt { display: block; width: 100%; aspect-ratio: 16 / 9; border: 1px solid var(--rule);
+      background: #000; }
+/* YouTube's player needs at least 200 px of height; a 16:9 box on a phone is shorter, so the
+   box reserves it from the start and the poster covers it */
+iframe.yt { min-height: 200px; }
+.yt-item { margin: 0 0 1.75rem; max-width: var(--measure); }
+.yt-alt { margin: 0.35rem 0 0; font-size: 0.83rem; text-align: right; }
+/* on the hub: under the lede on a phone, beside it where the 34rem text leaves room */
+.hub-video { margin: 1.5rem 0 0; max-width: var(--measure); }
+/* the lede's links are short; beside the video its column is narrower, and a break inside
+   "meta-analysis.cz" or "Posts (26)" looked like an error */
+.lede-text a { white-space: nowrap; }
+.hub-video figcaption { margin-top: 0.5rem; }
+.hub-video-t { display: block; color: var(--text); font-weight: 600; line-height: 1.35;
+               text-decoration: none; }
+.hub-video-t:hover { color: var(--accent); text-decoration: underline; }
+.hub-video-all { display: inline-block; margin-top: 0.4rem; font-size: 0.92rem; padding-block: 0.1rem; }
+@media (min-width: 52rem) {
+  .lede.has-video { display: grid; grid-template-columns: minmax(26rem, 1fr) minmax(15rem, 23rem);
+                    column-gap: 2.5rem; align-items: start; }
+  .hub-video { margin: 0.4rem 0 0; width: 100%; max-width: 23rem; justify-self: end; }
+}
