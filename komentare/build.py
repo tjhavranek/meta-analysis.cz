@@ -160,6 +160,19 @@ HUB_DESC = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře 
             "litomyšlskou Lilii, rozhovory, stanoviska poradce bankovní rady ČNB "
             "a kratší příspěvky ze sítí. Texty jsou zde "
             "archivovány v plném znění s odkazem na původní vydání.")
+# The hub's meta and preview description: search results and link previews cut at about 155
+# characters, and HUB_DESC (about 270) names advisor opinions the hub page does not show. The
+# full HUB_DESC stays where length costs nothing: llms.txt, all.md, index.json (owner, 5 Oct 2026).
+HUB_META = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, "
+            "sloupky pro litomyšlskou Lilii a rozhovory.")
+# The hub and the section pages share one photo for link previews (owner, 5 Oct 2026). It is
+# someone else's photograph: its author and licence travel in the file's metadata and in the
+# graph, with no visible line (site rule, 3 Oct 2026).
+HUB_IMG = {"file": "hub-havrankovi.jpg", "creator": "Anna Solcova",
+           "license": "https://creativecommons.org/licenses/by/4.0/",
+           "alt": {"cs": "Tomáš Havránek a Zuzana Havránková", "en": "Tomas Havranek and Zuzana Irsova"},
+           "credit": {"cs": "Foto: Anna Solcova, CC BY 4.0 (oříznuto)",
+                      "en": "Photo: Anna Solcova, CC BY 4.0 (cropped)"}}
 # What the reader sees first. The sentence about full text and original sources is true
 # and worth saying to a crawler, but it delays the actual list, so it stays in HUB_DESC
 # (the meta description) and off the page.
@@ -1180,7 +1193,7 @@ def write_item(a):
 def write_index(items, key=None):
     sec = SECTIONS.get(key)
     title = sec["title"] if sec else "Komentáře, sloupky a rozhovory"
-    desc = sec["desc"] if sec else HUB_DESC
+    desc = sec["desc"] if sec else HUB_META
     canonical = f"{BASE}/{key}/" if key else f"{BASE}/"
     sel = [a for a in items if not key or a["category"] == key]
 
@@ -1352,9 +1365,22 @@ def write_index(items, key=None):
             + vyber
             + (FILTER if not key else "")
             + listing(sel, show_cat=not key))
+    lang = sec["lang"] if sec else "cs"
+    og_url = f"{SITE}{PATH}/item-img/{HUB_IMG['file']}"
+    ow, oh = _img_size(KDIR / "item-img" / HUB_IMG["file"])
+    og_head = (f'<meta property="og:image" content="{og_url}" />\n'
+               + (f'<meta property="og:image:width" content="{ow}" />\n'
+                  f'<meta property="og:image:height" content="{oh}" />\n' if ow else "")
+               + f'<meta property="og:image:alt" content="{esc(HUB_IMG["alt"][lang])}" />\n'
+               + '<meta name="twitter:card" content="summary_large_image" />\n'
+               + f'<meta name="twitter:image" content="{og_url}" />\n')
+    node["image"] = [{"@type": "ImageObject", "url": og_url,
+                      **({"width": ow, "height": oh} if ow else {}),
+                      "creator": {"@type": "Person", "name": HUB_IMG["creator"]},
+                      "creditText": HUB_IMG["credit"][lang], "license": HUB_IMG["license"]}]
     page = shell(f"{title} — {SITE_AUTHORS}", desc, canonical,
                  {"@context": "https://schema.org", "@graph": [node, person, person_zi]},
-                 body, key or "", lang=(sec["lang"] if sec else "cs"))
+                 body, key or "", extra_head=og_head, lang=lang)
     if not key:
         page = page.replace("</body>", SCRIPT + "</body>")
     d = KDIR if not key else KDIR / key
