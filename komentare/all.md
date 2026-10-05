@@ -3086,7 +3086,7 @@ A nejnižší platy mají často právě ti, kdo jsou nejvíc v kontaktu s lidmi
 
 ---
 
-## Ekonomka Zuzana Havránková: Změním fakta, změním názor
+## Ekonomka Zuzana Havránková: Když se změní fakta, změním názor
 
 *Hrot, 31. srpna 2024, ptal se Pavel Štrunc. Zuzana Havránková.*
 

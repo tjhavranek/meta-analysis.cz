@@ -4,16 +4,16 @@ media: "text"
 outlet: "Hrot"
 url: "https://www.hrot24.cz/clanek/ekonomka-zuzana-havrankova-zmenim-fakta-zmenim-nazor"
 date: "2024-08-31"
-headline: "Ekonomka Zuzana Havránková: Změním fakta, změním názor"
+headline: "Ekonomka Zuzana Havránková: Když se změní fakta, změním názor"
 byline: "Zuzana Havránková"
 interviewer: "Pavel Štrunc"
 word_count: "5090"
-body_note: "Autorizovaná verze rozhovoru, kterou Zuzana Havránková schválila pro redakci. Rozhovor vyšel v tištěném měsíčníku Hrot, online je k dispozici pouze ukázka. Ze stejného rozhovoru čerpá i text vydaný na Hrot24.cz 11. 8. 2025."
+body_note: "Autorizovaná verze rozhovoru, kterou Zuzana Havránková schválila pro redakci. Rozhovor vyšel v tištěném měsíčníku Hrot pod titulkem „Ekonomka Zuzana Havránková: Změním fakta, změním názor“, online je k dispozici pouze ukázka. Zamýšlen byl zřejmě známý výrok „Když se změní fakta, změním názor“, kterému odpovídá pasáž o bayesiánském uvažování. Tištěné znění ale vyznívá, jako by fakta měnila ona, proto zde titulek uvádíme opravený. Ze stejného rozhovoru čerpá i text vydaný na Hrot24.cz 11. 8. 2025."
 vyber: "3"
-vyber_titulek: "Změním fakta, změním názor"
+vyber_titulek: "Když se změní fakta, změním názor"
 ---
 
-# Ekonomka Zuzana Havránková: Změním fakta, změním názor
+# Ekonomka Zuzana Havránková: Když se změní fakta, změním názor
 
 ## ŽIVOT
 
