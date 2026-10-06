@@ -233,7 +233,7 @@ MEDIA_EXTRA = [
     {"slug": "", "headline": "Meta-Analysis in Economics", "date": "2026-03-16",
      "outlet": "ISER, Ósacká univerzita, Japonsko", "byline": AUTHOR, "category": "celostatni",
      "media": "audio", "url": "/teaching/osaka-2026/",
-     "id": f"{SITE}/teaching/osaka-2026/#recording", "thumb": "osaka-2026",
+     "id": f"{SITE}/teaching/osaka-2026/#recording", "thumb": "osaka-2026", "spoken": "en",
      "row_note": "kurz, čtyři přednášky (3 h 31 min)"},
 ]
 
@@ -1794,14 +1794,23 @@ def media_grid(sel):
         url = f"{PATH}/{a['slug']}/" if has_page(a) else (a.get("url") or "#")
         ext = "" if has_page(a) or url.startswith("/") else ' rel="external"'
         kind = MEDIA_LABEL.get(a["media"]) or MEDIA_LABEL["video"]
+        # a recording in another language than the Czech page says so on its badge
+        kind += ", anglicky" if a.get("spoken") == "en" else ""
         lang = a.get("lang") or SECTIONS[a["category"]]["lang"]
         out.append(f'      <li class="vcard"><a href="{url}"{ext}><span class="vcard-img">'
                    f'<img src="{PATH}/item-img/thumb/{key}.jpg" alt="" width="640" height="360" '
                    f'loading="lazy" decoding="async"><span class="vcard-k">{kind}</span></span>'
                    f'<span class="vcard-t">{esc(a["headline"])}</span></a>'
                    f'<span class="vcard-m">{esc(cs_date(a["date"], a.get("date_precision"), lang))}'
-                   f' · {esc(a["outlet"])}</span></li>')
+                   f' · {esc(a["outlet"])}'
+                   + (f' · {esc(a["row_note"])}' if a.get("row_note") else "") + '</span></li>')
     out.append('    </ul>')
+    # two pictures come from Wikimedia Commons under CC BY-SA 4.0, which asks for a readable credit
+    out.append('    <p class="vgrid-credit">Fotografie z Wikimedia Commons (CC BY-SA 4.0): Miroslav '
+               '<a href="https://commons.wikimedia.org/wiki/File:Franti%C5%A1ek_Bostl_and_Miroslav_Singer.png" '
+               'rel="external">Singer</a> (autor Josefdlouhy) u pořadu Pro a proti; Tomáš Havránek na '
+               '<a href="https://commons.wikimedia.org/wiki/File:DebataInflace.jpg" rel="external">debatě '
+               'v IES</a> (autor Jklamo) u kurzu v Ósace.</p>')
     return "\n".join(out) + "\n"
 
 

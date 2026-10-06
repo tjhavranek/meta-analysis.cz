@@ -11,7 +11,7 @@ body_note: "Pětiminutové video k iniciativě Zrušme inflaci na autorově kan�
 youtube: "0fNj1BrsD7w"
 youtube_seconds: "298"
 youtube_upload: "2024-06-16T22:00:06-07:00"
-youtube_play_at: "24% 55%"
+youtube_play_at: "74% 55%"
 description: "Video Tomáše Havránka k iniciativě Zrušme inflaci: proč je podle něj inflace nezdravá, nepřirozená a neústavní a proč má ČNB místo cíle 2 % držet stálé ceny."
 ---
 Inflace se můžeme navěky zbavit. Je to naše rozhodnutí. Když to budeme po Národní bance chtít, tak za 100 korun toho půjde koupit stejně za 20 let jako dnes.

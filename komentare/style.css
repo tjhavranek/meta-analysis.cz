@@ -409,6 +409,7 @@ iframe.yt { min-height: 200px; }
 .vcard a:hover .vcard-t, .vcard a:focus-visible .vcard-t { color: var(--accent); text-decoration: underline; }
 .vcard-m { display: block; margin-top: 0.2rem; font-size: 0.85rem; color: var(--muted); }
 @media (prefers-reduced-motion: reduce) { .vcard-img img { transition: none; } }
+.vgrid-credit { margin: 2.5rem 0 0; font-size: 0.8rem; color: var(--muted); }
 /* on the hub: under the lede on a phone, beside it where the 34rem text leaves room */
 .hub-video { margin: 1.5rem 0 0; max-width: var(--measure); }
 /* the lede's links are short; beside the video its column is narrower, and a break inside
