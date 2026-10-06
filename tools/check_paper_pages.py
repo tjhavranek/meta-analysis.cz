@@ -17,16 +17,20 @@ Three things can go wrong in a conversion, and each is checkable without an opin
 Exit status is 1 if any page fails, so this can gate a deploy.
 """
 
+import gzip
+import hashlib
 import html
 import json
 import os
 import re
 import subprocess
 import sys
+from collections import Counter
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 
+import _poppler                                             # noqa: E402
 from build_paper_page import (documents, page_dir, transcript_pdf_path,  # noqa: E402
                               transcript_pdf_paths)
 from scout_paper import scout                               # noqa: E402
@@ -36,6 +40,92 @@ from verify_transcript import (multiset_check, multiset_check_strict,  # noqa: E
 
 PAPERS = {p["project"]: p for p in json.load(open(os.path.join(ROOT, "tools", "papers.json"), encoding="utf-8"))}
 PAPERS.update(documents())
+
+# Reading the PDFs is 97% of this gate's time (about 288 s for 75 pages on a laptop, 5 Oct
+# 2026): three pdftotext passes and a pdfinfo per paper, while what a push changes is the
+# page. A PDF's reading depends only on its bytes, the code that reads it, the poppler build
+# and the Python, so those make the key, and every check on the page and the transcript
+# still runs fresh. The cache lives outside the repository and outside Dropbox, one file per
+# PDF, overwritten when the key changes. CI keeps no cache and reads every PDF, so a wrong
+# entry could at worst move a failure from the local hook to CI, never past it.
+# PAPER_CHECK_NO_CACHE=1 turns it off. The key sees the poppler executables but not poppler's
+# separately installed encoding data, so after reinstalling poppler delete the folder.
+CACHE_DIR = None
+if not (os.environ.get("CI") or os.environ.get("PAPER_CHECK_NO_CACHE")):
+    CACHE_DIR = os.path.join(os.environ.get("LOCALAPPDATA")
+                             or os.path.join(os.path.expanduser("~"), ".cache"),
+                             "meta-analysis-cz", "paper-pdf-readings")
+_code_key = []
+
+
+def code_key():
+    if not _code_key:
+        h = hashlib.sha256(sys.version.encode())
+        for name in ("check_paper_pages.py", "verify_transcript.py", "scout_paper.py",
+                     "draft_transcript.py", "_poppler.py"):
+            with open(os.path.join(ROOT, "tools", name), "rb") as f:
+                h.update(b"\0" + name.encode() + b"\0" + f.read())
+        for name in ("pdftotext", "pdfinfo"):
+            exe = _poppler.tool(name)
+            v = subprocess.run([exe, "-v"], capture_output=True, text=True,
+                               encoding="utf-8", errors="replace")
+            h.update(("\0%s\0%s\0%s" % (exe, v.stdout, v.stderr)).encode())
+        _code_key.append(h.hexdigest())
+    return _code_key[0]
+
+
+def cached(kind, pdf, compute, dump=lambda v: v, load=lambda d: d, keep=lambda v: True):
+    """compute(), or its stored result for these PDF bytes. Any trouble with the cache
+    (no poppler, an unreadable or corrupt file) just means computing it as before. A result
+    that keep() rejects is used once and not stored."""
+    if not CACHE_DIR or not pdf:
+        return compute()
+    try:
+        rel = os.path.relpath(pdf, ROOT)
+        with open(pdf, "rb") as f:
+            key = hashlib.sha256(("%s\0%s\0%s\0" % (kind, code_key(), rel)).encode()
+                                 + f.read()).hexdigest()
+        path = os.path.join(CACHE_DIR, "%s-%s.json.gz"
+                            % (kind, hashlib.sha256(rel.encode()).hexdigest()[:20]))
+    except Exception:
+        return compute()
+    try:
+        with gzip.open(path, "rt", encoding="utf-8") as f:
+            stored = json.load(f)
+        if stored["key"] == key:
+            return load(stored["value"])
+    except Exception:
+        pass
+    value = compute()
+    if not keep(value):
+        return value
+    tmp = "%s.%d.tmp" % (path, os.getpid())
+    try:
+        os.makedirs(CACHE_DIR, exist_ok=True)
+        with gzip.open(tmp, "wt", encoding="utf-8") as f:
+            json.dump({"key": key, "value": dump(value)}, f)
+        os.replace(tmp, path)
+    except Exception:
+        pass
+    finally:
+        try:
+            os.remove(tmp)
+        except OSError:
+            pass
+    return value
+
+
+def _load_counts(d):
+    c = Counter(d["counts"])
+    c.joined = set(d["joined"])
+    return c
+
+
+def cached_pdf_counts(pdf):
+    # pdf_counts hangs a `joined` set on its Counter, which pickling a Counter would drop.
+    return cached("counts", pdf, lambda: pdf_counts(pdf),
+                  lambda c: {"counts": dict(c), "joined": sorted(getattr(c, "joined", ()))},
+                  _load_counts)
 
 
 def visible_text(page):
@@ -69,9 +159,9 @@ def check(project):
 
     # -- nothing invented
     if have_transcript:
-      a = pdf_counts(pdfs[0])
+      a = cached_pdf_counts(pdfs[0])
       for _extra in pdfs[1:]:
-          more = pdf_counts(_extra)
+          more = cached_pdf_counts(_extra)
           merged = a | more               # a word in either hosted PDF is not invented
           # Counter.__or__ returns a plain Counter, dropping the `joined` set pdf_counts
           # attaches -- so on the two papers that draw on more than one PDF, contagion and
@@ -122,7 +212,10 @@ def check(project):
                        "account for most of it)" % (100 * share))
 
       # -- the tables and figures the paper has, the page has
-      sc = scout(project, PAPERS)
+      # scout does not stop when pdfinfo or pdftotext fails; it returns an empty census, which
+      # must not be stored, or one failed reading would pass every later local run.
+      sc = cached("scout-" + project, pdf, lambda: scout(project, PAPERS),
+                  keep=lambda r: bool(r.get("pages") and r.get("words")))
       want_t = set(sc.get("tables", {}))
       want_f = set(sc.get("figures", {}))
       # A paper can number one figure twice. reproducibility's manuscript floats its extended
