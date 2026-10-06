@@ -111,6 +111,8 @@ AUTHOR = "Tomáš Havránek"
 # byline "Irsova" can connect the two. Everywhere else she is as Czech media print her.
 SITE_AUTHORS_TOP = "Tomáš Havránek, Zuzana Iršová Havránková"
 SITE_AUTHORS = "Tomáš Havránek, Zuzana Havránková"
+# on the English pages, as on meta-analysis.cz and in the English bylines (owner, 6 Oct 2026)
+SITE_AUTHORS_EN = "Tomas Havranek, Zuzana Irsova"
 # One person can appear under several name forms: the married name in Czech outlets,
 # the maiden name in English ones, with or without diacritics. Every form must map to
 # the same ORCID or the author silently loses attribution on some items.
@@ -578,18 +580,22 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
            else "https://ies.fsv.cuni.cz/contacts/institute-members/78067720")
     ies_zi = ("https://ies.fsv.cuni.cz/en/contacts/institute-members/73504033" if _en
               else "https://ies.fsv.cuni.cz/contacts/institute-members/73504033")
+    # In English the authors are Tomas Havranek and Zuzana Irsova, as on meta-analysis.cz and in
+    # the English items' bylines; the Czech chrome kept the Czech forms (owner, 6 Oct 2026).
+    th, zi = ("Tomas Havranek", "Zuzana Irsova") if _en else ("Tomáš Havránek", "Zuzana Iršová Havránková")
+    names_top = SITE_AUTHORS_EN if _en else SITE_AUTHORS_TOP
     # one paragraph each, so neither author is a footnote to the other
     bio = (
-        "<strong>Tomáš Havránek</strong> is Professor of Economics at the Institute of "
+        "<strong>Tomas Havranek</strong> is Professor of Economics at the Institute of "
         "Economic Studies, Charles University, Prague. He works on monetary policy, "
         "meta-analysis and meta-research, and was an adviser to the Vice-Governor and "
         "the Board of the Czech National Bank. He is a Research Affiliate at CEPR (London) "
         "and at Stanford METRICS."
         "</p><p class=\"about-bio\">"
-        "<strong>Zuzana Havránková</strong> is Professor of Economics at the same institute. "
+        "<strong>Zuzana Irsova</strong> is Professor of Economics at the same institute. "
         "She works on meta-analysis and meta-research, labour economics and international "
-        "economics, and is an affiliate researcher at Stanford METRICS. She publishes in "
-        "English as Zuzana Irsova."
+        "economics, and is an affiliate researcher at Stanford METRICS. She writes in "
+        "Czech as Zuzana Havránková."
         "</p><p class=\"about-bio\">"
         "This section archives their published commentary, columns and interviews."
         if _en else
@@ -614,7 +620,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
 <link rel="stylesheet" href="{PATH}/style.css?v={CSS_V}" />
 <link rel="canonical" href="{canonical_link or canonical}" />
 <link rel="alternate" type="application/rss+xml" title="{rss_title}" href="{PATH}/feed.xml" />
-<meta property="og:site_name" content="Komentáře — {SITE_AUTHORS}" />
+<meta property="og:site_name" content="Komentáře — {SITE_AUTHORS_EN if _en else SITE_AUTHORS}" />
 <meta property="og:locale" content="{"en_GB" if lang == "en" else "cs_CZ"}" />
 <meta property="og:title" content="{esc(title)}" />
 <meta property="og:description" content="{esc(desc)}" />
@@ -627,7 +633,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
 <body>
 <header class="masthead">
   <div class="wrap">
-    <p class="site-name"><a href="{PATH}/">Komentáře<small>{SITE_AUTHORS_TOP}</small></a></p>
+    <p class="site-name"><a href="{PATH}/">Komentáře<small>{names_top}</small></a></p>
     <nav class="nav">{nav}</nav>
   </div>
 </header>
@@ -640,7 +646,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
   <div class="wrap about">
     <p class="about-bio">{bio}</p>
     <ul class="about-links">
-      <li class="who">Tomáš Havránek</li>
+      <li class="who">{th}</li>
       <li><a href="https://www.tomashavranek.cz/">tomashavranek.cz</a></li>
       <li><a href="{ies}">IES FSV UK</a></li>
       <li><a href="https://orcid.org/0000-0002-3158-2539">ORCID</a></li>
@@ -651,7 +657,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
       <li><a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></li>
     </ul>
     <ul class="about-links">
-      <li class="who">Zuzana Iršová Havránková</li>
+      <li class="who">{zi}</li>
       <li><a href="https://www.irsova.com/">irsova.com</a></li>
       <li><a href="{ies_zi}">IES FSV UK</a></li>
       <li><a href="https://orcid.org/0000-0002-0753-8124">ORCID</a></li>
@@ -1630,11 +1636,12 @@ def write_index(items, key=None):
             "https://meta-analysis.cz/",
         ],
     }
+    authors = SITE_AUTHORS_EN if sec and sec.get("lang") == "en" else SITE_AUTHORS
     node = {
         "@type": "CollectionPage",
         "@id": canonical + "#collection",
         "url": canonical,
-        "name": f"{title} — {SITE_AUTHORS}",
+        "name": f"{title} — {authors}",
         "description": desc,
         "inLanguage": sec["lang"] if sec else "cs",
         "about": [{"@id": f"{SITE}/#th"}, {"@id": f"{SITE}/#zi"}],
@@ -1765,7 +1772,7 @@ def write_index(items, key=None):
                       **({"width": ow, "height": oh} if ow else {}),
                       "creator": {"@type": "Person", "name": HUB_IMG["creator"]},
                       "creditText": HUB_IMG["credit"][lang], "license": HUB_IMG["license"]}]
-    page = shell(f"{title} — {SITE_AUTHORS}", desc, canonical,
+    page = shell(f"{title} — {authors}", desc, canonical,
                  {"@context": "https://schema.org", "@graph": [node, person, person_zi]},
                  body, key or "", extra_head=og_head, lang=lang)
     if not key:
@@ -2980,7 +2987,7 @@ def write_src_index(items):
 </head>
 <body>
 <header class="masthead"><div class="wrap">
-  <p class="site-name"><a href="{PATH}/">Komentáře<small>{SITE_AUTHORS_TOP}</small></a></p>
+  <p class="site-name"><a href="{PATH}/">Komentáře<small>{SITE_AUTHORS_EN}</small></a></p>
   <nav class="nav"><a href="{PATH}/">Back to the archive</a></nav>
 </div></header>
 <main><div class="wrap">
