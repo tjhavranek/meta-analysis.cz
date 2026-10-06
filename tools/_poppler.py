@@ -35,15 +35,21 @@ _WINDOWS_HINTS = (
 )
 
 
+_identity = {}
+
+
 def is_poppler(exe):
     """True if this binary identifies itself as poppler. -v goes to stderr on poppler and
-    to stdout on some builds, so both are read."""
-    try:
-        r = subprocess.run([exe, "-v"], capture_output=True, text=True,
-                           encoding="utf-8", errors="replace", timeout=20)
-    except (OSError, subprocess.SubprocessError):
-        return False
-    return "poppler" in ((r.stdout or "") + (r.stderr or "")).lower()
+    to stdout on some builds, so both are read. The answer is kept for the run: on Windows
+    each -v costs about a second, and build_paper_page asked once per paper (6 Oct 2026)."""
+    if exe not in _identity:
+        try:
+            r = subprocess.run([exe, "-v"], capture_output=True, text=True,
+                               encoding="utf-8", errors="replace", timeout=20)
+            _identity[exe] = "poppler" in ((r.stdout or "") + (r.stderr or "")).lower()
+        except (OSError, subprocess.SubprocessError):
+            _identity[exe] = False
+    return _identity[exe]
 
 
 def _candidates(name):

@@ -1464,13 +1464,19 @@ def prints_pipe_headings(project, meta):
             "poppler's pdftotext is not on PATH. build_paper_page needs it to decide how a "
             "paper sets its headings, and without it the pages it writes differ from the "
             "ones in the repository. Install poppler-utils, or set POPPLER_BIN.")
-    try:
+    def read():
         text = subprocess.run([_poppler.tool("pdftotext"), "-f", "1", "-l", "12", pdf, "-"],
                               capture_output=True, text=True, check=True,
                               encoding="utf-8", errors="replace").stdout or ""
+        return len(re.findall(r"^\s*\d+(?:\.\d+)?\s*\|\s*[A-Z]", text, re.M)) >= 2
+    # Reading the PDFs was 80% of `--all --check` (159 of 198 s, 6 Oct 2026); the answer
+    # depends only on the PDF's bytes, so it is cached between local runs (_pdf_cache.py).
+    # A failed reading raises out of read() and is not stored.
+    from _pdf_cache import cached
+    try:
+        return cached("pipe", pdf, read, ("build_paper_page.py",))
     except Exception:          # this PDF cannot be read; that is a genuine False
         return False
-    return len(re.findall(r"^\s*\d+(?:\.\d+)?\s*\|\s*[A-Z]", text, re.M)) >= 2
 
 
 def article_title(meta):
