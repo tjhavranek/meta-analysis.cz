@@ -27,7 +27,29 @@ def visible_text(html_src):
     p.feed(html_src)
     return re.sub(r"\s+", " ", "".join(p.parts)).strip()
 
+_CAT = []
+
+
 def git_show(rel):
+    """HEAD's copy of a file, or None. One `git cat-file --batch` serves every page: a `git show`
+    per page was half of this check's time (206 processes, 7 of 15 s, 6 Oct 2026). Both return
+    the blob as stored. Any trouble with the batch falls back to `git show`."""
+    try:
+        if not _CAT:
+            _CAT.append(subprocess.Popen(["git", "-C", SITE, "cat-file", "--batch"],
+                                         stdin=subprocess.PIPE, stdout=subprocess.PIPE))
+        cat = _CAT[0]
+        cat.stdin.write(f"HEAD:{rel}\n".encode("utf-8"))
+        cat.stdin.flush()
+        head = cat.stdout.readline().split()
+        if len(head) == 3 and head[1] == b"blob":
+            data = cat.stdout.read(int(head[2]))
+            cat.stdout.read(1)                      # the newline after each object
+            return data.decode("utf-8", "replace")
+        if len(head) == 2 and head[1] == b"missing":
+            return None
+    except Exception:
+        pass
     out = subprocess.run(["git", "-C", SITE, "show", f"HEAD:{rel}"],
                          capture_output=True)
     return out.stdout.decode("utf-8", "replace") if out.returncode == 0 else None

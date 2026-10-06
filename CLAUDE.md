@@ -10,12 +10,14 @@ and `python tools/preflight.py` runs the same gates locally.
   runs (it stops if the workflow gains a gate it does not name), so do not also run
   `tools/preflight.py` before pushing; that repeated every gate (5 Oct 2026). A push that
   touches only `komentare/`, the pages of `/ai/`, `sitemap.xml` and `api/v1/search-index.json`
-  skips the full-text and data gates locally, provided CI passed on the base (CI still runs
-  them); `FULL=1 git push` forces everything. Use `tools/preflight.py` to
+  skips the full-text and data gates locally, provided CI passed on the base, or on an
+  ancestor with only such commits since (CI still runs them); `FULL=1 git push` forces everything. Use `tools/preflight.py` to
   check without pushing. Never push on `--fast`.
 - The hook runs its read-only gates side by side, and the full-text gates keep what poppler
   reads from each PDF in a local cache outside the repo (`tools/_pdf_cache.py`; CI keeps none).
   `PAPER_CHECK_NO_CACHE=1` turns the cache off; delete its folder after reinstalling poppler.
+  The data converter (`data_layer/06_convert.py`) keeps its parsed source files the same way;
+  `DATA_READ_NO_CACHE=1` turns that off.
 - Never edit files while the pre-push hook is running. It checks the working tree, so an
   edit made during the hook is what it sees, and the push is blocked or goes out mixed.
 - A push is not a deploy. Afterwards, confirm that the Actions run succeeded and that the

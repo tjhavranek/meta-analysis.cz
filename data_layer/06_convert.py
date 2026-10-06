@@ -26,7 +26,68 @@ def pick_sheet(xl):
         if best is None or sc>best[0]: best=(sc,sh,d)
     return (best[1],best[2]) if best else (None,None)
 
+# Parsing the source spreadsheets was three quarters of this step (50 of 69 s, 6 Oct 2026), run
+# on every non-light push, while the files themselves rarely change. What a source parses to
+# depends only on its bytes, the member and sheet asked for, this file, and the library versions,
+# so those make the key; the result is pickled and comes back exactly as parsed. One cache file
+# per source, overwritten when the key changes, outside the repository and outside Dropbox.
+# CI keeps no cache. DATA_READ_NO_CACHE=1 turns it off.
+import pickle, sys as _sys
+_READ_CACHE = None
+if not (os.environ.get("CI") or os.environ.get("DATA_READ_NO_CACHE")):
+    _READ_CACHE = os.path.join(os.environ.get("LOCALAPPDATA") or os.path.join(os.path.expanduser("~"), ".cache"),
+                               "meta-analysis-cz", "data-reads")
+
+
+def _code_key():
+    h = hashlib.sha256(_sys.version.encode())
+    with open(os.path.abspath(__file__), "rb") as f:
+        h.update(f.read())
+    for mod in ("pandas", "numpy", "openpyxl", "pyarrow"):
+        try:
+            h.update(("\0%s=%s" % (mod, __import__(mod).__version__)).encode())
+        except Exception:
+            h.update(("\0%s=none" % mod).encode())
+    return h.hexdigest()
+
+
 def read_member(project, source, archive, member, sheet=None):
+    if not _READ_CACHE:
+        return _read_member(project, source, archive, member, sheet)
+    try:
+        path = os.path.join(SITE, project, member if source == "loose" else archive)
+        with open(path, "rb") as f:
+            data = f.read()
+        ident = repr((project, source, archive, member, sheet))
+        key = hashlib.sha256(ident.encode() + b"\0" + _code_key().encode() + b"\0" + data).hexdigest()
+        cfile = os.path.join(_READ_CACHE, hashlib.sha256(ident.encode()).hexdigest()[:24] + ".pkl")
+    except Exception:
+        return _read_member(project, source, archive, member, sheet)
+    try:
+        with open(cfile, "rb") as f:
+            stored = pickle.load(f)
+        if stored["key"] == key:
+            return stored["value"]
+    except Exception:
+        pass
+    value = _read_member(project, source, archive, member, sheet)
+    tmp = "%s.%d.tmp" % (cfile, os.getpid())
+    try:
+        os.makedirs(_READ_CACHE, exist_ok=True)
+        with open(tmp, "wb") as f:
+            pickle.dump({"key": key, "value": value}, f, protocol=pickle.HIGHEST_PROTOCOL)
+        os.replace(tmp, cfile)
+    except Exception:
+        pass
+    finally:
+        try:
+            os.remove(tmp)
+        except OSError:
+            pass
+    return value
+
+
+def _read_member(project, source, archive, member, sheet=None):
     p=os.path.join(SITE,project)
     if source=="loose": src,name=os.path.join(p,member),member
     else:

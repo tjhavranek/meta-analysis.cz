@@ -144,9 +144,11 @@ fi
 # "git diff HEAD" and "git diff --cached HEAD" are both empty; compare against the upstream
 # branch, keeping the working-tree checks for a run with changes still uncommitted.
 UPSTREAM=$(git rev-parse --abbrev-ref --symbolic-full-name '@{upstream}' 2>/dev/null || echo origin/main)
-PUSHING=$( { git diff --name-only "$UPSTREAM...HEAD" 2>/dev/null
-             git diff --name-only HEAD 2>/dev/null
-             git diff --cached --name-only HEAD 2>/dev/null; } | sort -u )
+# --no-renames: a moved file must count by both paths, or moving a transcript into komentare/
+# would look like a komentare-only change (sol, 6 Oct 2026).
+PUSHING=$( { git diff --no-renames --name-only "$UPSTREAM...HEAD" 2>/dev/null
+             git diff --no-renames --name-only HEAD 2>/dev/null
+             git diff --no-renames --cached --name-only HEAD 2>/dev/null; } | sort -u )
 
 # A push that touches only the commentary section (komentare/) or the pages of /ai/ cannot
 # change what the full-text and data gates read: no catalogue in tools/ names those folders
@@ -161,16 +163,35 @@ PUSHING=$( { git diff --name-only "$UPSTREAM...HEAD" 2>/dev/null
 # very gates that failed and CI would fail again (Astra). grep -c reads all its input; a
 # grep -q that exits early can SIGPIPE printf, and under pipefail flip the test.
 LIGHT_ONLY=0
-NONLIGHT=$(printf '%s\n' "$PUSHING" | grep -cvE '^(komentare/|ai/[^/]+\.(html|md|css|js)$|sitemap\.xml$|api/v1/search-index\.json$)')
+LIGHT_RE='^(komentare/|ai/[^/]+\.(html|md|css|js)$|sitemap\.xml$|api/v1/search-index\.json$)'
+NONLIGHT=$(printf '%s\n' "$PUSHING" | grep -cvE "$LIGHT_RE")
 if [ -n "$PUSHING" ] && [ "${FULL:-0}" != "1" ] && [ "$NONLIGHT" = 0 ]; then
   BASE_SHA=$(git rev-parse "$UPSTREAM" 2>/dev/null)
-  BASE_OK=$(gh run list -R tjhavranek/meta-analysis.cz --workflow seo.yml --commit "$BASE_SHA" \
-            --json conclusion --jq '[.[] | select(.conclusion == "success")] | length' 2>/dev/null)
-  if [ "${BASE_OK:-0}" -ge 1 ] 2>/dev/null; then
+  # The base's own CI may still be running when pushes follow each other (6 Oct 2026: a light
+  # push ran every gate, 7:27, because CI on the previous light push had not finished). What
+  # the skipped gates need is a green tree whose full-text and data inputs equal this one's:
+  # the newest first-parent ancestor with a green run will do, if every commit since it
+  # touched only light paths too.
+  GREEN=$(gh run list -R tjhavranek/meta-analysis.cz --workflow seo.yml -L 40 \
+            --json headSha,conclusion --jq '.[] | select(.conclusion == "success") | .headSha' 2>/dev/null)
+  GREEN_SHA=""
+  for sha in $(git rev-list --first-parent -n 15 "$BASE_SHA" 2>/dev/null); do
+    # grep -c, not -q: under pipefail an early-exiting grep -q can SIGPIPE printf
+    if [ "$(printf '%s\n' "$GREEN" | grep -cx "$sha")" != 0 ]; then GREEN_SHA=$sha; break; fi
+  done
+  SINCE=0
+  if [ -n "$GREEN_SHA" ] && [ "$GREEN_SHA" != "$BASE_SHA" ]; then
+    SINCE=$(git diff --no-renames --name-only "$GREEN_SHA" "$BASE_SHA" 2>/dev/null | grep -cvE "$LIGHT_RE")
+  fi
+  if [ -n "$GREEN_SHA" ] && [ "$SINCE" = 0 ]; then
     LIGHT_ONLY=1
-    echo "pre-push: only komentare/ or /ai/ pages are pushed and CI passed on the base: the full-text and data gates are skipped here (CI runs them)"
+    if [ "$GREEN_SHA" = "$BASE_SHA" ]; then
+      echo "pre-push: only komentare/ or /ai/ pages are pushed and CI passed on the base: the full-text and data gates are skipped here (CI runs them)"
+    else
+      echo "pre-push: only komentare/ or /ai/ pages are pushed and since ${GREEN_SHA:0:8}, which CI passed: the full-text and data gates are skipped here (CI runs them)"
+    fi
   else
-    echo "pre-push: no green CI run found for the base ${BASE_SHA:0:8}: running every gate"
+    echo "pre-push: no green CI run on the base ${BASE_SHA:0:8} or on a light-only ancestor: running every gate"
   fi
 fi
 
