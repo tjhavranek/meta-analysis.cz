@@ -42,7 +42,7 @@ Přednáška „Umělá inteligence za mě udělá většinu práce. Mám se bá
 
 Pro zájemce o osmileté i čtyřleté studium jsou dny otevřených dveří v pátek 27. listopadu a ve středu 20. ledna. Je však potřeba se na ně předem [zaregistrovat](https://www.glit.cz/pro-uchazece/).
 
-*Tomáš Havránek je profesor ekonomie na Univerzitě Karlově, výzkumník (research affiliate) Meta-Research Innovation Center na Stanfordově univerzitě a Centre for Economic Policy Research v Londýně. Litomyšlské gymnázium sám absolvoval. Více informací je na [tomashavranek.cz](https://www.tomashavranek.cz/) a [meta-analysis.cz/komentare](https://meta-analysis.cz/komentare/).*
+*Tomáš Havránek je profesor ekonomie na Univerzitě Karlově, výzkumník (research affiliate) Meta-Research Innovation Center na Stanfordově univerzitě a Centre for Economic Policy Research v Londýně. Litomyšlské gymnázium sám absolvoval. Další jeho komentáře a litomyšlské sloupky najdete na [meta-analysis.cz/komentare](https://meta-analysis.cz/komentare/).*
 
 ## Gymnázium Aloise Jiráska v Litomyšli: fakta a odkazy {#fakta-a-odkazy}
 
