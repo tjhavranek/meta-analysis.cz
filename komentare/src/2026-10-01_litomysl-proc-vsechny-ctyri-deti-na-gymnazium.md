@@ -5,7 +5,7 @@ date: "2026-10-01"
 updated: "2026-10-03"
 headline: "Proč chceme mít všechny čtyři děti na litomyšlském gymnáziu"
 byline: "Tomáš Havránek"
-word_count: "1224"
+word_count: "1233"
 title_tag: "Proč chceme mít všechny čtyři děti na Gymnáziu Aloise Jiráska v Litomyšli"
 description: "Zkušenost rodiče a absolventa: fakta o Gymnáziu Aloise Jiráska v Litomyšli, přijímačky 2027, dny otevřených dveří."
 og_image: "2026-10-01_litomysl-gymnazium-foto.jpg"
@@ -21,15 +21,15 @@ llms_summary: "Komentář Tomáše Havránka (1. 10. 2026, aktualizováno 3. 10.
 
 *(vyjde v listopadové Lilii; přednáška o umělé inteligenci proběhne 19. 11. 2026 ve 14:00)*
 
-Všechny čtyři naše děti chtějí na [Gymnázium Aloise Jiráska v Litomyšli](https://www.glit.cz/). Dan už chodí do sekundy, se dvěma dalšími se na jaře chystáme na přijímačky. Proč to dává smysl mně, Zuzaně i dětem? Jasně, gympl není pro každého a ne každý na něj chce hned po páté třídě (starší dcera se rozhodla na základce zůstat a hlásí se až na čtyřletý program), ale třeba bude pro někoho vysvětlení užitečné.
+Všechny čtyři naše děti chtějí na [Gymnázium Aloise Jiráska v Litomyšli](https://www.glit.cz/). Dan už chodí do sekundy (sedmé třídy), se dvěma dalšími se na jaře chystáme na přijímačky. Proč to dává smysl mně, manželce Zuzaně i dětem? Jasně, gympl není pro každého a ne každý na něj chce hned po páté třídě (starší dcera se rozhodla na základce zůstat a hlásí se až na čtyřletý program), ale třeba bude pro někoho vysvětlení užitečné.
 
-Náš Dan přešel ze Zámecké, kde mu bylo dobře. První dva měsíce v primě se sice pral s vyšším tempem, ale pak si zvykl, je spokojený v kolektivu, škola ho moc baví. Myslím, že nakonec i kvůli té náročnosti. I díky tomu se naučil používat umělou inteligenci užitečně: ze školních poznámek si dělá výuková videa na svém kanálu [Školní Speedrun](https://www.youtube.com/channel/UCQC2rKj-zD9-J8x_64g-Jjw), třeba „Starověký Řím za 21 minut“, aby se látku lépe naučil a pomohl spolužákům.
+Náš Dan přešel ze ZŠ Zámecká, kde mu bylo dobře. První dva měsíce v primě se sice pral s vyšším tempem, ale pak si zvykl, je spokojený v kolektivu, škola ho moc baví. Myslím, že nakonec i kvůli té náročnosti. I díky tomu se naučil používat umělou inteligenci užitečně: ze školních poznámek si dělá výuková videa na svém kanálu [Školní Speedrun](https://www.youtube.com/channel/UCQC2rKj-zD9-J8x_64g-Jjw), třeba „Starověký Řím za 21 minut“, aby se látku lépe naučil a pomohl spolužákům.
 
 Proč gymnázium? V éře umělé inteligence potřebují děti víc než dřív kritické myšlení, přehled, trénovanou paměť a schopnost strukturovaně mluvit o složitých problémech bez internetu. My i naše děti máme zkušenost se [školami na Novém Zélandu](https://meta-analysis.cz/komentare/litomysl-srovnani-skol-litomysl-novy-zeland/), jež jsou v mnoha ohledech příjemnější a určitě jednodušší. Přesto jsem přesvědčen, že gymnázium děti do dnešního světa připraví lépe.
 
 Na litomyšlském gymnáziu občas přednáším a studenti mají parádní dotazy, jaké slýchám od prváků na Univerzitě Karlově. Ostatně úspěšnost přijetí na vysoké školy se v posledních letech drží mezi 95 a 100 %. A třeba u státní maturity 2026 mě potěšila matematika. Zvolilo si ji 42 % zdejších maturantů, o čtvrtinu víc než na gymnáziích v celé republice. Z loňských absolventů mě zaujal Jakub Očenáš, který jako oktaván získal celostátní Cenu Učené společnosti pro středoškoláky. Studenti jezdí na výměny do Francie, Německa i na Tchaj-wan a někteří si dávají semestr nebo rok v zahraničí.
 
-Špičkové vzdělání mohou mít děti i v malém městě, pokud tam chtějí žít lidé, kteří by jinak mimo velké město nešli. Litomyšl taková je. Fyziku tu třeba učí docent z Univerzity Hradec Králové, který pomáhá řídit celorepublikovou Fyzikální olympiádu. Vymýšlí pokusy pro výuku a píše o nich do amerických fyzikálních časopisů. V jednom článku ukazuje, že učebnicové vysvětlení letu letadla jen pomocí Bernoulliho rovnice nesedí, a popisuje jednoduchý přístroj, na kterém to studenti pochopí lépe.
+Špičkové vzdělání mohou mít děti i v malém městě, pokud tam chtějí žít i lidé, kteří by jinak mimo velké město nešli. Litomyšl taková je. Fyziku tu třeba učí docent z Univerzity Hradec Králové, který pomáhá řídit celorepublikovou Fyzikální olympiádu. Vymýšlí pokusy pro výuku a píše o nich do amerických fyzikálních časopisů. V jednom článku ukazuje, že učebnicové vysvětlení letu letadla jen pomocí Bernoulliho rovnice nesedí, a popisuje jednoduchý přístroj, na kterém to studenti pochopí lépe.
 
 Také jsem rád, že mladší studenti mají od letoška v areálu školy mobil vypnutý v tašce celý den, i o přestávkách. Stát podobné opatření teprve chystá a mezinárodně se jedná o nejlepší praxi, platnou třeba už dva roky na Novém Zélandu.
 
@@ -52,7 +52,7 @@ Pro zájemce o osmileté i čtyřleté studium jsou dny otevřených dveří v
 ## Gymnázium Aloise Jiráska v Litomyšli: fakta a odkazy {#fakta-a-odkazy}
 
 - Gymnázium Aloise Jiráska v Litomyšli, T. G. Masaryka 590: osmileté studium (po páté třídě) a čtyřleté (po deváté). [Web školy](https://www.glit.cz/), [informace pro uchazeče](https://www.glit.cz/pro-uchazece/).
-- V roce 2026 se o 30 míst v primě ucházelo 83 dětí a o 30 míst v prvním ročníku 107 ([výsledky přijímacích zkoušek](https://www.glit.cz/archiv/vysledky-prijimacich-zkousek-do-primy-a-1-rocniku-2026-27/)).
+- V roce 2026 se o 30 míst v primě osmiletého studia ucházelo 83 dětí a o 30 míst v prvním ročníku čtyřletého studia 107 ([výsledky přijímacích zkoušek](https://www.glit.cz/archiv/vysledky-prijimacich-zkousek-do-primy-a-1-rocniku-2026-27/)).
 - Počátky školy sahají do roku 1640, kdy Frebonie z Pernštejna založila nadaci a přivedla do Litomyšle piaristy ([dějiny školy](https://www.glit.cz/dejiny-skoly/)). Učil tu Alois Jirásek a u zdejších piaristů studoval Jan Evangelista Purkyně, jeden z největších vědců své doby.
 - Státní maturita 2026 ([data Cermatu](https://data.cermat.cz/maturitni-zkouska/agregovana-data.html)): matematiku si zvolilo 42 % maturantů školy, na gymnáziích v ČR 34 %, ze všech maturantů 18 %.
 - Maturita 2025: víc než polovina maturantů (31 z 59) prospěla s vyznamenáním ([výroční zpráva 2024/25](https://www.glit.cz/wp-content/uploads/2026/02/Vyrocni_zprava_2024_2025_komplet.pdf)).
