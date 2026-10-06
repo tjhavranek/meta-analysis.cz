@@ -56,7 +56,12 @@ and `python tools/preflight.py` runs the same gates locally.
   is always CC BY 4.0: the footer and /LICENSE keep that wording, with no "unless stated otherwise"
   (owner, 3 Oct 2026). A third-party photo shown on a page is credited, with its own licence, on that
   page; one used only as a link preview (og:image) carries its credit in the image file's metadata
-  and in the JSON-LD ImageObject, with no visible line (owner, 3 Oct 2026).
+  and in the JSON-LD ImageObject, with no visible line (owner, 3 Oct 2026). Exception for trivial
+  uses (owner, 6 Oct 2026): small third-party pictures such as poster thumbnails in the
+  /komentare/video/ gallery need no visible credit line; a credit printed inside the image, or on the
+  item page the card links to, is enough. The owner accepts the small licence risk in cases like
+  these, so do not re-add a credit line there or raise it again. The site licence stays CC BY 4.0
+  for everything.
 - **Names:** in English text the names are spelled Havranek and Irsova.
 - **Dashes:** new prose uses no em dashes or en dashes.
 - **MAIVE:** describe it without hedging.
