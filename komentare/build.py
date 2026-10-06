@@ -230,7 +230,7 @@ MEDIA_EXTRA = [
     {"slug": "", "headline": "Meta-Analysis in Economics", "date": "2026-03-16",
      "outlet": "ISER, Ósacká univerzita", "byline": AUTHOR, "category": "celostatni",
      "media": "audio", "url": "/teaching/osaka-2026/",
-     "id": f"{SITE}/teaching/osaka-2026/#recording",
+     "id": f"{SITE}/teaching/osaka-2026/#recording", "thumb": "osaka-2026",
      "row_note": "kurz, čtyři přednášky (3 h 31 min)"},
 ]
 
@@ -995,6 +995,52 @@ VF_SCRIPT = ("<script>document.querySelectorAll('.vf').forEach(function(f){"
              "</script>")
 
 
+PLAY_SVG = ('<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">'
+            '<path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg>')
+HEAD_SVG = ('<svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M8 2a6 6 0 0 '
+            '0-6 6v4a2 2 0 0 0 2 2h1V9H3.5V8a4.5 4.5 0 0 1 9 0v1H11v5h1a2 2 0 0 0 2-2V8a6 6 0 0 '
+            '0-6-6z" fill="currentColor"/></svg>')
+# Where a recording that plays only on its publisher's site plays, as the label says it.
+OUT_WHERE = {"Česká televize": "na webu ČT", "DVTV": "na DVTV", "Seznam Zprávy": "na Seznam Zprávách",
+             "Český rozhlas Plus": "na webu Českého rozhlasu", "E15": "na webu E15",
+             "iDNES.cz": "na iDNES.cz", "Věda na FSV UK (podcast De Facto)": "na webu FSV UK"}
+
+
+def out_poster(a):
+    """A recording that plays only on its publisher's site and has a picture of its own,
+    item-img/<slug>-poster.jpg (960 x 540): the path, else None."""
+    if (a.get("youtube") or a.get("video_file") or a["media"] not in MEDIA_LABEL
+            or not a.get("url") or not a.get("slug")):
+        return None
+    f = KDIR / "item-img" / f'{a["slug"]}-poster.jpg'
+    return f if f.exists() else None
+
+
+# Such a recording gets a picture under the title too, so it is as easy to find as one that
+# plays here; but the picture says where it leads, because a look-alike player that left the
+# site would be a trick. Video: the 16:9 poster labelled "Přehrát na webu ČT ↗". Audio: a
+# compact card, so a big picture of a sound does not push the transcript down. No VideoObject:
+# nothing plays on this page.
+def out_card(a, en=False):
+    where = OUT_WHERE.get(a["outlet"])
+    if not where and not en:
+        sys.exit(f'{a["file"]}: no OUT_WHERE label for outlet "{a["outlet"]}"')
+    video = a["media"] == "video"
+    label = ((("Watch" if video else "Listen") + " on the publisher's site") if en else
+             ("Přehrát " if video else "Poslechnout ") + where)
+    aria = esc(f'{label}: {a["headline"]}')
+    if video:
+        return (f'<a class="xv" href="{esc(a["url"])}" rel="external" aria-label="{aria}">'
+                f'<img src="{PATH}/item-img/{a["slug"]}-poster.jpg" alt="" width="960" height="540" '
+                f'decoding="async"><span class="xv-go">{PLAY_SVG}<span>{esc(label)}&nbsp;↗</span>'
+                f'</span></a>')
+    # the arrow rides on the last word (NBSP), so a wrapped label never leaves it hanging
+    return (f'<a class="xa" href="{esc(a["url"])}" rel="external" aria-label="{aria}">'
+            f'<img src="{PATH}/item-img/thumb/{a["slug"]}.jpg" alt="" width="640" height="360" '
+            f'decoding="async"><span class="xa-go">{HEAD_SVG}<span>{esc(label)}&nbsp;↗</span>'
+            f'</span></a>')
+
+
 def file_player(a, en=False):
     src = a["video_file"]
     if not re.fullmatch(r"https://[a-z0-9.-]+/\S+\.mp4", src):
@@ -1219,7 +1265,8 @@ def write_item(a):
     # recording (see yt_facade), otherwise a link beside the date. A text with a video of its
     # own (`video_url`, e.g. a speech) gets the same link, unless it has a player.
     rec, kind = ((a["video_url"], "video") if a.get("video_url") and not a.get("video_file") else
-                 (a.get("url"), a["media"]) if a["media"] in MEDIA_LABEL and not a.get("youtube")
+                 (a.get("url"), a["media"])
+                 if a["media"] in MEDIA_LABEL and not a.get("youtube") and not out_poster(a)
                  else (None, None))
     if rec:
         _en = lang == "en"
@@ -1403,13 +1450,18 @@ def write_item(a):
                             {"contentUrl": a["video_file"], "datePublished": a["date"],
                              **({"url": a["video_url"]} if a.get("video_url") else {})}),
                          "inLanguage": lang}
-        # a shared link to a video page previews the video's own poster, unless the page
-        # already has a card image of its own
+    elif out_poster(a):
+        player = f'      <div class="yt-item">{out_card(a, en)}</div>\n'
+        poster_url = f"{SITE}{PATH}/item-img/{a['slug']}-poster.jpg"
+    if player:
+        # a shared link to a recording's page previews its poster, unless the page already has
+        # a card image of its own
         if not og_head:
             og_head = (f'<meta property="og:image" content="{poster_url}" />\n'
                        '<meta property="og:image:width" content="960" />\n'
                        '<meta property="og:image:height" content="540" />\n'
-                       f'<meta property="og:image:alt" content="{esc("Video: " + a["headline"])}" />\n'
+                       f'<meta property="og:image:alt" content="'
+                       f'{esc(("Audio: " if a["media"] == "audio" else "Video: ") + a["headline"])}" />\n'
                        '<meta name="twitter:card" content="summary_large_image" />\n'
                        f'<meta name="twitter:image" content="{poster_url}" />\n'
                        '<meta name="robots" content="max-image-preview:large" />\n')
@@ -1688,6 +1740,29 @@ def av_rows(items):
     return sorted(sel, key=lambda a: (a["date"], a["headline"]), reverse=True)
 
 
+def media_grid(sel):
+    """/video/ as a gallery: each recording's picture (item-img/thumb/<slug>.jpg, 640 x 360,
+    cut from its poster), title, date and outlet, linking its page. A recording without a
+    thumbnail stops the build, so the gallery never ships with a hole in it."""
+    out = ['    <ul class="vgrid">']
+    for a in sel:
+        key = a.get("thumb") or a["slug"]
+        if not (KDIR / "item-img" / "thumb" / f"{key}.jpg").exists():
+            sys.exit(f"error: /video/ needs item-img/thumb/{key}.jpg")
+        url = f"{PATH}/{a['slug']}/" if has_page(a) else (a.get("url") or "#")
+        ext = "" if has_page(a) or url.startswith("/") else ' rel="external"'
+        kind = MEDIA_LABEL.get(a["media"]) or MEDIA_LABEL["video"]
+        lang = a.get("lang") or SECTIONS[a["category"]]["lang"]
+        out.append(f'      <li class="vcard"><a href="{url}"{ext}><span class="vcard-img">'
+                   f'<img src="{PATH}/item-img/thumb/{key}.jpg" alt="" width="640" height="360" '
+                   f'loading="lazy" decoding="async"><span class="vcard-k">{kind}</span></span>'
+                   f'<span class="vcard-t">{esc(a["headline"])}</span></a>'
+                   f'<span class="vcard-m">{esc(cs_date(a["date"], a.get("date_precision"), lang))}'
+                   f' · {esc(a["outlet"])}</span></li>')
+    out.append('    </ul>')
+    return "\n".join(out) + "\n"
+
+
 # Every recording in one place, playable on this site or not, in the archive's own rows: a
 # page that can be shared and found, where a filtered hub could not. Linked from the hub's
 # video caption, not from the nav. Not a SECTION: its rows belong to their own categories.
@@ -1725,7 +1800,7 @@ def write_media_page(items):
                + '<meta name="twitter:card" content="summary_large_image" />\n'
                + f'<meta name="twitter:image" content="{og_url}" />\n')
     body = (f'    <div class="lede">\n      <h1>{title}</h1>\n      <p>{esc(desc)}</p>\n'
-            f'    </div>\n' + listing(sel, show_cat=False))
+            f'    </div>\n' + media_grid(sel))
     page = shell(f"{title} — {SITE_AUTHORS}", desc, canonical,
                  {"@context": "https://schema.org", "@graph": [node]},
                  body, "", extra_head=og_head, lang="cs")
