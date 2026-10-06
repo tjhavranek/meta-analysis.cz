@@ -372,11 +372,12 @@ iframe.yt { min-height: 200px; }
   font: 600 13px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
   background: rgba(0, 0, 0, .72); font-variant-numeric: tabular-nums; }
 /* A recording that plays only on its publisher's site (out_card in build.py): a poster that
-   says where it leads, never a look-alike player. Video 16:9; audio a compact card. */
+   says where it leads, never a look-alike player. Video 16:9; audio a compact card. The label
+   sits bottom right: broadcasters put their name captions bottom left. */
 .xv { position: relative; display: block; aspect-ratio: 16 / 9; border: 1px solid var(--rule);
       background: #000; overflow: hidden; }
 .xv img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.xv-go { position: absolute; left: 0.75rem; bottom: 0.75rem; display: inline-flex; align-items: center;
+.xv-go { position: absolute; right: 0.75rem; bottom: 0.75rem; display: inline-flex; align-items: center;
          gap: 0.45rem; max-width: calc(100% - 1.5rem); padding: 0.45rem 0.85rem; border-radius: 999px;
          background: rgba(17, 17, 17, .88); color: #fff; box-shadow: 0 0 0 2px rgba(255, 255, 255, .85);
          font: 600 0.9rem/1.25 system-ui, -apple-system, "Segoe UI", sans-serif; transition: background .15s; }
