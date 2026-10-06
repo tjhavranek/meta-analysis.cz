@@ -201,6 +201,11 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      # A witness of what is deployed: the smoke test waits until the domain serves this
+      # commit's SHA instead of sleeping a fixed 45 s (6 Oct 2026). Written after every check,
+      # so no gate sees it; root *.txt files are in .gitignore, so it is never committed.
+      - name: Write the deploy witness
+        run: echo "$GITHUB_SHA" > deploy-sha.txt
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -216,7 +221,12 @@ jobs:
       # richer local tool; it lives outside this repository, which is why CI uses this.)
       - name: Post-deploy smoke test
         run: |
-          sleep 45
+          for i in $(seq 1 36); do
+            if [ "$(curl -fsS --connect-timeout 5 --max-time 10 "https://meta-analysis.cz/deploy-sha.txt?cb=$GITHUB_SHA-$i" 2>/dev/null | tr -d '[:space:]')" = "$GITHUB_SHA" ]; then
+              echo "the domain serves $GITHUB_SHA after about $((i * 5)) s"; break
+            fi
+            sleep 5
+          done
           for i in 1 2 3; do
             python tools/smoke_live.py && exit 0
             echo "smoke test attempt $i failed; Pages may still be propagating"

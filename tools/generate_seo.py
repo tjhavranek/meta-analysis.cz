@@ -629,7 +629,7 @@ def inject(path, block):
     if mh and "lang=" not in mh.group(0):
         raw = raw[:mh.start()] + mh.group(0).replace("<html", chr(60) + 'html lang="en"', 1) + raw[mh.end():]
     out = raw.replace("</head>", f"{S_OPEN}\n{block}{S_CLOSE}\n</head>")
-    open(path, "wb").write(out.encode("utf-8"))
+    put_if_changed(path, out)
     return True
 
 def graft_commits():
@@ -690,6 +690,22 @@ def git_dates():
         print("git dates unavailable:", e)
     return dates
 
+def put_if_changed(path, text):
+    """Write text as UTF-8 with LF line endings, unless the file already holds it. A checkout
+    with core.autocrlf=true holds CRLF, so CR before LF is ignored in the comparison: rewriting
+    identical content left about 240 files looking modified after every run (6 Oct 2026), as
+    komentare/build.py had already found."""
+    data = text.encode("utf-8")
+    try:
+        old = open(path, "rb").read()
+        if old == data or old.replace(b"\r\n", b"\n") == data.replace(b"\r\n", b"\n"):
+            return False
+    except OSError:
+        pass
+    open(path, "wb").write(data)
+    return True
+
+
 def refresh_about_counts(api):
     """Keep /about/'s one hand-written pair of numbers honest.
 
@@ -721,8 +737,7 @@ def refresh_about_counts(api):
         return
     NOTES.append(f"about: pooled-datasets count refreshed to {pooled} of {total} "
                  f"(page said {m.group(1)} of {m.group(2)})")
-    open(path, "w", encoding="utf-8", newline="\n").write(
-        pat.sub(f"pools {pooled} of the {total} published datasets", s, count=1))
+    put_if_changed(path, pat.sub(f"pools {pooled} of the {total} published datasets", s, count=1))
 
 
 # -- the full text, for llms-full.txt ---------------------------------------------------
@@ -1126,7 +1141,7 @@ def main():
     for b in ai_bots:
         rb += [f"User-agent: {b}", "Allow: /", ""]
     rb += [f"Sitemap: {BASE}/sitemap.xml", ""]
-    open(os.path.join(SITE, "robots.txt"), "w", encoding="utf-8", newline="\n").write("\n".join(rb))
+    put_if_changed(os.path.join(SITE, "robots.txt"), "\n".join(rb))
 
     # The About page's counts are refreshed before the sitemap is dated and before
     # llms-full.txt reads the page. Refreshed last, as until 6 Oct 2026, a count change
@@ -1190,13 +1205,24 @@ def main():
     # signals between them. /inflation2.pdf is /conventional_wisdom/conventional_wisdom.pdf.
     # The file stays on disk so old inbound links keep resolving; only the sitemap entry
     # goes, so crawlers are pointed at the canonical path.
-    by_hash = {}
+    # Identical files have identical sizes, and only a root-level copy is ever dropped, so only
+    # a size shared by a root-level PDF and another needs hashing: about 33 of 278 MB (6 Oct 2026).
+    by_size = {}
     for rel in pdf_rels:
         try:
-            h = hashlib.sha1(open(os.path.join(SITE, rel), "rb").read()).hexdigest()
+            by_size.setdefault(os.path.getsize(os.path.join(SITE, rel)), []).append(rel)
         except OSError:
             continue
-        by_hash.setdefault(h, []).append(rel)
+    by_hash = {}
+    for group in by_size.values():
+        if len(group) < 2 or all("/" in r for r in group):
+            continue
+        for rel in group:
+            try:
+                h = hashlib.sha1(open(os.path.join(SITE, rel), "rb").read()).hexdigest()
+            except OSError:
+                continue
+            by_hash.setdefault(h, []).append(rel)
     dropped = set()
     for h, rels in by_hash.items():
         if len(rels) < 2:
@@ -1288,7 +1314,7 @@ def main():
             f"sitemap: {len(undated)} file(s) could not be dated from this clone's history "
             f"(it is shallow) — their existing lastmod was kept. The dates in a sitemap "
             f"generated here are only as complete as the clone; CI has the full history.")
-    open(os.path.join(SITE, "sitemap.xml"), "w", encoding="utf-8", newline="\n").write("\n".join(sm))
+    put_if_changed(os.path.join(SITE, "sitemap.xml"), "\n".join(sm))
     print(f"sitemap: {len(urls)} URLs")
 
     # How many papers llms-full.txt actually carries the text of, counted rather than stated.
@@ -1448,7 +1474,7 @@ def main():
            "- [MAER-Net](https://www.maer-net.org/): Meta-Analysis of Economics Research Network",
            "", "## Optional", "",
            f"- [MAER-Net 2015 Prague Colloquium program]({BASE}/conference/MAER-Net2015_program.pdf): conference archive under /conference/", ""]
-    open(os.path.join(SITE, "llms.txt"), "w", encoding="utf-8", newline="\n").write("\n".join(lt))
+    put_if_changed(os.path.join(SITE, "llms.txt"), "\n".join(lt))
 
     lf = ["# meta-analysis.cz — full paper index", "",
           "Site: https://meta-analysis.cz/ — Methods, data, code, and papers for meta-analysis",
@@ -1562,7 +1588,7 @@ def main():
         _tn = open(THESIS_NOTES, encoding="utf-8").read().strip()
         lf += ["## Notes for meta-analysis theses", f"URL: {BASE}/ai/thesis-notes.md",
                "Licence: CC BY 4.0", "", _tn, ""]
-    open(os.path.join(SITE, "llms-full.txt"), "w", encoding="utf-8", newline="\n").write("\n".join(lf))
+    put_if_changed(os.path.join(SITE, "llms-full.txt"), "\n".join(lf))
     # Both were written after the sitemap, which therefore dated them from their last commit.
     redate_in_sitemap(SITE, BASE, TODAY, ["llms.txt", "llms-full.txt"])
     print("wrote robots.txt, sitemap.xml, llms.txt, llms-full.txt")
