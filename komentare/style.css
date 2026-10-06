@@ -346,7 +346,26 @@ main { padding: 2.75rem 0 4rem; }
    box reserves it from the start and the poster covers it */
 iframe.yt { min-height: 200px; }
 .yt-item { margin: 0 0 1.75rem; max-width: var(--measure); }
-.yt-alt { margin: 0.35rem 0 0; font-size: 0.83rem; text-align: right; }
+.yt-alt { margin: 0.35rem 0 0; font-size: 0.83rem; text-align: right; color: var(--muted); }
+/* A video file (file_player in build.py): the browser's own <video>, and over it, once the
+   script has run, the same poster, play mark and length as on the YouTube players. */
+.vf { position: relative; aspect-ratio: 16 / 9; border: 1px solid var(--rule); background: #000; }
+.vf video, .vf-cover { position: absolute; inset: 0; width: 100%; height: 100%; }
+.vf video { display: block; object-fit: contain; background: #000; }
+.vf-cover { padding: 0; border: 0; background: #000; color: #fff; cursor: pointer; }
+.vf-cover[hidden] { display: none; }
+.vf-cover img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.vf-cover .p { position: absolute; width: 56px; height: 56px; margin: -28px 0 0 -28px;
+  border-radius: 50%; background: rgba(17, 17, 17, .9);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, .85); transition: background .15s; }
+.vf-cover .p::after { content: ""; position: absolute; left: 50%; top: 50%;
+  margin: -10px 0 0 -6px; border-style: solid; border-width: 10px 0 10px 16px;
+  border-color: transparent transparent transparent #fff; }
+.vf-cover:hover .p, .vf-cover:focus-visible .p { background: #8c2f27; }
+.vf-cover:focus-visible { outline: 3px solid #fff; outline-offset: -3px; border-radius: 0; }
+.vf-cover .d { position: absolute; right: 8px; bottom: 8px; padding: 2px 7px; border-radius: 3px;
+  font: 600 13px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: rgba(0, 0, 0, .72); font-variant-numeric: tabular-nums; }
 /* on the hub: under the lede on a phone, beside it where the 34rem text leaves room */
 .hub-video { margin: 1.5rem 0 0; max-width: var(--measure); }
 /* the lede's links are short; beside the video its column is narrower, and a break inside

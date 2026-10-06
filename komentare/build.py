@@ -47,6 +47,12 @@ Frontmatter
     video_url              a video of a text item, e.g. a speech the stored text was read
                            from; linked beside the date and listed on /video/. `media`
                            stays text: the words here are not a transcript of it
+    video_file             an .mp4 of that video on https; gets a player under the title
+                           like a YouTube recording, with video_seconds (exact length),
+                           video_upload (when the file went online there, ISO time; the
+                           item's date is the recording's), optionally video_play_at and
+                           video_start (seconds; where the item's part of a longer recording
+                           begins); poster item-img/<slug>-video.jpg
 
 Design notes
   * The complete item list is in the HTML. JavaScript only filters what is already
@@ -223,7 +229,7 @@ MEDIA_LABEL = {"video": "video", "audio": "audio"}
 MEDIA_EXTRA = [
     {"slug": "", "headline": "Meta-Analysis in Economics", "date": "2026-03-16",
      "outlet": "ISER, Ósacká univerzita", "byline": AUTHOR, "category": "celostatni",
-     "media": "video", "url": "/teaching/osaka-2026/",
+     "media": "audio", "url": "/teaching/osaka-2026/",
      "id": f"{SITE}/teaching/osaka-2026/#recording",
      "row_note": "kurz, čtyři přednášky (3 h 31 min)"},
 ]
@@ -901,6 +907,21 @@ def yt_spoken(secs, en=False):
     return " ".join(p for p in parts if p)
 
 
+def _play_at(a, key):
+    # Some posters carry their channel's own play icon off-centre, or a face where the centre
+    # is; `<key>: "x% y%"` puts the site's play mark there instead.
+    at = a.get(key, "").split()
+    if at and not (len(at) == 2 and all(re.fullmatch(r"\d{1,2}(\.\d)?%", v) for v in at)):
+        sys.exit(f'{a["file"]}: {key} must be two percentages, e.g. "47.5% 52.4%"')
+    return at if at else ("50%", "50%")
+
+
+def _play_label(a, secs, en):
+    # the badge is for the eye; a screen reader hears the same exact length in words
+    return (f'Play the video ({yt_spoken(secs, en)}): {a["headline"]}' if en else
+            f'Přehrát video ({yt_spoken(secs, en)}): {a["headline"]}')
+
+
 def yt_facade(a, en=False, eager=False):
     yid = a["youtube"]
     if not YT_ID.fullmatch(yid):
@@ -911,15 +932,8 @@ def yt_facade(a, en=False, eager=False):
     if not (a.get("youtube_seconds", "").isdigit() and a.get("youtube_upload")):
         sys.exit(f'{a["file"]}: youtube: needs youtube_seconds and youtube_upload')
     secs = int(a["youtube_seconds"])
-    # the badge is for the eye; a screen reader hears the same exact length in words
-    label = (f'Play the video ({yt_spoken(secs, en)}): {a["headline"]}' if en else
-             f'Přehrát video ({yt_spoken(secs, en)}): {a["headline"]}')
-    # Some posters carry their channel's own play icon off-centre; `youtube_play_at: "x% y%"`
-    # puts the site's play mark exactly over it instead of beside it.
-    at = a.get("youtube_play_at", "").split()
-    if at and not (len(at) == 2 and all(re.fullmatch(r"\d{1,2}(\.\d)?%", v) for v in at)):
-        sys.exit(f'{a["file"]}: youtube_play_at must be two percentages, e.g. "47.5% 52.4%"')
-    x, y = at if at else ("50%", "50%")
+    label = _play_label(a, secs, en)
+    x, y = _play_at(a, "youtube_play_at")
     embed = f"https://www.youtube-nocookie.com/embed/{yid}"
     inner = (f'<!doctype html><html lang="{"en" if en else "cs"}">'
              f'<title>{esc(a["headline"])}</title><style>{YT_SRCDOC_CSS}</style>'
@@ -933,6 +947,51 @@ def yt_facade(a, en=False, eager=False):
             f'title="{esc("Video: " + a["headline"])}" '
             f'allow="{YT_ALLOW}" allowfullscreen '
             f'referrerpolicy="strict-origin-when-cross-origin"{lazy}></iframe>')
+
+
+# A video hosted as a plain file (`video_file:`, an .mp4) is a native <video>: a crawler finds it
+# in the page, and every browser plays it in place with its own fullscreen. (A frame sent to the
+# bare file, like the YouTube facade, breaks in Safari, whose video page is at least 700 px
+# wide.) preload="none" leaves the file untouched until the reader starts it. The script lays
+# the site's poster, play mark and length over it, as on the YouTube players, and starts it on
+# click; without the script the browser's own controls are simply there from the start.
+# While the cover is up the video under it is inert, so a keyboard or a screen reader meets one
+# play button, not a second set of controls that would play behind the poster; any start
+# (the cover, a media key) takes the cover away.
+VF_SCRIPT = ("<script>document.querySelectorAll('.vf').forEach(function(f){"
+             "var v=f.querySelector('video'),c=f.querySelector('.vf-cover');"
+             "function go(){c.hidden=true;v.inert=false;}"
+             "v.inert=true;c.hidden=false;v.addEventListener('play',go);"
+             "c.addEventListener('click',function(){go();v.play();v.focus();});});"
+             "</script>")
+
+
+def file_player(a, en=False):
+    src = a["video_file"]
+    if not re.fullmatch(r"https://[a-z0-9.-]+/\S+\.mp4", src):
+        sys.exit(f'{a["file"]}: video_file must be an https URL of an .mp4')
+    poster = KDIR / "item-img" / f'{a["slug"]}-video.jpg'
+    if not poster.exists():
+        sys.exit(f'{a["file"]}: video_file: needs its poster at item-img/{poster.name}')
+    if not (a.get("video_seconds", "").isdigit() and a.get("video_upload")):
+        sys.exit(f'{a["file"]}: video_file: needs video_seconds and video_upload')
+    secs = int(a["video_seconds"])
+    # `video_start`: where the item's own part of a longer recording begins (a speech inside a
+    # whole ceremony); a media fragment makes the player start there
+    start = a.get("video_start", "")
+    if start and not (start.isdigit() and int(start) < secs):
+        sys.exit(f'{a["file"]}: video_start must be whole seconds within the video')
+    x, y = _play_at(a, "video_play_at")
+    img = f"{PATH}/item-img/{poster.name}"
+    return (f'<div class="vf"><video controls playsinline preload="none" poster="{img}" '
+            f'src="{esc(src + (f"#t={start}" if start else ""))}" '
+            f'aria-label="{esc("Video: " + a["headline"])}">'
+            f'<a href="{esc(src)}">{"Download the video (MP4)" if en else "Stáhnout video (MP4)"}'
+            f'</a></video><button type="button" class="vf-cover" '
+            f'aria-label="{esc(_play_label(a, secs, en))}" hidden><img src="{img}" alt="">'
+            f'<span class="p" style="left:{x};top:{y}" aria-hidden="true"></span>'
+            f'<span class="d" aria-hidden="true">{yt_dur(secs)}</span></button></div>'
+            f'{VF_SCRIPT}')
 
 
 # One chosen interview on the hub, beside the lede on a wide screen and under it on a phone.
@@ -1138,8 +1197,8 @@ def write_item(a):
     # A recording's own link used to be "Původní vydání" under the last paragraph, often
     # thousands of words down. It belongs at the top: a player where YouTube has the
     # recording (see yt_facade), otherwise a link beside the date. A text with a video of its
-    # own (`video_url`, e.g. a speech) gets the same link.
-    rec, kind = ((a["video_url"], "video") if a.get("video_url") else
+    # own (`video_url`, e.g. a speech) gets the same link, unless it has a player.
+    rec, kind = ((a["video_url"], "video") if a.get("video_url") and not a.get("video_file") else
                  (a.get("url"), a["media"]) if a["media"] in MEDIA_LABEL and not a.get("youtube")
                  else (None, None))
     if rec:
@@ -1295,24 +1354,35 @@ def write_item(a):
              if a.get("perex") else "")
 
     player = ""
-    if a.get("youtube"):
-        facade = yt_facade(a, en)
-        poster_url = f"{SITE}{PATH}/item-img/{a['slug']}-yt.jpg"
-        # "Open on YouTube" stays outside the poster: it survives the swap to the player and
-        # is the way out where an embed is blocked
-        player = (f'      <div class="yt-item">{facade}<p class="yt-alt">'
-                  f'<a href="{yt_watch(a)}" rel="external">'
-                  f'{"Open on YouTube" if en else "Otevřít na YouTube"}</a></p></div>\n')
+    if a.get("youtube") or a.get("video_file"):
+        yt = bool(a.get("youtube"))
+        facade = yt_facade(a, en) if yt else file_player(a, en)
+        poster_url = f"{SITE}{PATH}/item-img/{a['slug']}-{'yt' if yt else 'video'}.jpg"
+        # The way out ("Open on YouTube", or the page that hosts the file) stays outside the
+        # poster: it survives the swap to the player and works where an embed is blocked
+        out, out_label = ((yt_watch(a), "Open on YouTube" if en else "Otevřít na YouTube") if yt else
+                          (a.get("video_url") or a["video_file"],
+                           "Open the video separately" if en else "Otevřít video zvlášť"))
+        # a player that starts inside a longer recording says so (see file_player)
+        at = ("" if yt or not a.get("video_start") else
+              f'{"Speech from" if en else "Projev od"} {yt_dur(int(a["video_start"]))} · ')
+        player = (f'      <div class="yt-item">{facade}<p class="yt-alt">{at}'
+                  f'<a href="{esc(out)}" rel="external">{out_label}</a></p></div>\n')
         # The recording is what this page is about, so the graph says so: a VideoObject with
-        # the length and upload time YouTube itself reports, and the embeddable player.
-        _s = int(a["youtube_seconds"])
+        # its exact length and upload time, and the embeddable player or the file itself. A
+        # file uploaded long after the recording also says when the recording went out.
+        _s = int(a["youtube_seconds" if yt else "video_seconds"])
         _h, _r = divmod(_s, 3600)
         node["video"] = {"@type": "VideoObject", "name": a["headline"], "description": desc,
-                         "thumbnailUrl": poster_url, "uploadDate": a["youtube_upload"],
+                         "thumbnailUrl": poster_url,
+                         "uploadDate": a["youtube_upload" if yt else "video_upload"],
                          "duration": f"PT{_h}H{_r // 60}M{_r % 60}S" if _h else
                                      f"PT{_r // 60}M{_r % 60}S",
-                         "embedUrl": f"https://www.youtube-nocookie.com/embed/{a['youtube']}",
-                         "url": yt_watch(a), "inLanguage": lang}
+                         **({"embedUrl": f"https://www.youtube-nocookie.com/embed/{a['youtube']}",
+                             "url": yt_watch(a)} if yt else
+                            {"contentUrl": a["video_file"], "datePublished": a["date"],
+                             **({"url": a["video_url"]} if a.get("video_url") else {})}),
+                         "inLanguage": lang}
         # a shared link to a video page previews the video's own poster, unless the page
         # already has a card image of its own
         if not og_head:
