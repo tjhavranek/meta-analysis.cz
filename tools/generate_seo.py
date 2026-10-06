@@ -33,6 +33,7 @@ NOTES = []   # informational only -- never fail the build
 import sys as _sys, os as _os
 _sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
 from _seo_shared import SELF_MANAGED   # one definition, shared with verify_seo.py
+from _seo_shared import redate_in_sitemap
 
 # The catalogue node every Dataset points at, built once.
 # The catalogue, keyed by project id. Used for variableMeasured on each paper's Dataset node:
@@ -1127,6 +1128,14 @@ def main():
     rb += [f"Sitemap: {BASE}/sitemap.xml", ""]
     open(os.path.join(SITE, "robots.txt"), "w", encoding="utf-8", newline="\n").write("\n".join(rb))
 
+    # The About page's counts are refreshed before the sitemap is dated and before
+    # llms-full.txt reads the page. Refreshed last, as until 6 Oct 2026, a count change
+    # left both stale until the next run, which then blocked the push.
+    try:
+        refresh_about_counts(json.load(open(os.path.join(SITE, "api", "v1", "datasets.json"),
+                                            encoding="utf-8")))
+    except (OSError, ValueError):
+        refresh_about_counts({})
     gd = git_dates()
     previous = previous_lastmods()
     undated = []
@@ -1554,7 +1563,8 @@ def main():
         lf += ["## Notes for meta-analysis theses", f"URL: {BASE}/ai/thesis-notes.md",
                "Licence: CC BY 4.0", "", _tn, ""]
     open(os.path.join(SITE, "llms-full.txt"), "w", encoding="utf-8", newline="\n").write("\n".join(lf))
-    refresh_about_counts(_api)
+    # Both were written after the sitemap, which therefore dated them from their last commit.
+    redate_in_sitemap(SITE, BASE, TODAY, ["llms.txt", "llms-full.txt"])
     print("wrote robots.txt, sitemap.xml, llms.txt, llms-full.txt")
 
     if NOTES:

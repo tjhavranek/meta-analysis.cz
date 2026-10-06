@@ -255,6 +255,11 @@ def main():
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     open(OUT, "w", encoding="utf-8").write(payload)
+    # generate_seo.py, run before this, dated the index from its last commit; see the helper.
+    from _seo_shared import redate_in_sitemap
+    import datetime
+    redate_in_sitemap(ROOT, "https://meta-analysis.cz", datetime.date.today().isoformat(),
+                      ["api/v1/search-index.json"])
     size = os.path.getsize(OUT)
     print("%d pages (%d aliases of another page skipped), %d words indexed (%d omitted as too common: %s)"
           % (n, aliases, len(postings), len(dropped), ", ".join(dropped[:6])))

@@ -57,3 +57,34 @@ SELF_MANAGED = {
                    # decks, not papers: they carry Course and LearningResource JSON-LD, and
                    # Highwire citation_* tags or ScholarlyArticle on them would be fabricated.
 }
+
+
+def redate_in_sitemap(site, base, today, rels):
+    """Give today's date in sitemap.xml to those of `rels` whose content differs from HEAD.
+
+    generate_seo.py writes sitemap.xml before llms.txt and llms-full.txt, and the search index
+    is built by another tool after it, so each of them was dated from its last commit. After
+    the commit the pre-push hook regenerated the sitemap, the date moved to today, and the push
+    was blocked until sitemap.xml was committed again (6 Oct 2026). `git diff` ignores line
+    endings, so only a real change is dated today; a file equal to HEAD keeps its date.
+    Returns the paths it redated."""
+    import os
+    import re
+    import subprocess
+    path = os.path.join(site, "sitemap.xml")
+    try:
+        changed = subprocess.run(["git", "-C", site, "diff", "--name-only", "HEAD", "--"] + list(rels),
+                                 capture_output=True, text=True, encoding="utf-8").stdout.split()
+        if not changed or not os.path.exists(path):
+            return []
+        xml = open(path, encoding="utf-8").read()
+    except Exception:
+        return []
+    new = xml
+    for rel in changed:
+        new = re.sub(r"(<loc>%s</loc><lastmod>)[^<]*(</lastmod>)" % re.escape(base.rstrip("/") + "/" + rel),
+                     lambda m: m.group(1) + today + m.group(2), new)
+    if new == xml:
+        return []
+    open(path, "w", encoding="utf-8", newline="\n").write(new)
+    return changed
