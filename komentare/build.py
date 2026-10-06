@@ -1807,8 +1807,8 @@ def media_grid(sel):
     out.append('    </ul>')
     # two pictures come from Wikimedia Commons under CC BY-SA 4.0, which asks for a readable credit
     out.append('    <p class="vgrid-credit">Fotografie z Wikimedia Commons (CC BY-SA 4.0): Miroslav '
-               '<a href="https://commons.wikimedia.org/wiki/File:Franti%C5%A1ek_Bostl_and_Miroslav_Singer.png" '
-               'rel="external">Singer</a> (autor Josefdlouhy) u pořadu Pro a proti; Tomáš Havránek na '
+               '<a href="https://commons.wikimedia.org/wiki/File:Miroslav.Singer.04.06.2016.Den.Otev.Dveri.CNB.gif" '
+               'rel="external">Singer</a> (autor Mojmír Churavý) u pořadu Pro a proti; Tomáš Havránek na '
                '<a href="https://commons.wikimedia.org/wiki/File:DebataInflace.jpg" rel="external">debatě '
                'v IES</a> (autor Jklamo) u kurzu v Ósace.</p>')
     return "\n".join(out) + "\n"
