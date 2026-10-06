@@ -201,7 +201,16 @@ fi
 # The tree before the first run is the first comparison, so a run that changes nothing
 # stops at once instead of running the generator a second time (47 s).
 echo "pre-push: regenerating the metadata layer (same as CI)..."
-prev_snapshot=$(git -c core.safecrlf=false status --porcelain -- . 2>/dev/null | sha1sum)
+# The loop compares content against HEAD, line endings aside, untracked files by content. It
+# compared `git status`, which lists files whose only difference is CRLF (core.autocrlf=true): a
+# generator run after a pull looked like a change and the loop ran again, 42 s instead of 5
+# (6 Oct 2026), and it could not see a file that kept changing while already listed as modified.
+tree_fingerprint() {
+  { git -c core.safecrlf=false diff --no-ext-diff --no-textconv --no-renames --ignore-cr-at-eol HEAD -- . 2>/dev/null
+    git ls-files -o --exclude-standard -z 2>/dev/null | xargs -0 -r sha1sum 2>/dev/null; } | sha1sum
+}
+prev_snapshot=$(tree_fingerprint)
+settled=0
 for i in 1 2 3; do
   if ! "$PY" tools/generate_seo.py > /tmp/_seo_gen.log 2>&1; then
     sed -n '1,40p' /tmp/_seo_gen.log
@@ -210,13 +219,53 @@ for i in 1 2 3; do
   Every folder with an index.html needs one (project, title, abstract,
   authors, year) or Google Scholar tags cannot be generated and CI goes red."
   fi
-  snapshot=$(git -c core.safecrlf=false status --porcelain -- . 2>/dev/null | sha1sum)
-  [ "${prev_snapshot:-}" = "$snapshot" ] && break
+  snapshot=$(tree_fingerprint)
+  if [ "${prev_snapshot:-}" = "$snapshot" ]; then settled=1; break; fi
   prev_snapshot="$snapshot"
 done
+[ "$settled" = 1 ] || fail "tools/generate_seo.py still changed files on its third run. Run it by hand and
+  look at what keeps changing before pushing."
 sed -n '1,12p' /tmp/_seo_gen.log
 
-if [ -f komentare/build.py ] && { [ "$LIGHT_ONLY" != 1 ] || [ "$(printf '%s\n' "$PUSHING" | grep -c '^komentare/')" != 0 ]; }; then
+# Scoped skips (sol's plan, 6 Oct 2026). A gate is skipped only when everything it reads and
+# everything it checks is identical to a commit CI passed: the newest green first-parent ancestor
+# of HEAD, compared with the working tree after the generator ran, untracked files included.
+# A change to the workflow, this hook, the pinned requirements or .gitattributes since then, any
+# git or gh failure, or FULL=1 runs everything. CI still runs every gate on every push.
+CERT=""
+CHANGED=""
+if [ "${FULL:-0}" != "1" ]; then
+  # Either command failing means no certificate, even if it printed something.
+  if GREEN_ALL=$(gh run list -R tjhavranek/meta-analysis.cz --workflow seo.yml -L 40 \
+                   --json headSha,conclusion --jq '.[] | select(.conclusion == "success") | .headSha' 2>/dev/null) &&
+     REVS=$(git rev-list --first-parent -n 15 HEAD 2>/dev/null); then
+    for sha in $REVS; do
+      if [ "$(printf '%s\n' "$GREEN_ALL" | grep -cx "$sha")" != 0 ]; then CERT=$sha; break; fi
+    done
+  fi
+  if [ -n "$CERT" ]; then
+    # core.quotepath=off: git otherwise quotes a non-ASCII path ("komentare/src/\304\215...md"),
+    # which would slip past ^komentare/ (sol); the patterns also allow a leading quote.
+    if CHANGED=$( { git -c core.safecrlf=false -c core.quotepath=off diff --no-renames --name-only "$CERT" -- . &&
+                    git -c core.quotepath=off ls-files -o --exclude-standard; } 2>/dev/null ); then
+      if [ "$(printf '%s\n' "$CHANGED" | grep -cE '^"?(\.github/|\.githooks/|\.gitattributes"?$|tools/requirements|data_layer/requirements)')" != 0 ]; then
+        CERT=""
+      fi
+    else
+      CERT=""
+    fi
+  fi
+fi
+# changed_since_green <ERE>: true when there is no certificate, or something matching changed
+changed_since_green() {
+  [ -z "$CERT" ] && return 0
+  [ "$(printf '%s\n' "$CHANGED" | grep -ciE "$1")" != 0 ]
+}
+
+# The commentary check reads and checks komentare/** only.
+if [ -f komentare/build.py ] && ! changed_since_green '^"?komentare/'; then
+  echo "pre-push: komentare/ is as it was in ${CERT:0:8}, which CI passed: its check is skipped here"
+elif [ -f komentare/build.py ] && { [ "$LIGHT_ONLY" != 1 ] || [ "$(printf '%s\n' "$PUSHING" | grep -c '^komentare/')" != 0 ]; }; then
   echo "pre-push: checking the self-managed commentary section..."
   "$PY" komentare/build.py --check > /tmp/_seo_kom.log 2>&1 || { sed -n '1,30p' /tmp/_seo_kom.log; fail "komentare/build.py --check failed."; }
 fi
@@ -254,7 +303,13 @@ if [ "$LIGHT_ONLY" != 1 ]; then
   # (CRLF) which Linux CI never sees. Rebuilding lets real drift surface as an ordinary
   # git diff, which is line-ending aware, and the "must be committed" test at the end of
   # this hook then blocks the push.
-  if [ -f data_layer/rebuild.py ] && "$PY" -c "import pandas, pyarrow" >/dev/null 2>&1; then
+  # The rebuild reads the data layer, the source data files, tools/papers.json and whether project
+  # pages exist, and checks api/, data/, CITATION.cff, .zenodo.json and LICENSE. Any project page
+  # counts, not only one added or deleted (conservative); the site search index does not.
+  DATA_SCOPE='^"?(data_layer/|data/|api/|tools/papers\.json"?$|CITATION\.cff"?$|\.zenodo\.json"?$|LICENSE"?$|index\.html"?$|[^/]+/(paper/)?index\.html"?$)|\.(zip|xlsx|xlsm|xls|csv|dta|parquet|rdata|rds)"?$'
+  if [ -n "$CERT" ] && [ "$(printf '%s\n' "$CHANGED" | grep -vxF 'api/v1/search-index.json' | grep -ciE "$DATA_SCOPE")" = 0 ]; then
+    echo "pre-push: nothing the data rebuild reads or checks changed since ${CERT:0:8}, which CI passed: rebuild skipped here"
+  elif [ -f data_layer/rebuild.py ] && "$PY" -c "import pandas, pyarrow" >/dev/null 2>&1; then
     echo "pre-push: rebuilding the data layer (same as CI)..."
     if ! "$PY" data_layer/rebuild.py --data > /tmp/_dl_rebuild.log 2>&1; then
       sed -n '1,30p' /tmp/_dl_rebuild.log

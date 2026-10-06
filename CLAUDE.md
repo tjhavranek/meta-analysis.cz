@@ -11,7 +11,8 @@ and `python tools/preflight.py` runs the same gates locally.
   `tools/preflight.py` before pushing; that repeated every gate (5 Oct 2026). A push that
   touches only `komentare/`, the pages of `/ai/`, `sitemap.xml` and `api/v1/search-index.json`
   skips the full-text and data gates locally, provided CI passed on the base, or on an
-  ancestor with only such commits since (CI still runs them); `FULL=1 git push` forces everything. Use `tools/preflight.py` to
+  ancestor with only such commits since (CI still runs them). Any other push skips the commentary
+  check and the data rebuild when nothing they read changed since a commit CI passed; `FULL=1 git push` forces everything. Use `tools/preflight.py` to
   check without pushing. Never push on `--fast`.
 - The hook runs its read-only gates side by side, and the full-text gates keep what poppler
   reads from each PDF in a local cache outside the repo (`tools/_pdf_cache.py`; CI keeps none).

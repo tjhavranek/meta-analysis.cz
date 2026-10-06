@@ -43,7 +43,7 @@ def _code_key():
     h = hashlib.sha256(_sys.version.encode())
     with open(os.path.abspath(__file__), "rb") as f:
         h.update(f.read())
-    for mod in ("pandas", "numpy", "openpyxl", "pyarrow"):
+    for mod in ("pandas", "numpy", "openpyxl", "xlrd", "pyarrow"):
         try:
             h.update(("\0%s=%s" % (mod, __import__(mod).__version__)).encode())
         except Exception:
