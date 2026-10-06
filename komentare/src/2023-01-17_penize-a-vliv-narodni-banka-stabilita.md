@@ -11,6 +11,8 @@ same_recording: "penize-a-vliv-cnb-musi-delat-vic"
 body_note: "Díl podcastu Peníze a vliv Českého rozhlasu Plus, ptá se Jana Klímová. Skládá tři samostatně natočené rozhovory, s Josefem Bernardem, Janem Rafajem a Tomášem Havránkem; nešlo o společnou debatu. Níže je část s Tomášem Havránkem tak, jak ji přepsal a vydal iROZHLAS: přepis i jména mluvčích jsou dílem stanice, ne stroje. Jde o totéž vysílání jako na stránce vedené zde pod titulkem „ČNB musí dělat víc“; porovnání s její nahrávkou to potvrzuje (sedí 43 ze 44 odstavců). Na jednom místě stanice v přepisu vynechala zápor: v nahrávce zazní, že drobné transfery inflaci dlouhodobě „neovlivní“, v přepisu stálo „ovlivní“. Opraveno podle nahrávky."
 transcript: "publisher"
 description: "Tomáš Havránek v pořadu Peníze a vliv na ČRo Plus o cenové stabilitě jako cíli ČNB, odměnách bankovní rady, cenách potravin, důchodech a DPH."
+cro_embed: "https://plus.rozhlas.cz/cro_soundmanager/files/8911524/field_main_audio"
+audio_start: "444"
 ---
 
 **Jana Klímová:** Případný růst daní není zdaleka jediným problémem, který by mohl dopadnout na firmy i na lidi. Loni to bylo zdražování, které žene vzhůru inflaci. Co se v ekonomice děje a kdo za to může? Otázky pro prof. ekonomie na Univerzitě Karlově a člena Národní ekonomické rady vlády Tomáše Havránka.

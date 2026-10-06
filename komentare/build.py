@@ -44,6 +44,9 @@ Frontmatter
                            twice under two headlines. Declared from both sides.
     audio_url              a broadcast/podcast version of a text interview; linked
     audio_label            visible text for that link (default "podcast")
+    cro_embed              for a Český rozhlas episode: the src of ČRo's own embed iframe
+                           (Sdílet -> Vložit audio na svůj web); the card then plays it
+                           here on click, optionally from audio_start (seconds)
     video_url              a video of a text item, e.g. a speech the stored text was read
                            from; linked beside the date and listed on /video/. `media`
                            stays text: the words here are not a transcript of it
@@ -228,7 +231,7 @@ MEDIA_LABEL = {"video": "video", "audio": "audio"}
 # the corpus and the sitemap. `url` is root-relative; `id` is the recording's node on its page.
 MEDIA_EXTRA = [
     {"slug": "", "headline": "Meta-Analysis in Economics", "date": "2026-03-16",
-     "outlet": "ISER, Ósacká univerzita", "byline": AUTHOR, "category": "celostatni",
+     "outlet": "ISER, Ósacká univerzita, Japonsko", "byline": AUTHOR, "category": "celostatni",
      "media": "audio", "url": "/teaching/osaka-2026/",
      "id": f"{SITE}/teaching/osaka-2026/#recording", "thumb": "osaka-2026",
      "row_note": "kurz, čtyři přednášky (3 h 31 min)"},
@@ -1034,11 +1037,50 @@ def out_card(a, en=False):
                 f'<img src="{PATH}/item-img/{a["slug"]}-poster.jpg" alt="" width="960" height="540" '
                 f'decoding="async"><span class="xv-go">{PLAY_SVG}<span>{esc(label)}&nbsp;↗</span>'
                 f'</span></a>')
+    # Český rozhlas lets other sites embed its own player (the iframe code under "Sdílet ->
+    # Vložit audio na svůj web") and forbids putting its MP3s into anyone else's player. So an
+    # episode with `cro_embed:` (that iframe's src) keeps the card below, which without script is
+    # simply the link to ČRo; the script turns it into "Poslechnout zde" and, on click, swaps in
+    # ČRo's player, sized by ČRo's own script. Nothing from ČRo loads before that click.
+    # `audio_start` (seconds) starts it where this item's part of a longer programme begins.
+    emb = ""
+    if a.get("cro_embed"):
+        src = a["cro_embed"]
+        if not re.fullmatch(r"https://[a-z0-9.-]+\.rozhlas\.cz/cro_soundmanager/files/\d+/field_main_audio", src):
+            sys.exit(f'{a["file"]}: cro_embed must be the src of ČRo\'s embed iframe')
+        start = a.get("audio_start", "")
+        if start and not (start.isdigit() and int(start) > 0):
+            sys.exit(f'{a["file"]}: audio_start must be whole seconds, above 0')
+        here = ("Listen here" if en else "Poslechnout zde") + (
+            f' · {"interview from" if en else "rozhovor od"} {yt_dur(int(start))}' if start else "")
+        emb = (f' data-embed="{esc(src + (f"?t={start}" if start else ""))}"'
+               f' data-id="{src.split("/files/")[1].split("/")[0]}" data-here="{esc(here)}"'
+               f' data-title="{esc(("Player: " if en else "Přehrávač: ") + a["headline"])}"'
+               f' data-out="{esc(("Also " if en else "Také ") + where)}&nbsp;↗"')
     # the arrow rides on the last word (NBSP), so a wrapped label never leaves it hanging
-    return (f'<a class="xa" href="{esc(a["url"])}" rel="external" aria-label="{aria}">'
+    return (f'<a class="xa" href="{esc(a["url"])}" rel="external" aria-label="{aria}"{emb}>'
             f'<img src="{PATH}/item-img/thumb/{a["slug"]}.jpg" alt="" width="640" height="360" '
             f'decoding="async"><span class="xa-go">{HEAD_SVG}<span>{esc(label)}&nbsp;↗</span>'
-            f'</span></a>')
+            f'</span></a>' + (CRO_SCRIPT if emb else ""))
+
+
+# Turns a card with data-embed into "Poslechnout zde" and, on click, into ČRo's own embed code
+# (the iframe and ČRo's resizing script, loaded once), with a plain link to ČRo under it.
+CRO_SCRIPT = ("<script>document.querySelectorAll('a.xa[data-embed]').forEach(function(a){"
+              "if(a.dataset.done)return;a.dataset.done=1;"
+              "var l=a.querySelector('.xa-go>span');l.textContent=a.dataset.here;"
+              "a.setAttribute('aria-label',a.dataset.here+': '+a.dataset.title.replace(/^[^:]+: /,''));"
+              "a.addEventListener('click',function(e){if(e.button||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();"
+              "var w=document.createElement('div');w.className='xa-embed';"
+              "var f=document.createElement('iframe');f.name='embed-'+a.dataset.id;"
+              "f.className='cro-embed__parent';f.src=a.dataset.embed;f.title=a.dataset.title;"
+              "f.setAttribute('frameborder','0');f.setAttribute('scrolling','no');f.allowFullscreen=true;"
+              "var o=document.createElement('a');o.href=a.href;o.rel='external';o.className='xa-out';"
+              "o.innerHTML=a.dataset.out;w.appendChild(f);w.appendChild(o);a.replaceWith(w);"
+              "if(typeof window.jsScriptOutputted=='undefined'){window.jsScriptOutputted=true;"
+              "var s=document.createElement('script');s.src='https://vltava.rozhlas.cz/sites/all/libraries/"
+              "responsive-external-embeds/cro_responsiveexternalembeds.min.js';document.head.appendChild(s);}"
+              "f.focus();});});</script>")
 
 
 def file_player(a, en=False):
