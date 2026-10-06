@@ -11,6 +11,7 @@ body_note: "Interview Plus na Českém rozhlase Plus, ptá se Jan Bumba. Text je
 youtube: "82DeYs5YNzc"
 youtube_seconds: "1564"
 youtube_upload: "2022-08-15T05:57:37-07:00"
+youtube_play_at: "20% 62%"
 description: "Tomáš Havránek v Interview Plus Českého rozhlasu o tom, proč za inflaci může podle něj politika ČNB, o posílení koruny prodejem eur a o původu inflačního cíle."
 ---
 **Jan Bumba:** Inflace se stala kvůli svým současným enormním hodnotám jedním z nejskloňovanějších slov letošního roku. Ekonomové připouštějí, že předpovídat její další vývoj je krajně obtížné, málokdo ale vidí situaci optimisticky. Spíše se všeobecně očekává delší období, po které porostou ceny a naspořené peníze budou ztrácet hodnotu. Mnoho lidí přijímá tento stav podobně jako přírodní katastrofu, která se na nás snesla a nezbývá, než vyčkat, až se tahle velká voda převalí.

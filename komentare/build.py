@@ -693,7 +693,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
 
 FILTER = """    <div class="filter">
       <div class="filter-row js-only">
-        <input type="search" id="q" placeholder="Hledat v titulcích, médiích a autorech…" aria-label="Hledat" />
+        <input type="search" id="q" placeholder="Hledat v titulcích, anotacích a médiích…" aria-label="Hledat" />
         <button class="chip" data-cat="all" aria-pressed="true">Vše</button>
         <button class="chip" data-cat="celostatni" aria-pressed="false">Celostátní</button>
         <button class="chip" data-cat="litomysl" aria-pressed="false">Litomyšl</button>
@@ -714,7 +714,7 @@ SCRIPT = """<script>
       years = Array.prototype.slice.call(document.querySelectorAll('.year')),
       count = document.getElementById('count'), cat = 'all';
   function norm(s){return s.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'');}
-  items.forEach(function(el){ el.dataset.hay = norm(el.textContent); });
+  items.forEach(function(el){ el.dataset.hay = norm(el.textContent + ' ' + (el.dataset.s || '')); });
   function apply() {
     var term = norm(q.value.trim()), n = 0;
     items.forEach(function (el) {
@@ -753,7 +753,33 @@ SCRIPT = """<script>
 """
 
 
-def item_row(a, show_cat):
+_DESC = {}
+
+
+def item_desc(a):
+    """What the item is about in a sentence or two: the meta and JSON-LD description of its
+    page, and what the hub's search reads beside the row.
+
+    `description:` wins where a perex is too terse to tell a search result what the item is,
+    e.g. a blog's tagline of bare numbers. The fallback, the opening of the text, skips a
+    leading editorial note in brackets ("(vyjde v listopadové Lilii…)"), which says where the
+    text appears, not what it says, and drops the space that removing a link's tags left
+    before punctuation ("v Litomyšli ."). 3 Oct 2026."""
+    if a.get("description") or a.get("perex"):
+        return a.get("description") or a.get("perex")
+    if not has_page(a):
+        return ""
+    if a["slug"] not in _DESC:
+        body_html = fix_quotes(md_to_html(a["body"], item_figures(a)))
+        lead = re.sub(r"^\s*<p>\s*(?:<em>)?\s*\([^<]*\)\s*(?:</em>)?\s*</p>", "", body_html, count=1)
+        plain_d = re.sub(r"\s+([.,;:!?)])", r"\1",
+                         re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", lead)).strip())
+        _DESC[a["slug"]] = ((plain_d[:190].rsplit(" ", 1)[0] + "…") if len(plain_d) > 190
+                            else plain_d)
+    return _DESC[a["slug"]]
+
+
+def item_row(a, show_cat, search=False):
     lang = a.get("lang") or SECTIONS[a["category"]]["lang"]
     url = f"{PATH}/{a['slug']}/" if has_page(a) else (a.get("url") or "#")
     ext = "" if has_page(a) or url.startswith("/") else ' rel="external"'
@@ -791,13 +817,16 @@ def item_row(a, show_cat):
     if tag:
         bits.append(tag)
     zi = ' data-zi="1"' if any(n in ZI_NAMES for n in names_row) else ""
-    return (f'  <li class="item" data-cat="{a["category"]}"{zi}>\n'
+    # The hub's search box also looks in what each item is about (item_desc), not only in
+    # what the row shows: titles alone miss most of what a reader types.
+    s = f' data-s="{esc(item_desc(a))}"' if search and a.get("slug") else ""
+    return (f'  <li class="item" data-cat="{a["category"]}"{zi}{s}>\n'
             f'    <h3><a href="{url}"{ext}>{esc(a["headline"])}</a></h3>\n'
             f'    <div class="meta">{"".join(bits)}</div>\n'
             f'  </li>')
 
 
-def listing(items, show_cat):
+def listing(items, show_cat, search=False):
     out, year = [], None
     for a in items:
         y = a["date"][:4]
@@ -807,7 +836,7 @@ def listing(items, show_cat):
             year = y
             out.append(f'<h2 class="year">{y}</h2>')
             out.append('<ul class="items">')
-        out.append(item_row(a, show_cat))
+        out.append(item_row(a, show_cat, search))
     if year is not None:
         out.append("</ul>")
     return "\n".join(out)
@@ -1169,16 +1198,7 @@ def write_item(a):
 
     body_html = fix_quotes(md_to_html(a["body"], item_figures(a)))
     plain = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", body_html)).strip()
-    # `description:` wins where a perex is too terse to tell a search result what the item
-    # is, e.g. a blog's tagline of bare numbers
-    # The fallback skips a leading editorial note in brackets ("(vyjde v listopadové Lilii…)"),
-    # which says where the text appears, not what it says, and drops the space that removing
-    # a link's tags left before punctuation ("v Litomyšli ."). 3 Oct 2026.
-    lead = re.sub(r"^\s*<p>\s*(?:<em>)?\s*\([^<]*\)\s*(?:</em>)?\s*</p>", "", body_html, count=1)
-    plain_d = re.sub(r"\s+([.,;:!?)])", r"\1",
-                     re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", lead)).strip())
-    desc = (a.get("description") or a.get("perex")
-            or ((plain_d[:190].rsplit(" ", 1)[0] + "…") if len(plain_d) > 190 else plain_d))
+    desc = item_desc(a)
     node["description"] = desc
     if a.get("perex"):
         node["abstract"] = a["perex"]
@@ -1637,7 +1657,7 @@ def write_index(items, key=None):
             + '    </div>\n'
             + vyber
             + (FILTER if not key else "")
-            + listing(sel, show_cat=not key))
+            + listing(sel, show_cat=not key, search=not key))
     lang = sec["lang"] if sec else "cs"
     og_url = f"{SITE}{PATH}/item-img/{HUB_IMG['file']}"
     ow, oh = _img_size(KDIR / "item-img" / HUB_IMG["file"])
