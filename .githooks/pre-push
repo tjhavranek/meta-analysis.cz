@@ -38,6 +38,55 @@ run_check() {  # run_check <label> <script> [args...]
   fi
 }
 
+# The gates that only read run side by side (6 Oct 2026). Once the writers have run (the
+# generator, komentare/build.py, the data rebuild), nothing changes the tree until the
+# table-number test, which edits a transcript and so runs alone afterwards. One after another
+# these gates were most of the hook's time. Each keeps its own log, and every failure is
+# reported, not only the first.
+GATE_DIR=$(mktemp -d 2>/dev/null || echo "/tmp/_gates.$$")
+mkdir -p "$GATE_DIR"
+GATE_N=0
+GATE_PIDS=""
+GATE_FAILED=""
+# Without job control a background job ignores Ctrl-C, so an interrupted hook would leave the
+# gates running; stop them, and remove the logs whatever the outcome.
+stop_gates() {
+  for f in "$GATE_DIR"/*.pid; do
+    [ -f "$f" ] && [ ! -f "${f%.pid}.rc" ] && kill "$(cat "$f")" 2>/dev/null
+  done
+  for p in $GATE_PIDS; do kill "$p" 2>/dev/null; done
+  GATE_PIDS=""
+}
+trap 'stop_gates; rm -f "$GATE_DIR"/* 2>/dev/null; rmdir "$GATE_DIR" 2>/dev/null' EXIT
+trap 'echo ""; echo "pre-push: interrupted"; exit 130' INT TERM
+start_check() {  # start_check <label> <script> [args...]
+  label=$1; shift
+  [ -f "$1" ] || return 0
+  GATE_N=$((GATE_N + 1))
+  echo "pre-push: $label"
+  printf '%s\n' "$*" > "$GATE_DIR/$GATE_N.cmd"
+  ( "$PY" "$@" > "$GATE_DIR/$GATE_N.log" 2>&1 &
+    echo $! > "$GATE_DIR/$GATE_N.pid"
+    wait $!
+    echo $? > "$GATE_DIR/$GATE_N.rc" ) &
+  GATE_PIDS="$GATE_PIDS $!"
+}
+finish_checks() {  # wait for every started gate; GATE_FAILED lists the ones that failed
+  if [ -n "$GATE_PIDS" ]; then wait $GATE_PIDS || true; fi
+  GATE_PIDS=""
+  rm -f "$GATE_DIR"/*.pid 2>/dev/null
+  i=1
+  while [ "$i" -le "$GATE_N" ]; do
+    if [ "$(cat "$GATE_DIR/$i.rc" 2>/dev/null)" != 0 ]; then
+      echo ""
+      echo "---- $(cat "$GATE_DIR/$i.cmd") ----"
+      sed -n '1,25p' "$GATE_DIR/$i.log"
+      GATE_FAILED="$GATE_FAILED $(cat "$GATE_DIR/$i.cmd");"
+    fi
+    i=$((i + 1))
+  done
+}
+
 # CI's first step. Catches a syntax error before anything slower runs. Called directly
 # rather than through run_check, whose "is it a file" guard would see "-m" and skip.
 echo "pre-push: syntax-checking the tools..."
@@ -193,27 +242,29 @@ if [ "$LIGHT_ONLY" != 1 ]; then
   fi
 fi
 
+RUN_TABLE_TEST=0
+
 # The site builders' own verifiers. CI runs all of these and any one of them turns the
 # run red, but the hook never ran a single one -- which is why red runs kept arriving
 # from pushes that passed every local check. They need the pinned latex2mathml; if it is
 # missing the hook says so rather than pretending the tree was checked.
 if "$PY" -c "import latex2mathml" >/dev/null 2>&1; then
-  run_check "verifying the headline evidence..."            tools/check_evidence.py
-  run_check "verifying the matched reference DOIs..."       tools/check_reference_dois.py
-  run_check "checking the search index against the pages..." tools/build_search_index.py --check
-  run_check "checking counts written in prose..."            tools/check_counts.py
-  run_check "verifying the MAIVE how-to..."                 tools/check_maive_howto.py
-  run_check "checking api/v1/papers.json..."                tools/build_papers_api.py --check
-  run_check "checking the publication lists..."             tools/build_publications_page.py --check
-  run_check "checking /papers/..."                          tools/build_fulltext_page.py --check
+  start_check "verifying the headline evidence..."            tools/check_evidence.py
+  start_check "verifying the matched reference DOIs..."       tools/check_reference_dois.py
+  start_check "checking the search index against the pages..." tools/build_search_index.py --check
+  start_check "checking counts written in prose..."            tools/check_counts.py
+  start_check "verifying the MAIVE how-to..."                 tools/check_maive_howto.py
+  start_check "checking api/v1/papers.json..."                tools/build_papers_api.py --check
+  start_check "checking the publication lists..."             tools/build_publications_page.py --check
+  start_check "checking /papers/..."                          tools/build_fulltext_page.py --check
 
   # The full-text gates read the catalogue, the transcripts, the paper pages and the PDFs,
   # none of which a komentare- or /ai/-only push can change (see LIGHT_ONLY above).
   if [ "$LIGHT_ONLY" = 1 ]; then
     echo "pre-push: full-text gates skipped (komentare/ or /ai/ pages only; CI runs them)"
   else
-  run_check "checking the full-text pages against their transcripts..." tools/build_paper_page.py --all --check
-  run_check "auditing transcript continuity..."             tools/audit_continuity.py
+  start_check "checking the full-text pages against their transcripts..." tools/build_paper_page.py --all --check
+  start_check "auditing transcript continuity..."             tools/audit_continuity.py
 
   # The full-text gate reads the PDFs. CI installs poppler-utils; a Windows checkout
   # usually finds Xpdf's pdftotext first on PATH instead, which returns a different text
@@ -222,9 +273,9 @@ if "$PY" -c "import latex2mathml" >/dev/null 2>&1; then
   # ships one), so ask the resolver rather than PATH, and skip only when it finds none.
   if [ -f tools/check_paper_pages.py ]; then
     if "$PY" -c "import sys; sys.path.insert(0, 'tools'); import _poppler; sys.exit(0 if _poppler.is_poppler(_poppler.tool('pdftotext')) else 1)" >/dev/null 2>&1; then
-      run_check "verifying the full-text pages (slow)..."   tools/check_paper_pages.py
-      run_check "checking numbers in transcribed tables..." tools/check_table_numbers.py
-      run_check "testing the table-number checker..."       tools/test_check_table_numbers.py
+      start_check "verifying the full-text pages (slow)..."   tools/check_paper_pages.py
+      start_check "checking numbers in transcribed tables..." tools/check_table_numbers.py
+      RUN_TABLE_TEST=1
     else
       echo "pre-push: full-text page check SKIPPED (needs poppler's pdftotext; this machine has $(pdftotext -v 2>&1 | head -1 | cut -c1-40))"
     fi
@@ -235,18 +286,27 @@ else
   Install it: python -m pip install -r tools/requirements-pinned.txt"
 fi
 
-echo "pre-push: verifying..."
-if ! "$PY" tools/verify_seo.py > /tmp/_seo_ver.log 2>&1; then
-  sed -n '1,40p' /tmp/_seo_ver.log
-  fail "tools/verify_seo.py failed -- CI would go red and THE SITE WOULD NOT DEPLOY.
+start_check "verifying..." tools/verify_seo.py
+VER_LOG="$GATE_DIR/$GATE_N.log"
+echo "pre-push: waiting for the $GATE_N gates running side by side..."
+finish_checks
+if [ -n "$GATE_FAILED" ]; then
+  case "$GATE_FAILED" in *tools/verify_seo.py*)
+    echo ""
+    echo "tools/verify_seo.py failed -- CI would go red and THE SITE WOULD NOT DEPLOY.
   Most common causes when adding a page:
     * hand-written <meta property=\"og:...\"> / citation_* / ld+json in the page.
       Those belong ONLY inside the <!-- seo-meta:start --> block, which the
       generator writes. Delete them from your page and let the generator emit them.
     * a linked local PDF with no citation_pdf_url -> add the paper to tools/papers.json.
-    * hand-edited JSON-LD on the homepage -- that block is generator-owned too."
+    * hand-edited JSON-LD on the homepage -- that block is generator-owned too." ;;
+  esac
+  fail "these gates failed:$GATE_FAILED CI runs exactly these and would go red, and the site would not deploy."
 fi
-tail -2 /tmp/_seo_ver.log
+tail -2 "$VER_LOG"
+if [ "$RUN_TABLE_TEST" = 1 ]; then
+  run_check "testing the table-number checker..." tools/test_check_table_numbers.py
+fi
 
 # The pushed state must match what CI will verify, so generated output must be committed.
 if ! git -c core.safecrlf=false diff --quiet -- . 2>/dev/null; then
