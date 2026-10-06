@@ -205,6 +205,11 @@ main { padding: 2.75rem 0 4rem; }
   .article-head h1 { font-size: 1.5rem; }
   .prose { font-size: 1.06rem; }
 }
+/* Under 360 px the row needed 312 px of 272 and "Posts" sat hidden off the edge with nothing
+   to say the row scrolls; slightly smaller links fit all five. */
+@media (max-width: 22.4rem) {
+  .nav { font-size: 0.8rem; gap: 0 0.4rem; }
+}
 
 @media print {
   .masthead, .filter, .foot, .pager { display: none; }
