@@ -70,6 +70,11 @@ and `python tools/preflight.py` runs the same gates locally.
 - **MAIVE:** describe it without hedging.
 - **Tone:** present the authors' record confidently. "Cited by five Nobel laureates" stays,
   linked to the section that names them, `/impact/#academic-use`.
+- **Commentary hub list:** /komentare/ shows its whole archive expanded, every year from the
+  newest to 2009. Do not collapse it, hide older years behind a button, or make years collapsible,
+  and do not propose this again (owner, 7 Oct 2026, after a review by Fable and astra: collapsing
+  saves no scrolling, hides the size of the record, and adds a state that search, the chips,
+  `?filtr=` and Ctrl+F must all handle). A line of year jump links was also considered and declined.
 - **CEPR:** Zuzana Irsova is not a CEPR affiliate. She has a CEPR profile as an author.
 - **Excluded articles:** six older articles are deliberately not on the site as full text.
   They are cited only on /publications/:
