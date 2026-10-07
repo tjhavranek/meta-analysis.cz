@@ -2,7 +2,7 @@
 
 > Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní média, sloupky pro litomyšlskou Lilii, rozhovory, stanoviska poradce bankovní rady ČNB a kratší příspěvky ze sítí. Texty jsou zde archivovány v plném znění s odkazem na původní vydání.
 
-Publicistika: 247 položek a 26 kratších příspěvků ze sítí (273 záznamů celkem), 2009–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
+Publicistika: 247 položek a 27 kratších příspěvků ze sítí (274 záznamů celkem), 2009–2026. Plné znění každého textu je na uvedené adrese; zdrojový Markdown položek je v /komentare/src/ (příspěvky ze sítí zdrojový soubor nemají). Licence: CC BY 4.0, jako vše na meta-analysis.cz; u převzatých textů uveďte i původní vydání.
 
 ## Celostátní komentáře
 
@@ -275,6 +275,7 @@ Columns and commentary written in English: policy pieces for VoxEU/CEPR and post
 
 Kratší příspěvky Zuzany Iršové Havránkové, publikované původně na LinkedIn, zde v plném znění. Každý má vlastní stránku a všechny jsou navíc pohromadě na https://meta-analysis.cz/komentare/posts/.
 
+- [If you are writing a bachelor's or master's thesis in economics, our new app can help.](https://meta-analysis.cz/komentare/posts/2026-10-07-an-app-for-your-economics-thesis/) — 2026-10-07
 - [If you are working on an ERC proposal, our new app may help.](https://meta-analysis.cz/komentare/posts/2026-09-21-an-app-for-your-erc-draft/) — 2026-09-21
 - [A few weeks ago, our research website meta-analysis.cz was hacked (thank you, AI!).](https://meta-analysis.cz/komentare/posts/2026-09-01-rebuilding-meta-analysis-cz/) — 2026-09-01
 - [🔎 New in the Journal of Political Economy Microeconomics: a meta-analysis of the effect of financial…](https://meta-analysis.cz/komentare/posts/2026-08-10-financial-incentives-and-performance/) — 2026-08-10
@@ -310,7 +311,7 @@ Kratší příspěvky Zuzany Iršové Havránkové, publikované původně na Li
 - [ORCID](https://orcid.org/0000-0002-3158-2539)
 - [Google Scholar](https://scholar.google.com/citations?user=BF0BvBkAAAAJ)
 - [RePEc](https://ideas.repec.org/f/pha418.html)
-- [Posts](https://meta-analysis.cz/komentare/posts/) — 26 short posts by Zuzana Irsova Havrankova, mostly English, in full
+- [Posts](https://meta-analysis.cz/komentare/posts/) — 27 short posts by Zuzana Irsova Havrankova, mostly English, in full
 - [RSS](https://meta-analysis.cz/komentare/feed.xml)
 - [Strojově čitelný index (JSON)](https://meta-analysis.cz/komentare/index.json)
 - [Všechny texty v jednom souboru](https://meta-analysis.cz/komentare/all.md)

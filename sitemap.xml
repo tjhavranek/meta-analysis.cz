@@ -326,7 +326,7 @@
   <url><loc>https://meta-analysis.cz/chemnitz/slides/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://meta-analysis.cz/datasets/</loc><lastmod>2026-09-26</lastmod></url>
   <url><loc>https://meta-analysis.cz/impact/</loc><lastmod>2026-09-29</lastmod></url>
-  <url><loc>https://meta-analysis.cz/komentare/</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://meta-analysis.cz/komentare/</loc><lastmod>2026-10-07</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/babis-stamiliardy-cnb-nezavislost/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/celostatni/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/cesko-skvela-teorie-slaba-praxe/</loc><lastmod>2026-10-06</lastmod></url>
@@ -350,7 +350,7 @@
   <url><loc>https://meta-analysis.cz/komentare/co-bude-s-duchody-az-zacne/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/co-nas-ceka-rovnice-mluvi-jasne/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/ct24-byznys-special-sazby/</loc><lastmod>2026-10-06</lastmod></url>
-  <url><loc>https://meta-analysis.cz/komentare/data/</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://meta-analysis.cz/komentare/data/</loc><lastmod>2026-10-07</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/debate-vysledky-experimentu-autorum/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/diabetes-podcast-screening/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/dva-radni-cnb-nazorovy-monolit/</loc><lastmod>2026-10-06</lastmod></url>
@@ -484,7 +484,7 @@
   <url><loc>https://meta-analysis.cz/komentare/penize-a-vliv-narodni-banka-stabilita/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/pokud-chce-vlada-branit-zivoty-vsemi/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/posledni-sance-na-cesko-bez-bankrotu/</loc><lastmod>2026-10-06</lastmod></url>
-  <url><loc>https://meta-analysis.cz/komentare/posts/</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://meta-analysis.cz/komentare/posts/</loc><lastmod>2026-10-07</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/posts/2025-10-26-spurious-precision-nature-communications/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/posts/2025-12-10-maive-is-now-on-cran/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/posts/2025-12-12-i-make-ai-models-duel/</loc><lastmod>2026-10-06</lastmod></url>
@@ -511,6 +511,7 @@
   <url><loc>https://meta-analysis.cz/komentare/posts/2026-08-10-financial-incentives-and-performance/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/posts/2026-09-01-rebuilding-meta-analysis-cz/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/posts/2026-09-21-an-app-for-your-erc-draft/</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://meta-analysis.cz/komentare/posts/2026-10-07-an-app-for-your-economics-thesis/</loc><lastmod>2026-10-07</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/preziji-papirove-penize-pandemii/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/pristi-prezident-inflacni-fiasko/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/pro-a-proti-zvlada-cnb-boj-s-inflaci/</loc><lastmod>2026-10-06</lastmod></url>
@@ -648,7 +649,7 @@
   <url><loc>https://meta-analysis.cz/teaching/stockholm-2025/slides/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/datasets.json</loc><lastmod>2026-09-26</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/papers.json</loc><lastmod>2026-09-25</lastmod></url>
-  <url><loc>https://meta-analysis.cz/api/v1/search-index.json</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/search-index.json</loc><lastmod>2026-10-07</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/datapackage.json</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/croissant.json</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.csv</loc><lastmod>2026-09-25</lastmod></url>

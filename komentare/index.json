@@ -21,7 +21,7 @@
  ],
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "license_note": "CC BY 4.0; u převzatých textů uveďte i původní vydání.",
- "count": 273,
+ "count": 274,
  "generated_from": [
   "komentare/src/*.md",
   "komentare/social-posts.json"
@@ -5912,6 +5912,36 @@
    ],
    "provenance": "self_published",
    "genre": "travelogue"
+  },
+  {
+   "id": "posts-2026-10-07",
+   "title": "If you are writing a bachelor's or master's thesis in economics, our new app can help.",
+   "date": "2026-10-07",
+   "date_precision": "day",
+   "section": "Posts (ze sítí)",
+   "category": "posts",
+   "language": "en",
+   "outlet": "LinkedIn",
+   "authors": [
+    "Zuzana Havránková"
+   ],
+   "media": "text",
+   "original_url": "",
+   "url": "https://meta-analysis.cz/komentare/posts/2026-10-07-an-app-for-your-economics-thesis/",
+   "collection_url": "https://meta-analysis.cz/komentare/posts/#2026-10-07",
+   "text_status": "published_full_text",
+   "genre": "social_post",
+   "provenance": "self_published",
+   "word_count": 102,
+   "text": "If you are writing a bachelor's or master's thesis in economics, our new app can help.\n\nIt reads your idea, proposal, or draft the way your opponent will. It quotes your text and says what to change. It does not write the thesis for you.\n\nOne prompt in ChatGPT or Claude, nothing to install. Built for the thesis seminars at IES, Charles University. Unofficial and free.\n\nIf you use Claude Code or Codex, the repository has a deeper mode that also checks your code.\n\nOr just tell your AI assistant: check with the thesis tool from meta-analysis.cz.\n\nLink in the first comment.",
+   "image": [
+    "https://meta-analysis.cz/komentare/social-img/2026-10-07_thesis-feedback.png"
+   ],
+   "comment_links": [
+    "https://tjhavranek.github.io/ies-thesis-feedback/",
+    "https://github.com/tjhavranek/ies-thesis-feedback"
+   ],
+   "comment_note": "Nothing is uploaded to us. You paste the prompt into your own chatbot, and the page has no analytics."
   },
   {
    "id": "posts-2026-09-21",

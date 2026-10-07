@@ -644,5 +644,30 @@
   "slug": "2026-09-21-an-app-for-your-erc-draft",
   "anchor": "2026-09-21",
   "text": "If you are working on an ERC proposal, our new app may help.\n\nIt reads your draft against the ERC's own 2027 evaluation questions and flags problems. Each finding quotes your text and says what to change. It does not write the proposal for you. One prompt in a chatbot, nothing to install. Unofficial, and so far tested only on simulated proposals.\n\nFor applicants only: ERC rules bar evaluators from using AI on the proposals they assess.\n\nIf you use agents like Claude Code or Codex, the repository has an experimental deeper mode.\n\nYou do not have to open the app or the code at all. Just tell your AI assistant: check my ERC proposal using the tool by Irsova and Havranek.\n\nLink in the first comment."
+ },
+ {
+  "date": "2026-10-07",
+  "reshare_with_comment": false,
+  "lang": "en",
+  "images": [
+   "2026-10-07_thesis-feedback.png"
+  ],
+  "image_size": [
+   [
+    800,
+    800
+   ]
+  ],
+  "image_alt": [
+   "A square card headed 'Thesis feedback', marked unofficial. The headline reads: A demanding first reader for your economics thesis. Under it: one prompt in ChatGPT or Claude, with an idea, a proposal, a draft or a full thesis; it reads the work the way your opponent will, quotes your text and says what to change. A panel headed 'One finding, on a synthetic proposal' notes that the proposal checks its rainfall instrument on households without farm income. The finding, 'Not significant is not the same as no effect', quotes the sentence 'If that coefficient is imprecise, I will regard it as reassuring evidence for the instrument.' and is marked as one that could decide the defence: a wide confidence interval can still contain a substantial effect, so report which effect sizes it rules out. The footer gives tjhavranek.github.io/ies-thesis-feedback, free, MIT licence, Tomáš Havránek and Zuzana Iršová, Charles University."
+  ],
+  "comment_links": [
+   "https://tjhavranek.github.io/ies-thesis-feedback/",
+   "https://github.com/tjhavranek/ies-thesis-feedback"
+  ],
+  "comment_note": "Nothing is uploaded to us. You paste the prompt into your own chatbot, and the page has no analytics.",
+  "slug": "2026-10-07-an-app-for-your-economics-thesis",
+  "anchor": "2026-10-07",
+  "text": "If you are writing a bachelor's or master's thesis in economics, our new app can help.\n\nIt reads your idea, proposal, or draft the way your opponent will. It quotes your text and says what to change. It does not write the thesis for you.\n\nOne prompt in ChatGPT or Claude, nothing to install. Built for the thesis seminars at IES, Charles University. Unofficial and free.\n\nIf you use Claude Code or Codex, the repository has a deeper mode that also checks your code.\n\nOr just tell your AI assistant: check with the thesis tool from meta-analysis.cz.\n\nLink in the first comment."
  }
 ]

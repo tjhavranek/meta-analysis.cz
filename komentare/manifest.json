@@ -2,12 +2,12 @@
  "name": "Komentáře — Tomáš Havránek, Zuzana Havránková",
  "url": "https://meta-analysis.cz/komentare/data/",
  "license": "https://creativecommons.org/licenses/by/4.0/",
- "newest_record": "2026-10-01",
- "temporal_coverage": "2009-08-18/2026-10-01",
+ "newest_record": "2026-10-07",
+ "temporal_coverage": "2009-08-18/2026-10-07",
  "records": {
-  "total": 273,
+  "total": 274,
   "by_text_status": {
-   "published_full_text": 215,
+   "published_full_text": 216,
    "machine_transcript": 21,
    "correspondence": 8,
    "author_manuscript": 23,
@@ -21,7 +21,7 @@
    "Litomyšlské sloupky": 65,
    "Rozhovory": 54,
    "In English": 35,
-   "Posts (ze sítí)": 26
+   "Posts (ze sítí)": 27
   }
  },
  "text_status_meanings": {
@@ -45,28 +45,28 @@
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 2410182,
-   "sha256": "a910e7af885966dbd37eb4283825e9bb001047431b1d0435061417b459cdbfe1"
+   "bytes": 2411739,
+   "sha256": "833ff61f2b11a8441afab68e22b9b5ab390fe64686ef12c98383a006efe514de"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 2433033,
-   "sha256": "011b381238c350b865d01b87f504bc9505f9e749d67fb806d6b2d70993cecbd4"
+   "bytes": 2434691,
+   "sha256": "1438ff1f34b146f4dfb99c286cca812427ca6054cd4114d068bf0e315e55c190"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
    "bytes": 2174810,
-   "sha256": "f5802a45f0431648ed75bf93ff5e2c8811ed656468a172f4b7dc580e081913a8"
+   "sha256": "78db29460d36b1b4222de6441f53bf925721e2e0d6f969ec3d71ab70fdd0ca87"
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
-   "bytes": 54363,
-   "sha256": "ac1ed8fc03c8dbd710effa1285c4f265c01d9a7fe368814d7e1e03f181e45f9c"
+   "bytes": 54556,
+   "sha256": "f83cad98d3b7f815c2a1edac7e3e4222a000dc377bc38a5f2d0d8e0ff9af6139"
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 2376448,
-   "sha256": "725b885e2993920738b6a87ad60854c309801ca86dbafc150037184137edff84"
+   "bytes": 2377667,
+   "sha256": "9bd7ec93291534a678418fb79b23e642a53893845651628246433b0ed5af1179"
   }
  },
  "generated_from": [
