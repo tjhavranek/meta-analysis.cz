@@ -1433,7 +1433,8 @@ def main():
            "and https://raw.githubusercontent.com/tjhavranek/research-audit-duel-protocol/main/protocol/ai_duel_protocol_v1.7.md",
            "- [mad-research](https://github.com/tjhavranek/mad-research): Claude Code skills for an "
            "adversarial audit of a paper, grant or report by Claude and Codex together. Needs Claude "
-           "Code and the Codex CLI; install as the README says",
+           "Code and the Codex CLI, or Claude Code alone in the opt-in Claude-only mode; install as "
+           "the README says",
            "- [paper-workshop (CRUCIBLE)](https://github.com/tjhavranek/paper-workshop): a Claude "
            "Code skill that convenes rival AI referees on a paper and, optionally, rebuilds it: "
            "tracked changes, the analysis re-run, a replication package. Needs Claude Code on a "
