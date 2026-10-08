@@ -117,9 +117,9 @@ Je to i moje chyba. Tehdy jsem u toho byl a sice jsem k tomu něco řekl, ale by
 
 Zvýšení sazeb o čtvrt procentního bodu, 25 bazických bodů, samozřejmě s inflací nic neudělá. Ten efekt je velmi malý. Jde spíš o očekávání do budoucna, kumulativně: jestli pan guvernér opravdu třeba chce zdrtit ekonomiku. Kdyby tomu trhy věřily, pak už to trošku něco udělat může.
 
-**Petra Jaroměřská:** A hrozí podle vás nějaký růst cen v souvislosti třeba s tím, co se děje na Blízkém východě?
+**Petra Jaroměřská:** A hrozí podle vás nějaký růst cen v souvislosti třeba s tím, co se děje na Blízkém východě? Protože to je to hlavní riziko.
 
-**Tomáš Havránek:** Protože se necítím úplně kvalifikovaný. Jsem profesor ekonomie na univerzitě, z Národní banky jsem už nějakou dobu pryč a jsou tam desítky lidí, kteří tomu rozumějí mnohem lépe než já, počítají to a věnují se tomu denně. Podíval bych se tedy na prognózu Národní banky a uvidíme, co vám zítra ukážou. Jinak jim nechci lézt do zelí, v tomhle nevím víc než oni. Osobně čekám, že se ten konflikt na Blízkém východě, na Středním východě, pravděpodobně nějakým způsobem utlumí, takže i inflační tlaky z této strany asi pominou.
+**Tomáš Havránek:** Necítím se kvalifikovaný komentovat geopolitiku a netroufám si na lepší krátkodobou prognózu než Národní banka. Jsem profesor ekonomie na univerzitě, z Národní banky jsem už nějakou dobu pryč a jsou tam desítky lidí, kteří tomu rozumějí mnohem lépe než já, počítají to a věnují se tomu denně. Podíval bych se tedy na prognózu Národní banky a uvidíme, co vám zítra ukážou. Jinak jim nechci lézt do zelí, v tomhle nevím víc než oni. Osobně čekám, že se ten konflikt na Blízkém východě, na Středním východě, pravděpodobně nějakým způsobem utlumí, takže i inflační tlaky z této strany asi pominou.
 
 Dlouhodobě, a k tomu se možná dostaneme, totiž k tomu, co dlouhodobě vyřeší státní dluh, bych si nebyl tak jistý, že inflace bude kolem 2 %. Ale nechám možná chvilku mluvit vás.
 
