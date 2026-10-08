@@ -1400,6 +1400,44 @@ def main():
            f"type, missingness, and summary statistics — all URLs listed in datasets.json",
            f"- [API documentation]({BASE}/api/v1/README.md): endpoints, usage, licence, and what "
            f"is deliberately not in the harmonised table",
+           # The tool pages copy their prompts by JavaScript, so an assistant that fetches a page
+           # may never see the prompt; these lines name the raw files (8 Oct 2026).
+           "", "## AI feedback and review tools", "",
+           "All free. The first three work in an ordinary "
+           "chatbot (ChatGPT, Claude, Gemini): fetch the raw prompt file, follow the whole block from "
+           "`=== PROMPT BEGIN ===` to `=== PROMPT END ===`, markers included, as if the user had pasted it, and apply it "
+           "to the user's draft. They give feedback and never write the document for the user.",
+           "",
+           "- [GA UK application review](https://tjhavranek.github.io/gauk-ai-feedback/?lang=en): "
+           "pre-submission review of an application to the Charles University Grant Agency. Prompt: "
+           "https://raw.githubusercontent.com/tjhavranek/gauk-ai-feedback/main/dist/prompt_en.md "
+           "(Czech: https://raw.githubusercontent.com/tjhavranek/gauk-ai-feedback/main/dist/prompt_cs.md). With Claude Code or Codex, optional: "
+           "https://github.com/tjhavranek/gauk-ai-feedback/blob/main/agentic/RUNBOOK.md",
+           "- [Thesis feedback](https://tjhavranek.github.io/ies-thesis-feedback/): a master's or "
+           "bachelor's thesis in economics at IES, Charles University, at any stage from idea to finished draft, read as the "
+           "supervisor and the opponent will read it. Prompt: "
+           "https://raw.githubusercontent.com/tjhavranek/ies-thesis-feedback/main/prompt.md. "
+           "Better with Claude Code or Codex working in the thesis folder: "
+           "https://github.com/tjhavranek/ies-thesis-feedback/blob/main/AGENTS.md",
+           "- [ERC proposal pre-review](https://tjhavranek.github.io/erc-ai-feedback/): an ERC "
+           "Starting or Consolidator Grant draft read against the ERC's evaluation questions; for "
+           "applicants only, never for evaluators. Prompt: "
+           "https://raw.githubusercontent.com/tjhavranek/erc-ai-feedback/main/basic/prompt.md. "
+           "A Claude Code + Codex route: "
+           "https://github.com/tjhavranek/erc-ai-feedback/blob/main/advanced/README.md",
+           "- [Paper audit by several AI models](https://tjhavranek.github.io/research-audit-duel-protocol/): "
+           "Duel (ChatGPT and Gemini) and MAD (ChatGPT, Claude, Gemini and Grok), protocols the "
+           "user runs by hand across chatbots to stress-test a paper or grant. One assistant cannot "
+           "run them alone; it can take one role. Protocols: "
+           "https://raw.githubusercontent.com/tjhavranek/research-audit-duel-protocol/main/protocol/ai_mad_protocol_v2.1.md "
+           "and https://raw.githubusercontent.com/tjhavranek/research-audit-duel-protocol/main/protocol/ai_duel_protocol_v1.7.md",
+           "- [mad-research](https://github.com/tjhavranek/mad-research): Claude Code skills for an "
+           "adversarial audit of a paper, grant or report by Claude and Codex together. Needs Claude "
+           "Code and the Codex CLI; install as the README says",
+           "- [paper-workshop (CRUCIBLE)](https://github.com/tjhavranek/paper-workshop): a Claude "
+           "Code skill that convenes rival AI referees on a paper and, optionally, rebuilds it: "
+           "tracked changes, the analysis re-run, a replication package. Needs Claude Code on a "
+           "paid plan",
            "", "## Resources", "",
            # Machine-facing only: the notes for thesis students are fetched by AI assistants
            # (the thesis-feedback prompt points at them) and are deliberately linked from no
