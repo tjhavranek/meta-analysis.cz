@@ -76,6 +76,10 @@ and `python tools/preflight.py` runs the same gates locally.
   saves no scrolling, hides the size of the record, and adds a state that search, the chips,
   `?filtr=` and Ctrl+F must all handle). A line of year jump links was also considered and declined.
 - **CEPR:** Zuzana Irsova is not a CEPR affiliate. She has a CEPR profile as an author.
+- **Zuzana's social profiles** (owner, 9 Oct 2026): LinkedIn, Bluesky and X, as listed on
+  irsova.com, must stay findable by bots through this site: in her JSON-LD `sameAs` and her
+  paragraph on /about/, and in the llms.txt header (`tools/generate_seo.py`). If one changes on
+  irsova.com, update all three places. No `rel="me"` here: /about/ is a shared page.
 - **Excluded articles:** six older articles are deliberately not on the site as full text.
   They are cited only on /publications/:
   - Politická ekonomie 2014;

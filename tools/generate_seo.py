@@ -1349,7 +1349,9 @@ def main():
           "Surveys. Havranek sat on the European Research Council's Advanced Grant panel for "
           "economics and finance in 2020, the first Czech economist to do so. Irsova is the first "
           "author of the paper that introduced MAIVE (Nature Communications, 2025) and was elected "
-          "to Academia Europaea in 2023. "
+          "to Academia Europaea in 2023. Irsova's website and social profiles: "
+          "https://www.irsova.com/ ; LinkedIn https://www.linkedin.com/in/zuzanairsova/ ; "
+          "Bluesky https://bsky.app/profile/irsova.bsky.social ; X https://x.com/zuzanairsova . "
           f"Who they are, with awards and rankings: {BASE}/about/", "",
           "> **Licence: everything on this site is CC BY 4.0** "
            "(https://creativecommons.org/licenses/by/4.0/) — the papers, the datasets, their "
