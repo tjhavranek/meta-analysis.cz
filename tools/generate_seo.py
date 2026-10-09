@@ -690,6 +690,17 @@ def git_dates():
         print("git dates unavailable:", e)
     return dates
 
+def photo_images(loc):
+    """Image-sitemap entries for /about/photos/: every full-size photo its JSON-LD lists, so
+    search engines take that page as the source of the photos (owner, 9 Oct 2026). Kept on
+    the <url> line, which redate_in_sitemap and verify_seo read."""
+    if loc != f"{BASE}/about/photos/":
+        return ""
+    s = open(os.path.join(SITE, "about", "photos", "index.html"), encoding="utf-8").read()
+    urls = re.findall(r'"contentUrl": "([^"]+)"', s)
+    return "".join(f"<image:image><image:loc>{u}</image:loc></image:image>" for u in urls)
+
+
 def put_if_changed(path, text):
     """Write text as UTF-8 with LF line endings, unless the file already holds it. A checkout
     with core.autocrlf=true holds CRLF, so CR before LF is ignored in the comparison: rewriting
@@ -1296,7 +1307,8 @@ def main():
                 urls.append((f"{BASE}/api/v1/codebooks/{fn}", lastmod(f"api/v1/codebooks/{fn}")))
 
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
-          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+          'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">']
     # A path can be reached twice: /maive/how-to/ is both a project subpage and SELF_MANAGED.
     # First entry wins, order preserved.
     seen = set()
@@ -1315,7 +1327,8 @@ def main():
         return bool(m) and m.group(1).rstrip("/") != loc.rstrip("/")
 
     urls = [u for u in urls if not disowns_itself(u[0])]
-    sm += [f"  <url><loc>{loc}</loc><lastmod>{lm}</lastmod></url>" for loc, lm in urls]
+    sm += [f"  <url><loc>{loc}</loc><lastmod>{lm}</lastmod>{photo_images(loc)}</url>"
+           for loc, lm in urls]
     sm.append("</urlset>\n")
     if undated:
         # A note, not a warning: nothing on the site is wrong, this clone just cannot see far
