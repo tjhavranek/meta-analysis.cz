@@ -1041,6 +1041,17 @@ def main():
          "numberOfItems": len(items), "itemListElement": items}]}
     home_block = "\n".join([
         f'<link rel="canonical" href="{BASE}/" />',
+        # Ownership tokens for Google Search Console and Bing Webmaster Tools. Both verify a
+        # URL-prefix property from the home page, so they live here rather than on all 540
+        # pages. They are opaque identifiers, not claims about the site, and must not be
+        # removed: deleting either un-verifies the property and stops the sitemap reports.
+        '<meta name="google-site-verification" '
+        'content="4SHsxGrSKsv6eHW-jSu368ZIX4etMgLgZvjZcHe5xGc" />',
+        '<meta name="msvalidate.01" content="94C8D06EAF1F08DFF71A7CD08EF206DE" />',
+        # llms.txt v2 discovery. The spec reserves rel="alternate" type="text/markdown" for a
+        # page's OWN markdown version and uses rel="describedby" for the llms.txt that covers
+        # it; /llms.txt covers the whole site, so the root declares it.
+        '<link rel="describedby" href="/llms.txt" />',
         '<meta property="og:site_name" content="meta-analysis.cz" />',
         '<meta property="og:type" content="website" />',
         '<meta property="og:title" content="Meta-Analysis: Methods, Data, and Code" />',
