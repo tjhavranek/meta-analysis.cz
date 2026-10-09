@@ -5,7 +5,7 @@ date: "2026-10-01"
 updated: "2026-10-03"
 headline: "Proč chceme mít všechny čtyři děti na litomyšlském gymnáziu"
 byline: "Tomáš Havránek"
-word_count: "1233"
+word_count: "1236"
 title_tag: "Proč chceme mít všechny čtyři děti na Gymnáziu Aloise Jiráska v Litomyšli"
 description: "Zkušenost rodiče a absolventa: fakta o Gymnáziu Aloise Jiráska v Litomyšli, přijímačky 2027, dny otevřených dveří."
 og_image: "2026-10-01_litomysl-gymnazium-foto.jpg"
@@ -25,7 +25,7 @@ Všechny čtyři naše děti chtějí na [Gymnázium Aloise Jiráska v Litomyš
 
 Náš Dan přešel ze ZŠ Zámecká, kde mu bylo dobře. První dva měsíce v primě se sice pral s vyšším tempem, ale pak si zvykl, je spokojený v kolektivu, škola ho moc baví. Myslím, že nakonec i kvůli té náročnosti. I díky tomu se naučil používat umělou inteligenci užitečně: ze školních poznámek si dělá výuková videa na svém kanálu [Školní Speedrun](https://www.youtube.com/channel/UCQC2rKj-zD9-J8x_64g-Jjw), třeba „Starověký Řím za 21 minut“, aby se látku lépe naučil a pomohl spolužákům.
 
-Proč gymnázium? V éře umělé inteligence potřebují děti víc než dřív kritické myšlení, přehled, trénovanou paměť a schopnost strukturovaně mluvit o složitých problémech bez internetu. My i naše děti máme zkušenost se [školami na Novém Zélandu](https://meta-analysis.cz/komentare/litomysl-srovnani-skol-litomysl-novy-zeland/), jež jsou v mnoha ohledech příjemnější a určitě jednodušší. Přesto jsem přesvědčen, že gymnázium děti do dnešního světa připraví lépe.
+Proč gymnázium? V éře umělé inteligence potřebují děti víc než dřív nezlenivět a mít kritické myšlení, přehled, trénovanou paměť a schopnost strukturovaně mluvit o složitých problémech bez internetu. My i naše děti máme zkušenost se [školami na Novém Zélandu](https://meta-analysis.cz/komentare/litomysl-srovnani-skol-litomysl-novy-zeland/), jež jsou v mnoha ohledech příjemnější a určitě jednodušší. Přesto jsem přesvědčen, že gymnázium děti do dnešního světa připraví lépe.
 
 Na litomyšlském gymnáziu občas přednáším a studenti mají parádní dotazy, jaké slýchám od prváků na Univerzitě Karlově. Ostatně úspěšnost přijetí na vysoké školy se v posledních letech drží mezi 95 a 100 %. A třeba u státní maturity 2026 mě potěšila matematika. Zvolilo si ji 42 % zdejších maturantů, o čtvrtinu víc než na gymnáziích v celé republice. Z loňských absolventů mě zaujal Jakub Očenáš, který jako oktaván získal celostátní Cenu Učené společnosti pro středoškoláky. Studenti jezdí na výměny do Francie, Německa i na Tchaj-wan a někteří si dávají semestr nebo rok v zahraničí.
 
