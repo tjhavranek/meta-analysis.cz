@@ -330,6 +330,7 @@ if "$PY" -c "import latex2mathml" >/dev/null 2>&1; then
   start_check "checking the search index against the pages..." tools/build_search_index.py --check
   start_check "checking counts written in prose..."            tools/check_counts.py
   start_check "checking the stated ranks and citations..."     tools/update_metrics.py --check
+  start_check "checking api/v1/people.json..."                 tools/build_people_api.py --check
   start_check "verifying the MAIVE how-to..."                 tools/check_maive_howto.py
   start_check "checking api/v1/papers.json..."                tools/build_papers_api.py --check
   start_check "checking the publication lists..."             tools/build_publications_page.py --check

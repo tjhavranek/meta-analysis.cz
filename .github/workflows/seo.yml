@@ -105,6 +105,10 @@ jobs:
       - name: Require the stated ranks and citations to match site_metrics.json
         run: python tools/update_metrics.py --check
 
+      # api/v1/people.json is the feed the personal sites follow (awards, roles, paper statuses).
+      - name: Verify api/v1/people.json against a fresh build
+        run: python tools/build_people_api.py --check
+
       # /maive/how-to/ prints numbers that came from somebody else's service. The requests and
       # the full responses are recorded in api/v1/maive-howto.json, and this proves the page is
       # exactly what that file renders, that the settings the page teaches are the settings

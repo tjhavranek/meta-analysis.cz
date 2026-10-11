@@ -86,6 +86,11 @@ and `python tools/preflight.py` runs the same gates locally.
   are rendered from `tools/site_metrics.json`. The monthly job in the private repo
   tjhavranek/site-metrics (owner's PC, the 15th) runs `tools/update_metrics.py <metrics.json>`
   in its own clone and pushes. Never hand-edit those spots; change the wording in the script.
+- **Shared facts start here** (owner, 11 Oct 2026): new awards, roles, paper status changes and
+  new papers are entered on meta-analysis.cz first (`tools/people.json`, `tools/papers.json`,
+  `tools/publications.json`), then `python tools/build_people_api.py` **(CI)**. tomashavranek.cz
+  and irsova.com follow via `api/v1/people.json`; a daily job on the owner's PC reports where
+  they differ.
 - **CEPR:** Zuzana Irsova is not a CEPR affiliate. She has a CEPR profile as an author.
 - **Zuzana's social profiles** (owner, 9 Oct 2026): LinkedIn, Bluesky and X, as listed on
   irsova.com, must stay findable by bots through this site: in her JSON-LD `sameAs` and her

@@ -90,6 +90,7 @@
 - [Harmonised estimate-level table](https://meta-analysis.cz/data/v1/estimates_harmonised.csv): all literatures pooled into one table, one row per harmonised observation (some literatures contribute one row per impulse-response horizon), with effect, standard error, t-statistic, sample size, and shared study characteristics (also [Parquet](https://meta-analysis.cz/data/v1/estimates_harmonised.parquet); version 2.1.0)
 - [Per-dataset files](https://meta-analysis.cz/api/v1/datapackage.json): each dataset also published individually as Parquet and CSV, with a column-level codebook giving every variable's type, missingness, and summary statistics — all URLs listed in datasets.json
 - [API documentation](https://meta-analysis.cz/api/v1/README.md): endpoints, usage, licence, and what is deliberately not in the harmonised table
+- [People feed](https://meta-analysis.cz/api/v1/people.json): Tomas Havranek's and Zuzana Irsova's publications with their status (published, forthcoming, revise and resubmit, working paper), awards and roles with sources, as JSON
 
 ## AI feedback and review tools
 

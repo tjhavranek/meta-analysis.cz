@@ -1,0 +1,509 @@
+{
+ "_about": "Canonical shared facts about the two maintainers (awards, roles, paper statuses). Enter new shared facts HERE first; tomashavranek.cz and irsova.com follow via api/v1/people.json (tools/build_people_api.py). Seeded 11 Oct 2026 from the personal sites' facts.json, whose sources were checked on 7-8 Oct 2026.",
+ "updated": "2026-10-11",
+ "people": {
+  "tomas": {
+   "awards": [
+    {
+     "id": "university-of-canterbury-erskine-fellowship-2025",
+     "name": "Erskine Fellowship",
+     "organization": "University of Canterbury",
+     "years": [
+      2025
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "czech-science-foundation-honorable-mention-from-th-2024",
+     "name": "Honorable mention from the President of the Czech Science Foundation",
+     "organization": "Czech Science Foundation",
+     "years": [
+      2024
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "economic-science-association-experimental-economic-2024",
+     "name": "Experimental Economics Editors’ Prize for the best paper published in 2022",
+     "organization": "Economic Science Association",
+     "years": [
+      2024
+     ],
+     "co_recipients": [
+      "Jindrich Matousek",
+      "Zuzana Irsova"
+     ],
+     "sources": [
+      "https://economicscience.org/news_manager.php?page=36768",
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "czech-national-bank-economic-research-award-2012",
+     "name": "Economic Research Award",
+     "organization": "Czech National Bank",
+     "years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "unicredit-universities-foundation-best-phd-thesis--2014",
+     "name": "Best PhD Thesis Award",
+     "organization": "UniCredit & Universities Foundation",
+     "years": [
+      2014
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "czech-economic-society-young-economist-of-the-year-2012",
+     "name": "Young Economist of the Year",
+     "organization": "Czech Economic Society",
+     "years": [
+      2012
+     ],
+     "co_recipients": [
+      "Marek Rusnak"
+     ],
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "global-development-network-first-prize-medals-for--2010",
+     "name": "First prize, Medals for Research on Development",
+     "organization": "Global Development Network",
+     "years": [
+      2010
+     ],
+     "co_recipients": [
+      "Zuzana Irsova"
+     ],
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "oesterreichische-nationalbank-olga-radzyner-award-2009",
+     "name": "Olga Radzyner Award",
+     "organization": "Oesterreichische Nationalbank",
+     "years": [
+      2009
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "czech-economic-society-karel-englis-award-2009",
+     "name": "Karel Engliš Award",
+     "organization": "Czech Economic Society",
+     "years": [
+      2009
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    }
+   ],
+   "roles": [
+    {
+     "id": "charles-university-professor-of-economics",
+     "title": "Professor of Economics",
+     "organization": "Charles University",
+     "start": "2021",
+     "end": null,
+     "sources": [
+      "https://ies.fsv.cuni.cz/en/contacts/people/78067720"
+     ]
+    },
+    {
+     "id": "charles-university-associate-professor",
+     "title": "Associate Professor",
+     "organization": "Charles University",
+     "start": "2016",
+     "end": "2021",
+     "sources": [
+      "https://ies.fsv.cuni.cz/en/contacts/people/78067720"
+     ]
+    },
+    {
+     "id": "czech-national-bank-advisor-to-the-board-full-time",
+     "title": "Advisor to the Board (full-time)",
+     "organization": "Czech National Bank",
+     "start": "2015",
+     "end": "2019",
+     "sources": [
+      "https://ies.fsv.cuni.cz/en/contacts/people/78067720",
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "czech-national-bank-economist-research-department",
+     "title": "Economist, Research Department",
+     "organization": "Czech National Bank",
+     "start": "2009",
+     "end": "2015",
+     "sources": [
+      "https://ies.fsv.cuni.cz/en/contacts/people/78067720"
+     ]
+    },
+    {
+     "id": "university-of-california-berkeley-visiting-scholar",
+     "title": "Visiting Scholar",
+     "organization": "University of California, Berkeley",
+     "start": "2014",
+     "end": "2014",
+     "sources": [
+      "https://ies.fsv.cuni.cz/en/contacts/people/78067720"
+     ]
+    },
+    {
+     "id": "european-research-council-member-advanced-grant-panel-s",
+     "title": "Member, Advanced Grant panel SH1 (economics and finance)",
+     "organization": "European Research Council",
+     "start": "2020",
+     "end": "2020",
+     "sources": [
+      "https://erc.europa.eu/sites/default/files/document/file/Panel_Members_ERC_Advanced_Grant_2020.pdf",
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "charles-university-and-the-czech-academy-of-sciences-wi",
+     "title": "Member, Expert Group for supporting applicants in ERC calls",
+     "organization": "Charles University and the Czech Academy of Sciences, with Technology Centre Prague",
+     "start": "2022",
+     "end": null,
+     "sources": [
+      "https://era.avcr.cz/en/ERC-interface/Expert-group/"
+     ]
+    },
+    {
+     "id": "national-economic-council-of-the-czech-government-nerv-",
+     "title": "Member",
+     "organization": "National Economic Council of the Czech Government (NERV)",
+     "start": "2022",
+     "end": "2023",
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "journal-of-economic-surveys-associate-editor-for-meta-a",
+     "title": "Associate Editor for meta-analysis",
+     "organization": "Journal of Economic Surveys",
+     "start": null,
+     "end": null,
+     "sources": [
+      "https://meta-analysis.cz/about/",
+      "https://ies.fsv.cuni.cz/en/contacts/people/78067720"
+     ]
+    },
+    {
+     "id": "centre-for-economic-policy-research-cepr-research-affil",
+     "title": "Research Affiliate",
+     "organization": "Centre for Economic Policy Research (CEPR)",
+     "start": null,
+     "end": null,
+     "sources": [
+      "https://meta-analysis.cz/about/",
+      "https://ies.fsv.cuni.cz/en/contacts/people/78067720",
+      "https://orcid.org/0000-0002-3158-2539"
+     ]
+    },
+    {
+     "id": "meta-research-innovation-center-at-stanford-metrics-res",
+     "title": "Research Affiliate",
+     "organization": "Meta-Research Innovation Center at Stanford (METRICS)",
+     "start": null,
+     "end": null,
+     "sources": [
+      "https://meta-analysis.cz/about/",
+      "https://metrics.stanford.edu/people/tomas-havranek"
+     ]
+    },
+    {
+     "id": "meta-analysis-of-economics-research-network-maer-net-co",
+     "title": "Co-leader",
+     "organization": "Meta-Analysis of Economics Research Network (MAER-Net)",
+     "start": null,
+     "end": null,
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "charles-university-s-grant-agency-gauk-chair-social-sci",
+     "title": "Chair, social sciences section",
+     "organization": "Charles University's Grant Agency (GAUK)",
+     "start": null,
+     "end": null,
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "university-of-canterbury-erskine-fellow",
+     "title": "Erskine Fellow",
+     "organization": "University of Canterbury",
+     "start": "2025-02",
+     "end": "2025-03",
+     "sources": [
+      "https://meta-analysis.cz/teaching/christchurch-2025/",
+      "https://ies.fsv.cuni.cz/en/contacts/people/78067720"
+     ]
+    }
+   ]
+  },
+  "zuzana": {
+   "awards": [
+    {
+     "id": "forbes-czechia-top-women-scientists-in-czechia-2025",
+     "name": "Top Women Scientists in Czechia",
+     "organization": "Forbes Czechia",
+     "years": [
+      2025
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://forbes.cz/lists/top-vedkyne-ceska-2025/zuzana-havrankova/"
+     ]
+    },
+    {
+     "id": "economic-science-association-editors-prize-for-the-2024",
+     "name": "Editors' Prize for the best paper published in Experimental Economics in 2022",
+     "organization": "Economic Science Association",
+     "years": [
+      2024
+     ],
+     "co_recipients": [
+      "Jindrich Matousek",
+      "Tomas Havranek"
+     ],
+     "sources": [
+      "https://economicscience.org/news_manager.php?page=36768"
+     ]
+    },
+    {
+     "id": "academia-europaea-elected-member-2023",
+     "name": "Elected member",
+     "organization": "Academia Europaea",
+     "years": [
+      2023
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://www.ae-info.org/ae/Member/Havrankova_Zuzana"
+     ]
+    },
+    {
+     "id": "finzeny-listed-among-the-most-influential-women-in-2022",
+     "name": "Listed among the most influential women in Czech finance",
+     "organization": "#FinZeny",
+     "years": [
+      2022
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "czech-economic-society-katerina-smidkova-award-for-2018",
+     "name": "Katerina Smidkova Award for exceptionally high-quality publications",
+     "organization": "Czech Economic Society",
+     "years": [
+      2018
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://www.cse.cz/media/laureatkou-ceny-kateriny-smidkove-je-zuzana-havrankova"
+     ]
+    },
+    {
+     "id": "lindau-nobel-laureate-meetings-selected-for-the-li-2017",
+     "name": "Selected for the Lindau Nobel Laureate Meeting in economic sciences",
+     "organization": "Lindau Nobel Laureate Meetings",
+     "years": [
+      2017
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "czech-national-bank-economic-research-award-2015",
+     "name": "Economic Research Award",
+     "organization": "Czech National Bank",
+     "years": [
+      2015
+     ],
+     "co_recipients": [
+      "Tomas Havranek",
+      "Roman Horvath",
+      "Marek Rusnak"
+     ],
+     "sources": [
+      "https://www.cnb.cz/cs/cnb-news/tiskove-zpravy/Cena-za-nejlepsi-vyzkumne-prace-CNB-00001"
+     ]
+    },
+    {
+     "id": "national-bank-of-slovakia-governor-s-award-for-the-2015",
+     "name": "Governor's Award for the best dissertation relevant to monetary policy and financial stability, first place",
+     "organization": "National Bank of Slovakia",
+     "years": [
+      2015
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://www.ae-info.org/ae/Member/Havrankova_Zuzana"
+     ]
+    },
+    {
+     "id": "ministry-of-education-youth-and-sports-of-the-czec-2013",
+     "name": "Minister of Education's Prize for outstanding students and graduates",
+     "organization": "Ministry of Education, Youth and Sports of the Czech Republic",
+     "years": [
+      2013
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://iforum.cuni.cz/IFORUM-14873-version1.pdf"
+     ]
+    },
+    {
+     "id": "global-development-network-medal-for-research-on-d-2010",
+     "name": "Medal for Research on Development, first place",
+     "organization": "Global Development Network",
+     "years": [
+      2010
+     ],
+     "co_recipients": [
+      "Tomas Havranek"
+     ],
+     "sources": [
+      "https://iforum.cuni.cz/IFORUM-14873-version1.pdf"
+     ]
+    }
+   ],
+   "roles": [
+    {
+     "id": "charles-university-professor-of-economics",
+     "title": "Professor of Economics",
+     "organization": "Charles University",
+     "start": "2025",
+     "end": null,
+     "sources": [
+      "https://ies.fsv.cuni.cz/en/contacts/institute-members/73504033"
+     ]
+    },
+    {
+     "id": "anglo-american-university-distinguished-senior-lecturer",
+     "title": "Distinguished Senior Lecturer",
+     "organization": "Anglo-American University",
+     "start": "2022",
+     "end": null,
+     "sources": [
+      "https://www.aauni.edu/directory/doc-phdr-zuzana-havrankova-ph-d/",
+      "https://www.ae-info.org/ae/Member/Havrankova_Zuzana"
+     ]
+    },
+    {
+     "id": "meta-research-innovation-center-at-stanford-metrics-res",
+     "title": "Research Affiliate",
+     "organization": "Meta-Research Innovation Center at Stanford (METRICS)",
+     "start": "2025-05",
+     "end": null,
+     "sources": [
+      "https://metrics.stanford.edu/people/zuzana-irsova"
+     ]
+    },
+    {
+     "id": "journal-of-economic-surveys-associate-editor-for-meta-a",
+     "title": "Associate Editor for meta-analysis",
+     "organization": "Journal of Economic Surveys",
+     "start": "2024-01",
+     "end": null,
+     "sources": [
+      "https://ies.fsv.cuni.cz/en/news/zuzana-havrankova-became-new-associate-editor-journal-economic-surveys"
+     ]
+    },
+    {
+     "id": "czech-science-foundation-principal-investigator-junior-",
+     "title": "Principal investigator, Junior Star METASPUR",
+     "organization": "Czech Science Foundation",
+     "start": "2023",
+     "end": "2027",
+     "sources": [
+      "https://science.fsv.cuni.cz/en/project/spurious-precision-in-meta-analysis-of-social-science-research-metaspur"
+     ]
+    },
+    {
+     "id": "meta-analysis-cz-and-easymeta-org-co-maintainer",
+     "title": "Co-maintainer",
+     "organization": "meta-analysis.cz and EasyMeta.org",
+     "start": null,
+     "end": null,
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    }
+   ]
+  }
+ },
+ "paper_status": {
+  "pcc_survey": {
+   "status": "rr",
+   "status_venue": "Research Synthesis Methods"
+  },
+  "beauty": {
+   "status": "rr",
+   "status_venue": "Nature Human Behaviour"
+  },
+  "exercise": {
+   "status": "rr",
+   "status_venue": "Sports Medicine"
+  },
+  "migrant": {
+   "status": "rr",
+   "status_venue": "Journal of Economic Surveys"
+  },
+  "alphas": {
+   "status": "rr",
+   "status_venue": "International Review of Economics & Finance"
+  },
+  "class": {
+   "status": "forthcoming",
+   "status_venue": "Journal of Labor Economics"
+  },
+  "incentives": {
+   "status": "forthcoming",
+   "status_venue": "Journal of Political Economy Microeconomics"
+  },
+  "cpi_housing": {
+   "status": "published",
+   "status_venue": "Czech National Bank Research and Policy Notes 1/2017; also BIS Papers No 94 (2017)"
+  }
+ }
+}

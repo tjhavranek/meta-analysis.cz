@@ -1,0 +1,3705 @@
+{
+ "schema_version": 1,
+ "name": "meta-analysis.cz people feed",
+ "description": "Shared facts about Tomas Havranek and Zuzana Irsova, the maintainers of meta-analysis.cz: publications with their status, awards, roles, and the site's counts. meta-analysis.cz is the source; their personal sites follow.",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "updated": "2026-10-11",
+ "statuses": {
+  "published": "in print or online with a DOI",
+  "forthcoming": "accepted; status_venue names the journal",
+  "rr": "revise and resubmit; status_venue names the journal",
+  "working_paper": "not yet accepted"
+ },
+ "counts": {
+  "papers": 74,
+  "datasets": 47,
+  "estimates": 58484
+ },
+ "counts_definitions": {
+  "papers": "papers in full on meta-analysis.cz (api/v1/papers.json paper_count)",
+  "datasets": "published datasets (api/v1/datasets.json counts.datasets)",
+  "estimates": "estimates in analysis samples, the figure the catalogue table shows (api/v1/datasets.json counts.estimates_in_analysis_samples); the harmonised table and the papers' own samples are counted separately there"
+ },
+ "people": {
+  "tomas": {
+   "publications": [
+    {
+     "id": "esg",
+     "title": "Do Female Directors Raise ESG Ratings? A Meta-Analysis",
+     "authors": [
+      "Karolina Hozova",
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "working_paper",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/esg/"
+    },
+    {
+     "id": "outliers",
+     "title": "Do decisions about outliers and influential effects matter? Evidence from 358 behavioral science meta-analyses",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Martina Luskova",
+      "T. D. Stanley"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "working_paper",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/outliers/"
+    },
+    {
+     "id": "pcc_survey",
+     "title": "Do methods matter in the meta-analysis of partial correlation coefficients?",
+     "authors": [
+      "T. D. Stanley",
+      "Petr Cala",
+      "Hristos Doucouliagos",
+      "Zuzana Irsova",
+      "Tomas Havranek"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "rr",
+     "status_venue": "Research Synthesis Methods",
+     "url": "https://meta-analysis.cz/pcc_survey/"
+    },
+    {
+     "id": "debate",
+     "title": "Does Multi-Agent Debate Improve AI Feedback on Research Papers?",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "working_paper",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/debate/"
+    },
+    {
+     "id": "incentives",
+     "title": "Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics",
+     "authors": [
+      "Petr Cala",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Martina Luskova",
+      "Jindrich Matousek",
+      "Jiri Novak"
+     ],
+     "year": 2026,
+     "journal": "Journal of Political Economy Microeconomics",
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": "10.1086/743543",
+     "status": "forthcoming",
+     "status_venue": "Journal of Political Economy Microeconomics",
+     "url": "https://meta-analysis.cz/incentives/"
+    },
+    {
+     "id": "guai",
+     "title": "Guidance for the Use of AI in the Meta-Analysis of Economics Research",
+     "authors": [
+      "Nikolai Cook",
+      "Frantisek Bartos",
+      "Pedro R. D. Bom",
+      "Sebastian Gechert",
+      "Klara Kantova",
+      "Jerome Geyer‐Klingeberg",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Martina Luskova",
+      "Matej Opatrny",
+      "Franz Prante",
+      "Heiko J. Rachinger",
+      "T. D. Stanley"
+     ],
+     "year": 2026,
+     "journal": "Journal of Economic Surveys",
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": "10.1111/joes.70105",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/guai/"
+    },
+    {
+     "id": "inflation",
+     "title": "Optimal Inflation Rate: A Meta-Analysis",
+     "authors": [
+      "Matej Opatrny",
+      "Martin Opatrny",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Mojmir Hampl"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "working_paper",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/inflation/"
+    },
+    {
+     "id": "electricity",
+     "title": "Price Elasticity of Electricity Demand: A Meta-Analysis",
+     "authors": [
+      "Peter Kudela",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Anna Kudelova",
+      "Vojtech Sikl"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "working_paper",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/electricity/"
+    },
+    {
+     "id": "class",
+     "title": "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement",
+     "authors": [
+      "Matej Opatrny",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Milan Scasny"
+     ],
+     "year": 2026,
+     "journal": "Journal of Labor Economics",
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": "10.1086/737989",
+     "status": "forthcoming",
+     "status_venue": "Journal of Labor Economics",
+     "url": "https://meta-analysis.cz/class/"
+    },
+    {
+     "id": "learning",
+     "title": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning: A Meta-Analysis",
+     "authors": [
+      "Martina Luskova",
+      "Nino Buliskeria",
+      "Ali Elminejad",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Stepan Jurajda",
+      "Marek Kapicka"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "working_paper",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/learning/"
+    },
+    {
+     "id": "reporting_ai",
+     "title": "Reporting Guidelines for Meta-Analysis in Economics—Updated for AI",
+     "authors": [
+      "Nikolai Cook",
+      "Frantisek Bartos",
+      "Pedro R. D. Bom",
+      "Sebastian Gechert",
+      "Klara Kantova",
+      "Jerome Geyer‐Klingeberg",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Martina Luskova",
+      "Matej Opatrny",
+      "Franz Prante",
+      "Heiko J. Rachinger",
+      "T. D. Stanley"
+     ],
+     "year": 2026,
+     "journal": "Journal of Economic Surveys",
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": "10.1111/joes.70116",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/reporting_ai/"
+    },
+    {
+     "id": "reproducibility",
+     "title": "Reproducibility and robustness of economics and political science research",
+     "authors": [
+      "Abel Brodeur",
+      "Derek Mikola",
+      "Nikolai Cook",
+      "Lenka Fiala",
+      "Thomas Brailey",
+      "Ryan Briggs",
+      "Alexandra de Gendre",
+      "Yannick Dupraz",
+      "Jacopo Gabani",
+      "Romain Gauriot",
+      "Joanne Haddad",
+      "Goncalo Lima",
+      "Jorg Ankel-Peters",
+      "Anna Dreber",
+      "Douglas Campbell",
+      "Lamis Kattan",
+      "Diego Marino Fages",
+      "Fabian Mierisch",
+      "Pu Sun",
+      "Taylor Wright",
+      "Marie Connolly",
+      "Fernando Hoces de la Guardia",
+      "Magnus Johannesson",
+      "Edward Miguel",
+      "Lars Vilhuber",
+      "Alejandro Abarca",
+      "Mahesh Acharya",
+      "Sossou Simplice Adjisse",
+      "Ahwaz Akhtar",
+      "Eduardo Alberto Ramirez Lizardi",
+      "Sabina Albrecht",
+      "Synøve Nygaard Andersen",
+      "Zubaria Andlib",
+      "Falak Arrora",
+      "Thomas Ash",
+      "Etienne Bacher",
+      "Sebastian Bachler",
+      "Felix Bacon",
+      "Manuel Bagues",
+      "Timea Balogh",
+      "Alisher Batmanov",
+      "Mara Barschkett",
+      "Barıs Kaan Basdil",
+      "Jaromir Baxa",
+      "Sascha O. Becker",
+      "Monica Beeder",
+      "Louis-Philippe Beland",
+      "Abdel-Hamid Bello",
+      "Daniel Benenson Markovits",
+      "Grant Benjamin",
+      "Thomas Bergeron",
+      "Moussa P. Blimpo",
+      "Marco Binetti",
+      "Carl Bonander",
+      "Joseph Bonneau",
+      "Endre Borbath",
+      "Nicolai Borgen",
+      "Solveig Topstad Borgen",
+      "Jonathan Borowsky",
+      "Elisa Brini",
+      "Myriam Brown",
+      "Martin Brun",
+      "Stephan Bruns",
+      "Nino Buliskeria",
+      "Andrea Calef",
+      "Alistair Cameron",
+      "Pamela Campa",
+      "Santiago Campos-Rodriguez",
+      "Giulio Giacomo Cantone",
+      "Fenella Carpena",
+      "Perry Jess Carter",
+      "Paul Castaneda Dower",
+      "Ondrej Castek",
+      "Jill Caviglia-Harris",
+      "Gabriella Chauca Strand",
+      "Shi Chen",
+      "Sya In Chzhen",
+      "Jong Chung",
+      "Jason Collins",
+      "Alexander Coppock",
+      "Hugo Cordeau",
+      "Ben Couillard",
+      "Jonathan Crechet",
+      "Lorenzo Crippa",
+      "Jing Cui",
+      "Christian Czymara",
+      "Haley Daarstad",
+      "Danh Chi Dao",
+      "Daniel Dao",
+      "Marco David Schmandt",
+      "Astrid de Linde",
+      "Lucas De Melo",
+      "Lachlan Deer",
+      "Micole De Vera",
+      "Velichka Dimitrova",
+      "Jan Fabian Dollbaum",
+      "Jan Matti Dollbaum",
+      "Michael Donnelly",
+      "Luu Duc Toan Huynh",
+      "Tsvetomira Dumbalska",
+      "Jamie Duncan",
+      "Kiet Tuan Duong",
+      "Thibaut Duprey",
+      "Christoph Dworschak",
+      "Sigmund Ellingsrud",
+      "Ali Elminejad",
+      "Yasmine Eissa",
+      "Andrea Erhart",
+      "Giulian Etingin-Frati",
+      "Elaheh Fatemipour",
+      "Alexa Federice",
+      "Jan Feld",
+      "Guidon Fenig",
+      "Mojtaba Firouzjaeiangalougah",
+      "Erlend Fleisje",
+      "Alexandre Fortier-Chouinard",
+      "Julia Francesca Engel",
+      "Nadjim Frechet",
+      "Reid Fortier",
+      "Tilman Fries",
+      "Michael James Frith",
+      "Thomas Galipeau",
+      "Sebastian Gallegos",
+      "Areez Gangji",
+      "Xiaoying Gao",
+      "Cloe Garnache",
+      "Attila Gaspar",
+      "Evelina Gavrilova",
+      "Arijit Ghosh",
+      "Garreth Gibney",
+      "Grant Gibson",
+      "Geir Godager",
+      "Leonard Goff",
+      "Da Gong",
+      "Javier Gonzalez",
+      "Jeremy D. Gretton",
+      "Cristina Griffa",
+      "Idaliya Grigoryeva",
+      "Maja Grøtting",
+      "Eric Guntermann",
+      "Jiaqi Guo",
+      "Alexi Gugushvili",
+      "Hooman Habibnia",
+      "Sonja Haffner",
+      "Jonathan D. Hall",
+      "Olle Hammar",
+      "Amund Hanson Kordt",
+      "Barry Hashimoto",
+      "Jonathan S. Hartley",
+      "Carina I. Hausladen",
+      "Tomas Havranek",
+      "Harry He",
+      "Matthew Hepplewhite",
+      "Mario Herrera-Rodriguez",
+      "Felix Heuer",
+      "Anthony Heyes",
+      "Anson T. Y. Ho",
+      "Jonathan Holmes",
+      "Armando Holzknecht",
+      "Yu-Hsiang Dexter Hsu",
+      "Shiang-Hung Hu",
+      "Yu-Shiuan Huang",
+      "Mathias Huebener",
+      "Christoph Huber",
+      "Kim P. Huynh",
+      "Zuzana Irsova",
+      "Ozan Isler",
+      "Niklas Jakobsson",
+      "Raphael Jananji",
+      "Tharaka A. Jayalath",
+      "Michael Jetter",
+      "Jenny John",
+      "Rachel Joy Forshaw",
+      "Felipe Juan",
+      "Valon Kadriu",
+      "Sunny Karim",
+      "Edmund Kelly",
+      "Duy Khanh Hoang Dang",
+      "Tazia Khushboo",
+      "Jin Kim",
+      "Gustav Kjellsson",
+      "Anders Kjelsrud",
+      "Andreas Kotsadam",
+      "Jori Korpershoek",
+      "Lewis Krashinsky",
+      "Suranjana Kundu",
+      "Alexander Kustov",
+      "Nurlan Lalayev",
+      "Audree Langlois",
+      "Jill Laufer",
+      "Blake Lee-Whiting",
+      "Andreas Leibing",
+      "Gabriel Lenz",
+      "Joel Levin",
+      "Peng Li",
+      "Tongzhe Li",
+      "Yuchen Lin",
+      "Ariel Listo",
+      "Dan Liu",
+      "Xuewen Lu",
+      "Elvina Lukmanova",
+      "Alex Luscombe",
+      "Lester R. Lusher",
+      "Ke Lyu",
+      "Hai Ma",
+      "Nicolas Mader",
+      "Clifton Makate",
+      "Alice Malmberg",
+      "Adit Maitra",
+      "Marco Mandas",
+      "Jan Marcus",
+      "Shushanik Margaryan",
+      "Lili Mark",
+      "Andres Martignano",
+      "Abigail Marsh",
+      "Isabella Masetto",
+      "Anthony McCanny",
+      "Emma McManus",
+      "Ryan McWay",
+      "Lennard Metson",
+      "Jonas Minet Kinge",
+      "Sumit Mishra",
+      "Myra Mohnen",
+      "Jakob Moeller",
+      "Rosalie Montambeault",
+      "Sebastien Montpetit",
+      "Louis-Philippe Morin",
+      "Todd Morris",
+      "Scott Moser",
+      "Fabio Yoshio Suguri Motoki",
+      "Lucija Muehlenbachs",
+      "Andreea Musulan",
+      "Marco Musumeci",
+      "Munirul Nabin",
+      "Karim Nchare",
+      "Florian Neubauer",
+      "Quan M. P. Nguyen",
+      "Tuan Nguyen",
+      "Viet Nguyen-Tien",
+      "Ali Niazi",
+      "Giorgi Nikolaishvili",
+      "Ardyn Nordstrom",
+      "Patrick Nuß",
+      "Angela Odermatt",
+      "Matt Olson",
+      "Henning Øien",
+      "Tim Olkers",
+      "Miquel Oliver i Vert",
+      "Emre Oral",
+      "Christian Oswald",
+      "Ali Ousman",
+      "Omer Ozak",
+      "Shubham Pandey",
+      "Alexandre Pavlov",
+      "Martino Pelli",
+      "Romeo Penheiro",
+      "RyuGyung Park",
+      "Eva Perez Martel",
+      "Tereza Petrovicova",
+      "Linh Phan",
+      "Alexa Prettyman",
+      "Jakub Prochazka",
+      "Aqila Putri",
+      "Julian Quandt",
+      "Kangyu Qiu",
+      "Loan Quynh Thi Nguyen",
+      "Andaleeb Rahman",
+      "Carson H. Rea",
+      "Adam Reiremo",
+      "Laetitia Renee",
+      "Joseph Richardson",
+      "Nicholas Rivers",
+      "Bruno Rodrigues",
+      "William Roelofs",
+      "Tobias Roemer",
+      "Ole Rogeberg",
+      "Julian Rose",
+      "Andrew Roskos-Ewoldsen",
+      "Paul Rosmer",
+      "Barbara Sabada",
+      "Soodeh Saberian",
+      "Nicolas Salamanca",
+      "Georg Sator",
+      "Daniel Scates",
+      "Elmar Schluter",
+      "Cameron Sells",
+      "Sharmi Sen",
+      "Ritika Sethi",
+      "Anna Shcherbiak",
+      "Moyosore Sogaolu",
+      "Matt Soosalu",
+      "Erik Ø. Sørensen",
+      "Manali Sovani",
+      "Noah Spencer",
+      "Stefan Staubli",
+      "Renske Stans",
+      "Anya Stewart",
+      "Felix Stips",
+      "Kieran Stockley",
+      "Stephenson Strobel",
+      "Ethan Struby",
+      "John P. Tang",
+      "Idil Tanrisever",
+      "Thomas Tao Yang",
+      "Ipek Tastan",
+      "Dejan Tatic",
+      "Benjamin Tatlow",
+      "Feraud Tchuisseu Seuyong",
+      "Remi Theriault",
+      "Vincent Thivierge",
+      "Wenjie Tian",
+      "Filip-Mihai Toma",
+      "Maddalena Totarelli",
+      "Van-Anh Tran",
+      "Hung Truong",
+      "Nikita Tsoy",
+      "Kerem Tuzcuoglu",
+      "Diego Ubfal",
+      "Laura Villalobos",
+      "Julian Walterskirchen",
+      "Joseph Tao-yi Wang",
+      "Vasudha Wattal",
+      "Matthew D. Webb",
+      "Bryan S. Weber",
+      "Reinhard Weisser",
+      "Wei-Chien Weng",
+      "Christian Westheide",
+      "Kimberly White",
+      "Jacob Winter",
+      "Timo Wochner",
+      "Matt Woerman",
+      "Jared Wong",
+      "Ritchie Woodard",
+      "Marcin Wronski",
+      "Myra Yazbeck",
+      "Gustav Chung Yang",
+      "Luther Yap",
+      "Kareman Yassin",
+      "Hao Ye",
+      "Jin Young Yoon",
+      "Chris Yurris",
+      "Tahreen Zahra",
+      "Mirela Zaneva",
+      "Aline Zayat",
+      "Jonathan Zhang",
+      "Ziwei Zhao",
+      "Yaolang Zhong"
+     ],
+     "year": 2026,
+     "journal": "Nature",
+     "volume": "652",
+     "issue": "8108",
+     "pages": "151-156",
+     "doi": "10.1038/s41586-026-10251-x",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/reproducibility/"
+    },
+    {
+     "id": "migrant",
+     "title": "The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis",
+     "authors": [
+      "Klara Kantova",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Jiri Schwarz"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "rr",
+     "status_venue": "Journal of Economic Surveys",
+     "url": "https://meta-analysis.cz/migrant/"
+    },
+    {
+     "id": "power",
+     "title": "The Power of Science: Statistical Power in Published Research Across Five Disciplines",
+     "authors": [
+      "Yue Wang",
+      "Frantisek Bartos",
+      "Tom Coupe",
+      "Tomas Havranek",
+      "Sanghyun Hong",
+      "Zuzana Irsova",
+      "W. Robert Reed"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "working_paper",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/power/"
+    },
+    {
+     "id": "trust",
+     "title": "Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis",
+     "authors": [
+      "Jiri Schwarz",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Jiri Novak"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "working_paper",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/trust/"
+    },
+    {
+     "id": "alphas",
+     "title": "What Matters in Explaining the Variation in Hedge Fund Performance? A Meta-Analysis",
+     "authors": [
+      "Fan Yang",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Jiri Novak"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "rr",
+     "status_venue": "International Review of Economics & Finance",
+     "url": "https://meta-analysis.cz/alphas/"
+    },
+    {
+     "id": "social_comparison",
+     "title": "Adjusting for Publication Bias Reveals Evidence Against Social Comparison As a Behaviour Change Technique Across the Behavioural Sciences",
+     "authors": [
+      "Frantisek Bartos",
+      "Zuzana Irsova",
+      "Tomas Havranek",
+      "Eric-Jan Wagenmakers"
+     ],
+     "year": 2025,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "working_paper",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/social_comparison/"
+    },
+    {
+     "id": "beauty",
+     "title": "Beauty and Professional Success: A Meta-Analysis",
+     "authors": [
+      "Zuzana Irsova",
+      "Tomas Havranek",
+      "Kseniya Bortnikova",
+      "Frantisek Bartos"
+     ],
+     "year": 2025,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "rr",
+     "status_venue": "Nature Human Behaviour",
+     "url": "https://meta-analysis.cz/beauty/"
+    },
+    {
+     "id": "conventional_wisdom",
+     "title": "Conventional wisdom, meta-analysis, and research revision in economics",
+     "authors": [
+      "Sebastian Gechert",
+      "Bianka Mey",
+      "Matej Opatrny",
+      "Tomas Havranek",
+      "T. D. Stanley",
+      "Pedro R. D. Bom",
+      "Hristos Doucouliagos",
+      "Philipp Heimberger",
+      "Zuzana Irsova",
+      "Heiko J. Rachinger"
+     ],
+     "year": 2025,
+     "journal": "Journal of Economic Surveys",
+     "volume": "39",
+     "issue": "3",
+     "pages": "980-999",
+     "doi": "10.1111/joes.12630",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/conventional_wisdom/"
+    },
+    {
+     "id": "activism",
+     "title": "Does Shareholder Activism Create Value? A Meta-Analysis",
+     "authors": [
+      "Josef Bajzik",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Jiri Novak"
+     ],
+     "year": 2025,
+     "journal": "Corporate Governance: An International Review",
+     "volume": "33",
+     "issue": "5",
+     "pages": "1039-1061",
+     "doi": "10.1111/corg.12637",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/activism/"
+    },
+    {
+     "id": "exercise",
+     "title": "Effect of Exercise on Cognition, Memory, and Executive Function: A Study-Level Meta-Meta-Analysis Across Populations and Exercise Categories",
+     "authors": [
+      "Frantisek Bartos",
+      "Martina Luskova",
+      "Kseniya Bortnikova",
+      "Karolina Hozova",
+      "Klara Kantova",
+      "Zuzana Irsova",
+      "Tomas Havranek"
+     ],
+     "year": 2025,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "rr",
+     "status_venue": "Sports Medicine",
+     "url": "https://meta-analysis.cz/exercise/"
+    },
+    {
+     "id": "correlations",
+     "title": "Reducing the biases of the conventional meta-analysis of correlations",
+     "authors": [
+      "T. D. Stanley",
+      "Hristos Doucouliagos",
+      "Tomas Havranek"
+     ],
+     "year": 2025,
+     "journal": "Research Synthesis Methods",
+     "volume": "16",
+     "issue": "1",
+     "pages": "42-59",
+     "doi": "10.1017/rsm.2024.5",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/correlations/"
+    },
+    {
+     "id": "risk",
+     "title": "Relative Risk Aversion: A Meta-Analysis",
+     "authors": [
+      "Ali Elminejad",
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2025,
+     "journal": "Journal of Economic Surveys",
+     "volume": "39",
+     "issue": "5",
+     "pages": "2315-2333",
+     "doi": "10.1111/joes.12689",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/risk/"
+    },
+    {
+     "id": "maive",
+     "title": "Spurious precision in meta-analysis of observational research",
+     "authors": [
+      "Zuzana Irsova",
+      "Pedro R. D. Bom",
+      "Tomas Havranek",
+      "Heiko Rachinger"
+     ],
+     "year": 2025,
+     "journal": "Nature Communications",
+     "volume": "16",
+     "issue": "1",
+     "pages": null,
+     "doi": "10.1038/s41467-025-63261-0",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/maive/"
+    },
+    {
+     "id": "hedge",
+     "title": "Is research on hedge fund performance published selectively? A quantitative survey",
+     "authors": [
+      "Fan Yang",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Jiri Novak"
+     ],
+     "year": 2024,
+     "journal": "Journal of Economic Surveys",
+     "volume": "38",
+     "issue": "4",
+     "pages": "1085-1131",
+     "doi": "10.1111/joes.12574",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/hedge/"
+    },
+    {
+     "id": "pcc",
+     "title": "Meta-analyses of partial correlations are biased: Detection and solutions",
+     "authors": [
+      "T. D. Stanley",
+      "Hristos Doucouliagos",
+      "Tomas Havranek"
+     ],
+     "year": 2024,
+     "journal": "Research Synthesis Methods",
+     "volume": "15",
+     "issue": "2",
+     "pages": "313-325",
+     "doi": "10.1002/jrsm.1704",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/pcc/"
+    },
+    {
+     "id": "guidelines",
+     "title": "Meta-analysis of social science research: A practitioner's guide",
+     "authors": [
+      "Zuzana Irsova",
+      "Hristos Doucouliagos",
+      "Tomas Havranek",
+      "T. D. Stanley"
+     ],
+     "year": 2024,
+     "journal": "Journal of Economic Surveys",
+     "volume": "38",
+     "issue": "5",
+     "pages": "1547-1566",
+     "doi": "10.1111/joes.12595",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/guidelines/"
+    },
+    {
+     "id": "skill",
+     "title": "Publication and Attenuation Biases in Measuring Skill Substitution",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Lubica Laslopova",
+      "Olesia Zeynalova"
+     ],
+     "year": 2024,
+     "journal": "Review of Economics and Statistics",
+     "volume": "106",
+     "issue": "5",
+     "pages": "1187-1200",
+     "doi": "10.1162/rest_a_01227",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/skill/"
+    },
+    {
+     "id": "students",
+     "title": "Student Employment and Education: A Meta-Analysis",
+     "authors": [
+      "Katerina Kroupova",
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2024,
+     "journal": "Economics of Education Review",
+     "volume": "100",
+     "issue": null,
+     "pages": "102539",
+     "doi": "10.1016/j.econedurev.2024.102539",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/students/"
+    },
+    {
+     "id": "frisch",
+     "title": "Intertemporal substitution in labor supply: A meta-analysis",
+     "authors": [
+      "Ali Elminejad",
+      "Tomas Havranek",
+      "Roman Horvath",
+      "Zuzana Irsova"
+     ],
+     "year": 2023,
+     "journal": "Review of Economic Dynamics",
+     "volume": "51",
+     "issue": null,
+     "pages": "1095-1113",
+     "doi": "10.1016/j.red.2023.10.001",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/frisch/"
+    },
+    {
+     "id": "house_prices",
+     "title": "When Does Monetary Policy Sway House Prices? A Meta-Analysis",
+     "authors": [
+      "Dominika Ehrenbergerova",
+      "Josef Bajzik",
+      "Tomas Havranek"
+     ],
+     "year": 2023,
+     "journal": "IMF Economic Review",
+     "volume": "71",
+     "issue": "2",
+     "pages": "538-573",
+     "doi": "10.1057/s41308-022-00185-5",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/house_prices/"
+    },
+    {
+     "id": "discrate",
+     "title": "Individual discount rates: a meta-analysis of experimental evidence",
+     "authors": [
+      "Jindrich Matousek",
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2022,
+     "journal": "Experimental Economics",
+     "volume": "25",
+     "issue": "1",
+     "pages": "318-358",
+     "doi": "10.1007/s10683-021-09716-9",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/discrate/"
+    },
+    {
+     "id": "sigma",
+     "title": "Measuring capital-labor substitution: The importance of method choices and publication bias",
+     "authors": [
+      "Sebastian Gechert",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Dominika Kolcunova"
+     ],
+     "year": 2022,
+     "journal": "Review of Economic Dynamics",
+     "volume": "45",
+     "issue": null,
+     "pages": "55-82",
+     "doi": "10.1016/j.red.2021.05.003",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/sigma/"
+    },
+    {
+     "id": "tourist",
+     "title": "Forecasting tourist arrivals: Google Trends meets mixed-frequency data",
+     "authors": [
+      "Tomas Havranek",
+      "Ayaz Zeynalov"
+     ],
+     "year": 2021,
+     "journal": "Tourism Economics",
+     "volume": "27",
+     "issue": "1",
+     "pages": "129-148",
+     "doi": "10.1177/1354816619879584",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/tourist/"
+    },
+    {
+     "id": "forward",
+     "title": "How puzzling is the forward premium puzzle? A meta-analysis",
+     "authors": [
+      "Diana Zigraiova",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Jiri Novak"
+     ],
+     "year": 2021,
+     "journal": "European Economic Review",
+     "volume": "134",
+     "issue": null,
+     "pages": "103714",
+     "doi": "10.1016/j.euroecorev.2021.103714",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/forward/"
+    },
+    {
+     "id": "cbequity",
+     "title": "Central Bank Equity as an Instrument of Monetary Policy",
+     "authors": [
+      "Mojmir Hampl",
+      "Tomas Havranek"
+     ],
+     "year": 2020,
+     "journal": "Comparative Economic Studies",
+     "volume": "62",
+     "issue": "1",
+     "pages": "49-68",
+     "doi": "10.1057/s41294-019-00092-1",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/cbequity/"
+    },
+    {
+     "id": "excess_sensitivity",
+     "title": "Do consumers really follow a rule of thumb? Three thousand estimates from 144 studies say “probably not”",
+     "authors": [
+      "Tomas Havranek",
+      "Anna Sokolova"
+     ],
+     "year": 2020,
+     "journal": "Review of Economic Dynamics",
+     "volume": "35",
+     "issue": null,
+     "pages": "97-122",
+     "doi": "10.1016/j.red.2019.05.004",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/excess_sensitivity/"
+    },
+    {
+     "id": "dst_slovakia",
+     "title": "Does daylight saving time save electricity? Evidence from Slovakia",
+     "authors": [
+      "Peter Kudela",
+      "Tomas Havranek",
+      "Dominik Herman",
+      "Zuzana Irsova"
+     ],
+     "year": 2020,
+     "journal": "Energy Policy",
+     "volume": "137",
+     "issue": null,
+     "pages": "111146",
+     "doi": "10.1016/j.enpol.2019.111146",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/dst_slovakia/"
+    },
+    {
+     "id": "armington",
+     "title": "Estimating the Armington elasticity: The importance of study design and publication bias",
+     "authors": [
+      "Josef Bajzik",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Jiri Schwarz"
+     ],
+     "year": 2020,
+     "journal": "Journal of International Economics",
+     "volume": "127",
+     "issue": null,
+     "pages": "103383",
+     "doi": "10.1016/j.jinteco.2020.103383",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/armington/"
+    },
+    {
+     "id": "fdi",
+     "title": "Foreign capital and domestic productivity in the Czech Republic: a meta-regression analysis",
+     "authors": [
+      "Mojmir Hampl",
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2020,
+     "journal": "Applied Economics",
+     "volume": "52",
+     "issue": "18",
+     "pages": "1949-1958",
+     "doi": "10.1080/00036846.2020.1726864",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/fdi/"
+    },
+    {
+     "id": "remittances",
+     "title": "Remittances and economic growth: A meta-analysis",
+     "authors": [
+      "Alina Cazachevici",
+      "Tomas Havranek",
+      "Roman Horvath"
+     ],
+     "year": 2020,
+     "journal": "World Development",
+     "volume": "134",
+     "issue": null,
+     "pages": "105021",
+     "doi": "10.1016/j.worlddev.2020.105021",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/remittances/"
+    },
+    {
+     "id": "reporting",
+     "title": "Reporting Guidelines for Meta-Analysis in Economics",
+     "authors": [
+      "Tomas Havranek",
+      "T. D. Stanley",
+      "Hristos Doucouliagos",
+      "Pedro Bom",
+      "Jerome Geyer‐Klingeberg",
+      "Ichiro Iwasaki",
+      "W. Robert Reed",
+      "Katja Rost",
+      "R. C. M. van Aert"
+     ],
+     "year": 2020,
+     "journal": "Journal of Economic Surveys",
+     "volume": "34",
+     "issue": "3",
+     "pages": "469-475",
+     "doi": "10.1111/joes.12363",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/reporting/"
+    },
+    {
+     "id": "size",
+     "title": "Firm Size and Stock Returns: A Quantitative Survey",
+     "authors": [
+      "Anton Astakhov",
+      "Tomas Havranek",
+      "Jiri Novak"
+     ],
+     "year": 2019,
+     "journal": "Journal of Economic Surveys",
+     "volume": "33",
+     "issue": "5",
+     "pages": "1463-1492",
+     "doi": "10.1111/joes.12335",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/size/"
+    },
+    {
+     "id": "dst",
+     "title": "Does Daylight Saving Save Electricity? A Meta-Analysis",
+     "authors": [
+      "Tomas Havranek",
+      "Dominik Herman",
+      "Zuzana Irsova"
+     ],
+     "year": 2018,
+     "journal": "The Energy Journal",
+     "volume": "39",
+     "issue": "2",
+     "pages": "35-61",
+     "doi": "10.5547/01956574.39.2.thav",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/dst/"
+    },
+    {
+     "id": "elb",
+     "title": "Estimating the effective lower bound on the Czech National Bank’s policy rate",
+     "authors": [
+      "Dominika Kolcunova",
+      "Tomas Havranek"
+     ],
+     "year": 2018,
+     "journal": "Finance a Uver - Czech Journal of Economics and Finance",
+     "volume": "68",
+     "issue": "6",
+     "pages": "550-577",
+     "doi": null,
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/elb/"
+    },
+    {
+     "id": "water",
+     "title": "Measuring the Income Elasticity of Water Demand: The Importance of Publication and Endogeneity Biases",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Tomas Vlach"
+     ],
+     "year": 2018,
+     "journal": "Land Economics",
+     "volume": "94",
+     "issue": "2",
+     "pages": "259-283",
+     "doi": "10.3368/le.94.2.259",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/water/"
+    },
+    {
+     "id": "education",
+     "title": "Tuition Fees and University Enrolment: A Meta-Regression Analysis",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Olesia Zeynalova"
+     ],
+     "year": 2018,
+     "journal": "Oxford Bulletin of Economics and Statistics",
+     "volume": "80",
+     "issue": "6",
+     "pages": "1145-1184",
+     "doi": "10.1111/obes.12240",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/education/"
+    },
+    {
+     "id": "border",
+     "title": "Do Borders Really Slash Trade? A Meta-Analysis",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2017,
+     "journal": "IMF Economic Review",
+     "volume": "65",
+     "issue": "2",
+     "pages": "365-396",
+     "doi": "10.1057/s41308-016-0001-5",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/border/"
+    },
+    {
+     "id": "habits",
+     "title": "Habit formation in consumption: A meta-analysis",
+     "authors": [
+      "Tomas Havranek",
+      "Marek Rusnak",
+      "Anna Sokolova"
+     ],
+     "year": 2017,
+     "journal": "European Economic Review",
+     "volume": "95",
+     "issue": null,
+     "pages": "142-167",
+     "doi": "10.1016/j.euroecorev.2017.03.009",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/habits/"
+    },
+    {
+     "id": "cpi_housing",
+     "title": "Should Inflation Measures Used by Central Banks Incorporate House Prices? The Czech National Bank's Approach",
+     "authors": [
+      "Mojmir Hampl",
+      "Tomas Havranek"
+     ],
+     "year": 2017,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "published",
+     "status_venue": "Czech National Bank Research and Policy Notes 1/2017; also BIS Papers No 94 (2017)",
+     "url": "https://meta-analysis.cz/cpi_housing/"
+    },
+    {
+     "id": "contagion",
+     "title": "The sources of contagion risk in a banking sector with foreign ownership",
+     "authors": [
+      "Tomas Fiala",
+      "Tomas Havranek"
+     ],
+     "year": 2017,
+     "journal": "Economic Modelling",
+     "volume": "60",
+     "issue": null,
+     "pages": "108-121",
+     "doi": "10.1016/j.econmod.2016.08.025",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/contagion/"
+    },
+    {
+     "id": "competition",
+     "title": "Bank Competition and Financial Stability: Much Ado About Nothing?",
+     "authors": [
+      "Diana Zigraiova",
+      "Tomas Havranek"
+     ],
+     "year": 2016,
+     "journal": "Journal of Economic Surveys",
+     "volume": "30",
+     "issue": "5",
+     "pages": "944-981",
+     "doi": "10.1111/joes.12131",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/competition/"
+    },
+    {
+     "id": "passthrough",
+     "title": "Bank efficiency and interest rate pass-through: Evidence from Czech loan products",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Jitka Lesanovska"
+     ],
+     "year": 2016,
+     "journal": "Economic Modelling",
+     "volume": "54",
+     "issue": null,
+     "pages": "153-169",
+     "doi": "10.1016/j.econmod.2016.01.004",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/passthrough/"
+    },
+    {
+     "id": "taxrev",
+     "title": "Dynamic elasticities of tax revenue: evidence from the Czech Republic",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Jiri Schwarz"
+     ],
+     "year": 2016,
+     "journal": "Applied Economics",
+     "volume": "48",
+     "issue": "60",
+     "pages": "5866-5881",
+     "doi": "10.1080/00036846.2016.1186796",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/taxrev/"
+    },
+    {
+     "id": "resource_curse",
+     "title": "Natural Resources and Economic Growth: A Meta-Analysis",
+     "authors": [
+      "Tomas Havranek",
+      "Roman Horvath",
+      "Ayaz Zeynalov"
+     ],
+     "year": 2016,
+     "journal": "World Development",
+     "volume": "88",
+     "issue": null,
+     "pages": "134-151",
+     "doi": "10.1016/j.worlddev.2016.07.016",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/resource_curse/"
+    },
+    {
+     "id": "substitution",
+     "title": "Cross-country heterogeneity in intertemporal substitution",
+     "authors": [
+      "Tomas Havranek",
+      "Roman Horvath",
+      "Zuzana Irsova",
+      "Marek Rusnak"
+     ],
+     "year": 2015,
+     "journal": "Journal of International Economics",
+     "volume": "96",
+     "issue": "1",
+     "pages": "100-118",
+     "doi": "10.1016/j.jinteco.2015.01.012",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/substitution/"
+    },
+    {
+     "id": "finance_growth",
+     "title": "Financial development and economic growth: A meta-analysis",
+     "authors": [
+      "Petra Valickova",
+      "Tomas Havranek",
+      "Roman Horvath"
+     ],
+     "year": 2015,
+     "journal": "Journal of Economic Surveys",
+     "volume": "29",
+     "issue": "3",
+     "pages": "506-526",
+     "doi": "10.1111/joes.12068",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/finance_growth/"
+    },
+    {
+     "id": "gasoline",
+     "title": "Income elasticity of gasoline demand: A meta-analysis",
+     "authors": [
+      "Tomas Havranek",
+      "Ondrej Kokes"
+     ],
+     "year": 2015,
+     "journal": "Energy Economics",
+     "volume": "47",
+     "issue": null,
+     "pages": "77-86",
+     "doi": "10.1016/j.eneco.2014.11.004",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/gasoline/"
+    },
+    {
+     "id": "eis",
+     "title": "Measuring intertemporal substitution: The importance of method choices and selective reporting",
+     "authors": [
+      "Tomas Havranek"
+     ],
+     "year": 2015,
+     "journal": "Journal of the European Economic Association",
+     "volume": "13",
+     "issue": "6",
+     "pages": "1180-1204",
+     "doi": "10.1111/jeea.12133",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/eis/"
+    },
+    {
+     "id": "scc",
+     "title": "Selective reporting and the social cost of carbon",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Karel Janda",
+      "David Zilberman"
+     ],
+     "year": 2015,
+     "journal": "Energy Economics",
+     "volume": "51",
+     "issue": null,
+     "pages": "394-406",
+     "doi": "10.1016/j.eneco.2015.08.009",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/scc/"
+    },
+    {
+     "id": "10-18267-j-polek-956",
+     "title": "A meta-analysis of the income elasticity of money demand",
+     "authors": [
+      "Tomas Havranek",
+      "Jana Sedlarikova"
+     ],
+     "year": 2014,
+     "journal": "Politicka Ekonomie",
+     "volume": "62",
+     "issue": "3",
+     "pages": "366-382",
+     "doi": "10.18267/j.polek.956",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://doi.org/10.18267/j.polek.956"
+    },
+    {
+     "id": "crisis_jfs",
+     "title": "Banking, debt, and currency crises in developed countries: Stylized facts and early warning indicators",
+     "authors": [
+      "Jan Babecky",
+      "Tomas Havranek",
+      "Jakub Mateju",
+      "Marek Rusnak",
+      "Katerina Smidkova",
+      "Borek Vasicek"
+     ],
+     "year": 2014,
+     "journal": "Journal of Financial Stability",
+     "volume": "15",
+     "issue": null,
+     "pages": "1-17",
+     "doi": "10.1016/j.jfs.2014.07.001",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/crisis_jfs/"
+    },
+    {
+     "id": "crisis_ews",
+     "title": "Banking, debt, and currency crises: Early warning indicators for developed countries",
+     "authors": [
+      "Jan Babecky",
+      "Tomas Havranek",
+      "Jakub Mateju",
+      "Marek Rusnak",
+      "Katerina Smidkova",
+      "Borek Vasicek"
+     ],
+     "year": 2014,
+     "journal": "Journal of Financial Stability",
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/crisis_ews/"
+    },
+    {
+     "id": "reforms",
+     "title": "Structural reforms and growth in transition: A meta-analysis",
+     "authors": [
+      "Jan Babecky",
+      "Tomas Havranek"
+     ],
+     "year": 2014,
+     "journal": "Economics of Transition",
+     "volume": "22",
+     "issue": "1",
+     "pages": "13-42",
+     "doi": "10.1111/ecot.12029",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/reforms/"
+    },
+    {
+     "id": "a-meta-analysis-of-bank-efficiency-measurement-in-transition",
+     "title": "A meta-analysis of bank efficiency measurement in transitional countries",
+     "authors": [
+      "Zuzana Irsova",
+      "Tomas Havranek"
+     ],
+     "year": 2013,
+     "journal": "Transformations in Business and Economics",
+     "volume": "12",
+     "issue": "2",
+     "pages": "163-183",
+     "doi": null,
+     "status": "published",
+     "status_venue": null,
+     "url": "https://www.transformations.knf.vu.lt/29/article/amet"
+    },
+    {
+     "id": "10-1007-s11300-013-0270-x",
+     "title": "Determinants of Bank Performance in Transition Countries: A Data Envelopment Analysis",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2013,
+     "journal": "Transition Studies Review",
+     "volume": "20",
+     "issue": "1",
+     "pages": "1-17",
+     "doi": "10.1007/s11300-013-0270-x",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://doi.org/10.1007/s11300-013-0270-x"
+    },
+    {
+     "id": "bma",
+     "title": "Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-Analysis",
+     "authors": [
+      "Zuzana Irsova",
+      "Tomas Havranek"
+     ],
+     "year": 2013,
+     "journal": "World Development",
+     "volume": "42",
+     "issue": null,
+     "pages": "1-15",
+     "doi": "10.1016/j.worlddev.2012.07.001",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/bma/"
+    },
+    {
+     "id": "price_puzzle",
+     "title": "How to Solve the Price Puzzle? A Meta-Analysis",
+     "authors": [
+      "Marek Rusnak",
+      "Tomas Havranek",
+      "Roman Horvath"
+     ],
+     "year": 2013,
+     "journal": "Journal of Money, Credit and Banking",
+     "volume": "45",
+     "issue": "1",
+     "pages": "37-70",
+     "doi": "10.1111/j.1538-4616.2012.00561.x",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/price_puzzle/"
+    },
+    {
+     "id": "leading_indicators",
+     "title": "Leading indicators of crisis incidence: Evidence from developed countries",
+     "authors": [
+      "Jan Babecky",
+      "Tomas Havranek",
+      "Jakub Mateju",
+      "Marek Rusnak",
+      "Katerina Smidkova",
+      "Borek Vasicek"
+     ],
+     "year": 2013,
+     "journal": "Journal of International Money and Finance",
+     "volume": "35",
+     "issue": null,
+     "pages": "1-19",
+     "doi": "10.1016/j.jimonfin.2013.01.001",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/leading_indicators/"
+    },
+    {
+     "id": "lags",
+     "title": "Transmission lags of monetary policy: A meta-analysis",
+     "authors": [
+      "Tomas Havranek",
+      "Marek Rusnak"
+     ],
+     "year": 2013,
+     "journal": "International Journal of Central Banking",
+     "volume": "9",
+     "issue": "4",
+     "pages": "39-75",
+     "doi": null,
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/lags/"
+    },
+    {
+     "id": "gasoline_price",
+     "title": "Demand for gasoline is more price-inelastic than commonly thought",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Karel Janda"
+     ],
+     "year": 2012,
+     "journal": "Energy Economics",
+     "volume": "34",
+     "issue": "1",
+     "pages": "201-207",
+     "doi": "10.1016/j.eneco.2011.09.003",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/gasoline_price/"
+    },
+    {
+     "id": "transmission",
+     "title": "Monetary transmission and the financial sector in the Czech Republic",
+     "authors": [
+      "Tomas Havranek",
+      "Roman Horvath",
+      "Jakub Mateju"
+     ],
+     "year": 2012,
+     "journal": "Economic Change and Restructuring",
+     "volume": "45",
+     "issue": "3",
+     "pages": "135-155",
+     "doi": "10.1007/s10644-011-9106-z",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/transmission/"
+    },
+    {
+     "id": "spillovers_bias",
+     "title": "Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2012,
+     "journal": "Journal of Development Studies",
+     "volume": "48",
+     "issue": "10",
+     "pages": "1375-1396",
+     "doi": "10.1080/00220388.2012.685721",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/spillovers_bias/"
+    },
+    {
+     "id": "10-1007-s11300-011-0197-z",
+     "title": "Bank Efficiency in Transitional Countries: Sensitivity to Stochastic Frontier Design",
+     "authors": [
+      "Zuzana Irsova",
+      "Tomas Havranek"
+     ],
+     "year": 2011,
+     "journal": "Transition Studies Review",
+     "volume": "18",
+     "issue": "2",
+     "pages": "230-270",
+     "doi": "10.1007/s11300-011-0197-z",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://doi.org/10.1007/s11300-011-0197-z"
+    },
+    {
+     "id": "spillovers",
+     "title": "Estimating vertical spillovers from FDI: Why results vary and what the true effect is",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2011,
+     "journal": "Journal of International Economics",
+     "volume": "85",
+     "issue": "2",
+     "pages": "234-244",
+     "doi": "10.1016/j.jinteco.2011.07.004",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/spillovers/"
+    },
+    {
+     "id": "10-18267-j-pep-379",
+     "title": "Measuring Bank Efficiency: A Meta-Regression Analysis",
+     "authors": [
+      "Zuzana Irsova",
+      "Tomas Havranek"
+     ],
+     "year": 2010,
+     "journal": "Prague Economic Papers",
+     "volume": "19",
+     "issue": "4",
+     "pages": "307-328",
+     "doi": "10.18267/j.pep.379",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://doi.org/10.18267/j.pep.379"
+    },
+    {
+     "id": "meta-analysis-of-intra-industry-fdi-spillovers-updated-evide",
+     "title": "Meta-analysis of intra-industry FDI spillovers: Updated evidence",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2010,
+     "journal": "Finance a Uver - Czech Journal of Economics and Finance",
+     "volume": "60",
+     "issue": "2",
+     "pages": "151-174",
+     "doi": null,
+     "status": "published",
+     "status_venue": null,
+     "url": "https://journal.fsv.cuni.cz/mag/article/show/id/1184"
+    },
+    {
+     "id": "on-the-intensity-of-international-subsidy-competition-for-fd",
+     "title": "On the Intensity of International Subsidy Competition for FDI",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2010,
+     "journal": "Theoretical and Applied Economics",
+     "volume": "17",
+     "issue": "2",
+     "pages": "25-54",
+     "doi": null,
+     "status": "published",
+     "status_venue": null,
+     "url": "https://ideas.repec.org/a/agr/journl/v2(543)y2010i2(543)p25-54.html"
+    },
+    {
+     "id": "euro",
+     "title": "Rose effect and the euro: Is the magic gone?",
+     "authors": [
+      "Tomas Havranek"
+     ],
+     "year": 2010,
+     "journal": "Review of World Economics",
+     "volume": "146",
+     "issue": "2",
+     "pages": "241-261",
+     "doi": "10.1007/s10290-010-0050-1",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/euro/"
+    },
+    {
+     "id": "10-18267-j-pep-346",
+     "title": "The supply of foreign direct investment incentives: Subsidy competition in an oligopolistic framework",
+     "authors": [
+      "Tomas Havranek"
+     ],
+     "year": 2009,
+     "journal": "Prague Economic Papers",
+     "volume": "18",
+     "issue": "2",
+     "pages": "131-155",
+     "doi": "10.18267/j.pep.346",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://doi.org/10.18267/j.pep.346"
+    }
+   ],
+   "awards": [
+    {
+     "id": "university-of-canterbury-erskine-fellowship-2025",
+     "name": "Erskine Fellowship",
+     "organization": "University of Canterbury",
+     "years": [
+      2025
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "czech-science-foundation-honorable-mention-from-th-2024",
+     "name": "Honorable mention from the President of the Czech Science Foundation",
+     "organization": "Czech Science Foundation",
+     "years": [
+      2024
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "economic-science-association-experimental-economic-2024",
+     "name": "Experimental Economics Editors’ Prize for the best paper published in 2022",
+     "organization": "Economic Science Association",
+     "years": [
+      2024
+     ],
+     "co_recipients": [
+      "Jindrich Matousek",
+      "Zuzana Irsova"
+     ],
+     "sources": [
+      "https://economicscience.org/news_manager.php?page=36768",
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "czech-national-bank-economic-research-award-2012",
+     "name": "Economic Research Award",
+     "organization": "Czech National Bank",
+     "years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "unicredit-universities-foundation-best-phd-thesis--2014",
+     "name": "Best PhD Thesis Award",
+     "organization": "UniCredit & Universities Foundation",
+     "years": [
+      2014
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "czech-economic-society-young-economist-of-the-year-2012",
+     "name": "Young Economist of the Year",
+     "organization": "Czech Economic Society",
+     "years": [
+      2012
+     ],
+     "co_recipients": [
+      "Marek Rusnak"
+     ],
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "global-development-network-first-prize-medals-for--2010",
+     "name": "First prize, Medals for Research on Development",
+     "organization": "Global Development Network",
+     "years": [
+      2010
+     ],
+     "co_recipients": [
+      "Zuzana Irsova"
+     ],
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "oesterreichische-nationalbank-olga-radzyner-award-2009",
+     "name": "Olga Radzyner Award",
+     "organization": "Oesterreichische Nationalbank",
+     "years": [
+      2009
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "czech-economic-society-karel-englis-award-2009",
+     "name": "Karel Engliš Award",
+     "organization": "Czech Economic Society",
+     "years": [
+      2009
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    }
+   ],
+   "roles": [
+    {
+     "id": "charles-university-professor-of-economics",
+     "title": "Professor of Economics",
+     "organization": "Charles University",
+     "start": "2021",
+     "end": null,
+     "sources": [
+      "https://ies.fsv.cuni.cz/en/contacts/people/78067720"
+     ]
+    },
+    {
+     "id": "charles-university-associate-professor",
+     "title": "Associate Professor",
+     "organization": "Charles University",
+     "start": "2016",
+     "end": "2021",
+     "sources": [
+      "https://ies.fsv.cuni.cz/en/contacts/people/78067720"
+     ]
+    },
+    {
+     "id": "czech-national-bank-advisor-to-the-board-full-time",
+     "title": "Advisor to the Board (full-time)",
+     "organization": "Czech National Bank",
+     "start": "2015",
+     "end": "2019",
+     "sources": [
+      "https://ies.fsv.cuni.cz/en/contacts/people/78067720",
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "czech-national-bank-economist-research-department",
+     "title": "Economist, Research Department",
+     "organization": "Czech National Bank",
+     "start": "2009",
+     "end": "2015",
+     "sources": [
+      "https://ies.fsv.cuni.cz/en/contacts/people/78067720"
+     ]
+    },
+    {
+     "id": "university-of-california-berkeley-visiting-scholar",
+     "title": "Visiting Scholar",
+     "organization": "University of California, Berkeley",
+     "start": "2014",
+     "end": "2014",
+     "sources": [
+      "https://ies.fsv.cuni.cz/en/contacts/people/78067720"
+     ]
+    },
+    {
+     "id": "european-research-council-member-advanced-grant-panel-s",
+     "title": "Member, Advanced Grant panel SH1 (economics and finance)",
+     "organization": "European Research Council",
+     "start": "2020",
+     "end": "2020",
+     "sources": [
+      "https://erc.europa.eu/sites/default/files/document/file/Panel_Members_ERC_Advanced_Grant_2020.pdf",
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "charles-university-and-the-czech-academy-of-sciences-wi",
+     "title": "Member, Expert Group for supporting applicants in ERC calls",
+     "organization": "Charles University and the Czech Academy of Sciences, with Technology Centre Prague",
+     "start": "2022",
+     "end": null,
+     "sources": [
+      "https://era.avcr.cz/en/ERC-interface/Expert-group/"
+     ]
+    },
+    {
+     "id": "national-economic-council-of-the-czech-government-nerv-",
+     "title": "Member",
+     "organization": "National Economic Council of the Czech Government (NERV)",
+     "start": "2022",
+     "end": "2023",
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "journal-of-economic-surveys-associate-editor-for-meta-a",
+     "title": "Associate Editor for meta-analysis",
+     "organization": "Journal of Economic Surveys",
+     "start": null,
+     "end": null,
+     "sources": [
+      "https://meta-analysis.cz/about/",
+      "https://ies.fsv.cuni.cz/en/contacts/people/78067720"
+     ]
+    },
+    {
+     "id": "centre-for-economic-policy-research-cepr-research-affil",
+     "title": "Research Affiliate",
+     "organization": "Centre for Economic Policy Research (CEPR)",
+     "start": null,
+     "end": null,
+     "sources": [
+      "https://meta-analysis.cz/about/",
+      "https://ies.fsv.cuni.cz/en/contacts/people/78067720",
+      "https://orcid.org/0000-0002-3158-2539"
+     ]
+    },
+    {
+     "id": "meta-research-innovation-center-at-stanford-metrics-res",
+     "title": "Research Affiliate",
+     "organization": "Meta-Research Innovation Center at Stanford (METRICS)",
+     "start": null,
+     "end": null,
+     "sources": [
+      "https://meta-analysis.cz/about/",
+      "https://metrics.stanford.edu/people/tomas-havranek"
+     ]
+    },
+    {
+     "id": "meta-analysis-of-economics-research-network-maer-net-co",
+     "title": "Co-leader",
+     "organization": "Meta-Analysis of Economics Research Network (MAER-Net)",
+     "start": null,
+     "end": null,
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "charles-university-s-grant-agency-gauk-chair-social-sci",
+     "title": "Chair, social sciences section",
+     "organization": "Charles University's Grant Agency (GAUK)",
+     "start": null,
+     "end": null,
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "university-of-canterbury-erskine-fellow",
+     "title": "Erskine Fellow",
+     "organization": "University of Canterbury",
+     "start": "2025-02",
+     "end": "2025-03",
+     "sources": [
+      "https://meta-analysis.cz/teaching/christchurch-2025/",
+      "https://ies.fsv.cuni.cz/en/contacts/people/78067720"
+     ]
+    }
+   ]
+  },
+  "zuzana": {
+   "publications": [
+    {
+     "id": "esg",
+     "title": "Do Female Directors Raise ESG Ratings? A Meta-Analysis",
+     "authors": [
+      "Karolina Hozova",
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "working_paper",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/esg/"
+    },
+    {
+     "id": "outliers",
+     "title": "Do decisions about outliers and influential effects matter? Evidence from 358 behavioral science meta-analyses",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Martina Luskova",
+      "T. D. Stanley"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "working_paper",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/outliers/"
+    },
+    {
+     "id": "pcc_survey",
+     "title": "Do methods matter in the meta-analysis of partial correlation coefficients?",
+     "authors": [
+      "T. D. Stanley",
+      "Petr Cala",
+      "Hristos Doucouliagos",
+      "Zuzana Irsova",
+      "Tomas Havranek"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "rr",
+     "status_venue": "Research Synthesis Methods",
+     "url": "https://meta-analysis.cz/pcc_survey/"
+    },
+    {
+     "id": "debate",
+     "title": "Does Multi-Agent Debate Improve AI Feedback on Research Papers?",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "working_paper",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/debate/"
+    },
+    {
+     "id": "incentives",
+     "title": "Financial Incentives and Performance: A Meta-Analysis of Experiments in Economics",
+     "authors": [
+      "Petr Cala",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Martina Luskova",
+      "Jindrich Matousek",
+      "Jiri Novak"
+     ],
+     "year": 2026,
+     "journal": "Journal of Political Economy Microeconomics",
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": "10.1086/743543",
+     "status": "forthcoming",
+     "status_venue": "Journal of Political Economy Microeconomics",
+     "url": "https://meta-analysis.cz/incentives/"
+    },
+    {
+     "id": "guai",
+     "title": "Guidance for the Use of AI in the Meta-Analysis of Economics Research",
+     "authors": [
+      "Nikolai Cook",
+      "Frantisek Bartos",
+      "Pedro R. D. Bom",
+      "Sebastian Gechert",
+      "Klara Kantova",
+      "Jerome Geyer‐Klingeberg",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Martina Luskova",
+      "Matej Opatrny",
+      "Franz Prante",
+      "Heiko J. Rachinger",
+      "T. D. Stanley"
+     ],
+     "year": 2026,
+     "journal": "Journal of Economic Surveys",
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": "10.1111/joes.70105",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/guai/"
+    },
+    {
+     "id": "inflation",
+     "title": "Optimal Inflation Rate: A Meta-Analysis",
+     "authors": [
+      "Matej Opatrny",
+      "Martin Opatrny",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Mojmir Hampl"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "working_paper",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/inflation/"
+    },
+    {
+     "id": "electricity",
+     "title": "Price Elasticity of Electricity Demand: A Meta-Analysis",
+     "authors": [
+      "Peter Kudela",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Anna Kudelova",
+      "Vojtech Sikl"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "working_paper",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/electricity/"
+    },
+    {
+     "id": "class",
+     "title": "Publication Bias and Model Uncertainty in Measuring the Effect of Class Size on Achievement",
+     "authors": [
+      "Matej Opatrny",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Milan Scasny"
+     ],
+     "year": 2026,
+     "journal": "Journal of Labor Economics",
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": "10.1086/737989",
+     "status": "forthcoming",
+     "status_venue": "Journal of Labor Economics",
+     "url": "https://meta-analysis.cz/class/"
+    },
+    {
+     "id": "learning",
+     "title": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning: A Meta-Analysis",
+     "authors": [
+      "Martina Luskova",
+      "Nino Buliskeria",
+      "Ali Elminejad",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Stepan Jurajda",
+      "Marek Kapicka"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "working_paper",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/learning/"
+    },
+    {
+     "id": "reporting_ai",
+     "title": "Reporting Guidelines for Meta-Analysis in Economics—Updated for AI",
+     "authors": [
+      "Nikolai Cook",
+      "Frantisek Bartos",
+      "Pedro R. D. Bom",
+      "Sebastian Gechert",
+      "Klara Kantova",
+      "Jerome Geyer‐Klingeberg",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Martina Luskova",
+      "Matej Opatrny",
+      "Franz Prante",
+      "Heiko J. Rachinger",
+      "T. D. Stanley"
+     ],
+     "year": 2026,
+     "journal": "Journal of Economic Surveys",
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": "10.1111/joes.70116",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/reporting_ai/"
+    },
+    {
+     "id": "reproducibility",
+     "title": "Reproducibility and robustness of economics and political science research",
+     "authors": [
+      "Abel Brodeur",
+      "Derek Mikola",
+      "Nikolai Cook",
+      "Lenka Fiala",
+      "Thomas Brailey",
+      "Ryan Briggs",
+      "Alexandra de Gendre",
+      "Yannick Dupraz",
+      "Jacopo Gabani",
+      "Romain Gauriot",
+      "Joanne Haddad",
+      "Goncalo Lima",
+      "Jorg Ankel-Peters",
+      "Anna Dreber",
+      "Douglas Campbell",
+      "Lamis Kattan",
+      "Diego Marino Fages",
+      "Fabian Mierisch",
+      "Pu Sun",
+      "Taylor Wright",
+      "Marie Connolly",
+      "Fernando Hoces de la Guardia",
+      "Magnus Johannesson",
+      "Edward Miguel",
+      "Lars Vilhuber",
+      "Alejandro Abarca",
+      "Mahesh Acharya",
+      "Sossou Simplice Adjisse",
+      "Ahwaz Akhtar",
+      "Eduardo Alberto Ramirez Lizardi",
+      "Sabina Albrecht",
+      "Synøve Nygaard Andersen",
+      "Zubaria Andlib",
+      "Falak Arrora",
+      "Thomas Ash",
+      "Etienne Bacher",
+      "Sebastian Bachler",
+      "Felix Bacon",
+      "Manuel Bagues",
+      "Timea Balogh",
+      "Alisher Batmanov",
+      "Mara Barschkett",
+      "Barıs Kaan Basdil",
+      "Jaromir Baxa",
+      "Sascha O. Becker",
+      "Monica Beeder",
+      "Louis-Philippe Beland",
+      "Abdel-Hamid Bello",
+      "Daniel Benenson Markovits",
+      "Grant Benjamin",
+      "Thomas Bergeron",
+      "Moussa P. Blimpo",
+      "Marco Binetti",
+      "Carl Bonander",
+      "Joseph Bonneau",
+      "Endre Borbath",
+      "Nicolai Borgen",
+      "Solveig Topstad Borgen",
+      "Jonathan Borowsky",
+      "Elisa Brini",
+      "Myriam Brown",
+      "Martin Brun",
+      "Stephan Bruns",
+      "Nino Buliskeria",
+      "Andrea Calef",
+      "Alistair Cameron",
+      "Pamela Campa",
+      "Santiago Campos-Rodriguez",
+      "Giulio Giacomo Cantone",
+      "Fenella Carpena",
+      "Perry Jess Carter",
+      "Paul Castaneda Dower",
+      "Ondrej Castek",
+      "Jill Caviglia-Harris",
+      "Gabriella Chauca Strand",
+      "Shi Chen",
+      "Sya In Chzhen",
+      "Jong Chung",
+      "Jason Collins",
+      "Alexander Coppock",
+      "Hugo Cordeau",
+      "Ben Couillard",
+      "Jonathan Crechet",
+      "Lorenzo Crippa",
+      "Jing Cui",
+      "Christian Czymara",
+      "Haley Daarstad",
+      "Danh Chi Dao",
+      "Daniel Dao",
+      "Marco David Schmandt",
+      "Astrid de Linde",
+      "Lucas De Melo",
+      "Lachlan Deer",
+      "Micole De Vera",
+      "Velichka Dimitrova",
+      "Jan Fabian Dollbaum",
+      "Jan Matti Dollbaum",
+      "Michael Donnelly",
+      "Luu Duc Toan Huynh",
+      "Tsvetomira Dumbalska",
+      "Jamie Duncan",
+      "Kiet Tuan Duong",
+      "Thibaut Duprey",
+      "Christoph Dworschak",
+      "Sigmund Ellingsrud",
+      "Ali Elminejad",
+      "Yasmine Eissa",
+      "Andrea Erhart",
+      "Giulian Etingin-Frati",
+      "Elaheh Fatemipour",
+      "Alexa Federice",
+      "Jan Feld",
+      "Guidon Fenig",
+      "Mojtaba Firouzjaeiangalougah",
+      "Erlend Fleisje",
+      "Alexandre Fortier-Chouinard",
+      "Julia Francesca Engel",
+      "Nadjim Frechet",
+      "Reid Fortier",
+      "Tilman Fries",
+      "Michael James Frith",
+      "Thomas Galipeau",
+      "Sebastian Gallegos",
+      "Areez Gangji",
+      "Xiaoying Gao",
+      "Cloe Garnache",
+      "Attila Gaspar",
+      "Evelina Gavrilova",
+      "Arijit Ghosh",
+      "Garreth Gibney",
+      "Grant Gibson",
+      "Geir Godager",
+      "Leonard Goff",
+      "Da Gong",
+      "Javier Gonzalez",
+      "Jeremy D. Gretton",
+      "Cristina Griffa",
+      "Idaliya Grigoryeva",
+      "Maja Grøtting",
+      "Eric Guntermann",
+      "Jiaqi Guo",
+      "Alexi Gugushvili",
+      "Hooman Habibnia",
+      "Sonja Haffner",
+      "Jonathan D. Hall",
+      "Olle Hammar",
+      "Amund Hanson Kordt",
+      "Barry Hashimoto",
+      "Jonathan S. Hartley",
+      "Carina I. Hausladen",
+      "Tomas Havranek",
+      "Harry He",
+      "Matthew Hepplewhite",
+      "Mario Herrera-Rodriguez",
+      "Felix Heuer",
+      "Anthony Heyes",
+      "Anson T. Y. Ho",
+      "Jonathan Holmes",
+      "Armando Holzknecht",
+      "Yu-Hsiang Dexter Hsu",
+      "Shiang-Hung Hu",
+      "Yu-Shiuan Huang",
+      "Mathias Huebener",
+      "Christoph Huber",
+      "Kim P. Huynh",
+      "Zuzana Irsova",
+      "Ozan Isler",
+      "Niklas Jakobsson",
+      "Raphael Jananji",
+      "Tharaka A. Jayalath",
+      "Michael Jetter",
+      "Jenny John",
+      "Rachel Joy Forshaw",
+      "Felipe Juan",
+      "Valon Kadriu",
+      "Sunny Karim",
+      "Edmund Kelly",
+      "Duy Khanh Hoang Dang",
+      "Tazia Khushboo",
+      "Jin Kim",
+      "Gustav Kjellsson",
+      "Anders Kjelsrud",
+      "Andreas Kotsadam",
+      "Jori Korpershoek",
+      "Lewis Krashinsky",
+      "Suranjana Kundu",
+      "Alexander Kustov",
+      "Nurlan Lalayev",
+      "Audree Langlois",
+      "Jill Laufer",
+      "Blake Lee-Whiting",
+      "Andreas Leibing",
+      "Gabriel Lenz",
+      "Joel Levin",
+      "Peng Li",
+      "Tongzhe Li",
+      "Yuchen Lin",
+      "Ariel Listo",
+      "Dan Liu",
+      "Xuewen Lu",
+      "Elvina Lukmanova",
+      "Alex Luscombe",
+      "Lester R. Lusher",
+      "Ke Lyu",
+      "Hai Ma",
+      "Nicolas Mader",
+      "Clifton Makate",
+      "Alice Malmberg",
+      "Adit Maitra",
+      "Marco Mandas",
+      "Jan Marcus",
+      "Shushanik Margaryan",
+      "Lili Mark",
+      "Andres Martignano",
+      "Abigail Marsh",
+      "Isabella Masetto",
+      "Anthony McCanny",
+      "Emma McManus",
+      "Ryan McWay",
+      "Lennard Metson",
+      "Jonas Minet Kinge",
+      "Sumit Mishra",
+      "Myra Mohnen",
+      "Jakob Moeller",
+      "Rosalie Montambeault",
+      "Sebastien Montpetit",
+      "Louis-Philippe Morin",
+      "Todd Morris",
+      "Scott Moser",
+      "Fabio Yoshio Suguri Motoki",
+      "Lucija Muehlenbachs",
+      "Andreea Musulan",
+      "Marco Musumeci",
+      "Munirul Nabin",
+      "Karim Nchare",
+      "Florian Neubauer",
+      "Quan M. P. Nguyen",
+      "Tuan Nguyen",
+      "Viet Nguyen-Tien",
+      "Ali Niazi",
+      "Giorgi Nikolaishvili",
+      "Ardyn Nordstrom",
+      "Patrick Nuß",
+      "Angela Odermatt",
+      "Matt Olson",
+      "Henning Øien",
+      "Tim Olkers",
+      "Miquel Oliver i Vert",
+      "Emre Oral",
+      "Christian Oswald",
+      "Ali Ousman",
+      "Omer Ozak",
+      "Shubham Pandey",
+      "Alexandre Pavlov",
+      "Martino Pelli",
+      "Romeo Penheiro",
+      "RyuGyung Park",
+      "Eva Perez Martel",
+      "Tereza Petrovicova",
+      "Linh Phan",
+      "Alexa Prettyman",
+      "Jakub Prochazka",
+      "Aqila Putri",
+      "Julian Quandt",
+      "Kangyu Qiu",
+      "Loan Quynh Thi Nguyen",
+      "Andaleeb Rahman",
+      "Carson H. Rea",
+      "Adam Reiremo",
+      "Laetitia Renee",
+      "Joseph Richardson",
+      "Nicholas Rivers",
+      "Bruno Rodrigues",
+      "William Roelofs",
+      "Tobias Roemer",
+      "Ole Rogeberg",
+      "Julian Rose",
+      "Andrew Roskos-Ewoldsen",
+      "Paul Rosmer",
+      "Barbara Sabada",
+      "Soodeh Saberian",
+      "Nicolas Salamanca",
+      "Georg Sator",
+      "Daniel Scates",
+      "Elmar Schluter",
+      "Cameron Sells",
+      "Sharmi Sen",
+      "Ritika Sethi",
+      "Anna Shcherbiak",
+      "Moyosore Sogaolu",
+      "Matt Soosalu",
+      "Erik Ø. Sørensen",
+      "Manali Sovani",
+      "Noah Spencer",
+      "Stefan Staubli",
+      "Renske Stans",
+      "Anya Stewart",
+      "Felix Stips",
+      "Kieran Stockley",
+      "Stephenson Strobel",
+      "Ethan Struby",
+      "John P. Tang",
+      "Idil Tanrisever",
+      "Thomas Tao Yang",
+      "Ipek Tastan",
+      "Dejan Tatic",
+      "Benjamin Tatlow",
+      "Feraud Tchuisseu Seuyong",
+      "Remi Theriault",
+      "Vincent Thivierge",
+      "Wenjie Tian",
+      "Filip-Mihai Toma",
+      "Maddalena Totarelli",
+      "Van-Anh Tran",
+      "Hung Truong",
+      "Nikita Tsoy",
+      "Kerem Tuzcuoglu",
+      "Diego Ubfal",
+      "Laura Villalobos",
+      "Julian Walterskirchen",
+      "Joseph Tao-yi Wang",
+      "Vasudha Wattal",
+      "Matthew D. Webb",
+      "Bryan S. Weber",
+      "Reinhard Weisser",
+      "Wei-Chien Weng",
+      "Christian Westheide",
+      "Kimberly White",
+      "Jacob Winter",
+      "Timo Wochner",
+      "Matt Woerman",
+      "Jared Wong",
+      "Ritchie Woodard",
+      "Marcin Wronski",
+      "Myra Yazbeck",
+      "Gustav Chung Yang",
+      "Luther Yap",
+      "Kareman Yassin",
+      "Hao Ye",
+      "Jin Young Yoon",
+      "Chris Yurris",
+      "Tahreen Zahra",
+      "Mirela Zaneva",
+      "Aline Zayat",
+      "Jonathan Zhang",
+      "Ziwei Zhao",
+      "Yaolang Zhong"
+     ],
+     "year": 2026,
+     "journal": "Nature",
+     "volume": "652",
+     "issue": "8108",
+     "pages": "151-156",
+     "doi": "10.1038/s41586-026-10251-x",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/reproducibility/"
+    },
+    {
+     "id": "migrant",
+     "title": "The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis",
+     "authors": [
+      "Klara Kantova",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Jiri Schwarz"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "rr",
+     "status_venue": "Journal of Economic Surveys",
+     "url": "https://meta-analysis.cz/migrant/"
+    },
+    {
+     "id": "power",
+     "title": "The Power of Science: Statistical Power in Published Research Across Five Disciplines",
+     "authors": [
+      "Yue Wang",
+      "Frantisek Bartos",
+      "Tom Coupe",
+      "Tomas Havranek",
+      "Sanghyun Hong",
+      "Zuzana Irsova",
+      "W. Robert Reed"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "working_paper",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/power/"
+    },
+    {
+     "id": "trust",
+     "title": "Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis",
+     "authors": [
+      "Jiri Schwarz",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Jiri Novak"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "working_paper",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/trust/"
+    },
+    {
+     "id": "alphas",
+     "title": "What Matters in Explaining the Variation in Hedge Fund Performance? A Meta-Analysis",
+     "authors": [
+      "Fan Yang",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Jiri Novak"
+     ],
+     "year": 2026,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "rr",
+     "status_venue": "International Review of Economics & Finance",
+     "url": "https://meta-analysis.cz/alphas/"
+    },
+    {
+     "id": "social_comparison",
+     "title": "Adjusting for Publication Bias Reveals Evidence Against Social Comparison As a Behaviour Change Technique Across the Behavioural Sciences",
+     "authors": [
+      "Frantisek Bartos",
+      "Zuzana Irsova",
+      "Tomas Havranek",
+      "Eric-Jan Wagenmakers"
+     ],
+     "year": 2025,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "working_paper",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/social_comparison/"
+    },
+    {
+     "id": "beauty",
+     "title": "Beauty and Professional Success: A Meta-Analysis",
+     "authors": [
+      "Zuzana Irsova",
+      "Tomas Havranek",
+      "Kseniya Bortnikova",
+      "Frantisek Bartos"
+     ],
+     "year": 2025,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "rr",
+     "status_venue": "Nature Human Behaviour",
+     "url": "https://meta-analysis.cz/beauty/"
+    },
+    {
+     "id": "conventional_wisdom",
+     "title": "Conventional wisdom, meta-analysis, and research revision in economics",
+     "authors": [
+      "Sebastian Gechert",
+      "Bianka Mey",
+      "Matej Opatrny",
+      "Tomas Havranek",
+      "T. D. Stanley",
+      "Pedro R. D. Bom",
+      "Hristos Doucouliagos",
+      "Philipp Heimberger",
+      "Zuzana Irsova",
+      "Heiko J. Rachinger"
+     ],
+     "year": 2025,
+     "journal": "Journal of Economic Surveys",
+     "volume": "39",
+     "issue": "3",
+     "pages": "980-999",
+     "doi": "10.1111/joes.12630",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/conventional_wisdom/"
+    },
+    {
+     "id": "activism",
+     "title": "Does Shareholder Activism Create Value? A Meta-Analysis",
+     "authors": [
+      "Josef Bajzik",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Jiri Novak"
+     ],
+     "year": 2025,
+     "journal": "Corporate Governance: An International Review",
+     "volume": "33",
+     "issue": "5",
+     "pages": "1039-1061",
+     "doi": "10.1111/corg.12637",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/activism/"
+    },
+    {
+     "id": "exercise",
+     "title": "Effect of Exercise on Cognition, Memory, and Executive Function: A Study-Level Meta-Meta-Analysis Across Populations and Exercise Categories",
+     "authors": [
+      "Frantisek Bartos",
+      "Martina Luskova",
+      "Kseniya Bortnikova",
+      "Karolina Hozova",
+      "Klara Kantova",
+      "Zuzana Irsova",
+      "Tomas Havranek"
+     ],
+     "year": 2025,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "rr",
+     "status_venue": "Sports Medicine",
+     "url": "https://meta-analysis.cz/exercise/"
+    },
+    {
+     "id": "risk",
+     "title": "Relative Risk Aversion: A Meta-Analysis",
+     "authors": [
+      "Ali Elminejad",
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2025,
+     "journal": "Journal of Economic Surveys",
+     "volume": "39",
+     "issue": "5",
+     "pages": "2315-2333",
+     "doi": "10.1111/joes.12689",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/risk/"
+    },
+    {
+     "id": "maive",
+     "title": "Spurious precision in meta-analysis of observational research",
+     "authors": [
+      "Zuzana Irsova",
+      "Pedro R. D. Bom",
+      "Tomas Havranek",
+      "Heiko Rachinger"
+     ],
+     "year": 2025,
+     "journal": "Nature Communications",
+     "volume": "16",
+     "issue": "1",
+     "pages": null,
+     "doi": "10.1038/s41467-025-63261-0",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/maive/"
+    },
+    {
+     "id": "hedge",
+     "title": "Is research on hedge fund performance published selectively? A quantitative survey",
+     "authors": [
+      "Fan Yang",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Jiri Novak"
+     ],
+     "year": 2024,
+     "journal": "Journal of Economic Surveys",
+     "volume": "38",
+     "issue": "4",
+     "pages": "1085-1131",
+     "doi": "10.1111/joes.12574",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/hedge/"
+    },
+    {
+     "id": "guidelines",
+     "title": "Meta-analysis of social science research: A practitioner's guide",
+     "authors": [
+      "Zuzana Irsova",
+      "Hristos Doucouliagos",
+      "Tomas Havranek",
+      "T. D. Stanley"
+     ],
+     "year": 2024,
+     "journal": "Journal of Economic Surveys",
+     "volume": "38",
+     "issue": "5",
+     "pages": "1547-1566",
+     "doi": "10.1111/joes.12595",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/guidelines/"
+    },
+    {
+     "id": "skill",
+     "title": "Publication and Attenuation Biases in Measuring Skill Substitution",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Lubica Laslopova",
+      "Olesia Zeynalova"
+     ],
+     "year": 2024,
+     "journal": "Review of Economics and Statistics",
+     "volume": "106",
+     "issue": "5",
+     "pages": "1187-1200",
+     "doi": "10.1162/rest_a_01227",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/skill/"
+    },
+    {
+     "id": "students",
+     "title": "Student Employment and Education: A Meta-Analysis",
+     "authors": [
+      "Katerina Kroupova",
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2024,
+     "journal": "Economics of Education Review",
+     "volume": "100",
+     "issue": null,
+     "pages": "102539",
+     "doi": "10.1016/j.econedurev.2024.102539",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/students/"
+    },
+    {
+     "id": "frisch",
+     "title": "Intertemporal substitution in labor supply: A meta-analysis",
+     "authors": [
+      "Ali Elminejad",
+      "Tomas Havranek",
+      "Roman Horvath",
+      "Zuzana Irsova"
+     ],
+     "year": 2023,
+     "journal": "Review of Economic Dynamics",
+     "volume": "51",
+     "issue": null,
+     "pages": "1095-1113",
+     "doi": "10.1016/j.red.2023.10.001",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/frisch/"
+    },
+    {
+     "id": "discrate",
+     "title": "Individual discount rates: a meta-analysis of experimental evidence",
+     "authors": [
+      "Jindrich Matousek",
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2022,
+     "journal": "Experimental Economics",
+     "volume": "25",
+     "issue": "1",
+     "pages": "318-358",
+     "doi": "10.1007/s10683-021-09716-9",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/discrate/"
+    },
+    {
+     "id": "sigma",
+     "title": "Measuring capital-labor substitution: The importance of method choices and publication bias",
+     "authors": [
+      "Sebastian Gechert",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Dominika Kolcunova"
+     ],
+     "year": 2022,
+     "journal": "Review of Economic Dynamics",
+     "volume": "45",
+     "issue": null,
+     "pages": "55-82",
+     "doi": "10.1016/j.red.2021.05.003",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/sigma/"
+    },
+    {
+     "id": "forward",
+     "title": "How puzzling is the forward premium puzzle? A meta-analysis",
+     "authors": [
+      "Diana Zigraiova",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Jiri Novak"
+     ],
+     "year": 2021,
+     "journal": "European Economic Review",
+     "volume": "134",
+     "issue": null,
+     "pages": "103714",
+     "doi": "10.1016/j.euroecorev.2021.103714",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/forward/"
+    },
+    {
+     "id": "dst_slovakia",
+     "title": "Does daylight saving time save electricity? Evidence from Slovakia",
+     "authors": [
+      "Peter Kudela",
+      "Tomas Havranek",
+      "Dominik Herman",
+      "Zuzana Irsova"
+     ],
+     "year": 2020,
+     "journal": "Energy Policy",
+     "volume": "137",
+     "issue": null,
+     "pages": "111146",
+     "doi": "10.1016/j.enpol.2019.111146",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/dst_slovakia/"
+    },
+    {
+     "id": "armington",
+     "title": "Estimating the Armington elasticity: The importance of study design and publication bias",
+     "authors": [
+      "Josef Bajzik",
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Jiri Schwarz"
+     ],
+     "year": 2020,
+     "journal": "Journal of International Economics",
+     "volume": "127",
+     "issue": null,
+     "pages": "103383",
+     "doi": "10.1016/j.jinteco.2020.103383",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/armington/"
+    },
+    {
+     "id": "fdi",
+     "title": "Foreign capital and domestic productivity in the Czech Republic: a meta-regression analysis",
+     "authors": [
+      "Mojmir Hampl",
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2020,
+     "journal": "Applied Economics",
+     "volume": "52",
+     "issue": "18",
+     "pages": "1949-1958",
+     "doi": "10.1080/00036846.2020.1726864",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/fdi/"
+    },
+    {
+     "id": "dst",
+     "title": "Does Daylight Saving Save Electricity? A Meta-Analysis",
+     "authors": [
+      "Tomas Havranek",
+      "Dominik Herman",
+      "Zuzana Irsova"
+     ],
+     "year": 2018,
+     "journal": "The Energy Journal",
+     "volume": "39",
+     "issue": "2",
+     "pages": "35-61",
+     "doi": "10.5547/01956574.39.2.thav",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/dst/"
+    },
+    {
+     "id": "water",
+     "title": "Measuring the Income Elasticity of Water Demand: The Importance of Publication and Endogeneity Biases",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Tomas Vlach"
+     ],
+     "year": 2018,
+     "journal": "Land Economics",
+     "volume": "94",
+     "issue": "2",
+     "pages": "259-283",
+     "doi": "10.3368/le.94.2.259",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/water/"
+    },
+    {
+     "id": "education",
+     "title": "Tuition Fees and University Enrolment: A Meta-Regression Analysis",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Olesia Zeynalova"
+     ],
+     "year": 2018,
+     "journal": "Oxford Bulletin of Economics and Statistics",
+     "volume": "80",
+     "issue": "6",
+     "pages": "1145-1184",
+     "doi": "10.1111/obes.12240",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/education/"
+    },
+    {
+     "id": "border",
+     "title": "Do Borders Really Slash Trade? A Meta-Analysis",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2017,
+     "journal": "IMF Economic Review",
+     "volume": "65",
+     "issue": "2",
+     "pages": "365-396",
+     "doi": "10.1057/s41308-016-0001-5",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/border/"
+    },
+    {
+     "id": "passthrough",
+     "title": "Bank efficiency and interest rate pass-through: Evidence from Czech loan products",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Jitka Lesanovska"
+     ],
+     "year": 2016,
+     "journal": "Economic Modelling",
+     "volume": "54",
+     "issue": null,
+     "pages": "153-169",
+     "doi": "10.1016/j.econmod.2016.01.004",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/passthrough/"
+    },
+    {
+     "id": "taxrev",
+     "title": "Dynamic elasticities of tax revenue: evidence from the Czech Republic",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Jiri Schwarz"
+     ],
+     "year": 2016,
+     "journal": "Applied Economics",
+     "volume": "48",
+     "issue": "60",
+     "pages": "5866-5881",
+     "doi": "10.1080/00036846.2016.1186796",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/taxrev/"
+    },
+    {
+     "id": "lessons",
+     "title": "Meta-Regression Analysis in Economics: Lessons Learned",
+     "authors": [
+      "Zuzana Irsova"
+     ],
+     "year": 2016,
+     "journal": "Biatec",
+     "volume": "24",
+     "issue": "1",
+     "pages": "13-17",
+     "doi": null,
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/lessons/"
+    },
+    {
+     "id": "substitution",
+     "title": "Cross-country heterogeneity in intertemporal substitution",
+     "authors": [
+      "Tomas Havranek",
+      "Roman Horvath",
+      "Zuzana Irsova",
+      "Marek Rusnak"
+     ],
+     "year": 2015,
+     "journal": "Journal of International Economics",
+     "volume": "96",
+     "issue": "1",
+     "pages": "100-118",
+     "doi": "10.1016/j.jinteco.2015.01.012",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/substitution/"
+    },
+    {
+     "id": "climate",
+     "title": "Publication Bias in Measuring Anthropogenic Climate Change",
+     "authors": [
+      "Dominika Reckova",
+      "Zuzana Irsova"
+     ],
+     "year": 2015,
+     "journal": "Energy & Environment",
+     "volume": "26",
+     "issue": "5",
+     "pages": "853-862",
+     "doi": "10.1260/0958-305x.26.5.853",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/climate/"
+    },
+    {
+     "id": "scc",
+     "title": "Selective reporting and the social cost of carbon",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Karel Janda",
+      "David Zilberman"
+     ],
+     "year": 2015,
+     "journal": "Energy Economics",
+     "volume": "51",
+     "issue": null,
+     "pages": "394-406",
+     "doi": "10.1016/j.eneco.2015.08.009",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/scc/"
+    },
+    {
+     "id": "a-meta-analysis-of-bank-efficiency-measurement-in-transition",
+     "title": "A meta-analysis of bank efficiency measurement in transitional countries",
+     "authors": [
+      "Zuzana Irsova",
+      "Tomas Havranek"
+     ],
+     "year": 2013,
+     "journal": "Transformations in Business and Economics",
+     "volume": "12",
+     "issue": "2",
+     "pages": "163-183",
+     "doi": null,
+     "status": "published",
+     "status_venue": null,
+     "url": "https://www.transformations.knf.vu.lt/29/article/amet"
+    },
+    {
+     "id": "10-1007-s11300-013-0270-x",
+     "title": "Determinants of Bank Performance in Transition Countries: A Data Envelopment Analysis",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2013,
+     "journal": "Transition Studies Review",
+     "volume": "20",
+     "issue": "1",
+     "pages": "1-17",
+     "doi": "10.1007/s11300-013-0270-x",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://doi.org/10.1007/s11300-013-0270-x"
+    },
+    {
+     "id": "bma",
+     "title": "Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-Analysis",
+     "authors": [
+      "Zuzana Irsova",
+      "Tomas Havranek"
+     ],
+     "year": 2013,
+     "journal": "World Development",
+     "volume": "42",
+     "issue": null,
+     "pages": "1-15",
+     "doi": "10.1016/j.worlddev.2012.07.001",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/bma/"
+    },
+    {
+     "id": "gasoline_price",
+     "title": "Demand for gasoline is more price-inelastic than commonly thought",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova",
+      "Karel Janda"
+     ],
+     "year": 2012,
+     "journal": "Energy Economics",
+     "volume": "34",
+     "issue": "1",
+     "pages": "201-207",
+     "doi": "10.1016/j.eneco.2011.09.003",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/gasoline_price/"
+    },
+    {
+     "id": "spillovers_bias",
+     "title": "Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2012,
+     "journal": "Journal of Development Studies",
+     "volume": "48",
+     "issue": "10",
+     "pages": "1375-1396",
+     "doi": "10.1080/00220388.2012.685721",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/spillovers_bias/"
+    },
+    {
+     "id": "10-1007-s11300-011-0197-z",
+     "title": "Bank Efficiency in Transitional Countries: Sensitivity to Stochastic Frontier Design",
+     "authors": [
+      "Zuzana Irsova",
+      "Tomas Havranek"
+     ],
+     "year": 2011,
+     "journal": "Transition Studies Review",
+     "volume": "18",
+     "issue": "2",
+     "pages": "230-270",
+     "doi": "10.1007/s11300-011-0197-z",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://doi.org/10.1007/s11300-011-0197-z"
+    },
+    {
+     "id": "spillovers",
+     "title": "Estimating vertical spillovers from FDI: Why results vary and what the true effect is",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2011,
+     "journal": "Journal of International Economics",
+     "volume": "85",
+     "issue": "2",
+     "pages": "234-244",
+     "doi": "10.1016/j.jinteco.2011.07.004",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://meta-analysis.cz/spillovers/"
+    },
+    {
+     "id": "10-18267-j-pep-379",
+     "title": "Measuring Bank Efficiency: A Meta-Regression Analysis",
+     "authors": [
+      "Zuzana Irsova",
+      "Tomas Havranek"
+     ],
+     "year": 2010,
+     "journal": "Prague Economic Papers",
+     "volume": "19",
+     "issue": "4",
+     "pages": "307-328",
+     "doi": "10.18267/j.pep.379",
+     "status": "published",
+     "status_venue": null,
+     "url": "https://doi.org/10.18267/j.pep.379"
+    },
+    {
+     "id": "meta-analysis-of-intra-industry-fdi-spillovers-updated-evide",
+     "title": "Meta-analysis of intra-industry FDI spillovers: Updated evidence",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2010,
+     "journal": "Finance a Uver - Czech Journal of Economics and Finance",
+     "volume": "60",
+     "issue": "2",
+     "pages": "151-174",
+     "doi": null,
+     "status": "published",
+     "status_venue": null,
+     "url": "https://journal.fsv.cuni.cz/mag/article/show/id/1184"
+    },
+    {
+     "id": "on-the-intensity-of-international-subsidy-competition-for-fd",
+     "title": "On the Intensity of International Subsidy Competition for FDI",
+     "authors": [
+      "Tomas Havranek",
+      "Zuzana Irsova"
+     ],
+     "year": 2010,
+     "journal": "Theoretical and Applied Economics",
+     "volume": "17",
+     "issue": "2",
+     "pages": "25-54",
+     "doi": null,
+     "status": "published",
+     "status_venue": null,
+     "url": "https://ideas.repec.org/a/agr/journl/v2(543)y2010i2(543)p25-54.html"
+    }
+   ],
+   "awards": [
+    {
+     "id": "forbes-czechia-top-women-scientists-in-czechia-2025",
+     "name": "Top Women Scientists in Czechia",
+     "organization": "Forbes Czechia",
+     "years": [
+      2025
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://forbes.cz/lists/top-vedkyne-ceska-2025/zuzana-havrankova/"
+     ]
+    },
+    {
+     "id": "economic-science-association-editors-prize-for-the-2024",
+     "name": "Editors' Prize for the best paper published in Experimental Economics in 2022",
+     "organization": "Economic Science Association",
+     "years": [
+      2024
+     ],
+     "co_recipients": [
+      "Jindrich Matousek",
+      "Tomas Havranek"
+     ],
+     "sources": [
+      "https://economicscience.org/news_manager.php?page=36768"
+     ]
+    },
+    {
+     "id": "academia-europaea-elected-member-2023",
+     "name": "Elected member",
+     "organization": "Academia Europaea",
+     "years": [
+      2023
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://www.ae-info.org/ae/Member/Havrankova_Zuzana"
+     ]
+    },
+    {
+     "id": "finzeny-listed-among-the-most-influential-women-in-2022",
+     "name": "Listed among the most influential women in Czech finance",
+     "organization": "#FinZeny",
+     "years": [
+      2022
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "czech-economic-society-katerina-smidkova-award-for-2018",
+     "name": "Katerina Smidkova Award for exceptionally high-quality publications",
+     "organization": "Czech Economic Society",
+     "years": [
+      2018
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://www.cse.cz/media/laureatkou-ceny-kateriny-smidkove-je-zuzana-havrankova"
+     ]
+    },
+    {
+     "id": "lindau-nobel-laureate-meetings-selected-for-the-li-2017",
+     "name": "Selected for the Lindau Nobel Laureate Meeting in economic sciences",
+     "organization": "Lindau Nobel Laureate Meetings",
+     "years": [
+      2017
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    },
+    {
+     "id": "czech-national-bank-economic-research-award-2015",
+     "name": "Economic Research Award",
+     "organization": "Czech National Bank",
+     "years": [
+      2015
+     ],
+     "co_recipients": [
+      "Tomas Havranek",
+      "Roman Horvath",
+      "Marek Rusnak"
+     ],
+     "sources": [
+      "https://www.cnb.cz/cs/cnb-news/tiskove-zpravy/Cena-za-nejlepsi-vyzkumne-prace-CNB-00001"
+     ]
+    },
+    {
+     "id": "national-bank-of-slovakia-governor-s-award-for-the-2015",
+     "name": "Governor's Award for the best dissertation relevant to monetary policy and financial stability, first place",
+     "organization": "National Bank of Slovakia",
+     "years": [
+      2015
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://www.ae-info.org/ae/Member/Havrankova_Zuzana"
+     ]
+    },
+    {
+     "id": "ministry-of-education-youth-and-sports-of-the-czec-2013",
+     "name": "Minister of Education's Prize for outstanding students and graduates",
+     "organization": "Ministry of Education, Youth and Sports of the Czech Republic",
+     "years": [
+      2013
+     ],
+     "co_recipients": [],
+     "sources": [
+      "https://iforum.cuni.cz/IFORUM-14873-version1.pdf"
+     ]
+    },
+    {
+     "id": "global-development-network-medal-for-research-on-d-2010",
+     "name": "Medal for Research on Development, first place",
+     "organization": "Global Development Network",
+     "years": [
+      2010
+     ],
+     "co_recipients": [
+      "Tomas Havranek"
+     ],
+     "sources": [
+      "https://iforum.cuni.cz/IFORUM-14873-version1.pdf"
+     ]
+    }
+   ],
+   "roles": [
+    {
+     "id": "charles-university-professor-of-economics",
+     "title": "Professor of Economics",
+     "organization": "Charles University",
+     "start": "2025",
+     "end": null,
+     "sources": [
+      "https://ies.fsv.cuni.cz/en/contacts/institute-members/73504033"
+     ]
+    },
+    {
+     "id": "anglo-american-university-distinguished-senior-lecturer",
+     "title": "Distinguished Senior Lecturer",
+     "organization": "Anglo-American University",
+     "start": "2022",
+     "end": null,
+     "sources": [
+      "https://www.aauni.edu/directory/doc-phdr-zuzana-havrankova-ph-d/",
+      "https://www.ae-info.org/ae/Member/Havrankova_Zuzana"
+     ]
+    },
+    {
+     "id": "meta-research-innovation-center-at-stanford-metrics-res",
+     "title": "Research Affiliate",
+     "organization": "Meta-Research Innovation Center at Stanford (METRICS)",
+     "start": "2025-05",
+     "end": null,
+     "sources": [
+      "https://metrics.stanford.edu/people/zuzana-irsova"
+     ]
+    },
+    {
+     "id": "journal-of-economic-surveys-associate-editor-for-meta-a",
+     "title": "Associate Editor for meta-analysis",
+     "organization": "Journal of Economic Surveys",
+     "start": "2024-01",
+     "end": null,
+     "sources": [
+      "https://ies.fsv.cuni.cz/en/news/zuzana-havrankova-became-new-associate-editor-journal-economic-surveys"
+     ]
+    },
+    {
+     "id": "czech-science-foundation-principal-investigator-junior-",
+     "title": "Principal investigator, Junior Star METASPUR",
+     "organization": "Czech Science Foundation",
+     "start": "2023",
+     "end": "2027",
+     "sources": [
+      "https://science.fsv.cuni.cz/en/project/spurious-precision-in-meta-analysis-of-social-science-research-metaspur"
+     ]
+    },
+    {
+     "id": "meta-analysis-cz-and-easymeta-org-co-maintainer",
+     "title": "Co-maintainer",
+     "organization": "meta-analysis.cz and EasyMeta.org",
+     "start": null,
+     "end": null,
+     "sources": [
+      "https://meta-analysis.cz/about/"
+     ]
+    }
+   ]
+  }
+ }
+}

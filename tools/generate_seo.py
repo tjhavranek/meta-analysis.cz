@@ -1426,6 +1426,9 @@ def main():
            f"type, missingness, and summary statistics — all URLs listed in datasets.json",
            f"- [API documentation]({BASE}/api/v1/README.md): endpoints, usage, licence, and what "
            f"is deliberately not in the harmonised table",
+           f"- [People feed]({BASE}/api/v1/people.json): Tomas Havranek's and Zuzana Irsova's "
+           f"publications with their status (published, forthcoming, revise and resubmit, working "
+           f"paper), awards and roles with sources, as JSON",
            # The tool pages copy their prompts by JavaScript, so an assistant that fetches a page
            # may never see the prompt; these lines name the raw files (8 Oct 2026).
            "", "## AI feedback and review tools", "",
