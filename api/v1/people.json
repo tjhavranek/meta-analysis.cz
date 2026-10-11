@@ -25,12 +25,12 @@
    "publications": [
     {
      "id": "esg",
-     "title": "Do Female Directors Raise ESG Ratings? A Meta-Analysis",
      "authors": [
       "Karolina Hozova",
       "Tomas Havranek",
       "Zuzana Irsova"
      ],
+     "title": "Do Female Directors Raise ESG Ratings? A Meta-Analysis",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -43,13 +43,13 @@
     },
     {
      "id": "outliers",
-     "title": "Do decisions about outliers and influential effects matter? Evidence from 358 behavioral science meta-analyses",
      "authors": [
       "Tomas Havranek",
       "Zuzana Irsova",
       "Martina Luskova",
       "T. D. Stanley"
      ],
+     "title": "Do decisions about outliers and influential effects matter? Evidence from 358 behavioral science meta-analyses",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -62,7 +62,6 @@
     },
     {
      "id": "pcc_survey",
-     "title": "Do methods matter in the meta-analysis of partial correlation coefficients?",
      "authors": [
       "T. D. Stanley",
       "Petr Cala",
@@ -70,6 +69,7 @@
       "Zuzana Irsova",
       "Tomas Havranek"
      ],
+     "title": "Do methods matter in the meta-analysis of partial correlation coefficients?",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -82,11 +82,11 @@
     },
     {
      "id": "debate",
-     "title": "Does Multi-Agent Debate Improve AI Feedback on Research Papers?",
      "authors": [
       "Tomas Havranek",
       "Zuzana Irsova"
      ],
+     "title": "Does Multi-Agent Debate Improve AI Feedback on Research Papers?",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -148,7 +148,6 @@
     },
     {
      "id": "inflation",
-     "title": "Optimal Inflation Rate: A Meta-Analysis",
      "authors": [
       "Matej Opatrny",
       "Martin Opatrny",
@@ -156,6 +155,7 @@
       "Zuzana Irsova",
       "Mojmir Hampl"
      ],
+     "title": "Optimal Inflation Rate: A Meta-Analysis",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -168,7 +168,6 @@
     },
     {
      "id": "electricity",
-     "title": "Price Elasticity of Electricity Demand: A Meta-Analysis",
      "authors": [
       "Peter Kudela",
       "Tomas Havranek",
@@ -176,6 +175,7 @@
       "Anna Kudelova",
       "Vojtech Sikl"
      ],
+     "title": "Price Elasticity of Electricity Demand: A Meta-Analysis",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -207,7 +207,6 @@
     },
     {
      "id": "learning",
-     "title": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning: A Meta-Analysis",
      "authors": [
       "Martina Luskova",
       "Nino Buliskeria",
@@ -217,6 +216,7 @@
       "Stepan Jurajda",
       "Marek Kapicka"
      ],
+     "title": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -619,13 +619,13 @@
     },
     {
      "id": "migrant",
-     "title": "The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis",
      "authors": [
       "Klara Kantova",
       "Tomas Havranek",
       "Zuzana Irsova",
       "Jiri Schwarz"
      ],
+     "title": "The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -638,7 +638,6 @@
     },
     {
      "id": "power",
-     "title": "The Power of Science: Statistical Power in Published Research Across Five Disciplines",
      "authors": [
       "Yue Wang",
       "Frantisek Bartos",
@@ -648,6 +647,7 @@
       "Zuzana Irsova",
       "W. Robert Reed"
      ],
+     "title": "The Power of Science: Statistical Power in Published Research Across Five Disciplines",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -660,13 +660,13 @@
     },
     {
      "id": "trust",
-     "title": "Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis",
      "authors": [
       "Jiri Schwarz",
       "Tomas Havranek",
       "Zuzana Irsova",
       "Jiri Novak"
      ],
+     "title": "Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -679,13 +679,13 @@
     },
     {
      "id": "alphas",
-     "title": "What Matters in Explaining the Variation in Hedge Fund Performance? A Meta-Analysis",
      "authors": [
       "Fan Yang",
       "Tomas Havranek",
       "Zuzana Irsova",
       "Jiri Novak"
      ],
+     "title": "What Matters in Explaining the Variation in Hedge Fund Performance?",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -698,13 +698,13 @@
     },
     {
      "id": "social_comparison",
-     "title": "Adjusting for Publication Bias Reveals Evidence Against Social Comparison As a Behaviour Change Technique Across the Behavioural Sciences",
      "authors": [
       "Frantisek Bartos",
       "Zuzana Irsova",
       "Tomas Havranek",
       "Eric-Jan Wagenmakers"
      ],
+     "title": "Adjusting for Publication Bias Reveals Evidence Against Social Comparison As a Behaviour Change Technique Across the Behavioural Sciences",
      "year": 2025,
      "journal": null,
      "volume": null,
@@ -714,25 +714,6 @@
      "status": "working_paper",
      "status_venue": null,
      "url": "https://meta-analysis.cz/social_comparison/"
-    },
-    {
-     "id": "beauty",
-     "title": "Beauty and Professional Success: A Meta-Analysis",
-     "authors": [
-      "Zuzana Irsova",
-      "Tomas Havranek",
-      "Kseniya Bortnikova",
-      "Frantisek Bartos"
-     ],
-     "year": 2025,
-     "journal": null,
-     "volume": null,
-     "issue": null,
-     "pages": null,
-     "doi": null,
-     "status": "rr",
-     "status_venue": "Nature Human Behaviour",
-     "url": "https://meta-analysis.cz/beauty/"
     },
     {
      "id": "conventional_wisdom",
@@ -780,7 +761,6 @@
     },
     {
      "id": "exercise",
-     "title": "Effect of Exercise on Cognition, Memory, and Executive Function: A Study-Level Meta-Meta-Analysis Across Populations and Exercise Categories",
      "authors": [
       "Frantisek Bartos",
       "Martina Luskova",
@@ -790,6 +770,7 @@
       "Zuzana Irsova",
       "Tomas Havranek"
      ],
+     "title": "Effect of Exercise on Cognition, Memory, and Executive Function: A Study-Level Meta-Meta-Analysis Across Populations and Exercise Categories",
      "year": 2025,
      "journal": null,
      "volume": null,
@@ -799,6 +780,25 @@
      "status": "rr",
      "status_venue": "Sports Medicine",
      "url": "https://meta-analysis.cz/exercise/"
+    },
+    {
+     "id": "beauty",
+     "authors": [
+      "Zuzana Irsova",
+      "Tomas Havranek",
+      "Kseniya Bortnikova",
+      "Frantisek Bartos"
+     ],
+     "title": "Meta-Analysis of Field Studies on Beauty and Professional Success",
+     "year": 2025,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "rr",
+     "status_venue": "Nature Human Behaviour",
+     "url": "https://meta-analysis.cz/beauty/"
     },
     {
      "id": "correlations",
@@ -1316,11 +1316,11 @@
     },
     {
      "id": "cpi_housing",
-     "title": "Should Inflation Measures Used by Central Banks Incorporate House Prices? The Czech National Bank's Approach",
      "authors": [
       "Mojmir Hampl",
       "Tomas Havranek"
      ],
+     "title": "Should Inflation Measures Used by Central Banks Incorporate House Prices? The Czech National Bank's Approach",
      "year": 2017,
      "journal": null,
      "volume": null,
@@ -1548,7 +1548,6 @@
     },
     {
      "id": "crisis_ews",
-     "title": "Banking, debt, and currency crises: Early warning indicators for developed countries",
      "authors": [
       "Jan Babecky",
       "Tomas Havranek",
@@ -1557,6 +1556,7 @@
       "Katerina Smidkova",
       "Borek Vasicek"
      ],
+     "title": "Banking, debt, and currency crises: Early warning indicators for developed countries",
      "year": 2014,
      "journal": "Journal of Financial Stability",
      "volume": null,
@@ -2138,12 +2138,12 @@
    "publications": [
     {
      "id": "esg",
-     "title": "Do Female Directors Raise ESG Ratings? A Meta-Analysis",
      "authors": [
       "Karolina Hozova",
       "Tomas Havranek",
       "Zuzana Irsova"
      ],
+     "title": "Do Female Directors Raise ESG Ratings? A Meta-Analysis",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -2156,13 +2156,13 @@
     },
     {
      "id": "outliers",
-     "title": "Do decisions about outliers and influential effects matter? Evidence from 358 behavioral science meta-analyses",
      "authors": [
       "Tomas Havranek",
       "Zuzana Irsova",
       "Martina Luskova",
       "T. D. Stanley"
      ],
+     "title": "Do decisions about outliers and influential effects matter? Evidence from 358 behavioral science meta-analyses",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -2175,7 +2175,6 @@
     },
     {
      "id": "pcc_survey",
-     "title": "Do methods matter in the meta-analysis of partial correlation coefficients?",
      "authors": [
       "T. D. Stanley",
       "Petr Cala",
@@ -2183,6 +2182,7 @@
       "Zuzana Irsova",
       "Tomas Havranek"
      ],
+     "title": "Do methods matter in the meta-analysis of partial correlation coefficients?",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -2195,11 +2195,11 @@
     },
     {
      "id": "debate",
-     "title": "Does Multi-Agent Debate Improve AI Feedback on Research Papers?",
      "authors": [
       "Tomas Havranek",
       "Zuzana Irsova"
      ],
+     "title": "Does Multi-Agent Debate Improve AI Feedback on Research Papers?",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -2261,7 +2261,6 @@
     },
     {
      "id": "inflation",
-     "title": "Optimal Inflation Rate: A Meta-Analysis",
      "authors": [
       "Matej Opatrny",
       "Martin Opatrny",
@@ -2269,6 +2268,7 @@
       "Zuzana Irsova",
       "Mojmir Hampl"
      ],
+     "title": "Optimal Inflation Rate: A Meta-Analysis",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -2281,7 +2281,6 @@
     },
     {
      "id": "electricity",
-     "title": "Price Elasticity of Electricity Demand: A Meta-Analysis",
      "authors": [
       "Peter Kudela",
       "Tomas Havranek",
@@ -2289,6 +2288,7 @@
       "Anna Kudelova",
       "Vojtech Sikl"
      ],
+     "title": "Price Elasticity of Electricity Demand: A Meta-Analysis",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -2320,7 +2320,6 @@
     },
     {
      "id": "learning",
-     "title": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning: A Meta-Analysis",
      "authors": [
       "Martina Luskova",
       "Nino Buliskeria",
@@ -2330,6 +2329,7 @@
       "Stepan Jurajda",
       "Marek Kapicka"
      ],
+     "title": "Publication Bias and P-Hacking in the Effect of COVID-19 on Learning",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -2732,13 +2732,13 @@
     },
     {
      "id": "migrant",
-     "title": "The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis",
      "authors": [
       "Klara Kantova",
       "Tomas Havranek",
       "Zuzana Irsova",
       "Jiri Schwarz"
      ],
+     "title": "The Elasticity of Substitution between Native and Immigrant Labor: A Meta-Analysis",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -2751,7 +2751,6 @@
     },
     {
      "id": "power",
-     "title": "The Power of Science: Statistical Power in Published Research Across Five Disciplines",
      "authors": [
       "Yue Wang",
       "Frantisek Bartos",
@@ -2761,6 +2760,7 @@
       "Zuzana Irsova",
       "W. Robert Reed"
      ],
+     "title": "The Power of Science: Statistical Power in Published Research Across Five Disciplines",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -2773,13 +2773,13 @@
     },
     {
      "id": "trust",
-     "title": "Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis",
      "authors": [
       "Jiri Schwarz",
       "Tomas Havranek",
       "Zuzana Irsova",
       "Jiri Novak"
      ],
+     "title": "Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -2792,13 +2792,13 @@
     },
     {
      "id": "alphas",
-     "title": "What Matters in Explaining the Variation in Hedge Fund Performance? A Meta-Analysis",
      "authors": [
       "Fan Yang",
       "Tomas Havranek",
       "Zuzana Irsova",
       "Jiri Novak"
      ],
+     "title": "What Matters in Explaining the Variation in Hedge Fund Performance?",
      "year": 2026,
      "journal": null,
      "volume": null,
@@ -2811,13 +2811,13 @@
     },
     {
      "id": "social_comparison",
-     "title": "Adjusting for Publication Bias Reveals Evidence Against Social Comparison As a Behaviour Change Technique Across the Behavioural Sciences",
      "authors": [
       "Frantisek Bartos",
       "Zuzana Irsova",
       "Tomas Havranek",
       "Eric-Jan Wagenmakers"
      ],
+     "title": "Adjusting for Publication Bias Reveals Evidence Against Social Comparison As a Behaviour Change Technique Across the Behavioural Sciences",
      "year": 2025,
      "journal": null,
      "volume": null,
@@ -2827,25 +2827,6 @@
      "status": "working_paper",
      "status_venue": null,
      "url": "https://meta-analysis.cz/social_comparison/"
-    },
-    {
-     "id": "beauty",
-     "title": "Beauty and Professional Success: A Meta-Analysis",
-     "authors": [
-      "Zuzana Irsova",
-      "Tomas Havranek",
-      "Kseniya Bortnikova",
-      "Frantisek Bartos"
-     ],
-     "year": 2025,
-     "journal": null,
-     "volume": null,
-     "issue": null,
-     "pages": null,
-     "doi": null,
-     "status": "rr",
-     "status_venue": "Nature Human Behaviour",
-     "url": "https://meta-analysis.cz/beauty/"
     },
     {
      "id": "conventional_wisdom",
@@ -2893,7 +2874,6 @@
     },
     {
      "id": "exercise",
-     "title": "Effect of Exercise on Cognition, Memory, and Executive Function: A Study-Level Meta-Meta-Analysis Across Populations and Exercise Categories",
      "authors": [
       "Frantisek Bartos",
       "Martina Luskova",
@@ -2903,6 +2883,7 @@
       "Zuzana Irsova",
       "Tomas Havranek"
      ],
+     "title": "Effect of Exercise on Cognition, Memory, and Executive Function: A Study-Level Meta-Meta-Analysis Across Populations and Exercise Categories",
      "year": 2025,
      "journal": null,
      "volume": null,
@@ -2912,6 +2893,25 @@
      "status": "rr",
      "status_venue": "Sports Medicine",
      "url": "https://meta-analysis.cz/exercise/"
+    },
+    {
+     "id": "beauty",
+     "authors": [
+      "Zuzana Irsova",
+      "Tomas Havranek",
+      "Kseniya Bortnikova",
+      "Frantisek Bartos"
+     ],
+     "title": "Meta-Analysis of Field Studies on Beauty and Professional Success",
+     "year": 2025,
+     "journal": null,
+     "volume": null,
+     "issue": null,
+     "pages": null,
+     "doi": null,
+     "status": "rr",
+     "status_venue": "Nature Human Behaviour",
+     "url": "https://meta-analysis.cz/beauty/"
     },
     {
      "id": "risk",

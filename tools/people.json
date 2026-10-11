@@ -505,5 +505,9 @@
    "status": "published",
    "status_venue": "Czech National Bank Research and Policy Notes 1/2017; also BIS Papers No 94 (2017)"
   }
+ },
+ "titles": {
+  "_note": "Owner's choice of title for the feed where it differs from the paper's citation_title (11 Oct 2026).",
+  "electricity": "Price Elasticity of Electricity Demand: A Meta-Analysis"
  }
 }

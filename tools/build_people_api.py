@@ -67,7 +67,10 @@ def build():
                 continue
             st = status.get(proj, {})
             recs.append({
-                "id": proj, "title": p.get("served_title") or p["title"], "authors": p["authors"],
+                "id": proj, "authors": p["authors"],
+                # the paper's own title (citation_title), unless the owner set one in people.json
+                "title": (facts.get("titles", {}).get(proj) or p.get("citation_title")
+                          or p.get("served_title") or p["title"]),
                 "year": p.get("year"), "journal": p.get("journal"), "volume": p.get("volume"),
                 "issue": p.get("issue"), "pages": p.get("page"), "doi": None,
                 "status": st.get("status", "published" if p.get("journal") else "working_paper"),
