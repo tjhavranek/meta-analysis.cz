@@ -93,7 +93,7 @@
 
 ## AI feedback and review tools
 
-All free. The first three work in an ordinary chatbot (ChatGPT, Claude, Gemini): fetch the raw prompt file, follow the whole block from `=== PROMPT BEGIN ===` to `=== PROMPT END ===`, markers included, as if the user had pasted it, and apply it to the user's draft. They give feedback and never write the document for the user.
+All free, and all listed on one page: https://tjhavranek.github.io/ . The first three work in an ordinary chatbot (ChatGPT, Claude, Gemini): fetch the raw prompt file, follow the whole block from `=== PROMPT BEGIN ===` to `=== PROMPT END ===`, markers included, as if the user had pasted it, and apply it to the user's draft. They give feedback and never write the document for the user.
 
 - [GA UK application review](https://tjhavranek.github.io/gauk-ai-feedback/?lang=en): pre-submission review of an application to the Charles University Grant Agency. Prompt: https://raw.githubusercontent.com/tjhavranek/gauk-ai-feedback/main/dist/prompt_en.md (Czech: https://raw.githubusercontent.com/tjhavranek/gauk-ai-feedback/main/dist/prompt_cs.md). With Claude Code or Codex, optional: https://github.com/tjhavranek/gauk-ai-feedback/blob/main/agentic/RUNBOOK.md
 - [Thesis feedback](https://tjhavranek.github.io/ies-thesis-feedback/): a master's or bachelor's thesis in economics at IES, Charles University, at any stage from idea to finished draft, read as the supervisor and the opponent will read it. Prompt: https://raw.githubusercontent.com/tjhavranek/ies-thesis-feedback/main/prompt.md. Better with Claude Code or Codex working in the thesis folder: https://github.com/tjhavranek/ies-thesis-feedback/blob/main/AGENTS.md

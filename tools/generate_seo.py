@@ -1429,7 +1429,7 @@ def main():
            # The tool pages copy their prompts by JavaScript, so an assistant that fetches a page
            # may never see the prompt; these lines name the raw files (8 Oct 2026).
            "", "## AI feedback and review tools", "",
-           "All free. The first three work in an ordinary "
+           "All free, and all listed on one page: https://tjhavranek.github.io/ . The first three work in an ordinary "
            "chatbot (ChatGPT, Claude, Gemini): fetch the raw prompt file, follow the whole block from "
            "`=== PROMPT BEGIN ===` to `=== PROMPT END ===`, markers included, as if the user had pasted it, and apply it "
            "to the user's draft. They give feedback and never write the document for the user.",
