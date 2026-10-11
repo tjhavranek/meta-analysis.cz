@@ -68,6 +68,9 @@ and `python tools/preflight.py` runs the same gates locally.
 - **Names:** in English text the names are spelled Havranek and Irsova.
 - **Dashes:** new prose uses no em dashes or en dashes.
 - **MAIVE:** describe it without hedging.
+- **Unclear claims** (owner, 11 Oct 2026, standing rule): if a claim about the authors is unclear or
+  ambiguous but the current wording presents them better, keep it. Change only what is
+  demonstrably false.
 - **Tone:** present the authors' record confidently. "Cited by five Nobel laureates" stays,
   linked to the section that names them, `/impact/#academic-use`.
 - **Commentary hub list:** /komentare/ shows its whole archive expanded, every year from the
