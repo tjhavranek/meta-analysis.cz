@@ -75,6 +75,14 @@ and `python tools/preflight.py` runs the same gates locally.
   and do not propose this again (owner, 7 Oct 2026, after a review by Fable and astra: collapsing
   saves no scrolling, hides the size of the record, and adds a state that search, the chips,
   `?filtr=` and Ctrl+F must all handle). A line of year jump links was also considered and declined.
+- **Citation sentences** on /about/ and /impact/ ("The papers here ... have been cited more than
+  10,000 times according to Google Scholar") keep their wording, although the number is
+  Havranek's whole Scholar profile (owner, 11 Oct 2026). Only the number is refreshed.
+- **Ranks and citations (CI: tools/update_metrics.py --check):** the RePEc sentence on /about/
+  and the citation counts on /about/ and /impact/ sit between `<!-- metrics:… -->` sentinels and
+  are rendered from `tools/site_metrics.json`. The monthly job in the private repo
+  tjhavranek/site-metrics (owner's PC, the 15th) runs `tools/update_metrics.py <metrics.json>`
+  in its own clone and pushes. Never hand-edit those spots; change the wording in the script.
 - **CEPR:** Zuzana Irsova is not a CEPR affiliate. She has a CEPR profile as an author.
 - **Zuzana's social profiles** (owner, 9 Oct 2026): LinkedIn, Bluesky and X, as listed on
   irsova.com, must stay findable by bots through this site: in her JSON-LD `sameAs` and her

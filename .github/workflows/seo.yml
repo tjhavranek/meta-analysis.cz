@@ -100,6 +100,11 @@ jobs:
       - name: Require every stated count to match the site's holdings
         run: python tools/check_counts.py
 
+      # The RePEc ranks and Google Scholar citations on /about/ and /impact/ are rendered from
+      # tools/site_metrics.json, which the monthly site-metrics job refreshes (11 Oct 2026).
+      - name: Require the stated ranks and citations to match site_metrics.json
+        run: python tools/update_metrics.py --check
+
       # /maive/how-to/ prints numbers that came from somebody else's service. The requests and
       # the full responses are recorded in api/v1/maive-howto.json, and this proves the page is
       # exactly what that file renders, that the settings the page teaches are the settings
