@@ -116,9 +116,9 @@
  {
   "project": "exercise",
   "parameter": "Effect of physical exercise on cognition",
-  "headline": "SMD 0.227 for general cognition, but essentially nothing for memory or executive function, 0.027 and 0.012",
-  "evidence": "Analyses adjusted for publication bias reveal average effects much smaller than commonly reported (general cognition: standardized mean difference, SMD = 0.227, 95% credible interval 0.116 to 0.330; memory: SMD = 0.027, 95% credible interval 0.000 to 0.227; executive functions: SMD = 0.012, 95% credible interval 0.000 to 0.147), along with wide prediction intervals spanning both negative and positive effects.",
-  "basis": "2,239 effect-size estimates from 215 meta-analyses",
+  "headline": "SMD 0.208 for general cognition and 0.088 for executive function; for memory 0.226 or 0.021, depending on the adjustment",
+  "evidence": "Adjusted average effects were significantly smaller than unadjusted estimates for general cognition (SMD=0.208; 95% credible interval (CrI) [0.075, 0.318]), and executive functions (SMD=0.088, 95%CrI [0.000, 0.168]). For memory the adjustment differed between adjustment specifications (SMD=0.226, 95%CrI [0.169, 0.282] vs SMD=0.021, 95%CrI [0.000, 0.217]).",
+  "basis": "1,933 effect-size estimates from 201 meta-analyses",
   "caveat": "wide prediction intervals spanning negative and positive effects",
   "field": "Micro and experimental economics"
  },

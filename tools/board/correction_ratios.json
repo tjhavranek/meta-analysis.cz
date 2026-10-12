@@ -319,16 +319,16 @@
   },
   {
    "project": "exercise",
-   "corrected": 0.227,
-   "mean": 0.474,
+   "corrected": 0.208,
+   "mean": 0.451,
    "mean_from": "paper",
    "quote_source": "pdf",
    "tier": "subsample",
    "units": "standardised mean difference, general cognition, on both sides of the ratio",
-   "approximation": "General cognition is the first of the paper's three outcomes and the one its abstract leads with; memory and executive function are corrected further, by about -94% and -97%, so leading with general cognition understates the correction rather than choosing the friendly number. The paper adds that the corrected pooled value 'is of little value due to the extreme between-study heterogeneity' -- its prediction interval runs from -1.052 to 1.500.",
-   "corrected_quote": "general cognition: standardized mean difference, SMD, = 0.227, 95% credible interval 0.116 to 0.330.",
-   "mean_quote": "A three-level publication bias-unadjusted Bayesian model-averaged (BMA) meta-analysis reproduced an overall effect size estimate (SMD = 0.474 [0.410, 0.537]).",
-   "corrected_locator": "exercise.pdf, abstract and Results; both values are for the same 835 effect sizes from 82 meta-analyses",
+   "approximation": "General cognition is the first of the paper's three outcomes and the one its abstract leads with. Executive function is corrected further, by about -64% (0.245 to 0.088), and memory by 0% or about -91% depending on the adjustment (0.226 to 0.226 under the weight-function-only model, 0.021 under the full one), so general cognition sits between the other two outcomes. The paper adds that the corrected pooled value 'is of little value due to the extreme between-study heterogeneity'; its prediction interval runs from -1.045 to 1.453.",
+   "corrected_quote": "Importantly, the notably reduced publication bias-adjusted overall estimate (SMD = 0.208, 95% CrI [0.075, 0.318]) supported by extreme evidence for the presence of the effect (Bayes factor in favor of effect, BF10 = 58.9) is of little value due to the extreme between-study heterogeneity ...",
+   "mean_quote": "A three-level publication bias-unadjusted Bayesian model-averaged (BMA) meta-analysis reproduced an overall effect size estimate (SMD = 0.451, 95% CrI [0.386, 0.517]) ...",
+   "corrected_locator": "exercise.pdf (PsyArXiv version 2), abstract and Results, General cognition; both values are for the same 731 unique effect sizes from 77 meta-analyses",
    "note": "The correction is what this figure measures, and the authors' warning is about how much weight to put on either pooled number, not about whether the correction happened. Every dot here is a pooled estimate; the warning belongs in the tooltip, which carries it."
   },
   {

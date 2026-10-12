@@ -1684,18 +1684,35 @@ def doi_index():
         for meta in list(documents().values()) + papers:
             m = re.search(r"10\.\d{4,9}/\S+", meta.get("doi_or_publisher_url") or "")
             if m:
-                idx[m.group(0).rstrip("/").lower()] = meta["project"]
+                key = m.group(0).rstrip("/").lower()
+                idx[key] = meta["project"]
+                # A versioned preprint DOI (PsyArXiv's "osf.io/qr8e2_v2") names one version
+                # of the paper. Another paper citing an earlier version is still citing this
+                # one, so the version-free stem is indexed too (Oct 2026: exercise moved to v2
+                # while outliers cites v1).
+                stem = _doi_stem(key)
+                if stem != key and idx.get(stem, meta["project"]) != meta["project"]:
+                    raise SystemExit(f"DOI stem {stem} claimed by two projects")
+                idx.setdefault(stem, meta["project"])
         _DOI_INDEX = idx
     return _DOI_INDEX
+
+
+def _doi_stem(doi):
+    """An OSF preprint DOI without its version suffix: "10.31234/osf.io/qr8e2_v1" -> ".../qr8e2".
+    Only OSF-hosted preprints (PsyArXiv, SocArXiv, OSF Preprints) version their DOIs this way;
+    any other DOI is returned unchanged, so no unrelated identifiers can meet on a stem."""
+    return re.sub(r"^(10\.312\d\d/osf\.io/[a-z0-9]+)_v\d+$", lambda m: m.group(1), doi)
 
 
 def cites_on_site(rendered, project):
     """If a reference names another paper published here, link it to that paper.
 
-    Exact DOI only. Matching references by title would be a guess dressed as a fact, and the
+    Exact DOI only (an OSF preprint DOI also matches across its versions). Matching references by title would be a guess dressed as a fact, and the
     edges this can prove are the ones worth drawing: 63 of them across the corpus."""
     for doi in re.findall(r'href="https://doi\.org/([^"]+)"', rendered):
-        target = doi_index().get(doi.rstrip("/").lower())
+        key = doi.rstrip("/").lower()
+        target = doi_index().get(key) or doi_index().get(_doi_stem(key))
         if target and target != project:
             meta = dict(documents().get(target) or {})
             if not meta:

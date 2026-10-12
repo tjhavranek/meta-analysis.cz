@@ -1682,69 +1682,239 @@
    "box": [
     0.081,
     0.141,
-    0.907,
+    0.909,
     0.776
    ],
    "colours": 64,
    "dpi": 200,
    "height": 1064,
-   "page": 6,
+   "page": 14,
    "pdf": "exercise/exercise.pdf",
-   "pdf_sha256": "d1665965570e23ec08323559ef43878ceff6aeed8cdb33f8e2816e4afc8d9897",
+   "pdf_sha256": "714d9d26f53a01f54f1b69eb123d2a1f53c75da4ec2b31c4b106b4a185788d67",
    "renderer": "mupdf",
-   "sha256": "0f6a2048234c97a561b4ae903be6cbebcedc56282d5ce93e95651c17c9cf1fc4",
+   "sha256": "10be78b22cf750130b09031a9d6314fbd36dc5261bb689f31dbaa6d25aa7b23b",
    "width": 1789
   },
   "2": {
    "box": [
-    0.085,
-    0.053,
-    0.902,
-    0.699
+    0.082,
+    0.048,
+    0.909,
+    0.705
    ],
    "colours": 64,
    "dpi": 200,
    "height": 1088,
-   "page": 8,
+   "page": 16,
    "pdf": "exercise/exercise.pdf",
-   "pdf_sha256": "d1665965570e23ec08323559ef43878ceff6aeed8cdb33f8e2816e4afc8d9897",
+   "pdf_sha256": "714d9d26f53a01f54f1b69eb123d2a1f53c75da4ec2b31c4b106b4a185788d67",
    "renderer": "mupdf",
-   "sha256": "e490671fdb4aa60954317ec99309c5a0ce344e0d1519694ad5b788a4180a2f0c",
+   "sha256": "02e68456a0b30b6c5e10540791cfbcc684e73bf5141ad2f3c866bd97e4610358",
    "width": 1779
   },
   "3": {
    "box": [
-    0.085,
-    0.051,
-    0.902,
-    0.674
+    0.082,
+    0.043,
+    0.909,
+    0.676
    ],
    "colours": 64,
    "dpi": 200,
    "height": 1047,
-   "page": 11,
+   "page": 19,
    "pdf": "exercise/exercise.pdf",
-   "pdf_sha256": "d1665965570e23ec08323559ef43878ceff6aeed8cdb33f8e2816e4afc8d9897",
+   "pdf_sha256": "714d9d26f53a01f54f1b69eb123d2a1f53c75da4ec2b31c4b106b4a185788d67",
    "renderer": "mupdf",
-   "sha256": "f6911d3ca417d2f4fd647036304246ee35a0ffa60f06ee18ebdced3c0ae7ab7c",
+   "sha256": "689352abce85a9e1b789a9f572a38db6fbbfa0ae2089e9495691ed99b4dadeaa",
    "width": 1779
   },
   "4": {
    "box": [
-    0.085,
-    0.06,
-    0.902,
-    0.802
+    0.082,
+    0.043,
+    0.909,
+    0.806
    ],
    "colours": 64,
    "dpi": 200,
    "height": 1251,
-   "page": 13,
+   "page": 21,
    "pdf": "exercise/exercise.pdf",
-   "pdf_sha256": "d1665965570e23ec08323559ef43878ceff6aeed8cdb33f8e2816e4afc8d9897",
+   "pdf_sha256": "714d9d26f53a01f54f1b69eb123d2a1f53c75da4ec2b31c4b106b4a185788d67",
    "renderer": "mupdf",
-   "sha256": "7d9429aac63eac1bc29e81405282363b2f2a9e7541fed2500d24d661a76b8a9f",
+   "sha256": "69153c32ec7a97e7c983cf69dca33e66c8f93b0f2ce0a17d62b693b1cd6f0c0b",
    "width": 1779
+  },
+  "5": {
+   "box": [
+    0.209,
+    0.09,
+    0.802,
+    0.808
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1536,
+   "page": 23,
+   "pdf": "exercise/exercise.pdf",
+   "pdf_sha256": "714d9d26f53a01f54f1b69eb123d2a1f53c75da4ec2b31c4b106b4a185788d67",
+   "renderer": "mupdf",
+   "sha256": "7c48e812a47fa1cb4c6319de8768e3010f044bbc290f62f0eebb6531098ecce6",
+   "width": 926
+  },
+  "S1": {
+   "box": [
+    0.04,
+    0.1339,
+    0.97,
+    0.7805
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1417,
+   "page": 38,
+   "pdf": "exercise/exercise.pdf",
+   "pdf_sha256": "714d9d26f53a01f54f1b69eb123d2a1f53c75da4ec2b31c4b106b4a185788d67",
+   "renderer": "mupdf",
+   "sha256": "4d7a8aabec861a1e1c3d48e1ed53875f2d79f68610621ff6b200cd93f014478f",
+   "width": 1302
+  },
+  "S2": {
+   "box": [
+    0.04,
+    0.2864,
+    0.97,
+    0.6224
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 733,
+   "page": 39,
+   "pdf": "exercise/exercise.pdf",
+   "pdf_sha256": "714d9d26f53a01f54f1b69eb123d2a1f53c75da4ec2b31c4b106b4a185788d67",
+   "renderer": "mupdf",
+   "sha256": "2bff349b6fc6e7b0d09b5d2131c143750ab6285ed5f6cda15f4825998beeedaa",
+   "width": 1302
+  },
+  "S3": {
+   "box": [
+    0.04,
+    0.1057,
+    0.97,
+    0.802
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1526,
+   "page": 40,
+   "pdf": "exercise/exercise.pdf",
+   "pdf_sha256": "714d9d26f53a01f54f1b69eb123d2a1f53c75da4ec2b31c4b106b4a185788d67",
+   "renderer": "mupdf",
+   "sha256": "e3c8c600a17fbb81de3036fc6195982df4214cd1cdaba58bf84997584e02b8d4",
+   "width": 1302
+  },
+  "S4": {
+   "box": [
+    0.04,
+    0.1303,
+    0.97,
+    0.777
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1417,
+   "page": 41,
+   "pdf": "exercise/exercise.pdf",
+   "pdf_sha256": "714d9d26f53a01f54f1b69eb123d2a1f53c75da4ec2b31c4b106b4a185788d67",
+   "renderer": "mupdf",
+   "sha256": "be8189d71f99e6afc9c56340c52c038ed0d2b0fd5599b559e75ea741959f1032",
+   "width": 1302
+  },
+  "S5": {
+   "box": [
+    0.04,
+    0.2864,
+    0.97,
+    0.6224
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 733,
+   "page": 42,
+   "pdf": "exercise/exercise.pdf",
+   "pdf_sha256": "714d9d26f53a01f54f1b69eb123d2a1f53c75da4ec2b31c4b106b4a185788d67",
+   "renderer": "mupdf",
+   "sha256": "76481ffd4c556c920e84b19afdfca9d739ea27a51218e486a63a5676acec9934",
+   "width": 1302
+  },
+  "S6": {
+   "box": [
+    0.04,
+    0.1057,
+    0.97,
+    0.802
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1526,
+   "page": 43,
+   "pdf": "exercise/exercise.pdf",
+   "pdf_sha256": "714d9d26f53a01f54f1b69eb123d2a1f53c75da4ec2b31c4b106b4a185788d67",
+   "renderer": "mupdf",
+   "sha256": "a5fe7d7cf3bbb89cf2e5657f907a17df5b36520424af7de2fc69e6e8e2f57be8",
+   "width": 1302
+  },
+  "S7": {
+   "box": [
+    0.04,
+    0.0948,
+    0.97,
+    0.5163
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 926,
+   "page": 44,
+   "pdf": "exercise/exercise.pdf",
+   "pdf_sha256": "714d9d26f53a01f54f1b69eb123d2a1f53c75da4ec2b31c4b106b4a185788d67",
+   "renderer": "mupdf",
+   "sha256": "a8ace3e188e1a350d37c1b391b6e29f506f5b9cbec02032b311cf83a23770a90",
+   "width": 1310
+  },
+  "S8": {
+   "box": [
+    0.04,
+    0.6234,
+    0.97,
+    0.8368
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 469,
+   "page": 44,
+   "pdf": "exercise/exercise.pdf",
+   "pdf_sha256": "714d9d26f53a01f54f1b69eb123d2a1f53c75da4ec2b31c4b106b4a185788d67",
+   "renderer": "mupdf",
+   "sha256": "f7e268f47540ac60abbde5c2e5102793c631e39fcf54e5663e351ce90269b0b1",
+   "width": 1310
+  },
+  "S9": {
+   "box": [
+    0.04,
+    0.2296,
+    0.97,
+    0.6841
+   ],
+   "colours": 64,
+   "dpi": 200,
+   "height": 1000,
+   "page": 45,
+   "pdf": "exercise/exercise.pdf",
+   "pdf_sha256": "714d9d26f53a01f54f1b69eb123d2a1f53c75da4ec2b31c4b106b4a185788d67",
+   "renderer": "mupdf",
+   "sha256": "a9d55ed8d1c8293c19a62c7ed333ce0cedf3955c3ff5468d7c22a409f8cf0b2d",
+   "width": 1310
   }
  },
  "forward": {

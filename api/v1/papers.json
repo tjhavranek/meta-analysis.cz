@@ -2601,17 +2601,47 @@
    ],
    "year": 2025,
    "journal": null,
-   "doi": "https://doi.org/10.31234/osf.io/qr8e2_v1",
+   "doi": "https://doi.org/10.31234/osf.io/qr8e2_v2",
    "publisher_url": null,
    "full_text_url": "https://meta-analysis.cz/exercise/paper/",
    "project_url": "https://meta-analysis.cz/exercise/",
    "pdf_url": "https://meta-analysis.cz/exercise/exercise.pdf",
-   "abstract": "Physical exercise is widely believed to enhance cognition, yet evidence from meta-analyses remains mixed. Here we compile a study-level dataset of 2,239 effect-size estimates from 215 meta-analyses of randomized controlled trials examining the effect of exercise on general cognition, memory, and executive functions. We find strong evidence of selective reporting and large between-study heterogeneity. Analyses adjusted for publication bias reveal average effects much smaller than commonly reported (general cognition: standardized mean difference, SMD = 0.227, 95% credible interval 0.116 to 0.330; memory: SMD = 0.027, 95% credible interval 0.000 to 0.227; executive functions: SMD = 0.012, 95% credible interval 0.000 to 0.147), along with wide prediction intervals spanning both negative and positive effects. Subgroup analyses identify specific population-intervention combinations with more consistent benefits. Overall, broad claims of generalized cognitive enhancement resulting from physical exercise appear premature; the evidence supports targeted, population- and intervention-specific recommendations.",
+   "abstract": "Background: Physical exercise is widely promoted for cognitive enhancement, yet prior syntheses have been questioned due to methodological limitations. Objectives: This study evaluated the reliability of evidence supporting physical exercise for general cognition, memory, and executive function, and assessed efficacy across specific population-intervention combinations after adjusting for publication bias. Methods: This study is a study-level meta-meta-analysis of randomized controlled trials (RCTs). We included systematic reviews with meta-analyses of RCTs evaluating exercise interventions against non-exercise controls in humans, identified in a meta-meta-analysis published in 2025. We extracted study-level effect sizes and synthesized the data using robust Bayesian meta-analysis which allowed us to evaluate evidence for and against the presence of the effect, between-study heterogeneity, publication bias, while accounting for model uncertainty. Results: We extracted 2,239 study-level effect estimates from 215 meta-analyses. After excluding suspected duplicates, 1,933 estimates from 201 meta-analyses were included in the overall analyses, which revealed extreme evidence of publication bias and between-study heterogeneity. Adjusted average effects were significantly smaller than unadjusted estimates for general cognition (SMD=0.208; 95% credible interval (CrI) [0.075, 0.318]), and executive functions (SMD=0.088, 95%CrI [0.000, 0.168]). For memory the adjustment differed between adjustment specifications (SMD=0.226, 95%CrI [0.169, 0.282] vs SMD=0.021, 95%CrI [0.000, 0.217]). While broad prediction intervals spanned substantial negative and positive effects, subgroup analyses identified mostly consistent benefits for specific combinations, such as dance and exergaming for general cognition in non-healthy older adults. Conclusion: The primary limitations of the evidence are severe publication bias and extreme heterogeneity, which appear to inflate previously reported benefits. Consequently, broad claims of generalized cognitive enhancement from physical exercise appear premature. The results support a shift from blanket public health advice to recommendations tailored to specific population-intervention combinations.",
    "sections": [
     {
      "level": 2,
-     "title": "Effect of Exercise on Cognition, Memory, and Executive Function: A Study-Level Meta-Meta-Analysis Across Populations and Exercise Categories",
-     "anchor": "sec-effect-of-exercise-on-cognition-memory-and-executive-function-a-study-level-meta-meta-analysis-across-populations-and-exercise-categories"
+     "title": "Introduction",
+     "anchor": "sec-introduction"
+    },
+    {
+     "level": 2,
+     "title": "Methods",
+     "anchor": "sec-methods"
+    },
+    {
+     "level": 3,
+     "title": "Literature search, inclusion, and exclusion criteria",
+     "anchor": "sec-literature-search-inclusion-and-exclusion-criteria"
+    },
+    {
+     "level": 3,
+     "title": "Data extraction",
+     "anchor": "sec-data-extraction"
+    },
+    {
+     "level": 3,
+     "title": "Statistical analysis",
+     "anchor": "sec-statistical-analysis"
+    },
+    {
+     "level": 3,
+     "title": "Equity, diversity and inclusion statement",
+     "anchor": "sec-equity-diversity-and-inclusion-statement"
+    },
+    {
+     "level": 3,
+     "title": "Patient and public involvement",
+     "anchor": "sec-patient-and-public-involvement"
     },
     {
      "level": 2,
@@ -2645,8 +2675,23 @@
     },
     {
      "level": 2,
+     "title": "Conclusions",
+     "anchor": "sec-conclusions"
+    },
+    {
+     "level": 2,
      "title": "Declarations",
      "anchor": "sec-declarations"
+    },
+    {
+     "level": 3,
+     "title": "Ethics approval",
+     "anchor": "sec-ethics-approval"
+    },
+    {
+     "level": 3,
+     "title": "Transparency statement",
+     "anchor": "sec-transparency-statement"
     },
     {
      "level": 3,
@@ -2670,28 +2715,13 @@
     },
     {
      "level": 3,
+     "title": "Declaration of generative AI and AI-assisted technologies in the manuscript preparation process",
+     "anchor": "sec-declaration-of-generative-ai-and-ai-assisted-technologies-in-the-manuscript-preparation-process"
+    },
+    {
+     "level": 3,
      "title": "Contributions",
      "anchor": "sec-contributions"
-    },
-    {
-     "level": 2,
-     "title": "Methods",
-     "anchor": "sec-methods"
-    },
-    {
-     "level": 3,
-     "title": "Literature search, inclusion, and exclusion criteria",
-     "anchor": "sec-literature-search-inclusion-and-exclusion-criteria"
-    },
-    {
-     "level": 3,
-     "title": "Data extraction",
-     "anchor": "sec-data-extraction"
-    },
-    {
-     "level": 3,
-     "title": "Statistical analysis",
-     "anchor": "sec-statistical-analysis"
     },
     {
      "level": 2,
@@ -2705,7 +2735,7 @@
     }
    ],
    "headline_question": "Does physical exercise improve cognition?",
-   "headline": "SMD 0.227 for general cognition, but essentially nothing for memory or executive function, 0.027 and 0.012",
+   "headline": "SMD 0.208 for general cognition and 0.088 for executive function; for memory 0.226 or 0.021, depending on the adjustment",
    "headline_url": "https://meta-analysis.cz/results/#exercise"
   },
   {

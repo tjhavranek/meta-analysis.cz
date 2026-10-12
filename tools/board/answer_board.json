@@ -51,9 +51,9 @@
    "zero": true
   },
   "exercise": {
-   "value": "SMD 0.227 for general cognition only",
+   "value": "SMD 0.208 for general cognition, 0.088 for executive function",
    "zero": false,
-   "tail": "0.027 for memory, 0.012 for executive function; wide prediction intervals span zero"
+   "tail": "memory 0.226 or 0.021, depending on the adjustment; wide prediction intervals span zero"
   },
   "habits": {
    "value": "0.4 (macro 0.6, micro 0.1)",
