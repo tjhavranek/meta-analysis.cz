@@ -39,7 +39,7 @@ WORKFLOW = os.path.join(ROOT, ".github", "workflows", "seo.yml")
 IGNORE = re.compile(
     r"pip install|apt-get|actions/|KEY=|sleep|smoke_live|indexnow|"
     r"^echo|^for |^if |^fi$|^done$|^exit |^u=|^URLS|"
-    r"^BASE=|^CHANGED=|^curl|^#|^-H |^-d |continue-on-error", re.I)
+    r"^BASE=|^CHANGED=|^curl|^#|^-H |^-d |^rsync |continue-on-error", re.I)
 
 # CI pins Python 3.12 (actions/setup-python). komentare/build.py uses an f-string that
 # 3.11 rejects, so a 3.11 default here reports a syntax error CI will never see. Use the

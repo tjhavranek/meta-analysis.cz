@@ -215,10 +215,16 @@ jobs:
       # so no gate sees it; root *.txt files are in .gitignore, so it is never committed.
       - name: Write the deploy witness
         run: echo "$GITHUB_SHA" > deploy-sha.txt
+      # The repo root is the site, but contributor notes and tooling config are not pages. The
+      # deploy is staged into _site without them; dotfiles the site needs (.nojekyll, the IndexNow
+      # key, deploy-sha.txt) are kept (14 Oct 2026).
+      - name: Stage the site for upload
+        run: |
+          rsync -a --exclude=_site --exclude=.git --exclude=.github --exclude='CLAUDE*.md' --exclude=AGENTS.md --exclude=.claude --exclude=.githooks ./ _site/
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
       - name: Deploy to GitHub Pages
         id: deploy
         uses: actions/deploy-pages@v4

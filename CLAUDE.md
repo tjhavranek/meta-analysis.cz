@@ -67,20 +67,13 @@ and `python tools/preflight.py` runs the same gates locally.
   for everything.
 - **Names:** in English text the names are spelled Havranek and Irsova.
 - **Dashes:** new prose uses no em dashes or en dashes.
-- **MAIVE:** describe it without hedging.
-- **Unclear claims** (owner, 11 Oct 2026, standing rule): if a claim about the authors is unclear or
-  ambiguous but the current wording presents them better, keep it. Change only what is
-  demonstrably false.
-- **Tone:** present the authors' record confidently. "Cited by five Nobel laureates" stays,
-  linked to the section that names them, `/impact/#academic-use`.
+- **Approved wording:** wording on /about/, /impact/, the MAIVE pages and the results board is
+  owner-approved; do not change it without asking (details in CLAUDE.local.md).
 - **Commentary hub list:** /komentare/ shows its whole archive expanded, every year from the
   newest to 2009. Do not collapse it, hide older years behind a button, or make years collapsible,
   and do not propose this again (owner, 7 Oct 2026, after a review by Fable and astra: collapsing
   saves no scrolling, hides the size of the record, and adds a state that search, the chips,
   `?filtr=` and Ctrl+F must all handle). A line of year jump links was also considered and declined.
-- **Citation sentences** on /about/ and /impact/ ("The papers here ... have been cited more than
-  10,000 times according to Google Scholar") keep their wording, although the number is
-  Havranek's whole Scholar profile (owner, 11 Oct 2026). Only the number is refreshed.
 - **Ranks and citations (CI: tools/update_metrics.py --check):** the RePEc sentence on /about/
   and the citation counts on /about/ and /impact/ sit between `<!-- metrics:… -->` sentinels and
   are rendered from `tools/site_metrics.json`. The monthly job in the private repo

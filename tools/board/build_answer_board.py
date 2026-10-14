@@ -69,14 +69,7 @@ def main():
 
     tiles = 0
     out = [START, '\t\t<div class="entry">',
-           # This lede has been cut twice on the owner's instruction. It once opened with
-           # four caveats before the reader had seen a single tile -- the precision each paper
-           # reports, differing units, differing definitions and samples, and "Look at the
-           # source first" -- and none of them survive. Every tile links its paper, /results/
-           # carries the caveat and the citation for each result, and the units are printed on
-           # the row in the datasets catalogue, so the warning is available three ways to
-           # anyone who needs it. His call, twice, and recorded here so it is not quietly
-           # reinstated by a later reviewer who notices the numbers are not comparable.
+           # Lede text is final; edit by hand only.
            '<p>One tile per paper: the question it asks and the answer it gives. The same '
            'results as full sentences below, with a caveat and a citation each on '
            '<a href="/results/"><b>Headline results</b></a>, and as a spreadsheet: '

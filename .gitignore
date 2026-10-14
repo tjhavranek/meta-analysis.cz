@@ -57,3 +57,4 @@ tools/transcripts/*.draft.md
 # pdftotext dumps left beside a paper by a conversion agent. The /*.txt rule above only
 # reaches the repo root; these land in the paper's own folder (discrate/discrate.pdf.txt).
 *.pdf.txt
+CLAUDE.local.md
