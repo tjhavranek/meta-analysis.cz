@@ -113,7 +113,10 @@ def _witnesses(depth=12, most=6):
             shell=True, cwd=ROOT, capture_output=True, text=True,
             encoding="utf-8", errors="replace").stdout.split()
         for rel in changed:
-            if rel in seen or rel.startswith(("tools/", "data_layer/", ".github/")) \
+            # .github/, .claude/, .githooks/, CLAUDE*.md and AGENTS.md are left out of the deploy
+            # (seo.yml, "Stage the site for upload"), so they can never witness one.
+            if rel in seen or rel == "AGENTS.md" or rel.startswith(
+                    ("tools/", "data_layer/", ".github/", ".claude/", ".githooks/", "CLAUDE")) \
                     or rel.endswith(".py"):
                 continue
             path = os.path.join(ROOT, rel)
@@ -125,8 +128,12 @@ def _witnesses(depth=12, most=6):
                 url = "/" + rel[: -len("index.html")]
             elif rel == "index.html":
                 url = "/"
-            with open(path, "rb") as fh:
-                out.append((url, hashlib.sha256(fh.read()).hexdigest(), rel))
+            # Hash what HEAD committed, not the working file: with core.autocrlf=true a file
+            # rewritten locally carries CRLF while the deploy serves the committed LF bytes,
+            # which made a correct deploy look stale (14 Oct 2026).
+            blob = subprocess.run(["git", "show", f"HEAD:{rel}"], cwd=ROOT,
+                                  capture_output=True).stdout
+            out.append((url, hashlib.sha256(blob).hexdigest(), rel))
             if len(out) >= most:
                 return out
     return out
