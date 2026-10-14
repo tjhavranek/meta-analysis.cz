@@ -1,16 +1,16 @@
 {
- "generated_at": "2026-10-13T18:23:59+00:00",
- "repec_release": "2026-08",
+ "generated_at": "2026-10-14T05:16:09+00:00",
+ "repec_release": "2026-09",
  "th_czech10": 1,
  "th_top_percent": 1.0,
  "th_cohort_year": 2013,
  "th_cohort_rank": 3,
- "zi_women10": 99,
+ "zi_women10": 101,
  "zi_cohort_year": 2015,
- "zi_cohort_rank": 6,
+ "zi_cohort_rank": 7,
  "zi_highest_woman_cz": true,
- "th_scholar_citations": 10447,
- "th_scholar_as_of": "2026-10-13",
+ "th_scholar_citations": 10453,
+ "th_scholar_as_of": "2026-10-14",
  "sources": {
   "scholar": "https://scholar.google.com/citations?user=BF0BvBkAAAAJ&hl=en"
  }
