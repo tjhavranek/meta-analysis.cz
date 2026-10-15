@@ -199,6 +199,12 @@ FEED_DESC =("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře 
 HUB_LEDE = ("Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostátní "
             "média, sloupky pro litomyšlskou Lilii, rozhovory a kratší příspěvky ze sítí.")
 
+
+def hub_lede_html():
+    return (esc(HUB_LEDE)
+            .replace("Tomáše Havránka", '<a href="https://www.tomashavranek.cz/cs/">Tomáše Havránka</a>', 1)
+            .replace("Zuzany Havránkové", '<a href="https://www.irsova.com/cs/">Zuzany Havránkové</a>', 1))
+
 # genitive, for a full date: "5. října 2019"
 MONTHS = ["ledna", "února", "března", "dubna", "května", "června",
           "července", "srpna", "září", "října", "listopadu", "prosince"]
@@ -1744,7 +1750,8 @@ def write_index(items, key=None):
     body = ((f'    <div class="lede has-video">\n      <div class="lede-text">\n' if hv else
              f'    <div class="lede">\n')
             + f'      <h1>{esc(title)}</h1>\n'
-            f'      <p>{esc(HUB_LEDE if not key else desc)}'
+            # On the hub the two names lead to the Czech versions of the authors' own sites.
+            f'      <p>{hub_lede_html() if not key else esc(desc)}'
             # The hub is where a first-time reader, often a journalist, lands without knowing
             # the research exists; the footer's bare "meta-analysis.cz" undersold it. Hub only:
             # item pages already carry the bio, the profile links and the JSON-LD identity.
