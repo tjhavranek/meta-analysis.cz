@@ -653,7 +653,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
     <p class="about-bio">{bio}</p>
     <ul class="about-links">
       <li class="who">{th}</li>
-      <li><a href="https://www.tomashavranek.cz/">tomashavranek.cz</a></li>
+      <li><a href="https://www.tomashavranek.cz/{"" if _en else "cs/"}">tomashavranek.cz</a></li>
       <li><a href="{ies}">IES FSV UK</a></li>
       <li><a href="https://orcid.org/0000-0002-3158-2539">ORCID</a></li>
       <li><a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a></li>
@@ -664,7 +664,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
     </ul>
     <ul class="about-links">
       <li class="who">{zi}</li>
-      <li><a href="https://www.irsova.com/">irsova.com</a></li>
+      <li><a href="https://www.irsova.com/{"" if _en else "cs/"}">irsova.com</a></li>
       <li><a href="{ies_zi}">IES FSV UK</a></li>
       <li><a href="https://orcid.org/0000-0002-0753-8124">ORCID</a></li>
       <li><a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a></li>
