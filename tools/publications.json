@@ -18,7 +18,8 @@
    ],
    "n_authors": 6,
    "project": "incentives",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/p/fau/wpaper/wp2022_27.html"
   },
   {
    "title": "Guidance for the Use of AI in the Meta-Analysis of Economics Research",
@@ -63,7 +64,8 @@
    ],
    "n_authors": 4,
    "project": "class",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/p/fau/wpaper/wp2023_19.html"
   },
   {
    "title": "Reporting Guidelines for Meta-Analysis in Economics—Updated for AI",
@@ -451,7 +453,8 @@
    ],
    "n_authors": 347,
    "project": "reproducibility",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/nat/nature/v652y2026i8108d10.1038_s41586-026-10251-x.html"
   },
   {
    "title": "Conventional wisdom, meta-analysis, and research revision in economics",
@@ -475,7 +478,8 @@
    ],
    "n_authors": 10,
    "project": "conventional_wisdom",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/bla/jecsur/v39y2025i3p980-999.html"
   },
   {
    "title": "Does Shareholder Activism Create Value? A Meta-Analysis",
@@ -493,7 +497,8 @@
    ],
    "n_authors": 4,
    "project": "activism",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/p/cpr/ceprdp/18233.html"
   },
   {
    "title": "Reducing the biases of the conventional meta-analysis of correlations",
@@ -510,7 +515,8 @@
    ],
    "n_authors": 3,
    "project": "correlations",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/p/fau/wpaper/wp2023_34.html"
   },
   {
    "title": "Relative Risk Aversion: A Meta-Analysis",
@@ -527,7 +533,8 @@
    ],
    "n_authors": 3,
    "project": "risk",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/bla/jecsur/v39y2025i5p2315-2333.html"
   },
   {
    "title": "Spurious precision in meta-analysis of observational research",
@@ -546,7 +553,8 @@
    "n_authors": 4,
    "project": "maive",
    "type": "journal-article",
-   "article_number": "8454"
+   "article_number": "8454",
+   "ideas": "https://ideas.repec.org/a/nat/natcom/v16y2025i1d10.1038_s41467-025-63261-0.html"
   },
   {
    "title": "Is research on hedge fund performance published selectively? A quantitative survey",
@@ -564,7 +572,8 @@
    ],
    "n_authors": 4,
    "project": "hedge",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/bla/jecsur/v38y2024i4p1085-1131.html"
   },
   {
    "title": "Meta-analyses of partial correlations are biased: Detection and solutions",
@@ -581,7 +590,8 @@
    ],
    "n_authors": 3,
    "project": "pcc",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/p/fau/wpaper/wp2023_17.html"
   },
   {
    "title": "Meta-analysis of social science research: A practitioner's guide",
@@ -599,7 +609,8 @@
    ],
    "n_authors": 4,
    "project": "guidelines",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/bla/jecsur/v38y2024i5p1547-1566.html"
   },
   {
    "title": "Publication and Attenuation Biases in Measuring Skill Substitution",
@@ -617,7 +628,8 @@
    ],
    "n_authors": 4,
    "project": "skill",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/tpr/restat/v106y2024i5p1187-1200.html"
   },
   {
    "title": "Student Employment and Education: A Meta-Analysis",
@@ -634,7 +646,8 @@
    ],
    "n_authors": 3,
    "project": "students",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/ecoedu/v100y2024ics0272775724000335.html"
   },
   {
    "title": "Intertemporal substitution in labor supply: A meta-analysis",
@@ -652,7 +665,8 @@
    ],
    "n_authors": 4,
    "project": "frisch",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/red/issued/23-196.html"
   },
   {
    "title": "When Does Monetary Policy Sway House Prices? A Meta-Analysis",
@@ -669,7 +683,8 @@
    ],
    "n_authors": 3,
    "project": "house_prices",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/pal/imfecr/v71y2023i2d10.1057_s41308-022-00185-5.html"
   },
   {
    "title": "Individual discount rates: a meta-analysis of experimental evidence",
@@ -686,7 +701,8 @@
    ],
    "n_authors": 3,
    "project": "discrate",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/kap/expeco/v25y2022i1d10.1007_s10683-021-09716-9.html"
   },
   {
    "title": "Measuring capital-labor substitution: The importance of method choices and publication bias",
@@ -704,7 +720,8 @@
    ],
    "n_authors": 4,
    "project": "sigma",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/red/issued/20-200.html"
   },
   {
    "title": "Forecasting tourist arrivals: Google Trends meets mixed-frequency data",
@@ -720,7 +737,8 @@
    ],
    "n_authors": 2,
    "project": "tourist",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/sae/toueco/v27y2021i1p129-148.html"
   },
   {
    "title": "How puzzling is the forward premium puzzle? A meta-analysis",
@@ -738,7 +756,8 @@
    ],
    "n_authors": 4,
    "project": "forward",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/eecrev/v134y2021ics0014292121000672.html"
   },
   {
    "title": "Central Bank Equity as an Instrument of Monetary Policy",
@@ -754,7 +773,8 @@
    ],
    "n_authors": 2,
    "project": "cbequity",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/pal/compes/v62y2020i1d10.1057_s41294-019-00092-1.html"
   },
   {
    "title": "Do consumers really follow a rule of thumb? Three thousand estimates from 144 studies say “probably not”",
@@ -770,7 +790,8 @@
    ],
    "n_authors": 2,
    "project": "excess_sensitivity",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/red/issued/18-255.html"
   },
   {
    "title": "Does daylight saving time save electricity? Evidence from Slovakia",
@@ -788,7 +809,8 @@
    ],
    "n_authors": 4,
    "project": "dst_slovakia",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/enepol/v137y2020ics0301421519307323.html"
   },
   {
    "title": "Estimating the Armington elasticity: The importance of study design and publication bias",
@@ -806,7 +828,8 @@
    ],
    "n_authors": 4,
    "project": "armington",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/inecon/v127y2020ics0022199620300982.html"
   },
   {
    "title": "Foreign capital and domestic productivity in the Czech Republic: a meta-regression analysis",
@@ -823,7 +846,8 @@
    ],
    "n_authors": 3,
    "project": "fdi",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/taf/applec/v52y2020i18p1949-1958.html"
   },
   {
    "title": "Remittances and economic growth: A meta-analysis",
@@ -840,7 +864,8 @@
    ],
    "n_authors": 3,
    "project": "remittances",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/wdevel/v134y2020ics0305750x20301479.html"
   },
   {
    "title": "Reporting Guidelines for Meta-Analysis in Economics",
@@ -863,7 +888,8 @@
    ],
    "n_authors": 9,
    "project": "reporting",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/bla/jecsur/v34y2020i3p469-475.html"
   },
   {
    "title": "Firm Size and Stock Returns: A Quantitative Survey",
@@ -880,7 +906,8 @@
    ],
    "n_authors": 3,
    "project": "size",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/bla/jecsur/v33y2019i5p1463-1492.html"
   },
   {
    "title": "Does Daylight Saving Save Electricity? A Meta-Analysis",
@@ -897,7 +924,8 @@
    ],
    "n_authors": 3,
    "project": "dst",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/sae/enejou/v39y2018i2p35-61.html"
   },
   {
    "title": "Estimating the effective lower bound on the Czech National Bank’s policy rate",
@@ -914,7 +942,8 @@
    "n_authors": 2,
    "project": "elb",
    "type": "no-doi",
-   "url": "https://journal.fsv.cuni.cz/mag/article/show/id/1422"
+   "url": "https://journal.fsv.cuni.cz/mag/article/show/id/1422",
+   "ideas": "https://ideas.repec.org/a/fau/fauart/v68y2018i6p550-577.html"
   },
   {
    "title": "Measuring the Income Elasticity of Water Demand: The Importance of Publication and Endogeneity Biases",
@@ -931,7 +960,8 @@
    ],
    "n_authors": 3,
    "project": "water",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/uwp/landec/v94y2018i2p259-283.html"
   },
   {
    "title": "Tuition Fees and University Enrolment: A Meta-Regression Analysis",
@@ -948,7 +978,8 @@
    ],
    "n_authors": 3,
    "project": "education",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/bla/obuest/v80y2018i6p1145-1184.html"
   },
   {
    "title": "Do Borders Really Slash Trade? A Meta-Analysis",
@@ -964,7 +995,8 @@
    ],
    "n_authors": 2,
    "project": "border",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/pal/imfecr/v65y2017i2d10.1057_s41308-016-0001-5.html"
   },
   {
    "title": "Habit formation in consumption: A meta-analysis",
@@ -981,7 +1013,8 @@
    ],
    "n_authors": 3,
    "project": "habits",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/eecrev/v95y2017icp142-167.html"
   },
   {
    "title": "The sources of contagion risk in a banking sector with foreign ownership",
@@ -997,7 +1030,8 @@
    ],
    "n_authors": 2,
    "project": "contagion",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/ecmode/v60y2017icp108-121.html"
   },
   {
    "title": "Bank Competition and Financial Stability: Much Ado About Nothing?",
@@ -1013,7 +1047,8 @@
    ],
    "n_authors": 2,
    "project": "competition",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/bla/jecsur/v30y2016i5p944-981.html"
   },
   {
    "title": "Bank efficiency and interest rate pass-through: Evidence from Czech loan products",
@@ -1030,7 +1065,8 @@
    ],
    "n_authors": 3,
    "project": "passthrough",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/ecmode/v54y2016icp153-169.html"
   },
   {
    "title": "Dynamic elasticities of tax revenue: evidence from the Czech Republic",
@@ -1047,7 +1083,8 @@
    ],
    "n_authors": 3,
    "project": "taxrev",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/taf/applec/v48y2016i60p5866-5881.html"
   },
   {
    "title": "Natural Resources and Economic Growth: A Meta-Analysis",
@@ -1064,7 +1101,8 @@
    ],
    "n_authors": 3,
    "project": "resource_curse",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/wdevel/v88y2016icp134-151.html"
   },
   {
    "title": "Cross-country heterogeneity in intertemporal substitution",
@@ -1082,7 +1120,8 @@
    ],
    "n_authors": 4,
    "project": "substitution",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/inecon/v96y2015i1p100-118.html"
   },
   {
    "title": "Financial development and economic growth: A meta-analysis",
@@ -1099,7 +1138,8 @@
    ],
    "n_authors": 3,
    "project": "finance_growth",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/bla/jecsur/v29y2015i3p506-526.html"
   },
   {
    "title": "Income elasticity of gasoline demand: A meta-analysis",
@@ -1115,7 +1155,8 @@
    ],
    "n_authors": 2,
    "project": "gasoline",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/eneeco/v47y2015icp77-86.html"
   },
   {
    "title": "Measuring intertemporal substitution: The importance of method choices and selective reporting",
@@ -1130,7 +1171,8 @@
    ],
    "n_authors": 1,
    "project": "eis",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/bla/jeurec/v13y2015i6p1180-1204.html"
   },
   {
    "title": "Selective reporting and the social cost of carbon",
@@ -1148,7 +1190,8 @@
    ],
    "n_authors": 4,
    "project": "scc",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/eneeco/v51y2015icp394-406.html"
   },
   {
    "title": "A meta-analysis of the income elasticity of money demand",
@@ -1184,7 +1227,8 @@
    ],
    "n_authors": 6,
    "project": "crisis_jfs",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/finsta/v15y2014icp1-17.html"
   },
   {
    "title": "Structural reforms and growth in transition: A meta-analysis",
@@ -1200,7 +1244,8 @@
    ],
    "n_authors": 2,
    "project": "reforms",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/p/fau/wpaper/wp2013_14.html"
   },
   {
    "title": "A meta-analysis of bank efficiency measurement in transitional countries",
@@ -1233,7 +1278,8 @@
    ],
    "n_authors": 2,
    "project": null,
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/spr/trstrv/v20y2013i1p1-17.html"
   },
   {
    "title": "Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-Analysis",
@@ -1249,7 +1295,8 @@
    ],
    "n_authors": 2,
    "project": "bma",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/wdevel/v42y2013icp1-15.html"
   },
   {
    "title": "How to Solve the Price Puzzle? A Meta-Analysis",
@@ -1266,7 +1313,8 @@
    ],
    "n_authors": 3,
    "project": "price_puzzle",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/mcb/jmoncb/v45y2013i1p37-70.html"
   },
   {
    "title": "Leading indicators of crisis incidence: Evidence from developed countries",
@@ -1286,7 +1334,8 @@
    ],
    "n_authors": 6,
    "project": "leading_indicators",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/jimfin/v35y2013icp1-19.html"
   },
   {
    "title": "Transmission lags of monetary policy: A meta-analysis",
@@ -1303,7 +1352,8 @@
    "n_authors": 2,
    "project": "lags",
    "type": "no-doi",
-   "url": "https://www.ijcb.org/journal/v9n4/transmission-lags-monetary-policy-meta-analysis"
+   "url": "https://www.ijcb.org/journal/v9n4/transmission-lags-monetary-policy-meta-analysis",
+   "ideas": "https://ideas.repec.org/a/ijc/ijcjou/y2013q4a2.html"
   },
   {
    "title": "Demand for gasoline is more price-inelastic than commonly thought",
@@ -1320,7 +1370,8 @@
    ],
    "n_authors": 3,
    "project": "gasoline_price",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/eneeco/v34y2012i1p201-207.html"
   },
   {
    "title": "Monetary transmission and the financial sector in the Czech Republic",
@@ -1337,7 +1388,8 @@
    ],
    "n_authors": 3,
    "project": "transmission",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/kap/ecopln/v45y2012i3p135-155.html"
   },
   {
    "title": "Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers",
@@ -1353,7 +1405,8 @@
    ],
    "n_authors": 2,
    "project": "spillovers_bias",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/taf/jdevst/v48y2012i10p1375-1396.html"
   },
   {
    "title": "Bank Efficiency in Transitional Countries: Sensitivity to Stochastic Frontier Design",
@@ -1369,7 +1422,8 @@
    ],
    "n_authors": 2,
    "project": null,
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/spr/trstrv/v18y2011i2p230-270.html"
   },
   {
    "title": "Estimating vertical spillovers from FDI: Why results vary and what the true effect is",
@@ -1385,7 +1439,8 @@
    ],
    "n_authors": 2,
    "project": "spillovers",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/inecon/v85y2011i2p234-244.html"
   },
   {
    "title": "Measuring Bank Efficiency: A Meta-Regression Analysis",
@@ -1401,7 +1456,8 @@
    ],
    "n_authors": 2,
    "project": null,
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/prg/jnlpep/v2010y2010i4id379p307-328.html"
   },
   {
    "title": "Meta-analysis of intra-industry FDI spillovers: Updated evidence",
@@ -1418,7 +1474,8 @@
    "n_authors": 2,
    "project": null,
    "type": "no-doi",
-   "url": "https://journal.fsv.cuni.cz/mag/article/show/id/1184"
+   "url": "https://journal.fsv.cuni.cz/mag/article/show/id/1184",
+   "ideas": "https://ideas.repec.org/a/fau/fauart/v60y2010i2p151-174.html"
   },
   {
    "title": "On the Intensity of International Subsidy Competition for FDI",
@@ -1435,7 +1492,8 @@
    "n_authors": 2,
    "project": null,
    "type": "no-doi",
-   "url": "https://ideas.repec.org/a/agr/journl/v2(543)y2010i2(543)p25-54.html"
+   "url": "https://ideas.repec.org/a/agr/journl/v2(543)y2010i2(543)p25-54.html",
+   "ideas": "https://ideas.repec.org/a/agr/journl/v2(543)y2010i2(543)p25-54.html"
   },
   {
    "title": "Rose effect and the euro: Is the magic gone?",
@@ -1450,7 +1508,8 @@
    ],
    "n_authors": 1,
    "project": "euro",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/spr/weltar/v146y2010i2p241-261.html"
   },
   {
    "title": "The supply of foreign direct investment incentives: Subsidy competition in an oligopolistic framework",
@@ -1465,7 +1524,8 @@
    ],
    "n_authors": 1,
    "project": null,
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/prg/jnlpep/v2009y2009i2id346p131-155.html"
   }
  ],
  "irsova": [
@@ -1487,7 +1547,8 @@
    ],
    "n_authors": 6,
    "project": "incentives",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/p/fau/wpaper/wp2022_27.html"
   },
   {
    "title": "Guidance for the Use of AI in the Meta-Analysis of Economics Research",
@@ -1532,7 +1593,8 @@
    ],
    "n_authors": 4,
    "project": "class",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/p/fau/wpaper/wp2023_19.html"
   },
   {
    "title": "Reporting Guidelines for Meta-Analysis in Economics—Updated for AI",
@@ -1920,7 +1982,8 @@
    ],
    "n_authors": 347,
    "project": "reproducibility",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/nat/nature/v652y2026i8108d10.1038_s41586-026-10251-x.html"
   },
   {
    "title": "Conventional wisdom, meta-analysis, and research revision in economics",
@@ -1944,7 +2007,8 @@
    ],
    "n_authors": 10,
    "project": "conventional_wisdom",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/bla/jecsur/v39y2025i3p980-999.html"
   },
   {
    "title": "Does Shareholder Activism Create Value? A Meta-Analysis",
@@ -1962,7 +2026,8 @@
    ],
    "n_authors": 4,
    "project": "activism",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/p/cpr/ceprdp/18233.html"
   },
   {
    "title": "Relative Risk Aversion: A Meta-Analysis",
@@ -1979,7 +2044,8 @@
    ],
    "n_authors": 3,
    "project": "risk",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/bla/jecsur/v39y2025i5p2315-2333.html"
   },
   {
    "title": "Spurious precision in meta-analysis of observational research",
@@ -1998,7 +2064,8 @@
    "n_authors": 4,
    "project": "maive",
    "type": "journal-article",
-   "article_number": "8454"
+   "article_number": "8454",
+   "ideas": "https://ideas.repec.org/a/nat/natcom/v16y2025i1d10.1038_s41467-025-63261-0.html"
   },
   {
    "title": "Is research on hedge fund performance published selectively? A quantitative survey",
@@ -2016,7 +2083,8 @@
    ],
    "n_authors": 4,
    "project": "hedge",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/bla/jecsur/v38y2024i4p1085-1131.html"
   },
   {
    "title": "Meta-analysis of social science research: A practitioner's guide",
@@ -2034,7 +2102,8 @@
    ],
    "n_authors": 4,
    "project": "guidelines",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/bla/jecsur/v38y2024i5p1547-1566.html"
   },
   {
    "title": "Publication and Attenuation Biases in Measuring Skill Substitution",
@@ -2052,7 +2121,8 @@
    ],
    "n_authors": 4,
    "project": "skill",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/tpr/restat/v106y2024i5p1187-1200.html"
   },
   {
    "title": "Student Employment and Education: A Meta-Analysis",
@@ -2069,7 +2139,8 @@
    ],
    "n_authors": 3,
    "project": "students",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/ecoedu/v100y2024ics0272775724000335.html"
   },
   {
    "title": "Intertemporal substitution in labor supply: A meta-analysis",
@@ -2087,7 +2158,8 @@
    ],
    "n_authors": 4,
    "project": "frisch",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/red/issued/23-196.html"
   },
   {
    "title": "Individual discount rates: a meta-analysis of experimental evidence",
@@ -2104,7 +2176,8 @@
    ],
    "n_authors": 3,
    "project": "discrate",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/kap/expeco/v25y2022i1d10.1007_s10683-021-09716-9.html"
   },
   {
    "title": "Measuring capital-labor substitution: The importance of method choices and publication bias",
@@ -2122,7 +2195,8 @@
    ],
    "n_authors": 4,
    "project": "sigma",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/red/issued/20-200.html"
   },
   {
    "title": "How puzzling is the forward premium puzzle? A meta-analysis",
@@ -2140,7 +2214,8 @@
    ],
    "n_authors": 4,
    "project": "forward",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/eecrev/v134y2021ics0014292121000672.html"
   },
   {
    "title": "Does daylight saving time save electricity? Evidence from Slovakia",
@@ -2158,7 +2233,8 @@
    ],
    "n_authors": 4,
    "project": "dst_slovakia",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/enepol/v137y2020ics0301421519307323.html"
   },
   {
    "title": "Estimating the Armington elasticity: The importance of study design and publication bias",
@@ -2176,7 +2252,8 @@
    ],
    "n_authors": 4,
    "project": "armington",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/inecon/v127y2020ics0022199620300982.html"
   },
   {
    "title": "Foreign capital and domestic productivity in the Czech Republic: a meta-regression analysis",
@@ -2193,7 +2270,8 @@
    ],
    "n_authors": 3,
    "project": "fdi",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/taf/applec/v52y2020i18p1949-1958.html"
   },
   {
    "title": "Does Daylight Saving Save Electricity? A Meta-Analysis",
@@ -2210,7 +2288,8 @@
    ],
    "n_authors": 3,
    "project": "dst",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/sae/enejou/v39y2018i2p35-61.html"
   },
   {
    "title": "Measuring the Income Elasticity of Water Demand: The Importance of Publication and Endogeneity Biases",
@@ -2227,7 +2306,8 @@
    ],
    "n_authors": 3,
    "project": "water",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/uwp/landec/v94y2018i2p259-283.html"
   },
   {
    "title": "Tuition Fees and University Enrolment: A Meta-Regression Analysis",
@@ -2244,7 +2324,8 @@
    ],
    "n_authors": 3,
    "project": "education",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/bla/obuest/v80y2018i6p1145-1184.html"
   },
   {
    "title": "Do Borders Really Slash Trade? A Meta-Analysis",
@@ -2260,7 +2341,8 @@
    ],
    "n_authors": 2,
    "project": "border",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/pal/imfecr/v65y2017i2d10.1057_s41308-016-0001-5.html"
   },
   {
    "title": "Meta-Regression Analysis in Economics: Lessons Learned",
@@ -2293,7 +2375,8 @@
    ],
    "n_authors": 3,
    "project": "passthrough",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/ecmode/v54y2016icp153-169.html"
   },
   {
    "title": "Dynamic elasticities of tax revenue: evidence from the Czech Republic",
@@ -2310,7 +2393,8 @@
    ],
    "n_authors": 3,
    "project": "taxrev",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/taf/applec/v48y2016i60p5866-5881.html"
   },
   {
    "title": "Cross-country heterogeneity in intertemporal substitution",
@@ -2328,7 +2412,8 @@
    ],
    "n_authors": 4,
    "project": "substitution",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/inecon/v96y2015i1p100-118.html"
   },
   {
    "title": "Publication Bias in Measuring Anthropogenic Climate Change",
@@ -2362,7 +2447,8 @@
    ],
    "n_authors": 4,
    "project": "scc",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/eneeco/v51y2015icp394-406.html"
   },
   {
    "title": "A meta-analysis of bank efficiency measurement in transitional countries",
@@ -2395,7 +2481,8 @@
    ],
    "n_authors": 2,
    "project": null,
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/spr/trstrv/v20y2013i1p1-17.html"
   },
   {
    "title": "Determinants of Horizontal Spillovers from FDI: Evidence from a Large Meta-Analysis",
@@ -2411,7 +2498,8 @@
    ],
    "n_authors": 2,
    "project": "bma",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/wdevel/v42y2013icp1-15.html"
   },
   {
    "title": "Demand for gasoline is more price-inelastic than commonly thought",
@@ -2428,7 +2516,8 @@
    ],
    "n_authors": 3,
    "project": "gasoline_price",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/eneeco/v34y2012i1p201-207.html"
   },
   {
    "title": "Survey Article: Publication Bias in the Literature on Foreign Direct Investment Spillovers",
@@ -2444,7 +2533,8 @@
    ],
    "n_authors": 2,
    "project": "spillovers_bias",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/taf/jdevst/v48y2012i10p1375-1396.html"
   },
   {
    "title": "Bank Efficiency in Transitional Countries: Sensitivity to Stochastic Frontier Design",
@@ -2460,7 +2550,8 @@
    ],
    "n_authors": 2,
    "project": null,
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/spr/trstrv/v18y2011i2p230-270.html"
   },
   {
    "title": "Estimating vertical spillovers from FDI: Why results vary and what the true effect is",
@@ -2476,7 +2567,8 @@
    ],
    "n_authors": 2,
    "project": "spillovers",
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/eee/inecon/v85y2011i2p234-244.html"
   },
   {
    "title": "Measuring Bank Efficiency: A Meta-Regression Analysis",
@@ -2492,7 +2584,8 @@
    ],
    "n_authors": 2,
    "project": null,
-   "type": "journal-article"
+   "type": "journal-article",
+   "ideas": "https://ideas.repec.org/a/prg/jnlpep/v2010y2010i4id379p307-328.html"
   },
   {
    "title": "Meta-analysis of intra-industry FDI spillovers: Updated evidence",
@@ -2509,7 +2602,8 @@
    "n_authors": 2,
    "project": null,
    "type": "no-doi",
-   "url": "https://journal.fsv.cuni.cz/mag/article/show/id/1184"
+   "url": "https://journal.fsv.cuni.cz/mag/article/show/id/1184",
+   "ideas": "https://ideas.repec.org/a/fau/fauart/v60y2010i2p151-174.html"
   },
   {
    "title": "On the Intensity of International Subsidy Competition for FDI",
@@ -2526,7 +2620,8 @@
    "n_authors": 2,
    "project": null,
    "type": "no-doi",
-   "url": "https://ideas.repec.org/a/agr/journl/v2(543)y2010i2(543)p25-54.html"
+   "url": "https://ideas.repec.org/a/agr/journl/v2(543)y2010i2(543)p25-54.html",
+   "ideas": "https://ideas.repec.org/a/agr/journl/v2(543)y2010i2(543)p25-54.html"
   }
  ]
 }

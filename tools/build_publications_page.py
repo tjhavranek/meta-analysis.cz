@@ -81,6 +81,8 @@ def item(r):
         links.append(f'<a href="{E(r["url"])}">publisher</a>')
     if r["project"]:
         links.append(f'<a href="{site_url(r["project"])}">full text on this site</a>')
+    if r.get("ideas"):
+        links.append(f'<a href="{E(r["ideas"])}">IDEAS</a>')
     if links:
         out.append(' &middot; ' + " &middot; ".join(links))
     out.append("</li>")
@@ -250,7 +252,7 @@ def audit(data):
             continue
         (w0, a), (w1, b) = pair[0], pair[1]
         for f in ("title", "year", "venue", "volume", "issue", "page", "article_number",
-                  "project", "authors", "type"):
+                  "project", "authors", "type", "ideas"):
             if a.get(f) != b.get(f):
                 problems.append(f"{doi}: {f} differs between the {w0} and {w1} lists "
                                 f"({a.get(f)!r} vs {b.get(f)!r})")
