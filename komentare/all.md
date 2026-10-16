@@ -59,7 +59,7 @@ Pro zájemce o osmileté i čtyřleté studium jsou dny otevřených dveří v
 - Mobily na nižším gymnáziu podle [školního řádu, čl. 5.4](https://www.glit.cz/wp-content/uploads/2026/09/SM-03-Skolni-rad-od-1.-zari-2026-nove.pdf): od ledna 2026 vypnuté v tašce i o přestávkách, od září 2026 po celou dobu v areálu školy. Výjimky jen v nutných případech.
 - Ve školním roce 2024/25 působila na škole americká jazyková asistentka z Fulbrightova programu. Výměny vedou do Francie (Erasmus+), Německa a na Tchaj-wan (partnerství přes 16 let) a někteří studenti tráví semestr nebo rok v zahraničí ([výroční zpráva 2024/25](https://www.glit.cz/wp-content/uploads/2026/02/Vyrocni_zprava_2024_2025_komplet.pdf)).
 - Studenti chodí na vědecké workshopy do firmy Contipro a v mezinárodním programu GLOBE, který zaštiťuje NASA, sbírají data o přírodě.
-- Dny otevřených dveří: pátek 27. 11. 2026 a středa 20. 1. 2027, prohlídky v 10, 13, 14 a 15 hodin, [nutná registrace](https://www.glit.cz/pro-uchazece/#den-otevrenych-dveri). Přihlášky na střední školy se podávají od 1. do 22. února 2027.
+- Dny otevřených dveří: pátek 27. 11. 2026 a středa 20. 1. 2027, prohlídky v 10, 13, 14, 15 a 16 hodin, [nutná registrace](https://www.glit.cz/pro-uchazece/#den-otevrenych-dveri). Přihlášky na střední školy se podávají od 1. do 22. února 2027.
 
 ---
 
