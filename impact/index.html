@@ -104,7 +104,7 @@ Wiecek; that paper analyses sixteen of the datasets.</p>
 
 <p><a href="/students/">The student employment dataset</a> ships with
 <a href="https://cran.r-project.org/package=RoBMA">RoBMA</a>, the Bayesian model-averaging package
-for meta-analysis on CRAN, as one of its worked examples: 861 estimates from 69 studies, with
+for meta-analysis on CRAN, as one of its worked examples: 881 estimates from 69 studies, with
 meta-analysis.cz given as the source.</p>
 
 <h3 id="academic-use">Academic use</h3>
@@ -126,18 +126,24 @@ slightly higher&#8221;. Simon Johnson, Lukasz Rachel, and Catherine Wolfram cali
 literature in <a href="https://doi.org/10.1257/aer.20250064">A Theory of Price Caps on
 Nonrenewable Resources</a>, <i>American Economic Review</i> 116(7): 2711-2753, calling it
 &#8220;the mean value in the influential meta-study of Havranek, Horvath, Irsova, and Rusnak
-(2015)&#8221;. Both take the average of published estimates. Others need
+(2015)&#8221;. Both take the average of published estimates, and Diego Comin, Danial Lashkari, and
+Marti Mestieri calibrate the same elasticity to 0.5 in
+<a href="https://doi.org/10.3982/ECTA16317"><i>Econometrica</i></a>, citing
+<a href="/eis/">the publication-bias paper</a>. Others need
 the average corrected for selective reporting. Michael Best, James Cloyne, Ethan Ilzetzki, and Henrik Kleven, estimating the same elasticity from
 mortgage notches in the <a href="https://doi.org/10.1093/restud/rdz025"><i>Review of Economic
 Studies</i></a>, take it from <a href="/eis/">the companion paper</a>, which &#8220;conducts a meta
 analysis of the existing literature and finds estimates centered around 0.3-0.4, after controlling
 for publication bias&#8221;.</p>
 
-<p>Tomohiro Hirano and Joseph Stiglitz cite that paper, the companion paper, and
-<a href="/sigma/">the capital-labor substitution meta-analysis</a> in
+<p>Tomohiro Hirano and Joseph Stiglitz, in
 <a href="https://doi.org/10.1093/oxrep/graf026">Overlapping generations models, multiplicity of
 steady states and momentary equilibria, and economic fluctuations</a>, <i>Oxford Review of
-Economic Policy</i>. Michael Kremer, Gautam Rao, and Frank Schilbach cite the publication-bias
+Economic Policy</i>, draw on three of these papers for the evidence that both the elasticity of
+intertemporal substitution and the elasticity of substitution between capital and labor are below
+one: the mean of 0.5 in <a href="/substitution/">the cross-country meta-analysis</a>, the selective
+reporting documented in <a href="/eis/">the publication-bias paper</a>, and the estimate of about
+0.3 in <a href="/sigma/">the capital-labor substitution meta-analysis</a>. Michael Kremer, Gautam Rao, and Frank Schilbach cite the publication-bias
 paper in <a href="https://doi.org/10.1016/bs.hesbe.2018.12.002">Behavioral development
 economics</a>, <i>Handbook of Behavioral Economics</i>. David Card, Jochen Kluve, and Andrea Weber
 cite it in <a href="https://doi.org/10.1093/jeea/jvx028">their own meta-analysis</a> of active
@@ -167,10 +173,14 @@ estimates against <a href="/habits/">the habit-formation meta-analysis</a> in
 <a href="https://doi.org/10.1257/aer.20111196">Clearing Up the Fiscal Multiplier Morass</a>, also
 in the <i>American Economic Review</i>: their habit parameters are high, but &#8220;within the 90
 percent bands for external habits that Havranek, Rusnak, and Sokolova&#8217;s (2017) meta study
-reports&#8221;. Diego Comin, Danial Lashkari, and Marti Mestieri calibrate the elasticity of
-intertemporal substitution to 0.5 in
-<a href="https://doi.org/10.3982/ECTA16317"><i>Econometrica</i></a>, citing
-<a href="/eis/">the publication-bias paper</a>.
+reports&#8221;. Two theoretical works cite the meta-analysis for the gap between macro and micro
+estimates of habit. George-Marios Angeletos and Zhen Huo, in
+<a href="https://doi.org/10.1257/aer.20191436">Myopia and Anchoring</a>, <i>American Economic
+Review</i> 111(4), get comparable persistence from incomplete information, which &#8220;requires no
+actual habit at the micro level&#8221;; Xavier Gabaix, in
+<a href="https://doi.org/10.1016/bs.hesbe.2018.11.001">Behavioral Inattention</a>, <i>Handbook of
+Behavioral Economics</i>, cites its medians, 0.5 for macro studies and 0.1 for micro, and attributes
+the difference to sluggish reaction to information.
 Alonso Alfaro-Urena, Isabela Manelici, and Jose Vasquez cite
 <a href="/spillovers/">the vertical spillovers meta-analysis</a> in
 <a href="https://doi.org/10.1093/qje/qjac006">The Effects of Joining Multinational Supply
@@ -196,17 +206,18 @@ are</a>. Other papers here are cited in
 <a href="https://doi.org/10.1038/s41558-023-01680-x"><i>Nature Climate Change</i></a>,
 <a href="https://doi.org/10.1038/nenergy.2017.134"><i>Nature Energy</i></a>,
 <a href="https://doi.org/10.1038/s41467-024-48512-w"><i>Nature Communications</i></a>,
-<a href="https://doi.org/10.1038/s44221-022-00009-w"><i>Nature Water</i></a>,
 <a href="https://doi.org/10.1038/s41562-025-02394-0"><i>Nature Human Behaviour</i></a>, and
 <a href="https://doi.org/10.1038/s44159-025-00523-0"><i>Nature Reviews Psychology</i></a>. In
 <a href="https://doi.org/10.1038/s41559-023-02144-3"><i>Nature Ecology &amp; Evolution</i></a>, a
 paper on exaggeration bias and selective reporting in ecology cites
 <a href="/resource_curse/">the resource curse meta-analysis</a> as a precedent for the
-diagnosis. In
-<a href="https://doi.org/10.1038/s44221-022-00016-x"><i>Nature Water</i></a>, an account of why
-the cost of drought falls unevenly across households takes the income elasticity of
-residential water demand from <a href="/water/">the water demand meta-analysis</a>:
-&#8220;water use increases roughly 1% for every 10% increase in household income&#8221;.</p>
+diagnosis. In <i>Nature Water</i>,
+<a href="https://doi.org/10.1038/s44221-022-00009-w">a study of how drought affects the
+affordability of urban water</a> takes the income elasticity of residential water demand from
+<a href="/water/">the water demand meta-analysis</a>, and
+<a href="https://doi.org/10.1038/s44221-022-00016-x">the journal&#8217;s commentary on it</a>
+explains why the cost of drought falls unevenly across households: &#8220;water use increases
+roughly 1% for every 10% increase in household income&#8221;.</p>
 
 <h3>In policy institutions</h3>
 
@@ -282,6 +293,15 @@ to the 33% mean reduction in international trade it reports. The <b>BIS</b>
 central bank financial results, cites Hampl and Havranek&#8217;s review of
 <a href="/cbequity/">central bank financial strength and inflation</a> for finding &#8220;no
 systematic evidence that central bank financial strength affects inflation outcomes&#8221;.</p>
+
+<p>The <b>World Trade Organization</b> arbitrator on US duties on Spanish ripe olives used
+<a href="/armington/">the Armington elasticity meta-analysis</a> on both sides of the question of
+how substitutable imports are. Its finding of lower elasticities in larger markets, &#8220;despite
+theoretical studies predicting the opposite&#8221;, counted for the United States, though the
+arbitrator found that evidence weak for olives specifically; its finding that estimates rise with
+product detail led the arbitrator to agree with the European Union that coarser estimates are
+conservative (<a href="https://www.wto.org/english/news_e/news_docs/577ARB_e.pdf">WT/DS577/ARB</a>,
+2025, paras. 6.71 and 6.76-6.77).</p>
 
 
 <p>Each document below was published by the institution named and cites a paper from this
@@ -393,6 +413,13 @@ meta-analysis by Zigraiova and Havranek (2016), there is no general consensus&#8
 <a href="https://www.federalreserve.gov/econres/feds/files/2020077pap.pdf"><i>Modeling the
 Consumption Response to the CARES Act</i></a>, on
 <a href="/habits/">habit formation in consumption</a>.</li>
+<li><b>Bank of England</b>,
+<a href="https://www.bankofengland.co.uk/-/media/boe/files/macro-technical-paper/2026/a-uk-hank-model.pdf"><i>A
+UK-HANK model</i></a>, Macro Technical Paper 7 (2026), which documents a model used in its monetary
+policy preparation. It sets relative risk aversion to 1.0 &#8220;based on the review of Elminejad et
+al. (2022)&#8221;, <a href="/risk/">the risk aversion meta-analysis</a>, and its Frisch elasticity of
+0.75 &#8220;at the upper bound in the review of Elminejad et al. (2023)&#8221;,
+<a href="/frisch/">the Frisch elasticity meta-analysis</a>.</li>
 <li><b>Bank of England</b>, <a href="https://www.bankofengland.co.uk/-/media/boe/files/working-paper/2020/the-link-between-bank-competition-and-risk-in-the-united-kingdom-two-views-for-policymaking.pdf">a
 staff working paper on bank competition and risk in the United Kingdom</a>: &#8220;Zigraiova and
 Havranek (2016) use meta-data analysis to examine almost 600 empirical estimates from 31 studies
@@ -414,8 +441,22 @@ price puzzle.&#8221;</li>
 Intertemporal Substitution</i></a>: &#8220;a recent meta study by Havranek (2015) based on 2,735
 estimates from 169 published papers reports a distribution of estimates that ranges from -5 to
 5.&#8221;</li>
-<li>And <a href="https://www.dnb.nl/media/yinjtlfz/working-paper-406.pdf">De Nederlandsche
-Bank</a>,
+<li>Nineteen more central banks, four of them regional Federal Reserve Banks, cite this work in
+their publications, and several take a number from it. The
+<a href="https://www.nbb.be/doc/ts/publications/wp/wp375en.pdf">National Bank of Belgium</a> sets
+the elasticity of intertemporal substitution to 0.5, &#8220;in line with the mean estimate reported
+in the meta-analysis of Havranek (2015)&#8221;, <a href="/eis/">the publication-bias paper</a>. The
+<a href="https://www.centralbank.ie/docs/default-source/publications/research-technical-papers/corporate-taxation-in-open-economies.pdf?sfvrsn=e6ba691a_5">Central
+Bank of Ireland</a> sets habit formation to 0.5 to conform with
+<a href="/habits/">the habit meta-analysis</a>. The
+<a href="https://www.bostonfed.org/-/media/Documents/Workingpapers/PDF/2023/wp2312.pdf">Federal
+Reserve Bank of Boston</a> takes the literature&#8217;s range for the marginal propensity to spend
+on nondurables, 0.2 to 0.3, from
+<a href="/excess_sensitivity/">the meta-analysis of the marginal propensity to consume</a>. The
+<a href="https://boi.org.il/media/qmslr4we/dp201709e.pdf">Bank of Israel</a> takes the average
+transmission lag of 29 months from <a href="/lags/">the meta-analysis of transmission lags</a>.
+The papers are also cited by
+<a href="https://www.dnb.nl/media/yinjtlfz/working-paper-406.pdf">De Nederlandsche Bank</a>,
 <a href="https://www.norges-bank.no/contentassets/659fc9a8754a45479da91a5bc2250a44/wp-17-2024.pdf">Norges
 Bank</a>, the
 <a href="https://www.econstor.eu/bitstream/10419/248739/1/1784847666.pdf">Deutsche
@@ -430,30 +471,26 @@ de Espa&ntilde;a</a>,
 Riksbank</a>,
 <a href="https://www.bankofcanada.ca/wp-content/uploads/2020/05/swp2020-16.pdf">the Bank of
 Canada</a>, <a href="https://www.boj.or.jp/en/research/wps_rev/wps_2014/data/wp14e07.pdf">the Bank of Japan</a>,
-<a href="https://www.centralbank.ie/docs/default-source/publications/research-technical-papers/corporate-taxation-in-open-economies.pdf?sfvrsn=e6ba691a_5">the
-Central Bank of Ireland</a>,
 <a href="https://www.oenb.at/dam/jcr:7da96518-abad-4a77-9c78-da434529fbf0/feei_2014_q3_studies_feldkircher.pdf">the
 Oesterreichische Nationalbank</a>,
-<a href="https://www.nbb.be/doc/ts/publications/wp/wp375en.pdf">the National Bank of Belgium</a>,
 <a href="https://www.bankofgreece.gr/Publications/Paper2019271.pdf">the Bank of Greece</a>,
-<a href="https://haldus.eestipank.ee/sites/default/files/2022-03/2022_04_wp.pdf">Eesti Pank</a>,
-<a href="https://boi.org.il/media/qmslr4we/dp201709e.pdf">the Bank of Israel</a>, and the Federal
+<a href="https://haldus.eestipank.ee/sites/default/files/2022-03/2022_04_wp.pdf">Eesti Pank</a>, and the Federal
 Reserve Banks of
 <a href="https://s3.amazonaws.com/real.stlouisfed.org/wp/2016/2016-006.pdf">St. Louis</a>,
-<a href="https://www.frbsf.org/wp-content/uploads/el2022-33.pdf">San Francisco</a>,
 <a href="https://www.dallasfed.org/-/media/documents/institute/wpapers/2019/0359.pdf">Dallas</a>,
-<a href="https://www.bostonfed.org/-/media/Documents/Workingpapers/PDF/2023/wp2312.pdf">Boston</a>,
-and <a href="https://www.clevelandfed.org/publications/economic-commentary/2023/ec-202319-excess-savings-and-consumer-behavior-excess-compared-to-what">Cleveland</a>.</li>
+and <a href="https://www.clevelandfed.org/publications/economic-commentary/2023/ec-202319-excess-savings-and-consumer-behavior-excess-compared-to-what">Cleveland</a>,
+as does an <a href="https://www.frbsf.org/wp-content/uploads/el2022-33.pdf">Economic Letter</a> of
+the San Francisco Fed.</li>
 </ul>
 
 <p>From 2015 to 2019 Havranek was full-time
-Advisor to the Board of the <b>Czech National Bank</b>, and the opinions he wrote for the Board
+Advisor to the Board of the <b>Czech National Bank</b>, and his opinions for the Board
 argue from meta-analytic averages. The opinion on Situation Report
 6/2017 makes the case for a steeper path of rate increases partly on the ground that
 &#8220;the average of published estimates of transmission in the Czech Republic suggests that a
 change in rates has its greatest effect on prices after 15 months&#8221;, citing
-<a href="/lags/">the meta-analysis of transmission lags</a>. The Bank has since released those
-opinions, and they are here in English translation beside the Czech originals it published:
+<a href="/lags/">the meta-analysis of transmission lags</a>. The Bank has since released the
+opinions; four are here in English translation beside the Czech originals:
 <a href="/notes/cnb-advisor-opinion-2sz-2016/">2/2016</a>,
 <a href="/notes/cnb-advisor-opinion-6sz-2016/">6/2016</a>,
 <a href="/notes/cnb-advisor-opinion-6sz-2017/">6/2017</a>, and
