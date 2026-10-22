@@ -1,6 +1,6 @@
 {
  "_about": "Canonical shared facts about the two maintainers (awards, roles, paper statuses). Enter new shared facts HERE first; tomashavranek.cz and irsova.com follow via api/v1/people.json (tools/build_people_api.py). Seeded 11 Oct 2026 from the personal sites' facts.json, whose sources were checked on 7-8 Oct 2026.",
- "updated": "2026-10-11",
+ "updated": "2026-10-22",
  "people": {
   "tomas": {
    "awards": [
@@ -416,6 +416,16 @@
      "end": null,
      "sources": [
       "https://ies.fsv.cuni.cz/en/contacts/institute-members/73504033"
+     ]
+    },
+    {
+     "id": "charles-university-scientific-council-member",
+     "title": "Member, Scientific Council",
+     "organization": "Charles University",
+     "start": null,
+     "end": null,
+     "sources": [
+      "https://cuni.cz/UK-128.html"
      ]
     },
     {

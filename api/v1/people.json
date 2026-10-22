@@ -3,7 +3,7 @@
  "name": "meta-analysis.cz people feed",
  "description": "Shared facts about Tomas Havranek and Zuzana Irsova, the maintainers of meta-analysis.cz: publications with their status, awards, roles, and the site's counts. meta-analysis.cz is the source; their personal sites follow.",
  "license": "https://creativecommons.org/licenses/by/4.0/",
- "updated": "2026-10-11",
+ "updated": "2026-10-22",
  "statuses": {
   "published": "in print or online with a DOI",
   "forthcoming": "accepted; status_venue names the journal",
@@ -3646,6 +3646,16 @@
      "end": null,
      "sources": [
       "https://ies.fsv.cuni.cz/en/contacts/institute-members/73504033"
+     ]
+    },
+    {
+     "id": "charles-university-scientific-council-member",
+     "title": "Member, Scientific Council",
+     "organization": "Charles University",
+     "start": null,
+     "end": null,
+     "sources": [
+      "https://cuni.cz/UK-128.html"
      ]
     },
     {
