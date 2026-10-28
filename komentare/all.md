@@ -4,7 +4,7 @@ Publicistika Tomáše Havránka a Zuzany Havránkové: komentáře pro celostát
 
 Licence: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Volně kopírovat, šířit, upravovat a dále používat k jakémukoli účelu, včetně komerčního využití a trénování modelů strojového učení, pokud uvedete meta-analysis.cz.
 
-Tento soubor obsahuje text všech položek, u nichž archiv text drží (246 z celkem 247), u naprosté většiny v plném znění; výjimkou jsou položky označené v index.json jako publisher_excerpt (2), kde je uložena jen volně dostupná ukázka, a author_manuscript (23), kde jde o autorskou verzi, která se může lišit od otištěné. Část položek je audio a video. Tam, kde archiv má přepis, je text v tomto souboru a položka nese status machine_transcript (21), tedy strojový přepis nahrávky, nebo publisher_transcript (1), tedy přepis vydaný samotnou stanicí. Zbylé audio a video (1) vede archiv pouze odkazem a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (27), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
+Tento soubor obsahuje text všech položek, u nichž archiv text drží (247 z celkem 248), u naprosté většiny v plném znění; výjimkou jsou položky označené v index.json jako publisher_excerpt (2), kde je uložena jen volně dostupná ukázka, a author_manuscript (23), kde jde o autorskou verzi, která se může lišit od otištěné. Část položek je audio a video. Tam, kde archiv má přepis, je text v tomto souboru a položka nese status machine_transcript (21), tedy strojový přepis nahrávky, nebo publisher_transcript (1), tedy přepis vydaný samotnou stanicí. Zbylé audio a video (1) vede archiv pouze odkazem a v tomto souboru nejsou; jejich metadata najdete v index.json a corpus.jsonl. Samostatně jsou vedeny kratší příspěvky ze sociálních sítí (27), psané převážně anglicky. Mají vlastní stránku https://meta-analysis.cz/komentare/posts/ a v index.json i corpus.jsonl jsou označeny jako genre=social_post.
 
 ---
 
@@ -929,6 +929,52 @@ The manual protocol (including a four-model version with Gemini and Grok in addi
 [https://github.com/tjhavranek/research-audit-duel-protocol](https://github.com/tjhavranek/research-audit-duel-protocol)
 
 Try it on something you are working on and tell us how we could improve it!
+
+---
+
+## Bezpečnost dětí na přechodech u litomyšlských škol: dotaz předsedů tří školských rad kandidujícím stranám
+
+*Kandidující strany a sdružení v Litomyšli, 12. května 2026. Martina Holcmanová, Jaroslava Hurychová, Tomáš Havránek.*
+
+*Korespondence, nikoli publikovaný text. Uvedené datum je datum odeslání.*
+
+Zdroj: https://meta-analysis.cz/komentare/litomysl-bezpecnost-deti-prechody-dotaz-stranam/
+
+**Věc: Bezpečnost dětí na přechodech u základních škol v Litomyšli**
+
+Vážené dámy, vážení pánové,
+
+obracíme se na Vás jako předsedkyně a předseda školských rad tří největších základních škol v Litomyšli, tedy jako zvolení zástupci rodičů.
+
+Před komunálními volbami bychom rádi znali postoj kandidujících stran a sdružení k bezpečnosti dětí na přechodech a hlavních pěších trasách k základním školám v Litomyšli. Stejně jako mnoho dalších rodičů chceme děti podporovat v tom, aby chodily do školy pěšky. To ale vyžaduje, aby se na přechodech cítily bezpečně a aby v jejich bezpečnost mohli věřit i rodiče.
+
+Prosíme proto o stručnou odpověď na následující otázky:
+
+1) Podpoříte v příštím volebním období další zvyšování bezpečnosti dětí u základních škol v Litomyšli?
+
+2) Pokud ano, jaká konkrétní opatření jste ochotni prosazovat? Zajímají nás zejména:
+
+- snížení rychlostního limitu v okolí škol,
+- důslednější kontrola dodržování rychlosti,
+- omezení nákladní a tranzitní dopravy v blízkosti škol,
+- stavební úpravy přechodů (vyvýšené přechody) a další zklidnění dopravy, jak je běžné v řadě evropských zemí.
+
+Naším cílem je praktické zlepšení bezpečnosti dětí v Litomyšli. Stejný dotaz posíláme všem kandidujícím stranám a sdružením a Vaše odpovědi plánujeme sdílet s rodiči. Budeme vděčni, pokud nám odpovíte do 31. května.
+
+Děkujeme a přejeme Vám hezké jaro.
+
+Martina Holcmanová, předsedkyně školské rady III. ZŠ Litomyšl  
+Jaroslava Hurychová, předsedkyně školské rady II. ZŠ Litomyšl  
+Tomáš Havránek, předseda školské rady I. ZŠ Litomyšl
+
+**Co strany a sdružení v odpovědích podpořily**
+
+Shrnutí odpovědí došlých do 25. 5. 2026, v pořadí, v jakém přišly.
+
+- **ODS** (Lukáš Novák, radní města): ano, bezpečnosti dětí se chce věnovat i nadále, a to na základě dat. Pro I. ZŠ je objednané počítadlo dopravy Telraam; pokud se osvědčí, rád by ho umístil i do dalších lokalit. Za standard považuje snížení limitu na 30 km/h, případně ještě níže; na ulici T. G. Masaryka si po dokončení dálnice dokáže představit i obytnou zónu. Dokáže si představit častější namátkové kontroly rychlosti městskou policií, opakovaně navrhoval přechody v ulicích u gymnázia napojených na ulici T. G. Masaryka a je pro úpravu chodníků u všech tří škol. Upřednostňuje organizační opatření; vyvýšené přechody podle něj přicházejí v úvahu, až když ostatní opatření nepomohou.
+- **Nestraníci pro Litomyšl** (Leoš Krejčí): zvýšení bezpečnosti dětí jednoznačně podporují. Přimlouvají se zejména za stavební úpravy přechodů, tedy vyvýšené přechody, a další zklidnění dopravy. Chtějí koncepční, vzájemně provázané řešení, ne nekoncepční zahlcení města značkami a bariérami.
+- **Generace 89** (starosta Daniel Brýdl): bezpečnosti dětí se chtějí věnovat i do budoucna, společně s dalšími subjekty, a to nejen u škol, ale na všech klíčových přechodech, kudy děti chodí do škol. Připomněli, co už město u škol zavedlo: radar na ulici T. G. Masaryka, třicítku, kterou u I. ZŠ prosadil Tomáš Havránek, a dlažbu před školou, dohled strážníků na přechodech a projekt rekonstrukce ulice T. G. Masaryka. Uvítají konkrétní realizovatelné návrhy a nabídli osobní schůzku a představení projektu rekonstrukce ulice T. G. Masaryka. Zmínili námět Jana Vavřína zjistit, zda by rodiče a prarodiče chtěli dobrovolně odpoledne dohlížet na přechody. Upozornili, že o obou ulicích, Zámecké i T. G. Masaryka, jako krajských silnicích rozhoduje kraj a omezení podléhají závaznému stanovisku Policie ČR.
+- **KDU-ČSL a nezávislí pro Litomyšl** (Josef Štefl): jsou pro konkrétní opatření ve všech čtyřech navržených bodech. Ve volebním programu označují bezpečnost dětí u škol za prioritu a slibují, že revitalizací ulice T. G. Masaryka zajistí bezpečnější přechody a zklidnění dopravy, budou iniciovat vyvýšený přechod v ulici Zámecká a podpoří co nejlepší napojení města na D35 včetně přímého sjezdu ze severu. Upozornili, že některé body dopravní inspektorát zatím neschválil.
 
 ---
 

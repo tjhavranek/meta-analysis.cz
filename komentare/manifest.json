@@ -5,11 +5,11 @@
  "newest_record": "2026-10-07",
  "temporal_coverage": "2009-08-18/2026-10-07",
  "records": {
-  "total": 274,
+  "total": 275,
   "by_text_status": {
    "published_full_text": 216,
    "machine_transcript": 21,
-   "correspondence": 8,
+   "correspondence": 9,
    "author_manuscript": 23,
    "unpublished_manuscript": 2,
    "publisher_transcript": 1,
@@ -18,7 +18,7 @@
   },
   "by_section": {
    "Celostátní komentáře": 93,
-   "Litomyšlské sloupky": 65,
+   "Litomyšlské sloupky": 66,
    "Rozhovory": 54,
    "In English": 35,
    "Posts (ze sítí)": 27
@@ -45,28 +45,28 @@
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 2411948,
-   "sha256": "dbc5655f349e6e63dfa21e4e860011f9a96f2cbbba383f98db9168acd56f824b"
+   "bytes": 2417225,
+   "sha256": "88a212b183dfe2cf7f73983ea38d2587c0c29f6141be90979e8496e559283ee1"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 2434900,
-   "sha256": "208c3ade71a0b0b39b170239f0067aa9692c3459a8c0f3a1e0c22aa4a4a5ef3a"
+   "bytes": 2440255,
+   "sha256": "bbee5e97c0d7d25cc6da7641096908ec194bd9a19257e8a23f40ba31e806d58c"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
-   "bytes": 2174944,
-   "sha256": "d4616eb1ebee8a9aad27cde337d3e74ca6362d3b7a77e2654d397cca82770f8b"
+   "bytes": 2179788,
+   "sha256": "9586db7b4c322216ecf3f1d56a29356d0504b4d4df7c79afaa70805edbb50c48"
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
-   "bytes": 54556,
-   "sha256": "f83cad98d3b7f815c2a1edac7e3e4222a000dc377bc38a5f2d0d8e0ff9af6139"
+   "bytes": 54868,
+   "sha256": "d6ca4f7238cc0ad1fb4a797ac5152aa10cbc4d7f0eb6e38969e70950045bdb00"
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 2377876,
-   "sha256": "2d490366b9a285305791c9078cbe315c253c93d5190a437a7794e1caa2297948"
+   "bytes": 2383139,
+   "sha256": "2b7e91dfa63454f4896ab398ec93641e11eb552679146f062421eef59934b4ae"
   }
  },
  "generated_from": [
