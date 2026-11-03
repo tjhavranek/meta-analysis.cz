@@ -820,17 +820,6 @@
 "2000"
 ]
 },
-"05080ee1aaf11149": {
-"doi": "10.1002/jrsm.1352",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Bom PRD, Rachinger H. A kinked meta-regression model for publication bias correction. Res Syn Methods. 2019;10:497\u2013514.",
-"title": "A kinked meta\u2010regression model for publication bias correction",
-"why": "all three checks passed",
-"years": [
-"2019"
-]
-},
 "050be84d20dfde5d": {
 "doi": "10.1080/09603107.2010.508716",
 "overlap": 1.0,
@@ -1026,17 +1015,6 @@
 "why": "all three checks passed",
 "years": [
 "2004"
-]
-},
-"061f8805574916c3": {
-"doi": "10.1111/obes.12240",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Havranek, T, Irsova, Z, Zeynalova O. Tuition fees and university enrolment: A meta-regression analysis. Ox Bull Econ and Stat. 2018;80:1145\u20131184.",
-"title": "Tuition Fees and University Enrolment: A Meta\u2010Regression Analysis",
-"why": "all three checks passed",
-"years": [
-"2018"
 ]
 },
 "063cb565b5d0d04b": {
@@ -1930,6 +1908,12 @@
 "2018"
 ]
 },
+"0b45afe52dc2a4a0": {
+"doi": null,
+"project": "pcc_survey",
+"text": "Cohen J. Statistical Power Analysis for the Behavioral Sciences. 2nd ed. Lawrence Erlbaum Associates; 1988.",
+"why": "check 1 failed (overlap 1.00, year False, author True)"
+},
 "0b612a184c36ae0b": {
 "doi": null,
 "project": "conventional_wisdom",
@@ -1957,6 +1941,17 @@
 "years": [
 "2013",
 "2014"
+]
+},
+"0b770375d7e3b7cc": {
+"doi": "10.1002/jrsm.1512",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Stanley TD, Doucouliagos H, Ioannidis JPA, Carter E. Detecting publication selection bias through excess statistical significance. Res Synth Methods. 2021;12:776-795.",
+"title": "Detecting publication selection bias through excess statistical significance",
+"why": "all three checks passed",
+"years": [
+"2021"
 ]
 },
 "0b853317b3025586": {
@@ -3202,17 +3197,6 @@
 "2013"
 ]
 },
-"1363896241da71e3": {
-"doi": "10.1002/sim.6481",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Stanley T D & Doucouliagos HC. Neither fixed nor random: Weighted least squares meta-analysis. Stat in Med. 2015;34:2116\u20132127.",
-"title": "Neither fixed nor random: weighted least squares meta\u2010analysis",
-"why": "all three checks passed",
-"years": [
-"2015"
-]
-},
 "137c9b2cb60a8225": {
 "doi": null,
 "project": "sigma",
@@ -3697,6 +3681,17 @@
 "2012"
 ]
 },
+"163ea452d341d1de": {
+"doi": "10.1016/j.irfa.2018.11.006",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Geyer-Klingeberg J, Hang M, Rathgeber AW. What drives financial hedging? A meta-regression analysis of corporate hedging determinants. Int Rev Financ Anal. 2019;61:203-221.",
+"title": "What drives financial hedging? A meta-regression analysis of corporate hedging determinants",
+"why": "all three checks passed",
+"years": [
+"2019"
+]
+},
 "166d7d31e61af677": {
 "doi": "10.1016/s0304-405x(00)00065-9",
 "overlap": 1.0,
@@ -3741,6 +3736,17 @@
 "why": "all three checks passed",
 "years": [
 "2026"
+]
+},
+"1684278d7604c31e": {
+"doi": "10.1002/sim.7228",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Stanley TD, Doucouliagos H, Ioannidis JPA. Finding the power to reduce publication bias. Stat Med. 2017;36:1580-1598.",
+"title": "Finding the power to reduce publication bias",
+"why": "all three checks passed",
+"years": [
+"2017"
 ]
 },
 "1688667d2409f534": {
@@ -5247,6 +5253,17 @@
 "2007"
 ]
 },
+"2032a07aee698f2a": {
+"doi": "10.1002/jrsm.1356",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "van Aert RCM, Jackson D. A new justification of the Hartung-Knapp method for random-effects meta-analysis based on weighted least squares regression. Res Synth Methods. 2019;10:515-527.",
+"title": "A new justification of the Hartung\u2010Knapp method for random\u2010effects meta\u2010analysis based on weighted least squares regression",
+"why": "all three checks passed",
+"years": [
+"2019"
+]
+},
 "203ea33b2ba1a0d4": {
 "doi": "10.1080/09645299800000012",
 "overlap": 1.0,
@@ -5474,17 +5491,6 @@
 "1976"
 ]
 },
-"21bea3bb2c8b7605": {
-"doi": "10.1002/jrsm.1632",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "van Aert RCM, Goos C. A critical reflection on computing the sampling variance of the partial correlation coefficient. Res Synth Methods. 2023; 14:520\u2013525.",
-"title": "A critical reflection on computing the sampling variance of the partial correlation coefficient",
-"why": "all three checks passed",
-"years": [
-"2023"
-]
-},
 "21d63c25e4f646c8": {
 "doi": "10.1016/j.jdeveco.2024.103354",
 "overlap": 1.0,
@@ -5494,6 +5500,17 @@
 "why": "all three checks passed",
 "years": [
 "2024"
+]
+},
+"21de0319b50dfc68": {
+"doi": "10.1257/jep.15.3.131",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Stanley TD. Wheat from chaff: meta-analysis as quantitative literature review. J Econ Perspect. 2001;15:131-150.",
+"title": "Wheat From Chaff: Meta-Analysis As Quantitative Literature Review",
+"why": "all three checks passed",
+"years": [
+"2001"
 ]
 },
 "21f2c37664691917": {
@@ -6346,6 +6363,12 @@
 "2005"
 ]
 },
+"2711497a3fb899dc": {
+"doi": null,
+"project": "pcc_survey",
+"text": "Brodeur A, L\u00e9 M, Sangnier M, Zylberberg Y. Star Wars: the empirics strike back. Am Econ J Appl Econ. 2016;8:1-32.",
+"why": "check 1 failed (overlap 1.00, year False, author True)"
+},
 "27170eaed761226d": {
 "doi": "10.1016/j.rfe.2009.04.004",
 "overlap": 1.0,
@@ -6480,6 +6503,18 @@
 "why": "all three checks passed",
 "years": [
 "2017"
+]
+},
+"277d2849fda4c668": {
+"doi": "10.1002/sim.2688",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Sidik K, Jonkman JN. A comparison of heterogeneity variance estimators in combining results of studies. Stat Med. 2007;26:1964-1981.",
+"title": "A comparison of heterogeneity variance estimators in combining results of studies",
+"why": "all three checks passed",
+"years": [
+"2006",
+"2007"
 ]
 },
 "2784674db9525220": {
@@ -6822,6 +6857,17 @@
 "years": [
 "2012",
 "2014"
+]
+},
+"298e54ea806c95e1": {
+"doi": "10.1002/jrsm.1654",
+"overlap": 0.909,
+"project": "pcc_survey",
+"text": "van Aert RCM. Meta-analyzing partial correlation coefficients using Fisher's z transformation. Res Synth Methods. 2023;14:768-773.",
+"title": "Meta\u2010analyzing partial correlation coefficients using Fisher's\n                    <i>z</i>\n                    transformation",
+"why": "all three checks passed",
+"years": [
+"2023"
 ]
 },
 "29a24c662afd81ca": {
@@ -7465,6 +7511,17 @@
 "project": "size",
 "text": "Hampl, M., Havranek, T. and Irsova, Z. (2019) Foreign capital and domestic productivity in the Czech Republic: a meta-regression analysis. Applied Economics, forthcoming.",
 "why": "check 1 failed (overlap 1.00, year False, author True)"
+},
+"2d9fc805f12967eb": {
+"doi": "10.1002/jrsm.1632",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "van Aert RCM, Goos C. A critical reflection on computing the sampling variance of the partial correlation coefficient. Res Synth Methods. 2023;14:520-525.",
+"title": "A critical reflection on computing the sampling variance of the partial correlation coefficient",
+"why": "all three checks passed",
+"years": [
+"2023"
+]
 },
 "2da1ebd962dace0c": {
 "doi": "10.1142/s0217590803000670",
@@ -8580,17 +8637,6 @@
 "2019"
 ]
 },
-"343836dc3608b87f": {
-"doi": "10.4324/9780203111710",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Stanley TD, Doucouliagos H. Meta-Regression Analysis in Economics and Business. Oxford: Routledge; 2012.",
-"title": "Meta-Regression Analysis in Economics and Business",
-"why": "all three checks passed",
-"years": [
-"2012"
-]
-},
 "3448c555763d91f5": {
 "doi": "10.1016/0304-4076(95)01789-5",
 "overlap": 1.0,
@@ -8811,17 +8857,6 @@
 "project": "class",
 "text": "Levin, J. (2001): \u201cFor whom the redundant counts: A quartile regression analysis of family influence on scholastic achievement.\u201d Empirical Economics 26(1): pp. 221\u2013246.",
 "why": "check 1 failed (overlap 0.56, year True, author True)"
-},
-"36030125bf5a5d31": {
-"doi": "10.1111/joes.12363",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Havr\u00e1nek, T., Stanley, T.D., Doucouliagos, H. et al. Reporting guidelines for meta-analysis in economics. J Econ Surv. 2020;34:469\u2013475.",
-"title": "REPORTING GUIDELINES FOR META\u2010ANALYSIS IN ECONOMICS",
-"why": "all three checks passed",
-"years": [
-"2020"
-]
 },
 "360a304d891ef7bd": {
 "doi": "10.1111/j.1468-0297.2010.02364.x",
@@ -9751,6 +9786,17 @@
 "2023"
 ]
 },
+"3c1dfeb2f0c2d507": {
+"doi": "10.1037/1082-989x.6.2.161",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Field AP. Meta-analysis of correlation coefficients: a Monte Carlo comparison of fixed- and random-effects methods. Psychol Methods. 2001;6:161-180.",
+"title": "Meta-analysis of correlation coefficients: A Monte Carlo comparison of fixed- and random-effects methods.",
+"why": "all three checks passed",
+"years": [
+"2001"
+]
+},
 "3c3003d49fa9e68f": {
 "doi": "10.1016/j.jfineco.2008.07.001",
 "overlap": 1.0,
@@ -10176,6 +10222,12 @@
 "project": "euro",
 "text": "Pakko, M. R., & Wall, H. J. (2001). Reconsidering the trade-creating effects of a currency union. FRB St. Louis Review, 83, 37\u201346.",
 "why": "check 2 failed (the runner-up is equally plausible)"
+},
+"3e8292e1632ce9f5": {
+"doi": null,
+"project": "pcc_survey",
+"text": "Owens DK, Lohr KN, Atkins D, et al. AHRQ series paper 5: grading the strength of a body of evidence when comparing medical interventions. J Clin Epidemiol. 2010;63(5):513-523.",
+"why": "check 1 failed (overlap 0.60, year True, author True)"
 },
 "3e91195adb7478c2": {
 "doi": "10.1093/rfs/hhw023",
@@ -11567,6 +11619,12 @@
 "2000"
 ]
 },
+"48ab8360719aa4d8": {
+"doi": null,
+"project": "pcc_survey",
+"text": "Stanley TD, Ioannidis JPA, Maier M, Doucouliagos H, Otte WM, Barto\u0161 F. Unrestricted weighted least squares represent medical research better than random effects in 67,308 Cochrane meta-analyses. J Clin Epidemiol. 2023;157:53-58.",
+"why": "check 2 failed (the runner-up is equally plausible)"
+},
 "48ba76d212fa75ef": {
 "doi": "10.1007/s10997-013-9266-5",
 "overlap": 1.0,
@@ -12097,6 +12155,17 @@
 "2008"
 ]
 },
+"4c6a94d92321687b": {
+"doi": "10.1002/jrsm.1352",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Bom PRD, Rachinger H. A kinked meta-regression model for publication bias correction. Res Synth Methods. 2019;10:497-514.",
+"title": "A kinked meta\u2010regression model for publication bias correction",
+"why": "all three checks passed",
+"years": [
+"2019"
+]
+},
 "4c7e6a429671de5b": {
 "doi": "10.1111/1540-6261.00449",
 "overlap": 0.889,
@@ -12428,17 +12497,6 @@
 "project": "climate",
 "text": "Havranek, T. (2015): \u201cMeasuring intertemporal substitution: The importance of method choices and selective reporting.\u201d Journal of the European Economic Association (forthcoming).",
 "why": "check 1 failed (overlap 1.00, year True, author False)"
-},
-"4e18271b34dfbe68": {
-"doi": "10.1257/jep.15.3.131",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Stanley, TD. Wheat from chaff: Meta-analysis as quantitative literature review. Journal of Economic Perspectives. 2001;15:131\u2013150.",
-"title": "Wheat From Chaff: Meta-Analysis As Quantitative Literature Review",
-"why": "all three checks passed",
-"years": [
-"2001"
-]
 },
 "4e4296f37955a6fa": {
 "doi": "10.1016/j.ehb.2016.01.003",
@@ -12844,17 +12902,6 @@
 "why": "all three checks passed",
 "years": [
 "1997"
-]
-},
-"5053971b0afa74bc": {
-"doi": "10.1111/ecoj.12461",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Ioannidis, J.P.A., Stanley, T.D. and Doucouliagos, C. The power of bias in economics research, The Economic Journal. 2017;127:F236\u2013265.",
-"title": "The Power of Bias in Economics Research",
-"why": "all three checks passed",
-"years": [
-"2017"
 ]
 },
 "505ec812ead187ca": {
@@ -13928,6 +13975,17 @@
 "text": "Irsova, Z. and Havranek, T. (2013) Determinants of horizontal spillovers from FDI: evidence from a large meta-analysis. World Development 42(1): 1\u201315.",
 "why": "check 1 failed (overlap 1.00, year True, author False)"
 },
+"5753bcc9b78354ae": {
+"doi": "10.1111/joes.12363",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Havr\u00e1nek T, Stanley TD, Doucouliagos H, et al. Reporting guidelines for meta-analysis in economics. J Econ Surv. 2020;34:469-475.",
+"title": "REPORTING GUIDELINES FOR META\u2010ANALYSIS IN ECONOMICS",
+"why": "all three checks passed",
+"years": [
+"2020"
+]
+},
 "575a7d42f6ae96b2": {
 "doi": "10.1111/kykl.12090",
 "overlap": 1.0,
@@ -14044,17 +14102,6 @@
 "why": "all three checks passed",
 "years": [
 "2001"
-]
-},
-"57c4ef2c69a35762": {
-"doi": "10.1111/joes.12211",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Stanley, T.D., Doucouliagos, H. and Steel, P. Does ICT generate economic growth? A meta-regression analysis. J Econ Surv. 2018;32:705\u2013726.",
-"title": "DOES ICT GENERATE ECONOMIC GROWTH? A META\u2010REGRESSION ANALYSIS",
-"why": "all three checks passed",
-"years": [
-"2018"
 ]
 },
 "57cb4b125e50e685": {
@@ -14372,17 +14419,6 @@
 "project": "alphas",
 "text": "Agarwal, V., Bakshi, G., Huij, J., 2009a. Do higher-moment equity risks explain hedge fund returns? Robert H. Smith School Research Paper No. RHS , 06\u2013153.",
 "why": "check 1 failed (overlap 1.00, year False, author True)"
-},
-"59dca51ba04efcbc": {
-"doi": "10.1002/jrsm.1654",
-"overlap": 0.909,
-"project": "pcc_survey",
-"text": "van Aert RCM. Meta-analyzing partial correlation coefficients using Fisher\u2019s z transformation. Res Synth Methods. 2023; 14:768\u2013773.",
-"title": "Meta\u2010analyzing partial correlation coefficients using Fisher's\n                    <i>z</i>\n                    transformation",
-"why": "all three checks passed",
-"years": [
-"2023"
-]
 },
 "59ef4944df66f4b7": {
 "doi": "10.1016/j.iref.2017.01.001",
@@ -15232,18 +15268,6 @@
 "text": "United Nations: 2020, The impact of COVID-19 on children. UN Policy Brief.",
 "why": "check 1 failed (overlap 0.56, year True, author False)"
 },
-"5f445ef90833350b": {
-"doi": "10.1111/joes.12598",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Askarov Z, Doucouliagos A, Doucouliagos H(C), Stanley, TD. Selective and (mis)leading economics journals: Meta-research evidence. J Econ Surv. 2024;38: 1567\u20131592.",
-"title": "Selective and (mis)leading economics journals: Meta\u2010research evidence",
-"why": "all three checks passed",
-"years": [
-"2023",
-"2024"
-]
-},
 "5f47dac5eda2a6ea": {
 "doi": null,
 "project": "bma",
@@ -15782,6 +15806,12 @@
 "text": "Arrow, K. J. (1972). Gifts and exchanges. Philosophy and Public Affairs, 1(4), 343\u2013362.",
 "why": "check 1 failed (overlap 1.00, year False, author True)"
 },
+"63251adc6f3ffa95": {
+"doi": null,
+"project": "pcc_survey",
+"text": "Hume D. A Treatise of Human Nature. Selby-Bigge LA, Nidditch PH, eds. Oxford University Press; 1978. Originally published 1739-1740.",
+"why": "check 2 failed (the runner-up is equally plausible)"
+},
 "63308917d405c174": {
 "doi": "10.1162/rest.90.1.37",
 "overlap": 1.0,
@@ -16023,6 +16053,12 @@
 "2013",
 "2014"
 ]
+},
+"64fc3dc2bce8d5b7": {
+"doi": null,
+"project": "pcc_survey",
+"text": "Wooldridge JM. Introductory Econometrics. 2nd ed. Thomson/South-Western; 2003.",
+"why": "check 1 failed (overlap 0.21, year False, author False)"
 },
 "64ffdcdfdb76208d": {
 "doi": "10.1080/01621459.1997.10473615",
@@ -16788,18 +16824,6 @@
 "why": "all three checks passed",
 "years": [
 "2007"
-]
-},
-"688ab442c00108a2": {
-"doi": "10.1002/jrsm.1211",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Stanley T. D. and Doucouliagos, H. Neither fixed nor random: Weighted least squares meta-regression analysis. Res Synth Methods. 2017;8:19\u201342.",
-"title": "Neither fixed nor random: weighted least squares meta\u2010regression",
-"why": "all three checks passed",
-"years": [
-"2016",
-"2017"
 ]
 },
 "689cc428de3f200e": {
@@ -17921,6 +17945,18 @@
 "1994"
 ]
 },
+"6fcf49d55d454af7": {
+"doi": "10.1111/j.1467-6419.2011.00706.x",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Doucouliagos H, Stanley TD. Theory competition and selectivity: are all economic facts greatly exaggerated? J Econ Surv. 2013;27:316-339.",
+"title": "ARE ALL ECONOMIC FACTS GREATLY EXAGGERATED? THEORY COMPETITION AND SELECTIVITY",
+"why": "all three checks passed",
+"years": [
+"2011",
+"2013"
+]
+},
 "6ff94762ad8e7472": {
 "doi": "10.1177/0272989x9501500408",
 "overlap": 1.0,
@@ -17953,18 +17989,6 @@
 "why": "all three checks passed",
 "years": [
 "2010"
-]
-},
-"70231ed9184a62d9": {
-"doi": "10.1002/sim.2688",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Sidik, K., & Jonkman, J. N. A comparison of heterogeneity variance estimators in combining results of studies. Stat in Med, 2007; 26:1964\u20131981.",
-"title": "A comparison of heterogeneity variance estimators in combining results of studies",
-"why": "all three checks passed",
-"years": [
-"2006",
-"2007"
 ]
 },
 "7037407bf2e05da3": {
@@ -18181,18 +18205,6 @@
 "project": "border",
 "text": "\u2014\u2014\u2014 , 2014, \u2018\u2018Gravity Equations: Workhorse, Toolkit, and Cookbook,\u2019\u2019 in Handbook of International Economics,vol. 4, , ed. by K. Rogoff. Amsrerdam: Elsevier, pp. 131\u201395.",
 "why": "check 1 failed (overlap 1.00, year True, author False)"
-},
-"71cf54f7d8b965cc": {
-"doi": "10.1017/pan.2020.34",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Berinsky AJ, Druckman JN, Yamamoto T. 2021. Publication biases in replication studies. Political Analysis. 2021;29(3):370\u2013384.",
-"title": "Publication Biases in Replication Studies",
-"why": "all three checks passed",
-"years": [
-"2020",
-"2021"
-]
 },
 "71d03783f35bc84a": {
 "doi": "10.3982/ecta16317",
@@ -18831,6 +18843,12 @@
 "years": [
 "1988"
 ]
+},
+"76402b80b5def8fe": {
+"doi": null,
+"project": "pcc_survey",
+"text": "Solow RM. We\u2019d better watch out. New York Times Book Review. July 12, 1987:36.",
+"why": "check 1 failed (overlap 0.23, year False, author False)"
 },
 "764b394d6828c1ef": {
 "doi": "10.2307/2296547",
@@ -20177,17 +20195,6 @@
 "2025"
 ]
 },
-"7e82f7f2a63ab511": {
-"doi": "10.1002/jrsm.1711",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Bruns SB, Deressa, TK, Stanley, TD, Doucouliagos, C, Ioannidis, JPA. Estimating the extent of selective reporting: An application to economics. Res Synth Methods. 2024;15:590\u2013602.",
-"title": "Estimating the extent of selective reporting: An application to economics",
-"why": "all three checks passed",
-"years": [
-"2024"
-]
-},
 "7ea09570578ee73b": {
 "doi": "10.1086/654107",
 "overlap": 1.0,
@@ -20831,6 +20838,18 @@
 "2003"
 ]
 },
+"83f6688cad77b897": {
+"doi": "10.1017/pan.2020.34",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Berinsky AJ, Druckman JN, Yamamoto T. Publication biases in replication studies. Polit Anal. 2021;29(3):370-384.",
+"title": "Publication Biases in Replication Studies",
+"why": "all three checks passed",
+"years": [
+"2020",
+"2021"
+]
+},
 "83ffe9a1205ca213": {
 "doi": "10.4324/9780203111710",
 "overlap": 1.0,
@@ -21055,6 +21074,12 @@
 "2000"
 ]
 },
+"851637c65f24ab59": {
+"doi": null,
+"project": "pcc_survey",
+"text": "Popper K. The Logic of Scientific Discovery. Hutchinson; 1959.",
+"why": "check 2 failed (the runner-up is equally plausible)"
+},
 "852a818f72f4b44c": {
 "doi": "10.1257/aer.20190687",
 "overlap": 1.0,
@@ -21133,6 +21158,18 @@
 "project": "excess_sensitivity",
 "text": "Fuster, A., Kaplan, G., Zafar, B., 2018. What Would You Do with $500? Spending Responses to Gains, Losses, News and Loans. NBER Working Papers 24386. National Bureau of Economic Research, Inc.",
 "why": "check 2 failed (the runner-up is equally plausible)"
+},
+"85a6fb2a8e69db09": {
+"doi": "10.1111/joes.12598",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Askarov Z, Doucouliagos A, Doucouliagos H, Stanley TD. Selective and (mis)leading economics journals: meta-research evidence. J Econ Surv. 2024;38:1567-1592.",
+"title": "Selective and (mis)leading economics journals: Meta\u2010research evidence",
+"why": "all three checks passed",
+"years": [
+"2023",
+"2024"
+]
 },
 "85c1e7720ad3d40b": {
 "doi": "10.1596/1813-9450-10952",
@@ -22040,17 +22077,6 @@
 "2008"
 ]
 },
-"8b614c1d76a3ee21": {
-"doi": "10.1002/sim.4029",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Henmi M & Copas JB. Confidence intervals for random effects meta-analysis and robustness to publication bias. Stat Med. 2010;29:2969\u20132983.",
-"title": "Confidence intervals for random effects meta-analysis and robustness to publication bias",
-"why": "all three checks passed",
-"years": [
-"2010"
-]
-},
 "8b6cb872815c6b9d": {
 "doi": "10.1016/j.eneco.2008.05.002",
 "overlap": 1.0,
@@ -22249,17 +22275,6 @@
 "years": [
 "2007",
 "2008"
-]
-},
-"8cbfa685975c37a5": {
-"doi": "10.1002/jrsm.1512",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Stanley TD, Doucouliagos H(C), Ioannidis JPA, Carter E. Detecting publication selection bias through excess statistical significance. Res Synth Methods. 2021;12:776\u2013795.",
-"title": "Detecting publication selection bias through excess statistical significance",
-"why": "all three checks passed",
-"years": [
-"2021"
 ]
 },
 "8cd515df41109595": {
@@ -23156,18 +23171,6 @@
 "why": "all three checks passed",
 "years": [
 "2003"
-]
-},
-"92909af7d6e2abc4": {
-"doi": "10.1002/jrsm.1095",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Stanley TD, Doucouliagos H. Meta-regression approximations to reduce publication selection bias. Res Synth Methods. 2014;5:60\u201378.",
-"title": "Meta-regression approximations to reduce publication selection bias",
-"why": "all three checks passed",
-"years": [
-"2013",
-"2014"
 ]
 },
 "929c867b585a6ae5": {
@@ -24280,17 +24283,6 @@
 "2017"
 ]
 },
-"993eb366965b48df": {
-"doi": "10.1037/1082-989x.6.2.161",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Field AP. Meta-analysis of correlation coefficients: A Monte Carlo comparison of fixed- and random-effects methods. Psyc Methods. 2001;6:161\u2013180.",
-"title": "Meta-analysis of correlation coefficients: A Monte Carlo comparison of fixed- and random-effects methods.",
-"why": "all three checks passed",
-"years": [
-"2001"
-]
-},
 "996d8ab82612dfd0": {
 "doi": null,
 "project": "border",
@@ -24481,17 +24473,6 @@
 "text": "Yay, G. and Oktayer, A. (2009) Financial development and economic growth \u2013 A comparative analysis. Romanian Journal of Economic Forecasting 11(3): 56\u201374.",
 "why": "check 1 failed (overlap 0.40, year False, author True)"
 },
-"9af4567fc4e791bd": {
-"doi": "10.1002/sim.7228",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Stanley TD, Doucouliagos H, Ioannidis JPA. Finding the power to reduce publication bias. Stat Med. 2017;36:1580\u20131598.",
-"title": "Finding the power to reduce publication bias",
-"why": "all three checks passed",
-"years": [
-"2017"
-]
-},
 "9af974ca356979e9": {
 "doi": "10.1086/450153",
 "overlap": 1.0,
@@ -24611,6 +24592,17 @@
 "2022"
 ]
 },
+"9c03d8cf757a2774": {
+"doi": "10.1002/sim.4029",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Henmi M, Copas JB. Confidence intervals for random effects meta-analysis and robustness to publication bias. Stat Med. 2010;29:2969-2983.",
+"title": "Confidence intervals for random effects meta-analysis and robustness to publication bias",
+"why": "all three checks passed",
+"years": [
+"2010"
+]
+},
 "9c234a69310b9856": {
 "doi": "10.1509/jmkr.45.6.633",
 "overlap": 1.0,
@@ -24653,17 +24645,6 @@
 "why": "all three checks passed",
 "years": [
 "2002"
-]
-},
-"9c6da683e13a8a3d": {
-"doi": "10.1093/oxfordjournals.aje.a010035",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Poole C & Greenland S. Random-effects meta-analyses are not always conservative. Am J Epi. 1999;150:469\u2013475.",
-"title": "Random-Effects Meta-Analyses Are Not Always Conservative",
-"why": "all three checks passed",
-"years": [
-"1999"
 ]
 },
 "9c7cbbdbceb662df": {
@@ -25838,6 +25819,12 @@
 "2010"
 ]
 },
+"a3a8a40a6fa1d28f": {
+"doi": null,
+"project": "pcc_survey",
+"text": "Irsova Z, Doucouliagos H, Havranek T, Stanley TD. Meta-analysis of social science research: a practitioner\u2019s guide. J Econ Surv. 2024;38:1547-1566.",
+"why": "check 1 failed (overlap 1.00, year False, author True)"
+},
 "a3acd353fdeff97a": {
 "doi": "10.1016/s0272-7757(03)00047-5",
 "overlap": 1.0,
@@ -26811,6 +26798,17 @@
 "2012"
 ]
 },
+"a956590a72f35e19": {
+"doi": "10.1002/jrsm.1711",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Bruns SB, Deressa TK, Stanley TD, Doucouliagos H, Ioannidis JPA. Estimating the extent of selective reporting: an application to economics. Res Synth Methods. 2024;15:590-602.",
+"title": "Estimating the extent of selective reporting: An application to economics",
+"why": "all three checks passed",
+"years": [
+"2024"
+]
+},
 "a95fa9ff640c3ff0": {
 "doi": "10.3828/jtep.1979.13.3.304",
 "overlap": 1.0,
@@ -27239,6 +27237,17 @@
 "2013"
 ]
 },
+"ac8e64f57ccc74c2": {
+"doi": "10.1002/jrsm.1704",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Stanley TD, Doucouliagos H, Havranek T. Meta-analyses of partial correlations are biased: detection and solutions. Res Synth Methods. 2024;15:313-325.",
+"title": "Meta\u2010analyses of partial correlations are biased: Detection and solutions",
+"why": "all three checks passed",
+"years": [
+"2024"
+]
+},
 "aca78308aed414ee": {
 "doi": "10.1111/j.1468-0084.2011.00648.x",
 "overlap": 1.0,
@@ -27282,6 +27291,17 @@
 "why": "all three checks passed",
 "years": [
 "1988"
+]
+},
+"ace6a55e44e618a1": {
+"doi": "10.1002/sim.791",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Hartung J, Knapp G. On tests of the overall treatment effect in meta-analysis with normally distributed responses. Stat Med. 2001;20:1771-1782.",
+"title": "On tests of the overall treatment effect in meta\u2010analysis with normally distributed responses",
+"why": "all three checks passed",
+"years": [
+"2001"
 ]
 },
 "ad025f20d1c5e741": {
@@ -27365,17 +27385,6 @@
 "why": "all three checks passed",
 "years": [
 "2019"
-]
-},
-"ad84bed54aa96afe": {
-"doi": "10.1111/1468-0009.12210",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Ioannidis, J. P. A. The mass production of redundant, misleading, and conflicted systematic reviews and meta-analyses. The Milbank Quarterly. 2016; 94:485\u2013514.",
-"title": "The Mass Production of Redundant, Misleading, and Conflicted Systematic Reviews and Meta\u2010analyses",
-"why": "all three checks passed",
-"years": [
-"2016"
 ]
 },
 "ad8b5973c25792a5": {
@@ -27944,6 +27953,18 @@
 "2010"
 ]
 },
+"b21a6a3c81a03280": {
+"doi": "10.1093/jeea/jvac053",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Askarov Z, Doucouliagos A, Doucouliagos H, Stanley TD. The significance of data-sharing policy. J Eur Econ Assoc. 2023; 21:1191\u20131226.",
+"title": "The Significance of Data-Sharing Policy",
+"why": "all three checks passed",
+"years": [
+"2022",
+"2023"
+]
+},
 "b21d8a074164fbe6": {
 "doi": "10.2139/ssrn.366021",
 "overlap": 0.923,
@@ -28125,6 +28146,17 @@
 "2025"
 ]
 },
+"b34869a879303469": {
+"doi": "10.1111/ecoj.12461",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Ioannidis JPA, Stanley TD, Doucouliagos H. The power of bias in economics research. Econ J. 2017;127:F236-F265.",
+"title": "The Power of Bias in Economics Research",
+"why": "all three checks passed",
+"years": [
+"2017"
+]
+},
 "b36be27e73b033c7": {
 "doi": "10.1002/sim.6481",
 "overlap": 1.0,
@@ -28186,17 +28218,6 @@
 "2006"
 ]
 },
-"b4149368618f8e4f": {
-"doi": "10.1002/jrsm.1631",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Stanley, T. D., & Doucouliagos, H. Correct standard errors can bias meta-analysis. Res Synth Methods. 2023;14:515\u2013519.",
-"title": "Correct standard errors can bias meta\u2010analysis",
-"why": "all three checks passed",
-"years": [
-"2023"
-]
-},
 "b4189d4d74dc18ba": {
 "doi": "10.2307/1935911",
 "overlap": 1.0,
@@ -28246,17 +28267,6 @@
 "years": [
 "2000",
 "2004"
-]
-},
-"b4398f763c871c59": {
-"doi": "10.1002/jrsm.1356",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "van Aert RCM, Jackson, D. A new justification of the Hartung-Knapp method for random-effects meta-analysis based on weighted least squares regression. Res Synth Methods. 2019;10:515\u2013527.",
-"title": "A new justification of the Hartung\u2010Knapp method for random\u2010effects meta\u2010analysis based on weighted least squares regression",
-"why": "all three checks passed",
-"years": [
-"2019"
 ]
 },
 "b43beb223ab052ef": {
@@ -28989,17 +28999,6 @@
 "project": "inflation",
 "text": "King, M. A. (1996). How should central banks reduce inflation? \u2014 conceptual issues. Economic Review, Federal Reserve Bank of Kansas City, 81(4), 25\u201352.",
 "why": "check 1 failed (overlap 0.18, year False, author False)"
-},
-"b9019a93075b6ee1": {
-"doi": "10.1016/j.irfa.2018.11.006",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Geyer-Klingeberg J, Hang M, Rathgeber AW. What drives financial hedging? A meta-regression analysis of corporate hedging determinants. Inter Rev of Fin Analysis. 2019;61:203\u2013221.",
-"title": "What drives financial hedging? A meta-regression analysis of corporate hedging determinants",
-"why": "all three checks passed",
-"years": [
-"2019"
-]
 },
 "b90bcd606224737e": {
 "doi": "10.1162/rest.88.4.641",
@@ -30174,6 +30173,17 @@
 "why": "all three checks passed",
 "years": [
 "2017"
+]
+},
+"bfb290815cf69272": {
+"doi": "10.1111/joes.12211",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Stanley TD, Doucouliagos H, Steel P. Does ICT generate economic growth? A meta-regression analysis. J Econ Surv. 2018;32:705-726.",
+"title": "DOES ICT GENERATE ECONOMIC GROWTH? A META\u2010REGRESSION ANALYSIS",
+"why": "all three checks passed",
+"years": [
+"2018"
 ]
 },
 "bfb4bce9355c0263": {
@@ -31574,17 +31584,6 @@
 "2017"
 ]
 },
-"c877ee9d508f7c9b": {
-"doi": "10.1002/sim.791",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Hartung J, Knapp G. On tests of the overall treatment effect in meta-analysis with normally distributed responses. Stat in Med. 2001;20:1771-1782.",
-"title": "On tests of the overall treatment effect in meta\u2010analysis with normally distributed responses",
-"why": "all three checks passed",
-"years": [
-"2001"
-]
-},
 "c885afce12f3d181": {
 "doi": null,
 "project": "euro",
@@ -32904,6 +32903,17 @@
 "2011"
 ]
 },
+"d1ab24cd162fb795": {
+"doi": "10.1002/jrsm.1703",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Barto\u0161 F, Maier M, Wagenmakers EJ, et al. Footprint of publication selection bias on meta-analyses in medicine, environmental sciences, psychology, and economics. Res Synth Methods. 2024;15:500-511.",
+"title": "Footprint of publication selection bias on meta\u2010analyses in medicine, environmental sciences, psychology, and economics",
+"why": "all three checks passed",
+"years": [
+"2024"
+]
+},
 "d1ab748dfa38d735": {
 "doi": "10.2469/faj.v60.n5.2657",
 "overlap": 1.0,
@@ -32966,6 +32976,17 @@
 "2003"
 ]
 },
+"d2215001ea2ac8ab": {
+"doi": "10.1093/oxfordjournals.aje.a010035",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Poole C, Greenland S. Random-effects meta-analyses are not always conservative. Am J Epidemiol. 1999;150:469-475.",
+"title": "Random-Effects Meta-Analyses Are Not Always Conservative",
+"why": "all three checks passed",
+"years": [
+"1999"
+]
+},
 "d22748d7be8ebb4e": {
 "doi": "10.1057/s41294-019-00092-1",
 "overlap": 1.0,
@@ -32993,6 +33014,17 @@
 "why": "all three checks passed",
 "years": [
 "2002"
+]
+},
+"d23d81fe29586aaa": {
+"doi": "10.1111/obes.12240",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Havranek T, Irsova Z, Zeynalova O. Tuition fees and university enrolment: a meta-regression analysis. Oxf Bull Econ Stat. 2018;80:1145-1184.",
+"title": "Tuition Fees and University Enrolment: A Meta\u2010Regression Analysis",
+"why": "all three checks passed",
+"years": [
+"2018"
 ]
 },
 "d246bfbef71d4237": {
@@ -33550,18 +33582,6 @@
 "2015"
 ]
 },
-"d678e668b6cc41e7": {
-"doi": "10.1111/j.1467-6419.2011.00706.x",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Doucouliagos, C. and Stanley, T.D. Theory competition and selectivity: Are all economic facts greatly exaggerated? J Econ Surv. 2013;27: 316\u201339.",
-"title": "ARE ALL ECONOMIC FACTS GREATLY EXAGGERATED? THEORY COMPETITION AND SELECTIVITY",
-"why": "all three checks passed",
-"years": [
-"2011",
-"2013"
-]
-},
 "d68ff90058bbaa2d": {
 "doi": "10.1037/0033-2909.126.3.390",
 "overlap": 1.0,
@@ -33905,6 +33925,17 @@
 "project": "hedge",
 "text": "Sadka, R. (2012). Hedge-fund performance and liquidity risk. Journal of Investment Management, 10(C), 60\u201372.",
 "why": "check 1 failed (overlap 1.00, year False, author True)"
+},
+"d88989c6e8ee6803": {
+"doi": "10.1111/1468-0009.12210",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Ioannidis JPA. The mass production of redundant, misleading, and conflicted systematic reviews and meta-analyses. Milbank Q. 2016;94:485-514.",
+"title": "The Mass Production of Redundant, Misleading, and Conflicted Systematic Reviews and Meta\u2010analyses",
+"why": "all three checks passed",
+"years": [
+"2016"
+]
 },
 "d8914788cbbe8cef": {
 "doi": null,
@@ -34486,17 +34517,6 @@
 "1999"
 ]
 },
-"dbab83573e52dda8": {
-"doi": "10.1017/rsm.2024.5",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Stanley, T.D., Doucouliagos, H., and Havranek, T. Reducing the biases of the conventional meta-analysis of correlations. Res Synth Methods, 2025;16:42\u201359.",
-"title": "Reducing the biases of the conventional meta-analysis of correlations",
-"why": "all three checks passed",
-"years": [
-"2025"
-]
-},
 "dbd045c09a994e47": {
 "doi": "10.1111/ele.14144",
 "overlap": 1.0,
@@ -34661,6 +34681,12 @@
 "text": "Fisher, I. (1930). The theory of interest. New York: Macmillan.",
 "why": "check 1 failed (overlap 0.31, year True, author False)"
 },
+"dcee95da004ea05f": {
+"doi": null,
+"project": "pcc_survey",
+"text": "Gustafson RL. Partial correlations in regression computations. J Am Stat Assoc. 1961;56:363-367.",
+"why": "check 2 failed (the runner-up is equally plausible)"
+},
 "dcf61552c31a961a": {
 "doi": null,
 "project": "migrant",
@@ -34767,6 +34793,12 @@
 "years": [
 "2024"
 ]
+},
+"de433568b18975ae": {
+"doi": null,
+"project": "pcc_survey",
+"text": "Irsova Z, Bom PRD, Havranek T, Rachinger H. Spurious precision in meta-analysis of observational research. Nat Commun. 2025;16:8454.",
+"why": "check 2 failed (the runner-up is equally plausible)"
 },
 "de449d5689e69333": {
 "doi": "10.3368/le.94.2.259",
@@ -36356,6 +36388,17 @@
 "why": "all three checks passed",
 "years": [
 "2013"
+]
+},
+"e7974bc68e526f8b": {
+"doi": "10.1017/rsm.2024.5",
+"overlap": 1.0,
+"project": "pcc_survey",
+"text": "Stanley TD, Doucouliagos H, Havranek T. Reducing the biases of the conventional meta-analysis of correlations. Res Synth Methods. 2025;16:42-59.",
+"title": "Reducing the biases of the conventional meta-analysis of correlations",
+"why": "all three checks passed",
+"years": [
+"2025"
 ]
 },
 "e7ba5e429c10a9be": {
@@ -38897,17 +38940,6 @@
 "text": "Havranek, T., Rusnak, M., 2013. Transmission lags of monetary policy: A meta-Analysis. International Journal of Central Banking 9 (4), 39\u201376.",
 "why": "check 1 failed (overlap 0.88, year False, author True)"
 },
-"f78e8f8ceb48128b": {
-"doi": "10.1002/jrsm.1704",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Stanley, T.D, Doucouliagos, H. and Havranek, T. Meta-analyses of partial correlations are biased: Detection and solutions. Res Synth Methods. 2024;15:313\u2013325.",
-"title": "Meta\u2010analyses of partial correlations are biased: Detection and solutions",
-"why": "all three checks passed",
-"years": [
-"2024"
-]
-},
 "f79cdabed9a1d8b1": {
 "doi": "10.1177/056943457802200204",
 "overlap": 1.0,
@@ -39518,17 +39550,6 @@
 "text": "Furukawa, C., Publication bias under aggregation frictions: from communication model to new correction method, Working paper, MIT, mimeo. 2021.",
 "why": "check 1 failed (overlap 0.67, year False, author True)"
 },
-"fb197b5ba25e8c12": {
-"doi": "10.1002/jrsm.1703",
-"overlap": 1.0,
-"project": "pcc_survey",
-"text": "Barto\u0161 F, Maier M, Wagenmakers EJ,. . . Ioannidis JPA,. . . Stanley TD. Footprint of publication selection bias on meta-analyses in medicine, environmental sciences, psychology, and economics. Res Synth Methods. 2024;15:500\u2013511.",
-"title": "Footprint of publication selection bias on meta\u2010analyses in medicine, environmental sciences, psychology, and economics",
-"why": "all three checks passed",
-"years": [
-"2024"
-]
-},
 "fb26fb15957f92e7": {
 "doi": "10.1177/0013164498058002005",
 "overlap": 1.0,
@@ -39893,6 +39914,12 @@
 "years": [
 "1983"
 ]
+},
+"fd8ab66529b9ad15": {
+"doi": null,
+"project": "pcc_survey",
+"text": "Greene WH. Econometric Analysis. Macmillan; 1990.",
+"why": "check 1 failed (overlap 0.67, year False, author False)"
 },
 "fd97717a09aae0d3": {
 "doi": "10.1257/jep.15.3.131",

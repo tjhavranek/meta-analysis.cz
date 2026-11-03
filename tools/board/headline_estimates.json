@@ -516,8 +516,8 @@
  {
   "project": "pcc_survey",
   "parameter": "Whether the estimator choice matters for partial correlations in practice",
-  "headline": "small-sample biases are negligible and Fisher's z helps with neither them nor publication selection bias; UWLS and Hunter-Schmidt give smaller, arguably less biased means than random effects",
-  "evidence": "We find that small-sample biases are negligible in practice. However, some publication selection biases remain. Although Fisher's z transformations have often been recommended, they reduce neither small-sample nor publication selection biases relative to conventional random effects. Both the unrestricted weighted least squares (UWLS) and the Hunter-Schmidt (HS) estimators produce smaller, arguably less biased, estimates of the mean PCC in these applications than either random effects or Fisher's z transformations.",
+  "headline": "small-sample biases are negligible and random effects on Fisher's z helps with neither them nor publication selection bias; the UWLS family and Hunter-Schmidt give smaller, arguably less biased means than random effects",
+  "evidence": "We find that small-sample biases are negligible in practice. However, some publication selection biases remain. Although random effects using Fisher's z transformations have often been recommended, they reduce neither small-sample nor publication selection biases relative to conventional random effects. The family of unrestricted weighted least squares (UWLS) and the Hunter-Schmidt (HS) estimators produce smaller, arguably less biased, estimates of the mean PCC in these applications than either random effects with or without Fisher's z transformations.",
   "basis": "172 economics meta-analyses with 63,730 partial correlations from 6,191 papers",
   "caveat": null,
   "kind": null,

@@ -518,14 +518,6 @@
     "2000"
    ]
   },
-  "05080ee1aaf11149": {
-   "doi": "10.1002/jrsm.1352",
-   "text": "Bom PRD, Rachinger H. A kinked meta-regression model for publication bias correction. Res Syn Methods. 2019;10:497–514.",
-   "title": "A kinked meta‐regression model for publication bias correction",
-   "years": [
-    "2019"
-   ]
-  },
   "050be84d20dfde5d": {
    "doi": "10.1080/09603107.2010.508716",
    "text": "Arestis, P., Luintel, A.D. and Luintel, K.B. (2010) Financial structure and economic growth: Evidence from time series analyses. Applied Financial Economics 20: 1479–1492.",
@@ -655,14 +647,6 @@
    "title": "Local substitution and habit persistence: matching the moments of the equity premium and the risk-free rate",
    "years": [
     "2004"
-   ]
-  },
-  "061f8805574916c3": {
-   "doi": "10.1111/obes.12240",
-   "text": "Havranek, T, Irsova, Z, Zeynalova O. Tuition fees and university enrolment: A meta-regression analysis. Ox Bull Econ and Stat. 2018;80:1145–1184.",
-   "title": "Tuition Fees and University Enrolment: A Meta‐Regression Analysis",
-   "years": [
-    "2018"
    ]
   },
   "0643a4294cba5fbc": {
@@ -1274,6 +1258,14 @@
    "years": [
     "2013",
     "2014"
+   ]
+  },
+  "0b770375d7e3b7cc": {
+   "doi": "10.1002/jrsm.1512",
+   "text": "Stanley TD, Doucouliagos H, Ioannidis JPA, Carter E. Detecting publication selection bias through excess statistical significance. Res Synth Methods. 2021;12:776-795.",
+   "title": "Detecting publication selection bias through excess statistical significance",
+   "years": [
+    "2021"
    ]
   },
   "0b853317b3025586": {
@@ -2063,14 +2055,6 @@
     "2013"
    ]
   },
-  "1363896241da71e3": {
-   "doi": "10.1002/sim.6481",
-   "text": "Stanley T D & Doucouliagos HC. Neither fixed nor random: Weighted least squares meta-analysis. Stat in Med. 2015;34:2116–2127.",
-   "title": "Neither fixed nor random: weighted least squares meta‐analysis",
-   "years": [
-    "2015"
-   ]
-  },
   "139d69930965e37a": {
    "doi": "10.3368/le.94.2.259",
    "text": "Havranek, T., Z. Irsova, and T. Vlach. 2018b. “Measuring the Income Elasticity of Water Demand: The Importance of Publication and Endogeneity Biases.” Land Economics 94 (2): 259–283.",
@@ -2381,6 +2365,14 @@
     "2012"
    ]
   },
+  "163ea452d341d1de": {
+   "doi": "10.1016/j.irfa.2018.11.006",
+   "text": "Geyer-Klingeberg J, Hang M, Rathgeber AW. What drives financial hedging? A meta-regression analysis of corporate hedging determinants. Int Rev Financ Anal. 2019;61:203-221.",
+   "title": "What drives financial hedging? A meta-regression analysis of corporate hedging determinants",
+   "years": [
+    "2019"
+   ]
+  },
   "166d7d31e61af677": {
    "doi": "10.1016/s0304-405x(00)00065-9",
    "text": "La Porta, R., Lopez-de-Silanes, F., Shleifer, A., & Vishny, R. W. (2000). Investor protection and corporate governance. Journal of Financial Economics, 58(1–2), 3–27.",
@@ -2413,6 +2405,14 @@
    "title": "Correcting for publication bias in a meta-analysis with the p-uniform* method",
    "years": [
     "2026"
+   ]
+  },
+  "1684278d7604c31e": {
+   "doi": "10.1002/sim.7228",
+   "text": "Stanley TD, Doucouliagos H, Ioannidis JPA. Finding the power to reduce publication bias. Stat Med. 2017;36:1580-1598.",
+   "title": "Finding the power to reduce publication bias",
+   "years": [
+    "2017"
    ]
   },
   "16ae5e890c2b6709": {
@@ -3343,6 +3343,14 @@
     "2007"
    ]
   },
+  "2032a07aee698f2a": {
+   "doi": "10.1002/jrsm.1356",
+   "text": "van Aert RCM, Jackson D. A new justification of the Hartung-Knapp method for random-effects meta-analysis based on weighted least squares regression. Res Synth Methods. 2019;10:515-527.",
+   "title": "A new justification of the Hartung‐Knapp method for random‐effects meta‐analysis based on weighted least squares regression",
+   "years": [
+    "2019"
+   ]
+  },
   "203ea33b2ba1a0d4": {
    "doi": "10.1080/09645299800000012",
    "text": "Toutkoushian, R. and Hollis, P. (1998). ‘Using panel data to examine legislative demand for higher education’, Education Economics, Vol. 6, pp. 141–157.",
@@ -3483,20 +3491,20 @@
     "1976"
    ]
   },
-  "21bea3bb2c8b7605": {
-   "doi": "10.1002/jrsm.1632",
-   "text": "van Aert RCM, Goos C. A critical reflection on computing the sampling variance of the partial correlation coefficient. Res Synth Methods. 2023; 14:520–525.",
-   "title": "A critical reflection on computing the sampling variance of the partial correlation coefficient",
-   "years": [
-    "2023"
-   ]
-  },
   "21d63c25e4f646c8": {
    "doi": "10.1016/j.jdeveco.2024.103354",
    "text": "Chegere, M. J., P. Falco, & A. Menzel (2024): “Social Ties at Work and Effort Choice: Experimental Evidence from Tanzania.” Journal of Development Economics 171: p. 103354.",
    "title": "Social ties at work and effort choice: Experimental evidence from Tanzania",
    "years": [
     "2024"
+   ]
+  },
+  "21de0319b50dfc68": {
+   "doi": "10.1257/jep.15.3.131",
+   "text": "Stanley TD. Wheat from chaff: meta-analysis as quantitative literature review. J Econ Perspect. 2001;15:131-150.",
+   "title": "Wheat From Chaff: Meta-Analysis As Quantitative Literature Review",
+   "years": [
+    "2001"
    ]
   },
   "21f2c37664691917": {
@@ -4146,6 +4154,15 @@
     "2017"
    ]
   },
+  "277d2849fda4c668": {
+   "doi": "10.1002/sim.2688",
+   "text": "Sidik K, Jonkman JN. A comparison of heterogeneity variance estimators in combining results of studies. Stat Med. 2007;26:1964-1981.",
+   "title": "A comparison of heterogeneity variance estimators in combining results of studies",
+   "years": [
+    "2006",
+    "2007"
+   ]
+  },
   "278a04f1ce6095e5": {
    "doi": "10.1214/10-imscoll611",
    "text": "George, E.I., 2010. Dilution priors: compensating for model space redundancy. In: Borrowing Strength: Theory Powering Applications–a Festschrift for Lawrence D. Brown. Institute of Mathematical Statistics, pp. 158–165.",
@@ -4360,6 +4377,14 @@
    "years": [
     "2012",
     "2014"
+   ]
+  },
+  "298e54ea806c95e1": {
+   "doi": "10.1002/jrsm.1654",
+   "text": "van Aert RCM. Meta-analyzing partial correlation coefficients using Fisher's z transformation. Res Synth Methods. 2023;14:768-773.",
+   "title": "Meta‐analyzing partial correlation coefficients using Fisher's\n                    <i>z</i>\n                    transformation",
+   "years": [
+    "2023"
    ]
   },
   "29a24c662afd81ca": {
@@ -4786,6 +4811,14 @@
    "title": "A\n                    <scp>generalized‐weights</scp>\n                    solution to sample overlap in\n                    <scp>meta‐analysis</scp>",
    "years": [
     "2020"
+   ]
+  },
+  "2d9fc805f12967eb": {
+   "doi": "10.1002/jrsm.1632",
+   "text": "van Aert RCM, Goos C. A critical reflection on computing the sampling variance of the partial correlation coefficient. Res Synth Methods. 2023;14:520-525.",
+   "title": "A critical reflection on computing the sampling variance of the partial correlation coefficient",
+   "years": [
+    "2023"
    ]
   },
   "2da1ebd962dace0c": {
@@ -5506,14 +5539,6 @@
     "2019"
    ]
   },
-  "343836dc3608b87f": {
-   "doi": "10.4324/9780203111710",
-   "text": "Stanley TD, Doucouliagos H. Meta-Regression Analysis in Economics and Business. Oxford: Routledge; 2012.",
-   "title": "Meta-Regression Analysis in Economics and Business",
-   "years": [
-    "2012"
-   ]
-  },
   "3448c555763d91f5": {
    "doi": "10.1016/0304-4076(95)01789-5",
    "text": "Dagenais, M. G., & Dagenais, D. L. (1997). Higher moment estimators for linear regression models with errors in the variables. Journal of Econometrics, 76(1–2), 193–221.",
@@ -5625,14 +5650,6 @@
    "title": "The Organization of Firms Across Countries*",
    "years": [
     "2012"
-   ]
-  },
-  "36030125bf5a5d31": {
-   "doi": "10.1111/joes.12363",
-   "text": "Havránek, T., Stanley, T.D., Doucouliagos, H. et al. Reporting guidelines for meta-analysis in economics. J Econ Surv. 2020;34:469–475.",
-   "title": "REPORTING GUIDELINES FOR META‐ANALYSIS IN ECONOMICS",
-   "years": [
-    "2020"
    ]
   },
   "360a304d891ef7bd": {
@@ -6219,6 +6236,14 @@
    "title": "Unpacking p-Hacking and Publication Bias",
    "years": [
     "2023"
+   ]
+  },
+  "3c1dfeb2f0c2d507": {
+   "doi": "10.1037/1082-989x.6.2.161",
+   "text": "Field AP. Meta-analysis of correlation coefficients: a Monte Carlo comparison of fixed- and random-effects methods. Psychol Methods. 2001;6:161-180.",
+   "title": "Meta-analysis of correlation coefficients: A Monte Carlo comparison of fixed- and random-effects methods.",
+   "years": [
+    "2001"
    ]
   },
   "3c3003d49fa9e68f": {
@@ -7748,6 +7773,14 @@
     "2008"
    ]
   },
+  "4c6a94d92321687b": {
+   "doi": "10.1002/jrsm.1352",
+   "text": "Bom PRD, Rachinger H. A kinked meta-regression model for publication bias correction. Res Synth Methods. 2019;10:497-514.",
+   "title": "A kinked meta‐regression model for publication bias correction",
+   "years": [
+    "2019"
+   ]
+  },
   "4c7e6a429671de5b": {
    "doi": "10.1111/1540-6261.00449",
    "text": "Chordia, T. and Shivakumar, L. (2002) Momentum, business cycle, and time-varying expected returns. Journal of Finance 57(2): 985–1019.",
@@ -7967,14 +8000,6 @@
    "title": "Tuition and enrollment yield at selective liberal arts colleges",
    "years": [
     "1993"
-   ]
-  },
-  "4e18271b34dfbe68": {
-   "doi": "10.1257/jep.15.3.131",
-   "text": "Stanley, TD. Wheat from chaff: Meta-analysis as quantitative literature review. Journal of Economic Perspectives. 2001;15:131–150.",
-   "title": "Wheat From Chaff: Meta-Analysis As Quantitative Literature Review",
-   "years": [
-    "2001"
    ]
   },
   "4e4296f37955a6fa": {
@@ -8246,14 +8271,6 @@
    "title": "Consumption and credit constraints: International evidence",
    "years": [
     "1997"
-   ]
-  },
-  "5053971b0afa74bc": {
-   "doi": "10.1111/ecoj.12461",
-   "text": "Ioannidis, J.P.A., Stanley, T.D. and Doucouliagos, C. The power of bias in economics research, The Economic Journal. 2017;127:F236–265.",
-   "title": "The Power of Bias in Economics Research",
-   "years": [
-    "2017"
    ]
   },
   "50c67f610fede030": {
@@ -8895,6 +8912,14 @@
     "2003"
    ]
   },
+  "5753bcc9b78354ae": {
+   "doi": "10.1111/joes.12363",
+   "text": "Havránek T, Stanley TD, Doucouliagos H, et al. Reporting guidelines for meta-analysis in economics. J Econ Surv. 2020;34:469-475.",
+   "title": "REPORTING GUIDELINES FOR META‐ANALYSIS IN ECONOMICS",
+   "years": [
+    "2020"
+   ]
+  },
   "575a7d42f6ae96b2": {
    "doi": "10.1111/kykl.12090",
    "text": "Bakkenbull, L.-B. & Kiefer, S. Are Attractive Female Tennis Players More Successful? An Empirical Analysis. Kyklos 68, 443–458 (2015).",
@@ -8966,14 +8991,6 @@
    "title": "Mismeasured Variables in Econometric Analysis: Problems from the Right and Problems from the Left",
    "years": [
     "2001"
-   ]
-  },
-  "57c4ef2c69a35762": {
-   "doi": "10.1111/joes.12211",
-   "text": "Stanley, T.D., Doucouliagos, H. and Steel, P. Does ICT generate economic growth? A meta-regression analysis. J Econ Surv. 2018;32:705–726.",
-   "title": "DOES ICT GENERATE ECONOMIC GROWTH? A META‐REGRESSION ANALYSIS",
-   "years": [
-    "2018"
    ]
   },
   "57cb4b125e50e685": {
@@ -9170,14 +9187,6 @@
    "title": "Remittances and economic growth: A meta-analysis",
    "years": [
     "2020"
-   ]
-  },
-  "59dca51ba04efcbc": {
-   "doi": "10.1002/jrsm.1654",
-   "text": "van Aert RCM. Meta-analyzing partial correlation coefficients using Fisher’s z transformation. Res Synth Methods. 2023; 14:768–773.",
-   "title": "Meta‐analyzing partial correlation coefficients using Fisher's\n                    <i>z</i>\n                    transformation",
-   "years": [
-    "2023"
    ]
   },
   "59ef4944df66f4b7": {
@@ -9723,15 +9732,6 @@
    "title": "The Evolution of Output in Transition Economies",
    "years": [
     "1999"
-   ]
-  },
-  "5f445ef90833350b": {
-   "doi": "10.1111/joes.12598",
-   "text": "Askarov Z, Doucouliagos A, Doucouliagos H(C), Stanley, TD. Selective and (mis)leading economics journals: Meta-research evidence. J Econ Surv. 2024;38: 1567–1592.",
-   "title": "Selective and (mis)leading economics journals: Meta‐research evidence",
-   "years": [
-    "2023",
-    "2024"
    ]
   },
   "5f4d6158445d2ed2": {
@@ -10719,15 +10719,6 @@
     "2007"
    ]
   },
-  "688ab442c00108a2": {
-   "doi": "10.1002/jrsm.1211",
-   "text": "Stanley T. D. and Doucouliagos, H. Neither fixed nor random: Weighted least squares meta-regression analysis. Res Synth Methods. 2017;8:19–42.",
-   "title": "Neither fixed nor random: weighted least squares meta‐regression",
-   "years": [
-    "2016",
-    "2017"
-   ]
-  },
   "689cc428de3f200e": {
    "doi": "10.1111/j.0006-341x.2000.00455.x",
    "text": "Duval, S. & Tweedie, R. Trim and fill: a simple funnel-plot–based method of testing and adjusting for publication bias in meta-analysis. Biometrics 56, 455–463 (2000).",
@@ -11472,6 +11463,15 @@
     "1994"
    ]
   },
+  "6fcf49d55d454af7": {
+   "doi": "10.1111/j.1467-6419.2011.00706.x",
+   "text": "Doucouliagos H, Stanley TD. Theory competition and selectivity: are all economic facts greatly exaggerated? J Econ Surv. 2013;27:316-339.",
+   "title": "ARE ALL ECONOMIC FACTS GREATLY EXAGGERATED? THEORY COMPETITION AND SELECTIVITY",
+   "years": [
+    "2011",
+    "2013"
+   ]
+  },
   "6ff94762ad8e7472": {
    "doi": "10.1177/0272989x9501500408",
    "text": "Chapman, G. B., & Elstein, A. S. (1995). Valuing the future: Temporal discounting of health and money. Medical Decision Making, 15(4), 373–386.",
@@ -11495,15 +11495,6 @@
    "title": "Ugly Criminals",
    "years": [
     "2010"
-   ]
-  },
-  "70231ed9184a62d9": {
-   "doi": "10.1002/sim.2688",
-   "text": "Sidik, K., & Jonkman, J. N. A comparison of heterogeneity variance estimators in combining results of studies. Stat in Med, 2007; 26:1964–1981.",
-   "title": "A comparison of heterogeneity variance estimators in combining results of studies",
-   "years": [
-    "2006",
-    "2007"
    ]
   },
   "7037407bf2e05da3": {
@@ -11626,15 +11617,6 @@
    "title": "Cost-Related Tuition Policies and University Enrollments",
    "years": [
     "1975"
-   ]
-  },
-  "71cf54f7d8b965cc": {
-   "doi": "10.1017/pan.2020.34",
-   "text": "Berinsky AJ, Druckman JN, Yamamoto T. 2021. Publication biases in replication studies. Political Analysis. 2021;29(3):370–384.",
-   "title": "Publication Biases in Replication Studies",
-   "years": [
-    "2020",
-    "2021"
    ]
   },
   "71d03783f35bc84a": {
@@ -12933,14 +12915,6 @@
     "2025"
    ]
   },
-  "7e82f7f2a63ab511": {
-   "doi": "10.1002/jrsm.1711",
-   "text": "Bruns SB, Deressa, TK, Stanley, TD, Doucouliagos, C, Ioannidis, JPA. Estimating the extent of selective reporting: An application to economics. Res Synth Methods. 2024;15:590–602.",
-   "title": "Estimating the extent of selective reporting: An application to economics",
-   "years": [
-    "2024"
-   ]
-  },
   "7ea09570578ee73b": {
    "doi": "10.1086/654107",
    "text": "Campbell, J.Y., Mankiw, N.G., 1989. Consumption, income and interest rates: reinterpreting the time series evidence. NBER Macroeconomics Annual 1989 volume 4. National Bureau of Economic Research, Inc., pp. 185–246 (NBER Chapters).",
@@ -13341,6 +13315,15 @@
     "2003"
    ]
   },
+  "83f6688cad77b897": {
+   "doi": "10.1017/pan.2020.34",
+   "text": "Berinsky AJ, Druckman JN, Yamamoto T. Publication biases in replication studies. Polit Anal. 2021;29(3):370-384.",
+   "title": "Publication Biases in Replication Studies",
+   "years": [
+    "2020",
+    "2021"
+   ]
+  },
   "83ffe9a1205ca213": {
    "doi": "10.4324/9780203111710",
    "text": "Stanley, T. D., & Doucouliagos, H. (2012). Meta regression analysis in economics and business. Routledge.",
@@ -13534,6 +13517,15 @@
    "title": "Weighting by Inverse Variance or by Sample Size in Meta-Analysis: A Simulation Study",
    "years": [
     "1998"
+   ]
+  },
+  "85a6fb2a8e69db09": {
+   "doi": "10.1111/joes.12598",
+   "text": "Askarov Z, Doucouliagos A, Doucouliagos H, Stanley TD. Selective and (mis)leading economics journals: meta-research evidence. J Econ Surv. 2024;38:1567-1592.",
+   "title": "Selective and (mis)leading economics journals: Meta‐research evidence",
+   "years": [
+    "2023",
+    "2024"
    ]
   },
   "85c1e7720ad3d40b": {
@@ -14094,14 +14086,6 @@
     "2008"
    ]
   },
-  "8b614c1d76a3ee21": {
-   "doi": "10.1002/sim.4029",
-   "text": "Henmi M & Copas JB. Confidence intervals for random effects meta-analysis and robustness to publication bias. Stat Med. 2010;29:2969–2983.",
-   "title": "Confidence intervals for random effects meta-analysis and robustness to publication bias",
-   "years": [
-    "2010"
-   ]
-  },
   "8b6cb872815c6b9d": {
    "doi": "10.1016/j.eneco.2008.05.002",
    "text": "Akinboade, O.A., Ziramba, E., Kumo, W.L., 2008. The demand for gasoline in South Africa: an empirical analysis using co-integration techniques. Energy Econ. 30 (6), 3222–3229.",
@@ -14246,14 +14230,6 @@
    "years": [
     "2007",
     "2008"
-   ]
-  },
-  "8cbfa685975c37a5": {
-   "doi": "10.1002/jrsm.1512",
-   "text": "Stanley TD, Doucouliagos H(C), Ioannidis JPA, Carter E. Detecting publication selection bias through excess statistical significance. Res Synth Methods. 2021;12:776–795.",
-   "title": "Detecting publication selection bias through excess statistical significance",
-   "years": [
-    "2021"
    ]
   },
   "8cecfc48f861cdaa": {
@@ -14808,15 +14784,6 @@
    "title": "Anticipated and Unanticipated Wage Changes, Wage Risk, and Intertemporal Labor Supply",
    "years": [
     "2003"
-   ]
-  },
-  "92909af7d6e2abc4": {
-   "doi": "10.1002/jrsm.1095",
-   "text": "Stanley TD, Doucouliagos H. Meta-regression approximations to reduce publication selection bias. Res Synth Methods. 2014;5:60–78.",
-   "title": "Meta-regression approximations to reduce publication selection bias",
-   "years": [
-    "2013",
-    "2014"
    ]
   },
   "929c867b585a6ae5": {
@@ -15530,14 +15497,6 @@
     "2017"
    ]
   },
-  "993eb366965b48df": {
-   "doi": "10.1037/1082-989x.6.2.161",
-   "text": "Field AP. Meta-analysis of correlation coefficients: A Monte Carlo comparison of fixed- and random-effects methods. Psyc Methods. 2001;6:161–180.",
-   "title": "Meta-analysis of correlation coefficients: A Monte Carlo comparison of fixed- and random-effects methods.",
-   "years": [
-    "2001"
-   ]
-  },
   "996ff958e7b6300e": {
    "doi": "10.1016/s0014-2921(01)00202-1",
    "text": "Glick, R., & Rose, A. K. (2002). Does a currency union affect trade? The time-series evidence. European Economic Review, 46(6), 1125–1151.",
@@ -15659,14 +15618,6 @@
     "2002"
    ]
   },
-  "9af4567fc4e791bd": {
-   "doi": "10.1002/sim.7228",
-   "text": "Stanley TD, Doucouliagos H, Ioannidis JPA. Finding the power to reduce publication bias. Stat Med. 2017;36:1580–1598.",
-   "title": "Finding the power to reduce publication bias",
-   "years": [
-    "2017"
-   ]
-  },
   "9af974ca356979e9": {
    "doi": "10.1086/450153",
    "text": "Patrick, H.T. (1966) Financial development and economic growth in underdeveloped countries. Economic Development and Cultural Change 14: 174–189.",
@@ -15741,6 +15692,14 @@
     "2022"
    ]
   },
+  "9c03d8cf757a2774": {
+   "doi": "10.1002/sim.4029",
+   "text": "Henmi M, Copas JB. Confidence intervals for random effects meta-analysis and robustness to publication bias. Stat Med. 2010;29:2969-2983.",
+   "title": "Confidence intervals for random effects meta-analysis and robustness to publication bias",
+   "years": [
+    "2010"
+   ]
+  },
   "9c234a69310b9856": {
    "doi": "10.1509/jmkr.45.6.633",
    "text": "Mazar N, Amir O, Ariely D. The dishonesty of honest people: A theory of self-concept maintenance. Journal of Marketing Research 2008; 45(6): 633–644.",
@@ -15771,14 +15730,6 @@
    "title": "Estimates of the Damage Costs of Climate Change. Part 1: Benchmark Estimates",
    "years": [
     "2002"
-   ]
-  },
-  "9c6da683e13a8a3d": {
-   "doi": "10.1093/oxfordjournals.aje.a010035",
-   "text": "Poole C & Greenland S. Random-effects meta-analyses are not always conservative. Am J Epi. 1999;150:469–475.",
-   "title": "Random-Effects Meta-Analyses Are Not Always Conservative",
-   "years": [
-    "1999"
    ]
   },
   "9c7cbbdbceb662df": {
@@ -17113,6 +17064,14 @@
     "2012"
    ]
   },
+  "a956590a72f35e19": {
+   "doi": "10.1002/jrsm.1711",
+   "text": "Bruns SB, Deressa TK, Stanley TD, Doucouliagos H, Ioannidis JPA. Estimating the extent of selective reporting: an application to economics. Res Synth Methods. 2024;15:590-602.",
+   "title": "Estimating the extent of selective reporting: An application to economics",
+   "years": [
+    "2024"
+   ]
+  },
   "a95fa9ff640c3ff0": {
    "doi": "10.3828/jtep.1979.13.3.304",
    "text": "Reza, A., Spiro, M., 1979. The demand for passenger car transport services and for gasoline. J. Transp. Econ. Policy 13, 304–319.",
@@ -17382,6 +17341,14 @@
     "2013"
    ]
   },
+  "ac8e64f57ccc74c2": {
+   "doi": "10.1002/jrsm.1704",
+   "text": "Stanley TD, Doucouliagos H, Havranek T. Meta-analyses of partial correlations are biased: detection and solutions. Res Synth Methods. 2024;15:313-325.",
+   "title": "Meta‐analyses of partial correlations are biased: Detection and solutions",
+   "years": [
+    "2024"
+   ]
+  },
   "aca78308aed414ee": {
    "doi": "10.1111/j.1468-0084.2011.00648.x",
    "text": "Altinok, N. & G. Kingdon (2012): “New evidence on class size effects: A pupil fixed effects approach.” Oxford Bulletin of Economics and Statistics 74(2): pp. 203–234.",
@@ -17413,6 +17380,14 @@
    "title": "Inhibiting and facilitating conditions of the human smile: A nonobtrusive test of the facial feedback hypothesis.",
    "years": [
     "1988"
+   ]
+  },
+  "ace6a55e44e618a1": {
+   "doi": "10.1002/sim.791",
+   "text": "Hartung J, Knapp G. On tests of the overall treatment effect in meta-analysis with normally distributed responses. Stat Med. 2001;20:1771-1782.",
+   "title": "On tests of the overall treatment effect in meta‐analysis with normally distributed responses",
+   "years": [
+    "2001"
    ]
   },
   "ad29fd8a81fddc41": {
@@ -17469,14 +17444,6 @@
    "title": "Specification Searching and Significance Inflation Across Time, Methods and Disciplines",
    "years": [
     "2019"
-   ]
-  },
-  "ad84bed54aa96afe": {
-   "doi": "10.1111/1468-0009.12210",
-   "text": "Ioannidis, J. P. A. The mass production of redundant, misleading, and conflicted systematic reviews and meta-analyses. The Milbank Quarterly. 2016; 94:485–514.",
-   "title": "The Mass Production of Redundant, Misleading, and Conflicted Systematic Reviews and Meta‐analyses",
-   "years": [
-    "2016"
    ]
   },
   "ad99d9453c8e4818": {
@@ -17814,6 +17781,15 @@
     "2010"
    ]
   },
+  "b21a6a3c81a03280": {
+   "doi": "10.1093/jeea/jvac053",
+   "text": "Askarov Z, Doucouliagos A, Doucouliagos H, Stanley TD. The significance of data-sharing policy. J Eur Econ Assoc. 2023; 21:1191–1226.",
+   "title": "The Significance of Data-Sharing Policy",
+   "years": [
+    "2022",
+    "2023"
+   ]
+  },
   "b21d8a074164fbe6": {
    "doi": "10.2139/ssrn.366021",
    "text": "de Nardis, S., & Vicarelli, C. (2003b). The impact of euro on trade: The (early) effect is not so large. (ISAE Working Paper 31). Rome: Institute for Studies and Economic Analyses.",
@@ -17929,6 +17905,14 @@
     "2025"
    ]
   },
+  "b34869a879303469": {
+   "doi": "10.1111/ecoj.12461",
+   "text": "Ioannidis JPA, Stanley TD, Doucouliagos H. The power of bias in economics research. Econ J. 2017;127:F236-F265.",
+   "title": "The Power of Bias in Economics Research",
+   "years": [
+    "2017"
+   ]
+  },
   "b36be27e73b033c7": {
    "doi": "10.1002/sim.6481",
    "text": "Stanley TD, Doucouliagos H. Neither fixed nor random: Weighted least squares meta-analysis. Statistics in Medicine 2015; 34(13): 2116–2127.",
@@ -17969,14 +17953,6 @@
     "2006"
    ]
   },
-  "b4149368618f8e4f": {
-   "doi": "10.1002/jrsm.1631",
-   "text": "Stanley, T. D., & Doucouliagos, H. Correct standard errors can bias meta-analysis. Res Synth Methods. 2023;14:515–519.",
-   "title": "Correct standard errors can bias meta‐analysis",
-   "years": [
-    "2023"
-   ]
-  },
   "b4189d4d74dc18ba": {
    "doi": "10.2307/1935911",
    "text": "Ramsey, J.B., Rasche, R., Allen, B.T., 1975. An analysis of the private and commercial demand for gasoline. Rev. Econ. Stat. 57 (4), 502–507.",
@@ -18008,14 +17984,6 @@
    "years": [
     "2000",
     "2004"
-   ]
-  },
-  "b4398f763c871c59": {
-   "doi": "10.1002/jrsm.1356",
-   "text": "van Aert RCM, Jackson, D. A new justification of the Hartung-Knapp method for random-effects meta-analysis based on weighted least squares regression. Res Synth Methods. 2019;10:515–527.",
-   "title": "A new justification of the Hartung‐Knapp method for random‐effects meta‐analysis based on weighted least squares regression",
-   "years": [
-    "2019"
    ]
   },
   "b43beb223ab052ef": {
@@ -18480,14 +18448,6 @@
    "title": "PICTURE THIS: A SIMPLE GRAPH THAT REVEALS MUCH ADO ABOUT RESEARCH",
    "years": [
     "2010"
-   ]
-  },
-  "b9019a93075b6ee1": {
-   "doi": "10.1016/j.irfa.2018.11.006",
-   "text": "Geyer-Klingeberg J, Hang M, Rathgeber AW. What drives financial hedging? A meta-regression analysis of corporate hedging determinants. Inter Rev of Fin Analysis. 2019;61:203–221.",
-   "title": "What drives financial hedging? A meta-regression analysis of corporate hedging determinants",
-   "years": [
-    "2019"
    ]
   },
   "b90bcd606224737e": {
@@ -19177,6 +19137,14 @@
    "title": "Habit formation in consumption: A meta-analysis",
    "years": [
     "2017"
+   ]
+  },
+  "bfb290815cf69272": {
+   "doi": "10.1111/joes.12211",
+   "text": "Stanley TD, Doucouliagos H, Steel P. Does ICT generate economic growth? A meta-regression analysis. J Econ Surv. 2018;32:705-726.",
+   "title": "DOES ICT GENERATE ECONOMIC GROWTH? A META‐REGRESSION ANALYSIS",
+   "years": [
+    "2018"
    ]
   },
   "bfea72f39b6e3d1f": {
@@ -20079,14 +20047,6 @@
     "2017"
    ]
   },
-  "c877ee9d508f7c9b": {
-   "doi": "10.1002/sim.791",
-   "text": "Hartung J, Knapp G. On tests of the overall treatment effect in meta-analysis with normally distributed responses. Stat in Med. 2001;20:1771-1782.",
-   "title": "On tests of the overall treatment effect in meta‐analysis with normally distributed responses",
-   "years": [
-    "2001"
-   ]
-  },
   "c889c77d85e1fe46": {
    "doi": "10.1086/654332",
    "text": "Carroll, C., Dunn, W., 1997. Unemployment expectations, jumping (S,s) triggers, and household balance sheets. NBER Macroeconomics Annual 12 (1), 165–230.",
@@ -20893,6 +20853,14 @@
     "2011"
    ]
   },
+  "d1ab24cd162fb795": {
+   "doi": "10.1002/jrsm.1703",
+   "text": "Bartoš F, Maier M, Wagenmakers EJ, et al. Footprint of publication selection bias on meta-analyses in medicine, environmental sciences, psychology, and economics. Res Synth Methods. 2024;15:500-511.",
+   "title": "Footprint of publication selection bias on meta‐analyses in medicine, environmental sciences, psychology, and economics",
+   "years": [
+    "2024"
+   ]
+  },
   "d1ab748dfa38d735": {
    "doi": "10.2469/faj.v60.n5.2657",
    "text": "Fung, W., & Hsieh, D. A. (2004a). Hedge fund benchmarks: A risk-based approach. Financial Analysts Journal, 60(5), 65–80.",
@@ -20934,6 +20902,14 @@
     "2003"
    ]
   },
+  "d2215001ea2ac8ab": {
+   "doi": "10.1093/oxfordjournals.aje.a010035",
+   "text": "Poole C, Greenland S. Random-effects meta-analyses are not always conservative. Am J Epidemiol. 1999;150:469-475.",
+   "title": "Random-Effects Meta-Analyses Are Not Always Conservative",
+   "years": [
+    "1999"
+   ]
+  },
   "d22748d7be8ebb4e": {
    "doi": "10.1057/s41294-019-00092-1",
    "text": "Hampl, M., & Havranek, T. (2020). Central bank equity as an instrument of monetary policy. Comparative Economic Studies, 62(1), 49–68.",
@@ -20949,6 +20925,14 @@
    "title": "Looking Smart and Looking Good: Facial Cues to Intelligence and their Origins",
    "years": [
     "2002"
+   ]
+  },
+  "d23d81fe29586aaa": {
+   "doi": "10.1111/obes.12240",
+   "text": "Havranek T, Irsova Z, Zeynalova O. Tuition fees and university enrolment: a meta-regression analysis. Oxf Bull Econ Stat. 2018;80:1145-1184.",
+   "title": "Tuition Fees and University Enrolment: A Meta‐Regression Analysis",
+   "years": [
+    "2018"
    ]
   },
   "d2565cbadd7f0d3e": {
@@ -21314,15 +21298,6 @@
     "2015"
    ]
   },
-  "d678e668b6cc41e7": {
-   "doi": "10.1111/j.1467-6419.2011.00706.x",
-   "text": "Doucouliagos, C. and Stanley, T.D. Theory competition and selectivity: Are all economic facts greatly exaggerated? J Econ Surv. 2013;27: 316–39.",
-   "title": "ARE ALL ECONOMIC FACTS GREATLY EXAGGERATED? THEORY COMPETITION AND SELECTIVITY",
-   "years": [
-    "2011",
-    "2013"
-   ]
-  },
   "d68ff90058bbaa2d": {
    "doi": "10.1037/0033-2909.126.3.390",
    "text": "Langlois, J. H. et al. Maxims or myths of beauty? A meta-analytic and theoretical review. Psychological Bulletin 126, 390–423 (2000).",
@@ -21533,6 +21508,14 @@
    "title": "The Framing of Decisions and the Psychology of Choice",
    "years": [
     "1981"
+   ]
+  },
+  "d88989c6e8ee6803": {
+   "doi": "10.1111/1468-0009.12210",
+   "text": "Ioannidis JPA. The mass production of redundant, misleading, and conflicted systematic reviews and meta-analyses. Milbank Q. 2016;94:485-514.",
+   "title": "The Mass Production of Redundant, Misleading, and Conflicted Systematic Reviews and Meta‐analyses",
+   "years": [
+    "2016"
    ]
   },
   "d89efe6029a86270": {
@@ -21882,14 +21865,6 @@
    "title": "Experimental Estimates of Education Production Functions",
    "years": [
     "1999"
-   ]
-  },
-  "dbab83573e52dda8": {
-   "doi": "10.1017/rsm.2024.5",
-   "text": "Stanley, T.D., Doucouliagos, H., and Havranek, T. Reducing the biases of the conventional meta-analysis of correlations. Res Synth Methods, 2025;16:42–59.",
-   "title": "Reducing the biases of the conventional meta-analysis of correlations",
-   "years": [
-    "2025"
    ]
   },
   "dbd045c09a994e47": {
@@ -23040,6 +23015,14 @@
    "title": "Financial liberalization and economic growth: A meta-analysis",
    "years": [
     "2013"
+   ]
+  },
+  "e7974bc68e526f8b": {
+   "doi": "10.1017/rsm.2024.5",
+   "text": "Stanley TD, Doucouliagos H, Havranek T. Reducing the biases of the conventional meta-analysis of correlations. Res Synth Methods. 2025;16:42-59.",
+   "title": "Reducing the biases of the conventional meta-analysis of correlations",
+   "years": [
+    "2025"
    ]
   },
   "e7bc4dbfbcc57672": {
@@ -24672,14 +24655,6 @@
     "2018"
    ]
   },
-  "f78e8f8ceb48128b": {
-   "doi": "10.1002/jrsm.1704",
-   "text": "Stanley, T.D, Doucouliagos, H. and Havranek, T. Meta-analyses of partial correlations are biased: Detection and solutions. Res Synth Methods. 2024;15:313–325.",
-   "title": "Meta‐analyses of partial correlations are biased: Detection and solutions",
-   "years": [
-    "2024"
-   ]
-  },
   "f79cdabed9a1d8b1": {
    "doi": "10.1177/056943457802200204",
    "text": "Knudsen, O. and Servelle, P. (1978). ‘The demand for higher education at private institutions of moderate selectivity’, The American Economist, Vol. 22, pp. 30–34.",
@@ -25045,14 +25020,6 @@
    "title": "Selective reporting and the social cost of carbon",
    "years": [
     "2015"
-   ]
-  },
-  "fb197b5ba25e8c12": {
-   "doi": "10.1002/jrsm.1703",
-   "text": "Bartoš F, Maier M, Wagenmakers EJ,. . . Ioannidis JPA,. . . Stanley TD. Footprint of publication selection bias on meta-analyses in medicine, environmental sciences, psychology, and economics. Res Synth Methods. 2024;15:500–511.",
-   "title": "Footprint of publication selection bias on meta‐analyses in medicine, environmental sciences, psychology, and economics",
-   "years": [
-    "2024"
    ]
   },
   "fb26fb15957f92e7": {

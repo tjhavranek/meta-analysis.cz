@@ -5187,17 +5187,12 @@
    "full_text_url": "https://meta-analysis.cz/pcc_survey/paper/",
    "project_url": "https://meta-analysis.cz/pcc_survey/",
    "pdf_url": "https://meta-analysis.cz/pcc_survey/pcc_survey.pdf",
-   "abstract": "Recent studies have demonstrated that conventional meta-analyses of partial correlation coefficients (PCC) are biased. Several adjustments have been shown in simulations to reduce these small-sample biases to negligibility. While many meta-analyses of partial correlation coefficients are conducted each year across several disciplines, the practical importance of these issues remains unknown. To address this question and to offer advice for applications, we survey 172 economic meta-analyses of PCCs. We find that small-sample biases are negligible in practice. However, some publication selection biases remain. Although Fisher's z transformations have often been recommended, they reduce neither small-sample nor publication selection biases relative to conventional random effects. Both the unrestricted weighted least squares (UWLS) and the Hunter-Schmidt (HS) estimators produce smaller, arguably less biased, estimates of the mean PCC in these applications than either random effects or Fisher's z transformations. These findings offer practical guidance for any discipline that meta-analyzes partial correlations.",
+   "abstract": "Recent studies have demonstrated that conventional meta-analyses of partial correlation coefficients (PCC) are biased. Several adjustments have been shown in simulations to reduce these small-sample biases to negligibility. While many meta-analyses of partial correlation coefficients are conducted each year across several disciplines, the practical importance of these issues remains unknown. To address this question and to offer advice for applications, we survey 172 economic meta-analyses of PCCs. We find that small-sample biases are negligible in practice. However, some publication selection biases remain. Although random effects using Fisher's z transformations have often been recommended, they reduce neither small-sample nor publication selection biases relative to conventional random effects. The family of unrestricted weighted least squares (UWLS) and the Hunter-Schmidt (HS) estimators produce smaller, arguably less biased, estimates of the mean PCC in these applications than either random effects with or without Fisher's z transformations. These findings offer practical guidance for any discipline that meta-analyzes partial correlations.",
    "sections": [
     {
      "level": 2,
      "title": "Highlights",
      "anchor": "sec-highlights"
-    },
-    {
-     "level": 2,
-     "title": "Data Availability Statement:",
-     "anchor": "sec-data-availability-statement"
     },
     {
      "level": 2,
@@ -5216,8 +5211,8 @@
     },
     {
      "level": 3,
-     "title": "3.1 Fisher's z Transformations: REz & UWLSz2",
-     "anchor": "sec-3-1-fishers-z-transformations-rez-uwlsz2"
+     "title": "3.1 Fisher’s z Transformations: REz & UWLSzii",
+     "anchor": "sec-3-1-fishers-z-transformations-rez-uwlszii"
     },
     {
      "level": 3,
@@ -5231,8 +5226,8 @@
     },
     {
      "level": 3,
-     "title": "3.4 Asymmetric Bias Hypothesis: Comparing Alternative PCC Estimators",
-     "anchor": "sec-3-4-asymmetric-bias-hypothesis-comparing-alternative-pcc-estimators"
+     "title": "3.4 Upward Bias Hypothesis: Comparing Alternative PCC Estimators",
+     "anchor": "sec-3-4-upward-bias-hypothesis-comparing-alternative-pcc-estimators"
     },
     {
      "level": 2,
@@ -5261,12 +5256,32 @@
     },
     {
      "level": 2,
+     "title": "Competing Interests Statement",
+     "anchor": "sec-competing-interests-statement"
+    },
+    {
+     "level": 2,
+     "title": "Funding statement",
+     "anchor": "sec-funding-statement"
+    },
+    {
+     "level": 2,
+     "title": "Data Availability Statement:",
+     "anchor": "sec-data-availability-statement"
+    },
+    {
+     "level": 2,
+     "title": "Appendix:",
+     "anchor": "sec-appendix"
+    },
+    {
+     "level": 2,
      "title": "ENDNOTES",
      "anchor": "sec-endnotes"
     }
    ],
    "headline_question": "Does the choice of meta-analysis method change the answer for partial correlations?",
-   "headline": "small-sample biases are negligible and Fisher's z helps with neither them nor publication selection bias; UWLS and Hunter-Schmidt give smaller, arguably less biased means than random effects",
+   "headline": "small-sample biases are negligible and random effects on Fisher's z helps with neither them nor publication selection bias; the UWLS family and Hunter-Schmidt give smaller, arguably less biased means than random effects",
    "headline_url": "https://meta-analysis.cz/results/#pcc_survey"
   },
   {

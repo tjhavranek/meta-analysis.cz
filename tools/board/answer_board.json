@@ -219,7 +219,7 @@
   "pcc_survey": {
    "value": "yes: UWLS and Hunter-Schmidt give smaller means than random effects",
    "zero": false,
-   "tail": "arguably less biased; small-sample biases are negligible and Fisher's z helps with neither them nor publication selection"
+   "tail": "arguably less biased; small-sample biases are negligible and random effects on Fisher's z helps with neither them nor publication selection"
   },
   "conventional_wisdom": {
    "value": "45–60% smaller, sometimes sign-flipped",
