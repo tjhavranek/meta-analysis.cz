@@ -12,6 +12,8 @@ T. D. Stanley¹ · Petr Čala² · Hristos Doucouliagos¹ · Zuzana Iršová²,�
 
 ^{4} Meta-Research Innovation Center at Stanford (METRICS), Stanford University
 
+Second revision, submitted to Research Synthesis Methods, October 2026.
+
 ## ABSTRACT
 
 Recent studies have demonstrated that conventional meta-analyses of partial correlation coefficients (PCC) are biased. Several adjustments have been shown in simulations to reduce these small-sample biases to negligibility. While many meta-analyses of partial correlation coefficients are conducted each year across several disciplines, the practical importance of these issues remains unknown. To address this question and to offer advice for applications, we survey 172 economic meta-analyses of PCCs. We find that small-sample biases are negligible in practice. However, some publication selection biases remain. Although random effects using Fisher’s z transformations have often been recommended, they reduce neither small-sample nor publication selection biases relative to conventional random effects. The family of unrestricted weighted least squares (UWLS) and the Hunter-Schmidt (HS) estimators produce smaller, arguably less biased, estimates of the mean PCC in these applications than either random effects with or without Fisher’s z transformations. These findings offer practical guidance for any discipline that meta-analyzes partial correlations.
