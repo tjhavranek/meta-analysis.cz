@@ -97,6 +97,9 @@ def math_as_text(text):
     def one(m):
         return html.unescape(re.sub(r"<[^>]+>", "", _mathml(m.group(1))))
     text = re.sub(r"\$([^$]+)\$", one, text)
+    # A roman superscript in a heading is an endnote marker, not an exponent: pcc_survey's
+    # 3.1 heading ends "UWLSz^{ii}", and keeping the content listed it as "UWLSzii".
+    text = re.sub(r"\^\{[ivxlc]+\}", "", text)
     text = re.sub(r"[_^]\{([^}]*)\}", r"\1", text)
     text = re.sub(r"\*\*([^*]+)\*\*", r"\1", text)
     text = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", r"\1", text)
@@ -764,7 +767,11 @@ class Builder:
             # the paper numbers them", which is the intent this restores.
             _first = re.match(r'<li id="note-(\d+)"', self._endnotes[0] or "")
             _start = int(_first.group(1)) if _first else 1
-            self.w('<ol class="endnotes"%s>' % ('' if _start == 1 else ' start="%d"' % _start))
+            # Papers that number their notes i, ii, iii (pcc, pcc_survey, correlations) need
+            # the list to say so too: their superscripts read ii while a bare <ol> printed 2.
+            _roman = re.match(r'<li id="note-[ivxlc]+"', self._endnotes[0] or "")
+            self.w('<ol class="endnotes"%s%s>' % ('' if _start == 1 else ' start="%d"' % _start,
+                                                 ' type="i"' if _roman else ''))
             for item in self._endnotes:
                 self.w(item)
             self.w("</ol>")
@@ -860,8 +867,15 @@ class Builder:
         self.w('<table%s>' % (' class="continued"' if cont else ""))
         if caption:
             num, cap = caption[0], caption[1]
-            self.w("<caption><b>Table %s%s.</b> %s</caption>" % (
-                html.escape(num), " (continued)" if cont else "",
+            # A paper that labels its appendix tables in words ("Appendix Table 1: ...")
+            # keeps its own label; prefixing "Table A1." printed both (pcc_survey).
+            _own = re.match(r"((?:Online |Supplementary )?Appendix Table [A-Z]?\.?\d+[A-Za-z]?)"
+                            r"\s*[:.]\s*(.*)$", cap)
+            label = _own.group(1) if _own else "Table %s" % num
+            if _own:
+                cap = _own.group(2)
+            self.w("<caption><b>%s%s.</b> %s</caption>" % (
+                html.escape(label), " (continued)" if cont else "",
                 inline(cap, self.refs_numbered)))
         _sp = _span(header, width)
         _thead = "<tr>%s</tr>" % "".join(
