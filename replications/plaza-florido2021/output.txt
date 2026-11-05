@@ -102,12 +102,17 @@ span_0.5_fixed       257                       258                78           2
 [C2] span 0.5, no quantile normalisation: hits: 1 | distinct values in zero-count cells: with / without quantile 1, 27
 [C2] spike-in rows with nominal p < 0.05 (of 76): shipped coef, additive (current): 9, 0 | span 0.5 9, 0
 [C2] genes named in the Results' enrichment sentence: reads: 4, 10 | samples detected 1, 3
+[C2b] average unfit-minus-fit difference in the full model, contrast weights: 0.0000, 1.0000, 0.0000, 0.0000, 0.4074, -2.1548, 0.0000, -0.7670
+[C2b] current, all rows: hits: 232 | higher in fit / higher in unfit 93, 139 | detected in <= 5 samples 209 | Table S1 genes among them 198 | min adj p 1.16e-15
+[C2b] current, after filterByExpr (additive design): hits: 1 | genes SLC39A4 | unfit-minus-fit log2 1.62 | adj p 8e-04 | total reads 2847 | samples detected 27 | in Table S1 TRUE
+[C2b] span 0.5, all rows: hits: 232 | higher in fit / higher in unfit 97, 135 | detected in <= 5 samples 212 | Table S1 genes among them 199 | min adj p 1.65e-15
+[C2b] span 0.5, after filterByExpr (additive design): hits: 1 | genes SLC39A4 | unfit-minus-fit log2 1.62 | adj p 0.000789 | total reads 2847 | samples detected 27 | in Table S1 TRUE
 
 
 ==== C2a. Permutations (voom refitted every time; counts of genes at BH < 0.05) ====
 Observed: 273 (current default), 257 (span 0.5). Schemes break real sex and maturity structure, so they approximate a null only.
 permutation fits: 1125 
-[C2a] permutation wall time (minutes): 10.1
+[C2a] permutation wall time (minutes): 9.9
 [C2a] P1 within-sex expression, 30, current: median 196.0, IQR 181-220, range 139-371 | >= observed (273): 3 of 30, P 0.100
 [C2a] P2 all columns, 200, current: median 204.0, IQR 175-233, range 125-443 | >= observed (273): 19 of 200, P 0.095
 [C2a] P3 joint covariate rows, 40, current: median 208.0, IQR 172-240, range 108-368 | >= observed (273): 2 of 40, P 0.050
@@ -184,7 +189,7 @@ permutation fits: 1125
 
 
 ==== Session ====
-total run time (minutes): 11.9 
+total run time (minutes): 11.6 
 
 R version 4.5.1 (2025-06-13 ucrt)
 Platform: x86_64-w64-mingw32/x64

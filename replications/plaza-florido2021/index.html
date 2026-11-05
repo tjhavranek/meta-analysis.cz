@@ -61,7 +61,9 @@ limma before version 3.66 there are 257, one of them a spike-in row, which leave
 the article&rsquo;s Supplementary Table 1. The code then compares six specifications, fits the
 additive model described in the Methods against the three-way interaction coefficient that the
 script tests, checks how many hits rest on very low counts, repeats the analysis on permuted data,
-and recomputes the p values of Table 1 from the printed statistics.</p>
+and recomputes the p values of Table 1 from the printed statistics. It also estimates the
+fit-versus-unfit difference of the script&rsquo;s full model, averaged over the children&rsquo;s sex
+and maturity offset.</p>
 
 <h2>Run it</h2>
 <p>Install limma and edgeR from Bioconductor once:</p>

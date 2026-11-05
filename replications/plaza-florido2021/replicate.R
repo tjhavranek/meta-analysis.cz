@@ -306,6 +306,27 @@ say("C2", "spike-in rows with nominal p < 0.05 (of 76): shipped coef, additive (
 nmd <- c("CREB3L3", "PPP2R5E")
 say("C2", "genes named in the Results' enrichment sentence: reads", tot[match(nmd, sym)], "| samples detected", det[match(nmd, sym)])
 
+## Average fit-versus-unfit difference in the full model: the unfit-minus-fit difference of the 8-column design,
+## averaged over the observed sex and PHV of the 27 children, refitted as a coefficient with the same voom weights.
+Gf <- as.numeric(sex == "female_1")
+cvec <- c(0, 1, 0, 0, mean(Gf), mean(PHV), 0, mean(Gf * PHV))
+avg <- function(y, hist) {
+  v <- vm(y, X3, hist); C <- contrastAsCoef(X3, cvec, first = TRUE)
+  tt <- topTable(eBayes(lmFit(v, C$design)), coef = 1, number = Inf, sort.by = "none")
+  list(sym = sub("_[0-9]+$", "", rownames(tt)), lfc = tt$logFC, adj = tt$adj.P.Val)
+}
+say("C2b", "average unfit-minus-fit difference in the full model, contrast weights", round(cvec, 4))
+for (h in c(FALSE, TRUE)) {
+  lb <- if (h) "span 0.5" else "current"
+  aa <- avg(Y, h); hit <- aa$adj < 0.05; af <- avg(Y[keepA, ], h); hf <- af$adj < 0.05
+  say("C2b", paste0(lb, ", all rows: hits"), sum(hit), "| higher in fit / higher in unfit", sum(hit & aa$lfc < 0), sum(hit & aa$lfc > 0),
+      "| detected in <= 5 samples", sum(det[hit] <= 5), "| Table S1 genes among them", if (HAS_S1) sum(S1$gene %in% aa$sym[hit]) else "n/a",
+      "| min adj p", signif(min(aa$adj), 3))
+  say("C2b", paste0(lb, ", after filterByExpr (additive design): hits"), sum(hf), "| genes", if (any(hf)) af$sym[hf] else "none",
+      "| unfit-minus-fit log2", round(af$lfc[hf], 2), "| adj p", signif(af$adj[hf], 3), "| total reads", tot[keepA][hf], "| samples detected", det[keepA][hf],
+      "| in Table S1", if (HAS_S1) af$sym[hf] %in% S1$gene else "n/a")
+}
+
 ## ------------------------------------------------------------------------------------------------
 sec("C2a. Permutations (voom refitted every time; counts of genes at BH < 0.05)")
 cat("Observed: ", nhit(cur), " (current default), ", nhit(his), " (span 0.5). Schemes break real sex and maturity structure, so they approximate a null only.\n", sep = "")
