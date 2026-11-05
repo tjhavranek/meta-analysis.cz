@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Replication code: positive rates in sport and exercise science registered reports</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="R code for Tomas Havranek's comment, prepared for the Institute for Replication, on Tsai, Cheng, Hung, and Lin (2026) in Psychology of Sport and Exercise: it rebuilds the article's counts and tests from the authors' coding workbooks and adds further checks." />
+<link rel="canonical" href="https://meta-analysis.cz/replications/tsai2026/" />
+<link href="/style.css" rel="stylesheet" type="text/css" />
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "SoftwareSourceCode",
+ "@id": "https://meta-analysis.cz/replications/tsai2026/#code",
+ "url": "https://meta-analysis.cz/replications/tsai2026/",
+ "name": "Replication code: positive rates in sport and exercise science registered reports",
+ "description": "R code for Tomas Havranek's comment, prepared for the Institute for Replication, on Tsai, Cheng, Hung, and Lin (2026) in Psychology of Sport and Exercise: it rebuilds the article's counts and tests from the authors' coding workbooks and adds further checks.",
+ "programmingLanguage": "R",
+ "codeRepository": "https://meta-analysis.cz/replications/tsai2026/",
+ "author": {"@type": "Person", "@id": "https://meta-analysis.cz/#th", "name": "Tomas Havranek"},
+ "license": "https://opensource.org/licenses/MIT",
+ "about": {"@type": "ScholarlyArticle", "@id": "https://doi.org/10.1016/j.psychsport.2025.102995",
+   "name": "Comparing positive rates in traditional articles and registered reports within sport and exercise science: A stage 2 registered report"}
+}
+</script>
+<style>
+pre.cmd { background: #f5f5f5; padding: 10px 14px; overflow-x: auto; }
+</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="logo">
+	<a class="masthead-home" href="/">meta-analysis.cz</a>
+	<p class="site-name"><a href="/replications/tsai2026/">Replication code</a></p>
+	<h2> <span class="mk">&raquo;</span>&nbsp;&nbsp;&nbsp; Positive rates in registered reports</h2>
+</div>
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="/replications/tsai2026/">Replication code</a></li>
+			<li><a href="https://doi.org/10.1016/j.psychsport.2025.102995">The article</a></li>
+			<li><a href="https://osf.io/fbd9m/">Authors&rsquo; data (OSF)</a></li>
+			<li><a href="/">All meta-analyses</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+<div id="page">
+	<div id="content">
+		<div class="post">
+			<h1 class="title">Replication code</h1>
+			<div class="entry">
+<p>This is the R code behind Tomas Havranek&rsquo;s comment, prepared for the Institute for
+Replication (I4R) Forensic AI Games, on Tsai, Cheng, Hung, and Lin (2026),
+&ldquo;<a href="https://doi.org/10.1016/j.psychsport.2025.102995">Comparing positive rates in
+traditional articles and registered reports within sport and exercise science: A stage 2
+registered report</a>&rdquo;, <i>Psychology of Sport &amp; Exercise</i> 86, 102995. The code
+rebuilds the article&rsquo;s counts and tests from the authors&rsquo; coding workbooks and adds the
+checks in the comment: exact tests for the first-hypothesis comparison, tests that treat hypotheses
+as clustered within articles, three subsets of the registered reports, the intervals in the
+article&rsquo;s Tables 2 to 4, and the Stage 1 sample-size calculation.</p>
+
+<h2>Run it</h2>
+<p>Install the packages once:</p>
+<pre class="cmd">install.packages(c("readxl", "sandwich", "lmtest", "geepack", "digest", "clubSandwich", "Exact"))</pre>
+<p>Then run the script in the folder where you saved it:</p>
+<pre class="cmd">Rscript replicate.R</pre>
+<p>On the first run the script downloads the authors&rsquo; two workbooks from their
+<a href="https://osf.io/fbd9m/">OSF project</a> into a <code>data/</code> folder and checks their
+SHA-256 hashes; the data are not copied here. A run takes about half a minute. It was tested with
+R 4.5.1 (readxl 1.4.5, sandwich 3.1.1, lmtest 0.9-40, geepack 1.3.13, digest 0.6.37, clubSandwich
+0.6.1, Exact 3.3); clubSandwich and Exact are optional.</p>
+
+<h2>Files</h2>
+<ul>
+	<li><a href="replicate.R">replicate.R</a>, the code</li>
+	<li><a href="output.txt">output.txt</a>, the output of a reference run</li>
+</ul>
+<p>The code is under the <a href="https://opensource.org/licenses/MIT">MIT licence</a>. The data belong to the original
+authors.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="site-foot">
+<p class="foot-lede"><b>meta-analysis.cz</b> collects meta-analyses, the data behind them, the
+code that produced them, and the methods for doing them. It is maintained by <a href="/about/"><b>Tomas Havranek</b> and
+<b>Zuzana Irsova</b></a> at the Institute of Economic Studies, Charles University, Prague.</p>
+<p class="foot-nav"><a href="/">All meta-analyses</a> &middot;
+<a href="/papers/">Papers in full</a> &middot;
+<a href="/results/">Headline results</a> &middot;
+<a href="/datasets/">Datasets and the pooled table</a> &middot;
+<a href="/maive/">MAIVE</a> &middot;
+<a href="/guidelines/">Practitioner&#x27;s guide</a> &middot;
+<a href="/teaching/">Teaching</a> &middot;
+<a href="/notes/">Research notes</a> &middot;
+<a href="/impact/">How this work has been used</a> &middot;
+<a href="https://www.easymeta.org/">EasyMeta web app</a> &middot;
+<a href="https://tjhavranek.github.io/">Research tools</a></p>
+<p class="foot-who"><b>Tomas Havranek</b> &middot; <a href="https://www.tomashavranek.cz/">tomashavranek.cz</a> &middot; <a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/78067720">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-3158-2539">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=BF0BvBkAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/f/pha418.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a> &middot; <a href="https://cepr.org/about/people/tomas-havranek">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></p>
+<p class="foot-who"><b>Zuzana Irsova</b> &middot; <a href="https://www.irsova.com/">irsova.com</a> &middot; <a href="https://ies.fsv.cuni.cz/en/contacts/institute-members/73504033">IES FSV UK</a> &middot; <a href="https://orcid.org/0000-0002-0753-8124">ORCID</a> &middot; <a href="https://scholar.google.com/citations?user=LaHrICUAAAAJ">Google Scholar</a> &middot; <a href="https://ideas.repec.org/e/pir23.html">RePEc</a> &middot; <a href="https://www.scopus.com/authid/detail.uri?authorId=37080793200">Scopus</a> &middot; <a href="https://cepr.org/about/people/zuzana-irsova">CEPR</a> &middot; <a href="https://metrics.stanford.edu/people/zuzana-irsova">Stanford METRICS</a></p>
+<p class="foot-cite"><b>How to cite this collection:</b> Havranek, T. and Z. Irsova (2026).
+meta-analysis.cz: harmonised estimate-level data from meta-analyses in economics. Zenodo.
+<a href="https://doi.org/10.5281/zenodo.21773678">https://doi.org/10.5281/zenodo.21773678</a>.
+Individual papers carry their own citation on their own page.</p>
+<p class="foot-licence"><b>Licence: CC BY 4.0.</b> Everything on this site is licensed under the
+<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+International Licence</a>. That covers the papers, the datasets, their CSV and Parquet conversions,
+the pooled table, the codebooks, and the documentation. You may copy, redistribute, adapt, and reuse
+any of it for any purpose, including commercial use and training machine-learning models, as long
+as you give attribution to meta-analysis.cz. You do not need to ask.</p>
+<p class="foot-machine">For machines: <a href="/api/v1/datasets.json">datasets.json</a> &middot;
+<a href="/api/v1/datapackage.json">datapackage.json</a> &middot;
+<a href="/api/v1/croissant.json">croissant.json</a> &middot;
+<a href="/llms.txt">llms.txt</a> &middot; <a href="/llms-full.txt">llms-full.txt</a> &middot;
+<a href="/sitemap.xml">sitemap.xml</a> &middot; <a href="/LICENSE">LICENSE</a></p>
+</footer>
+</body>
+</html>

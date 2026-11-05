@@ -1,0 +1,158 @@
+
+==============================================================================
+1. Deposit counts
+==============================================================================
+Supplement 2: rows with a title                                12
+Supplement 2: included / not included                          10 / 2
+Supplement 3: sheets total / hidden (skipped)                  12 / 3
+Supplement 3: visible rows with a title                        91
+Supplement 3: visible Yes / No / registered-report flag        59 / 29 / 3
+Candidate titles and included articles per visible Supplement 3 sheet:
+                                candidates included
+JMIR Aging2022                           2        0
+JMIR Pediatrics&Parenting2023            0        0
+Journal Medical Internet 2022            7        0
+Journal of Medical Internet2024          5        3
+PLOS one 2024                           18       10
+PSE 2021 SP                             23       19
+PSE 2024 EX                             10        8
+PSE 2024 SP                             22       15
+Psychophysiology 2024                    4        4
+Sport-type included articles: traditional / registered         34/59 vs 2/10
+'Null' support codes, Supplement 2 / Supplement 3 (visible)    2 / 9
+Inclusion labels (both workbooks, visible sheets):
+lab_all
+In Stage 1 Report: <protocol title>                                  No 
+                                  2                                  31 
+        This is a registered report                                 Yes 
+                                  3                                  67 
+Distinct literal inclusion strings                             5
+
+==============================================================================
+2. Table 1 counts
+==============================================================================
+RR: articles                                                   10
+RR: first hypothesis supported                                 7 of 10
+RR: all hypotheses supported                                   22 of 41
+RR: articles with no supported hypothesis                      1
+TR: articles                                                   59
+TR: first hypothesis supported                                 51 of 59
+TR: all hypotheses supported                                   128 of 162
+TR: articles with no supported hypothesis                      3
+
+==============================================================================
+3. First-hypothesis tests (7/10 vs 51/59), RR lower
+==============================================================================
+Pooled z, one-sided, uncorrected                               0.0945
+Pooled z, one-sided, continuity-corrected                      0.1987
+Pooled z, two-sided, uncorrected                               0.1891
+Fisher, one-sided                                              0.1920
+Boschloo, one-sided                                            0.1230
+Barnard (z-pooled), one-sided                                  0.1410
+Smallest expected cell count                                   1.59
+
+==============================================================================
+4. All hypotheses (22/41 vs 128/162), RR lower
+==============================================================================
+Hypotheses / articles                                          203 / 69
+ICC (one-way ANOVA estimator)                                  0.1549
+Mean hypotheses per article, RR / TR                           4.1 / 2.75
+Design effects, RR / TR                                        1.48 / 1.27
+Design-effect-adjusted pooled z, one-sided                     0.0028
+difference in support rates (RR - TR)                          -0.2535
+naive pooled z, one-sided                                      0.0005
+Fisher, one-sided                                              0.0014
+cluster-robust LPM, one-sided, normal                          0.0081
+cluster-robust LPM, one-sided, t(G-1)                          0.0095
+CR2 (Satterthwaite), one-sided                                 0.0209
+article-label permutation, one-sided                           0.0116
+cluster bootstrap 95% interval                                 -0.457 to -0.051
+exchangeable GEE, two-sided                                    0.0019
+Mann-Whitney on article shares, one-sided                      0.0004
+mean article share supported, RR / TR                          0.483 / 0.82
+
+Full-only support (not the registered definition):
+Full-only counts RR, TR                                        17/41 97/162
+Full-only: difference in support rates (RR - TR)               -0.1841
+Full-only: naive pooled z, one-sided                           0.0169
+Full-only: Fisher, one-sided                                   0.0261
+Full-only: cluster-robust LPM, one-sided, normal               0.0507
+Full-only: cluster-robust LPM, one-sided, t(G-1)               0.0530
+Full-only: CR2 (Satterthwaite), one-sided                      0.0723
+Full-only: article-label permutation, one-sided                0.0812
+Full-only: cluster bootstrap 95% interval                      -0.406 to 0.025
+Full-only: exchangeable GEE, two-sided                         0.0399
+Full-only: Mann-Whitney on article shares, one-sided           0.0165
+Full-only: mean article share supported, RR / TR               0.372 / 0.622
+
+==============================================================================
+5. Subsets
+==============================================================================
+
+-- Matched strata only (drop 3 RRs without included traditional articles) --
+Dropped articles                                               3
+First hypothesis RR, TR                                        4/7 51/59
+First hypothesis Fisher, one-sided                             0.0843
+First hypothesis pooled z, one-sided                           0.0246
+First hypothesis pooled z, one-sided, continuity-corrected     0.0763
+First hypothesis Boschloo, one-sided                           0.0446
+All hypotheses RR, TR                                          16/30 128/162
+All hypotheses: cluster-robust LPM, one-sided, normal          0.0284
+All hypotheses: CR2, one-sided                                 0.0620
+All hypotheses: article-label permutation, one-sided           0.0270
+All hypotheses: cluster bootstrap 95% interval                 -0.517 to -0.008
+
+-- Drop the two RRs coded from the Stage 1 report --
+Dropped articles                                               2
+First hypothesis RR, TR                                        5/8 51/59
+First hypothesis Fisher, one-sided                             0.1173
+First hypothesis pooled z, one-sided                           0.0431
+First hypothesis pooled z, one-sided, continuity-corrected     0.1138
+First hypothesis Boschloo, one-sided                           0.0646
+All hypotheses RR, TR                                          17/33 128/162
+All hypotheses: cluster-robust LPM, one-sided, normal          0.0142
+All hypotheses: CR2, one-sided                                 0.0372
+All hypotheses: article-label permutation, one-sided           0.0137
+All hypotheses: cluster bootstrap 95% interval                 -0.513 to -0.038
+
+-- Drop Lin et al. 2024a --
+Dropped articles                                               1
+First hypothesis RR, TR                                        7/9 51/59
+First hypothesis Fisher, one-sided                             0.3950
+First hypothesis pooled z, one-sided                           0.2471
+First hypothesis pooled z, one-sided, continuity-corrected     0.4292
+First hypothesis Boschloo, one-sided                           0.2815
+All hypotheses RR, TR                                          21/35 128/162
+All hypotheses: cluster-robust LPM, one-sided, normal          0.0244
+All hypotheses: CR2, one-sided                                 0.0461
+All hypotheses: article-label permutation, one-sided           0.0389
+All hypotheses: cluster bootstrap 95% interval                 -0.379 to -0.012
+
+==============================================================================
+6. Intervals and Table 3/4 p values
+==============================================================================
+7/10  Wilson | exact                                           0.397 to 0.892 | 0.348 to 0.933
+51/59  Wilson | exact                                          0.755 to 0.930 | 0.750 to 0.940
+22/41  Wilson | exact                                          0.387 to 0.679 | 0.374 to 0.693
+128/162  Wilson | exact                                        0.721 to 0.846 | 0.719 to 0.850
+142/148  Wilson | exact                                        0.914 to 0.981 | 0.914 to 0.985
+15/30  Wilson | exact                                          0.332 to 0.668 | 0.313 to 0.687
+7/10 vs 15/30, two-sided, Yates                                0.4630
+7/10 vs 15/30, two-sided, uncorrected                          0.2709
+51/59 vs 142/148, two-sided, uncorrected                       0.0140
+51/59 vs 142/148, two-sided, Yates                             0.0314
+
+==============================================================================
+7. Stage 1 sample size (Fleiss, Levin and Paik, formulas 4.18-4.19) and exact power
+==============================================================================
+Ratio 4:1  RR articles needed (p1=.44, p2=.96)                 10.34
+Ratio 5:1  RR articles needed (p1=.44, p2=.96)                 9.72
+Ratio 6:1  RR articles needed (p1=.44, p2=.96)                 9.28
+Ratio 7:1  RR articles needed (p1=.44, p2=.96)                 8.95
+Ratio 12:1  RR articles needed (p1=.44, p2=.96)                8.07
+Ratio 13:1  RR articles needed (p1=.44, p2=.96)                7.97
+Exact power, 10 vs 59, p1=0.440 p2=0.960  Fisher | z           0.964 | 0.992
+Exact power, 10 vs 59, p1=0.700 p2=0.860  Fisher | z           0.226 | 0.386
+Exact power, 10 vs 59, p1=0.700 p2=0.864  Fisher | z           0.238 | 0.402
+
+Session: R version 4.5.1 (2025-06-13 ucrt)
