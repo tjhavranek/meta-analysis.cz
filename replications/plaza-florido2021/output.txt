@@ -1,0 +1,210 @@
+R 4.5.1 | limma 3.66.0 | edgeR 4.8.2 | cores 6 
+[setup] voom has argument adaptive.span: TRUE | its default TRUE
+
+
+==== 1. Deposited files ====
+[data] four deposit files in data/, MD5 checked against the OSF checksums: ok
+[data] count matrix rows (genes) x columns (libraries): 13230, 27
+[data] all cells non-negative integers: TRUE | NA cells 0 | identical library columns 0
+[data] sample names identical and in the same order: counts vs sample table, counts vs normalised matrix: TRUE, TRUE
+[data] duplicated row names: 0 | rows sharing a gene symbol with an earlier row 1
+[data] fitness group x sex:
+         sex
+Fit       male_0 female_1
+  Fit_0        3        9
+  Unfit_1     13        2
+[data] spike-in rows (RNA_SPIKE_): 76 | of which detected in >= 1 sample 75 | all-zero rows 946 | rows detected in <= 5 samples (%) 26.8
+[data] PHV offset mean (SD): fit: -1.76, 0.8 | unfit -2.47, 0.96 | all -2.15, 0.94 | range -4.18, -0.59
+
+
+==== 2. The authors' script, run as deposited ====
+[A2] script, current limma default: sum(adj.P.Val < 0.05): 273 | coefficient < 0: 147 | > 0: 126 | nominal p < 0.05: 1079
+[A2]   max |script - own pipeline|: logFC, adj.P.Val: 0 0
+[A2]   max |voom E from script - deposited normalised matrix|: 4.97e-14
+[A2] script, voom span 0.5 fixed (pre-3.66 default): sum(adj.P.Val < 0.05): 257 | coefficient < 0: 145 | > 0: 112 | nominal p < 0.05: 1092
+[A2]   max |script - own pipeline|: logFC, adj.P.Val: 0 0
+[A2]   max |voom E from script - deposited normalised matrix|: 4.97e-14
+[A2] script mentions calcNormFactors / TMM: FALSE
+[A2] limma NEWS: 3.66.0 The default for `adaptive.span` in voom() and
+[A2] hand-coded pre-3.60 voom vs voom(span=0.5, adaptive.span=FALSE): max |E diff|, max |weight diff|: 0 0
+[A2] span chosen by the current default (adaptive): 0.409
+
+
+==== 3. Printed numbers against specifications ====
+Printed (author manuscript): 256 genes, 145 up and 111 down in fit, log2FC -5.83 to 6.55, 33 top genes in Figure 2 (22 up, 11 down),
+108 arrow entries for 57 genes in Tables 2-3; Supplementary Table 1 lists 256 genes. Coefficient < 0 is printed as 'up in fit'.
+[A3] Tables 2-3 entries: 108 | unique genes 57
+[A3] Table S1 genes: 256
+[A3] Figure 2 labels up/down: 22, 11
+                      spec hits neg pos   min  max n15 tab108 arrow108  fig2 spike S1_of_256 S1_dlfc S1_rel_fdr
+         A current default  273 147 126 -5.82 6.55  35    108      108 FALSE     2       255 7.6e-02    2.3e+00
+          B span 0.5 fixed  257 145 112 -5.83 6.55  34    108      108 FALSE     1       256 4.9e-09    2.9e-03
+     C = B minus spike row  256 145 111 -5.83 6.55  33    108      108  TRUE     0       256 4.9e-09    2.9e-03
+           D current + TMM  256 145 111 -5.82 6.55  35    107      108 FALSE     1       252 9.4e-02    1.8e+00
+          E span 0.5 + TMM  258 145 113 -5.83 6.56  34    107      108 FALSE     1       253 3.3e-02    1.4e+00
+ F span 0.5, robust eBayes  256 145 111 -5.83 6.55  33    107      108 FALSE     1       255 4.9e-09    2.4e+04
+
+Figure 2 set (|log2FC| >= 1.5 among hits) against the 33 labelled genes:
+                      spec                             fig2_extra fig2_missing
+         A current default         FASN,H1FX,RNA_SPIKE_ERCC-00143        OTUB2
+          B span 0.5 fixed                   RNA_SPIKE_ERCC-00143             
+     C = B minus spike row                                                    
+           D current + TMM CCDC71L,CHFR,H1FX,RNA_SPIKE_ERCC-00143   OTUB2,MTX3
+          E span 0.5 + TMM              H1FX,RNA_SPIKE_ERCC-00143         MTX3
+ F span 0.5, robust eBayes                   RNA_SPIKE_ERCC-00143          MAL
+
+S1_of_256 = Table S1 genes that are hits in the specification; S1_dlfc = largest |S1 log2FC + coefficient|; S1_rel_fdr = largest relative gap between S1 FDR (3 digits) and adj.P.Val.
+[A3] spike-in row among the span-0.5 hits: RNA_SPIKE_ERCC-00143 | coefficient 4.94 (positive = printed 'down in fit', so removing it leaves 145 / 111)
+[A3] set of C equals the 256 genes of Table S1: TRUE
+[A3] TOX2 (Table 3, hypertension row) adj p: A, B, D, E: 0.0419, 0.0416, 0.1270, 0.0885 | reads 3 | samples 2
+[A3] table entries not significant: D: TOX2 | E TOX2 | F MAL
+[A3] max |voom E - deposited matrix|: A (no TMM), D (TMM): 4.97e-14 2.18e-09 (quantile normalisation removes most of TMM from E)
+[A3] TMM factors, range: 0.843, 1.188
+
+Hit counts by variant of the shipped analysis (3-way coefficient):
+                all_rows spikes_removed_before_fit zero_rows_removed robust_eBayes trend_eBayes no_quantile TMM
+current_default      273                       271                74           272          276           1 256
+span_0.5_fixed       257                       258                78           256          272           1 258
+
+
+==== C1. Tested coefficient and the additive model ====
+[C1] design columns: 8 | rank 8 | residual df 19
+[C1] tested column (script: coef = ncol(design)): FitUnfit_1:sexfemale_1:PHV
+[C1] script lines using coef = ncol(design): 2
+[C1] SCO2: 3-way coefficient equals (unfit F - unfit M) - (fit F - fit M) PHV slopes: -3.26524, -3.26524
+[C1] additive model ~ Fit + sex + PHV, current default: genes 13230 | hits 0 | min adj p 0.407 | raw p < 0.05: 501 (3.8%) | -log10(min adj) 0.39
+[C1] additive model ~ Fit + sex + PHV, span 0.5 fixed: genes 13230 | hits 0 | min adj p 0.53 | raw p < 0.05: 527 (4%) | -log10(min adj) 0.28
+[C1] shipped coefficient: -log10(min adj p), current / span 0.5: 14.57, 14.5
+[C1] arrows of Tables 2-3 equal minus the sign of the 3-way coefficient (of 108), current / span 0.5: 108, 108
+[C1] table entries significant under the shipped coefficient (of 108), current / span 0.5: 108, 108
+[C1] Fit main effect of the full model (boys at PHV = 0): hits: 162 | PHV = 0 outside observed range TRUE
+[C1]   unique table genes significant under it (of 57): 23 | of those with sign opposite to the arrow 23
+[C1] 256-list genes detected in >= 6 samples: 27 | printed direction equals raw fit-minus-unfit (voom log-CPM) sign in 7 | equals additive adjusted sign in 11
+    gene printed coef_3way adj_3way additive_fit_minus_unfit additive_p reads samples
+   IL2RA    down      5.83    0.015                    -1.13      0.173   231      24
+    SCO2      up     -3.29    0.026                     0.32      0.437  9970      27
+    GRB2      up     -2.33    0.021                     0.22      0.446   874      27
+     MAL    down      1.77    0.049                     0.05      0.832  5556      27
+   GNG10      up     -1.74    0.035                    -0.42      0.073 29331      27
+ CREB3L3      up     -1.54    0.000                     0.30      0.102     4       1
+ PPP2R5E      up     -2.91    0.011                     0.22      0.553    10       3
+
+
+==== C2. Where the hits are; leverage; filtering ====
+[C2] leverage of the 2 unfit girls: 1, 1 | largest among the other 25 0.936
+[C2] share of squared weight on the 3-way coefficient: 3 fit boys, 2 unfit girls: 0.49, 0.33
+[C2] current: hits: 273 | detected in <= 5 samples 244 | median total reads 3 | reads only in the 2-child cell 108 | residual SD < 1e-6 108 | single-sample hits (unfit girls, fit boys, other) 105, 93, 0
+[C2] span 0.5: hits: 257 | detected in <= 5 samples 229 | median total reads 3 | reads only in the 2-child cell 108 | residual SD < 1e-6 108 | single-sample hits (unfit girls, fit boys, other) 105, 80, 0
+[C2] rows with reads only in the 2-child cell: 109 | of those in one child 105
+[C2] filterByExpr (additive design) keeps: 6206 | shipped coef hits: current, span 0.5 0, 0 | min adj 0.231, 0.226 | additive hits 0, 0 | min adj 0.232, 0.233
+[C2] span 0.5, detected in >= 2 samples: rows: 11331 hits 0 | zero rows removed: rows 12284 hits 78
+[C2] eBayes prior df / variance: all rows: 0.65, 0.046 | zero rows removed 1.66, 0.406
+[C2] span 0.5, no quantile normalisation: hits: 1 | distinct values in zero-count cells: with / without quantile 1, 27
+[C2] spike-in rows with nominal p < 0.05 (of 76): shipped coef, additive (current): 9, 0 | span 0.5 9, 0
+[C2] genes named in the Results' enrichment sentence: reads: 4, 10 | samples detected 1, 3
+
+
+==== C2a. Permutations (voom refitted every time; counts of genes at BH < 0.05) ====
+Observed: 273 (current default), 257 (span 0.5). Schemes break real sex and maturity structure, so they approximate a null only.
+permutation fits: 1125 
+[C2a] permutation wall time (minutes): 10.1
+[C2a] P1 within-sex expression, 30, current: median 196.0, IQR 181-220, range 139-371 | >= observed (273): 3 of 30, P 0.100
+[C2a] P2 all columns, 200, current: median 204.0, IQR 175-233, range 125-443 | >= observed (273): 19 of 200, P 0.095
+[C2a] P3 joint covariate rows, 40, current: median 208.0, IQR 172-240, range 108-368 | >= observed (273): 2 of 40, P 0.050
+[C2a] P4 within-sex Fit labels, 200, current: median 185.0, IQR 162-222, range 102-430 | >= observed (273): 9 of 200, P 0.045
+[C2a] P4 within-sex Fit labels, 200, span 0.5: median 174.5, IQR 154-205, range 93-356 | >= observed (257): 8 of 200, P 0.040
+[C2a] P5 within-sex expression, 200, current: median 204.5, IQR 170-236, range 92-532 | >= observed (273): 27 of 200, P 0.135
+[C2a] P5 within-sex expression, 200, span 0.5: median 190.0, IQR 159-215, range 93-495 | >= observed (257): 17 of 200, P 0.085
+[C2a] P6 all 55 choices of the unfit-girl pair, span 0.5 : median 200 range 110 - 257 | observed pair 257 rank 1 of 55
+[C2a] P1: additive model on the same 30 permuted data sets, runs with >= 1 hit: 11 of 30 | median 0
+[C2a] P1: median: 196 | runs reaching the observed 273 3
+
+
+==== C3. 273 against 256 ====
+[C3] current default: hits 273 | coefficient < 0 / > 0 147, 126 | log2FC range (printed sign) -5.82, 6.55 | |log2FC| >= 1.5: 35 | |log2FC| >= log2(1.5): 192
+[C3] span 0.5 fixed: hits 257 | coefficient < 0 / > 0 145, 112 | log2FC range (printed sign) -5.83, 6.55 | |log2FC| >= 1.5: 34 | |log2FC| >= log2(1.5): 189
+[C3] span 0.5, spike row removed from the list: 256 | coefficient < 0 / > 0 145, 111 | range -5.83, 6.55 | |log2FC| >= 1.5: 33
+[C3] current + TMM: 256 145 neg / 111 pos | range -5.82, 6.55
+[C3] genes shared: current vs current + TMM; span 0.5 minus spike vs current; vs current + TMM: 255, 255, 252
+[C3] span 0.5 minus spike vs Table S1: genes in both, only here, only in S1: 256, 0, 0
+[C3] current + TMM vs Table S1: genes in both, only here, only in S1: 252, 4, 4
+[C3] current default vs Table S1: genes in both, only here, only in S1: 255, 18, 1
+[C3] distinct log2FC values among the 256 in Table S1: 87 | distinct FDR values 78
+
+
+==== C4-C6. Table 1 ====
+[C4] printed: PHV offset fit -1.76 (0.80) n = 12, unfit -2.47 (0.96) n = 15, p = 0.50
+[C4] from printed statistics: Student, Welch: 0.051, 0.046
+[C4] from deposited per-child PHV: Student, Welch, Mann-Whitney: 0.051, 0.046, 0.071
+[C5] IL-6 (n = 25; group n 10-12 / 13-15; rounding corners): total mean: 2.02, 2.07 | total SD 1.05, 1.11 | Student p 0.274, 0.332 | Welch p 0.246, 0.290
+[C5] printed total 2.31 (SD 1.98), p 0.26; printed total mean above both group means (1.79, 2.25): TRUE | printed SD inside implied range FALSE
+[C5] sentences with IL-6 and 'lower' in the article text: 2
+[C6] printed: BMI group counts 3 of 12 fit, 3 of 15 unfit; p = 0.56
+[C6] Pearson, Yates, Fisher: 0.756, 1, 1
+[C6] Table 1 BMI-group row labels in the author manuscript: Overweight, Obesity (the audit describes one combined label in the journal version)
+[C6] Methods: 'EASE score < 0.05' present: TRUE | 'background' present FALSE | any adjustment mentioned in the EASE sentences FALSE
+
+
+==== C7. SCO2, SPDYC, IL2RA ====
+[C7] current default          SPDYC 6.55 | SCO2 3.27 | IL2RA -5.82 | SCO2 rank among up (of 273 hits) 2, by |log2FC| 7 | IL2RA from bottom 1 | genes above SCO2 on the up side: SPDYC
+[C7]   fold change >= 1.5 (|log2FC| >= log2 1.5): 192 of 273 | |log2FC| >= 1.5: 35
+[C7] span 0.5, no spike       SPDYC 6.55 | SCO2 3.29 | IL2RA -5.83 | SCO2 rank among up (of 256 hits) 2, by |log2FC| 6 | IL2RA from bottom 1 | genes above SCO2 on the up side: SPDYC
+[C7]   fold change >= 1.5 (|log2FC| >= log2 1.5): 188 of 256 | |log2FC| >= 1.5: 33
+[C7] current + TMM            SPDYC 6.55 | SCO2 3.26 | IL2RA -5.82 | SCO2 rank among up (of 256 hits) 3, by |log2FC| 8 | IL2RA from bottom 1 | genes above SCO2 on the up side: CHFR,SPDYC
+[C7]   fold change >= 1.5 (|log2FC| >= log2 1.5): 188 of 256 | |log2FC| >= 1.5: 35
+[C7] among the 256 genes detected in all 27 samples (n): 23 | highest SCO2 3.29 | lowest PIK3IP1 -3.88
+[C7] reads / samples detected: SPDYC, SCO2, IL2RA: 167, 9970, 231, 18, 27, 24
+[C7] Figure 2 caption says 'fold change' / mentions log2: TRUE, FALSE | Table 3 note mentions log2FC TRUE | Results mention log2FC ranged TRUE
+[C7] Discussion names SCO2 and IL2RA as highest and lowest: TRUE
+
+
+==== C8. Methods and what the analysis chose ====
+[C8] occurrences in the author manuscript text: voom 0 | interaction 0 | spike 0 | ERCC 0 | filter 0 | TMM 0 | edgeR 0 | calcNormFactors 0 | background 0 | limma version 0 | R version 0 | sessionInfo 0 
+[C8] occurrences of 'version': 3 
+[C8] rows tested: 13230 | spike-in rows 76 | all-zero rows 946 | rows after removing spike-ins and all-zero rows 12209
+
+
+==== C9-C10. The deposit ====
+[C9] script reads: Fit_Unfit_BW.txt, coldata.txt | present in the deposit FALSE, FALSE
+[C9] script writes: Fit_Unfit_BW_sex_PHV_voom_quantiles.txt, voomQuantiles.txt, vQuantWeights.txt | present in the deposit FALSE, FALSE, FALSE
+[C9] deposit holds: coldata.txt.txt, Fit_Unfit_BW_raw.txt.txt, ScriptR_RNAseq_limma_FitUnfit.R, voomQuantiles_normalized.txt.txt
+[C9] library calls: library(edgeR), library(DESeq2) | sessionInfo in script FALSE | edgeR Depends R (>= 3.6.0), limma (>= 3.63.6)
+[C9] script uses vQuant/voomQuantiles output equal to deposited normalised matrix (section 2): max diff: 4.97e-14
+[C9] STRTprep pipeline (conf.yaml, licence, pinned version): not part of the OSF deposit; not checked here
+[C10] files in the study deposit: 4 | README / licence / codebook / dictionary file names 0 | phenotype or SPSS files (.sav .sps .csv .xls*) 0
+[C10] deposit contains: Table 1 data, cytokines, enrichment input/output, figure code, Table S1: none of these (only the limma step and its inputs)
+
+
+==== C11. Sample codes (counts only, no code or per-child value printed) ====
+[C11] distinct codes in the sample table: 27 | same codes in the headers of the counts and the normalised matrix TRUE, TRUE | code occurrences across the three files 81
+[C11] distinct numeric stems: 25
+[C11] children unique on: sex: 0 | group 0 | sex + group 0 | offset 23 | sex + offset 25 | sex + group + offset 25
+[C11] offset rounded to half years: unique on sex + group + offset: 10 | whole years 4 | sex + whole-year offset 0
+[C11] half-year offset refit, current default: shipped coefficient hits: 268 | shared with the 273 266 | additive hits 0
+
+
+==== Session ====
+total run time (minutes): 11.9 
+
+R version 4.5.1 (2025-06-13 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 11 x64 (build 26300)
+
+Matrix products: default
+  LAPACK version 3.12.1
+
+locale:
+[1] LC_COLLATE=English_United States.utf8  LC_CTYPE=English_United States.utf8    LC_MONETARY=English_United States.utf8
+[4] LC_NUMERIC=C                           LC_TIME=English_United States.utf8    
+
+time zone: Europe/Prague
+tzcode source: internal
+
+attached base packages:
+[1] parallel  stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] edgeR_4.8.2  limma_3.66.0
+
+loaded via a namespace (and not attached):
+[1] compiler_4.5.1  tools_4.5.1     splines_4.5.1   grid_4.5.1      locfit_1.5-9.12 lattice_0.22-7  statmod_1.5.2  
