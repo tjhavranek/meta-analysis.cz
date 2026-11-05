@@ -143,6 +143,12 @@ if os.path.isfile(os.path.join(SITE, "about", "photos", "index.html")):
 for _pub in ("publications/index.html", "publications/irsova/index.html"):
     if os.path.isfile(os.path.join(SITE, _pub)):
         pages.append(_pub)
+# The replications section is self-managed as well: its index and every page one level down.
+if os.path.isfile(os.path.join(SITE, "replications", "index.html")):
+    pages.append("replications/index.html")
+    for _r in sorted(os.listdir(os.path.join(SITE, "replications"))):
+        if os.path.isfile(os.path.join(SITE, "replications", _r, "index.html")):
+            pages.append(f"replications/{_r}/index.html")
 # The teaching pages are self-managed too, and every structural check below applies to them.
 for _t in ("teaching/index.html", "teaching/osaka-2026/index.html", "teaching/osaka-2026/slides/index.html",
            "teaching/osaka-2026/transcript/index.html",
