@@ -6,7 +6,7 @@
 * January 15, 2024
 
 log using hedge_het.log, replace
-import excel hedge_het.xlsx, sheet("data") firstrow
+import excel alphas.xlsx, sheet("data") firstrow
 set more off
 xtset study_id
 
@@ -49,10 +49,12 @@ collin se_w se_method_iv depvar_individual_funds depvar_equalw_funds depvar_net_
 
 histogram se if se<100
 histogram alpha if alpha>-3 & alpha<3, bin(70) fcolor(gs14) lstyle(thin) frequency xtitle("Estimate of the alpha") xline(0.3623496, lcolor(red)) xlabel(-2 -1 0 0.37 1 2) ylabel( ,glcolor(ltbluishgray)) graphregion(color(ltbluishgray)) saving(histogram, replace)
+graph export "Figure_3.pdf", replace
 
 bysort study_id: egen alpha_med = median(alpha)
 bysort study_id: egen midyear_med = median(year_data)
 graph twoway (scatter alpha_med midyear_med if alpha_med<3 & alpha_med>-3, msize(*1) msymbol(Oh) ylabel( ,glcolor(ltbluishgray)) graphregion(color(ltbluishgray))) (lfit alpha_med midyear_med, lcolor(black) lpattern(dash)),  xtitle("Median year of data used by a study") ytitle("Median estimate of the alpha") legend(off) saving(trend, replace)
+graph export "Figure_2.pdf", replace
 
 sum alpha alpha_w se se_w tstat tstat_w, detail
 
@@ -137,14 +139,22 @@ mean alpha_w [aweight=weight] if (survivorship_treated==1 | backfilling_treated=
 
 
 graph hbox alpha if alpha<3 & alpha>-3, over(study,label(grid) sort(year_data)) xsize(2.6) ysize(4) scale(0.55) yline(0.36, lcolor (red))  box(1,lcolor(black) fcolor(none)) marker(1,msymbol(circle_hollow)  mcolor(gs12)) ytitle("Estimate of the alpha") ylabel(, nogrid) saving(studies, replace) 
+graph export "Figure_4.pdf", replace
 graph hbox alpha if alpha<3 & alpha>-3, over(country,label(grid)) xsize(6) ysize(3.5) scale(1) yline(0.36, lcolor (red))  box(1,lcolor(black) fcolor(none)) marker(1,msymbol(circle_hollow)  mcolor(gs12)) ytitle("Estimate of the alpha") ylabel(, nogrid) saving(countries, replace) 
+graph export "Figure_5.pdf", replace
 
 twoway(hist alpha if method_iv==0 & alpha>-3 & alpha<3, bin(60) freq fcolor(navy) lcolor(navy) legend(label(1 "Non-IV method"))) (hist alpha if method_iv==1 & alpha >-3 & alpha<3, bin(20) gap(20) freq  lcolor(gs12) fcolor(gs12) legend(label(2 "Instrumental variables (IV)"))) , legend(ring(0) position(2) bmargin(small) rows(10) region(lstyle(none))) xtitle("Estimate of the alpha")  saving(pattern1, replace)
+graph export "Figure_6_panel_1.pdf", replace
 twoway(hist alpha if market_world==1 & alpha>-3 & alpha<3, bin(60) freq fcolor(navy) lcolor(navy) legend(label(1 "World market")))(hist alpha if market_developed==1 & alpha>-3 & alpha<3, bin(60) freq fcolor(gs12) lcolor(gs12) legend(label(2 "Developed market"))) , legend(ring(0) position(2) bmargin(medium) rows(3) region(lstyle(none))) xtitle("Estimate of the alpha")  saving(pattern2, replace)
+graph export "Figure_6_panel_2.pdf", replace
 twoway(hist alpha if depvar_equalw_funds==1 & alpha>-3 & alpha<3, bin(60) freq fcolor(gs12) lcolor(gs12) legend(label(1 "Equal-weighted funds")))(hist alpha if depvar_valuew_funds==1 & alpha>-3 & alpha<3, bin(60) gap(10) freq fcolor(cranberry) lcolor(cranberry) legend(label(2 "Value-weighted funds"))) (hist alpha if depvar_individual_funds==1 & alpha>-3 & alpha<3, bin(60) freq fcolor(navy) lcolor(navy) legend(label(3 "Individual funds"))), legend(ring(0) position(2) bmargin(medium) rows(3) region(lstyle(none))) xtitle("Estimate of the alpha")   saving(pattern3, replace)
+graph export "Figure_6_panel_3.pdf", replace
 twoway(hist alpha if bias_treated==1 & alpha>-3 & alpha<3, bin(60) freq fcolor(navy) lcolor(navy) legend(label(1 "Biases treated")))(hist alpha if bias_treated==0 & alpha>-3 & alpha<3, bin(60) gap(10) freq fcolor(gs12) lcolor(gs12) legend(label(2 "Biases untreated"))), legend(ring(0) position(2) bmargin(medium) rows(3) region(lstyle(none))) xtitle("Estimate of the alpha")   saving(pattern4, replace)
+graph export "Figure_6_panel_4.pdf", replace
 twoway(kdensity alpha if model_1factor==1 & alpha<3 & alpha>-3, legend(label(1 "1-factor model")))(kdensity alpha if model_3factor==1& alpha<3 & alpha>-3, legend(label(2 "3-factor model")))(kdensity alpha if model_4factor==1& alpha<3 & alpha>-3, legend(label(3 "4-factor model")))(kdensity alpha if model_7factor==1& alpha<3 & alpha>-3, legend(label(4 "7-factor model")))(kdensity alpha if model_uncertainty==1& alpha<3 & alpha>-3, legend(label(5 "modelling uncertainty")))(kdensity alpha if model_asset_based==1 & alpha<3 & alpha>-3, legend(label(6 "asset-based model")))(kdensity alpha if model_other==1 & alpha<3 & alpha>-3, legend(label(7 "other model"))) , legend(ring(0) position(2) bmargin(medium) rows(7) region(lstyle(none))) xtitle("Estimate of the alpha") ytitle("Kernel density (alpha)") saving(pattern5, replace)
+graph export "Figure_6_panel_5.pdf", replace
 twoway(kdensity alpha if strategy_all==1 & alpha<3 & alpha>-3, legend(label(1 "all funds")))(kdensity alpha if strategy_equity==1& alpha<3 & alpha>-3, legend(label(2 "equity hedge")))(kdensity alpha if strategy_events==1& alpha<3 & alpha>-3, legend(label(3 "events strategy")))(kdensity alpha if strategy_relative_value==1& alpha<3 & alpha>-3, legend(label(4 "relative value strategy")))(kdensity alpha if strategy_global==1& alpha<3 & alpha>-3, legend(label(5 "global funds")))(kdensity alpha if strategy_fund_of_funds==1 & alpha<3 & alpha>-3, legend(label(6 "fund of funds")))(kdensity alpha if strategy_multi==1 & alpha<3 & alpha>-3, legend(label(7 "multi-strategy"))) (kdensity alpha if strategy_other==1 & alpha<3 & alpha>-3, legend(label(8 "other strategy"))), legend(ring(0) position(2) bmargin(medium) rows(8) region(lstyle(none))) xtitle("Estimate of the alpha") ytitle("Kernel density (alpha)") saving(pattern6, replace)
+graph export "Figure_6_panel_6.pdf", replace
 
 keep study_id alpha_w se_w se_method_iv depvar_individual_funds depvar_equalw_funds depvar_net_returns data_cross_section data_midyear database_default database_cst database_cisdm database_handcollect number_of_databases market_developed market_bull market_bear strategy_all strategy_equity strategy_events strategy_relative_value strategy_global strategy_fund_of_funds strategy_multi method_iv model_1factor model_3factor model_4factor model_7factor model_uncertainty model_asset_based survivorship_treated backfilling_treated publication_year citations impact_factor
 order study_id alpha_w se_w se_method_iv depvar_individual_funds depvar_equalw_funds depvar_net_returns data_cross_section data_midyear database_default database_cst database_cisdm database_handcollect number_of_databases market_developed market_bull market_bear strategy_all strategy_equity strategy_events strategy_relative_value strategy_global strategy_fund_of_funds strategy_multi method_iv model_1factor model_3factor model_4factor model_7factor model_uncertainty model_asset_based survivorship_treated backfilling_treated publication_year citations impact_factor

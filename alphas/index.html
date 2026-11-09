@@ -20,7 +20,7 @@
 <meta property="og:site_name" content="meta-analysis.cz" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="What Matters in Explaining the Variation in Hedge Fund Performance? A Meta-Analysis" />
-<meta property="og:description" content="Meta-analysis of 1,019 estimates from 74 studies identifies which factors explain the variation in hedge fund performance; net performance is near zero." />
+<meta property="og:description" content="Meta-analysis of 1,019 alpha estimates from 74 studies: nine design characteristics matter, fees cost 0.44 pp a month, and best-practice alphas are not reliably different from zero. Revised November 2026." />
 <meta property="og:url" content="https://meta-analysis.cz/alphas/" />
 <meta property="og:image" content="https://meta-analysis.cz/alphas/trend.png" />
 <meta property="og:image:alt" content="What Matters in Explaining the Variation in Hedge Fund Performance? A Meta-Analysis" />
@@ -35,7 +35,7 @@
    "url": "https://meta-analysis.cz/alphas/",
    "headline": "What Matters in Explaining the Variation in Hedge Fund Performance?",
    "name": "What Matters in Explaining the Variation in Hedge Fund Performance?",
-   "abstract": "We examine the ability of 34 variables to explain the variation in reported estimates of hedge fund performance. Using 1,019 estimates collected from 74 empirical studies, we identify 9 consistently relevant variables. We also quantify the impact of management and performance fees. Synthesizing this extensive empirical evidence, we show that when considering the fees and the variation in research designs, current performance implied by the best practice methodology is close to zero for all common hedge fund strategies. Our paper helps evaluate the robustness of prior propositions on hedge fund performance and reconcile some seemingly contradictory findings.",
+   "abstract": "We examine the ability of 34 context-related variables to explain the variation in reported estimates of hedge fund performance. Using 1,019 \"alphas\" collected from 74 empirical studies, we identify 9 consistently important variables. We also quantify the impact of management and performance fees. Evaluated at the latest data and publication years in our sample, the best-practice alphas are negative, but their study-bootstrap confidence intervals include zero for every common hedge fund strategy. These estimates summarize evidence published through September 1, 2021, and alphas from eight later studies fall within the prediction band of the fitted time trend. Our paper helps evaluate the robustness of prior propositions on hedge fund performance and reconcile some previous seemingly contradictory findings.",
    "inLanguage": "en",
    "license": "https://creativecommons.org/licenses/by/4.0/",
    "author": [
@@ -70,6 +70,13 @@
      "contentUrl": "https://meta-analysis.cz/alphas/alphas.pdf",
      "license": "https://creativecommons.org/licenses/by/4.0/",
      "encodingFormat": "application/pdf"
+    },
+    {
+     "@type": "MediaObject",
+     "name": "Online appendix",
+     "contentUrl": "https://meta-analysis.cz/alphas/online_appendix.pdf",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "encodingFormat": "application/pdf"
     }
    ]
   },
@@ -77,7 +84,7 @@
    "@type": "Dataset",
    "@id": "https://meta-analysis.cz/alphas/#dataset",
    "name": "Data and code for: What Matters in Explaining the Variation in Hedge Fund Performance? A Meta-Analysis",
-   "description": "Dataset and replication files for the study. We examine the ability of 34 variables to explain the variation in reported estimates of hedge fund performance. Using 1,019 estimates collected from 74 empirical studies, we identify 9 consistently relevant variables. We also quantify the impact of management and performance fees. Synthesizing this extensive empirical evidence, we show that when considering the fees and the variation in research designs, current performance implied by the best practice methodology is close to zero for all common hedge fund strategies. Our paper helps evaluate the robustness of prior propositions on hedge fund performance and reconcile some seemingly contradictory findings.",
+   "description": "Data and code for the November 2026 revision. We examine the ability of 34 context-related variables to explain the variation in reported estimates of hedge fund performance. Using 1,019 \"alphas\" collected from 74 empirical studies, we identify 9 consistently important variables. We also quantify the impact of management and performance fees. Evaluated at the latest data and publication years in our sample, the best-practice alphas are negative, but their study-bootstrap confidence intervals include zero for every common hedge fund strategy. These estimates summarize evidence published through September 1, 2021, and alphas from eight later studies fall within the prediction band of the fitted time trend. Our paper helps evaluate the robustness of prior propositions on hedge fund performance and reconcile some previous seemingly contradictory findings.",
    "url": "https://meta-analysis.cz/alphas/",
    "isAccessibleForFree": true,
    "inLanguage": "en",
@@ -110,10 +117,24 @@
     },
     {
      "@type": "DataDownload",
-     "name": "Code",
+     "name": "Original Stata analysis",
      "contentUrl": "https://meta-analysis.cz/alphas/alphas.do",
      "license": "https://creativecommons.org/licenses/by/4.0/",
      "encodingFormat": "text/plain"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Full replication package",
+     "contentUrl": "https://meta-analysis.cz/alphas/replication.zip",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "encodingFormat": "application/zip"
+    },
+    {
+     "@type": "DataDownload",
+     "name": "Later-study coding",
+     "contentUrl": "https://meta-analysis.cz/alphas/new_studies_to_code.xlsx",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
     }
    ],
    "creator": [
@@ -178,7 +199,11 @@
 			<li><a href="/alphas/paper/">Read it in full</a></li>
 			<li><a href="studies.xlsx">Included Studies</a></li>
 			<li><a href="alphas.xlsx">Data</a></li>
-			<li><a href="alphas.do">Code</a></li>
+			<li><a href="alphas.do">Original Stata analysis</a></li>
+			<li><a href="replication.zip">Full replication package</a></li>
+			<li><a href="REPLICATION_README.md">Replication guide</a></li>
+			<li><a href="online_appendix.pdf">Revised online appendix</a></li>
+			<li><a href="new_studies_to_code.xlsx">Later-study coding</a></li>
 			<li><a href="https://cepr.org/publications/dp18979">CEPR DP 18979</a></li>
 			<li><a href="https://ies.fsv.cuni.cz/en/where-have-all-alphas-gone-meta-analysis-hedge-fund-performance">IES WP 2024/15</a></li>
 			<li><a href="https://doi.org/10.31222/osf.io/ps2yn">MetaArXiv</a></li>
@@ -195,12 +220,12 @@
 			<h2 class="title">Abstract</h2>
 			<div class="entry">
 <p>
-We examine the ability of 34 variables to explain the variation in reported estimates of hedge fund performance. Using 1,019 estimates collected from 74 empirical studies, we identify 9 consistently relevant variables. We also quantify the impact of management and performance fees. Synthesizing this extensive empirical evidence, we show that when considering the fees and the variation in research designs, current performance implied by the best practice methodology is close to zero for all common hedge fund strategies. Our paper helps evaluate the robustness of prior propositions on hedge fund performance and reconcile some seemingly contradictory findings.
+We examine the ability of 34 context-related variables to explain the variation in reported estimates of hedge fund performance. Using 1,019 "alphas" collected from 74 empirical studies, we identify 9 consistently important variables. We also quantify the impact of management and performance fees. Evaluated at the latest data and publication years in our sample, the best-practice alphas are negative, but their study-bootstrap confidence intervals include zero for every common hedge fund strategy. These estimates summarize evidence published through September 1, 2021, and alphas from eight later studies fall within the prediction band of the fitted time trend. Our paper helps evaluate the robustness of prior propositions on hedge fund performance and reconcile some previous seemingly contradictory findings.
 </p>
 
 
 
-<figure><img src="trend.png" alt="Trend in reported hedge fund returns" width="820" height="603" /><figcaption>Fig: Reported hedge fund alphas decrease </figcaption></figure>
+<figure><img src="trend.png" alt="Reported hedge fund alphas and the median year of the data" width="820" height="596" /><figcaption>Fig: Reported hedge fund alphas decrease </figcaption></figure>
 
 <p class="ref"><b>Reference:</b> Fan Yang, Tomas Havranek, Zuzana Irsova, and Jiri Novak (2026), "What Matters in Explaining the Variation in Hedge Fund Performance?" Charles University, Prague. Available at meta-analysis.cz/alphas.</p>
 
@@ -214,7 +239,7 @@ We examine the ability of 34 variables to explain the variation in reported esti
 <div class="extras">
 <div class="extra" id="headline-result">
 <h3>Headline result</h3>
-<p>Variation in hedge fund alphas: the main result is that 9 of 34 study characteristics consistently explain it. Reported alphas have fallen steadily over time, and they depend on which database supplied the returns, higher from CISDM and lower the more databases a study combines. Measuring alpha net of fees rather than gross costs a further 0.439 percentage points a month, and expected alphas under best practice are close to zero for all common strategies, based on 1,019 estimates from 74 studies (Yang et al. 2026).</p>
+<p>Nine of 34 study characteristics are consistently associated with reported hedge fund alphas. Alphas reported net of fees are 0.44 percentage points a month lower than gross alphas, holding the rest of the research design fixed. Best-practice alphas evaluated at the latest data and publication years in the sample are negative but not reliably different from zero: the all-strategies estimate is -0.079 percentage points a month, with a study-bootstrap 95% interval of [-0.444, 0.372]. The evidence runs through September 1, 2021; alphas from eight later studies fall inside the prediction band of the fitted trend. Revised for IREF in November 2026.</p>
 </div>
 <div class="extra" id="cite">
 <h3>How to cite</h3>
