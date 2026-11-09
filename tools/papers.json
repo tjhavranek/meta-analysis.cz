@@ -45,7 +45,7 @@
   "project": "alphas",
   "title": "What Matters in Explaining the Variation in Hedge Fund Performance? A Meta-Analysis",
   "literature": "Heterogeneity in Hedge Fund Performance",
-  "abstract": "We examine the ability of 34 variables to explain the variation in reported estimates of hedge fund performance. Using 1,019 estimates collected from 74 empirical studies, we identify 9 consistently relevant variables. We also quantify the impact of management and performance fees. Synthesizing this extensive empirical evidence, we show that when considering the fees and the variation in research designs, current performance implied by the best practice methodology is close to zero for all common hedge fund strategies. Our paper helps evaluate the robustness of prior propositions on hedge fund performance and reconcile some seemingly contradictory findings.",
+  "abstract": "We examine the ability of 34 context-related variables to explain the variation in reported estimates of hedge fund performance. Using 1,019 \"alphas\" collected from 74 empirical studies, we identify 9 consistently important variables. We also quantify the impact of management and performance fees. Evaluated at the latest data and publication years in our sample, the best-practice alphas are negative, but their study-bootstrap confidence intervals include zero for every common hedge fund strategy. These estimates summarize evidence published through September 1, 2021, and alphas from eight later studies fall within the prediction band of the fitted time trend. Our paper helps evaluate the robustness of prior propositions on hedge fund performance and reconcile some previous seemingly contradictory findings.",
   "reference_line": "Fan Yang, Tomas Havranek, Zuzana Irsova, and Jiri Novak (2026), \"What Matters in Explaining the Variation in Hedge Fund Performance?\" Charles University, Prague. Available at meta-analysis.cz/alphas.",
   "authors": [
    "Fan Yang",
@@ -70,8 +70,24 @@
     "href": "alphas.xlsx"
    },
    {
-    "label": "Code",
+    "label": "Original Stata analysis",
     "href": "alphas.do"
+   },
+   {
+    "label": "Full replication package",
+    "href": "replication.zip"
+   },
+   {
+    "label": "Replication guide",
+    "href": "REPLICATION_README.md"
+   },
+   {
+    "label": "Revised online appendix",
+    "href": "online_appendix.pdf"
+   },
+   {
+    "label": "Later-study coding",
+    "href": "new_studies_to_code.xlsx"
    },
    {
     "label": "CEPR DP 18979",
@@ -92,7 +108,7 @@
   },
   "has_meta_description": true,
   "meta_keywords": "Hedge funds, alpha, fees, meta-analysis, model uncertainty",
-  "one_line": "Meta-analysis of 1,019 estimates from 74 studies identifies which factors explain the variation in hedge fund performance; net performance is near zero.",
+  "one_line": "Meta-analysis of 1,019 estimates of hedge fund alpha from 74 studies: nine design characteristics matter, fees cost 0.44 pp a month, and best-practice alphas are not reliably different from zero. Revised November 2026.",
   "citation_title": "What Matters in Explaining the Variation in Hedge Fund Performance?",
   "version": "record"
  },

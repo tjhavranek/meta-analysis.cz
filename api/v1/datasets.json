@@ -260,7 +260,7 @@
     "doi": null,
     "url": "https://meta-analysis.cz/alphas/"
    },
-   "description": "Meta-analysis of 1,019 estimates from 74 studies identifies which factors explain the variation in hedge fund performance; net performance is near zero.",
+   "description": "Meta-analysis of 1,019 estimates of hedge fund alpha from 74 studies: nine design characteristics matter, fees cost 0.44 pp a month, and best-practice alphas are not reliably different from zero. Revised November 2026.",
    "n_estimates": 1019,
    "n_variables": 82,
    "n_estimates_in_literature": 1019,

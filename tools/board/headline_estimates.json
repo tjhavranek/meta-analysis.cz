@@ -430,9 +430,9 @@
  {
   "project": "alphas",
   "parameter": "Variation in hedge fund alphas",
-  "headline": "9 of 34 study characteristics consistently explain it. Reported alphas have fallen steadily over time, and they depend on which database supplied the returns, higher from CISDM and lower the more databases a study combines. Measuring alpha net of fees rather than gross costs a further 0.439 percentage points a month, and expected alphas under best practice are close to zero for all common strategies",
-  "evidence": "We document that 9 out of the 34 characteristics we analyze are consistently relevant to explain the variation in the reported estimates. ... we observe a strong downward trend in the reported alphas over time. ... based on more source databases, and (vi) based on data sourced from databases other than the Morningstar Center for International Securities and Derivatives Markets database (CISDM). ... monthly alphas reported on a net-of-fee basis are, on average, 0.439 percentage points lower than alphas based on gross returns. ... the current estimates of expected alphas implied by the best practice methodology are close to zero for all common hedge fund strategies.",
-  "basis": "1,019 estimates from 74 studies",
+  "headline": "9 of 34 study characteristics consistently explain it, and reported alphas have fallen over time. Alphas measured net of fees are 0.44 percentage points a month lower than gross alphas. Best-practice alphas at the latest data and publication years are negative but not reliably different from zero for any common strategy: for all strategies, −0.079 percentage points a month, with a study-bootstrap 95% interval of [−0.444, 0.372]",
+  "evidence": "We document that 9 out of the 34 characteristics we analyze are consistently relevant to explain the variation in the reported estimates. ... We document a strong declining trend in the reported hedge fund alphas over time. ... our results suggest that monthly alphas reported on a net-of-fee basis are, on average, 0.440 percentage points lower than alphas based on gross returns. ... Our baseline best-practice alpha estimates, computed for the latest years in our sample, are not reliably different from zero: the all-strategies estimate is -0.079 percentage points per month, with a 95% study-bootstrap confidence interval of [-0.444, 0.372].",
+  "basis": "1,019 estimates from 74 studies published through September 1, 2021",
   "caveat": null,
   "field": "Financial economics",
   "lead": "the main result is that",

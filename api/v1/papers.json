@@ -115,7 +115,7 @@
    "full_text_url": "https://meta-analysis.cz/alphas/paper/",
    "project_url": "https://meta-analysis.cz/alphas/",
    "pdf_url": "https://meta-analysis.cz/alphas/alphas.pdf",
-   "abstract": "We examine the ability of 34 variables to explain the variation in reported estimates of hedge fund performance. Using 1,019 estimates collected from 74 empirical studies, we identify 9 consistently relevant variables. We also quantify the impact of management and performance fees. Synthesizing this extensive empirical evidence, we show that when considering the fees and the variation in research designs, current performance implied by the best practice methodology is close to zero for all common hedge fund strategies. Our paper helps evaluate the robustness of prior propositions on hedge fund performance and reconcile some seemingly contradictory findings.",
+   "abstract": "We examine the ability of 34 context-related variables to explain the variation in reported estimates of hedge fund performance. Using 1,019 \"alphas\" collected from 74 empirical studies, we identify 9 consistently important variables. We also quantify the impact of management and performance fees. Evaluated at the latest data and publication years in our sample, the best-practice alphas are negative, but their study-bootstrap confidence intervals include zero for every common hedge fund strategy. These estimates summarize evidence published through September 1, 2021, and alphas from eight later studies fall within the prediction band of the fitted time trend. Our paper helps evaluate the robustness of prior propositions on hedge fund performance and reconcile some previous seemingly contradictory findings.",
    "sections": [
     {
      "level": 2,
@@ -130,7 +130,7 @@
     {
      "level": 2,
      "title": "3. Data",
-     "anchor": "sec-3"
+     "anchor": "sec-3--data"
     },
     {
      "level": 2,
@@ -150,12 +150,12 @@
     {
      "level": 3,
      "title": "4.3. Sensitivity Analysis",
-     "anchor": "sec-4-3"
+     "anchor": "sec-4-3--sensitivity-analysis"
     },
     {
      "level": 3,
-     "title": "4.4. Best Practice Implied Estimate",
-     "anchor": "sec-4-4"
+     "title": "4.4. Best-Practice Estimate",
+     "anchor": "sec-4-4--best-practice-estimate"
     },
     {
      "level": 2,
@@ -174,6 +174,11 @@
     },
     {
      "level": 2,
+     "title": "Related working papers",
+     "anchor": "sec-related-working-papers"
+    },
+    {
+     "level": 2,
      "title": "Declaration of competing interest",
      "anchor": "sec-declaration-of-competing-interest"
     },
@@ -184,8 +189,8 @@
     },
     {
      "level": 2,
-     "title": "Declaration of generative AI use",
-     "anchor": "sec-declaration-of-generative-ai-use"
+     "title": "Declaration of generative AI and AI-assisted technologies in the manuscript preparation process",
+     "anchor": "sec-declaration-of-generative-ai-and-ai-assisted-technologies-in-the-manuscript-preparation-process"
     },
     {
      "level": 2,
@@ -204,7 +209,7 @@
     }
    ],
    "headline_question": "What explains the variation in hedge fund alpha?",
-   "headline": "9 of 34 study characteristics consistently explain it. Reported alphas have fallen steadily over time, and they depend on which database supplied the returns, higher from CISDM and lower the more databases a study combines. Measuring alpha net of fees rather than gross costs a further 0.439 percentage points a month, and expected alphas under best practice are close to zero for all common strategies",
+   "headline": "9 of 34 study characteristics consistently explain it, and reported alphas have fallen over time. Alphas measured net of fees are 0.44 percentage points a month lower than gross alphas. Best-practice alphas at the latest data and publication years are negative but not reliably different from zero for any common strategy: for all strategies, −0.079 percentage points a month, with a study-bootstrap 95% interval of [−0.444, 0.372]",
    "headline_url": "https://meta-analysis.cz/results/#alphas",
    "data": {
     "parquet": "https://meta-analysis.cz/data/v1/alphas/alphas.parquet",

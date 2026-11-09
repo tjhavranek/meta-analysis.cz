@@ -189,7 +189,7 @@
   "alphas": {
    "value": "the year and the database, not only the fees",
    "zero": false,
-   "tail": "reported alphas have fallen over time and differ by data vendor; measuring net of fees costs a further 0.439 percentage points a month, leaving expected alphas near zero"
+   "tail": "reported alphas have fallen over time and differ by data vendor; net of fees they are 0.44 percentage points a month lower, and best-practice alphas are negative but not reliably different from zero"
   },
   "correlations": {
    "value": "yes, the conventional ones",

@@ -2993,6 +2993,17 @@
 "1983"
 ]
 },
+"11e4d80ba3883f38": {
+"doi": "10.67236/faxi2748",
+"overlap": 1.0,
+"project": "alphas",
+"text": "Barth, D., Kahn, R.J., 2021. Hedge Funds and the Treasury Cash-Futures Disconnect. Technical Report 21-01. Office of Financial Research.",
+"title": "Hedge Funds and the Treasury Cash-Futures Disconnect",
+"why": "all three checks passed",
+"years": [
+"2021"
+]
+},
 "11ed8561465d4c9d": {
 "doi": "10.1111/joes.12131",
 "overlap": 1.0,
@@ -6869,6 +6880,12 @@
 "years": [
 "2023"
 ]
+},
+"298e5af47a8f96b2": {
+"doi": null,
+"project": "alphas",
+"text": "Agarwal, V., Bakshi, G., Huij, J., 2009a. Do higher-moment equity risks explain hedge fund returns? Robert H. Smith School Research Paper No. RHS, 06\u2013153.",
+"why": "check 1 failed (overlap 1.00, year False, author True)"
 },
 "29a24c662afd81ca": {
 "doi": "10.1016/s0927-5371(02)00014-3",
@@ -33089,6 +33106,12 @@
 "years": [
 "1999"
 ]
+},
+"d2a95fc8b9b69fea": {
+"doi": null,
+"project": "alphas",
+"text": "Connor, G., Woo, M., 2004. An introduction to hedge funds. Technical Report. Financial Markets Group, London School of Economics and Political Science.",
+"why": "check 1 failed (overlap 1.00, year False, author False)"
 },
 "d2addf272930b11c": {
 "doi": "10.1080/00220388.2012.685721",
