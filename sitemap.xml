@@ -121,7 +121,7 @@
   <url><loc>https://meta-analysis.cz/maive/how-to/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/maive/paper/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/maive/supplement/</loc><lastmod>2026-10-12</lastmod></url>
-  <url><loc>https://meta-analysis.cz/migrant/paper/</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://meta-analysis.cz/migrant/paper/</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://meta-analysis.cz/outliers/paper/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/passthrough/paper/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/pcc/paper/</loc><lastmod>2026-11-03</lastmod></url>
@@ -257,7 +257,7 @@
   <url><loc>https://meta-analysis.cz/maive/sigma2.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/maive/skill2.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/maive/supplement.pdf</loc><lastmod>2026-06-25</lastmod></url>
-  <url><loc>https://meta-analysis.cz/migrant/migrant.pdf</loc><lastmod>2026-08-01</lastmod></url>
+  <url><loc>https://meta-analysis.cz/migrant/migrant.pdf</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://meta-analysis.cz/outliers/appendix.pdf</loc><lastmod>2026-07-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/outliers/outliers.pdf</loc><lastmod>2026-07-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/passthrough/passthrough.pdf</loc><lastmod>2026-08-28</lastmod></url>
@@ -654,14 +654,14 @@
   <url><loc>https://meta-analysis.cz/teaching/stockholm-2025/slides/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/datasets.json</loc><lastmod>2026-11-09</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/papers.json</loc><lastmod>2026-11-09</lastmod></url>
-  <url><loc>https://meta-analysis.cz/api/v1/search-index.json</loc><lastmod>2026-11-09</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/search-index.json</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/datapackage.json</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/croissant.json</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.csv</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.parquet</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/estimates.csv</loc><lastmod>2026-11-09</lastmod></url>
   <url><loc>https://meta-analysis.cz/llms.txt</loc><lastmod>2026-11-09</lastmod></url>
-  <url><loc>https://meta-analysis.cz/llms-full.txt</loc><lastmod>2026-11-09</lastmod></url>
+  <url><loc>https://meta-analysis.cz/llms-full.txt</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/activism.json</loc><lastmod>2026-09-07</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/alphas.json</loc><lastmod>2026-09-04</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/armington.json</loc><lastmod>2026-09-07</lastmod></url>

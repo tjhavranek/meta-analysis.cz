@@ -119,7 +119,7 @@ TABLE 1. Summary statistics for different subsets of the literature
 | Hourly wage | 352 | -0.11 | 9.5 | -0.12 | -0.09 | -0.12 | 8.7 | -0.13 | -0.10 |
 | National | 846 | -0.07 | 13.4 | -0.08 | -0.07 | -0.08 | 12.6 | -0.09 | -0.07 |
 | Regional | 245 | -0.08 | 13.1 | -0.09 | -0.07 | -0.07 | 14.0 | -0.08 | -0.06 |
-| OLS | 794 | -0.07 | 14.1 | -0.08 | -0.07 | -0.08 | 13.2 | -0.09 | -0.07 |
+| OLS | 794 | -0.07 | 13.5 | -0.08 | -0.07 | -0.08 | 13.2 | -0.09 | -0.07 |
 | IV | 297 | -0.08 | 13.0 | -0.09 | -0.06 | -0.08 | 12.1 | -0.09 | -0.07 |
 | Time fixed effects | 777 | -0.09 | 11.7 | -0.09 | -0.08 | -0.09 | 10.7 | -0.10 | -0.08 |
 | Person fixed effects | 249 | -0.14 | 7.2 | -0.16 | -0.12 | -0.12 | 8.1 | -0.15 | -0.10 |
@@ -220,41 +220,41 @@ TABLE 4. Why do estimates of the elasticity of substitution differ?
 | | Bayesian model averaging | | | Frequentist check | | |
 | --- | --- | --- | --- | --- | --- | --- |
 | | PIP | Post. mean | Post. SD | Coef. | SE | *p*-value |
-| Constant | 1.00 | 0.64 | NA | 11.00 | 11.95 | 0.36 |
-| SE | 1.00 | -0.52 | 0.08 | -0.54 | 0.08 | 0.00 |
+| Constant | 1.00 | 0.64 | NA | -0.19 | 11.28 | 0.99 |
+| SE | 1.00 | -0.52 | 0.08 | -0.53 | 0.09 | 0.00 |
 | **Data characteristics** | | | | | | |
-| Number of cells | 1.00 | 0.06 | 0.01 | 0.07 | 0.01 | 0.00 |
+| Number of cells | 1.00 | 0.06 | 0.01 | 0.06 | 0.01 | 0.00 |
 | Annual frequency data | 1.00 | -0.08 | 0.01 | -0.07 | 0.01 | 0.00 |
 | **Structural variation** | | | | | | |
 | All workers | 1.00 | -0.05 | 0.01 | -0.05 | 0.01 | 0.00 |
-| High level of experience | 0.03 | 0.00 | 0.00 | 0.01 | 0.01 | 0.55 |
+| High level of experience | 0.03 | 0.00 | 0.00 | 0.01 | 0.01 | 0.65 |
 | Low level of experience | 1.00 | -0.05 | 0.01 | -0.04 | 0.01 | 0.00 |
-| High level of education | 0.04 | 0.00 | 0.00 | 0.01 | 0.01 | 0.47 |
-| Low level of education | 0.03 | 0.00 | 0.00 | 0.01 | 0.01 | 0.53 |
-| Top 6 languages | 0.54 | 0.02 | 0.02 | 0.04 | 0.02 | 0.02 |
+| High level of education | 0.04 | 0.00 | 0.00 | 0.01 | 0.01 | 0.53 |
+| Low level of education | 0.03 | 0.00 | 0.00 | 0.00 | 0.01 | 0.59 |
+| Top 6 languages | 0.54 | 0.02 | 0.02 | 0.03 | 0.02 | 0.05 |
 | Male | 1.00 | 0.04 | 0.01 | 0.04 | 0.01 | 0.00 |
-| Female | 0.39 | 0.01 | 0.01 | 0.02 | 0.01 | 0.03 |
-| Immigrant population | 0.98 | 0.34 | 0.10 | 0.25 | 0.09 | 0.01 |
+| Female | 0.39 | 0.01 | 0.01 | 0.02 | 0.01 | 0.06 |
+| Immigrant population | 0.98 | 0.34 | 0.10 | 0.25 | 0.10 | 0.01 |
 | **Estimation characteristics** | | | | | | |
-| DV: Log of mean wages | 0.64 | -0.01 | 0.01 | -0.02 | 0.01 | 0.07 |
-| Annual wage | 0.21 | 0.01 | 0.01 | 0.02 | 0.01 | 0.23 |
-| Monthly wage | 0.04 | 0.00 | 0.00 | 0.01 | 0.02 | 0.65 |
-| Daily wage | 0.04 | 0.00 | 0.00 | 0.02 | 0.02 | 0.39 |
+| DV: Log of mean wages | 0.64 | -0.01 | 0.01 | -0.01 | 0.01 | 0.10 |
+| Annual wage | 0.21 | 0.01 | 0.01 | 0.02 | 0.01 | 0.15 |
+| Monthly wage | 0.04 | 0.00 | 0.00 | 0.01 | 0.02 | 0.64 |
+| Daily wage | 0.04 | 0.00 | 0.00 | 0.02 | 0.02 | 0.43 |
 | Hourly wage | 1.00 | -0.06 | 0.01 | -0.06 | 0.01 | 0.00 |
 | National | 1.00 | -0.06 | 0.01 | -0.05 | 0.01 | 0.00 |
-| OLS | 0.11 | 0.00 | 0.00 | -0.01 | 0.01 | 0.07 |
-| Time fixed effects | 0.47 | -0.01 | 0.01 | -0.01 | 0.01 | 0.20 |
-| Person fixed effects | 1.00 | -0.08 | 0.01 | -0.09 | 0.01 | 0.00 |
+| OLS | 0.11 | 0.00 | 0.00 | -0.01 | 0.01 | 0.11 |
+| Time fixed effects | 0.47 | -0.01 | 0.01 | -0.01 | 0.01 | 0.13 |
+| Person fixed effects | 1.00 | -0.08 | 0.01 | -0.08 | 0.01 | 0.00 |
 | Skill fixed effects | 1.00 | 0.07 | 0.01 | 0.07 | 0.01 | 0.00 |
 | **Publication characteristics** | | | | | | |
-| Impact factor | 0.04 | 0.00 | 0.00 | -0.01 | 0.01 | 0.35 |
+| Impact factor | 0.04 | 0.00 | 0.00 | 0.00 | 0.01 | 0.56 |
 | Citations | 1.00 | -0.02 | 0.01 | -0.02 | 0.01 | 0.00 |
-| Published | 1.00 | 0.05 | 0.01 | 0.06 | 0.01 | 0.00 |
-| Top 5 journals | 0.05 | 0.00 | 0.01 | 0.03 | 0.02 | 0.14 |
-| Publication year | 0.06 | -0.25 | 1.32 | -3.39 | 3.62 | 0.35 |
+| Published | 1.00 | 0.05 | 0.01 | 0.06 | 0.02 | 0.00 |
+| Top 5 journals | 0.05 | 0.00 | 0.01 | 0.02 | 0.02 | 0.48 |
+| Publication year | 0.06 | -0.25 | 1.32 | 0.00 | 3.42 | 1.00 |
 | Studies | | 40 | | | 40 | |
 | Observations | | 1,087 | | | 1,087 | |
-Notes: PIP = posterior inclusion probability. For the interpretation of the posterior inclusion probability, we follow the guidelines offered by Kass & Raftery (1995) to be able to evaluate the importance of each explanatory variable: $0.5 < PIP < 0.75$: weak effect, $0.75 < PIP < 0.95$: substantial effect, $0.95 < PIP < 0.99$: strong effect, $0.99 < PIP$: decisive effect. SD = standard deviation. The table shows unconditional moments for BMA. *Number of cells*, *citations*, and *publication year* enter in logarithms. Detailed description of all variables is available in Table B1.
+Notes: PIP = posterior inclusion probability. For the interpretation of the posterior inclusion probability, we follow the guidelines offered by Kass & Raftery (1995) to be able to evaluate the importance of each explanatory variable: $0.5 < PIP < 0.75$: weak effect, $0.75 < PIP < 0.95$: substantial effect, $0.95 < PIP < 0.99$: strong effect, $0.99 < PIP$: decisive effect. SD = standard deviation. The table shows unconditional moments for BMA. The frequentist check uses Mallows model averaging (Hansen, 2007) over nested models, to which the variables are added in the order of the table rows. *Number of cells*, *citations*, and *publication year* enter in logarithms. Detailed description of all variables is available in Table B1.
 
 First, we clarify how to interpret the dependent variable used in our analysis. All estimates in our dataset are coded as the negative inverse of the elasticity of substitution ($\theta = -1/\sigma$). As a result, a more negative value of $\theta$ indicates a lower elasticity ($\sigma$), meaning weaker substitutability between native and immigrant labor. Conversely, values closer to zero (less negative) imply higher elasticity and thus greater substitutability. Several variables emerge as robust predictors of the reported coefficients.
 
@@ -409,6 +409,8 @@ Gunadi, C. (2019): "An inquiry on the impact of highly-skilled stem immigration 
 
 Haas, A., M. Lucht, & N. Schanne (2013): "Why to employ both migrants and natives? a study on task-specific substitutability." *Journal for Labour Market Research* **46(3)**: pp. 201–214.
 
+Hansen, B. E. (2007): "Least squares model averaging." *Econometrica* **75(4)**: pp. 1175–1189.
+
 Havranek, T. (2015): "Measuring intertemporal substitution: The importance of method choices and selective reporting." *Journal of the European Economic Association* **13(6)**: pp. 1180–1204.
 
 Havranek, T. & Z. Irsova (2011): "Estimating vertical spillovers from FDI: Why results vary and what the true effect is." *Journal of International Economics* **85(2)**: pp. 234–244.
@@ -532,10 +534,10 @@ TABLE A2. Summary statistics for different countries
 | Norway | 1 | 4 | -0.03 | 31.7 | -0.04 | -0.03 | -0.03 | 31.7 | -0.04 | -0.03 |
 | Switzerland | 2 | 68 | -0.03 | 34.6 | -0.04 | -0.02 | -0.08 | 12.6 | -0.10 | -0.06 |
 | UK | 1 | 25 | -0.13 | 7.9 | -0.15 | -0.11 | -0.13 | 7.9 | -0.15 | -0.11 |
-| US | 21 | 643 | -0.07 | 13.5 | -0.08 | -0.06 | -0.09 | 11.0 | -0.10 | -0.08 |
-| US without farmers | 19 | 609 | -0.05 | 20.3 | -0.05 | -0.04 | -0.05 | 21.4 | -0.05 | -0.04 |
+| US | 22 | 643 | -0.07 | 13.5 | -0.08 | -0.06 | -0.09 | 11.0 | -0.10 | -0.08 |
+| US without farmers | 20 | 609 | -0.05 | 20.3 | -0.05 | -0.04 | -0.05 | 21.4 | -0.05 | -0.04 |
 |  | 41 | 1,091 |  |  |  |  |  |  |  |  |
-*Notes:* In four cases (Australia–Britain–Canada–Israel–US combined, Colombia, Norway, and the UK), only one study is available for the country, resulting in weighted and unweighted means being identical. Weighted = coefficients are weighted by the inverse of the number of estimates reported per study. The column $\sigma$ depicts implied elasticity computed as $\sigma = -1/mean$ using the coefficient values prior to rounding. N is the number of observations per sample. No winsorization needed.
+*Notes:* In four cases (Australia–Britain–Canada–Israel–US combined, Colombia, Norway, and the UK), only one study is available for the country, resulting in weighted and unweighted means being identical. Weighted = coefficients are weighted by the inverse of the number of estimates reported per study. The column $\sigma$ depicts implied elasticity computed as $\sigma = -1/mean$ using the coefficient values prior to rounding. N is the number of observations per sample. Aydemir & Borjas (2007) report estimates for both Canada and the US and are counted in both rows, so the country rows sum to 42 studies while the total is 41. No winsorization needed.
 
 ## B Heterogeneity
 
@@ -605,7 +607,7 @@ TABLE B2. Robustness of BMA results across different random-model priors
 
 | Random model prior | UIP prior PIP | UIP prior Post Mean | UIP prior Post SD | BRIC prior PIP | BRIC prior Post Mean | BRIC prior Post SD | Hyper-g prior PIP | Hyper-g prior Post Mean | Hyper-g prior Post SD | EBL prior PIP | EBL prior Post Mean | EBL prior Post SD |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Constant | 1.00 | 1.05 | NA | 1.00 | 1.04 | NA | 1.00 | 6.28 | NA | 1.00 | 6.30 | NA |
+| Constant | 1.00 | 1.05 | NA | 1.00 | 1.05 | NA | 1.00 | 6.28 | NA | 1.00 | 6.30 | NA |
 | SE | 1.00 | -0.52 | 0.08 | 1.00 | -0.52 | 0.08 | 1.00 | -0.52 | 0.08 | 1.00 | -0.52 | 0.08 |
 | Number of cells | 1.00 | 0.06 | 0.01 | 1.00 | 0.06 | 0.01 | 1.00 | 0.06 | 0.01 | 1.00 | 0.06 | 0.01 |
 | Annual frequency data | 1.00 | -0.08 | 0.01 | 1.00 | -0.08 | 0.01 | 1.00 | -0.08 | 0.01 | 1.00 | -0.08 | 0.01 |
@@ -635,7 +637,7 @@ TABLE B2. Robustness of BMA results across different random-model priors
 | Publication year | 0.09 | -0.37 | 1.61 | 0.09 | -0.37 | 1.61 | 0.56 | -1.96 | 3.23 | 0.56 | -1.96 | 3.23 |
 | Studies | 40 |  |  |  |  |  |  |  |  |  |  |  |
 | Observations | 1,087 |  |  |  |  |  |  |  |  |  |  |  |
-*Notes:* PIP = Posterior Inclusion Probability. SD = Standard Deviation. Results reflect Bayesian Model Averaging using random-model priors under four alternative *g*-prior formulations: UIP, BRIC, hyper-*g*, and EBL. For definitions of included covariates, see Table B1. *Number of cells*, *citations*, and *publication year* enter in logarithms.
+*Notes:* PIP = Posterior Inclusion Probability. SD = Standard Deviation. Results reflect Bayesian Model Averaging using random-model priors under four alternative *g*-prior formulations: UIP, BRIC, hyper-*g*, and EBL. For definitions of included covariates, see Table B1. *Number of cells*, *citations*, and *publication year* enter in logarithms. The UIP and BRIC columns are identical because, with 1,087 observations and 27 variables, BRIC's $g = \max(N, K^2)$ equals UIP's $g = N$.
 
 TABLE B3. Robustness of BMA results across different uniform-model priors
 
@@ -671,7 +673,7 @@ TABLE B3. Robustness of BMA results across different uniform-model priors
 | Publication year | 0.06 | -0.25 | 1.32 | 0.06 | -0.25 | 1.32 | 0.23 | -0.85 | 2.36 | 0.23 | -0.86 | 2.36 |
 | Studies | 40 |  |  |  |  |  |  |  |  |  |  |  |
 | Observations | 1,087 |  |  |  |  |  |  |  |  |  |  |  |
-*Notes:* PIP = Posterior Inclusion Probability. SD = Standard Deviation. Results reflect Bayesian Model Averaging using uniform-model priors under four alternative *g*-prior formulations: UIP, BRIC, hyper-*g*, and EBL. For definitions of included covariates, see Table B1. *Number of cells*, *citations*, and *publication year* enter in logarithms.
+*Notes:* PIP = Posterior Inclusion Probability. SD = Standard Deviation. Results reflect Bayesian Model Averaging using uniform-model priors under four alternative *g*-prior formulations: UIP, BRIC, hyper-*g*, and EBL. For definitions of included covariates, see Table B1. *Number of cells*, *citations*, and *publication year* enter in logarithms. The UIP and BRIC columns are identical because, with 1,087 observations and 27 variables, BRIC's $g = \max(N, K^2)$ equals UIP's $g = N$.
 
 FIGURE B1. BMA: UIP and random priors
 
