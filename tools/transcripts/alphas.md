@@ -18,7 +18,7 @@ Fan Yang^{a}, Tomas Havranek^{b,d,e}, Zuzana Irsova^{b,c,e}, Jiri Novak^{b,*}
 
 ## ABSTRACT
 
-We examine the ability of 34 context-related variables to explain the variation in reported estimates of hedge fund performance. Using 1,019 “alphas” collected from 74 empirical studies, we identify 9 consistently important variables. We also quantify the impact of management and performance fees. Evaluated at the latest data and publication years in our sample, the best-practice alphas are negative, but their study-bootstrap confidence intervals include zero for every common hedge fund strategy. These estimates summarize evidence published through September 1, 2021, and alphas from eight later studies fall within the prediction band of the fitted time trend. Our paper helps evaluate the robustness of prior propositions on hedge fund performance and reconcile some previous seemingly contradictory findings.
+We examine the ability of 34 context-related variables to explain the variation in reported estimates of hedge fund performance. Using 1,019 “alphas” collected from 74 empirical studies, we identify 9 important variables. We also quantify the difference between alphas based on gross and net-of-fee returns. Evaluated at the latest data and publication years in our sample, the best-practice alphas are negative, but their study-bootstrap confidence intervals include zero for every common hedge fund strategy. Our paper helps evaluate the robustness of prior propositions on hedge fund performance and reconcile some previous seemingly contradictory findings.
 
 ## KEYWORDS: Hedge funds, alpha, fees, meta-analysis, model uncertainty
 
@@ -55,12 +55,12 @@ Measurement of hedge fund performance is further complicated by data limitations
 
 We also use the large sample of performance estimates to quantify the impact of the management and performance fees. It is well-recognized that hedge funds charge their investors substantial fees. Ben-David et al. (2020) estimate that, on average, hedge funds appropriate in fees almost two-thirds of the excess return they generate. Prior literature also suggests that in alternative investments and private markets these fees are difficult to quantify due to their conditional nature (Agarwal et al., 2009b; Goetzmann et al., 2003; Lim et al., 2016). We offer an alternative way of estimating the effect of these fees by exploiting the composition of our sample that includes both alphas estimated using gross returns and alphas estimated net of fees. Our indicator variable captures the effective impact of hedge fund fees after controlling for the other characteristics that affect the magnitude of reported alpha estimates.
 
-In addition, we observe a strong downward trend in the reported alphas over time. We visualize the trend in Figure 2. The figure shows the median hedge fund alpha reported in each of the 74 studies in our main sample against the median year of the data used in that study. The unconditional sample mean of all alpha estimates is equal to 36 basis points (i.e., 0.36%) on a monthly basis, which corresponds to the annual abnormal return of 4.32% $(= 0.36\% \times 12)$. The positive mean alpha that we observe is broadly consistent with values reported in prominent prior studies on hedge fund performance (Fung and Hsieh, 2001; Getmansky et al., 2015). The downward-sloping fitted linear trend in Figure 2 indicates that studies using later data periods tend to report lower median alphas.
+In addition, we observe a strong downward trend in the reported alphas over time. We visualize the trend in Figure 2. The figure shows the median hedge fund alpha reported in each of the 74 studies in our main sample against the median year of the data used in that study. The unconditional sample mean of all alpha estimates is equal to 36 basis points (i.e., 0.36%) on a monthly basis, which corresponds to the annual abnormal return of 4.32%. The positive mean alpha that we observe is broadly consistent with values reported in prominent prior studies on hedge fund performance (Fung and Hsieh, 2001; Getmansky et al., 2015). The downward-sloping fitted linear trend in Figure 2 indicates that studies using later data periods tend to report lower median alphas.
 
 FIGURE 2. Reported alphas and the median year of the data
 Note: Each point represents one of the 74 primary studies, plotted at its median alpha and median representative data year. Alpha is expressed in monthly percentage points. The dashed line is the fitted linear trend against calendar year, estimated using one observation per study.
 
-Our main sample covers articles published through September 1, 2021, and the median study is published nine years after the midpoint of its data. For a descriptive comparison, we collected alpha estimates from articles published after this date. Table A3b lists the candidate studies we screened, and Table A3 reports the eight included estimates and their sources. We give preference to overall portfolios and the Fung–Hsieh seven-factor model. When these are unavailable, we use the main portfolio or the median of portfolio alphas and the available factor model. We use only estimates reported with a standard error or a t-statistic (for a median, each underlying portfolio alpha must have one).
+Our main sample covers articles published through September 1, 2021, and the median study is published nine years after the midpoint of its data. For a descriptive comparison, in September and October 2026 we collected alpha estimates from journal articles published after this date that report an alpha for all hedge funds, an industry index, or strategy portfolios. The selection is illustrative and does not come from a systematic search. Table A3b lists the candidate studies we screened, and Table A3 reports the eight included estimates and their sources. We give preference to overall portfolios and the Fung–Hsieh seven-factor model. When these are unavailable, we use the main portfolio or the median of portfolio alphas and the available factor model. We use only estimates reported with a standard error or a t-statistic (for a median, each underlying portfolio alpha must have one).
 
 Figure A2 in the Appendix compares the original 74 studies with the eight new estimates, one point per study. The new estimates range from -0.040 to 0.541 percentage points per month. Their return-data periods end between 2017 and 2021, with midpoint years between 2007 and 2016. Six of the seven net-of-fee estimates lie below or very close to the trend fitted to the original studies; the estimate from Platanakis et al. (2025) lies above it. The gross-return estimate from Agarwal et al. (2024), shown with a separate marker, also lies above the line. All eight lie within the pointwise 95% prediction band of the logarithmic curve fitted to the original study medians. Four of the eight studies have data midpoints after 2012, the latest median year among the original studies. For these studies the curve is an extrapolation, so the comparison cannot confirm the time trend.
 
@@ -96,7 +96,7 @@ To mitigate the effect, prior research sometimes eliminates the first year of da
 
 The survivorship bias may arise when commercial databases terminate coverage of previously included funds. Providers may wish to purge the database of funds that no longer operate because they are not relevant to their clients anymore. Hodder et al. (2014) report that on average 15% of hedge funds exit the database every year. A bias arises when the funds that exit the database on average underperform the “surviving” funds. Edelman et al. (2013) and Getmansky et al. (2015) argue that two types of hedge funds are likely to stop reporting their performance to databases: those that are no longer attractive to investors and those that do not seek to attract new investors anymore. Funds that approach liquidation after having incurred substantial losses and experiencing an outflow of funds by investors lack the incentive to continue reporting their performance because they are no longer attractive to investors. On the other hand, well-performing funds that approach their capacity limit and no longer seek additional capital inflows also have incentives to quit reporting their performance to databases. Hence, the impact of survivorship bias in the context of hedge funds is not *a priori* obvious.
 
-Prior research points toward regularities in eliminating hedge funds from databases. Fung and Hsieh (2000) observe that 60% of defunct funds are liquidated whereas 28% are removed from the database because the managers stopped reporting return information. To estimate the performance of successful funds that may exit the database due to capacity constraints, Edelman et al. (2013) compare performance of large non-reporting funds identified through an industry survey with funds of comparable size that do report their performance to one of the commercial databases. They observe fairly similar performance for both groups. These findings suggest that databases likely overstate true hedge fund performance. Brown et al. (1999) examine survivorship bias in a database of active and defunct offshore funds and observe positive risk-adjusted returns even after adjusting for the bias. Liang (2000) observes that poor performance is the main reason for a fund’s disappearance from the databases and finds that the survivorship bias exceeds 2% per annum and it varies with investment styles. Edwards and Caglayan (2001) compare the performance of defunct funds with those that are still in operation and they estimate the impact of the bias at 1.85% per annum. Similarly, Amin and Kat (2003b) estimate the impact of the survivorship bias to be around 2.0% per annum on average, but substantially higher for small, young, and leveraged funds (between 4.0% and 5.0%). Fung et al. (2006) estimate the impact of the survivorship bias at 1.8% and 2.4% per annum. In comparison, Agarwal et al. (2015) propose a range between 2.0% and 3.6% per annum. They also state that the bias varies across databases, sample periods, and fund characteristics.
+Prior research points toward regularities in eliminating hedge funds from databases. Fung and Hsieh (2000) observe that 60% of defunct funds are liquidated whereas 28% are removed from the database because the managers stopped reporting return information. To estimate the performance of successful funds that may exit the database due to capacity constraints, Edelman et al. (2013) compare performance of large non-reporting funds identified through an industry survey with funds of comparable size that do report their performance to one of the commercial databases. They observe fairly similar performance for both groups. These findings suggest that databases likely overstate true hedge fund performance. Brown et al. (1999) examine survivorship bias in a database of active and defunct offshore funds and observe positive risk-adjusted returns even after adjusting for the bias. Liang (2000) observes that poor performance is the main reason for a fund’s disappearance from the databases and finds that the survivorship bias exceeds 2% per annum and it varies with investment styles. Edwards and Caglayan (2001) compare the performance of defunct funds with those that are still in operation and they estimate the impact of the bias at 1.85% per annum. Similarly, Amin and Kat (2003b) estimate the impact of the survivorship bias to be around 2.0% per annum on average, but substantially higher for small, young, and leveraged funds (between 4.0% and 5.0%). Fung and Hsieh (2006) estimate the impact of the survivorship bias at 1.8% and 2.4% per annum. In comparison, Agarwal et al. (2015) propose a range between 2.0% and 3.6% per annum. They also state that the bias varies across databases, sample periods, and fund characteristics.
 
 The survivorship bias may be expected to decrease over time as databases improve the consistency of their coverage and retain historical data. However, even databases that retain the data for defunct funds may be contaminated by the delisting bias or liquidation bias. Aiken et al. (2013) find that about half of the hedge funds continue to operate two years after the delisting date and their returns are 1.8% lower than returns of funds that continue reporting their performance to the database. Edelman et al. (2013) argue that the reliability and consistency of performance data provided by hedge funds approaching liquidation often deteriorates, which may prompt data vendors not to record them due to questionable reliability. This implies that even databases that include records for the “dead” funds may miss some of the last performance data that tend to be rather poor. Hodder et al. (2014) use estimated portfolio holdings for funds-of-funds and they estimate the average delisting return for all hedge funds of –1.61%. They also find that the negative delisting return is substantially larger for funds with poor prior performance and with no clearly stated delisting reason. Other studies estimate the impact of missing delisting returns on estimates of average hedge fund performance. Edelman et al. (2013) estimate the magnitude of the delisting bias at a modest 0.02% per annum. Jorion and Schwarz (2013) exploit the differences in the timing of hedge fund delisting from various databases and estimate the impact of the bias to be at least 0.35% per annum. They suggest that hedge fund indices should be adjusted downward by 0.5% per annum to adjust for the effect.
 
@@ -114,7 +114,7 @@ Various factor models differ in the set of factors they consider. Thus, the alph
 
 Beyond choosing among these common risk factor models, some primary studies use additional measures that capture additional sources of risk, such as liquidity-related characteristics, volatility, or uncertainty measures. Since these extensions are less common and less standardized across individual studies than the canonical factor models, in our meta-analysis, we do not code these specifications into separate risk-adjustment categories. Instead, we group them according to the broader characteristics of the regression models used in the primary studies. Wherever applicable, these additional features of regression specifications may be reflected in other indicator variables that we use to characterize more general estimation characteristics.
 
-We collect our sample of hedge fund alphas from peer-reviewed research articles published between January 1, 2001, and September 1, 2021. The alpha estimates are the intercept terms from regressions of hedge fund returns on risk factors. The alphas represent risk-adjusted returns generated by hedge funds, which makes them comparable and suitable for aggregation by means of a meta-analysis. We use monthly alphas, expressed as a percentage, as our key variable of interest. For example, an alpha of 0.36 refers to a monthly alpha of 0.36%, which corresponds to an annual abnormal return of 4.32% $(= 0.36\% \times 12)$. The slope coefficients of the indicator variables in our regressions can thus be interpreted as percentage-point differences in monthly alphas. When a primary study reports annual or quarterly alphas, we convert them to a monthly frequency by dividing them by twelve or three, respectively.
+We collect our sample of hedge fund alphas from peer-reviewed research articles published between January 1, 2001, and September 1, 2021. The alpha estimates are the intercept terms from regressions of hedge fund returns on risk factors. The alphas represent risk-adjusted returns generated by hedge funds, which makes them comparable and suitable for aggregation by means of a meta-analysis. We use monthly alphas, expressed as a percentage, as our key variable of interest. For example, an alpha of 0.36 refers to a monthly alpha of 0.36%, which corresponds to an annual abnormal return of 4.32%. The slope coefficients of the indicator variables in our regressions can thus be interpreted as percentage-point differences in monthly alphas. When a primary study reports annual or quarterly alphas, we convert them to a monthly frequency by dividing them by twelve or three, respectively.
 
 We deliberately limit the pool of primary studies to research articles published in academic journals. Published articles have cleared the peer-review process of their respective journals, and alpha estimates reported in them are likely more credible than those in working papers and more influential in shaping the views of finance researchers and practitioners. Working papers and grey literature are therefore not included, and our findings, including the publication-selection adjustment, are conditional on this published evidence base. Testing this restriction would require a separate search and coding of working papers, matched to their published versions to avoid counting the same estimates twice.
 
@@ -124,7 +124,7 @@ We further complement our main keyword search with another search that is more g
 
 In our multivariate analysis, we build on Yang et al. (2024), who investigate the impact of the publication selection bias in hedge fund research, and we control for selectivity in reporting alpha coefficients. This requires a measure of the precision of collected alpha estimates. Consequently, we only collect alpha estimates accompanied by a measure of statistical significance, i.e., a *t*-statistic, a standard error (*SE*), and/or a *p*-value. When more than one measure of statistical significance is provided, we apply the following procedure. We collect corresponding *t*-statistics directly from the primary studies whenever available. When standard errors are reported, we compute the *t*-statistic by dividing the alpha by its standard error. Correspondingly, in Bayesian studies, we approximate the *t*-statistic by dividing the alpha by its standard deviation. When a primary study reports *p*-values, we check if the paper discusses whether these are based on one-tailed or two-tailed tests. When the information on the type of the test is not explicitly stated, we try to infer it from the discussion of the statistical significance of reported results. We assume a two-tailed test whenever the type of the test cannot be ascertained from the discussion of statistical significance (one study). We manually verify that all the coefficients with the implied *t*-statistic greater than 10 are referred to as highly significant in the text of primary studies. We discard one observation with a reported *t*-statistic greater than 50.
 
-Table 1 provides a list of 74 primary studies identified by our data collection procedure. From these research articles we collected 1,019 alpha estimates that constitute the sample for our empirical analysis. The number of data points makes our study one of the largest meta-analyses in finance. The substantial number of primary studies on this topic and the number of reported alpha coefficients imply that hedge fund performance has been extensively studied in prior research and the alpha coefficients have been estimated in a variety of ways with the use of various data samples. It thus seems worthwhile to aggregate the results from diverse studies by means of a meta-analysis.
+Table 1 provides a list of 74 primary studies identified by our data collection procedure. From these research articles we collected 1,019 alpha estimates that constitute the sample for our empirical analysis. To limit the influence of outliers, we winsorize the alpha estimates and their standard errors at the 1st and 99th percentiles. The number of data points makes our study one of the largest meta-analyses in finance. The substantial number of primary studies on this topic and the number of reported alpha coefficients imply that hedge fund performance has been extensively studied in prior research and the alpha coefficients have been estimated in a variety of ways with the use of various data samples. It thus seems worthwhile to aggregate the results from diverse studies by means of a meta-analysis.
 
 TABLE 1. Studies included in the meta-analysis
 
@@ -157,7 +157,7 @@ TABLE 1. Studies included in the meta-analysis
 | Edelman et al. (2012) | Lo (2001) |  |
 Notes: The table shows the list of 74 primary studies, from which we collect the alpha estimates that constitute our sample.
 
-Figure 3 shows a histogram of the alpha estimates that constitute our sample. Consistent with the expectations, the distribution approaches normality. It is fairly symmetric, smooth, and free of apparent discontinuities, which indicates that our data sample exhibits the expected characteristics. The vertical red line in Figure 3 denotes the unconditional sample mean of monthly alphas expressed as a percentage. The value of 0.36% corresponds to an annual risk-adjusted return of 4.32% $(= 0.36\% \times 12)$. This number falls within the range of alpha estimates reported in several prominent prior studies on hedge fund performance. For example, the alpha estimates based on the Fung and Hsieh (2001) seven-factor model reported by Getmansky et al. (2015) range from 0.18% to 0.56%. This increases confidence that our sample is not biased and is representative of the population of alpha estimates reported in prior literature.
+Figure 3 shows a histogram of the alpha estimates that constitute our sample. Consistent with the expectations, the distribution approaches normality. It is fairly symmetric, smooth, and free of apparent discontinuities, which indicates that our data sample exhibits the expected characteristics. The vertical red line in Figure 3 denotes the unconditional sample mean of monthly alphas expressed as a percentage. The value of 0.36% corresponds to an annual risk-adjusted return of 4.32%. This number falls within the range of alpha estimates reported in several prominent prior studies on hedge fund performance. For example, the alpha estimates based on the Fung and Hsieh (2001) seven-factor model reported by Getmansky et al. (2015) range from 0.18% to 0.56%. This increases confidence that our sample is not biased and is representative of the population of alpha estimates reported in prior literature.
 
 FIGURE 3. Distribution of alpha estimates
 Notes: The figure depicts a histogram of our sample of 1,019 alpha estimates that we collect from 74 primary studies on hedge fund performance. The vertical red line denotes the sample mean.
@@ -166,28 +166,28 @@ At the same time, Figure 3 reveals a substantial variance in the reported alpha 
 
 In Figure 4, we first examine how the range of reported alpha coefficients varies across the individual primary studies. The figure shows the median value and the interquartile range for all alpha estimates reported in a given primary study. The variation across these alphas within each study may be due to alternative model specifications, alphas estimated for different hedge fund strategies, or other estimate-specific factors. The whiskers denote the minimum and the maximum values within the 1.5 times the range between the upper and lower quartiles. Figure 4 shows considerable variation in the reported alpha coefficients both within and across studies. While the interquartile ranges for some studies are fairly narrow, other studies exhibit interquartile ranges that exceed 1 percentage point of monthly returns, which corresponds to an annual return of 12%. Furthermore, interquartile ranges of some studies do not cross the vertical line representing the unconditional sample mean of 0.36%, which implies that the alpha coefficients reported in these studies substantially deviate from the values typical in the entire pool of research on hedge fund performance.
 
-In Figure 4, the 74 primary studies are sorted by the median age of the underlying data, with the oldest samples at the top and the newer samples at the bottom of the figure. This figure thus provides the first preliminary evidence suggesting that hedge fund performance declined over time. The interquartile ranges of many of the studies using older samples exceed the unconditional sample mean, while for the more recent studies, the interquartile ranges tend to be below it. We explore the tendency of primary studies based on newer data sets to report lower alphas further in the following analysis.
+In Figure 4, the 74 primary studies are sorted by the median age of the underlying data, with the oldest samples at the top and the newer samples at the bottom of the figure. This figure thus provides the first preliminary evidence suggesting that reported alphas declined over time. The interquartile ranges of many of the studies using older samples exceed the unconditional sample mean, while for the more recent studies, the interquartile ranges tend to be below it. We explore the tendency of primary studies based on newer data sets to report lower alphas further in the following analysis.
 
 FIGURE 4. Reported alphas differ both across and within studies
-Notes: The figure depicts the distribution of the alpha estimates in the individual primary studies sorted by the age of the underlying data. The length of each box represents the interquartile range (percentile 25, percentile 75). The vertical line inside the box depicts the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. The vertical line denotes sample mean. For ease of exposition, outliers are excluded from the figure but included in all statistical tests.
+Notes: The figure depicts the distribution of the alpha estimates in the individual primary studies sorted by the age of the underlying data. The length of each box represents the interquartile range (percentile 25, percentile 75). The vertical line inside the box depicts the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. The vertical line denotes sample mean. Observations beyond the whiskers are shown as circles.
 
 Figure 5 visualizes the distribution of alpha estimates generated by hedge funds covering various geographic areas. Most of the hedge funds we study are global funds. Thus, unsurprisingly, the median alpha estimate for global funds virtually coincides with the unconditional sample mean. Furthermore, alphas reported for global funds have a relatively narrow interquartile range, from 0.13% to 0.56% per month. Similarly, funds that concentrate on the U.S. and Canada have a median return very close to the full sample mean and a fairly narrow interquartile range. Figure 5 also provides some indication that Australian, Indian, Japanese, and Latin American funds tend to generate somewhat lower alphas than their global counterparts. In contrast, Chinese, Korean, East European, Middle-Eastern, and North African funds, on average, generate somewhat higher alphas. However, most of these findings are based on a rather small number of observations. Furthermore, these descriptive statistics do not control for hedge funds’ fundamental characteristics and differences in research design choices that may vary systematically across the primary studies. Thus, these findings should be considered preliminary. We delay drawing stronger conclusions about these characteristics until Section 4, where we perform a comprehensive analysis that investigates the combined effect of these characteristics.
 
 FIGURE 5. Reported alphas differ across and within regions
-Notes: The figure depicts the distribution of the alpha estimates across various geographic scopes covered by hedge funds. The length of each box represents the interquartile range (percentile 25, percentile 75). The vertical line inside the box depicts the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. The vertical line denotes sample mean. For ease of exposition, outliers are excluded from the figure but included in all statistical tests.
+Notes: The figure depicts the distribution of the alpha estimates across various geographic scopes covered by hedge funds. The length of each box represents the interquartile range (percentile 25, percentile 75). The vertical line inside the box depicts the median value. The whiskers represent the highest and lowest data points within 1.5 times the range between the upper and lower quartiles. The vertical line denotes sample mean. Observations beyond the whiskers are shown as circles.
 
 We consider several measures related to hedge fund fundamental characteristics and research design choices in the primary studies that may be relevant for explaining the cross-sectional variation in the value generated by hedge funds. Table A1 provides the definition and descriptive statistics for the explanatory variables that we use in our regression analysis. Since the determinants of hedge fund performance are not *a priori* known, we consider several “candidate” variables, and we examine how effective various combinations of these variables are in explaining the heterogeneity in the alphas reported in primary studies. For each variable, Table A1 includes the definition, the unweighted mean value (Mean), the standard deviation (SD), and the mean weighted by the inverse of the number of estimates reported per study (WM), which gives all of the 74 primary studies equal weight. Many of our independent variables are indicators, and so the mean values represent the proportion of alpha estimates for which a given variable is coded as 1.
 
 Consistent with our earlier findings, Table A1 shows that the mean value of the alpha estimates in our sample is 0.362. The mean value does not substantially change when the individual observations are weighted by the inverse of the number of estimates reported per study (WM = 0.365). The distribution of alpha estimates is fairly dispersed, with the standard deviation of 0.477. To adjust for a potential publication selection bias, we collect from the primary studies the alpha estimates’ standard error (SE). Since prior literature shows that estimates based on instrumental variables (IV) tend to be less precise than coefficients estimated using different techniques, which may matter for the extent of publication selection bias (Brodeur et al., 2020), we interact SE with an indicator variable equal to 1 for alpha coefficients estimated using IV.
 
-Table 2 shows summary statistics for groups of alpha estimates determined by our conditioning variables. In the left panel, the individual alpha estimates are weighted equally. In the right panel, the alphas are weighted by the inverse of the number of estimates reported in a given study, which gives each of the 74 primary studies (rather than each of the 1,019 alphas estimates) equal weight in computing the mean value and the 95% confidence interval.
+Table 2 shows summary statistics for groups of alpha estimates determined by our conditioning variables. In the left panel, the individual alpha estimates are weighted equally. In the right panel, the alphas are weighted by the inverse of the number of estimates reported in a given study, which gives each of the 74 primary studies (rather than each of the 1,019 alpha estimates) equal weight in computing the mean value and the 95% confidence interval.
 
 TABLE 2. Alphas in different contexts
 | | Estimates | Studies | Unweighted mean | Unweighted 95% conf. int. | | Weighted mean | Weighted 95% conf. int. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | *Aggregation of returns* |  |  |  |  |  |  |  |  |
 | Individual funds | 175 | 22 | 0.385 | 0.326 | 0.444 | 0.317 | 0.263 | 0.370 |
-| Equal-weighted funds | 503 | 44 | 0.427 | 0.380 | 0.474 | 0.393 | 0.353 | 0.433 |
+| Equal-weighted funds | 503 | 44 | 0.427 | 0.380 | 0.474 | 0.393 | 0.352 | 0.433 |
 | Value-weighted funds | 341 | 23 | 0.256 | 0.213 | 0.298 | 0.357 | 0.314 | 0.399 |
 | *Treatment of fees* |  |  |  |  |  |  |  |  |
 | Net-of-fee returns | 984 | 70 | 0.348 | 0.319 | 0.377 | 0.335 | 0.310 | 0.360 |
@@ -196,7 +196,7 @@ TABLE 2. Alphas in different contexts
 | Cross-section data | 855 | 57 | 0.355 | 0.322 | 0.388 | 0.379 | 0.349 | 0.409 |
 | Longitudinal data | 164 | 23 | 0.401 | 0.345 | 0.456 | 0.324 | 0.271 | 0.377 |
 | *Source database* |  |  |  |  |  |  |  |  |
-| Database: default | 537 | 50 | 0.343 | 0.309 | 0.376 | 0.301 | 0.272 | 0.330 |
+| Database: default | 537 | 50 | 0.343 | 0.309 | 0.376 | 0.301 | 0.272 | 0.329 |
 | Database: CST | 256 | 15 | 0.218 | 0.166 | 0.271 | 0.273 | 0.229 | 0.316 |
 | Database: CISDM | 178 | 16 | 0.434 | 0.354 | 0.514 | 0.386 | 0.319 | 0.452 |
 | Database: hand-collected | 22 | 5 | 0.411 | 0.263 | 0.559 | 0.576 | 0.356 | 0.796 |
@@ -208,7 +208,7 @@ TABLE 2. Alphas in different contexts
 | Bull market | 39 | 4 | 0.272 | 0.199 | 0.346 | 0.277 | 0.206 | 0.347 |
 | Bear market | 39 | 4 | 0.103 | -0.006 | 0.211 | 0.097 | -0.007 | 0.201 |
 | *Hedge fund strategy* |  |  |  |  |  |  |  |  |
-| Strategy: all funds | 243 | 45 | 0.303 | 0.255 | 0.351 | 0.298 | 0.258 | 0.339 |
+| Strategy: all funds | 243 | 45 | 0.303 | 0.255 | 0.351 | 0.298 | 0.257 | 0.339 |
 | Strategy: equity hedge | 229 | 38 | 0.352 | 0.286 | 0.418 | 0.360 | 0.296 | 0.424 |
 | Strategy: event driven | 113 | 31 | 0.474 | 0.378 | 0.570 | 0.586 | 0.496 | 0.676 |
 | Strategy: relative value | 94 | 26 | 0.294 | 0.215 | 0.373 | 0.401 | 0.329 | 0.473 |
@@ -221,7 +221,7 @@ TABLE 2. Alphas in different contexts
 | 3-factor model | 71 | 12 | 0.463 | 0.344 | 0.581 | 0.446 | 0.347 | 0.545 |
 | 4-factor model | 205 | 18 | 0.247 | 0.183 | 0.311 | 0.313 | 0.250 | 0.376 |
 | 7-factor model | 298 | 33 | 0.289 | 0.237 | 0.342 | 0.297 | 0.254 | 0.340 |
-| Modeling model uncertainty | 142 | 10 | 0.313 | 0.240 | 0.385 | 0.392 | 0.325 | 0.459 |
+| Modeling model uncertainty | 142 | 10 | 0.313 | 0.240 | 0.385 | 0.392 | 0.324 | 0.459 |
 | Asset-based model | 80 | 10 | 0.324 | 0.255 | 0.392 | 0.250 | 0.185 | 0.314 |
 | Other model | 56 | 7 | 0.933 | 0.799 | 1.067 | 0.906 | 0.773 | 1.039 |
 | *Treatment of biases* |  |  |  |  |  |  |  |  |
@@ -237,7 +237,7 @@ Notes: The table reports summary statistics for the different subsets of alpha e
 
 Table 2 shows some variation in the reported alpha estimates based on how the primary study aggregates hedge fund returns. Specifically, treating all estimates in our sample equally, reported alphas for value-weighted hedge fund indices tend to be lower than those documented for individual funds. In contrast, reported alpha estimates for equally weighted hedge fund indices are, on average, somewhat higher. Since returns on value-weighted hedge fund indices are disproportionately driven by the performance of large hedge funds, this finding suggests smaller hedge funds tend to generate larger alphas than larger hedge funds. We consider this finding rather intuitive and consistent with the prediction of a rational model of active portfolio management proposed by Berk and Green (2004) that assumes a differential ability to identify profitable investment opportunities across fund managers, but decreasing returns to scale in deploying these abilities. The model suggests that for any given level of a fund manager’s ability, the likelihood of generating abnormal returns decreases in the volume of resources that these managers allocate. In other words, managers of smaller hedge funds may find it easier to implement their investment strategy because suitable investment targets are easier to identify when the scope of their investment is smaller. Hence, smaller hedge funds may outperform larger funds.
 
-Table 2 also suggests that the reported alpha estimates greatly vary with the treatment of hedge fund fees in the research design of a primary study. Most of the primary studies from which we collect our data sample report alpha estimates on a net-of-fee basis. The unweighted (weighted) mean value of these net-of-fee alphas is 0.348 (0.335). In comparison, the alpha estimates based on gross returns are more than twice as large. Specifically, the unweighted (weighted) mean gross alphas is 0.757 (0.817). This finding is consistent with prior literature that points out the substantial fees that hedge funds charge (Connor and Woo, 2004; Malkiel and Saha, 2005). These fees typically consist of a flat management fee of 1% to 2% of assets under management (AUM) and a variable performance fee usually 20% of realized returns above the risk-free rate (Fung and Hsieh, 1999; Connor and Woo, 2004; Stulz, 2007; Kouwenberg and Ziemba, 2007; Getmansky et al., 2015). The performance fee tends to be paid only after reaching the so-called “high water mark”, i.e., the highest value the fund has previously reached (Asness et al., 2001; Goetzmann et al., 2003; Lim et al., 2016; Stulz, 2007), that is to say, only after recovering any previously incurred losses. However, managers of unsuccessful hedge funds may opt to close the fund down, which renders any “high water mark” provision irrelevant (Stulz, 2007). Our results show that unweighted net-of-fee alphas account for 46 percent of gross alphas, while the weighted proportion is around 41 percent. The implied fee share is slightly higher than 50 percent of gross returns, which is not far from the estimate in Ben-David et al. (2020) that total fees amount to about 64 percent of aggregate gross profits.
+Table 2 also suggests that the reported alpha estimates greatly vary with the treatment of hedge fund fees in the research design of a primary study. Most of the primary studies from which we collect our data sample report alpha estimates on a net-of-fee basis. The unweighted (weighted) mean value of these net-of-fee alphas is 0.348 (0.335). In comparison, the alpha estimates based on gross returns are more than twice as large. Specifically, the unweighted (weighted) mean gross alpha is 0.757 (0.817). This finding is consistent with prior literature that points out the substantial fees that hedge funds charge (Connor and Woo, 2004; Malkiel and Saha, 2005). These fees typically consist of a flat management fee of 1% to 2% of assets under management (AUM) and a variable performance fee usually 20% of realized returns above the risk-free rate (Fung and Hsieh, 1999; Connor and Woo, 2004; Stulz, 2007; Kouwenberg and Ziemba, 2007; Getmansky et al., 2015). The performance fee tends to be paid only after reaching the so-called “high water mark”, i.e., the highest value the fund has previously reached (Asness et al., 2001; Goetzmann et al., 2003; Lim et al., 2016; Stulz, 2007), that is to say, only after recovering any previously incurred losses. However, managers of unsuccessful hedge funds may opt to close the fund down, which renders any “high water mark” provision irrelevant (Stulz, 2007). Our results show that unweighted net-of-fee alphas account for 46 percent of gross alphas, while the weighted proportion is around 41 percent. Taken at face value, these means imply a difference of 54 to 59 percent of gross alphas, which is not far from the estimate in Ben-David et al. (2020) that total fees amount to about 64 percent of aggregate gross profits. The comparison is descriptive, because gross and net estimates mostly come from different studies.
 
 Table 2 also shows that, on average, the magnitude of reported alpha estimates is not dramatically affected by the structure of the data used for the empirical tests in the primary studies. Both the cross-sectional and longitudinal data yield similar alpha estimates (0.355 and 0.401 on an unweighted basis and 0.379 and 0.324 on a weighted basis). The alpha estimates based on longitudinal data exhibit some difference between the simple unweighted and the weighted mean, which implies that the unweighted mean is affected by several studies that report high alphas.
 
@@ -249,7 +249,7 @@ Furthermore, about one quarter of the alpha estimates in our sample (specificall
 
 Table 2 shows that alpha estimates based on the four most popular databases in hedge fund research are very close to the unconditional sample mean of 0.36 discussed above. The unweighted mean of alphas based on these four databases is equal to 0.343. When we weigh the alpha coefficients in our sample by the inverse of the number of estimates reported in a given primary study, we observe a slightly lower mean value of 0.301. Relative to the alphas based on the four most popular databases, estimates based on CST are somewhat lower (0.218 on an unweighted basis, and 0.273 on a weighted basis). In contrast, alphas based on the CISDM, on other databases, and also those based on hand-collected data tend to be higher. These findings suggest that the choice of the source database(s) affects the reported alpha coefficients.
 
-Prior research investigates the performance difference of alternative investment funds depending on their investment geography (Teo, 2009). Table A1 also shows that 86% of alpha estimates are based on hedge funds that do not restrict the geographic scope of their investment, whereas 14% are based on funds focused on the developed markets as classified by the International Monetary Fund (IMF). Table 2 shows slightly better performance for funds that invest in developed markets as classified by the International Monetary Fund (IMF) relative to those that do not explicitly restrict their scope to a specific geographical location. This result may be considered surprising given that more developed markets may contain fewer mispriced assets and offer fewer opportunities to earn abnormal returns. Our regression results in Section 4 show that this difference is not statistically significant in a multivariate setting.
+Prior research investigates the performance difference of alternative investment funds depending on their investment geography (Teo, 2009). Table A1 also shows that 86% of alpha estimates are based on hedge funds that do not restrict the geographic scope of their investment, whereas 14% are based on funds focused on the developed markets as classified by the International Monetary Fund (IMF). Table 2 shows slightly better performance for funds that invest in developed markets relative to those that do not explicitly restrict their scope to a specific geographical location. This result may be considered surprising given that more developed markets may contain fewer mispriced assets and offer fewer opportunities to earn abnormal returns. Our regression results in Section 4 show that this difference is not statistically significant in a multivariate setting.
 
 We also observe in Table 2 that alpha estimates based on “bear” (i.e., declining) markets are lower (mean values of 0.103 and 0.097 on the unweighted and weighted basis, respectively) than studies that concentrate on “bull” (i.e., rising) (mean values of 0.272 and 0.277 on the unweighted and weighted basis respectively). Based on the descriptive results for these bull- and bear-market subsamples, the evidence provides limited support for the view that hedge funds hold investment positions that make their returns immune to general stock market movements.
 
@@ -259,7 +259,7 @@ In comparison, we observe that event-driven hedge fund strategies, on average, g
 
 Table 2 also suggests that the choice of the risk model used in primary studies to adjust for the normal rate of returns may be consequential for the documented alphas. Fung and Hsieh (2001, 2004b) and Fung et al. (2008) observe that hedge funds typically exhibit risk exposures that are not typical for other asset classes, such as common equities and fixed-income securities. They propose a seven-factor model that reflects risk factors that are intended to capture risk dimensions that are relevant to common hedge fund investment strategies. The authors argue that the multiplicity of these risk dimensions makes the seven-factor model suitable for measuring abnormal returns across a wide range of hedge fund strategies. Being designed specifically for measuring hedge fund performance, the seven-factor model has been extensively used in prior empirical research. Table A1 shows that 29% of alpha estimates in our sample are based on the seven-factor model (e.g., Fung and Hsieh, 2004b; Buraschi et al., 2014; Fung et al., 2008; Kosowski et al., 2007). Table 2 shows that the mean values of these alpha estimates are slightly below the unconditional mean of 0.36 (mean values of 0.289 and 0.297 on the unweighted and weighted basis, respectively).
 
-Prior hedge fund research also frequently reports alpha estimates based on several other asset pricing models that are commonly used to measure abnormal returns. The Jensen (1968) alpha based on the Capital Asset Pricing Model (CAPM) (Sharpe, 1966; Lintner, 1965; Mossin, 1966; Black, 1972) uses the equity market excess return $(R_m - R_f)$ as the sole risk factor. Conceptually, the intercept term alpha represents the abnormal return to a well-diversified investor. On the one hand, this approach is simple, well-founded in financial theory, and universally applicable. On the other hand, the assumptions this approach is based on may not be suitable for measuring the performance of hedge funds that engage in complex and dynamic investment strategies that are likely to exhibit various forms of exposure to systematic risk. In this respect, the three-factor, and the four-factor models capture additional risk dimensions that may not be easy to conceptualize in a financial modeling framework, but that may still be relevant to investors due to financial market imperfections and microstructure considerations (e.g., limited liquidity of traded assets).
+Prior hedge fund research also frequently reports alpha estimates based on several other asset pricing models that are commonly used to measure abnormal returns. The Jensen (1968) alpha based on the Capital Asset Pricing Model (CAPM) (Sharpe, 1966; Lintner, 1965; Mossin, 1966; Black, 1972) uses the equity market excess return $(R_m - R_f)$ as the sole risk factor. Conceptually, the intercept term alpha represents the abnormal return to a well-diversified investor. On the one hand, this approach is simple, well-founded in financial theory, and universally applicable. On the other hand, the assumptions this approach is based on may not be suitable for measuring the performance of hedge funds that engage in complex and dynamic investment strategies that are likely to exhibit various forms of exposure to systematic risk. In this respect, the three-factor and the four-factor models capture additional risk dimensions that may not be easy to conceptualize in a financial modeling framework, but that may still be relevant to investors due to financial market imperfections and microstructure considerations (e.g., limited liquidity of traded assets).
 
 Table A1 shows that 20% of alphas are based on the four-factor model (Eling and Faust, 2010; Stoforos et al., 2017; Fung and Hsieh, 2004a), 7% are based on the three-factor model (Dichev and Yu, 2011; Ding and Shawky, 2007), and 16% are based on the 1-factor model (Ranaldo and Favre, 2005; Ding and Shawky, 2007; Gupta et al., 2003). Table 2 shows that, relative to the seven-factor model, the alpha coefficients estimated with the use of pricing models using fewer risk factors are typically higher. The difference is particularly pronounced for the one-factor (mean values of 0.461 and 0.420 on the unweighted and weighted basis, respectively) and three-factor models (mean values of 0.463 and 0.446 on the unweighted and weighted basis, respectively). In contrast, the alpha coefficients based on the four-factor model (mean values of 0.247 and 0.313 on the unweighted and weighted basis, respectively) are comparable to the ones based on the seven-factor model. Furthermore, we also observe rather high values for the 56 alpha coefficients reported in primary studies that use other pricing models (mean values of 0.933 and 0.906 on the unweighted and weighted basis, respectively). As the choice of the pricing model is likely related to other research design choices, we delay drawing stronger conclusions from these findings to Section 4, where we examine the effect of these conditioning factors in combination.
 
@@ -344,9 +344,9 @@ TABLE 3. Why do reported alphas vary?
 | Intercept | 1.851 |  |  | 1.858 | 0.113 | 0.000 |
 | Observations | 1,019 |  |  | 1,019 |  |  |
 | Studies | 74 |  |  | 74 |  |  |
-Notes: The table shows the main results based on BMA (left panel) and ordinary least squares (OLS) regression that includes the nine explanatory variables identified by the BMA as most relevant for explaining the variation in reported hedge fund alphas (right panel). The response variable is the hedge fund monthly alpha estimate expressed as a percentage. P. mean represents the posterior mean of the distribution of regression coefficients. P. SD represents the posterior standard deviation of the distribution of regression coefficients. PIP denotes the posterior inclusion probability of a given variable in the “true” explanatory model. Coef. denotes the OLS slope coefficient. SE shows the standard error of the slope coefficient in the OLS regression model. The p-value shows the probability of obtaining the result for a given explanatory variable under the assumption that the variable has no explanatory power (i.e. the null hypothesis is correct). BMA employs the unit-information prior (Eicher et al., 2011) and the beta-binomial random model prior (Ley and Steel, 2009); its posterior standard deviations assume independent errors and are not clustered. The OLS regression includes the nine variables identified by BMA and uses standard errors clustered at the study level. All variables are described in Table A1.
+Notes: The table shows the main results based on BMA (left panel) and ordinary least squares (OLS) regression that includes the nine explanatory variables identified by the BMA as most relevant for explaining the variation in reported hedge fund alphas (right panel). The response variable is the hedge fund monthly alpha estimate expressed as a percentage. P. mean represents the posterior mean of the distribution of regression coefficients. P. SD represents the posterior standard deviation of the distribution of regression coefficients. PIP denotes the posterior inclusion probability of a given variable in the “true” explanatory model. Coef. denotes the OLS slope coefficient. SE shows the standard error of the slope coefficient in the OLS regression model. The p-value shows the probability of obtaining the result for a given explanatory variable under the assumption that the variable has no explanatory power (i.e., the null hypothesis is correct). BMA employs the unit-information prior (Eicher et al., 2011) and the beta-binomial random model prior (Ley and Steel, 2009); its posterior standard deviations assume independent errors and are not clustered. The OLS regression includes the nine variables identified by BMA and uses standard errors clustered at the study level. Each BMA fit pools three chains with 1 million burn-in draws and 6 million retained draws. All variables are described in Table A1.
 
-The numerical results presented in Table 3 show that the PIPs for the nine explanatory variables included in the model with the best fit range between 0.864 and 1.000, which suggests that all of these variables are important for explaining the variation in reported hedge fund alpha coefficients. Out of these nine PIPs, six are above the 0.950 cutoff that is commonly interpreted as denoting a “strong” effect of the corresponding variable. Furthermore, the PIPs for the remaining three indicator variables denoting alpha coefficients (i) estimated based on a 1-factor model, (ii) reported for funds of funds, and (iii) estimated for bear markets only are equal to 0.864, 0.893, and 0.916. This implies that all of these coefficients remain comfortably above the 0.750 cutoff proposed for the existence of a relationship between the explanatory and the dependent variables. We draw similar conclusions based on the OLS results. All of the nine variables included in the BMA model with the best fit are also significant at the 5% level or better in the OLS regression with study-clustered standard errors. The corresponding p-values range between 0.000 and 0.019. With small-sample (CR2) standard errors, the p-values for the 1-factor model and the publication year rise to 0.063 and 0.065 (Table A6). Thus, both the BMA and OLS estimates provide evidence in support of the relevance of these nine variables to explain the variation in hedge fund alphas. In contrast to the nine variables included in the BMA model with the best fit, the PIPs of all the remaining variables are below 0.35, which indicates that they are unlikely to be relevant for explaining the variation in the alpha coefficients reported in prior empirical research. Thus, our results identify nine key characteristics that are essential for explaining the variation in reported alphas.
+The numerical results presented in Table 3 show that the PIPs for the nine explanatory variables included in the model with the best fit range between 0.864 and 1.000, which suggests that all of these variables are important for explaining the variation in reported hedge fund alpha coefficients. Out of these nine PIPs, six are above the 0.950 cutoff that is commonly interpreted as denoting a “strong” effect of the corresponding variable. Furthermore, the PIPs for the remaining three indicator variables denoting alpha coefficients (i) estimated based on a 1-factor model, (ii) reported for funds of funds, and (iii) estimated for bear markets only are equal to 0.864, 0.893, and 0.916. This implies that all of these coefficients remain comfortably above the 0.750 cutoff proposed for the existence of a relationship between the explanatory and the dependent variables. We draw similar conclusions based on the OLS results. All of the nine variables included in the BMA model with the best fit are also significant at the 5% level or better in the OLS regression with study-clustered standard errors. The corresponding p-values range between 0.000 and 0.019. With small-sample (CR2) standard errors, the p-values for the 1-factor model and the publication year rise to 0.063 and 0.065 (Table A6). Overall, with the qualifications above, the BMA and OLS estimates support the relevance of these nine variables for explaining the variation in hedge fund alphas. In contrast to the nine variables included in the BMA model with the best fit, the PIPs of all the remaining variables are below 0.35, which indicates that they are unlikely to be relevant for explaining the variation in the alpha coefficients reported in prior empirical research. Thus, our results identify nine key characteristics that are essential for explaining the variation in reported alphas.
 
 Six out of these nine explanatory variables are indicators that take the value of zero or one. We can thus easily compare the magnitude of the corresponding coefficients. We observe the largest coefficient for the variable denoting alpha estimates computed net of hedge fund fees. This finding is consistent with prior research that suggests that the effect of hedge fund fees on the return generated for investors may indeed be rather substantial. Hedge funds typically charge a flat management fee of 1% to 2% of AUM and a variable performance fee, usually 20% of realized returns above the risk-free rate (Fung and Hsieh, 1999; Connor and Woo, 2004; Stulz, 2007; Kouwenberg and Ziemba, 2007; Getmansky et al., 2015). The performance fee is usually paid only after reaching the so-called “high water mark,” i.e., the highest value the fund has previously reached (Asness et al., 2001; Goetzmann et al., 2003; Lim et al., 2016; Stulz, 2007). Due to the conditional nature of some of these fees, their effective impact on the value hedge funds generate for their investors is not trivial to quantify. Less successful hedge funds are more likely to be terminated, and investors cannot offset gains and losses across various hedge funds. Ben-David et al. (2020) estimate that, on average, hedge funds appropriate in fees almost two-thirds of the excess return they generate.
 
@@ -356,9 +356,9 @@ The coefficient on the net-of-fee indicator summarizes the average difference be
 
 Our empirical analysis is constrained by variation in how alpha coefficients are estimated across the primary studies. We identified six primary studies reporting alphas on a gross basis, yielding a total of 35 gross alpha estimates. To evaluate whether our findings are sensitive to the inclusion of any single primary study, we conduct leave-one-study-out robustness checks in which we sequentially exclude all estimates sourced from a given study and re-estimate the specification using the nine relevant explanatory variables, clustering standard errors at the study level.
 
-We report the results of these robustness checks in Table A4 in the Appendix. Across all 74 checks, the slope coefficient for the indicator variable denoting net-of-fee alphas ranges from -0.522 to -0.335 and consistently remains statistically significant at the 5% level. We observe identical results when we limit our attention to the leave-one-study-out robustness checks to the six primary studies that actually provide gross returns estimates. The estimated difference therefore remains economically substantial and broadly comparable to our main results. Only two of the six gross-return studies, Duarte et al. (2007) and Joenvaara and Kosowski (2021), also report net estimates, so the coefficient mainly reflects differences between studies rather than differences between gross and net alphas within the same study.
+We report the results of these robustness checks in Table A4 in the Appendix. Across all 74 checks, the slope coefficient for the indicator variable denoting net-of-fee alphas ranges from -0.522 to -0.335 and consistently remains statistically significant at the 5% level. The range is the same across the six checks that omit a study with gross-return estimates. The estimated difference therefore remains economically substantial and broadly comparable to our main results. Only two of the six gross-return studies, Duarte et al. (2007) and Joenvaara and Kosowski (2021), also report net estimates, so the coefficient mainly reflects differences between studies rather than differences between gross and net alphas within the same study.
 
-We also observe that the monthly hedge fund alphas for bear markets are 0.259 percentage points lower than other estimates. The magnitude of this coefficient is very similar to the one based on the OLS estimation of -0.280. Although hedge funds may hold substantial short positions and trade in derivatives, both of which could help them protect the value of their assets during downturns, the alphas reported for bear markets are substantially lower. This result does not necessarily mean that hedge funds provide poor downside protection. Alpha is measured relative to a factor model, so a negative market risk premium does not by itself lower it. Alternatively, nonlinear risk exposures missed by linear factor models may lower measured alphas in downturns. Our data do not allow us to distinguish between these explanations. The coefficient compares bear-market estimates with all other estimates, and when we add the bull-market indicator, the bull-market coefficient is negative as well (-0.209, Table A6). The unweighted mean bear-market alpha is 0.103 percentage points per month, with a 95% confidence interval of [-0.006, 0.211] (Table 2). We note, however, that the bull- and bear-market categories each contain 39 estimates sourced from the same four primary studies, so this result should be interpreted with caution.
+We also observe that the monthly hedge fund alphas for bear markets are 0.259 percentage points lower than other estimates. The magnitude of this coefficient is very similar to the one based on the OLS estimation of -0.280. Although hedge funds may hold substantial short positions and trade in derivatives, both of which could help them protect the value of their assets during downturns, the alphas reported for bear markets are substantially lower. This result may mean that hedge funds provide poor downside protection, or that linear factor models miss nonlinear risk exposures that lower measured alphas in downturns. Our data do not allow us to distinguish between these two explanations. A negative market risk premium does not by itself lower alpha, because alpha is measured relative to a factor model. The coefficient compares bear-market estimates with all other estimates, and when we add the bull-market indicator, the bull-market coefficient is negative as well (-0.209, Table A6). The unweighted mean bear-market alpha is 0.103 percentage points per month, with a 95% confidence interval of [-0.006, 0.211] (Table 2). We note, however, that the bull- and bear-market categories each contain 39 estimates sourced from the same four primary studies, so this result should be interpreted with caution.
 
 In the leave-one-study-out robustness checks, the bear-market coefficient ranges from -0.348 to -0.240 and remains significant at the 5% level in all 74 checks, including the omission of each of the four contributing studies. When we add the bull-market indicator (Panel B of Table A4), its coefficient ranges from -0.253 to -0.185 and is significant in every omission. Table A6 reports small-sample (CR2) cluster-robust inference for these specifications. The net-of-fee and bear-market coefficients remain significant at the 5% level, although their degrees of freedom are very small.
 
@@ -399,11 +399,11 @@ Fourth, we expect investors to value studies that are well-published and well-ci
 
 Finally, we plug in one for the use of IV estimation, which addresses endogeneity, and for methods that deal with model uncertainty. We plug in zero for cross-sectional data, hand-collected data and the five factor-model indicators, and we set the remaining variables to their sample means, with the strategy indicators set as described in Table A1.
 
-Table 4 shows our best-practice estimates of alpha jointly for all hedge fund types, as well as separately for the individual hedge fund types. To measure their uncertainty, we resample the 74 primary studies 1,999 times and repeat the data preparation and the BMA estimation in each bootstrap sample. This allows estimates from the same study to be correlated but treats studies as independent. We also report the credible intervals implied by the BMA model, which assumes independent errors. Relative to the unconditional sample mean of 0.36 discussed above, the overall best-practice estimate is small and negative, -0.079. The corresponding 95% study-bootstrap confidence interval, [-0.444, 0.372], is wide and includes zero, as does the credible interval, [-0.273, 0.049]. Thus, at the latest years in our sample, we cannot reject a zero after-fee alpha.
+Table 4 shows our best-practice estimates of alpha jointly for all hedge fund types, as well as separately for the individual hedge fund types. To measure their uncertainty, we resample the 74 primary studies 1,999 times and repeat the data preparation and the BMA estimation in each bootstrap sample. This allows estimates from the same study to be correlated but treats studies as independent. We also report the credible intervals implied by the BMA model, which assumes independent errors. Relative to the unconditional sample mean of 0.36 discussed above, the overall best-practice estimate is small and negative, -0.079. The corresponding 95% study-bootstrap confidence interval, [-0.444, 0.372], is wide and includes zero, as does the credible interval, (-0.273, 0.049). Thus, at the latest years in our sample, we cannot reject a zero after-fee alpha.
 
 The remaining rows in Table 4 report the best-practice estimates for eight main hedge fund investment strategies. Similar to the overall estimate, all eight estimates are negative, and the corresponding study-bootstrap confidence intervals all include zero. Hence, based on our evidence we are unable to document reliably positive alphas for any of the common hedge fund investment strategies.
 
-We observe the most negative alpha estimate of -0.246 for the funds of funds. Its study-bootstrap interval [-0.633, 0.277] includes zero, but the model-based credible interval [-0.471, -0.017] lies below zero. Estimating the alphas for the funds of funds may be viewed as one of the ways of mitigating some selection and survivorship concerns in hedge fund data. Hence, fund of funds’ returns may constitute a realistic estimate of hedge fund performance plausibly achievable for investors. Furthermore, investing in the funds of funds might seem attractive for investors who want to diversify away some of the risks they take by investing across several hedge funds. Nevertheless, investing in funds of funds also entails another layer of fees.
+We observe the most negative alpha estimate of -0.246 for the funds of funds. Its study-bootstrap interval [-0.633, 0.277] includes zero, but the model-based credible interval (-0.471, -0.017) lies below zero. Estimating the alphas for the funds of funds may be viewed as one of the ways of mitigating some selection and survivorship concerns in hedge fund data. Hence, fund of funds’ returns may constitute a realistic estimate of hedge fund performance plausibly achievable for investors. Furthermore, investing in the funds of funds might seem attractive for investors who want to diversify away some of the risks they take by investing across several hedge funds. Nevertheless, investing in funds of funds also entails another layer of fees.
 
 Table A2 in the Appendix shows how the best-practice estimates depend on the functional form of the time variables. Column (1) repeats the logarithmic specification of Table 4, column (2) uses linear years, defined as data year minus 1989 and publication year minus 2000, and column (3) adds their squares. The linear and quadratic specifications give more negative estimates, -0.274 and -0.277 for all strategies. The level of the best-practice alpha thus depends on the assumed trend. The study-bootstrap intervals include zero in all specifications, whereas the model-based credible intervals lie below zero for every strategy under linear and quadratic time. Column (4) excludes citations and impact factor from the regression, which gives an all-strategies estimate of -0.089. Table A5 varies the remaining benchmark settings. The largest change in the all-strategies estimate is 0.028 percentage points per month.
 
@@ -446,17 +446,17 @@ TABLE 5. Economic significance of key variables
 | Survivorship treated | -0.001 | 1 | -0.001 | 2 |
 | Backfilling treated | -0.090 | 113 | -0.196 | 247 |
 | Publication year | -0.088 | 111 | -0.377 | 475 |
-Notes: Changes in alpha equal the BMA posterior mean multiplied by the original-sample standard deviation (left) or range (right) of each regressor. Percentages divide these changes by the all-strategies benchmark in Table 4. Data year and publication year enter in logarithms, with the transformations defined in Table A1.
+Notes: Changes in alpha equal the BMA posterior mean multiplied by the original-sample standard deviation (left) or range (right) of each regressor. Percentages divide these changes by the all-strategies benchmark in Table 4. Data year and publication year enter in logarithms, with the transformations defined in Table A1. Because the benchmark alpha is negative, a negative change in alpha appears as a positive percentage.
 
-Consistent with our previous analysis, Table 5 shows that several explanatory variables have a substantial impact on the magnitude of the best-practice alpha estimate. We observe the largest effect for the transformed data-year variable. Increasing it by one standard deviation reduces the monthly alpha estimate by 0.149 percentage points. Alternatively, after having controlled for all study and hedge fund characteristics, the best-practice alpha estimates based on the oldest and the most recent dataset differ by 0.803 percentage points. Furthermore, a one-standard-deviation increase in the transformed publication-year variable is associated with a reduction in the best-practice alpha estimates by 0.088 percentage points, and the most recent studies in our sample report alpha estimates that are *ceteris paribus* lower by 0.377 percentage points relative to the oldest studies. These findings provide strong evidence that reported hedge fund alphas decreased over time.
+Consistent with our previous analysis, Table 5 shows that several explanatory variables are associated with substantial differences in the best-practice alpha estimate. We observe the largest effect for the transformed data-year variable. Increasing it by one standard deviation reduces the monthly alpha estimate by 0.149 percentage points. Alternatively, after having controlled for all study and hedge fund characteristics, the best-practice alpha estimates based on the oldest and the most recent dataset differ by 0.803 percentage points. Furthermore, a one-standard-deviation increase in the transformed publication-year variable is associated with a reduction in the best-practice alpha estimates by 0.088 percentage points, and the most recent studies in our sample report alpha estimates that are *ceteris paribus* lower by 0.377 percentage points relative to the oldest studies. These findings provide strong evidence that reported hedge fund alphas decreased over time.
 
-Table 5 also underscores the importance of the data sources and method choices. *Ceteris paribus*, a one-standard-deviation increase in the number of source databases is associated with a reduction in the best-practice alpha estimate by 0.089 percentage points. Furthermore, adjusting for the backfilling bias, on average, reduces the alpha estimates by 0.196 percentage points (for indicator variables, we interpret the change from the minimum value of zero to the maximum value of one). In a similar vein, computing the alphas for the funds of funds implies a reduction in the estimate by 0.178 percentage points. Finally, using a 1-factor risk model is *ceteris paribus* associated with best-practice alpha estimates that are lower by 0.144 percentage points. Since the 1-factor risk model may not be able to effectively adjust for the systematic risk that the hedge fund strategies entail, using more complex models may also be viewed as an indication of a study’s quality. Table 5 also documents a substantial effect of adjusting for hedge fund fees and of limiting the estimation to bear markets, which we discuss above.
+Table 5 also underscores the importance of the data sources and method choices. *Ceteris paribus*, a one-standard-deviation increase in the number of source databases is associated with a reduction in the best-practice alpha estimate by 0.089 percentage points. Furthermore, adjusting for the backfilling bias, on average, reduces the alpha estimates by 0.196 percentage points (for indicator variables, we interpret the change from the minimum value of zero to the maximum value of one). In a similar vein, computing the alphas for the funds of funds implies a reduction in the estimate by 0.178 percentage points. Finally, using a 1-factor risk model is *ceteris paribus* associated with best-practice alpha estimates that are lower by 0.144 percentage points. The raw mean alpha of 1-factor estimates in Table 2 is above the sample average, but these estimates tend to come from older data, and the coefficient is negative once the data year and the other study characteristics are held constant. Since the 1-factor risk model may not be able to effectively adjust for the systematic risk that the hedge fund strategies entail, using more complex models may also be viewed as an indication of a study’s quality. Table 5 also documents a substantial effect of adjusting for hedge fund fees and of limiting the estimation to bear markets, which we discuss above.
 
 ## 5. Conclusion
 
 We analyze the empirical evidence on hedge fund performance published in academic journals between 2001 and 2021. In recent years, the amount of capital in the economy allocated by hedge funds has surged. Their growing economic prominence, as well as the macroeconomic impact of some of their notorious failures, prompted calls for greater insight into the determinants of their performance. Measuring the value hedge funds generate for their investors is complicated by data fragmentation resulting from the voluntary nature of many hedge fund disclosures and the plurality of estimation approaches used in prior empirical research. To aggregate and synthesize this pool of diverse empirical results, we conduct a meta-analysis of 1,019 alpha coefficients from regressions of hedge fund returns on risk factors collected from 74 studies. We examine how the reported alpha estimates vary over time and across hedge fund characteristics, and we study how they are affected by research design choices in the primary studies.
 
-We document a strong declining trend in the reported hedge fund alphas over time. Our baseline best-practice alpha estimates, computed for the latest years in our sample, are not reliably different from zero: the all-strategies estimate is -0.079 percentage points per month, with a 95% study-bootstrap confidence interval of [-0.444, 0.372]. When we classify hedge funds into common categories based on their investment strategies, none of the estimates is significantly positive (Table 4). Linear and quadratic time trends give more negative estimates (Table A2). These results describe published evidence through September 1, 2021.
+We document a strong declining trend in the reported hedge fund alphas over time. Our baseline best-practice alpha estimates, computed for the latest years in our sample, are not reliably different from zero: the all-strategies estimate is -0.079 percentage points per month, with a 95% study-bootstrap confidence interval of [-0.444, 0.372]. When we classify hedge funds into common categories based on their investment strategies, all estimates are negative and their bootstrap confidence intervals include zero (Table 4). Linear and quadratic time trends give more negative estimates (Table A2). Alphas based on net-of-fee returns are on average 0.440 percentage points per month lower than those based on gross returns, although gross and net estimates mostly come from different studies.
 
 Our results are also relevant for researchers. We identify several research design characteristics associated with the reported alphas. The published alpha estimates tend to be lower (i) when adjusted for the backfilling bias, (ii) when estimated for funds of funds, (iii) when estimated based on the 1-factor model, (iv) when estimated for the declining “bear” markets, (v) when more source databases are used (an association that disappears once the CISDM estimates are excluded), and (vi) when the CISDM database is not used as a data source. Our study also provides systematic evidence to researchers about how their research design choices are associated with the reported alpha estimates.
 
@@ -470,7 +470,7 @@ Fan Yang: Data Curation, Formal analysis, Investigation, Methodology, Software, 
 
 ## Related working papers
 
-The working paper *Hedge Fund Performance: A Quantitative Survey* (2022) preceded the article published in the *Journal of Economic Surveys* in 2024. An earlier version of this manuscript circulated in 2024 as *Where Have All the Alphas Gone? A Meta-Analysis of Hedge Fund Performance* (IES Working Paper 15/2024; CEPR Discussion Paper 18979) and has not been published.
+The working paper *Hedge Fund Performance: A Quantitative Survey* (2022) preceded the article published in the *Journal of Economic Surveys* in 2024. An earlier version of this manuscript circulated in 2024 as *Where Have All the Alphas Gone? A Meta-Analysis of Hedge Fund Performance* (IES Working Paper 15/2024; CEPR Discussion Paper 18979; MetaArXiv preprint) and has not been published.
 
 ## Declaration of competing interest
 
@@ -490,17 +490,17 @@ Ackermann, C., McEnally, R., Ravenscraft, D., 1999. The performance of hedge fun
 
 Agarwal, V., Arisoy, Y., Naik, N.Y., 2017. Volatility of aggregate volatility and hedge fund returns. *Journal of Financial Economics* 125, 491–510. https://doi.org/10.1016/j.jfineco.2017.06.015.
 
-Agarwal, V., Bakshi, G., Huij, J., 2009a. Do higher-moment equity risks explain hedge fund returns? *Robert H. Smith School Research Paper No. RHS*, 06–153.
+Agarwal, V., Bakshi, G., Huij, J., 2009a. Do higher-moment equity risks explain hedge fund returns? Research Paper RHS 06-153. Robert H. Smith School of Business, University of Maryland.
 
 Agarwal, V., Daniel, N.D., Naik, N.Y., 2009b. Role of managerial incentives and discretion in hedge fund performance. *The Journal of Finance* 64, 2221–2256. https://doi.org/10.1111/j.1540-6261.2009.01499.x.
 
 Agarwal, V., Fos, V., Jiang, W., 2013. Inferring reporting-related biases in hedge fund databases from hedge fund equity holdings. *Management Science* 59, 1271–1289. https://doi.org/10.1287/mnsc.1120.1647.
 
-Agarwal, V., Mullally, K.A., Naik, N.Y., et al., 2015. The economics and finance of hedge funds: A review of the academic literature. *Foundations and Trends in Finance* 10, 1–111. https://doi.org/10.1561/0500000047.
+Agarwal, V., Mullally, K.A., Naik, N.Y., 2015. The economics and finance of hedge funds: A review of the academic literature. *Foundations and Trends in Finance* 10, 1–111. https://doi.org/10.1561/0500000047.
 
 Agarwal, V., Naik, N.Y., 2004. Risks and portfolio decisions involving hedge funds. *The Review of Financial Studies* 17, 63–98. https://doi.org/10.1093/rfs/hhg044.
 
-Agarwal, V., Ruenzi, S., Weigert, F., 2024. Unobserved performance of hedge funds. *The Journal of Finance* 79, 3203–3260. https://doi.org/10.1111/jofi.13368.
+Agarwal, V., Ruenzi, S., Weigert, F., 2024. Unobserved performance of hedge funds. *The Journal of Finance* 79, 3203–3259. https://doi.org/10.1111/jofi.13368.
 
 Ahoniemi, K., Jylha, P., 2014. Flows, Price Pressure, and Hedge Fund Returns. *Financial Analysts Journal* 70, 73–93. https://doi.org/10.2469/faj.v70.n5.1.
 
@@ -515,6 +515,8 @@ Ammann, M., Moerth, P., 2005. Impact of fund size on hedge fund performance. *Jo
 Ammann, M., Moerth, P., 2008a. Impact of Fund Size and Fund Flows on Hedge Fund Performance. *The Journal of Alternative Investments* 11, 78–96.
 
 Ammann, M., Moerth, P., 2008b. Performance of Funds of Hedge Funds. *The Journal of Wealth Management* 11, 46–63. https://doi.org/10.3905/jwm.2008.706272.
+
+Antoniadis, C., Skouras, S., 2026. A reassessment of hedge fund returns using daily return data. *Financial Analysts Journal* 82, 159–185. https://doi.org/10.1080/0015198X.2026.2640981.
 
 Aragon, G.O., 2007. Share restrictions and asset pricing: Evidence from the hedge fund industry. *Journal of Financial Economics* 83, 33–58. https://doi.org/10.1016/j.jfineco.2005.11.001.
 
@@ -536,7 +538,7 @@ Barth, D., Joenväärä, J., Kauppila, M., Wermers, R., 2020. The hedge fund ind
 
 Barth, D., Kahn, R.J., 2021. Hedge Funds and the Treasury Cash-Futures Disconnect. Technical Report 21-01. Office of Financial Research.
 
-Ben-David, I., Birru, J., Rossi, A., 2020. The performance of hedge fund performance fees. Technical Report. National Bureau of Economic Research. https://doi.org/10.3386/w27454.
+Ben-David, I., Birru, J., Rossi, A., 2020. The performance of hedge fund performance fees. Working Paper 27454. National Bureau of Economic Research. https://doi.org/10.3386/w27454.
 
 Ben Khelife, S., Urom, C., Guesmi, K., Benkraiem, R., 2022. American hedge funds industry, market timing and COVID-19 crisis. *Journal of Asset Management* 23, 390–399. https://doi.org/10.1057/s41260-022-00266-0.
 
@@ -550,7 +552,7 @@ Blitz, D., 2018. Are Hedge Funds on the Other Side of the Low-Volatility Trade? 
 
 Bollen, N.P., Joenväärä, J., Kauppila, M., 2021. Hedge fund performance: End of an era? *Financial Analysts Journal* 77, 109–132. https://doi.org/10.1080/0015198X.2021.1921564.
 
-Bollen, N.P.B., Joenvärä, J., Kauppila, M., 2026. Decreasing returns to scale has eroded hedge fund performance persistence. *Critical Finance Review* 15, 1–36. https://doi.org/10.1108/CFR-06-2023-2497.
+Bollen, N.P.B., Joenväärä, J., Kauppila, M., 2026. Decreasing returns to scale has eroded hedge fund performance persistence. *Critical Finance Review* 15, 1–36. https://doi.org/10.1108/CFR-06-2023-2497.
 
 Bollen, N.P.B., Whaley, R.E., 2009. Hedge Fund Risk Dynamics: Implications for Performance Appraisal. *The Journal of Finance* 64, 985–1035. https://doi.org/10.1111/j.1540-6261.2009.01455.x.
 
@@ -560,13 +562,13 @@ Brown, R., 2012. Framework for Hedge Fund Return and Risk Attribution. *The Jour
 
 Brown, S., Lu, Y., Ray, S., Teo, M., 2018. Sensation Seeking and Hedge Funds. *The Journal of Finance* 73, 2871–2914. https://doi.org/10.1111/jofi.12723.
 
-Brown, S.J., Goetzmann, W.N., Ibbotson, R.G., et al., 1999. Offshore hedge funds: Survival and performance, 1989-95. *The Journal of Business* 72, 91–117. https://doi.org/10.1086/209603.
+Brown, S.J., Goetzmann, W.N., Ibbotson, R.G., 1999. Offshore hedge funds: Survival and performance, 1989-95. *The Journal of Business* 72, 91–117. https://doi.org/10.1086/209603.
 
-Brown, S.J., Goetzmann, W.N., Liang, B., 2005. Fees on fees in funds of funds, in: The World Of Hedge Funds: Characteristics and Analysis. World Scientific, pp. 141–160. https://doi.org/10.3386/w9464.
+Brown, S.J., Goetzmann, W.N., Liang, B., 2005. Fees on fees in funds of funds, in: The World Of Hedge Funds: Characteristics and Analysis. World Scientific, pp. 141–160.
 
 Buraschi, A., Kosowski, R., Trojani, F., 2014. When There Is No Place to Hide: Correlation Risk and the Cross-Section of Hedge Fund Returns. *The Review of Financial Studies* 27, 581–616. https://doi.org/10.1093/rfs/hht070.
 
-Cao, C., Goldie, B., Liang, B., L. Petrasek, L., 2016. What Is the Nature of Hedge Fund Manager Skills? Evidence from the Risk-Arbitrage Strategy. *Journal of Financial and Quantitative Analysis* 51, 929–957. https://doi.org/10.1017/S0022109016000387.
+Cao, C., Goldie, B., Liang, B., Petrasek, L., 2016. What Is the Nature of Hedge Fund Manager Skills? Evidence from the Risk-Arbitrage Strategy. *Journal of Financial and Quantitative Analysis* 51, 929–957. https://doi.org/10.1017/S0022109016000387.
 
 Capocci, D., Corhay, A., Hübner, G., 2005. Hedge fund performance and persistence in bull and bear markets. *The European Journal of Finance* 11, 361–392. https://doi.org/10.1080/1351847042000286676.
 
@@ -600,7 +602,7 @@ Dragomirescu-Gaina, C., Philippas, D., Tsionas, M.G., 2021. Trading off accuracy
 
 Duarte, J., Longstaff, F.A., Yu, F., 2007. Risk and Return in Fixed-Income Arbitrage: Nickels in Front of a Steamroller? *The Review of Financial Studies* 20, 769–811. https://doi.org/10.1093/rfs/hhl026.
 
-Edelman, D., Fung, W., Hsieh, D., N. Naik, N., 2012. Funds of hedge funds: Performance, risk and capital formation 2005 to 2010. *Financial Markets and Portfolio Management* 26, 87–108. https://doi.org/10.1007/s11408-011-0178-5.
+Edelman, D., Fung, W., Hsieh, D., Naik, N., 2012. Funds of hedge funds: Performance, risk and capital formation 2005 to 2010. *Financial Markets and Portfolio Management* 26, 87–108. https://doi.org/10.1007/s11408-011-0178-5.
 
 Edelman, D., Fung, W., Hsieh, D.A., 2013. Exploring uncharted territories of the hedge fund Industry: Empirical characteristics of mega hedge fund firms. *Journal of Financial Economics* 109, 734–758. https://doi.org/10.1016/j.jfineco.2013.04.003.
 
@@ -638,13 +640,13 @@ Fung, W., Hsieh, D.A., 2009. Measurement biases in hedge fund performance data: 
 
 Fung, W., Hsieh, D.A., Naik, N.Y., Ramadorai, T., 2008. Hedge Funds: Performance, Risk, and Capital Formation. *The Journal of Finance* 63, 1777–1803. https://doi.org/10.1111/j.1540-6261.2008.01374.x.
 
-Fung, W.K., Hsieh, D.A., et al., 2006. Hedge funds: An industry in its adolescence. *Economic Review-Federal Reserve Bank of Atlanta* 91, 1.
+Fung, W.K., Hsieh, D.A., 2006. Hedge funds: An industry in its adolescence. *Federal Reserve Bank of Atlanta Economic Review* 91, 1–34.
 
 Gao, C., Haight, T.D., Yin, C., Zhang, C., 2022. The Performance Life Cycle of Hedge Funds: Can Investors Achieve Lasting Performance? *The Journal of Portfolio Management* 48, 189–217. https://doi.org/10.3905/jpm.2021.1.315.
 
 George, E.I., 2010. Dilution priors: Compensating for model space redundancy, in: IMS Collections Borrowing Strength: Theory Powering Applications – A Festschrift for Lawrence D. Brown, Institute of Mathematical Statistics. pp. 158–165. https://doi.org/10.1214/10-IMSCOLL611.
 
-Getmansky, M., Lee, P.A., Lo, A.W., 2015. Hedge Funds: A Dynamic Industry in Transition. *Annual Review of Financial Economics* 7, 483–577. https://doi.org/10.1146/annurev-financial-110311-101741. publisher: Annual Reviews.
+Getmansky, M., Lee, P.A., Lo, A.W., 2015. Hedge Funds: A Dynamic Industry in Transition. *Annual Review of Financial Economics* 7, 483–577. https://doi.org/10.1146/annurev-financial-110311-101741.
 
 Goetzmann, W.N., Ingersoll Jr, J.E., Ross, S.A., 2003. High-water marks and hedge fund management contracts. *The Journal of Finance* 58, 1685–1718. https://doi.org/10.1111/1540-6261.00581.
 
@@ -700,7 +702,7 @@ Kotkatvuori-Ornberg, J., Nikkinen, J., Peltomäki, J., 2011. Geographical focus 
 
 Kouwenberg, R., Ziemba, W.T., 2007. Incentives and risk taking in hedge funds. *Journal of Banking & Finance* 31, 3291–3310. https://doi.org/10.1016/j.jbankfin.2007.04.003.
 
-Ley, E., Steel, M.F., 2009. On the Effect of Prior Assumptions in Bayesian Model Averaging with Applications to Growth Regression. *Journal of Applied Econometrics* 24, 651–674. https://doi.org/10.1002/jae.1057.
+Ley, E., Steel, M.F.J., 2009. On the Effect of Prior Assumptions in Bayesian Model Averaging with Applications to Growth Regression. *Journal of Applied Econometrics* 24, 651–674. https://doi.org/10.1002/jae.1057.
 
 Li, L., Li, Y., Wang, X., Xiao, T., Zhu, H., 2022. Hedge fund networks, information dissemination, and stock price comovement: Evidence from china. *International Review of Financial Analysis* 83, 102224. https://doi.org/10.1016/j.irfa.2022.102224.
 
@@ -732,7 +734,7 @@ Mladina, P., 2015. Illuminating Hedge Fund Returns to Improve Portfolio Construc
 
 Molyboga, M., L’Ahelec, C., 2016. A simulation-based methodology for evaluating hedge fund investments. *Journal of Asset Management* 17, 434–452. https://doi.org/10.1057/jam.2016.3.
 
-Mossin, J., 1966. Equilibrium in a capital asset market. *Econometrica: Journal of the Econometric Society*, 768–783https://doi.org/10.2307/1910098.
+Mossin, J., 1966. Equilibrium in a capital asset market. *Econometrica* 34, 768–783. https://doi.org/10.2307/1910098.
 
 Mozes, H.A., 2013. Decomposing Hedge Fund Returns: What Hedge Funds Got Right for the Past 20 Years. *The Journal of Investing* 22, 9–20. https://doi.org/10.3905/joi.2013.22.3.009.
 
@@ -746,9 +748,11 @@ Patton, A.J., 2009. Are “market neutral” hedge funds really market neutral? 
 
 Patton, A.J., Ramadorai, T., 2013. On the High-Frequency Dynamics of Hedge Fund Risk Exposures. *The Journal of Finance* 68, 597–635. https://doi.org/10.1111/jofi.12008.
 
+Pauli, J., Gehringer, A., 2026. Active versus passive investment strategy and market outperformance: Are hedge funds overrated? *Studies in Economics and Finance* 43, 1222–1252. https://doi.org/10.1108/SEF-09-2025-0670.
+
 Platanakis, E., Stafylas, D., Sutcliffe, C., Zhang, W., 2025. Hedge fund performance, classification with machine learning, and managerial implications. *British Journal of Management* 36, 1835–1858. https://doi.org/10.1111/1467-8551.70011.
 
-Posthuma, N., Van der Sluis, P.J., 2003. A reality check on hedge funds returns. *Available at SSRN 438840* https://doi.org/10.2139/ssrn.438840.
+Posthuma, N., Van der Sluis, P.J., 2003. A reality check on hedge funds returns. Working Paper 438840. SSRN. https://doi.org/10.2139/ssrn.438840.
 
 Racicot, F.E., Theoret, R., 2009. Integrating volatility factors in the analysis of the hedge fund alpha puzzle. *Journal of Asset Management* 10, 37–62. https://doi.org/10.1057/jam.2008.43.
 
@@ -760,7 +764,7 @@ Raftery, A.E., 1995. Bayesian Model Selection in Social Research. *Sociological 
 
 Ranaldo, A., Favre, L., 2005. Hedge Fund Performance and Higher-Moment Market Models. *The Journal of Alternative Investments* 8, 37–51. https://doi.org/10.3905/jai.2005.608031.
 
-Restrepo, F., 2024. The Economic Consequences of Hedge Fund Regulation: An Analysis of the Effect of the Dodd-Frank Act. *The Journal of Legal Studies* 53, 391–434. https://doi.org/10.1086/723772. publisher: The University of Chicago Press.
+Restrepo, F., 2024. The Economic Consequences of Hedge Fund Regulation: An Analysis of the Effect of the Dodd-Frank Act. *The Journal of Legal Studies* 53, 391–434. https://doi.org/10.1086/723772.
 
 Rzakhanov, Z., Jetley, G., 2019. Competition, scale and hedge fund performance: Evidence from merger arbitrage. *Journal of Economics and Business* 105, art. 105841. https://doi.org/10.1016/j.jeconbus.2019.04.002.
 
@@ -769,6 +773,8 @@ Sabbaghi, O., 2012. Hedge fund return volatility and comovement: recent evidence
 Sadka, R., 2010. Liquidity risk and the cross-section of hedge-fund returns. *Journal of Financial Economics* 98, 54–71. https://doi.org/10.1016/j.jfineco.2010.05.001.
 
 Sadka, R., 2012. Hedge-fund performance and liquidity risk. *Journal of Investment Management* 10, 60–72. https://doi.org/10.2139/ssrn.1917118.
+
+Samarbakhsh, L., Shah, M., 2022. Did the STOCK Act impact the performance, risk and flow of hedge funds? *International Journal of Managerial Finance* 18, 944–978. https://doi.org/10.1108/IJMF-04-2021-0174.
 
 Sandvik, S.H., Frydenberg, S., Westgaard, S., Heitmann, R.K., 2011. Hedge Fund Performance in Bull and Bear Markets: Alpha Creation and Risk Exposure. *The Journal of Investing* 20, 52–77. https://doi.org/10.3905/joi.2011.20.1.052.
 
@@ -783,6 +789,8 @@ Stoforos, C.E., Degiannakis, S., Palaskas, T.B., 2017. Hedge fund returns under 
 Stulz, R.M., 2007. Hedge funds: Past, present, and future. *Journal of Economic Perspectives* 21, 175–194. https://doi.org/10.1257/jep.21.2.175.
 
 Sullivan, R.N., 2021. Hedge Fund Alpha: Cycle or Sunset? *The Journal of Alternative Investments* 23, 55–79. https://doi.org/10.3905/jai.2020.1.118.
+
+Sullivan, R.N., Wey, M., 2025. Global macro and managed futures hedge fund strategies: Portfolio differentiators? *Journal of Alternative Investments* 27, 41–65. https://doi.org/10.3905/jai.2025.1.238.
 
 Sun, Z., Wang, A., Zheng, L., 2012. The Road Less Traveled: Strategy Distinctiveness and Hedge Fund Performance. *The Review of Financial Studies* 25, 96–143. https://doi.org/10.1093/rfs/hhr092.
 
@@ -884,44 +892,44 @@ TABLE A2. Best-practice estimates and time specifications
 Notes: Each cell reports a BMA posterior mean, a 95% study-bootstrap confidence interval in square brackets, and a 95% model-based credible interval in parentheses. Column (1) reproduces Table 4. All columns use UIP and the beta-binomial random model prior with $\theta\sim\mathrm{Beta}(1,1)$; in column (3), each squared term enters only together with its linear term. The same 1,999 bootstrap samples of studies are used in all columns, and BMA is re-estimated in each sample. Column (1) uses $\ln(\mathrm{data\ year}-1989)$ and $\ln(\mathrm{publication\ year}-2000)$. Column (2) uses shifted linear years, and column (3) adds their squares. Column (4) omits citations and impact factor from the logarithmic design and re-estimates BMA. Evaluation years are 2014.5 and 2021. The other benchmark settings follow Table A1 and remain fixed across resamples. All alphas are monthly percentage points. The credible intervals assume independent errors conditional on the covariates.
 
 TABLE A3. Newly coded post-cutoff studies
-| Study | Fund/ portfolio count | Data period | Midpoint | Monthly alpha | SE | Fee status | Model/source |
+| Study | Count | Data period | Midpoint | Alpha | SE | Fees | Model/source |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Jorion (2021) | 1 | 2010–2020 | 2015 | 0.004 | 0.060 | Net | HFRI Fund Weighted Composite; three market and five bank risk-premia factors. We read the Table 5 alpha as annual and divide it and its SE by 12. |
 | Liang et al. (2022) | 1 | 2006–2019 | 2012.5 | 0.101 | 0.080 | Net | Non-signatory portfolio; Fung–Hsieh seven-factor model. 2020 working paper, Table 2. |
-| Grobys et al. (2022) | 4 | 2006–2021 | 2013.5 | 0.225 | n.r. | Net (inferred) | Median of four style portfolios; Fama–French five-factor model. Accepted manuscript, Table 4, Panel D. |
-| Ben Khelife et al. (2022) | 1 | 2011–2021 | 2016 | -0.040 | 0.074 | Net (inferred) | North American composite; Treynor–Mazuy timing model with COVID terms. Published Table 2. |
+| Grobys et al. (2022) | 4 | 2006–2021 | 2013.5 | 0.225 | n.r. | Net* | Median of four style portfolios; Fama–French five-factor model. Accepted manuscript, Table 4, Panel D. |
+| Ben Khelife et al. (2022) | 1 | 2011–2021 | 2016 | -0.040 | 0.074 | Net* | North American composite; Treynor–Mazuy timing model with COVID terms. Published Table 2. |
 | Ardia et al. (2024) | 1 | 1994–2020 | 2007 | 0.251 | 0.062 | Net | Mean alpha component; Fung–Hsieh seven-factor row. May 23, 2023 working paper, Table VI, Panel A. |
 | Agarwal et al. (2024) | 1 | 1997–2017 | 2007 | 0.347 | 0.089 | Gross | Aggregate gross fund-firm return; Fung–Hsieh plus HML and UMD. August 2023 accepted version, Table 1, Panel B. |
 | Chen et al. (2025) | 1 | 1997–2019 | 2008 | 0.180 | 0.077 | Net | Equal-weighted all-funds portfolio; Fung–Hsieh seven-factor model. Published Table 5, Panel A. |
 | Platanakis et al. (2025) | 10 | 1995–2021 | 2008 | 0.541 | n.r. | Net | Median of ten strategy portfolios; Fung–Hsieh seven-factor model with Geltner-desmoothed returns. Published Table 7. |
-Notes: Monthly alpha and SE are in percentage points; Fund/portfolio count is the number of estimates summarized. For Grobys et al. and Platanakis et al., we report the median across portfolios, which has no standard error (n.r.). Net-of-fee status is inferred from database conventions for Grobys et al. and Ben Khelife et al. Bollen et al. (2026) report no standard error for their mean alpha and are excluded. Table A3b lists all screened candidates. The estimates do not enter the meta-regressions.
+Notes: Alpha and SE are monthly, in percentage points; Count is the number of estimates (funds or portfolios) summarized. Midpoint is the average of the first and last year of the data period. For Grobys et al. and Platanakis et al., we report the median across portfolios, which has no standard error (n.r.). *Net-of-fee status inferred from database conventions. Bollen et al. (2026) report no standard error for their mean alpha and are excluded. Table A3b lists all screened candidates. The estimates do not enter the meta-regressions.
 
 TABLE A3b. Screening of post-cutoff candidates
-| No. | Study | Screening | Source inspected |
+| No. | Study | Screening | Outcome |
 | --- | --- | --- | --- |
-| 1 | Ardia, Barras, Gagliardini & Scaillet | Retained | Full text inspected |
-| 2 | Chen, Li, Tang & Zhou | Retained | Full text inspected |
-| 3 | Bollen, Joenvaara & Kauppila (2026) | Excluded | Earlier version inspected (May 15, 2024) |
-| 4 | Jorion | Retained | Full text inspected |
-| 5 | Liang, Sun & Teo | Retained | Full text inspected |
-| 6 | Pauli & Gehringer | Excluded | Full text not obtained |
-| 7 | Antoniadis & Skouras | Excluded | Only an earlier or related version inspected |
-| 8 | Platanakis, Stafylas, Sutcliffe & Zhang | Retained | Full text inspected |
-| 9 | Ben Khelife, Urom, Guesmi & Benkraiem | Retained | Full text inspected |
-| 10 | Grobys, Kolari & Niang | Retained | Full text inspected |
-| 11 | Samarbakhsh & Shah | Excluded | Only an earlier or related version inspected |
-| 12 | Gao, Haight, Yin & Zhang | Excluded | Only an earlier or related version inspected |
-| 13 | Sullivan & Wey | Excluded | Full text not obtained |
-| 14 | Agarwal, Ruenzi & Weigert | Retained | Full text inspected |
-| 15 | Bollen, Joenvaara & Kauppila (2021) | Excluded | Full text inspected |
+| 1 | Ardia et al. (2024) | Retained | Estimate reported in Table A3 |
+| 2 | Chen et al. (2025) | Retained | Estimate reported in Table A3 |
+| 3 | Bollen et al. (2026) | Excluded | No standard error for the mean alpha (version of May 15, 2024) |
+| 4 | Jorion (2021) | Retained | Estimate reported in Table A3 |
+| 5 | Liang et al. (2022) | Retained | Estimate reported in Table A3 |
+| 6 | Pauli and Gehringer (2026) | Excluded | Full text not obtained |
+| 7 | Antoniadis and Skouras (2026) | Excluded | No usable estimate in the version inspected |
+| 8 | Platanakis et al. (2025) | Retained | Estimate reported in Table A3 |
+| 9 | Ben Khelife et al. (2022) | Retained | Estimate reported in Table A3 |
+| 10 | Grobys et al. (2022) | Retained | Estimate reported in Table A3 |
+| 11 | Samarbakhsh and Shah (2022) | Excluded | No usable estimate in the version inspected |
+| 12 | Gao et al. (2022) | Excluded | No usable estimate in the version inspected |
+| 13 | Sullivan and Wey (2025) | Excluded | Full text not obtained |
+| 14 | Agarwal et al. (2024) | Retained | Estimate reported in Table A3 |
+| 15 | Bollen et al. (2021) | Excluded | No usable estimate; published before the cutoff |
 Notes: Excluded studies either could not be obtained in full text or, in the version inspected, report neither an all-funds alpha with a standard error or t-statistic nor portfolio alphas with standard errors or t-statistics whose median we could use, as in Table A3. Bollen et al. (2021) predates the cutoff and was screened for completeness.
 
 TABLE A4. Leave-one-study-out results
-| | Net returns | Bear market |
+| | Net-of-fee returns | Bear market |
 | --- | --- | --- |
 | | Contributing studies | All studies | Contributing studies | All studies |
 | **Panel A: Original nine-variable OLS** |
-| Net returns | [-0.522, -0.335] | [-0.522, -0.335] | – | – |
+| Net-of-fee returns | [-0.522, -0.335] | [-0.522, -0.335] | – | – |
 | Bear market | – | – | [-0.348, -0.240] | [-0.348, -0.240] |
 | Significant at 5% | 6 out of 6 | 74 out of 74 | 4 out of 4 | 74 out of 74 |
 | Controls | Yes | Yes | Yes | Yes |
@@ -931,7 +939,7 @@ TABLE A4 (continued). Leave-one-study-out results
 | Coefficient | Omissions | Minimum | Maximum | Largest p |
 | --- | --- | --- | --- | --- |
 | **Panel B: Ten-variable OLS, adding bull markets and retaining bear markets** |
-| Net returns | 74 | -0.516 | -0.327 | 0.012 |
+| Net-of-fee returns | 74 | -0.516 | -0.327 | 0.012 |
 | Bull market | 74 | -0.253 | -0.185 | 0.003 |
 | Bear market | 74 | -0.402 | -0.273 | 0.004 |
 Notes: Coefficients are in monthly percentage points. Entries in the first two rows give the minimum and maximum coefficients across the corresponding study omissions. Panel A includes the nine explanatory variables reported in the right-hand panel of Table 3 and uses standard errors clustered by study. The contributing-study checks omit each of the six studies reporting gross-return estimates for the net-return coefficient, or each of the four studies reporting bear-market estimates for the bear-market coefficient. The all-study checks omit each of the 74 studies. The significance row counts coefficients significant at the 5% level. Panel B adds the bull-market indicator. In Panel B, the extremes and the largest p occur when a contributing study is omitted. Controls indicates that the other regressors in the stated specification are included. Studies omitted reports the number of studies considered for omission; one study is excluded in each regression.
@@ -940,69 +948,61 @@ FIGURE A2. Additional published alpha evidence
 Notes: Alpha is measured in monthly percentage points. Hollow circles represent the original 74 studies at their median alpha and median data year. Diamonds denote the seven new net-of-fee estimates, and the square denotes the gross-return estimate from Agarwal et al. (2024). Table A3 gives the portfolio, factor model and source for each point. The dashed logarithmic curve, $\ln(\mathrm{year}-1989)$, is fitted only to the original 74 study medians; the shaded area is a pointwise 95% prediction band for a single study. The new estimates do not enter the meta-regressions.
 
 TABLE A5. Sensitivity to benchmark settings
-| Setting | Strategy | Mean | Bootstrap interval | Credible interval |
-| --- | --- | --- | --- | --- |
-| S0 | All strategies | -0.079 | [-0.444, 0.372] | (-0.273, 0.049) |
-| S0 | Funds of funds | -0.246 | [-0.633, 0.277] | (-0.471, -0.017) |
-| S1 | All strategies | -0.071 | [-0.382, 0.432] | (-0.196, 0.048) |
-| S1 | Funds of funds | -0.238 | [-0.558, 0.313] | (-0.415, -0.017) |
-| S2 | All strategies | -0.069 | [-0.273, 0.324] | (-0.217, 0.060) |
-| S2 | Funds of funds | -0.236 | [-0.470, 0.212] | (-0.428, -0.012) |
-| S3 | All strategies | -0.061 | [-0.184, 0.379] | (-0.148, 0.059) |
-| S3 | Funds of funds | -0.228 | [-0.363, 0.255] | (-0.383, -0.012) |
-| S4 | All strategies | -0.051 | [-0.184, 0.872] | (-0.150, 0.239) |
-| S4 | Funds of funds | -0.219 | [-0.379, 0.748] | (-0.385, 0.088) |
-| S5 | All strategies | -0.085 | [-0.471, 0.257] | (-0.276, 0.016) |
-| S5 | Funds of funds | -0.253 | [-0.678, 0.153] | (-0.473, -0.036) |
-| S6 | All strategies | -0.086 | [-0.478, 0.249] | (-0.277, 0.015) |
-| S6 | Funds of funds | -0.254 | [-0.686, 0.145] | (-0.473, -0.037) |
-| S7 | All strategies | -0.079 | [-0.476, 0.318] | (-0.272, 0.043) |
-| S7 | Funds of funds | -0.246 | [-0.675, 0.221] | (-0.469, -0.021) |
-| S8 | All strategies | -0.092 | [-0.283, 0.187] | (-0.177, 0.002) |
-| S8 | Funds of funds | -0.259 | [-0.451, 0.076] | (-0.414, -0.048) |
-
-TABLE A5 (continued). Sensitivity to benchmark settings
-| Setting | Change from baseline |
-| --- | --- |
-| S0 | Baseline |
-| S1 | IV = 0 |
-| S2 | Model uncertainty = 0; seven-factor = 1 |
-| S3 | S1 and S2 together |
-| S4 | IV = 0; model uncertainty = 0; all factor indicators remain 0 |
-| S5 | Citations and impact factor at original-sample means |
-| S6 | Citations and impact factor at original-sample medians |
-| S7 | Cross-section and hand-collected indicators at original-sample means |
-| S8 | All non-core settings at original-sample means |
-Notes: S0 reproduces the corresponding rows of Table 4. All settings use the same baseline BMA fit and the same 1,999 study draws. Means and medians use the original sample, with citations on the logarithmic scale. In S8, SE and SE$\times$IV remain zero, net returns and both bias-treatment indicators remain one, the time variables retain their maxima, and strategy settings remain specific to each row. Every remaining regressor takes its original-sample mean. Excluding citations and impact factor requires re-estimating the BMA and is reported in Table A2.
+| Setting and strategy | Mean | Bootstrap interval | Credible interval |
+| --- | --- | --- | --- |
+| *S0: Baseline (Table 4)* |
+| All strategies | -0.079 | [-0.444, 0.372] | (-0.273, 0.049) |
+| Funds of funds | -0.246 | [-0.633, 0.277] | (-0.471, -0.017) |
+| *S1: IV = 0* |
+| All strategies | -0.071 | [-0.382, 0.432] | (-0.196, 0.048) |
+| Funds of funds | -0.238 | [-0.558, 0.313] | (-0.415, -0.017) |
+| *S2: Model uncertainty = 0; seven-factor model = 1* |
+| All strategies | -0.069 | [-0.273, 0.324] | (-0.217, 0.060) |
+| Funds of funds | -0.236 | [-0.470, 0.212] | (-0.428, -0.012) |
+| *S3: S1 and S2 together* |
+| All strategies | -0.061 | [-0.184, 0.379] | (-0.148, 0.059) |
+| Funds of funds | -0.228 | [-0.363, 0.255] | (-0.383, -0.012) |
+| *S4: IV = 0; model uncertainty = 0; all factor indicators = 0* |
+| All strategies | -0.051 | [-0.184, 0.872] | (-0.150, 0.239) |
+| Funds of funds | -0.219 | [-0.379, 0.748] | (-0.385, 0.088) |
+| *S5: Citations and impact factor at sample means* |
+| All strategies | -0.085 | [-0.471, 0.257] | (-0.276, 0.016) |
+| Funds of funds | -0.253 | [-0.678, 0.153] | (-0.473, -0.036) |
+| *S6: Citations and impact factor at sample medians* |
+| All strategies | -0.086 | [-0.478, 0.249] | (-0.277, 0.015) |
+| Funds of funds | -0.254 | [-0.686, 0.145] | (-0.473, -0.037) |
+| *S7: Cross-section and hand-collected indicators at sample means* |
+| All strategies | -0.079 | [-0.476, 0.318] | (-0.272, 0.043) |
+| Funds of funds | -0.246 | [-0.675, 0.221] | (-0.469, -0.021) |
+| *S8: All non-core settings at sample means* |
+| All strategies | -0.092 | [-0.283, 0.187] | (-0.177, 0.002) |
+| Funds of funds | -0.259 | [-0.451, 0.076] | (-0.414, -0.048) |
+Notes: Means are in monthly percentage points; bootstrap intervals are 95% percentile intervals from the 1,999 study draws of Table 4, and credible intervals are 95% BMA credible intervals. S0 reproduces the corresponding rows of Table 4. All settings use the same baseline BMA fit and the same study draws. Means and medians are taken in the original sample, with citations on the logarithmic scale. In S8, SE and SE$\times$IV remain zero, net returns and both bias-treatment indicators remain one, the time variables retain their maxima, and the strategy settings remain specific to each row; every remaining regressor takes its sample mean. Excluding citations and impact factor requires re-estimating the BMA and is reported in Table A2.
 
 TABLE A6. Small-sample cluster inference for the OLS specifications
-| Variable | Estimate | SE | df | 95 percent interval | p |
+| Variable | Estimate | SE | df | 95% interval | p |
 | --- | --- | --- | --- | --- | --- |
-| *Nine-variable model* |
+| **Panel A: Nine-variable OLS (Table 3)** |
 | Intercept | 1.858 | 0.136 | 5.233 | [1.512, 2.203] | 0.000 |
-| Net returns | -0.439 | 0.106 | 2.459 | [-0.822, -0.056] | 0.037 |
-| Log data year | -0.239 | 0.043 | 3.671 | [-0.361, -0.117] | 0.006 |
-| CISDM | 0.236 | 0.076 | 7.816 | [0.059, 0.413] | 0.015 |
-| Database count | -0.085 | 0.031 | 5.937 | [-0.160, -0.010] | 0.032 |
+| Net-of-fee returns | -0.439 | 0.106 | 2.459 | [-0.822, -0.056] | 0.037 |
+| Data year | -0.239 | 0.043 | 3.671 | [-0.361, -0.117] | 0.006 |
+| Database: CISDM | 0.236 | 0.076 | 7.816 | [0.059, 0.413] | 0.015 |
+| Number of databases | -0.085 | 0.031 | 5.937 | [-0.160, -0.010] | 0.032 |
 | Bear market | -0.280 | 0.083 | 2.907 | [-0.550, -0.010] | 0.046 |
-| Funds of funds | -0.202 | 0.055 | 13.211 | [-0.321, -0.083] | 0.003 |
-| One factor | -0.159 | 0.079 | 13.880 | [-0.328, 0.010] | 0.063 |
+| Strategy: fund of funds | -0.202 | 0.055 | 13.211 | [-0.321, -0.083] | 0.003 |
+| 1-factor model | -0.159 | 0.079 | 13.880 | [-0.328, 0.010] | 0.063 |
 | Backfilling treated | -0.198 | 0.073 | 20.385 | [-0.351, -0.046] | 0.013 |
-| Log publication year | -0.138 | 0.067 | 11.069 | [-0.285, 0.010] | 0.065 |
-| *Ten-variable model* |
+| Publication year | -0.138 | 0.067 | 11.069 | [-0.285, 0.010] | 0.065 |
+| **Panel B: Ten-variable OLS, adding bull markets** |
 | Intercept | 1.900 | 0.142 | 5.440 | [1.544, 2.256] | 0.000 |
-| Net returns | -0.436 | 0.106 | 2.460 | [-0.820, -0.051] | 0.038 |
-| Log data year | -0.264 | 0.048 | 3.751 | [-0.402, -0.126] | 0.007 |
-| CISDM | 0.229 | 0.075 | 7.920 | [0.055, 0.403] | 0.016 |
-| Database count | -0.086 | 0.030 | 5.918 | [-0.160, -0.013] | 0.029 |
+| Net-of-fee returns | -0.436 | 0.106 | 2.460 | [-0.820, -0.051] | 0.038 |
+| Data year | -0.264 | 0.048 | 3.751 | [-0.402, -0.126] | 0.007 |
+| Database: CISDM | 0.229 | 0.075 | 7.920 | [0.055, 0.403] | 0.016 |
+| Number of databases | -0.086 | 0.030 | 5.918 | [-0.160, -0.013] | 0.029 |
 | Bear market | -0.319 | 0.094 | 2.944 | [-0.621, -0.017] | 0.044 |
-| Funds of funds | -0.205 | 0.055 | 13.202 | [-0.323, -0.087] | 0.002 |
-
-TABLE A6 (continued). Small-sample cluster inference for the OLS specifications
-| Variable | Estimate | SE | df | 95 percent interval | p |
-| --- | --- | --- | --- | --- | --- |
-| One factor | -0.162 | 0.078 | 13.888 | [-0.330, 0.006] | 0.057 |
+| Strategy: fund of funds | -0.205 | 0.055 | 13.202 | [-0.323, -0.087] | 0.002 |
+| 1-factor model | -0.162 | 0.078 | 13.888 | [-0.330, 0.006] | 0.057 |
 | Backfilling treated | -0.192 | 0.072 | 20.709 | [-0.342, -0.041] | 0.015 |
-| Log publication year | -0.127 | 0.068 | 11.291 | [-0.276, 0.023] | 0.089 |
+| Publication year | -0.127 | 0.068 | 11.291 | [-0.276, 0.023] | 0.089 |
 | Bull market | -0.209 | 0.064 | 3.042 | [-0.410, -0.008] | 0.045 |
-Notes: Both models use the full sample and cluster by primary study. The ten-variable model adds the bull-market indicator to the original nine-variable specification while retaining bear markets. CR2 standard errors with Satterthwaite degrees of freedom (df) correct cluster-robust inference for the small number of clusters.
+Notes: Coefficients are in monthly percentage points. Both models use the full sample of 1,019 estimates and cluster by primary study (74 clusters). Standard errors are CR2 (bias-reduced cluster-robust) standard errors; the degrees of freedom (df), 95% intervals and p-values use the Satterthwaite approximation, which corrects the inference for the small number of clusters. Panel A is the nine-variable specification of Table 3; Panel B adds the bull-market indicator while retaining the bear-market indicator.
