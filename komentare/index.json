@@ -21,7 +21,7 @@
  ],
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "license_note": "CC BY 4.0; u převzatých textů uveďte i původní vydání.",
- "count": 275,
+ "count": 276,
  "generated_from": [
   "komentare/src/*.md",
   "komentare/social-posts.json"
@@ -5936,6 +5936,35 @@
    ],
    "provenance": "self_published",
    "genre": "travelogue"
+  },
+  {
+   "id": "posts-2026-11-12",
+   "title": "What is the optimal inflation rate? We have pre-printed a meta-analysis summarizing 777 estimates from 116…",
+   "date": "2026-11-12",
+   "date_precision": "day",
+   "section": "Posts (ze sítí)",
+   "category": "posts",
+   "language": "en",
+   "outlet": "LinkedIn",
+   "authors": [
+    "Zuzana Havránková"
+   ],
+   "media": "text",
+   "original_url": "",
+   "url": "https://meta-analysis.cz/komentare/posts/2026-11-12-what-is-the-optimal-inflation-rate/",
+   "collection_url": "https://meta-analysis.cz/komentare/posts/#2026-11-12",
+   "text_status": "published_full_text",
+   "genre": "social_post",
+   "provenance": "self_published",
+   "word_count": 269,
+   "text": "What is the optimal inflation rate? We have pre-printed a meta-analysis summarizing 777 estimates from 116 studies that try to provide an answer.\n\nOur best guess is that this literature is consistent with optimal inflation of about 0.6%. This might have come as a disappointment to some of my co-authors, but for different reasons. One of them has spent a lot of time arguing for zero inflation on average. Another spent many years as a central banker defending the standard 2% target. Well, you can't make everyone happy!\n\nThe estimates differ a lot, and we show which modelling choices drive the differences.\n\nThis is our first meta-analysis where we really used AI a lot for data collection, although of course the AI workflow there already feels like pre-history. The prompts are public if you want to see how it was done.\n\nDisclaimer: most of these optimal inflation estimates are not estimates in the classical sense but come from calibrated models, so publication bias corrections and other meta-analysis approaches are a bit tricky here.\n\nMeasurement error matters too: official inflation can overstate true inflation (it doesn't fully capture better quality and new products) or understate it (the cost of owning a home is often only partly captured or left out). Depending on how big the net bias is and how you read the models, the gap between 0.6% and 2% can shrink, grow, or even flip. We discuss this in the paper but perhaps that's a good topic for another meta-analysis.\n\nJoint work with amazing co-authors Matej Opatrny, Martin Opatrný, Tomas Havranek, and Mojmír Hampl.\n\nLinks in the first comment.",
+   "image": [
+    "https://meta-analysis.cz/komentare/social-img/2026-11-12_optimal-inflation.png"
+   ],
+   "comment_links": [
+    "https://meta-analysis.cz/inflation/",
+    "https://cepr.org/publications/dp21629"
+   ]
   },
   {
    "id": "posts-2026-10-07",

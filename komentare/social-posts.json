@@ -671,5 +671,29 @@
   "slug": "2026-10-07-an-app-for-your-economics-thesis",
   "anchor": "2026-10-07",
   "text": "If you are writing a bachelor's or master's thesis in economics, our new app can help.\n\nIt reads your idea, proposal, or draft the way your opponent will. It quotes your text and says what to change. It does not write the thesis for you.\n\nOne prompt in ChatGPT or Claude, nothing to install. Built for the thesis seminars at IES, Charles University. Unofficial and free.\n\nIf you use Claude Code or Codex, the repository has a deeper mode that also checks your code.\n\nOr just tell your AI assistant: check with the thesis tool from meta-analysis.cz.\n\nLink in the first comment."
+ },
+ {
+  "date": "2026-11-12",
+  "reshare_with_comment": false,
+  "lang": "en",
+  "images": [
+   "2026-11-12_optimal-inflation.png"
+  ],
+  "image_size": [
+   [
+    1200,
+    1500
+   ]
+  ],
+  "image_alt": [
+   "A chart headed 'What is the optimal inflation rate?', with the subtitle '777 estimates from 116 studies, each coded for 57 features'. It is a histogram of the optimal long-run inflation rates reported in the studies, in percent per year, with the tails pooled at the 5th and 95th percentiles, minus 3.85% and 6%. The tallest bar, about 32% of estimates, sits at zero, labelled 'A third of all estimates are within 0.25 pp of zero'. A smaller peak sits at 2%. A red line and band mark the meta-analytic estimate of 0.6%, the mean of one preferred estimate per study with a 95% confidence interval of 0.25 to 0.97, noting that weighting and funnel-based bias corrections give 0.4 to 0.6%. A dashed blue line marks the typical central-bank target of 2%. The footer cites Opatrny, Opatrny, Havranek, Irsova and Hampl (2026), CEPR DP 21629, with paper, data and code at meta-analysis.cz/inflation."
+  ],
+  "comment_links": [
+   "https://meta-analysis.cz/inflation/",
+   "https://cepr.org/publications/dp21629"
+  ],
+  "slug": "2026-11-12-what-is-the-optimal-inflation-rate",
+  "anchor": "2026-11-12",
+  "text": "What is the optimal inflation rate? We have pre-printed a meta-analysis summarizing 777 estimates from 116 studies that try to provide an answer.\n\nOur best guess is that this literature is consistent with optimal inflation of about 0.6%. This might have come as a disappointment to some of my co-authors, but for different reasons. One of them has spent a lot of time arguing for zero inflation on average. Another spent many years as a central banker defending the standard 2% target. Well, you can't make everyone happy!\n\nThe estimates differ a lot, and we show which modelling choices drive the differences.\n\nThis is our first meta-analysis where we really used AI a lot for data collection, although of course the AI workflow there already feels like pre-history. The prompts are public if you want to see how it was done.\n\nDisclaimer: most of these optimal inflation estimates are not estimates in the classical sense but come from calibrated models, so publication bias corrections and other meta-analysis approaches are a bit tricky here.\n\nMeasurement error matters too: official inflation can overstate true inflation (it doesn't fully capture better quality and new products) or understate it (the cost of owning a home is often only partly captured or left out). Depending on how big the net bias is and how you read the models, the gap between 0.6% and 2% can shrink, grow, or even flip. We discuss this in the paper but perhaps that's a good topic for another meta-analysis.\n\nJoint work with amazing co-authors Matej Opatrny, Martin Opatrný, Tomas Havranek, and Mojmír Hampl.\n\nLinks in the first comment."
  }
 ]
