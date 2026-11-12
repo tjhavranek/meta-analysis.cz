@@ -1183,8 +1183,8 @@
   "project": "inflation",
   "title": "Optimal Inflation Rate: A Meta-Analysis",
   "literature": "Optimal Inflation Rate",
-  "abstract": "We revisit the optimal long-run inflation rate using 777 estimates from 116 primary studies published between 1989 and 2026, the largest sample assembled to date. To our knowledge, this is among the first meta-analyses in economics whose primary-data extraction is performed end-to-end through a documented and auditable large-language-model pipeline, calibrated against a hand-coded training set and released for replication. Across publication-selection and selection-on-significance diagnostics that are applicable in this calibration-dominated corpus, the literature points to an optimum of roughly 0.6 percentage points per year, well below the two-percent targets commonly used by advanced-economy central banks. The gap should not be automatically read as a verdict against the two-percent norm. Measurement error in published price indices could close, widen, or even reverse the gap, and the structural literature itself cannot pin down the sign of the required correction. Bayesian model averaging over the full structural-moderator schema shows that cross-study variation is driven by genuine modelling choices, the choice of monetary benchmark (Friedman rule vs. laissez-faire), the transactions-frictions technology, the assumed shock structure, and the class of nominal-rigidity contract, rather than by selective reporting.",
-  "reference_line": "Matej Opatrny, Martin Opatrny, Tomas Havranek, Zuzana Irsova, Mojmir Hampl (2026), \"Optimal Inflation Rate: A Meta-Analysis.\" Charles University, Prague. Available at meta-analysis.cz/inflation.",
+  "abstract": "We revisit the optimal long-run inflation rate using 777 estimates from 116 primary studies published between 1989 and 2026, the largest sample on the topic to date. To our knowledge, this is among the first economics meta-analyses in which primary-data extraction is done from start to finish through a documented and auditable large-language-model pipeline, calibrated against a hand-coded training set and released for replication. The literature points to an optimum of about 0.6 percent per year, well below the two-percent targets used by most advanced-economy central banks. The gap should not be automatically read as a verdict against the two-percent norm. Measurement error in published price indices could close, widen, or even reverse the gap, and the structural literature itself cannot pin down the sign of the required correction. Bayesian model averaging over the full set of structural moderators shows that cross-study variation is driven by real modelling choices. The main drivers are the choice of monetary benchmark (Friedman rule versus laissez-faire), the transactions-frictions technology, the assumed shock structure, and the class of nominal-rigidity contract. The non-parametric caliper test finds no upward bunching at the two-percent target. The paper contributes a reproducible LLM-assisted extraction pipeline for structurally calibrated literature and a quantitative decomposition of where the optimal-inflation literature disagrees.",
+  "reference_line": "Matej Opatrny, Martin Opatrny, Tomas Havranek, Zuzana Irsova, Mojmir Hampl (2026), \"Optimal Inflation Rate: A Meta-Analysis.\" CEPR Discussion Paper No. 21629. Available at meta-analysis.cz/inflation.",
   "authors": [
    "Matej Opatrny",
    "Martin Opatrny",
@@ -1236,7 +1236,12 @@
   "has_meta_description": true,
   "meta_keywords": "Optimal inflation, meta-analysis, New Keynesian models, publication bias, Bayesian model averaging, measurement error, large language models",
   "one_line": "Meta-analysis of 777 estimates from 116 studies finds an optimal long-run inflation rate near 0.6% per year, below common two-percent central-bank targets.",
-  "version": "record"
+  "version": "working_paper",
+  "technical_report": {
+   "institution": "Centre for Economic Policy Research",
+   "number": 21629,
+   "year": 2026
+  }
  },
  {
   "project": "lags",
