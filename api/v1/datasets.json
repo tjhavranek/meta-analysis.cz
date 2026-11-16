@@ -177,7 +177,7 @@
    "id": "chemnitz",
    "reason": "teaching copy of part of the electricity dataset, not a new literature",
    "paper": {
-    "title": "Electricity demand has not become more price-responsive despite ninety years of technological change",
+    "title": "Total electricity consumption has not become more price-sensitive despite ninety years of technological change",
     "page_title": "Price Elasticity of Electricity Demand: A Meta-Analysis",
     "url": "https://meta-analysis.cz/electricity/"
    },
@@ -980,7 +980,7 @@
   {
    "id": "electricity",
    "paper": {
-    "title": "Electricity demand has not become more price-responsive despite ninety years of technological change",
+    "title": "Total electricity consumption has not become more price-sensitive despite ninety years of technological change",
     "page_title": "Price Elasticity of Electricity Demand: A Meta-Analysis",
     "literature": "Price Elasticity of Electricity Demand",
     "authors": [

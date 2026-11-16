@@ -2106,7 +2106,7 @@
   "title": "Price Elasticity of Electricity Demand: A Meta-Analysis",
   "literature": "Price Elasticity of Electricity Demand",
   "abstract": "",
-  "reference_line": "Peter Kudela, Tomas Havranek, Zuzana Irsova, Anna Kudelova, Vojtech Sikl (2026), “Electricity demand has not become more price-responsive despite ninety years of technological change.” Charles University, Prague. Available at meta-analysis.cz/electricity.",
+  "reference_line": "Peter Kudela, Tomas Havranek, Zuzana Irsova, Anna Kudelova, Vojtech Sikl (2026), “Total electricity consumption has not become more price-sensitive despite ninety years of technological change.” Charles University, Prague. Available at meta-analysis.cz/electricity.",
   "authors": [
    "Peter Kudela",
    "Tomas Havranek",
@@ -2127,7 +2127,8 @@
   "has_meta_description": false,
   "meta_keywords": null,
   "one_line": "Meta-analysis of the price elasticity of electricity demand: no increase in price responsiveness despite ninety years of technological change.",
-  "citation_title": "Electricity demand has not become more price-responsive despite ninety years of technological change",
+  "citation_title": "Total electricity consumption has not become more price-sensitive despite ninety years of technological change",
+  "dataset_doi": "10.5281/zenodo.23060098",
   "version": "record"
  },
  {

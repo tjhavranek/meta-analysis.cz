@@ -473,8 +473,8 @@ excluded += [
                          "standard error.")),
   dict(id="chemnitz",
        reason="teaching copy of part of the electricity dataset, not a new literature",
-       paper=dict(title="Electricity demand has not become more price-responsive despite "
-                        "ninety years of technological change",
+       paper=dict(title="Total electricity consumption has not become more price-sensitive "
+                        "despite ninety years of technological change",
                   page_title="Price Elasticity of Electricity Demand: A Meta-Analysis",
                   url=f"{BASE}/electricity/"),
        excluded_because=("electricity_sr.csv is the short-run subset of the electricity "

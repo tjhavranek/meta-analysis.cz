@@ -190,7 +190,7 @@
   "project": "electricity",
   "parameter": "Price elasticity of electricity demand",
   "headline": "-0.16 short run, -0.38 long run",
-  "evidence": "First, the best-identified studies find smaller responses than naive ones: the publication-bias-corrected short-run elasticity is about −0.16 (a 10% rise in the electricity price cuts consumption by under 2%), and only −0.09 among the best-identified studies, whose adjusted value is statistically indistinguishable from zero. Second, responsiveness grows with time to adjust, roughly doubling from −0.16 in the short run to −0.38 in the long run as the capital stock turns over, but this pattern has itself been stable for decades.",
+  "evidence": "First, the best-identified studies find smaller responses than naive regressions do. Corrected for publication bias, the short-run elasticity is about −0.16 across the literature (a 10% rise in the electricity price cuts consumption by under 2%) and only −0.09 among the best-identified studies, whose adjusted value is statistically indistinguishable from zero. Second, price sensitivity grows with time to adjust, more than doubling from −0.16 in the short run to −0.38 in the long run as the capital stock turns over, and this gradient has not steepened over the decades.",
   "basis": "4,720 estimates from 462 studies",
   "caveat": "best-identified short-run estimates statistically indistinguishable from zero",
   "field": "Energy and environmental economics"
