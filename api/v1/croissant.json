@@ -12647,7 +12647,7 @@
    "@type": "cr:RecordSet",
    "@id": "electricity",
    "name": "electricity",
-   "description": "Electricity demand has not become more price-responsive despite ninety years of technological change",
+   "description": "Total electricity consumption has not become more price-sensitive despite ninety years of technological change",
    "field": [
     {
      "@type": "cr:Field",

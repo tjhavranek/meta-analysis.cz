@@ -24,7 +24,7 @@
   <url><loc>https://meta-analysis.cz/education/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/eis/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/elb/</loc><lastmod>2026-10-12</lastmod></url>
-  <url><loc>https://meta-analysis.cz/electricity/</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://meta-analysis.cz/electricity/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://meta-analysis.cz/esg/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/euro/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/excess_sensitivity/</loc><lastmod>2026-10-13</lastmod></url>
@@ -94,7 +94,7 @@
   <url><loc>https://meta-analysis.cz/education/paper/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/eis/paper/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/elb/paper/</loc><lastmod>2026-10-12</lastmod></url>
-  <url><loc>https://meta-analysis.cz/electricity/paper/</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://meta-analysis.cz/electricity/paper/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://meta-analysis.cz/esg/paper/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/euro/paper/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/excess_sensitivity/paper/</loc><lastmod>2026-10-12</lastmod></url>
@@ -199,8 +199,8 @@
   <url><loc>https://meta-analysis.cz/eis/eis2.pdf</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/eis/eis_appendix.pdf</loc><lastmod>2026-09-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/elb/elb.pdf</loc><lastmod>2026-08-27</lastmod></url>
-  <url><loc>https://meta-analysis.cz/electricity/electricity.pdf</loc><lastmod>2026-07-23</lastmod></url>
-  <url><loc>https://meta-analysis.cz/electricity/electricity_SI.pdf</loc><lastmod>2026-07-23</lastmod></url>
+  <url><loc>https://meta-analysis.cz/electricity/electricity.pdf</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://meta-analysis.cz/electricity/electricity_SI.pdf</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://meta-analysis.cz/esg/esg.pdf</loc><lastmod>2026-09-02</lastmod></url>
   <url><loc>https://meta-analysis.cz/euro/euro.pdf</loc><lastmod>2026-09-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/euro/euro2.pdf</loc><lastmod>2026-06-25</lastmod></url>
@@ -325,7 +325,7 @@
   <url><loc>https://meta-analysis.cz/about/photos/</loc><lastmod>2026-10-12</lastmod><image:image><image:loc>https://tjhavranek.github.io/media/photos/tomas-havranek-portrait-2022.jpg</image:loc></image:image><image:image><image:loc>https://tjhavranek.github.io/media/photos/tomas-havranek-stairs-2022.jpg</image:loc></image:image><image:image><image:loc>https://tjhavranek.github.io/media/photos/tomas-havranek-wall-2022.jpg</image:loc></image:image><image:image><image:loc>https://tjhavranek.github.io/media/photos/tomas-havranek-garden-2022.jpg</image:loc></image:image><image:image><image:loc>https://tjhavranek.github.io/media/photos/tomas-havranek-desk-2022.jpg</image:loc></image:image><image:image><image:loc>https://tjhavranek.github.io/media/photos/tomas-havranek-lecture-hall-2022.jpg</image:loc></image:image><image:image><image:loc>https://tjhavranek.github.io/media/photos/tomas-havranek-lecture-hall-2-2022.jpg</image:loc></image:image><image:image><image:loc>https://tjhavranek.github.io/media/photos/tomas-havranek-talking-2022.jpg</image:loc></image:image><image:image><image:loc>https://tjhavranek.github.io/media/photos/zuzana-irsova-havrankova-2024.jpg</image:loc></image:image><image:image><image:loc>https://tjhavranek.github.io/media/photos/zuzana-irsova-havrankova-portrait-2024.jpg</image:loc></image:image><image:image><image:loc>https://tjhavranek.github.io/media/photos/zuzana-irsova-havrankova-garden-2024.jpg</image:loc></image:image><image:image><image:loc>https://tjhavranek.github.io/media/photos/zuzana-irsova-havrankova-table-2024.jpg</image:loc></image:image><image:image><image:loc>https://tjhavranek.github.io/media/photos/zuzana-irsova-havrankova-interior-2024.jpg</image:loc></image:image><image:image><image:loc>https://tjhavranek.github.io/media/photos/zuzana-irsova-havrankova-portrait-2-2024.jpg</image:loc></image:image><image:image><image:loc>https://tjhavranek.github.io/media/photos/zuzana-irsova-havrankova-event.jpg</image:loc></image:image><image:image><image:loc>https://tjhavranek.github.io/media/photos/zuzana-irsova-havrankova-professorship-karolinum-2025.jpg</image:loc></image:image></url>
   <url><loc>https://meta-analysis.cz/chemnitz/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/chemnitz/slides/</loc><lastmod>2026-10-12</lastmod></url>
-  <url><loc>https://meta-analysis.cz/datasets/</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://meta-analysis.cz/datasets/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://meta-analysis.cz/impact/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/komentare/babis-stamiliardy-cnb-nezavislost/</loc><lastmod>2026-10-15</lastmod></url>
@@ -627,13 +627,13 @@
   <url><loc>https://meta-analysis.cz/notes/voxeu-daylight-saving/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/notes/voxeu-home-ownership/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/notes/voxeu-incentives/</loc><lastmod>2026-10-12</lastmod></url>
-  <url><loc>https://meta-analysis.cz/papers/</loc><lastmod>2026-11-09</lastmod></url>
+  <url><loc>https://meta-analysis.cz/papers/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://meta-analysis.cz/publications/</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://meta-analysis.cz/publications/irsova/</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://meta-analysis.cz/replications/</loc><lastmod>2026-11-05</lastmod></url>
   <url><loc>https://meta-analysis.cz/replications/plaza-florido2021/</loc><lastmod>2026-11-05</lastmod></url>
   <url><loc>https://meta-analysis.cz/replications/tsai2026/</loc><lastmod>2026-11-05</lastmod></url>
-  <url><loc>https://meta-analysis.cz/results/</loc><lastmod>2026-11-09</lastmod></url>
+  <url><loc>https://meta-analysis.cz/results/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://meta-analysis.cz/search/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/teaching/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/teaching/christchurch-2025/</loc><lastmod>2026-10-12</lastmod></url>
@@ -653,16 +653,16 @@
   <url><loc>https://meta-analysis.cz/teaching/osaka-2026/transcript/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/teaching/stockholm-2025/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://meta-analysis.cz/teaching/stockholm-2025/slides/</loc><lastmod>2026-10-12</lastmod></url>
-  <url><loc>https://meta-analysis.cz/api/v1/datasets.json</loc><lastmod>2026-11-09</lastmod></url>
-  <url><loc>https://meta-analysis.cz/api/v1/papers.json</loc><lastmod>2026-11-12</lastmod></url>
-  <url><loc>https://meta-analysis.cz/api/v1/search-index.json</loc><lastmod>2026-11-14</lastmod></url>
-  <url><loc>https://meta-analysis.cz/api/v1/datapackage.json</loc><lastmod>2026-09-25</lastmod></url>
-  <url><loc>https://meta-analysis.cz/api/v1/croissant.json</loc><lastmod>2026-09-25</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/datasets.json</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/papers.json</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/search-index.json</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/datapackage.json</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://meta-analysis.cz/api/v1/croissant.json</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.csv</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://meta-analysis.cz/data/v1/estimates_harmonised.parquet</loc><lastmod>2026-09-25</lastmod></url>
-  <url><loc>https://meta-analysis.cz/estimates.csv</loc><lastmod>2026-11-09</lastmod></url>
-  <url><loc>https://meta-analysis.cz/llms.txt</loc><lastmod>2026-11-09</lastmod></url>
-  <url><loc>https://meta-analysis.cz/llms-full.txt</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://meta-analysis.cz/estimates.csv</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://meta-analysis.cz/llms.txt</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://meta-analysis.cz/llms-full.txt</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/activism.json</loc><lastmod>2026-09-07</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/alphas.json</loc><lastmod>2026-09-04</lastmod></url>
   <url><loc>https://meta-analysis.cz/api/v1/codebooks/armington.json</loc><lastmod>2026-09-07</lastmod></url>
