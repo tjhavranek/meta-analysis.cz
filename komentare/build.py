@@ -381,7 +381,20 @@ def people(raw):
 
 def _inline(t):
     t = html.escape(t, quote=False)
-    t = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2">\1</a>', t)
+
+    def link(m):
+        label, url = m.groups()
+        url = html.unescape(url)
+        # A link that would run script or embed data stays plain text; relative, mailto
+        # and tel links pass. Browsers ignore control characters and spaces in a scheme.
+        scheme = re.sub(r"[\x00-\x20]", "", url).lower()
+        if re.match(r"(javascript|vbscript|data):", scheme):
+            return label
+        # Keep the URL out of the emphasis and code passes below.
+        href = esc(url).replace("*", "&#42;").replace("`", "&#96;")
+        return f'<a href="{href}">{label}</a>'
+
+    t = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", link, t)
     t = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", t)
     # An opening "*" must not be followed by whitespace — CommonMark's left-flanking
     # rule. Without it, a literal asterisk that belongs to the text opened an emphasis
@@ -616,6 +629,9 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
         "Zuzana Irsova."
         "</p><p class=\"about-bio\">"
         "Tato stránka archivuje jejich publicistiku — komentáře, sloupky a rozhovory.")
+    # Keep HTML script delimiters out of the serialized JSON.
+    jsonld_text = (json.dumps(jsonld, indent=1, ensure_ascii=False)
+                   .replace("<", r"\u003c").replace(">", r"\u003e").replace("&", r"\u0026"))
     return f"""<!DOCTYPE html>
 <html lang="{lang}">
 <head>
@@ -632,7 +648,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
 <meta property="og:description" content="{esc(desc)}" />
 <meta property="og:url" content="{canonical_link or canonical}" />
 {extra_head}<script type="application/ld+json">
-{json.dumps(jsonld, indent=1, ensure_ascii=False)}
+{jsonld_text}
 </script>
 <script>document.documentElement.className+=" has-js";</script>
 </head>
