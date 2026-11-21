@@ -14,7 +14,7 @@ Tento soubor obsahuje text všech položek, u nichž archiv text drží (247 z c
 
 Zdroj: https://meta-analysis.cz/komentare/litomysl-proc-vsechny-ctyri-deti-na-gymnazium/
 
-*(vyjde v listopadové Lilii; přednáška o umělé inteligenci proběhne 19. 11. 2026 ve 14:00)*
+*(Kratší verze vyšla v listopadové Lilii.)*
 
 Všechny čtyři naše děti chtějí na [Gymnázium Aloise Jiráska v Litomyšli](https://www.glit.cz/). Dan už chodí do sekundy (sedmé třídy), se dvěma dalšími se na jaře chystáme na přijímačky. Proč to dává smysl mně, manželce Zuzaně i dětem? Jasně, gympl není pro každého a ne každý na něj chce hned po páté třídě (starší dcera se rozhodla na základce zůstat a hlásí se až na čtyřletý program), ale třeba bude pro někoho vysvětlení užitečné.
 
@@ -32,13 +32,13 @@ Mně samotnému gymnázium kdysi hodně dalo a i díky němu mám dobrý živo
 
 Na univerzitu k nám do Prahy jezdí kolegové z Japonska, Ameriky i Evropy a občas je vezmu do Litomyšle, kde jim s hrdostí ukazuji město. Mohu je zvát na přednášky pro studenty, čemuž pomůže i fakt, že máme možná nejhezčí gymnaziální budovu v republice a velmi příjemné prostředí. Jednou se pokusím ulovit nositele Nobelovy ceny nebo profesora ze Stanfordu.
 
-Profesně se teď věnuji využití agentů umělé inteligence ve výzkumu a často jezdím do Silicon Valley, kde se tyto systémy vyvíjejí. Nabízím občasné praktické semináře (a výhledově třeba kroužek) o tom, jak AI agenty používat naplno a nenechat se jimi „oblbnout“. Začnu přednáškou 19. listopadu.
+Profesně se teď věnuji využití agentů umělé inteligence ve výzkumu a často jezdím do Silicon Valley, kde se tyto systémy vyvíjejí. Nabízím občasné praktické semináře (a výhledově třeba kroužek) o tom, jak AI agenty používat naplno a nenechat se jimi „oblbnout“. Začal jsem přednáškou 19. listopadu.
 
 Do budoucna také mohu pomoci se spoluprací s Univerzitou Karlovou: exkurze, přednášky, kontakty na lidi z oborů, které studenty zajímají. Bude-li škola hledat nové učitele, mohu zprostředkovat kontakty na vedení pedagogických fakult. S volbou vysoké školy a kariéry, hlavně na Univerzitě Karlově a v zahraničí, v rozumné míře rád poradím studentům i jejich rodičům.
 
 Studentům chci ukazovat, co všechno se dá v různých oborech dokázat, že život je skvělý a dnešní možnosti jsou neomezené, že nemá smysl hroutit se z problémů celého světa, že se vyplatí mít ambice a makat, snažit se být nejlepší (i když ne vždy se to povede). Sám jsem z Litomyšle odešel studovat do Prahy a pracovat do světa. S rodinou jsme se vrátili, aby tu děti mohly chodit do školy, a to konkrétně kvůli ZŠ Zámecká a gymnáziu.
 
-Přednáška „Umělá inteligence za mě udělá většinu práce. Mám se bát o místo?“ proběhne ve čtvrtek 19. listopadu 2026 ve 14:00 na gymnáziu. Budu mluvit i o tom, co dnes stojí za to studovat; bude čas na dotazy. Je určená hlavně studentům, ale přijít mohou i páťáci a deváťáci s rodiči.
+Přednáška „Umělá inteligence za mě udělá většinu práce. Mám se bát o místo?“ proběhla ve čtvrtek 19. listopadu 2026 na gymnáziu a její [záznam](#zaznam-prednasky) je nahoře. Mluvil jsem v ní i o tom, co dnes stojí za to studovat.
 
 Pro zájemce o osmileté i čtyřleté studium jsou dny otevřených dveří v pátek 27. listopadu a ve středu 20. ledna. Je však potřeba se na ně předem [zaregistrovat](https://www.glit.cz/pro-uchazece/#den-otevrenych-dveri).
 

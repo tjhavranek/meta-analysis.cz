@@ -962,8 +962,9 @@ def _play_at(a, key):
 
 def _play_label(a, secs, en):
     # the badge is for the eye; a screen reader hears the same exact length in words
-    return (f'Play the video ({yt_spoken(secs, en)}): {a["headline"]}' if en else
-            f'Přehrát video ({yt_spoken(secs, en)}): {a["headline"]}')
+    vt = a.get("youtube_title") or a["headline"]
+    return (f'Play the video ({yt_spoken(secs, en)}): {vt}' if en else
+            f'Přehrát video ({yt_spoken(secs, en)}): {vt}')
 
 
 def yt_facade(a, en=False, eager=False):
@@ -976,11 +977,12 @@ def yt_facade(a, en=False, eager=False):
     if not (a.get("youtube_seconds", "").isdigit() and a.get("youtube_upload")):
         sys.exit(f'{a["file"]}: youtube: needs youtube_seconds and youtube_upload')
     secs = int(a["youtube_seconds"])
+    vt = a.get("youtube_title") or a["headline"]
     label = _play_label(a, secs, en)
     x, y = _play_at(a, "youtube_play_at")
     embed = f"https://www.youtube-nocookie.com/embed/{yid}"
     inner = (f'<!doctype html><html lang="{"en" if en else "cs"}">'
-             f'<title>{esc(a["headline"])}</title><style>{YT_SRCDOC_CSS}</style>'
+             f'<title>{esc(vt)}</title><style>{YT_SRCDOC_CSS}</style>'
              f'<a href="{esc(embed + "?autoplay=1&rel=0")}" '
              f'referrerpolicy="strict-origin-when-cross-origin" aria-label="{esc(label)}">'
              f'<img src="{PATH}/item-img/{poster.name}" alt="">'
@@ -988,7 +990,7 @@ def yt_facade(a, en=False, eager=False):
              f'<span class="d" aria-hidden="true">{yt_dur(secs)}</span></a>')
     lazy = "" if eager else ' loading="lazy"'
     return (f'<iframe class="yt" src="{embed}" srcdoc="{esc(inner)}" '
-            f'title="{esc("Video: " + a["headline"])}" '
+            f'title="{esc("Video: " + vt)}" '
             f'allow="{YT_ALLOW}" allowfullscreen '
             f'referrerpolicy="strict-origin-when-cross-origin"{lazy}></iframe>')
 
@@ -1489,12 +1491,23 @@ def write_item(a):
               f'{"Speech from" if en else "Projev od"} {yt_dur(int(a["video_start"]))} · ')
         player = (f'      <div class="yt-item">{facade}<p class="yt-alt">{at}'
                   f'<a href="{esc(out)}" rel="external">{out_label}</a></p></div>\n')
+        # A text that is not itself the recording but carries one at its head (an article
+        # with the video of a later talk): `youtube_heading` and `youtube_lead` set the player
+        # apart from the text below it, and `youtube_anchor` lets the text link to it.
+        if a.get("youtube_heading"):
+            _anchor = a.get("youtube_anchor", "video")
+            _lead = (f'        <p>{_inline(a["youtube_lead"])}</p>\n'
+                     if a.get("youtube_lead") else "")
+            player = (f'      <section class="video-top" id="{esc(_anchor)}">\n'
+                      f'        <h2>{esc(a["youtube_heading"])}</h2>\n{_lead}'
+                      f'  {player}      </section>\n      <hr class="video-rule" />\n')
         # The recording is what this page is about, so the graph says so: a VideoObject with
         # its exact length and upload time, and the embeddable player or the file itself. A
         # file uploaded long after the recording also says when the recording went out.
         _s = int(a["youtube_seconds" if yt else "video_seconds"])
         _h, _r = divmod(_s, 3600)
-        node["video"] = {"@type": "VideoObject", "name": a["headline"], "description": desc,
+        node["video"] = {"@type": "VideoObject", "name": a.get("youtube_title") or a["headline"],
+                         "description": a.get("youtube_description") or desc,
                          "thumbnailUrl": poster_url,
                          "uploadDate": a["youtube_upload" if yt else "video_upload"],
                          "duration": f"PT{_h}H{_r // 60}M{_r % 60}S" if _h else
@@ -1503,7 +1516,9 @@ def write_item(a):
                              "url": yt_watch(a)} if yt else
                             {"contentUrl": a["video_file"], "datePublished": a["date"],
                              **({"url": a["video_url"]} if a.get("video_url") else {})}),
-                         "inLanguage": lang}
+                         "inLanguage": lang,
+                         **({"creator": node["author"]} if a.get("youtube_title")
+                            and node.get("author") else {})}
     elif out_poster(a):
         player = f'      <div class="yt-item">{out_card(a, en)}</div>\n'
         poster_url = f"{SITE}{PATH}/item-img/{a['slug']}-poster.jpg"

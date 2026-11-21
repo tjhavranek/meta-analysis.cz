@@ -2,10 +2,10 @@
 category: "litomysl"
 outlet: "meta-analysis.cz"
 date: "2026-10-01"
-updated: "2026-10-03"
+updated: "2026-11-21"
 headline: "Proč chceme mít všechny čtyři děti na litomyšlském gymnáziu"
 byline: "Tomáš Havránek"
-word_count: "1237"
+word_count: "1218"
 title_tag: "Proč chceme mít všechny čtyři děti na Gymnáziu Aloise Jiráska v Litomyšli"
 description: "Zkušenost rodiče a absolventa: fakta o Gymnáziu Aloise Jiráska v Litomyšli, přijímačky 2027, dny otevřených dveří."
 og_image: "2026-10-01_litomysl-gymnazium-foto.jpg"
@@ -14,12 +14,21 @@ og_image_creator: "Tadeáš Bednarz"
 og_image_credit: "Foto: Tadeáš Bednarz, Wikimedia Commons, CC BY-SA 4.0 (oříznuto)"
 og_image_license: "https://creativecommons.org/licenses/by-sa/4.0/"
 og_image_source: "https://commons.wikimedia.org/wiki/File:Litomy%C5%A1l,_Gymn%C3%A1zium_Aloise_Jir%C3%A1ska_%282019%29_03.jpg"
-llms_summary: "Komentář Tomáše Havránka (1. 10. 2026, aktualizováno 3. 10. 2026) o Gymnáziu Aloise Jiráska v Litomyšli (glit.cz) z pohledu rodiče a absolventa; fakta se zdroji: přijímačky 2026 (83 uchazečů na 30 míst v primě, 107 na 30 míst v prvním ročníku), maturita 2026 (42 % maturantů školy volilo matematiku, o čtvrtinu víc než na gymnáziích v ČR), úspěšnost přijetí na VŠ 100 % (2024) a 95 % (2025) podle výročních zpráv, dny otevřených dveří 27. 11. 2026 a 20. 1. 2027, přihlášky od 1. do 22. 2. 2027."
+youtube: "ddieq949l2Y"
+youtube_seconds: "2817"
+youtube_upload: "2026-11-21T13:57:04+01:00"
+youtube_play_at: "11% 86%"
+youtube_title: "AI za mě udělá většinu práce. Mám se bát o místo? | Tomáš Havránek"
+youtube_description: "Přednáška pro studenty Gymnázia Aloise Jiráska v Litomyšli z 19. listopadu 2026."
+youtube_heading: "Záznam přednášky o umělé inteligenci (19. 11. 2026)"
+youtube_lead: "Přednáška pro studenty litomyšlského gymnázia: „Umělá inteligence za mě udělá většinu práce. Mám se bát o místo?“ Video má české a anglické titulky, kapitoly a zdroje jsou v popisu na YouTube."
+youtube_anchor: "zaznam-prednasky"
+llms_summary: "Komentář Tomáše Havránka (1. 10. 2026, aktualizováno 21. 11. 2026) o Gymnáziu Aloise Jiráska v Litomyšli (glit.cz) z pohledu rodiče a absolventa; nahoře záznam jeho přednášky pro studenty školy o umělé inteligenci z 19. 11. 2026 (YouTube, české a anglické titulky); fakta se zdroji: přijímačky 2026 (83 uchazečů na 30 míst v primě, 107 na 30 míst v prvním ročníku), maturita 2026 (42 % maturantů školy volilo matematiku, o čtvrtinu víc než na gymnáziích v ČR), úspěšnost přijetí na VŠ 100 % (2024) a 95 % (2025) podle výročních zpráv, dny otevřených dveří 27. 11. 2026 a 20. 1. 2027, přihlášky od 1. do 22. 2. 2027."
 ---
 
 # Proč chceme mít všechny čtyři děti na litomyšlském gymnáziu
 
-*(vyjde v listopadové Lilii; přednáška o umělé inteligenci proběhne 19. 11. 2026 ve 14:00)*
+*(Kratší verze vyšla v listopadové Lilii.)*
 
 Všechny čtyři naše děti chtějí na [Gymnázium Aloise Jiráska v Litomyšli](https://www.glit.cz/). Dan už chodí do sekundy (sedmé třídy), se dvěma dalšími se na jaře chystáme na přijímačky. Proč to dává smysl mně, manželce Zuzaně i dětem? Jasně, gympl není pro každého a ne každý na něj chce hned po páté třídě (starší dcera se rozhodla na základce zůstat a hlásí se až na čtyřletý program), ale třeba bude pro někoho vysvětlení užitečné.
 
@@ -37,13 +46,13 @@ Mně samotnému gymnázium kdysi hodně dalo a i díky němu mám dobrý živo
 
 Na univerzitu k nám do Prahy jezdí kolegové z Japonska, Ameriky i Evropy a občas je vezmu do Litomyšle, kde jim s hrdostí ukazuji město. Mohu je zvát na přednášky pro studenty, čemuž pomůže i fakt, že máme možná nejhezčí gymnaziální budovu v republice a velmi příjemné prostředí. Jednou se pokusím ulovit nositele Nobelovy ceny nebo profesora ze Stanfordu.
 
-Profesně se teď věnuji využití agentů umělé inteligence ve výzkumu a často jezdím do Silicon Valley, kde se tyto systémy vyvíjejí. Nabízím občasné praktické semináře (a výhledově třeba kroužek) o tom, jak AI agenty používat naplno a nenechat se jimi „oblbnout“. Začnu přednáškou 19. listopadu.
+Profesně se teď věnuji využití agentů umělé inteligence ve výzkumu a často jezdím do Silicon Valley, kde se tyto systémy vyvíjejí. Nabízím občasné praktické semináře (a výhledově třeba kroužek) o tom, jak AI agenty používat naplno a nenechat se jimi „oblbnout“. Začal jsem přednáškou 19. listopadu.
 
 Do budoucna také mohu pomoci se spoluprací s Univerzitou Karlovou: exkurze, přednášky, kontakty na lidi z oborů, které studenty zajímají. Bude-li škola hledat nové učitele, mohu zprostředkovat kontakty na vedení pedagogických fakult. S volbou vysoké školy a kariéry, hlavně na Univerzitě Karlově a v zahraničí, v rozumné míře rád poradím studentům i jejich rodičům.
 
 Studentům chci ukazovat, co všechno se dá v různých oborech dokázat, že život je skvělý a dnešní možnosti jsou neomezené, že nemá smysl hroutit se z problémů celého světa, že se vyplatí mít ambice a makat, snažit se být nejlepší (i když ne vždy se to povede). Sám jsem z Litomyšle odešel studovat do Prahy a pracovat do světa. S rodinou jsme se vrátili, aby tu děti mohly chodit do školy, a to konkrétně kvůli ZŠ Zámecká a gymnáziu.
 
-Přednáška „Umělá inteligence za mě udělá většinu práce. Mám se bát o místo?“ proběhne ve čtvrtek 19. listopadu 2026 ve 14:00 na gymnáziu. Budu mluvit i o tom, co dnes stojí za to studovat; bude čas na dotazy. Je určená hlavně studentům, ale přijít mohou i páťáci a deváťáci s rodiči.
+Přednáška „Umělá inteligence za mě udělá většinu práce. Mám se bát o místo?“ proběhla ve čtvrtek 19. listopadu 2026 na gymnáziu a její [záznam](#zaznam-prednasky) je nahoře. Mluvil jsem v ní i o tom, co dnes stojí za to studovat.
 
 Pro zájemce o osmileté i čtyřleté studium jsou dny otevřených dveří v pátek 27. listopadu a ve středu 20. ledna. Je však potřeba se na ně předem [zaregistrovat](https://www.glit.cz/pro-uchazece/#den-otevrenych-dveri).
 

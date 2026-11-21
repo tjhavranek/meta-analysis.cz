@@ -425,3 +425,11 @@ iframe.yt { min-height: 200px; }
                     column-gap: 2.5rem; align-items: start; }
   .hub-video { margin: 0.4rem 0 0; width: 100%; max-width: 23rem; justify-self: end; }
 }
+
+/* A recording at the head of a text that is not itself the recording (youtube_heading in
+   build.py): its own heading and one sentence, then the player, then a rule before the text. */
+.video-top { max-width: var(--measure); }
+.video-top h2 { font-size: 1.3rem; line-height: 1.3; margin: 0 0 0.5em; }
+.video-top p { margin: 0 0 1em; }
+.video-rule { border: 0; border-top: 1px solid var(--rule); margin: 0 0 2rem;
+              max-width: var(--measure); }
