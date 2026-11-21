@@ -2,13 +2,13 @@
  "name": "Komentáře — Tomáš Havránek, Zuzana Havránková",
  "url": "https://meta-analysis.cz/komentare/data/",
  "license": "https://creativecommons.org/licenses/by/4.0/",
- "newest_record": "2026-11-12",
- "temporal_coverage": "2009-08-18/2026-11-12",
+ "newest_record": "2026-11-21",
+ "temporal_coverage": "2009-08-18/2026-11-21",
  "records": {
-  "total": 276,
+  "total": 277,
   "by_text_status": {
    "published_full_text": 217,
-   "machine_transcript": 21,
+   "machine_transcript": 22,
    "correspondence": 9,
    "author_manuscript": 23,
    "unpublished_manuscript": 2,
@@ -18,7 +18,7 @@
   },
   "by_section": {
    "Celostátní komentáře": 93,
-   "Litomyšlské sloupky": 66,
+   "Litomyšlské sloupky": 67,
    "Rozhovory": 54,
    "In English": 35,
    "Posts (ze sítí)": 28
@@ -29,7 +29,7 @@
   "author_manuscript": "the author's own version, as sent to the outlet",
   "publisher_excerpt": "only the outlet's free teaser; the original is paywalled",
   "link_only": "audio or video; no text is stored, the record links to the source",
-  "machine_transcript": "audio or video; the text is a machine transcript of it, checked against the recording and lightly tidied into standard Czech (fillers and false starts removed; numbers, negations and hedges unchanged), so it is still speech",
+  "machine_transcript": "audio or video. The archive transcribes the recording or works from its captions. Editing normally preserves numbers, negations and hedges. An item note can identify an author-approved edited version",
   "publisher_transcript": "audio or video; the text is the transcript the broadcaster itself published, with the speakers as it named them",
   "correspondence": "a letter or memo the author sent — to a public body, to colleagues, to students — never published anywhere. The date is the day it was sent, and is exact",
   "unpublished_manuscript": "written for the outlet and submitted, but never printed; the date is the issue it was written for, not a publication date"
@@ -45,28 +45,28 @@
  "files": {
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
-   "bytes": 2419673,
-   "sha256": "652694905db1e3308249f3783360de54a5e381996913c585aabb29c8e8ab56c9"
+   "bytes": 2454966,
+   "sha256": "caf877ff1bfc0e6f0f71410e22cfbbc2be431de2b3f2bf2aac5c8d6898cc0e9f"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
-   "bytes": 2442801,
-   "sha256": "d2197d554dd8030e9f92d3d2553a9d1f6ca4d22e8fd416331eda92e30adefd1a"
+   "bytes": 2478167,
+   "sha256": "5569a033344a6b66a207d633bb5c9e95865ce148785a352c65907cdf91f63760"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
-   "bytes": 2179675,
-   "sha256": "96e1bcc75e70f97eb0fd62b0cfc9c4804010776eb825729135c9376e5e542253"
+   "bytes": 2213880,
+   "sha256": "f486708d939c820d495d0d549cc92bb1f5334a8e7b5ee3fed66bf02bb86ef8cf"
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
-   "bytes": 55220,
-   "sha256": "39542c12401b8dbfc33aca4e677eb049dd6521f118f43fbeaf2f63173f01d238"
+   "bytes": 55886,
+   "sha256": "517ca98b01fee63fa50e27d13ac26936c9a1322247cdfc1a0ae44d07cefeeba5"
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",
-   "bytes": 2385408,
-   "sha256": "7aed81c0e819115aa2652068b8c6a944b2f4fff09dfef35094f1009255ec658d"
+   "bytes": 2421541,
+   "sha256": "d765cbc88e47ff8c0c9f294ae4167ac1293bae9e39f4006d0dcef6a50b686112"
   }
  },
  "generated_from": [

@@ -1213,6 +1213,7 @@ def write_item(a):
     # A speech was delivered to a room, not filed to a newspaper. OpinionNewsArticle
     # would present a ceremonial address as an opinion column.
     is_speech = a.get("genre") == "speech"
+    is_speech_transcript = is_speech and a["media"] in MEDIA_LABEL
 
     node = {
         "@type": ("Article" if (is_iv or is_pr or unpub or is_report or is_speech)
@@ -1272,6 +1273,9 @@ def write_item(a):
         # The translation is this archive's work; the outlet published the original
         # and is named as its publisher inside translationOfWork above. Leaving this
         # empty stated the negative but never the positive.
+        node["publisher"] = {"@type": "Organization", "name": "meta-analysis.cz",
+                             "url": SITE + "/"}
+    elif is_speech_transcript:
         node["publisher"] = {"@type": "Organization", "name": "meta-analysis.cz",
                              "url": SITE + "/"}
     else:
@@ -1392,6 +1396,13 @@ def write_item(a):
                    f'{cs_date(a["date"], a.get("date_precision"), lang)} '
                    f'{where}; datum je tedy zamýšlené, nikoli datum otištění. ')
                   + f'{esc(a["unpublished"])}')
+    elif is_speech_transcript:
+        date = cs_date(a["date"], a.get("date_precision"), lang)
+        prov = ((f'Delivered on {date}. Venue: {esc(a["outlet"])}.' if en
+                 else f'Předneseno {date}. Místo konání: {esc(a["outlet"])}.')
+                + (f' <a href="{esc(a["url"])}" rel="external">'
+                   f'{esc(a.get("url_label", "Recording" if en else "Záznam"))}</a>.'
+                   if a.get("url") else ""))
     else:
         where = OUTLET_IN.get(a["outlet"], f'v médiu {a["outlet"]}')
         # An outlet named with an apposition ("v Lilii, měsíčníku města Litomyšle")
@@ -2380,7 +2391,9 @@ def write_machine_readable(items, social=()):
             "author_manuscript": "the author's own version, as sent to the outlet",
             "publisher_excerpt": "only the outlet's free teaser; the original is paywalled",
             "link_only": "audio or video; no text is stored, the record links to the source",
-            "machine_transcript": "audio or video; the text is a machine transcript of it, checked against the recording and lightly tidied into standard Czech (fillers and false starts removed; numbers, negations and hedges unchanged), so it is still speech",
+            "machine_transcript": "audio or video. The archive transcribes the recording or works from its captions. "
+                                  "Editing normally preserves numbers, negations and hedges. An item note can identify "
+                                  "an author-approved edited version",
             "publisher_transcript": "audio or video; the text is the transcript the broadcaster itself published, with the speakers as it named them",
             "correspondence": "a letter or memo the author sent — to a public body, to "
                                   "colleagues, to students — never published anywhere. The date "
