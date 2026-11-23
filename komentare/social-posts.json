@@ -697,5 +697,35 @@
   "slug": "2026-11-12-what-is-the-optimal-inflation-rate",
   "anchor": "2026-11-12",
   "text": "What is the optimal inflation rate? We have pre-printed a meta-analysis summarizing 777 estimates from 116 studies that try to provide an answer.\n\nOur best guess is that this literature is consistent with optimal inflation of about 0.6%. This might have come as a disappointment to some of my co-authors, but for different reasons. One of them has spent a lot of time arguing for zero inflation on average. Another spent many years as a central banker defending the standard 2% target. Well, you can't make everyone happy!\n\nThe estimates differ a lot, and we show which modelling choices drive the differences.\n\nThis is our first meta-analysis where we really used AI a lot for data collection, although of course the AI workflow there already feels like pre-history. The prompts are public if you want to see how it was done.\n\nDisclaimer: most of these optimal inflation estimates are not estimates in the classical sense but come from calibrated models, so publication bias corrections and other meta-analysis approaches are a bit tricky here.\n\nMeasurement error matters too: official inflation can overstate true inflation (it doesn't fully capture better quality and new products) or understate it (the cost of owning a home is often only partly captured or left out). Depending on how big the net bias is and how you read the models, the gap between 0.6% and 2% can shrink, grow, or even flip. We discuss this in the paper but perhaps that's a good topic for another meta-analysis.\n\nJoint work with amazing co-authors Matej Opatrny, Martin Opatrný, Tomas Havranek, and Mojmír Hampl.\n\nLinks in the first comment."
+ },
+ {
+  "date": "2026-11-23",
+  "datetime": "2026-11-23 13:32:13",
+  "url": "https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7530609152281460736",
+  "reshare_with_comment": false,
+  "lang": "cs",
+  "images": [
+   "2026-11-23_ai-prednaska.jpg"
+  ],
+  "image_size": [
+   [
+    960,
+    540
+   ]
+  ],
+  "image_alt": [
+   "Náhled videa: usměvavý Tomáš Havránek v brýlích a saku na tyrkysovém pozadí. Vedle něj je velký nápis „AI vám práci nesebere“."
+  ],
+  "reshare_of": {
+   "label": "Odkaz z příspěvku vede na záznam přednášky",
+   "url": "https://www.youtube.com/watch?v=ddieq949l2Y",
+   "url_label": "AI za mě udělá většinu práce. Mám se bát o místo? | Tomáš Havránek (YouTube)"
+  },
+  "slug": "2026-11-23-prednaska-o-ai-na-litomyslskem-gymnaziu",
+  "link_map": {
+   "https://lnkd.in/d-S9FH8b": "https://www.youtube.com/watch?v=ddieq949l2Y"
+  },
+  "anchor": "2026-11-23",
+  "text": "Tomáš měl na litomyšlském gymnáziu přednášku o tom, jestli umělá inteligence vezme mladým lidem práci a co se teď vyplatí studovat. Záznam má české i anglické titulky.\nhttps://lnkd.in/d-S9FH8b"
  }
 ]
