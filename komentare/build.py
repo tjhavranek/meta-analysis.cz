@@ -1327,6 +1327,11 @@ def write_item(a):
 
     meta = [f'<span>{esc(cs_date(a["date"], a.get("date_precision"), lang))}</span>',
             f'<span>{esc(a["outlet"])}</span>']
+    # A revised text keeps its publication date (other pages and the AI assistant cite it by
+    # that date) and says beside it when it was last updated.
+    if a.get("updated") and a["updated"] != a["date"]:
+        meta.insert(1, f'<span>{"updated" if lang == "en" else "aktualizováno"} '
+                       f'{esc(cs_date(a["updated"], lang=lang))}</span>')
     if a.get("issue"):
         meta.append(f'<span>č.&nbsp;{esc(a["issue"])}</span>')
     meta.append("<span>" + esc(", ".join(names)) + "</span>")

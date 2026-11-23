@@ -74,6 +74,11 @@ and `python tools/preflight.py` runs the same gates locally.
   and do not propose this again (owner, 7 Oct 2026, after a review by Fable and astra: collapsing
   saves no scrolling, hides the size of the record, and adds a state that search, the chips,
   `?filtr=` and Ctrl+F must all handle). A line of year jump links was also considered and declined.
+- **Commentary dates:** never change `date:` of an existing komentare item, even when the owner
+  asks for "today's date" after a revision. Record the revision in `updated:`; the item page then
+  shows "aktualizováno <date>" beside the publication date. Reason: other pages and the AI
+  assistant (tjhavranek/ai-tomas) cite items by publication date, and its daily deploy test fails
+  when a cited date no longer matches the page (owner, 23 Nov 2026, after it broke once).
 - **Ranks and citations (CI: tools/update_metrics.py --check):** the RePEc sentence on /about/
   and the citation counts on /about/ and /impact/ sit between `<!-- metrics:… -->` sentinels and
   are rendered from `tools/site_metrics.json`. The monthly job in the private repo
