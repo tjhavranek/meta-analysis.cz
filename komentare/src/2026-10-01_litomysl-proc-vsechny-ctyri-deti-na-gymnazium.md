@@ -1,7 +1,8 @@
 ---
 category: "litomysl"
 outlet: "meta-analysis.cz"
-date: "2026-11-21"
+date: "2026-10-01"
+updated: "2026-11-21"
 headline: "Proč chceme mít všechny čtyři děti na litomyšlském gymnáziu"
 byline: "Tomáš Havránek"
 word_count: "1218"
@@ -22,7 +23,7 @@ youtube_description: "Přednáška pro studenty Gymnázia Aloise Jiráska v Lito
 youtube_heading: "Záznam přednášky o umělé inteligenci (19. 11. 2026)"
 youtube_lead: "Přednáška pro studenty litomyšlského gymnázia: „Umělá inteligence za mě udělá většinu práce. Mám se bát o místo?“ Video má české a anglické titulky, kapitoly a zdroje jsou v popisu na YouTube. Celý [český přepis přednášky](/komentare/litomysl-ai-za-me-udela-vetsinu-prace/) je na samostatné stránce."
 youtube_anchor: "zaznam-prednasky"
-llms_summary: "Komentář Tomáše Havránka (21. 11. 2026) o Gymnáziu Aloise Jiráska v Litomyšli (glit.cz) z pohledu rodiče a absolventa; nahoře záznam jeho přednášky pro studenty školy o umělé inteligenci z 19. 11. 2026 (YouTube, české a anglické titulky); fakta se zdroji: přijímačky 2026 (83 uchazečů na 30 míst v primě, 107 na 30 míst v prvním ročníku), maturita 2026 (42 % maturantů školy volilo matematiku, o čtvrtinu víc než na gymnáziích v ČR), úspěšnost přijetí na VŠ 100 % (2024) a 95 % (2025) podle výročních zpráv, dny otevřených dveří 27. 11. 2026 a 20. 1. 2027, přihlášky od 1. do 22. 2. 2027."
+llms_summary: "Komentář Tomáše Havránka (1. 10. 2026, aktualizováno 21. 11. 2026) o Gymnáziu Aloise Jiráska v Litomyšli (glit.cz) z pohledu rodiče a absolventa; nahoře záznam jeho přednášky pro studenty školy o umělé inteligenci z 19. 11. 2026 (YouTube, české a anglické titulky); fakta se zdroji: přijímačky 2026 (83 uchazečů na 30 míst v primě, 107 na 30 míst v prvním ročníku), maturita 2026 (42 % maturantů školy volilo matematiku, o čtvrtinu víc než na gymnáziích v ČR), úspěšnost přijetí na VŠ 100 % (2024) a 95 % (2025) podle výročních zpráv, dny otevřených dveří 27. 11. 2026 a 20. 1. 2027, přihlášky od 1. do 22. 2. 2027."
 ---
 
 # Proč chceme mít všechny čtyři děti na litomyšlském gymnáziu
