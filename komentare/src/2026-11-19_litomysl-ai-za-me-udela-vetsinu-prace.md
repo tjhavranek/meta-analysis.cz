@@ -1,5 +1,5 @@
 ---
-category: "litomysl"
+category: "celostatni"
 genre: "speech"
 media: "video"
 outlet: "Gymnázium Aloise Jiráska, Litomyšl"

@@ -1,5 +1,5 @@
 ---
-category: "litomysl"
+category: "rozhovory"
 media: "audio"
 outlet: "GLITCAST, 5. díl"
 url: "https://www.youtube.com/watch?v=Q_aPtoq1P0Q"
