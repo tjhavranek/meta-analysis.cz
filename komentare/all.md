@@ -262,7 +262,7 @@ Zdroj: https://www.youtube.com/watch?v=Q_aPtoq1P0Q
 
 ## Co dá studentovi Erasmus
 
-**Moderátor:** Vítejte u dnešního Glitcastu. Sedí tu s námi Tomáš Havránek, český ekonom, profesor Univerzity Karlovy, bývalý poradce viceguvernéra České národní banky, absolvent našeho gymnázia a aktivní otec čtyř dětí.
+**Moderátor:** Vítejte u dnešního Glitcastu. Sedí tu s námi Tomáš Havránek, český ekonom, profesor Univerzity Karlovy, bývalý poradce bankovní rady České národní banky, absolvent našeho gymnázia a aktivní otec čtyř dětí.
 
 **Moderátorka:** Budeme mluvit o studiu v zahraničí, ekonomických dezinformacích a o tom, jak se podle vás mění školství. Pane Havránku, vítejte. Chtěl byste o sobě ještě něco doplnit?
 
@@ -274,7 +274,7 @@ Zdroj: https://www.youtube.com/watch?v=Q_aPtoq1P0Q
 
 A druhá největší výhoda? Zjistíte, že se jako člověk z Česka nemáte moc za co stydět. Možná se divíte, proč to říkám. Vyrůstal jsem v devadesátých letech. Ta doba utvářela moje dětství a asi i dospívání. Bylo krátce po revoluci, právě jsme se vymanili z komunismu a byli jsme výrazně chudší než země na západ a na jih od nás, třeba Rakousko. Člověk měl trochu pocit méněcennosti. Říkal si, že tam jsou lidé bohatší, lepší, vzdělanější. Když v zahraničí nějakou dobu žijete, vidíte, že to tak úplně být nemusí.
 
-Asi to zčásti platí dodnes. Učím hlavně v Praze, ale i v jiných zemích, a vidím, že si naši studenti pořád příliš málo věří. Nevím, čím to je. Možná to souvisí s tím, jak se u nás tradičně učí na středních školách. K tomu se ještě dostaneme. Pobyt v zahraničí vám dá hodně, ale možná nejdůležitější je právě ta sebedůvěra.
+Asi to zčásti platí dodnes. Učím hlavně v Praze, ale i v jiných zemích, a vidím, že si naši studenti pořád příliš málo věří. Nevím, čím to je. Možná to souvisí s naší historií i se vzděláváním, třeba s tím, jak se u nás tradičně učí na středních školách. K tomu se ještě dostaneme. Pobyt v zahraničí vám dá hodně, ale možná nejdůležitější je právě ta sebedůvěra.
 
 **Moderátorka:** Bylo tehdy těžké dostat se na Erasmus? Dnes to docela náročné je. Když se student moc nesnaží, má malou šanci.
 
@@ -314,7 +314,7 @@ Byla to dlouhá a složitá cesta. Neplánoval jsem si ji. Náhoda hraje v živo
 
 **Moderátorka:** Naše generace získává spoustu informací ze sociálních sítí. Jak vnímáte tu záplavu zpráv, která se na nás každý den valí?
 
-**Tomáš Havránek:** Sociální sítě nečtu, což je možná někdy chyba. Vy dva si zjevně umíte dobře přebrat, co tam čtete. Je to ale těžká doba. Když mi bylo tolik co vám, internet už existoval, ale to množství informací se nedá srovnat. A jak snadné je dnes vzít do ruky mobil, projíždět krátká videa nebo si prohlížet fotky na Instagramu. U vlastních dětí s tím zápasím. Nechci jim to zakazovat, ale když to člověk dělá příliš často, opravdu mu to ničí mozek.
+**Tomáš Havránek:** Sociální sítě nečtu, což je možná někdy chyba. Vy dva si zjevně umíte dobře přebrat, co tam čtete. Je to ale těžká doba. Když mi bylo tolik co vám, internet už existoval, ale to množství informací se nedá srovnat. A jak snadné je dnes vzít do ruky mobil, projíždět krátká videa nebo si prohlížet fotky na Instagramu. U vlastních dětí s tím zápasím. Chci, aby v tom měly rozumnou rovnováhu. Nechci jim to zakazovat, ale když to člověk dělá příliš často, opravdu mu to ničí mozek.
 
 Když se mě někdo ve vašem věku zeptá, co má dělat, říkám mu, že nejlepší je číst dobré knížky. Za ty tisíce let jich vznikla spousta. Nemusí to být jen literatura faktu. Klidně dobrá beletrie nebo dějiny umění. Z knížek nejlíp pochopíte svět v souvislostech a snáz pak poznáte, že něco asi není pravda. Na rozpoznávání dezinformací jednoduchý recept není. Můžete absolvovat sto kurzů a v tomhle vám budou k ničemu. Když čtete věci, které obstály i po stovkách let, jste vůči dezinformacím odolnější. A snažte se nechodit na TikTok ani na Instagram. Nic vám to nedá.
 
@@ -354,7 +354,7 @@ Anglicky se jmenuje *How to Win Friends and Influence People* a vyšla i česky.
 
 V ekonomii jako v každém jiném oboru na vysoké škole potřebujete mít o věc zájem. Musí vás to bavit natolik, abyste se tomu chtěli věnovat a něco se během studia naučit. Třeba si přečíst náročný text nebo si pustit podcast, který stojí za poslech. Když máte zájem a nejste úplně hloupí, je to vlastně všechno. A kdo udělal přijímačky na gymnázium, asi úplně hloupý nebude. Pak je dobré naučit se ptát a nebát se promluvit.
 
-Když u nás přednáším, bývá v aule sto lidí. Něco vyložím, zeptám se, jaké mají dotazy, a občas se nikdo nepřihlásí. To se mi v zahraničí nikdy nestane. Z některých dotazů přitom poznám, že jsem něco špatně vysvětlil. To je moje chyba. Důležité je nebát se zeptat nebo zkusit něco říct. Člověk nemusí hned prosazovat svůj názor. Ani já ve svém věku zdaleka nevím všechno. Každý rok zjišťuju, o kolik míň jsem toho věděl před rokem. Takže směr je jasný. Ve dvaceti asi nemá vždycky smysl prosazovat vlastní názor. Někdy ano. Ale zeptat se je skvělé. Řekl bych tedy, že potřebujete zájem, základní průpravu v oboru a odvahu ozvat se, i když na sebe trochu upozorníte.
+Když u nás přednáším, bývá v aule sto lidí. Něco vyložím, zeptám se, jaké mají dotazy, a občas se nikdo nepřihlásí. To se mi v zahraničí nikdy nestane. Z některých dotazů přitom poznám, že jsem něco špatně vysvětlil. To je moje chyba. Důležité je nebát se zeptat nebo zkusit něco říct. Člověk nemusí hned prosazovat svůj názor. Ani já ve svém věku zdaleka nevím všechno. Každý rok zjišťuju, o kolik míň jsem toho věděl před rokem. Takže směr je jasný. Ve dvaceti asi nemá vždycky smysl prosazovat vlastní názor. Někdy ano. Ale zeptat se je skvělé. Řekl bych tedy, že potřebujete zájem, základní průpravu v oboru a odvahu ozvat se nebo se do něčeho pustit, i když na sebe trochu upozorníte.
 
 **Moderátorka:** A jaké zlozvyky si studenti přinášejí ze střední školy?
 
@@ -364,7 +364,7 @@ Na opačném konci máte Koreu nebo Čínu. Pro děti a dospívající ve vašem
 
 U nás bychom se jistě potřebovali víc učit diskutovat. Umět argumentovat, rozpoznat v argumentu logickou chybu nebo si ověřit informaci. Ale i se všemi nedostatky je náš systém někde mezi těmi dvěma extrémy. Když o tom mluvím s lidmi z Koreje nebo z Nového Zélandu, nakonec mi říkají, že v Evropě, nebo přímo v Česku, to nemáme tak špatné. Naše školství je lepší, než si sami říkáme. Jsme zvyklí nadávat i sami na sebe a shazovat se. To není dobře. Naše školství má k dokonalosti daleko, ale v mezinárodním srovnání funguje dobře.
 
-**Moderátorka:** Šla by ta novozélandská škola hrou trochu upravit, aby vyhovovala i nám?
+**Moderátorka:** Šla by ta novozélandská škola hrou nějak umírnit a upravit, aby vyhovovala i nám?
 
 **Tomáš Havránek:** Nechci lézt do zelí kolegům, kteří se zabývají vzděláváním. Není to zrovna moje silná stránka. Dovedu si představit, že by to asi šlo. Jak to teď chodí tady na gymnáziu, nevím. Syn je tu prvním rokem, tak to sleduju. Znám ale absolventy gymnázií, kteří se dostanou k nám na ekonomii na Karlovku. Patří mezi nejlepší v republice. Jsou skvělí. Možná by se v debatě mohli víc prosadit. Určitě by neuškodilo dát větší důraz na diskusi, na to, jak s druhým mluvit a jak před ním obhájit svůj názor.
 
@@ -396,7 +396,7 @@ Ten člověk je třeba z Uzbekistánu. Co vím o Uzbekistánu? Znám třeba hlav
 
 **Tomáš Havránek:** Řeknu vám svůj osobní názor. Pravidla mého zaměstnavatele se mění a nemluvím za něj. Když píšu diplomku nebo bakalářku a mám po ruce nástroj, díky kterému bude lepší, proč ho nepoužít? Výsledek ovšem musí být skvělý. Studenta stejně zkoušíme ústně a velmi rychle poznáme, co na práci opravdu udělal. S nástroji, které dnes máte k dispozici, musí být výsledek dokonalý. Třeba gramatické chyby v angličtině jsou dnes neomluvitelné. Ať tedy studenti používají kalkulačku, počítač i umělou inteligenci, zkrátka všechny nástroje, které jim pomohou odevzdat lepší práci.
 
-Možná se bude muset změnit celý systém. Když dnes zadáte esej, nemá to smysl. Ani na gymnáziu nedokážete zkontrolovat, kdo ji napsal. Historik Niall Ferguson, který spoluzaložil univerzitu v Texasu, navrhuje něco, co zatím vysoké školy nikde na světě běžně nedělají. Univerzita by měla být něco jako klášter. Před vchodem odevzdáte mobil a počítač. Doma si s nimi zkoušejte, co chcete, stejně se s tím vším máte naučit zacházet. Samotná výuka ale probíhá offline. Píšete perem, přemýšlíte vlastní hlavou a pracujete na místě s tištěnými knihami.
+Možná se bude muset změnit celý systém. Když dnes zadáte esej, nemá to smysl. Ani na gymnáziu nedokážete zkontrolovat, kdo ji napsal. Historik Niall Ferguson, který spoluzaložil univerzitu v Texasu, navrhuje něco, co zatím nedělá žádná vysoká škola na světě, ani ta naše. Univerzita by měla být něco jako klášter. Před vchodem odevzdáte mobil a počítač. Doma si s nimi zkoušejte, co chcete, stejně se s tím vším máte naučit zacházet. Samotná výuka ale probíhá offline. Píšete perem, přemýšlíte vlastní hlavou a pracujete na místě s tištěnými knihami.
 
 Univerzitám podle mě chvíli potrvá, než s umělou inteligencí najdou rovnováhu. Učit se třeba šest hodin denně úplně offline a se zbytkem času si naložit po svém mi připadá jako docela dobrý nápad. S umělou inteligencí se přitom musíte naučit pracovat, protože bez ní už to nejde. Sám denně používám všechny čtyři hlavní modely. Bez nich bych byl mnohem méně efektivní. Při učení ale chcete, aby vám nezakrněl mozek. Kde vést hranici mezi učením a účelným používáním AI, v tom ještě nemáme úplně jasno.
 
