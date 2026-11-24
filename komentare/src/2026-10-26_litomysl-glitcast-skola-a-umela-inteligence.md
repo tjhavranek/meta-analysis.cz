@@ -1,6 +1,6 @@
 ---
 category: "litomysl"
-media: "video"
+media: "audio"
 outlet: "GLITCAST, 5. díl"
 url: "https://www.youtube.com/watch?v=Q_aPtoq1P0Q"
 url_label: "Rozhovor na YouTube"

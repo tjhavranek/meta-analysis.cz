@@ -46,12 +46,12 @@
   "corpus.jsonl": {
    "url": "https://meta-analysis.cz/komentare/corpus.jsonl",
    "bytes": 2484375,
-   "sha256": "7cc8f0741ed8ccf57b5f81799502476dca8ef1807798f436ccb63356cc3e23d5"
+   "sha256": "34da3f24e195bf67683fcef5c1145714bfffbd20ec7a31aa644b8fbfa8a872fe"
   },
   "index.json": {
    "url": "https://meta-analysis.cz/komentare/index.json",
    "bytes": 2507746,
-   "sha256": "6c70b916ea235b6204c85593eab192e7cce6c3d113d65dd31a8820b371eb0070"
+   "sha256": "ea9db8edb7715618692fc5f546376230dccac5843d8cd9c050f005b212996965"
   },
   "all.md": {
    "url": "https://meta-analysis.cz/komentare/all.md",
