@@ -2104,15 +2104,15 @@ Autoři jsou ekonomové
 
 Zdroj: https://www.startitup.sk/originals-slovensko-zostane-len-liahnou-talentov-a-vidiekom-prahy-hovori-najmladsia-profesorka-na-karlovej-univerzite/
 
-Vyrastali ste na Gemeri, regióne, ktorý čelí mnohým ekonomickým výzvam. Ovplyvnilo vás toto prostredie pri výbere vašej profesie?
+**Vyrastali ste na Gemeri, regióne, ktorý čelí mnohým ekonomickým výzvam. Ovplyvnilo vás toto prostredie pri výbere vašej profesie?**
 
 Určite áno, prostredie vás vždy formuje. Gemer je nádherný kraj, na ktorý som hrdá a ku ktorému cítim záväzok, naša rodina tam má hlboké korene. Zároveň však od malička vidíte tie obrovské sociálne problémy a tiež vidíte, že tí najschopnejší ľudia jednoducho odchádzajú za lepšími príležitosťami. S nadsázkou sa predsa vraví, že viac východniarov ako na východnom Slovensku je len v Bratislave. Keď vyrastáte v takom znevýhodnenom prostredí, chcete vedieť, prečo niektoré regióny prosperujú a iné zaostávajú. A ekonómia nám ponúka nástroje k tomu, ako tomu porozumieť a ako to zmeniť.
 
-Prečo ste sa rozhodli pre Prahu?
+**Prečo ste sa rozhodli pre Prahu?**
 
 Bola to prirodzená voľba. Keď má človek sedemnásť a je dostatočne ambiciózny, prečo by zostával niekde, kde má obmedzené možnosti. Praha je dnes pre nás tou prirodzenou destináciou. Ponúka násobne vyššie zárobky, viac kariérnych možností a kvalitné školy. Zároveň je to moderná, veľmi tolerantná metropola. Obrovskou výhodou pre nás, a zároveň nevýhodou pre Slovensko, je absencia akejkoľvek bariéry. Jazyk je prakticky rovnaký, kultúra veľmi podobná, Slovák tu nie je cudzinec, aj keď používa rodnú reč. Slovensko na tomto masívne stráca a Česko z toho prirodzene profituje. Pokiaľ sa toto nezmení, Slovensko zostane naďalej len liahňou talentov a vidiekom Prahy.
 
-Ako spomínate na svoje začiatky v akademickom svete? Čo bolo najväčšou výzvou?
+**Ako spomínate na svoje začiatky v akademickom svete? Čo bolo najväčšou výzvou?**
 
 Akademický svet bol a je prekvapivo tvrdý. Najväčšou výzvou pre mňa, a myslím že pre každého vedca, bolo naučiť sa zvládať odmietnutia. Musíte sa zmieriť s tým, že „rejections“ z top časopisov sú úplne bežné. Nie je to osobné a odmietnutia dostávajú aj nositelia Nobelovej ceny. Je to súčasť procesu, ktorý vás núti neustále sa zlepšovať, ale na začiatku to dokáže byť psychicky náročné. Predstavte si, že pracujete na projekte mesiace či roky a editor alebo anonymný recenzent vám ho v pár vetách zmetie zo stola, často bez možnosti obhájiť svoju pozíciu. Človek sa musí naučiť čeliť neúspechu a tvrdej kritike kolegov tak, aby ho to neparalyzovalo.
 
@@ -2120,47 +2120,47 @@ Zároveň si musíme priznať, že je tomu tak z dobrého dôvodu. Veľká čas
 
 V súčasnosti máme vo vedeckých databázach viac než 200 miliónov článkov a každoročne pribudne ďalších sedem miliónov. Mnohé z nich sú skôr PR výstupy než poctivé vedecké práce s voľne dostupnými dátami a kódmi k replikácii. Rastie počet megažurnálov, rastie počet predátorských časopisov, rastie počet zavádzajúcich štúdií, ktoré produkuje umelá inteligencia. V takejto záplave textov je pre seriózneho vedca náročné obstáť, najmä keď systém odmeňuje rýchlosť a kvantitu viac než precíznosť. A ešte ťažšie musí byť pre novinára či zákonodarcu hľadať v týchto výstupoch pravdu. Napriek tomu verím, že dôvera vo vedu sa dá obnoviť. Napríklad tým, že otvorene priznávame neistoty, zverejňujeme dáta, podporujeme replikácie a nechávame výsledky nezávisle preveriť. Pre vedcov je teraz najväčšou výzvou naučiť sa v tomto systéme fungovať bez straty integrity.
 
-Publikovali ste v prestížnych časopisoch ako Nature Communications či Review of Economics and Statistics. Ktorý z vašich výskumov bol pre Vás najnáročnejší a prečo?
+**Publikovali ste v prestížnych časopisoch ako Nature Communications či Review of Economics and Statistics. Ktorý z vašich výskumov bol pre Vás najnáročnejší a prečo?**
 
 Určite článok v Nature Communications. Recenzný proces bol extrémne náročný, s množstvom požiadaviek a veľmi vysokými nárokmi na kvalitu aj robustnosť výsledkov. Náš výskum sa týkal meta-analýzy a jej využitia v spoločenských vedách. Meta-analýza je kvantitatívne zhrnutie literatúry, štatistická metóda, ktorá sa pôvodne vyvíjala v medicíne. Medicína však pracuje takmer výlučne s experimentami, zatiaľ čo spoločenské vedy s tzv. pozorovanými dátami, ktoré si vyžadujú inú matematiku, iné spracovanie. Recenzenti v ekonómických časopisoch presne poznajú, o aký problém ide, ale v interdisciplinárnom časopise typu Nature Communications čelíte recenzentom z epidemiológie či biológie, ktorí pracujú len s experimentálnymi dátami a nepoznajú zákutia spoločenskovedného výskumu. Preto musíte celý problém vysvetliť úplne od základov a presvedčivo ukázať, prečo je dôležitý.
 
-Podľa databázy RePEc Vám patrí miesto v rebríčku najúspešnejších ekonomiek na svete. Čo pre Vás znamená tento úspech?
+**Podľa databázy RePEc Vám patrí miesto v rebríčku najúspešnejších ekonomiek na svete. Čo pre Vás znamená tento úspech?**
 
 Truhlár vidí výsledok svojej práce hneď: vyrobí stoličku a niekto z nej má úžitok. Užitočnosť ekonomických výstupov sa posudzuje menej priamočiaro, preto je pre mňa určite povzbudzujúce, keď si niekto výskum nášho tímu všimne. Ešte viac si cením, keď sa tieto výsledky dostanú k ľuďom, ktorí tvoria reálne politiky, a môžeme tak prispieť k diskusii o dôležitých spoločenskovedných témach. Príkladom sú projekty od striedania letného času, ktoré využili americký Kongres a Európsky parlament, cez efekt hraníc na zahraničný obchod v materiáloch Európskej komisie, prelivy priamych zahraničných investícií u analýz OECD, MMF a Svetovej banky, školné a jeho dopad na záujem o vysoké školy u OECD, až po vplyv počtu žiakov v triede na ich študijné výsledky, ktoré momentálne využíva kanadský kabinet.
 
-Stali ste sa najmladšou profesorkou na Karlovej univerzite. Ako ste to stihli tak v mladom veku?
+**Stali ste sa najmladšou profesorkou na Karlovej univerzite. Ako ste to stihli tak v mladom veku?**
 
 Kľúčové je venovať energiu len veciam, v ktorých vidím skutočnú pridanú hodnotu, a nestrácať čas zbytočnosťami, napríklad na sociálnych sieťach. Pomohlo aj to, že akademická práca v mojom odbore prebieha najmä pri počítači a s dátami. Nie som chirurg, ktorý musí stáť hodiny na sále, takže som si vedela prácu flexibilne prispôsobiť rodine. A v neposlednom rade som mala veľké šťastie na skvelých kolegov, ktorí ma podporovali, a tolerantnú rodinu, ktorá mi umožnila sústrediť sa na výskum.
 
-Ako by ste opísali svoj pedagogický prístup? Čo sa snažíte odovzdať svojim študentom okrem odborných znalostí?
+**Ako by ste opísali svoj pedagogický prístup? Čo sa snažíte odovzdať svojim študentom okrem odborných znalostí?**
 
 Snažím sa ich naučiť kritickému mysleniu. Dnes je všade plno informácií, ale aj dezinformácií. Mojím cieľom, a cieľom meta-analýzy, ktorej sa venujem, je poznať problematickú literatúru. Učím ich, aby neverili prvej štúdii, ktorú uvidia, ale aby hľadali vedecký konsenzus. A tiež aby chápali, že veda nie je dogma ani náboženstvo, je to proces hľadania a objavovania. Prirodzenou súčasťou sú chyby a omyly.
 
-S manželom, ekonómom Tomášom Havránkom, máte štyri deti. Ako sa vám darí skĺbiť náročnú akademickú kariéru s rodinným životom?
+**S manželom, ekonómom Tomášom Havránkom, máte štyri deti. Ako sa vám darí skĺbiť náročnú akademickú kariéru s rodinným životom?**
 
 Základom je byť selektívny v tom, čomu venujete čas, a naučiť sa hovoriť „nie“. Nedá sa stíhať všetko, človek nie je robot. Určite ale musíte mať okolo seba ľudí, na ktorých sa môžete spoľahnúť a ktorí vám pomôžu a podržia vás, keď je najhoršie. A to ako v práci tak i v osobnom živote.
 
-Čo bolo najnáročnejšie obdobie vo vašej kariére z pohľadu vybalansovania pracovného a rodinného života?
+**Čo bolo najnáročnejšie obdobie vo vašej kariére z pohľadu vybalansovania pracovného a rodinného života?**
 
 Asi obdobie okolo obhajoby mojej dizertácie. Dokončovať doktorát, mať doma dve malé deti a tretie na ceste, to bol asi ten moment, kedy to bolo na hrane. Ale zvládli sme to.
 
-Venujete sa makroekonómii, menovej ekonómii a ekonómii životného prostredia. Ako hodnotíte súčasný stav slovenskej ekonomiky?
+**Venujete sa makroekonómii, menovej ekonómii a ekonómii životného prostredia. Ako hodnotíte súčasný stav slovenskej ekonomiky?**
 
 Pri pohľade zvonku Slovensko nevyzerá až tak dramaticky odlišne od okolitých krajín. Ale to je klamlivé. Najväčším problémom je ten spomínaný „brain drain“. Dlhodobý odliv mozgov do zahraničia bude znamenať, že Slovensko bude mať najhoršiu výkonnosť z celej strednej Európy. To sa neukáže hneď, ale je to pomalý kolaps ekonomického potenciálu krajiny.
 
-Udržiavate profesionálne väzby so Slovenskom? Spolupracujete s nejakými slovenskými inštitúciami alebo kolegami?
+**Udržiavate profesionálne väzby so Slovenskom? Spolupracujete s nejakými slovenskými inštitúciami alebo kolegami?**
 
 Mám Slovensko rada, všetky naše štyri deti majú aj slovenské občianstvo. Profesionálne som ale nikým zo Slovenska oslovená nebola. Momentálne mám rozbehnutú spoluprácu s kolegami v USA, v Austrálii, na Novom Zélande a v západnej Európe.
 
-Uvažovali ste niekedy o návrate na Slovensko, alebo aspoň o intenzívnejšej spolupráci so slovenskými inštitúciami?
+**Uvažovali ste niekedy o návrate na Slovensko, alebo aspoň o intenzívnejšej spolupráci so slovenskými inštitúciami?**
 
 Úprimne, budúcnosť Slovenska z môjho pohľadu nevyzerá dobre, práve kvôli masívnemu odlivu talentov. A súčasná trajektória správy vecí verejných, teda ten spôsob, akým vládne súčasná vláda, robí Slovensko ešte menej atraktívnym pre schopných ľudí, ktorí by sa možno chceli vrátiť alebo tam zostať. Pokiaľ sa toto nezmení, Slovensko nemôže byť úspešnou krajinou, kde sa dobre žije. Takže o návrate neuvažujem.
 
-Kto vás najviac inšpiroval alebo ovplyvnil vo vašej profesionálnej dráhe?
+**Kto vás najviac inšpiroval alebo ovplyvnil vo vašej profesionálnej dráhe?**
 
 Zásadný impulz prišiel od môjho manžela. Keď sme spolu žili v Helsinkách, prišiel za mnou s tým, že existuje niečo ako meta-analýza a že je to fascinujúci nástroj, ktorý by sme sa mohli naučiť používať a aplikovať na zaujímavé témy. Ďalší profesný impulz prišiel od profesora Karla Jandy z Inštitútu ekonomických štúdií na Univerzite Karlovej, ktorý nás zapojil do ďalších projektov, v ktorých sme sa trénovali v metodológii a ktoré nám umožnili stretávať sa s kolegami štatistikmi pracujúcimi s meta-analýzou. V osobnom živote ma najviac formovali silné ženy v mojej rodine, mama, babička a prababička, ktoré ma naučili vytrvať a nevzdávať sa.
 
-Na čom aktuálne pracujete a aké sú vaše ďalšie výskumné plány? Máte ešte nejaké nesplnené ciele?
+**Na čom aktuálne pracujete a aké sú vaše ďalšie výskumné plány? Máte ešte nejaké nesplnené ciele?**
 
 Aktuálne pracujem na rozšírení štatistickej metódy, ktorú sme publikovali v Nature Communications. Ide o nový spôsob, ako v meta-analýzach korigovať falošnú presnosť odhadov. To je situácia, kedy štúdie vyzerajú presnejšie a presvedčivejšie, než v skutočnosti sú. Prečo je to dôležité? Predstavte si klimatický model, ktorý predpovedá, že v Bratislave bude za 25 rokov o tri stupne viac, ale neistota okolo tohto odhadu je trojnásobná oproti samotnému efektu troch stupňov. Novinára môže zlákať titulok „O štvrťstoročie bude z Bratislavy peklo“, ale štatistik vie, že výsledok s takouto mierou neistoty je v praxi nepoužiteľný: taký model je skôr intelektuálnym cvičením než nástrojom pre rozhodovanie. V medicíne je neistota okolo odhadu väčšinou daná dizajnom štúdie, ale v spoločenských a iných vedách využívajúcich pozorované dáta si neistotu odhadujeme sami. A v tom procese môžeme byť, žiaľ, relatívne kreatívni.
 
@@ -2170,11 +2170,11 @@ V ďalšom projekte so Stanfordom riešime, ako presne odlíšiť skutočné efe
 
 Posledný príklad súčasného výskumu, ktorý uvediem, je chyba merania v spoločenských vedách. V mnohých vedných oboroch, nie len v ekonómii, môže byť šum v dátach tak veľký, že dokáže prekryť samotný efekt. Typickým príkladom sú dotazníkové údaje: ak sa ľudí pýtate, koľko slaniny zjedli za posledný rok, odpovede sú nevyhnutne veľmi nepresné. Priznajme si, človek si často nepamätá ani čo mal dnes k raňajkám. Rovnako ako pri meraní teploty v mestách sú rozdiely medzi dvoma senzormi vo vzdialenosti 200 metrov často väčšie než medzi dvoma dňami. Lokálne podmienky ako tieň, asfalt, vietor vytvárajú obrovský šum, ktorý prekrýva skutočné trendy. S takýmito problémami sa stretávame i v ekonómii a potrebujeme ich v meta-analýze ošetriť, zistiť ako správne oddeliť reálnu variabilitu od chýb merania.
 
-Ako vidíte budúcnosť ekonomického výskumu a vzdelávania v nasledujúcich desaťročiach?
+**Ako vidíte budúcnosť ekonomického výskumu a vzdelávania v nasledujúcich desaťročiach?**
 
 Bude to obrovská zmena kvôli umelej inteligencii. AI už dnes dokáže písať lepšie súhrnné články než kvalitatívne spodná polovica ekonómov. V horizonte 10 rokov očakávam, že v akadémii zostanú len tí skutočne najlepší, tí, ktorí dokážu priniesť pridanú hodnotu, ktorú stroj nevymyslí. Priemerná veda stratí zmysel.
 
-Ako vidíte možný vývoj na Slovensku v horizonte 5, 10 a 15 rokov?
+**Ako vidíte možný vývoj na Slovensku v horizonte 5, 10 a 15 rokov?**
 
 Ako som spomínala, ten odliv mozgov je pre Slovensko fatálny a rozdelenie federácie Slovensku v tomto veľmi uškodilo, pretože tento ľudský kapitál už nikto finančne nevykompenzuje. Z tej lepšej stránky: Slovensko je v eurozóne. Európska centrálna banka nás nenechá úplne finančne skrachovať a vždy nás zachráni pred totálnym bankrotom. Ale „nebankrotovať“ je dosť nízka latka pre úspešnú krajinu. Bez zásadných reforiem a lákania talentov späť to bude stagnácia.
 
@@ -2317,75 +2317,75 @@ Vyrůstala přitom v jednom z nejchudších regionů Slovenska. A právě dětst
 
 Ve své vědecké práci se zabývá metaanalýzou – statistickou metodou, která kombinuje výsledky více studií, čímž zvětšuje výzkumný vzorek a přináší spolehlivější výsledky. „Překládám stovky akademických publikací do výstupů použitelných v praxi,“ přibližuje Havránková, která působí na Institutu ekonomických studií Fakulty sociálních věd Univerzity Karlovy.
 
-Co byly zásadní milníky na vaší cestě do role jedné z nejmladších profesorek a nejcitovanějších ekonomek v Česku?
+**Co byly zásadní milníky na vaší cestě do role jedné z nejmladších profesorek a nejcitovanějších ekonomek v Česku?**
 
 Určitě to byly formující pobyty v zahraničí, nejprve studijní, pak pracovní. Strávila jsem půl roku na Helsinské univerzitě, řadu měsíců na Kalifornské univerzitě v Berkeley a v bližší minulosti na Canterburyjské univerzitě na Novém Zélandu. Tam jsem zjistila tři věci. Zaprvé - slušnou vědou se lze na mezinárodní úrovni docela dobře živit. Zadruhé - zrovna v ekonomii se nemusíme na Univerzitě Karlově bát porovnání se zahraničními špičkami. Zatřetí - pořád ale mám opravdu hodně co zlepšovat, a baví mě se na tom podílet.
 
-Jak se liší vědecké prostředí v Česku a v zahraničí?
+**Jak se liší vědecké prostředí v Česku a v zahraničí?**
 
 Největší rozdíl je ve financování. Za stejnou práci si ekonom na Stanfordu vydělá mnohonásobně, někdy řádově více než v Praze. To znamená, že v Praze musíte stále shánět jiné zdroje financování, abyste utáhli výzkumnou skupinu, mohli zaplatit doktorandy a tak dále. Jinde v zahraničí to už máte zahrnuté automaticky v takzvaném institucionálním financování a máte víc času na samotnou vědu. Můj názor je, že pokud chceme mít v Česku nějaký dopad na mezinárodní vědu a být užiteční, nemůžeme financovat všechny obory ve všech regionech. Musíme se zaměřit na to, kde máme největší komparativní výhodu.
 
-Věnujete se hlavně ekonomii práce, mezinárodní ekonomii a energetice. Proč zrovna těmto tématům?
+**Věnujete se hlavně ekonomii práce, mezinárodní ekonomii a energetice. Proč zrovna těmto tématům?**
 
 V energetice jsem začínala při doktorském studiu, než jsem zjistila, že je možné uživit se vědou. Pracovala jsem řadu let v jedné z největších energetických firem. Energetika je ale v ekonomii malý obor. Člověk musí diverzifikovat. A ekonomie práce a mezinárodní obchod jsou mnohem širší obory, které jsou relevantní jak z vědeckého hlediska, tak z hlediska praktického využití pro zemi typu Česká republika.
 
-Citují vás instituce jako Mezinárodní měnový fond, Světová banka, Evropská komise či americký Kongres. Jak se dá z Litomyšle dělat světová věda?
+**Citují vás instituce jako Mezinárodní měnový fond, Světová banka, Evropská komise či americký Kongres. Jak se dá z Litomyšle dělat světová věda?**
 
 Podobně jako z Prahy. Z globálního pohledu je Litomyšl malé město u Prahy. Bydlení v Litomyšli s rodinou je příjemné, ale samozřejmě z pracovního hlediska je důležité nesedět pořád v Litomyšli, ale ani v Praze nebo obecně v Evropě. Klíčem ke světové vědě je osobní kontakt se světovými špičkami v oboru. To nenahradí Zoom konference ani ChatGPT 5.
 
-Co vás nejvíc baví na ekonomii, respektive na vědě?
+**Co vás nejvíc baví na ekonomii, respektive na vědě?**
 
 Nejlepší pro vědce jsou takové ty heureka momenty, kdy najednou přijdete na řešení problému, se kterým jste se předtím trápila dny, týdny, někdy i měsíce. To je skvělý zdroj endorfinů. A konkrétně v ekonomii se můžete dívat skoro na jakýkoli problém, jakékoli téma, protože všude hraje roli porovnání nákladů a výnosů. Ekonomie sama o sobě nestačí, ale bez ní také nemůžete odpovědně udělat skoro žádné větší společenské rozhodnutí.
 
-Na čem aktuálně pracujete?
+**Na čem aktuálně pracujete?**
 
 Především na revizi článku pro Nature Human Behaviour, ve kterém se díváme na to, jak krása ovlivňuje mzdu. Hezčí lidé vydělávají víc, ale vypadá to, že to není diskriminace, že to není přímo kvůli vzhledu. Vzhled je překvapivě spojen nejenom s věcmi jako sebevědomí, ale také zřejmě s inteligencí.
 
-Na jaké další zajímavé výzkumy jste hrdá?
+**Na jaké další zajímavé výzkumy jste hrdá?**
 
 Před pár lety jsme publikovali v Journal of International Economics článek, který počítá společenské náklady cel v mezinárodním obchodě. Samozřejmě jsme měli docela štěstí s časováním, teď je ten článek poměrně solidně využíván v akademii i mezinárodními institucemi. A z nedávné doby je to určitě článek v Nature Communications, kde vyvíjíme novou metodu metaanalýzy, což je zjednodušeně shrnutí výzkumu na určité téma při očištění o různé chyby a problémy. Také máme v rámci většího projektu článek vrácený k přepracování ze samotného Nature, tam je tématem replikovatelnost ekonomie.
 
-Podle čeho si vybíráte témata, kterým se chcete věnovat?
+**Podle čeho si vybíráte témata, kterým se chcete věnovat?**
 
 Teď už hlavně podle toho, jestli mě to baví. Dřív samozřejmě, a to nebudu zastírat, hrálo hlavní roli to, jestli je to téma vůbec publikovatelné ve špičkovém časopise. Takže třeba ten článek o vlivu krásy na výši mzdy mě prostě baví a případná publikace v Nature Human Behaviour by byl hezký bonus.
 
-Kde se výsledky vašich výzkumů objevují v praxi?
+**Kde se výsledky vašich výzkumů objevují v praxi?**
 
 Když vezmu právě vliv krásy na výši mzdy, tak ve Spojených státech musí viník dopravní nehody často platit škody způsobené na vzhledu, což staví přesně na tomto výzkumu. Velké téma je ovšem také diskriminace na základě vzhledu. Většina našeho výzkumu má ale přímočařejší využití. Centrální banky například čerpají z našeho výzkumu ohledně toho, jak lidé reagují na změny úrokových měr. Parlamenty zase pracují s výzkumem týkajícím se vlivu letního času na spotřebu elektřiny. A mezinárodní instituce typu MMF využívají například data z našeho článku o nákladech cel.
 
-Jak se čtyřmi dětmi zvládáte špičkovou vědu, která vyžaduje i pobyty v zahraničí? A ptá se na tuhle otázku někdo vašeho manžela?
+**Jak se čtyřmi dětmi zvládáte špičkovou vědu, která vyžaduje i pobyty v zahraničí? A ptá se na tuhle otázku někdo vašeho manžela?**
 
 To se ptáte dobře a rovnou si už i odpovídáte, protože my výzkum s manželem často děláme spolu. A když jsme v zahraničí, tak jsme tam spolu všichni a děti tam chodí do školy, jako nedávno na Novém Zélandu. Člověk na to není sám. Máte také spoluautory v Česku i v zahraničí. Klíčem je dělat v práci jen věci, ve kterých jste dobrá, a netrávit žádný čas na sociálních sítích. Pak můžete pracovat osm hodin denně, osm hodin odpočívat a osm hodin věnovat rodině a věcem souvisejícím s domácností.
 
-Čím se dobíjíte?
+**Čím se dobíjíte?**
 
 Baví mě muay thai, box nebo krav maga. Intenzivní pohyb jako běhání a bojové sporty mi pomáhají ventilovat stres, ale také rozvíjet disciplínu a vracet se k práci s čistou hlavou.
 
-Co by podle vás pomohlo větší podpoře žen ve vědě?
+**Co by podle vás pomohlo větší podpoře žen ve vědě?**
 
 Upřímně si myslím, že v současné době by už pomohlo přestat ženy dál podporovat. Je to paternalistické a ponižující. Podmínky ve většině oborů jsou už buď rovné, nebo ženy mají implicitně mírnou výhodu. Příklad: komise složená převážně z mužů vybírá vítěze vědecké ceny. Dva kandidáti jsou na tom vědecky stejně, ale jeden je muž, druhý žena. Koho myslíte, že komise vybere? A teď si představte, že by v té komisi byly samé ženy a že by třeba ta žena kandidátka byla mladší než paní profesorky v komisi. Myslíte, že by to dopadlo stejně? Úplně fér to nebude nikdy. Ale dívejme se na lidi, i na vědce, podle toho, co umí a co v životě dokázali. Ne podle toho, co jsou a jak se narodili.
 
-Jak vaši práci promění umělá inteligence? Nebudou v budoucnu metaanalýzu dělat modely AI?
+**Jak vaši práci promění umělá inteligence? Nebudou v budoucnu metaanalýzu dělat modely AI?**
 
 To určitě budou a ten čas se blíží jak v metaanalýze, tak v řadě jiných oborů. Metaanalýza je strašně časově náročná na sběr dat. Takže já se těším na okamžik, kdy mi data nasbírá AI agent a já se budu moci soustředit na ty skutečně zajímavé vědecké aspekty výzkumu. A v momentě, kdy i to druhé za mě udělá AI, si budu muset hledat jinou práci. Ale pokud se to stane, budeme mít jako společnost úplně jiné problémy než metaanalýzu.
 
-Do jaké míry může právě metaanalýza pomoci s často zkresleným pohledem veřejnosti na realitu a s dezinformacemi?
+**Do jaké míry může právě metaanalýza pomoci s často zkresleným pohledem veřejnosti na realitu a s dezinformacemi?**
 
 Tady se obávám, že nepomůže. Zásadní problém je přístup mnoha samotných vědců, kteří prosazují nějakou politickou linii s tím, že to je „vědecký“ přístup a všechno ostatní jsou dezinformace. Nejhorším příkladem je pandemie. My jsme se tak báli dezinformací, že spousta vědců se stále bojí navenek přiznat, že dnes víme téměř na sto procent, že Covid-19 byl virus vyvinutý čínskými vědci a umožněný americkým grantovým financováním. Taky jsem si myslela, že to byla dezinformace, ale je to pravda. Když nebudeme mluvit pravdu, je úplně jedno, jak rigorózní metodu používáme. Nikdo nám věřit nebude.
 
-Zastáváte názor, že se v Česku máme lépe, než si myslíme. Proti optimismu ale mluví klesající porodnost, nedostupné bydlení a ujíždějící vlak nejen za Západem, ale i zeměmi jako Polsko. Co tedy ukazují data?
+**Zastáváte názor, že se v Česku máme lépe, než si myslíme. Proti optimismu ale mluví klesající porodnost, nedostupné bydlení a ujíždějící vlak nejen za Západem, ale i zeměmi jako Polsko. Co tedy ukazují data?**
 
 Data ukazují, že se máme zdaleka nejlépe, jak jsme se kdy měli. Západu se přibližujeme. Srovnání s Polskem ovlivňují věci jako zrušení EET a způsob (ne)danění OSVČ, které opticky snižují vykazované HDP, vykazované mzdy. Ale podívejte se, kolik bere čistého třeba kurýr Rohlík.cz v Praze, to je kolem 70 tisíc korun a na nějaké zaostávání to nevypadá. Pokud se rozhodneme přesvědčit sami sebe a svoje děti, že se Česko a svět řítí do záhuby, že se budeme mít mizerně, tak je to naše volba. Já volím jinak. Proto mám čtyři děti.
 
-Jak podle vás ekonomická situace ovlivní volby?
+**Jak podle vás ekonomická situace ovlivní volby?**
 
 Ekonomická situace není ani skvělá, ani špatná. Přímou linku na volby nevidím. Lidi vždycky chtějí víc peněz, které ale vláda musí někomu vzít. Spíš mě zajímá, co bude po volbách. Přijde mi od vládních stran i největší opoziční strany nezodpovědné, že odmítají jakoukoli vzájemnou spolupráci. Sice asi po volbách budou mluvit jinak, ale některé příkopy už zasypat nepůjde. Ač bych z toho taky nebyla nadšená, nevidím jinou možnost, jak po volbách postavit vládu, která by nebyla strašná.
 
-Je nějaké výzkumné téma, které by vás lákalo do budoucna?
+**Je nějaké výzkumné téma, které by vás lákalo do budoucna?**
 
 Chci pokračovat na vývoji statistických metod metaanalýzy, které literaturu očišťují o takzvanou publikační selektivitu a p-hacking. Jinými slovy, když se podíváte na publikované výsledky, tak ony špatně odrážejí to, co vlastně výzkumníkům v průměru vychází, protože některé výsledky je těžší publikovat. Máme nápady na docela elegantní statistická řešení, která by navazovala na náš článek v Nature Communications. Asi jsem šprt, ale tohle mě baví.
 
-Co je pro vás nejvyšší meta, které byste chtěla dosáhnout?
+**Co je pro vás nejvyšší meta, které byste chtěla dosáhnout?**
 
 Z hlediska vědecké ješitnosti: aktuálně to vypadá, že budeme mít článek v Nature. Chtěla bych také někdy publikovat v některém z „top 5“ časopisů v ekonomii, kam je ještě těžší se dostat než do Nature nebo Science. Dlouhodobě bychom v Praze rádi měli centrum výzkumu, které by bylo srovnatelné s METRICS na Stanfordu (pozn. red. centrum, které sdružuje nejuznávanější výzkumníky v oblasti metaanalýzy a jehož affiliate výzkumnicí Zuzana Havránková je) a které by dávalo shrnutí vědy přímo využitelná v praxi, a to bez ideologického zatížení na tu či onu stranu.
 
@@ -2507,31 +2507,31 @@ Nedávno se stala historicky nejmladší profesorkou Univerzity Karlovy, zárove
 
 ## Dotazník Zuzany Havránkové
 
-Co děláte? Jak byste laikovi vysvětlila svou práci?
+**Co děláte? Jak byste laikovi vysvětlila svou práci?**
 
 Překládám stovky akademických publikací do výstupu, který je použitelný v praxi. Tomu se říká metaanalýza: statistické shrnutí výzkumu na dané téma.
 
-Co je na vědě nejlepší? A nejhorší?
+**Co je na vědě nejlepší? A nejhorší?**
 
 Nejlepší jsou ty „heuréka“ momenty, kdy najdete řešení problému, s nímž jste zápasili rok či déle. Hned vedle toho je to kontakt s geniálními lidmi z celého světa. Nejhorší je peer-review proces při publikování, který je často zcela náhodný. A také, když se věda uzavře do bubliny, přijme jediný výklad jako dogma a přestane tolerovat pochybnosti.
 
-Proč jste se dala na vědeckou dráhu? Jak jste se k vědě dostala?
+**Proč jste se dala na vědeckou dráhu? Jak jste se k vědě dostala?**
 
 Začínala jsem v soukromém sektoru a současně si dělala doktorát. Zjistila jsem, že s dětmi mi vědecká kariéra poskytuje více flexibility, takže jsem u ní zůstala.
 
-Kým byste byla, pokud ne vědkyní?
+**Kým byste byla, pokud ne vědkyní?**
 
 Myslím, že bych působila zcela mimo mou profesi. Můj pradědeček byl truhlář a práce se dřevem mě baví. Dokázala bych si představit takovou řemeslnou profesi, jejíž výsledky dělají lidem radost na dlouhé roky. Také miluji malé děti, takže být učitelkou v mateřské škole by mě naplňovalo.
 
-Jaká je vaše nejoblíbenější (odborná) kniha, případně váš nejoblíbenější vzorec?
+**Jaká je vaše nejoblíbenější (odborná) kniha, případně váš nejoblíbenější vzorec?**
 
 Oslovují mě autoři Robert Sapolsky a David Quammen, kteří dokážou poutavě psát o biologii a chování lidí. Právě čtu Sapolského knihu Determined: The Science of Life Without Free Will, která je ale trochu depresivní – pokud bych její hlavní myšlenku měla přijmout doslova, pak byly veškeré mé dlouholeté snažení a dřina předurčeny a za svůj úspěch vděčím tomu, do čeho jsem se narodila, jak jsem byla vychována, s kým jsem se potkala, čemukoli, co mě mohlo ovlivnit, a náhodě. Minimálně to člověka přivede k pokoře. A místo jednoho vzorce mám ráda myšlenku, že život není hra s nulovým součtem a že spolupráce vede k lepším výsledkům pro celou společnost.
 
-Posloucháte při práci hudbu? Jakou?
+**Posloucháte při práci hudbu? Jakou?**
 
 Když pracuji, potřebuji ticho, nekompromisně. Při běhu volím hudbu s tempem alespoň 180 bpm. Při tréninku boxu slyším hlavně na „zaber“ od svého instruktora pana Hanzlíka.
 
-Máte nějakou profesní deformaci? Ovlivňuje vaše práce váš každodenní život?
+**Máte nějakou profesní deformaci? Ovlivňuje vaše práce váš každodenní život?**
 
 Musím se přiznat, že jako ekonomka se pořád ptám na porovnání nákladů a výnosů. Čili: Zní to dobře, ale udělal někdo cost-benefit analýzu?
 
@@ -2635,29 +2635,29 @@ Dosud byla prioritou samotná dostavba dálnice. Ta už v ohrožení není. Sou�
 
 Zdroj: https://vikend.hn.cz/c1-67773370-milujeme-pokrok-kdyz-se-neodehrava-na-nasem-dvorku-rika-nejmladsi-profesorka-plyne-z-toho-i-proc-je-trump-u-moci
 
-Je ekonomie hlavní téma, o kterém si s manželem doma povídáte?
+**Je ekonomie hlavní téma, o kterém si s manželem doma povídáte?**
 
 Snažíme se o jiná témata. Oba pracujeme z domova, proto se snažíme práci a soukromí oddělovat.
 
-Bydlíte na malém městě docela daleko od Prahy, kde přitom máte oba pracoviště. Je to v téhle fázi života výhoda?
+**Bydlíte na malém městě docela daleko od Prahy, kde přitom máte oba pracoviště. Je to v téhle fázi života výhoda?**
 
 Žijeme v Litomyšli a moc se nám tam líbí. Maloměsto je logisticky příjemnější. Máte blízko přátele i sousedy, kteří pomůžou. Vše se tak zvládá snáz, zvlášť když máte čtyři děti.
 
-Když jste před jedenácti lety vyrazili za studiem do Kalifornie na proslulou univerzitu v Berkeley, už jste měli děti. Jak se to dalo zvládnou?
+**Když jste před jedenácti lety vyrazili za studiem do Kalifornie na proslulou univerzitu v Berkeley, už jste měli děti. Jak se to dalo zvládnou?**
 
 Na střídačku, jednou jel na kampus manžel, podruhé já. Doma jsme pracovali tak, jak to děti dovolily. Bylo to možná intenzivnější, než by si člověk přál.
 
-Váš manžel by tou dobou poradcem bankovní rady ČNB?
+**Váš manžel by tou dobou poradcem bankovní rady ČNB?**
 
 Ne, na pozici nastoupil po návratu z Kalifornie.
 
-Hodila se vám americká zkušenost při přípravě nového oboru na Anglo-americké vysoké škole v Praze?
+**Hodila se vám americká zkušenost při přípravě nového oboru na Anglo-americké vysoké škole v Praze?**
 
 V tradičním českém systému je vysokoškolské studium vnímáno jako právo, zatímco v USA, zejména na prestižních školách, je bráno jako luxusní služba a studenti za něj očekávají špičkovou kvalitu. Američané tvoří na naší škole asi 30-40 % zahraničních studentů, takže je důležité rozumět jejich očekáváním.
 
 Zároveň platí, že při nástupu na univerzitu v USA nenastupujete přímo do konkrétního oboru, ten obor si volíte v průběhu prvního ročníku studia. Proto tam není tak časté přerušování studia nebo přestupy na jiné školy, jak to vídáme v Česku. Stejně tak můžete obory kombinovat, pokud se to zdá časově zvládnutelné, třeba kombinace ekonomie s politologií či psychologií.
 
-K vám přicházejí studenti už rozkoukaní?
+**K vám přicházejí studenti už rozkoukaní?**
 
 Na magistru už lidi vědí, co chtějí. Nabízíme jednoleté magisterské studium, což je v zahraničí celkem běžné. Mají ho i Oxford, Cambridge, Harvard, a další. V Americe si i to typické dvouleté studium můžete často zkrátit na jednoleté, které běží celý kalendářní rok včetně léta, bez prázdnin. Jde o intenzivní studium, během kterého není možné pracovat, jako je to zvykem u nás.
 
@@ -2665,25 +2665,25 @@ Další rozdíl jsou peníze.Nikdy si nebudeme moci dovolit zaplatit člověka t
 
 Takže americké univerzity nepřeplatíme, ale můžeme zvát skvělé lidi na krátkodobé pobyty. A k tomu je Praha ideální jako globálně vyhledávaná destinace.
 
-Jak takový krátkodobý pobyt vypadá, jaký má pro studenty přínos?
+**Jak takový krátkodobý pobyt vypadá, jaký má pro studenty přínos?**
 
 Jde třeba o dvouměsíční rychlokurz, který je velice intenzivní. Na takové pobyty špičkových lidí se peníze najdou.
 
-Při informování o nově otevřeném oboru zdůrazňujete propojení ekonomie a politiky. Jak moc se do toho promítnou aktuální události ve světě? Dá se říct, že kdyby výuka začínala loni, byla by náplň jiná?
+**Při informování o nově otevřeném oboru zdůrazňujete propojení ekonomie a politiky. Jak moc se do toho promítnou aktuální události ve světě? Dá se říct, že kdyby výuka začínala loni, byla by náplň jiná?**
 
 Rozhodně ne. Donald Trump je prezidentem podruhé a to co dělá, je sice agresivnější, než během prvního mandátu, ale není to nová věc.
 
-Co říkáte tomu, jak razantně zvednul cla pro dlouhou řadu zemí?
+**Co říkáte tomu, jak razantně zvednul cla pro dlouhou řadu zemí?**
 
 V ekonomii se na mnoha věcech neshodneme, ale v tomto případě je odpověď jasná. Cla škodí nejenom ekonomice, která je zavádí, ale i jejím obchodním partnerům. Tlumí obchod, zvyšují ceny, tedy tím trpí jak populace, tak byznys. Co je ale mnohem horší v tomto případě je ta neprofesionalita, rétorika kolem, nejistoty, které jsou teď se zaváděním cel spojeny.
 
 K vysvětlení třeba pomůže Occamova břitva: když za těmi opatřeními nevidíme žádné ekonomické racionalizace, je to možná tím, že tam prostě žádné nejsou, že zdůvodnění je úplně někde jinde.
 
-Američané znali Trumpa, věděli, co slibuje. Mohli si přečíst řadu varování před dopady jeho politiky, například dopis desítek nositelů Nobelovy ceny za ekonomii. Přesto mírná většina pro Trumpa hlasovala. Říká to něco o vnímání ekonomie běžnými lidmi?
+**Američané znali Trumpa, věděli, co slibuje. Mohli si přečíst řadu varování před dopady jeho politiky, například dopis desítek nositelů Nobelovy ceny za ekonomii. Přesto mírná většina pro Trumpa hlasovala. Říká to něco o vnímání ekonomie běžnými lidmi?**
 
 Volby rozhodlo nejspíše něco jiného než ekonomická stránka. Musíme do politiky, do psychologie davu. Jedno z vysvětlení je, že se projevila poptávka určité části populace po tom pomstít se globálním elitám. A to v očích řady voličů Trumpova opatření splňují. Není v tom ekonomická racionalita, jde o politickou strategii, která si chce získat určitou část populace.
 
-Nemají mnozí Američané důvod si myslet, že je globalizace poškodila?
+**Nemají mnozí Američané důvod si myslet, že je globalizace poškodila?**
 
 Když se v důsledku dovozu levného zboží z Číny položí firma, kterou člověk budoval nebo pro ni pracoval, tak si ti, kdo na to doplatili, řeknou, že to není fér. I když globálně z pohledu racionální ekonomické teorie platí, že si jako společnost pomůžeme. Krásný případ je Uber a jeho alternativy v Praze. Jako zákazníci jsme nadšení z ceny a kvality služeb, ale v kůži taxikáře bychom být nechtěli.
 
@@ -2691,79 +2691,79 @@ Všichni milujeme pokrok, jen ať se odehraje u souseda na dvorku, ne u nás.
 
 I taxikář se musí přizpůsobit, odvětví se posunou nebo zaniknou a lidé musí dělat něco jiného. To je ten surový darwinistický kapitalismus, ale právě takhle funguje pokrok.
 
-Umíte si představit, že vysoká celní bariéra kolem Ameriky, pokud ji Trump udrží dlouhodobě, opravdu přispěje k industrializaci Spojených států?
+**Umíte si představit, že vysoká celní bariéra kolem Ameriky, pokud ji Trump udrží dlouhodobě, opravdu přispěje k industrializaci Spojených států?**
 
 Pokud se uzavřou před světem, budou se k tomuto cíli dostávat velmi, velmi pomalu.
 
-Opakovaně jste se ve výzkumu věnovala klimatické změně z hlediska ekonomie. Budete tento aspekt reflektovat i ve výuce?
+**Opakovaně jste se ve výzkumu věnovala klimatické změně z hlediska ekonomie. Budete tento aspekt reflektovat i ve výuce?**
 
 Ano, z pohledu ekonomické politiky je tohle jedno z těch velkých témat.
 
-Ve vašich vědeckých pracích často využíváte metaanaýzu. Můžete přiblížit její princip a přínosy?
+**Ve vašich vědeckých pracích často využíváte metaanaýzu. Můžete přiblížit její princip a přínosy?**
 
 Metaanalýza je statistická metoda, která agreguje výsledky studií na stejné téma. Když se podíváte například na vědeckou literaturu o dopadech pasivního kouření na zdraví, najdete studií opravdu hodně a jejich závěry se mohou hodně lišit. Dokonce mohou dojít ke zcela neintuitivnímu závěru, že pasivní kouření je zdraví prospěšné. Otázka je tedy, jaký je ten opravdový efekt pasivního kouření. A klíčem je statistický přístup, který dokáže dát odlišné výsledky dohromady a očistit je o různé zkreslení, které v literatuře zákonitě jsou.
 
-To znamená, že výsledky jsou díky tomu věrohodnější?
+**To znamená, že výsledky jsou díky tomu věrohodnější?**
 
 Jak je očištění o různá zkreslení důležité se třeba ukázalo na vyčíslení společenských nákladů emisí uhlíku. Zjistili jsme, že je tam velká publikační selektivita, tedy tendence vybírat k publikaci výsledky, které editoři nebo autoři z různých důvodů preferují. Průměr byl kolem 290 amerických dolarů na tunu CO2. Když to očistíte jenom o publikační selektivitu, tak vám náklady klesnou takřka na čtvrtinu. Vlastně nám to říká, že lidé v této literatuře rádi vidí větší čísla a méně publikují ty nižší.
 
-Z toho plyne, že ten nižší výsledek je realističtější?
+**Z toho plyne, že ten nižší výsledek je realističtější?**
 
 Přesně tak. Samozřejmě tohle je globální průměr, realita je trošku komplikovanější. Meta-analýza zvládne výsledek očistit i o různá jiná zkreslení třeba metodologická, která v těch studiích mohou být, zejména u klimatických modelů.
 
 Konkrétně se teď zabývám tím, jakým způsobem autoři odhadují nejistotu. Uvedu příklad, i když vás teď nevidím stát, řekla bych, že měříte asi 180 centimetrů plus mínus 5 centimetrů. Můj odhad není jenom číslo 180 ale také číslo 5. Když máte data na hromadu věcí a chcete z toho něco zjistit, každý odhad je zatížen nějakou nejistotou, dokonce i odhad nejistoty samotné. Třeba v klimatických modelech může být taková nejistota téměř stoprocentní.
 
-To znamená, že víme, že nic nevíme?
+**To znamená, že víme, že nic nevíme?**
 
 Ano, dá se to tak říct. Ale pozor, pokud je to tak, vědci to tam uvedou. Ta nejistota je tam obrovská a my máme scénář A, scénář B a scénář C. Můžeme z toho vyvodit něco s určitou úrovní jistoty. Bohužel, když se to následně přenáší do médií, která píší jenom o odhadu a na nejistotu se už nekouká. U klimatických modelů je problém v tom, že nic lepšího nemáme a potřebujeme mít alespoň něco, co by nás trochu více nasměrovalo do budoucnosti. Nikdo ale nemá křišťálovou kouli a předpovídat vývoj pro dalších 50 let je složité.
 
 Také máte hromadu parametrů, které vstupují do klimatických modelů, a každý z nich je zatížen nejistotou. Není to tedy jen o výsledku toho modelu, ale i o vstupních parametrech, které tam zadáváte.
 
-Dá se tedy říct, že výsledek metaanalýzy tu nejistotu eliminuje?
+**Dá se tedy říct, že výsledek metaanalýzy tu nejistotu eliminuje?**
 
 Metaanalýza je jenom tak dobrá, jak jsou kvalitní podkladové studie.
 
-Jak se vlastně obor metaanalýzy vyvíjí?
+**Jak se vlastně obor metaanalýzy vyvíjí?**
 
 Metaanalýza jako taková byla vyvinuta v medicíně, kde se dělají zejména kontrolované klinické experimenty. A protože jsou tyto experimenty hodně drahé, často zahrnují jenom desítky účastníků. Aby se dosáhlo silnějších a obecnějších závěrů, byla potřeba výsledky těchto malých studií spojit.
 
 Ve společenských vědách, a zejména v ekonomii, je situace ještě složitější, protože je prakticky nemožné provádět kontrolované experimenty v měřítku celé ekonomiky. Proto se i různé Nobelovy ceny v poslední době dávali především lidem, kteří vyvinuli metodologii blížící se experimentům v medicíně. To, že takové experimenty mimo laboratoře ve společenských vědách nejsou, znamená, že metaanalytické postupy vyvinuté v medicíně nelze korektně aplikovat na naše studie. My se to pokoušíme zlepšit. Teď vychází článek v časopise Nature Communications, kde představujeme metodu, která si poradí se společenskovědním datovým souborem.
 
-Dají se k vašemu výzkumu využít nástroje umělá inteligence?
+**Dají se k vašemu výzkumu využít nástroje umělá inteligence?**
 
 V současnosti umělá inteligence dokáže samozřejmě úžasně psát v angličtině, takže posouvá každého průměrného výzkumníka o hodně dál. Kromě toho umí udělat hezké rešerše. Část metanalýzy je sběr dat. Výzkumník si hledá články, které jsou pro něj relevantní. Pak si ten článek musí podrobně přečíst a musí z toho vytáhnout data, které potřebuje. Pokud by tohle celé zvládla umělá inteligence, tak by to bylo úžasné vylepšení. Zatím to ještě moc nefunguje, ale věřím, že to nepotrvá dlouho, umělá inteligence pořád ještě dělá příliš chyb. To ale nic nemění na tom, že je to revoluční nástroj. Před pár lety bych si tohle nedokázala představit. Z mého pohledu je to revolučnější než internet.
 
-Jste nejmladší profesorka v Česku. Jaké máte profesní cíle?
+**Jste nejmladší profesorka v Česku. Jaké máte profesní cíle?**
 
 To je otázka. Teď jsem se začala přesouvat více od praxe k teorii a také s kolegy spolupracujeme se Stanfordskou univerzitou v USA, konkrétně se slavným epidemiologem Johnem Ioannidisem. Určitě bych chtěla metody meta-analýzy dále zlepšovat, aby byly lépe použitelné, aby byly dobře pochopeny a přijímány.
 
-Máte čtyři děti a děti jsou v naší společnosti často vnímány jako brzda v kariéře a často to tak reálně je. Jak je to ve vědě?
+**Máte čtyři děti a děti jsou v naší společnosti často vnímány jako brzda v kariéře a často to tak reálně je. Jak je to ve vědě?**
 
 Já jsem vlastně nezačínala v akademickém prostředí, to si mě nějak našlo a zůstala jsem v něm právě kvůli časové flexibilitě. Měla jsem štěstí a také hodně lidí kolem, kteří mě podporovali. To je podle mě základ mít kolem sebe lidi, kteří vám pomohou, když už nemůžete nebo víte, že něco nestíháte. Ve výzkumu pracujeme s delšími lhůtami než třeba v byznysu, což nám dává určitou flexibilitu. Máme například půl roku na to, abychom něco odevzdali. To znamená, že když jsou děti nemocné, tak můžu být s nimi. Když mi zavolá paní učitelka ze školy nebo ze školky, tak za nimi můžu běžet. Dokážu si práci lépe časově naplánovat a rozvrhnout.
 
-Jak těžké je takové výpadky následně dohnat?
+**Jak těžké je takové výpadky následně dohnat?**
 
 Důležitá je disciplína a jak už jsem říkala, musíte mít kolem sebe lidi, na které se můžete spolehnout. Jednou z mých výhod bylo, že jsem měla spolupracovníka v manželovi.
 
-Předtím jste pracovala v centrální bance. Jak tam výzkum fungoval, poslední dobou byla jeho úroveň ze strany vedení banky podroben kritice?
+**Předtím jste pracovala v centrální bance. Jak tam výzkum fungoval, poslední dobou byla jeho úroveň ze strany vedení banky podroben kritice?**
 
 Česká národní banka měla historicky silný výzkum, který vedla profesorka Kateřina Šmídková…
 
-Vy jste mimochodem nositelkou ceny, která je po ní pojmenovaná
+**Vy jste mimochodem nositelkou ceny, která je po ní pojmenovaná**
 
 Ona byla výjimečná osobnost a dokázala dostat výzkum ČNB na špičkovou úroveň, díky ní měli velmi dobrou reputaci i v zahraničí. Na různých konferencích znali její jméno, její práci. Co je ještě důležitější, banka měla nezávislou vnitřní oponenturu, která tam fungovala pro jakýkoliv produkt, který vznikl v rámci jiných oddělení.
 
 Tohle zmizelo zavřením výzkumného odboru. Vy ale potřebujete nějaký interní orgán, který oponuje v rámci interní diskuse. Například podklady, které bankovní rada dostává, na základě, kterých by se měla rozhodovat, co udělá s měnovou politikou. Teď se to naštěstí od ledna změnilo. V ČNB opět vzniklo samostatné oddělení pro ekonomický výzkum, které vede Simona Malovaná.
 
-Proč se podle vás nepodařilo ČNB na místo po Kateřině Šmídkové tak dlouho někoho přivést?
+**Proč se podle vás nepodařilo ČNB na místo po Kateřině Šmídkové tak dlouho někoho přivést?**
 
 K tomu bych se nerada vyjadřovala.
 
-Není střídání silnějších a slabších období zákonité?
+**Není střídání silnějších a slabších období zákonité?**
 
 Nedávno jsem byla s celou rodinou několik měsíců na Novém Zélandu. Země je známá v oblasti monetární politiky tím, že přišla s inflačním cílováním. Tohle rozhodnutí přišlo díky skvělému výzkumnému oddělení, které v centrální bance fungovalo. A samozřejmě také díky souhlasu guvernéra, což bylo tehdy odvážné. To oddělení mělo obrovskou prestiž. Bylo velice známé ve světě. Jenže inflační cílování přijali začátkem devadesátých let. Od té doby o Novém Zélandu v této oblasti nikdo nic neslyšel.
 
-Co se stalo?
+**Co se stalo?**
 
 Nový guvernér, který tam nastoupil, pocházel z praxe. Výzkum se mu nezdál jako příliš potřebný, takže s ním skončil. Národní banka Nového Zélandu teď není ve světě známá vlastně ničím novým. Neprodukuje kvalitní výzkum, protože si tam nedokáže udržet kvalitní lidi. Když jednou něco zrušíte, je pak strašně těžké to znovu postavit. Proto držím palce České národní bance, že se k tomuto kroku rozhodla. Zejména z pohledu vnitřní oponentury je to hodně důležité.
 
@@ -3039,33 +3039,33 @@ Když si z rukou prezidenta Petra Pavla převzala v červnu jmenovací dekret, s
 
 Vědecké zkušenosti přitom sbírala v Berkeley, na Stanfordu nebo na Novém Zélandu. Dnes působí na Institutu ekonomických studií Fakulty sociálních věd UK a věnuje se metaanalýze – statistické metodě, která dokáže odpovědět na mnoho (nejen) ekonomických otázek, které se pojí s fungováním naší společnosti.
 
-Uplynulo právě deset let od obhajoby vaší dizertační práce. Během té doby jste získal docenturu a nyní i profesoru. Jak náročná dekáda to pro vás byla?
+**Uplynulo právě deset let od obhajoby vaší dizertační práce. Během té doby jste získal docenturu a nyní i profesoru. Jak náročná dekáda to pro vás byla?**
 
 Byla to dlouhá cesta, a to už k dizertaci, kdy jsem u obhajoby každým dnem čekala narození třetího miminka. Stavět rodinný život a s malými dětmi udržovat ten profesní nebylo snadné. Velkou zásluhu na tom ale mají moji kolegové, a to i ti seniorní, ti totiž za mnou přišli s tím, jestli neuvažuji o docentuře. A samozřejmě díky zaslouží i můj manžel, který je zároveň kolegou a dlouholetým spoluautorem.
 
-Takže to nebyl tak docela váš prvotní záměr zůstávat ve vědě?
+**Takže to nebyl tak docela váš prvotní záměr zůstávat ve vědě?**
 
 Po magisterském studiu jsem nastoupila do soukromého sektoru, do energetiky. Od toho se později odvíjela moje další práce i ve vědě, zaměřila jsem se na ekonomii energetiky a energetických zdrojů. Úplně jsem si nemyslela, že by mě věda uživila. Ale díky podpoře lidí, jako byli Karel Janda, Michal Mejstřík nebo Jan Ámos Víšek, jsem se rozhodla u výzkumu setrvat a plně se na něj zaměřit.
 
 Během doktorského studia jsem už měla dvě malé děti. Zjistila jsem při tom, že mi práce ve vědě dává časovou flexibilitu, kterou bych v soukromém sektoru jen těžko získala. Když mám nějaký projekt, je na mě, kdy na něm budu pracovat, jestli v noci nebo odpoledne, musím si jen ohlídat deadline. Když mi onemocní děti, můžu si program přeskládat, jak je potřeba. Je jedno, jestli u počítače sedím v Praze, v Litomyšli, kde žijeme, nebo v Berkeley či na Novém Zélandu. To je výhoda výzkumu v ekonomii.
 
-Podle aktuálních dat v roce 2024 na Univerzitě Karlově působili pouze dva profesoři ve věkovém rozmezí 30–39 let, docentek bylo v této věkové kategorii jen 5 oproti 30 mužům. Ukazuje to, že dosáhnout na profesoru i docenturu v takto nízkém věku, a navíc jako žena, je opravdu něco výjimečného. Čím si to vysvětlujete?
+**Podle aktuálních dat v roce 2024 na Univerzitě Karlově působili pouze dva profesoři ve věkovém rozmezí 30–39 let, docentek bylo v této věkové kategorii jen 5 oproti 30 mužům. Ukazuje to, že dosáhnout na profesoru i docenturu v takto nízkém věku, a navíc jako žena, je opravdu něco výjimečného. Čím si to vysvětlujete?**
 
 Je to odraz toho, že kariéra ženy v akademii se vytváří zejména po doktorském studiu, které ale často končí ke konci biologicky nejlepšího produktivního věku. Většina žen chce mít děti do pětatřiceti let, proto profesní kariéru v té době opustí nebo přeruší, což je pochopitelné. Není úplně fér vůči jiným oborům kritizovat, že ženy něčeho dosáhly později, protože každá profese vyžaduje jiné nároky. Když musíte být fyzicky v laboratoři nebo mezi pacienty, je to něco jiného než v ekonomii, kdy potřebuji hlavně přemýšlet a čas si můžu rozvrhovat podle potřeb svých, své rodiny i práce.
 
-Už jsme zmínily vašeho manžela Tomáše Havránka, který je vaším životním i profesním partnerem. Jaké výhody nebo naopak nevýhody se pojí s tím, když se s manželem potkáváte doma i v práci?
+**Už jsme zmínily vašeho manžela Tomáše Havránka, který je vaším životním i profesním partnerem. Jaké výhody nebo naopak nevýhody se pojí s tím, když se s manželem potkáváte doma i v práci?**
 
 Myslím si, že právě naše vzájemná spolupráce je to, co nás oba posouvalo rychleji dopředu (Tomáš Havránek patří k nejcitovanějším tuzemským ekonomům. Profesury dosáhl už v 36 letech. Jako první český ekonom se stal hodnotitelem žádostí o ERC granty, pozn. red.). Máme zavedenou efektivní dělbu práce. Navíc když něco nestíhám, manžel mi pomůže, zaskočí nebo něco zařídí. Je to ale zároveň dvojnásobný tlak, peer pressure, který na mě působí z pracovny vedle, a který vnímám mnohem silněji, než od jiných kolegů (smích).
 
 Tematicky se ale věnujeme trošku jiným oblastem. Manžel se zabývá především makroekonomií a centrálním bankovnictvím. Já se zaměřuji spíše na ekonomii práce, mezinárodní ekonomii a energetiku.
 
-Oba působíte na UK a máte pracovní závazky v Praze, proč tedy žijete v Litomyšli?
+**Oba působíte na UK a máte pracovní závazky v Praze, proč tedy žijete v Litomyšli?**
 
 To je jednoduché: manžel z Litomyšle pochází, jeho rodina tam žije od středověku a pořád tam žijí i jeho rodiče. Žít dlouhodobě jinde pro něj nepřipadá v úvahu. Mně se zprvu nechtělo, ale nakonec si mě získal genius loci. Z Prahy jsme se stěhovali už v době, kdy jsme měli čtyři děti. Péče o ně, vodění na kroužky, celá ta organizace kolem nich, to v Praze vydá na poloviční úvazek jednoho z nás. Na menším městě je to násobně jednodušší. Nebojíte se děti vypustit ven, mohou jít samy už do školky. Se sousedy si vzájemně vypomůžete.
 
 Navíc, kdo někdy byl v Litomyšli, ví, že je to příjemné a bezpečné město, kde se neustále konají nějaké zajímavé akce pro dospělé i děti. Zkrátka má všechny ty plusy, které člověk hledá pro pokojný rodinný život. Díky tomu, že žijeme v Litomyšli, jsme si také mohli pořídit rodinný dům s velkou zahradou, to by v Praze příliš nešlo. Navíc cestou do Prahy se dá ve vlaku dobře pracovat, takže při dojíždění se neztrácí čas.
 
-Cesta mezi Prahou a Litomyšlí ale nebyla jediná, kterou jste s manželem podnikli. Spolu jste vyjeli i na Erasmus do Helsinek a po doktorském studiu do Kalifornie na univerzitu v Berkeley, nedávno jste se vrátili z Nového Zélandu. Jaké zkušenosti jste si přivezli z těchto cest pro svůj další profesní život?
+**Cesta mezi Prahou a Litomyšlí ale nebyla jediná, kterou jste s manželem podnikli. Spolu jste vyjeli i na Erasmus do Helsinek a po doktorském studiu do Kalifornie na univerzitu v Berkeley, nedávno jste se vrátili z Nového Zélandu. Jaké zkušenosti jste si přivezli z těchto cest pro svůj další profesní život?**
 
 Do Helsinek jsme jeli ještě jako studenti, a právě tam jsme se seznámili s metaanalýzou, která se stala základním kamenem našeho pozdějšího výzkumu.
 
@@ -3077,23 +3077,23 @@ Také jsme zažili odlišný způsob financování. U nás věda často stojí n
 
 A ještě taková osobní zkušenost z Berkeley, Stanfordu nebo teď z University of Canterbury na Novém Zélandu, odkud jsme se nedávno vrátili, je ta, že navzdory tomu, jaké hvězdy svého oboru tam působí, tak jsou neskutečně milí a nápomocní. Navíc vidíte, jak tvrdě pracují. Třeba teď máme společný projekt s profesorem Ioannidisem ze Stanfordu, což je jeden z nejcitovanějších vědců na světě, přitom jeho časové zapojení je velmi intenzivní. Dokonce věnuje hodně času našim doktorandům, kteří za ním na Stanford pravidelně jezdí.
 
-Zabýváte se především metaanalýzou. Můžete vysvětlit přednosti této výzkumné metody?
+**Zabýváte se především metaanalýzou. Můžete vysvětlit přednosti této výzkumné metody?**
 
 Metaanalýza je zjednodušeně řečeno kvantitativní souhrn literatury, který vědecké výsledky opravuje o různá zkreslení. Pro příklad si můžeme představit, že máme nový lék. Máme několik klinických studií, které zkoumají účinnost toho léku. Často to jsou ale malé studie, to znamená, že pracovaly s malým vzorkem, a z toho důvodu z nich nedokážeme vyvodit jednoznačné závěry. Medicína proto vytvořila metodu metaanalýzy, která dokáže agregovat výsledky z různých studií s větší statistickou jistotou. Tuto metodu pak můžeme využít i pro jiné obory, biologii, psychologii nebo i jiné sociální vědy, i když samozřejmě často musíte použít jiné techniky. My se snažíme vyvinout takové, které jsou vhodné pro observační výzkum, nikoli experimenty, jak je zvykem v medicíně. Na tohle téma jsme například teď publikovali článek v Nature Communications.
 
 V potaz musíme brát i tzv. publikační selektivitu. Ne všechny výsledky studií se nakonec reportují v odborných časopisech; je snazší publikovat ty, které jsou takzvaně statisticky významné, což dohromady literaturu zkresluje. To pak může mít velký vliv třeba na to, jak se daný lék zdá efektivní, nebo jakou hospodářskou politiku budete implementovat na základě výzkumu. Kvalitní syntéza výzkumu, která bere v úvahu kontext studií a publikační selektivitu, je klíčová pro kvalitní rozhodování založené na vědecké evidenci.
 
-Jaké oblasti ekonomie vás v současnosti přednostně zajímají?
+**Jaké oblasti ekonomie vás v současnosti přednostně zajímají?**
 
 Vzhledem k tomu, že jsem začínala v energetice, nejprve jsem pracovala na metaanalýzách, které se zabývaly citlivostí poptávky po různých energetických produktech na jejich cenu.
 
 V Berkeley jsme poprvé řešili environmentální témata, společenské náklady emisí uhlíku. Emise je negativní produkt lidské činnosti, který ale není na trhu ohodnocen, je to takzvaná externalita. Aby tomu firmy přizpůsobily svou činnost, první ekonomickou volbou je uvalit na ně uhlíkovou daň. Abychom věděli, jak velkou daň máme stanovit, potřebujeme vědět, jaký náklad vypouštění emisí má, jak moc poškozuje přírodu a lidskou společnost – a tomu se říká společenské náklady uhlíku. Na to jsme dělali metaanalýzu právě v Berkeley. Profesor Nordhaus dostal před lety za tento typ výzkumu Nobelovu cenu. V současnosti se nejvíc zaměřuji právě na vývoj nových a lepších technik pro metaanalýzu.
 
-Jakého vědeckého výsledku si nejvíc ceníte?
+**Jakého vědeckého výsledku si nejvíc ceníte?**
 
 Největší radost mi vždy udělá to, když naši práci, kterou publikujeme, pak někdo používá v praxi. Náš výzkum používaly Organizace pro hospodářskou spolupráci a rozvoj (OECD), Světová banka nebo Mezinárodní měnový fond. S výsledky našeho výzkumu pracovaly Evropský parlament, Evropská komise i americký Kongres. Člověka potěší, když vidí, že to, co dělá k něčemu skutečně je, když vaši práci používá třeba nositel Nobelovy ceny, v našem případě takový Sargent a Stiglitz.
 
-To je hezká pozvánka ke studiu ekonomie…
+**To je hezká pozvánka ke studiu ekonomie…**
 
 O ekonomii se dříve říkalo, že je to pochmurná věda. Ale já mám ze svých kolegů a studentů přesně opačný pocit. Studují ekonomickou historii a na ní vidí, jak úžasně se zlepšila životní úroveň lidí, i když z médií možná můžete nabýt opačného dojmu. O katastrofách a problémech si v novinách něco přečtete každý den, ale o tom, kolik stamilionů lidí se za posledních třicet let vymanilo ze spárů chudoby, se z denních zpráv nedozvíte.
 
@@ -3670,33 +3670,33 @@ Zdroj: https://www.hrot24.cz/clanek/ekonomka-zuzana-havrankova-zmenim-fakta-zmen
 
 ## ŽIVOT
 
-Když se člověk narodí v malé vesnici na Slovensku, jak přemýšlí nad svým místem na světě?
+**Když se člověk narodí v malé vesnici na Slovensku, jak přemýšlí nad svým místem na světě?**
 
 Pozor, na východním Slovensku, v Gemeru. To je důležité dodat, protože v řadě míst na Slovensku je život dost podobný jako v Česku. Slovenský východ je ale z českého pohledu exotický. Mísí se tady přírodní krása se sociálními problémy, přičemž oboje v Česku nemá srovnání. Podobně se ve mně vždy mísila hrdost na Gemer s touhou odejít pryč. Cítíte závazek k místu Vašeho původu; babička měla náš rodinný rodokmen dovedený až do středověku k veliteli stráže hradu Krásna Hôrka. Zároveň ale od malička vidíte, jak je tam život těžký. Že nejlepší lidé zkrátka odcházejí pryč.
 
-Říká se, že prostředí člověka dotváří, jaké bylo to vaše, bylo vaše zázemí spojené s ekonomií? Případně jak vytvořilo prostředí k tomu, že jste se rozhodla pro takovou kariéru?
+**Říká se, že prostředí člověka dotváří, jaké bylo to vaše, bylo vaše zázemí spojené s ekonomií? Případně jak vytvořilo prostředí k tomu, že jste se rozhodla pro takovou kariéru?**
 
 Maminka mě a bratra vychovávala sama. Hodně času jsem také trávila s prababičkou a babičkou. Maminka nám s bratrem vždycky opakovala, abychom si vážili toho, co máme a že není nic, co nezvládneme. Nebyli jsme bohatí, ale nikdy bych nemohla říct, že mi cokoliv chybělo. Od malička jsem ale rozuměla, že i když Gemer milujeme, budeme ho muset opustit. Na dětství vzpomínám ráda, ale nejde dost zdůraznit, jaké problémy tam lidi mají – počínaje základní bezpečností, základními vlastnickými právy. V Praze si málokdo dokáže uvědomit, že podmínky podobným těm v Ugandě můžeme i dnes najít v místech, které byly ještě nedávno z Prahy spravované. Chcete dělat dobrovolnickou práci a být maximálně užitečný? Místo Afriky nebo Indie jeďte do Spiše nebo Gemeru. Abyste se tam narodili a dostali se odtud, musíte se opravdu snažit. A tady je možná kousek té ekonomie: máte opravdu velkou motivaci, protože pokud budete jen pasivně sedět, dobrý život vás tam nečeká.
 
-Potkala jste se někdy s něčím jako "ekonomie není pro holky?"
+**Potkala jste se někdy s něčím jako "ekonomie není pro holky?"**
 
 Nikdy. Podle mě ta otázka spíše zní, co holky chtějí a nechtějí dělat. Pamatuji si na studii z Izraele od výzkumníků z Duke University. Experiment měl za úkol zjistit, jestli může izraelská vláda namotivovat více holek do IT tím, že jim poskytne několik týdenní programátorský kurz ještě předtím, než se rozhodnou, co chtějí studovat na vysoké škole. Tyhle kurzy mimochodem běžně dělá i Google nebo Microsoft. Výsledkem experimentu bylo, že u kluků to nemělo žádný efekt, zatímco po experimentu chtělo mnohem méně holek studovat IT. Což byl nechtěný výsledek, a jelikož výzkumníci měli tak silnou intuici o tom, že výsledky musí být špatně, experiment zopakovali. Stejný výsledek. Proč? Dle výzkumníků holky věděly, že to umějí, ale bylo to pro ně neskutečně nudné. Tedy ano, uměla bych to, ale dělat to celý život? Ne, děkuji. Je to poučné pro nás všechny; neměli bychom si zaměňovat nedostatek zájmu žen s nedostatkem příležitostí pro ženy. U ekonomie, zejména té teoretické a matematizované, jako je třeba ta vyučovaná na Institutu ekonomických studií, se zájem projevuje v poměrech studentů a studentek.
 
 Osobně jsem se setkala s opačným problémem. Protože jsou v ekonomii ženy vzácnější než v jiných sociálních vědách, kolegové z týmu se mě vždy snaží vystrčit dopředu. Abych prezentovala já, abych byla tváří projektu já. Není to vždy příjemné. Není také úplně příjemné, že když se mi něco podaří, nevím vždy jistě, jestli v tom nehrála nějakou roli pozitivní diskriminace. Navíc se mě vždy snaží nominovat do všech možných komisí, aby tam byla nějaká žena, což je často velmi časově zatěžující. Oni to myslí dobře, ale tohle si neuvědomují. Přišlo by mi mnohem důstojnější pro nás ženy, kdybychom se nesnažili o žádné kvóty, explicitní či implicitní, a nechali profesionální hodnocení striktně jen na tom, co a jak kdo dělá. Ne čím kdo je, jak se narodil. A je úplně jedno, když jsou v nějaké radě jen muži. Ženy aspoň mají víc času na užitečnější věci.
 
-Co byl první moment, kdy jste si řekla, že ekonomie je to, co chcete dělat. Nějaký článek, komentář, či jev?
+**Co byl první moment, kdy jste si řekla, že ekonomie je to, co chcete dělat. Nějaký článek, komentář, či jev?**
 
 To Vám řeknu naprosto přesně, byly to Dzurindovy reformy. Do té doby to tak trochu vypadalo, že hranice mezi globálním Západem a Východem bude procházet Bílými Karpaty. Dzurinda všechno změnil, no a začal se měnit i ten slovenský východ. Není obor, který by měl tak široký a všeobecný dopad na život lidí, jako je právě ekonomie.
 
-Proč jste přijela studovat do Prahy? v Podcastu IES říkáte, že jste "vždy chtěla do prahy".
+**Proč jste přijela studovat do Prahy? v Podcastu IES říkáte, že jste "vždy chtěla do prahy".**
 
 Co si budeme povídat, žádná úroveň ekonomické prosperity na Slovensku nevytvoří světové alfa město jako je Praha. Navíc pojem Univerzita Karlova byl u nás doma vždy obklopen puncem vážnosti, jak je tomu dosud v celém bývalém Československu. V zahraničí je to tedy komplikovanější a určitě by pomohlo přejmenovat univerzitu zpátky na Pražskou univerzitu, což byl její historický název. Buď jak buď, univerzita a Praha celkově velmi těží z toho, jakým je magnetem pro aktivní Slováky. Tak trochu jako dřív bývala Vídeň magnetem pro aktivní Čechy.
 
-Platí, že aby byl člověk úspěšný, musí se obklopit úspěšnými? Nebo je - podle Vás - to prostředí důležité?
+**Platí, že aby byl člověk úspěšný, musí se obklopit úspěšnými? Nebo je - podle Vás - to prostředí důležité?**
 
 Důležité je to, čemu se v angličtině říká peer pressure. Tedy vidíte kolegu, jak je úspěšný na mezinárodním poli, že to jde i z Prahy. Konkrétně pro moji profesní dráhu to byl Roman Horváth, Michal Bauer a Julie Chytilová, moji současní kolegové na Institutu ekonomických studií. Prostředí jako takové hraje podle mě menší roli než jasné příklady konkrétních lidí, které znáte osobně.
 
-O ekonomii mluvíte jako krásné a zajímavé vědě - až se u toho téměř roněžníte (tak jsem to vyrozuměl v tom podcastu). Co vám dala?
+**O ekonomii mluvíte jako krásné a zajímavé vědě - až se u toho téměř roněžníte (tak jsem to vyrozuměl v tom podcastu). Co vám dala?**
 
 Nemůžete od vědce čekat, že nebude vášnivý pro svoji práci. Což koneckonců musí být každý, kdo chce svoji práci dělat pořádně. Podobně by o svém oboru mluvil fyzik nebo biolog. Ekonomie má tu velkou výhodu, že je nutná pro skoro každé praktické rozhodnutí. Dám příklad: jak nejlépe reagovat na klimatickou změnu? Klimatolog vám řekne, že je potřeba zabránit, ideálně zastavit oteplování. Jenže snižování emisí může být tak drahé, že odčerpá peníze odjinud, třeba ze zdravotnictví, což jako balíček může životy lidí ovlivnit negativně. Je potřeba najít rovnováhu mezi náklady a výnosy klimatických opatření. Tedy ekonomie má co říct k řešením důležitých problémů.
 
@@ -3704,127 +3704,127 @@ Také myslím, že mi ekonomie dala více pokory v myšlení ohledně toho, jak 
 
 Třeba, že žijeme déle a zdravěji než kdykoli v historii. Po většinu lidských dějin byla střední délka života kolem 30 let. Díky pokrokům medicíny je to dnes celosvětově přes 70 let a ve vyspělých zemích přes 80 let. Dále jsme mnohem bohatší než kdykoli v historii. Od průmyslové revoluce vzrostla běžná životní úroveň v Čechách více než třicetinásobně. Žijeme bezpečněji než kdykoli v historii. Například za posledních 100 let je dvacetkrát méně pravděpodobné, že se při práci vážně zraníme. Jsme mnohem vzdělanější než kdykoli v historii. Před 17. stoletím neumělo číst a psát více než 85 % Evropanů. Dnes to umí více než 90 % světové populace. Máme více volného času než kdykoli v historii. V 19. století v nejbohatších zemích na světě lidé pracovali v průměru 60 hodin týdně, dnes je to méně než 40. Čas, který v průměru musíme věnovat domácím pracím, klesl díky rozšíření elektřiny a vodovodu z 60 hodin týdně na 15. Dokonce jsme i šťastnější než kdykoli v historii! Ve více než 80 % zemí světa se v posledních letech spokojenost lidí zvýšila, a to i navzdory covidu. Samozřejmě, že bídu a neštěstí takové statistiky nesmažou, každý z nás má své osobní tragédie. Ale vědět, že za posledních 35 let se v průměru každý den dostane nad hranici chudoby kolem 130 tisíc lidí? To jsou úžasné zprávy. Tedy máme dobrý důvod věřit, že každý další rok bude lepší než ten minulý. A to proto, že skoro vždycky v historii to tak bylo.
 
-Vy jste se podívala i na mezinárodně prestižní školy, jako například Berkeley v Kalifornii. Jaké to bylo? Jaká očekávání jste měla? V čem to člověka posune?
+**Vy jste se podívala i na mezinárodně prestižní školy, jako například Berkeley v Kalifornii. Jaké to bylo? Jaká očekávání jste měla? V čem to člověka posune?**
 
 Na Berkeley jsem jela právě kvůli projektu modelování nákladů a výnosů omezování emisí skleníkových plynů. Tohle osobně považuji za velmi důležité. Dnes je převažující narativ takový, že oteplování musíme zastavit nebo přibrzdit za každou cenu, že jinak hrozí apokalypsa. Jenže tohle nám věda neříká. V modelech klimatologům nevychází, že se ze země stane Venuše, když nebudeme nic dělat. Když nebudeme nic dělat, bude o dost tepleji, čemuž bude drahé se přizpůsobit. Ale omezování emisí je také velmi drahé. Je navíc potřeba zohlednit věci, které se těžko finančně ohodnocují, jako je třeba biodiverzita. Ekonomie není všelék, ale pomůže najít rovnováhu. Bohužel jsme ekonomická řešení u změny klimatu z větší části opustili, za což nás naše vnoučata nepochválí.
 
-Lapidární otázka – proč zrovna Amerika?
+**Lapidární otázka – proč zrovna Amerika?**
 
 Na tom projektu s námi byl ochoten pracovat David Zilberman, profesor na Berkeley, proto jsme jeli tam. A také jsme si chtěli zkusit život na campusu prestižní univerzity. Plus samozřejmě okolí San Francisca je krásné pro víkendové výlety.
 
-Je tam něco jako kulturní šok? Vy jste říkala v podcastu, že jste se rozhodovala mezi právy a ekonomií a že na práva jste cítila, že nemáte lokty? Není to v Americe hodně o loktech? :-)
+**Je tam něco jako kulturní šok? Vy jste říkala v podcastu, že jste se rozhodovala mezi právy a ekonomií a že na práva jste cítila, že nemáte lokty? Není to v Americe hodně o loktech? :-)**
 
 To se asi týká práce v korporátu, ale na univerzitě byli velmi milí. Obecně, kdo nemá rád Američany, většinou jich moc nepoznal – bývají hodnější než Češi a Slováci. Kulturní šok pro nás samozřejmě byl, jak velká je míry kriminality v okolí San Francisca, že už drobné krádeže nebo vloupání do auta nikdo netrestá a nevyšetřuje.
 
-Nechtěla jste tam zůstat? Univerzitní prostředí, výzkum je v USA na špičkové úrovni
+**Nechtěla jste tam zůstat? Univerzitní prostředí, výzkum je v USA na špičkové úrovni**
 
 Ano, ale jsou tam dva zásadní problémy. Zaprvé je to ta zločinnost, která velmi znepříjemňuje normální život, třeba s dětmi. Z toho důvodu se spousta lidí z Kalifornie stěhuje pryč. Za druhé je to cenzura na univerzitě, kdy se velmi hlídá to, co kdo řekne do médií nebo napíše na Twitter. Zejména se to týká palestinské otázky, genderových otázek, a právě i změny klimatu. Přes všechny problémy buďme rádi za svobodu projevu, jakou máme v Česku a konkrétně v univerzitním prostředí. Podle některých žebříčků jsme v tom první na světě. Já to mohu potvrdit a měli bychom na to být hrdí.
 
-Pomohla vám tam nějaká česko-slovenská vlastnost/skill?
+**Pomohla vám tam nějaká česko-slovenská vlastnost/skill?**
 
 Asi právě to, že mě ani nenapadlo řešit, jaké výzkumné otázky jsou politicky průchozí. Čili to byla taková naivita pramenící z prostředí, ve kterém jsem vyrůstala, a kde si nikdo na politickou korektnost nehrál, protože to nešlo a dlouho by nevydržel.
 
-Jste ekonomkou roku 2018, patříte mezi nejcitovanější ekonomky na světě, na vaši práci odkazuje Bank of England nebo EP. Když restaurace dostane Michelinskou hvězdičku, snaží se jí udržet, i za cenu mnohdy podmínek vyčerpávajících. Jak "se člověk udržuje ve formě"?
+**Jste ekonomkou roku 2018, patříte mezi nejcitovanější ekonomky na světě, na vaši práci odkazuje Bank of England nebo EP. Když restaurace dostane Michelinskou hvězdičku, snaží se jí udržet, i za cenu mnohdy podmínek vyčerpávajících. Jak "se člověk udržuje ve formě"?**
 
 No, jedna věc je, že pořád vidíte kolegy, kteří jsou úspěšnější než Vy. Takže u nás třeba Ladislav Krištoufek, můj spolužák a nyní prorektor pro vědu na UK, jeden z nejcitovanějších vědců na světě. Nebo Jozef Baruník, jeden z největších současných odborníků na ekonometrii časových řad. Takže pořád vidíte, kam se můžete posouvat a zlepšovat. Obecně po nějaké době se člověk přestane honit za publikacemi, odměnami a citacemi a spíše se zaměří na obecné téma, ve kterém chce vědecky přispět. Je celkem jedno, jestli má člověk 30 nebo 100 publikovaných článků, jestli má 3000 nebo 10 000 citací. Na čem mi záleží, je, když se mohu na nějaké solidní úrovni o svém výzkumu bavit třeba s někým, kdo má Nobelovu cenu, a jestli on pak ten výzkum bude používat. Myslím, že o to by se výzkumník měl snažit, aby opravdu smysluplně přispěl do mezinárodní debaty. Potom ty publikace, citace a granty přijdou skoro samy. Je také potřeba často cestovat za kolegy do zahraničí; například příští rok pojedeme na 3 měsíce na Nový Zéland.
 
 ## META-ANALÝZA
 
-Řada oborů se rozvíjí. V čem se rozvíjí ekonomie? Kam? Pomůže jí nějak uměla inteligence? Kam se díváte vy?
+**Řada oborů se rozvíjí. V čem se rozvíjí ekonomie? Kam? Pomůže jí nějak uměla inteligence? Kam se díváte vy?**
 
 Ekonomický výzkum je často hlavně o tom, jak věc X ovlivní věc Y. Často vidíme, že X a Y se spolu hýbou, ale nevíme, jestli opravdu X kauzálně způsobuje Y. Stejně tak je tomu v biologii, psychologii nebo medicíně. Tyhle vědy pracují s pravděpodobnostmi, a to je klíčové. Když řekneme, že něco je prokázáno, znamená to, že data jsou tak dobře podložená, že pravděpodobnost omylu je velmi malá, takže je rozumné se výsledkem řídit. To znamená, že máme hodně dobře nadizajnovaných studií, které říkají o tom zkoumaném efektu stejnou věc. Nicméně, závěry ze studií o stejném efektu můžou být jenom slibné, nejasné, nebo čistý šum. Za posledních 30 let jsme se v tomhle zjišťování hodně zlepšili, nedávno za to byla i Nobelova cena. Pořád máme ale před sebou dlouhou cestu. Vždyť stále pořádně nevíme ani tak důležitou věc, jak vlastně změny úrokových sazeb centrální bankou změní inflaci. Ono je to strašně těžké, modelovat ekonomiku, kde máte miliony lidí, co mají vlastní hlavu. Já se snažím přispět tím, že za pomoci statistických metod zjišťuji, co vlastně v kterém podoboru ekonomie víme o konkrétním vlivu nějakého X (jako úroky) na nějaké to Y (jako inflace). Umělá inteligence nám v tom zatím moc nepomůže kromě toho, že nám skoro zadarmo opraví gramatiku.
 
-Ve vaší práci ekonomické výzkumnice hodně používáte takzvanou metaanalýzu. Co tato technika přesně znamená? A co vás k ní přivedlo?
+**Ve vaší práci ekonomické výzkumnice hodně používáte takzvanou metaanalýzu. Co tato technika přesně znamená? A co vás k ní přivedlo?**
 
 Vemte si jedno téma, třeba vliv úroků na inflaci. Máte stovky studií, které berou různá data a snaží se odhadnout, jaký ten vliv je. No ale jejich výsledky se dramaticky liší. Navíc výzkumníci z centrálních bank asi budou mít motivaci publikovat výsledky určitého typu. A akademici zase mají často rádi statisticky významné efekty. A některé studie jsou metodologicky správnější než jiné. Takže jak to je? Meta-analýza je soubor statistických metod, který pomůže literaturu nejen shrnout, ale hlavně ji očistit o ty různé problémy, které jsem zmínila výše.
 
-Komentáře říkají, že významně přispíváte k věrohodnosti ekonomie jako vědy. Takže jste takový facts-checker vědy? :-)
+**Komentáře říkají, že významně přispíváte k věrohodnosti ekonomie jako vědy. Takže jste takový facts-checker vědy? :-)**
 
 To je příliš lichotivé. Můžeme nad tím ale uvažovat takhle: když chceme vzít výzkum a k něčemu ho použít, vždycky potřebujeme nějakou reprezentaci celé literatury na dané téma. Ta je velmi často neformální – člověk si vybere jednu studii, která se mu nejvíc líbí, nebo tři, a podle toho postaví svůj model nebo navrhne politiku. Ale proč to neudělat statisticky lépe? Nebo dokonce pořádně, což je to, o co se snažíme.
 
-Není to společensky náročné? Jednak vědci jsou dost ješitní, přiženil jsem se do rodiny dvou doktorů přírodních věd, tak o tom něco vím. Zároveň někomu můžete rozbít jeho léta práce? Přece jen čerpají granty, je to pro ně živobytí.
+**Není to společensky náročné? Jednak vědci jsou dost ješitní, přiženil jsem se do rodiny dvou doktorů přírodních věd, tak o tom něco vím. Zároveň někomu můžete rozbít jeho léta práce? Přece jen čerpají granty, je to pro ně živobytí.**
 
 Společensky náročné pro mě spíš je to, když vidím vědu na jedné straně a potom politickou praxi na straně druhé. To je velmi smutné, viz třeba ten příklad s klimatickými opatřeními, o kterých jsme se bavili. To musí frustrovat skoro každého vědce ve svém konkrétním oboru. Ale mezi vědci mám osobně spíš zkušenost, že mají meta-analýzy rádi. Protože i oni potřebují nějaký benchmark, nějaké rozumné shrnutí. Kdyby se všichni na všem shodli, tak bychom se nikam neposunuli. Někdy zase nějaká nová studie „rozbije“ spoustu mé práce. To se stává a jinak by to ostatně byla nuda. Znáte ten proslulý citát JM Keynese: „Když se změní fakta, změním názor. Co uděláte Vy?“
 
-Jaké to je osobně - už vám to někdo vytknul meta-analýzu?
+**Jaké to je osobně - už vám to někdo vytknul meta-analýzu?**
 
 Vlastně ne. Ekonomové se asi i díky svému vzdělání chovají diplomaticky. K čemu je si stěžovat nebo někomu něco vytýkat? Pokud je něco v práci kolegy špatně a je to důležité opravit, slušně to zmíním v příští studii, nebo napíšu komentář. Není ale důvod, aby to mělo být nějak emotivní, aby to mělo být nějaké drama.
 
-Některá společenská témata a jejich prosazování do reálného života postavená na "vědecké obecné shodě", jež je nezpochybnitelná. S jakým vědomím pak k meta-analýze přistupujete? Připomenu dělící témata, která jsou ale schopna postihnout negativně mezilidské vztahy: Covid, změny klimatu, nebo z vašich prací - prospěšnost velikosti tříd, nebo střídání letního / zimního času. Otázka je: jaká výzva to pro výzkumníka je? Vždyť jde vlastně o velké peníze
+**Některá společenská témata a jejich prosazování do reálného života postavená na "vědecké obecné shodě", jež je nezpochybnitelná. S jakým vědomím pak k meta-analýze přistupujete? Připomenu dělící témata, která jsou ale schopna postihnout negativně mezilidské vztahy: Covid, změny klimatu, nebo z vašich prací - prospěšnost velikosti tříd, nebo střídání letního / zimního času. Otázka je: jaká výzva to pro výzkumníka je? Vždyť jde vlastně o velké peníze**
 
 Dobrá otázka. V první řadě nechcete začít s výzkumem, který nikoho nezajímá. Takže právě na takových tématech, co jste zmínil, je dobré pracovat. Mimochodem, dvě z nich jsou opravdu celkem uzavřené: Zaprvé, méně žáků ve třídě nepomůže zlepšit výsledky žáků tak, aby to ospravedlnilo náklady na malé třídy. Měli bychom mít ve třídách 25 dětí, klidně i trochu více. Zadruhé, střídání letního času nešetří energii; jarní změna naopak každoročně zabije několik lidí v souvislosti s tím, jak jsou unavení a pak třeba nedávají pozor při řízení. Ale třeba u lockdownů a klimatu je ještě potřeba hodně práce. O klimatu už jsme mluvili. Co se týče covidu, opravdu bylo to extrémně nákladné zavírání škol vědecky podloženo? Budeme se při příští epidemii chovat stejně? Chybí mi klidné vyhodnocení různých opatření. Trochu mám pocit, že jsme tady v dobré víře vytvořili atmosféru cenzury, ve které vlastně nikdo už nechce moc zpochybňovat lockdowny nebo roušky. I když je klidně možné, že oboje vlastně bylo pro konkrétní epidemii covidu kontraproduktivní – ač to může pomoct hodně při epidemii zmutované eboly. To už se ale obávám, že roušky nikdo nosit nebude a nikdo nebude věřit epidemiologům.
 
-V podcastu IES říkáte: máme vnitřně a priori preferenci, která by nám měla vyjít. ta vaše analýza to dokáže potlačit?
+**V podcastu IES říkáte: máme vnitřně a priori preferenci, která by nám měla vyjít. ta vaše analýza to dokáže potlačit?**
 
 Potlačit ne, ale máme statistické metody, jak vědeckou literaturu o tyhle věci zhruba opravit. Příklad: i když jasně víte, že lidé budou chtít kupovat méně benzínu v reakci na zvýšení ceny benzínu, občas by se měl v literatuře objevit odhad, který jde opačným směrem, nebo je v podstatě nula. To je proto, že občas máte smůlu na malý dataset, nebo je to prostě náhoda. Když v literatuře podezřele chybí zrovna ty odhady, které by bylo těžké publikovat – protože nejsou intuitivní --, tak něco není v pořádku. Tyhle statistické metody očišťování nejsou jednoduché, vede se o tom velká debata. Je to právě ta oblast, kde se nyní snažíme nejvíc přispět vývojem nových metod. Většina existujících metod totiž byla převzata z medicíny, ale ve společenských vědách máme trochu jinou situaci a potřebujeme vzít v úvahu specifika toho výzkumu. Teď nám snad konečně vyjde po několika letech článek na toto téma v Nature Human Behaviour.
 
-Obecně, životní zkušenost, přesvědčení, nebo předsudky - je to problém pro autory? Skoro bych si řekl, že exaktní věda (možná na to nahlížím naivně) dokáže "osobní preference" eliminovat.
+**Obecně, životní zkušenost, přesvědčení, nebo předsudky - je to problém pro autory? Skoro bych si řekl, že exaktní věda (možná na to nahlížím naivně) dokáže "osobní preference" eliminovat.**
 
 K tomu existuje celý jeden vědecko-statistický přístup, filozofie; říká se tomu bayesiánctví. Bayesiánec začíná s tím, že má nějaký „prior“, tedy řekněme předsudek (třeba: poptávka po benzínu klesne se zvýšením ceny benzínu). Pak se podívá na data a podle dat svůj předsudek upraví – někdy málo, když evidence z dat není silná, jindy hodně. A ono to možná ani v životě jinak nejde, akorát ti bayesiánci to přiznávají a dělají explicitně. Eliminovat priory nedokážeme. Musíme pak k vědecké literatuře přistupovat tak, že ji píšou živí lidé, a podle toho se zařídit. K tomu je právě dobrá meta-analýza.
 
 ## TRH PRÁCE
 
-Podtitul zářijového čísla je "Fresh start": týká se práce a nástupu do práce. začnu ale něčím odlehčenějším. Pro Seznam zprávy jste napsala článek o tom, že vzhled rozhoduje o tom, kolik peněz člověk vydělá? čím to je? :-)
+**Podtitul zářijového čísla je "Fresh start": týká se práce a nástupu do práce. začnu ale něčím odlehčenějším. Pro Seznam zprávy jste napsala článek o tom, že vzhled rozhoduje o tom, kolik peněz člověk vydělá? čím to je? :-)**
 
 Jen to moje zjištění trochu upravím – vzhled o platu nerozhoduje, ale může vám ho o pár procent pohnout nahoru nebo dolů. V politice nebo sexuálních službách je to spíš víc procent, a může to pak opravdu o výsledku skoro rozhodovat. Jindy je to málo. My jsme v meta-analýze zjistili, že je to skoro nula, když vezmete v úvahu inteligenci. Chytřejší lidi vydělávají víc a jsou v průměru maličko hezčí. Nevíme proč. Možnosti jsou dvě. Buď krása a inteligence oboje souvisí s celkovým vyladěním organismu, a jsou tedy přirozeně geneticky na sobě závislé. Nebo je to tím, že historicky si úspěšní muži často brali a berou hezké ženy. Tím se také mohla inteligence dostat do vztahu se symetrií obličeje.
 
-Opravdu to platí? Mám teď – odlehčím to - běžet na plastiku?
+**Opravdu to platí? Mám teď – odlehčím to - běžet na plastiku?**
 
 To záleží na tom, jestli chcete změnit povolání na některé z těch, o kterých jsme se bavili před chvílí :). Pak by se to možná finančně vyplatilo. Jinak moc ne, protože to nezmění Vaše schopnosti, které o platu skutečně rozhodují.
 
-Nebo jde o sebevědomí? Zajímavé je, že bych neřekl nakolik se to dá datově zkoumat :-)
+**Nebo jde o sebevědomí? Zajímavé je, že bych neřekl nakolik se to dá datově zkoumat :-)**
 
 Přesně tak. Třeba i ta plastika mohla vylepšit sebevědomí, ale na to opravdu moc výzkumu není. Na to jsem zapomněla, když jsem říkala, proč krása může souviset s platem. Další hypotéza říká, že hezčí lidé jsou sebevědomější. A sebevědomí je užitečné pro většinu profesí a člověk intuitivně chápe, proč může dopomoci vyššímu platu. Číselně se to ale vyjadřuje velmi těžko, jak dobře naznačujete.
 
-V souvislosti s USA je zajímavé, jak známosti z univerzit pokládají základ pro úspěšnou pracovní kariéru. Jsou data, která by potvrzovala, jak je networking důležitý pro úspěch v práci?
+**V souvislosti s USA je zajímavé, jak známosti z univerzit pokládají základ pro úspěšnou pracovní kariéru. Jsou data, která by potvrzovala, jak je networking důležitý pro úspěch v práci?**
 
 Ano, na to je řada článků a vidíte to i v praxi – koneckonců Facebook původně vznikl jako prostředek pro networking na Harvardu. Ale samozřejmě se dopady networkingu hodně liší mezi profesemi. Jsou profese, které se bez toho prakticky neobejdou a je to vlastně součást práce – jako třeba moje profese, výzkum. Když nebudu jezdit dávat semináře na univerzitách a prezentovat na konferencích, nebude můj výzkum pořádně brát nikdo vážně. A samozřejmě je důležitá i ta neformální rovina, kdy jdete se zahraničními kolegy na večeři a spřátelíte se.
 
-Práce a živobytí. Jak klíčové pro pracovní trh je, že historicky vznikly tyto "dvě větve"? Vnímání práce a volného času. Nejde přece o příliš starý koncept - navíc třeba v Asii dál "živobytí" přetrvává. Myslím tím to "neuvědomění si toho, že pracuji" :-) Co toto udělalo s pracovním trhem? S našimi návyky?
+**Práce a živobytí. Jak klíčové pro pracovní trh je, že historicky vznikly tyto "dvě větve"? Vnímání práce a volného času. Nejde přece o příliš starý koncept - navíc třeba v Asii dál "živobytí" přetrvává. Myslím tím to "neuvědomění si toho, že pracuji" :-) Co toto udělalo s pracovním trhem? S našimi návyky?**
 
 To je možná spíš otázka na kolegy psychology. V ekonomii vidím dvě paralely. První je specializace, a s tím spojené formální povolání – viz dílo Adama Smithe a jeho důraz na specializaci. Zadruhé je to posun od práce na poli. Ještě před cca 150 lety prakticky všichni pracovali v zemědělství, buď na vlastním poli, nebo pronajatém. Díky masivnímu zvýšení produktivity dnes stačí zlomek populace a zbytek může dělat něco jiného – pracovat v zaměstnání a pak mít volno. Náš systém je mnohem zdravější než ten východoasijský, což je vidět z toho, jak jejich kultury kolabují a tyto země rapidně vymírají. Nedávno jsem se vrátila z Taiwanu, což je krásná země, jejíž kultura ale umírá.
 
-V září se naskočí do pracovního procesu. Je "dovolená" něco, co patří k práci? Zlepšuje produktivitu, nebo to data vůbec neukazují?
+**V září se naskočí do pracovního procesu. Je "dovolená" něco, co patří k práci? Zlepšuje produktivitu, nebo to data vůbec neukazují?**
 
 Záleží na konkrétní profesi, samozřejmě, ale určitá míra odpočinku vždy produktivitu zvyšuje. Měli bychom se například zamyslet nad tím, jak je pro nás jako společnost užitečné, když nutíme lékaře trávit téměř celodenní služby v nemocnicích. Nebyl byste radši, kdyby Vás na pohotovosti vyšetřoval někdo, kdo je dobře odpočatý? Třeba i za cenu toho, že do té nemocnice jedete o 20 minut déle? Ale to je na delší povídání. Pro mě osobně je maximálně možné denně trávit těžkou intelektuální prací 4 hodiny. Další 4 hodiny, v nejhorším 6, pak může člověk věnovat různým drobnějším věcem, které nevyžadují 100% soustředění. Mezitím si stejně potřebuji pročistit hlavu, skočím si zaběhat nebo si zaboxuji. Ale prostě nejde za den pracovat hlavou 12 hodin ve špičkové kvalitě, nebo alespoň já to nezvládnu.
 
-Mimochodem, je něco, co funguje dobře k vyšší produktivitě? Pobídky, nebo vyšší mzda, pochvala?
+**Mimochodem, je něco, co funguje dobře k vyšší produktivitě? Pobídky, nebo vyšší mzda, pochvala?**
 
 Na to máme novou meta-analýzu, kde ukazujeme, že finanční motivace jako taková není tak důležitá. Ano, často víc pomůže pochvala. A hlavně skutečnost, že práce člověka opravdu baví, že ji dělá ideálně na svoje jméno, že v ní vidí smysl. To penězi nenahradíme. Když s někým přijdete do kontaktu, vždy velmi rychle poznáte, jestli ho práce baví. Extrémně je to poznat zejména u úředníků. Trochu by asi pomohlo nejlepší úředníky platit víc, ale jednoduché řešení to nemá. Jen se vždycky strašně divím těm lidem, kteří zůstávají v práci, která je vyloženě nebaví a dělají jen to, co absolutně musí. Možná pak mají relativně pohodlný zbytek života, ale otázka je, proč tedy vůbec žijí, když polovinu dne dobrovolně vyhodí do koše. Jestli by nebylo pro ty lidi nakonec lepší za menší plat dělat něco, co má smysl, jestli by si sami sebe nevážili více.
 
-Jak se mění trh práce? Jakým trendům podléhá?
+**Jak se mění trh práce? Jakým trendům podléhá?**
 
 Největší aspekt změny za poslední roky je home office. To jsme si vyzkoušeli za covidu a ukázalo se, že v řadě oborů to jde, v řadě ne. Když je silný manažer a silná vůle, funguje to, ale nikdy to není 100%. Teď sledujeme spíš stále ještě postupné odbourávání home office tam, kde nefunguje.
 
-K trendům: mluví se o čtyřdenní pracovním týdnu - jakou to má šanci na zavedení. I premiér Fico v Davosu mluvil o jeho zavedení :-)
+**K trendům: mluví se o čtyřdenní pracovním týdnu - jakou to má šanci na zavedení. I premiér Fico v Davosu mluvil o jeho zavedení :-)**
 
 Jak jsme nakousli výše, v řadě oborů státní správy už funguje nejen čtyřdenní, ale dvoudenní pracovní týden. Takže jsme zase napřed před Slovenskem. Jinak ekonomicky je to jednoduché: plat nakonec zhruba odpovídá produktivitě práce. Když budeme pracovat o 20 % méně, budou platy o 20 % v průměru nižší. Každý dle svého gusta.
 
-Nepodmíněný příjem: výzkumy probíhají, myslím, že v Nizozemsku, ve Finsku mimo jiné - ale k praxi se zatím nepřistoupilo. Je to do budoucna cesta? S vyšším zapojením robotizace a AI do pracovních procesů.
+**Nepodmíněný příjem: výzkumy probíhají, myslím, že v Nizozemsku, ve Finsku mimo jiné - ale k praxi se zatím nepřistoupilo. Je to do budoucna cesta? S vyšším zapojením robotizace a AI do pracovních procesů.**
 
 Pokud chceme zombifikovat velkou část naší populaci a umožnit někomu jen ležet s mobilem v ruce, aniž by cokoli dělal, pak je nepodmíněný příjem výborný prostředek. Máme určitá data z pandemie, kdy některé země přistoupily k něčemu podobnému. Trvalo pak velmi dlouho dostat lidi zpátky do práce. K nepodmíněnému příjmu není důvod: chceme lidi motivovat, aby pracovali. Nejen kvůli vyššímu HDP, ale kvůli disciplíně a kvalitě života, kterou práce přináší, kvůli prevenci kriminality a duševních poruch. Robotizace a umělá inteligence nakonec zvýší produktivitu nás všech, zvýší naše platy a vytvoří nová pracovní místa – tak to bylo se všemi trhem ověřenými inovacemi v historii.
 
-Velmi diskutovaným tématem je práce z domova (během covidu), má to obecně přínos?
+**Velmi diskutovaným tématem je práce z domova (během covidu), má to obecně přínos?**
 
 Ano, ale mimo výjimky jen jako nouzové řešení. Sama pracuji převážně z domu, ale kdybychom bydleli v Praze, ráda bych chodila do kanceláře na univerzitě. Člověk tak lépe oddělí práci a volný čas, což už je něco, o čem jsme se bavili.
 
-Otázka v souvislosti s mladší generací. Podle řady odborníků roste společnost, která pracovat nechce. Jsou data, která by říkala, že "mladší generace je línější", jak zní obecný povzdech.
+**Otázka v souvislosti s mladší generací. Podle řady odborníků roste společnost, která pracovat nechce. Jsou data, která by říkala, že "mladší generace je línější", jak zní obecný povzdech.**
 
 To říká ale každá generace, že ti mladí jsou hrozní a líní, ne? Mám v mysli písničku Borisa Filana od Elánu „Nie sme zlí“:) V datech takový trend skutečně příliš nevidíte. Co v datech bohužel vidíte, a co mě osobně velmi trápí, je prudký nárůst mentálních poruch a sebevražd mezi dětmi a dospívajícími. A tady jsme myslím na vině my, třicátníci a čtyřicátníci. Od malička vtloukáme dětem do hlavy depresivní globální problémy lidstva a planety, aniž bychom nabízeli konstruktivní řešení. My si to často neuvědomujeme, ale dospívající si to opravdu berou osobně a jsou volatilnější než dospělí. I mezi studenty ekonomie potkávám ty, kteří mi vážně říkají, že se bojí konce světa kvůli klimatu, že kvůli tomu umřou! Ale věda nic takového neukazuje, stačí se podívat do vědeckých zpráv IPCC (mezinárodní panel pro změny klimatu), nikoli tedy do shrnutí, které píšou politici. Je to zkreslený apokalyptický obraz vědy, kterému bohužel vědci nebrání dost, nebo ho někteří ještě podporují. Beznaděj je to, co u mladých často pozoruji a co mě osobně trápí. Přitom je to naprosto zbytečné. Lidské bídy nikdy nebylo tak málo a životní prostředí (ve vyspělých zemích) je na tom dnes lépe než ve středověku, což lze zdokumentovat třeba mírou zalesnění.
 
-Už před 20 a více lety byla na trhu kniha "Lenosti buď pozdravena", kterou napsala vysoká manažerka EdF. Říká: Pokud možno co nejméně pracovat, říká Corinne Maierová. Nedávno se na sociálních sítích šířila výzva s hashtagem "pracuji jen do výše svého platu"
+**Už před 20 a více lety byla na trhu kniha "Lenosti buď pozdravena", kterou napsala vysoká manažerka EdF. Říká: Pokud možno co nejméně pracovat, říká Corinne Maierová. Nedávno se na sociálních sítích šířila výzva s hashtagem "pracuji jen do výše svého platu"**
 
-Co říkáte na takové výzvy?
+**Co říkáte na takové výzvy?**
 
 Paní Maierové lze blahopřát k tomu, že na knize dobře vydělala. Kdyby byla opravdu tak líná, jak doporučuje, tak by knihu nikdy nenapsala – ono to není úplně jednoduché. Takže z definice sama nevěří tomu, co hlásá. Ale ve svobodné společnosti může každý dělat, co chce, a zaměstnavatel ho podle toho odmění.
 
-Na druhou stranu - je řada lidí, kteří pracovat chtějí. Vy se zabýváte detekováním možných překážek žen v pracovních kariérách.
+**Na druhou stranu - je řada lidí, kteří pracovat chtějí. Vy se zabýváte detekováním možných překážek žen v pracovních kariérách.**
 
-Jaké podle vás ty překážky jsou? A jak je odbourat? V profesním životě jsem byl svědkem, kdy zaměstnavatel z nějakých důvodů odmítal částečné úvazky, což se mi zdálo nepochopitelné.
+**Jaké podle vás ty překážky jsou? A jak je odbourat? V profesním životě jsem byl svědkem, kdy zaměstnavatel z nějakých důvodů odmítal částečné úvazky, což se mi zdálo nepochopitelné.**
 
 Jsem členkou Rady pro rovné příležitosti Univerzity Karlovy. Ano, tam probíráme i ty překážky, které zmiňujete. Z toho, co se ke mně dostává, se mi zdá, že tento problém se v čase zmenšuje. Je těžké sehnat dobrého zaměstnance. Jako firma si dvakrát zrovna vybírat nemůžete. Opravdu někoho odmítnete jen proto, že je to žena a má děti? Jaký smysl by Vám to dávalo? Jasně, někdy je částečný úvazek komplikace. Když se ale podíváte na data, vidíte velký nárůst částečných úvazků a zaměstnanosti žen. Je ale opravdu faktem, že některé akademické obory jsou historicky dominovány muži a pro ženy je těžké tam výrazněji proniknout. Na tom se snažíme na univerzitě ještě zapracovat. Dokonalí zdaleka nejsme, ale zlepšuje se to. Pro mě osobně je strašně důležité, abychom problém nepřeklopili na opačnou stranu a nevyzdvihovali někoho jen kvůli jeho pohlaví. To by bylo nespravedlivé a nedůstojné pro všechny. Dřív jsme diskriminovali ženy, ano, ale dvojité zlo neudělá dobro. Neměli bychom teď diskriminovat muže, to je přeci špatně.
 
-Vy jste založila rodinu během doktorandského studia. Máte 4 děti, jak to s prací lze skloubit dohromady?
+**Vy jste založila rodinu během doktorandského studia. Máte 4 děti, jak to s prací lze skloubit dohromady?**
 
 Protože se živím převážně výzkumem, mohu si práci rozkládat během dne tak, jak potřebuji. Teď už jsou navíc děti velké, mladší dceři je 7, takže si mohu dovolit mnohem intenzivnější pracovní vytížení a více závazků. Bylo pro mě ale vždycky těžké odmítat příležitosti a musela jsem se naučit říkat ne. A dříve bych to těžko zvládala bez velkého zapojení manžela, rodiny, ale i přátel u nás v Litomyšli. Tady je vše po ruce, děti chodí samy do školy i na kroužky, nebo pomůže babička. V Praze bych si 4 děti nemohla dovolit, nebo minimálně nevím, jak by to bylo logisticky a finančně proveditelné. A musím říct, že konkrétně Litomyšl má velmi dobrou životní úroveň i ve srovnání s top destinacemi v nejvyspělejších zemích. A do Prahy se dá vždy příjemně dostat vlakem; brzy to půjde rychle i po dálnici.
 
@@ -3836,35 +3836,35 @@ Protože se živím převážně výzkumem, mohu si práci rozkládat během dne
 
 Zdroj: https://archiv.hn.cz/c1-67336880
 
-V nedávném rozhovoru jste prohlásil, že počátek vzedmutí inflační vlny v ČR se vztahuje k období kurzového závazku ČNB (tj. 2013–2017). Nemyslíte si však, že by se jednalo o příliš dlouhou transmisi měnové politiky, jelikož by to byl horizont 4 a více let? Je vůbec takto dlouho trvající přenos změn v měnové politice na ekonomiku v odborné literatuře zdokumentován?
+**V nedávném rozhovoru jste prohlásil, že počátek vzedmutí inflační vlny v ČR se vztahuje k období kurzového závazku ČNB (tj. 2013–2017). Nemyslíte si však, že by se jednalo o příliš dlouhou transmisi měnové politiky, jelikož by to byl horizont 4 a více let? Je vůbec takto dlouho trvající přenos změn v měnové politice na ekonomiku v odborné literatuře zdokumentován?**
 
 Shrňme si, na čem existuje konsensus. Zaprvé, smyslem intervencí proti koruně bylo natlakovat ekonomiku. Vedení ČNB používalo přímo sousloví „natlakovat inflační papiňák“. Zadruhé, to se do velké míry povedlo, intervence skutečně přinesly vyšší růst a bezprostředně i trochu vyšší inflaci. Existující výzkum tohle ukazuje poměrně jasně. Zatřetí, po skončení intervencí v roce 2017 byla naše ekonomika jedna z nejvíce přehřátých v Evropě; dočasně jsme měli jeden z nejvyšších růstů na světě, aniž by ČNB začala rychle vracet sazby k normálu. Začtvrté, mezi lety 2021–2023 jsme měli nejvyšší inflaci v rámci vyspělých zemí. Je to důkaz, že intervence, nebo spíš chování ČNB po konci intervencí, způsobily naši rekordní inflaci? Není, potřebujeme víc výzkumu. Je ale pro makroekonoma těžké uvěřit, že tam neexistuje žádná souvislost.
 
-Podíval-li byste se zpětně na nedávno ukončenou periodu zvýšené inflace v ČR, v čem podle vás centrální banka pochybila, že zde byla míra inflace po tak dlouhou dobu nevídaně vysoká?
+**Podíval-li byste se zpětně na nedávno ukončenou periodu zvýšené inflace v ČR, v čem podle vás centrální banka pochybila, že zde byla míra inflace po tak dlouhou dobu nevídaně vysoká?**
 
 Úrokové sazby měly jít rychle nahoru už od roku 2017, aby se papiňák upustil a měnové podmínky (cena peněz) se dostaly do nějakého zhruba normálního stavu. Nicméně to je do jisté míry spekulace, protože jak správně říkáte, většina makroekonomů se shodne, že úrokové sazby se v inflaci plně projeví zhruba do 2–3 let. Co je ale nepopiratelné, je, že ČNB mohla snížit inflaci na podzim 2021 masivním posílením koruny, k čemuž se z nějakého důvodu neodhodlala. To byla ta hlavní měnověpolitická chyba, kvůli které ČNB tak katastrofálně nezvládla plnit svůj mandát cenové stability a ztratila velkou část své domácí i mezinárodní reputace, kterou předtím desítky let pracně budovala.
 
-Souhlasíte s tezí člena bankovní rady ČNB Tomáše Holuba o tom, že „s výhodou zpětného pohledu by bývalo bylo lepší začít úrokové sazby zvyšovat dříve, rychleji a na vyšší úroveň.“ Jinými slovy, myslíte si, že bylo chybou klíčovou sazbu po dlouhou dobu stabilizovat na úrovni sedm procent?
+**Souhlasíte s tezí člena bankovní rady ČNB Tomáše Holuba o tom, že „s výhodou zpětného pohledu by bývalo bylo lepší začít úrokové sazby zvyšovat dříve, rychleji a na vyšší úroveň.“ Jinými slovy, myslíte si, že bylo chybou klíčovou sazbu po dlouhou dobu stabilizovat na úrovni sedm procent?**
 
 V zásadě ano, i když jak jsem řekl – vedle zvyšování sazeb mělo přijít na řadu také přímé, jasné a masivní posílení koruny odprodejem velké části obrovských devizových rezerv. Samozřejmě stabilizace sazeb na sedmi procentech nebylo ekonomické, ale spíše politické rozhodnutí, kterým nové vedení zřejmě plnilo nějaké zadání. Je velmi těžké ubránit se dojmu, že tomu bylo nějak jinak. Víte, ono je v makroekonomii velmi těžké nějak spočítat, co vlastně změny sazeb s inflací udělají. Skoro vždycky je to tak, že centrální banka reaguje na něco, co v ekonomice vidí nebo čeká. Ideálně bychom potřebovali nějaký experiment, ale centrální banka těžko změní sazby jen tak, abychom v ekonomii měli hezká data. To zafixování sazeb na 7 procent ale vlastně takový experiment je, protože to opravdu nebyla reakce na ekonomiku, ale politiku; ekonomika vyžadovala naopak další růst sazeb. Takže na to půjde brzy udělat hezký výzkum, který nám pomůže pochopit, jak vlastně změny sazeb (nebo jejich stabilita) ovlivňují inflaci a růst.
 
-V nedávném rozhovoru jste uvedl následující: „Nevíme, jak změny úrokových sazeb inflaci ovlivní. (…) Ten přesný mechanismus není úplně jednoznačný.“ Znamená to tedy, že transmisní mechanismus měnové politiky – tak, jak bývá běžně uváděn – je chybný? Anebo to snad implikuje i to, že se ekonomie už od dob Wicksella, Keynese, Hayeka či Woodforda mýlí ohledně toho, že nárůst reálné úrokové míry nad její přirozenou úroveň (r*) povede k poklesu míry inflace?
+**V nedávném rozhovoru jste uvedl následující: „Nevíme, jak změny úrokových sazeb inflaci ovlivní. (…) Ten přesný mechanismus není úplně jednoznačný.“ Znamená to tedy, že transmisní mechanismus měnové politiky – tak, jak bývá běžně uváděn – je chybný? Anebo to snad implikuje i to, že se ekonomie už od dob Wicksella, Keynese, Hayeka či Woodforda mýlí ohledně toho, že nárůst reálné úrokové míry nad její přirozenou úroveň (r*****) povede k poklesu míry inflace?**
 
 Asi vás zklamu, ale nikdo neví, jak úrokové sazby ovlivňují inflaci. Centrální banky se tváří, že to vědí, že mají mechanismus, kde je možné zatáhnout za páku a za rok se dostaví výsledek. Je logické, že to centrální banky říkají, asi nemohou dělat nic jiného. Nicméně vědecká evidence pro ten standardní „transmisní mechanismus“ je překvapivě slabá. Musíte modely velmi ohýbat, abyste dostali něco, co se tomu standardnímu příběhu blíží. Podobně těžké je takový výsledek dostat v praxi při pohledu na data s použitím vektorových autoregresí (tj. pokročilá statistická metoda – pozn. red.). Já vlastně tomu standardnímu příběhu také věřím, jenom chci zdůraznit, že nemá silný vědecký základ. Co má silný vědecký základ, je opačné tvrzení: když centrální banka zvýší sazby a nechá je tam hodně dlouho, nakonec musí přijít vyšší inflace. To je proto, že centrální banka dlouhodobě nemůže ovlivnit reálnou úrokovou míru (alespoň podle stávajícího konsensu v makroekonomii). Protože inflace se rovná nominální úroková míra mínus reálná, dlouhodobé zvýšení nominální sazby by nakonec mělo vést k vyšší inflaci. To plyne jasně z hypotézy racionálních očekávání. Je tady potřeba ještě hodně práce.
 
-Na webových stránkách Vašeho projektu Zrušme inflaci je psáno, že „od roku 1990 bylo vydáno 222 vědeckých studií, které pečlivě váží všechny výhody a nevýhody inflace a odhadují, jaká inflace je pro ekonomiku zdravá. Průměrný odhad je minus 0,09 %.“ Nemohou však tyto studie být zastaralé, neboť mnohé z nich nebraly v potaz palčivou problematiku ZLB (tj. nulové omezení nominálních úrokových sazeb), jíž vyspělý svět čelil až na počátku tohoto století? Například ekonom České spořitelny Michal Skořepa ve své publikaci Ekonomické jednohubky deklaruje následující: „V posledních letech vychází míň článků, které optimální míru inflace odhadují na nule, nebo dokonce pod ní, a přibývá těch, které ji umisťují zřetelně nad nulu. Průměr za 30 článků zveřejněných v letech 2018–2021 je zhruba 1,5 procenta.“ Co přesně je tedy vědeckým konsenzem?
+**Na webových stránkách Vašeho projektu Zrušme inflaci je psáno, že „od roku 1990 bylo vydáno 222 vědeckých studií, které pečlivě váží všechny výhody a nevýhody inflace a odhadují, jaká inflace je pro ekonomiku zdravá. Průměrný odhad je minus 0,09 %.“ Nemohou však tyto studie být zastaralé, neboť mnohé z nich nebraly v potaz palčivou problematiku ZLB (tj. nulové omezení nominálních úrokových sazeb), jíž vyspělý svět čelil až na počátku tohoto století? Například ekonom České spořitelny Michal Skořepa ve své publikaci Ekonomické jednohubky deklaruje následující: „V posledních letech vychází míň článků, které optimální míru inflace odhadují na nule, nebo dokonce pod ní, a přibývá těch, které ji umisťují zřetelně nad nulu. Průměr za 30 článků zveřejněných v letech 2018–2021 je zhruba 1,5 procenta.“ Co přesně je tedy vědeckým konsenzem?**
 
 Moje konkrétní vědecké zaměření je meta-analýza, tedy shrnutí vědecké literatury na nějaké téma. Jasně, když si vyberete studie, které se vám hodí, dostanete výsledky, které se vám hodí. Nejsem si jist, odkud přesně Michal vzal to omezení na 2018 a proč je potřeba vyhodit 86 % výzkumu. Navíc, když se do těch nových studií podíváte podrobněji, tak jim nejde ani tak o odhad optimální inflace, ale spíš o vysvětlení, proč vlastně centrální banky cílují 2 %, ne 0 %. Ty články často píšou lidé právě z těch centrálních bank. Takže je s podivem, že i přes to všechno, a když si vyberete, co se Vám hodí, tak se k těm 2 % nedostanete. To něco říká o tom, jak těžké je ukázat nějaké celkové výhody kladné inflace. Jasně, máme ZLB, ale to je jen jedna z desítek výhod a nevýhod inflace. Řada studií zase ignoruje skutečnost, že spousta lidí má nenulové úspory, což samozřejmě náklady inflace hodně zvyšuje. Vzhledem k tomu všemu mi přijde férovější dívat se na literaturu jako celek. A hlavně: hodnota peněz je základní měrná jednotka ve společnosti. Když chceme metr zkracovat o dva centimetry každý rok, měli bychom si být sakra jistí, že nám to pomůže. Věřím, že nakonec i Michala přesvědčím o tom, že lepší by pro nás byla cenová stabilita.
 
-Jaký je váš názor na nynější nákupy zlata ze strany ČNB, případně dalších centrálních bank? Dává smysl mohutné devizové rezervy ČNB uložit do „zlatého národního pokladu„?
+**Jaký je váš názor na nynější nákupy zlata ze strany ČNB, případně dalších centrálních bank? Dává smysl mohutné devizové rezervy ČNB uložit do „zlatého národního pokladu„?**
 
 Dává to smysl marketingově. Investičně ne, zlato bych si sám nikdy nekoupil. Každopádně průměrný člověk má zlato rád a tak nějak čeká, že ČNB nějaké zlato mít bude. Nevidím problém v tom mít ve zlatě 1–2 % rezerv. To zlato ale musí být fyzicky uloženo v trezorech ČNB, abychom se na něj mohli podívat, jinak nemá smysl ani marketingově. Fakticky je ten problém jiný: ČNB má obří balík eur a dolarů, přičemž ukázala, že ani při rekordní inflaci ho nechce moc prodávat. Měla by ho tedy investovat pro dlouhodobý výnos, tedy do akcií.
 
-Ve svém textu z konce roku 2022 jste psal o tom, že racionálně vysvětlit chování ČNB může jen jedna teorie. Měl jste přitom patrně na mysli tzv. fiskální teorii cenové hladiny (tj. hypotéza, která dle slov jednoho z jejích čelních přívrženců Johna Cochrana říká, že “inflace se přizpůsobuje tak, aby se reálná hodnota vládního dluhu rovnala současné hodnotě primárních přebytků”). Jak se tedy díváte na tuto hypotézu? Člen bankovní rady ČNB Tomáš Holub totiž třeba praví, že není zastáncem této teorie, poněvadž mu její kauzální příběh nepřipadá intuitivní. Jaký je Váš pohled?
+**Ve svém textu z konce roku 2022 jste psal o tom, že racionálně vysvětlit chování ČNB může jen jedna teorie. Měl jste přitom patrně na mysli tzv. fiskální teorii cenové hladiny (tj. hypotéza, která dle slov jednoho z jejích čelních přívrženců Johna Cochrana říká, že “inflace se přizpůsobuje tak, aby se reálná hodnota vládního dluhu rovnala současné hodnotě primárních přebytků”). Jak se tedy díváte na tuto hypotézu? Člen bankovní rady ČNB Tomáš Holub totiž třeba praví, že není zastáncem této teorie, poněvadž mu její kauzální příběh nepřipadá intuitivní. Jaký je Váš pohled?**
 
 Tomáše Holuba si velmi vážím. I když se na řadě věcí neshodneme, tato země nemá lepšího centrálního bankéře. Měl by být příštím guvernérem. Když ale čtu novou knihu o fiskální teorii od Johna Cochrana, kauzální příběh se mi zdá intuitivní: vidím, že stát není schopen svoje dluhy v budoucnu splácet. Pokud nechce zbankrotovat, bude stát chtít inflaci, aby dluhy skrytě umazal. Takže racionální člověk nebude chtít držet moc peněz nebo dluhopisů, ale reálné věci: nemovitosti, akcie, případně si koupíte radši zboží a služby, nebo pojede na dovolenou, dokud peníze ještě mají nějakou cenu. Pamatuji si, jak mi stejný mechanismus u svého chování popisovali moji rodiče před pár lety, aniž by cokoliv o fiskální teorii věděli.
 
-Do jaké míry ovlivňují deficity veřejných financí míru inflace a jaký měla fiskální politika dopad na inflaci v posledních letech?
+**Do jaké míry ovlivňují deficity veřejných financí míru inflace a jaký měla fiskální politika dopad na inflaci v posledních letech?**
 
 Podle fiskální teorie nejsou současné deficity samy o sobě moc důležité. Důležitý je výhled do budoucna: bude stát schopen svoje dluhy nakonec splácet? Profesor Barro má nový článek, kde ukazuje, jak neočekávané rozvolnění fiskálních pravidel během covidu přispělo k inflaci ve vyspělých zemích a konkrétně v ČR. To samozřejmě není konečné slovo, není to potvrzení fiskální teorie, ale určitě to svou roli hrálo. Dokud nemáme konkrétnější výzkum, nabízí se následující hodnocení: k rekordní české inflaci přispělo jak chování ČNB po konci intervencí, tak „vrtulníkové peníze“ vlády během Covidu. Jak měnová, tak fiskální politika byla u nás v poslední dekádě extrémní a unikala běžné praxi zbytku Evropy.
 
@@ -3888,51 +3888,51 @@ Zajímalo je, jak souběžné zaměstnání ovlivňuje výsledky na univerzitě.
 
 Její závěry publikoval prestižní časopis Economics of Education Review. Dosud se často stereotypně mínilo, že brigáda či práce při studiu většinou zhoršují známky, protože má student na získávání znalostí a dovedností méně času. Platí to jen do jisté míry. „Zaměstnání naučí mladé lidi větší disciplíně a efektivitě, která se pak projeví i ve studiu,“ dodává Havránková.
 
-Máte nyní zrekapitulovaných téměř sedm desítek studií. Kdybyste měla s vysokoškoláky řešit, jestli mají při studiu i pracovat, co jim doporučíte?
+**Máte nyní zrekapitulovaných téměř sedm desítek studií. Kdybyste měla s vysokoškoláky řešit, jestli mají při studiu i pracovat, co jim doporučíte?**
 
 Ať při studiu pracují a sbírají zkušenosti. Ne nutně už od prvního ročníku, to není optimální, ale určitě ano na magisterském stupni. Na druhou stranu by měli mít při studiu jen částečný úvazek, nejlépe do 20 hodin týdně. Náš výzkum ukazuje, že při vyšším úvazku už často studijní výsledky znatelně trpí.
 
 ## Po studiu seženou lepší práci
 
-Přišli jste na to, že pokud není student přehlcený paralelní prací, je pro něj taková práce či brigáda přínosná. V čem tedy?
+**Přišli jste na to, že pokud není student přehlcený paralelní prací, je pro něj taková práce či brigáda přínosná. V čem tedy?**
 
 Z výzkumu jasně plyne, že pracovní zkušenosti po absolvování školy pomohou získat lepší, lépe placené plnohodnotné zaměstnání. Kromě toho je pro člověka snazší zjistit, jaká práce ho bude nebo nebude bavit. Řeknu příklad: Třeba takový audit není zdaleka pro všechny. Znám řadu studentů ekonomie, kteří si po ukončení školy audit odzkoušeli, aby pak po pár dnech odešli. Lepší je osahat si to už během studia.
 
-Zmínila jste 20 hodin týdně. V čem je tato hranice zlomová?
+**Zmínila jste 20 hodin týdně. V čem je tato hranice zlomová?**
 
 Není to přesná, do kamene vytesaná hranice. Ale pokud jde z dostupných studií ukázat na nějaký zlom, tak se nachází právě tam. Když člověk pracuje víc než 20 hodin týdně, tak to vlastně znamená, že práci věnuje víc než polovinu ze svého produktivního času. Už pak víc pracuje, než studuje. Což už se ve škole projeví.
 
-A projeví se to přímo na studijních výsledcích?
+**A projeví se to přímo na studijních výsledcích?**
 
 Největší vliv nevidíme ani tak na známky, ale na pravděpodobnost, že student vůbec školu dokončí. Případně že se přihlásí na další studium, třeba magisterské po bakalářském. Jak už je víc zapojen do pracovního než studijního života, tak ho to láká ze školy odejít úplně. Je to do velké míry intuitivní a logické; data to také ukazují jasně.
 
 ## Za studium by se mělo platit
 
-Podle srovnání evropských studentů na portálu eurostudent.eu ti čeští pracují nejvíce v Evropě, když má nějakou formu brigády či zaměstnání při škole asi 92 procent z nich. Vychází to tak i ve vašich výzkumech a vnímáte to jako problém?
+**Podle srovnání evropských studentů na portálu eurostudent.eu ti čeští pracují nejvíce v Evropě, když má nějakou formu brigády či zaměstnání při škole asi 92 procent z nich. Vychází to tak i ve vašich výzkumech a vnímáte to jako problém?**
 
 Ve světle našich výsledků to za problém nepovažujeme, naopak. Jak jsme se už bavili, práci při studiu lze jen doporučit a je dobře, že to tak naši studenti už většinou vnímají.
 
-Narážel jsem i na fakt, že téměř 60 procent pokusů dostudovat v Česku bakalářský program končí neúspěchem. Jak moc to za vás souvisí i s prací – lidově řečeno, že studenti vzdají školu a jdou rovnou pracovat?
+**Narážel jsem i na fakt, že téměř 60 procent pokusů dostudovat v Česku bakalářský program končí neúspěchem. Jak moc to za vás souvisí i s prací – lidově řečeno, že studenti vzdají školu a jdou rovnou pracovat?**
 
 Obecně platí, že v Česku je příliš mnoho bakalářských programů, z nichž zdaleka ne všechny jsou dobře vedené a ne všechny mají dobrou kvalitu. Osobně se také domnívám, že by se za studium mělo něco platit. Pokud je totiž zdarma, má člověk menší motivaci dobře si vybrat a opravdu se snažit ho dokončit. Často pak přejde na jiný program, který nakonec dokončí, ale jsou to ze strany společnosti vyhozené peníze. A chceme-li udržet nějakou úroveň, tak si musíme přiznat, že na bakalářský titul nemá předpoklady každý.
 
 Zahraniční studium bývá obtížnější, byť to není pravidlem. Z toho také plyne, že průměrní čeští studenti mají větší kapacitu pro brigády během celého roku.
 
-Máte také informace o tom, jak moc studenti v Česku váží své pracovní úvazky ke studovaným oborům a jak si vedou?
+**Máte také informace o tom, jak moc studenti v Česku váží své pracovní úvazky ke studovaným oborům a jak si vedou?**
 
 Tohle jsme nezkoumali. Mám jen určitá data z Institutu ekonomických studií Univerzity Karlovy, kde přednáším. Tam velká většina studentů, pokud pracuje při studiu, pracuje přímo v oboru, který se týká ekonomie nebo byznysu. A myslím, že jim to ve studiu spíše prospívá, zejména to, jak se v práci učí time management.
 
 ## Němci dávají práci studentům
 
-Museli jste se „probrat“ velkým počtem studií. Vzpomenete si na nějaký aspekt či výsledek studentů konkrétního státu, kdy vás závěry vyloženě překvapily?
+**Museli jste se „probrat“ velkým počtem studií. Vzpomenete si na nějaký aspekt či výsledek studentů konkrétního státu, kdy vás závěry vyloženě překvapily?**
 
 V Německu práce při studiu dokonce pomáhá zlepšit studijní výsledky. A to i když nebereme v úvahu ty německé školy, které přímo kombinují praxi a studium v rámci výuky. Každopádně v Německu systém práce při studiu funguje skvěle na všech úrovních. A studentům může pomoct, když si osvojí základní pracovní návyky, třeba efektivní nakládání s časem.
 
-A v čem konkrétně tedy německá praxe funguje skvěle?
+**A v čem konkrétně tedy německá praxe funguje skvěle?**
 
 V Německu existuje tzv. duální systém, ve kterém některé studijní programy sestávají jak ze studia, tak z praxe, tedy zaměstnání až na 70procentní úvazek. Zaměstnavatelé jsou tedy zvyklí, že dávají práci studentům. To se sice týká hlavně středních škol, ale tato zkušenost zaměstnavatelů se pak přenáší i na to, že umějí poskytnout podmínky lépe šité na míru i studentům vysokých škol.
 
-S kolegy jste při vaší vědecké práci použili metaanalýzu. Můžete laikovi vysvětlit, jak funguje?
+**S kolegy jste při vaší vědecké práci použili metaanalýzu. Můžete laikovi vysvětlit, jak funguje?**
 
 Metaanalýza je statistická metoda souhrnu vědeckých výsledků. Díky ní můžeme zjistit, co nám vědecká literatura jako celek říká. Musíme přitom brát v úvahu různé problémy, například související s kvalitou studií nebo takzvanou publikační selektivitou – že intuitivní výsledky mají větší pravděpodobnost publikace. Klíčový je způsob odhadu: Je potřeba odfiltrovat, že schopnější studenti více pracují a zároveň mají lepší známky, chudší studenti musí pracovat, aby se uživili. Tohle všechno je třeba brát v potaz, nestačí se podívat jen na průměrný výsledek z literatury.
 
@@ -4784,73 +4784,73 @@ I když inflace v novém roce klesne, centrální banka to sotva může vydávat
 
 Pár rad má pro centrální bankéře i nyní. Třeba lépe investovat mamutí devizové rezervy a „zapsat se do dějin“ jako tým, který vydělá Česku peníze, které mu momentálně tolik chybějí.
 
-Věříte České národní bance, že příští rok inflace opravdu odezní?
+**Věříte České národní bance, že příští rok inflace opravdu odezní?**
 
 Věřím, že inflace klesne někam k třem procentům. Přes všechna selhání, jichž se naše národní banka dopustila za poslední roky, tu není nikdo, kdo by uměl inflaci předpovídat lépe. Tedy v krátkém období, na čtvrt až půl roku dopředu. V ČNB se tomu věnují desítky expertů a nebudu si hrát na to, že vím víc než oni. Inflace kolem tří procent ale není úspěch. Je to pořád strašně slabý výsledek.
 
-Proč slabý? Inflace začínající dvojkou tu nebyla od léta 2021. A jde o hodnotu v souladu s cílem ČNB.
+**Proč slabý? Inflace začínající dvojkou tu nebyla od léta 2021. A jde o hodnotu v souladu s cílem ČNB.**
 
 Podívejte, ČNB vždycky bude slibovat inflaci kolem dvou procent. Ve své prognóze bude vždycky mít, že inflace bude dvě procenta – když počkáme dost dlouho. Jinak by ČNB musela říct, že svůj cíl nedokáže doručit. V odhadování inflace na rok a více dopředu má ale ČNB historicky stejně mizernou výkonnost jako všichni ostatní. Proto dvouprocentní inflace na konci prognózy nic neznamená.
 
-Proč vám vrácení inflace mezi dvě až tři procenta nepřijde jako úspěch?
+**Proč vám vrácení inflace mezi dvě až tři procenta nepřijde jako úspěch?**
 
 Za poslední tři roky máme kumulovanou inflaci 33 procent. Ceny stouply o třetinu. Pokles na tři procenta je pomalejší zhoršování, ale nelze říct, že je to návrat k cenové stabilitě. Propad kupní síly peněz se tím nespraví. Přitom podle ústavy se ČNB má snažit o stabilitu cen, ne inflace. Aby ČNB získala svoji ztracenou důvěryhodnost aspoň částečně zpět, musí zajistit víc než jen zpomalení inflace. Je potřeba cílit na mírný pokles cen, aby se část ztracené hodnoty peněz vrátila zpět.
 
-Jak by šlo zařídit, aby ceny příští rok klesly?
+**Jak by šlo zařídit, aby ceny příští rok klesly?**
 
 Stačilo by nedělat nic. Respektive pokračovat v tom, co ČNB dělá poslední rok a půl – tedy držet úrokové sazby na sedmi procentech. Když byla inflace dvouciferná, tak ji ČNB tolerovala. Teď by mohla symetricky tolerovat mírnou deflaci. Předtím pomohla dlužníkům, teď pomůže střadatelům.
 
-Většina ekonomů by namítla, že taková politika by vedla k dalšímu útlumu a že nestojí za to. Vy myslíte, že stojí?
+**Většina ekonomů by namítla, že taková politika by vedla k dalšímu útlumu a že nestojí za to. Vy myslíte, že stojí?**
 
 Uznávám, že pro řadu lidí a firem by to bylo bolestivé. I mně se blíží doba, kdy budu muset refinancovat hypotéku. Ale ČNB mi za poslední tři roky umazala třetinu dluhu. A mým rodičům naopak třetinu životních úspor. Teď je čas, aby se karta obrátila a reálné úroky zůstaly kladné. Mimochodem za celou dobu existence České republiky byly jen pár let úroky na spořicích účtech vyšší než inflace. Takže nechme teď vydělat střadatele i za cenu mírné deflace.
 
-Dokážete odhadnout, jaké by to mělo náklady? Už teď se lze často setkat s názorem, jaký má třeba exguvernér Jiří Rusnok, že ČNB ekonomiku zbytečně dusí a že s úroky už měla jít dolů.
+**Dokážete odhadnout, jaké by to mělo náklady? Už teď se lze často setkat s názorem, jaký má třeba exguvernér Jiří Rusnok, že ČNB ekonomiku zbytečně dusí a že s úroky už měla jít dolů.**
 
 Nikdo nechce, abychom snížili ceny o třetinu. To by bolelo hodně. Ale mírná deflace ekonomice neškodí. A pokud inflace opravdu pomáhá, měli bychom teď zažívat boom. Vždyť podle dat Eurostatu máme za posledních pět let druhou nejvyšší inflaci v Evropě. Výkon ekonomiky nebyl v posledních letech nijak slavný, ale nebyl ani tak mizerný, jak se říká.
 
-Opravdu? Hodně se poslední dobou mluví o tom, že jsme se jako jediní v EU ještě ekonomicky nevrátili na předcovidovou úroveň. Že jsme v EU v tomto ohledu rarita. Nejsme?
+**Opravdu? Hodně se poslední dobou mluví o tom, že jsme se jako jediní v EU ještě ekonomicky nevrátili na předcovidovou úroveň. Že jsme v EU v tomto ohledu rarita. Nejsme?**
 
 Zrušili jsme EET, čímž se část ekonomiky přetřela z bílé na šedou. Protože umíme měřit jen tu bílou část, výkon ekonomiky se opticky snížil. Detaily toho mechanismu už jsem u vás v létě popisoval. Ten příběh, že jsme se jako jediní nevrátili na předcovidovou úroveň, bychom měli pohřbít.
 
-Proč jsme vlastně měli v Česku tak vysokou inflaci?
+**Proč jsme vlastně měli v Česku tak vysokou inflaci?**
 
 Musíme začít tím nejdůležitějším, odkud se vlastně inflace bere. Jasně, přicházejí šoky ze zahraničí a od vlády. Ale skoro všichni ekonomové se shodnou, že v období pěti a více let o inflaci nakonec rozhoduje centrální banka, která kontroluje cenu peněz, úrokové sazby. Když tedy máme po dobu pěti let skoro největší inflaci ve vyspělém světě, je to jednoznačně vina naší národní banky. Nejde to svést na covid, na válku ani na zelenou transformaci.
 
-Co podle vás zdejší centrální banka pokazila?
+**Co podle vás zdejší centrální banka pokazila?**
 
 Přesný mechanismus pořád neznáme, nemáme k tomu vědecké studie. Ale zárodek inflace je třeba hledat v intervencích proti koruně z let 2013 až 2017. Jejich smyslem bylo rozpumpovat ekonomiku, „natlakovat papiňák“, jak říkala ČNB. A to se povedlo. Po roce 2017 jsme chvíli rostli skoro nejrychleji na světě. Částečně to bylo dáno opticky zavedením EET, podobně jako teď v opačném směru. Každopádně jsme po ukončení intervencí měli jednu z nejvíc přehřátých ekonomik v Evropě. A ČNB na to nezvládla včas zareagovat.
 
-Vy jste v ČNB tehdy byl. Proč jste si tohoto přehřátí nevšimli? A pokud jste si ho všimli, proč jste nic nepodnikli?
+**Vy jste v ČNB tehdy byl. Proč jste si tohoto přehřátí nevšimli? A pokud jste si ho všimli, proč jste nic nepodnikli?**
 
 Přetrvávala obava z deflace, kvůli které se předtím intervence spouštěly. Úrokové sazby proto zůstaly nízko, inflační papiňák se neupouštěl. A v roce 2021 – když skončily covidové lockdowny a vláda pokropila zemi vrtulníkovými penězi – vybouchl. ČNB mimochodem vládu v pumpování peněz tehdy vydatně slovně podporovala. Zpětně je dobré přiznat kredit lidem, jako byl viceguvernér ČNB Mojmír Hampl, kteří po roce 2017 navrhovali výrazně vyšší sazby. Zůstali v menšině, ale měli pravdu.
 
 Byl jsem tehdy Mojmírovým poradcem a s prosazováním vyšších sazeb jsem mu měl pomáhat víc. Měl jsem psát přesvědčivější stanoviska pro zbytek bankovní rady, měl jsem lépe přemlouvat ostatní poradce. Beru to i jako své osobní selhání a omlouvám se za to.
 
-Poslední dva guvernéři, Aleš Michl a Jiří Rusnok, kvůli inflaci kritizují jeden druhého. Za koho podle vás ČNB zaspala víc? Kdo má na dnešním stavu hlavní vinu?
+**Poslední dva guvernéři, Aleš Michl a Jiří Rusnok, kvůli inflaci kritizují jeden druhého. Za koho podle vás ČNB zaspala víc? Kdo má na dnešním stavu hlavní vinu?**
 
 Už jsme se bavili o tom, že úroky měly být mnohem vyšší v letech 2017 až 2019. Tehdy byl guvernérem Jiří Rusnok. Další kritická chvíle přišla na podzim 2021. To už bylo jasné, že inflace u nás vylétne. A také že tomu zvyšování sazeb nezabrání, protože to se v inflaci naplno projevuje v horizontu jednoho až dvou let. Nabízelo se tedy provést to, co ČNB udělala v roce 2013, ale v opačném gardu: spustit masivní intervence, ale tentokrát za posílení koruny. Tedy chovat se symetricky a prodat většinu eur, které mezi roky 2013 a 2017 ČNB nakoupila za nově vytvořené koruny. Není sporu, že by to inflaci rychle snížilo.
 
-Nynější guvernér Michl už před nástupem do úřadu slíbil Miloši Zemanovi stabilitu sazeb, pak nejspíš nechtěl slib porušit a držel se ho, i když inflace dál rostla a aparát ČNB radil sazby zvedat. Byla to chyba?
+**Nynější guvernér Michl už před nástupem do úřadu slíbil Miloši Zemanovi stabilitu sazeb, pak nejspíš nechtěl slib porušit a držel se ho, i když inflace dál rostla a aparát ČNB radil sazby zvedat. Byla to chyba?**
 
 U hodnocení Aleše Michla také musím uvést střet zájmů, byl jsem půl roku též jeho poradcem, když byl ještě řadový člen rady. Je ale potřeba konstatovat, že proti inflaci nová bankovní rada aktivně neudělala nic.
 
-Vy prosazujete tezi, že centrální banka nemá výsledky mimo jiné proto, že je – jak říkáte – „rozbitá“. Co tím máte na mysli?
+**Vy prosazujete tezi, že centrální banka nemá výsledky mimo jiné proto, že je – jak říkáte – „rozbitá“. Co tím máte na mysli?**
 
 V bance chybí názorová pestrost a diskuze, která tam dříve vždy probíhala. Když se rozhodovalo o intervencích v roce 2013, rada opakovaně přehlasovávala guvernéra Singera. Trvalo mu několik měsíců, než přesvědčil Mojmíra Hampla a dal dohromady většinu v bankovní radě. Výsledné rozhodnutí se třeba někomu nemusí líbit, ale vyhrála argumentačně silnější strana. Nic takového za posledních sedm let v ČNB nevidíme.
 
 Ne proto, že by radní ČNB nebyli dost dobří. Jsou to skvělí experti. Není to osobní selhání, je to selhání ČNB jako instituce. Problém je feudalismus ve jmenování rady. Centrální banku rozbil Miloš Zeman, když dovolil oběma posledním guvernérům, aby si sami vybrali skoro celý zbytek rady. Jako by ČNB byla jejich léno. U Aleše Michla je to ještě horší v tom, že výběr guvernéra nastal souběžně s obměnou skoro celé rady. Radní jsou pak guvernérovi zavázaní. Co chce guvernér, to bude.
 
-O tom se často mluví, ale jak radním dokázat, že plní to, co jim guvernér řekne, místo toho, co považují za správné?
+**O tom se často mluví, ale jak radním dokázat, že plní to, co jim guvernér řekne, místo toho, co považují za správné?**
 
 Chcete důkaz? Současná rada odhlasovala Alešovi jmenování Vladimíra Kruliše šéfem jedné z nejdůležitějších sekcí ČNB. Věděli, jaké to bude mít důsledky pro reputaci ČNB i jejich vlastní, a stejně to udělali.
 
-Pokud je ČNB rozbitá, kdo ji můžu opravit?
+**Pokud je ČNB rozbitá, kdo ji můžu opravit?**
 
-Co zmůže současný prezident? Mandáty v ČNB jsou delší než na Hradě a Petr Pavel bude během tohoto funkčního období nominovat jen jednoho ze sedmi radních.
+**Co zmůže současný prezident? Mandáty v ČNB jsou delší než na Hradě a Petr Pavel bude během tohoto funkčního období nominovat jen jednoho ze sedmi radních.**
 
 Nestačí jenom počkat pět let a pak vyměnit Aleše Michla. Je potřeba rozbít dnešní souběh mandátů. Současný prezident se může domluvit se členy bankovní rady, kteří ještě mohou mít další mandát, aby v horizontu tří let postupně rezignovali. On je pak obratem jmenuje na dalších šest let, ale každého v jiný moment. Bylo by to výhodné pro všechny. Čtyři současní radní sice mohou teoreticky získat ještě jeden mandát, ale také nemusí. A takto by měli jistotu, že si opravdu protáhnou funkci o dva tři roky. Hlavně by to ale pomohlo ČNB. Výběr lidí do jejího vedení by se vrátil k původnímu stavu, kdy byla rada obsazována postupně a nedocházelo k jednorázovým zemětřesením.
 
-Jak by mohl centrální banku opravit Parlament?
+**Jak by mohl centrální banku opravit Parlament?**
 
 Pomohlo by, kdyby lépe vymezil odpovědnost ČNB v zákoně. ČNB má obrovskou moc a je nezávislá. Ale co když naprosto odmítne bojovat proti inflaci? Pak dnes není síla, která by ji nějak usměrnila. Můžeme se dostat i do situace, kdy se vedení ČNB ani neomluví a bude se jen vymlouvat na všechny ostatní, na vládu, na zahraničí. Byl bych rád, aby v zákoně o ČNB byla povinnost pro guvernéra napsat prezidentovi omluvný dopis, když je inflace nad tolerančním pásmem. Něco podobného, jako mají ve Spojeném království.
 
@@ -4858,35 +4858,35 @@ Muselo by jít o dopis, v kterém se ČNB nemůže jen vymlouvat, ale kde musí 
 
 Jak už jsem naznačil, měla by se hlavně omluvit. Růst cen o třetinu během tří let, to je pro reputaci banky velká rána. V zahraničí tomu lidé prvně nevěří, potom se smějí. Proč bychom měli ČNB důvěřovat, že příště nic takového nedopustí? Že si můžeme v korunách spořit na důchod nebo pro děti? Omluva je začátek. Každý dělá chyby, omluva není ostuda. Ostuda je házet vlastní vinu na ostatní.
 
-Často mluvíte o tom, že by ČNB měla lépe spravovat devizové rezervy. Jde přitom o hodně citlivou věc, svobodná správa rezerv je jedním z pilířů nezávislosti. Co byste radil dělat jinak?
+**Často mluvíte o tom, že by ČNB měla lépe spravovat devizové rezervy. Jde přitom o hodně citlivou věc, svobodná správa rezerv je jedním z pilířů nezávislosti. Co byste radil dělat jinak?**
 
 Prvně je potřeba říct, co vlastně ty rezervy jsou. Není to žádný balík na horší časy, který bychom krvopotně naspořili. Je to vedlejší efekt dvou věcí. Zaprvé, když ČNB oslabuje korunu, jak se to dělo ve velkém v letech 2013 až 2017, tak vymačkává na klávesnici nové koruny a za ně na trhu koupí eura. Ta tvoří hlavní část dnešních rezerv. Zadruhé, když z Bruselu proudí dotační eura, tak je ČNB také stáhne do rezerv, také za ně vymačká nové koruny a ty pak pošle vládě. Rezervy tedy nikdo cíleně nevytváří. Když už je ale máme, tak se dají lépe využít.
 
 Dvěma způsoby. Nejlepší je použít je v krizi, když je výjimečně vysoká inflace. O tom jsme se bavili – tak, jak ČNB předtím eura kupovala, tak je měla v roce 2021 naopak prodávat, tím tlačit korunu ke zpevnění a inflaci tlumit. Když to ČNB odmítla pořádně udělat i v situaci největší inflační krize za generaci, tak tím říká, že rezervy nejspíš strategicky nepoužije nikdy. Pak ale – a to je hlavní – by je neměla nechat hnít, ale měla by je investovat tak, aby dlouhodobě vydělávaly. Mimochodem i zainvestované rezervy může v krizi použít na posílení koruny.
 
-Když jste o lepším využití rezerv mluvil nedávno v Otázkách Václava Moravce, šlo to celé v televizní zkratce číst i tak, že chcete z devizových rezerv sanovat veřejné rozpočty. Což pak hned dva bývalí guvernéři kritizovali jako nápad, který by znamenal nebezpečný zásah do nezávislosti banky. Jak to tedy je? Jde vám jen o lepší výnosy z rezerv? O investiční strategii ČNB, o to, jak dělá svůj portfolio management?
+**Když jste o lepším využití rezerv mluvil nedávno v Otázkách Václava Moravce, šlo to celé v televizní zkratce číst i tak, že chcete z devizových rezerv sanovat veřejné rozpočty. Což pak hned dva bývalí guvernéři kritizovali jako nápad, který by znamenal nebezpečný zásah do nezávislosti banky. Jak to tedy je? Jde vám jen o lepší výnosy z rezerv? O investiční strategii ČNB, o to, jak dělá svůj portfolio management?**
 
 Už o tom píšu pět let a některé očividné věci zapomínám opakovat. Ale kolegové tomu rozumí. Nikdo nechce ČNB nic sebrat, je potřeba začít debatu na téma, kolik rezervy vydělávají. Za posledních pět let je to v průměru pod jedním procentem, a to bez vlivu posilování koruny. Úplně stejnou úvahu provedl před lety Singapur. Když si uvědomil, že má devizových rezerv víc, než potřebuje, tak jich většinu zainvestoval na dlouhodobý výnos. Často do akcií, což je v dlouhodobém horizontu nejlepší investiční strategie, ale taky do nemovitostí. Když investujete do akcií, kupujete si podíl na ziscích světových firem. De facto si tak kupujete účast na technologickém pokroku. Můžete vydělávat – samozřejmě s dočasnými výkyvy – dlouhodobě šest procent ročně, to je standardní mezinárodní zkušenost.
 
-Věříte tomu, že by se ČNB tímto mohla dopracovat k příspěvkům do státního rozpočtu?
+**Věříte tomu, že by se ČNB tímto mohla dopracovat k příspěvkům do státního rozpočtu?**
 
 Ano – a jediné, co stačí, je, aby se k tomu rozhodl guvernér. Zbytek plyne ze současné zákonné úpravy: ČNB převádí své zisky do státního rozpočtu. V zahraničí jsou takové převody úplně normální. Jen tady na to nejsme zvyklí. Je samozřejmě pravda, že ČNB musí nejdříve uhradit svou ztrátu z minulých let, která vzniká tím, že koruna dlouhodobě posiluje a nevydělávající rezervy ztrácejí v korunovém vyjádření hodnotu. Ale o to víc by se měla ČNB snažit, aby rezervy vydělávaly.
 
-Jak veřejnosti vysvětlit, že jde přece jen o jiný okruh peněz, který by měl zůstat stranou běžné fiskální rozvahy? Nepovažujete za riskantní navykat veřejnost na to, že ČNB bude státu takto vypomáhat, místo aby si hleděla jen své měnové politiky? Nemáte obavu z toho, že se takového řešení chopí v zjednodušené verzi političtí extremisté a přijdou jednoho dne třeba s nápadem platit z rezerv ČNB důchody?
+**Jak veřejnosti vysvětlit, že jde přece jen o jiný okruh peněz, který by měl zůstat stranou běžné fiskální rozvahy? Nepovažujete za riskantní navykat veřejnost na to, že ČNB bude státu takto vypomáhat, místo aby si hleděla jen své měnové politiky? Nemáte obavu z toho, že se takového řešení chopí v zjednodušené verzi političtí extremisté a přijdou jednoho dne třeba s nápadem platit z rezerv ČNB důchody?**
 
 Extremisté mají rezervy pod kontrolou teď: extremisté nulového rizika. Jasně, když máte balík tří bilionů korun a neberete riziko, tak máte jistotu. Máte jistotu, že budete pomalu prodělávat. Nebudou tam žádné velké výkyvy, za které by vás někdo mohl kritizovat. Ale jedním z úkolů národní banky je učit veřejnost finanční gramotnosti. Musíme umět brát kalkulované riziko, jinak budeme chudí. Investovat devizové rezervy do akcií je dobré riziko a toto rozhodnutí můžeme podpořit stohy ekonomického výzkumu a zahraniční praxe. Nejsem sám, kdo tohle říká. V ČNB jsme se tohle snažili zvednout od roku 2017. Kdyby mezi lety 2017 a 2019 ČNB postupně investovala rezervy do akcií, vydělala by do dneška kolem bilionu korun. Čili nebyla by půl bilionu ve ztrátě, ale půl bilionu v plusu. Mrzí mě, když tady bolestivě hledáme desítky miliard pro zdravotnictví a školství. Přitom ročně vyhazujeme stamiliardy z okna. Je mi z toho smutno.
 
-O svojí vizi, jak udělat z ČNB cosi jako fond bohatství, mluvil ještě jako řadový člen bankovní rady často právě Aleš Michl. Tehdy jste si v této věci rozuměli? A pokud ano, bude ji podle vás propagovat i nyní jako guvernér?
+**O svojí vizi, jak udělat z ČNB cosi jako fond bohatství, mluvil ještě jako řadový člen bankovní rady často právě Aleš Michl. Tehdy jste si v této věci rozuměli? A pokud ano, bude ji podle vás propagovat i nyní jako guvernér?**
 
 Ano, v tomhle jsme si rozuměli, ale není potřeba fond bohatství. Stačí, aby Aleš sebral odvahu udělat správnou věc. Mně se zdá, že nechce nic riskovat. K čemu je guvernérem? Nerozumím třeba tomu, proč se bojí chodit do diskuzních pořadů, kde nejsou předem připravené otázky. I nepříjemná komunikace je součást práce guvernéra, za kterou je dobře placen. Pokud je jeho ambicí zapsat se do historie, ve správě rezerv má příležitost.
 
-Vaše stížnosti na špatné fungování ČNB bychom nemuseli řešit, kdyby Česko mělo euro. Jste příznivcem jeho přijetí?
+**Vaše stížnosti na špatné fungování ČNB bychom nemuseli řešit, kdyby Česko mělo euro. Jste příznivcem jeho přijetí?**
 
 Jsem příznivcem cenové stability. Dlouho jsem si myslel, že ji budeme mít spíš s korunou než s eurem. Teď už si tak jistý nejsem.
 
 Ekonomicky ta otázka nejde zodpovědět, výhody a nevýhody eura jsou zhruba vyrovnané. Takže se dostáváme k politice a emocím. Často cestuji, tedy pro mě je euro výhodné. Také je výhodné pro investice do zahraničí. Když přijmeme euro, nebudeme moci z EU odejít, protože by to znamenalo totální finanční kolaps země. To je důležité si uvědomit. Euro navěky zaručí naše spojení s Evropou, v dobrém i ve zlém.
 
-Proti přijetí eura je ale dlouhodobě přes 70 procent Čechů. Věříte, že se eura někdy v Česku dočkáte?
+**Proti přijetí eura je ale dlouhodobě přes 70 procent Čechů. Věříte, že se eura někdy v Česku dočkáte?**
 
 Ne. Jsem sice osobně pro euro, ale nejsem si jist ohledně výhodností pro ostatní lidi a celou zemi. Takže euro nebudu hlasitě propagovat. Tak to vidí řada lidí, se kterými se bavím a kteří by jinak pro euro hlasovali. Nevěřím, že se během mého života podaří najít pro euro většinu. Podle mě jsme my Češi v jádru monarchisté. Volíme sice prezidenta, ale vnímáme ho jako krále. Máme rádi svého krále a svoji korunu. Nebudeme se jí chtít vzdát, jsme v tom jiní než Poláci nebo Maďaři. Vůbec bych se nedivil, kdyby obě země jednoho dne už euro měly a my bychom byli dál ostrovem s korunou.
 
@@ -5456,75 +5456,75 @@ Ve svém hodnocení dnešní bankovní rady, vedené právě Michlem, a té pře
 
 V obsáhlém rozhovoru pro CzechCrunch popisuje Tomáš Havránek, jehož manželka Zuzana je také význačná a hojně citovaná ekonomka, proč by se ČNB měla snažit držet inflaci na nule, nikoli na dvou procentech, proč je inflace relikt minulého století a navrhuje ji zrušit, jak by se z ČNB mohl stát obří investiční fond, který by zaplatil důchodovou reformu, a že jestli něco trápí centrální banku, je to nedostatek vnitřní diskuze.
 
-Statistici před pár dny oznámili, že meziroční inflace klesla na 8,5 procenta, meziměsíční hladina se zvedla o 0,2 procenta. Překvapilo vás na tom něco?
+**Statistici před pár dny oznámili, že meziroční inflace klesla na 8,5 procenta, meziměsíční hladina se zvedla o 0,2 procenta. Překvapilo vás na tom něco?**
 
 Nepřekvapilo to mě a asi ani jiné analytiky. Všichni jsou spíš zvědaví na lednová čísla, kdy míra přecenění udá tón pro celý příští rok. Co se v lednu bude dít, se ale složitě odhaduje. Nejlepší krátkodobý odhad má ČNB a její prognóza říká, že v prvním kvartále roku 2024 by se inflace měla pohybovat kolem 2,5 procent.
 
-Takže jejím modelům, jak se bude chovat ekonomika, pořád ještě věříte? Vede se o nich docela intenzivní debata uvnitř ČNB i mimo ni.
+**Takže jejím modelům, jak se bude chovat ekonomika, pořád ještě věříte? Vede se o nich docela intenzivní debata uvnitř ČNB i mimo ni.**
 
 Hlavní model ČNB slouží k tomu, aby poskládal různé příběhy do jedné konzistentní historky. Chybou je, když se matematickým modelem slepě řídíte – je to pořád jen pomůcka. Ale špatně je i to, když ho zahodíte a uchýlíte se k verbálnímu modelu typu „stabilita sazeb je dobrá“. Zkušenost z posledních dvou bankovních rad je právě cesta z extrému do extrému. Pro radu vedenou Jiřím Rusnokem byl model takřka nezpochybnitelná věc, teď za Aleše Michla byl zase úplně upozaděn. Je potřeba rovnováha. Matematika a ekonometrie není sama o sobě dobrá nebo špatná: s modely musíte pracovat v praktickém kontextu. Někdy je vhodné model poslechnout z 90 procent, jindy ze 40 procent. Není to rozhodnutí mezi nulou a stovkou.
 
-V médiích převažuje tón, že rada Jiřího Rusnoka byli good guys, zatímco tým Aleše Michla jsou bad guys. Ale vy vlastně říkáte, že špatné jsou obě.
+**V médiích převažuje tón, že rada Jiřího Rusnoka byli good guys, zatímco tým Aleše Michla jsou bad guys. Ale vy vlastně říkáte, že špatné jsou obě.**
 
 Obě rady udělaly řadu dobrých věcí. Ale mezinárodní srovnání u inflace vychází mizerně, to je nezpochybnitelný fakt. Neříkám to rád, v bance jsem pracoval 10 let a je to stále má srdeční záležitost. Moje kritika není osobní. Jsem přesvědčený, že všichni členové rady, ať té minulé, tak té současné, jsou mimořádně schopní a dělají to, co si myslí, že je správné. Stejně tak zaměstnanci ČNB mají nejvyšší průměrnou kvalitu ze všech státních institucí. Nevěřím, jak se občas říká, že Aleš Michl byl do ČNB dosazen, aby prosazoval něčí zájmy. Znám ho dobře, na spoustě věcí se neshodneme, ale toto považuji za konspirační teorii.
 
 Když se tvrdí, že současná rada je ta špatná, zapomíná se, že současnou inflaci úplně nezpůsobila. Tu máme zvýšenou už několik let, česká inflace patří mezi nejvyšší v Evropě minimálně čtyři roky. Takže to do velké míry jde za minulou bankovní radou. Tu musím pochválit za odvahu k rychlému zvyšování sazeb v letech 2021 a 2022, v tom byli svým způsobem průkopníci. Jiří Rusnok mě překvapil ochotou to udělat i přes odpor vlády a značné části veřejnosti. Za to bychom mu všichni měli poděkovat.
 
-Teď asi přijde kritika…
+**Teď asi přijde kritika…**
 
 Ano. Co už bych nechválil, je zatvrzelost v soustředění se jen na jeden nástroj, a to úrokové sazby. Ty totiž fungují s velkým zpožděním, projeví se v ekonomice plně až za rok a půl či později. S inflací tedy bezprostředně nic neudělají a rapidní inflační šok, jaký jsme zažili, jimi moc neovlivníte. Přitom rychlé řešení bylo na stole. V ČNB měli obrovský balík devizových rezerv, u kterých dlouhodobě chybí vůle je výnosně investovat. Mohli tedy udělat s opačným znaménkem to, co rada udělala v roce 2013, kdy začala intervenovat a cíleně oslabovat korunu.
 
 Samozřejmě posilovat korunu nelze donekonečna, protože balík rezerv je omezený. Ale mohli například v září 2021, kdy poprvé výrazněji zvedli sazby, říct, že každý měsíc po následující dva roky budou prodávat miliardu eur nebo dvě. To by skokově posílilo korunu a okamžitě pomohlo snížit inflaci. Intervence mají složité dopady a není to tak jednoduché, ale nikdo nevysvětlil, proč tohle Rusnokova rada na podzim 2021 neudělala. Nejhorší je, že uvnitř banky se o tomto kroku tehdy ani nediskutovalo. Rozhodnutí spustit intervence v roce 2013 se někomu nemusí líbit, ale předcházely tomu měsíce hluboké diskuze, kde vyhrála argumentačně silnější strana. V roce 2021 bylo ticho. Tohle je selhání celé ČNB jako instituce.
 
-Čím to?
+**Čím to?**
 
 Vidím dvě příčiny. Dřívější bankovní rady byly názorově pestřejší, třeba guvernéru Miroslavu Singerovi se i stávalo, že ho rada přehlasovala. To je něco dnes nemyslitelného, protože radu od nástupu Jiřího Rusnoka většinově vybírá guvernér a prezident ji pak jen formálně jmenuje. Členové rady jsou pak guvernérovi logicky zavázáni. Je to takové moderní léno, feudální systém. Zároveň jsou členové rady z velké části jmenování najednou, čímž se ten lenní systém ještě posiluje, to dřív také nebylo.
 
-To jsou tedy ty hlavní důvody, proč se uvnitř ČNB nevede diskuze?
+**To jsou tedy ty hlavní důvody, proč se uvnitř ČNB nevede diskuze?**
 
 Výběr rady je jeden problém, druhý je absence samostatného výzkumného útvaru. Ten v ČNB historicky fungoval a byl nezávislý na měnové sekci, která dává dohromady hlavní model. Povinností výzkumu bylo připravovat oponenturu materiálům měnové sekce, na něž pak při svém rozhodování spoléhá bankovní rada. Někdy výzkumný úsek argumentoval, že s měnovou sekcí souhlasí, jindy její závěry doplňoval nebo rozporoval. Byla to forma hluboké odborné diskuze, která pomohla bankovní radě lépe zhodnotit síly a slabiny hlavního modelu, tedy stylizovaného příběhu ekonomiky.
 
 Nezávislý výzkum vedla profesorka Kateřina Šmídková, která ale v roce 2014 zemřela, a po její smrti byl výzkum postupně rozpouštěn do ostatních sekcí. ČNB má pořád mezinárodně silný výzkum, ale už není nezávislý. Tím, že nezávislý výzkum zmizel, slovo a vliv měnové sekce narostly.
 
-Co já vím, tak Aleš Michl se s měnovou sekcí a jejími analytiky moc nemusí.
+**Co já vím, tak Aleš Michl se s měnovou sekcí a jejími analytiky moc nemusí.**
 
 Nevím, jak to je teď, přece jen už v bance pár let nesedím. Ale dovedu si představit, že matematika a ekonometrie bez dalšího kontextu a podrobného vysvětlení mohou být matoucí. Jenže protože uvnitř ČNB není další alternativa a zdroj kontextu, máme najednou přístup ode zdi ke zdi. Za Rusnoka se to, co řekla měnová sekce, bralo téměř za svaté. Občas se mi zdá, že Aleš jde do druhého extrému a odmítá vše, minimálně na začátku jeho guvernérování to tak vypadalo.
 
 Je to svým způsobem pochopitelné, protože pokud nemáte opravdu podrobnou průpravu v ekonometrii a matematice, model, který měnová sekce sestavuje, je pro vás složitě průhledný. Mnoho lidí jeho komplikovanost zastraší a znechutí, takže se na něj přestanou ptát – a buď jej akceptují, nebo ho úplně odmítnou.
 
-Jinými slovy ho prostě nechápe.
+**Jinými slovy ho prostě nechápe.**
 
 I já bych si musel znovu projít všechny rovnice a trvalo by mi několik týdnů, než bych plně pochopil nuance aktuální verze modelu. A platilo by to i pro chytřejší lidi, než jsem já. To je ale jen jedna strana příběhu. Lidé, kteří model sestavují, jej občas nedokážou vysvětlit tak, aby se v něm vyznal někdo, kdo v problematice není úplně kovaný. To jim nemám za zlé, je to normální. Ale v takové situaci vám chybí nezávislý prostředník, který by nabídl kontext. Což dřív dělal výzkumný úsek.
 
 A to jsou základní příčiny problémů, které tu nyní s inflací a obecně kroky ČNB máme. Z instituce, jež bývala nejlepší v zemi, máme takovou, kterou už opravdu poráží třeba Ředitelství silnic a dálnic. Kvůli tomu se už čtvrtý rok potýkáme s jednou z nejvyšších inflací v EU. Osobní obviňování k ničemu není, ale chybí institucionální sebereflexe. Jaké ponaučení si berou z tohohle strašného selhání? Co udělají příště jinak? ČNB se tváří, že všechno bylo v pořádku a gratuluje si, že inflace je jednociferná. Přitom sazby měly být vyšší už od roku 2017 a v roce 2021 měly začít masivní intervence ve prospěch koruny.
 
-Což o to, ony přišly, ale později.
+**Což o to, ony přišly, ale později.**
 
 Ano. Když vyšlo najevo, že příštím guvernérem bude Aleš Michl, koruna v panice oslabila a tehdejší rada proti tomu intervenovala, hlavně aby Aleše ještě více ponížila. Ano, zaplaťpánbůh, že nakonec intervenovali, jen to učinili nejhorším možným způsobem. Jednak ztrapnili příštího guvernéra, něco nevídaného mimo banánové republiky, jednak začali bránit konkrétní hranici kurzu. To byla strategická chyba, kvůli které dali zbytečně vydělat spekulantům. Když totiž korunu posilujete, nemáte na rozdíl od oslabování v ruce neomezený arzenál. Místo cílování kurzu měli každý měsíc prodávat fixní objem eur.
 
-Opravdu si myslíte, že když bankovní rada vedená ještě Jiřím Rusnokem bránila loni na jaře korunu proti oslabování, chtěla ponížit Aleše Michla?
+**Opravdu si myslíte, že když bankovní rada vedená ještě Jiřím Rusnokem bránila loni na jaře korunu proti oslabování, chtěla ponížit Aleše Michla?**
 
 Myslím, že to hrálo roli velkou. A mezi námi, on si to Aleš zasloužil za ten svůj extrémně proinflační postoj, jímž tehdy nadbíhal prezidentu Zemanovi. Ale u mě si to částečně odčinil tím, že intervence pak nechal běžet několik měsíců, ač mu to muselo být osobně trapné.
 
-A co na něj jako na guvernéra říkáte? Třeba Mojmír Hampl, s nímž jste v radě dřív úzce spolupracoval, jej kritizuje, že málo a špatně komunikuje.
+**A co na něj jako na guvernéra říkáte? Třeba Mojmír Hampl, s nímž jste v radě dřív úzce spolupracoval, jej kritizuje, že málo a špatně komunikuje.**
 
 Mojmír má pravdu. Aleš se s komunikací trápí, je to vidět na každé jeho tiskové konferenci. Byť se za ten rok ve funkci dost zlepšil. Jako guvernér by určitě měl být víc vidět a chodit do diskusních pořadů, kde nepadají jen předem připravené otázky. To je součást popisu práce guvernéra. Na druhou stranu samotné řeči toho moc nezmůžou, rozhodují konkrétní kroky. Ale ty taky moc nevidíme.
 
-Co byste vy teď na jeho místě dělal?
+**Co byste vy teď na jeho místě dělal?**
 
 Kdybych byl znovu poradce, poradil bych okamžitě zvýšit sazby. Rok ignorovali vysokou inflaci, ačkoli jim vlastní analytici radili, že mají sazby zvednout. Proto by nyní bylo logické, aby ignorovali, že si dovážíme deflaci v podobě meziročně nižších cen energií. Sazby tedy aspoň půl roku nemohou jít dolů, ale jak vám to budou trhy věřit? Vhodná cesta, jak přesvědčit trhy, je nejenom mluvit, ale něco udělat.
 
 Konkrétně zvednout sazby o čtvrtinu procentního bodu na 7,25 procenta. To nijak nezbrzdí ekonomiku, ale signalizační vliv takového kroku bude fenomenální. Koruna by přestala oslabovat. Všichni pochopí, že dalšího minimálně půl roku se nebudou snižovat sazby, jinak by rada byla za klauny. Teď sice tvrdí, že sazby dlouho nesníží, ale ničím konkrétním to nepodkládají.
 
-Upřímně, to se nestane a vy to víte.
+**Upřímně, to se nestane a vy to víte.**
 
 Asi ne. Ale proč? Teď to vypadá, že ČNB myslí hlavně na dlužníky. Třeba mě – hrdě se hlásím k tomu, že mám velkou hypotéku s nízkým fixním úrokem a vloni jsem měl efektivní sazbu mínus 13 procent. Moc děkuji, ale nejsem typický občan téhle země. ČNB musí ukázat, že se chová symetricky k dlužníkům i střadatelům. Kdyby v ČNB symbolicky zvedli sazby, okamžitě by posílila koruna a pokles inflace by zrychlil. Možná bychom se v lednu dostali dokonce do deflace. A to by vůbec ničemu nevadilo.
 
-Naopak, po dvou letech rekordního zdražování a poklesu kupní síly by lidé zlevňování jistě uvítali.
+**Naopak, po dvou letech rekordního zdražování a poklesu kupní síly by lidé zlevňování jistě uvítali.**
 
 Přesně. Mírné snižování maloobchodních cen příští rok či dva by bylo žádoucí. Vezměte si, že kumulativně jsme za poslední tři roky přišli o třetinu úspor. Jasně, nelze to vrátit zpět úplně, to by se bývalo muselo oznámit dopředu, ale mírná deflace o jednotky procent ničemu nevadí. Ukázalo by to, že centrální banka skutečně pečuje o cenovou stabilitu. A že by podstřelovala svůj inflační cíl dvou procent? Teď jsme měli inflaci vysokou, tak bychom ji pro změnu měli nízkou, klidně trochu zápornou. Důležitější než aktuální inflace je stav cen.
 
-Jak vás vlastně napadlo založit iniciativu Zrušme inflaci?
+**Jak vás vlastně napadlo založit iniciativu Zrušme inflaci?**
 
 Když jsem odešel z ČNB, což bylo ještě před covidem, protože jsme se s rodinou přestěhovali z Prahy do Litomyšle, měl jsem najednou víc času číst moderní ekonomii. Živím se výzkumem, před spaním čtu dětem a pak si čtu pro sebe výzkum. Mám to místo seriálů, baví mě to. Dokud jsem pracoval v bance, nenapadlo mě některé věci zpochybnit. Je to jako náboženství, v centrální bance věříte v inflační cíl a neptáte se proč. Ale pak zjistíte, že není úplně jasné, zda to mají být právě dvě procenta.
 
@@ -5532,59 +5532,59 @@ První zemí, která s inflačním cílem přišla, byl v 90. letech Nový Zéla
 
 Takhle jednoduše to vzniklo. A když jsem si načítal nové a nové materiály a výzkum, uvědomil jsem si, že za dvojkou není ani dnes žádná rigorózní úvaha. Co víc, že pořád neexistuje silný argument, proč by cílem nemohla být v průměru nula. Cenová stabilita, o které se píše v ústavě, intuitivně znamená, že máte stokorunu, dáte ji dceři a až ta ji vyndá z prasátka za dvacet let, stokoruna bude mít pořád stejnou kupní sílu. Zní to naivně a jednoduše. Ale právě v jednoduchosti je ta síla: nemuseli bychom se starat o inflaci, podobně jako se nemusíme starat o to, jak dlouhý je metr. Žilo by se nám lépe.
 
-Kladu si otázku, jestli by to byl takový rozdíl.
+**Kladu si otázku, jestli by to byl takový rozdíl.**
 
 Vezměte si, že byste nemusel počítat s inflací, to by vám hodně zjednodušilo život, pomohlo by to snáze spořit a investovat. Bez inflace jsme fungovali po tisíce let, minimálně bez té systematické a záměrně vyvolané. To až v posledních zhruba sto letech se s ní setkáváme ve větší míře. Pokud by inflační cílování fungovalo a inflace byla opravdu nízká a stabilní, tolik by to nevadilo. Ovšem i dvě procenta ročně znamenají během jedné generace znehodnocení peněz o polovinu. Problém ale je, že inflace není stabilně dvě procenta.
 
-Centrální banka ale může cílit na nulu, jenže pak přijde vláda, která lidi zasype penězi, jako to udělal Andrej Babiš při pandemii, a vaše monetární plány jsou v trapu.
+**Centrální banka ale může cílit na nulu, jenže pak přijde vláda, která lidi zasype penězi, jako to udělal Andrej Babiš při pandemii, a vaše monetární plány jsou v trapu.**
 
 Vláda má na inflaci vliv, ale ekonomie se až na výjimky shodne, že v delším období o inflaci vždy rozhoduje centrální banka. Takže jasně, inflace by nebyla nula pořád, někdy by byla kladná, někdy záporná. Důležitá je průměrná roční inflace. To je mimochodem klíčové zmínit. Hovořím o průměrné inflaci, což je něco, co nynější ČNB nesleduje. Oni dnes dělají to, že když je meziroční inflace 10 procent, tak pro další rok se snaží zase o další inflaci. Nesnaží se o kompenzaci směrem dolů.
 
 Já proto navrhuji zaprvé snížit cíl z dvojky na nulu a zadruhé opravovat minulé chyby, abychom nulu měli i v dlouhodobém průměru. Kdyby se taková změna oznámila třeba v roce 2020 a následně jsme si dovezli inflační šok z energií a vládního rozhazování peněz, inflace by stejně vyskočila. Ale pokud by veřejnost a trhy bance věřily, že to myslí vážně, staly by se dvě věci.
 
-Jaké?
+**Jaké?**
 
 Zaprvé, obchodníci by tolik nezdražovali a lidé nekupovali v panice byty, aby někam schovali peníze, protože by věděli, že banka řízenou deflací v příštích letech vrátí cenovou hladinu tam, kde byla před příchodem inflace. Zaměstnanci by nemuseli tlačit na zvyšování platů, protože by věděli, že ČNB jim to svým způsobem časem dorovná. Nenafukovaly by se investiční bubliny. Tohle všechno by tlačilo proti inflační spirále.
 
-A druhý efekt?
+**A druhý efekt?**
 
 Kdyby trhy věřily, že banka bude mít chuť situaci opravit, koruna by pro ně neztratila dlouhodobě svou hodnotu. Na rozdíl od měn, jejichž centrální banky svoje chyby neopravují. Takže by vůči nim koruna posilovala a přirozeně tlačila proti inflaci. V obou scénářích je klíčová důvěryhodnost banky a její schopnost přesvědčit trhy i veřejnost, že to myslí vážně. Jenže teď není důvěryhodný ani její dvouprocentní cíl, který, jak vám před časem správně říkal David Vávra, už v radě ČNB de facto opustili, když tolerovali dvoucifernou inflaci.
 
-Říkal jste, že jsme bez inflace žili po tisíce let. Jak je to možné?
+**Říkal jste, že jsme bez inflace žili po tisíce let. Jak je to možné?**
 
 Nejlépe to je vidět na příkladu velkých západních zemí, kde byly průměrné ceny po napoleonských válkách a před první světovou válkou, tedy sto let poté, prakticky stejné. Kolísání bylo, ale trend ne. Důvodem je, že peníze byly navázané na zlato. To tehdy bylo v ekonomice důležité, dnes už jeho role ale není moc podstatná, je to jen jedna z mnoha komodit. Takže návrat ke zlatému standardu není na místě, je to přežitý koncept. Je lepší navázat hodnotu peněz na cenu všeho zboží a služeb, nejen zlata. To je cenová stabilita, tedy cílování dlouhodobě nulové inflace.
 
-Takže zrušení inflace je vlastně konzervativní krok, návrat k něčemu, co tu bylo dřív běžné.
+**Takže zrušení inflace je vlastně konzervativní krok, návrat k něčemu, co tu bylo dřív běžné.**
 
 O zrušení inflace mluví ve světě řada lidí, nejsem ten, kdo koncept vymyslel, jen ho přináším do českého kontextu. Naše inflace je vysoká dlouhodobě a je zjevné, že ve fungování ČNB se něco musí změnit. Výhodou u nás je, že jsme relativně malá ekonomika, kde se taková vylepšení zavádějí snáze. Ostatně proto se inflační cílování poprvé objevilo na Novém Zélandu, který je menším hospodářstvím než Česko. Nevzniklo to v USA ani v Německu.
 
 Zéland se tím proslavil po celém světě a stal se vzorem pro ostatní země, včetně těch mnohem větších. Myšlenky, na které na Zélandu při zavádění cílování navazovali, vycházely z teorie racionálních očekávání, o které se diskutovalo přes 20 let. A stejně tak bude dnes nějakou dobu trvat, než se prvky moderního ekonomického výzkumu propíšou do praxe centrálního bankovnictví. Ale nepochybně k tomu dojde. My stále můžeme být první.
 
-Mluvil jste s Alešem Michlem o těchto konceptech boje s inflací?
+**Mluvil jste s Alešem Michlem o těchto konceptech boje s inflací?**
 
 O tomhle jsem s ním nemluvil, protože pořádně jsem si to načetl a promyslel až po svém odchodu. Ale bavili jsme se často o nakládání s rezervami a jejich investováním.
 
-A co o zlatu? To začal nakupovat.
+**A co o zlatu? To začal nakupovat.**
 
 Jasně. Osobně tedy jediné zlato, které vlastním, je můj snubní prsten. V rámci diverzifikace portfolia to může v promilích, maximálně v jednotkách procent dávat smysl, ale jinak vám ekonomický výzkum jako jednotlivci těžko doporučí kupovat zlato. Centrální banka je jiný případ a souvisí to s psychologií. Zlato mělo dlouho monetární roli a lidé mu věří, proto by bylo dobře, aby centrální banka malé množství zlata měla. Ale musí být fyzicky v budově banky, protože ho nekupujete kvůli výnosům, ale kvůli tomu, abyste lidem mohl ukázat plné trezory. Jiný důvod tam není, čistě investičně je mnohem lepší nakoupit akcie, diverzifikační role zlata je nicotná. Kupovat si podíly na zlatu, které přitom v budově není, je nesmysl. Zlato má pro centrální banky marketingovou hodnotu.
 
-Takže je dobré na fotky?
+**Takže je dobré na fotky?**
 
 Ano, vyfotit se u něj. Ale nejen guvernér, nýbrž kdokoli. Když už to zlato kupují, tak ať ho mají v budově a mohou nám ho ukázat, klidně třeba s roční čekací dobou po registraci, ať nám to udělají vzácné.
 
-A další aktiva? Jak to myslíte s tím, že by ČNB měla víc investovat?
+**A další aktiva? Jak to myslíte s tím, že by ČNB měla víc investovat?**
 
 Mnohem víc by měla investovat do akcií. Občas z banky zaznívá argument, že v akciích nelze mít uložených příliš mnoho aktiv, protože banka potřebuje mít k dispozici likvidní prostředky. To je ale argument z minulého století, akcie jsou dnes mimořádně likvidní, minimálně stejně jako dluhopisy. Navíc teď ČNB ukázala v praxi, že ani v případě inflačního šoku, který přichází jednou za generaci, devizové rezervy nijak zvlášť pro posílení koruny používat nehodlá. Takže k čemu má ty tři biliony? To musí mít skoro všechno na běžném účtu? Ať se alespoň snaží o výnos. A to jde jedině přes akcie.
 
-Máte na mysli individuální akcie, nebo spíš indexy?
+**Máte na mysli individuální akcie, nebo spíš indexy?**
 
 Určitě index. A nejlépe index na akcie co nejširšího zastoupení firem na světě, protože tím si de facto kupujeme podíl na technologickém pokroku. Tohle vám dlouhodobě vydělá opravdu hodně peněz, v průměru, když to očistíte o inflaci, určitě pět procent ročně. A to může mít zásadní vliv na naši fiskální politiku, aniž by to jakkoli ublížilo plnění cíle cenové stability. Zaplatilo by to důchodovou reformu. Jak je to napsané dnes, ČNB musí ze zákona nakonec převádět své výnosy do státního rozpočtu. Banka by měla do akcií investovat alespoň polovinu z devizových rezerv, nyní to je jen asi 20 procent. Ale chtěl bych je pochválit, že se konečně zbavili čínských dluhopisů. Takže nějaký posun tam je.
 
-Takže pokud by banka investovala 1,7 bilionu korun, ročně by mohla mít výnos kolem 100 miliard a stal by se z ní takový ten mohutný fond, jaké známé z Asie nebo z Norska.
+**Takže pokud by banka investovala 1,7 bilionu korun, ročně by mohla mít výnos kolem 100 miliard a stal by se z ní takový ten mohutný fond, jaké známé z Asie nebo z Norska.**
 
 Ano. Vezměte si, jak Aleš Michl poslední rok zdůrazňuje, že důležité pro inflaci jsou finance státu a jejich kondice. Přitom ČNB má na státní finance zásadní vliv. Tím, že dlouhodobě odmítá rezervy pořádně investovat, připravuje státní rozpočet nejméně o těch 100, možná i 200 miliard ročně, aniž by tím cokoli získala. Z dlouhodobého pohledu veřejných financí je politika centrální banky ohledně rezerv minimálně stejně důležitá jako reformní balíčky vlády. Zase mě mrzí, jak málo diskuze se na tohle téma odehrává v ČNB, ale i mezi odbornou veřejností.
 
-Vidíte, a přitom se Aleš Michl vždy prezentoval jako někdo, kdo chce rozhýbat investování v ČNB.
+**Vidíte, a přitom se Aleš Michl vždy prezentoval jako někdo, kdo chce rozhýbat investování v ČNB.**
 
 Měl jsem chvíli pocit, že se mnou v tomto souhlasí, ale reálné kroky moc nevidím. Je to škoda. Pořád ale neztrácím naději. Aleš má před sebou pět let mandátu a nebude chtít, aby se na něj pamatovalo převážně jako na guvernéra, který nedělal aktivně nic proti rekordní inflaci. Bude chtít za sebou zanechat něco, co je důležité a prospěšné pro tuto zemi. A takové věci se nabízejí hned dvě: cenová stabilita místo každoroční inflace a investování aktiv ČNB po vzoru Singapuru a Norska.
 
@@ -5672,55 +5672,55 @@ Zdroj: https://e-news.cz/rozhovory/tomas-havranek-inovace-overene-trhem-jsou-zak
 
 Tomáš Havránek je ekonom, profesor Univerzity Karlovy a bývalý poradce viceguvernéra a bankovní rady České národní banky. Zakladatel iniciativy Zrušme inflaci. Působí rovněž jako výzkumník v londýnském Centre for Economic Policy Research a ve stanfordském Meta-Research Innovation Center. Zabývá se také rozvojem a aplikací metody meta-analýzy v ekonomii.
 
-Ekonomický růst je do velké míry podmíněn postojem společnosti k inovacím, nikoli jen mírou investic či kvalitou institucí. Co tedy konkrétně navrhujete?
+**Ekonomický růst je do velké míry podmíněn postojem společnosti k inovacím, nikoli jen mírou investic či kvalitou institucí. Co tedy konkrétně navrhujete?**
 
 Vraťme se k tomu, co dalo vzniknout moderní době, tedy dlouhodobému růstu životní úrovně. Průmyslová revoluce nevznikla tím, že by lidé najednou začali investovat více, nebo že by se změnily instituce. Změnil se postoj k inovacím. Inovace přestalo být sprosté slovo. My špatně nazýváme moderní dobu „kapitalismus“. Ale kapitál tady byl vždycky, od začátku civilizace. Co je nové, je důraz na inovace – konkrétně inovace ověřené trhem. To je základ naší prosperity a kvality našeho života. A ty inovace, byť po malých kouscích, do naší ekonomiky přinášejí podnikatelé a živnostníci. Buďme tedy opatrní v tom, abychom tento segment ekonomiky neudusili. Pokud si to nepokazíme, můžeme mít bohatou zemi, rovnost příležitostí a čistou planetu. Koho zajímá víc, ať si přečte Bourgeois Equality od Deirdre McCloskey.
 
-Zabýváte se také rozvojem a aplikací metody meta-analýzy v ekonomii. Můžete nám to více přiblížit?
+**Zabýváte se také rozvojem a aplikací metody meta-analýzy v ekonomii. Můžete nám to více přiblížit?**
 
 Na každé důležité téma teď existují desítky vědeckých studií. Ale často se mezi sebou neshodnou. Navíc některé výsledky nejsou publikované proto, že odporují převažující teorii, nebo nejsou takzvaně statisticky významné. Meta-analýza je metoda, která shrne výzkum na dané téma a očistí literaturu o výše zmíněné problémy.
 
-Ekonomickým nástrojem pro zmírnění změn klimatu je masivní výsadba stromů. Rapidní úbytek stromů, lesů a zeleně je světový celospolečenský problém. Co s tím? Jak lze do toho zapojit společnost a především mladou generaci? Šlo by pořádat např. dobrovolné akce a brigády na výsadbu stromů a zeleně?
+**Ekonomickým nástrojem pro zmírnění změn klimatu je masivní výsadba stromů. Rapidní úbytek stromů, lesů a zeleně je světový celospolečenský problém. Co s tím? Jak lze do toho zapojit společnost a především mladou generaci? Šlo by pořádat např. dobrovolné akce a brigády na výsadbu stromů a zeleně?**
 
 Stačilo by přestat podporovat biopaliva a bioplyn. Pokud bychom uměle nedotovali řepku a další technické plodiny, byl by často ekonomicky nejvýhodnější způsob užití krajiny její zalesnění. Podívejte se například na lesy v Nové Anglii, kde když se procházíte, tak vidíte zbytky zídek, které dříve oddělovaly pole. Nebránil bych se ani přímo dotování výsadby lesů. To je nejúčinnější klimatická politika, která má navíc spoustu dalších výhod. Mimochodem nedávný článek ve vědeckém časopise Science ukazuje, že kdyby se zalesnily globálně holiny, kde teď nic neroste, ale stromy se tam mohou uchytit, stáhli bychom z atmosféry čtvrtinu uhlíku. Tohle je mnohem lepší než podpora elektroaut, jejichž dopad na klima je nejasný. V Česku máme nyní perverzní situaci, že když si koupíte pozemek, tak máte na většině území zakázáno ho zalesnit. Začněme tím, že povolíme zalesňování vlastních pozemků.
 
-Jste zastáncem zvýšení váhy cen nemovitostí v indexu spotřebitelských cen. Co to ukáže?
+**Jste zastáncem zvýšení váhy cen nemovitostí v indexu spotřebitelských cen. Co to ukáže?**
 
 Dlouhodobě ceny nemovitostí rostou rychleji než ostatní ceny. Takže když je přidáte do indexu CPI ve větší váze, bude inflace dlouhodobě vyšší. Nemovitosti do inflace patří, protože indexy CPI mají správně měřit současné náklady očekávané celoživotní spotřeby, nikoli jen současné spotřeby. O tom psali Alchian a Klein, Goodhart a další profesoři.
 
-Kritizujete výkonnost českých penzijních fondů. Líbí se vám současný plán důchodové reformy?
+**Kritizujete výkonnost českých penzijních fondů. Líbí se vám současný plán důchodové reformy?**
 
 Navrhované změny naše problémy nevyřeší. Měli bychom dnešním třicátníkům a mladším jasně říct, že v důchodu od státu nedostanou buď nic, nebo málo. Důchodové pojištění, které odvádějí státu, jde na důchody jejich rodičů. Aby i oni ve stáří přežili, musí mít buď vlastní děti, nebo velké úspory, nebo pracovat až do smrti.
 
-Jste zastáncem investice devizových rezerv do zlata a výnosných aktiv po vzoru Singapuru. Můžete to konkretizovat?
+**Jste zastáncem investice devizových rezerv do zlata a výnosných aktiv po vzoru Singapuru. Můžete to konkretizovat?**
 
 ČNB má zhruba 3 biliony korun v zahraničních měnách, které může investovat. V současnosti velkou většinu investuje do dluhopisů, které vydělají málo. Měla by po vzoru Singapuru a Norska nakupovat mnohem více akcií. Tak by v delším období vydělávala stamiliardy ročně navíc a významně pomohla řešit dlouhodobý problém finanční nestability českého státního rozpočtu. Trochu zlata nakoupit je fajn z psychologických důvodů, protože lidé mají zlato rádi. Ale jen pár tun, symbolicky, a navíc je důležité všechno zlato mít přímo v trezorech ČNB. Mít zlato v zahraničí nemá smysl, to už je lepší ho nekupovat vůbec.
 
-Chtěl byste zřízení digitální měny a příslušné elektronické peněženky pro každého občana, tedy bezhotovostní ekonomiku. Čím by se tedy platilo?
+**Chtěl byste zřízení digitální měny a příslušné elektronické peněženky pro každého občana, tedy bezhotovostní ekonomiku. Čím by se tedy platilo?**
 
 To se o mně píše na Wikipedii, ale já neprosazuji zřízení digitální koruny. Máme akademický článek s Mojmírem Hamplem, kde digitální měnu zvažujeme jako hypotetickou možnost. Osobně jsem ale zastánce toho, aby domácnosti měly přístup k úrokovým sazbám, jaké mají banky – zejména depo. To by zlepšilo funkčnost transmise měnové politiky. Elektronická peněženka pro každého je jednou z možností. Ale myslím, že by to měly zprostředkovávat soukromé firmy, ne ČNB. Ta na to nemá kapacitu a vlastně to ani neumí.
 
-Inflace je podle vás historický přežitek a centrální banky by měly zaručit skutečnou cenovou stabilitu. Jak by to mělo vypadat? Zrušíme inflaci jako pojem?
+**Inflace je podle vás historický přežitek a centrální banky by měly zaručit skutečnou cenovou stabilitu. Jak by to mělo vypadat? Zrušíme inflaci jako pojem?**
 
 Detailní argumentaci máme na stránce zrusme-inflaci.cz. Sem se nám vejde jen malý zlomek. V kostce: o dlouhodobé inflaci rozhoduje národní banka. To je v ekonomii jasný konsensus. Krátkodobě mohou přijít šoky ze zahraničí nebo od vlády, ale dlouhodobě hodnotu peněz určuje ČNB. Když ČNB nebude inflaci chtít, inflace v horizontu pěti let nebude. Čili návrhem je o tom ČNB přesvědčit, ideálně zákonnou formou. Chceme, aby hodnota peněz byla konstantní, abychom si za 100 korun mohli nakoupit stejnou hodnotu zboží a služeb za 30 let jako dnes. Teď se o to ČNB nesnaží, snaží se o znehodnocení peněz každý rok, čemuž se říká inflační cílování. Navíc neopravuje svoje chyby, když místo 2 % inflace je inflace třeba 10%. Takže teď vůbec nevíme, jakou hodnotu budou peníze mít v budoucnu. Tím pádem se nám mnohem hůře spoří a investuje. Dejme tedy ČNB za úkol, aby se snažila o 0% inflaci v průměru. A napišme do zákona, jaké důsledky pro vedení ČNB nastanou, když se o cenovou stabilitu snažit odmítne.
 
-Od poloviny roku 2021 tvrdíte, že rostoucí inflaci může zastavit posílení koruny spíše než zvyšování úrokových sazeb. Jak vidíte současný postoj ČNB?
+**Od poloviny roku 2021 tvrdíte, že rostoucí inflaci může zastavit posílení koruny spíše než zvyšování úrokových sazeb. Jak vidíte současný postoj ČNB?**
 
 Nerozumím mu. I když se ČNB snaží o 2 % inflaci, ne o cenovou stabilitu, tak se má chovat symetricky. Čili když masivně bojuje proti mírné deflaci, jako intervencemi v letech 2013-2017, tak má pak symetricky proti vysoké inflaci bojovat stejně agresivně. Ale ona to nedělala a nedělá, nyní by dokonce část bankovní rady (a měnová sekce) chtěla snižovat sazby ještě letos, když inflace je stále vysoko nad cílem. Není to individuální selhání, pracují tam chytří lidé. Je to selhání celé instituce v posledních 5 letech.
 
-V roce 2022 jste založil iniciativu Zrušme inflaci, ve které navrhuje uzákonit povinnost České národní banky snažit se o dlouhodobě nulovou inflaci a navázat platy bankovní rady na plnění takto definované cenové stability. Je nulová inflace pro ekonomiku zdravá?
+**V roce 2022 jste založil iniciativu Zrušme inflaci, ve které navrhuje uzákonit povinnost České národní banky snažit se o dlouhodobě nulovou inflaci a navázat platy bankovní rady na plnění takto definované cenové stability. Je nulová inflace pro ekonomiku zdravá?**
 
 Ano, aspoň to nám říká ekonomický výzkum. Od roku 1990, kdy bylo poprvé zavedeno inflační cílování, bylo publikováno 222 studií, které počítají, jak velká inflace je zdravá. A průměrný odhad je -0.09 %. Můžete ty ekonomické modely brát s rezervou, ale fakt je ten, že není žádný silný důvod, proč se snažit o 2% inflaci místo intuitivní, přirozené a srozumitelné cenové stability. Takže naším návrhem je zjednodušit nám všem život – aby hodnota peněz byla dlouhodobě konstantní, abychom se na ni mohli spolehnout. Podobně jako se můžeme spolehnout, že metr má a bude mít 100 centimetrů. Taky ho nezkracujeme ročně o dva centimetry. Hodnota peněz je přece také základní měrná jednotka ve společnosti. Čili ČNB by měla fungovat jako Úřad pro míry a váhy – pro metr ho máme v Paříži, pro korunu ho máme mít na Příkopech. Mimochodem to samozřejmě není můj nápad, já to přejímám od chytřejších lidí (např. John Cochrane, jeden z největších světových ekonomů) a vkládám do českého kontextu. Vemte si, že inflační cílování bylo prvně zavedeno také v malé zemi, na Novém Zélandu, a postupně se rozšířilo všude po světě. My můžeme být také vzorem pro svět, a to v cenové stabilitě.
 
-Pro zajištění skutečné cenové stability v případě nutnosti ve velmi hluboké krizi navrhujete nový nástroj ze strany ČNB - tzv. přímá podpora spotřeby. Ta je označována kritiky též jako „peníze z vrtulníku“. V čem spočívá?
+**Pro zajištění skutečné cenové stability v případě nutnosti ve velmi hluboké krizi navrhujete nový nástroj ze strany ČNB - tzv. přímá podpora spotřeby. Ta je označována kritiky též jako „peníze z vrtulníku“. V čem spočívá?**
 
 To je hypotetická možnost, které dle mého názoru v praxi nastat nemůže, protože v praxi nemůže nastat deflační spirála bez toho, že by ji národní banka sama způsobila. Ale řekněme, že deflační spirála hrozí. Pak účinné řešení je vytisknout peníze a poslat je přímo lidem – jak jsme viděli během covidu, toto inflaci spolehlivě zvýší.
 
-Nebojíte se toho, že by nový nástroj přímé podpory spotřeby mohl vést k ohrožení nezávislosti centrálních bank a příliš rychlému zvýšení inflace?
+**Nebojíte se toho, že by nový nástroj přímé podpory spotřeby mohl vést k ohrožení nezávislosti centrálních bank a příliš rychlému zvýšení inflace?**
 
 Toho bych se opravdu bál, proto to považuji spíše za teoretickou zajímavost. Alespoň co se týče centrální banky. Vláda to však pravděpodobně v příští krizi stejně udělá. O důvod víc, proč se nemusíme bát deflace.
 
-Co nás podle vás nejen ekonomicky v budoucnu čeká?
+**Co nás podle vás nejen ekonomicky v budoucnu čeká?**
 
 Upřímně řečeno, inflace zas není tak důležitá. Ani naše současná ekonomická stagnace, přešlapování HDP, není tak důležitá. Důležité je, jak se usadí postoj mladé generace ke změnám klimatu. Změny klimatu náš život nezmění (ač mohou ovlivnit naše pravnoučata). Ale klimatická politika může mít masivní dopady na kvalitu našeho života. Uvidíme. Velmi mě mrzí, že klimatická rétorika přestává odpovídat vědeckým výsledkům. Klimatická změna je vážný problém, ale ne existenční problém lidstva. Měli bychom se vrátit k analýze nákladů a výnosů klimatických opatření. Před lety, když jsme pracovali na University of California, Berkeley, jsme na toto téma společně s kolegy z Berkeley vypublikovali přehledový článek. Za mne: mírné uhlíkové daně a více stromů, menší dotace na vše ostatní a méně regulace.
 
@@ -6194,11 +6194,11 @@ Dle mého čtení výzkumu je vhodné zároveň snížit cíl na nulu, tedy usil
 
 Zdroj: https://www.lidovky.cz/orientace/rozhovor-havranek-ekonom-inflace.A230416_101847_ln_orientacer_hma
 
-Kde se vlastně vzala inflace?
+**Kde se vlastně vzala inflace?**
 
 Inflace historicky neexistovala, je to záležitost ryze moderní. Je tu s námi ani ne 100 let. Přitom peníze používáme zhruba pět tisíc let. Takže když to zjednoduším, civilizace fungovala 4900 let bez inflace, a to i v období kapitalismu a rychlého růstu ekonomiky Před první světovou válkou byly ceny zhruba stejné jako o století dříve po napoleonských válkách.
 
-Neřekl bych, že tu inflace nikdy nebyla. Co třeba v Římské říši ve třetím století?
+**Neřekl bych, že tu inflace nikdy nebyla. Co třeba v Římské říši ve třetím století?**
 
 Neexistovala v systematické podobě. Inflace, čili snížení hodnoty peněz, byla v historii vždy něco krátkodobého a nepřirozeného. Buď to byl podvod, nebo náhoda, ale vždy něco, co společnost považovala za špatné a snažila se opravit. Ne podporovat jako vládní program.
 
@@ -6206,7 +6206,7 @@ Hodnota peněz často klesala ve válkách. Panovník pozastavil směnu peněz z
 
 Hodnota peněz mohla také klesnout kvůli náhodě. Zvýšila se nabídka drahých kovů, třeba stříbra po objevu Ameriky a otevření dolů v Potosí. Ale ani tehdy nebyla inflace tak silná jako v našem inflačním cílování. 2% inflace zní neškodně, ale za generaci sníží hodnotu peněz na polovinu. Je to oficiální program pro znehodnocení peněz, což je historicky unikátní.
 
-Kde se tedy naše dlouhodobá moderní inflace vzala? Stojí za ní centrální banky, který mají většinou právě onen dvou procentní inflační cíl?
+**Kde se tedy naše dlouhodobá moderní inflace vzala? Stojí za ní centrální banky, který mají většinou právě onen dvou procentní inflační cíl?**
 
 Inflace má kořeny ve třicátých letech, kdy jako reakce na velkou depresi došlo k odpoutání od zlatého standardu. Vznik inflace přitom nebyl záměrný, spíš šlo o nezamýšlený důsledek politiky vlády.
 
@@ -6216,17 +6216,17 @@ Ale když máte depresi a nová Keynesiánská ekonomická doktrína vám řík�
 
 Konec rozpočtové disciplíny pomohl ukončit velkou depresi, ale také nám jako vedlejší produkt dal věčnou inflaci. Inflace nebyla v plánu, ale stát prostě potřeboval utrácet bez omezení. Teď se snažíme vymyslet ex post důvody, proč je inflace dobrá. Ale kdyby se stát nepotřeboval levně zadlužovat, inflaci bychom neměli.
 
-Znamená to tedy nepřímo, že bychom se měli vrátit ke zlatému standardu?
+**Znamená to tedy nepřímo, že bychom se měli vrátit ke zlatému standardu?**
 
 Zklamu vyznavače zlata: ne, to v moderní ekonomice není vhodné. Zlato je jenom jedna komodita. Zvláštní status má jen historicky, tím, že svého času většina světa zlatem platila. Dnes by podobný smysl dával pšeničný nebo bitcoinový standard. Zlato navíc způsobuje deflační periody, tedy období klesajících cen v době, kdy je dočasně menší nabídka zlata. S takovou deflací nelze nic dělat, jen čekat. Ceny jsou při zlatém standardu dlouhodobě stabilní, ale krátkodobé kolísání je příliš veliké. V případě ekonomické krize pak dočasná deflace může být problém. A tím se dostáváme k tomu, proč někteří tvrdí, že inflace je dobrá.
 
-Ano, v současnosti většina ekonomů tvrdí, že inflace je dobrá právě proto, že neprohlubuje ekonomické krize. Lidé tolik nešetří, protože zboží nominálně levnější nebude a svým utrácením roztáčejí kola ekonomiky a umožňují nám vybřednout z krize. Zároveň inflace snižuje potichu mzdy a firmám umožňuje takto snížit platy.
+**Ano, v současnosti většina ekonomů tvrdí, že inflace je dobrá právě proto, že neprohlubuje ekonomické krize. Lidé tolik nešetří, protože zboží nominálně levnější nebude a svým utrácením roztáčejí kola ekonomiky a umožňují nám vybřednout z krize. Zároveň inflace snižuje potichu mzdy a firmám umožňuje takto snížit platy.**
 
 Problém má dvě roviny. Zaprvé obava z deflace. Ta pramení čistě ze zkušenosti velké deprese. My už ale víme, že to tehdy nebyla deflace, která způsobila krizi. Problém byl v neflexibilitě zlatého standardu a ve špatné politice centrálních bank. Jak říká Ben Bernanke, bývalý šéf americké centrální banky a nositel Nobelovy ceny za ekonomii, centrální banky tím, že nechaly padnout bankovní sektor, krizi samy zavinily. Banky padaly jako domino, zamrzlo úvěrování ve Spojených státech a globálně, ekonomika se začala hroutit.
 
 Samotná deflace by nebyla problém. Na konci 19, století byla dlouhodobě deflace, ale ekonomika rostla a my tyhle časy dnes považujeme za zlatý věk. Když se podíváte na odborné články zkoumající vztah mezi inflací a ekonomickým růstem, analýzy neukazují, že by mírná deflace způsobovala nižší růst či mírná inflace vyšší růst. Pokud jde o příklady ze současnosti, vezměme Japonsko, kde mluvíme se o ztracených dekádách. Jenže pokles japonského HDP je dán poklesem populace v produktivním věku. HDP na odpracovanou hodinu se nevyvíjelo hůř než v inflační Evropě či v USA. Další příklad je samozřejmě Švýcarsko, které dlouhodobě inflaci nemá, ale roste rychleji než okolní země. Ale hlavně stovky vědeckých studií ukazují, že v průměru je zdravá inflace kolem nuly.
 
-A jak je to s tím utrácením a mzdami. Tady přece inflace pomáhá?
+**A jak je to s tím utrácením a mzdami. Tady přece inflace pomáhá?**
 
 To je právě ta druhá rovina. Začněme s utrácením. Mluvíme o zrušení inflace, o cenové stabilitě. Nemluvíme o věčné deflaci, tu nikdo nechce – je stejně špatná jako inflace. Chceme stabilní hodnotu peněz, na kterou se můžeme spolehnout, jako se můžeme spolehnout, že metr má sto centimetrů.
 
@@ -6234,15 +6234,15 @@ Co se stane, když v systému cenové stability máme najednou deflaci 2 %? Poku
 
 Co se týče mezd, tak firmám vloni pomohlo, že mohly reálně snížit platy o desetinu. Jenže lidé si to brzy uvědomí a nebudou tolerovat snižování mezd v situaci, kdy firmy mají stále často problém najít zaměstnance. A všichni vidíme hlavní problém současného systému: nevíme, jakou hodnotu budou peníze mít za pár let, což komplikuje spoření i investování. Obecně má inflace desítky výhod a nevýhod, které shrnujeme na zrusme-inflaci.cz. Důležité je, že průměrný vědecký odhad zdravé inflace je nula.
 
-Jak jsme tedy došli k dvouprocentnímu inflačnímu cíli ročně, který má dnes většina centrálních bank?
+**Jak jsme tedy došli k dvouprocentnímu inflačnímu cíli ročně, který má dnes většina centrálních bank?**
 
 Dvouprocentní inflační cíl je něco jako střídání letního a zimního času. Víme, že střídání nepomáhá šetřit energii, že to škodí většině z nás, ale je to konvence a je těžké ji zrušit. Dvě procenta jsou vlastně náhodné číslo, které vzniklo na konci osmdesátých let, kdy byla v zemích jako Nový Zéland inflace podobně vysoká jako dnes u nás. Zavázali se, že se budou snažit o konkrétní inflaci blízko nuly. Nula je ovšem blízko deflace, které se intuitivně ekonomové bojí a navíc současná měřítka spotřebitelských cen inflaci možná nadhodnocují o pár desetin. Tak se řeklo, miřme inflaci pro jistotu na jedno procento. Potom se přešlo na dvě, když inflační cílování převzala od Zélandu Bank of Canada, aby to bylo ještě dál od nuly. Byla to historická náhoda. Ostatně, když si třeba prohlédnete web České národní banky, tak odůvodnění cíle tam není. Podle ústavy má přitom naše centrální banka dbát o cenovou stabilitu, což nelze definovat jinak než jako stabilitu správně spočítaného indexu průměrných cen.
 
-Cílování inflace ale pomohlo snížit velkou inflaci na snesitelnou úroveň…
+**Cílování inflace ale pomohlo snížit velkou inflaci na snesitelnou úroveň…**
 
 Inflační cíl byl oproti předchozí politice centrálních bank transparentní, šlo o jasné konkrétní číslo. Lidé tomu věřili, což ukazuje, že právě na základě věrohodného a transparentního režimu lze inflaci snížit za malých nákladů. Zároveň tu ovšem byly při zavádění cílování na Zélandu i další reformy, snižovaly se státní výdaje, vytvářelo se prostředí příznivé pro podnikání. Inflace pak spadla jako kámen, aniž přišla recese. Dnes ale vidíme, že inflační cílování má problém se symetrií: proti deflaci se bojuje, proti inflaci tolik ne. Z toho bychom se měli poučit: základem pro řešení dnešní inflace je věrohodná reforma měnové politiky směrem k cenové stabilitě, tedy nulové inflaci v průměru. Ale důležitá je i fiskální odpovědnost a deregulace.
 
-Dobře, jak to ale podle vás udělat, abychom měli nulovou inflaci? Máme hned razantně zvednout úrokové sazby a tím stlačit inflaci na nulu i za cenu ekonomické recese či krize?
+**Dobře, jak to ale podle vás udělat, abychom měli nulovou inflaci? Máme hned razantně zvednout úrokové sazby a tím stlačit inflaci na nulu i za cenu ekonomické recese či krize?**
 
 Pokud bychom chtěli opravdu použít jen úrokové sazby k rychlému potlačení inflace, museli bychom mít sazby nad 20 %. To by ale znamenalo hlubokou recesi, navíc výsledek není zaručen.
 
@@ -6252,13 +6252,13 @@ Ovšem ČNB má stále obrovské devizové rezervy. Je to jasné: inflace je nad
 
 Jasně, tohle bude bolet exportéry. Ale mandát ČNB není „cenová stabilita, jen když to nebolí“. Mimochodem náš systém je unikátní také v tom, že ČNB má masivní vliv na fiskál. Pokud nějakou část rezerv, například polovinu, prodat nechce, měla by ji investovat dlouhodobě pro výnos. Vydělá tak ročně 100-200 miliard navíc, v průměru, a pomůže vyřešit náš fiskální problém. Ale zpět k inflaci: takticky je teď hlavní silnější koruna.
 
-Takže se rychle dostat k nulové inflaci za pomocí kursu?
+**Takže se rychle dostat k nulové inflaci za pomocí kursu?**
 
 Není možné mít rychle nulovou inflaci. Cílem je dlouhodobá cenová stabilita: to znamená, že někdy bude inflace vyšší, třeba když jde o dovezenou inflaci ze zahraničí, a bude se jen postupně snižovat. Zároveň se to vyrovná tím, že centrální banka prohlásí, že na vyrovnání této inflace bude tolerovat i určitou nízkou deflaci.
 
 Řešením je upřesnit u definování cenové stability v zákoně. Změnit zákon o ČNB. Ústava říká, že úkolem banky je cenová stabilita, tak se dohodněme, co to přesně znamená. Výzkum nám říká, že zdravá inflace je nulová inflace. Ale osobně bych přežil i tu dvojku, pokud to bude dvojka v průměru třeba za 5 let, ne 15 % vloni, 10 % letos a 2 % další 3 roky. Když se dohodneme, co po ČNB chceme, můžeme podle toho odměňovat. Navázat bonusy vedení banky na plnění cíle. To udělá hodně.
 
-To je ovšem politicky dost obtížné. Nebylo by jednodušší vůbec nemít centrální banku? Vždyť v historii existovaly například v USA a v Kanadě doby, kdy peníze vydávaly komerční banky.
+**To je ovšem politicky dost obtížné. Nebylo by jednodušší vůbec nemít centrální banku? Vždyť v historii existovaly například v USA a v Kanadě doby, kdy peníze vydávaly komerční banky.**
 
 Centrální banku nepotřebujete, když máte peníze definované komoditou, třeba zlatem. Pak nikdo nemusí cílovat inflaci prostřednictvím úrokových sazeb a kursu. Můžete platit směnkami na zlato z různých bank, bankovkami, ale ve finále je peněžní jednotka zlato. Jak jsme si řekli, komoditní krytí peněz by dnes nefungovalo, protože jednotlivé komodity (zlato, pšenice, bitcoin atd) jsou jen maličká část ekonomiky.
 
@@ -6332,31 +6332,31 @@ Kdo může za vysokou inflaci a kdo by ji měl krotit? Jedni tvrdí, že se s n�
 
 Ekonom Tomáš Havránek, profesor Univerzity Karlovy, bývalý poradce viceguvernéra ČNB a zakladatel iniciativy Zrušme inflaci, tvrdí, že ČNB s inflací bojuje nedůsledně. Vedle zvýšení sazeb by ve větší míře měla využít devizové rezervy, které nastřádala v době intervencí proti koruně. Česko by podle něj navíc mělo usilovat o úplnou cenovou stabilitu, nepřipustit v průměru žádnou inflaci. “V krizi je ideální doba na změnu. Je jasné, že současný systém selhal a potřebuje reformu,” míní Havránek.
 
-Má ČNB šanci srazit dnešní inflaci?
+**Má ČNB šanci srazit dnešní inflaci?**
 
 Nepochybně. Samozřejmě neovlivní šoky ze zahraničí. Ale ovlivní kurz koruny, který se přímo odráží v dovážených cenách. Zahraniční šoky navíc táhnou inflaci jen krátkodobě. V delším horizontu je inflace vždy domácího původu a máme nad ní v Česku úplnou moc. Kdyby byla inflace byla převážně dovážená z mezinárodních komoditních trhů, viděli bychom ve vlnách střídání inflace a deflace, protože ceny komodit kolísají oběma směry. Jenže to se neděje. Navíc by dynamika inflace byla podobná napříč zeměmi. To také nevidíme.
 
-Měla by tedy centrální banka pokračovat ve zvyšování úrokových sazeb, aby inflaci zkrotila?
+**Měla by tedy centrální banka pokračovat ve zvyšování úrokových sazeb, aby inflaci zkrotila?**
 
 Musíme začít s nepříjemným faktem, že podle moderní ekonomické teorie vyšší sazby nakonec inflaci zvýší. Nezní to intuitivně, je to takový vřed měnové ekonomie, a my stále studenty v prvním ročníku učíme, že vyšší úrokové sazby tlumí inflaci. Jenže pokud se lidé chovají racionálně, vyšší inflace po vyšších úrocích je robustní výsledek nových modelů. Centrální banka může kontrolovat nominální sazbu, ale dlouhodobě už ne reálnou. A když drží nominální sazbu vysoko, nakonec se musí zvýšit očekávaná inflace, a tedy i inflace skutečná. Ovšem může to trvat 10 let.
 
-To je však jen model. Potvrzují to i empirická data?
+**To je však jen model. Potvrzují to i empirická data?**
 
 K výpočtu potřebujeme experiment. Ale centrální banka nezvyšuje sazby jen tak. Vždy tvrdí, že je zvedá, protože čeká rostoucí inflaci. Není jasné, co je příčina a co následek. V Česku nicméně experiment právě probíhá. ČNB po nástupu nového guvernéra přestala se zvyšováním sazeb, zatímco v okolních zemích s tím pokračují. Během dvou let by mělo být jasné, jaký střednědobý efekt zastavení růstu sazeb mělo. Nikdy v historii se u nás nestalo, že by banka takhle změnila svoji politiku bez nových dat. Přitom nové vedení obrat nevysvětlilo. Třeba věří ekonomické teorii, že vyšší sazby nakonec inflaci zvýší a že ten dlouhodobý efekt přijde brzy? Komunikace ČNB by se měla zaměřit na kvalitu. Méně je více a týdenní sloupky v Mladé frontě nepomáhají.
 
-Vliv vyšších sazeb na inflaci tedy nikdy není podle učebnice ve stylu “zvednu sazby, inflace klesne”?
+**Vliv vyšších sazeb na inflaci tedy nikdy není podle učebnice ve stylu “zvednu sazby, inflace klesne”?**
 
 Střednědobě vyšší sazby inflaci sníží. Tomu věřím, vidíme to v teoretických modelech i jakžtakž v ekonometrických odhadech. Je tam zpoždění nejméně rok a nefunguje to vždy. Zvýšení sazeb vede ke zdražení obsluhy státního dluhu, což prohloubí schodek rozpočtu. A u hodně zadlužených zemí s převahou dluhu o krátké splatnosti, jako třeba USA, to zhoršení státních financí může vést k dalšímu inflačnímu šoku. Na druhou stranu, zvýšení sazeb – a to zejména v otevřené ekonomice – vede k posílení domácí měny. Takže ano, v Česku potřebujeme nějakou dobu ještě vyšší sazby, které ale nakonec musí dolů. Osobně zdůrazňuji použití devizových rezerv. Když posílíte korunu, klesne cena dováženého zboží a tím se sníží inflace. O tom není žádný spor. Nerozumím, proč ten nástroj nepoužíváme víc při dnešním inflačním fiasku.
 
-ČNB ale přeci loni devizové rezervy na podporu kurzu využila, za poslední rok se snížily z 3,9 bilionu korun na 3,1 bilionu korun.
+**ČNB ale přeci loni devizové rezervy na podporu kurzu využila, za poslední rok se snížily z 3,9 bilionu korun na 3,1 bilionu korun.**
 
 Loňské intervence byly taktické – byť podle mě správné – na truc novému guvernérovi. Ale rozhodně nešlo o strategické využití. Dávalo by smysl, kdyby ČNB už na začátku inflační vlny řekla: “Inflaci zvyšováním sazeb neumíme zkrotit rychle, proto navíc využijeme rezervy a budeme prodávat dvě miliardy eur měsíčně, abychom posílili korunu. A budeme to dělat, dokud se inflace nedostane na dvě procenta.” Absence této strategie přispěla nejen k inflačním výbuchu, ale nakonec ke změně kurzu ve vedení ČNB. Kdyby se povedlo inflaci srazit dříve, kdyby banka využila i nástroj, který působí rychle, byl by dnes guvernérem Marek Mora nebo Tomáš Nidetzký. Jsem jim vděčný, že se nebáli rychle zvyšovat sazby. Kdyby k tomu posílili korunu, bylo by to lepší pro ně i pro nás.
 
-Koruna nicméně teď poměrně prudce posiluje. Přispěly k tomu zmiňované intervence?
+**Koruna nicméně teď poměrně prudce posiluje. Přispěly k tomu zmiňované intervence?**
 
 K dnešnímu posilování ne. Ale nebýt loňských intervencí, koruna by posilovala ze slabších úrovní. I teď by pomohlo intervence obnovit a nakupovat koruny, protože inflace bude dvouciferná většinu letošního roku. Necháváme si rezervy na dobu, až bude trojciferná? Nerozumím.
 
-Jsou devizové rezervy dostatečné, aby ČNB dokázala případně čelit útokům ze strany spekulantů?
+**Jsou devizové rezervy dostatečné, aby ČNB dokázala případně čelit útokům ze strany spekulantů?**
 
 Pokud chce někdo spekulovat proti koruně, je to pro něj drahé. Musí si půjčovat koruny, kde je stále mnohem vyšší úrok než u eura, aby je mohl prodat a pak koupit zpět levnější. Je nereálné, že by to dlouhodobě dokázal ustát i velký hedgový fund. Pomohlo by ještě zvýšit sazby, krátkodobě na deset procent, a spustit intervence. Nikdo nerozporuje, že taková kombinace by pomohla inflaci letos snížit.
 
@@ -6364,33 +6364,33 @@ Sazby na 10 % a euro za 20 korun by ekonomiku bolely. Ale ČNB nemá v popisu pr
 
 Zeptejme se právníků. Ústava říká, že cílem ČNB je pečovat o cenovou stabilitu. Inflace ve výši 17,5 procent není cenová stabilita. Přitom ČNB s tím něco může dělat ještě dnes, zvýšit sazby a posílit korunu. Nedělá to, tedy vědomě neplní ústavní zadání. Ale nemáme mechanismus, jak ji k plnění donutit. Pomohlo by v Zákoně o ČNB vyjasnit, co znamená cenová stabilita. Dvouprocentní inflace, či skutečná cenová stabilita, tedy průměrná stabilita průměrných cen v ekonomice? Když jednou ceny vzrostou, tak v dalších letech by zase klesaly. Stovky vědeckých studií jako celek ukazují, že právě toto je zdravá inflace: v průměru nula.
 
-Je současný systém cílování inflace na dvě procenta s tolerančním pásmem tedy špatný?
+**Je současný systém cílování inflace na dvě procenta s tolerančním pásmem tedy špatný?**
 
 Nejhorší je, že neopravuje své minulé chyby. I kdyby inflace byla od roku 2024 pět let nulová, nemůžeme mluvit o cenové stabilitě. Za tři roky, od začátku 2021 do konce 2023, srazí inflace dohromady hodnotu peněz o třetinu. To není konzistentní s ústavním zadáním podle žádného výkladu. ČNB by alespoň trochu měla opravovat své chyby, tedy do budoucna tolerovat mírnou deflaci, aby symbolicky kompenzovala fiasko posledních tří let. Dvouprocentní inflační cíl také není přírodní zákon. Když se cílování zavádělo na konci 80. let na Novém Zélandu, byla ta dvě procenta vybrána v zásadě náhodně. Cílem bylo hlavně srazit inflaci. Když je inflace dvouciferná, rozdíl mezi 0 a 2 je minimální. Ale 2% inflace za jednu generaci sníží hodnotu peněz za polovinu. A od konce 80. let máme stovky studií, které v průměru ukazují, že nulová inflace je nejzdravější.
 
-Hlavním argumentem přeci je, že lidé by odkládali své nákupy, nebýt inflace. Mluví se o ní jako něčem, co podněcuje ekonomický růst.
+**Hlavním argumentem přeci je, že lidé by odkládali své nákupy, nebýt inflace. Mluví se o ní jako něčem, co podněcuje ekonomický růst.**
 
 V datech ale nevidíme, že nižší inflace zpomaluje ekonomický růst. A není to vidět ani v modelech, kde jsou lidé racionální. Pokud by cílem centrální banky byla skutečná cenová stabilita, v průměru nulová inflace, tak deflace 2 % znamená, že brzy musí přijít naopak inflace 2 %. Při deflaci by lidé spotřebu neodkládali, protože každá deflace znamená budoucí inflaci. A naopak. Deflační spirála je sice možná teoreticky, pokud lidé nejsou racionální, ale prakticky v moderní ekonomice nikoli. Měli jsme experiment: po finanční krizi v roce 2008 spirála nikde nenastala, ačkoli ji staré keynesiánské modely předpovídaly kvůli pasti likvidity a utahování opasků. Ovšem inflace byla stabilní a kladná skoro všude. Ať už centrální banky rozvolnily svou měnovou politiku, třeba s pomocí kvantitativního uvolňování, či nikoliv.
 
-Proč se centrální bankéři deflační spirály tolik obávají?
+**Proč se centrální bankéři deflační spirály tolik obávají?**
 
 Straší je kvůli Velké depresi ve 30. letech minulého století. Tehdy však deflaci způsobily samy centrální banky, když během krize utahovaly politiku a nechaly padnout bankovní sektor. V té době se ještě úplně nerozumělo mechanismu, jak měnová ekonomie funguje. Měnová věda nyní nedává důvod bát se deflace. Známe i období, kdy deflace mnoho let přetrvávala – třeba ke konci 19. století – a růst nebyl nijak slabší. Deflace není horší problém než inflace.
 
-Je pravděpodobné, že centrální banky začnou místo dvou procent cílit na nulu?
+**Je pravděpodobné, že centrální banky začnou místo dvou procent cílit na nulu?**
 
 Cenová stabilita je přirozené vylepšení inflačního cílování. Jen s dvěma parametrickými změnami. Opravuje minulé chyby a snižuje cíl z dvou procent na nulu. Bylo by to dovršení vývoje, kdy jsme – s výjimkou posledních tří let – v Česku postupně snižovali inflaci. A spolu s tím i inflační cíl. Před 25 lety začínala ČNB s cílem kolem šesti procent, od roku 2010 je na dvou procentech. Kdyby zmiňované výzkumy byly k dispozici už před třiceti lety, jsem si jist, že by už tehdy upřednostnili na Novém Zélandu nulu před dvojkou. Jedinou zemí, která má inflační cíl pod dvěma procenty, je Švýcarsko. Jejich centrální bance nevadí cenová stabilita. Nechtějí deflaci, ale nevadí jim nulová inflace. V praxi od roku 2008 mají opravdu průměrnou inflaci blízkou nule. Jinde odvahu k cenové stabilitě zatím nevidím, to se ale s pokračujícím inflačním debaklem změní.
 
 Dosud převažuje proud, který klade důraz na levné financování vládních výdajů. Třeba francouzský profesor Olivier Blanchard prosazuje zvýšení inflačního cíle. Cílem je, aby reálná úroková sazba – po odečtení inflace – byla co nejmenší, aby to bylo pro dlužníky a hlavně pro stát výhodnější. V tomto duchu jako člověk s hypotékou děkuji centrální bance, reálně jsem díky ní vydělal vloni 13 procent z hodnoty domu, protože mám sazbu pod dvě procenta a inflace byla 15 procent.
 
-To vypadá, že snížení inflačního cíle bude spíš politicky neprůchodné.
+**To vypadá, že snížení inflačního cíle bude spíš politicky neprůchodné.**
 
 Vidíte, tomuhle právě nerozumím. V Česku převládají střadatelé, lidé s většími úsporami než dluhy. Čekal bych tedy poptávku po nižší inflaci. Ale nechali jsme se omámit pohádkou, že inflace je dovezená, že s ní nejde nic dělat. Kdybychom hlasovali pro to, co je v našem zájmu, byla by to nejvýše nulová inflace, která nepoškozuje věřitele ani dlužníka. Je neutrální. Koruna by měla stále stejnou hodnotu. Ne vůči dolaru nebo euru, ale vzhledem k tomu, co si za ni můžete koupit. Podobně jako metr má stále 100 centimetrů a z roku na rok neměníme jeho délku. Pro metr máme v Paříži Úřad pro míry a váhy. Na Příkopech má být takový úřad pro korunu. Můžete vymyslet spoustu hypotetických výhod inflace, ale prakticky vidíte její náklady. Ty jsou nepopiratelné. Například nejistotu, která z ní pramení. Vůbec nevíme, co si za stokorunu budeme moci dovolit za 10 let. To komplikuje dlouhodobé spoření i investování. Potřebujeme navíc jasná kritéria, podle čeho ČNB hodnotit, jestli dělá práci správně. Vložme do zákona vzorec na odměňování bankovní rady podle skutečné inflace. Třeba formou odložených bonusů. Ve všech velkých firmách existuje nějaká odměna za výkon.
 
-Analytici se vesměs shodují, že česká inflace je už na vrcholu. Souhlasíte?
+**Analytici se vesměs shodují, že česká inflace je už na vrcholu. Souhlasíte?**
 
 Loni touto dobou se říkalo totéž. Samozřejmě přišla válka, ale inflace by stejně neklesla pod lednovou úroveň. Všechny prognózy v posledních dvou letech byly úplně mimo. Z hlediska výzkumu by podle standardního keynesiánského modelu IS-LM měla inflace dál stoupat, protože sazby jsou po odečtení inflace záporné. Hluboko pod rovnovážnou hodnotou. Podle modelu ČNB, ve kterém se lidé chovají racionálně, se inflace musí dlouhodobě dostat na úroveň blízkou úrokové sazbě.
 
-Modely tedy nedávají jednoznačnou odpověď.
+**Modely tedy nedávají jednoznačnou odpověď.**
 
 Podle nich jsou oba scénáře jsou možné. Když viceguvernérka Eva Zamrazilová říká, že do roka bude inflace začínat trojkou, je otázka, zda za tou trojkou bude desetinná čárka nebo číslovka. Byl bych překvapen, kdybychom se v příštích letech dostali pod pět procent.
 
@@ -7295,269 +7295,269 @@ Buďme nároční. Chtějme po našich poslancích a senátorech novelu Zákona 
 
 Zdroj: https://www.idnes.cz/ekonomika/domaci/tomas-havranek-ekonomika-green-deal-energetika-plyn-eu-inflace-krize.A221013_162405_eko-zahranicni_mejt
 
-V jaké stavu se podle vás dnes nachází česká ekonomika?
+**V jaké stavu se podle vás dnes nachází česká ekonomika?**
 
 Jsme v nejhorší situaci, v jaké jsme se kdy ocitli jako samostatná Česká republika. Zároveň to ale není klasická ekonomická krize, která by měla trvat delší dobu. Útlum je vyvolán převážně vysokými cenami energií, které se jednou vrátí na původní čísla.
 
-Za jak dlouho?
+**Za jak dlouho?**
 
 Může to trvat několik let. Ale globálně platí, že nabídka energií se nesnížila. Elektřina ani plyn nebudou navždy drahé. Problém je daný dočasně situací na východě. Ta se ani vyřešit nemusí, stačí, že budeme mít hotové terminály pro dovoz zkapalněného plynu z Ameriky.
 
-Ekonom Lukáš Kovanda řekl: „Politici by měli lidem nalít čistého vína a říct, že energo-drahota je výsledkem záměrného konání EU v posledních 15 letech: podinvestování energetiky a jádra, sázky na nespolehlivé zelené zdroje a Putinův plyn. Napříč EU se překotně opouštěla tradiční energetika, aniž by měla odpovídající náhradu. Zato vybudovala fatální energetickou závislost na totalitárním režimu, jenž si s ní pohrává.“ Souhlasíte?
+**Ekonom Lukáš Kovanda řekl: „Politici by měli lidem nalít čistého vína a říct, že energo-drahota je výsledkem záměrného konání EU v posledních 15 letech: podinvestování energetiky a jádra, sázky na nespolehlivé zelené zdroje a Putinův plyn. Napříč EU se překotně opouštěla tradiční energetika, aniž by měla odpovídající náhradu. Zato vybudovala fatální energetickou závislost na totalitárním režimu, jenž si s ní pohrává.“ Souhlasíte?**
 
 I člověk, který má rád Evropu, si musí přiznat, že evropská energetická politika selhala. Razila to EU, ale neznamená to, že to na nás valil jenom ten zlý Brusel. Hlasovali pro to i čeští politici, pro byla i spousta českých komentátorů. Je to špatné kolektivní rozhodnutí většiny z nás.
 
-Jaký podíl má na současných cenách energií a inflaci zelená politika, Green Deal, emisní povolenky, a především rozhodnutí Německa pozavírat jaderné a uhelné elektrárny a vsadit na ruský plyn, který před 30 lety nikdo ze západní Evropy nedovážel? Nebylo tohle fatální oslabení a Putinova válka to jen dorazila? Možná právě kvůli této závislosti si Rusko trouflo napadnout Ukrajinu…
+**Jaký podíl má na současných cenách energií a inflaci zelená politika, Green Deal, emisní povolenky, a především rozhodnutí Německa pozavírat jaderné a uhelné elektrárny a vsadit na ruský plyn, který před 30 lety nikdo ze západní Evropy nedovážel? Nebylo tohle fatální oslabení a Putinova válka to jen dorazila? Možná právě kvůli této závislosti si Rusko trouflo napadnout Ukrajinu…**
 
 Problém je v tom, že nové zdroje energie jako například soláry jsou sice skvělé, ale závislé na tom, kdy svítí slunce. Proto zvyšují důraz na záložní zdroje, které vykrývají poptávku, když slunce nesvítí. Do velké míry to způsobuje nerovnováhu na trhu energií, protože cena se určuje podle nejdražšího zdroje, který je v tu danou chvíli zapnutý…
 
-Což bývají plynové elektrárny.
+**Což bývají plynové elektrárny.**
 
 Přesně tak. A plyn je dnes strašně drahý. Kdyby Němci investovali do jaderných elektráren, nebyla by tak velká potřeba vyrovnávat nabídku elektřiny uhlím a plynem. Místo toho se orientovali na Rusko, což se ukázalo jako velká chyba. Ceny energie by byly jinak o poznání nižší. Green Deal má na současné energetické krizi opravdu svůj podíl. My na zelenou tlačíme dřív, než je na to technologie připravená, hlavně po stránce akumulace neboli udržování energie, když slunce nesvítí. Dobrá je proto kombinace solárních a větrných elektráren. Když nesvítí slunce, tak aspoň často fouká. Ale pořád to ještě zdaleka nestačí… Odklon od jaderné energie byla jednou z hlavních příčin současných problémů.
 
-Půjde to bez jaderné energetiky? Neřídí se energetika a ekonomika obecně v Evropě spíše ideologií? I Japonsko, které má za sebou hrůzy Hirošimy a Nagasaki, i Fukušimu, se nyní pragmaticky k jádru vrací.
+**Půjde to bez jaderné energetiky? Neřídí se energetika a ekonomika obecně v Evropě spíše ideologií? I Japonsko, které má za sebou hrůzy Hirošimy a Nagasaki, i Fukušimu, se nyní pragmaticky k jádru vrací.**
 
 Jaderná energie je čistá z hlediska emisí, i když má samozřejmě svá rizika. Nicméně řekl bych, že dnešní jaderné elektrárny jsou pro lidi bezpečnější než tepelné, pro řadu zvířat i než větrné nebo vodní. Měli bychom přehodnotit náš postoj k jaderné energetice. Nejen v Německu, ale všude v Evropě. Jestli chceme mít nízké emise a zároveň dostupnou elektřinu, jiná cesta než jádro za současné technologie není a hodně dlouho nebude. S tím se musíme smířit, přestože některým z nás se to ideologicky nelíbí. To znamená nejen elektrárny znovu otevírat, ale masivně začít stavět po celé Evropě nové. Hned.
 
-Teď v záři Němci sice dvě elektrárny nechali v rezervě, ale třetí odpojili. Proč mají vlastně vůči jádru takový odpor?
+**Teď v záři Němci sice dvě elektrárny nechali v rezervě, ale třetí odpojili. Proč mají vlastně vůči jádru takový odpor?**
 
 Nechápu to… Dnes je úplně jiná úroveň bezpečnosti, ale my máme v hlavách pořád Černobyl. Možná kdyby tehdy nebylo Černobylu, tak tu obavu nemají. Měli bychom všude po Evropě jaderné elektrárny a neměli bychom problém, protože elektřiny by bylo dost a plynu by nebylo tolik potřeba. S troškou nadsázky lze říct, že u kořenů současné energetické krize leží už ruský diletantismus 80. let. Němci jako bezprostřední důvod uváděli Fukušimu, to ale byla spíš marketingová katastrofa pro nukleární energii. Ve Fukušimě zabíjelo tsunami, ne radiace.
 
-Není to rozhodnutí od Německa sobecké? Oni mají peníze na to koupit si drahou energii, ale kvůli jejich postoji je energie drahá pro celou Evropu.
+**Není to rozhodnutí od Německa sobecké? Oni mají peníze na to koupit si drahou energii, ale kvůli jejich postoji je energie drahá pro celou Evropu.**
 
 Na druhou stranu my nejsme čistý dovozce elektřiny, pořád většinou víc energie sami vyrobíme, než kolik jí dovážíme.
 
-Jenže ji obchodujeme přes německou burzu, a tím pádem se prodraží. Kdybychom ji obešli a prodávali ji levně, nemuseli bychom tolik zatěžovat domácnosti a firmy…
+**Jenže ji obchodujeme přes německou burzu, a tím pádem se prodraží. Kdybychom ji obešli a prodávali ji levně, nemuseli bychom tolik zatěžovat domácnosti a firmy…**
 
 Jenže ji vyrábí a prodává draze hlavně ČEZ, což je z většiny státní firma. Ve finále stejně ty peníze zůstanou tady. Zastropování cen elektřiny a mimořádná daň není nic jiného, než že vezmete zisky společnosti ČEZ a rozdělíte je lidem, aby mohli utáhnout účty za elektřinu. Pro naše domácnosti jsou vysoké ceny na burze tedy nevýhodné jen krátkodobě. Teď se schválil rozumný kompromis, který pro domácnosti bude zhruba znamenat zvýšení cen energií zhruba o sto procent oproti roku 2021. Většina to nějak utáhne, jen nás to nutí šetřit. A to je dobře. Nemůžeme donutit ČEZ, aby prodával elektřinu za výrobní ceny, protože není ze 100% státní firmou. Pořád musíte brát v úvahu, že má minoritní akcionáře a bylo by proti zákonu, aby stát nutil ČEZ prodávat pod tržní cenou. Takhle ČEZ přinese do rozpočtu peníze, ze kterých se bude moct zaplatit aspoň část dluhu, který vznikne zastropováním cen energií. Jednak z dividend a pak zaplatí i daň z mimořádných zisků, kterou vláda plánuje zavést. Ta se nebude týkat jen společnosti ČEZ, nýbrž třeba i bank.
 
-Ještě na jaře naši politici tvrdili, že ceny energií zastropovat nejde. To nám lhali?
+**Ještě na jaře naši politici tvrdili, že ceny energií zastropovat nejde. To nám lhali?**
 
 Oni opravdu věřili tomu, že to není možné, dokud s tím nepřišla třeba Francie a další země, které tu cestu prošláply.
 
-Myslíte si, že zastropování je dostatečná kompenzace? Že po zimě nebudou krachovat firmy a nevypuknou sociální nepokoje? Kvůli vysoké ceně za plyn už byla mimo jiné nucena zavřít řada pekáren…
+**Myslíte si, že zastropování je dostatečná kompenzace? Že po zimě nebudou krachovat firmy a nevypuknou sociální nepokoje? Kvůli vysoké ceně za plyn už byla mimo jiné nucena zavřít řada pekáren…**
 
 Nemyslím si, že by to po těch nových úpravách bylo likvidační a že by to mělo znamenat sociální nepokoje. Mohlo to bývalo hrozit, pokud by nedošlo k zastropování. A asi už během zimy. Ale tomu se povedlo zabránit. Což nicméně neznamená, že to pro řadu rodin nebude obtížné. Ale ne likvidační.
 
-Je čas opustit Green Deal? Nebo ho odsunout na dobu, kdy krize pomine?
+**Je čas opustit Green Deal? Nebo ho odsunout na dobu, kdy krize pomine?**
 
 V ekonomii rádi porovnáváme náklady a výnosy. Když zavádíte nějaké opatření, je třeba zjistit, jestli se to vyplatí. Jak to je při přechodu k zelené energetice? Když chcete snížit emise CO2, což je dobrá věc, musíte se podívat, kolik vás to stojí. Někde je hranice, za kterou už se nevyplatí jít, abychom ještě měli dost prostředků na ostatní aspekty života. Myslím, že už jsme tu hranici překročili.
 
-EU chce být kolem roku 2050 uhlíkově neutrální. Zároveň ale celosvětově produkuje jen nějakých 8 až 9 % CO2, zatímco třeba sama Čína skoro 30 % a týdně prý otvírá v průměru 2 nové uhelné elektrárny. Není to od EU páchání ekonomické sebevraždy? Klima přece nemá hranice, a pokud se k zelené politice nepřipojí všichni, nic se nezmění.
+**EU chce být kolem roku 2050 uhlíkově neutrální. Zároveň ale celosvětově produkuje jen nějakých 8 až 9 % CO2, zatímco třeba sama Čína skoro 30 % a týdně prý otvírá v průměru 2 nové uhelné elektrárny. Není to od EU páchání ekonomické sebevraždy? Klima přece nemá hranice, a pokud se k zelené politice nepřipojí všichni, nic se nezmění.**
 
 Evropská unie chce ukázat správnou cestu, ale obávám se, že už nemáme peníze být průkopníkem. V určitou chvíli je to tak drahé, že pak vám nezbyde na školství a zdravotnictví. Na to, aby si naše děti v dospělosti žily podobně dobře, jako my. Neříkám, že bychom měli Green Deal úplně opustit, ale radil bych zvolnit. Konkrétně bych revidoval Pařížskou dohodu (koncem roku 2015 bylo všemi zeměmi OSN schváleno udržení nárůstu globální průměrné teploty výrazně pod hranicí 2 °C oproti hodnotám před průmyslovou revolucí, pozn. red.). William Nordhaus získal Nobelovu cenu právě za modely nákladů a výnosů snižování emisí. V nobelovské přednášce ukazuje, že by pro společnost bylo lepší nedělat nic než postupovat podle Pařížské dohody. Pařížská dohoda není vědecká, nýbrž ideologická, podobně jako zavírání jaderných elektráren. Cílem by mělo být, aby se oteplování zpomalilo, ale zároveň se nezmrzačila naše společnost. Společenské výhody snižování emisí se musí rovnat nákladům.
 
-Jak vy osobně řešíte nárůst cen energií?
+**Jak vy osobně řešíte nárůst cen energií?**
 
 Bydlíme v rodinném domě, dostavěli jsme před čtyřmi roky, topíme elektřinou a máme soláry a tepelné čerpadlo. A že byl tehdy plyn levnější? Nechtěl jsem mít doma nic výbušného (směje se). Postavili jsme pasivní dům, za energie platíme ročně padesát tisíc korun. Ale zhruba půlku spotřebuje venkovní vířivka. Kdyby měly ceny vzrůst vícenásobně, nebo nastal v zemi opravdový nedostatek elektřiny, tak ji samozřejmě vypnu. Zatím běží, protože mám od loňského léta zafixovanou cenu elektřiny na dva roky, takže děti jsou spokojené. Když nad tím ale teď přemýšlím, asi bych ji před zimou vypnout měl každopádně.
 
-Šetříte jinde? Zkoušel jste najít někde rezervy?
+**Šetříte jinde? Zkoušel jste najít někde rezervy?**
 
 Ani ne. Kolik můžete ušetřit? Pár procent? Spíš se snažím dnes víc vydělat, než abych šetřil. Vždycky se dá najít možnost, jak si přivydělat. Snáz než hledat, kde ušetřit. Když dnes budete šetřit a úspory si ukládat, požere vám to vysoká inflace, která je teď 17 procent. Čím větší úspory máte, tím víc dnes tratíte. Takže když mám nějaké peníze navíc, investuju je do akcií.
 
-V rozhovoru pro DVTV jste řekl, že víc utrácíte…
+**V rozhovoru pro DVTV jste řekl, že víc utrácíte…**
 
 Kvůli inflaci vnímám, že peníze ztrácí hodnotu. Proto je teď pro mě snazší utrácet peníze, pokud je zrovna mám. Stokoruna neznamená totéž, co před dvěma lety, nýbrž jen 80 korun. Příklad: můj tatínek je na invalidním vozíku a vždycky chtěl vidět pláže v Normandii, kde se vylodili spojenci. Bude mu sedmdesát, je v důchodu. Měl naspořeno, a tak jsem mu řekl: „Pojedeme tam, všechno to zorganizuju, budu Tě vozit, nebudeme na ničem šetřit, a Ty to zaplatíš.“ (směje se) Celý život šetřil, nikdy by si nic takového nedopřál nebýt té krize. Byl nakonec velmi spokojený. Viděl, že to byly dobře využité peníze, protože jinak by mu je inflace znehodnotila.
 
-Mluvili jsme o závislosti na ruském plynu. Nebude se totéž opakovat i při elektromobilitě v závislosti na dodávkách z Číny? Vyrábějí tam drtivou většinu elektrobaterií. A mají pod palcem většinu dolů s potřebnými cennými kovy, a to i v Africe. Neměli bychom mít strach i ze závislosti na Číně? Anebo z Indie, kde se produkuje většina lékových látek. Čipy zase na Tchajwanu.
+**Mluvili jsme o závislosti na ruském plynu. Nebude se totéž opakovat i při elektromobilitě v závislosti na dodávkách z Číny? Vyrábějí tam drtivou většinu elektrobaterií. A mají pod palcem většinu dolů s potřebnými cennými kovy, a to i v Africe. Neměli bychom mít strach i ze závislosti na Číně? Anebo z Indie, kde se produkuje většina lékových látek. Čipy zase na Tchajwanu.**
 
 Suroviny se dají získat ze spousty míst na světě. Ale kdyby Čína třeba napadla Tchajwan, budeme mít kvůli případným sankcím mnohem větší problémy než teď s Ruskem. Co nám mohou Rusové nabídnout? Kromě plynu, ropy a hnojiv skoro nic. Rusko je ekonomicky malá země. Ale i bez Číny bychom se nakonec obešli. Jen by to znamenalo, že většina věcí by byla dražších. Možná napořád, protože by to vedlo k odbourání globalizace. Platí rovnice, že když budeme soběstačnější, budeme zároveň mnohem chudší, protože vyrábět v Evropě bude dražší. Politici a firmy se dosud řídili ekonomickými čísly, protože jsme neměli strach ze závislosti. Dílem proto, že jsme dlouho žili v míru, válku si v Evropě dokázal představit málokdo… Teď se bude každá země víc snažit o soběstačnost. Dá se o hodně víc peněz do bezpečnosti, posílí se armády. I to bude mít vliv na inflaci. Byla vysoká už před válkou. A kvůli odklonu od globalizace bude ještě těžší se jí dlouhodobě zbavit.
 
-Mluvili jsme o odklonu politiků od ekonomického rozhodování a příklonu k ideologickému. Máte vysvětlení, proč k tomu došlo?
+**Mluvili jsme o odklonu politiků od ekonomického rozhodování a příklonu k ideologickému. Máte vysvětlení, proč k tomu došlo?**
 
 Nejsem sociolog, ale mám teorii, že to do velké míry způsobily sociální sítě. Mimochodem, víte, proč jsme ještě nepotkali mimozemskou civilizaci? Protože v nějaké fázi každá civilizace vynalezne sociální sítě, a tím se sama zničí. (směje se). Funguje to jednoduše: stačí mít chuť a čas přesvědčovat ostatní o své pravdě. A dělají to většinou mladí lidé ze západních zemí, kteří příliš nepracují. Právě oni dnes často táhnou veřejnou debatu ohledně změny klimatu a dalších důležitých otázek. A mají zpětně vliv i na hlavní periodika. Ještě před deseti lety to vypadalo úplně jinak. Aspoň občas se v nich náklady a výnosy opatření související s bojem proti globálnímu oteplování řešily. Dnes o tom těžko uslyšíte. A podle mě je to dané právě tlakem sociálních sítí. Experti mají na vybranou: buď lynč na Twitteru, nebo říkat to, co chce lid slyšet.
 
-Proč máme skoro tak vysokou inflaci jako v Pobaltských zemích?
+**Proč máme skoro tak vysokou inflaci jako v Pobaltských zemích?**
 
 Tipoval bych, že z aktuálních 17 % inflace je deset procent dovoz a sedm bude náš příspěvek. Kromě vnějších vlivů, tedy covid a následně válka na Ukrajině, problémy s energiemi, Green Deal… vidím tři domácí zdroje. Zaprvé, máme přehřátý trh práce, málo lidí je ochotných pracovat. Máme tu epidemii invalidity u lidí, kteří by pracovat mohli. Proto je tlak na vyšší mzdy. Zadruhé, naše vláda byla za covidu víc rozhazovačná než vlády jiných zemí. Rozdala masivní plošné kompenzace. Takovým výdajům se říká vrtulníkové peníze. Do toho patří i plošné přídavky na děti nebo nárazové zvyšování důchodů. Zatřetí, koruna byla slabší, než měla být. Negativní roli hrála i hysterická rétorika ČNB loni. Jejich strašení jsem příliš nerozuměl. Začali zvyšovat úrokové sazby, sice pozdě, ale silně. Vláda je za to kritizovala a oni se možná tím strašením, jak bude situace apokalyptická, chtěli obhájit. Místo, aby se snažili společnost uklidnit… I v ekonomice hodně záleží na psychologii. Když vidíte, že vše masivně zdražuje, že i národní banka před tím varuje, tak si obchodníci řeknou, proč bychom taky výrazně nezdražili, ono se to ztratí… Tu spirálu zdražování nezpůsobila ČNB, ale podílela se na tom. Zvyšování sazeb možná inflaci tlumilo méně, než jak ji zvyšovala špatná komunikace ČNB. Vina leží na bývalém guvernérovi (Jiřím Rusnokovi, který byl ve funkci do června 2022, pozn. red.). Občas působil, že už se těší na chalupu do důchodu. Evidentně to pro něj nebyl vrchol kariéry a ta práce ho nebavila. Kdyby byl guvernérem Zdeněk Tůma nebo Mojmír Hampl, dopadlo by to jinak.
 
-Proti inflaci jste brojil už před krizí. Stojíte za projektem Zrušme inflaci. Jaké navrhujete řešení?
+**Proti inflaci jste brojil už před krizí. Stojíte za projektem Zrušme inflaci. Jaké navrhujete řešení?**
 
 Na stránce zrusme-inflaci.cz máme detailní návod. Důležité je teď prodat eura, která se nakupila během doby, kdy ČNB intervenovala proti koruně, aby ji oslabila. Vytvořili hromadu nových korun, za které nakoupili eura od spekulantů ze zahraničí. Teď bychom ten proces měli obrátit, abychom korunu pro změnu posílili.
 
-Kolik těch eur v devizových rezervách máme?
+**Kolik těch eur v devizových rezervách máme?**
 
 Zhruba 140 miliard eur. Oznámil bych, že polovinu rezerv prodáme do dvou let a každý měsíc bych prodal zhruba tři miliardy. Tím bychom se vrátili do bodu před rokem 2013, kdy ČNB s intervencemi začala. Když by koruna posílila, zlevnilo by to dovážené zboží, tedy i ropu a plyn. Kdyby to ČNB spustila před rokem, dnes bychom neměli inflaci 17 procent, nýbrž třeba jenom devět. Mohla by totiž minimálně zastavit inflační hysterii, kterou sama pomohla vytvářet vyjádřeními, že zvyšuje úroky, protože inflace bude apokalyptická.
 
-Proč to pořád ČNB neudělala?
+**Proč to pořád ČNB neudělala?**
 
 Oni nějaká eura prodávají, ale příliš málo. Asi se bojí, že by tím ČNB realizovala obrovskou ztrátu. Mezi roky 2013-17 nakoupili zhruba sedmdesát miliard eur za 27 korun, dnes by je prodávali zhruba za 24,60. Prodělali by kolem 170 miliard korun. Nešlo by nepřiznat, že tu ztrátu způsobila politika ČNB. Toho se podle mě její vedení bojí, a bojí se toho i část aparátu. Chápu tu obavu, ale myslím si, že důležitější je inflaci snížit. Potřebujeme, aby se zase vyplatilo spořit. To je cesta, jak nakonec inflaci úplně porazit. Dnes se to ale vůbec nevyplatí. Dnes je průměrná úroková sazba na všech úsporách asi 1,5%, přitom komerční banky přehodí tyhle peníze do ČNB a ta jim je úročí sedmi procenty. Je potřeba, aby komerční banky úročily vklady aspoň šesti procenty bez podmínek.
 
-Jak byste je donutil?
+**Jak byste je donutil?**
 
 Guvernér ČNB by si mohl pozvat šéfy největších bank. A říct jim: „Když nám pomůžete v boji proti inflaci, nebudeme spouštět dodatečnou regulaci, kterou bychom jinak spustili.“ Guvernér na ně má silné páky, ale ne vždy je využívá. Centrální banka a komerční banky jsou navzájem svázané. Největším klientem centrální banky není vláda, chvála Bohu, ale není to ani veřejnost, nýbrž soukromé banky. Banky, které s ní dělají obchody a pak jejich ekonomové končí v radě ČNB anebo z ní naopak odcházejí do komerčních bank. Jsou personálně provázání bankovním byznysem. Nechápu úplně, že se v dnešní době tento střet zájmů neřeší. Národní banka neudělá nic většího proti zájmu bank. Ale jsou světlé výjimky: ČNB třeba donutila soukromé banky, aby hypotéky šly mimořádně refinancovat bez velkých poplatků, které původně banky vyžadovaly. Takže když se chce, tak to jde. Obecně jsou ale u nás banky příliš privilegované. Měli bychom je motivovat soustředit se na produktivní byznys, tedy úvěrování, nikoli vydělávání na přehazování peněz od klientů do ČNB.
 
-Jak?
+**Jak?**
 
 Založil bych státní banku pro drobné střadatele, která by nedávala úvěry, jen by brala úspory od lidí a ukládala by je u ČNB. To je vše. Aby se nemohla podbízet a nabízet třeba úrok 8 %, v zákoně by měla podmínku, že každý rok musí být zisková. Jinak by měla stejné podmínky jako ostatní banky. Co by to způsobilo? Přineslo by to konkurenci a komerční banky by také musely zvednout úroky vkladů. Zároveň by klesly zisky bank z neproduktivních činností, a nemusela by se zavádět bankovní daň. Je to cesta, jak spoření z dlouhodobého hlediska opět nastartovat. Teď je mrtvé. Dnes je spořit vysloveně hloupé, nejlepší spoření je v tomto systému dluh! Kdyby se to změnilo, tak bychom zase mohli učit děti, že je dobré spořit. Ale tohle přes lobby bank asi neprojde… Každopádně by státní banku, nebo přímo ukládání peněz lidmi v ČNB, mohl guvernér použít jako hrozbu, aby donutil komerční banky chovat se víc konkurenčně na trhu spoření.
 
-Voláte po posílení koruny. Máte odhad, kolik by euro muselo stát korun, aby byla inflace jednociferná?
+**Voláte po posílení koruny. Máte odhad, kolik by euro muselo stát korun, aby byla inflace jednociferná?**
 
 Nemám. Nevím ani, na jak silnou hodnotu by to bylo možné stlačit, kdyby ČNB prodala všechny rezervy. Ale potřebovali bychom to stáhnout aspoň o pár korun za euro. Mimochodem, guvernér národní banky správně tvrdí, že platy v ekonomice by měly odrážet produktivitu práce. Jenže tento rok produktivita práce rostla, ale reálné mzdy klesají o dvanáct třináct procent po odečtení inflace. Aby mzdy odpovídaly produktivitě práce, musí příští rok při další očekávané inflaci vzrůst o nějakých dvacet dva procent. Pravděpodobně se to nestane, ale podle té guvernérovy logiky by to tak být mělo. Půjdu si říct o zvýšení platu. Nevím, jak vy, ale já bych to zkusil…
 
-Hodně štěstí… Myslíte na univerzitě, kde učíte?
+**Hodně štěstí… Myslíte na univerzitě, kde učíte?**
 
 To máte pravdu, asi mi nepřidají. Ale národní banka ukazuje, že marže soukromých firem narostly, minimálně v některých odvětvích. Aspoň některé mají polštář, díky kterému by mohly zvýšit platy, aby vyrovnaly jejich strašlivý pokles v letošním roce, který je největší v historii republiky.
 
-V naší zemi je vyšší průměrný plat ve státním sektoru, přestože ve světě je běžné, že lidé v soukromých firmách berou víc. Co si o tom myslíte?
+**V naší zemi je vyšší průměrný plat ve státním sektoru, přestože ve světě je běžné, že lidé v soukromých firmách berou víc. Co si o tom myslíte?**
 
 Myslím, že takhle je to i někde na jihu Evropy. A není to zdravé… Vždycky je snadné vytvořit nový úřad nebo přijmout nové úředníky. Těžké je pak tu agendu zeštíhlit. Je to špatně, protože tito lidé chybí na trhu práce pro produktivní činnost. Ve státním sektoru jsou desetitisíce lidí, co nedělají mnoho užitečného. Řada z nich sedí na úřadech a vymýšlí, jak co nejde. Nejsou to špatní lidé, ale systém je motivuje k obstrukcím. Často komplikují život ostatním lidem, kteří chtějí stavět nebo podnikat. Je proto potřeba motivovat takové úředníky, aby změnili práci.
 
-Proč se to neděje, když to vlády před volbami tradičně slibují?
+**Proč se to neděje, když to vlády před volbami tradičně slibují?**
 
 Kdo vytváří návrhy zákonů a opatření? Úředníci! Znáte seriál Jistě, pane ministře? Přesně tak to funguje ve skutečnosti. Pokud není politická vůle na zeštíhlení státního aparátu extrémně silná, vždycky zvítězí zájmy úředníků, kteří se samozřejmě brání jakýmkoli změnám a kteří si pak ochočí buď své ministry anebo Bankovní radu ČNB.
 
 Ale abych se vrátil k té Vaší původní otázce na inflaci: posílit korunu je podle mě opravdu teď nejlepší nástroj, jak zkrotit inflaci. Každá inflace je nezdravá, nepřirozená a neústavní. Můžeme se jí úplně zbavit. Běžný nákup může stát stejně dnes i za 20 let.
 
-Jak?
+**Jak?**
 
 Upravme Zákon o České národní bance. Banka se musí přestat snažit o každoroční zdražování. Ať se snaží o stabilitu průměrných cen. Od roku 1990 vyšlo 220 odborných studií, které porovnávají náklady a výnosy inflace. Vědci se v nich v průměru shodují, že zdravá inflace je nula, nikoli dvě procenta, což je cíl ČNB a některých světových centrálních bank. Inflace přitom běží jen posledních sto let, aby ulehčila financování státního a dalšího dluhu. Ceny před první světovou válkou byly podobné jako o století dříve. Teď je inflace obrovská, ale v tomto systému banka svoje chyby neopravuje. Místo toho stále tlačí na další a další zdražování, takže vůbec nevíme, co si budeme moct za svoje peníze koupit za pět deset let. Když zrušíme inflaci, peníze přestanou ztrácet na hodnotě. Budeme moct šetřit na účtu v bance nebo doma v hotovosti bez nejistoty a složitostí. Inflace spoření zabíjí. Proto je tak těžké dnes spořit na důchod nebo pro děti.
 
-Opravdu to ČNB může tak lehce zvrátit?
+**Opravdu to ČNB může tak lehce zvrátit?**
 
 Nad cenou průměrného zboží a služeb má kontrolu ČNB, protože určuje cenu peněz a nepřímo i jejich množství v oběhu. Díky zásobě eur a dolarů má také vliv na hodnotu koruny oproti ostatním měnám. ČNB dokáže, aby koruna měla takovou sílu, jakou chce. Výkyvy by mohla opravit. Pokud nevěříme, že ČNB má nad inflací kontrolu, tak ji můžeme rovnou zavřít, protože nám k ničemu není, nemůže plnit svůj ústavní úkol, tedy péči o cenovou stabilitu. Před sto lety dokázal Alois Rašín (ministr financí Československa v letech 1918-19 a 1922-23, pozn. red.) také inflaci srazit z dvouciferných hodnot na nulu. Inflace údajně promazává kola ekonomiky, ale vědecký výzkum je proti. Vázal bych platy vedení banky, což je sedm lidí, na dodržování této cenové stability. V každé firmě, nejen soukromé, by měl být plat navázán na výkon. Neříkám, že bych jim snížil platy, naopak za cenovou stabilitu by měli mít veliké bonusy – abychom na tu pozici mohli najímat nejlepší lidi z celého světa.
 
-Myslíte si, že guvernér ČNB Aleš Michl je mužem na svém místě?
+**Myslíte si, že guvernér ČNB Aleš Michl je mužem na svém místě?**
 
 Myslím si, že má za poradce jednoho z nejlepších ekonomických odborníků v ČR, Tomáše Adama. Na Alešovi oceňuji, že se nebojí měnit zavedené věci. Třeba rozhodl, že peníze z devizových rezerv nebudou ležet na běžném účtu, ale že se budou investovat do akcií a zlata. Sice zlato vám pravděpodobně nevydělá mnoho a lidi od investic do zlata spíš odrazuji, ale národní banka by takovým krokem mohla být důvěryhodnější. Ať my ekonomové chceme nebo ne, lidi mají zlato rádi. V suterénu má ČNB obrovské trezory, které může nacpat drahými kovy a ukazovat je lidem. Chodil bych se na to s dětmi dívat také (usmívá se).
 
-Psal jste, že pokud ČNB nezačne investovat, hrozí české ekonomice krach…
+**Psal jste, že pokud ČNB nezačne investovat, hrozí české ekonomice krach…**
 
 To jsem psal loni a od té doby se situace ještě dramaticky zhoršila, takže investování devizových rezerv už nebude stačit. Do zlata bych investoval jen pár procent rezerv. Co se vyplatí dlouhodobě, je nákup akcií, podíly na úspěšných firmách z celého světa, pak máte kus jejich zisku. Ne vsadit na jednu firmu, ale všechny větší firmy. Můžete také koupit podíl v našich bankách. Tím, že koupíte kousky jejich matek. Národní banka to už dělá, ale mohla by se do toho opřít víc. Aleš Michl to chce. To je správná cesta a dlouhodobě nám to vydělá biliony.
 
-Rád používáte expresivní slova jako krach nebo spálená koruna. Opravdu můžeme následovat Řecko, kterému před dvanácti lety hrozil státní bankrot?
+**Rád používáte expresivní slova jako krach nebo spálená koruna. Opravdu můžeme následovat Řecko, kterému před dvanácti lety hrozil státní bankrot?**
 
 Dlouhodobě ano… Když se zeptáte expertů z Národní rozpočtové rady (nezávislý odborný orgán, jehož hlavním posláním je vyhodnocovat, zda stát a další veřejné instituce dodržují pravidla rozpočtové odpovědnosti daná zákonem, pozn. red.), budou používat ještě daleko expresivnější výrazy. Problém není letošní schodek, ale dlouhodobý výhled. Je tu válka, drahé energie, ale pořád zatím nemusíme platit obrovský schodek důchodového účtu, který přijde řekněme za dvacet let a který už se kvůli špatné demografické situaci nikdy nespraví. Jedná se o Bismarcův důchodový systém založený na předpokladu, že lidí je víc a víc. Ale lidi nebudou mít průměrně tři děti, aby ten systém mohl fungovat. Je to vlastně jako letadlo, které narazí do demografické zdi. Všechny systémy průběžného důchodového financování jsou neudržitelné. Ale je třeba říct, že na tom nejsme ještě tak špatně jako některé země na jihu Evropy. Ale pokud se něco radikálně nezmění, stát nemůže splnit všechno, k čemu se zavázal, vše, co nasliboval.
 
-Jak to bude řešit?
+**Jak to bude řešit?**
 
 Buď nesplatí peníze lidem, co drží státní dluhopisy. To by byl oficiální bankrot. Nebo nezaplatí důchodcům, současným či budoucím…
 
-Dožijeme se za dvacet let důchodu?
+**Dožijeme se za dvacet let důchodu?**
 
 Nemyslím si, že se dožijeme důchodu v současné podobě. Důchod nebude moci být v takové příznivé relaci k průměrné mzdě, jako je teď. Naše země si to nebude moct dovolit. Je jen otázka kdy a jakým způsobem dojde k bankrotu. Když nezaplatí peníze důchodcům, je to svého druhu taky bankrot. Nesplní slib, že když budeme poctivě pracovat, ve stáří dostaneme důstojný důchod, aby nás živil podobně jako dnes živí naše rodiče. My budeme mít symbolický důchod… Dluhy stát může řešit i tak, že umožní vysokou inflaci. Dnes platíme rekordní daně kvůli inflaci. Celkově mají české domácnosti uložené v bankách asi 3,3 bilionu korun. Inflace letos bude kolem 15%. Takže zhruba 500 miliard korun zaplatíme státu. Na druhé straně je státní dluh, který je zhruba také tři biliony korun a jeho hodnota se díky té inflaci podobně sníží. Někteří kolegové tvrdí, že to je vlastně správné, že během války platíme tuto inflační daň.
 
-A vy?
+**A vy?**
 
 Podle mě to takhle správné není, protože to je skrytá daň. Není to spravedlivé, protože tu daň platí jenom lidé, kteří chtěli šetřit. Takhle jsme se přece nedohodli. Celý systém je bohužel nastavený tak, že z něj profitují dlužníci, tedy hlavně stát. A tratí na tom věřitelé – lidi, co spoří. Naše země není schopná zajistit, aby úrokové sazby úspor byly dlouhodobě kladné, když je očistíte o inflaci. Stát to nemůže garantovat, ale měl by se aspoň snažit vytvořit podmínky, aby to mohlo fungovat, aby spoření mělo smysl.
 
-Mluvili jsme o státním dluhu. Všechny státy jsou stále více zadlužené. Je jasné, že dluhy nikdy nesplatí. Co nastane potom? A komu vůbec dluží? Soukromým firmám?
+**Mluvili jsme o státním dluhu. Všechny státy jsou stále více zadlužené. Je jasné, že dluhy nikdy nesplatí. Co nastane potom? A komu vůbec dluží? Soukromým firmám?**
 
 Převážně svým obyvatelům. Jen část našich dluhopisů drží zahraniční investoři. Většinu drží domácnosti a banky v penzijních fondech nebo úsporách. Co udělá stát, kdyby mu hrozil bankrot? Nejprve zřejmě nezaplatí zahraničním věřitelům, protože to je politicky průchodnější. Až pak by asi poškodil domácí věřitele. Ale je třeba říct, že ostatní země na tom nejsou o moc lépe.
 
-A co se s těmi dluhy udělá technicky? Prostě se účetně odepíšou?
+**A co se s těmi dluhy udělá technicky? Prostě se účetně odepíšou?**
 
 Tu odpověď vidíte už teď: inflace. Stačí pořádný výbuch inflace jednou za 30 let a pojede se dál. Proto se vlády nechtějí inflace ze zákona zbavit, protože by je to dlouhodobě nutilo chovat se zodpovědně.
 
-Jak řešíte svůj vlastní důchod?
+**Jak řešíte svůj vlastní důchod?**
 
 Mám tři pilíře. Zaprvé, učím na univerzitě, takže počítám s tím, že umřu u tabule s křídou v ruce (směje se). Zadruhé, mám čtyři malé děti a investuji do nich. Věnuji jim čas, zaplatím jim dobré vzdělání a věřím, že kdybych měl jednou problém, tak mi pomůžou. Domy jim nepostavím, ostatně mně ho taky nikdo nepostavil. Budou se muset postarat samy. Zatřetí, když mám peníze navíc, nakupuji akcie.
 
-Máte penzijní připojištění?
+**Máte penzijní připojištění?**
 
 To je hrozně drahé. Za správu se platí vysoké poplatky. Upřednostňuji koupit si akcie přes moderní fintechové projekty. Akcie sice kolísají a za den třeba spadnou o dvě procenta, ale dlouhodobě rostou tak, jak roste globální ekonomika, jak lidé vymýšlejí nové věci. Zatím nikdo nic lepšího nevymyslel. Kupujete si vlastně podíl na technickém pokroku, který pořád funguje. Kupujete si podíl ze zisků firem.
 
-Někteří lidé si nakupují nemovitosti, které pak k důchodu pronajímají.
+**Někteří lidé si nakupují nemovitosti, které pak k důchodu pronajímají.**
 
 Nápad je to dobrý, byť není pro každého realizovatelný kvůli nutnosti velké počáteční investice. Navíc kvůli tomu vzniká bublina na trhu s nemovitostmi, takže je u nás bydlení pro mladé těžko dostupné. Ale obecně platí, že akcie a nemovitosti jsou to nejlepší, do čeho dlouhodobě investovat. Dům a akcie vám generují nájem, respektive dividendy. Kdežto kryptoměny nikoli, proto do nich neinvestuju. Ani jim nerozumím…
 
-Kdy se podle vás reálně dostaneme zase k inflaci kolem dvou procent?
+**Kdy se podle vás reálně dostaneme zase k inflaci kolem dvou procent?**
 
 Asi už nikdy trvale… Obávám se, že pokud nenastane opravdu výrazná změna, že budeme po ČNB chtít nulovou inflaci, tak v průměru bude určitě vyšší než dvě procenta. Občas se pod tuto hodnotu podívá, ale je vidět, že když se inflace blíží nule, ČNB masivně intervenuje proti koruně, aby nebyla tak silná. Když je inflace 4 %, nebo dokonce 17 %, tak ČNB takhle agresivní není. Takže se chová nesymetricky.
 
-Proti sílící koruně možná tlačí exportéři, pro něž to není výhodné…
+**Proti sílící koruně možná tlačí exportéři, pro něž to není výhodné…**
 
 Ano, krátkodobě vývozcům silná koruna opravdu škodí. Jejich tržby v eurech přepočtené na koruny jsou menší. A své zaměstnance platí v korunách. Ale kdyby inflace nebyla, nerostly by jim náklady na mzdy a tuzemský materiál. Ekonomicky by se to vyrovnalo. Ale je fakt, že krátkodobé posílení koruny by exportéry bolelo. Možná by to vyvolalo i recesi (pokles HPD, pozn. red.). Ale přece je lepší krátká recese než pádivá inflace. Recese skončí, ale pádivá inflace vám odmaže 15-20% celoživotních úspor. To už vám nikdo nevrátí!
 
-Několik let jste dělal poradce Mojmíru Hamplovi, bývalému viceguvernérovi ČNB a pak i jeho nástupci Aleši Michlovi. Proč jste se v roce 2019 s ČNB rozloučil? Neplánujete se tam vrátit do bankovní rady, abyste mohl své nápady realizovat?
+**Několik let jste dělal poradce Mojmíru Hamplovi, bývalému viceguvernérovi ČNB a pak i jeho nástupci Aleši Michlovi. Proč jste se v roce 2019 s ČNB rozloučil? Neplánujete se tam vrátit do bankovní rady, abyste mohl své nápady realizovat?**
 
 Bydlím v Litomyšli, což není slučitelné s tím, abych denně dojížděl do Prahy. Na univerzitě si můžu nacpat přednášky do jednoho dne. Zbytek týdne pracuji z domova: výzkum, analýzy, online konzultace… Zato Bankovní rada je manažerská pozice, tam musíte být denně. Mám čtyři malé děti, se kterými chci být a věnovat se jim. Navíc někdo vás do Bankovní rady musí jmenovat, což se děje většinou za odměnu. A není nikdo, kdo by mi chtěl něco za odměnu dávat, nic takového jsem si navíc ani zdaleka neodpracoval (usmívá se).
 
-Možná že jste se i svými kontroverzními výroky zavřel dveře…
+**Možná že jste se i svými kontroverzními výroky zavřel dveře…**
 
 Nevím, já pořád říkám to stejné, ohledně investice rezerv i cenové stability, jen v ČNB to bylo dovnitř, nyní je to navenek. Třeba s Alešem Michlem jsme si párkrát volali a napsali a žádnou negativní zpětnou vazbu od něj nemám. Mají jiné problémy než řešit, co kdo kde píše v novinách. Potkávám lidi z ČNB, mezi kterými mám spoustu kolegů, a mnoho z nich s řadou mých argumentů souhlasí. Jen si nemůžou dovolit to říct navenek, jako jsem nemohl já dříve, no a samozřejmě taky nesouhlasí se vším. Dovolím si ale tvrdit, že většina odborného aparátu by zřejmě byla pro výraznější posílení koruny, kdyby to guvernér povolil.
 
-Říkal jste, že se Aleš Michl proměnil z jestřába v holuba. Kdy to nastalo?
+**Říkal jste, že se Aleš Michl proměnil z jestřába v holuba. Kdy to nastalo?**
 
 Během covidu. Tehdy už jsem s Alešem nebyl. Ale líbí se mi, že dokáže dynamicky měnit svou pozici a názory. Podle mě ČNB díky němu není vedena ideologicky. Zrovna na posilování koruny se asi neshodneme… Ale pořád věřím, že se zase promění v jestřába (usmívá se). Jestli chce, aby si ho historie pamatovala jako Aloise Rašína, do kterého se rád stylizuje, tak potřebuje silnou měnu a cenovou stabilitu. Věřím, že pochopí, že si to od něj Česko žádá, a že se může zapsat i do mezinárodních učebnic ekonomie, když bude odvážný. Možná se toho dočkáme příští rok, kdy bude jmenovaná celá Bankovní rada. Aleš pak bude mít volnější ruce dělat, co chce, protože bude mít v Radě mnoho let většinu. Když se rozhodne dostat inflaci na nulu, ČNB to v horizontu pět let je schopna zařídit. Má monopol na cenu peněz.
 
-Tvrdíte, že posílení koruny je dobrý nástroj pro boj proti inflaci. Takže když přejdeme na euro, tak o něj přijdeme… Jste tedy proti tomuto kroku?
+**Tvrdíte, že posílení koruny je dobrý nástroj pro boj proti inflaci. Takže když přejdeme na euro, tak o něj přijdeme… Jste tedy proti tomuto kroku?**
 
 Dnes bychom ani euro přijmout nemohli, protože nesplňujeme kritéria. Mimochodem proto, že máme moc vysokou inflaci. I naše úrokové sazby jsou moc vysoké. Takže kdybychom zrušili inflaci, tak budeme o přijetí eura moci rozhodnout kdykoli. Ale k euru mám z odborného hlediska neutrální vztah. Ekonomicky se nedá přesně vypočítat, zda by to bylo pro zemi dobře, nebo špatně. Myslím, že to zhruba vyrovnané. Mně osobně by euro pomohlo, protože hodně cestuji, takže by mi odpadla výměna peněz, stejně tak by se zjednodušilo investování. Rozhodnutí to je ale spíš politické. Třeba jako v případě Pobaltských zemí. Ty nemají euro, aby jím bojovaly proti inflaci.
 
-A proč tedy?
+**A proč tedy?**
 
 Chtějí být co nejvíc připoutáni k Evropě, protože jim to zajišťuje větší bezpečnost před Ruskem. Proto jsou v EU, NATO a mají euro. Není jasné, jestli na euru ekonomicky vydělávají. Mají inflaci kolem dvaceti procent, úrokové sazby kolem nuly. Reálné sazby po odečtení inflace jsou mínus 20%. To extrémně zvýhodňuje dlužníky před věřiteli. Ještě mnohem víc než u nás. Vzhledem k tomu, že mám poměrně vysokou hypotéku na dům, tak mi to vlastně taky vyhovuje. Letos na inflaci reálně hodně vydělám. Plat mi zatím neroste, ale vzhledem k produktivitě práce dlouhodobě bude muset růst. Letos reálná mzda klesla o 15%, v dalších letech by se to mělo vrátit zpátky. Mimochodem, v prognóze ČNB je růst platů na příští rok jen 6%. Podle mě to bude minimálně dvojnásobek, je to hrubé podcenění!
 
-Ale vyšší platy přece zase zvýší inflaci…
+**Ale vyšší platy přece zase zvýší inflaci…**
 
 To všechno záleží na tom, jak bude pracovat ČNB. Pokud vytvoří podmínky pro výhodné spoření, lidé uspoří větší část výplaty a inflace se zvyšovat nebude.
 
-Zvyšuje se úroková sazba i u hypoték. Spousta lidí to velmi kritizuje, ale před patnácti lety byl podobný úrok, tedy kolem pěti procent.
+**Zvyšuje se úroková sazba i u hypoték. Spousta lidí to velmi kritizuje, ale před patnácti lety byl podobný úrok, tedy kolem pěti procent.**
 
 Přesně tak! A teď je navíc inflace kolem 17%, takže i hypotéka za 6% reálně znamená, že banka platí vám, nikoli vy jí. Znova opakuji, že i když nám teď platy třeba nerostou, v příštích letech musí růst masivně, aby odpovídaly produktivitě práce. Tomu se nevyhneme.
 
-Třicet let jsme bohatli. Jak to bude teď? Na co se máme připravit? Jak se bude mít průměrný Čech za pět let?
+**Třicet let jsme bohatli. Jak to bude teď? Na co se máme připravit? Jak se bude mít průměrný Čech za pět let?**
 
 Jak se zastaví proces globalizace, zlepšování životní úrovně se minimálně zpomalí, protože běžné věci budou dražší. Není tu zatím bohužel poptávka po tom uzákonit cenovou stabilitu. Na druhou stranu teď jsou mzdy strašně nízko. Budou muset v dalších letech růst. Z toho důvodu si myslím, že za pět let na tom můžeme být i líp. Mzdy budou dohánět strašný pokles z letošního roku. Nejhůř je letos.
 
-Jaká bude podle vás inflace příští rok?
+**Jaká bude podle vás inflace příští rok?**
 
 Prognóza ČNB je 9%, což je asi nejlepší možný odhad. Vidíme ale, že odhady inflace na více než 3 měsíce dopředu jsou v posledních letech velmi nespolehlivé.
 
-Co byste poradil Česku? Jsme nejprůmyslovější zemí z EU, což není asi moc výhodné vzhledem k rostoucím cenám energií? Neměli bychom se přeorientovat víc na služby?
+**Co byste poradil Česku? Jsme nejprůmyslovější zemí z EU, což není asi moc výhodné vzhledem k rostoucím cenám energií? Neměli bychom se přeorientovat víc na služby?**
 
 To si můžeme říct, ale není to od stolu realizovatelné. Naše průmyslové zaměření vzniklo přirozeně. Kvůli tomu, že jsme blízko Německa, pro které jsme vyráběli. Možná naopak bychom z toho mohli profitovat, protože část výroby se bude přesouvat z Asie v rámci deglobalizace zpátky do Evropy. Můžeme na té průmyslové tradici vydělat.
 
-Může být pro nás krize v něčem dobrá? Skýtá pro nás nějaké nové příležitosti?
+**Může být pro nás krize v něčem dobrá? Skýtá pro nás nějaké nové příležitosti?**
 
 Kvůli inflaci se naučíme spíš investovat než spořit. Naučí nás to, že běžné spoření je mrtvé. Zabili jsme si ho sami tím, že inflace je dlouhodobě vyšší než úrokové sazby. Jako ekonom mladým radím, aby si postupně kupovali akcie z celého světa. A v důchodu je postupně prodávali. Mít peníze v šuplíku nebo v bance je velmi prodělečné.
 
-Někdo říká, že to, co nedokázal Marx, tedy sen o socialistické Evropě, se nyní plní. Neustále přibývá přerozdělování, dotací, grantů snad každý občan (včetně zastropované energie) už nějaký příspěvek bere. Není to konec klasického tržního kapitalismu? Není to paradox? Ve spojitosti s Čínou se mluví o kapitalismu a Evropa jako by se stále více přikláněla k socialismu. Nezdá se vám?
+**Někdo říká, že to, co nedokázal Marx, tedy sen o socialistické Evropě, se nyní plní. Neustále přibývá přerozdělování, dotací, grantů snad každý občan (včetně zastropované energie) už nějaký příspěvek bere. Není to konec klasického tržního kapitalismu? Není to paradox? Ve spojitosti s Čínou se mluví o kapitalismu a Evropa jako by se stále více přikláněla k socialismu. Nezdá se vám?**
 
 Kapitalismus v Číně je daleko drsnější, než byl posledních 150 let v Evropě. Ale teď ho tamní vláda velmi omezuje, alespoň pro velké soukromé firmy. Evropa směřuje doleva už hodně dlouho. I když vyhraje pravicová strana, politika je podobná – míra přerozdělování roste. Je zajímavé, že původní demokracie v Aténách si za stovky let existence nikdy neodhlasovala, že vezmou peníze bohatým a dají je chudým, i když to udělat mohli. Nikoho to nenapadlo. My to děláme běžně. Vždycky je bohatých méně než těch pod průměrem. A ti si to odhlasují. To samo o sobě není problém. Problém je, když přerozdělování odrazuje od inovací, od podnikání, od práce. To pak nakonec škodí hlavně chudším.
 
-Na druhé straně se přesto stále zvyšuje nerovnost mezi lidmi. Úzká skupina hodně bohatne, širší skupina chudne. Nepřijde nějaká velká levicová celoevropská revoluce? Která třeba začala už tendencemi na znárodňování bytů?
+**Na druhé straně se přesto stále zvyšuje nerovnost mezi lidmi. Úzká skupina hodně bohatne, širší skupina chudne. Nepřijde nějaká velká levicová celoevropská revoluce? Která třeba začala už tendencemi na znárodňování bytů?**
 
 Podle ekonomických dat se u nás nerovnost nezvyšuje. Například mzdy dlouhodobě rostou podobně v nízkých i vysokých příjmových skupinách. Navíc znám lidi, co berou desetinásobek mého platu, ale dělají práci, kterou bych dělat nechtěl. Mám jim závidět? Důležitější je rovnost příležitostí, no a i tihle lidé žijí docela podobně jako já, mají děti ve stejné škole. Ani příjmové nůžky se nerozevírají víc, a to ani v Americe, když se díváte na čísla očištěná o daně a transfery. To, že se zvyšuje nerovnost mezi lidmi, je fake news, které vytvořil Piketty. Myslím, že to je naopak. Spousta lidí, pokud opravdu chtějí, mají dnes konečně přístup ke kvalitnímu vzdělání a informacím, takže můžou prorazit mnohem snáze než třeba před dvaceti třiceti lety. Když porovnám kvalitu škol v 90. letech a teď, tak jsou na tom děti mnohem líp bez ohledu na finanční zázemí. Všichni jsme střední třída, pokud si to nepokazíme sami. A kdo měl v životě velkou smůlu ne vlastní vinou, tomu pomozme.
 
-Přesto sledujeme podle vás zánik Evropy v přímém přenosu?
+**Přesto sledujeme podle vás zánik Evropy v přímém přenosu?**
 
 Nemyslím. Evropa toho přežila už hodně. Možná i tato krize nás přiměje k tomu, že trochu přehodnotíme parametry Green Dealu. Třeba se někdo zamyslí nad tím, zda má smysl být tak extrémní v otázce klimatu. Jestli by nebylo lepší se maličko umírnit. Bez té krize bychom možná nikdy nepřišli na to, jak si tím extrémismem, který prostupuje všechny vrstvy společnosti, ubližujeme. Jestli by nebylo lepší vrátit se ke zdravému rozumu a vědeckým výsledkům. Ptát se: „Když je něco hodně drahé, vyplatí se mi to dělat?“ Nepomůžeme třeba ohroženým druhům více tak, že zaplatíme rozšíření národních parků v Africe?.
 
-V čem vlastně tkví ekonomický zázrak Číny? Bude pokračovat? V Číně je tzv. státní kapitalismus. Tržní ekonomika, ale zároveň pod kuratelou státu. Bez ohledu na politiku, není to z čistě ekonomického hlediska lepší systém? Pružnější?
+**V čem vlastně tkví ekonomický zázrak Číny? Bude pokračovat? V Číně je tzv. státní kapitalismus. Tržní ekonomika, ale zároveň pod kuratelou státu. Bez ohledu na politiku, není to z čistě ekonomického hlediska lepší systém? Pružnější?**
 
 Dovolím si prognózu, že Čína bude růst už jenom velmi pomalu, pokud vůbec
 
-Proč myslíte?
+**Proč myslíte?**
 
 Jednak absolutně nezvládli covid. Zpočátku byla Čína vzor, jak se s ním vyrovnat, teď je to absolutní průšvih. Neumějí se covidu zbavit, kdežto my už s ním žijeme normálně. Oni nemůžou. Kdyby nechali šířit i ty dnešní méně zhoubné mutace, tak pořád nemají síť zdravotní péče, aby byli schopni řešit maličké procento pacientů se závažnými potížemi. Umírali by tam statisíce lidí, protože nejsou promoření a jejich vakcíny jsou mizerné. Tohle bude Činu dlouho držet dole. A pak ji dorazí demografie – teď teprve se plně projevují důsledky politiky jednoho dítěte. Úplně si tím zničili společnost. I když to odvolali, tak si lidi zvykli, že jedno dítě je norma. Mladí lidé nebudou chtít platit obrovské daně, aby ten systém utáhli. Čína bude mít ještě větší problém uživit svoje důchodce než my. Budou tam stamiliony nespokojených lidí, kteří můžou ten systém svrhnout. Co bylo úspěchem Číny, který ale teď končí? To nebyl státní kapitalismus, nýbrž to, že od 80. let umožnili lidem podnikání. Něco podobného udělali v Indii v 90. letech a vidíme, jak Indie roste. Když necháte lidi vydělávat tím, co je naplňuje, společnost ekonomicky i kulturně poroste, protože budou vymýšlet inovace ve všech oblastech života. Kdežto současný čínský prezident naopak šrouby utahuje, od reforem ustupuje, ekonomiku centralizuje a zemi uzavírá, takže inovace dusí. Výhled pro Čínu není vůbec pozitivní!
 
-Jak vůbec ekonomicky fungují sankce? Jaký vliv mají na Rusko a na země EU? Je to závod, který rozhodne to, kdo vydrží déle?
+**Jak vůbec ekonomicky fungují sankce? Jaký vliv mají na Rusko a na země EU? Je to závod, který rozhodne to, kdo vydrží déle?**
 
 Přesně tak, je to závod, kdo vydrží déle. Ale sankce na Evropu doléhají mnohem méně než na Rusko. Máme tady problém s plynem. To není důsledek sankcí, oni by nám ho stejně hodně omezili, aby mohla růst jeho cena. My s tím můžeme žít – zastropujeme ceny energií. V zimě nezmrzneme, o nejslabší se postaráme. Kdežto Rusko ty sankce postupně uškrtí. A po zimě jim bude ještě hůř. Nebudou mít čím nás vydírat. Nebudou mít ani munici, protože do ní potřebují komponenty, které nejsou schopni sami vyrobit. Rusko postupně umře…
 
-Až tak?
+**Až tak?**
 
 Co je vlastně Rusko? Mongolská říše, která plynule přešla přes Zlatou hordu v Moskvu, jež začínala jako výběrčí daní pro Mongoly, kolaborovala s nimi. Proto spousta slov v ruštině je mongolského původu, například děngi – peníze. I vojenské praktiky jsou podobné těm mongolským – teror vůči civilním obyvatelům. Oni daleko víc připomínají mongolskou říši než původní Kyjevskou Rus, která byla napadena Mongoly ve 13. století. Moskva potažmo Rusko je přímým pokračovatelem mongolské říše, jen s porcí korupce navíc. A teď sledujeme to, že mongolská říše konečně zanikne. Kaliningrad neboli Východní Prusko se vrátí Německu nebo ho dostane Ukrajina, Karélii dostane Finsko. Republiky jako Tatarstán budou samostatné. Kurilské ostrovy dostanou zpátky Japonci, východní Sibiř dostanou Číňani. Rusko, tedy novodobá mongolská říše, se rozpadá v přímém přenosu. Vemte si, že na Ukrajině proti sobě často bojují lidé, kteří doma mluví rusky. Řada mých přátel v USA to pořád vnímá jako občanskou válku v Rusku.
 
-Nebude pro svět ještě horší zpráva, když se Rusko rozdrobí? Nebude to další hrozba pro Evropu? Třeba proto, že nevíme, do jakých rukou se dostanou jaderné zbraně?
+**Nebude pro svět ještě horší zpráva, když se Rusko rozdrobí? Nebude to další hrozba pro Evropu? Třeba proto, že nevíme, do jakých rukou se dostanou jaderné zbraně?**
 
 Lepší by bylo, kdyby se Rusko civilizovalo, jak jsme všichni doufali. Rozpad Ruska nám přinese jen problémy, my bychom radši, kdybychom se o Rusko nemuseli starat a dostávali řádně ropu a plyn. Ale oni se tou cestou vydali sami. Atomovky jsou jedinou hrozbou, která Rusům zbyla. V jejich ubohosti je už může těšit jen pomyšlení na to, jak ublížit ostatním. Kdybych měl souseda, který by mi každodenně vyhrožoval, že mi podpálí dům, radši ho budu konfrontovat rovnou, než abych žil napořád v nejistotě a strachu. Proto si myslím, že by bylo lepší, aby země NATO vyhlásily Rusku válku. Abychom ten problém vyřešili teď, jednou pro vždy. Když ho nevyřešíme, pořád budou těmi jadernými zbraněmi chrastit, budou nás vydírat. Ale oni blafují, záleží jim na jejich pohodlí. Budou zabíjet děti v zahraničí jen potud, co oni sami jsou v bezpečí. Naštěstí nemáte jen jednoho člověka, co o tom rozhoduje. Všichni, kdo musí zmáčknout to tlačítko, by museli vědomě páchat sebevraždu. Putin sice už asi nereaguje racionálně, ale ti ostatní by se ho v takovém případě rychle zbavili. Ruské vedení je ve finále zbabělé. Kdybychom je porazili vojensky, tak by se ten režim zhroutil. Myslím, že to tak dopadne, že nakonec ukrajinské tanky dojedou do Moskvy.
 
-Až do Moskvy?
+**Až do Moskvy?**
 
 A jak můžete jinak tu válku skončit? Jedině totální vojenskou porážkou jedné strany. Ruskému vedení už nikdo na světě nevěří, žádné dohody s nimi uzavírat nemá smysl. Mírová dohoda, aby hned zítra zase začali ostřelovat nemocnice? Ukrajinské tanky dojedou do Moskvy, ale ruské civilní obyvatelstvo bude v bezpečí. My nejsme Mongolové.
 
-V protiváze proti Západu a Americe vzniká nové mocné ekonomické spojenectví BRICS (Čína, Rusko, Indie, Brazílie, JAR), do něhož se navíc chystá vstoupit i Egypt, Turecko (člen NATO) a Saúdská Arábie (ropná velmoc a dosud spojenec USA). Nastává v ekonomice přerozdělení moci?
+**V protiváze proti Západu a Americe vzniká nové mocné ekonomické spojenectví BRICS (Čína, Rusko, Indie, Brazílie, JAR), do něhož se navíc chystá vstoupit i Egypt, Turecko (člen NATO) a Saúdská Arábie (ropná velmoc a dosud spojenec USA). Nastává v ekonomice přerozdělení moci?**
 
 Nemyslím si to. Je normální, že máte země, které rostou, jako například Indie, a země, které stagnují, jako například Čína. A co výrazně klesají, jako třeba Rusko. Západ se pořád drží. Oni kopírují nás, ne my je. Dokonce si myslím, že Čína nikdy nepředstihne ve velikosti ekonomiky Ameriku. Ještě před pár lety se přitom jen čekalo, kdy to bude. Teď je možné, že se to nikdy nestane. Podobně jako v roce 1989 se to říkalo o Japonsku, ani ono nepředstihlo USA. Japonsko se úplně zastavilo – zase kvůli demografii. V Japonsku se nežije špatně, HDP na obyvatele se nesnižuje, ale rychle klesá počet produktivních lidí. Čínu čeká totéž, ale rychleji. Kdežto USA je přes všechny problémy pořád atraktivní země, kam proudí statisíce imigrantů. Proto pořád poroste. A my porosteme rychleji, pořád máme co dohánět.
 
-Vnímáte Čínu jako větší hrozbu pro Evropu a USA než Rusko?
+**Vnímáte Čínu jako větší hrozbu pro Evropu a USA než Rusko?**
 
 Ne, protože Čína je daleko racionálnější. Zatím. V Číně ale moc taky stále víc uzurpuje jeden člověk, takže hrozí, že bude v budoucnu víc nestabilní a méně předvídatelná. Ale pořád bude čitelnější než Rusko. Třeba do invaze na Tchajwan podle mě Čína nikdy nepůjde. Vidí, jaké obrovské problémy má Rusko na Ukrajině. Čeho by tím dosáhli? Kvůli sankcím celého světa by to pro ně znamenalo obrovské ztráty. Za co? Pár bodů popularity pro prezidenta?
 
-Ale nevypustilo Rusko toho džina z lahve? Nenajde následovníky, kteří mají dobyvatelské choutky? Třeba Turecko?
+**Ale nevypustilo Rusko toho džina z lahve? Nenajde následovníky, kteří mají dobyvatelské choutky? Třeba Turecko?**
 
 Vypustili, ale rovnou jim ukázali, jak velkým průšvihem to může skončit. Nejenomže se ta jejich speciální operace Rusku nevyplatí, pro ně to znamená totální katastrofu. Kdybychom vloni na Západě plánovali, jak Rusko zničit, nic tak účinného bychom nevymysleli.
 
@@ -9401,23 +9401,23 @@ Zdroj: https://www.e15.cz/rozhovory/cnb-by-mela-prodat-miliardy-eur-a-vice-inves
 
 Česká národní banka je v krocení inflace málo odvážná. S růstem úrokových sazeb by měla postupně vyprodávat eura nakoupená během devizových intervencí a mnohem aktivněji investovat rezervy do akcií podobně jako švýcarská centrální banka. Tvrdí to nejcitovanější český ekonom současnosti Tomáš Havránek. „Pokud by ČNB investovala jako Švýcaři, jen za dva roky by vydělala 300 miliard korun navíc,“ říká profesor Institutu ekonomických studií FSV UK. Vzhledem k tomu, že zisk ČNB je ze zákona součástí státního rozpočtu, stát by mohl díky tomu snižovat svůj dluh.
 
-Nakolik je současná inflace způsobená domácími vlivy?
+**Nakolik je současná inflace způsobená domácími vlivy?**
 
 To je dobrá otázka. Já Vám dám taky jednu: Pokud by inflace byla převážně dovezená, proč ji mají Švýcaři pořád kolem jednoho procenta, zatímco my šplháme k deseti?
 
-Není to tím, že jsme víc otevřená ekonomika?
+**Není to tím, že jsme víc otevřená ekonomika?**
 
 Švýcarsko je také otevřená ekonomika. Dnešní inflace se často zdůvodňuje dodavatelskými problémy, ucpanými přístavy. Ucpané přístavy zdraží třeba dovážené televize, ale pokud si koupíte dražší televizi, máte méně peněz mimo jiné na obědy v restauraci. Poptávka po meníčkách by tedy měla klesat, i jejich ceny by měly klesat. Ale my vidíme zdražování všeho. I můj masér zdražil, přitom jeho hlavním vstupem je jeho čas. Takže inflace má převážně domácí zdroje, které jsou dva. Zaprvé levné peníze, tedy nízké úrokové sazby. A zadruhé vrtulníkové peníze. Během pandemie dostávali lidé a firmy peníze za to, že nic nedělali. A tak dnes mnohem víc peněz než dřív honí stejné nebo menší množství zboží a služeb.
 
-Zmínil jste takzvané peníze z vrtulníku. Měli jsme jinou možnost, jak přečkat covidovou pandemii, než ty peníze lidem rozdat?
+**Zmínil jste takzvané peníze z vrtulníku. Měli jsme jinou možnost, jak přečkat covidovou pandemii, než ty peníze lidem rozdat?**
 
 V té době se možná nic jiného dělat nedalo. Ale v řadě zemí, například u nás či v USA, se pod covidové výdaje skryla spousta dalších, které byly spíše úplatky skupinám obyvatelstva, často předvolebního charakteru. Takže šlo o fiskální expanzi odůvodněnou covidem, která určitě nebyla nutná v celé výši.
 
-Dalším současným sporem o inflaci je, jestli je dočasná, nebo trvalá. Na které straně stojíte vy?
+**Dalším současným sporem o inflaci je, jestli je dočasná, nebo trvalá. Na které straně stojíte vy?**
 
 To je spíš otázka psychologie než ekonomie. Setrvačnost inflace závisí na psychologii. Když se o ní stále mluví, tak ji všichni čekáme a promítáme ji i do svých mzdových požadavků. Firmy zvyšují ceny a zákazníci to přijmou. Většina z nás už čeká dvojciferné hodnoty, tedy pádivou inflaci. ČNB doufá, že za dva až tři měsíce přijde prudký zlom. Tohle už ale centrální banky říkají od loňského jara, že se blíží zlom, a přitom inflace stále graduje.
 
-ČNB loni několikrát za sebou zvyšovala úrokové sazby. Jaká bude setrvačnost těchto kroků a kdy nám díky nim inflace klesne?
+**ČNB loni několikrát za sebou zvyšovala úrokové sazby. Jaká bude setrvačnost těchto kroků a kdy nám díky nim inflace klesne?**
 
 ČNB tvrdí, že setrvačnost je rok, rok a půl. Vědecká literatura počítá spíše se dvěma nebo třemi lety. Mluvíme tady o mechanickém dopadu, tedy že firmy mají dražší úvěry, méně investují, lidé více spoří a tak dále. Ale to prudké zvýšení sazeb byl hlavně marketingový signál, že ČNB nebude inflaci tolerovat. Takže může zapůsobit na psychologii hned, což je to, o co ČNB jde. Pozor ale, že zvýšení sazeb negativně dopadne především na domácnosti, zejména skrze hypotéky. Ne tolik už na firmy, které si mohou vzít stále levné úvěry v eurech a proti silnější koruně se mohou výhodně zajistit na forwardech. Existuje nástroj boje proti inflaci, který náklady rozloží více mezi lidi a firmy a zároveň působí rychle psychologicky i mechanicky. Tím nástrojem je posílení koruny. K tomu trochu dochází až teď v lednu.
 
@@ -9425,31 +9425,31 @@ Samozřejmě nelze prodat najednou všechna eura, která ČNB nakoupila během i
 
 Hlavně do akcií, trochu do zahraničních nemovitostí. Pokud by ČNB investovala jako Švýcaři, jen za dva roky by vydělala 300 miliard korun navíc. A to jsou Švýcaři ještě hodně konzervativní, i tak ale mají víc akcií a dluhopisů s delší splatností. V ČNB bohužel stále panuje z investování strach, protože akcie kolísají. Krátkodobě můžete prodělat, ale dlouhodobě jste vždy v plusu. Poradci dokonce v roce 2017 radili bankovní radě investovat polovinu rezerv po vzoru Singapuru, to by od té doby vydělalo bilion.
 
-Proč tu ochotu k investování ČNB nemá? Souvisí to nějak s politikou?
+**Proč tu ochotu k investování ČNB nemá? Souvisí to nějak s politikou?**
 
 Oni vydělají bilion a nikdo je za to nepochválí. Ale prodělají dočasně sto miliard, což se může stát, a hned jsou fotky guvernérova domu v Blesku. Takže je tam velká averze k riziku. Oni si technokratickým doublespeakem odůvodní, že rezervy navždy potřebují na běžném účtu. Ale k čemu ty rezervy máme, když je neinvestujeme do výnosu ani do cenové stability? Navíc těch 150 miliard eur spravuje v ČNB sedm lidí, kteří mají plat 60 tisíc. Teď si to spočítejte, jestli se nám to vyplatí. Je to takový český haléřový management. Ušetříte statisíce na platech, ale že ročně přijdete o stamiliardy, to už nikoho nezajímá. Mimochodem, ve státní správě jsou platy zmrazené. Ale v ČNB platy rostou vzorečkem tři procenta plus inflace. Takže letos bude v ČNB rekordní růst platů. To je, jako kdyby policista měl vyšší odměny za vyšší počet vražd ve svém okrsku. Já navrhuji vzoreček deset procent mínus inflace. To byste pak viděl cenovou stabilitu.
 
-Tak to bychom měli vyřešenou cenovou stabilitu. Ale jak donutit ČNB, aby rezervy investovala?
+**Tak to bychom měli vyřešenou cenovou stabilitu. Ale jak donutit ČNB, aby rezervy investovala?**
 
 Mohli bychom dát do zákona o ČNB, aby se o rezervy starala s péčí řádného hospodáře. Bankovní rada by se tedy musela chovat k rezervám jako k vlastním penězům. Ale ono stačí vytvořit povědomí ve společnosti, že by ČNB měla rezervy investovat a nikdo ji za to neukřižuje. Navíc, a to bych zdůraznil, investovat musí hlavně kvůli mandátu cenové stability. Ze zákona automaticky převádí zisk do státního rozpočtu. No a státní finance jsou teď na cestě ke katastrofě. Kdyby náhodou přišla extrémní inflace, tak ČNB nemůže zvýšit sazby třeba na 20 procent jako Fed v roce 1980, protože by stát kvůli dražší obsluze dluhu zkrachoval. Pokud ČNB investuje rezervy, bude moci do budoucna proti inflaci bojovat razantněji.
 
-Vy jste zastáncem průměrné nulové inflace v dlouhodobém měřítku. Ale není přece jen nějaká nízká míra inflace pro ekonomiku prospěšná?
+**Vy jste zastáncem průměrné nulové inflace v dlouhodobém měřítku. Ale není přece jen nějaká nízká míra inflace pro ekonomiku prospěšná?**
 
 Inflace má náklady a přínosy. Vědecké studie, které je od roku 1990 porovnávají, v průměru ukazují nulovou ideální inflaci. To je skutečná stabilita. Někdo může říct, že je to radikální změna, ale tohle prostě říká naše ústava. Tedy, že se ČNB má starat o cenovou stabilitu, ne dvouprocentní inflaci. Hlavně, současné inflační cílování neopravuje svoje chyby. Letos bude inflace kolem osmi procent, ale další roky se ČNB bude snažit zase o plus dvě procenta, ne třeba plus jedno procento během pár let, abychom měli ty dvě procenta v průměru. Takže vůbec nevíme, jaká bude hodnota peněz za deset let. Proto je nelogické spořit. Když máte volné peníze, dáte je raději do nemovitostí. Tím inflační cílování vytváří bubliny, které hasíme přísnějšími podmínkami pro hypotéky. A přitom by stačilo pečovat o skutečnou cenovou stabilitu.
 
-Ale pokud bychom neměli inflaci, měli bychom zřejmě i nulové úroky a zároveň by lidé neinvestovali své peníze třeba do nemovitostí, což by podvazovalo hospodářský růst, ne?
+**Ale pokud bychom neměli inflaci, měli bychom zřejmě i nulové úroky a zároveň by lidé neinvestovali své peníze třeba do nemovitostí, což by podvazovalo hospodářský růst, ne?**
 
 Ano, pokud máte nižší inflaci, máte krátkodobě nižší růst. Krocení inflace vždy bolí. Ale dlouhodobě je efekt inflace na růst maličký. Silnější vliv má nejistota ohledně hodnoty peněz, která škodí firmám i lidem. Kdybychom znali hodnotu peněz za deset let, nejistotu bychom smazali, ekonomice bychom pomohli. Švýcaři mají teď zhruba stejnou cenovou hladinu jako v roce 2008. A švýcarská ekonomika se vyvíjí minimálně tak dobře jako třeba německá či švédská, tedy růst cenovou stabilitou netrpí.
 
-Hovoříte o silném vlivu koruny na cenovou stabilitu v Česku. Je koruna pro nás stále nezbytná?
+**Hovoříte o silném vlivu koruny na cenovou stabilitu v Česku. Je koruna pro nás stále nezbytná?**
 
 Vždy jsem byl příznivcem společné evropské měny. Na cestování je skvělá. Ale z jejího přijetí v Česku jsem čím dál méně nadšený. Evropská centrální banka (ECB) nemůže kvůli inflaci zvýšit sazby ani na čtyři procenta. Kdyby to udělala, krachne zadlužená Itálie. Když krachne Itálie, končí celý projekt eura. A ECB ani nemůže významněji posilovat svou měnu, což ČNB může. Takže teď Evropa nemůže proti inflaci dělat nic, pokud inflace sama nezmizí.
 
-Nová Fialova vláda často mluví o šetření a škrtání výdajů. Je teď vhodný čas na utažení opasků?
+**Nová Fialova vláda často mluví o šetření a škrtání výdajů. Je teď vhodný čas na utažení opasků?**
 
 Ano, poptávka je natolik naboostovaná, že je nutné pro obnovení rovnováhy ji významně utlumit. Je to nutná věc, která bude bolet a tuto vládu poškodí. Ale je to třeba udělat.
 
-Hýříte nápady, jak současnou situaci změnit. Nechcete se vrátit do ČNB? Třeba tentokrát jako nový člen bankovní rady?
+**Hýříte nápady, jak současnou situaci změnit. Nechcete se vrátit do ČNB? Třeba tentokrát jako nový člen bankovní rady?**
 
 No nevím, bydlím v Litomyšli a mám čtyři malé děti. Kdyby byla poptávka po někom v mém věku, tak lepší akademické publikace mají Filip Matějka a Jaroslav Borovička. Finančním trhům zase lépe rozumí Jakub Seidler. Letos máme štěstí v neštěstí, že budeme mít nového guvernéra a většinu bankovní rady. Dělat změny je nejsnazší, když začínáte a je krize. Vladimír Dlouhý, o kterém se mluví, je výborný kandidát. Pamatuji si na něj jako na brilantního přednášecího na Univerzitě Karlově. Věřím, že máme šanci na skutečnou cenovou stabilitu, nebo aspoň garanci dvouprocentní inflace v dlouhodobém průměru.
 
@@ -9573,7 +9573,7 @@ Zdroj: https://www.idnes.cz/ekonomika/domaci/ekonom-tomas-havranek-rozhovor-infl
 
 Tomáš Havránek, profesor na Univerzitě Karlově a nejcitovanější český ekonom v zahraničí, pracoval v České národní bance deset let i jako poradce viceguvernéra. Teď přichází s nápadem, který by podle něj české ekonomice mohl ulevit od neustálého zdražování.
 
-Vysoká inflace je jedním z hlavních současných ekonomických problémů. To ovšem neznamená, že deflace je něco pozitivního. Můžete v úvodu vysvětlit, proč?
+**Vysoká inflace je jedním z hlavních současných ekonomických problémů. To ovšem neznamená, že deflace je něco pozitivního. Můžete v úvodu vysvětlit, proč?**
 
 Deflace, tedy pokles průměrných cen, je spojena se dvěma hlavními problémy. Pokud je recese, deflace nás motivuje k tomu, abychom nekupovali zboží a služby teď, ale počkali si, až zlevní. Krizi tedy ještě prohlubuje. To však platí pouze v případě, pokud očekáváme, že deflace bude setrvalá. Pokud by měla být dočasná, naše chování zase příliš neovlivní. Problémem je tedy setrvalá deflace.
 
@@ -9583,11 +9583,11 @@ Pokud deflace trvá pár měsíců nebo rok, tak to prakticky žádný problém 
 
 Navíc teď víme, že ten problém ani mít nemůžeme. V covidové krizi se ukázalo, že peníze z vrtulníku fungují. Lidé a firmy dostávali peníze za to, že nic nedělali, a inflace přišla. A mnohem vyšší, než kdokoli čekal. Takže kdyby se náhodou stalo, že budeme v krizi a deflaci a nebude stačit snižování úroků, vláda a centrální banka vždycky sáhnou k penězům z vrtulníku. Ať chceme, nebo ne. Lidi to vědí, takže žádnou deflaci čekat nebudou, tudíž ani žádná deflační spirála nemůže nastat. Paradoxně by tak ani ty peníze z vrtulníku nakonec potřeba nebyly, kdyby nám šlo jen o cenovou stabilitu. Ale je to jasný argument, proč se deflace bát nemusíme a proč ji centrální banka vždycky může vynulovat, jak už říkal Milton Friedman.
 
-Cílem České národní banky je už od roku 2010 dvouprocentní inflace. Proč zrovna dvě procenta?
+**Cílem České národní banky je už od roku 2010 dvouprocentní inflace. Proč zrovna dvě procenta?**
 
 Dvouprocentní inflační cíl je zvyklost, která určitým způsobem funguje třicet let, a začala víceméně náhodou. Číslo nevzniklo tak, že by se sešlo sto nejlepších ekonomů na světě a dohodli se, že právě toto je to zlaté číslo, které nám pomůže mít dobrý život a dokonalou ekonomiku. Kolem roku 1989 zmínil guvernér novozélandské centrální banky, že dvě procenta je docela dobrý cíl. Od té doby jej začala používat novozélandská centrální banka, kanadská centrální banka a další. Číslo tady zůstalo, ačkoliv za ním není žádný rigorózní základ. Je bezpečně nad nulou, takže obavy z deflace – ať už jsou rozumné, nebo ne – to trochu mírní. A zároveň není ani příliš vysoké, aby si toho člověk z roku na rok významně všímal, pokud se daří ten cíl plnit, což se teď ošklivě nedaří.
 
-Ptala jsem se především proto, jelikož jste pro Hospodářské noviny zmínil, že inflaci vůbec mít nemusíme. Je podle vás tedy ideální, aby míra inflace byla nula?
+**Ptala jsem se především proto, jelikož jste pro Hospodářské noviny zmínil, že inflaci vůbec mít nemusíme. Je podle vás tedy ideální, aby míra inflace byla nula?**
 
 Tady bych vysvětlil tři věci. Zaprvé, hlavní povinností centrální banky podle ústavy je péče o cenovou stabilitu. Definovat cenovou stabilitu jako kladnou inflaci je hodně odvážné. Za roky 2021 a 2022 se ceny dohromady zvýší zhruba o 20 procent, tedy hodnota koruny poklesne o pětinu. ČNB se však v roce 2023 nebude snažit snížit ceny o 20 procent, bude se snažit znovu o plus dvě procenta. To takzvaně dočasné zvýšení cen nám už nikdy nikdo nevrátí.
 
@@ -9595,7 +9595,7 @@ Nejen já, ale i řada dalších ekonomů tady vidí jasný rozpor s ústavou. E
 
 Vrátit se k tomu, co fungovalo celou historii naší civilizace, tisíce let, až zhruba do roku 1933, kdy skončil zlatý standard. Každoroční inflace je nová věc, trvá necelých sto let. Z hlediska lidstva je to něco úplně nového a nepřirozeného. Ano, občas byla inflace krátkodobá, třeba v 16. století po objevení Ameriky se do Evropy převalila spousta zlata a stříbra, což způsobilo snížení hodnoty měny, která byla založena na stříbru a zlatu. Samozřejmě také v historii, zejména během válek, se řada králů snažila měnu znehodnotit a při ražbě do mincí přidávali méně zlata a stříbra, zbytek si nechali, aby mohli lépe financovat například válečné výdaje. To však byly spíše výjimečné věci, které byly vždy považované za něco nepřirozeného či nesprávného. Žádná pravidelná každoroční inflace neexistovala. Ceny v roce 1914 byly v průměru stejné jako v roce 1815. Nešlo přitom o období úpadku, naopak. Ekonomika tehdy rostla rychleji než dnes. Zadlužení státu bylo minimální a nezvyšovalo se.
 
-Opravdu si nikdy lidé během historie na zdražování nestěžovali?
+**Opravdu si nikdy lidé během historie na zdražování nestěžovali?**
 
 Ano, máte pravdu, stěžovali, ale inflace nikdy v historii nebyla programovým a oficiálním cílem vedení státu. Pokud k ní došlo, byla to buď náhoda, třeba příliv stříbra z nových dolů v Potosí. Nebo to byl podvod, jako v případě snižování objemu stříbra a zlata v mincích. Dnes platíme stamiliony v platech nejlepším ekonomům v zemi, aby nám tu kladnou inflaci, tedy znehodnocení koruny, doručili. Současná krize ukazuje v plné nahotě, že je to neudržitelné. Ke zlatému standardu, kdy peníze byly založené na zlatu, stříbru či jiných kovech, se už však vrátit nemůžeme. Můžeme však udělat něco lepšího.
 
@@ -9605,11 +9605,11 @@ Průměrný sobotní nákup v supermarketu nás tak bude stát za třicet let st
 
 Nepůjde to samozřejmě z roku na rok, ale možné to je. Takový režim je intuitivní, stoprocentně v souladu s ústavou, v ekonomických modelech vychází lépe. Pokud přijdou obavy z deflace nebo inflace, nutí to centrální banku reagovat daleko silněji, aby spirálu zastavila a vrátila ceny v průměru zase zpátky na původní hladinu.
 
-Funguje tento režim momentálně někde jinde na světě?
+**Funguje tento režim momentálně někde jinde na světě?**
 
 Posledních sto let nefunguje nikde. Během většiny lidské historie fungoval skoro všude, ve všech zemích, které měly měnu podloženou něčím, co je stabilní, třeba zlato nebo stříbro. Od Velké deprese ve 30. letech minulého století však všechny země cenovou stabilitu opustily. Nejblíže jsou jí Švýcaři. Pořád sice mají inflační cílování, ale nevadí jim, pokud je inflace nulová. Data za posledních deset let ukazují, že mají ceny stabilní. Někdy trochu vzrostou, někdy naopak klesnou, ale dlouhodobě jsou stabilní. To má dopad na to, že jejich měna je hodně silná, dlouhodobě posiluje protiinflačním měnám, jako je euro, dolar nebo česká koruna. Nedá se přitom říct, že by Švýcarsko ekonomicky trpělo tím, že mají cenovou stabilitu. Navíc ve Švýcarsku i v dnešních dnech, přes všechno to takzvaně celosvětové zdražování, je inflace pořád zhruba jedno procento.
 
-Ale ČNB upozorňuje na to, že ekonomiky, jejichž měnové autority se snažily o nízkou inflaci v průměru jedno procento, jako je právě Švýcarsko či Japonsko, se dostaly do deflačních problémů…
+**Ale ČNB upozorňuje na to, že ekonomiky, jejichž měnové autority se snažily o nízkou inflaci v průměru jedno procento, jako je právě Švýcarsko či Japonsko, se dostaly do deflačních problémů…**
 
 Samozřejmě, tohle tvrdí a patří to k rituálu centrálního bankovnictví. Když jsem v centrální bance pracoval já, říkal jsem to taky, protože to říkají všichni kolem a máte pak pocit, že to jinak být nemůže. Dám příklad. V roce 2017 jsem se zúčastnil setkání držitelů Nobelovy ceny za ekonomii v Lindau. Bylo tam 17 držitelů, takže opravdu ty nejlepší mozky v ekonomii. Ptali jsme se s manželkou, proč máme ve většině zemí inflační cíl dvě procenta. Nikdo z nich nevymyslel žádný důvod. Polovina z nich tvrdila, že to je také nesmysl, druhá polovina, že to je prostě zvyklost. Bylo to neveřejné, tak si mohli dovolit říct, co si doopravdy myslí.
 
@@ -9617,23 +9617,23 @@ Takže dvouprocentní inflační cíl je opravdu produkt skupinového myšlení,
 
 Česko je navíc unikátní v tom, že běžný člověk není dlužníkem, ale věřitelem. To znamená, že většina lidí má více peněz uloženo v bance, než kolik si od banky půjčuje. Takže inflace nám škodí víc než ostatním zemím, jako je třeba Amerika nebo země eurozóny, kde je běžné být hodně zadlužený.
 
-Můžete ještě přiblížit, jak by to bylo s cenami v případě takového režimu? Předpokládám, že vzhledem k tomu, že například na cenu ovoce má vliv i počasí, není možné, aby byly fixní…
+**Můžete ještě přiblížit, jak by to bylo s cenami v případě takového režimu? Předpokládám, že vzhledem k tomu, že například na cenu ovoce má vliv i počasí, není možné, aby byly fixní…**
 
 Přesně tak. Neznamenalo by to, že ovoce by stálo pořád stejně. Ceny ovoce, masa či aut by klidně mohly vzrůst o dvě procenta za rok či víc, něco jiného by zase zlevnilo. Bavíme se o stabilitě průměrných cen. Pokud by centrální banka konala svou povinnost, průměrné ceny by se zase vrátily následující roky zpátky. Nedocházelo by ke každoroční inflaci jako dnes. Aktuálně zdražuje vše a nevíme, kdy to skončí, nemáme žádný plán. Centrální banka, u nás ani v zahraničí, nedokáže teď nic věrohodně slíbit. Jen to, že se bude zdražovat pořád, což je to nešťastné inflační cílování.
 
-Říkal jste, že nákup v supermarketu nás může stát stejně dneska i za třicet let. Pokud by například cena ovoce, masa a aut o dvě procenta za rok vzrostla, jak centrální banka zařídí, aby například klesla cena pečiva? Jde totiž o průměr, a pokud se ceny nějakého zboží zvýší, ostatní by měly poklesnout…
+**Říkal jste, že nákup v supermarketu nás může stát stejně dneska i za třicet let. Pokud by například cena ovoce, masa a aut o dvě procenta za rok vzrostla, jak centrální banka zařídí, aby například klesla cena pečiva? Jde totiž o průměr, a pokud se ceny nějakého zboží zvýší, ostatní by měly poklesnout…**
 
 Rozumím otázce, ale je potřeba si uvědomit, že v inflačním cílování se taky centrální banka snaží o nějaké konkrétní tempo zdražování. Když má banka inflační cíl dvě procenta a ovoce zdraží o čtyři, tak bude vyjednávat s pekaři, aby zlevnili o dvě procenta? Logika je tedy stejná v cílování inflace i při skutečné cenové stabilitě, ale samozřejmě žádné vyjednávání s pekaři nutné není. Úkol centrální banky je, v ekonomické hantýrce, udržovat celkovou poptávku v souladu s celkovou nabídkou. Aby peněz, které používáme na nákup zboží a služeb, nebylo příliš mnoho nebo příliš málo v poměru k tomu, co firmy mohou vyrobit a nabídnout.
 
 Když centrální banka dělá svoji práci špatně a dovolí, že v ekonomice je příliš mnoho peněz v poměru k tomu, co firmy mohou vyrobit, přijde inflace. Každá nezávislá centrální banka tak může doručit takovou průměrnou cenu, jakou chce. Samozřejmě ne hned, ale v horizontu několika let. Vemte si, že Rašín dokázal, aby několik let v řadě průměrné ceny rychle klesaly. To není něco, co bychom měli úplně obdivovat, protože by to dnes řadu lidí přivedlo do velkých problémů, ale možné to je a má to plně pod kontrolou guvernér centrální banky.
 
-Centrální banka bude muset nějakým způsobem zasáhnout. Jaké nástroje by tedy měla použít? Umožňují nástroje centrální banky takovou skutečně „jemnou práci“? Často její nástroje působí plošně…
+**Centrální banka bude muset nějakým způsobem zasáhnout. Jaké nástroje by tedy měla použít? Umožňují nástroje centrální banky takovou skutečně „jemnou práci“? Často její nástroje působí plošně…**
 
 V první řadě musí oznámit, že udělá všechno pro to, aby doručila cenovou stabilitu. Inflace závisí hodně na tom, jak my věříme centrální bance. Pokud si myslíme, že se bude stále snažit udržovat nějakou kladnou inflaci a nenapravovat epizody velké inflace, nemá velký smysl spořit. Narovinu řečeno, současný systém dělá ze střadatelů hlupáky. Inflace brzy bude 10 procent a k tomu vám centrální banka milostivě umožní úrok na spořicím účtu kolem 3 procent? To přece není žádné spoření, když za rok ze sta tisíc přijdete o sedm. Čili je nutné zvýšit úroky. Na druhou stranu je jasné, že příliš nad 6 procent úroky jít nemohou, protože by se spousta dlužníků, včetně našeho státu, dostala do existenčních problémů.
 
 Řešení je posílení koruny přes prodej obrovských devizových rezerv, což rychle sníží inflaci. Dnes už víme, že intervence proti koruně byly chybou. Tedy ne v režimu cílování inflace, tam dávaly perfektní smysl, ale pokud jde o cenovou stabilitu, tak potřeba nebyly a zcela rozvrátily trh s korunou. Koruna teď neposiluje, přestože by podle všech modelů kvůli rozdílu úroků u nás a v eurozóně měla. ČNB má 150 miliard eur, polovinu klidně může prodat, aby posílila korunu. Tím stáhne z oběhu spoustu korun, sníží inflaci. A druhou polovinu rezerv by měla výnosně investovat po vzoru Švýcarů, Norů a Singapurců, aby trochu pomohla dlouhodobě snížit zadlužení vlády a byla svobodná ke zvyšovaní úroků v nouzi i nad těch 6 %. Jak získáme důvěru v centrální banku, že opravdu bude pečovat o cenovou stabilitu a opravovat svoje chyby, tak budeme víc spořit, inflace postupně klesne k nule a budou stačit normální úrokové sazby kolem tří procent.
 
-Hovoří se o tom, že inflace, kterou momentálně zažíváme, je z velké části „dovezená“. Je vůbec možné v prostředí volného trhu ceny udržet stabilní? Nezavání to tržně plánovanou ekonomikou?
+**Hovoří se o tom, že inflace, kterou momentálně zažíváme, je z velké části „dovezená“. Je vůbec možné v prostředí volného trhu ceny udržet stabilní? Nezavání to tržně plánovanou ekonomikou?**
 
 To je velmi dobře řečeno, protože centrální banka je opravdu jediný ostrov ryzího centrálního plánování v moderní tržní ekonomice. Tak tomu bylo, je a bude bez ohledu na to, jestli bude centrální banka cílovat inflaci nebo cenovou stabilitu. Centrální banka má totiž monopol na vydávání peněz, aspoň těch tištěných, a má monopol na stanovení základní ceny všech peněz, i elektronických, tedy úrokové sazby. Někdo se musí starat o to, aby hodnota peněz byla konstantní. Třeba bitcoin je fajn a žádný centrální plánovač ho nehlídá, ale právě proto jeho cena může létat o desítky procent denně. Představte si, že platíte hypotéku v bitcoinu.
 
@@ -9641,31 +9641,31 @@ Skutečná cenová stabilita je lepší než zlatý standard nebo bitcoinový st
 
 A pokud je inflace skutečně dovezená, globální a nedá se s ní nic dělat, proč má Japonsko inflaci na nule a Švýcarsko u jedničky? Znovu opakuji, že průměrnou cenu v ekonomice má centrální banka plně pod kontrolou. Když se zmenší nabídka zboží kvůli problémům dodavatelských řetězců, centrální banka musí snížit poptávku po zboží tak, že zmenší množství peněz a zvýší jejich cenu. Takže není pravda, že centrální banka nemůže mírnit nabídkovou inflaci.
 
-Na druhou stranu jsou často v literatuře zmiňována i jistá pozitiva inflace, například pokud je mírná a stabilní, ekonomice to pomáhá…
+**Na druhou stranu jsou často v literatuře zmiňována i jistá pozitiva inflace, například pokud je mírná a stabilní, ekonomice to pomáhá…**
 
 Ano, někdo to tvrdí, aby se odůvodnily inflační cíle centrálních bank, které jinak nemají vědecký základ. Jde o skupinové myšlení, ale například taková těžká váha jako John Cochrane, exprezident Americké finanční asociace a jeden z největších ekonomů současnosti, říká, že je to nesmysl. Pokud je inflace mírná a vcelku stabilní, ničemu to příliš nevadí. Kdybychom věděli, že inflace do konce našeho života bude dvě procenta, tak s tím můžeme žít. Problém však je, že my nevíme, kdy přijde šok a inflace se zvýší kumulativně o dvacet procent za dva roky, aniž by to někdo potom opravil. Plánujte si pak na důchod nebo úspory na studia pro děti. Je otázkou, proč tu inflaci vůbec mít. Není žádná vědecká evidence o tom, že by nám krok z mírné a stabilní inflace na nulu v čemkoli uškodil. Přitom víme, že v mnohém to pomůže náš život zlepšit.
 
-Někdy také zaznívají argumenty, že mírná a stabilní inflace motivuje zaměstnance k vyšší produktivitě práce….
+**Někdy také zaznívají argumenty, že mírná a stabilní inflace motivuje zaměstnance k vyšší produktivitě práce….**
 
 Takový argument skrytě předpovídá, že člověk není schopen si v hlavě inflaci odečíst. Člověk ví, že pokud mu šéf přidá 8 procent a inflace je 8 procent, reálně to není přidání. Nemyslím si, že lidé jsou tak hloupí a inflaci si neuvědomují. Inflaci vnímají, možná silněji, než jaká opravdu je. Podle mě člověk nebude pracovat víc, když se mu zvýší plat o pět procent a inflace mu „sežere“ osm. Naopak si myslím, že bude rozhořčený z toho, že má méně peněz, a nebude mít důvod pracovat usilovněji za reálně menší odměnu. Pokud mzda motivuje k práci, tak v reálném vyjádření, nikoli bez započítání inflace.
 
-Existuje také určitý vztah mezi ekonomickým růstem a inflací. Všeobecně by mělo platit, že pokud dosahuje ekonomika ekonomického růstu, dochází také k růstu inflace. Pokud je ekonomika v poklesu, mělo by docházet i k poklesu inflace. Dosahovali bychom ekonomického růstu i v případě, pokud by inflace úplně zmizela?
+**Existuje také určitý vztah mezi ekonomickým růstem a inflací. Všeobecně by mělo platit, že pokud dosahuje ekonomika ekonomického růstu, dochází také k růstu inflace. Pokud je ekonomika v poklesu, mělo by docházet i k poklesu inflace. Dosahovali bychom ekonomického růstu i v případě, pokud by inflace úplně zmizela?**
 
 Zmínil bych znovu Švýcarsko. Nemají inflaci už zhruba dvanáct let a nemají růst nijak nižší než zbytek Evropy. Pokud se zvýší inflace, krátkodobě to ekonomiku může povzbudit. Dlouhodobě to nicméně nemá žádný efekt na ekonomický růst. A jestli nějaký, tak záporný. Lidé nevědí, jakou hodnotu budou mít jejich peníze. Škodí to investování, inovacím i ekonomickému růstu, úplně stejně by tomu škodila deflace, pokud by byla trvalá a volatilní.
 
-Kdo by měl tedy s nápadem přijít a snažit se jej prosadit?
+**Kdo by měl tedy s nápadem přijít a snažit se jej prosadit?**
 
 Prezident, který v létě jmenuje nového guvernéra České národní banky. Myslím, že nastává unikátní šance takový krok udělat. Ukazuje se, že režim cílování inflace strašlivě selhal. Příležitosti můžeme využít, nebo můžeme nechat inflaci vystoupat až na dvojciferné hodnoty, to se klidně může stát. Během půl roku se také vymění pět ze sedmi členů bankovní rady, čili většina. A pokud nový guvernér bude chtít, může inflaci navždycky smazat. Dobrých kandidátů na guvernéra, kteří by mohli přinést cenovou stabilitu, je několik. Za mě vypadají v tomto ohledu nejnadějněji Vojtěch Benda, Jan Frait a Jakub Seidler. Tím nechci říct, že by plně souhlasili s tím, co říkám, ale vidím velkou šanci, že by zrovna oni takovou změnu byli schopni prosadit, kdyby chtěli.
 
-Je to podle vás reálné? Kdy bychom se takové změny mohli dočkat?
+**Je to podle vás reálné? Kdy bychom se takové změny mohli dočkat?**
 
 Myslím, že nový režim by šel oznámit okamžitě, tedy s nějakým přechodným obdobím pro implementaci. Samozřejmě není reálné, abychom kompenzovali dvacetiprocentní inflaci za roky 2021 a 2022 stejnou deflací v roce 2023. Muselo by se na to jít pomalu. V prvním kroku by bylo nutné zvolit určitou cenovou hladinu. Vybrali bychom si tedy například tu z konce roku 2022, které bychom se chtěli držet navěky. Řekli bychom, že kompletní stability cen bychom chtěli dosáhnout do pěti let. Funkční období guvernéra trvá šest let, takže aby se to do té doby stihlo. Jde o zcela reálnou věc. Není s tím spojený žádný praktický, teoretický, ekonomický či právní problém, vše je možné udělat okamžitě. Jediný problém je politický, a to rozhodnout se pro takový krok. Díky momentální inflační bouři vidíme, že aktuálně nastavený systém nefunguje a je čas na změnu. Myslím, že to vnímá i prezident, který má toto rozhodnutí zcela v rukou.
 
-Nepřepsaly by se s tímto krokem učebnice?
+**Nepřepsaly by se s tímto krokem učebnice?**
 
 K přepisu učebnic dojde, i pokud bychom takový režim vůbec nezavedli, protože se opravdu ukázalo, že inflační cílování naprosto selhalo. Pokud bychom byli první zemí, která stabilitu cen věrohodně zavede, bylo by to báječné PR pro Českou republiku. Znamenalo by to mimo jiné i to, že česká koruna by se stala rezervní měnou pro velkou část světa. Byli bychom první zemí za sto let, která má stabilní hodnotu měny v tom smyslu, že se za ni dalo nakoupit stejné množství zboží dneska i za třicet let. Koruna by byla lepší než zlato. Proč kupovat zlato, jehož cena může kolísat? U české koruny by existovala naprostá jistota, že ochrání před inflací. Byl by to bezpečný přístav pro celý svět. Do učebnic by se to dostalo nepochybně. A guvernér, který by takový režim zavedl, by v nich nepochybně skončil také, stejně jako prezident, který to umožnil.
 
-Inflace zrychluje, v listopadu dosáhla v meziročním srovnání šesti procent. Kdy to podle vás skončí?
+**Inflace zrychluje, v listopadu dosáhla v meziročním srovnání šesti procent. Kdy to podle vás skončí?**
 
 Záleží na tom, zda se odhodláme ke změně, o které jsem hovořil. Pokud ne, tak se obávám, že inflace bude nad pěti procenty hodně dlouho. Problém už není v covidu či omezení nabídky, ale v tom, že o inflaci mluvíme, všichni o ní vědí a automaticky s ní počítají. Většina lidí očekává, že inflace bude kolem deseti procent v příštím roce, říkají si o zvýšení mzdy. Nutí to firmy odměny zvyšovat, mají vyšší náklady a musí zdražovat, aby náklady pokryly. Všichni s tím počítají, do ekonomiky se to zabuduje a je už úplně jedno, co inflaci primárně „roztočilo“. Pokud se očekávání nezlomí, tak inflace nezmizí. Takže v tomhle nejsem vůbec optimista, pokud nezrušíme inflační cílování a nezačneme se snažit o skutečnou cenovou stabilitu.
 
@@ -9875,7 +9875,7 @@ Zdroj: https://ukforum.cz/rubriky/veda/7994-havranek-hodnoceni-erc-je-velmi-poct
 
 „Ekonomem jsem se stal omylem, ale jsem za to nakonec rád,“ říká docent Tomáš Havránek, v současnosti nejcitovanější český ekonom. Působí na Institutu ekonomických studií Fakulty sociálních věd UK a přede dvěma lety byl Evropskou výzkumnou radou (ERC) osloven pro hodnocení prestižních ERC grantů – jako první český ekonom a nejmladší hodnotitel vůbec.
 
-Byl jste vybrán coby první zástupce ČR v oboru „ekonomie a finance“ a zároveň nejmladší český zástupce napříč všemi obory do panelu hodnotitelů žádostí o pokročilé (Advanced) granty Evropské výzkumné rady (ERC). Víte už nyní, podle čeho si vás vybrali?
+**Byl jste vybrán coby první zástupce ČR v oboru „ekonomie a finance“ a zároveň nejmladší český zástupce napříč všemi obory do panelu hodnotitelů žádostí o pokročilé (Advanced) granty Evropské výzkumné rady (ERC). Víte už nyní, podle čeho si vás vybrali?**
 
 Když mne před pár lety oslovili, divil jsem se. V té době jsem ani nesplňoval podmínku deseti let aktivního výzkumu, abych si sám mohl podat žádost o pokročilý ERC grant, takže mě překvapilo, že chtěli, abych se stal jejich hodnotitelem… A když jsem se ptal proč, řekli mi, že to bylo díky mé specializaci. Věnuji se totiž meta-analýze, což je původně medicínská metoda pro analýzu odborné literatury. Kvůli tomu, že je to metoda mezioborová, získáte určitý přehled i o dalších oblastech uvnitř, ale i mimo ekonomii. Zároveň jsem nějakou dobu strávil na University of California, Berkeley, kde jsem potkal lidi, kteří mě zřejmě doporučili. Občas též píšu posudky pro časopisy mimo ekonomii, jako jsou Nature, Science nebo Journal of Clinical Epidemiology.
 
@@ -9885,25 +9885,25 @@ Překvapilo mě v dobrém, že se celé hodnocení bere opravdu velmi vážně �
 
 Odborně mne pak překvapila tematická šíře projektů; objevovala se i témata, o kterých si v ekonomických časopisech nepřečtete. Trochu mě mrzelo, že všechna jednání probíhala online. Zoom je sice fajn nouzová volba, ale člověka unavuje a osobní schůzky nenahradí. Nicméně do panelu můžete být vybráni opakovaně, tak si třeba někdy s kolegy konečně zajdeme na pivo.
 
-Stalo se vám někdy, že vás daný projekt oslovil, že jste si řekl: „Tak to je fakt geniální“?
+**Stalo se vám někdy, že vás daný projekt oslovil, že jste si řekl: „Tak to je fakt geniální“?**
 
 To jsem si řekl asi v polovině případů (směje se). Většina projektů je opravdu výborná, přihlašují se i nositelé Nobelovy ceny a odměna je vlastně větší než za Nobelovu cenu. Řada témat byla pro mě inspirací; nemohu je vědecky použít, je to důvěrné, ale některé náměty mě inspirovaly při psaní novinových článků. Ostatně: myslím, že každý vědec by se měl snažit, aby jeho práce měla větší užitek než jen odborné publikace a citace, ale aby měla dopad na společnost a život lidí. Je hezké mít pět tisíc citací, ale ještě lepší je prosadit něco, o čem věříte, že to zlepší život ostatním.
 
-Během hodnocení jste četl a přečetl desítky ERC projektů – jak vypadá ten úspěšný?
+**Během hodnocení jste četl a přečetl desítky ERC projektů – jak vypadá ten úspěšný?**
 
 Klíčem k úspěchu je silná myšlenka a perfektně napsaný projekt, ze kterého je jasné, že pokud nedostanete ERC grant, tak ten výzkum nelze uskutečnit. Ale vůbec nepotřebujete doktorát z nejlepších univerzit nebo publikace v nejprestižnějších časopisech. Dosavadní výsledky jsou důležité, ale primární je kvalita projektu. A vždy se bere ohled na specifika a zvyklosti daného oboru. U pokročilých grantů v ekonomii je například spíše negativním signálem, když má uchazeč papírově dobré publikace, ale jsou málo citovány, tedy moc se „nechytly“ u ostatních vědců.
 
 Šance na úspěch není vysoká, ale není nulová. Mám pocit, že čeští vědci – a speciálně vědkyně – jsou často až zbytečně skromní a bojí se propagovat svoje úspěchy. Ale i to se pomalu mění; vidíme, že i v Česku lze ERC grant získat. O úspěchu často rozhoduje i štěstí, ale když to nezkusíte, tak to nikdy nevyjde... Navíc musím říci, že napsat ERC projekt je užitečná zkušenost, i když peníze nezískáte – donutí vás to rozmyslet si své další směřování. Myslím, že jednou za život by ERC projekt měl podat každý ambiciózní vědec či vědkyně.
 
-Na některých zahraničních institucích mají i speciální oddělení, která vědcům a vědkyním s psaním ERC grantů pomáhají – je na projektech poznat rozdíl dostupné podpory?
+**Na některých zahraničních institucích mají i speciální oddělení, která vědcům a vědkyním s psaním ERC grantů pomáhají – je na projektech poznat rozdíl dostupné podpory?**
 
 Ano, ale záleží na konkrétním žadateli či žadatelce. Často i v projektech z prestižních univerzit, kde mají špičkovou podporu, byly až „školácké chyby“, třeba když hvězdný žadatel ve vědecky hvězdném projektu nevysvětlil, proč nemůže projekt uskutečnit bez financování ERC – vypadalo to, že ty články napíše každopádně, no a takový projekt nemá šanci.
 
-Úspěšnost českých žadatelů o ERC granty se v posledních letech velmi mírně zlepšuje, ale především v přírodovědných oborech – proč se nedaří ve společenských vědách?
+**Úspěšnost českých žadatelů o ERC granty se v posledních letech velmi mírně zlepšuje, ale především v přírodovědných oborech – proč se nedaří ve společenských vědách?**
 
 Na větším úspěchu českých žadatelů má zásadní podíl profesor Zdeněk Strakoš z MFF UK a prorektor UK Jan Konvalinka. Pořádání informačních workshopů, mít se na koho obrátit s dotazy či grantová podpora PRIMUS jsou nepostradatelné. Jedním z faktorů menší úspěšnosti výzkumu společenských věd je, že kladou větší důraz na prezentaci v angličtině. U nás je úroveň angličtiny stále nižší než v západních zemích. Třeba v matematice není až tak klíčové, aby byl článek napsán perfektně stylizovanou angličtinou, pokud je vědecky inovativní. Dalším faktorem je určitě minulost – v Česku byl historicky kladen větší důraz na průmysl, technologie a přírodní vědy, nikoliv na vědy společenské, které též zasáhla za minulého režimu silná ideologizace.
 
-Ekonomie na Univerzitě Karlově je nicméně opakovaně hodnocena jako jeden z nejlepších oborů na škole – co podle vás stojí za tímto úspěchem?
+**Ekonomie na Univerzitě Karlově je nicméně opakovaně hodnocena jako jeden z nejlepších oborů na škole – co podle vás stojí za tímto úspěchem?**
 
 Pro jakékoliv mezinárodní hodnocení výzkumu jsou klíčové publikace a citace. Ústav CERGE-EI, společné pracoviště Univerzity Karlovy a Národohospodářského ústavu Akademie věd ČR, má hromadu špičkových publikací. Institut ekonomických studií (IES) na FSV má zase hodně citací. Třeba mezi pěti nejcitovanějšími českými ekonomy jsou čtyři zástupci IES a pak Jan Švejnar z CERGE-EI. Takže bych řekl, že obě instituce přispívají ke zlepšujícímu se hodnocení podobnou vahou, i když část výstupů CERGE-EI se možná počítá Akademii věd. Myslím, že IES i CERGE-EI se vzájemně výborně doplňují a spolupracují ve výuce i výzkumu. CERGE-EI je opravdu špičkové pracoviště, které se může srovnávat s těmi nejlepšími departmenty v zahraničí (ekonomové Filip Matějka a Jakub Steiner již získali tři ERC granty – pozn. redakce). Řekl bych to takhle: CERGE-EI má granty ERC, na IES o těch grantech zase rozhodujeme (usmívá se).
 
@@ -9963,7 +9963,7 @@ Vláda Andreje Babiše během tří let zadluží Česko o bezprecedentní bilio
 
 „My to do té doby musíme nějak vyřešit. My, nebo naše děti a vnoučata. Ale to už bude asi pozdě. Těch možných řešení je pět a jenom to poslední je dobré. Na to ale bude chybět odvaha,“ říká v rozhovoru pro SZ Byznys v zahraničí nejcitovanější český ekonom Tomáš Havránek, který přednáší na Karlově univerzitě.
 
-Řada zemí začíná experimentovat s digitálními měnami a vydávat peníze v digitální podobě. Je to podle vás dobrá cesta?
+**Řada zemí začíná experimentovat s digitálními měnami a vydávat peníze v digitální podobě. Je to podle vás dobrá cesta?**
 
 My jsme to řešili už v ČNB s Mojmírem Hamplem před mnoha lety, tehdy to bylo nové a sexy téma. Teď už je to malinko, řekněme, okoralé.
 
@@ -9977,11 +9977,11 @@ Když nemáte rád hotovost, tak už digitální měnu máte v podobě Google Pa
 
 Takže vlastně jediný důvod, proč zavádět digitální měnu státní nebo centrální banky je, když chcete zrušit nebo nahradit hotovost jako teď v Číně. Další důvod mě nenapadá.
 
-Čína s digitální měnou výrazně experimentuje. Ale experimentují s tím i ostatní státy, myslím, že některý ze severských států, které jsou v uvozovkách vyspělé ekonomiky?
+**Čína s digitální měnou výrazně experimentuje. Ale experimentují s tím i ostatní státy, myslím, že některý ze severských států, které jsou v uvozovkách vyspělé ekonomiky?**
 
 Ano, Švédsko. Už ale vidíte sám, že o té digitální měně třeba Švédové mluví možná už osm let, ale pořád se s tím nikam nepokročilo. Spíš je to ve fázi toho, že to bylo hrozně „cool“ kvůli bitcoinu, ale vlastně se mi zdá – nechci tady podsouvat něco kolegům ze Švédska – že opravdu praktická užitnost pro normální lidi u digitální měny není.
 
-Jak vlastně vy hodnotíte fenomén kryptoměn, což je něco trochu jiného. To jsou decentralizované měny, kdy se fakticky obchází centrální banky a stát. Myslíte si, že mají kryptoměny šanci stát se digitálním zlatem, jak by její zastánci rádi viděli? Protože zlato je vždycky útočiště v dobách nejistých.
+**Jak vlastně vy hodnotíte fenomén kryptoměn, což je něco trochu jiného. To jsou decentralizované měny, kdy se fakticky obchází centrální banky a stát. Myslíte si, že mají kryptoměny šanci stát se digitálním zlatem, jak by její zastánci rádi viděli? Protože zlato je vždycky útočiště v dobách nejistých.**
 
 Mně se ta myšlenka líbí. Koneckonců nás to opravdu hodně intelektuálně stimulovalo, tehdy ještě v národní bance. Ono se říká, že kryptoměny nejsou ani tak měny jako komodity, jak říkáte digitální zlato.
 
@@ -9989,7 +9989,7 @@ Já bych šel možná ještě dál. Já bych řekl: Nejsou to ani kryptoaktiva n
 
 To se vám buď líbí, nebo ne. Taková řekněme sběratelsky cenná data. Takže ne digitální zlato, ale například digitální Jackson Pollock.
 
-Pojďme ale k veřejným financím. Loni Česko hospodařilo se schodkem zhruba 367 miliardy korun, letos chce přidat pětsetmiliardový schodek a v roce 2022 dalších 390 miliard. Během pouhých tří let tak kabinet Andreje Babiše zadluží Česko o více než bilion korun. Jak tento trend hodnotíte?
+**Pojďme ale k veřejným financím. Loni Česko hospodařilo se schodkem zhruba 367 miliardy korun, letos chce přidat pětsetmiliardový schodek a v roce 2022 dalších 390 miliard. Během pouhých tří let tak kabinet Andreje Babiše zadluží Česko o více než bilion korun. Jak tento trend hodnotíte?**
 
 Já myslím, že ten trend je úplně jasný a není to jenom, řekl bych, vina této vlády. Podle prognózy Národní rozpočtové rady má být za 50 let státní dluh 300 procent HDP, což jsou mimochodem desítky bilionů korun. To číslo má 14 cifer, to si málokdo z nás dokáže představit. Tolik nám nikdy nikdo nepůjčí. To je jisté.
 
@@ -10015,13 +10015,13 @@ Kdybychom investovali jako Norsko, tak bychom měli ročně v průměru 200 mili
 
 Ale upřímně - nemyslím, že k tomu bude odvaha, pokud to nebude přímo úkol od poslanců. Ale také nemůžete centrální banku úplně takto úkolovat. Ani by to asi nebylo správné. Takže se obávám, že dojde na kombinaci těch předchozích čtyř špatných řešení.
 
-Každopádně, velmi brzy může přijít zlom, kdy zahraniční investoři nebudou chtít Česku půjčovat. Když jsem nedávno mluvil s bývalým guvernérem Zdeňkem Tůmou, tak říkal, že ten zlom může přijít u naší malé ekonomiky už zhruba kolem 50 procent dluhu vůči HDP. K této hranici přitom dospějeme určitě příští nebo přespříští rok. Sdílíte tento pohled? Myslíte, že skutečně ti zahraniční investoři můžou přestat půjčovat?
+**Každopádně, velmi brzy může přijít zlom, kdy zahraniční investoři nebudou chtít Česku půjčovat. Když jsem nedávno mluvil s bývalým guvernérem Zdeňkem Tůmou, tak říkal, že ten zlom může přijít u naší malé ekonomiky už zhruba kolem 50 procent dluhu vůči HDP. K této hranici přitom dospějeme určitě příští nebo přespříští rok. Sdílíte tento pohled? Myslíte, že skutečně ti zahraniční investoři můžou přestat půjčovat?**
 
 Můžou. Osobně si nemyslím, že by ta hranice byla 50 procent HDP. Už z toho důvodu, že my nejsme jediná země, která je zadlužená. My jsme malá země, to je ta naše nevýhoda, samozřejmě, že na nás se pohlíží malinko jinak než třeba na Spojené státy nebo velké země eurozóny.
 
 Ale i tak ta zadluženost poroste ve světě tak, že my nebudeme vypadat tak špatně. Tři sta procent HDP nám nikdo nepůjčí, ale těch 50 procent téměř jistě ano.
 
-Vy jste se také v minulosti věnoval výzkumu zelené ekonomiky a přechodu na zelenou ekonomiku. Česko teď může využít peníze z evropských fondů, které poskytuje Evropská komise. Vy doporučujete proti globálnímu oteplování sázet stromy, poměrně jednoduchá věc, ale to nejde vysadit všude. Konkrétně například město není les, takže tam se moc sázet nedá. Myslíte teda, že transformovat ekonomiku na zeleno nemá smysl? Jaký je váš pohled?
+**Vy jste se také v minulosti věnoval výzkumu zelené ekonomiky a přechodu na zelenou ekonomiku. Česko teď může využít peníze z evropských fondů, které poskytuje Evropská komise. Vy doporučujete proti globálnímu oteplování sázet stromy, poměrně jednoduchá věc, ale to nejde vysadit všude. Konkrétně například město není les, takže tam se moc sázet nedá. Myslíte teda, že transformovat ekonomiku na zeleno nemá smysl? Jaký je váš pohled?**
 
 Já bych se k těm stromům na chviličku vrátil, protože to je moje oblíbené téma. Ekonomické řešení klimatické krize, nebo obecně vlastně krize životního prostředí má být jak efektivní, tak levné. Aby to nestálo biliony, pokud to není nutné. A to ty stromy právě jsou.
 
@@ -10033,7 +10033,7 @@ Mám na mysli řepku pro biopaliva, kukuřici a další pro bioplyn. Nic proti �
 
 Kdyby se radši dotovaly stromy, má to daleko větší efekt na klima. A nejenom na klima. Ty stromy udrží vodu v krajině, takže vám to pomůže se suchem i se záplavami. A zvýší biodiverzitu. Pomůže to zabránit erozi půdy, je to příjemné na procházky s dětmi po práci apod. Takže tohle všechno jsou výhody, co řepka ani kukuřice nemá.
 
-Jinými slovy, ekonomika by se podle vás nemusela tolik transformovat?
+**Jinými slovy, ekonomika by se podle vás nemusela tolik transformovat?**
 
 Ušetřili bychom pravděpodobně biliony korun, kdybychom začali s tím řešením, které je nejefektivnější a nejlevnější. Nevyhneme se i dalším změnám. Na to já nejsem takový odborník, ale tohle je něco, co by mělo dostat prioritu.
 
@@ -11246,111 +11246,111 @@ By now it won’t surprise you that we do model averaging in that paper, too.
 
 Zdroj: https://archiv.hn.cz/c1-66399480-krize-je-typicky-nahodny-jev-mylime-se-casteji-nez-jini-vedci-rika-ekonomka-roku-zuzana-havrankova
 
-Říká se, že čistě z ekonomického pohledu je kupování dárků jedním nejhorších způsobů, jak vynaložit peníze. Co vy a dárky? Už je máte nakoupené?
+**Říká se, že čistě z ekonomického pohledu je kupování dárků jedním nejhorších způsobů, jak vynaložit peníze. Co vy a dárky? Už je máte nakoupené?**
 
 Nechávám to na manžela, který s kupováním dárků začíná tři měsíce před Vánoci. A dělá to velice efektivně a minimalisticky. Určitě líp než já.
 
-Manžel je také ekonom?
+**Manžel je také ekonom?**
 
 Ano, pracuje jako poradce bankovní rady ČNB.
 
-Kde jste se seznámili?
+**Kde jste se seznámili?**
 
 Na bakalářském studiu na institutu IES na Karlově univerzitě. Bydleli jsme spolu na koleji.
 
-Vy jste ze Slovenska. Mluvíte dobře česky, ale občas vám uteče nějaké slovenské slovo.
+**Vy jste ze Slovenska. Mluvíte dobře česky, ale občas vám uteče nějaké slovenské slovo.**
 
 Jsem v Praze zhruba dvanáct let, ale česky se snažím mluvit až v posledních letech. Mimo jiné kvůli dětem, aby v jazycích neměly zmatek. Ale pro Slováky je v Česku používání slovenštiny úplně přirozené. Češi ji ani neberou jako cizí jazyk, je to milé. Byť se to trochu mění s tím, že teď dospívá první generace, která se už narodila v odděleném Česku nebo Slovensku. A mnozí slovenštině i méně rozumí.
 
-Proč jste přijela studovat do Prahy?
+**Proč jste přijela studovat do Prahy?**
 
 Pocházím z malé vesnice a když jsem tam chodila na základní školu, tak jsem vůbec netušila, že existují univerzity jako Harvard, Oxford nebo Princeton. Pro mě byla metou od dětství Karlova univerzita. Byl to sen, který jsem měla. A ukázalo se, že to byl sen uskutečnitelný. Zrovna ekonomie má na Karlově univerzitě tradici a dnes i mezinárodní renomé. Náš institut IES a institut CERGE se v posledních letech pravidelně umísťují v první stovce světových ekonomických pracovišť.
 
-Proč jste si vybrala ekonomii?
+**Proč jste si vybrala ekonomii?**
 
 Za tím žádná zajímavá story není. Rozhodovala jsem se mezi právy a ekonomií. A došla k názoru, že osobnostně se na práva až tak moc nehodím. Nejsem dostatečně tvrdá a dravá, což je pro právnickou kariéru potřeba. A ani jsem v osmnácti nebyla ještě zcela vyhraněná, takže se mi ekonomie, se svou rozmanitostí a pestrostí, zdála jako dobrá volba.
 
-A nelitovala jste toho nikdy?
+**A nelitovala jste toho nikdy?**
 
 Ne, naopak jsem objevovala to, co je na ekonomii krásné a zajímavé. Hodně i díky profesorům, které jsem měla a díky nimž jsem ekonomii poznávala.
 
-Co je podle vás na ekonomii krásného?
+**Co je podle vás na ekonomii krásného?**
 
 Obecně to, že se snaží zlepšovat životy lidí. Hledá způsoby, jak bychom se mohli mít lépe. Zvláštnost ekonomie je v tom, že je na pomezí společenských a exaktních věd. My ekonomové se někdy tváříme, že dokážeme všechno spočítat. A používáme k tomu matematiku a další nástroje, podobně jako třeba přírodní vědy. Problém je v tom, že předmětem našeho zkoumání je chování člověka. A to je mnohdy neracionální a nepředvídatelné. Proto se ekonomové mýlí častěji než ostatní vědci používající matematiku, a někdy si to nechtějí připustit, protože k tomu omylu došli velmi sofistikovanými a přesnými metodami. Ale to na lidské chování neplatí. V tom je úskalí, ale i krása ekonomie.
 
-Chválila jste úroveň IES na Karlově univerzitě. Vy jste se podívala i na mezinárodně prestižní školy, jako například Berkley v Kalifornii. Co vás tam překvapilo?
+**Chválila jste úroveň IES na Karlově univerzitě. Vy jste se podívala i na mezinárodně prestižní školy, jako například Berkley v Kalifornii. Co vás tam překvapilo?**
 
 Američané jsou už od dětství vedeni k tomu, aby diskutovali. Kladou otázky, učí se argumentovat, vedou debaty. Když studentům přednášíte v Česku nebo obecně i v Evropě, tak většinou tiše sedí a poslouchají.
 
-Ve vaší práci ekonomické výzkumnice hodně používáte takzvanou metaanalýzu. Co to přesně znamená a proč jste si tuto techniku tak oblíbila?
+**Ve vaší práci ekonomické výzkumnice hodně používáte takzvanou metaanalýzu. Co to přesně znamená a proč jste si tuto techniku tak oblíbila?**
 
 Odpovím trochu oklikou. Velkým problémem hlavně ve společenských vědách je dnes to, čemu se říká replikační krize. Totiž že se řada výsledků studií nedaří opakovat. Ono to má určitou logiku, protože na rozdíl od přírodních zákonů záleží ve společenských vědách hodně na prostředí a kontextu. Když to přeženu, tak chování lidí je jiné v USA a jiné například v Ugandě, takže se klidně může stát, že ten samý experiment uděláte v obou zemích s jinými výsledky. Druhým problémem je publikační selektivita. Tedy že si odborné žurnály vybírají k publikaci práce, které vycházejí statisticky pěkně a jiné ignorují. Takže hodně studií se do nich nedostane. Z obojího pak plyne, že když chceme porozumět nějakému jevu, tak najdeme spousty studí, které ho nějak zkoumají, ale mnohé mají rozdílné výsledky. Pak přijde na řadu metaanalýza, která všechna tato data vezme, a pokusí se z nich učinit nějaký shrnující závěr.
 
-Proč jste si tuto statistickou metodu tak oblíbila?
+**Proč jste si tuto statistickou metodu tak oblíbila?**
 
 Ona to byla vlastně náhoda. A jako prvního to napadlo manžela, s kterým jsme pak na řadě publikací spolupracovali. Na studijním pobytu v Helsinkách nás napadlo aplikovat meta-analýzu na to, jaký dopad mají zahraniční investice na produktivitu domácích firem. To je přesně jeden z těch problémů, kde je k dispozici řada dat, ale nedávají na první pohled jednoznačnou odpověď. Takže manžel přišel s tím, že četl něco o metaanalýze a že bychom to mohli zkusit.
 
-Což pak může být důležitý podklad pro rozhodování politiků nebo institucí. Tak jako vaše metaanalýza vlivu letního času na úspory elektrické energie?
+**Což pak může být důležitý podklad pro rozhodování politiků nebo institucí. Tak jako vaše metaanalýza vlivu letního času na úspory elektrické energie?**
 
 Přesně tak. Zavedení letního času bylo ve 20. století odůvodňováno primárně právě úsporami elektrické energie. A otázka zněla, zda to stále platí, v době, kdy máme k dispozici nové technologie, kdy lidé mnohem víc používají například klimatizaci a kdy chytrá domácnost umí spotřebu energie optimalizovat. Jinými slovy, zda má střídání času stále smysl.
 
-A výsledek?
+**A výsledek?**
 
 Došli jsme k tomu, že se ty úspory blíží nule a že dopady na spotřebu energie už nejsou relevantní. Měli jsme velkou radost, když se naše studie objevila v materiálech Evropské komise a Evropský parlament k nim při rozhodování o letním času bude přihlížet. A potěšilo nás i to, že ji do svých materiálů zařadil i americký Kongres.
 
-V USA se o rušení letního času taky diskutuje?
+**V USA se o rušení letního času taky diskutuje?**
 
 Zatím jen zcela obecně a na základní úrovni. Ale ta debata se pomalu rozbíhá.
 
-Brali jste v úvahu také další efekty, kromě úspory energie? Střídání času má přece i další náklady a benefity.
+**Brali jste v úvahu také další efekty, kromě úspory energie? Střídání času má přece i další náklady a benefity.**
 
 To jsme nezkoumali. A máte pravdu, že tam je celá řada dalších efektů. Například existují studie, které zkoumají, jaké dopady má posun času na lidský organismus a na lidské chování. Například se ukázalo, že to má vliv na investiční rozhodování lidí.
 
-Řešili jste i to, jaký čas po případném zrušení zavést, jestli ten letní, nebo se vrátit k původnímu? Pro hodně lidí je to velké téma.
+**Řešili jste i to, jaký čas po případném zrušení zavést, jestli ten letní, nebo se vrátit k původnímu? Pro hodně lidí je to velké téma.**
 
 Mám na to jen osobní intuitivní názor. Současný zimní čas je ideálně nastaven pro člověka, který chodí spát v osm večer a budí se ve čtyři ráno, jelikož půlnoc je v rámci zimního času středem období tmy. Nejsem si jista, jesli tohle nastavení spánku skutečně odpovída dennímu režimu průměrného Evropana. . Byli jsme s manželem nedávno v Japonsku, v době, kdy tam slunce vycházelo v pět ráno a zapadalo v pět odpoledne. Což znamená, že se celý mimopracovní život odehrává v noci. A to má samozřejmě dopady na společnost i na ekonomiku. Lidi tráví víc času doma, méně utrácejí, zvyšuje se počet dopravních nehod, může to mít vliv i na kriminalitu. Japonci z toho moc šťastní nejsou. Ale zároveň je jasné, že je to velmi individuální. Někomu může vyhovovat to, že bude chodit dřív spát a bude dřív vstávat, jiný dává přednost opaku.
 
-A vaše preference?
+**A vaše preference?**
 
 Podle mě by byl lepší čas letní. A z hlediska nejefektivnějšího využití slunečního světla bych čas oproti původnímu posunula nejen o jednu, ale rovnou dvě hodiny. Pak by to nejvíc odpovídalo tomu, jak dnes trávíme čas. Tedy že průměrný člověk chodí spát spíše v deset večer a vstává v šest hodin ráno.
 
-Spolupracujete často s manželem? A jaké to je, sdílet nejen rodinu, ale i práci?
+**Spolupracujete často s manželem? A jaké to je, sdílet nejen rodinu, ale i práci?**
 
 Řadu studií jsme dělali společně a mnohé zase každý sám. On se víc specializuje na měnovou politiku, mými obory jsou energetika a životní prostředí. A pracuje se nám dobře. Jen je to trochu obtížné. Ale když seženeme pro naši jedenapůlroční dceru chůvu a starší tři děti nejsou nemocné, takže jsou ve školce nebo ve škole, tak si s manželem uděláme pracovní oběd. A tam diskutujeme to, na čem zrovna pracujeme. Jinak se snažíme moc domů práci nezatahovat.
 
-Čtyři děti? Je to ekonomicky uvážlivé rozhodnutí?
+**Čtyři děti? Je to ekonomicky uvážlivé rozhodnutí?**
 
 My jsme vždycky chtěli hodně dětí. A čtyři děti jsou hodně, ale spíš z pražského pohledu. My bydlíme v Litomyšli a tam to není nic zas tak neobvyklého. Jen v naší ulici o deseti domech je pět rodin, které mají tři a více malých dětí.
 
-Proč jste se odstěhovali do Litomyšle, když oba pracujete v Praze?
+**Proč jste se odstěhovali do Litomyšle, když oba pracujete v Praze?**
 
 Máme to tam rádi. Jezdili jsme tam za manželovou rodinou a za kamarády. A tak jsme si řekli, že by to bylo hezké místo pro život. Ono to má i ekonomické důvody, s nadsázkou řečeno. Litomyšl patří mezi města s nejnižší nezaměstnaností, kriminalitou a počtem exekucí na hlavu. Je to příjemné kulturní město, kde se děje spousta věcí a je stále co dělat. Prostě dobré místo pro život. Vlakem to zas z Prahy není tak daleko.
 
-Oba s manželem jste ekonomové, myslíte si, že si tu kariéru zvolí i vaše děti?
+**Oba s manželem jste ekonomové, myslíte si, že si tu kariéru zvolí i vaše děti?**
 
 Snad ne, potřebovali bychom v rodině i další profese. Třeba lékaře, právníky a přednostně někoho manuálně schopného. Ale jestli mám mluvit vážně, tak mám odpověď asi jako každý rodič. Budu ráda, když se najdou v tom, co je bude bavit.
 
-Hodně lidí si dnes stěžuje, hlavně na politiku, a cítí obavy z budoucnosti. Co vy? Jste spíš optimistka, nebo pesimistka?
+**Hodně lidí si dnes stěžuje, hlavně na politiku, a cítí obavy z budoucnosti. Co vy? Jste spíš optimistka, nebo pesimistka?**
 
 Určitě optimistka. Když se podíváte na data, tak zjistíte, že od roku 1800 se životní úroveň běžného člověka zvýšila třicetinásobně. V poslední době je ten pokrok ještě rychlejší. Ubývá chudoba, ve světě je méně násilí. Samozřejmě ekonomika se vyvíjí cyklicky, takže je nepochybné, že po období růstu přijde krize. A protože manžel pracuje pro centrální banku, tak se o tom doma často bavíme. Jak se třeba banky poučily z krize minulé, kterou některé neprošly moc dobře.
 
-A kdy krize bude? Někteří ekonomové ji předvídají “co nevidět” už několik let. Nebudu jmenovat.
+**A kdy krize bude? Někteří ekonomové ji předvídají “co nevidět” už několik let. Nebudu jmenovat.**
 
 Já určitě ne. Náhodné jevy nelze predikovat a krize je typický náhodný jev. My můžeme jako ekonomové jen analyzovat situace, které v takovém případě můžou nastat. A připravit se na její dopady v různých scénářích.
 
-Bude ta další krize velká? Mně by se to hodilo, kdybyste to řekla, protože články o tom, že se blíží velká krize, jsou v našich novinách nejčtenější.
+**Bude ta další krize velká? Mně by se to hodilo, kdybyste to řekla, protože články o tom, že se blíží velká krize, jsou v našich novinách nejčtenější.**
 
 Znovu můžu zopakovat jen to, že krize je náhodný jev. A to se týká i jejího průběhu. Ekonomické predikce pracují jenom s dostupnými informacemi, ne s křišťálovou koulí.
 
-Potěšilo vás, že jste byla oceněna titulem Ekonomka roku?
+**Potěšilo vás, že jste byla oceněna titulem Ekonomka roku?**
 
 Samozřejmě. Bylo to za akademickou činnost. Její úspěšnost jde ve vědě celkem dobře vyjádřit podle toho, kde práce vycházejí a jakou mají citovanost. Ale mě pracovně těší i jiné věci, hlavně to, když vidím, že mají naše práce nějaký reálný dopad. Jak to bylo například s metaanalýzou týkající se střídání času nebo společenských nákladů emisí uhlíku.
 
-Jaké má postavení česká ekonomie ve světě?
+**Jaké má postavení česká ekonomie ve světě?**
 
 Jak jsem už říkala, na institutech IES a CERGE se dělá ekonomie na světové úrovni. Naši studenti nemají problém pokračovat ve studiu na těch nejlepších světových univerzitách. A profesoři z nich zase přednášejí na Karlově univerzitě. Spolupracujeme i s nobelisty.
 
-Blíží se konec roku. Jaké máte předsevzetí do toho příštího?
+**Blíží se konec roku. Jaké máte předsevzetí do toho příštího?**
 
 Jako matka se čtyřmi dětmi a akademička bojuji neustále s časem. Takže moje předsevzetí je mít mezi obojím větší rovnováhu. Méně ponocovat a sedět nad prací, více času si užívat dětství svých dětí. Protože to uteče a už se nevrátí.
 
@@ -11626,7 +11626,7 @@ Zdroj: https://roklen24.cz/nejcitovanejsi-cesky-ekonom-dalsi-krize-urcite-nevzni
 
 Tomáš Havránek je docentem ekonomie na Univerzitě Karlově, jedním z nejcitovanějších mladých ekonomů na světě a nejcitovanějším ekonomem v České republice. Od roku 2009 pracuje v České národní bance, poslední dva roky je poradcem viceguvernéra Mojmíra Hampla. V rozhovoru pro Roklen24 popsal nejen svou akademickou dráhu, ale i možné budoucí kroky centrálních bank v reakci na krizi. Zdá se, že jim dochází munice, ale opak je pravdou.
 
-Jak se člověku přihodí, že se stane nejcitovanějším českým ekonomem? Co pro to musí udělat?
+**Jak se člověku přihodí, že se stane nejcitovanějším českým ekonomem? Co pro to musí udělat?**
 
 Zejména musí mít dobré spoluautory. Články, které jsem kdy napsal, byly jen málokdy mé vlastní. To se mi stalo asi pouze dvakrát ze čtyřiceti případů, jinak jsem měl vždy spoluautory. Ať už to byli kolegové z České národní banky nebo Univerzity Karlovy, anebo to byla moje manželka, se kterou často pracujeme na společných projektech.
 
@@ -11636,11 +11636,11 @@ Dlouhá léta strávená čistě výzkumnou prací předtím, než jsem se stal 
 
 Hlavně jde ale o štěstí, jako vždy v životě. Jakmile se jeden článek podaří slušně publikovat, je potom snazší dostat se do dalších časopisů. Spíše si pak někdo všimne vašeho výzkumu, jako se to podařilo nám. Naše články používá například nový šéf newyorského Fedu, John Williams. Takové citace jsou hodně vidět, a tak pak váš výzkum lépe najdou a využijí další ekonomové z IMF, Bank of England nebo Harvardu.
 
-Tomu se určitě dá jít naproti. Když jsem si prohlížel vaše publikace, všimnul jsem si, že máte i spoluautory ze zahraničí. Pomáhá to publikovat?
+**Tomu se určitě dá jít naproti. Když jsem si prohlížel vaše publikace, všimnul jsem si, že máte i spoluautory ze zahraničí. Pomáhá to publikovat?**
 
 Určitě to pomáhá. Máme spoluautory třeba z Berkeley, což je hodně užitečné. Často jsou to i mí bývalí studenti, kteří dnes působí třeba na Cambridge nebo ve Švýcarsku a přicházejí s vlastními nápady, čím přispět do globální ekonomické debaty.
 
-Stále jako akademik působíte a máte nové studenty. Co je učíte v kurzech makroekonomie? Nejsou dnes modely ze 70. let nepoužitelné v porovnání s tím, co děláte reálně v ČNB?
+**Stále jako akademik působíte a máte nové studenty. Co je učíte v kurzech makroekonomie? Nejsou dnes modely ze 70. let nepoužitelné v porovnání s tím, co děláte reálně v ČNB?**
 
 To je výborná otázka. Abych byl zcela upřímný, některé učebnicové modely, například IS-LM, jsem jako student vlastně nikdy pořádně nepochopil. Tedy ty rovnice jsou jednoduché, ale logika v pozadí nikoli. Realita vypadá i kvalitativně zcela jinak.
 
@@ -11648,11 +11648,11 @@ Na druhou stranu i současné modely používané v centrálních bankách odkaz
 
 Například jak funguje tvorba peněz. Že se peníze nevytvářejí peněžním multiplikátorem známým z učebnice, ale činností komerčních bank, které poskytují úvěry. Že centrální banka sama o sobě nekontroluje množství peněz v ekonomice.
 
-V době, kdy jsou úrokové sazby na nule, musí centrální banky sahat po alternativní munici. Například záporné úrokové sazby. Jak se to promítá do modelů, které používáte?
+**V době, kdy jsou úrokové sazby na nule, musí centrální banky sahat po alternativní munici. Například záporné úrokové sazby. Jak se to promítá do modelů, které používáte?**
 
 Ani takové kvantitativní uvolňování není dobře uchopitelné ani našimi nejlepšími modely. A v učebnicích už vůbec nenajdeme odpověď na poslední krizi, na kterou ale centrální banky přesto dokázaly velmi slušně reagovat.
 
-Vyřešily ji snížením úroků. Dnes už ale není kam, kdyby přišla další krize.
+**Vyřešily ji snížením úroků. Dnes už ale není kam, kdyby přišla další krize.**
 
 Záleží na tom, jestli se bavíme o krizi podobného kalibru, jaký měla ta před deseti lety. Při takové krizi by nám nyní nestačilo, ani kdybychom měli rezervu pěti procentních bodů na úrokových sazbách. Anebo se bavíme o obyčejné recesi, kdy by možná stačily tři procentní body, na které bychom se snad do té doby mohli dostat. Záleží na tom, jak dlouho bude současná expanze trvat.
 
@@ -11666,7 +11666,7 @@ Jedna z možností, která se diskutuje už několik let, je určitý druh bonus
 
 Na toto téma existuje spousta teorie. Bonus za výběr lze nastavit tak, aby držba hotovosti byla stejně výhodná jako držba peněz na bankovním účtu i se zápornými úroky. Ale není to přirozený koncept.
 
-Uvažuje Česká národní banka i o tom, že by využila i takzvané „vrtulníkové peníze“? Tedy že by posílala peníze přímo lidem?
+**Uvažuje Česká národní banka i o tom, že by využila i takzvané „vrtulníkové peníze“? Tedy že by posílala peníze přímo lidem?**
 
 Říkal bych spíše „přímá podpora spotřeby“. Ta analogie k vrtulníku pochází z anekdoty nositele Nobelovy ceny Miltona Friedmana, ve skutečnosti se ale nejedná o žádné drama.
 
@@ -11674,27 +11674,27 @@ Kdyby bylo nejhůř, tak se dá uvažovat o lecčems. S Mojmírem Hamplem máme 
 
 Jasně, vždycky máme k dispozici kurzový závazek, ale neměli bychom, co se týče našich nástrojů, ustrnout na místě.
 
-Jak by taková přímá podpora spotřeby prakticky fungovala?
+**Jak by taková přímá podpora spotřeby prakticky fungovala?**
 
 Hypoteticky by centrální banka mohla zavést digitální měnu a každý člověk by měl právo založit si u ČNB digitální peněženku. Ta by za normálních okolností byla zablokovaná, abychom neohrozili stabilitu našeho bankovního systému.
 
 Během recese spojené s poklesem cen by centrální banka mohla obnovit cenovou stabilitu tím, že by lidem posílala na tento účet týdně či měsíčně nějakou částku.
 
-To by šlo udělat už teď, k tomu není potřeba nová digitální měna.
+**To by šlo udělat už teď, k tomu není potřeba nová digitální měna.**
 
 Ano, to by šlo už nyní. Kouzlo digitální měny je v tom, že bychom mohli snadno udělat z každé transakce program. Dalo by se nastavit, že ty peníze musí být utraceny v určitém čase, jinak přestanou platit. Lze také zabránit, aby byly použity na nákup nemovitostí, aby se zamezilo vzniku bublin.
 
 Podle výzkumů, které máme k dispozici, by to mělo silný dopad na spotřebu a zprostředkovaně na obnovení cenové stability. Navíc by to podpořilo náladu lidí, což je v krizi důležité. Jedná se o srozumitelný a jasně pozitivní nástroj.
 
-Nemohlo by to naopak podlomit důvěru lidí, jako se to stalo při hyperinflaci v předválečném Německu nebo nedávno v Zimbabwe?
+**Nemohlo by to naopak podlomit důvěru lidí, jako se to stalo při hyperinflaci v předválečném Německu nebo nedávno v Zimbabwe?**
 
 Vždy musí platit, že pro centrální banku je hlavní cenová stabilita. Lidé musí vědět, že jde o opatření určené pro hlubokou depresi a deflaci a že nebude pokračovat do nekonečna. Navíc, pokud by se ekonomika vzpamatovala rychleji a inflace zvýšila víc, než centrální banka zamýšlela, tak tlumit ceny umíme snadno růstem úrokových sazeb.
 
-Neotevírá to tak trochu Pandořinu skřínku, když neznáme možné důsledky?
+**Neotevírá to tak trochu Pandořinu skřínku, když neznáme možné důsledky?**
 
 To jsem slyšel i při spuštění kvantitativního uvolňování a kurzového závazku. Jak známo, hyperinflace nenastala a podle většiny ekonomů funguje hospodářství lépe, než kdyby se tyto Pandořiny skříňky neotvíraly. Inovace jsou důležité i v centrálním bankovnictví.
 
-Možná jen důsledky zatím neznáme. Třeba v Japonsku centrální banka skupuje akcie velkých firem, což může v budoucnosti vést k problémům, které dnes nevidíme.
+**Možná jen důsledky zatím neznáme. Třeba v Japonsku centrální banka skupuje akcie velkých firem, což může v budoucnosti vést k problémům, které dnes nevidíme.**
 
 Je pravda, že tyto inovativní politiky mají různá rizika v různých zemích. Třeba kvantitativní uvolňování má smysl jen u ekonomik s hlubokými finančními trhy. U nás to velký smysl nemá, protože bychom brzy skoupili velkou část dluhopisů. Konkrétně pro Japonsko by možná bylo lepší zkusit nějakou formu přímé podpory spotřeby než nekonečné nafukování bilance. Doporučuji každému, koho to zajímá, ať si přečte náš článek s Mojmírem Hamplem.
 
@@ -11704,11 +11704,11 @@ My se tím dlouhodobě zabýváme a máme alternativní ukazatele inflace, kde s
 
 Technicky asi můžeme, ale bylo by to rozumné? Lidi by to mátlo, ti se řídí inflací tak, jak ji spočítá Český statistický úřad. My si můžeme konstruovat podpůrné ukazatele, kde přidáme nemovitosti, ale musíme se primárně řídit oficiální inflací dle ČSÚ. Jako podpůrný nástroj je ale index inflace s vyšší váhou cen nemovitostí užitečný.
 
-Neděje se ale pak to, že inflace je na 2 %, ale na nemovitostech či akciích se nafoukne bublina, protože lidé tolik neutrácí za jídlo, ale spekulují na bytech? Vy to vidíte, ale v inflaci se to neobjeví a může to mást.
+**Neděje se ale pak to, že inflace je na 2 %, ale na nemovitostech či akciích se nafoukne bublina, protože lidé tolik neutrácí za jídlo, ale spekulují na bytech? Vy to vidíte, ale v inflaci se to neobjeví a může to mást.**
 
 Růst ceny nemovitostí je primárně otázkou přiškrcené nabídky; je stále těžší cokoli postavit, což je jedním ze základních problémů naší země. Ale je pravda, že bychom v inflaci rádi viděli větší váhu nemovitostí. Ovšem náš statistický úřad je v tomto ohledu velmi progresivní, ta váha se stále zvyšuje. Každopádně na prevenci bublin máme primárně jiné nástroje.
 
-Je někde bublina, která by mohla způsobit další krizi podobnou té poslední?
+**Je někde bublina, která by mohla způsobit další krizi podobnou té poslední?**
 
 Příští krize určitě nevznikne u nás. Krize nebo recese je dána propadem důvěry mezi ekonomickými partnery, který se snadno šíří. Není to žádný pravidelný cyklus, který by kdokoli uměl předvídat. V dnešním propojeném světě může být tím katalyzátorem nedůvěry jakýkoli šok v kterékoli důležité ekonomice.
 
@@ -11716,7 +11716,7 @@ Velkou většinu globálních krizí odstartoval nějaký problém ve Spojených
 
 Doba trvání růstu nám neříká nic o tom, kdy přijde recese. Expanze neumírá na dlouhý věk. Co se ale od poslední expanze změnilo, je, že teď se o další krizi stále mluví. Nikdo už nečeká, že dobré časy potrvají navěky. Což samo o sobě napovídá, že recese hned tak nepřijde, a když ano, zřejmě nebude tak hluboká. Ale to jen spekuluji a můžu se dramaticky mýlit.
 
-Na vzestupu je crowdfunding, P2P lending, kryptoměny a další technologické inovace. Lidé se snaží vyhnout tradičním finančním institucím. Neztrácí pomalu centrální banka moc ovlivňovat ekonomiku?
+**Na vzestupu je crowdfunding, P2P lending, kryptoměny a další technologické inovace. Lidé se snaží vyhnout tradičním finančním institucím. Neztrácí pomalu centrální banka moc ovlivňovat ekonomiku?**
 
 Centrální banka většinu z těchto aktivit reguluje. Je pravda, že s rozvojem P2P lending může být pro centrální banku v budoucnu složitější ovlivňovat třeba klientské úrokové sazby. Stále jsou to ale jen zlomky objemů úvěrů tradičních institucí. Je to hlavně kvůli tomu, že lidé chtějí mít jistotu a kontrolu, kterou tradiční prostředník, tedy banka, poskytuje. Já sám těmto inovacím fandím, používám fintechové aplikace a myslím si, že můžou v řadě ohledů změnit byznys komerčních bank a dále podpořit naše konkurenční prostředí.
 
@@ -11984,75 +11984,75 @@ Volební model má tři komponenty: průzkumy preferencí pro první kolo prezid
 
 Zdroj: https://domaci.hn.cz/c1-65916810-sazkari-jsou-k-vitezstvi-babise-skeptictejsi-nez-sociologove-rika-mlada-ekonomka-ktera-kombinuje-predvolebni-pruzkumy-a-kurzy
 
-Do voleb máme pár dní, co o jejich možném výsledku lze nyní s velkou mírou jistoty říct?
+**Do voleb máme pár dní, co o jejich možném výsledku lze nyní s velkou mírou jistoty říct?**
 
 S velkou mírou jistoty lze říct, že nejvíc hlasů získá hnutí ANO. To ale nutně neznamená, že volby v pravém slova smyslu vyhraje, tedy že bude schopno vést většinovou vládu. Což souvisí s tím, že nová poslanecká sněmovna bude asi nejrozdrobenější v historii naší země, jak ukazuje model na KdoVyhrajeVolby.cz. Takže celkový výsledek voleb je zcela otevřený a rozhodnut může velmi málo.
 
-V médiích se tento týden psalo, že Andrej Babiš oslabuje, ale z vašich agregací to nevyplývá, dokonce podpora ANO ve vaší časové řadě roste poslední tři týdny. Čím si to - i jako náruživý konzument politického zpravodajství - vysvětlujete? Sázkaři to vidí jinak než sociologové?
+**V médiích se tento týden psalo, že Andrej Babiš oslabuje, ale z vašich agregací to nevyplývá, dokonce podpora ANO ve vaší časové řadě roste poslední tři týdny. Čím si to - i jako náruživý konzument politického zpravodajství - vysvětlujete? Sázkaři to vidí jinak než sociologové?**
 
 Už od začátku v našem modelu pozorujeme, že sázkaři vidí volební výsledek ANO slabší, než jak by to odpovídalo průzkumům. Například v létě dávaly průzkumy tomuto hnutí více než 30 %, ale sázkové kurzy ukazovaly na zisk o 5 procentních bodů slabší. Teď se rozdíl mezi sázkaři a průzkumy snižuje. Máte úplnou pravdu, že v posledních dnech nevidíme tendenci k nějakému výraznému oslabování ANO. Tu jsme pozorovali do druhé poloviny září; od té doby se modelový výsledek ANO spíše o něco zlepšil.
 
-Co je další silný trend, který z vašich analýz vychází? Podařilo se například ČSSD nakoupnout s příchodem Lubomíra Zaorálka?
+**Co je další silný trend, který z vašich analýz vychází? Podařilo se například ČSSD nakoupnout s příchodem Lubomíra Zaorálka?**
 
 Ano, naše předpověď pro volební výsledek ČSSD skutečně rostla poměrně robustně až do druhé poloviny září, pak se však trend otočil – jako by se i do jisté míry vyčerpal vliv kauzy Čapi hnízdo na preference ANO. Od té doby také pozorujeme posilování SPD a Pirátů a jisté oslabení u ODS a KDU-ČSL.
 
-Proč jste se vlastně rozhodli využít i model Davida Rotschilda s kurzovými sázkami? Dělali jste si předtím nějakou analýzu, jak ty české fungují, aby se na ně dalo spoléhat? Jak vlastně tyto kurzy fungují? Prostě někdo čte noviny a podle toho vypisuje kurzy, nebo je to sofistikovanější?
+**Proč jste se vlastně rozhodli využít i model Davida Rotschilda s kurzovými sázkami? Dělali jste si předtím nějakou analýzu, jak ty české fungují, aby se na ně dalo spoléhat? Jak vlastně tyto kurzy fungují? Prostě někdo čte noviny a podle toho vypisuje kurzy, nebo je to sofistikovanější?**
 
 Sázkové kurzy jsou užitečné v tom, že do modelu přinášejí aktuální informace. Když uděláte volební průzkum, obvykle odráží skutečnost z minulého měsíce. I nejnovější průzkumy zveřejněné 16.10. budou založeny na týdny starých datech. Kurzy stanovují sázkové kanceláře na základě svého úsudku, ale samozřejmě velkou roli hraje, na koho lidé skutečně sázejí. Jako ekonomce se mi libí, že tyto predikce jsou na rozdíl od průzkumů podloženy skutečnými obchody. Když se objeví zásadní informace, která může výsledek ovlivnit, někteří lidé využijí starých kurzů a vsadí si. Tím se kurz dostane blíže k realitě. Samozřejmě ten český sázkový trh není tak hluboký jako třeba v USA, proto je nutné kurzy vzít jen jako doplněk k průzkumům.
 
-Jsou nějaké agentury, kterým při sestavování svých dat dáváte menší nebo dokonce žádnou relevanci? Napadá mě třeba Medea Research, která odhadla Piráty na více než 10% a napak ODS šoupla pod 6%…
+**Jsou nějaké agentury, kterým při sestavování svých dat dáváte menší nebo dokonce žádnou relevanci? Napadá mě třeba Medea Research, která odhadla Piráty na více než 10% a napak ODS šoupla pod 6%…**
 
 To je dobrá otázka. Používáme všechny zveřejněné volební modely z posledních dvou měsíců a všem dáváme nenulovou váhu. Netroufám si komentovat kvalitu jednotlivých průzkumů, ale mohu říct, že bereme v úvahu například stáří, počet respondentů a členství agentury v SIMAR.
 
-Co vás vlastně při čtení českých předvolebních průzkumů nejvíc překvapuje? Máte v ně důvěru?
+**Co vás vlastně při čtení českých předvolebních průzkumů nejvíc překvapuje? Máte v ně důvěru?**
 
 Překvapují mě velké rozdíly mezi jednotlivými průzkumy, které jsou myslím o poznání větší, než je běžné v zahraničí. Ale je to jen můj dojem, na datech jsem ten rozdíl netestovala. Důvěru v průzkumy do jisté míry mít musím, protože náš vlastní model je z části jejich váženým průměrem.
 
-Velké pozdvižení vyvolal zářijový průzkum CVVM, který přisoudil ANO 31%. Před čtyřmi roky měla měsíc před volbami ČSSD také 30%, ale jakoby se zapomínalo, že průzkumy odráží aktuální věci, mají zpoždění… Jsou tohle hlavní chyby i v interpretaci výzkumů?
+**Velké pozdvižení vyvolal zářijový průzkum CVVM, který přisoudil ANO 31%. Před čtyřmi roky měla měsíc před volbami ČSSD také 30%, ale jakoby se zapomínalo, že průzkumy odráží aktuální věci, mají zpoždění… Jsou tohle hlavní chyby i v interpretaci výzkumů?**
 
 Přesně, jak říkáte! Navíc průzkumy jsou většinou tvořeny na vzorku kolem jednoho tisíce lidí, mají určitou chybovost. Jak jsme se ale už bavili, mám dojem, že ty rozdíly jsou větší, než by odpovídalo nějaké statistické odchylce. Ale konkrétně CVVM dělá výzkumy velmi dobře, jejich metodologie je dlouhodobě konzistentní.
 
-Nejsou průzkumy přeceňované?
+**Nejsou průzkumy přeceňované?**
 
 Už vzhledem k tomu zpoždění, které jste zmínil, není možné, aby průzkum zveřejněný dnes přesně odhadl volební výsledky. Takže pokud něco takového od průzkumu chceme, tak ho určitě přeceňuje. My věříme, že náš model bude v průměru přesnější než většina volebních průzkumů, mimo jiné proto, že bere v úvahu aktuální vývoj pomocí kurzů sázkových kanceláří. Ale například šance, že budeme lepší než úplně všechny průzkumy, je ze statistického pohledu minimální, protože velkou roli hraje i náhoda.
 
-Proč jste se vlastně rozhodla přivézt do ČR projekt typu FiveThirtyEight? A jak dlouho a s kolika lidmi jste KdoVyhrajeVolby.cz vyvíjeli?
+**Proč jste se vlastně rozhodla přivézt do ČR projekt typu FiveThirtyEight? A jak dlouho a s kolika lidmi jste KdoVyhrajeVolby.cz vyvíjeli?**
 
 Jako náruživého konzumenta politického zpravodajství, jak jste to předtím hezky řekl, mi chyběl nějaký jednoduchý agregátor průzkumů. Když se dlouho neobjevoval, tak jsme si řekli, že to zkusíme sami, a navíc přidáme i sázkové kurzy. Ten koncept je vlastně docela jednoduchý a množství potřebného času záleží jen na tom, kolik práce si dáte na technických detailech modelu. Základ týmu tvoří 3 lidé, ale rady jsme dostali od řady kolegů. Hlavní práce začala probíhat po skončení semestru, tedy v červenci, a stránku KdoVyhrajeVolby.cz jsme spustili na konci srpna.
 
-Budete s projektem pokračovat i nadále, směrem k prezidentským volbám?
+**Budete s projektem pokračovat i nadále, směrem k prezidentským volbám?**
 
 Ano, to bychom rádi, pokud budeme mít čas na potřebné změny v modelu. Jedním z problémů je dvojkolová volba, ale asi teď nebudeme čtenáře obtěžovat se statistickými technikáliemi. Nějak to vyřešíme!
 
-Jaká byla vlastně odezva na váš web?
+**Jaká byla vlastně odezva na váš web?**
 
 Překvapilo nás, kolik lidí se na stránky každý den vrací – je jich kolem 5 000 a ten počet stále stoupá. Spíš jsme si mysleli, že to bude zajímavé pro pár amatérských nadšenců do politiky, jako jsme my, a že se na to třeba podívají jednou týdně. Takže jsme rádi, že to lidem přijde užitečné. Nejprve jsme měli na stránce jen jednoduchou agregaci volebních modelů, ale čtenáři si vyžádali přepočet na mandáty a vývoj v čase. Postupně chceme přidávat další prvky, pokud budeme mít kapacitu. Zatím ji nemáme.
 
-Už jste vyřešili, jak do něj integrovat sociální sítě? Pokud ano, jak?
+**Už jste vyřešili, jak do něj integrovat sociální sítě? Pokud ano, jak?**
 
 Upřímně řečeno jsem zatím neměla čas se tomu věnovat. Možná tedy pro další volby.
 
-Vy se agregaci a analýze výzkumů věnujete i ve své ekonomické praxi, jsou tam výrazné podobnosti? Nejsou průzkumy veřejného mínění přece jen méně uchopitelné?
+**Vy se agregaci a analýze výzkumů věnujete i ve své ekonomické praxi, jsou tam výrazné podobnosti? Nejsou průzkumy veřejného mínění přece jen méně uchopitelné?**
 
 Agregace volebních průzkumů je pro mě skutečně jen koníček, ze kterého mám pouze radost. Živím se ekonomickým výzkumem. Méně uchopitelné pro mě ty průzkumy jsou, ale základní koncept je podobný: máte nějaký výsledek výzkumu a jeho standardní chybu. S tím pak pracujete dále a můžete použít stejné statistické metody, které se používají v ekonomii nebo zejména v medicíně.
 
-Když se na volební kampaň podíváte z pohledu ekonomky, co o ní soudíte? Jak třeba vnímáte debatu o platech? Nebo o odměnách pro učitele či penzích?
+**Když se na volební kampaň podíváte z pohledu ekonomky, co o ní soudíte? Jak třeba vnímáte debatu o platech? Nebo o odměnách pro učitele či penzích?**
 
 Při srovnání platů učitelů s platy ostatních profesí a v ostatních zemích je s podivem, že naše školství ještě vypadá tak, jak vypadá. Tedy docela dobře. My máme například naše starší děti ve školce Křesomyslova na Praze 4, kde dokážou úžasné věci i s minimem financování (pokud se tam tato pochvala náhodou vejde, tak bych Vám byla velmi vděčná). Takže to zvyšování platů ve školství snad bude pokračovat i po volbách. Co se týče penzí, jednou asi budeme muset přejít na systém, kdy budou pracující přispívat přímo na důchod svých rodičů. Bylo by to spravedlivější a podpořilo by to porodnost. Samozřejmě je nutné zachovat solidaritu s těmi, kteří děti mít nemohli. Jakoukoli změnu však bohužel dost možná zablokují černí pasažéři současného systému. S manželem se připravujeme na to, že na důchod od státu nedostaneme nic, ačkoli přispívat budeme celý život, protože ta demografická aritmetika je neúprosná. Naše generace bude možná pracovat až do smrti, s tím se musíme všichni smířit.
 
-Co naopak podle vás strany opomíjejí, na co nekladou dostatečný důraz?
+**Co naopak podle vás strany opomíjejí, na co nekladou dostatečný důraz?**
 
 Kromě neřešené reformy důchodového systému jsou to třeba i platy ve vysokém školství, nejen tedy v mateřských, základních a středních školách. O tom se příliš nemluví, přitom odborný asistent na univerzitě třeba v Praze se bez vedlejšího příjmu prakticky neuživí. Asistenti pak odcházejí učit třeba na střední školy.
 
-Patříte s manželem mezi nejcitovanější české ekonomy, čemu se nejčastěji věnujete? Nepletu-li se, jsou to témata na hony vzdálená politice…
+**Patříte s manželem mezi nejcitovanější české ekonomy, čemu se nejčastěji věnujete? Nepletu-li se, jsou to témata na hony vzdálená politice…**
 
 Manžel pracuje v ČNB, věnuje se teď spíše měnové politice a dalším věcem, které jsou z mého pohledu poměrně nudné 😊. Mě baví nejvíce ekonomie energetiky a životního prostředí. Hodně se ale také věnuji metodologii syntézy výzkumu, což právě šlo velmi dobře využít při agregaci volebních modelů, jak jste ostatně již myslím zmiňoval. Říká se tomu meta-analýza. Nedávno jsme třeba s kolegy publikovali meta-analýzu, která ukazuje, že letní čas v současném světě již nijak nešetří energii. S kolegy z Berkeley jsme zase zkoumali náklady emisí oxidu uhličitého. Člověk má potom samozřejmě velkou radost, když vaši práci použije v praxi třeba někdo na druhém konci světa. Nebo když se o výzkumu může pobavit s nositeli Nobelovy ceny, jako třeba letos v létě na setkání v Lindau, kde jich bylo 18.
 
-Máte čtyři děti, pracujete. Jak vnímáte debatu o rodinách v Česku a o slaďování soukromého a pracovního života? Není to jen spousta řečí, ale skutek utek? Co ze své zkušenosti či od známých cítíte, že by pomohlo matkám s malými dětmi?
+**Máte čtyři děti, pracujete. Jak vnímáte debatu o rodinách v Česku a o slaďování soukromého a pracovního života? Není to jen spousta řečí, ale skutek utek? Co ze své zkušenosti či od známých cítíte, že by pomohlo matkám s malými dětmi?**
 
 Pomohlo by, kdyby stát aktivně podporoval práci z domova (tzv. home office) namísto toho, že zaměstnavatelům a zaměstnancům v tomto ohledu hází klacky pod nohy. Home office je to jednoduchá cesta, jak levně a účinně pomoci rodinám s dětmi. Měla by to být absolutní priorita pro nového ministra práce. Samozřejmě pracovat s dětmi nebude jednoduché nikdy, vždycky musíte něco obětovat, jak dobře víte sám, když máte 3 děti. Ale s větším počtem dětí to někdy je paradoxně jednodušší, protože děti si hrají spolu. Ekonomové tomu říkají výnosy z rozsahu. Ale stejně je potom obtížné dohodnout třeba nějakou schůzku, jak ukázalo i složité dohadování na tomto rozhovoru.
 
-A jak vnímáte roli žen v české politice? Mělo by jich tam být víc? I za cenu kvót například?
+**A jak vnímáte roli žen v české politice? Mělo by jich tam být víc? I za cenu kvót například?**
 
 Kvóty vedou k tomu, že strany hledají kandidátky k okrase volebních lístků. Spíše než kvóty by pomohla ještě větší transparence politického života, včetně otevření všech jednání a smluv, které by mohlo některé diskuze a procesy umravnit a zcivilnit. Nedivím se, že většinu žen současná politická „macho“ kultura příliš nepřitahuje.
 
@@ -13246,57 +13246,57 @@ Paradoxically, the solution may be the exact opposite approach, advocated in the
 
 Zdroj: https://archiv.hn.cz/c1-61619400-z-materske-zamiri-rovnou-do-berkeley
 
-Docečetla jsem se, že v letošním roce máte v plánu stáž v Berkley – platí to, když se doma staráte o malé děti? Berete je s sebou?
+**Docečetla jsem se, že v letošním roce máte v plánu stáž v Berkley – platí to, když se doma staráte o malé děti? Berete je s sebou?**
 
 Do Berkeley jsme pozvaní společně s manželem, který se také věnuje ekonomickému výzkumu, takže jsme se rozhodli vzít děti s sebou a hlídat je střídavě na směnný provoz. Samozřejmě je to takhle komplikovanější, ale dceři jsou dva roky a synovi teprve 6 měsíců, takže jiné řešení není, pokud takovou příležitost chceme využít.
 
-Jak jste se k této stáži dostala a čemu se tam budete věnovat – budete přednášet, pracovat na nějakém výzkumu? Potřebovala bych rozklíčovat „s cílem rozšířit probíhající spolupráci FSV s univerzitou v Berkley.“
+**Jak jste se k této stáži dostala a čemu se tam budete věnovat – budete přednášet, pracovat na nějakém výzkumu? Potřebovala bych rozklíčovat „s cílem rozšířit probíhající spolupráci FSV s univerzitou v Berkley.“**
 
 Náš institut se společně s univerzitou v Berkeley a dalšími zahraničními univerzitami účastí projektu ekonomického modelování dopadů klimatických změn. U nás tento projekt vede profesor Janda, se kterým dlouhodobě spolupracuji; on sám působil v Berkeley delší dobu a díky jeho doporučení se nám podařilo pozvání získat. Sama se budu zejména věnovat výzkumu, a to práci na výpočtu společenských nákladů emisí skleníkových plynů (např. jakou škodu nebo přínos společnosti způsobí emise jedné tuny oxidu uhličitého). To je důležité pro určení optimálního zdanění emisí, se kterým už několik států začalo (například Austrálie).
 
-Jak často jste jezdila přednášet na konference do zahraničí (před mateřskou dovolenou)? O jaké téma vašeho výzkumu je v zahraničí největší zájem?
+**Jak často jste jezdila přednášet na konference do zahraničí (před mateřskou dovolenou)? O jaké téma vašeho výzkumu je v zahraničí největší zájem?**
 
 Obvykle jezdím na 3-4 mezinárodní konference za rok. V zahraničí je obvykle největší zájem o meta-analýzu, což znamená kvantitativní souhrn literatury na určité téma (a meta-analýza je také hlavní důvod, proč jedeme do Berkeley). Například společenské náklady emisí skleníkových plynů, které jsem zmínila, jsou v literatuře často odhadovány, ale jednotlivé výsledky se velmi liší. Není potom jasné, který odhad je vhodné využít v praxi ke stanovení tzv. uhlíkové daně. Statistické nástroje meta-analýzy nám pomáhají tyto rozdílné odhady shrnout, odfiltrovat různá zkreslení (třeba i ideologická), a poskytnout tvůrcům hospodářské politiky robustní výsledky. Meta-analýza pochází původně z lékařského výzkumu, odkud se poměrně nedávno rozšířila také do ekonomie.
 
-Můžete mi prosím víc laicky vysvětlit, čemu se ve svém výzkumu věnujete? („studentka se zaměřuje na aplikace metod výpočtu hraniční efektivity a meta-analýzy zejména v oblastech bankovnictví, energetiky a přímých zahraničních investic.) Nejlépe na nějakém konkrétním a polopatickém příkladu.
+**Můžete mi prosím víc laicky vysvětlit, čemu se ve svém výzkumu věnujete? („studentka se zaměřuje na aplikace metod výpočtu hraniční efektivity a meta-analýzy zejména v oblastech bankovnictví, energetiky a přímých zahraničních investic.) Nejlépe na nějakém konkrétním a polopatickém příkladu.**
 
 Můj nejcitovanější článek je meta-analýza vlivu zahraničních investic na produktivitu domácích firem. Obvykle se předpokládá, že tyto dopady jsou kladné, například proto, že domácí firmy se od investorů učí novým technologiím a postupům (třeba i tak, že kopírují jejich praktiky). I z toho důvodu mnoho států poskytuje pobídky pro zahraniční investice. Když ale chcete vliv zahraničních investic na domácí produktivitu odhadnout na reálných datech z ekonomiky, dostanete rozdílné výsledky v závislosti na použité metodologii. V našem článku jsme posbírali tisíce odhadů tohoto efektu a po ošetření o různá zkreslení se ukázalo, že zahraniční investice v průměru skutečně významně přispívají ke zvyšování domácí produktivity. Některé typy investic jsou navíc prospěšnější než jiné; velmi přínosné jsou například společné projekty zahraničních a domácích firem, kde spíše dochází k difúzi znalostí.
 
-Můžete mi rozklíčovat, na čem spolupracujete s týmem ČNB? („V současnosti také spolupracuje s výzkumníky České národní banky na projektu zabývajícím se empirickou analýzou parametrů pro kalibraci DSGE modelů.“)
+**Můžete mi rozklíčovat, na čem spolupracujete s týmem ČNB? („V současnosti také spolupracuje s výzkumníky České národní banky na projektu zabývajícím se empirickou analýzou parametrů pro kalibraci DSGE modelů.“)**
 
 ČNB používá pro svoje prognózy velmi sofistikovaný model celé ekonomiky (takzvaný DSGE model), který je založen na nejlepší zahraniční praxi. Model vyžaduje řadu předpokladů o chování lidí; tyto předpoklady jsou často přejaty ze zahraniční literatury, protože neexistuje relevantní výzkum na českých datech. V rámci projektu, na kterém se podílím s kolegy z ČNB, se snažíme mimo jiné zjistit, jestli by nebylo vhodné některé tyto předpoklady pro české prostředí upravit. Konkrétním příkladem může být předpoklad o reakci spotřeby lidí na změny úrokových měr, o kterém neexistuje shoda ani v zahraničí.
 
 ## O IES
 
-Pro jaké studenty je IES – jakou motivaci ke studiu musí mít, aby byli na této škole spokojení? Může způsob výuky vyhovovat někomu, kdo chce být managerem či ředitelem v privátní sféře?
+**Pro jaké studenty je IES – jakou motivaci ke studiu musí mít, aby byli na této škole spokojení? Může způsob výuky vyhovovat někomu, kdo chce být managerem či ředitelem v privátní sféře?**
 
 Spokojený nebude ten, kdo je zvyklý vybírat si v životě vždy tu nejsnazší cestu. Ale myslím, že takoví studenti si k nám přihlášku ani nedávají, protože dobře vědí, že naše studium je náročné. Uchazeč o přijetí musí být především připraven tvrdě pracovat. Absolventi IES nacházejí uplatnění v celé řadě oborů, od akademického výzkumu (což je ale spíše výjimka) přes analytické pozice až ke konzultantským a manažerským funkcím. Studium ekonomie, které je u nás koncipováno podle západního vzoru, má studenta zejména naučit myslet a rychle se orientovat ve složité problematice. To jsou také schopnosti, které zaměstnavatelé všude na světě od špičkových zaměstnanců vyžadují.
 
-IES je velmi internacionální škola – v čem je to nejvíc poznat?
+**IES je velmi internacionální škola – v čem je to nejvíc poznat?**
 
 Velká většina kurzů je v angličtině a na magisterském stupni je velké procento studentů ze zahraničí. Prakticky každý student také vyjede alespoň na půl roku na nějakou kvalitní školu v Evropě, ale třeba i do USA nebo Austrálie, případně na stáž do nějaké nadnárodní instituce, jako je třeba Světová banka. Velké množství absolventů bakalářského studia pokračuje v dalším studiu v zahraničí; někdy se vrátí zpět pro doktorské studium. Třeba jeden můj současný spolužák má magisterský titul z Oxfordu, další z Cambridge.
 
-Kdo pro vás na IES byli klíčoví přednášející, kteří vás nasměrovali?
+**Kdo pro vás na IES byli klíčoví přednášející, kteří vás nasměrovali?**
 
 Už jsem zmínila Karla Jandu, díky kterému jsem se dostala ke svému současnému výzkumu. Velmi inspirující přednášející je také například Michal Mejstřík, člen NERV odpovědný za strategii konkurenceschopnosti ČR, Kateřina Šmídková, ředitelka ekonomického výzkumu v ČNB, nebo Oldřich Dědek, národní koordinátor pro zavedení eura. Řada dalších přednášejících má zkušenosti ze zahraničí, například z Mezinárodního měnového fondu nebo Evropské centrální banky.
 
-Sama vedete na IES diplomový seminář – jací jsou tamní studenti, vidíte mezi nimi talenty, kteří se se svým tématem a způsobem vědecké práce mohou dostat na stránky takových časopisů jako Journal of International Economics? Můžete uvést příklady jmen a témat?
+**Sama vedete na IES diplomový seminář – jací jsou tamní studenti, vidíte mezi nimi talenty, kteří se se svým tématem a způsobem vědecké práce mohou dostat na stránky takových časopisů jako Journal of International Economics? Můžete uvést příklady jmen a témat?**
 
 Na výuce v diplomovém semináři se podílím velmi ráda, protože mi to umožňuje každý rok sledovat od píky vznik prací, které jsou ve své většině velmi dobré a často jsou následně publikované. Jejich úroveň také v čase rychle roste; co bylo před 7 lety standardní diplomovou prací, by dnes nemuselo být obhájeno. Kvalitních prací máme velmi mnoho, a je tak těžké vybrat nějaké jméno. Ale například Marek Rusnák, který se věnuje prognózování a kterého jsme měli na semináři před časem, už je jedním z nejlépe publikujících českých ekonomů a před rokem získal titul Mladý ekonom České společnosti ekonomické.
 
-Snažím se postihnout a zjistit, v čem je IES tak specifický – mám zprávy, že je to spíš komorní škola, dělá se tam věda... pokud by vás napadlo, jak a čím by se dala vystihnout originalita této školy, určitě napište.
+**Snažím se postihnout a zjistit, v čem je IES tak specifický – mám zprávy, že je to spíš komorní škola, dělá se tam věda... pokud by vás napadlo, jak a čím by se dala vystihnout originalita této školy, určitě napište.**
 
 Vedení IES se snaží co nejvíce se přiblížit stylu, jak je ekonomie vyučována na dobrých školách v Americe nebo západní Evropě. Kromě CERGE, což je ale čistě doktorský program, si nemyslím, že by se o toto některá česká škola reálně snažila. Můžete se například podívat, jaké procento výuky na jiných školách probíhá v anglickém jazyce a jestli vyučující mají nějaké zahraniční zkušenosti. Velmi se také liší výzkumné výstupy. Na většině škol v ČR se publikuje obvykle ve sbornících nebo lokálních časopisech, zatímco pedagogové IES publikují převážně v zahraničních časopisech, a tím pomáhají udávat tempo profese. Například podle mezinárodního hodnocení ekonomického výzkumu RePEc jsou mezi 10 nejlepšími českými ekonomy 3 vyučující IES (ostatní jsou z CERGE nebo ČNB, http://ideas.repec.org/top/top.czech.html).
 
-Jaký předmět nebo fáze studia je pro studenty nejnáročnější?
+**Jaký předmět nebo fáze studia je pro studenty nejnáročnější?**
 
 Zcela určitě matematická analýza vyučovaná profesory z Matfyzu, jejímiž čtyřmi semestry si musí projít každý bakalář. Dosud vzpomínám na dlouhé probdělé noci po přednáškách, kdy jsem se snažila pochopit důkaz nějaké věty. Potom si ale řeknete, že když jste zvládla toto, zvládnete v životě už všechno.
 
-Jak je to na IES s kontakty na budoucí zaměstnavatele a praxi? Je to tak, že například ČNB si na škole vyhlíží své budoucí analytiky a že většina studentů je „rozebraná“ ještě před promocí? Nebo se studenti spíše věnují studiu a do firem jdou až po promoci?
+**Jak je to na IES s kontakty na budoucí zaměstnavatele a praxi? Je to tak, že například ČNB si na škole vyhlíží své budoucí analytiky a že většina studentů je „rozebraná“ ještě před promocí? Nebo se studenti spíše věnují studiu a do firem jdou až po promoci?**
 
 Existuje mýtus, že absolvent bez praxe nemá na pracovním trhu šanci. To možná platí pro některé profese, ale pokud chcete pracovat v kreativním zaměstnání, na které Vás IES připravuje, vyplatí se věnovat škole naplno do posledního ročníku. Nevím, že by někdo ze spolužáků měl problém najít si odpovídající zaměstnání – a to jsem promovala v roce 2009, kdy vrcholila ekonomická krize. Je ale pravda, že spousta studentů se už při studiu podílí na různých projektech, například práci pro NERV nebo různé poradenské firmy, a obvykle mají o svém zaměstnání jasno už dlouho před ukončením studia.
 
-Jak vidíte svoji budoucnost – na IES, na CERGE-EI, ve světě?
+**Jak vidíte svoji budoucnost – na IES, na CERGE-EI, ve světě?**
 
 To ukáže čas a příležitosti, které se naskytnou jak mě, tak manželovi. Příštích pár let se ale zřejmě stěhovat nebudeme, kvůli dětem.
 

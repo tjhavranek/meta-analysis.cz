@@ -16,30 +16,30 @@ Nedávno se stala historicky nejmladší profesorkou Univerzity Karlovy, zárove
 
 ## Dotazník Zuzany Havránkové
 
-Co děláte? Jak byste laikovi vysvětlila svou práci?
+**Co děláte? Jak byste laikovi vysvětlila svou práci?**
 
 Překládám stovky akademických publikací do výstupu, který je použitelný v praxi. Tomu se říká metaanalýza: statistické shrnutí výzkumu na dané téma.
 
-Co je na vědě nejlepší? A nejhorší?
+**Co je na vědě nejlepší? A nejhorší?**
 
 Nejlepší jsou ty „heuréka“ momenty, kdy najdete řešení problému, s nímž jste zápasili rok či déle. Hned vedle toho je to kontakt s geniálními lidmi z celého světa. Nejhorší je peer-review proces při publikování, který je často zcela náhodný. A také, když se věda uzavře do bubliny, přijme jediný výklad jako dogma a přestane tolerovat pochybnosti.
 
-Proč jste se dala na vědeckou dráhu? Jak jste se k vědě dostala?
+**Proč jste se dala na vědeckou dráhu? Jak jste se k vědě dostala?**
 
 Začínala jsem v soukromém sektoru a současně si dělala doktorát. Zjistila jsem, že s dětmi mi vědecká kariéra poskytuje více flexibility, takže jsem u ní zůstala.
 
-Kým byste byla, pokud ne vědkyní?
+**Kým byste byla, pokud ne vědkyní?**
 
 Myslím, že bych působila zcela mimo mou profesi. Můj pradědeček byl truhlář a práce se dřevem mě baví. Dokázala bych si představit takovou řemeslnou profesi, jejíž výsledky dělají lidem radost na dlouhé roky. Také miluji malé děti, takže být učitelkou v mateřské škole by mě naplňovalo.
 
-Jaká je vaše nejoblíbenější (odborná) kniha, případně váš nejoblíbenější vzorec?
+**Jaká je vaše nejoblíbenější (odborná) kniha, případně váš nejoblíbenější vzorec?**
 
 Oslovují mě autoři Robert Sapolsky a David Quammen, kteří dokážou poutavě psát o biologii a chování lidí. Právě čtu Sapolského knihu Determined: The Science of Life Without Free Will, která je ale trochu depresivní – pokud bych její hlavní myšlenku měla přijmout doslova, pak byly veškeré mé dlouholeté snažení a dřina předurčeny a za svůj úspěch vděčím tomu, do čeho jsem se narodila, jak jsem byla vychována, s kým jsem se potkala, čemukoli, co mě mohlo ovlivnit, a náhodě. Minimálně to člověka přivede k pokoře. A místo jednoho vzorce mám ráda myšlenku, že život není hra s nulovým součtem a že spolupráce vede k lepším výsledkům pro celou společnost.
 
-Posloucháte při práci hudbu? Jakou?
+**Posloucháte při práci hudbu? Jakou?**
 
 Když pracuji, potřebuji ticho, nekompromisně. Při běhu volím hudbu s tempem alespoň 180 bpm. Při tréninku boxu slyším hlavně na „zaber“ od svého instruktora pana Hanzlíka.
 
-Máte nějakou profesní deformaci? Ovlivňuje vaše práce váš každodenní život?
+**Máte nějakou profesní deformaci? Ovlivňuje vaše práce váš každodenní život?**
 
 Musím se přiznat, že jako ekonomka se pořád ptám na porovnání nákladů a výnosů. Čili: Zní to dobře, ale udělal někdo cost-benefit analýzu?

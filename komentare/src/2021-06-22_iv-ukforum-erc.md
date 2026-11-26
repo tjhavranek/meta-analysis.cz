@@ -14,7 +14,7 @@ interviewer: "Pavla Hubálková"
 
 „Ekonomem jsem se stal omylem, ale jsem za to nakonec rád,“ říká docent Tomáš Havránek, v současnosti nejcitovanější český ekonom. Působí na Institutu ekonomických studií Fakulty sociálních věd UK a přede dvěma lety byl Evropskou výzkumnou radou (ERC) osloven pro hodnocení prestižních ERC grantů – jako první český ekonom a nejmladší hodnotitel vůbec.
 
-Byl jste vybrán coby první zástupce ČR v oboru „ekonomie a finance“ a zároveň nejmladší český zástupce napříč všemi obory do panelu hodnotitelů žádostí o pokročilé (Advanced) granty Evropské výzkumné rady (ERC). Víte už nyní, podle čeho si vás vybrali?
+**Byl jste vybrán coby první zástupce ČR v oboru „ekonomie a finance“ a zároveň nejmladší český zástupce napříč všemi obory do panelu hodnotitelů žádostí o pokročilé (Advanced) granty Evropské výzkumné rady (ERC). Víte už nyní, podle čeho si vás vybrali?**
 
 Když mne před pár lety oslovili, divil jsem se. V té době jsem ani nesplňoval podmínku deseti let aktivního výzkumu, abych si sám mohl podat žádost o pokročilý ERC grant, takže mě překvapilo, že chtěli, abych se stal jejich hodnotitelem… A když jsem se ptal proč, řekli mi, že to bylo díky mé specializaci. Věnuji se totiž meta-analýze, což je původně medicínská metoda pro analýzu odborné literatury. Kvůli tomu, že je to metoda mezioborová, získáte určitý přehled i o dalších oblastech uvnitř, ale i mimo ekonomii. Zároveň jsem nějakou dobu strávil na University of California, Berkeley, kde jsem potkal lidi, kteří mě zřejmě doporučili. Občas též píšu posudky pro časopisy mimo ekonomii, jako jsou Nature, Science nebo Journal of Clinical Epidemiology.
 
@@ -24,25 +24,25 @@ Překvapilo mě v dobrém, že se celé hodnocení bere opravdu velmi vážně �
 
 Odborně mne pak překvapila tematická šíře projektů; objevovala se i témata, o kterých si v ekonomických časopisech nepřečtete. Trochu mě mrzelo, že všechna jednání probíhala online. Zoom je sice fajn nouzová volba, ale člověka unavuje a osobní schůzky nenahradí. Nicméně do panelu můžete být vybráni opakovaně, tak si třeba někdy s kolegy konečně zajdeme na pivo.
 
-Stalo se vám někdy, že vás daný projekt oslovil, že jste si řekl: „Tak to je fakt geniální“?
+**Stalo se vám někdy, že vás daný projekt oslovil, že jste si řekl: „Tak to je fakt geniální“?**
 
 To jsem si řekl asi v polovině případů (směje se). Většina projektů je opravdu výborná, přihlašují se i nositelé Nobelovy ceny a odměna je vlastně větší než za Nobelovu cenu. Řada témat byla pro mě inspirací; nemohu je vědecky použít, je to důvěrné, ale některé náměty mě inspirovaly při psaní novinových článků. Ostatně: myslím, že každý vědec by se měl snažit, aby jeho práce měla větší užitek než jen odborné publikace a citace, ale aby měla dopad na společnost a život lidí. Je hezké mít pět tisíc citací, ale ještě lepší je prosadit něco, o čem věříte, že to zlepší život ostatním.
 
-Během hodnocení jste četl a přečetl desítky ERC projektů – jak vypadá ten úspěšný?
+**Během hodnocení jste četl a přečetl desítky ERC projektů – jak vypadá ten úspěšný?**
 
 Klíčem k úspěchu je silná myšlenka a perfektně napsaný projekt, ze kterého je jasné, že pokud nedostanete ERC grant, tak ten výzkum nelze uskutečnit. Ale vůbec nepotřebujete doktorát z nejlepších univerzit nebo publikace v nejprestižnějších časopisech. Dosavadní výsledky jsou důležité, ale primární je kvalita projektu. A vždy se bere ohled na specifika a zvyklosti daného oboru. U pokročilých grantů v ekonomii je například spíše negativním signálem, když má uchazeč papírově dobré publikace, ale jsou málo citovány, tedy moc se „nechytly“ u ostatních vědců.
 
 Šance na úspěch není vysoká, ale není nulová. Mám pocit, že čeští vědci – a speciálně vědkyně – jsou často až zbytečně skromní a bojí se propagovat svoje úspěchy. Ale i to se pomalu mění; vidíme, že i v Česku lze ERC grant získat. O úspěchu často rozhoduje i štěstí, ale když to nezkusíte, tak to nikdy nevyjde... Navíc musím říci, že napsat ERC projekt je užitečná zkušenost, i když peníze nezískáte – donutí vás to rozmyslet si své další směřování. Myslím, že jednou za život by ERC projekt měl podat každý ambiciózní vědec či vědkyně.
 
-Na některých zahraničních institucích mají i speciální oddělení, která vědcům a vědkyním s psaním ERC grantů pomáhají – je na projektech poznat rozdíl dostupné podpory?
+**Na některých zahraničních institucích mají i speciální oddělení, která vědcům a vědkyním s psaním ERC grantů pomáhají – je na projektech poznat rozdíl dostupné podpory?**
 
 Ano, ale záleží na konkrétním žadateli či žadatelce. Často i v projektech z prestižních univerzit, kde mají špičkovou podporu, byly až „školácké chyby“, třeba když hvězdný žadatel ve vědecky hvězdném projektu nevysvětlil, proč nemůže projekt uskutečnit bez financování ERC – vypadalo to, že ty články napíše každopádně, no a takový projekt nemá šanci.
 
-Úspěšnost českých žadatelů o ERC granty se v posledních letech velmi mírně zlepšuje, ale především v přírodovědných oborech – proč se nedaří ve společenských vědách?
+**Úspěšnost českých žadatelů o ERC granty se v posledních letech velmi mírně zlepšuje, ale především v přírodovědných oborech – proč se nedaří ve společenských vědách?**
 
 Na větším úspěchu českých žadatelů má zásadní podíl profesor Zdeněk Strakoš z MFF UK a prorektor UK Jan Konvalinka. Pořádání informačních workshopů, mít se na koho obrátit s dotazy či grantová podpora PRIMUS jsou nepostradatelné. Jedním z faktorů menší úspěšnosti výzkumu společenských věd je, že kladou větší důraz na prezentaci v angličtině. U nás je úroveň angličtiny stále nižší než v západních zemích. Třeba v matematice není až tak klíčové, aby byl článek napsán perfektně stylizovanou angličtinou, pokud je vědecky inovativní. Dalším faktorem je určitě minulost – v Česku byl historicky kladen větší důraz na průmysl, technologie a přírodní vědy, nikoliv na vědy společenské, které též zasáhla za minulého režimu silná ideologizace.
 
-Ekonomie na Univerzitě Karlově je nicméně opakovaně hodnocena jako jeden z nejlepších oborů na škole – co podle vás stojí za tímto úspěchem?
+**Ekonomie na Univerzitě Karlově je nicméně opakovaně hodnocena jako jeden z nejlepších oborů na škole – co podle vás stojí za tímto úspěchem?**
 
 Pro jakékoliv mezinárodní hodnocení výzkumu jsou klíčové publikace a citace. Ústav CERGE-EI, společné pracoviště Univerzity Karlovy a Národohospodářského ústavu Akademie věd ČR, má hromadu špičkových publikací. Institut ekonomických studií (IES) na FSV má zase hodně citací. Třeba mezi pěti nejcitovanějšími českými ekonomy jsou čtyři zástupci IES a pak Jan Švejnar z CERGE-EI. Takže bych řekl, že obě instituce přispívají ke zlepšujícímu se hodnocení podobnou vahou, i když část výstupů CERGE-EI se možná počítá Akademii věd. Myslím, že IES i CERGE-EI se vzájemně výborně doplňují a spolupracují ve výuce i výzkumu. CERGE-EI je opravdu špičkové pracoviště, které se může srovnávat s těmi nejlepšími departmenty v zahraničí (ekonomové Filip Matějka a Jakub Steiner již získali tři ERC granty – pozn. redakce). Řekl bych to takhle: CERGE-EI má granty ERC, na IES o těch grantech zase rozhodujeme (usmívá se).
 
