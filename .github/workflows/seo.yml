@@ -17,6 +17,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  actions: read   # lets the step before the deploy see this run's artifacts
 
 concurrency:
   group: pages
@@ -27,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url || steps.deploy_retry.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -221,13 +222,42 @@ jobs:
       - name: Stage the site for upload
         run: |
           rsync -a --exclude=_site --exclude=.git --exclude=.github --exclude='CLAUDE*.md' --exclude=AGENTS.md --exclude=.claude --exclude=.githooks ./ _site/
+      # The deploy used to fail on GitHub's side about one push in two (24 to 26 Nov 2026):
+      # the upload finalized, the deploy step started 0.3 s later, listed 0 artifacts and
+      # failed "No artifacts named github-pages". A re-run then added a second artifact under
+      # the same name and failed "Multiple artifacts". So each attempt uploads under its own
+      # name, the next step waits until the artifact API lists it, and a failed deploy is
+      # tried once more after 30 s.
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+          name: github-pages-${{ github.run_attempt }}
+      - name: Wait until the artifact is listed
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NAME: github-pages-${{ github.run_attempt }}
+        run: |
+          for i in $(seq 1 24); do
+            if [ "$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts?name=$NAME" --jq .total_count 2>/dev/null || echo 0)" -ge 1 ] 2>/dev/null; then echo "artifact $NAME listed after about $(( (i - 1) * 5 )) s"; exit 0; fi
+            sleep 5
+          done
+          echo "::warning::artifact $NAME still not listed after 120 s; trying the deploy anyway"
       - name: Deploy to GitHub Pages
         id: deploy
+        continue-on-error: true
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-${{ github.run_attempt }}
+      - name: Wait before retrying the deploy
+        if: steps.deploy.outcome == 'failure'
+        run: sleep 30
+      - name: Retry the deploy
+        id: deploy_retry
+        if: steps.deploy.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-${{ github.run_attempt }}
       # Answers the one question the rest of this workflow structurally cannot: what is
       # actually being SERVED. Three separate reviews have reported "production is stale"
       # when it was not -- every one a crawler cache -- and disproving each cost two
