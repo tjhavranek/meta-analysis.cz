@@ -4,105 +4,107 @@ media: "audio"
 outlet: "Český rozhlas Plus"
 url: "https://www.irozhlas.cz/ekonomika/inflace-cnb-penize-a-vliv-podcast_2301171630_mst"
 date: "2023-01-17"
+updated: "2026-11-26"
 headline: "Národní banka má udržovat stabilitu, ale ona si to vykládá jako dvouprocentní inflaci"
 byline: "Tomáš Havránek"
 interviewer: "Jana Klímová"
 same_recording: "penize-a-vliv-cnb-musi-delat-vic"
-body_note: "Díl podcastu Peníze a vliv Českého rozhlasu Plus, ptá se Jana Klímová. Skládá tři samostatně natočené rozhovory, s Josefem Bernardem, Janem Rafajem a Tomášem Havránkem; nešlo o společnou debatu. Níže je část s Tomášem Havránkem tak, jak ji přepsal a vydal iROZHLAS: přepis i jména mluvčích jsou dílem stanice, ne stroje. Jde o totéž vysílání jako na stránce vedené zde pod titulkem „ČNB musí dělat víc“; porovnání s její nahrávkou to potvrzuje (sedí 43 ze 44 odstavců). Na jednom místě stanice v přepisu vynechala zápor: v nahrávce zazní, že drobné transfery inflaci dlouhodobě „neovlivní“, v přepisu stálo „ovlivní“. Opraveno podle nahrávky."
+body_note: "Díl podcastu Peníze a vliv Českého rozhlasu Plus moderuje Jana Klímová. Pořad spojuje tři samostatné rozhovory s Josefem Bernardem, Janem Rafajem a Tomášem Havránkem. Zde je pouze redakčně zkrácená část s Tomášem Havránkem. Delší verzi najdete pod titulkem „ČNB musí dělat víc“. Vycházíme z přepisu iROZHLASu. V odpovědích jsme vypustili slovní výplně a opakování a upravili větnou stavbu. Otázky jsme upravili jen lehce. Čísla, zápory a míra jistoty odpovídají přepisu stanice s jedinou výjimkou: podle nahrávky jsme doplnili zápor ve větě o tom, že drobné transfery inflaci dlouhodobě „neovlivní“."
 transcript: "publisher"
 description: "Tomáš Havránek v pořadu Peníze a vliv na ČRo Plus o cenové stabilitě jako cíli ČNB, odměnách bankovní rady, cenách potravin, důchodech a DPH."
 cro_embed: "https://plus.rozhlas.cz/cro_soundmanager/files/8911524/field_main_audio"
 audio_start: "444"
+word_count: "1816"
 ---
 
-**Jana Klímová:** Případný růst daní není zdaleka jediným problémem, který by mohl dopadnout na firmy i na lidi. Loni to bylo zdražování, které žene vzhůru inflaci. Co se v ekonomice děje a kdo za to může? Otázky pro prof. ekonomie na Univerzitě Karlově a člena Národní ekonomické rady vlády Tomáše Havránka.
+**Jana Klímová:** Případný růst daní není zdaleka jediným problémem, který by mohl dopadnout na firmy i na lidi. Loni to bylo zdražování, které žene vzhůru inflaci. Co se v ekonomice děje a kdo za to může? Otázky pro profesora ekonomie na Univerzitě Karlově a člena Národní ekonomické rady vlády Tomáše Havránka.
 
-Inflace za celý rok 2022 bylo přes 15 procent, což je nejvíc od roku 1993. Co je podle vás v ekonomice špatně? A mohla něco udělat lépe České národní banka vláda?
+Inflace za celý rok 2022 byla přes 15 procent, což je nejvíc od roku 1993. Co je podle vás v ekonomice špatně? A mohla něco udělat lépe Česká národní banka nebo vláda?
 
-**Tomáš Havránek:** Zásadní otázka je, jestli vůbec národní banka nebo vláda může s inflací něco dělat. Máme často v médiích takový názor, že inflace je dovezena, a že s ní těžko něco uděláme. To je ale špatně jak z hlediska ekonomického výzkumu, tak z hlediska praxe. Můžeme si vzít to, že za minulý rok byla průměrná inflace v Evropě od 2 do 20 procent, čili hodně se lišila. To ukazuje, že záleží na tom, co daná země dělá a jak se chová.
+**Tomáš Havránek:** Zásadní otázka je, jestli s inflací vůbec může něco dělat národní banka nebo vláda. V médiích často slýcháme, že inflace je dovezená a že s ní těžko něco uděláme. To ale neodpovídá ekonomickému výzkumu ani praxi. Průměrná inflace v Evropě se loni pohybovala od 2 do 20 procent. Tak velký rozdíl ukazuje, že záleží na tom, co jednotlivé země dělají.
 
-**Jana Klímová:** Také to, jak má nastavenou ekonomiku. Faktem je, že třeba pobaltské země mají nejvyšší inflaci, ještě vyšší než my, a jsou také hodně závislí na dovozech. Je to tak?
+**Jana Klímová:** Také to, jak má nastavenou ekonomiku. Faktem je, že třeba pobaltské země mají nejvyšší inflaci, ještě vyšší než my, a jsou také hodně závislé na dovozech. Je to tak?
 
-**Tomáš Havránek:** To máte pravdu. Tam hraje roli celá řada faktorů. Podle velké většiny ekonomického výzkumu je otázka, jestli sama centrální banka může inflaci zkrotit nebo kontrolovat, nebo jestli k tomu potřebuje vládu.
+**Tomáš Havránek:** To máte pravdu. Hraje tam roli celá řada faktorů. Ve velké většině ekonomického výzkumu jde o otázku, jestli může centrální banka inflaci zkrotit nebo udržet pod kontrolou sama, nebo k tomu potřebuje vládu.
 
-Podle většiny výzkumů to může udělat sama centrální banka a jenom podle malé části ekonomů k tomu potřebuje i vládu. Ale každopádně jsou zdroje inflace převážně domácí. Většina ekonomů se shodne, že jsou hlavně na straně měnové politiky. Když se ptáte, kdo za to může, tak většina odborníků by měla správně vinit národní banku.
+Podle většiny výzkumů to centrální banka zvládne sama. Jen malá část ekonomů se domnívá, že potřebuje i vládu. Zdroje inflace jsou každopádně převážně domácí. Většina ekonomů se shodne, že jsou hlavně na straně měnové politiky. Pokud se ptáte, kdo za to může, většina odborníků by měla správně vinit národní banku.
 
-**Jana Klímová:** Ve zvyšování sazeb, více než je současných sedm procent, než je repo sazba, měla podle vás Česká národní banka pokračovat? Protože řada ekonomů proti tomu protestuje, že to podvazuje ekonomiku, protože zdražují firmám a lidem úvěry.
+**Jana Klímová:** Měla podle vás Česká národní banka pokračovat ve zvyšování sazeb i nad současnou sedmiprocentní repo sazbu? Řada ekonomů proti tomu protestuje s tím, že to podvazuje ekonomiku, protože firmám a lidem zdražují úvěry.
 
-**Tomáš Havránek:** Snižování inflace je bolestivé, právě jak říkáte pro řadu segmentů ekonomiky. Ale je to otázka priorit, jestli chceme nízkou inflaci za cenu nějaké bolesti, nebo tady chceme žít třeba deset let s inflací kolem šesti procent, což je docela reálné, pokud národní banka nebude činit nic navíc oproti tomu, co už udělala v minulém složení.
+**Tomáš Havránek:** Jak říkáte, snižování inflace je pro řadu oblastí ekonomiky bolestivé. Je to otázka priorit. Chceme nízkou inflaci i za cenu určitých obtíží, nebo tu chceme žít třeba deset let s inflací kolem šesti procent? To je docela reálné, pokud národní banka neudělá víc, než už udělala v minulém složení.
 
-Myslím, že obecně česká populace je velice pasivní a málo náročná, protože se spokojí s vysvětlením, že se nedá nic dělat, inflace je něco jako povodeň a musíme to vydržet. A netlačíme na politiky, aby se upřesnili v zákoně zadání pro národní banku, o co přesně se má snažit a co by vedení národní banky postihlo, když svůj cíl plnit nebude, což jak pozorujeme, se děje v posledních měsících.
+Myslím, že česká veřejnost je obecně velmi pasivní a málo náročná. Spokojí se s vysvětlením, že se nedá nic dělat, že inflace je něco jako povodeň a musíme ji vydržet. Netlačíme na politiky, aby v zákoně upřesnili zadání pro národní banku: o co přesně má usilovat a jaký postih čeká její vedení, když cíl nebude plnit. Právě v posledních měsících vidíme, že svůj cíl neplní.
 
 **Jana Klímová:** Co byste navrhoval? Jak by se měl zákon změnit?
 
-**Tomáš Havránek:** Navrhoval bych v zákoně jasně vymezit, co po národní bance chceme. Protože Ústava nám říká, že národní banka pečuje o cenovou stabilitu, ale ona si to vykládá jako dvouprocentní inflaci, což se dá velmi těžko technicky zdůvodnit, že toto je cenová stabilita. Můžeme se bavit o tom, jestli to je nějaká zdravá inflace, ale ta Ústava říká celkem jasně cenová stabilita.
+**Tomáš Havránek:** Navrhoval bych v zákoně jasně vymezit, co po národní bance chceme. Ústava říká, že národní banka pečuje o cenovou stabilitu. Banka si ji vykládá jako dvouprocentní inflaci, ale z technického hlediska se jen těžko zdůvodňuje, proč by to měla být cenová stabilita. Můžeme se bavit o tom, jestli je taková inflace zdravá. Ústava ale mluví celkem jasně o cenové stabilitě.
 
-A pomohlo by v zákoně vyjasnit, co se tím myslí. Já bych byl nejradši za dlouhodobě nulovou průměrnou inflaci, což opravdu odpovídá cenové stabilitě. Nebo to může být jiný cíl, na kterém se dohodneme. Ale mělo by to být jasné zadání, podle kterého lze potom hodnotit vedení národní banky a navázat na takovou výkonnost i finanční hodnocení, jako je to běžné v jiných velkých firmách.
+Pomohlo by v zákoně vyjasnit, co se tím myslí. Nejraději bych viděl dlouhodobě nulovou průměrnou inflaci, která skutečně odpovídá cenové stabilitě. Můžeme se dohodnout i na jiném cíli. Zadání by ale mělo být jasné, aby se podle výsledků dalo hodnotit a odměňovat vedení národní banky, jak je běžné v jiných velkých firmách.
 
-To znamená, není úplně vhodné, aby si jednak sama banka stanovovala, co je jejím cílem, a druhak aby nebyla nijak odpovědná vůbec nikomu.
+Není úplně vhodné, aby si banka sama stanovovala cíl a zároveň za jeho plnění nikomu neodpovídala.
 
 **Jana Klímová:** Čili vysoká inflace, nulové odměny členům bankovní rady. Takto to myslíte?
 
-**Tomáš Havránek:** Přesně tak. Členové by si podle mě zasloužili mnohem vyšší plat v normální době, abychom mohli pro takovou práci nalákat i lidi ze zahraničí, aby to pro ně bylo zajímavé. Čili když se jim daří a inflace kolem nuly, tak klidně, ať jsou platy mnohem vyšší.
+**Tomáš Havránek:** Přesně tak. Členové bankovní rady by si podle mě za normálních okolností zasloužili mnohem vyšší plat. Mohli bychom tak na tuhle práci nalákat i lidi ze zahraničí. Když se radě daří a inflace je kolem nuly, ať jsou platy klidně mnohem vyšší.
 
-Ale pokud je inflace takto veliká a věříme tomu, že národní banka má nad inflací kontrolu, což tomu většina ekonomů opravdu věří, většina modelů to ukazuje, tak není vhodné, aby neměli žádné konsekvence, aby se nějak nepodíleli na utrpení většiny domácností.
+Pokud je ale inflace takhle vysoká a věříme, že ji má národní banka pod kontrolou, jak si skutečně myslí většina ekonomů a jak ukazuje většina modelů, mělo by to mít důsledky i pro členy bankovní rady. Měli by aspoň zčásti pocítit utrpení většiny domácností.
 
-A my ekonomové věříme, že finanční motivace funguje, že mění chování lidí. A kdyby dvouciferná inflace znamenala třeba pět milionů minus pro guvernéra ten daný rok, tak byste viděli, že by se to chování rozhodně změnilo. To je základní ekonomický princip a ničemu by to neuškodilo.
+My ekonomové věříme, že finanční motivace funguje a mění chování lidí. Kdyby dvouciferná inflace znamenala pro guvernéra v daném roce třeba o pět milionů méně, viděli byste, že by se jeho chování rozhodně změnilo. To je základní ekonomický princip a ničemu by to neuškodilo.
 
-**Jana Klímová:** Nepodvazovalo by to objektivitu jejich rozhodování, kdyby jim šlo jenom o vlastní peníze. Přece jenom třeba to, že existuje nějaká inflace, čili růst cen, tak to zvyšuje atraktivitu investic. Takže nějaký smysl to přece jenom má.
+**Jana Klímová:** Nepodvazovalo by to objektivitu jejich rozhodování, kdyby jim šlo jenom o vlastní peníze? Přece jenom to, že existuje nějaká inflace, čili růst cen, zvyšuje atraktivitu investic. Takže nějaký smysl to přece jenom má.
 
-**Tomáš Havránek:** To je možná na samostatný rozhovor, to je velmi široké téma. Mluvím o tom rád. Ale jenom stručně. Na to jsou stovky studií, které odhadují, jaká je zdravá inflace. Ta inflace, jak jste řekla správně, má i své výhody. Také má spoustu nevýhod, jak vidíme dnes, když to zjednoduším, znehodnocuje úspory.
+**Tomáš Havránek:** To je široké téma, možná na samostatný rozhovor. Mluvím o něm rád, ale vezmu to stručně. Stovky studií odhadují, jaká inflace je zdravá. Jak jste správně řekla, inflace má své výhody. Má i spoustu nevýhod. Zjednodušeně řečeno znehodnocuje úspory, jak dnes vidíme.
 
-A nejhorší na tom je ta nejistota. Nevíte, jaká ta inflace bude za rok nebo v horizontu deseti let. Čili minimálně jednoduchá změna, kterou by ta národní banka měla udělat a kterou věřím, že udělá, je nesnažit se o inflaci znova každý rok dvě procenta, ale v průměru - čili aby nám garantovala, že v průměru třeba za deset let bude inflace dvě procenta.
+Nejhorší je nejistota. Nevíte, jaká bude inflace za rok nebo v horizontu deseti let. Národní banka by měla udělat alespoň jednu jednoduchou změnu a věřím, že ji udělá. Místo aby znovu každý rok usilovala o dvě procenta, měla by nám zaručit dvouprocentní inflaci v průměru třeba za deset let.
 
-Potom můžete daleko lépe plánovat a odstraníte nejistotu. I pro investice, o kterých jste mluvila, to bude lepší. A dá se ukázat i v modelech, že za rozumných předpokladů to vychází lépe, toto cílování průměrné inflace.
+Pak můžete mnohem lépe plánovat a nejistota odpadne. Prospěje to i investicím, o kterých jste mluvila. I v modelech se dá ukázat, že za rozumných předpokladů vychází cílování průměrné inflace lépe.
 
-**Jana Klímová:** Pojďme se ještě vrátit k loňské a letošní inflaci. Co jsou příčiny? Když se podíváme do těch střev, tak nejvíc meziročně zdražily základní potraviny - mouka, chleba, máslo, vejce. Je to i předmětem řady diskusí prezidentských kandidátů a politiků ve Sněmovně. Kvůli ekonomické situaci bude hlasování o nedůvěře vládě a tak dále. Co se podle vás děje v tomto směru v Česku? Je to podle vás nějaká porucha trhů, nebo jenom výrobci v tomto oboru vzali příležitost, že se zdražuje, do vlastních rukou nebo za vším stojí drahé energie, zvyšující se náklady?
+**Jana Klímová:** Pojďme se ještě vrátit k loňské a letošní inflaci. Jaké jsou příčiny? Když se podíváme do těch střev, tak nejvíc meziročně zdražily základní potraviny: mouka, chleba, máslo, vejce. Je to i předmětem řady diskusí prezidentských kandidátů a politiků ve Sněmovně. Kvůli ekonomické situaci bude hlasování o nedůvěře vládě. Co se podle vás děje v tomto směru v Česku? Je to podle vás nějaká porucha trhů, nebo výrobci v tomto oboru jen využili příležitosti zdražit, nebo za vším stojí drahé energie, zvyšující se náklady?
 
-**Tomáš Havránek:** Energie rozhodně, roli hrají hlavně vstupy. To znamená energie, potom třeba i hnojiva a další věci, které se zdražují z titulů, které úplně nesouvisí s českou situací, ale třeba i s válkou na Ukrajině. Samozřejmě zmenšuje se nabídka potravinářských výrobků, a to tlačí na vyšší ceny.
+**Tomáš Havránek:** Energie rozhodně. Hlavní roli hrají vstupy, tedy energie, hnojiva a další věci, které zdražují z důvodů, jež přímo nesouvisejí s českou situací. Patří mezi ně třeba válka na Ukrajině. Nabídka potravin se zmenšuje, a to tlačí ceny vzhůru.
 
-Ale rozhodně by také pomohlo, kdyby na našem trhu byla větší konkurence v těchto potravinářských řetězcích. V našem systému dominuje jeden holding, jehož jméno začíná na A, který teď samozřejmě masivně vydělává. Vydělává dlouhodobě na dotacích z našich daní. Vydělává teď na vysokých cenách, které zase vidíme v obchodech.
+Rozhodně by ale pomohla i větší konkurence v potravinářských řetězcích na našem trhu. Dominuje tu jeden holding, jehož jméno začíná na A a který teď masivně vydělává. Dlouhodobě vydělává na dotacích z našich daní, teď i na vysokých cenách, které vidíme v obchodech.
 
-**Jana Klímová:** Já ho řeknu, je to Agrofert. Ale oni zase tvrdí, že za všechno můžou řetězce, že tam je porucha konkurence - v obchodu, ne ve výrobě.
+**Jana Klímová:** Já to jméno řeknu. Je to Agrofert. Ale oni zase tvrdí, že za všechno můžou řetězce, že tam je porucha konkurence v obchodu, ne ve výrobě.
 
-**Tomáš Havránek:** U řetězců funguje konkurence podle mě poměrně dobře, jak vidíte, když projíždíte různými městy, kolik různých obchodních domů vidíte. Tam konkurence funguje dobře, ale často v té výrobě máte opravdu skoro monopolní situaci, která je navíc vertikálně integrovaná, takže potom se s tím těžko soupeří. A samozřejmě toto generuje nadměrné zisky pro našeho největšího zemědělce.
+**Tomáš Havránek:** Mezi obchodními řetězci podle mě konkurence funguje poměrně dobře. Stačí si všimnout, kolik různých obchodních domů vidíte, když projíždíte městy. Ve výrobě ale často máte opravdu skoro monopolní situaci a k tomu ještě vertikální integraci. Tomu se těžko konkuruje. Našemu největšímu zemědělci to přináší nadměrné zisky.
 
-Ale situace se zas tak moc neliší od ostatních zemí, takže to není primární příčina. Rozhodně ale využívají příležitosti k tomu, aby vydělali nadměrné zisky.
+Situace se ale od ostatních zemí tolik neliší, takže to není hlavní příčina. Příležitost k nadměrným ziskům ovšem rozhodně využívají.
 
-**Jana Klímová:** Inflace by byla ještě vyšší nebýt úsporného tarifu na elektřinu v říjnu a v prosinci zase inflaci směrem dolů ovlivnilo zlevnění pohonných hmot. Není tohle důvod k tomu, aby byla vláda aktivnější, pokud jde o pomoc s cenami energií nebo nafty. Zmiňoval jste, že vidíte hlavní vinu vysoké inflace u České národní banky, ale nemohla by vláda udělat něco víc? Nebo jak se díváte na ty dosavadní kroky vlády i z pohledu toho, že jste členem NERVu, který radí vládě?
+**Jana Klímová:** Nebýt úsporného tarifu na elektřinu v říjnu, inflace by byla ještě vyšší. V prosinci zase inflaci směrem dolů ovlivnilo zlevnění pohonných hmot. Není tohle důvod k tomu, aby byla vláda aktivnější, pokud jde o pomoc s cenami energií nebo nafty? Zmiňoval jste, že vidíte hlavní vinu vysoké inflace u České národní banky, ale nemohla by vláda udělat něco víc? Nebo jak se díváte na ty dosavadní kroky vlády i z pohledu toho, že jste členem NERVu, který radí vládě?
 
-**Tomáš Havránek:** Tak zrovna úsporný tarif, upřímně řečeno, to jméno je malinko zavádějící, protože to není tarif.
+**Tomáš Havránek:** Název „úsporný tarif“ je upřímně řečeno trochu zavádějící. O tarif tu nejde.
 
 **Jana Klímová:** Ano, byl to v podstatě voucher pro všechny.
 
-**Tomáš Havránek:** Je to něco, co bychom v ekonomii nazvali vrtulníkové peníze. To znamená, že dostanete peníze od vlády, která vám je dá jen tak. Ale to, že to vidíme promítnuté v inflaci, nedává ekonomický smysl. Nerozumím tomu, proč to Český statistický úřad takto udělal, a dlouhodobě naopak tu inflaci spíš zvýší, protože to znamená, že máme trochu víc peněz, než bychom jinak měli.
+**Tomáš Havránek:** V ekonomii bychom tomu říkali vrtulníkové peníze. Vláda vám zkrátka jen tak dá peníze. Promítnout to do inflace ale nedává ekonomický smysl. Nerozumím, proč to Český statistický úřad udělal. Dlouhodobě to naopak inflaci spíš zvýší, protože máme o něco víc peněz, než bychom jinak měli.
 
-Říkám, že za inflaci převážně může národní banka. V zemi, která má vlastní měnu, tak většina kolegů se tom shodne na tom, že to tak je. Ale i podle novějších teorií, jako je třeba fiskální teorie, může mít vliv hospodaření vlády. Ale dlouhodobé. Čili ani ne tak covidové schodky nebo současné schodky, ale dlouhodobá neudržitelnost státních financí, která teď vychází najevo, když se podíváte na projekce Národní rozpočtové rady. A tam je ten hlavní problém.
+Za inflaci podle mě odpovídá především národní banka. Většina kolegů se shodne, že to platí pro zemi s vlastní měnou. Podle novějších teorií, třeba fiskální teorie, může mít vliv i hospodaření vlády, ale v dlouhém období. Nejde tedy ani tak o covidové nebo současné schodky jako o dlouhodobou neudržitelnost státních financí, kterou ukazují projekce Národní rozpočtové rady. V tom je hlavní problém.
 
-Nějaké úpravy daní, nějaké drobné transfery moc dlouhodobě inflaci neovlivní. Ale co ji může opravdu ovlivnit je sestupná tendence našich veřejných financí v příštích dekádách, která opravdu vypadá tristně.
+Úpravy daní a drobné transfery inflaci dlouhodobě moc neovlivní. Opravdu ji ale může ovlivnit zhoršování stavu veřejných financí v příštích desetiletích. Ten výhled vypadá opravdu tristně.
 
-**Jana Klímová:** A jak by s tím vláda mohla bojovat? Vláda teď chystá různé změny. Je to jeden z důvodů, který naštval opozici - že chce zvyšovat daně a jak říká Andrej Babiš, chystá brutální utahování opasků. Byl byste příznivcem nějakých zásahů v daňové oblasti? A třeba pokud jde o DPH, o kterém se teď velmi diskutuje - že by měly být místo tří sazeb jenom dvě, kdy hrozí zdražení některých věcí, které jsou v té nejnižší sazbě.
+**Jana Klímová:** A jak by s tím vláda mohla bojovat? Vláda teď chystá různé změny. Opozici naštvalo mimo jiné to, že vláda chce zvyšovat daně a podle Andreje Babiše chystá brutální utahování opasků. Byl byste příznivcem nějakých zásahů v daňové oblasti? A třeba pokud jde o DPH? Teď se hodně diskutuje o tom, že by místo tří sazeb měly být jen dvě. Hrozí přitom zdražení některých věcí v nejnižší sazbě.
 
-**Tomáš Havránek:** Zopakoval bych, že samotný stav rozpočtu loni, letos nebo příští rok není z hlediska inflace, dlouhodobého vývoje této země, zas tak důležitý. Co je důležité, je ten výhled - střednědobý a dlouhodobý. A tam by tyto drobné změny daní nebo nějaké drobné škrty vlastně zas velký vliv hrát nebudou.
+**Tomáš Havránek:** Samotný stav rozpočtu loni, letos ani příští rok není pro inflaci a dlouhodobý vývoj země až tak důležitý. Záleží na střednědobém a dlouhodobém výhledu. Drobné změny daní a menší škrty na něj velký vliv mít nebudou.
 
-Teď je důležitá jednak prorůstová politika a pokud možno redukce regulace, kde to ještě trochu jde, ale hlavně vyřešit dva hlavní problémy na straně příjmů a výdajů. Na straně výdajů to jsou důchody.
+Teď je důležitá prorůstová politika a pokud možno i omezení regulace tam, kde to ještě trochu jde. Především ale musíme vyřešit dva hlavní problémy, jeden na straně příjmů a druhý na straně výdajů. Na výdajové straně jde o důchody.
 
-Důchodový systém je opravdu neudržitelný. Všichni to vědí a dlouhodobě se s tím bohužel nic nedělá z toho důvodu, že to samozřejmě někdo musí zaplatit. A zatím to vypadá tak, že to zaplatí budoucí důchodci.
+Důchodový systém je opravdu neudržitelný. Všichni to vědí, ale dlouhodobě se s tím bohužel nic nedělá, protože to někdo musí zaplatit. Zatím to vypadá, že to budou budoucí důchodci.
 
-**Jana Klímová:** A bude podle vás stačit to, co se připravuje, že se prodlouží věk odchodu do důchodu a možná nějak upraví valorizace?
+**Jana Klímová:** Bude podle vás stačit to, co se připravuje, tedy zvýšení věku odchodu do důchodu a případná úprava valorizace?
 
-**Tomáš Havránek:** Nebude to stačit. Tyto parametrické změny sice můžou pomoct, ale není to něco, co by ten dlouhodobý problém odstranilo. Je tady potřeba nová společenská dohoda a říci jasně, že to zaplatíme všichni a že není fér, aby to platila jenom jedna část populace, to znamená budoucí důchodci, ale že se na tom musí podílet všichni a že to bude bolet.
+**Tomáš Havránek:** Nebude to stačit. Parametrické změny sice můžou pomoct, ale dlouhodobý problém neodstraní. Potřebujeme novou společenskou dohodu a musíme si jasně říct, že to zaplatíme všichni a že to bude bolet. Není fér, aby náklady nesli jen budoucí důchodci.
 
-A ten druhý velký bod, který je potřeba řešit a něco s ním dělat, jsou devizové rezervy národní banky, která má tři biliony korun v jiných měnách - eurech, dolarech a dalších měnách - a tyto peníze evidentně nechce použít na podporu koruny. Tak dobře.
+Druhé velké téma, které je potřeba řešit, jsou devizové rezervy národní banky. Banka má tři biliony korun v eurech, dolarech a dalších měnách a ty peníze evidentně nechce použít na podporu koruny. Dobře.
 
-Ale potom by je měla použít na dlouhodobé investování, protože ty peníze budou hodně vydělávat - třeba kdyby byly investovány do akcií - tak by to dlouhodobě v průměru měly být stovky miliard korun. A tím by se to splatila ta současná ztráta České národní banky. A v budoucnu by podle zákona ty přebytky musela platit státu. Takže tím by vlastně ucpala velkou část díry státním rozpočtu.
+Pak by je ale měla dlouhodobě investovat. Kdyby byly třeba v akciích, měly by v dlouhodobém průměru vynášet stovky miliard korun. Tím by se splatila současná ztráta České národní banky. Budoucí přebytky by podle zákona musela odvádět státu a pokryla by tím velkou část schodku státního rozpočtu.
 
-Čili dohromady to musí být reforma, která začne u největších položek - to znamená největší položka u příjmů, největší položka u výdajů.
+Reforma tedy musí začít u největších položek na straně příjmů i výdajů.
 
-**Jana Klímová:** Jste pro zvyšování daní - jak DPH, tak přímých daní, tedy daní z příjmu?
+**Jana Klímová:** Jste pro zvýšení DPH i přímých daní, tedy daní z příjmu?
 
-**Tomáš Havránek:** To jsem neřekl. Myslím, že to není úplně důležité. Není za každou cenu důležité snažit se stlačit letošní schodek o pár desítek miliard, pokud by to mělo podvázat budoucí ekonomický růst.
+**Tomáš Havránek:** To jsem neřekl. Myslím, že to není úplně důležité. Nemusíme za každou cenu stlačit letošní schodek o pár desítek miliard, pokud by to mělo podvázat budoucí růst ekonomiky.
 
-Zvýšení DPH se mi obecně jeví jako lepší způsob, a to proto, že tím daníte spotřebu, nedaníte práci. Když daníte práci, tak lidi odrazujete od toho, aby pracovali. Což je v situaci, kdy vám chybí zaměstnanci v řadě firem, tak to možná není úplně správné řešení. A navíc dneska zaměstnanci platí největší část daní.
+Zvýšení DPH mi obecně připadá jako lepší cesta. Daníte tím spotřebu místo práce. Když daníte práci, odrazujete lidi od toho, aby pracovali. V situaci, kdy řadě firem chybějí zaměstnanci, to možná není úplně správné řešení. Navíc dnes zaměstnanci platí největší část daní.
 
-To jsou lidé, kteří se opravdu daním vyhnout nemůžou. Na rozdíl od ostatních skupin populace, od firem nebo od OSVČ. Zaměstnancům to strháváme přímo z výplaty, takže oni opravdu daně platí všechny. A když malinko přenesete tu zátěž z práce na spotřebu, tak to bude něco, co bude i z tohoto pohledu spravedlivé.
+Zaměstnanci se na rozdíl od jiných skupin, třeba firem nebo OSVČ, daním opravdu vyhnout nemůžou. Strháváme jim je přímo z výplaty, takže je skutečně platí všechny. Přesunout malou část daňové zátěže z práce na spotřebu by i z tohoto hlediska bylo spravedlivé.

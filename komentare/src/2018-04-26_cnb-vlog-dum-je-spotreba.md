@@ -4,83 +4,92 @@ media: "video"
 outlet: "Česká národní banka"
 url: "https://www.cnb.cz/cs/o_cnb/vlog-cnb/Nejcitovanejsi-cesky-ekonom-Dum-je-pro-me-spotreba/"
 date: "2018-04-26"
+updated: "2026-11-26"
 headline: "Nejcitovanější český ekonom: Dům je pro mě spotřeba"
 byline: "Tomáš Havránek"
-body_note: "Rozhovor pro vlog České národní banky z doby, kdy Tomáš Havránek působil jako poradce bankovní rady; ptá se redaktorka ČNB, kterou pořad nejmenuje. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3; kdo co říká, je určeno podle hlasu. Odpovědi Tomáše Havránka jsou upraveny jako autorizovaný rozhovor, tedy spisovně a bez výplňových slov, opakování a nedokončených začátků vět; řeč redaktorky jen lehce. Čísla, zápory ani míra opatrnosti se neměnily. Větu „A jako takové by podle něj měly mít určitou váhu v indexu spotřebitelských cen“, v níž se o Tomáši Havránkovi mluví ve třetí osobě, text přiřazuje redaktorce podle obsahu; poslechem to ověřit nešlo."
+interviewer: "Markéta Dvořáková Fišerová"
+body_note: "Rozhovor pro vlog České národní banky z doby, kdy Tomáš Havránek působil jako poradce bankovní rady. Ptá se Markéta Dvořáková Fišerová. Text vychází ze strojového přepisu nahrávky (Whisper large-v3-turbo), ověřeného nezávislým modelem Whisper large-v3 a porovnaného s videem a anglickými titulky ČNB. Mluvčí jsou určeni podle hlasu a obrazu. V odpovědích Tomáše Havránka jsou pro snazší čtení upraveny věty a vynechána výplňová slova, opakování a nedokončené začátky vět. Otázky prošly lehkou jazykovou úpravou. Čísla, zápory ani míra opatrnosti se neměnily."
 youtube: "V4UAQ7znrEs"
 youtube_seconds: "469"
 youtube_upload: "2018-04-26T01:20:14-07:00"
 youtube_play_at: "66% 55%"
 description: "Tomáš Havránek ve vlogu ČNB o tom, co znamená být nejcitovanějším českým ekonomem, proč by ceny nemovitostí měly být v inflaci a co dělá poradce bankovní rady."
+word_count: "1069"
 ---
-**Redaktorka ČNB:** Celosvětově nejcitovanější český ekonom pracuje už od roku 2009 v České národní bance. Je jím poradce bankovní rady Tomáš Havránek. Tomáši, informaci o vašem prvenství přinesla největší světová databáze ekonomického výzkumu Ideas. Co to ale znamená?
+**Markéta Dvořáková Fišerová:** Celosvětově nejcitovanější český ekonom pracuje už od roku 2009 v České národní bance. Je jím poradce bankovní rady Tomáš Havránek. Tomáši, informaci o vašem prvenství přinesla největší světová databáze ekonomického výzkumu Ideas. Co to ale znamená?
 
-Kdo a kde vás cituje a k čemu je to vlastně dobré?
+Kdo a kde vás cituje a k čemu je to dobré?
 
-**Tomáš Havránek:** Citace, o kterých mluvíte, znamenají, že někdo váš výzkum vezme a použije pro svou práci, což je to, co jako výzkumník chcete nejvíc. Nás citují hlavně další zahraniční ekonomové, ale máme třeba i citaci v nejznámějším vědeckém časopise Science. Pro mě jako zaměstnance Národní banky je ale samozřejmě důležité hlavně využití našeho výzkumu v praxi. Takže jsem nejraději, když je můj výzkum použit tady u nás v ČNB.
+**Tomáš Havránek:** Citace, o kterých mluvíte, znamenají, že někdo váš výzkum použil ve své práci. A právě to si jako výzkumník přejete nejvíc. Citují nás hlavně další zahraniční ekonomové, ale máme například i citaci v nejznámějším vědeckém časopise Science. Pro mě jako zaměstnance Národní banky je samozřejmě nejdůležitější, aby se náš výzkum využíval v praxi. Nejraději jsem, když se můj výzkum využije přímo tady v ČNB.
 
-**Redaktorka ČNB:** Ale zpátky tedy tomu Žebříčku, proč se ta kvalita výzkumu tímto způsobem vlastně měří?
+**Markéta Dvořáková Fišerová:** Zpátky tedy k žebříčku. Proč se kvalita výzkumu měří právě tímto způsobem?
 
-**Tomáš Havránek:** Výzkum stojí peníze, jak víte, samozřejmě jako všechny ostatní činnosti. Takže chcete vidět, jaké má výsledky. U výzkumu se výsledky měří asi nejsnáze pomocí počtu citací, které ukazují, jak je daný projekt užitečný pro ostatní lidi, jak pro akademiky, tak pro praktiky.
+**Tomáš Havránek:** Výzkum stojí peníze jako každá jiná činnost. Chcete tedy vědět, jaké má výsledky. Ty se asi nejsnáze měří počtem citací. Ukazují, nakolik je výzkum užitečný pro ostatní, ať už jde o vědce, nebo o lidi z praxe.
 
-I využití v praxi totiž většinou vede přes akademické publikace, protože jinak nemůžete dost dobře zajistit, že daný projekt obstojí z hlediska mezinárodních standardů.
+I cesta k využití v praxi většinou vede přes akademické publikace. Jinak se těžko zajišťuje, aby projekt obstál i podle mezinárodních měřítek.
 
-**Redaktorka ČNB:** Jak často se stává, že se ty poznatky z toho ekonomického výzkumu skutečně využijí v praxi?
+**Markéta Dvořáková Fišerová:** Jak často se poznatky z ekonomického výzkumu skutečně využívají v praxi?
 
-**Tomáš Havránek:** Stává se to, doufám, docela často. Aspoň tady u nás v Národní bance, kde je třeba rozhodování bankovní rady skutečně založeno na jednom z důležitých vstupů.
+**Tomáš Havránek:** Doufám, že docela často, alespoň u nás v Národní bance. Jedním z důležitých podkladů pro rozhodování bankovní rady je model, který pomáhá odhadnout vývoj ekonomiky a její reakci na případné změny úrokových sazeb. Není to jednoduchý vzoreček, který bychom mohli slepě použít za všech okolností. Aby model zůstal nejlepší na světě, musíme ho pořád zlepšovat. I to je ekonomický výzkum.
 
-To je model, který se používá k odhadům vývoje ekonomiky a její reakce na případné změny úrokových sazeb. Ten model ale není nějaký jednoduchý vzoreček, který bychom mohli vzít a slepě aplikovat v jakékoli situaci. Musí se pořád zlepšovat a vylepšovat. A i to je ekonomický výzkum: aby ten model zůstal nejlepší na světě.
-
-**Redaktorka ČNB:** Takže se dá říct, že ten náš model je skutečně nejlepší na světě?
+**Markéta Dvořáková Fišerová:** Dá se tedy říct, že náš model je skutečně nejlepší na světě?
 
 **Tomáš Havránek:** Patří mezi nejlepší na světě, nepochybně.
 
-**Redaktorka ČNB:** Na jaká další témata se ten současný ekonomický výzkum celosvětově zaměřuje?
+**Markéta Dvořáková Fišerová:** Na jaká další témata se dnes zaměřuje ekonomický výzkum ve světě?
 
-**Tomáš Havránek:** Kdybych měl zůstat u měnové ekonomie, měnové politiky, je to určitě otázka, co by centrální banky měly dělat během další recese, která nepochybně přijde. Otázka je kdy. To nevíme, to neví nikdo. Úrokové sazby jsou obecně hodně nízko, nejen u nás, ale i ve světě.
+**Tomáš Havránek:** Když zůstanu u měnové ekonomie a měnové politiky, určitě je důležité, co by centrální banky měly dělat při další recesi. Ta nepochybně přijde. Nikdo ale neví kdy. Úrokové sazby jsou obecně hodně nízko, u nás i ve světě.
 
-Pomoci ekonomice snížením sazeb už tedy nebude tak jednoduché, a proto se mluví o různých jiných alternativách. Ve světě se například hodně diskutuje o nějaké formě přímé podpory spotřeby. Pro centrální banku je ale vždycky hlavní cenová stabilita.
+Pomoci ekonomice snížením sazeb už tedy nebude tak jednoduché. Proto se zvažují jiné možnosti. Ve světě se například hodně mluví o nějaké formě přímé podpory spotřeby. Pro centrální banku ale vždycky zůstává hlavní cenová stabilita.
 
-Ale i pro cenovou stabilitu je v krizi důležité nějak zvednout náladu lidí.
+I pro cenovou stabilitu je ale v krizi důležité lidem nějak zvednout náladu.
 
-**Redaktorka ČNB:** Je dnes podle vás ekonomie spíše exaktní, tedy na matematice založenou vědou, anebo spíše vědou společenskou?
+**Markéta Dvořáková Fišerová:** Je dnes podle vás ekonomie spíše exaktní, tedy na matematice založenou vědou, anebo spíše vědou společenskou?
 
-**Tomáš Havránek:** Ekonomie určitě má jak exaktní prvky z matematiky, tak humanitní prvky, třeba z psychologie. Dohromady je to společenská věda, čistě sociální věda, která vám ale nedá nějaký všelék na všechny problémy společnosti, dokonce ani ekonomiky. I taková ryze ekonomická, důležitá ekonomická událost, jako byla průmyslová revoluce, totiž vlastně nemá ekonomické vysvětlení...
+**Tomáš Havránek:** Ekonomie má určitě exaktní prvky z matematiky i humanitní prvky třeba z psychologie. Jako celek je to čistě společenská věda. Nemá ale recept na všechny problémy společnosti, a dokonce ani ekonomiky. Vždyť ani průmyslová revoluce, tak významná a ryze ekonomická událost, nemá ekonomické vysvětlení. Vysvětlit se dá spíš sociologicky.
 
-**Redaktorka ČNB:** S viceguvernérem Mojmírem Hamplem, jehož jste mimochodem poradcem, jste publikovali několik textů na téma zahrnutí ceny nemovitostí do inflace. Mě by zajímalo, proč je zrovna tohle téma pro vás důležité?
+**Markéta Dvořáková Fišerová:** S viceguvernérem Mojmírem Hamplem, jehož jste poradcem, jste publikovali několik textů o zahrnutí cen nemovitostí do inflace. Proč je pro vás tohle téma důležité?
 
-**Tomáš Havránek:** Mimo jiné proto, že teď s manželkou stavíme dům, a to proto, abychom v něm potom žili s našimi čtyřmi dětmi, a ne proto, abychom ho během několika let prodali. Takže ten dům je pro nás spotřeba. Peníze, které do něj vložíme, jsou spotřeba.
+**Tomáš Havránek:** Mimo jiné proto, že teď s manželkou stavíme dům, abychom v něm žili s našimi čtyřmi dětmi, a ne abychom ho během několika let prodali. Dům je pro nás tedy spotřeba. Peníze, které do něj vložíme, jsou výdajem na spotřebu a jako takové by podle mě měly mít určitou váhu v indexu spotřebitelských cen. Právě stabilitu tohoto indexu ČNB zajišťuje.
 
-**Redaktorka ČNB:** A jako takové by podle něj měly mít určitou váhu v indexu spotřebitelských cen. To je ten index, jehož stabilitu ČNB zajišťuje.
+**Markéta Dvořáková Fišerová:** Ve skutečnosti to tak tedy není. Ceny nemovitostí se v současnosti do inflace vůbec nezapočítávají?
 
-Ta realita taková tedy není. V současnosti ty ceny nemovitostí vůbec do inflace zahrnuty nejsou?
+**Tomáš Havránek:** V Česku ano, ale jen v omezené míře. Ve většině ostatních zemí se nezapočítávají vůbec. Otázka je, jak velkou váhu by nemovitosti měly mít. Jestli 1 %, nebo třeba 10 %.
 
-**Tomáš Havránek:** V České republice ano, ale jen do omezené míry. Ve většině ostatních zemí tomu tak vůbec není. Otázka ale je, jak velkou váhu by nemovitosti měly mít, jestli 1%, nebo třeba 10%.
+**Markéta Dvořáková Fišerová:** Proč se ve světě vůbec nezapočítávají? Proč je situace ve světě jiná než u nás?
 
-**Redaktorka ČNB:** Proč to ve světě není zahrnuto vůbec? Proč ta situace vlastně ve světě a u nás je odlišná?
+**Tomáš Havránek:** Byty a domy se většinou považují spíš za investici než za spotřebu. Proto se z principu nezahrnují do indexu spotřebitelských cen. U nás je ale podle mě situace jiná než třeba ve Spojených státech, kde se lidé často stěhují a často prodávají byty a domy. Tady si první byt nebo dům často kupujeme na celý život, nebo skoro na celý život.
 
-**Tomáš Havránek:** Protože byty a domy se většinou považují spíš za investice než za spotřebu. Proto nejsou v indexu spotřebitelských cen konceptuálně uváděny. Já si ale myslím, že situace u nás je odlišná, třeba od Spojených států, kde se lidé často stěhují a domy a byty často prodávají. Tady, když si koupíme první byt nebo dům, je to často na celý život, nebo skoro na celý život.
+**Markéta Dvořáková Fišerová:** Má to nějakou spojitost také s tím, že většina lidí u nás bydlí ve svém vlastním bytě nebo domě?
 
-**Redaktorka ČNB:** Má to nějakou spojitost také s tím, že většina lidí u nás bydlí ve svém vlastním bytě nebo domě?
+**Tomáš Havránek:** Ano, do jisté míry to s tím určitě souvisí. Podíl lidí, kteří bydlí ve vlastním, je u nás jeden z nejvyšších v Evropě. Oproti Německu je vyšší o desítky procentních bodů. To je rozhodně také důležité.
 
-**Tomáš Havránek:** Ano, to s tím určitě do jisté míry také souvisí. Míra vlastnictví bytu či domu, ve kterém bydlíte, je u nás jedna z nejvyšších v Evropě. Oproti Německu je to o desítky procentních bodů víc. Takže to je rozhodně také důležitý faktor.
+**Markéta Dvořáková Fišerová:** Podle vás by se tedy v indexu spotřebitelských cen mělo rozlišovat, zda si člověk kupuje byt nebo dům k bydlení, anebo zda jde o druhou či třetí nemovitost, kterou kupuje jako investici.
 
-**Redaktorka ČNB:** Takže by se podle vás v tom indexu spotřebitelských cen mělo rozlišovat, jestli si ten dotyčný člověk koupí byt nebo dům za účelem bydlení, anebo pokud je to už jeho druhá nebo třetí nemovitost, tak za účelem investice.
+**Tomáš Havránek:** Ano, Markéto, podle mě je to výborný nápad. V praxi je ale těžké u konkrétní koupě zjistit, jaký záměr kupující skutečně má. Z hlediska koncepce by to ovšem bylo nejlepší.
 
-**Tomáš Havránek:** Ano, Markéto, myslím si, že je to výborný nápad, ale v praxi je potom těžko realizovatelné zjistit, jaká je u dané koupě bytu skutečnost. Konceptuálně by to ale takhle bylo nejlepší.
+**Markéta Dvořáková Fišerová:** Ale statisticky je to asi těžko proveditelné.
 
-**Redaktorka ČNB:** Ale statisticky je asi těžko proveditelné. Přesně tak. Od roku 2016 jste také poradcem bankovní rady, jak už jsem zmínila konkrétně Mojmíra Hampla. Co všechno tahle práce obnáší?
+**Tomáš Havránek:** Přesně tak.
 
-**Tomáš Havránek:** Práce poradce obnáší hlavně psaní mnoha stanovisek pro bankovní radu na různá témata. Bankovní rada totiž dostává týdně často i stovky stran dokumentů, poměrně technických materiálů, a úkolem poradce je poskytnout na ty materiály nějaký alternativní náhled, který by nebyl závislý na ostatních útvarech uvnitř banky, aby to byla určitá interní oponentura vůči tomu, co připravují ostatní sekce.
+**Markéta Dvořáková Fišerová:** Od roku 2016 jste také poradcem bankovní rady, konkrétně Mojmíra Hampla. Co všechno tahle práce obnáší?
 
-**Redaktorka ČNB:** Vedle této poradenské dále výzkumné činnosti také přednášíte na vysoké škole. Mě by zajímalo, co z toho všeho, co děláte, vás baví nejvíc?
+**Tomáš Havránek:** Jako poradce píšete pro bankovní radu hlavně spoustu stanovisek k nejrůznějším tématům. Rada dostává týdně často i stovky stran poměrně technických materiálů. Úkolem poradce je nabídnout pohled nezávislý na ostatních útvarech banky. Je to určitá vnitřní oponentura toho, co připravují jednotlivé sekce.
 
-**Tomáš Havránek:** Mě asi nejvíc baví pracovat se studenty na vysoké škole, protože, jak víte, účast na přednáškách je tam nepovinná. Když vám tedy na přednášku někdo přijde, vidíte, že vás asi chce poslouchat, což se vám jinak v životě moc často nestane.
+**Markéta Dvořáková Fišerová:** Vedle poradenské a výzkumné činnosti také přednášíte na vysoké škole. Co vás z toho všeho baví nejvíc?
 
-**Redaktorka ČNB:** Známou ekonomkou je také vaše žena Zuzana, která mimo jiné tvoří modely pro odhad volebních výsledků. Mě by zajímalo, jestli když se večer, tak se jdete doma po práci, jestli vůbec máte ještě někdy chuť si spolu povídat o ekonomii?
+**Tomáš Havránek:** Asi nejvíc mě baví práce se studenty na vysoké škole. Účast na přednáškách je nepovinná. Když vám tedy někdo na přednášku přijde, asi vás chce poslouchat. A to se vám jinak v životě moc často nestane.
 
-**Tomáš Havránek:** Nemáme. A myslím, že by ani nebylo zdravé pracovat večer. Snažím se tomu vždycky vyhnout. Občas se tomu ale nevyhnete, protože se něco musí dodělat velice rychle.
+**Markéta Dvořáková Fišerová:** Takže oceňujete tu přímou zpětnou vazbu.
 
-Tím, že máme čtyři děti, toho času během dne také moc není. Ale obecně se tomu snažíme vyhnout. Takže ekonomie není tématem našich večerních komunikací.
+**Tomáš Havránek:** Ano, dá se říct.
 
-**Redaktorka ČNB:** Musím přiznat, že takovou odpověď jsem tak trochu očekávala. Já vám děkuji Tomáši za rozhovor.
+**Markéta Dvořáková Fišerová:** Známou ekonomkou je také vaše žena Zuzana, která mimo jiné tvoří modely pro odhad volebních výsledků. Máte ještě někdy chuť si spolu povídat o ekonomii, když se večer sejdete doma po práci?
+
+**Tomáš Havránek:** Nemáme. Myslím, že by ani nebylo zdravé po večerech pracovat. Vždycky se tomu snažím vyhnout, ale občas to jinak nejde, když je potřeba něco velmi rychle dodělat.
+
+Se čtyřmi dětmi nemáme moc času ani přes den. Obecně se ale večer práci snažíme vyhnout. U sklenky vína se tedy o ekonomii nebavíme.
+
+**Markéta Dvořáková Fišerová:** Musím přiznat, že jsem takovou odpověď trochu očekávala. Děkuji vám, Tomáši, za rozhovor.
+
+**Tomáš Havránek:** Děkuji moc.

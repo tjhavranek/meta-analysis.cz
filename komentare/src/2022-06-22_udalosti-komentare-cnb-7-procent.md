@@ -4,61 +4,67 @@ media: "video"
 outlet: "Česká televize"
 url: "https://www.ceskatelevize.cz/porady/1096898594-udalosti-komentare/222411000370622/cast/920375/"
 date: "2022-06-22"
+updated: "2026-11-26"
 headline: "Události, komentáře: ČNB zvýšila základní úrokovou sazbu na 7 %"
 byline: "Tomáš Havránek"
-body_note: "Rozhovor v Událostech, komentářích ČT z večera, kdy ČNB zvedla základní sazbu na 7 %; moderátora titulky nejmenují. Pořad má více témat, zde je jen část, na kterou vede odkaz. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3 a porovnaný s titulky ČT; mluvčí jsou určeni podle titulků a hlasu. Odpovědi Tomáše Havránka jsou upraveny jako autorizovaný rozhovor, tedy spisovně a bez výplňových slov, opakování a nedokončených začátků vět; řeč moderátora jen lehce. Čísla, zápory ani míra opatrnosti se neměnily, jen zjevné přeřeknutí „sedm procentních bodů“ je opraveno na „sedm procent“, protože jde o výši sazby. Průměrná sazba hypoték v úvodním komentáři (5,71 %) je ověřena poslechem."
+body_note: "Rozhovor v Událostech, komentářích ČT z večera, kdy ČNB zvedla základní sazbu na 7 %. Ptá se Jakub Železný. Pořad má více témat, zde je jen část, na kterou vede odkaz. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3 a porovnaný s titulky ČT. Mluvčí jsou určeni podle titulků a hlasu. V odpovědích Tomáše Havránka jsou místy zkrácena souvětí, upraven slovosled a vypuštěna výplňová slova, opakování a nedokončené začátky vět. Řeč moderátora prošla lehkou jazykovou úpravou. Čísla, zápory ani míra opatrnosti se neměnily, jen zjevné přeřeknutí „sedm procentních bodů“ je opraveno na „sedm procent“, protože jde o výši sazby. Průměrná sazba hypoték v úvodním komentáři (5,71 %) je ověřena poslechem."
 description: "Tomáš Havránek v Událostech, komentářích ČT po zvýšení sazby ČNB na 7 % o konci zvyšování sazeb, inflaci jako dani z úspor a investování devizových rezerv."
+word_count: "833"
 ---
-**Moderátor:** Pojďme k tomu, jak zvyšovala Česká národní banka základní úrokovou sazbu. Loni v červnu začala s jejím zvedáním od čtvrtprocentního bodu na půl procenta. V říjnu pak přišlo první razantní zvýšení, ve kterém centrální bankéři pokračovali. Dnes, jak už jsme říkali, dosáhla reposazba až na sedm procent.
+**Jakub Železný:** Pojďme k tomu, jak Česká národní banka zvyšovala základní úrokovou sazbu. Loni v červnu začala zvýšením ze čtvrtprocentního bodu na půl procenta. V říjnu přišlo první razantní zvýšení a centrální bankéři ve zvyšování pokračovali. Dnes, jak už jsme říkali, dosáhla repo sazba sedmi procent.
 
-S tím, jak roste základní úroková sazba, rostou i úrokové sazby u hypoték a navyšují se tedy jejich splátky. Křivka znázorňuje zvyšování za poslední rok, tedy od června 2021. Průměrné sazby hypotečních úvěrů se navýšily až na současných 5,71 procenta. I když tempo mírně zpomalilo, sazby stále rostly.
+Se základní sazbou rostou i sazby u hypoték, a tedy i jejich splátky. Křivka ukazuje růst za poslední rok, od června 2021. Průměrná sazba hypotečních úvěrů stoupla až na současných 5,71 procenta. Tempo se sice mírně zpomalilo, sazby ale dál rostly.
 
 Hostem je Tomáš Havránek z Institutu ekonomických studií Fakulty sociálních věd Karlovy univerzity. Pane profesore Havránku, dobrý večer.
 
 **Tomáš Havránek:** Dobrý večer, děkuji za pozvání.
 
-**Moderátor:** Dalo se čekat, že ta sazba bude na sedmi procentech, nebo je vysoká, jak říkal pan exvicepremiér?
+**Jakub Železný:** Dala se sedmiprocentní sazba čekat, nebo je vysoká, jak říkal pan exvicepremiér?
 
-**Tomáš Havránek:** To se čekat dalo, ani jinak to být nemohlo, protože to už čekaly i finanční trhy. Kdyby bylo zvýšení menší než na sedm procent, koruna by nutně oslabila, protože vklady v korunách by byly méně výnosné. A tím pádem by potom i Národní banka musela víc intervenovat na posílení koruny, a to úplně nechce, tomu se chce vyhnout. Sazby ale zase také už nemohou být o moc vyšší, protože naše zadlužená ekonomika by to dlouhodobě neustála.
+**Tomáš Havránek:** Dalo se to čekat. Ani to jinak dopadnout nemohlo, protože se sedmi procenty už počítaly i finanční trhy. Kdyby ČNB sazbu zvýšila na nižší hodnotu než sedm procent, koruna by nutně oslabila, protože vklady v korunách by méně vynášely. Národní banka by pak musela víc intervenovat ve prospěch koruny, čemuž se chce vyhnout. O moc vyšší ale sazby být nemohou. Naše zadlužená ekonomika by to dlouhodobě neustála.
 
-**Moderátor:** Vy říkáte, že sazby mají obecně růst rychleji než inflace, aby zůstala pod kontrolou, takže v nějakém ideálním případě by to bylo na nějakých 15 až 16%, nebo víc.
+**Jakub Železný:** Říkáte, že sazby mají obecně růst rychleji než inflace, aby zůstala pod kontrolou. V ideálním případě by tedy byly na nějakých 15 až 16 %, nebo i výš.
 
-**Tomáš Havránek:** To je standardní ekonomická poučka: pokud inflace roste nějakým tempem, musíte sazby zvyšovat rychleji, než inflace roste, abyste ji zkrotili. To ale dnes není možné právě kvůli zadlužení nejenom vlády, ale i domácností a firem.
+**Tomáš Havránek:** To je standardní ekonomická poučka. Abyste inflaci zkrotili, musíte sazby zvyšovat rychleji, než roste inflace. Dnes to ale kvůli zadlužení vlády, domácností i firem není možné.
 
-**Moderátor:** Dokážete si představit další zvyšování úrokových sazeb během léta a podzimu?
+**Jakub Železný:** Dokážete si představit další zvyšování úrokových sazeb během léta a podzimu?
 
-**Tomáš Havránek:** Podle mě je to naprosto vyloučené. Díky novému složení bankovní rady, ale právě i kvůli tomu, co naše ekonomika ještě možná snese.
+**Tomáš Havránek:** Podle mě je to naprosto vyloučené. Jednak kvůli novému složení bankovní rady a jednak kvůli tomu, co ještě naše ekonomika možná snese.
 
-**Moderátor:** Vy znáte velmi dobře budoucího guvernéra Aleše Michla. Je jisté, že růst sazeb se po jeho nástupu zastaví? Dá se to očekávat?
+**Jakub Železný:** Vy znáte velmi dobře budoucího guvernéra Aleše Michla. Je jisté, že růst sazeb se po jeho nástupu zastaví? Dá se to očekávat?
 
-**Tomáš Havránek:** Podle mě je to zcela jisté. Už i z toho důvodu, že ekonomika vyšší sazby neustojí.
+**Tomáš Havránek:** Podle mě je to zcela jisté. Už proto, že ekonomika vyšší sazby neustojí.
 
-**Moderátor:** Když jsme tady mluvili o situaci domácností, musíme samozřejmě zmínit také platy. Odbory tlačí na zvyšování platů ve veřejné sféře. Máme na to teď aktuálně?
+**Jakub Železný:** Když mluvíme o domácnostech, musíme zmínit také platy. Odbory tlačí na zvyšování platů ve veřejné sféře. Máme na to teď?
 
-**Tomáš Havránek:** Dlouhodobě na to samozřejmě nemáme, protože se zadlužení zvyšuje. Inflace ale zase pomáhá k tomu, že se jeho reálná hodnota snižuje. Opticky nám zadlužení roste, ale jeho reálná hodnota klesá, protože ho inflace umazává. Paradoxně tak bude naše zadlužení v poměru k HDP na konci roku de facto menší, než pravděpodobně bylo na začátku roku. A tak je to u všech z nás, kdo mají nějaký dluh.
+**Tomáš Havránek:** Dlouhodobě na to samozřejmě nemáme, protože zadlužení roste. Inflace ale snižuje reálnou hodnotu dluhu. Na první pohled tedy zadlužení roste, ale v reálném vyjádření ho inflace umazává. Paradoxně tak bude naše zadlužení v poměru k HDP na konci roku v podstatě nižší, než pravděpodobně bylo na začátku. Stejně to platí pro každého z nás, kdo má nějaký dluh.
 
-Hodnota dluhu se inflací snižuje a zaplatí to ti, kdo mají víc úspor než dluhů.
+Inflace snižuje hodnotu dluhu a zaplatí to ti, kdo mají víc úspor než dluhů.
 
-**Moderátor:** Snižování dluhu by znamenalo utahování opasku, taková poučka z počátku 90. let?
+**Jakub Železný:** Snižování dluhu by znamenalo utahování opasků. Taková poučka z počátku 90. let?
 
-**Tomáš Havránek:** Tohle utahování opasku probíhá u domácností, které spoří. Inflace je jako daň, která jim bere hodnotu úspor a přerozděluje ji k dlužníkům, tedy ke státu a k lidem, kteří mají hypotéku zafixovanou na nějakou delší dobu.
+**Tomáš Havránek:** Opasky si takhle utahují domácnosti, které spoří. Inflace funguje jako daň. Ubírá jim z hodnoty úspor a přesouvá ji k dlužníkům, tedy ke státu a k lidem, kteří mají sazbu hypotéky zafixovanou na delší dobu.
 
-**Moderátor:** To všechno jsou pro ty lidi velmi nepříjemné věci, nepříjemné situace, ale jedna věc nebo jedno téma, o kterém se mám pocit politici trošku zdráhají mluvit napříč politickým spektrem a to je případné zvyšování daní. Podle některých expertů se tomu nevyhneme.
+**Jakub Železný:** To všechno je pro lidi velmi nepříjemné. Napříč politickým spektrem se politici, mám pocit, trochu zdráhají mluvit o možném zvyšování daní. Podle některých expertů se mu nevyhneme.
 
 Kde stojíte v této otázce vy?
 
-**Tomáš Havránek:** Daně už rostou, a to prostřednictvím inflace. Inflace je vlastně daň na úspory, jak jsme se o tom bavili. Vidíme tu tedy rekordní zvýšení daní pro všechny, kdo mají velké úspory, kdo celý život šetřili, a teď jim inflace během pár let velmi snadno sežere třetinu úspor.
+**Tomáš Havránek:** Daně už rostou prostřednictvím inflace. Jak jsme říkali, inflace funguje jako daň z úspor. Pro lidi, kteří celý život šetřili a mají velké úspory, je to rekordní zvýšení daní. Během pár let jim inflace velmi snadno sežere třetinu úspor.
 
-I nějaké další zvyšování daní ale pravděpodobně bude nutné. Už tohle samo o sobě je přitom enormní, enormní daňová zátěž.
+Další zvyšování daní ale pravděpodobně bude nutné. Už samotná inflace přitom představuje enormní daňovou zátěž.
 
-**Moderátor:** Vy jste sám také řekl, že Česká národní banka by měla investovat třeba do nákupu akcií, trošku riskovat, když to nadnesu chovat se trošku tržně, jestli to chápu správně. Ona by ale riskovala vaše peníze, moje peníze, naše peníze. Co ta odpovědnost? Není to příliš riskantní krok?
+**Jakub Železný:** Řekl jste také, že by Česká národní banka měla investovat třeba do akcií, trochu riskovat a, když to nadnesu, chovat se trochu tržně. Chápu to správně? Riskovala by ale vaše, moje, naše peníze. Co odpovědnost? Není to příliš riskantní?
 
-**Tomáš Havránek:** Když to neudělá, jistě ztratí spoustu peněz. Má teď totiž v devizových rezervách, tedy v eurech a v dolarech, v přepočtu 3 biliony korun, ještě víc, a našim bankám, které si pak ty rezervy v korunách ukládají u Národní banky, musí dnes platit 7%. Rezervy jsou tedy velmi nákladné, a aby neprodělávaly, musí se investovat tak, jak to dělá třeba Singapur nebo fondy soukromých univerzit, aby dlouhodobě vydělávaly.
+**Tomáš Havránek:** Když to neudělá, určitě přijde o spoustu peněz. V devizových rezervách, tedy v eurech a dolarech, má teď v přepočtu přes 3 biliony korun. Našim bankám, které si u ní ukládají rezervy v korunách, musí dnes platit 7 %. Držet devizové rezervy je tedy velmi nákladné. Aby v dlouhém období vydělávaly a banka na nich neprodělávala, musí je investovat po vzoru třeba Singapuru nebo fondů soukromých univerzit.
 
-**Moderátor:** Jak říkal Klasik, zdroje jsou, tak otázka je, jestli ty zdroje někde jsou, třeba státní majetek, jeho privatizace, ztrátové podniky, jako je Česká pošta, České dráhy, anebo třeba ty podniky, o kterých čas od času někteří politici říkají, že stát nemá vařit pivo, budvar nemá ubytovávat lázeňské hosty, termál a tak dále. Pomohlo by to?
+**Jakub Železný:** Jak říkal klasik, zdroje jsou. Otázka je, jestli jsou někde třeba ve státním majetku, v jeho privatizaci. Máme tu ztrátové podniky jako Česká pošta a České dráhy. A pak třeba Budvar a Thermal, o kterých někteří politici občas říkají, že stát nemá vařit pivo ani ubytovávat lázeňské hosty. Pomohlo by to?
 
-**Tomáš Havránek:** To dlouhodobě neřeší hlavní strukturální problém veřejných financí. Jsou to spíš taková, řekněme, marketingová řešení, ale dlouhodobě to nijak moc nepomůže.
+**Tomáš Havránek:** Hlavní strukturální problém veřejných financí to dlouhodobě neřeší. Jsou to spíš, řekněme, marketingová řešení. Dlouhodobě moc nepomohou.
 
-**Moderátor:** Jaký je odhad? Váš odhad růstu inflace a vývoje ekonomiky v těch nejbližších měsících, pokud si to vůbec troufnete?
+**Jakub Železný:** Jaký je váš odhad růstu inflace a vývoje ekonomiky v nejbližších měsících, pokud si na něj vůbec troufnete?
 
-**Tomáš Havránek:** To si troufnu. Inflace se nepochybně přiblíží 20% někdy na přelomu, řekněme, léta a podzimu. A růst ekonomiky bude asi poměrně blízký nule. Nemyslím si, že budeme přímo v recesi, že by HDP klesalo, ale žádná velká hitparáda to v tomto smyslu nebude.
+**Tomáš Havránek:** To si troufnu. Inflace se nepochybně přiblíží 20 %, řekněme někdy na přelomu léta a podzimu. Růst ekonomiky bude asi dost blízko nule. Nemyslím, že přímo nastane recese a HDP klesne, ale žádná velká hitparáda to nebude.
+
+**Jakub Železný:** Děkuji za ty chmurné vyhlídky a za vaše komentáře, pane profesore. Díky, že jste přišel. Na shledanou.
+
+**Tomáš Havránek:** Děkuji, mějte se hezky.

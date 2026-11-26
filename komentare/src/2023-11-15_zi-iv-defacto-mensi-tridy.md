@@ -4,6 +4,7 @@ media: "audio"
 outlet: "Věda na FSV UK (podcast De Facto)"
 url: "https://science.fsv.cuni.cz/zuzana-havrankova-mensi-tridy-nenapomahaji-lepsim-vysledkum-zaku-ve-skolach/"
 date: "2023-11-15"
+updated: "2026-11-26"
 headline: "Zuzana Havránková: Menší třídy nenapomáhají lepším výsledkům žáků ve školách"
 byline: "Zuzana Havránková"
 interviewer: "Alice Němcová Tejkalová"
@@ -12,150 +13,151 @@ written_by_type: "Person"
 perex: "Jaké to je být ženou v ekonomických oborech? Na jakých zajímavých výzkumných projektech pracovala? A co je vlastně metaanalýza?"
 audio_url: "https://www.buzzsprout.com/1784031/episodes/14165937-zuzana-havrankova-mensi-tridy-nenapomahaji-lepsim-vysledkum-zaku-ve-skolach"
 audio_label: "podcast De Facto (Buzzsprout)"
-body_note: "Díl podcastu De Facto Fakulty sociálních věd UK, ptá se Alice Němcová Tejkalová. Věda na FSV UK vydala k epizodě psanou verzi (připravila Kristýna Springorum), ta ale pokrývá jen zhruba čtvrtinu rozhovoru a končí u odpovědi o velikosti tříd; zde je přepis celé 29minutové epizody. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3; mluvčí jsou určeni podle hlasu. Odpovědi Zuzany Havránkové jsou upraveny jako autorizovaný rozhovor, tedy spisovně a bez výplňových slov, opakování a nedokončených začátků vět; řeč moderátorky jen lehce. Čísla, zápory ani míra opatrnosti se neměnily. Tři tečky na začátku nebo konci repliky značí přerušení, nebo úsek, který nešlo ze zvuku spolehlivě zachytit."
+body_note: "V podcastu De Facto Fakulty sociálních věd UK se Alice Němcová Tejkalová ptá Zuzany Havránkové. Přepis pokrývá celou 29minutovou epizodu. Psaná verze Kristýny Springorum na webu Věda na FSV UK zachycuje zhruba čtvrtinu rozhovoru a končí u odpovědi o velikosti tříd. Základem je strojový přepis nahrávky pořízený modelem Whisper large-v3-turbo a ověřený nezávislým modelem Whisper large-v3. Mluvčí jsme určili podle hlasu. V odpovědích Zuzany Havránkové jsme pro snazší čtení vypustili slovní výplně, opakování a nedokončené začátky vět. Místy jsme rozdělili souvětí nebo upravili slovosled. Repliky moderátorky jsme upravili jen lehce. Čísla, zápory a míra jistoty odpovídají nahrávce. Tři tečky na začátku nebo konci repliky označují přerušení nebo místo, které se nepodařilo spolehlivě přepsat."
+word_count: "2791"
 ---
 
-**Alice Němcová Tejkalová:** Dobrý den, vítejte u podcastu De Facto, podcastu Fakulty sociálních věd. Dnes s Alicí Němcovou Tejkalovou a docentkou Zuzanou Havránkovou z Institutu ekonomických studií. Dobrý den. Zuzana Havránková patří mezi přední nejen české ekonomky a ekonomy.
+**Alice Němcová Tejkalová:** Dobrý den, vítejte u De Facto, podcastu Fakulty sociálních věd. Dnes s Alicí Němcovou Tejkalovou a docentkou Zuzanou Havránkovou z Institutu ekonomických studií. Dobrý den. Zuzana Havránková patří mezi přední ekonomky a ekonomy nejen v Česku.
 
 Díky ohlasům své práce je mezi 120 nejlepšími ekonomkami světa. Ze 17776 autorek identifikovaných databází IDEAS/RePEc je aktuálně na 118. místě. V roce 2018 získala cenu Kateřiny Šmídkové pro nejlepší českou ekonomku, je držitelkou ceny guvernéra Národní banky Slovenska za nejlepší doktorskou dizertaci relevantní pro měnovou politiku, dvakrát dostala cenu České národní banky za výzkumnou práci, v roce 2013 pak cenu ministra školství pro nejlepší studenty a absolventy.
 
-Má zkušenosti i z Helsinské univerzity a kalifornské Berkeley. Její výzkum byl publikován v prestižních časopisech a odkazují na něj v praxi třeba Bank of England, Evropský parlament nebo Mezinárodní měnový fond. Já teď možná na začátku trochu odskočím, protože ty jsi neuvěřitelně úspěšná, oceňovaná ekonomka a budeme se určitě bavit o tom, co všechno děláš, jaký výzkum a tak podobně. Ale protože je to podcast a protože je před Vánoci, tak mě zaujalo v tvém hesle na Wikipedii, že slavíš narozeniny na Silvestra.
+Má zkušenosti i z Helsinské univerzity a kalifornské Berkeley. Její výzkum byl publikován v prestižních časopisech a odkazují na něj v praxi třeba Bank of England, Evropský parlament nebo Mezinárodní měnový fond. Já teď na začátku možná trochu odbočím. Ty jsi neuvěřitelně úspěšná, oceňovaná ekonomka a budeme se určitě bavit o tom, co všechno děláš, jaký výzkum a tak podobně. Ale protože je to podcast a protože je před Vánoci, zaujalo mě v tvém hesle na Wikipedii, že slavíš narozeniny na Silvestra.
 
 Jaké to je?
 
-**Zuzana Havránková:** To je pravda, slavím narozeniny na Silvestra. Je to radost a zároveň je to vlastně trochu depresivní. Radost z toho, že se lidé v ten den těší a velice intenzivně očekávají další den, a to je právě ta deprese: že se těší, až to skončí. A zároveň mám pocit, že jsem na další rok vždycky o dva roky starší. Takže asi tak.
+**Zuzana Havránková:** To je pravda, slavím narozeniny na Silvestra. Je to radost a zároveň je to trochu depresivní. Mám radost z toho, jak se lidé ten den těší a jak intenzivně očekávají ten další. A právě na tom je něco depresivního: těší se, až ten můj den skončí. A s novým rokem si vždycky připadám o dva roky starší.
 
-**Alice Němcová Tejkalová:** Podle toho, co jsi za sebou dokázala, podle těch ocenění, je to určitě na dvojí život, takže se vůbec nedivím, že se cítíš každý rok o dva roky starší. Nicméně, kdyby si měla říct, protože teď se i celá řada studentů rozhoduje středních škol, kam potom půjde, proč jsi vybrat IES, proč jsi ty vybrala IES a proč jsi tady zůstala?
+**Alice Němcová Tejkalová:** Podle toho, co jsi za sebou dokázala, podle těch ocenění, je to určitě na dvojí život, takže se vůbec nedivím, že se cítíš každý rok o dva roky starší. Řada středoškoláků se právě rozhoduje, kam půjde dál. Proč si vybrat IES? Proč sis ho vybrala ty a proč jsi tu zůstala?
 
-**Zuzana Havránková:** IES mě samozřejmě zaujalo z několika důvodů. Jedním je, že je hodně zaměřené na kvantitativní matematickou analýzu, a myslím, že to je takový nosný prodejní argument IES. Když si studenti vybírají školy, jestli chtějí na nějakou jinou ekonomickou školu, nebo na IES, často se rozhodují podle toho, jestli chtějí management a využít své soft skills, nebo spíše analytické myšlení. A to se mi na tom velmi líbí.
+**Zuzana Havránková:** IES mě zaujalo z několika důvodů. Jedním z nich je silný důraz na kvantitativní matematickou analýzu. Myslím, že to je jeden z hlavních důvodů, proč si studenti IES vybírají. Když si studenti vybírají mezi IES a jinou ekonomickou školou, často zvažují, jestli se chtějí věnovat managementu a využít své měkké dovednosti, nebo se zaměřit spíš na analytické myšlení. To analytické zaměření se mi moc líbí.
 
-Zároveň IES samozřejmě úplně miluji proto, že má výrazně mezinárodní atmosféru: je tam hodně zahraničních studentů a hodně kurzů v angličtině. To je mi velmi sympatické i proto, že nejsem rodilá mluvčí a s češtinou se občas taky peru. Shodou okolností učím kurz v češtině, což je samo o sobě kuriózní, ale tak to dopadlo. Byla to tedy jasná volba. Vždycky jsem chtěla do Prahy, takže je to i Praha, i matematika, a samozřejmě renomé, které je teď, po patnácti letech mého působení na IES, už mezinárodní.
+IES miluju i pro jeho výrazně mezinárodní atmosféru. Je tam hodně zahraničních studentů a v angličtině se vyučuje spousta kurzů. To je mi sympatické i proto, že čeština není můj mateřský jazyk a občas s ní taky zápasím. Shodou okolností sama učím kurz v češtině. To je samo o sobě kuriózní, ale tak to dopadlo. IES pro mě bylo jasnou volbou. Vždycky jsem chtěla do Prahy, lákala mě matematika a samozřejmě i renomé institutu, které je dnes, po patnácti letech mého působení na IES, už mezinárodní.
 
-**Alice Němcová Tejkalová:** Ty se věnuješ vlastně způsobu výzkumu a vědy, který je hodně exaktní, právě hovořila se o matematice. Potkávaš se někdy s tím, že se lidé diví tomu, protože v Česku je hodně zakořeněné už od základního školství, že kluci jsou lepší na matematiku, holčičky spíš na humanitní vědy, často se s tím setkávají vlastně děti už od svého dětství. Zastavil někdy někdo tebe a řekl, ty nejsi dobrá na matematiku, protože jsi holka.
+**Alice Němcová Tejkalová:** Ty se věnuješ hodně exaktnímu výzkumu, právě jsi mluvila o matematice. Potkáváš se někdy s tím, že se tomu lidé diví? V Česku je už od základní školy hodně zakořeněná představa, že kluci jsou lepší na matematiku, holčičky spíš na humanitní vědy. Děti se s tím setkávají odmalička. Zastavil tě někdy někdo a řekl ti, že nejsi dobrá na matematiku, protože jsi holka?
 
-**Zuzana Havránková:** Zrovna tohle se mi úplně nestalo, ale myslím si, že moje studium provázela také velká pokora, pokud jde o to, na co mám a na co nemám. Samozřejmě, když jsi na střední škole, máš kolem sebe určitý okruh lidí. A ten okruh ti vytváří vnitřní dojem o tom, jak jsi dobrá. A je to, řekněme, hodně omezený okruh.
+**Zuzana Havránková:** Zrovna tohle se mi úplně nestalo. Myslím ale, že jsem během studia měla dost pokory, pokud jde o to, na co mám a na co nemám. Na střední škole máš kolem sebe určitý okruh lidí a podle nich si děláš obrázek o tom, jak jsi dobrá. Jenže ten okruh je dost omezený.
 
-A teď si představ, že se lidé z celé republiky a z okolí sjedou na jedno místo, jsou hodně dobří a ty vidíš úplně jiné srovnání. Žebříček je tam úplně jiný a vidíš, že je hodně lidí, kteří jsou mnohem, mnohem lepší než ty. Myslím, že nás to hodně učí, i pokoře, pokud jde o to, jací jsme, v čem jsme dobří a na co máme.
+Pak se na jednom místě sejdou výborní studenti z celé republiky i z okolí a najednou máš úplně jiné srovnání. Zjistíš, že je spousta lidí, kteří jsou mnohem lepší než ty. Myslím, že nás to hodně učí, mimo jiné pokoře, pokud jde o to, jací jsme, v čem jsme dobří a na co máme.
 
-Samozřejmě, když se člověk podívá na genderové rozložení studentů, kteří tam chodí, zcela jasně převažují kluci. Což je zase hezké, mně to nevadí.
+Mezi studenty tam jednoznačně převažují kluci. Což je zase hezké, mně to nevadí.
 
-**Alice Němcová Tejkalová:** Ty jsi koneckonců i v naší skupině pro detekování možných překážek v kariérním rozvoji žen na naší fakultě. Věnuješ se tomu tématu i na univerzitní úrovni vlastně v pracovní skupině. Tak kdyby jsi měla povzbudit nějaké uchazečky, které nás teď slyší, že IES je pro ně taky jedna z cest, proč se nemají bát.
+**Alice Němcová Tejkalová:** Ty jsi koneckonců i v naší skupině, která zjišťuje možné překážky v kariérním rozvoji žen na fakultě. Věnuješ se tomu i v pracovní skupině na univerzitní úrovni. Kdybys měla povzbudit uchazečky, které nás teď slyší, že IES je jedna z cest i pro ně, proč se nemají bát?
 
-**Zuzana Havránková:** Absolutně, rozhodně. A myslím, že ženy, které jsou na IES, jsou toho také důkazem. Vzhledem k tomu, že IES je hodně kvantitativně zaměřené, velká část práce, která se na IES dělá, se odehrává u počítače, v excelovských tabulkách a v různých statistických programech. Díky tomu máme i určitou volnost a časovou flexibilitu, která třeba rozhodně není úplně běžná v jiných oborech, jako je třeba medicína, kde člověk opravdu musí chodit mezi lidi a dělat svou práci na konkrétním místě, nebo biologie, kde lidé zůstávají v laboratořích a musí tam chodit a pracovat. Takže to z hlediska časové flexibility vnímám velice pozitivně.
+**Zuzana Havránková:** Rozhodně bych je povzbudila. Myslím, že ženy, které na IES jsou, ukazují, že je to cesta i pro ně. Institut je hodně kvantitativně zaměřený. Velká část práce se odehrává u počítače, v excelovských tabulkách nebo statistických programech. Máme díky tomu určitou volnost a můžeme si práci časově uspořádat způsobem, který v jiných oborech zdaleka není samozřejmý. V medicíně člověk musí pracovat s lidmi na konkrétním místě a v biologii zase chodí do laboratoře. Té časové volnosti si velmi cením.
 
-A protože učím i magisterský seminář k diplomovým pracím, vždycky se snažíme hodně motivovat právě holky a říkáme jim: založte si rodinu během doktorského studia. Není to problém, zvládnete to i vy, protože to zvládli ostatní.
+Učím také magisterský seminář k diplomovým pracím. Tam se vždycky snažíme povzbudit právě holky. Říkáme jim: „Založte si rodinu během doktorského studia. Není to problém. Zvládli to ostatní, zvládnete to i vy.“
 
-**Alice Němcová Tejkalová:** To je velmi pozitivní a všem ekonomkám fandíme, když se právě dostaneme k tomu, jak ty jsi studovala doktorát a jaká témata jsi vybrala. Věděla jsi hned od začátku, co chceš dělat a čemu se chceš věnovat?
+**Alice Němcová Tejkalová:** To je velmi pozitivní a všem ekonomkám fandíme. Jak jsi doktorát studovala ty a jaká témata sis vybrala? Věděla jsi od začátku, čemu se chceš věnovat?
 
-**Zuzana Havránková:** Věděla jsem to od začátku doktorátu, i když se to krystalizovalo v průběhu bakalářského a magisterského studia. A myslím, že největší krystalizace proběhla právě v Helsinkách, protože tam jsme se dostali k profesorovi Ilmakunnasovi v úplně běžném předmětu, který se tam vyučuje pro všechny zahraniční studenty: empirická analýza, nějaké ekonometrické zpracování různých věcí. A ten nám představil něco, čemu se říká metaanalýza.
+**Zuzana Havránková:** Na začátku doktorátu už jsem to věděla, ale ujasňovala jsem si to během bakalářského a magisterského studia. Rozhodující pro mě byly asi Helsinky. Profesor Ilmakunnas tam učil běžný předmět pro všechny zahraniční studenty, ve kterém jsme se věnovali empirické analýze a ekonometrickému zpracování dat. A právě on nám představil metaanalýzu.
 
-Z toho vznikla seminární práce, z toho vznikla moje první publikace, a to recenzovaná, a z toho to vykrystalizovalo v to, co děláme dnes, tedy v metaanalýzu.
+Vznikla z toho seminární práce, pak moje první recenzovaná publikace a nakonec i to, čemu se věnujeme dnes: metaanalýza.
 
-**Alice Němcová Tejkalová:** Kdyby jsi nám ji měla přiblížit lidem, kteří se nevěnují ekonomii, co přesně děláte.
+**Alice Němcová Tejkalová:** Můžeš lidem, kteří se nevěnují ekonomii, přiblížit, co přesně děláte?
 
-**Zuzana Havránková:** Ano. Metaanalýza je celkem mezioborový pojem. Je to v podstatě kvantitativní shrnutí literatury.
+**Zuzana Havránková:** Metaanalýza se používá v různých oborech. V podstatě je to kvantitativní shrnutí literatury.
 
-Představ si, že máme nějakou vědeckou otázku, na kterou se snažíme odpovědět. Studií k ní máme hodně, hodně. A často jsou i kontradiktorní, odporují si, jejich výsledky se liší: větší, menší, pozitivní, negativní.
+Představ si vědeckou otázku, na kterou se snažíme odpovědět. Máme k ní spoustu studií a ty si často odporují. Jedné vyjde větší efekt, jiné menší, někde je kladný a jinde záporný.
 
-Často, když se média, politici nebo kdokoli jiný, třeba zákonodárci, dívají na to, jak z toho vytáhnout správnou odpověď na otázku, kterou chtějí řešit, vůbec se nedivím, že je těžké a problematické najít argumenty, když je velice jednoduché najít protiargumenty. A to je právě problém i naší vědy: ročně vidíme exponenciální růst toho, co se produkuje, ale důraz na evidence-based policy zároveň není až tak silný. Možná je to právě proto, že prožíváme něco, čemu říkáme replikační krize: často je skutečně těžké dobrat se stejných výsledků u tématu, které už bylo v literatuře probírané.
+Když v takové literatuře hledají odpověď média, politici či kdokoli jiný, třeba zákonodárci, vůbec se nedivím, že těžko hledají argumenty. Protiargument totiž najdou velice snadno. To je i problém naší vědy. Množství výzkumu roste rok od roku exponenciálně, ale důraz na politiku založenou na důkazech zároveň není až tak silný. Možná právě kvůli takzvané replikační krizi. Často je opravdu těžké dojít ke stejným výsledkům, jaké už někdo publikoval.
 
-Metaanalýza má tedy tu úlohu, že dokáže z velice různorodé literatury vydestilovat nějaký výsledek, nějaký jednotný závěr. Mimochodem, metaanalýza původně vznikla v medicíně, v experimentálním medicínském výzkumu, v klinických studiích. Tam jsou studie hodně malé, protože, jak je notoricky známo, jsou velice drahé, nejen co do peněz, ale samozřejmě i co do zdraví lidí. Potřebovali tedy ty malé klinické studie nějak spojit dohromady a zvýšit statistickou sílu výsledků.
+Metaanalýza dokáže z velice různorodé literatury vydestilovat jednotný závěr. Vznikla mimochodem v experimentálním výzkumu v medicíně, u klinických studií. Ty bývají hodně malé, protože jsou, jak známo, velice nákladné, a to jak finančně, tak z hlediska zdraví účastníků. Výzkumníci proto potřebovali malé studie spojit a zvýšit statistickou sílu výsledků.
 
-Proto se metaanalýza přirozeně vyvinula v medicíně a tímto způsobem nám dokáže říct, jaký ten výsledek je, i s určitou mírou jistoty. Metaanalýza s sebou samozřejmě nese různé problémy, protože se díváme na velký vzorek studií, které jsou hodně různorodé: jejich kontext, jaká data používají, jestli máš, jako třeba v medicínském výzkumu, různé pacienty, jestli jsou to muži, nebo ženy, různé rasy, různý věk a tak dále, různé komorbidity a tak dále.
+Proto se metaanalýza přirozeně vyvinula v medicíně. Umožňuje nám říct, k jakému výsledku jsme došli a s jakou mírou jistoty. Má ale i úskalí. Díváme se na velký soubor studií, které se hodně liší kontextem a použitými daty. V medicíně se třeba liší skupiny pacientů: zastoupení mužů a žen, rasové složení, věk nebo přidružená onemocnění.
 
-To je tedy jedna z výzev metaanalýzy: jakým způsobem je možné ten kontext kontrolovat. Druhým problémem, kterému metaanalýzy čelí, je publikační selektivita. Ta vzniká, když některé výsledky mají větší pravděpodobnost, že budou publikovány. V podstatě to vyplývá z toho, že máme často vnitřně nějakou apriorní preferenci ohledně toho, co by nám asi mělo ve studii vyjít.
+Jedna z výzev je tedy zohlednit rozdílný kontext studií. Druhý problém je publikační selektivita. Některé výsledky mají větší šanci, že vyjdou. Často už totiž předem dáváme některému výsledku přednost.
 
-Představ si třeba, že se studuje efekt pasivního kouření na zdraví, o čemž existuje rozsáhlá literatura. Můžeš tam najít hodně velké negativní výsledky a menší negativní výsledky, tedy že pasivní kouření má na zdraví nějaký negativní efekt. Můžeš najít nulový efekt, tedy že se nic neděje. A můžeš najít dokonce i pozitivní efekty, tedy že je pasivní kouření třeba zdraví prospěšné.
+Vezmi si třeba vliv pasivního kouření na zdraví. Studií je spousta. Některé zjistily výrazný negativní vliv, jiné menší. Dalším vyšlo, že se nic neděje. Najdeš dokonce i výsledky, podle nichž může být pasivní kouření zdraví prospěšné.
 
-Takové studie opravdu jsou. A vnitřně víme, že o samotném kouření je už řadu let známo, že je velice neprospěšné pro zdraví, že je velice škodlivé.
+Takové studie opravdu existují. Přitom už řadu let víme, jak moc samotné kouření zdraví škodí.
 
-Řekněme, že bych teď chtěla udělat takovou studii. Jdu do toho s určitou představou nebo předsudkem o tom, jak by měl výsledek vypadat. Asi si tedy budu myslet, že by mi mělo něco vyjít. Úplně nevím co, tomu tématu nerozumím, jsem jen statistička.
+Řekněme, že bych chtěla podobnou studii udělat. Už do ní vstupuju s nějakou představou či předsudkem o tom, co by mělo vyjít. Asi budu čekat nějaký výsledek. Nevím přesně jaký, tématu nerozumím, jsem jen statistička.
 
-Předpokládám, že to asi bude negativní, nebo nulové. Ale určitě to nebude pozitivní. Na úrovni jedné studie to samozřejmě není nějaký problém, nebo problém autora. Vždycky se snažíme nějak vybrat reprezentativní výsledek, abychom lidi, čtenáře, nezahltili něčím, co není zkousnutelné a stravitelné.
+Čekala bych asi negativní nebo nulový výsledek. Kladný určitě ne. U jedné studie to samo o sobě není problém, nebo aspoň ne problém samotného autora. Vždycky se snažíme vybrat reprezentativní výsledek, abychom čtenáře nezahltili něčím, co se nedá strávit.
 
-Jsme tedy selektivní ohledně toho, co publikujeme. A pokud mám takový apriorní předsudek, takový ten bias ohledně toho, co je správné, nebo není, a dostanu nějaký pozitivní výsledek, což může být čistě dílem náhody, jsem přesvědčená, nebo editor bude přesvědčený, že buď mám malý vzorek, nebo kontaminovaná data, nebo jsem špatně použila model. A pak pro mě samozřejmě může být problematické takovou studii posílat dál a snažit se ji nějak publikovat. Na úrovni jedné studie budiž, dokážu si zdůvodnit, proč ty výsledky dávám do šuplíku nebo je nechávám ležet někde v příloze. Problém je, když se tohle v literatuře dělá systematicky.
+Vybíráme si tedy, co zveřejníme. Pokud už předem považuju určitý výsledek za správný, a vyjde mi kladný efekt, třeba čistě náhodou, jsem přesvědčená, případně je přesvědčený editor, že mám malý vzorek či kontaminovaná data nebo že jsem špatně použila model. Pak pro mě může být těžké studii dál posílat a snažit se ji zveřejnit. U jedné studie si ještě dokážu zdůvodnit, proč výsledek dám do šuplíku nebo ho nechám ležet v příloze. Problém nastává, když se to v literatuře děje systematicky.
 
-Většina výzkumníků pak pozitivní výsledky nereportuje, ale reportuje velké negativní výsledky, které přitom můžou být v tomhle případě špatné z úplně stejného důvodu: role náhody, nějaký bias, špatný model a tak dále.
+Většina výzkumníků pak kladné výsledky neuvádí, zatímco ty výrazně negativní ano. Přitom se v nich můžou mýlit z úplně stejných důvodů. Může jít o náhodu, zkreslení nebo třeba špatný model.
 
-**Alice Němcová Tejkalová:** Dokážu si to představit i u mnohem méně kontroverznějších témat, právě než je kouření, koneckonců ten tlak na to, aby ty články, které jsou publikovány v časopisech, které mají určité zaměření, tak také máme vlastně evidovaný i tady na našem institutu komunikačních studií a žurnalistiky. Bavili jsme se o tom s kolegy opakovaně, že je potřeba pak vybírat ten časopis, který je řekněme otevřenější k tomu, že věci mohou být různě. Mě by zajímalo, jak se pak výzkumníci tváří na ty výsledky právě té metaanalýzy, když se ukáže, že tam vlastně nějaký ten systémový sklon je.
+**Alice Němcová Tejkalová:** Dovedu si to představit i u mnohem méně kontroverzních témat než kouření. Ten tlak u časopisů, které mají určité zaměření, máme zaznamenaný i na našem Institutu komunikačních studií a žurnalistiky. S kolegy jsme se opakovaně bavili o tom, že je pak potřeba vybrat časopis, který je, řekněme, otevřenější různým výsledkům. Jak se výzkumníci tváří na výsledky metaanalýzy, když ukáže, že v jejich oboru existuje nějaký systematický sklon?
 
-**Zuzana Havránková:** Jasně, tohle není problém jednotlivých výzkumníků. Není to tak, že bychom tvrdili, že někdo podvádí nebo schválně něco zamlčuje. O tom to vůbec není. Naším úkolem jako metaanalytiků je přijít na to, jestli tam nějaký problém je, a pak ho opravit.
+**Zuzana Havránková:** Jasně, tohle není problém jednotlivých výzkumníků. Netvrdíme, že někdo podvádí nebo schválně něco zamlčuje. Naším úkolem jako metaanalytiků je zjistit, jestli v souboru studií nějaký problém je, a pokud ano, napravit ho.
 
-A dokážeme to určit na základě toho, jak vypadá statistický vzorek, a na základě určitých statistických předpokladů. Takže je to takový…
+Dokážeme to poznat podle toho, jak vypadá statistický vzorek, a za určitých statistických předpokladů. Je to takový…
 
-**Alice Němcová Tejkalová:** Ale musí to být i relativně nepopulární pozici, někdy není?
+**Alice Němcová Tejkalová:** Ale musí to být někdy i relativně nepopulární pozice, ne?
 
 **Zuzana Havránková:** To je pravda.
 
-Metaanalytici nejsou úplně populární. Díváš se na něčí celoživotní práci a v podstatě ho nevědomky kritizuješ, respektive spíše poukazuješ na to, že v celé té literatuře je něco špatně: něco se třeba dělá dobře a něco se dělá lépe. A to, co se dělá jinak než lépe, je tím pádem taková nepřímá kritika.
+Metaanalytici nejsou úplně populární. Díváš se na něčí celoživotní práci a vlastně ho bezděčně kritizuješ. Přesněji řečeno ukazuješ, že v celé té literatuře něco nefunguje: něco se dělá dobře, něco se dá dělat lépe. I to je nepřímá kritika.
 
-**Alice Němcová Tejkalová:** Vy jste se věnovali celé řadě různých témat. Stojí za to určitě zmínit, že ty výzkumně velmi často spolupracuješ se svým mužem, Tomášem Havránkem, nejen s ním, i s dalšími kolegy. Máš takové poměrně stabilní výzkumné týmy, jak jsem si měla možnost všimnout i u tvých publikací. Věnovali jste se například dopadu velikosti tříd na výsledky žáků. Na co jste přišli?
+**Alice Němcová Tejkalová:** Věnovali jste se řadě témat. Při výzkumu velmi často spolupracuješ se svým mužem Tomášem Havránkem i s dalšími kolegy. Jak jsem si všimla z tvých publikací, máš poměrně stabilní výzkumné týmy. Zkoumali jste třeba dopad velikosti tříd na výsledky žáků. Na co jste přišli?
 
-**Zuzana Havránková:** Tenhle efekt je jednou z takových intuitivních věcí, které nějak vnímá každý člověk a každý rodič, jako třeba já nebo ty. Intuice nám říká, že pro děti je to lepší v menších třídách: dítě má od učitele víc pozornosti, učitel má víc času na dítě a větší klid, aby mohl něco dělat. Z literatury, kterou jsme destilovali, nám ale vyšlo, že ten efekt je nulový.
+**Zuzana Havránková:** Tenhle efekt vnímá každý intuitivně, každý člověk i každý rodič, jako třeba já nebo ty. Čekáme, že dětem bude v menších třídách líp. Učitel se může dítěti víc věnovat, má na něj víc času a při práci větší klid. Když jsme ale výsledky studií shrnuli, vyšel nám nulový efekt.
 
-Že ten efekt tam není. Že menší třídy k lepším výsledkům nenapomáhají. A samozřejmě vidíme, a viděli jsme to i během covidu, že některé covidové fondy byly použity třeba na zmenšování tříd. Možná z úplně jiného důvodu, než je samotný efekt velikosti tříd.
+Menší třídy tedy k lepším výsledkům nenapomáhají. Přitom třeba během covidu šla část peněz z covidových fondů na zmenšování tříd. Možná k tomu vedly úplně jiné důvody než samotný vliv velikosti třídy.
 
-Vidíme ale, že argumenty, které mají třeba různé oborové svazy a podobně nebo legislativci, kteří jsou do toho zapojení, se opírají právě o to, že literatura tohle podporuje, a proto je dobré to udělat a sypat do toho peníze. Intuitivně to dává smysl rodičům, nám, a intuitivně to dává smysl i učitelům, protože mají větší klid a podobně. Každopádně metaanalýza je jen tak dobrá, jak dobrá je podkladová literatura. Můžeme tedy říct, že pokud je podkladová literatura dobrá, naše metaanalýza říká, že ten efekt tam není.
+Oborové svazy nebo zákonodárci, kteří se tím zabývají, ale argumentují tím, že výzkum zmenšování tříd podporuje, a proto do něj má smysl dávat peníze. Intuitivně to dává smysl nám rodičům i učitelům, kteří mají na práci větší klid. Metaanalýza je ovšem jen tak dobrá jako studie, ze kterých vychází. Pokud jsou ty studie dobré, můžeme podle naší metaanalýzy říct, že ten efekt tam není.
 
-Jen pro ilustraci, jak můžeme tuhle myšlenku, tedy nulový efekt velikosti tříd na výsledky žáků, reálně aplikovat v životě: představ si, že zmenšuješ třídy ze 30 dětí na 10. Nebo řekněme, že máme 60 dětí. Ano.
+Jak si nulový vliv velikosti tříd na výsledky žáků představit v praxi? Řekněme, že zmenšuješ třídy ze 30 dětí na 10. Nebo si vezměme 60 dětí.
 
-V současnosti má průměrná třída kolem 20 dětí. Pokud by měla 30, jsou to dvě třídy. Pokud by měla 20, jsou to tři třídy. Zmenšujeme tedy počet dětí, velikost třídy, asi o třetinu.
+Dnes má průměrná třída kolem 20 dětí. Při 30 dětech na třídu by to byly dvě třídy. Při 20 dětech jsou to tři třídy. Velikost třídy tedy zmenšujeme asi o třetinu.
 
-Jenže potřebuješ o 50 % učitelů víc, abys pokryla poptávku té další třídy. První problém politiky zmenšování tříd je tedy v tom, že je velmi drahá. Velice drahá. Navyšuji počet tříd, v tomhle mém příkladu o 50 % učitelů navíc, a tím pádem potřebuji i peníze, abych ty učitele zaplatila, abych na to měla prostory a podobně.
+Jenže na tu další třídu potřebuješ o 50 % víc učitelů. To je první problém zmenšování tříd: je velice drahé. V mém příkladu potřebuješ zaplatit o 50 % víc učitelů a zajistit další prostory.
 
-Druhým problémem samozřejmě je, že těch srdcařů, těch učitelů, je jen určitý počet. Je to hodně omezená skupina. A ti už ve školství nejspíše jsou, protože je to jejich vnitřní poslání, je to, co prožívají, co chtějí dělat.
+Druhý problém je, že učitelů srdcařů je jen velmi omezený počet. Ti už nejspíš ve školství jsou, protože to berou jako své poslání a dělat to chtějí.
 
-Ti tam už budou. A když teď tu skupinu rozšiřuji o 50 %, jako v mém příkladu, je to hodně lidí navíc. Tím pádem se nutně musí stát, že hledám i mezi těmi, kdo to třeba primárně dělat nechtěli.
+Když pak potřebuju o 50 % víc učitelů, jako v mém příkladu, je to hodně lidí navíc. Nutně se musím poohlédnout i mezi těmi, kdo třeba neměli učitelství jako první volbu.
 
 **Alice Němcová Tejkalová:** Tedy přijde málo srdcařů.
 
-**Zuzana Havránková:** Přesně tak, přijde málo nových srdcařů. Teoreticky, řekněme, by se mohlo stát, že snižujeme kvalitu učitelů.
+**Zuzana Havránková:** Přesně tak, přijde málo nových srdcařů. Teoreticky by se mohlo stát, že kvalita učitelů klesne.
 
-Teoreticky. Samozřejmě, že to musí být dlouhodobý proces. Ano. Jenže zmenšování tříd bohužel probíhá v relativně krátkém časovém období.
+Teoreticky. Taková změna musí samozřejmě probíhat dlouhodobě. Třídy se ale bohužel zmenšují v relativně krátké době.
 
-A to je ten náš problém. Už teď vidíš na stránkách mnoha škol, že pořád shánějí, shánějí, shánějí učitele. To je samo o sobě první problém. Můj nápad, jak vyřešit problém financování školství, by tedy byl takový: v současnosti je průměrný počet žáků na třídu asi devatenáct a půl.
+A to je náš problém. Na stránkách mnoha škol už teď vidíš, že pořád shánějí učitele. To samo o sobě je první problém. K financování školství mám jeden nápad. Dnes je ve třídě v průměru asi devatenáct a půl žáka.
 
-Průměr. To znamená, že jsou třídy, které mají patnáct dětí, a třídy, které mají dvacet pět. Navýšit tedy počet dětí z průměrných dvaceti třeba na dvacet pět. A potom si můžeš přepočítat, jak ve školství získáš finance na platy učitelů, což je také jedna taková krizová otázka.
+Je to průměr. Jsou třídy s patnácti dětmi a třídy s pětadvaceti. Průměrný počet by se dal zvýšit z dvaceti třeba na pětadvacet. Pak si můžeš spočítat, kolik peněz tím školství získá na platy učitelů, které jsou taky palčivým problémem.
 
-Nebo nemusíš celých těch, kolik to je, asi 25 % použít na navýšení platů učitelů. Můžeš to použít i na nepedagogické pracovníky.
+A celou částku, je to asi 25 %, ani nemusíš použít na zvýšení platů učitelů. Část můžeš použít i pro nepedagogické pracovníky.
 
-**Alice Němcová Tejkalová:** Ne, ty reaguješ na to, jak se tvářím, protože já přemýšlím nad tím, že bydlíme v Praze. Moje dcery vlastně chodí od začátku do třídy, kde je mezi sedmi a dvaceti a devíti a dvaceti. Říkám, to je nádhera, že v nějakých školách je devatenáct, dvacet dětí.
+**Alice Němcová Tejkalová:** Ne, ty reaguješ na to, jak se tvářím, protože já přemýšlím nad tím, že bydlíme v Praze. Moje dcery vlastně chodí od začátku do třídy, kde je sedmadvacet až devětadvacet dětí. Říkám, to je nádhera, že v nějakých školách je devatenáct, dvacet dětí.
 
 **Zuzana Havránková:** Nebo patnáct. Protože tohle je průměr.
 
-**Alice Němcová Tejkalová:** No tak tím spíš, ano, máš pravdu, říkala jsi, že je to devatenáct a půl. Devatenáct a půl. A průměr jako takový. Tak si říkám, že kdepak ty školy jsou, vždycky jsem si říkala, že v té menší třídě bude určitě lepší výsledek, tak teď vím, že nebude lepší výsledek, tak mě to trochu uklidnilo, že to možná není takový…
+**Alice Němcová Tejkalová:** Tím spíš. Máš pravdu, říkala jsi devatenáct a půl. A to je průměr. Tak si říkám, kdepak ty školy jsou. Vždycky jsem si říkala, že v menší třídě bude určitě lepší výsledek. Teď vím, že nebude, a trochu mě uklidnilo, že to možná není takový…
 
-**Zuzana Havránková:** A tady samozřejmě nemluvím o malotřídkách, mluvím o těch standardních městských školách s prvním a druhým stupněm.
+**Zuzana Havránková:** Samozřejmě nemluvím o malotřídkách. Mluvím o běžných městských školách s prvním a druhým stupněm.
 
-**Alice Němcová Tejkalová:** Dovedu si představit ještě víc teď, že metaanalitici nemusí mít úplně lehký život, protože tohle jsou přesně témata, která jsou problémová. Zároveň to, že by měly mít pedagogové víc peněz a nepedagogičtí pracovníci je něco, co je důležité. Takže možná jedna z těch cest, kterou se časem taky vydáme, až se školství bude řešit systémově, což já bych byla hrozně ráda, kdyby se někdy řešilo, vzhledem k tomu, jak nám neustále rotují ti ministři. Tak to zdaleka není tak jednoduché.
+**Alice Němcová Tejkalová:** Teď si ještě líp dovedu představit, že metaanalytici nemusí mít úplně lehký život, protože tohle jsou přesně témata, která jsou problémová. Zároveň je důležité, aby pedagogové i nepedagogičtí pracovníci měli víc peněz. Možná je to jedna z cest, kterou se časem taky vydáme, až se školství bude řešit systémově. Byla bych hrozně ráda, kdyby na to někdy došlo. Vzhledem k tomu, jak se nám pořád střídají ministři, to zdaleka není tak jednoduché.
 
-Vy jste se ale věnovali i dalšímu kontroverznímu tématu, a to jsou dopady změn, střídání zimního a letního času. To je pro mě taky poměrně silné téma, protože mě vždycky ta jedna změna jde lépe než ta druhá, a vím, že to dopadá na celou řadu oborů a profesí.
+Vy jste zkoumali i další kontroverzní téma, dopady střídání zimního a letního času. Je to pro mě docela silné téma, protože jednu z těch změn snáším líp než druhou a vím, že to zasahuje řadu oborů a profesí.
 
-**Zuzana Havránková:** Já osobně střídání letního a zimního času také nemám úplně ráda a vidím to hlavně na dětech. Ano, jarní změna je pro ně absolutně destruktivní. Ale každopádně, tu studii jsme dělali už před lety. Byla zaměřená na energetické úspory.
+**Zuzana Havránková:** Střídání letního a zimního času taky nemám moc ráda a vidím to hlavně na dětech. Jarní změna je pro ně naprosto destruktivní. Naši studii jsme dělali už před lety a zaměřili jsme se na energetické úspory.
 
-Výsledkem studie bylo, že energetické úspory už v současnosti nejsou. Samotná myšlenka té politiky pochází ještě z doby Bena Franklina, kdy se svítilo svíčkami a lidé chtěli co nejefektivněji využít denní světlo. Technologie svícení tehdy byly trochu jiné než dnes, kdy máme efektivní žárovky a zářivky.
+Vyšlo nám, že dnes už žádné energetické úspory nevznikají. Myšlenka střídání času pochází ještě z dob Bena Franklina, kdy se svítilo svíčkami a lidé chtěli co nejlíp využít denní světlo. Tehdy se svítilo jinak než dnes, kdy máme účinné žárovky a zářivky.
 
-A samozřejmě dnes, kdy se víc energie spotřebovává i na klimatizování místností, je obecně rozložení spotřeby energie během dne úplně jiné. Tím pádem můžeš skutečně vidět, že efekt je nejen nulový, ale třeba i záporný, že se kvůli posouvání času energie spotřebovává třeba i víc. A my jsme samozřejmě byli velmi…
+Dnes se taky víc energie spotřebuje na klimatizaci a spotřeba je během dne rozložená úplně jinak. Úspora tak může být nulová, nebo dokonce záporná. Kvůli posouvání času se někdy spotřebuje energie i víc. A my jsme byli velmi…
 
-**Alice Němcová Tejkalová:** Můžu se jenom zeptat, proč je spotřebováváno víc?
+**Alice Němcová Tejkalová:** Proč se spotřebuje víc energie?
 
-**Zuzana Havránková:** Třeba kvůli klimatizacím. Lidé jsou déle vzhůru, a tím pádem používají klimatizaci. To je jeden z mnoha aspektů.
+**Zuzana Havránková:** Třeba kvůli klimatizaci. Lidé jsou déle vzhůru, a proto ji používají. To je jeden z mnoha vlivů.
 
-Samozřejmě jsme byli velmi rádi, když se naše studie využila na evropské úrovni při diskusích v rámci Evropské komise o zrušení střídání letního a zimního času. Ze stejných důvodů se využila i v americkém Kongresu. Ale tohle je samozřejmě jen střípek toho, co ta politika představuje. Jak jsi zmiňovala, tyhle věci mají obrovský dopad na metabolismus, na biorytmus a na spánek člověka.
+Měli jsme velkou radost, když se naše studie využila v debatách Evropské komise o zrušení střídání letního a zimního času. Ze stejných důvodů se využila i v americkém Kongresu. Spotřeba energie je ale jen střípek celé věci. Jak jsi zmínila, změny času mají obrovský vliv na metabolismus, biorytmus a spánek.
 
-Je tam vyšší incidence infarktů, vyšší incidence dopravních nehod. Odhady pro Českou republiku jsou třeba takové, že ta politika zabije desítky lidí ročně, a nesnažím se to dramatizovat. Používám slovo, které tomu podle mě přísluší: tahle politika v podstatě zabíjí lidi. Dnes by ji tedy asi nikdo rozhodně nezaváděl.
+Infarkty i dopravní nehody jsou častější. Podle odhadů pro Českou republiku střídání času zabije desítky lidí ročně. Nesnažím se to dramatizovat. Podle mě je „zabíjí“ to správné slovo. Tahle politika v podstatě zabíjí lidi. Dnes už by to asi opravdu nikdo nezaváděl.
 
-A teď je jen otázka, jak dlouho můžeme čekat, než se zruší. Ano, protože ty diskuze…
+Otázka je, jak dlouho ještě můžeme čekat, než se střídání času zruší. Protože ty diskuse…
 
-**Alice Němcová Tejkalová:** Pardon, na to bych se tě právě ještě ráda zeptala. Proč si myslíš, co je ta hlavní věc, kvůli které na tom střídání času lidé, politici tolik lpí?
+**Alice Němcová Tejkalová:** Pardon, na to bych se tě ještě ráda zeptala. Proč podle tebe lidé a politici na střídání času tolik lpí?
 
-**Zuzana Havránková:** Nejsem si jistá. Podle mě lidé nemají rádi změny. Tohle by byla velká změna a ani není úplně jasné, jaké je správné řešení. Pokud by byl jeden stejný čas celý rok, jaké je to správné řešení?
+**Zuzana Havránková:** Nejsem si jistá. Podle mě lidé nemají rádi změny. Tohle by byla velká změna a není úplně jasné, jaké řešení je správné. Který čas bychom měli nechat po celý rok?
 
 **Alice Němcová Tejkalová:** Ano, který, letní, nebo zimní?
 
-**Zuzana Havránková:** Myslím, že sama mám nějakou představu nebo intuici. Kdybychom ponechali jen náš zimní čas, tedy středoevropský: ten je nastavený pro člověka, který chodí spát v 8 večer. Řekněme, že pokud průměrně spíme 8 hodin, máš střed spánku o půlnoci a budíš se ve 4, což alespoň mně osobně nezní úplně jako nějaký standard pro průměrného Evropana. Takže kdybych v tom měla nějakou rozhodovací pravomoc, asi bych se přikláněla ani ne tak k letnímu času, ale klidně i k dvojitému letnímu času, který posouvá náš spánek na desátou hodinu s tím, že vstáváme v šest. Ale samozřejmě má tahle politika tolik souvislostí, že i biologové a medici musí říct, co si o tom myslí.
+**Zuzana Havránková:** Myslím, že sama mám nějakou představu nebo intuici. Kdybychom ponechali jen zimní, tedy středoevropský čas, byl by nastavený pro člověka, který chodí spát v 8 večer. Pokud spíš v průměru 8 hodin, půlnoc je uprostřed spánku a vstáváš ve 4. To mi nezní jako úplně běžný režim průměrného Evropana. Kdybych o tom mohla rozhodovat, asi bych se přikláněla ani ne tak k letnímu času jako klidně i k dvojitému letnímu času. Ten posouvá usínání na desátou a vstávání na šestou. Má to ale tolik souvislostí, že se k tomu musí vyjádřit i biologové a lékaři.
 
-**Alice Němcová Tejkalová:** Děkuji moc. Já bych tě hrozně ráda poslouchala, povídala si s tebou o dalších výzkumech klidně déle, ale ten čas, který máme vždycky pro podcast de facto, tak už se naplnil, já ti přeju krásné Vánoce, tobě i celé rodině, ať se ti pořád tak dál daří, ať je pořád ta tvoje energie tak silná, nakažlivá.
+**Alice Němcová Tejkalová:** Děkuji moc. Já bych tě hrozně ráda poslouchala déle a povídala si s tebou o dalších výzkumech, ale ten čas, který máme vždycky pro podcast De Facto, už se naplnil. Já ti přeju krásné Vánoce, tobě i celé rodině. Ať se ti pořád tak dál daří a ať je tvoje energie pořád tak silná a nakažlivá.
 
 **Zuzana Havránková:** Moc děkuji za pozvání.
 

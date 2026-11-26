@@ -4,17 +4,19 @@ media: "video"
 outlet: "Český rozhlas Plus"
 url: "https://plus.rozhlas.cz/za-vysokou-inflaci-muze-spatna-politika-centralni-banky-mini-ekonom-havranek-8807137"
 date: "2022-08-15"
+updated: "2026-11-26"
 headline: "Za vysokou inflaci může špatná politika centrální banky"
 byline: "Tomáš Havránek"
 interviewer: "Jan Bumba"
-body_note: "Interview Plus na Českém rozhlase Plus, ptá se Jan Bumba. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3; mluvčí jsou určeni podle hlasu, což potvrzují výroky, které Český rozhlas ve svém článku připsal Tomáši Havránkovi. Citace v článku jsou zkrácené a přeskládané; tento text vychází z nahrávky. Odpovědi Tomáše Havránka jsou upraveny jako autorizovaný rozhovor, tedy spisovně a bez výplňových slov, opakování a nedokončených začátků vět; řeč moderátora jen lehce. Čísla, zápory ani míra opatrnosti se neměnily. Tři tečky na začátku nebo konci repliky značí přerušení, nebo úsek, který nešlo ze zvuku spolehlivě zachytit."
+body_note: "Interview Plus na Českém rozhlase Plus, ptá se Jan Bumba. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3. Mluvčí jsou určeni podle hlasu, což potvrzují výroky, které Český rozhlas ve svém článku připsal Tomáši Havránkovi. V odpovědích Tomáše Havránka jsou místy zkrácena souvětí, upraven slovosled a vypuštěna výplňová slova, opakování a nedokončené začátky vět. Řeč moderátora prošla lehkou jazykovou úpravou. Čísla, zápory ani míra opatrnosti se neměnily. Citace v článku jsou zkrácené a seřazené jinak než v nahrávce. Tři tečky na začátku nebo konci repliky značí přerušení nebo úsek, který nešlo ze zvuku spolehlivě zachytit."
 youtube: "82DeYs5YNzc"
 youtube_seconds: "1564"
 youtube_upload: "2022-08-15T05:57:37-07:00"
 youtube_play_at: "20% 62%"
 description: "Tomáš Havránek v Interview Plus Českého rozhlasu o tom, proč za inflaci může podle něj politika ČNB, o posílení koruny prodejem eur a o původu inflačního cíle."
+word_count: "3154"
 ---
-**Jan Bumba:** Inflace se stala kvůli svým současným enormním hodnotám jedním z nejskloňovanějších slov letošního roku. Ekonomové připouštějí, že předpovídat její další vývoj je krajně obtížné, málokdo ale vidí situaci optimisticky. Spíše se všeobecně očekává delší období, po které porostou ceny a naspořené peníze budou ztrácet hodnotu. Mnoho lidí přijímá tento stav podobně jako přírodní katastrofu, která se na nás snesla a nezbývá, než vyčkat, až se tahle velká voda převalí.
+**Jan Bumba:** Inflace se stala kvůli svým současným enormním hodnotám jedním z nejskloňovanějších slov letošního roku. Ekonomové připouštějí, že předpovídat její další vývoj je krajně obtížné, málokdo ale vidí situaci optimisticky. Spíše se všeobecně očekává delší období, po které porostou ceny a naspořené peníze budou ztrácet hodnotu. Mnoho lidí přijímá tento stav podobně jako přírodní katastrofu, která se na nás snesla, a nezbývá než vyčkat, až se tahle velká voda převalí.
 
 Jsme proti inflaci opravdu tak bezbranní? A pokud nyní peníze hodnotu ztratí, znamená to, že už ji nikdy nemůžou získat zpátky? Dobrý poslech přeje Jan Bumba. Hostem interview je dnes profesor ekonomie z Institutu ekonomických studií Fakulty sociálních věd Univerzity Karlovy a také bývalý poradce Bankovní rady České národní banky Tomáš Havránek.
 
@@ -22,170 +24,176 @@ Dobrý den.
 
 **Tomáš Havránek:** Dobrý den, děkuji moc za pozvání.
 
-**Jan Bumba:** Ta inflace, jejíž míru na podzim centrální banka odhaduje na 20%, je něco jako kobylky nebo tornádo?
+**Jan Bumba:** Centrální banka odhaduje, že inflace na podzim dosáhne 20 %. Je to něco jako kobylky nebo tornádo?
 
 Prostě se to přihnalo a my to musíme nějak vydržet?
 
-**Tomáš Havránek:** Do jisté míry ano, do jisté míry ne. Ano v tom smyslu, že s tím, že inflace bude nějakou dobu dvouciferná, minimálně několik měsíců, se už opravdu tolik dělat nedá. Na druhou stranu ale dlouhodobě inflaci opravdu mít nemusíme. Dlouhodobě ji má v rukou Národní banka, která kontroluje jak cenu peněz, tedy úrokové sazby, a vlastně i kurz koruny vůči ostatním měnám, tak nepřímo i množství peněz v ekonomice.
+**Tomáš Havránek:** Do jisté míry ano, do jisté míry ne. S tím, že inflace ještě nějakou dobu, nejméně několik měsíců, zůstane dvouciferná, už opravdu moc neuděláme. Dlouhodobě ji ale mít nemusíme. Má ji v rukou Národní banka. Má pod kontrolou cenu peněz, tedy úrokové sazby a vlastně i kurz koruny vůči ostatním měnám, a nepřímo také množství peněz v ekonomice.
 
-Mohli bychom tedy začít tím, že budeme po Národní bance chtít, aby nám opravdu doručila stabilitu cen, stabilitu průměrných cen v ekonomice, a nikoli inflaci, o kterou se snaží už od konce 90. let.
+Mohli bychom tedy od Národní banky chtít, aby opravdu zajistila stabilitu průměrných cen v ekonomice. Od konce 90. let se místo toho snaží o inflaci.
 
-**Jan Bumba:** Ale musíme tedy rozlišovat to, co se děje nyní, ty mimořádné podmínky a tu současnou vysokánskou inflaci a tu dlouhodobou, na kterou se takzvaně cíluje.
+**Jan Bumba:** Musíme tedy rozlišovat současnou mimořádnou situaci s vysokánskou inflací a dlouhodobou míru inflace, na kterou banka cílí.
 
-**Tomáš Havránek:** Ano, cílem jsou dvě procenta. Z dnešního pohledu by to byla samozřejmě naprosto krásná hodnota, dvě procenta oproti dvaceti, aktuálně je to sedmnáct a půl, ale prognóza Národní banky na začátek podzimu je opravdu kolem dvaceti procent. To ale spolu souvisí, protože když vám Národní banka negarantuje, jakou hodnotu budou mít peníze za pět nebo deset let, nemáte jistotu. Naopak máte velkou nejistotu ohledně toho, co s penězi můžete dělat. Když má dnes člověk nějaké peníze, má v podstatě dvě možnosti, co s nimi udělat.
+**Tomáš Havránek:** Ano, cíl jsou dvě procenta. Ve srovnání s dvaceti by to dnes byla krásná hodnota. Aktuálně je inflace sedmnáct a půl procenta, ale Národní banka na začátek podzimu opravdu předpovídá kolem dvaceti. Současná inflace přitom s tím dlouhodobým nastavením souvisí. Když vám banka nezaručí, jakou hodnotu budou mít vaše peníze za pět nebo deset let, vůbec si nejste jistí, jak s nimi naložit. V podstatě máte dvě možnosti.
 
-Buď je utratíte, protože jinak vám je inflace požere, ale tím zvyšujete poptávku a inflaci znovu živíte. Anebo je vložíte do něčeho reálného, třeba do nemovitostí, ale tím pak vytváříte bublinu na trhu nemovitostí. A kvůli té nejistotě i u krátkodobých výkyvů inflace víte, že je Národní banka neopraví: nenechá ceny nějakou mírnou deflací, třeba v průběhu deseti let, klesnout v průměru zpátky na původní úroveň. Hledáte tedy alternativní cesty. Buď peníze utratit, protože nemáte šanci zachovat jejich hodnotu spořením, anebo je vložit do něčeho, čím vytváříte bubliny.
+Buď peníze utratíte, protože jinak vám je inflace požere. Tím ale zvyšujete poptávku a inflaci dál živíte. Nebo je vložíte do něčeho reálného, třeba do nemovitostí, a tím vytváříte bublinu na trhu nemovitostí. I při krátkodobém výkyvu inflace víte, že ho Národní banka nenapraví tím, že by třeba během deseti let mírnou deflací vrátila průměrné ceny na původní úroveň. Hledáte tedy jiné možnosti, protože spořením hodnotu peněz neuchováte. Buď je utratíte, nebo je vložíte do něčeho, čím vytváříte bubliny.
 
-**Jan Bumba:** Když zůstaneme chviličku o té aktuální situace a té možná až 20% inflace na podzim, vedou se debaty o tom, jestli to je inflace dovezená, hlavně přes vysoké ceny plynu, anebo jestli je to vnitřní poptávková inflace. Na které straně stojíte vy?
+**Jan Bumba:** Zůstaňme chvíli u současné situace a možná až dvacetiprocentní inflace na podzim. Debatuje se o tom, jestli ji dovážíme hlavně s drahým plynem, nebo jestli vzniká doma kvůli poptávce. Na které straně stojíte vy?
 
-**Tomáš Havránek:** Na obou, což je odpověď, řekněme, trochu triviální, ale samozřejmě působí oba zdroje. Je to složitější, pokusím se to nějak zjednodušit. Naše ekonomika byla samozřejmě přehřátá už před covidem. A zároveň státní pomoc, vrtulníkové peníze lidem během pandemie, byla u nás štědřejší než v ostatních zemích.
+**Tomáš Havránek:** Na obou. Zní to možná banálně, ale oba vlivy tu samozřejmě působí. Je to složitější, zkusím to zjednodušit. Naše ekonomika byla přehřátá už před covidem. Za pandemie pak u nás stát lidem rozdával štědřejší pomoc, takzvané vrtulníkové peníze, než v ostatních zemích.
 
-To rozhodně hrálo svou roli, ale podstatnou roli hraje také politika Národní banky, která dlouhodobě udržovala peníze levné, a tím vlastně přitápěla pod kotlem. Když pak inflace začala růst, začala správně zvyšovat úrokové sazby. Dělala to sice rychleji než ostatní centrální banky, ale stále pomaleji, než bankovní radě doporučovali její vlastní odborníci, kteří chtěli sazby zvyšovat dříve a razantněji, už na jaře a potom během léta. Bankovní rada to vetovala a v září pak byla nucena k dramatičtějším krokům najednou.
+To rozhodně sehrálo svou roli. Podstatná je ale i politika Národní banky, která dlouho držela peníze levné a tím přitápěla pod kotlem. Když inflace začala růst, správně začala zvyšovat sazby. Zvyšovala je rychleji než ostatní centrální banky, ale pomaleji, než radě doporučovali její vlastní odborníci. Ti chtěli razantnější zvýšení už na jaře a pak v létě. Rada to vetovala a v září pak musela udělat razantnější kroky najednou.
 
 Za to byla kritizována.
 
-**Jan Bumba:** A pardon, že do toho vstupují, ale o tom se zase tak moc nemluví. Tedy samotní analytici centrální banky doporučovali bankovní radě, aby rychleji zvyšovala úrokové sazby. Ano. A ten důvod, proč se tak nedělo?
+**Jan Bumba:** Pardon, že do toho vstupuji, ale o tom se zase tak moc nemluví. Samotní analytici centrální banky tedy doporučovali bankovní radě, aby rychleji zvyšovala úrokové sazby.
 
-**Tomáš Havránek:** Z dnešního pohledu to asi byla přehnaná opatrnost, ale tu pak bylo nutné dohánět ještě daleko silnějšími, takzvanými hajky, tedy zvyšováním sazeb. Abych to dopověděl: velké zvyšování sazeb vyvolalo kritiku ze strany vlády a řady analytiků, i když samozřejmě i chválu. Kritika ze strany vlády byla tehdy hodně hlasitá. A Národní banka se z pro mě nepochopitelných důvodů začala obhajovat, ale velice pasivně. Začala říkat: musíme to dělat, protože inflace bude velmi vysoká.
+**Tomáš Havránek:** Ano.
 
-Teď už s tím nic neuděláme, ale příští rok nebo za rok a půl se zase sníží. Místo aby tedy uklidňovali veřejnost, zdůrazňovali, že inflace bude velmi vysoká, v příštích měsících v podstatě nejvyšší v Evropě. Upozorňovali na vyšší inflační tlaky u nás oproti zbytku Evropy a na to, že s tím v krátké době nemohou nic dělat. To podle mě i podle řady dalších ekonomů přispělo právě k roztočení naší inflační hysterie.
+**Jan Bumba:** A proč se to nedělo?
 
-**Jan Bumba:** Takže centrální banka vyvolala nebo spolu vyvolala očekávání vysoké inflace?
+**Tomáš Havránek:** Z dnešního pohledu to asi byla přehnaná opatrnost. Pak se to muselo dohánět mnohem prudšími takzvanými hajky, tedy zvyšováním sazeb. Za to se ozvala kritika od vlády a řady analytiků, i když samozřejmě zazněla i chvála. Vláda kritizovala banku velmi hlasitě. A banka se z důvodů, kterým nerozumím, hájila velice pasivně. Tvrdila, že musí sazby zvyšovat, protože inflace bude velmi vysoká.
 
-**Tomáš Havránek:** Věřím tomu a zase v tom nejsem sám. Když se podíváte na oficiální analýzy Národní banky, vychází jim, že fundamentální faktory, třeba kolik mají lidé peněz před pandemií a po ní, vysvětlují zhruba třetinu naší zvýšené inflace oproti zbytku Evropy. Zbylé dvě třetiny jsou tedy primárně psychologického původu. A pokud můžeme spekulovat, odkud ta psychologie šla, jedním ze zdrojů byla nepochybně, řekněme, ne úplně dobrá komunikace Národní banky.
+Banka také říkala, že teď už s tím nic neudělá, ale že inflace příští rok nebo za rok a půl zase klesne. Místo uklidňování veřejnosti banka zdůrazňovala, že inflace bude v příštích měsících velmi vysoká, v podstatě nejvyšší v Evropě. Upozorňovala, že u nás jsou inflační tlaky silnější než jinde v Evropě a že s tím v krátké době nemůže nic dělat. Podle mě i řady dalších ekonomů to přispělo k roztočení inflační hysterie.
+
+**Jan Bumba:** Centrální banka tedy vyvolala nebo pomohla vyvolat očekávání vysoké inflace?
+
+**Tomáš Havránek:** Věřím tomu a nejsem sám. Podle oficiálních analýz Národní banky vysvětlují základní ekonomické faktory, třeba kolik peněz lidé měli před pandemií a po ní, zhruba třetinu rozdílu mezi inflací u nás a ve zbytku Evropy. Zbylé dvě třetiny jsou tedy především psychologické. O tom, odkud se ta nálada vzala, můžeme spekulovat. Jedním ze zdrojů ale nepochybně byla, řekněme, ne úplně dobrá komunikace Národní banky.
 
 A taková, řekněme, apokalyptická.
 
-**Jan Bumba:** Hostem interview je dnes profesor ekonomie na Karlově univerzitě, bývalý poradce Bankovní rady České národní banky Tomáš Havránek. Posloucháte Interview Plus. Rozhovory s významnými lidmi, kteří mají vliv. V aplikaci Můj rozhlas, v podcastových aplikacích a video na našem profilu na YouTube.
+**Jan Bumba:** Hostem dnešního interview je profesor ekonomie na Karlově univerzitě a bývalý poradce bankovní rady České národní banky Tomáš Havránek. Posloucháte Interview Plus, rozhovory s významnými lidmi, kteří mají vliv. Najdete je v aplikaci Můj rozhlas a v podcastových aplikacích, video pak na našem profilu na YouTube.
 
-V průběhu toho minulého roku jsme viděli, jak centrální banka zvyšovala a zvyšovala úrokové sazby. Jsou i nějaké jiné nástroje, které by bylo možné použít pro zkrocení inflace?
+V minulém roce jsme viděli, jak centrální banka opakovaně zvyšovala úrokové sazby. Má na zkrocení inflace i jiné nástroje?
 
-**Tomáš Havránek:** Ptáte se velice návodně. Jsou. Je to používání devizových rezerv, tedy nějaké silnější posílení koruny, které znamená, že nám okamžitě zlevní zboží z dovozu, zejména třeba benzín, ale i spousta dalšího zboží. Když naší zemi před devíti lety hrozila deflace, Národní banka, jak víme, masivně intervenovala proti koruně, aby ji oslabila a deflaci tak předešla, nebo dokonce aby zvýšila inflaci na úrovně, které nebudou blízké nule. Návrh, který jsem vznášel nejenom já, ale i řada dalších ekonomů, je chovat se teď stejně, když bojujeme proti inflaci a máme tak velký problém v krátkém období, ve kterém nástroje typu zvyšování sazeb nemohou nikdy fungovat. Ty se projevují komplikovaně a mnohem pomaleji, minimálně během roku, spíše za dva a více let.
+**Tomáš Havránek:** Ptáte se velmi návodně. Má. Může použít devizové rezervy k výraznějšímu posílení koruny. Okamžitě by zlevnilo zboží z dovozu, třeba benzín a spousta dalších věcí. Když před devíti lety hrozila deflace, banka masivně intervenovala proti koruně, aby ji oslabila a deflaci předešla, nebo dokonce zvýšila inflaci tak, aby už nebyla blízko nuly. Já i řada dalších ekonomů jsme navrhovali postupovat teď obdobně. Máme velký problém, který potřebujeme řešit rychle, a zvyšování sazeb v tak krátké době fungovat nemůže. Jeho účinek se projevuje složitě a mnohem pomaleji, nejdřív v průběhu roku, spíš za dva roky nebo později.
 
-Posílení koruny vám naproti tomu, jak jsem řekl, okamžitě zlevní benzín a další věci, takže v inflaci ho uvidíme už další měsíc. Ne plně, ale do určité míry. Návrh je tedy jednoduše teď všechno obrátit: eura, která se tehdy nakoupila, prodat, koruny, které se tehdy vytvořily, zrušit, korunu posílit, a tím pádem snížit inflaci a snížit i inflační očekávání…
+Posílení koruny naproti tomu hned zlevní benzín i další věci. V údajích o inflaci tedy už další měsíc uvidíme část účinku. Návrh je obrátit dřívější postup. Prodat tehdy nakoupená eura, stáhnout tehdy vytvořené koruny a posílit kurz. Tím klesne inflace i inflační očekávání, která jsou klíčová.
 
-**Jan Bumba:** Na jaký kurz podle vás by měla česká koruna posílit? Kolik by měla stát za euro?
+**Jan Bumba:** Na jakou úroveň by podle vás měla koruna posílit? Kolik korun by mělo stát euro?
 
-**Tomáš Havránek:** Takhle to fungovat nemůže, a to z toho důvodu, že když si stanovíte nějakou hladinu, máte sice jako Národní banka rezerv velmi mnoho, ale pořád jich nemáte neomezené množství. To je základní poučka: devizovými intervencemi nikdy nemůžete bránit měnu na silnější hodnotě, než by chtěl trh, protože vás může přetlačit. V dnešní situaci byste jako Národní banka, tedy ta naše, měl oznámit, že prodáte všechna eura, která se nakoupila během intervencí proti koruně. Ne najednou, ale řekli byste: prodáme je během tří let, nebo dvou let, a budeme prodávat, řekněme, tři miliardy eur měsíčně.
+**Tomáš Havránek:** Takhle to fungovat nemůže. Národní banka má sice hodně rezerv, ale nemá jich neomezeně. Základní poučka říká, že intervencemi nikdy neubráníte silnější kurz, než jaký chce trh. Trh vás může přetlačit. Dnes by naše banka měla oznámit, že prodá všechna eura nakoupená při intervencích proti koruně. Postupně, během tří nebo dvou let, dejme tomu po třech miliardách eur měsíčně.
 
-Proti tomu se nedá spekulovat, je to oznámení, jak chcete snížit bilanci centrální banky. Reakce trhu by ale nepochybně byla taková, že by koruna skokově posílila: najednou hodíte na trh spoustu eur a stáhnete spoustu korun. Na jakou hodnotu, to nedokážu říct, ale nepochybně by posílila. A to je přesně to, co v této situaci potřebujete, abyste nějak stabilizoval situaci ohledně inflace, stabilizoval očekávání lidí a jejich důvěru v centrální banku, která je podle mě těžce pošramocena.
+Proti tomu se nedá spekulovat. Banka jen oznamuje, jak chce zmenšit svou bilanci. Koruna by ale nepochybně skokově posílila, protože by banka nabídla na trhu spoustu eur a stáhla spoustu korun. Na jakou úroveň by posílila, nedokážu říct. Přesně to teď potřebujete, abyste trochu stabilizoval situaci kolem inflace, očekávání lidí i jejich důvěru v centrální banku, která je podle mě těžce pošramocená.
 
-**Jan Bumba:** A důvěra lidí v centrální banku, taky důvěra trhů v centrální banku. Já vím, že posilování české měny je vaším velkým tématem. Četl jsem to v různých rozhovorech, které jste poskytl. Jak se těmito očima díváte na to, že česká koruna výrazně oslabila poté, co byl Aleš Michl jmenován guvernérem?
+**Jan Bumba:** Jde o důvěru lidí a také o důvěru trhů v centrální banku. Vím z vašich rozhovorů, že posilování české měny je vaše velké téma. Jak se z tohoto pohledu díváte na to, že koruna výrazně oslabila po jmenování Aleše Michla guvernérem?
 
 Není samotná osoba guvernéra překážkou posilování koruny?
 
-**Tomáš Havránek:** Ano, z toho důvodu, že posilování koruny nechce ani Aleš Michl. To bych mu asi zrovna vyčítal. Řadu věcí nedělá úplně špatně, ale s tímhle nesouhlasím.
+**Tomáš Havránek:** Ano, protože ani Aleš Michl posilování koruny nechce. To bych mu asi vyčítal. Řadu věcí nedělá úplně špatně, ale s tímhle nesouhlasím.
 
-Podle mě je teď nutné, aby Národní banka ukázala, že udělá cokoli pro to, aby nám doručila cenovou stabilitu. Podle mě tedy ideálně dlouhodobě nulovou inflaci, ale alespoň inflační cíl 2%. A to nedělá. Dobře, zvýšila sazby poměrně hodně.
+Podle mě musí Národní banka ukázat, že udělá cokoli pro cenovou stabilitu. V ideálním případě pro dlouhodobě nulovou inflaci, ale přinejmenším pro splnění cíle 2 %. To teď nedělá, i když sazby zvedla poměrně dost.
 
-Otázka je, jak moc to bylo účinné. Ale má tu velký účinný nástroj, jehož účinnost nikdo nezpochybňuje, a nepoužívá ho. Používá ho tak trochu tím, že brání oslabování.
+Otázka je, jak moc to zabralo. Banka přitom má silný nástroj, jehož účinnost nikdo nezpochybňuje, a naplno ho nepoužívá. Využívá ho jen do určité míry, aby bránila oslabování koruny.
 
-Ale i pro vysvětlení lidem není nic snazšího. Tehdy jsme kvůli deflaci intervenovali proti koruně. Teď máme opačný problém, takže intervenujeme: eura prodáme, korunu posílíme a vrátíme všechno do normálního stavu, který nebude zkreslen intervencemi, které pořád leží na účtech bank.
+Přitom se to lidem dá vysvětlit velmi snadno. Tehdy jsme kvůli deflaci intervenovali proti koruně. Dnes máme opačný problém. Prodáme eura, posílíme korunu a vrátíme se k normálnímu stavu bez zkreslení způsobeného intervencemi, které jsou pořád vidět na účtech bank.
 
 **Jan Bumba:** Proč myslíte, že se to neděje?
 
-**Tomáš Havránek:** Tu otázku si kladu už asi rok…
+**Tomáš Havránek:** Tu otázku si kladu už asi rok, protože…
 
-**Jan Bumba:** A nejsou tam také, já vím, že jste na to někdy narazil, ale nejsou tam příliš silné tlaky zase třeba ze strany firem exportérů, pro které by byla ta silná koruna nevýhodná?
+**Jan Bumba:** Nejsou tu příliš silné tlaky třeba od exportérů, pro které by silná koruna byla nevýhodná? Vím, že už jste o tom někdy mluvil.
 
-**Tomáš Havránek:** Nějaké tlaky tam nepochybně jsou, ale nevěřím, že by pro rozhodování bankovní rady byly nějak zásadní. Ta dlouhodobě ukázala, že může být nezávislá. Ale opravdu, základním cílem Národní banky je cenová stabilita. Když se ho takhle děsivě nedaří plnit, nechápu, jak může sama před sebou a před veřejností odůvodnit, že nepoužívá nástroje, které má a které by mohla použít hned teď. Nechápu to. Jak u minulé bankovní rady, tak u té nové, respektive nové většiny, která od července v Národní bance vládne.
+**Tomáš Havránek:** Nějaké tlaky nepochybně existují, ale nevěřím, že jsou pro rozhodování rady zásadní. Rada dlouhodobě ukazuje, že umí být nezávislá. Hlavním cílem Národní banky je cenová stabilita. Když se ho takhle děsivě nedaří plnit, nechápu, jak může sobě i veřejnosti zdůvodnit, že nevyužívá nástroje, které má a po kterých může sáhnout hned. Nechápu to u minulé rady ani u té nové, přesněji u nové většiny, která má od července v Národní bance převahu.
 
-**Jan Bumba:** Nemůže to být tak, že ten pohled, který prezentujete, se může jevit jako třeba experimentální nebo takový s nejasným dopadem?
+**Jan Bumba:** Nemůže se váš pohled jevit třeba jako experimentální nebo jako něco s nejasným dopadem?
 
-**Tomáš Havránek:** Myslíte zrušení inflace? Vezměte si třeba, že peníze v naší historii existují přes pět tisíc let, a nějaká setrvalá inflace funguje 90 let. Nebo ještě konkrétnější příklad: cenová hladina v Evropě před první světovou válkou byla podobná jako o století dříve, po konci napoleonských válek.
+**Tomáš Havránek:** Myslíte zrušení inflace? Peníze máme přes pět tisíc let a setrvalá inflace tu je 90 let. Konkrétní příklad. Před první světovou válkou byly v Evropě ceny zhruba na stejné úrovni jako o století dříve, po napoleonských válkách.
 
-Cenová stabilita je tedy v historii běžná věc. Švýcaři mají dnes cenovou hladinu hodně podobnou roku 2008, asi jen o 2 až 3% vyšší. Je to tedy věc, která je možná a nezpůsobuje žádnou katastrofu. Na stránce zrusme-inflaci.cz ukazujeme všechny argumenty pro a proti, proč a jak je možné to snadno udělat. Zjednodušeně řečeno je to to, co říká ústava.
+Cenová stabilita je tedy v historii běžná. Ve Švýcarsku je dnes cenová hladina velmi podobná té z roku 2008, asi jen o 2 až 3 % vyšší. Je to možné a žádnou katastrofu to nezpůsobuje. Na zrusme-inflaci.cz popisujeme všechny argumenty pro a proti i to, proč a jak se to dá snadno udělat. Zjednodušeně řečeno to po bance chce ústava.
 
-Ta Národní bance neříká: starejte se o nějakou mírnou inflaci, byť by třeba byla optimální, což není. Říká: cenová stabilita.
+Ústava Národní bance neukládá udržovat mírnou inflaci, i kdyby byla optimální, což není. Ukládá jí pečovat o cenovou stabilitu.
 
-**Jan Bumba:** Já se ještě na ten, jestli můžu říct, filozofický pohled na inflaci zeptám v průběhu toho rozhovoru, ale zpátky k těm konkrétním krokům, které by bylo možné učinit nyní. Vy jste třeba v rozhovoru pro Seznam Zprávy mluvil o tom, že by si měl guvernér centrální banky zavolat ředitele největších bank v Česku a říci jim, ať zvýší úrokové sazby na spořících účtech. To by tedy taky zabralo společně s posílením koruny?
+**Jan Bumba:** K tomu, řekněme, filozofickému pohledu na inflaci se ještě vrátím. Teď ke krokům, které se dají podniknout hned. V Seznam Zprávách jste třeba říkal, že by si měl guvernér zavolat ředitele největších bank v Česku a říct jim, ať zvýší úroky na spořicích účtech. Pomohlo by to spolu s posílením koruny?
 
-**Tomáš Havránek:** Potřebujeme, aby se vyplatilo spořit. Aby se vám, když máte peníze, nevyplatilo je utratit nebo strčit do nemovitostí, ale abyste si je opravdu dali na spořicí účet a spořili. To je jediná cesta, jak můžete inflaci dlouhodobě porazit. A k tomu vedou dvě cesty. Co to znamená, že se vyplatí spořit?
+**Tomáš Havránek:** Potřebujeme, aby se vyplatilo spořit. Aby se vám vyplatilo peníze uložit na spořicí účet a spořit, místo abyste je utratil nebo dal do nemovitostí. Jen tak lze inflaci dlouhodobě porazit. A vedou k tomu dvě cesty. Co znamená, že se spoření vyplatí?
 
-Znamená to, že úroková sazba na spořicím účtu je vyšší než inflace, kterou čekáte za rok. Jde o to, aby vám vycházelo účetnictví. A Národní banka má v rukou obě části této rovnice. Úroky na spořicích účtech samozřejmě ovlivňuje její reposazba, která je teď 7%, ale 7% vám žádná komerční banka nenabídne.
+Úrok na spořicím účtu musí být vyšší než inflace, kterou čekáte za rok. Jde o to, aby vám vycházelo účetnictví. Národní banka má v rukou obě strany té rovnice. Úroky ze spoření samozřejmě ovlivňuje její repo sazba, která je teď 7 %. Žádná komerční banka vám ale 7 % nenabídne.
 
-**Jan Bumba:** Takový jednoduchý dotaz. Proč ne? Proč to ty retailové banky nedělají?
+**Jan Bumba:** Proč ne? Proč to retailové banky nedělají?
 
-**Tomáš Havránek:** To má dva důvody. Prvním je samozřejmě to, že banky mají nějaké náklady. Musí platit budovy, náklady na regulaci, pojištění a tak dále. Druhým důvodem je, že na trhu chybí dost konkurence, která by banky donutila zvýšit úrokové sazby na spoření třeba na 5,5 až 6%, ale neomezeně.
+**Tomáš Havránek:** Ze dvou důvodů. Banky mají samozřejmě náklady, třeba na budovy, regulaci a pojištění. A na trhu není dost konkurence, která by je přiměla nabídnout na spoření třeba 5,5 až 6 % bez omezení výše vkladu.
 
-Tedy ne 100 tisíc nebo 200 tisíc, ale opravdu neomezené vklady za tuto sazbu. Banka pak ty peníze vezme a uloží si je u ČNB za 7%. Opravdu tedy není důvod, aby vám za 6% nenabízela neomezené spoření.
+Tedy nejen do 100 nebo 200 tisíc, ale bez ohledu na výši vkladu. Banka ty peníze vezme a uloží si je u ČNB za 7 %. Opravdu tedy není důvod, aby vám nenabízela spoření za 6 % bez omezení.
 
-**Jan Bumba:** No a může tedy centrální banka nějak donutit ty banky k tomu, aby zvýšily úroky na spořicích účtech?
+**Jan Bumba:** Může tedy centrální banka banky nějak donutit, aby zvýšily úroky na spořicích účtech?
 
-**Tomáš Havránek:** Může je velmi silně motivovat, protože je jejich regulátorem. Může jim život zjednodušit, nebo znepříjemnit. Zároveň může lobovat. Podívejte se, teď bankám hrozí bankovní daň, a to poměrně reálně a pravděpodobně.
+**Tomáš Havránek:** Může je k tomu velmi silně motivovat, protože je reguluje. Může jim život ulehčit nebo znepříjemnit. Může také lobovat. Bankám teď reálně hrozí bankovní daň. Její zavedení je poměrně pravděpodobné.
 
-A tohle je jedna z posledních možností, jak se před bankovní daní mohou zachránit: ukázat, že pomohou Národní bance a nám všem bojovat proti inflaci, a zvýšit úrokové sazby na spoření. Pořád na tom nebudou prodělávat, ale nebudou vydělávat tolik, jako vydělávají teď. Průměrná sazba na úsporách českých domácností je teď jedno procento, oproti těm sedmi, což je sazba Národní banky.
+Tohle je jedna z posledních možností, jak se dani vyhnout. Banky mohou ukázat, že Národní bance i nám všem pomohou bojovat s inflací, a zvednout úroky na spoření. Pořád na tom neprodělají, jen nebudou vydělávat tolik jako teď. Na úsporách českých domácností je průměrný úrok jedno procento, zatímco sazba Národní banky je sedm procent.
 
-**Jan Bumba:** A teď tedy banky zažívají vysloveně příjemné období, protože na jedné straně hodně vydělávají, na druhé straně klientům nepouštějí skoro nic.
+**Jan Bumba:** Banky tedy teď zažívají vysloveně příjemné období. Hodně vydělávají a klientům z toho skoro nic nedávají.
 
-**Tomáš Havránek:** Abych zase nebyl úplně kritický, ty sazby trochu zvyšují.
+**Tomáš Havránek:** Abych zase nebyl jen kritický, sazby trochu zvyšují.
 
 **Jan Bumba:** Ale není to pět, šest procent.
 
-**Tomáš Havránek:** Není. Respektive, řekněme, pět to je, ale ta sazba je vždycky omezená na nějaký objem. Nemůžete za tu sazbu 5% uložit celoživotní úspory, ale třeba sto tisíc, 200 tisíc.
+**Tomáš Havránek:** Ne. Respektive, řekněme, pět procent to je, ale sazba je vždycky omezená výší vkladu. Nemůžete za 5 % uložit celoživotní úspory, ale třeba jen sto nebo dvě stě tisíc.
 
-A i když tam lidé peníze přesouvají, pořád je ten objem velmi malý na to, aby nám to pomohlo s inflací.
+I když tam lidé peníze převádějí, pořád je celkový objem převedených peněz příliš malý na to, aby to pomohlo snížit inflaci.
 
-**Jan Bumba:** Hostem interview je dnes profesor ekonomie na Karlově univerzitě a bývalý poradce Bankovní rady České národní banky Tomáš Havránek. Už jste zmínil svůj projekt Zrušme inflaci, ve kterém nabízíte dost jiný pohled na to, co je inflace, proč inflace, jak se k ní chovat a jestli jsem to správně pochopil, tak argumentujete, že to cílování centrálních bank na dvouprocentní inflaci je prostě jenom zvyk, že to vzniklo víceméně náhodou?
+**Jan Bumba:** Hostem dnešního interview je profesor ekonomie na Karlově univerzitě a bývalý poradce bankovní rady České národní banky Tomáš Havránek. Už jste zmínil projekt Zrušme inflaci, ve kterém nabízíte jiný pohled na to, co inflace je, proč vzniká a jak se k ní chovat. Chápu správně, že podle vás centrální banky cílí na dvě procenta jen ze zvyku a že to vzniklo víceméně náhodou?
 
-**Tomáš Havránek:** Je to náhoda. Když pak bádáte, kde se to číslo 2% vzalo, na samém počátku stál Nový Zéland v roce 1990. Na Zélandu měli dlouhodobě potíže s inflací, která byla vysoká. Jeden z nápadů pak byl: explicitně oznámíme, na jakou hladinu chceme inflaci snížit. A 2%, to nebyl cíl, ale horní limit.
+**Tomáš Havránek:** Je to náhoda. Když pátráte, odkud se ta 2 % vzala, dojdete na Nový Zéland roku 1990. Dlouho tam měli vysokou inflaci. Jeden z nápadů byl veřejně oznámit, na jakou úroveň ji chtějí snížit. Dvě procenta byla horní hranice, ne cíl.
 
-Tedy aby inflace byla do 2%, maximálně 2%. A vypadalo to, že to funguje: ta transparentnost, jakkoli to zní triviálně, že banka řekne, o co se vlastně snaží. Nejenom že se snaží o, řekněme, vyváženou ekonomiku, ale o inflaci do 2%. Guvernér Národní banky Zélandu Don Brash to hodně propagoval v zahraničí.
+Inflace tedy měla být nejvýš 2 %. A zdálo se, že ta otevřenost funguje. Přitom je to docela jednoduché. Banka řekne, o co se snaží. Neříká jen, že chce, řekněme, vyváženou ekonomiku. Řekne, že chce inflaci do 2 %. Guvernér novozélandské centrální banky Don Brash to hodně propagoval v zahraničí.
 
-Mimochodem sám na rovinu řekl, že to číslo, ta 2%, vytáhli z klobouku a že za tím není žádný hluboký vědecký výzkum. Pak to převzaly ostatní země, jako Kanada, a posunuly to maličko na 2%, protože se bály deflace. Ale to je všechno. Abych to dal do kontextu vědeckého výzkumu: v roce 1990 už existovalo 17 studií, které odhadovaly, jak vysoká inflace je pro ekonomiku zdravá.
+Sám na rovinu řekl, že dvě procenta vytáhli z klobouku a že za tím není žádný hluboký vědecký výzkum. Pak to převzaly další země, třeba Kanada, a posunuly cíl na 2 %, protože se bály deflace. To je celé. Pro představu, v roce 1990 už existovalo 17 studií, které odhadovaly, jaká inflace je pro ekonomiku zdravá.
 
-A žádná z nich, ani jedna z těch studií, neukazovala, že by zdravá inflace byla vyšší než nula.
+Ani jedna neukazovala, že by zdravá inflace měla být vyšší než nula.
 
-**Jan Bumba:** Nicméně my jsme zvyklí na to, že je tu nějaká inflace. My jsme zvyklí na to, že peníze ztrácejí hodnotu. Může dojít k situaci, že tu hodnotu zase naberou?
+**Jan Bumba:** Jsme ale zvyklí na určitou inflaci, na to, že peníze ztrácejí hodnotu. Mohou ji někdy zase získat?
 
-**Tomáš Havránek:** K takové situaci dojít může, a to je ten návrh: aby peníze tu hodnotu neztrácely.
+**Tomáš Havránek:** Může se to stát. A o to v návrhu jde, aby peníze hodnotu neztrácely.
 
-**Jan Bumba:** Ale ta představa, že teď, dejme tomu, budeme mít za rok třeba 17% inflaci, peníze ztratí, těch 17% na hodnotě, že by ji zase získali za čas, tak to se už nikdy nestane?
+**Jan Bumba:** Pokud tedy za rok budeme mít třeba sedmnáctiprocentní inflaci a peníze těch 17 % hodnoty ztratí, už ji nikdy nezískají zpátky?
 
-**Tomáš Havránek:** Když dovolíte, aby inflace takhle vystřelila, je opravdu velice, velice nákladné srazit ji zpátky dolů. Vezměte si, že máte třeba hypotéku, kterou jste si vzal teď, a v příštím roce bychom se snažili o deflaci 17%. To nejde. Šlo by to možná dlouhodobě, třeba během deseti let pomaličku inflaci rozpouštět. Hlavní ale je, že pokud lidem opravdu garantujete cenovou stabilitu, stabilitu průměrného nákupu, průměrného zboží a služeb v ekonomice, na dlouhou dobu, nepodlehli by inflační mánii, které jsme tady letos, vlastně už loni, podlehli všichni, včetně mě. I já teď utrácím víc, než jsem utrácel dřív. Vidíme totiž, že Národní banka bohužel situaci absolutně nemá pod kontrolou a negarantuje nám nic. Švýcaři to mají jinak, jak jsme zmiňovali. Cenovou stabilitu de facto mají, důvěra lidí v národní banku je tam úplně jiná a vidíte, že i přes současnou situaci je inflace pořád jen 3%. Klíčovým prvkem k tomu, že se inflaci opravdu daří nějak krotit, je tedy psychologie, důvěra lidí v měnový systém, který je tam jiný než u nás: necílí se tam 2%, ale nevadí jim třeba nulová inflace.
+**Tomáš Havránek:** Podle mě se to už nikdy nestane. Když necháte inflaci takhle vystřelit, srazit ji zase dolů je opravdu velmi nákladné. Představte si, že jste si teď vzal hypotéku a příští rok bychom chtěli deflaci 17 %. To nejde. Možná až za delší dobu, třeba kdybychom dnešní zdražení vyrovnávali postupně během deseti let. Hlavní je lidem dlouhodobě zaručit, že cena běžného nákupu zboží a služeb zůstane v průměru stejná. Pak by nepodlehli inflační mánii, které jsme letos, vlastně už loni, podlehli všichni, včetně mě. I já teď utrácím víc než dřív. Vidíme, že Národní banka bohužel situaci vůbec nemá pod kontrolou a nic nám nezaručuje. Ve Švýcarsku je to jinak. Cenovou stabilitu tam v praxi mají, důvěra lidí v centrální banku je úplně jiná a i za současné situace je tam inflace pořád jen 3 %. Klíčová je tedy psychologie, důvěra v měnový systém. Švýcaři necílí na 2 % a nulová inflace jim třeba vůbec nevadí.
 
-**Jan Bumba:** …že když stál před nějakými pár lety oběd 120 korun, dneska stojí 220, takže by se někdy mohly ty ceny vrátit zase zpátky na těch 120?
+**Jan Bumba:** Takže jestli před pár lety stál oběd 120 korun a dnes stojí 220, není to tak, že by se ta cena někdy mohla vrátit na těch 120?
 
-**Tomáš Havránek:** Musel byste vybrat datum, ke kterému ceny zafixujete. To neznamená, že by se nikdy neměnily, ale znamená to, že kdyby se od tohoto, řekněme, benchmarku, od té hladiny, v průměru moc vychýlily, snažila by se je Národní banka vrátit zpátky k té hodnotě. Asi ale nedává smysl vybrat datum zpřed několika let. Bylo by to nějaké datum v současnosti nebo v blízké budoucnosti, třeba prvního ledna příštího roku. To mimochodem může pan guvernér udělat z vlastní vůle kdykoli.
+**Tomáš Havránek:** Musel byste vybrat datum, ke kterému cenovou hladinu zafixujete. Ceny by se dál mohly měnit, ale kdyby se jejich průměr příliš vzdálil od výchozí hladiny, banka by se ho snažila vrátit. Vybrat datum před několika lety asi nedává smysl. Bylo by to datum v současnosti nebo blízké budoucnosti, třeba prvního ledna příštího roku. Pan guvernér to může z vlastní vůle udělat kdykoli.
 
-Stačí většina v bankovní radě, nepotřebuje změnu zákona ani nic jiného a může to udělat sám, když bude chtít.
+Stačí mu většina v bankovní radě. Nepotřebuje změnu zákona ani nic jiného. Když bude chtít, může to udělat sám.
 
-**Jan Bumba:** Jak vážně myslíte ten slogan zrušme inflaci? Je to spíš akademické cvičení? A nebo opravdu věříte tomu, že to je proveditelné i vzhledem k tomu, že máte zkušenosti z praxe? Víte, jaká je politika, víte, jaká je společenská nálada.
+**Jan Bumba:** Jak vážně myslíte slogan Zrušme inflaci? Je to spíš akademické cvičení, nebo opravdu věříte, že je to proveditelné? Máte zkušenosti z praxe, znáte politiku i náladu ve společnosti.
 
-**Tomáš Havránek:** Hluboce věřím, že ano. Asi není pravděpodobné, že to pan guvernér, jak jsem říkal, teď udělá. Mohl by, ale kdy jindy se o to snažit než v době, kdy současný systém tak strašlivě selhal, jako teď? Všichni to vidíme. Je hrozná věc, když má Národní banka v ústavním mandátu, tedy v tom nejvyšším, jaký vůbec může být, úkol cenové stability.
+**Tomáš Havránek:** Pevně věřím, že ano. Asi není pravděpodobné, že to pan guvernér udělá teď. Mohl by. Ale kdy jindy se o to snažit než ve chvíli, kdy současný systém tak strašlivě selhal? Všichni to vidíme. Je to hrozné. Národní banka má pečovat o cenovou stabilitu přímo podle ústavy. To je ten nejvyšší mandát, jaký může mít.
 
-A přitom během tří let, loni, letos a za rok, ztratí naše úspory dohromady třetinu hodnoty. To je strašné selhání a je načase minimálně přemýšlet o nějaké změně. Proto jsem navrhoval audit Národní banky, abychom se podívali, jestli to opravdu odpovídá současnému vědeckému poznání. Vím, že ne.
+A přitom za tři roky, loni, letos a příští rok, naše úspory přijdou dohromady o třetinu hodnoty. To je strašné selhání. Je načase alespoň uvažovat o změně. Proto jsem navrhoval audit Národní banky, abychom zjistili, zda její postup odpovídá dnešním vědeckým poznatkům. Vím, že neodpovídá.
 
-Proto vím, co by z toho auditu muselo vyplynout. Protože, znovu, průměrný odhad optimální míry inflace ve 200 studiích je nula. Nulová inflace je tedy ta, která je pro ekonomiku zdravá. My tady z tradice držíme něco, co škodí nám všem.
+Proto vím, co by z auditu muselo vyplynout. Průměrný odhad optimální inflace ve 200 studiích je nula. Pro ekonomiku je tedy zdravá nulová inflace. My se ze zvyku držíme něčeho, co nám všem škodí.
 
-A přitom by pro banku bylo velmi snadné to změnit. Nástroje by byly úplně stejné: zvyšování sazeb, pohyby sazeb, pohyby devizového kurzu. Jen by maličko upravila své procesy, to, jak co dělá.
+Pro banku by přitom bylo velmi snadné to změnit. Nástroje by zůstaly stejné, tedy změny úrokových sazeb a devizového kurzu. Banka by jen trochu upravila, jak při tom postupuje.
 
-A přínos pro všechny by byl úžasný. To, že má stokoruna teď stejnou hodnotu jako za 20 let. Pro spoření, pro jakékoli plánování budoucnosti, i pro firmy a jejich investice, by to byla úžasná věc.
+Mělo by to obrovský přínos pro všechny. Stokoruna by dnes měla stejnou hodnotu jako za 20 let. Byla by to skvělá věc pro spoření, pro jakékoli plánování do budoucna i pro firmy a jejich investice.
 
 **Jan Bumba:** Jsou všechny tyto úvahy podmíněny tím, že Česká republika bude i nadále používat korunu? Nezmizely by veškeré tyto plány při vstupu do eurozóny?
 
-**Tomáš Havránek:** Tenhle plán přijetí eura nevylučuje. Možná naopak, protože když máte nejvyšší inflaci v Evropě, nesplníte základní kritérium pro přijetí eura. A nesplníte ani to druhé, tedy nějakou uměřenost úrokových sazeb.
+**Tomáš Havránek:** Tenhle plán přijetí eura nevylučuje. Možná naopak. S nejvyšší inflací v Evropě nesplníte základní podmínku pro přijetí eura. A nesplníte ani druhou podmínku, tedy přiměřené úrokové sazby.
 
-Takže i kdybychom teď chtěli, do eurozóny nás nikdo nevezme, protože nesplníme základní principy. Kdybychom inflaci zrušili, můžeme se pro přijetí eura rozhodnout kdykoli budeme chtít. Pro mě osobně je přijetí eura otázka odlišná od inflace. Potom by samozřejmě bylo komplikovanější přesvědčovat Evropu, že by se inflace vlastně měla vzdát.
+I kdybychom teď chtěli, do eurozóny nás nikdo nevezme, protože nesplňujeme základní podmínky. Kdybychom inflaci zrušili, můžeme se pro euro rozhodnout, kdykoli budeme chtít. Pro mě osobně jsou to dvě různé otázky. Pak by samozřejmě bylo složitější přesvědčit Evropu, aby se i ona inflace vzdala.
 
-Ekonomicky ale euro vychází víceméně neutrálně: má výhody i nevýhody. Není to otázka ekonomická, je to spíš otázka ideologická nebo politická. Třeba baltské země mají euro a mají vysokou inflaci, ale nevadí jim to, protože euro berou jako další záruku bezpečnosti, další přivázání k západní Evropě a další pojistku toho, že kdyby na ně Rusové zaútočili, budou je bránit zuby nehty.
+Ekonomicky ale euro vychází víceméně neutrálně. Má výhody i nevýhody. Není to ekonomická otázka. Je spíš ideologická nebo politická. Pobaltské země třeba mají euro a vysokou inflaci, ale nevadí jim to. Euro berou jako další záruku bezpečnosti, další pouto k západní Evropě a další pojistku, že kdyby na ně Rusové zaútočili, budou je bránit zuby nehty.
 
-Myslím tedy, že i pro nás je to spíš otázka toho, jestli chceme být víc Evropany, než jsme teď.
+Myslím tedy, že i pro nás je to spíš otázka, jestli chceme být víc Evropany než dnes.
 
 **Jan Bumba:** Ale nemohli bychom bojovat proti inflaci posílením české koruny?
 
-**Tomáš Havránek:** Samozřejmě že ne. To jsou nevýhody, které z eura plynou. Euro má i spoustu svých výhod. Mně osobně by euro, to řeknu upřímně, život zjednodušilo, ale pro řadu lidí vidím i velké problémy. Dopady se velmi liší podle toho, jestli hodně cestujete, kde investujete a tak dále.
+**Tomáš Havránek:** Samozřejmě že ne. To jsou nevýhody, které z eura plynou. Euro má i spoustu výhod. Mně osobně by upřímně řečeno zjednodušilo život, ale pro řadu lidí vidím i velké problémy. Hodně záleží na tom, jestli hodně cestujete, kde investujete a podobně.
 
-**Jan Bumba:** Ta současná vysokánská inflace v České republice je tedy podle vašeho soudu důsledkem chyb centrální banky?
+**Jan Bumba:** Je tedy podle vás současná vysokánská inflace v České republice důsledkem chyb centrální banky?
 
-**Tomáš Havránek:** Podle mě je primárním důvodem skutečně špatná politika centrální banky, která má cenovou stabilitu na starosti. Je to jediná instituce, která se o ni opravdu má starat. Je to její jediný ústavní mandát.
+**Tomáš Havránek:** Hlavním důvodem je podle mě skutečně špatná politika centrální banky, která má cenovou stabilitu na starosti. Je jedinou institucí, která se o ni má starat, a je to její jediný ústavní mandát.
 
-Národní banka se má vlastně snažit o to…
+Národní banka se má snažit o to…
 
 **Jan Bumba:** Už pomalu musíme končit.
 
-**Tomáš Havránek:** Já jsem měl takový hezký příběh, ještě ho tu mám připravený…
+**Tomáš Havránek:** Měl jsem připravený takový hezký příběh, ještě ho tu mám…
 
-**Jan Bumba:** Příběh bohužel už nestihneme, nicméně děkuji, že jste přišel. Děkuji vám za rozhovor. Hostem interview byl dnes profesor ekonomie z Institutu ekonomických studií Fakulty sociálních věd Univerzity Karlovy Tomáš Havránek.
+**Jan Bumba:** Příběh bohužel už nestihneme. Děkuji, že jste přišel. Děkuji vám za rozhovor. Hostem interview byl dnes profesor ekonomie z Institutu ekonomických studií Fakulty sociálních věd Univerzity Karlovy Tomáš Havránek.
 
-Od mikrofonu se loučí Jan Bumba.
+**Tomáš Havránek:** Děkuji, mějte se hezky.
+
+**Jan Bumba:** Od mikrofonu se loučí Jan Bumba.

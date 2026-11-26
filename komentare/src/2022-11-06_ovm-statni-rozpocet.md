@@ -4,115 +4,119 @@ media: "video"
 outlet: "Česká televize"
 url: "https://www.ceskatelevize.cz/porady/1126672097-otazky-vaclava-moravce/222411030501106/"
 date: "2022-11-06"
+updated: "2026-11-26"
 headline: "Otázky Václava Moravce: Jak zachránit státní rozpočet?"
 byline: "Tomáš Havránek"
 interviewer: "Václav Moravec"
-body_note: "Otázky Václava Moravce na ČT, 6. listopadu 2022; dalšími hosty byli exguvernér ČNB Jiří Rusnok a místopředseda ČMKOS Vít Samek. Zde jsou jen pasáže s Tomášem Havránkem; části s ostatními hosty jsou vynechány a v textu vyznačeny. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3 a porovnaný s titulky ČT; mluvčí jsou určeni podle hlasu. Odpovědi Tomáše Havránka jsou upraveny jako autorizovaný rozhovor, tedy spisovně a bez výplňových slov, opakování a nedokončených začátků vět; řeč ostatních mluvčích jen lehce. Čísla, zápory ani míra opatrnosti se neměnily. Poslanec Havránek, o jehož návrhu se v pořadu mluví, není s autorem příbuzný. Moderátorovo „na rok 2002“ při čtení prezidentova dopisu (jde o rok 2022) zůstává, jak zaznělo, s poznámkou [sic]. Tři tečky na začátku nebo konci repliky značí přerušení, nebo úsek, který nešlo ze zvuku spolehlivě zachytit."
+body_note: "Otázky Václava Moravce na ČT, 6. listopadu 2022. Dalšími hosty byli exguvernér ČNB Jiří Rusnok a místopředseda ČMKOS Vít Samek. Zde jsou jen pasáže s Tomášem Havránkem. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3 a porovnaný s titulky ČT. Mluvčí jsou určeni podle hlasu. V odpovědích Tomáše Havránka jsou místy zkrácena souvětí, upraven slovosled a vypuštěna výplňová slova, opakování a nedokončené začátky vět. Řeč ostatních mluvčích prošla lehkou jazykovou úpravou. Čísla, zápory ani míra opatrnosti se neměnily. Poslanec Havránek, o jehož návrhu se v pořadu mluví, není s autorem příbuzný. Moderátorovo „na rok 2002“ při čtení prezidentova dopisu (jde o rok 2022) zůstává, jak zaznělo. Na přeřeknutí upozorňuje poznámka [sic]. Výpustky jsou označeny slovem „Přeskočeno“. Označení „ze záznamu“ patří výrokům Víta Rakušana a Mariana Jurečky. Tři tečky na začátku nebo konci repliky značí přerušení nebo úsek, který nešlo ze zvuku spolehlivě zachytit."
 description: "Tomáš Havránek v Otázkách Václava Moravce o dani z mimořádných zisků, státním rozpočtu, zvyšování daní a důchodech; v debatě i Jiří Rusnok a Vít Samek."
+word_count: "2576"
 ---
-**Václav Moravec:** Pane profesore Havránku, vy jste členem Národní ekonomické rady vlády. Vznik té daně z mimořádných zisků. Nakolik jako ekonom považujete za transparentní a byly s vámi ty parametry jako s NERVem konzultovány?
+**Václav Moravec:** Pane profesore Havránku, jste členem Národní ekonomické rady vlády. Nakolik jako ekonom považujete vznik daně z mimořádných zisků za transparentní? Konzultoval někdo její parametry s vámi jako s NERVem?
 
-**Tomáš Havránek:** Jen pro pořádek: pan poslanec Havránek není můj příbuzný, je to jen shoda jmen.
+**Tomáš Havránek:** Jen pro pořádek, pan poslanec Havránek není můj příbuzný. Je to shoda jmen.
 
-**Václav Moravec:** Vy byste se toho návrhu zastal, kdy jedna firma tady má pozměňovací návrh, aby byla vyňata…
+**Václav Moravec:** Vy byste se toho návrhu zastal? Jedna firma tu má pozměňovací návrh, aby byla vyňata…
 
-**Tomáš Havránek:** Možná to nebylo jenom o té jedné firmě. Obecně mi to možná dává docela smysl, protože zisky konkrétně tohoto podniku opravdu nepocházejí z území této země, jsou zahraniční. A pak je velmi snadné sídlo přesunout. Čili tohle se dalo anticipovat.
+**Tomáš Havránek:** Možná nešlo jen o jednu firmu. Celkově mi to možná dává docela smysl, protože zisky tohoto podniku opravdu vznikají v zahraničí. A přesunout sídlo je velmi snadné. To se dalo předvídat.
 
-A mně by dávalo smysl návrh pana poslance Havránka schválit. Takže jen dávám poznámku, že příbuzní nejsme.
+Dávalo by mi smysl návrh poslance Havránka schválit. Proto zmiňuji, že příbuzní nejsme.
 
-*[Přeskočeno: část pořadu s jinými hosty.]*
+**Václav Moravec:** Nakolik je vůbec vznik té daně z mimořádných zisků… Jiří Rusnok už to naznačil. Když se podíváme na ty banky a šest miliard, hranici, o které jsem mluvil, Česká národní banka poslala Ministerstvu financí své stanovisko, do kterého se můžeme podívat. Je to stanovisko z 1. září. Cituji: ČNB je názoru, že pokud má být zavedena nová daň, bylo by vhodné, aby návrh prošel připomínkovým procesem. Takto je zde značné riziko, že zákonodárce nebude schopen zahrnout do novely některé specifické okolnosti, například různé typy majetkových struktur, specifické způsoby účtování a podobně. Což může v praxi činit problémy a možnost rychlé nápravy takové situace bude omezená. Struktura navržené daně, vztahuje se to právě k bankovnímu sektoru, postup při definování, kdo je poplatníkem, a postup při stanovení základu daně jsou dosti složité a nabízí se otázka, zda by nemohlo být zvoleno řešení jednodušší, napsala centrální banka kromě jiného ve stanovisku, které jsme viděli. Vám přijde způsob tvorby té daně z mimořádných zisků transparentní?
 
-**Václav Moravec:** … si činit problémy a možnost rychlé nápravy takové situace bude omezená. Struktura navržené daně, vztahuje se to právě k bankovnímu sektoru, postup při definování, kdo je poplatníkem a postup při stanovení základu daně jsou dosti složité a nabízí se otázka, zda by nemohlo být zvoleno řešení jednodušší, napsala centrální banka kromě jiného ve stanovisku, které jsme viděli. Vám přijde způsob tvorby té daně z mimořádných zisků transparentní?
+**Tomáš Havránek:** Ta myšlenka mi původně dávala velký smysl, asi jako řadě z nás. Když máte mimořádné výdaje, hledáte mimořádné příjmy u těch, kdo na dané situaci vydělávají. Jenže když se podíváte na podrobnosti, je velmi těžké daň nastavit tak, aby dávala smysl i v praxi. To už podle mě vidí skoro všichni, ale nějak to museli dotáhnout do konce.
 
-**Tomáš Havránek:** Ta myšlenka mi původně dávala velký smysl, jako asi řadě z nás. Když máte mimořádné výdaje, hledáte mimořádné příjmy u těch, kdo na dané situaci vydělávají. Když se ale podíváme do detailů, je velmi těžké to implementovat tak, aby to dávalo smysl. To už myslím vidí skoro všichni, ale museli to nějak dotáhnout do konce.
+Obávám se, že daň vynese mnohem méně, než vláda čeká.
 
-Obávám se, že výnosy z té daně budou mnohem, mnohem menší, než s jakými vláda počítá.
+**Václav Moravec:** Také pochybujete, že se na dani z mimořádných zisků vybere 100 miliard?
 
-**Václav Moravec:** I vy patříte k těm skeptikům, že nebude vybráno 100 miliard na dani z mimořádných zisků?
+**Tomáš Havránek:** Bohužel. I u bank je otázka, jestli v příštích letech budou mít mimořádné zisky. Nové hypotéky jsou na mnohaletých minimech, a přitom jde o jednu z hlavních oblastí podnikání komerčních bank.
 
-**Tomáš Havránek:** Bohužel. Třeba i u bank je vůbec otázka, jestli budou mít v příštích letech nějaké mimořádné zisky. Nové hypotéky jsou totiž na mnohaletých minimech, a to je jeden z hlavních byznysů komerčních bank.
+K tomu připočtěte daňovou optimalizaci, nejen u bank, ale i u ostatních firem, kterých se to týká. Kdyby daň platila zpětně i za letošní rok 2022, situace by byla jiná.
 
-A k tomu ještě optimalizace, nejenom u bank, ale u všech ostatních firem, kterých se to týká. Kdyby se to týkalo i letošního roku, byla by situace jiná, tedy kdyby daň platila zpětně i za rok 2022.
+**Václav Moravec:** Kdybyste o tom mohl rozhodnout, hlasoval byste pro takový návrh?
 
-**Václav Moravec:** A kdybyste měl tu pravomoc rozhodovací, vy byste pro takový návrh hlasoval?
+**Tomáš Havránek:** Upřímně řečeno asi ne. Uvalit daň zpětně by vytvořilo precedens, který není dobrý ani v tak mimořádné situaci. Jak říkám, je opravdu těžké správně nastavit všechny podrobnosti. Samotná myšlenka dávala smysl.
 
-**Tomáš Havránek:** Upřímně řečeno asi ne, protože daň uvalená ex post je precedens, který i v takto mimořádné situaci není dobrý. Jak říkám, opravdu se těžko hledají detaily toho, jak to správně vyladit. Ta myšlenka dávala smysl.
-
-**Václav Moravec:** A provedení? Kdybyste známkoval na Institutu ekonomických studií a přišel za vámi student, který by zrealizoval daň z mimořádných zisků v podání Zbyňka Stanjury, tak by dostal… A máte na výběr A až F.
+**Václav Moravec:** A provedení? Kdybyste známkoval na Institutu ekonomických studií a přišel za vámi student, který by takhle zavedl daň z mimořádných zisků v podání Zbyňka Stanjury, tak by dostal… A máte na výběr A až F.
 
 **Tomáš Havránek:** Já bych mu dal áčko. Asi to o moc líp udělat nešlo.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Václav Moravec:** Pane profesore Havránku, opravdu to nešlo udělat lépe systémově, jak naznačoval Jiří Rusnok, když vy byste dával Ačko a teď ukazuju na rozpor mezi kroky ministerstva financí a doporučením centrální banky, která psala o hranici 3 miliard?
+**Václav Moravec:** Pane profesore Havránku, opravdu to nešlo systémově udělat lépe, jak naznačil Jiří Rusnok? Vy byste dal áčko, ale je tu rozpor mezi postupem ministerstva financí a doporučením centrální banky, která psala o hranici 3 miliard.
 
-**Tomáš Havránek:** Lepší by asi bylo nahradit mimořádnou daň nějakým jiným systémem, jak tady zmiňoval pan bývalý guvernér. Ale když už tam mimořádná daň je, nějaká hranice se udělat musí. Samozřejmě mluvím za sebe, moje interpretace je také taková, že dlouhodobě vnímáme, že náš bankovní sektor je hodně regulovaný, a tím pádem hodně ziskový. A ty zisky jdou do ciziny. Přesně tak.
+**Tomáš Havránek:** Asi by bylo lepší mimořádnou daň nahradit jiným systémem, jak zmínil bývalý guvernér. Když už ji ale máme, nějakou hranici stanovit musíme. Mluvím za sebe, ale vykládám si to i tak, že náš bankovní sektor dlouhodobě vnímáme jako silně regulovaný a tím pádem velmi ziskový. A ty zisky jdou do zahraničí. Přesně tak.
 
-Čili možná i tahle motivace tam byla. Podle mě by konkrétně tohle šlo asi dělat lépe, třeba tak, že snížíte regulaci bank, budou trochu méně ziskové, a tím pádem nebudou odvody dividend tak vysoké. Banky jsem samozřejmě kritizoval, jak asi víte, kvůli nedokonalému přenosu úrokových sazeb z ČNB na spořicí účty. To je dnes už mnohem lepší, spořicí účty za 6,5 už se dají sehnat, čili…
+Možná i to sehrálo roli. Tohle by podle mě asi šlo řešit lépe. Kdybyste například zmírnili regulaci bank, byly by o něco méně ziskové a neodváděly by tolik na dividendách. Banky jsem kritizoval za to, že se sazby ČNB nedostatečně promítaly do úroků na spoření. Dnes je to mnohem lepší, spořicí účet s úrokem 6,5 % už se dá najít, takže…
 
-*[Přeskočeno: část pořadu s jinými hosty.]*
-
-**Václav Moravec:** Ano, proto to považuji i za mě jako střadatele. Že to, na co narážel Tomáš Havránek, aby dali víc na spořicí účty, víc na úrocích, a jeli těmi šesti… Že budou optimalizovat, aby snížili tu svoji vstupenku, to znamená, že Zbyněk Stanjura nevybere ani těch 12 miliard, jak odhaduje bankovní asociace, protože to vnímáte jako částku před tou takzvanou optimalizací?
-
-**Tomáš Havránek:** Přesně tak. Za mě osobně už teď není třeba banky danit víc, protože tu transmisi, tedy přenos sazeb na spořicí účty, už opravdu vidím. Takže svoji kritiku stahuji a další daně bych už nezaváděl.
-
-**Václav Moravec:** Včetně tedy této daně z mimořádných zisků. Ale dobrá zpráva to může být, že když už ta daň u velké šestky byla zavedena, takže nám budou lépe úročit vklady, protože jim je jedno, jestli to odvedou státu anebo jestli budou spokojení klienti.
-
-**Tomáš Havránek:** Tomu bych takhle úplně nevěřil. Sazby na spořicích účtech už se zvedly, ale že by kvůli těm daním byly ještě vyšší, tam tu souvislost nevidím.
+**Václav Moravec:** Promiňte, že vám vstupuji do řeči. Nebude mimořádná daň dobrou lekcí i pro banky? Podle odhadu bankovní asociace, který znám, bude výnos jen třetinový oproti plánu Ministerstva financí, tedy 12 miliard. Na tom se shodneme?
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Václav Moravec:** … odeslal poslanecké sněmovně, důvodem mého veta je skutečnost, že příjmová stránka státního rozpočtu je nižší, než by mohla být, pokud by předložené novele zákona o státním rozpočtu na rok 2002 *[sic, dopis se týká roku 2022]* předcházela novela zákona o daních z příjmu, a pokračuje argumentace prezidenta republiky: ukazuje se to realistické fungování této vlády ve vztahu k zákonu o státním rozpočtu, že není rozpočtově odpovědná, pane profesore Havránku.
+**Václav Moravec:** Ano, dívám se na to i jako střadatel. Tomáš Havránek mluvil o tom, aby banky dávaly na spořicích účtech vyšší úroky, a jely těmi šesti… Pokud budou optimalizovat, aby snížily tu svoji vstupenku, znamená to, že Zbyněk Stanjura nevybere ani 12 miliard, jak odhaduje bankovní asociace? Je podle vás ta částka odhad před takzvanou optimalizací?
 
-**Tomáš Havránek:** To bych neřekl. Dám jednu pozitivní poznámku po všem tom negativním, co jsme tu společně řekli. Letošní rozpočet je reálně přebytkový. A proč? Protože máte tak vysokou inflaci, že umazává existující dluh rychleji, než vláda stačí vytvářet nový.
+**Tomáš Havránek:** Přesně tak. Podle mě už banky není třeba danit víc, protože teď skutečně vidím, že se sazby přenášejí do úroků na spořicích účtech. Svou kritiku tedy beru zpět a další daně bych už nezaváděl.
+
+**Václav Moravec:** Včetně téhle daně z mimořádných zisků. Když už ale byla u velké šestky zavedena, může to pro nás být dobrá zpráva. Banky nám budou lépe úročit vklady, protože jim je jedno, jestli peníze odvedou státu, nebo je dají klientům, aby byli spokojení.
+
+**Tomáš Havránek:** Tomu bych úplně nevěřil. Sazby na spořicích účtech už vzrostly, ale že by kvůli těm daním byly ještě vyšší, tu souvislost nevidím.
+
+*[Přeskočeno: část pořadu s jinými hosty.]*
+
+**Václav Moravec:** Právě na tu rozpočtovou neodpovědnost současné vlády v týdnu poukázal i prezident republiky Miloš Zeman, který vetoval novelu zákona o státním rozpočtu na letošní rok. Tady vidíme jeho dopis, který odeslal Poslanecké sněmovně: Důvodem mého veta je skutečnost, že příjmová stránka státního rozpočtu je nižší, než by mohla být, pokud by předložené novele zákona o státním rozpočtu na rok 2002 *[sic, dopis se týká roku 2022]* předcházela novela zákona o daních z příjmu, a pokračuje argumentace prezidenta republiky: ukazuje se to realistické fungování této vlády ve vztahu k zákonu o státním rozpočtu, že není rozpočtově odpovědná, pane profesore Havránku.
+
+**Tomáš Havránek:** To bych neřekl. Po všem negativním, co tu zaznělo, přidám jednu pozitivní poznámku. Letošní rozpočet je v reálném vyjádření přebytkový. Inflace je totiž tak vysoká, že stávající dluh umazává rychleji, než vláda vytváří nový.
 
 Tady ta pozitivní stránka končí, ale reálně opravdu ten přebytek…
 
-**Václav Moravec:** No to se na to díváte jenom z pohledu státního rozpočtu, protože inflace 18%, když se podíváte na vaše příjmy.
+**Václav Moravec:** Díváte se na to jen z pohledu státního rozpočtu. Při inflaci 18 %, když se podíváte na svoje příjmy…
 
-**Tomáš Havránek:** Takhle vysoká inflace, která umazává státní dluh, je v podstatě forma státního bankrotu. A kdo to potom platí? Lidé, kteří mají nějaké úspory v bance nebo doma v hotovosti.
+**Tomáš Havránek:** Tak vysoká inflace, která umazává státní dluh, je v podstatě forma státního bankrotu. A kdo to platí? Lidé, kteří mají úspory v bance nebo doma v hotovosti.
 
-**Vít Samek:** Ale lidi na mzdách… Reálné propady mezd už jsou teď přes 10% ročně a u řady lidí ještě větší. Takže naši zaměstnanci jsou první obětí.
+**Vít Samek:** Ale lidé na mzdách… Reálné mzdy už teď klesají o víc než 10 % ročně a u řady lidí ještě víc. Naši zaměstnanci jsou tedy první obětí.
 
-**Tomáš Havránek:** Jen chci říct, že krátkodobě na tom veřejné finance kvůli inflaci nejsou zase tak špatně. Ne díky ní, ale kvůli ní. Příští rok bude rozpočet kvůli inflaci vyrovnaný: státní dluh se kvůli ní sníží víceméně o 300 miliard a schodek bude 300 miliard.
+**Tomáš Havránek:** Chci říct jen to, že krátkodobě na tom veřejné finance kvůli inflaci nejsou až tak špatně. Říkám kvůli ní, ne díky ní. Příští rok bude rozpočet kvůli inflaci vyrovnaný. Inflace sníží státní dluh víceméně o 300 miliard a schodek bude 300 miliard.
 
-Dlouhodobě jsou ale problémem důchody, o čemž pan Rusnok ví z nás rozhodně nejvíc. A to je to, co rozpočet rozbourá za nějakých deset let. Ostatní věci, které NERV radí, pomohou, ale nejsou to úplně věci, které by nás dlouhodobě zachránily.
+Dlouhodobým problémem jsou ale důchody. Pan Rusnok o nich z nás rozhodně ví nejvíc. Právě důchody rozbourají rozpočet za nějakých deset let. Ostatní doporučení NERVu pomohou, ale dlouhodobě nás samy sotva zachrání.
 
-**Václav Moravec:** Ale když se podíváte, protože vy jste významným členem Národní ekonomické rady vlády, a NERV v souvislosti se zadlužováním, rychlým zadlužováním státu doporučil, aby došlo k reformě na straně výdajů i na straně příjmů. Jsou tam popsány daně, včetně daně z příjmu fyzických osob, které by se mohly v rámci progrese zvyšovat. Premiér Petr Fiala a klíčoví členové vlády odmítli návrh na zvýšení daně z příjmu.
+**Václav Moravec:** Jste významným členem Národní ekonomické rady vlády. Kvůli rychlému zadlužování státu NERV doporučil reformu výdajů i příjmů. Zmiňuje i daně, včetně daně z příjmů fyzických osob, které by se mohly v rámci progrese zvýšit. Premiér Petr Fiala a klíčoví členové vlády návrh na zvýšení daně z příjmů odmítli.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Václav Moravec:** … daňové povinnosti pro občany bych rozhodně nepovažoval za rozumné. V úvahu přichází akorát zvýšení například spotřební daně na tabák a na alkohol. Počítal jste, pane profesore, to unisono odmítnutí zvýšení daně z příjmů vládou, ať už fyzických nebo právnických osob, které jsme slyšeli počítat.
+**Vít Rakušan (ze záznamu):** Doba není jednoduchá. Je tu vysoká inflace a bavit se teď o nějakém zvyšování daňové povinnosti pro občany bych rozhodně nepovažoval za rozumné. V úvahu přichází akorát zvýšení například spotřební daně na tabák a na alkohol.
+
+**Václav Moravec:** Pane profesore, počítal jste s tím, že vláda tak jednohlasně odmítne zvýšit daň z příjmů fyzických i právnických osob?
 
 **Tomáš Havránek:** Vzhledem k programu vlády se to dalo čekat.
 
 **Václav Moravec:** Ale v programu vlády je taky ta rozpočtová odpovědnost.
 
-**Tomáš Havránek:** To jsou dva, řekněme, protichůdné cíle, ale myslím, že dojde k přehodnocení toho odmítání zvyšování daní, protože i přes inflaci musíme s rozpočtem v horizontu nějakých dvou let něco dělat.
+**Tomáš Havránek:** To jsou dva, řekněme, protichůdné cíle. Myslím ale, že vláda svůj odpor ke zvyšování daní přehodnotí, protože i přes inflaci musíme s rozpočtem v horizontu nějakých dvou let něco udělat.
 
-**Vít Samek:** Já předpokládám, že ta inflace tu nebude za dva, tři roky pořád takhle vysoká.
-
-*[Přeskočeno: část pořadu s jinými hosty.]*
-
-**Tomáš Havránek:** Ale pořád to není něco, co by rozpočet dlouhodobě zachránilo.
-
-**Václav Moravec:** Podle vás bude muset vláda ustoupit od té mantry, kterou opakuje premiér Fiala, ministr financí, že nebudou přistupovat ke zvýšení daní? Naopak, přicházejí i v tom daňovém balíčku letošním k, nechci říct ke snížení daní, ale k výpadkům státního rozpočtu na příjmové straně.
-
-**Tomáš Havránek:** Pořád je naděje, že se to nebude muset dělat. Máme tu třeba devizové rezervy, které, pokud se neprodají, nám jednou mohou pěkně vydělávat, když se budou investovat převážně do akcií. To chce nový pan guvernér z větší části udělat, za což bych ho pochválil, ale projeví se to zase až v nějakém dalším období. A výnos tam může být klidně 100 miliard ročně v dnešních korunách.
+**Vít Samek:** Předpokládám, že za dva nebo tři roky už inflace nebude tak vysoká.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Václav Moravec:** … spláceli po dosažení určité příjmové hranice. Jsem velmi stručně tady vyjmenoval tu příjmovou stránku a tady už vidíme výdajovou stránku, ale zatím zůstaneme u té příjmové. Tak. Čistě ekonomicky, bez ideologie, bez stranických šarvátek.
+**Tomáš Havránek:** Ani to ale rozpočet dlouhodobě nezachrání.
 
-Co byste zavedl, v jakém pořadí, pane profesore?
+**Václav Moravec:** Bude muset vláda podle vás ustoupit od té mantry, kterou opakují premiér Fiala a ministr financí, že daně zvyšovat nebudou? Letošní daňový balíček dokonce přinese výpadky příjmů státního rozpočtu. Nechci přímo říkat, že jde o snížení daní.
 
-**Tomáš Havránek:** Ano, já už jen ještě k těm daním. Inflační daň na našich úsporách dosáhne za tři roky skoro bilionu korun. To je obrovská daňová zátěž, hlavně pro zaměstnance. Ti hodně bohatí nemají peníze v bankách, mají je jinde, v nemovitostech, v akciích, a ti hodně chudí mají dávky a nemají žádné úspory.
+**Tomáš Havránek:** Pořád je naděje, že daně zvyšovat nebudeme muset. Máme třeba devizové rezervy. Pokud se neprodají a budou se investovat hlavně do akcií, mohou nám jednou slušně vydělávat. Nový guvernér to z velké části chce udělat, za což bych ho pochválil. Výsledky se ale projeví až později. Výnos může klidně dosáhnout 100 miliard ročně v dnešních korunách.
 
-Čili když znovu zvýšíme daně na práci, bude to dvojitá daň. K poklesu reálných mezd a k inflační dani na úspory přidáme ještě další daň. Chápu tedy vládu, že je to velmi obtížné a že k tomu pravděpodobně nedojde. Ale právě tam je největší balík peněz, které by se daly vybrat, což pan Samek určitě potvrdí z vlastních výpočtů.
+*[Přeskočeno: část pořadu s jinými hosty.]*
 
-Bude to tedy těžká věc. Osobně čekám, že se vybere jen několik málo z těch bodů, jak jste zmiňoval, možná snížení podpory v nezaměstnanosti. Vláda ale samozřejmě také chce vyhrát volby, takže všichni chápeme, že většina z toho realizována nebude, přestože ekonomicky to dává smysl.
+**Václav Moravec:** Podle NERVu by stát mohl zavést i odložené školné na vysokých školách, které by absolventi spláceli po dosažení určitého příjmu. To byl stručný výčet návrhů na straně příjmů. Tady už vidíme výdaje, ale zatím zůstaňme u příjmů. Čistě ekonomicky, bez ideologie a stranických šarvátek.
 
-**Václav Moravec:** Ale vy znovu odpovězte, prosím, na tu otázku: kdyby se nehledělo na ideologii a vy byste byl ministrem financí, tak které z těch kroků byste zaváděl, které by dávaly největší smysl na příjmové straně státního rozpočtu při udržení solidarity v české společnosti?
+Co byste zavedl a v jakém pořadí, pane profesore?
+
+**Tomáš Havránek:** Ještě k daním. Inflační daň z našich úspor dosáhne za tři roky skoro bilionu korun. Je to obrovská zátěž hlavně pro zaměstnance. Ti hodně bohatí nemají peníze v bankách, ale třeba v nemovitostech a akciích. Ti hodně chudí pobírají dávky a žádné úspory nemají.
+
+Když znovu zvýšíme zdanění práce, bude to dvojí daň. K poklesu reálných mezd a inflační dani z úspor přidáme ještě další daň. Chápu tedy, že je to pro vládu velmi obtížné a pravděpodobně k tomu nedojde. Právě tam je ale největší balík peněz, který by se dal vybrat. Pan Samek to určitě potvrdí z vlastních výpočtů.
+
+Bude to těžké. Čekám, že vláda vybere jen několik málo bodů, jak jste zmiňoval, možná snížení podpory v nezaměstnanosti. Samozřejmě chce také vyhrát volby, takže všichni chápeme, že většinu návrhů neuskuteční, přestože ekonomicky dávají smysl.
+
+**Václav Moravec:** Odpovězte prosím znovu na tu otázku. Kdybyste byl ministrem financí a nehleděl na ideologii, které kroky byste zaváděl? Které by dávaly největší smysl na příjmové straně státního rozpočtu při zachování solidarity v české společnosti?
 
 **Tomáš Havránek:** Zvýšení daní.
 
@@ -122,40 +126,46 @@ Bude to tedy těžká věc. Osobně čekám, že se vybere jen několik málo z 
 
 **Václav Moravec:** To dává největší smysl?
 
-**Tomáš Havránek:** Je to největší balík peněz, a na tom je, řekl bych, možná i poměrně široká společenská shoda. Čili snížení daní, které prosadily ODS a ANO, bylo něco, co v té době nedávalo úplně velký smysl. Takže vrátit to zpátky je něco, na čem se tady ve studiu možná shodneme asi všichni.
+**Tomáš Havránek:** Je to největší balík peněz a řekl bych, že na tom možná panuje i poměrně široká společenská shoda. Snížení daní, které prosadily ODS a ANO, tehdy moc smysl nedávalo. Na tom, že bychom to měli vrátit, se tady ve studiu možná shodneme všichni.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Václav Moravec:** Váš materiál, který jste koncem týdne představili jako NERV, navazovat nějaký další, který už vyčíslí ty možné výnosy, protože u některých těch výnosů tam jsou obecné nástřely. Řády jednotek miliard, desítek miliard, zvýšení daně z příjmů fyzických osob cca 100 miliard. Bude se s tímto materiálem dál analyticky pracovat, aby byl tak propracovaný, jak požadují odbory?
+**Václav Moravec:** Pane profesore, bude na váš materiál, který jste koncem týdne představili za NERV, navazovat další, který už vyčíslí možné výnosy? U některých jsou to jen hrubé odhady v jednotkách či desítkách miliard. U zvýšení daně z příjmů fyzických osob je to asi 100 miliard. Bude se s materiálem dál analyticky pracovat, aby byl tak propracovaný, jak požadují odbory?
 
-**Tomáš Havránek:** Určitě bude. Nedokážu teď slíbit přesně to, co by chtěl pan Samek. Konkrétnější propočty ale rozhodně budou na nějaké úrovni provedeny, buď v NERVu, nebo na vládě.
+**Tomáš Havránek:** Určitě ano. Teď nedokážu slíbit přesně to, co by chtěl pan Samek. Podrobnější propočty ale na nějaké úrovni rozhodně vzniknou, buď v NERVu, nebo na vládě.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Václav Moravec:** … budu představit. Abychom ukončili příjmovou stranu státního rozpočtu. Vím, že vás tou otázkou ženu do nejistoty, ale může současná vláda Petra Fialy dodržet své závazky, včetně střednědobých výhledů státního rozpočtu na roky 2024-2025, aniž by sahala na daň z příjmů fyzických osob? Jasná odpověď, když na ně zatím sahat nechce, na zvýšení daně. Pane profesore?
+**Vít Samek:** Jinak si to nedovedu představit.
 
-**Tomáš Havránek:** Může, pokud bude mít velké štěstí, například kdyby Národní banka najednou byla extra zisková díky výnosům z rezerv a odváděla zisky do státního rozpočtu. To je běžné třeba ve Spojených státech. Stát se to může.
+**Václav Moravec:** Abychom uzavřeli příjmy státního rozpočtu. Vím, že vás tou otázkou ženu do nejistoty, ale může vláda Petra Fialy dodržet své závazky včetně střednědobých rozpočtových výhledů na roky 2024 až 2025, aniž by zvýšila daň z příjmů fyzických osob? Zatím ji zvyšovat nechce. Prosím o jasnou odpověď, pane profesore.
+
+**Tomáš Havránek:** Může, pokud bude mít velké štěstí. Například kdyby Národní banka najednou díky výnosům z rezerv dosahovala vysokých zisků a odváděla je do státního rozpočtu. To je běžné třeba ve Spojených státech. Stát se to může.
 
 Spíš tomu moc nevěřím, ale ta možnost tu určitě je.
 
 *[Přeskočeno: část pořadu s jinými hosty.]*
 
-**Václav Moravec:** … nezaměstnanosti, proto, abych ty lidi motivoval, aby si práci hledali velmi rychle, aby ta podpora nebyla třeba tak dlouhá z hlediska toho časovosti, anebo případně, aby ta míra podpory se snižovala rychle. Marian Jurečka dodal, že snížení podpory v nezaměstnanosti plánuje jako ministr práce a sociálních věcí zavést v první polovině příštího roku. Přijde vám šťastné, že se začíná nejrazantněji tímto bodem z vašeho materiálu?
+**Václav Moravec:** Marian Jurečka si vybral z návrhu právě snížení podpory v nezaměstnanosti. Lidé by si mohli hledat práci rychleji, pokud by se tento krok uskutečnil.
 
-**Tomáš Havránek:** Můžeme být rádi, že se aspoň něco použije, ale hlavní věcí jsou samozřejmě důchody. Na výdajové straně tvoří tři čtvrtiny výdajů rozpočtu mandatorní nebo kvazimandatorní výdaje a důchodový systém se, jak jsme tu už naznačili, změnit musí, jinak bude rozpočet dlouhodobě opravdu zkrachovalý. Nebudou stačit nějaké parametrické změny. Samozřejmě, když půjdeme všichni do důchodu v 90 letech, tím se to vyřeší, ale bude třeba nějak reagovat na to, že průběžný systém vznikl za Bismarcka v situaci, kdy lidé měli čtyři, pět dětí a důchodový věk byl 70 let, takže se ho málokdo dožil. Dnes máte porodnost hluboko pod dvěma, u nás už možná ne tak hluboko, a v takové situaci to dlouhodobě fungovat nemůže. Narazí to na demografickou zeď a my musíme jednak motivovat lidi, aby měli třeba víc dětí.
+**Marian Jurečka (ze záznamu):** V situaci, kdy má tento stát nejnižší nezaměstnanost v Evropské unii, máme na pracovním trhu obrovskou poptávku po lidech. Chci snížit dnes poměrně štědrou podporu v nezaměstnanosti, abych lidi motivoval hledat si práci velmi rychle. Aby podpora třeba netrvala tak dlouho, anebo aby se její výše rychle snižovala.
 
-**Vít Samek:** To se teď v posledních dvou letech nám počet narozených dětí roste, takže…
+**Václav Moravec:** Marian Jurečka dodal, že jako ministr práce a sociálních věcí plánuje snížení podpory v nezaměstnanosti zavést v první polovině příštího roku. Přijde vám šťastné, že se začíná nejrazantněji právě tímhle bodem vašeho materiálu?
 
-**Tomáš Havránek:** Ano, to je trochu demografický zázrak, ale pořád to nestačí. A tím druhým pilířem musí být mnohem větší motivace kupovat akcie už v mladém věku, od 20 let, vlastně od prvního zaměstnání.
+**Tomáš Havránek:** Můžeme být rádi, že se prosadí aspoň něco, ale hlavní jsou samozřejmě důchody. Tři čtvrtiny rozpočtových výdajů jsou mandatorní nebo kvazimandatorní. Jak už jsme naznačili, důchodový systém se musí změnit, jinak státní rozpočet dlouhodobě opravdu zbankrotuje. Parametrické změny stačit nebudou. Jistě, když půjdeme všichni do důchodu v 90 letech, vyřeší se to. Bude ale potřeba reagovat na to, že průběžný systém vznikl za Bismarcka, kdy lidé měli čtyři nebo pět dětí a do důchodu se chodilo v 70 letech, kterých se málokdo dožil. Dnes je porodnost hluboko pod dvěma, u nás už možná ne tak hluboko, a v takové situaci systém dlouhodobě fungovat nemůže. Narazí na demografickou zeď. Musíme tedy lidi mimo jiné motivovat, aby měli třeba víc dětí.
 
-Náš systém penzijního připojištění není úplně šťastný v tom, že máme transformované fondy, které nominálně garantují neprodělek, ale reálně garantují prodělek každý rok všem, kdo se jich účastní. Je tedy potřeba to celé změnit a více motivovat k jednoduchému nákupu akcií v mládí a postupnému prodeji ve stáří s menšími poplatky, jak to dnes na trhu jde. Penzijní fondy ale pořád mají relativně vysoké poplatky. Tam by možná šlo zatlačit na to, aby státní podpora byla vázána na snížení poplatků.
+**Vít Samek:** V posledních dvou letech nám počet narozených dětí roste, takže…
 
-**Václav Moravec:** A to byste uvítal, pokud by dříve než snižování podpory v nezaměstnanosti přišlo Ministerstvo práce a sociálních věcí, protože narážím i na možnou nejednotnost NERVu, kdy se ohradil Daniel Prokop, sociolog, který korigoval slova ministra Jurečky, že říkal, to přinese pouze drobné úspory a nemělo by se v rámci rychlosti zavádění, protože jsem mluvil o těch prioritách, vás jako členů NERVu, nemělo by se jít na snižování nezaměstnanosti jako prvním kroku, který chce ministr práce a sociálních věcí realizovat.
+**Tomáš Havránek:** Ano, je to trochu demografický zázrak, ale pořád to nestačí. Druhým pilířem musí být mnohem větší motivace kupovat akcie už v mládí, od 20 let, vlastně od prvního zaměstnání.
 
-**Tomáš Havránek:** To máte pravdu, ale to, co jsem řekl, vyžaduje novou společenskou smlouvu. Dnes to funguje tak, že od státu čekáme, že nám zajistí nějaký důstojný důchod. Jenže když pracujeme, neplatíme důchod sami sobě, platíme ho svým rodičům. My to víme, ale řada lidí to neví. Já tedy odvádím na důchod svých rodičů a moje děti budou odvádět na můj důchod. Mně by proto přišlo fér ty odvody třeba maličko navázat, aby odvody mých dětí šly přímo na můj důchod.
+Slabina našeho penzijního připojištění je, že transformované fondy nominálně zaručují, že neproděláte, ale po započtení inflace zaručují prodělek každý rok všem účastníkům. Je potřeba systém změnit a víc motivovat lidi, aby v mládí jednoduše kupovali akcie a ve stáří je postupně prodávat s nižšími poplatky, jaké už dnes trh umožňuje. Penzijní fondy ale pořád mají poměrně vysoké poplatky. Možná by šlo státní podporu podmínit snížením poplatků.
 
-Mám tedy střet zájmů, čtyři děti, takže pro mě je samozřejmě snadné to říct. Ne všichni to mohou takhle jednoduše udělat, ale vnést tam větší spravedlnost a větší motivaci zvýšit porodnost by rozhodně pomohlo. Chápu ale, že to není věc, která se dá udělat hned. Vyžaduje to dlouhou diskusi, přesvědčování, novou společenskou smlouvu, a to napříč celým politickým spektrem. Aby s tím souhlasily odbory, zleva doprava, to bude velmi…
+**Václav Moravec:** Uvítal byste, kdyby s tím Ministerstvo práce a sociálních věcí přišlo dřív než se snížením podpory v nezaměstnanosti? Ptám se i kvůli možné nejednotnosti NERVu. Sociolog Daniel Prokop se ohradil proti slovům ministra Jurečky. Říkal, že to přinese jen drobné úspory. Mluvil jsem o prioritách vás jako členů NERVu. Podle Prokopa by se nemělo začínat snižováním nezaměstnanosti jako prvním krokem, který chce ministr realizovat.
 
-**Václav Moravec:** No ale podívejte se, tu novou společenskou smlouvu vždy měly nastavovat různé penzijní komise, které by šly v nějaké dlouhodobé udržitelnosti a perspektivě. A kolik toho prosadily?
+**Tomáš Havránek:** Máte pravdu, ale to, o čem mluvím, vyžaduje novou společenskou smlouvu. Dnes od státu čekáme, že nám zajistí důstojný důchod. Když ale pracujeme, platíme důchod svým rodičům, ne sami sobě. My to víme, ale řada lidí to neví. Já odvádím na důchod svých rodičů a moje děti budou odvádět na můj. Připadalo by mi fér ty odvody třeba trochu provázat, aby odvody mých dětí šly přímo na můj důchod.
+
+Mám tu střet zájmů, mám čtyři děti. Pro mě je samozřejmě snadné to říct. Ne každý to může takhle jednoduše udělat. Bylo by ale rozhodně dobré, kdyby byl systém spravedlivější a víc motivoval lidi mít děti. Chápu, že to nejde udělat hned. Vyžaduje to dlouhou diskusi, přesvědčování a novou společenskou smlouvu napříč politickým spektrem. Aby s tím souhlasily i odbory, aby byla shoda zleva doprava, to bude velmi…
+
+**Václav Moravec:** Jenže tu novou společenskou smlouvu měly vždy připravit různé penzijní komise, které měly řešit dlouhodobou udržitelnost a výhled. Kolik toho prosadily?
 
 **Tomáš Havránek:** Mluví se o tom asi už od mého dětství, ale na to vám odpověď nedám.

@@ -4,11 +4,13 @@ media: "video"
 outlet: "Seznam Zprávy"
 url: "https://www.seznamzpravy.cz/clanek/ekonomika-finance-zrusme-inflaci-rika-exporadce-guvernera-michla-211296"
 date: "2022-08-10"
+updated: "2026-11-26"
 headline: "Zrušme inflaci, říká exporadce guvernéra Michla"
 byline: "Tomáš Havránek"
 interviewer: "Jiří Zatloukal"
 perex: "Je třeba masivní posílení koruny. Ideálně prodat všechna eura, co nakoupila ČNB během intervencí mezi roky 2013 a 2017, říká ekonom z Karlovy univerzity Tomáš Havránek, který působil jako poradce guvernéra Aleše Michla."
-body_note: "Rozhovor pro Seznam Zprávy, ptá se Jiří Zatloukal. Stránka nese přepis celého dvacetiminutového videorozhovoru; Seznam Zprávy k němu vydaly [redakčně upravenou psanou verzi](https://www.seznamzpravy.cz/clanek/ekonomika-finance-zrusme-inflaci-rika-exporadce-guvernera-michla-211296), v níž jsou odpovědi uhlazené, místy zkrácené a přeskládané. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3 a porovnaný s titulky Seznam Zpráv; mluvčí jsou určeni podle hlasu a titulky to potvrzují. Odpovědi Tomáše Havránka jsou upraveny jako autorizovaný rozhovor, tedy spisovně a bez výplňových slov, opakování a nedokončených začátků vět; otázky takto upravovány nejsou. Čísla, zápory ani míra opatrnosti se neměnily, jen zjevné přeřeknutí „mzdy“ je opraveno na „ceny“ v odpovědi o návratu cen na původní hladinu. Tři tečky na začátku nebo konci repliky značí přerušení, nebo úsek, který nešlo ze zvuku spolehlivě zachytit."
+body_note: "Rozhovor pro Seznam Zprávy, ptá se Jiří Zatloukal. Zde je přepis celého dvacetiminutového videorozhovoru. Text je strojový přepis nahrávky (Whisper large-v3-turbo) ověřený nezávislým modelem Whisper large-v3 a porovnaný s titulky Seznam Zpráv. Mluvčí jsou určeni podle hlasu a titulky to potvrzují. V odpovědích Tomáše Havránka jsou místy zkrácena souvětí, upraven slovosled a vypuštěna výplňová slova, opakování a nedokončené začátky vět. Otázky prošly lehkou jazykovou úpravou. Čísla, zápory ani míra opatrnosti se neměnily, jen zjevné přeřeknutí „mzdy“ je opraveno na „ceny“ v odpovědi o návratu cen na původní hladinu. Seznam Zprávy vydaly také [redakčně upravenou psanou verzi](https://www.seznamzpravy.cz/clanek/ekonomika-finance-zrusme-inflaci-rika-exporadce-guvernera-michla-211296), v níž jsou odpovědi uhlazené, místy zkrácené a přeskládané. Tři tečky na začátku nebo konci repliky značí přerušení nebo úsek, který nešlo ze zvuku spolehlivě zachytit."
+word_count: "2517"
 ---
 
 **Jiří Zatloukal:** Ve studiu vítám Tomáše Havránka, profesora Karlovy univerzity a také iniciátora akce Zrušme inflaci. Dobrý den.
@@ -17,127 +19,127 @@ body_note: "Rozhovor pro Seznam Zprávy, ptá se Jiří Zatloukal. Stránka nese
 
 **Jiří Zatloukal:** Guvernér Aleš Michl a bankovní rada na minulém zasedání nechali úrokové sazby beze změny. Byl to podle vás dobrý krok?
 
-**Tomáš Havránek:** Já bych to udělal asi podobně, byl bych pro stabilitu sazeb, protože efektivita dalšího zvyšování je dnes už poměrně pochybná. A to z několika důvodů. Jednak si firmy berou hodně úvěrů v eurech, takže tam se sazba nijak nepromítá. Do spořicích účtů se zvyšování úroků také moc nepromítá. A hypotéky už jsou skoro mrtvé kvůli vysokým cenám nemovitostí a regulaci ČNB.
+**Tomáš Havránek:** Asi bych postupoval podobně. Byl bych pro stabilitu sazeb. Účinek dalšího zvyšování je už dost pochybný. Firmy si berou hodně úvěrů v eurech a tam se zvýšení korunových sazeb vůbec neprojeví. Ani na spořicích účtech se moc neprojevuje. Hypotéky jsou kvůli vysokým cenám nemovitostí a regulaci ČNB už skoro mrtvé.
 
-**Jiří Zatloukal:** Možná se shodnem na tom, že klíčová pro další vývoj inflace jsou takzvaná inflační očekávání, což je vlastně psychologie davu, psychologie společnosti, to, jak lidé čekají tu inflaci do budoucna. Je podle vás Michl přesvědčivý v tomhle, nebo dokáže dobře přesvědčit veřejnost, že ta inflace půjde brzy dolů?
+**Jiří Zatloukal:** Možná se shodneme, že pro další vývoj inflace jsou klíčová inflační očekávání, tedy to, jakou inflaci lidé do budoucna čekají. Jde o psychologii davu, o psychologii společnosti. Je podle vás Michl přesvědčivý? Dokáže veřejnost přesvědčit, že inflace brzy klesne?
 
-**Tomáš Havránek:** Možná je ještě brzy na to, abychom Aleše Michla takhle odsuzovali, nebo naopak chválili. Pro stabilitu bych sice byl, ale rozhodně bych hlasoval pro nějaké dramatičtější posilování koruny, protože Národní banka musí s inflací něco dělat, sama nezmizí. Tedy masivní posílení koruny: nejen bránit oslabování, ale korunu aktivně posilovat, ideálně prodat všechna eura, která ČNB nakoupila během intervencí proti koruně mezi roky 2013 a 2017, tedy asi 75 miliard eur. Ne najednou, ale postupně, třeba během dvou let prodávat každý měsíc 3 miliardy eur.
+**Tomáš Havránek:** Na to, abychom Aleše Michla odsuzovali nebo chválili, je možná ještě brzy. Byl bych sice pro stabilitu sazeb, ale rozhodně bych hlasoval pro mnohem výraznější posilování koruny. Národní banka musí proti inflaci něco dělat. Sama nezmizí. Nestačí bránit oslabování. Korunu bych aktivně posiloval. Nejlépe bych prodal všechna eura, která ČNB nakoupila při intervencích proti koruně v letech 2013 až 2017, tedy asi 75 miliard eur. Postupně, třeba po 3 miliardách eur měsíčně po dobu dvou let.
 
-Už samotné oznámení toho opatření by vedlo k velkému posílení koruny, která by potom volně plula na nějaké silnější hladině. To by hned pomohlo zlomit očekávání dalšího nárůstu inflace: hned byste viděli mnohem silnější korunu a to, že je banka ochotná s tím něco dělat. A to není nic nového, už Keynes doporučoval jako lék na dováženou inflaci aktivní posílení koruny. Keynese dobře znáte, překládal jste ho do češtiny.
+Už samotné oznámení by korunu výrazně posílilo a pak by se kurz volně pohyboval na nějaké silnější úrovni. Hned by to pomohlo zlomit očekávání dalšího růstu inflace. Lidé by viděli mnohem silnější korunu i to, že je banka ochotná něco udělat. Není to nic nového. Aktivní posílení koruny doporučoval jako lék na dováženou inflaci už Keynes. Dobře ho znáte, překládal jste ho do češtiny.
 
-**Jiří Zatloukal:** Tady je velký problém, protože pro exportéry, který vyváží do zahraničí, by to byl obrovský problém, kdyby koruna posílila na 22, 20. Vy mluvíte o nějakém razantnějším posílení. A na druhé straně to posílení koruny zase není tak výrazné snížení ten nakupovaného zboží. Nebo nepromítne se tolik do té inflace. Do snížení inflace. Když se koruna posílí třeba o dvě koruny, tak to snížení inflace je v řádech desetin procenta nebo maximálně jednotek procent.
+**Jiří Zatloukal:** Pro exportéry by byl obrovský problém, kdyby koruna posílila na 22 nebo 20. Vy mluvíte o razantnějším posílení. Na druhé straně ale silnější koruna nakupované zboží tolik nezlevní a inflace se tolik nesníží. Když koruna posílí třeba o dvě koruny, inflace klesne v řádu desetin procenta, maximálně jednotek procent.
 
-**Tomáš Havránek:** To máte pravdu: mechanický dopad není takový, že bychom mohli inflaci úplně smazat jen pomocí kurzu. Ale vy jste zmiňoval očekávání. Vidíme, že centrální banka zvyšovala sazby, ale inflace nám pořád roste a roste. Teď se blíží hodnotám kolem 20 procent. A pro očekávání, pro naši víru, že se to zlepší, je důležité, abychom viděli, že banka dělá něco, co se okamžitě projeví, co inflaci sníží, co ji třeba ještě dostane zpátky pod hranici 20 procent.
+**Tomáš Havránek:** Máte pravdu. Přímý dopad kurzu nestačí k tomu, abychom inflaci úplně smazali. Ale zmínil jste očekávání. Centrální banka zvyšovala sazby, jenže inflace dál roste. Teď se blíží 20 procentům. Abychom uvěřili, že se to zlepší, potřebujeme vidět, že banka dělá něco s okamžitým účinkem, co inflaci sníží a třeba ji ještě dostane pod 20 procent.
 
-**Jiří Zatloukal:** Druhá věc, že pokud Česká národní banka začne uměle posilovat českou měnu, která je poměrně malá v tom světě finančních trhů, má malou sílu, tak spekulanti vlastně ji snadno přetlačí. Počítáte s tímhle?
+**Jiří Zatloukal:** Když Česká národní banka začne uměle posilovat korunu, která na světových finančních trzích nemá příliš velkou sílu, spekulanti ji snadno přetlačí. Počítáte s tím?
 
-**Tomáš Havránek:** To se děje teď. Banka teď brání nějakou hladinu kurzu, což je takticky špatně, protože kdyby se spekulanti, několik hedgeových fondů, rozhodli jít opravdu masivně proti ní, nemůže to vyhrát. Když se zaváže k tomu, že bude postupně prodávat nějaký objem, nemůžete proti tomu nijak spekulovat.
+**Tomáš Havránek:** To se děje teď. Banka brání určitou hladinu kurzu, což je takticky špatně. Kdyby se několik hedgeových fondů rozhodlo jít ve velkém proti ní, nemůže vyhrát. Když se ale zaváže postupně prodat určitý objem rezerv, proti tomu se nijak spekulovat nedá.
 
-**Jiří Zatloukal:** Můžete spekulovat, můžete počkat, až vyprodá přece všechny devizové rezervy a pak ta měna znovu oslabí.
+**Jiří Zatloukal:** Můžete přece spekulovat. Můžete počkat, až banka vyprodá všechny devizové rezervy a měna zase oslabí.
 
-**Tomáš Havránek:** To je potom ale hodně nákladná věc, i vzhledem k těm vysokým úrokovým sazbám, při samotném prodávání eur. Ale možná bych zmínil to rozhodnutí o sazbách. Je potřeba nějak donutit nebo motivovat banky, aby zvýšily úroky na spořicích účtech. Ideálně by si měl guvernér pozvat šéfy největších bank, to jsou Blažek, Juchelka a Salomon, a říct jim: Pánové, my vám za vaše úložky v ČNB platíme 7%, vy domácnostem za stejné peníze platíte na úsporách průměrně 1%. Podle nejnovějších dat 1%, tedy sedmkrát méně.
+**Tomáš Havránek:** To by ale bylo hodně nákladné, i kvůli vysokým sazbám v době prodeje eur. Možná bych se vrátil k rozhodnutí o sazbách. Banky je potřeba přimět nebo motivovat, aby zvedly úroky na spořicích účtech. Ideálně by si měl guvernér pozvat šéfy největších bank, Blažka, Juchelku a Salomona, a říct jim: Pánové, my vám za vaše vklady v ČNB platíme 7 %. Vy za stejné peníze platíte domácnostem na úsporách podle nejnovějších dat v průměru 1 %, tedy sedmkrát méně.
 
-Chápu, že potřebujete nějak vydělat, ale musí to mít svou míru. Máte své náklady, ale kdybyste na spořicích účtech dali 6% bez omezení, tedy ne do 100 000 nebo 200 000, ale 6% bez omezení, pořád neproděláte. Nám to pomůže s transmisí, nám to pomůže to jenom srazit.
+Chápu, že potřebujete vydělávat a máte své náklady, ale musí to mít míru. Ani kdybyste na spořicích účtech nabídli 6 % bez omezení výše vkladu, tedy nejen do 100 000 nebo 200 000, neprodělali byste. Nám to pomůže s transmisí a pomůže nám to srazit inflaci.
 
-Pokud by to neudělali, má na ně guvernér zase silné páky. Může zvýšit kapitálovou přiměřenost, aby nemohli na dividendách odvádět tolik zisku do zahraničí. Může tlačit na zavedení bankovní daně, lobovat u vlády. Jakmile se jednou zavede, už se nikdy nezruší, takže by ty daně platili navždy. Oni si to dobře rozmyslí. A tohle by pro tlumení inflace a pro motivaci k úsporám pomohlo mnohem víc než nějaké další zvyšování reposazby ČNB na 8, 10, 15%, když nemáte transmisi do klientských sazeb na úsporách.
+Kdyby to banky neudělaly, guvernér má silné páky. Může zvýšit požadavky na kapitálovou přiměřenost, aby nemohly na dividendách odvádět tolik zisku do zahraničí. Může také u vlády prosazovat bankovní daň. Jakmile se jednou zavede, už se nikdy nezruší a banky ji budou platit navždy. Banky si to dobře rozmyslí. Podpořit spoření tímhle způsobem by proti inflaci pomohlo mnohem víc než zvyšovat repo sazbu ČNB na 8, 10 nebo 15 %, když se zvýšení nepromítá do úroků z úspor.
 
-**Jiří Zatloukal:** To zatím není. Vy sám dlouhodobě tu myšlenku zrušit úplně inflaci prosazujete. Udělal jste si teďka internetové stránky, jste v tom aktivnější. Jak chcete tu inflaci zrušit? Řekněte to krátce.
+**Jiří Zatloukal:** To se zatím neděje. Vy sám dlouhodobě prosazujete úplné zrušení inflace. Teď jste si založil internetové stránky a jste v tom aktivnější. Jak chcete inflaci zrušit? Zkuste to krátce.
 
-**Tomáš Havránek:** Každá centrální banka může inflaci zrušit tím, že ovládá cenu peněz a jejich množství v ekonomice. Nástroje by tedy byly hodně podobné těm, které se používají teď. Větší důraz na kurzovou složku, tedy posilování koruny. Až se vyřeší transmise, o které jsme se bavili, tedy aby se vyšší úrokové sazby odrážely ve spořicích účtech, pak i zvyšování sazeb. O tom, že to udělat lze, není v ekonomii velký spor. Detailně to popisujeme i na stránce zrusme-inflaci.cz.
+**Tomáš Havránek:** Každá centrální banka může inflaci zrušit, protože ovládá cenu peněz i jejich množství v ekonomice. Nástroje by byly velmi podobné těm dnešním. Víc bychom pracovali s kurzem a posilovali korunu. Až se vyřeší transmise, tedy až se vyšší sazby začnou promítat i do úroků na spořicích účtech, přišlo by na řadu i zvyšování sazeb. Mezi ekonomy není velký spor o to, zda to lze udělat. Podrobně to popisujeme na zrusme-inflaci.cz.
 
-Otázka je, jestli je to něco, co bychom měli chtít. A tam máme asi 25 argumentů, kterými ukazujeme, proč je to správná věc a proč neplatí argument, že inflace promazává kola ekonomiky.
+Otázka je, jestli bychom o to měli stát. Uvádíme asi 25 argumentů, proč je to správné a proč neplatí, že inflace promazává kola ekonomiky.
 
-**Jiří Zatloukal:** Vy prosazujete, aby se téhle myšlenky chytl některý prezidentský kandidát, který bude teďka usilovat o úřad prezidenta republiky a následně, aby někoho do té bankovní rady, kdo tyhle myšlenky prosazuje, jmenoval. Mluvili jste o tom už s někým?
+**Jiří Zatloukal:** Prosazujete, aby se té myšlenky chopil některý z prezidentských kandidátů a pak do rady jmenoval někoho, kdo ji prosazuje. Mluvili jste už s někým?
 
 **Tomáš Havránek:** Zatím ještě ne. Samozřejmě mám své kandidáty a čekám, jak se k tomu postaví.
 
 **Jiří Zatloukal:** Chcete, aby nový prezident do bankovní rady jmenoval například vás, který o to usilujete?
 
-**Tomáš Havránek:** Myslím, že jsem na to, upřímně řečeno, ještě mladý. Takže rozhodně nemám problém s tím, kdyby to měl být spíš někdo zkušenější. Třeba podle mě Jakub Seidler, který má mnohem víc zkušeností s bankovním sektorem, nebo například Filip Matějka, který je zase akademicky možná, vlastně určitě lepší než já.
+**Tomáš Havránek:** Myslím, že jsem na to ještě mladý, upřímně řečeno. Rozhodně by mi nevadilo, kdyby to byl někdo zkušenější. Třeba Jakub Seidler má mnohem víc zkušeností s bankovním sektorem a Filip Matějka je zase po akademické stránce možná, vlastně určitě lepší než já.
 
-**Jiří Zatloukal:** Letos má dosáhnout po prázdninách podle prognóz České národní banky inflace meziroční 20%. Jak toho dosáhnout, aby se srazila na nulu ten růst cen, nebo aby přestaly ty ceny tak rychle růst? Protože inflace je tempo zvyšování cen, aby to tempo bylo nulové a růst cen se zastavil.
+**Jiří Zatloukal:** Podle prognózy ČNB má meziroční inflace letos po prázdninách dosáhnout 20 %. Jak ji srazit na nulu nebo růst cen alespoň zpomalit? Inflace je přece tempo růstu cen. Jak dosáhnout toho, aby bylo nulové a ceny přestaly růst?
 
-**Tomáš Havránek:** V první řadě je to teď hodně podobné, jako když chcete mít inflaci na dvou procentech. Mezi 20 a dvěma je podobný rozdíl jako mezi 20 a nulou. Nástroje jsou tedy, znovu říkám, hodně podobné: posilování koruny a další zvyšování sazeb poté, co se vyřeší transmise. A byla by to dlouhodobá záležitost.
+**Tomáš Havránek:** Teď je to v první řadě hodně podobné, jako když chcete inflaci stáhnout na dvě procenta. Rozdíl mezi 20 a dvěma je podobný jako mezi 20 a nulou. Nástroje jsou tedy velmi podobné. Jde o posilování koruny a další zvyšování sazeb, až se vyřeší transmise. A trvalo by to delší dobu.
 
-Ale i kdybychom zůstali v rámci 2%, že je to ta, řekněme, optimální inflace, pořád to platí v průměru. Tím se ještě vloni chlubili minulá bankovní rada i současný guvernér: že inflace je tady v České republice v průměru 2%. Teď máme inflaci 20%, takže abychom byli znovu na průměru 2%, je už jen v tomto rámci potřeba mít dlouho, několik let, inflaci na nule, než se na ta 2% dostaneme.
+I kdybychom zůstali u 2 %, protože je pokládáme dejme tomu za optimální inflaci, pořád jde o průměr. Ještě loni se minulá bankovní rada i dnešní guvernér chlubili, že inflace v Česku je v průměru 2 %. Teď máme inflaci 20 %. Abychom se vrátili k průměru 2 %, i v tomto rámci potřebujeme několik let nulové inflace.
 
-Byla by to tedy nějaká zkouška. Pět let bychom si zkoušeli, jestli to nezpůsobuje nějaké problémy, pořád v rámci inflačního cílování, průměrné inflace. A kdybychom viděli, že je to v pořádku, mohli bychom si cenovou stabilitu opravdu nechat napořád.
+Byla by to zkouška. Pět let bychom sledovali, jestli to nepůsobí problémy, pořád v rámci cílování průměrné inflace. Kdybychom viděli, že je to v pořádku, mohli bychom si cenovou stabilitu nechat napořád.
 
-**Jiří Zatloukal:** To znamená, že ceny někdy ale porostou v krátkodobějším 3-5letém horizontu a pak zase ceny budou klesat. Já bych se vrátil ale ještě k té koruně. Pokud posílíte korunu, tak exportérům to nesmírně uškodí. Začaly by krachovat. V tom nevidíte problém české exportní ekonomiky, exportně orientované?
+**Jiří Zatloukal:** Ceny by v kratším horizontu tří až pěti let někdy rostly a pak zas klesaly. Vraťme se ke koruně. Její posílení by nesmírně uškodilo exportérům. Začali by krachovat. Není to pro českou ekonomiku orientovanou na vývoz problém?
 
-**Tomáš Havránek:** Ano. Zaprvé, hlavní, vlastně jediný ústavní úkol Národní banky je cenová stabilita. Nemáte tam nic o exportérech ani o nezaměstnanosti. A zadruhé, tohle by bylo jen obrácení těch intervencí proti koruně. Tehdy Národní banka pomáhala exportérům, teď by úplně stejně pomohla importérům. Čistě by to tedy byla nula.
+**Tomáš Havránek:** Ano. Zaprvé je cenová stabilita jediným ústavním úkolem Národní banky. O exportérech ani o nezaměstnanosti tam nic není. Zadruhé bychom jen obrátili intervence proti koruně. Tehdy banka pomohla exportérům, teď by stejně pomohla importérům. Čistý dopad by byl nulový.
 
-**Jiří Zatloukal:** To není pravda, protože česká ekonomika je exportní, takže většinu HDP nebo většinu výkonu ekonomiky vytváří export. Ne domácí trh, tady není tak silný domácí trh, takže to se nerovná. To by ekonomiku poškodilo.
+**Jiří Zatloukal:** To není pravda. Česká ekonomika je orientovaná na vývoz, který vytváří většinu HDP, tedy většinu jejího výkonu. Domácí trh tak silný není, takže se to nevyrovná. Ekonomiku by to poškodilo.
 
-**Tomáš Havránek:** Rovná se to v tom, že je to spravedlivé.
+**Tomáš Havránek:** Vyrovná se to v tom smyslu, že je to spravedlivé.
 
 **Jiří Zatloukal:** Ano, takhle jo, ale zrcadlově to by musel být import, nebo to by museli exportéři mnohem menší část ekonomiky.
 
-**Tomáš Havránek:** Pokud je to tak, můžeme zase vytisknout další peníze, znovu pomoci exportérům, oslabit korunu, a jste na tom lépe. Takhle ta logika úplně nefunguje. Samozřejmě chápu, že třeba dopad do nezaměstnanosti by nebyl symetrický. To máte pravdu. Ale z hlediska pomoci exportérům a importérům by to bylo nula od nuly pojde. Bylo by to napravení předchozího tištění peněz nebo uvolňování měnové politiky.
+**Tomáš Havránek:** Pokud je to tak, můžeme zase natisknout peníze, oslabit korunu, znovu pomoci exportérům a budeme na tom lépe. Tahle logika úplně nefunguje. Samozřejmě chápu, že dopad na nezaměstnanost by třeba nebyl symetrický. Máte pravdu. Ale pokud jde o pomoc exportérům a importérům, nula od nuly pojde. Napravili bychom tím předchozí tištění peněz, tedy uvolňování měnové politiky.
 
-**Jiří Zatloukal:** Velký problém by to, myslím, že bylo i pro banky. Vezměme například, že by se začala snižovat hodnota nemovitostí. Banky by musely po klientech, kterým daly vlastně na ty nemovitosti úvěry, žádat další peníze, aby vlastně nebyla ta hodnota té nemovitosti, té zástavy nižší, než hodnota půjčených peněz. Nebo je dokonce zesplatňovat, což by mohlo způsobit vlnu krachů v ekonomice nebo platebních neschopností. Jak se díváte na tohle?
+**Jiří Zatloukal:** Myslím, že by to byl velký problém i pro banky. Kdyby třeba začala klesat hodnota nemovitostí, banky by musely od klientů, kterým na ně půjčily, žádat další peníze, aby hodnota zástavy neklesla pod výši úvěru. Nebo by dokonce musely úvěry zesplatnit, což by mohlo vyvolat vlnu krachů nebo platební neschopnosti. Jak to vidíte?
 
 **Tomáš Havránek:** Myslíte, kdyby posílení koruny vyvolalo recesi, která by potom způsobila nějaké…
 
-**Jiří Zatloukal:** Říkáte, že ty ceny by fluktuovaly, někdy by nebyly vůbec konstantní, někdy by posílily, někdy by se ceny zvýšily v ekonomice a někdy by se zase snížily. A kdyby se snížily v ekonomice, tak najednou banky musí požadovat po svých klientech další peníze, které by nemusely mít.
+**Jiří Zatloukal:** Říkáte, že ceny by kolísaly, někdy rostly a jindy klesaly. Kdyby klesly, banky by musely chtít po klientech další peníze, které by klienti nemuseli mít.
 
-**Tomáš Havránek:** Je to tak: pokud máte cenovou stabilitu, všichni vědí, že když vám ceny v průměru dočasně klesají, potom zase porostou, aby se vrátily na původní hladinu, kde mají dlouhodobě být.
+**Tomáš Havránek:** Ano. Při cenové stabilitě ale všichni vědí, že když ceny v průměru dočasně klesnou, zase porostou a vrátí se na původní hladinu, na které mají dlouhodobě být.
 
 **Jiří Zatloukal:** A to může trvat několik let, samozřejmě.
 
-**Tomáš Havránek:** To může, ale tím, že to čekáte, víte, že nemovitost nebo jakékoli jiné zboží v ekonomice bude mít potom zase vyšší hodnotu.
+**Tomáš Havránek:** Může. Když to ale čekáte, víte, že hodnota nemovitosti nebo jakéhokoli dalšího zboží v ekonomice pak zase vzroste.
 
-**Jiří Zatloukal:** Samozřejmě, ale přece banky nemůžou čekat pět let, pokud prostě jim hodnota zástavy jako klesne natolik, že by musely v účetnictví dělat oprávky a požadovat po klientech prostě jako další zástavu, aby to dorovnaly. V hypotékách to vidíme. Poskytují se na 80%, dřív se poskytovaly i na 100%. Pokud by hodnota nemovitostí klesla třeba na 70% té celkové hodnoty dluhu, tak to je pro banku velký problém.
+**Jiří Zatloukal:** Banky přece nemohou čekat pět let, pokud hodnota zástavy klesne natolik, že by musely v účetnictví dělat oprávky a po klientech žádat další zástavu, aby to dorovnaly. Vidíme to u hypoték. Dnes se poskytují na 80 %, dřív i na 100 %. Pokud by hodnota nemovitostí klesla třeba na 70 % celkového dluhu, je to pro banku velký problém.
 
 **Tomáš Havránek:** Hypotéky jsou na mnoho let, typicky na 20 nebo 25 let.
 
-**Jiří Zatloukal:** Dobře, ale ta banka dělá účetnictví každý rok. To by musely požadovat i během těch 3-5 let po lidech další peníze.
+**Jiří Zatloukal:** Banka ale vede účetnictví každý rok. Musela by od lidí žádat další peníze i během těch tří až pěti let.
 
-**Tomáš Havránek:** Myslím si, že takhle to rozhodně není. I během krize v letech 2008 a 2009, kdy ceny hodně klesaly, se nic takového nedělo. Ten návrh tedy není nějaká deflační spirála, naopak je to stabilita. Když máte deflaci, o to silnější pak má být reakce měnové politiky, aby situaci srovnala. Samozřejmě za předpokladu, že to bude kredibilní, že tomu budeme všichni věřit. Pokud ne, nemá to smysl.
+**Tomáš Havránek:** Myslím, že takhle to rozhodně není. Ani za krize v letech 2008 a 2009, kdy ceny hodně klesaly, se nic takového nedělo. V návrhu tedy nejde o deflační spirálu, ale o stabilitu. Pokud přijde deflace, měnová politika má reagovat o to silněji, aby situaci srovnala. To samozřejmě předpokládá, že tomu budeme všichni věřit. Jinak to nemá smysl.
 
-Centrální banka, a tedy i složení bankovní rady, musí být natolik kredibilní. Proto si myslím, když jste se ptal, kdo by tam měl být, že by to klidně mohli být zahraniční experti. I nejlepší ekonom v Česku je globálně na nějakém 1500. místě. A není důvod, proč bychom si na tu důležitou práci neměli najímat nejlepší zahraniční experty. Třeba John Cochrane, bývalý prezident Americké finanční asociace, nebo kdokoli, kdo je v první stovce top ekonomů.
+Centrální banka i složení bankovní rady tedy musí vzbuzovat dostatečnou důvěru. Ptal jste se, kdo by měl v radě být. Klidně si dovedu představit zahraniční odborníky. I nejlepší ekonom v Česku je ve světě někde kolem 1500. místa. Není důvod, proč bychom si na tu důležitou práci neměli najmout ty nejlepší zahraniční odborníky. Třeba Johna Cochrana, bývalého prezidenta Americké finanční asociace, nebo kohokoli z první stovky ekonomů.
 
-Tedy ani já, ani nikdo jiný, ale tito špičkoví lidé. Můžeme je zaplatit. Banka má takové rezervy, že jen trochu lepší správa těch rezerv, kterou se Aleš Michl konečně chystá dělat, vám zaplatí 100 takových špičkových lidí. Nevidím důvod vybírat jen z českého rybníčku.
+Tedy ani já, ani nikdo jiný, ale tihle špičkoví lidé. Můžeme je zaplatit. Banka má tak velké rezervy, že jen o něco lepší správa, ke které se Aleš Michl konečně chystá, zaplatí 100 takových lidí. Nevidím důvod vybírat jen z českého rybníčku.
 
-**Jiří Zatloukal:** Další věc je tady taky. Samozřejmě, kdyby tomu všichni věřili, tak ta ekonomika je stabilní, ale z historie vidíme, že ekonomika prochází prostě permanentně krizemi. Jednou za 10, 5 let, takže jednou ceny rostou, jednou klesají, takže úplně se to asi vymýtit nedá. Pojďme ale k tomu Švýcarsku, vy dáváte vždycky Švýcarsko za příklad. Jak je to tam? Proč mají tu inflaci nižší?
+**Jiří Zatloukal:** Kdyby tomu všichni věřili, ekonomika by byla stabilní, ale z historie víme, že prochází krizemi pravidelně, jednou za deset nebo za pět let. Ceny jednou rostou a jindy klesají, takže to asi úplně nevymýtíme. Vždycky dáváte za příklad Švýcarsko. Jak je to tam? Proč tam mají nižší inflaci?
 
-**Tomáš Havránek:** Švýcaři necílují 2%, ale něco mezi 0 a 2. Když je tedy inflace 0 a máte cenovou stabilitu, nevadí jim to. Nemusí potom dělat žádné speciální operace. I tak mají záporné úrokové sazby, ale přesto mají 13 let stabilní ceny.
+**Tomáš Havránek:** Švýcaři necílí na 2 %, ale na něco mezi nulou a 2 %. Když je inflace nulová a ceny jsou stabilní, nevadí jim to a nemusejí nijak zvlášť zasahovat. Mají sice záporné sazby, ale přesto už 13 let stabilní ceny.
 
-Ceny jsou teď i po velkém výbuchu v letošním roce 2022 o 3% vyšší než v roce 2008. Ještě vloni byly stejné jako v roce 2008. Máte tam tedy de facto, i když ne úplně de jure, cenovou stabilitu, což je náš návrh na zrusme-inflaci.cz. A vidíte, že to může fungovat. Švýcaři jsou samozřejmě speciální případ.
+I po prudkém zdražení letos, v roce 2022, jsou ceny o 3 % vyšší než v roce 2008. Ještě loni byly stejné jako v roce 2008. V praxi tam tedy cenovou stabilitu mají, i když ne úplně formálně. Právě to navrhujeme na zrusme-inflaci.cz. Je vidět, že to může fungovat. Švýcarsko je samozřejmě zvláštní případ.
 
-**Jiří Zatloukal:** A oni mají trochu jiné předpoklady, protože mají energii z jaderných elektráren, ale hlavně z obnovitelných zdrojů, která je daleko levnější z těch svých spádových elektráren. A my tady máme strukturu ekonomiky trochu jinou. Většina je prostě z uhelných elektráren. Kupujeme si ji na trhu, nemáme ji z obnovitelných zdrojů, tak to jim tu inflaci výrazně snižuje. Druhá věc, že je to rezervní měna, kterou v krizi všichni chtějí, což tu korunu, co jejich frank posiluje, zatímco korunu nikdo v krizi nechce.
+**Jiří Zatloukal:** Mají ale trochu jiné předpoklady. Mají energii z jaderných elektráren, hlavně ale z obnovitelných zdrojů, z vlastních spádových elektráren, a ta je mnohem levnější. My máme trochu jinou skladbu ekonomiky. Většina energie je z uhelných elektráren a kupujeme ji na trhu, nemáme ji z obnovitelných zdrojů. To jim výrazně snižuje inflaci. Navíc mají rezervní měnu, kterou v krizi všichni chtějí. Proto frank posiluje, zatímco korunu v krizi nikdo nechce.
 
 **Tomáš Havránek:** Ale proč je to rezervní měna? Právě proto, že nemají inflaci.
 
 **Jiří Zatloukal:** Protože je to silná ekonomika.
 
-**Tomáš Havránek:** Protože frank neztrácí svou hodnotu. Je to dlouhodobě silná měna, která posiluje vůči ostatním inflačním měnám. Tím by mohla být i koruna. Ne úplně jako frank, ale mohla by tím směrem vykročit a jen díky tomu by posílila. Také za předpokladu, že by byl kredibilní režim cenové stability, ne dvouprocentní inflace. I když co bychom za ni dnes dali.
+**Tomáš Havránek:** Protože frank neztrácí hodnotu. Je dlouhodobě silný a vůči měnám s inflací posiluje. Takovou měnou by mohla být i koruna. Nebyla by úplně jako frank, ale už kdyby vykročila stejným směrem, posílila by. Za předpokladu, že by lidé věřili v cenovou stabilitu místo cíle dvouprocentní inflace. I když co bychom dnes za dvě procenta dali.
 
-**Jiří Zatloukal:** Tak kdy věříte, nebo kdy si myslíte, že by ta inflace současná, rapidní, 20% se mohla dostat zase na nějaké přijatelnou hranici?
+**Jiří Zatloukal:** Kdy by podle vás mohla dnešní prudká, dvacetiprocentní inflace klesnout na přijatelnou úroveň?
 
-**Tomáš Havránek:** Doufám, že příští rok, ale nutnou podmínkou je opravdu aktivně využít kurz, tedy posílit korunu tím, že zrušíme intervence proti koruně, těch 75 miliard eur nebo kolik. Ty prodáme, a tím skartujeme 2 biliony korun, které tehdy de facto nebyly vytištěné, ale vymačkané na klávesnici. To je nutná podmínka toho, abychom viděli nějakou opravdu fundamentální změnu v té pádivé inflaci, kterou dnes vidíme.
+**Tomáš Havránek:** Doufám, že příští rok. Podmínkou je ale aktivně využít kurz a posílit korunu tím, že obrátíme tehdejší intervence. Prodáme těch 75 miliard eur nebo kolik, a tím skartujeme 2 biliony korun, které tehdy ani nevytiskli, jen je vyťukali na klávesnici. Bez toho žádný zásadní obrat v dnešní pádivé inflaci neuvidíme.
 
-**Jiří Zatloukal:** Vidíte, že tyhle myšlenky by mohla prosazovat rada v novém složení?
+**Jiří Zatloukal:** Myslíte, že by ty myšlenky mohla prosazovat rada v novém složení?
 
 **Tomáš Havránek:** Myslím si, že ano. Sám vidíte, že se podařilo prosadit i investování devizových rezerv.
 
-**Jiří Zatloukal:** Už bylo prodáno asi 10% těch obřích devizových rezerv?
+**Jiří Zatloukal:** Už se prodalo asi 10 % těch obřích devizových rezerv?
 
-**Tomáš Havránek:** Ano, ale pořád jsou to desítky miliard eur. Objemy jsou tedy takové, že když tohle oznámíte, je velmi těžké nějak zdůvodnit a financovat, abyste proti tomu šli jako hedgeový fond, protože ČNB má tolik peněz jako největší hedgeové fondy. Takže to je něco, co by fungovalo. Je to vlastně jediná možnost.
+**Tomáš Havránek:** Ano, ale pořád zbývají desítky miliard eur. Když oznámíte prodeje v takovém objemu, hedgeový fond jen těžko zdůvodní a zaplatí sázku proti nim. ČNB má totiž tolik peněz jako největší hedgeové fondy. Tohle by tedy fungovalo. Je to vlastně jediná možnost.
 
-**Jiří Zatloukal:** Vidíte to riziko, že tam začne ta spekulace, která bude počítat s tím, že až ty dříve nebo později, za rok, za dva, za půl roku, ty devizové rezervy dojdou, takže nebude Česká banka moc bránit tu silnou korunu, a najednou tam je možnost toho prudkého oslabení, pokud se proti ní bude sázet?
+**Jiří Zatloukal:** Nehrozí, že spekulanti budou počítat s tím, že rezervy dřív nebo později, za rok, za dva nebo za půl roku, dojdou? Nebude pak hrozit, že ČNB nebude moci silnou korunu bránit a že koruna při sázkách proti ní prudce oslabí?
 
-**Tomáš Havránek:** Teoreticky je tohle možné vždycky, ale jak velké byly rezervy před intervencemi v roce 2013? Řekněme 40 miliard eur, bylo to řádově minimálně o 100 miliard eur méně, než je teď. A už tehdy jsme se všichni bavili o tom, že jich je opravdu, opravdu moc. Pokud bylo opravdu moc 40, 30 miliard, pak 150 miliard je tolik, že je to absolutně zbytečná částka.
+**Tomáš Havránek:** Teoreticky je to možné vždycky. Jak velké ale byly rezervy před intervencemi v roce 2013? Řekněme 40 miliard eur, nejméně o nějakých 100 miliard eur méně než dnes. Už tehdy jsme se všichni bavili o tom, že jich je opravdu příliš. Jestli bylo příliš 40 nebo 30 miliard, pak je 150 miliard naprosto zbytečných.
 
-Když je prodáte, tlak na posílení koruny bude takový, že jít proti tomu je strašlivě nákladné. Zvlášť když máte reposazbu 7%, je financování krátké pozice velmi, velmi drahé. Nedovedu si tedy představit, že bychom to spustili a za rok by byla koruna slabší kvůli nějakému spekulačnímu útoku. To je de facto prakticky vyloučená věc.
+Když je prodáte, tlak na posílení koruny bude tak velký, že jít proti němu bude strašně drahé. Zvlášť při repo sazbě 7 % je financování krátké pozice velmi drahé. Nedovedu si představit, že bychom to spustili a koruna byla za rok kvůli spekulačnímu útoku slabší. Je to prakticky vyloučené.
 
-**Jiří Zatloukal:** Exportéři by to teda podle vás přežili, nebo bylo by to, nezkrachovala by tady třetina ekonomiky, nebo aspoň desetina, kvůli tomu, kdyby koruna byla… Ty marže u těch podniků, které dodávají do třeba německého automotive, nejsou nějak zázračné. Takže to posílení koruny by jim krásně mohlo vymazat a řada firem by skončila.
+**Jiří Zatloukal:** Exportéři by to podle vás přežili? Nezkrachovala by třeba třetina ekonomiky nebo aspoň desetina, kdyby koruna byla… Podniky, které dodávají třeba do německého automobilového průmyslu, nemají nijak závratné marže. Silnější koruna by jim je snadno mohla vymazat a řada firem by skončila.
 
-**Tomáš Havránek:** To by mohlo. Dost možná bychom místo nulového růstu měli jemnou recesi, i v ročním vyjádření. Ale ptejme se, co je z toho horší: drobná recese na rok nebo dva, nebo inflace 20%, která nám žere nejen letošní úspory, ale celoživotní práci, celoživotní úspory. Pro mě osobně je lepší projít si nějakou krátkou recesí, i když to samozřejmě možná bude spoustu lidí bolet víc než mě, to přiznávám. Sám na inflaci vydělávám. Mám velkou hypotéku, sazby pod dvěma.
+**Tomáš Havránek:** To by se stát mohlo. Dost možná bychom místo nulového růstu měli mírnou recesi, i za celý rok. Ale co je horší? Mírná recese na rok nebo dva, nebo inflace 20 %, která nám požírá letošní úspory i celoživotní práci a úspory? Já bych raději prošel krátkou recesí, i když přiznávám, že spoustu lidí by mohla bolet víc než mě. Sám na inflaci vydělávám. Mám velkou hypotéku se sazbou pod dvěma procenty.
 
-**Jiří Zatloukal:** Vydělával byste v případě, že by se vám zvyšoval nominální příjem, jinak nevyděláváte, jinak jste na tom stejně.
+**Jiří Zatloukal:** Vydělával byste, kdyby vám rostl nominální příjem. Jinak nevyděláváte, jste na tom stejně.
 
-**Tomáš Havránek:** Letos se ale mzdy musí zvýšit, už jen proto, že vám v reálném vyjádření, očištěném o inflaci, strašlivě klesly, ale produktivita práce neklesla. Abyste byli zpátky v normálu, v průměru za poslední roky, musí mzdy příští rok růst, z hlediska inflace bohužel, ale musí růst minimálně o 15% v průměru. Takhle to bude. Nemůžete mít věčně dvoucifernou inflaci tak, aby vám nerostly platy. To opravdu neodpovídá české produktivitě, která pořád není malá, a hlavně se nezmenšuje.
+**Tomáš Havránek:** Letos se ale mzdy musejí zvýšit už proto, že po odečtení inflace strašně klesly, zatímco produktivita práce neklesla. Máme-li se vrátit k průměru posledních let, musejí příští rok mzdy v průměru růst nejméně o 15 %, což je pro inflaci bohužel špatné. Tak to bude. Nemůžete mít věčně dvoucifernou inflaci a přitom žádný růst platů. To neodpovídá české produktivitě, která pořád není malá a hlavně neklesá.
 
 **Jiří Zatloukal:** Děkuji za rozhovor.
 
