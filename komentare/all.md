@@ -466,7 +466,7 @@ Do budoucna také mohu pomoci se spoluprací s Univerzitou Karlovou: exkurze, p
 
 Studentům chci ukazovat, co všechno se dá v různých oborech dokázat, že život je skvělý a dnešní možnosti jsou neomezené, že nemá smysl hroutit se z problémů celého světa, že se vyplatí mít ambice a makat, snažit se být nejlepší (i když ne vždy se to povede). Sám jsem z Litomyšle odešel studovat do Prahy a pracovat do světa. S rodinou jsme se vrátili, aby tu děti mohly chodit do školy, a to konkrétně kvůli ZŠ Zámecká a gymnáziu.
 
-Přednáška „Umělá inteligence za mě udělá většinu práce. Mám se bát o místo?“ proběhla ve čtvrtek 19. listopadu 2026 na gymnáziu a její [záznam](#zaznam-prednasky) je nahoře. Mluvil jsem v ní i o tom, co dnes stojí za to studovat.
+Přednáška „Umělá inteligence za mě udělá většinu práce. Mám se bát o místo?“ proběhla ve čtvrtek 19. listopadu 2026 na gymnáziu a její [záznam](#zaznam-prednasky) je nahoře. Mluvil jsem v ní i o tom, co dnes stojí za to studovat. Už v říjnu vyšel díl školního podcastu GLITCAST, v němž se mnou dva studenti mluvili o Erasmu, čtení a o tom, co má škola učit v době umělé inteligence. [Záznam i přepis rozhovoru](/komentare/litomysl-glitcast-skola-a-umela-inteligence/) jsou na samostatné stránce.
 
 Pro zájemce o osmileté i čtyřleté studium jsou dny otevřených dveří v pátek 27. listopadu a ve středu 20. ledna. Je však potřeba se na ně předem [zaregistrovat](https://www.glit.cz/pro-uchazece/#den-otevrenych-dveri).
 

@@ -2,10 +2,10 @@
 category: "litomysl"
 outlet: "meta-analysis.cz"
 date: "2026-10-01"
-updated: "2026-11-21"
+updated: "2026-11-26"
 headline: "Proč chceme mít všechny čtyři děti na litomyšlském gymnáziu"
 byline: "Tomáš Havránek"
-word_count: "1218"
+word_count: "1255"
 title_tag: "Proč chceme mít všechny čtyři děti na Gymnáziu Aloise Jiráska v Litomyšli"
 description: "Zkušenost rodiče a absolventa: fakta o Gymnáziu Aloise Jiráska v Litomyšli, přijímačky 2027, dny otevřených dveří."
 og_image: "2026-10-01_litomysl-gymnazium-foto.jpg"
@@ -14,6 +14,7 @@ og_image_creator: "Tadeáš Bednarz"
 og_image_credit: "Foto: Tadeáš Bednarz, Wikimedia Commons, CC BY-SA 4.0 (oříznuto)"
 og_image_license: "https://creativecommons.org/licenses/by-sa/4.0/"
 og_image_source: "https://commons.wikimedia.org/wiki/File:Litomy%C5%A1l,_Gymn%C3%A1zium_Aloise_Jir%C3%A1ska_%282019%29_03.jpg"
+related: "litomysl-ai-za-me-udela-vetsinu-prace | litomysl-glitcast-skola-a-umela-inteligence"
 youtube: "ddieq949l2Y"
 youtube_seconds: "2817"
 youtube_upload: "2026-11-21T13:57:04+01:00"
@@ -23,7 +24,7 @@ youtube_description: "Přednáška pro studenty Gymnázia Aloise Jiráska v Lito
 youtube_heading: "Záznam přednášky o umělé inteligenci (19. 11. 2026)"
 youtube_lead: "Přednáška pro studenty litomyšlského gymnázia: „Umělá inteligence za mě udělá většinu práce. Mám se bát o místo?“ Video má české a anglické titulky, kapitoly a zdroje jsou v popisu na YouTube. Celý [český přepis přednášky](/komentare/litomysl-ai-za-me-udela-vetsinu-prace/) je na samostatné stránce."
 youtube_anchor: "zaznam-prednasky"
-llms_summary: "Komentář Tomáše Havránka (1. 10. 2026, aktualizováno 21. 11. 2026) o Gymnáziu Aloise Jiráska v Litomyšli (glit.cz) z pohledu rodiče a absolventa; nahoře záznam jeho přednášky pro studenty školy o umělé inteligenci z 19. 11. 2026 (YouTube, české a anglické titulky); fakta se zdroji: přijímačky 2026 (83 uchazečů na 30 míst v primě, 107 na 30 míst v prvním ročníku), maturita 2026 (42 % maturantů školy volilo matematiku, o čtvrtinu víc než na gymnáziích v ČR), úspěšnost přijetí na VŠ 100 % (2024) a 95 % (2025) podle výročních zpráv, dny otevřených dveří 27. 11. 2026 a 20. 1. 2027, přihlášky od 1. do 22. 2. 2027."
+llms_summary: "Komentář Tomáše Havránka (1. 10. 2026, aktualizováno 26. 11. 2026) o Gymnáziu Aloise Jiráska v Litomyšli (glit.cz) z pohledu rodiče a absolventa; nahoře záznam jeho přednášky pro studenty školy o umělé inteligenci z 19. 11. 2026 (YouTube, české a anglické titulky) a odkaz na jeho rozhovor pro školní podcast GLITCAST (5. díl, říjen 2026); fakta se zdroji: přijímačky 2026 (83 uchazečů na 30 míst v primě, 107 na 30 míst v prvním ročníku), maturita 2026 (42 % maturantů školy volilo matematiku, o čtvrtinu víc než na gymnáziích v ČR), úspěšnost přijetí na VŠ 100 % (2024) a 95 % (2025) podle výročních zpráv, dny otevřených dveří 27. 11. 2026 a 20. 1. 2027, přihlášky od 1. do 22. 2. 2027."
 ---
 
 # Proč chceme mít všechny čtyři děti na litomyšlském gymnáziu
@@ -52,7 +53,7 @@ Do budoucna také mohu pomoci se spoluprací s Univerzitou Karlovou: exkurze, p
 
 Studentům chci ukazovat, co všechno se dá v různých oborech dokázat, že život je skvělý a dnešní možnosti jsou neomezené, že nemá smysl hroutit se z problémů celého světa, že se vyplatí mít ambice a makat, snažit se být nejlepší (i když ne vždy se to povede). Sám jsem z Litomyšle odešel studovat do Prahy a pracovat do světa. S rodinou jsme se vrátili, aby tu děti mohly chodit do školy, a to konkrétně kvůli ZŠ Zámecká a gymnáziu.
 
-Přednáška „Umělá inteligence za mě udělá většinu práce. Mám se bát o místo?“ proběhla ve čtvrtek 19. listopadu 2026 na gymnáziu a její [záznam](#zaznam-prednasky) je nahoře. Mluvil jsem v ní i o tom, co dnes stojí za to studovat.
+Přednáška „Umělá inteligence za mě udělá většinu práce. Mám se bát o místo?“ proběhla ve čtvrtek 19. listopadu 2026 na gymnáziu a její [záznam](#zaznam-prednasky) je nahoře. Mluvil jsem v ní i o tom, co dnes stojí za to studovat. Už v říjnu vyšel díl školního podcastu GLITCAST, v němž se mnou dva studenti mluvili o Erasmu, čtení a o tom, co má škola učit v době umělé inteligence. [Záznam i přepis rozhovoru](/komentare/litomysl-glitcast-skola-a-umela-inteligence/) jsou na samostatné stránce.
 
 Pro zájemce o osmileté i čtyřleté studium jsou dny otevřených dveří v pátek 27. listopadu a ve středu 20. ledna. Je však potřeba se na ně předem [zaregistrovat](https://www.glit.cz/pro-uchazece/#den-otevrenych-dveri).
 

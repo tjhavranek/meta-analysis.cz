@@ -12,7 +12,7 @@ perex: "K čemu je dobré vědět něco o Uzbekistánu, když si všechno může
 description: "V pátém dílu podcastu GLITCAST mluví Tomáš Havránek se studenty svého někdejšího gymnázia o Erasmu, čtení, české škole a umělé inteligenci."
 llms_summary: "V pátém dílu školního podcastu GLITCAST vzpomíná Tomáš Havránek na své učitele z Gymnázia Aloise Jiráska v Litomyšli, na Erasmus ve Finsku a na to, jak se díky své ženě dostal k vědě. Srovnává českou školu se zkušeností svých dětí na Novém Zélandu a s příkladem Koreje. Mluví o tom, proč číst knihy, nebát se klást otázky a něco znát i bez telefonu. Studentům by dovolil použít umělou inteligenci při psaní závěrečné práce. Zaujal ho také návrh historika Nialla Fergusona, aby samotná výuka probíhala bez počítačů a mobilů."
 body_note: "Rozhovor dvou studentů s Tomášem Havránkem pro pátý díl podcastu Gymnázia Aloise Jiráska v Litomyšli. Vynechali jsme neslovní zvuky, opakované položení téže otázky na učitele a jedno krátké nesrozumitelné místo. České automatické titulky YouTube jsme porovnali s přepisem nahrávky pomocí modelu Parakeet. U nejasných míst jsme využili i přepisy z modelů Whisper. V odpovědích Tomáše Havránka jsme pro snazší čtení vypustili slovní výplně, opakování a nedokončené začátky vět. Místy jsme rozdělili souvětí nebo upravili slovosled. Otázky jsme upravili jen lehce. Opravili jsme přepisy jmen a názvů. Čísla, zápory a míru jistoty ponecháváme podle nahrávky, jen názvy Carnegieho knihy uvádíme podle českého a anglického vydání. Jména moderátorů nejsou ověřena."
-related: "litomysl-ai-za-me-udela-vetsinu-prace"
+related: "litomysl-ai-za-me-udela-vetsinu-prace | litomysl-proc-vsechny-ctyri-deti-na-gymnazium"
 word_count: "4028"
 youtube: "Q_aPtoq1P0Q"
 youtube_seconds: "2250"
