@@ -4824,11 +4824,17 @@ Přesný mechanismus pořád neznáme, nemáme k tomu vědecké studie. Ale zár
 
 Přetrvávala obava z deflace, kvůli které se předtím intervence spouštěly. Úrokové sazby proto zůstaly nízko, inflační papiňák se neupouštěl. A v roce 2021 – když skončily covidové lockdowny a vláda pokropila zemi vrtulníkovými penězi – vybouchl. ČNB mimochodem vládu v pumpování peněz tehdy vydatně slovně podporovala. Zpětně je dobré přiznat kredit lidem, jako byl viceguvernér ČNB Mojmír Hampl, kteří po roce 2017 navrhovali výrazně vyšší sazby. Zůstali v menšině, ale měli pravdu.
 
+**Co byste dnes dělal jinak?**
+
 Byl jsem tehdy Mojmírovým poradcem a s prosazováním vyšších sazeb jsem mu měl pomáhat víc. Měl jsem psát přesvědčivější stanoviska pro zbytek bankovní rady, měl jsem lépe přemlouvat ostatní poradce. Beru to i jako své osobní selhání a omlouvám se za to.
 
 **Poslední dva guvernéři, Aleš Michl a Jiří Rusnok, kvůli inflaci kritizují jeden druhého. Za koho podle vás ČNB zaspala víc? Kdo má na dnešním stavu hlavní vinu?**
 
 Už jsme se bavili o tom, že úroky měly být mnohem vyšší v letech 2017 až 2019. Tehdy byl guvernérem Jiří Rusnok. Další kritická chvíle přišla na podzim 2021. To už bylo jasné, že inflace u nás vylétne. A také že tomu zvyšování sazeb nezabrání, protože to se v inflaci naplno projevuje v horizontu jednoho až dvou let. Nabízelo se tedy provést to, co ČNB udělala v roce 2013, ale v opačném gardu: spustit masivní intervence, ale tentokrát za posílení koruny. Tedy chovat se symetricky a prodat většinu eur, které mezi roky 2013 a 2017 ČNB nakoupila za nově vytvořené koruny. Není sporu, že by to inflaci rychle snížilo.
+
+**Proč to ČNB neudělala?**
+
+Přiznám se, že tomu dodnes nerozumím.
 
 **Nynější guvernér Michl už před nástupem do úřadu slíbil Miloši Zemanovi stabilitu sazeb, pak nejspíš nechtěl slib porušit a držel se ho, i když inflace dál rostla a aparát ČNB radil sazby zvedat. Byla to chyba?**
 
@@ -4838,6 +4844,8 @@ U hodnocení Aleše Michla také musím uvést střet zájmů, byl jsem půl rok
 
 V bance chybí názorová pestrost a diskuze, která tam dříve vždy probíhala. Když se rozhodovalo o intervencích v roce 2013, rada opakovaně přehlasovávala guvernéra Singera. Trvalo mu několik měsíců, než přesvědčil Mojmíra Hampla a dal dohromady většinu v bankovní radě. Výsledné rozhodnutí se třeba někomu nemusí líbit, ale vyhrála argumentačně silnější strana. Nic takového za posledních sedm let v ČNB nevidíme.
 
+**Proč ne?**
+
 Ne proto, že by radní ČNB nebyli dost dobří. Jsou to skvělí experti. Není to osobní selhání, je to selhání ČNB jako instituce. Problém je feudalismus ve jmenování rady. Centrální banku rozbil Miloš Zeman, když dovolil oběma posledním guvernérům, aby si sami vybrali skoro celý zbytek rady. Jako by ČNB byla jejich léno. U Aleše Michla je to ještě horší v tom, že výběr guvernéra nastal souběžně s obměnou skoro celé rady. Radní jsou pak guvernérovi zavázaní. Co chce guvernér, to bude.
 
 **O tom se často mluví, ale jak radním dokázat, že plní to, co jim guvernér řekne, místo toho, co považují za správné?**
@@ -4845,6 +4853,8 @@ Ne proto, že by radní ČNB nebyli dost dobří. Jsou to skvělí experti. Nen�
 Chcete důkaz? Současná rada odhlasovala Alešovi jmenování Vladimíra Kruliše šéfem jedné z nejdůležitějších sekcí ČNB. Věděli, jaké to bude mít důsledky pro reputaci ČNB i jejich vlastní, a stejně to udělali.
 
 **Pokud je ČNB rozbitá, kdo ji můžu opravit?**
+
+Jedině prezident a Parlament.
 
 **Co zmůže současný prezident? Mandáty v ČNB jsou delší než na Hradě a Petr Pavel bude během tohoto funkčního období nominovat jen jednoho ze sedmi radních.**
 
@@ -4854,13 +4864,19 @@ Nestačí jenom počkat pět let a pak vyměnit Aleše Michla. Je potřeba rozb�
 
 Pomohlo by, kdyby lépe vymezil odpovědnost ČNB v zákoně. ČNB má obrovskou moc a je nezávislá. Ale co když naprosto odmítne bojovat proti inflaci? Pak dnes není síla, která by ji nějak usměrnila. Můžeme se dostat i do situace, kdy se vedení ČNB ani neomluví a bude se jen vymlouvat na všechny ostatní, na vládu, na zahraničí. Byl bych rád, aby v zákoně o ČNB byla povinnost pro guvernéra napsat prezidentovi omluvný dopis, když je inflace nad tolerančním pásmem. Něco podobného, jako mají ve Spojeném království.
 
+**Co by takový dopis zachránil?**
+
 Muselo by jít o dopis, v kterém se ČNB nemůže jen vymlouvat, ale kde musí jasně říct, co udělala špatně. A hlavně co udělá příště jinak. Osobně bych taky rád viděl, abychom se dohodli, co vlastně po ČNB chceme. Jakou ideální inflaci – stávající dvě procenta, která si ČNB určila sama? Nebo nula procent v průměru? Dohodněme se, dejme to do zákona a pak bankovní radu honorujme podle výsledků. Když centrální bankéři inflaci udrží na cíli, ať dostanou bonusy navíc.
+
+**Co by měla ČNB dělat teď?**
 
 Jak už jsem naznačil, měla by se hlavně omluvit. Růst cen o třetinu během tří let, to je pro reputaci banky velká rána. V zahraničí tomu lidé prvně nevěří, potom se smějí. Proč bychom měli ČNB důvěřovat, že příště nic takového nedopustí? Že si můžeme v korunách spořit na důchod nebo pro děti? Omluva je začátek. Každý dělá chyby, omluva není ostuda. Ostuda je házet vlastní vinu na ostatní.
 
 **Často mluvíte o tom, že by ČNB měla lépe spravovat devizové rezervy. Jde přitom o hodně citlivou věc, svobodná správa rezerv je jedním z pilířů nezávislosti. Co byste radil dělat jinak?**
 
 Prvně je potřeba říct, co vlastně ty rezervy jsou. Není to žádný balík na horší časy, který bychom krvopotně naspořili. Je to vedlejší efekt dvou věcí. Zaprvé, když ČNB oslabuje korunu, jak se to dělo ve velkém v letech 2013 až 2017, tak vymačkává na klávesnici nové koruny a za ně na trhu koupí eura. Ta tvoří hlavní část dnešních rezerv. Zadruhé, když z Bruselu proudí dotační eura, tak je ČNB také stáhne do rezerv, také za ně vymačká nové koruny a ty pak pošle vládě. Rezervy tedy nikdo cíleně nevytváří. Když už je ale máme, tak se dají lépe využít.
+
+**Jak?**
 
 Dvěma způsoby. Nejlepší je použít je v krizi, když je výjimečně vysoká inflace. O tom jsme se bavili – tak, jak ČNB předtím eura kupovala, tak je měla v roce 2021 naopak prodávat, tím tlačit korunu ke zpevnění a inflaci tlumit. Když to ČNB odmítla pořádně udělat i v situaci největší inflační krize za generaci, tak tím říká, že rezervy nejspíš strategicky nepoužije nikdy. Pak ale – a to je hlavní – by je neměla nechat hnít, ale měla by je investovat tak, aby dlouhodobě vydělávaly. Mimochodem i zainvestované rezervy může v krizi použít na posílení koruny.
 
@@ -4883,6 +4899,8 @@ Ano, v tomhle jsme si rozuměli, ale není potřeba fond bohatství. Stačí, ab
 **Vaše stížnosti na špatné fungování ČNB bychom nemuseli řešit, kdyby Česko mělo euro. Jste příznivcem jeho přijetí?**
 
 Jsem příznivcem cenové stability. Dlouho jsem si myslel, že ji budeme mít spíš s korunou než s eurem. Teď už si tak jistý nejsem.
+
+**Jste tedy pro euro?**
 
 Ekonomicky ta otázka nejde zodpovědět, výhody a nevýhody eura jsou zhruba vyrovnané. Takže se dostáváme k politice a emocím. Často cestuji, tedy pro mě je euro výhodné. Také je výhodné pro investice do zahraničí. Když přijmeme euro, nebudeme moci z EU odejít, protože by to znamenalo totální finanční kolaps země. To je důležité si uvědomit. Euro navěky zaručí naše spojení s Evropou, v dobrém i ve zlém.
 
@@ -6360,7 +6378,11 @@ K dnešnímu posilování ne. Ale nebýt loňských intervencí, koruna by posil
 
 Pokud chce někdo spekulovat proti koruně, je to pro něj drahé. Musí si půjčovat koruny, kde je stále mnohem vyšší úrok než u eura, aby je mohl prodat a pak koupit zpět levnější. Je nereálné, že by to dlouhodobě dokázal ustát i velký hedgový fund. Pomohlo by ještě zvýšit sazby, krátkodobě na deset procent, a spustit intervence. Nikdo nerozporuje, že taková kombinace by pomohla inflaci letos snížit.
 
+**Nepoškodilo by to příliš ekonomiku?**
+
 Sazby na 10 % a euro za 20 korun by ekonomiku bolely. Ale ČNB nemá v popisu práce vyvažovat bolest exportérů a inflaci. Její mandát je jasný.
+
+**Porušuje tedy ČNB zákon?**
 
 Zeptejme se právníků. Ústava říká, že cílem ČNB je pečovat o cenovou stabilitu. Inflace ve výši 17,5 procent není cenová stabilita. Přitom ČNB s tím něco může dělat ještě dnes, zvýšit sazby a posílit korunu. Nedělá to, tedy vědomě neplní ústavní zadání. Ale nemáme mechanismus, jak ji k plnění donutit. Pomohlo by v Zákoně o ČNB vyjasnit, co znamená cenová stabilita. Dvouprocentní inflace, či skutečná cenová stabilita, tedy průměrná stabilita průměrných cen v ekonomice? Když jednou ceny vzrostou, tak v dalších letech by zase klesaly. Stovky vědeckých studií jako celek ukazují, že právě toto je zdravá inflace: v průměru nula.
 
@@ -6379,6 +6401,8 @@ Straší je kvůli Velké depresi ve 30. letech minulého století. Tehdy však 
 **Je pravděpodobné, že centrální banky začnou místo dvou procent cílit na nulu?**
 
 Cenová stabilita je přirozené vylepšení inflačního cílování. Jen s dvěma parametrickými změnami. Opravuje minulé chyby a snižuje cíl z dvou procent na nulu. Bylo by to dovršení vývoje, kdy jsme – s výjimkou posledních tří let – v Česku postupně snižovali inflaci. A spolu s tím i inflační cíl. Před 25 lety začínala ČNB s cílem kolem šesti procent, od roku 2010 je na dvou procentech. Kdyby zmiňované výzkumy byly k dispozici už před třiceti lety, jsem si jist, že by už tehdy upřednostnili na Novém Zélandu nulu před dvojkou. Jedinou zemí, která má inflační cíl pod dvěma procenty, je Švýcarsko. Jejich centrální bance nevadí cenová stabilita. Nechtějí deflaci, ale nevadí jim nulová inflace. V praxi od roku 2008 mají opravdu průměrnou inflaci blízkou nule. Jinde odvahu k cenové stabilitě zatím nevidím, to se ale s pokračujícím inflačním debaklem změní.
+
+**Co tedy oponenti?**
 
 Dosud převažuje proud, který klade důraz na levné financování vládních výdajů. Třeba francouzský profesor Olivier Blanchard prosazuje zvýšení inflačního cíle. Cílem je, aby reálná úroková sazba – po odečtení inflace – byla co nejmenší, aby to bylo pro dlužníky a hlavně pro stát výhodnější. V tomto duchu jako člověk s hypotékou děkuji centrální bance, reálně jsem díky ní vydělal vloni 13 procent z hodnoty domu, protože mám sazbu pod dvě procenta a inflace byla 15 procent.
 
@@ -9421,7 +9445,11 @@ To je spíš otázka psychologie než ekonomie. Setrvačnost inflace závisí na
 
 ČNB tvrdí, že setrvačnost je rok, rok a půl. Vědecká literatura počítá spíše se dvěma nebo třemi lety. Mluvíme tady o mechanickém dopadu, tedy že firmy mají dražší úvěry, méně investují, lidé více spoří a tak dále. Ale to prudké zvýšení sazeb byl hlavně marketingový signál, že ČNB nebude inflaci tolerovat. Takže může zapůsobit na psychologii hned, což je to, o co ČNB jde. Pozor ale, že zvýšení sazeb negativně dopadne především na domácnosti, zejména skrze hypotéky. Ne tolik už na firmy, které si mohou vzít stále levné úvěry v eurech a proti silnější koruně se mohou výhodně zajistit na forwardech. Existuje nástroj boje proti inflaci, který náklady rozloží více mezi lidi a firmy a zároveň působí rychle psychologicky i mechanicky. Tím nástrojem je posílení koruny. K tomu trochu dochází až teď v lednu.
 
+**Posiloval byste tedy ještě více korunu? Jak?**
+
 Samozřejmě nelze prodat najednou všechna eura, která ČNB nakoupila během intervencí proti koruně. ČNB teď má přes 150 miliard eur. Kdyby je pustila na trh, koruna posílí tak dramaticky, že způsobí recesi. Ale v roce 2013 ČNB intervenovala proti deflaci, při tom subvencovala exportéry. Pokud se chová symetricky, měla by teď intervence aspoň z části odmazat a eura prodat. Už od září měla verbálně hrozit prodejem eur, koruna by pak posílila mnohem dříve. To by zamezilo dvojciferné inflaci. Ideálně měla ČNB vyhlásit, že každý měsíc prodá jedno procento z rezerv a bude to tak dělat čtyři roky. Zbylou polovinu rezerv bych investoval podobně jako Švýcaři, Singapurci či Norové.
+
+**Do čeho by měla ČNB investovat? Do akcií?**
 
 Hlavně do akcií, trochu do zahraničních nemovitostí. Pokud by ČNB investovala jako Švýcaři, jen za dva roky by vydělala 300 miliard korun navíc. A to jsou Švýcaři ještě hodně konzervativní, i tak ale mají víc akcií a dluhopisů s delší splatností. V ČNB bohužel stále panuje z investování strach, protože akcie kolísají. Krátkodobě můžete prodělat, ale dlouhodobě jste vždy v plusu. Poradci dokonce v roce 2017 radili bankovní radě investovat polovinu rezerv po vzoru Singapuru, to by od té doby vydělalo bilion.
 
@@ -9579,6 +9607,8 @@ Deflace, tedy pokles průměrných cen, je spojena se dvěma hlavními problémy
 
 Deflace také ztěžuje splácení dluhů. Pokud má člověk hypotéku pět milionů a deflace bude 50 procent, znamenalo by to, že průměrné ceny budou z roku na rok poloviční a hodnota koruny se zdvojnásobí. Takže z dluhu ve výši pěti milionů by se najednou stal dluh ve výši deseti milionů, který se reálně bude daleko hůře splácet.
 
+**Centrální banky se deflace bojí. Proč?**
+
 Pokud deflace trvá pár měsíců nebo rok, tak to prakticky žádný problém nepředstavuje. Bankéři však s hrůzou vzpomínají na Velkou depresi ve třicátých letech. Důsledkem Velké deprese byla mimo jiné setrvalá deflace a ceny klesaly několik let v řadě, dohromady o desítky procentních bodů, což prohlubovalo krizi. Po takové zkušenosti se centrální bankéři deflace bojí. Ale kromě této jedné epizody, kterou však centrální banky způsobily samy svou neschopností smysluplně reagovat, jsme nikdy problém s deflací neměli.
 
 Navíc teď víme, že ten problém ani mít nemůžeme. V covidové krizi se ukázalo, že peníze z vrtulníku fungují. Lidé a firmy dostávali peníze za to, že nic nedělali, a inflace přišla. A mnohem vyšší, než kdokoli čekal. Takže kdyby se náhodou stalo, že budeme v krizi a deflaci a nebude stačit snižování úroků, vláda a centrální banka vždycky sáhnou k penězům z vrtulníku. Ať chceme, nebo ne. Lidi to vědí, takže žádnou deflaci čekat nebudou, tudíž ani žádná deflační spirála nemůže nastat. Paradoxně by tak ani ty peníze z vrtulníku nakonec potřeba nebyly, kdyby nám šlo jen o cenovou stabilitu. Ale je to jasný argument, proč se deflace bát nemusíme a proč ji centrální banka vždycky může vynulovat, jak už říkal Milton Friedman.
@@ -9593,11 +9623,15 @@ Tady bych vysvětlil tři věci. Zaprvé, hlavní povinností centrální banky 
 
 Nejen já, ale i řada dalších ekonomů tady vidí jasný rozpor s ústavou. Ekonomové centrální banky si to samozřejmě nemohou dovolit říct navenek, podobně jako si to nemohou dovolit ekonomové komerčních bank, kam může centrální banka kdykoli za trest poslat kontrolu. Zadruhé, existuje 222 vědeckých studií od roku 1990, které zkoumají a počítají, jaká míra inflace je ta správná, zdravá pro ekonomiku. A průměrný odhad je nula. A třetí věc je selský rozum. Koruna funguje jako měřítko hodnoty peněz, stejně jako metr měří vzdálenost. Kdybychom definici metru zkracovali jeden rok o dva centimetry, další rok o pět a potom o jeden, způsobilo by to zmatek. Stejně je to s hodnotou peněz. Měla by být stabilní.
 
+**Takže co by měla dělat ČNB?**
+
 Vrátit se k tomu, co fungovalo celou historii naší civilizace, tisíce let, až zhruba do roku 1933, kdy skončil zlatý standard. Každoroční inflace je nová věc, trvá necelých sto let. Z hlediska lidstva je to něco úplně nového a nepřirozeného. Ano, občas byla inflace krátkodobá, třeba v 16. století po objevení Ameriky se do Evropy převalila spousta zlata a stříbra, což způsobilo snížení hodnoty měny, která byla založena na stříbru a zlatu. Samozřejmě také v historii, zejména během válek, se řada králů snažila měnu znehodnotit a při ražbě do mincí přidávali méně zlata a stříbra, zbytek si nechali, aby mohli lépe financovat například válečné výdaje. To však byly spíše výjimečné věci, které byly vždy považované za něco nepřirozeného či nesprávného. Žádná pravidelná každoroční inflace neexistovala. Ceny v roce 1914 byly v průměru stejné jako v roce 1815. Nešlo přitom o období úpadku, naopak. Ekonomika tehdy rostla rychleji než dnes. Zadlužení státu bylo minimální a nezvyšovalo se.
 
 **Opravdu si nikdy lidé během historie na zdražování nestěžovali?**
 
 Ano, máte pravdu, stěžovali, ale inflace nikdy v historii nebyla programovým a oficiálním cílem vedení státu. Pokud k ní došlo, byla to buď náhoda, třeba příliv stříbra z nových dolů v Potosí. Nebo to byl podvod, jako v případě snižování objemu stříbra a zlata v mincích. Dnes platíme stamiliony v platech nejlepším ekonomům v zemi, aby nám tu kladnou inflaci, tedy znehodnocení koruny, doručili. Současná krize ukazuje v plné nahotě, že je to neudržitelné. Ke zlatému standardu, kdy peníze byly založené na zlatu, stříbru či jiných kovech, se už však vrátit nemůžeme. Můžeme však udělat něco lepšího.
+
+**Co přesně? Měla by ČNB cílovat nulu?**
 
 Existují dva základní režimy moderní měnové politiky. První z nich je právě cílování inflace, kdy se centrální banka stále snaží o plus dvě procenta a neohlíží se na minulost. Druhý režim je cílování cenové hladiny, kdy opravujete předchozí chyby. Tedy když máte inflaci jednou plus dva, další rok se snažíte o minus dva. A já jsem pro tu druhou možnost. Můžeme hodnotu peněz přivázat nikoliv ke zlatu, ale k ceně průměrného zboží v ekonomice.
 
@@ -9879,7 +9913,11 @@ Zdroj: https://ukforum.cz/rubriky/veda/7994-havranek-hodnoceni-erc-je-velmi-poct
 
 Když mne před pár lety oslovili, divil jsem se. V té době jsem ani nesplňoval podmínku deseti let aktivního výzkumu, abych si sám mohl podat žádost o pokročilý ERC grant, takže mě překvapilo, že chtěli, abych se stal jejich hodnotitelem… A když jsem se ptal proč, řekli mi, že to bylo díky mé specializaci. Věnuji se totiž meta-analýze, což je původně medicínská metoda pro analýzu odborné literatury. Kvůli tomu, že je to metoda mezioborová, získáte určitý přehled i o dalších oblastech uvnitř, ale i mimo ekonomii. Zároveň jsem nějakou dobu strávil na University of California, Berkeley, kde jsem potkal lidi, kteří mě zřejmě doporučili. Občas též píšu posudky pro časopisy mimo ekonomii, jako jsou Nature, Science nebo Journal of Clinical Epidemiology.
 
+**Prozraďte: jak takové ERC hodnocení probíhá?**
+
 Hodnocení má dvě kola. V prvním se hodnotí všechny žádosti, jichž může být šedesát až sto podle konkrétního roku. Každý projekt je detailně hodnocen několika zpravodaji najednou, kteří připraví podrobné posudky a poznámky jako podklady pro následnou diskuzi. V panelu nás bylo dvanáct a na každého připadlo pro detailní hodnocení kolem dvaceti přihlášek, ačkoli přečíst jsme museli projekty všechny. Nejprve jsme hodnotili první část: shrnutí a životopis uchazeče, celkem asi tak deset stran. Pak jsme se všichni na týden sešli a vybrali spolu projekty, které postoupily do druhého kola, což byla zhruba čtvrtina. Ty jsme si opět rozdělili a po dalším podrobném hodnocení námi i externími oponenty jsme na druhém týdenním setkání vybrali projekty, jež budou podpořeny. Celý proces je časově náročný – mně zabralo hodnocení dva měsíce čistého času.
+
+**Bylo něco, co vás při hodnocení vyloženě překvapilo?**
 
 Překvapilo mě v dobrém, že se celé hodnocení bere opravdu velmi vážně – je podrobné a velice poctivé. Až obsesivně se hlídá střet zájmů, například nemůžete hodnotit projekt uchazeče ze školy, kde jste byť jen chvíli studovali. Překvapila mě i „pracovní etika“ hodnotitelů a úředníků ERC, na což nejsem úplně zvyklý u úředníků ani u sebe. Mám ve zvyku pracovat od sedmi do tří hodin a odpoledne se pak věnuji dětem. Jednání panelu ovšem často probíhala až do osmi večer a přes noc jsme dostali za úkol dodělat věci, které se nestihly... Fascinuje mě, že někteří kolegové mají takový pracovní režim, možná proto jsou i tak úspěšní. V mladším věku jsem rovněž pracoval o večerech a víkendech, ale to skončilo s tím, jak se nám narodily děti.
 
@@ -9892,6 +9930,8 @@ To jsem si řekl asi v polovině případů (směje se). Většina projektů je 
 **Během hodnocení jste četl a přečetl desítky ERC projektů – jak vypadá ten úspěšný?**
 
 Klíčem k úspěchu je silná myšlenka a perfektně napsaný projekt, ze kterého je jasné, že pokud nedostanete ERC grant, tak ten výzkum nelze uskutečnit. Ale vůbec nepotřebujete doktorát z nejlepších univerzit nebo publikace v nejprestižnějších časopisech. Dosavadní výsledky jsou důležité, ale primární je kvalita projektu. A vždy se bere ohled na specifika a zvyklosti daného oboru. U pokročilých grantů v ekonomii je například spíše negativním signálem, když má uchazeč papírově dobré publikace, ale jsou málo citovány, tedy moc se „nechytly“ u ostatních vědců.
+
+**Konkurence v ERC je hodně tvrdá, že?**
 
 Šance na úspěch není vysoká, ale není nulová. Mám pocit, že čeští vědci – a speciálně vědkyně – jsou často až zbytečně skromní a bojí se propagovat svoje úspěchy. Ale i to se pomalu mění; vidíme, že i v Česku lze ERC grant získat. O úspěchu často rozhoduje i štěstí, ale když to nezkusíte, tak to nikdy nevyjde... Navíc musím říci, že napsat ERC projekt je užitečná zkušenost, i když peníze nezískáte – donutí vás to rozmyslet si své další směřování. Myslím, že jednou za život by ERC projekt měl podat každý ambiciózní vědec či vědkyně.
 
@@ -9907,9 +9947,15 @@ Na větším úspěchu českých žadatelů má zásadní podíl profesor Zdeně
 
 Pro jakékoliv mezinárodní hodnocení výzkumu jsou klíčové publikace a citace. Ústav CERGE-EI, společné pracoviště Univerzity Karlovy a Národohospodářského ústavu Akademie věd ČR, má hromadu špičkových publikací. Institut ekonomických studií (IES) na FSV má zase hodně citací. Třeba mezi pěti nejcitovanějšími českými ekonomy jsou čtyři zástupci IES a pak Jan Švejnar z CERGE-EI. Takže bych řekl, že obě instituce přispívají ke zlepšujícímu se hodnocení podobnou vahou, i když část výstupů CERGE-EI se možná počítá Akademii věd. Myslím, že IES i CERGE-EI se vzájemně výborně doplňují a spolupracují ve výuce i výzkumu. CERGE-EI je opravdu špičkové pracoviště, které se může srovnávat s těmi nejlepšími departmenty v zahraničí (ekonomové Filip Matějka a Jakub Steiner již získali tři ERC granty – pozn. redakce). Řekl bych to takhle: CERGE-EI má granty ERC, na IES o těch grantech zase rozhodujeme (usmívá se).
 
+**Proč jste se vydal na dráhu vědeckého ekonoma?**
+
 Jako kluk jsem četl science fiction a fascinoval mě technický pokrok. Ten doopravdy odstartoval kolem roku 1800 spolu s průmyslovou revolucí. Fascinoval mě ten zlom – čím se stalo, že pak mohlo dojít k tak výraznému rozvoji a trvalému růstu životní úrovně? Myslel jsem si, že je to ekonomická otázka, takže jsem šel studovat ekonomii. Až později jsem zjistil, že to je otázka spíše sociologická. Takže ekonomem jsem vlastně omylem, ale jsem za to nakonec rád... S mou disciplínou, s meta-analýzou, jsem se poprvé setkal před lety ve skriptech profesora Štěpána Jurajdy a následně během studijního pobytu ve Finsku, kde o ní přednášel profesor Pekka Ilmakunnas. Pod jeho vedením jsem na toto téma napsal první seminární práci a meta-analýza se mi zalíbila natolik, že jsem se jí začal věnovat. Umožňuje nám očistit výzkum o publikační selektivitu, což je klíčové v kontextu současné replikační krize nejen ve společenských vědách.
 
+**Co a jak vědecky zkoumá ekonomie?**
+
 Většina lidí si myslí, že my ekonomové počítáme peníze. Možnosti výzkumu v ekonomii jsou však široké, třeba i řešení globálního oteplování je do velké míry ekonomická otázka: musíte spočítat, jak danit emise oxidu uhličitého, musíte vybalancovat náklady a výnosy omezování emisí... Je nutné emise omezit, ale pokud je omezíme příliš, bude to tak drahé, že zbytečně sebereme prostředky třeba ze zdravotnictví a společnosti to naopak uškodí. Porovnání nákladů a výnosů je základní ekonomický princip. Ekonomické řešení klimatické změny je hlavně ve výsadbě stromů.
+
+**A co jsou „vaše témata“‎, co vás těší a zajímá?**
 
 Výzkumných projektů mám více, ale témata, která mě aktuálně nejvíc baví a která se snažím popularizovat, jsou optimální inflace a správa devizových rezerv. Podle centrálních bank je ideální roční inflace dvě procenta, ale kde se tato hodnota vzala? Proč nemáme v České republice dlouhodobě nulovou inflaci, která je intuitivní a přesně odpovídá Ústavě – abychom si za tisíc korun koupili stejně hodnotný nákup tuto sobotu i za třicet let? Celkově existuje 230 odborných studií odhadujících optimální inflaci a průměrný odhad je 0,03 procenta, tedy de facto skutečná cenová stabilita. Hluboce věřím, že skutečná cenová stabilita by nám všem pomohla. Byli bychom jednou z prvních zemí, jejíž měna bude stabilním uchovatelem hodnoty. Pak bychom mohli snáze plánovat úspory na důchod a spoření pro děti.
 
@@ -9971,6 +10017,8 @@ Já vlastně ani po těch letech nevím, k čemu by to bylo dobré.
 
 Dám vám příklad: Když platíte v hotovosti, tak máte buď rád to, že je offline, což digitální měna není, anebo to, že je anonymní. Tj. že nemůže nikdo sledovat to, kde jste, za co platíte a s kým, za co si kupujete cigarety apod.
 
+**To je ta hlavní výhoda hotovosti.**
+
 Tohle vám stát v digitální měně nemůže nikdy zaručit. On vám to může slíbit, ale vy mu nebudete věřit, protože příští vláda může přijít a řekne, že to bude jinak.
 
 Když nemáte rád hotovost, tak už digitální měnu máte v podobě Google Pay nebo Apple Pay a nepotřebujete nic.
@@ -10000,6 +10048,8 @@ První možnost radikálně snížit důchody a další transfery. Nepomůže n�
 Druhá možnost: radikálně zvýšit daně. A ne o pár procentních bodů, ale násobně.
 
 A jediné, co můžete opravdu hodně násobně danit, je to, co nemůže utéct.
+
+**Tedy nemovitosti?**
 
 Ano, nemovitosti. Daň z nemovitostí. To nás nejspíš čeká. Máte byt za pět milionů, budete například platit daň z majetku ročně 300 tisíc korun.
 
@@ -10036,6 +10086,8 @@ Kdyby se radši dotovaly stromy, má to daleko větší efekt na klima. A nejeno
 **Jinými slovy, ekonomika by se podle vás nemusela tolik transformovat?**
 
 Ušetřili bychom pravděpodobně biliony korun, kdybychom začali s tím řešením, které je nejefektivnější a nejlevnější. Nevyhneme se i dalším změnám. Na to já nejsem takový odborník, ale tohle je něco, co by mělo dostat prioritu.
+
+Protože to evidentně funguje a má to hromadu dalších pozitiv. Máme tady minimálně polovinu populace, kterou klimatická změna nezajímá. Což musíme nějak respektovat. Ale ti lidé se jdou rádi projít do lesa nebo je zajímá, jestli je sucho, nebo není sucho. Zajímá je třeba, jestli je zvěř v krajinách a tak dále. Čili tohle byste mohl spojit jako balíček a tu klimatickou změnu nejenom, že řešit relativně levně, ale opravdu pomoci ji propagovat i mezi lidmi, kteří jsou jinak skeptičtí.
 
 ---
 
@@ -11632,6 +11684,8 @@ Zejména musí mít dobré spoluautory. Články, které jsem kdy napsal, byly j
 
 Dlouhá léta strávená čistě výzkumnou prací předtím, než jsem se stal poradcem v ČNB, člověka nutila snažit se konkurovat špičkovým zahraničním ekonomům. Ti musejí publikovat v nejlepších časopisech, protože to obvykle mají jako podmínku pro získání plného úvazku na univerzitě. Prosadit se v takové konkurenci je nesnadné, protože špičkové časopisy přijímají do 5 % zaslaných článků.
 
+**Je těžké konkurovat z České republiky?**
+
 Česká republika je ve světových vědeckých kruzích pořád brána za „Východ“. A tak na nás zbytek světa pohlíží někdy s určitou blahosklonností, jindy naopak s větší přísností. Každopádně do lepších časopisů je téměř nemožné proniknout s analýzou ryze českých dat. Jsme moc malá země.
 
 Hlavně jde ale o štěstí, jako vždy v životě. Jakmile se jeden článek podaří slušně publikovat, je potom snazší dostat se do dalších časopisů. Spíše si pak někdo všimne vašeho výzkumu, jako se to podařilo nám. Naše články používá například nový šéf newyorského Fedu, John Williams. Takové citace jsou hodně vidět, a tak pak váš výzkum lépe najdou a využijí další ekonomové z IMF, Bank of England nebo Harvardu.
@@ -11646,6 +11700,8 @@ To je výborná otázka. Abych byl zcela upřímný, některé učebnicové mode
 
 Na druhou stranu i současné modely používané v centrálních bankách odkazují na ty předchozí, i když byly v praxi omezeně použitelné. I proto je potřeba staré modely znát a vysvětlovat, jak se současná praxe liší od učebnicových popisů.
 
+**Například?**
+
 Například jak funguje tvorba peněz. Že se peníze nevytvářejí peněžním multiplikátorem známým z učebnice, ale činností komerčních bank, které poskytují úvěry. Že centrální banka sama o sobě nekontroluje množství peněz v ekonomice.
 
 **V době, kdy jsou úrokové sazby na nule, musí centrální banky sahat po alternativní munici. Například záporné úrokové sazby. Jak se to promítá do modelů, které používáte?**
@@ -11658,7 +11714,11 @@ Záleží na tom, jestli se bavíme o krizi podobného kalibru, jaký měla ta p
 
 Je ale pravda, že se na to nedá spoléhat, takže se opět nevyhneme diskusi o nějakém nekonvenčním nástroji.
 
+**Jako byl kurzový závazek?**
+
 U nás to byl kurzový závazek, ve velkých ekonomikách to bylo kvantitativní uvolňování. Oboje nějakým způsobem zafungovalo. Osobně znám spíš výzkum dopadu kurzového závazku a ten byl podle kolegů z ČNB, Univerzity Karlovy, ale i MMF jasně pozitivní. Vždycky se ale musíte ptát, jestli byste příště nemohli použít něco ještě lepšího.
+
+**Třeba záporné sazby?**
 
 Ty se ve světě hojně odzkoušely, ale efekt nebyl nikterak slavný. Hlavně z toho důvodu, že existuje hranice, pod kterou prostě záporné sazby klesnout nemohou. Vždycky se můžete rozhodnout, že si vyberete hotovost a schováte úspory pod polštář s nulovým úrokem.
 
@@ -11684,6 +11744,8 @@ Během recese spojené s poklesem cen by centrální banka mohla obnovit cenovou
 
 Ano, to by šlo už nyní. Kouzlo digitální měny je v tom, že bychom mohli snadno udělat z každé transakce program. Dalo by se nastavit, že ty peníze musí být utraceny v určitém čase, jinak přestanou platit. Lze také zabránit, aby byly použity na nákup nemovitostí, aby se zamezilo vzniku bublin.
 
+**K čemu by to bylo dobré?**
+
 Podle výzkumů, které máme k dispozici, by to mělo silný dopad na spotřebu a zprostředkovaně na obnovení cenové stability. Navíc by to podpořilo náladu lidí, což je v krizi důležité. Jedná se o srozumitelný a jasně pozitivní nástroj.
 
 **Nemohlo by to naopak podlomit důvěru lidí, jako se to stalo při hyperinflaci v předválečném Německu nebo nedávno v Zimbabwe?**
@@ -11698,9 +11760,15 @@ To jsem slyšel i při spuštění kvantitativního uvolňování a kurzového z
 
 Je pravda, že tyto inovativní politiky mají různá rizika v různých zemích. Třeba kvantitativní uvolňování má smysl jen u ekonomik s hlubokými finančními trhy. U nás to velký smysl nemá, protože bychom brzy skoupili velkou část dluhopisů. Konkrétně pro Japonsko by možná bylo lepší zkusit nějakou formu přímé podpory spotřeby než nekonečné nafukování bilance. Doporučuji každému, koho to zajímá, ať si přečte náš článek s Mojmírem Hamplem.
 
+**Neuvažovali jste o změně cíle?**
+
 Jak víte, po celém světě se o změně inflačního cíle, který je standardně 2 %, mluví. Ne ale o snížení cíle z důvodu, že by se ho nedařilo plnit. Naopak řeč je o zvýšení, abychom měli vyšší nominální úrokové sazby, a tedy menší potřebu provádět nekonvenční měnovou politiku. Podle mého názoru ale zvýšení cíle není v souladu s udržováním cenové stability. Bylo by to spíš uznání technické neschopnosti dané centrální banky a neochoty inovovat.
 
+**A kdyby se jen změnila definice toho, jak se měří?**
+
 My se tím dlouhodobě zabýváme a máme alternativní ukazatele inflace, kde se klade větší váha na ceny nemovitostí. Není to ale naše úloha, my si nemůžeme vymýšlet nové ukazatele inflace a tvrdit, že jsou lepší než oficiální indexy.
+
+**Můžete.**
 
 Technicky asi můžeme, ale bylo by to rozumné? Lidi by to mátlo, ti se řídí inflací tak, jak ji spočítá Český statistický úřad. My si můžeme konstruovat podpůrné ukazatele, kde přidáme nemovitosti, ale musíme se primárně řídit oficiální inflací dle ČSÚ. Jako podpůrný nástroj je ale index inflace s vyšší váhou cen nemovitostí užitečný.
 
@@ -11713,6 +11781,8 @@ Růst ceny nemovitostí je primárně otázkou přiškrcené nabídky; je stále
 Příští krize určitě nevznikne u nás. Krize nebo recese je dána propadem důvěry mezi ekonomickými partnery, který se snadno šíří. Není to žádný pravidelný cyklus, který by kdokoli uměl předvídat. V dnešním propojeném světě může být tím katalyzátorem nedůvěry jakýkoli šok v kterékoli důležité ekonomice.
 
 Velkou většinu globálních krizí odstartoval nějaký problém ve Spojených státech. Osobně bych tak čekal, že další zpomalení bude mít opět původ v USA. Mohou to být akcie, které jsou z historického pohledu velmi drahé. Všechno záleží na tom, jestli důvěra, která tam roste již skoro deset let, vydrží dál.
+
+**A kdy může tato důvěra vyprchat?**
 
 Doba trvání růstu nám neříká nic o tom, kdy přijde recese. Expanze neumírá na dlouhý věk. Co se ale od poslední expanze změnilo, je, že teď se o další krizi stále mluví. Nikdo už nečeká, že dobré časy potrvají navěky. Což samo o sobě napovídá, že recese hned tak nepřijde, a když ano, zřejmě nebude tak hluboká. Ale to jen spekuluji a můžu se dramaticky mýlit.
 

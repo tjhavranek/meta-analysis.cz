@@ -6,7 +6,7 @@ url: "https://www.seznamzpravy.cz/clanek/ekonomika-finance-cnb-je-rozbita-nezvla
 date: "2023-12-26"
 headline: "ČNB je rozbitá. Nezvládla inflaci a bojí se správně investovat"
 byline: "Tomáš Havránek"
-word_count: "2874"
+word_count: "2911"
 interviewer: "Jiří Nádoba"
 ---
 
@@ -58,11 +58,17 @@ Přesný mechanismus pořád neznáme, nemáme k tomu vědecké studie. Ale zár
 
 Přetrvávala obava z deflace, kvůli které se předtím intervence spouštěly. Úrokové sazby proto zůstaly nízko, inflační papiňák se neupouštěl. A v roce 2021 – když skončily covidové lockdowny a vláda pokropila zemi vrtulníkovými penězi – vybouchl. ČNB mimochodem vládu v pumpování peněz tehdy vydatně slovně podporovala. Zpětně je dobré přiznat kredit lidem, jako byl viceguvernér ČNB Mojmír Hampl, kteří po roce 2017 navrhovali výrazně vyšší sazby. Zůstali v menšině, ale měli pravdu.
 
+**Co byste dnes dělal jinak?**
+
 Byl jsem tehdy Mojmírovým poradcem a s prosazováním vyšších sazeb jsem mu měl pomáhat víc. Měl jsem psát přesvědčivější stanoviska pro zbytek bankovní rady, měl jsem lépe přemlouvat ostatní poradce. Beru to i jako své osobní selhání a omlouvám se za to.
 
 **Poslední dva guvernéři, Aleš Michl a Jiří Rusnok, kvůli inflaci kritizují jeden druhého. Za koho podle vás ČNB zaspala víc? Kdo má na dnešním stavu hlavní vinu?**
 
 Už jsme se bavili o tom, že úroky měly být mnohem vyšší v letech 2017 až 2019. Tehdy byl guvernérem Jiří Rusnok. Další kritická chvíle přišla na podzim 2021. To už bylo jasné, že inflace u nás vylétne. A také že tomu zvyšování sazeb nezabrání, protože to se v inflaci naplno projevuje v horizontu jednoho až dvou let. Nabízelo se tedy provést to, co ČNB udělala v roce 2013, ale v opačném gardu: spustit masivní intervence, ale tentokrát za posílení koruny. Tedy chovat se symetricky a prodat většinu eur, které mezi roky 2013 a 2017 ČNB nakoupila za nově vytvořené koruny. Není sporu, že by to inflaci rychle snížilo.
+
+**Proč to ČNB neudělala?**
+
+Přiznám se, že tomu dodnes nerozumím.
 
 **Nynější guvernér Michl už před nástupem do úřadu slíbil Miloši Zemanovi stabilitu sazeb, pak nejspíš nechtěl slib porušit a držel se ho, i když inflace dál rostla a aparát ČNB radil sazby zvedat. Byla to chyba?**
 
@@ -72,6 +78,8 @@ U hodnocení Aleše Michla také musím uvést střet zájmů, byl jsem půl rok
 
 V bance chybí názorová pestrost a diskuze, která tam dříve vždy probíhala. Když se rozhodovalo o intervencích v roce 2013, rada opakovaně přehlasovávala guvernéra Singera. Trvalo mu několik měsíců, než přesvědčil Mojmíra Hampla a dal dohromady většinu v bankovní radě. Výsledné rozhodnutí se třeba někomu nemusí líbit, ale vyhrála argumentačně silnější strana. Nic takového za posledních sedm let v ČNB nevidíme.
 
+**Proč ne?**
+
 Ne proto, že by radní ČNB nebyli dost dobří. Jsou to skvělí experti. Není to osobní selhání, je to selhání ČNB jako instituce. Problém je feudalismus ve jmenování rady. Centrální banku rozbil Miloš Zeman, když dovolil oběma posledním guvernérům, aby si sami vybrali skoro celý zbytek rady. Jako by ČNB byla jejich léno. U Aleše Michla je to ještě horší v tom, že výběr guvernéra nastal souběžně s obměnou skoro celé rady. Radní jsou pak guvernérovi zavázaní. Co chce guvernér, to bude.
 
 **O tom se často mluví, ale jak radním dokázat, že plní to, co jim guvernér řekne, místo toho, co považují za správné?**
@@ -79,6 +87,8 @@ Ne proto, že by radní ČNB nebyli dost dobří. Jsou to skvělí experti. Nen�
 Chcete důkaz? Současná rada odhlasovala Alešovi jmenování Vladimíra Kruliše šéfem jedné z nejdůležitějších sekcí ČNB. Věděli, jaké to bude mít důsledky pro reputaci ČNB i jejich vlastní, a stejně to udělali.
 
 **Pokud je ČNB rozbitá, kdo ji můžu opravit?**
+
+Jedině prezident a Parlament.
 
 **Co zmůže současný prezident? Mandáty v ČNB jsou delší než na Hradě a Petr Pavel bude během tohoto funkčního období nominovat jen jednoho ze sedmi radních.**
 
@@ -88,13 +98,19 @@ Nestačí jenom počkat pět let a pak vyměnit Aleše Michla. Je potřeba rozb�
 
 Pomohlo by, kdyby lépe vymezil odpovědnost ČNB v zákoně. ČNB má obrovskou moc a je nezávislá. Ale co když naprosto odmítne bojovat proti inflaci? Pak dnes není síla, která by ji nějak usměrnila. Můžeme se dostat i do situace, kdy se vedení ČNB ani neomluví a bude se jen vymlouvat na všechny ostatní, na vládu, na zahraničí. Byl bych rád, aby v zákoně o ČNB byla povinnost pro guvernéra napsat prezidentovi omluvný dopis, když je inflace nad tolerančním pásmem. Něco podobného, jako mají ve Spojeném království.
 
+**Co by takový dopis zachránil?**
+
 Muselo by jít o dopis, v kterém se ČNB nemůže jen vymlouvat, ale kde musí jasně říct, co udělala špatně. A hlavně co udělá příště jinak. Osobně bych taky rád viděl, abychom se dohodli, co vlastně po ČNB chceme. Jakou ideální inflaci – stávající dvě procenta, která si ČNB určila sama? Nebo nula procent v průměru? Dohodněme se, dejme to do zákona a pak bankovní radu honorujme podle výsledků. Když centrální bankéři inflaci udrží na cíli, ať dostanou bonusy navíc.
+
+**Co by měla ČNB dělat teď?**
 
 Jak už jsem naznačil, měla by se hlavně omluvit. Růst cen o třetinu během tří let, to je pro reputaci banky velká rána. V zahraničí tomu lidé prvně nevěří, potom se smějí. Proč bychom měli ČNB důvěřovat, že příště nic takového nedopustí? Že si můžeme v korunách spořit na důchod nebo pro děti? Omluva je začátek. Každý dělá chyby, omluva není ostuda. Ostuda je házet vlastní vinu na ostatní.
 
 **Často mluvíte o tom, že by ČNB měla lépe spravovat devizové rezervy. Jde přitom o hodně citlivou věc, svobodná správa rezerv je jedním z pilířů nezávislosti. Co byste radil dělat jinak?**
 
 Prvně je potřeba říct, co vlastně ty rezervy jsou. Není to žádný balík na horší časy, který bychom krvopotně naspořili. Je to vedlejší efekt dvou věcí. Zaprvé, když ČNB oslabuje korunu, jak se to dělo ve velkém v letech 2013 až 2017, tak vymačkává na klávesnici nové koruny a za ně na trhu koupí eura. Ta tvoří hlavní část dnešních rezerv. Zadruhé, když z Bruselu proudí dotační eura, tak je ČNB také stáhne do rezerv, také za ně vymačká nové koruny a ty pak pošle vládě. Rezervy tedy nikdo cíleně nevytváří. Když už je ale máme, tak se dají lépe využít.
+
+**Jak?**
 
 Dvěma způsoby. Nejlepší je použít je v krizi, když je výjimečně vysoká inflace. O tom jsme se bavili – tak, jak ČNB předtím eura kupovala, tak je měla v roce 2021 naopak prodávat, tím tlačit korunu ke zpevnění a inflaci tlumit. Když to ČNB odmítla pořádně udělat i v situaci největší inflační krize za generaci, tak tím říká, že rezervy nejspíš strategicky nepoužije nikdy. Pak ale – a to je hlavní – by je neměla nechat hnít, ale měla by je investovat tak, aby dlouhodobě vydělávaly. Mimochodem i zainvestované rezervy může v krizi použít na posílení koruny.
 
@@ -117,6 +133,8 @@ Ano, v tomhle jsme si rozuměli, ale není potřeba fond bohatství. Stačí, ab
 **Vaše stížnosti na špatné fungování ČNB bychom nemuseli řešit, kdyby Česko mělo euro. Jste příznivcem jeho přijetí?**
 
 Jsem příznivcem cenové stability. Dlouho jsem si myslel, že ji budeme mít spíš s korunou než s eurem. Teď už si tak jistý nejsem.
+
+**Jste tedy pro euro?**
 
 Ekonomicky ta otázka nejde zodpovědět, výhody a nevýhody eura jsou zhruba vyrovnané. Takže se dostáváme k politice a emocím. Často cestuji, tedy pro mě je euro výhodné. Také je výhodné pro investice do zahraničí. Když přijmeme euro, nebudeme moci z EU odejít, protože by to znamenalo totální finanční kolaps země. To je důležité si uvědomit. Euro navěky zaručí naše spojení s Evropou, v dobrém i ve zlém.
 

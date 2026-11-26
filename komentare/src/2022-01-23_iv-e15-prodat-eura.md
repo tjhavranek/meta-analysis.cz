@@ -6,7 +6,7 @@ url: "https://www.e15.cz/rozhovory/cnb-by-mela-prodat-miliardy-eur-a-vice-invest
 date: "2022-01-23"
 headline: "ČNB by měla prodat miliardy eur a více investovat do akcií"
 byline: "Tomáš Havránek"
-word_count: "1658"
+word_count: "1673"
 interviewer: "Jan Novotný"
 ---
 
@@ -34,7 +34,11 @@ To je spíš otázka psychologie než ekonomie. Setrvačnost inflace závisí na
 
 ČNB tvrdí, že setrvačnost je rok, rok a půl. Vědecká literatura počítá spíše se dvěma nebo třemi lety. Mluvíme tady o mechanickém dopadu, tedy že firmy mají dražší úvěry, méně investují, lidé více spoří a tak dále. Ale to prudké zvýšení sazeb byl hlavně marketingový signál, že ČNB nebude inflaci tolerovat. Takže může zapůsobit na psychologii hned, což je to, o co ČNB jde. Pozor ale, že zvýšení sazeb negativně dopadne především na domácnosti, zejména skrze hypotéky. Ne tolik už na firmy, které si mohou vzít stále levné úvěry v eurech a proti silnější koruně se mohou výhodně zajistit na forwardech. Existuje nástroj boje proti inflaci, který náklady rozloží více mezi lidi a firmy a zároveň působí rychle psychologicky i mechanicky. Tím nástrojem je posílení koruny. K tomu trochu dochází až teď v lednu.
 
+**Posiloval byste tedy ještě více korunu? Jak?**
+
 Samozřejmě nelze prodat najednou všechna eura, která ČNB nakoupila během intervencí proti koruně. ČNB teď má přes 150 miliard eur. Kdyby je pustila na trh, koruna posílí tak dramaticky, že způsobí recesi. Ale v roce 2013 ČNB intervenovala proti deflaci, při tom subvencovala exportéry. Pokud se chová symetricky, měla by teď intervence aspoň z části odmazat a eura prodat. Už od září měla verbálně hrozit prodejem eur, koruna by pak posílila mnohem dříve. To by zamezilo dvojciferné inflaci. Ideálně měla ČNB vyhlásit, že každý měsíc prodá jedno procento z rezerv a bude to tak dělat čtyři roky. Zbylou polovinu rezerv bych investoval podobně jako Švýcaři, Singapurci či Norové.
+
+**Do čeho by měla ČNB investovat? Do akcií?**
 
 Hlavně do akcií, trochu do zahraničních nemovitostí. Pokud by ČNB investovala jako Švýcaři, jen za dva roky by vydělala 300 miliard korun navíc. A to jsou Švýcaři ještě hodně konzervativní, i tak ale mají víc akcií a dluhopisů s delší splatností. V ČNB bohužel stále panuje z investování strach, protože akcie kolísají. Krátkodobě můžete prodělat, ale dlouhodobě jste vždy v plusu. Poradci dokonce v roce 2017 radili bankovní radě investovat polovinu rezerv po vzoru Singapuru, to by od té doby vydělalo bilion.
 

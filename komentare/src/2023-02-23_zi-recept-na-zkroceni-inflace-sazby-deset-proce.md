@@ -6,7 +6,7 @@ url: "https://ekonom.cz/c1-67175540-recept-na-zkroceni-inflace-sazby-deset-proce
 date: "2023-02-23"
 headline: "Recept na zkrocení inflace: Sazby deset procent a euro za dvacku"
 byline: "Tomáš Havránek"
-word_count: "1984"
+word_count: "1996"
 interviewer: "Martin Petříček"
 body_note: "Text převzat z republikace na zrusme-inflaci.cz; originál je v týdeníku Ekonom."
 perex: "Kdo může za vysokou inflaci a kdo by ji měl krotit? Zatímco guvernér České národní banky Aleš Michl opakuje, že s inflací má nyní bojovat hlavně vláda, ekonom Tomáš Havránek tvrdí, že situaci má ve svých rukách právě ČNB. Vedle zvýšení úrokových sazeb by ve větší míře měla využít devizové rezervy,..."
@@ -46,7 +46,11 @@ K dnešnímu posilování ne. Ale nebýt loňských intervencí, koruna by posil
 
 Pokud chce někdo spekulovat proti koruně, je to pro něj drahé. Musí si půjčovat koruny, kde je stále mnohem vyšší úrok než u eura, aby je mohl prodat a pak koupit zpět levnější. Je nereálné, že by to dlouhodobě dokázal ustát i velký hedgový fund. Pomohlo by ještě zvýšit sazby, krátkodobě na deset procent, a spustit intervence. Nikdo nerozporuje, že taková kombinace by pomohla inflaci letos snížit.
 
+**Nepoškodilo by to příliš ekonomiku?**
+
 Sazby na 10 % a euro za 20 korun by ekonomiku bolely. Ale ČNB nemá v popisu práce vyvažovat bolest exportérů a inflaci. Její mandát je jasný.
+
+**Porušuje tedy ČNB zákon?**
 
 Zeptejme se právníků. Ústava říká, že cílem ČNB je pečovat o cenovou stabilitu. Inflace ve výši 17,5 procent není cenová stabilita. Přitom ČNB s tím něco může dělat ještě dnes, zvýšit sazby a posílit korunu. Nedělá to, tedy vědomě neplní ústavní zadání. Ale nemáme mechanismus, jak ji k plnění donutit. Pomohlo by v Zákoně o ČNB vyjasnit, co znamená cenová stabilita. Dvouprocentní inflace, či skutečná cenová stabilita, tedy průměrná stabilita průměrných cen v ekonomice? Když jednou ceny vzrostou, tak v dalších letech by zase klesaly. Stovky vědeckých studií jako celek ukazují, že právě toto je zdravá inflace: v průměru nula.
 
@@ -65,6 +69,8 @@ Straší je kvůli Velké depresi ve 30. letech minulého století. Tehdy však 
 **Je pravděpodobné, že centrální banky začnou místo dvou procent cílit na nulu?**
 
 Cenová stabilita je přirozené vylepšení inflačního cílování. Jen s dvěma parametrickými změnami. Opravuje minulé chyby a snižuje cíl z dvou procent na nulu. Bylo by to dovršení vývoje, kdy jsme – s výjimkou posledních tří let – v Česku postupně snižovali inflaci. A spolu s tím i inflační cíl. Před 25 lety začínala ČNB s cílem kolem šesti procent, od roku 2010 je na dvou procentech. Kdyby zmiňované výzkumy byly k dispozici už před třiceti lety, jsem si jist, že by už tehdy upřednostnili na Novém Zélandu nulu před dvojkou. Jedinou zemí, která má inflační cíl pod dvěma procenty, je Švýcarsko. Jejich centrální bance nevadí cenová stabilita. Nechtějí deflaci, ale nevadí jim nulová inflace. V praxi od roku 2008 mají opravdu průměrnou inflaci blízkou nule. Jinde odvahu k cenové stabilitě zatím nevidím, to se ale s pokračujícím inflačním debaklem změní.
+
+**Co tedy oponenti?**
 
 Dosud převažuje proud, který klade důraz na levné financování vládních výdajů. Třeba francouzský profesor Olivier Blanchard prosazuje zvýšení inflačního cíle. Cílem je, aby reálná úroková sazba – po odečtení inflace – byla co nejmenší, aby to bylo pro dlužníky a hlavně pro stát výhodnější. V tomto duchu jako člověk s hypotékou děkuji centrální bance, reálně jsem díky ní vydělal vloni 13 procent z hodnoty domu, protože mám sazbu pod dvě procenta a inflace byla 15 procent.
 

@@ -6,7 +6,7 @@ url: "https://www.idnes.cz/ekonomika/domaci/ekonom-tomas-havranek-rozhovor-infla
 date: "2021-12-19"
 headline: "Inflaci můžeme úplně zrušit, je neústavní"
 byline: "Tomáš Havránek"
-word_count: "3579"
+word_count: "3598"
 interviewer: "Martina Riemlová"
 body_note: "Text převzat z republikace na zrusme-inflaci.cz; originál je na iDNES.cz."
 perex: "Stále zrychlující se inflace trápí momentálně všechny. Podle ekonoma Tomáše Havránka selhal systém cílování inflace, podle kterého postupuje mimo jiné i Česká národní banka. Podle něj nastává ideální čas na změnu a je možné se inflace úplně zbavit. „Příležitosti můžeme využít, nebo můžeme nechat inflaci vystoupat v příštím roce až na dvojciferné hodnoty,“ míní Havránek v rozhovoru pro iDNES.cz"
@@ -22,6 +22,8 @@ Deflace, tedy pokles průměrných cen, je spojena se dvěma hlavními problémy
 
 Deflace také ztěžuje splácení dluhů. Pokud má člověk hypotéku pět milionů a deflace bude 50 procent, znamenalo by to, že průměrné ceny budou z roku na rok poloviční a hodnota koruny se zdvojnásobí. Takže z dluhu ve výši pěti milionů by se najednou stal dluh ve výši deseti milionů, který se reálně bude daleko hůře splácet.
 
+**Centrální banky se deflace bojí. Proč?**
+
 Pokud deflace trvá pár měsíců nebo rok, tak to prakticky žádný problém nepředstavuje. Bankéři však s hrůzou vzpomínají na Velkou depresi ve třicátých letech. Důsledkem Velké deprese byla mimo jiné setrvalá deflace a ceny klesaly několik let v řadě, dohromady o desítky procentních bodů, což prohlubovalo krizi. Po takové zkušenosti se centrální bankéři deflace bojí. Ale kromě této jedné epizody, kterou však centrální banky způsobily samy svou neschopností smysluplně reagovat, jsme nikdy problém s deflací neměli.
 
 Navíc teď víme, že ten problém ani mít nemůžeme. V covidové krizi se ukázalo, že peníze z vrtulníku fungují. Lidé a firmy dostávali peníze za to, že nic nedělali, a inflace přišla. A mnohem vyšší, než kdokoli čekal. Takže kdyby se náhodou stalo, že budeme v krizi a deflaci a nebude stačit snižování úroků, vláda a centrální banka vždycky sáhnou k penězům z vrtulníku. Ať chceme, nebo ne. Lidi to vědí, takže žádnou deflaci čekat nebudou, tudíž ani žádná deflační spirála nemůže nastat. Paradoxně by tak ani ty peníze z vrtulníku nakonec potřeba nebyly, kdyby nám šlo jen o cenovou stabilitu. Ale je to jasný argument, proč se deflace bát nemusíme a proč ji centrální banka vždycky může vynulovat, jak už říkal Milton Friedman.
@@ -36,11 +38,15 @@ Tady bych vysvětlil tři věci. Zaprvé, hlavní povinností centrální banky 
 
 Nejen já, ale i řada dalších ekonomů tady vidí jasný rozpor s ústavou. Ekonomové centrální banky si to samozřejmě nemohou dovolit říct navenek, podobně jako si to nemohou dovolit ekonomové komerčních bank, kam může centrální banka kdykoli za trest poslat kontrolu. Zadruhé, existuje 222 vědeckých studií od roku 1990, které zkoumají a počítají, jaká míra inflace je ta správná, zdravá pro ekonomiku. A průměrný odhad je nula. A třetí věc je selský rozum. Koruna funguje jako měřítko hodnoty peněz, stejně jako metr měří vzdálenost. Kdybychom definici metru zkracovali jeden rok o dva centimetry, další rok o pět a potom o jeden, způsobilo by to zmatek. Stejně je to s hodnotou peněz. Měla by být stabilní.
 
+**Takže co by měla dělat ČNB?**
+
 Vrátit se k tomu, co fungovalo celou historii naší civilizace, tisíce let, až zhruba do roku 1933, kdy skončil zlatý standard. Každoroční inflace je nová věc, trvá necelých sto let. Z hlediska lidstva je to něco úplně nového a nepřirozeného. Ano, občas byla inflace krátkodobá, třeba v 16. století po objevení Ameriky se do Evropy převalila spousta zlata a stříbra, což způsobilo snížení hodnoty měny, která byla založena na stříbru a zlatu. Samozřejmě také v historii, zejména během válek, se řada králů snažila měnu znehodnotit a při ražbě do mincí přidávali méně zlata a stříbra, zbytek si nechali, aby mohli lépe financovat například válečné výdaje. To však byly spíše výjimečné věci, které byly vždy považované za něco nepřirozeného či nesprávného. Žádná pravidelná každoroční inflace neexistovala. Ceny v roce 1914 byly v průměru stejné jako v roce 1815. Nešlo přitom o období úpadku, naopak. Ekonomika tehdy rostla rychleji než dnes. Zadlužení státu bylo minimální a nezvyšovalo se.
 
 **Opravdu si nikdy lidé během historie na zdražování nestěžovali?**
 
 Ano, máte pravdu, stěžovali, ale inflace nikdy v historii nebyla programovým a oficiálním cílem vedení státu. Pokud k ní došlo, byla to buď náhoda, třeba příliv stříbra z nových dolů v Potosí. Nebo to byl podvod, jako v případě snižování objemu stříbra a zlata v mincích. Dnes platíme stamiliony v platech nejlepším ekonomům v zemi, aby nám tu kladnou inflaci, tedy znehodnocení koruny, doručili. Současná krize ukazuje v plné nahotě, že je to neudržitelné. Ke zlatému standardu, kdy peníze byly založené na zlatu, stříbru či jiných kovech, se už však vrátit nemůžeme. Můžeme však udělat něco lepšího.
+
+**Co přesně? Měla by ČNB cílovat nulu?**
 
 Existují dva základní režimy moderní měnové politiky. První z nich je právě cílování inflace, kdy se centrální banka stále snaží o plus dvě procenta a neohlíží se na minulost. Druhý režim je cílování cenové hladiny, kdy opravujete předchozí chyby. Tedy když máte inflaci jednou plus dva, další rok se snažíte o minus dva. A já jsem pro tu druhou možnost. Můžeme hodnotu peněz přivázat nikoliv ke zlatu, ale k ceně průměrného zboží v ekonomice.
 
