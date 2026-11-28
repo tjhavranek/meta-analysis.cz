@@ -410,6 +410,23 @@ iframe.yt { min-height: 200px; }
 .vcard-m { display: block; margin-top: 0.2rem; font-size: 0.85rem; color: var(--muted); }
 @media (prefers-reduced-motion: reduce) { .vcard-img img { transition: none; } }
 .vgrid-credit { margin: 2.5rem 0 0; font-size: 0.8rem; color: var(--muted); }
+/* /video/: his YouTube channel, one card under the lede (write_media_page in build.py). The
+   archive's quiet card, as .xa: a rule, the surface, the accent title. The red mark is
+   YouTube's own and stays red in both themes. */
+.ytch { display: flex; align-items: center; gap: 0.9rem; max-width: var(--measure);
+        margin: 1.25rem 0 0; padding: 0.75rem 1rem; border: 1px solid var(--rule); border-radius: 6px;
+        background: var(--surface); color: var(--text); text-decoration: none;
+        transition: border-color .15s; }
+.ytch:hover { border-color: var(--control); }
+.ytch-logo { flex: none; display: block; }
+.ytch-txt { flex: 1 1 auto; min-width: 0; }
+.ytch-t { display: block; font-weight: 600; color: var(--accent); line-height: 1.3; }
+.ytch:hover .ytch-t, .ytch:focus-visible .ytch-t { text-decoration: underline; }
+.ytch-m { display: block; margin-top: 0.15rem; font-size: 0.85rem; color: var(--muted);
+          line-height: 1.4; overflow-wrap: anywhere; }
+.ytch-go { flex: none; display: block; color: var(--muted); transition: transform .15s; }
+.ytch:hover .ytch-go { color: var(--accent); transform: translateX(2px); }
+@media (prefers-reduced-motion: reduce) { .ytch, .ytch-go { transition: none; } }
 /* on the hub: under the lede on a phone, beside it where the 34rem text leaves room */
 .hub-video { margin: 1.5rem 0 0; max-width: var(--measure); }
 /* the lede's links are short; beside the video its column is narrower, and a break inside

@@ -60,8 +60,8 @@
   },
   "llms.txt": {
    "url": "https://meta-analysis.cz/komentare/llms.txt",
-   "bytes": 57142,
-   "sha256": "6aec8c2717225996d7e4462e53355fff4647a26b9c829c5ae20b10c32f327999"
+   "bytes": 57255,
+   "sha256": "cbd36378125f21a4cef0df91912bd93350830a7e70cbed5f0b62c5178bf2b754"
   },
   "feed.xml": {
    "url": "https://meta-analysis.cz/komentare/feed.xml",

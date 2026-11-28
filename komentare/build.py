@@ -233,6 +233,10 @@ OUTLET_IN = {
 }
 
 MEDIA_LABEL = {"video": "video", "audio": "audio"}
+# His own YouTube channel, with clips and shorts that have no item here: a card on /video/,
+# a footer link, a line in llms.txt and one more sameAs.
+YT_CHANNEL = "https://www.youtube.com/@TomasHavranekCZ"
+YT_HANDLE = "@TomasHavranekCZ"
 
 # Recordings elsewhere on this domain that are not commentary items, listed on /video/ beside
 # them. A row there and nothing else: they have their own pages, so they stay out of the feed,
@@ -677,6 +681,7 @@ def shell(title, desc, canonical, jsonld, body, active, extra_head="", lang="cs"
       <li><a href="https://www.scopus.com/authid/detail.uri?authorId=24453189000">Scopus</a></li>
       <li><a href="https://cepr.org/about/people/tomas-havranek">CEPR</a></li>
       <li><a href="https://metrics.stanford.edu/people/tomas-havranek">Stanford METRICS</a></li>
+      <li><a href="{YT_CHANNEL}" rel="me">YouTube</a></li>
     </ul>
     <ul class="about-links">
       <li class="who">{zi}</li>
@@ -1662,6 +1667,7 @@ def write_index(items, key=None):
             "https://www.tomashavranek.cz/",
             "https://meta-analysis.cz/",
             "https://zrusme-inflaci.cz/",
+            YT_CHANNEL,
         ],
     }
     # This is a joint archive, so the structured data has to name both people or an
@@ -1905,8 +1911,19 @@ def write_media_page(items):
                + f'<meta property="og:image:alt" content="{esc(HUB_IMG["alt"]["cs"])}" />\n'
                + '<meta name="twitter:card" content="summary_large_image" />\n'
                + f'<meta name="twitter:image" content="{og_url}" />\n')
+    # the channel: one card under the lede, quiet like .xa; YouTube's red mark says where it
+    # leads, the line under the title says what is there that this page does not have
+    ytch = (f'      <a class="ytch" href="{YT_CHANNEL}" rel="me external">'
+            '<svg class="ytch-logo" viewBox="0 0 28 20" width="34" height="24" aria-hidden="true" '
+            'focusable="false"><rect width="28" height="20" rx="5" fill="#f00"/>'
+            '<path d="M11.2 5.6v8.8l7.6-4.4z" fill="#fff"/></svg>'
+            '<span class="ytch-txt"><span class="ytch-t">Kanál Tomáše Havránka na&nbsp;YouTube</span>'
+            f'<span class="ytch-m">Další klipy a krátká videa · {YT_HANDLE}</span></span>'
+            '<svg class="ytch-go" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" '
+            'focusable="false"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" '
+            'stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>\n')
     body = (f'    <div class="lede">\n      <h1>{title}</h1>\n      <p>{esc(desc)}</p>\n'
-            f'    </div>\n' + media_grid(sel))
+            + ytch + '    </div>\n' + media_grid(sel))
     page = shell(f"{title} — {SITE_AUTHORS}", desc, canonical,
                  {"@context": "https://schema.org", "@graph": [node]},
                  body, "", extra_head=og_head, lang="cs")
@@ -2111,6 +2128,7 @@ def write_machine_readable(items, social=()):
           "- [ORCID](https://orcid.org/0000-0002-3158-2539)",
           "- [Google Scholar](https://scholar.google.com/citations?user=BF0BvBkAAAAJ)",
           "- [RePEc](https://ideas.repec.org/f/pha418.html)",
+          f"- [YouTube]({YT_CHANNEL}): autorův kanál s klipy z přednášek a krátkými videi",
           f"- [Posts]({BASE}/posts/) — {n_social} short posts by Zuzana Irsova "
           f"Havrankova, mostly English, in full",
           f"- [RSS]({BASE}/feed.xml)",
